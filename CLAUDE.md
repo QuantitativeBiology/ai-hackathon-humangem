@@ -1,0 +1,31 @@
+# nextgem
+
+Constraint-based modelling with the Human-GEM genome-scale metabolic model, integrated with DepMap (CRISPR, expression, CN, mutations).
+
+## Environment
+- Python: always use `/data/tmpA/nextgem/.venv/bin/python` (conda prefix env, Python 3.11). Do not use the base or `py` conda envs (no cobra).
+- Pinned versions in `requirements.txt` (regenerate with `.venv/bin/python -m pip freeze --exclude-editable > requirements.txt` after installing packages).
+- Solver: Gurobi 13 (WLS academic license at `~/gurobi.lic`) is cobra's default; GLPK is the fallback. The WLS license needs internet access at solve time.
+- Jupyter kernel: "Python (nextgem)".
+
+## Layout
+- `src/nextgem/` — project package, installed editable (`import nextgem`). `model.py`: `load_model()`, `set_hams_medium()`.
+- `scripts/` — runnable scripts (e.g. `scripts/fba_sanity_check.py`).
+- `notebooks/` — exploratory notebooks.
+- `results/` — analysis outputs (git-ignored).
+- `data/` — git-ignored inputs; provenance in `data/README.md`. Human-GEM 2.1.1 in `data/Human-GEM-main/`, DepMap Public 26Q3 in `data/depmap/`. Treat `data/` as read-only.
+
+## Modelling notes
+- Load `data/Human-GEM-main/model/Human-GEM.xml` once (~15 s); use `with model:` or `model.copy()` for perturbations.
+- The raw model has all 1,654 exchanges open (cells can import ATP etc.) — always set a medium first. `set_hams_medium()` opens the 44 inputs of the `GR` task in `metabolicTasks_Essential.txt`.
+- Biomass reaction: `MAR13082`. With uptake bounds of 1000, growth values are in arbitrary units.
+- Expected on Ham's medium: growth ≈ 74.76, 0 anaerobically, CAD/UMPS KOs lethal (`scripts/fba_sanity_check.py`).
+- Human-GEM's own essentiality/tINIT pipelines live in `data/Human-GEM-main/code/` (e.g. `code/test/gradedEssentiality.py`).
+
+## DepMap notes
+- Gene columns are `SYMBOL (EntrezID)`; join to Human-GEM via `geneEntrezID` in `model/genes.tsv`.
+- `CRISPRGeneEffect.csv` is indexed by `ModelID`; expression has several rows per model — filter `IsDefaultEntryForModel == "Yes"`.
+- Files are large (up to ~630 MB); read only needed columns (`usecols`) and write intermediates as Parquet.
+
+## Housekeeping
+- `/data/tmpA` is a shared NFS volume that was ~98% full (~100 GB free); keep outputs compact.

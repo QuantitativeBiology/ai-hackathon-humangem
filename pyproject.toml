@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nextgem"
+version = "0.1.0"
+description = "Human-GEM constraint-based modelling integrated with DepMap data."
+requires-python = ">=3.11"
+dependencies = ["cobra==0.32.1", "raven-toolbox==3.0.0b1", "pandas"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

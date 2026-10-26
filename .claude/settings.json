@@ -1,0 +1,10 @@
+{
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "high"
+    }
+  },
+  "fallbackModel": [
+    "claude-sonnet-5-5"
+  ]
+}

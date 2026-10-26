@@ -1,0 +1,20 @@
+# Data (large; not versioned) - only the provenance README is tracked
+data/*
+!data/README.md
+
+# Analysis outputs
+results/
+
+# Python environment
+.venv/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Claude Code local (personal) settings
+.claude/settings.local.json
+
+# OS / editor
+.DS_Store
+*.swp
