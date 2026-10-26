@@ -1,3 +1,5 @@
+> **PI note (2026-10-26):** this review quotes all-line aggregate label statistics. Reading it is an aggregate exposure (see `notes/label_exposure.md`); agents authoring or approving a priori lists should avoid it.
+
 # Design review, round 2: evaluation statistics
 
 Reviewer: biostatistics agent (the round-1 statistics reviewer; not the author). Reviewed: DESIGN.md v1 (commit d84a593), together with notes/design_review_r1/PI_decisions.md, the §17 revision history and Appendix D.
