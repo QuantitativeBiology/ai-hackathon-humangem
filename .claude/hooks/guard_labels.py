@@ -18,8 +18,10 @@ import sys
 PROTECTED = re.compile(
     r"CRISPRGeneEffect|CRISPRGeneDependency|ScreenGeneEffect|"
     r"CRISPRInferredCommonEssentials|AchillesCommonEssentialControls|"
-    r"AchillesNonessentialControls|labels_test"
+    r"AchillesNonessentialControls|labels_test|labels_val|data/locked"
 )
+# Recursive searches over data/ reach the label files without naming them.
+RECURSIVE_DATA_SEARCH = re.compile(r"\b(grep|rg|ag|ack|find)\b[^;&|\n]*\s(\S*/)?data(/depmap)?/?(\s|$)")
 # Wildcards over the DepMap folder could reach the label files without naming them.
 DEPMAP_WILDCARD = re.compile(r"depmap/[^\s'\"]*[*?\[]")
 DEPMAP_DIR = re.compile(r"data/depmap/?$")
@@ -61,9 +63,15 @@ def main():
                     continue
                 # git: names may appear in commit messages, so only check unquoted text.
                 segment = re.sub(r"\"[^\"]*\"|'[^']*'", "", segment)
-            if PROTECTED.search(segment) or DEPMAP_WILDCARD.search(segment):
+            if PROTECTED.search(segment) or DEPMAP_WILDCARD.search(segment) or RECURSIVE_DATA_SEARCH.search(segment):
                 deny("shell command references raw label files")
 
 
 if __name__ == "__main__":
-    main()
+    # Fail closed: a guard that crashes must block, not let the call through.
+    try:
+        main()
+    except SystemExit:
+        raise
+    except Exception as exc:
+        deny(f"guard error ({type(exc).__name__}); refusing by default")
