@@ -33,8 +33,13 @@ Current phase: literature and dataset survey (→ LITERATURE.md), with the gener
   - [x] 2.2 DESIGN v1 (design author, 19 min): all 34 PI decisions applied; ~13k words incl. appendices; numbers from scripts/design_numbers.py (label-free: IDs/headers only, PI-checked). Tie-aware expected AP; lineage-equal-weighted per-line ΔAP; fixed sequence C1→C1b→C3→C4→C5; SESOI 0.01; 7 test / 4 val / 12 train lineages (85% of simulated draws pass label-blind checks). Compute ≈2,940 CPU-h. 11 open questions for round 2.
     - Label exposure logged (DESIGN §11.5): author's `head` printed ~10 dependency values for one line (ACH-002730) before the label guard hook existed.
   - [x] 2.2b Label guard: PreToolUse hook (.claude/hooks/guard_labels.py) blocks agent reads of raw label files; user-approved 2026-10-26; active after /hooks reload.
-  - [ ] 2.2 Review round 2 (if needed)
-  - [ ] 2.3 Review round 3 (if needed)
+  - [x] 2.3 Review round 2 (same 7 reviewers, 1–7 min each): all "revise minimally, then freeze"; 5/7 need no round 3. PI decisions: notes/design_review_r2/PI_decisions.md (17 items).
+    - [!] Split seed 20261026 compromised: round-1 stats review published its draw → test tier known. Retired; new seed supplied by the user after the freeze commit (commit-reveal).
+    - [!] Label hygiene: all-line label copy (ge_U.parquet + 11 derived files) left in scratch by a round-1 reviewer → deleted by PI; content-based scanner required. Guard hook hardened (fail-closed, labels_val, data/locked, recursive data searches) but inactive until user reloads /hooks.
+    - Medium requirement redefined (non-limiting micronutrient floor; pFBA-based req for synthesisable serum lipids); transporter gate = context; time-limited MILP incumbents accepted in all arms (fair to B7); C6 last in gatekeeping.
+    - Compute ≈2,950 CPU-h (≈1,550 MILP), wall-clock ≈125–150 h; 12 MILP + 16 LP workers (RAM-bound).
+  - [~] 2.4 DESIGN v2 (design author)
+  - [ ] 2.5 Round 3: light independent verification of v2 against round-2 must-fixes, then freeze (M1)
 - [~] 3. Baseline: generic Human1 & Human2 (pipeline agent, Opus; predictions only, no DepMap scoring until DESIGN.md fixes labels/splits)
   - [x] 3.1 Human1 = v1.19.0 (commit 022ed5c) fetched; Entrez mapping 2,874/2,887 (H1), 2,857/2,870 (H2) one-to-one; 2 unmapped (GK3P, SLC37A4 alt ENSG); join on Entrez (symbols renamed for 7–10 genes)
   - [x] 3.2 Single-gene KO, Ham's medium, Gurobi (16 WLS sessions OK): H1 149 / H2 154 lethal (ratio_r<0.01; none in 0.01–0.5); ~50 s per model on 15 workers. Verification 45/46 (only known H1 UMPS). Independent review (notes/review_baseline_ko.md): all genes recomputed with own code, max diff 2e-12 → accept with fixes; fixes applied (ratio_r rounding → bitwise-identical reruns; loud failure on non-optimal; per-release task files; SHA-pinned Human1 download).

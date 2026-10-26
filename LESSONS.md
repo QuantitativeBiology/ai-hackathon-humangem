@@ -11,3 +11,6 @@ One line per rule, with evidence. Pruned at each milestone.
 - depmap.org, Thermo/Sigma formulation pages and journal supplements block scripted downloads; batch these into one user request (notes/USER_DOWNLOADS.md) instead of retrying. (Data agent, 2026-10-26)
 - Run a specialised parallel review panel before building: round 1 found the design infeasible (non-growing media/models, ~12k CPU-h matrix) and two metric biases (ties, common essentials) before any compute was spent. (Design review r1, 2026-10-26)
 - Generate every number quoted in design/report docs from a script; the v0 design had several hand-copied counts wrong (e.g. Nusinow∩CRISPR 375 vs 309). (Data review r1, 2026-10-26)
+- Reviewers must never run the real split seed or write label summaries into committed files: a round-1 review published the seed-20261026 draw, forcing a re-seed. Give reviewers simulated seeds only. (Design review r2, 2026-10-26)
+- Hooks/settings edited mid-session don't load until /hooks or restart; verify with a live probe before relying on a guard (two probes got through). (Label guard, 2026-10-26)
+- Agents leave large intermediates (incl. label copies) in the shared scratchpad; sweep it at each milestone. (AI review r2, 2026-10-26)
