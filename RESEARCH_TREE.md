@@ -10,6 +10,7 @@ Current phase: literature and dataset survey (→ LITERATURE.md), with the gener
 
 ## Decisions
 - **D0 (2026-10-26)**: Human2 := Human-GEM v2.1.1 (local); Human1 := latest Human-GEM v1.x release (to fetch). Baseline infrastructure started before DESIGN.md is final because it uses only generic models and no DepMap labels for fitting. Git: commit locally; push only when the user asks. Time budget: multi-day effort (user, 2026-10-26); report runtime with every result.
+- **D2 (2026-10-26, user)**: ftINIT dropped entirely (user's own analysis: ftINIT underperforms the generic model). Sole comparator = generic Human1/Human2 FBA (+ label-free baselines). Add MCC, F1, precision, recall, accuracy under the Human1/Human2 papers' protocols as required secondary endpoints for comparability; AUPRC stays primary. Method-vs-tissue test kept with ≥3 non-ftINIT families. Target compute ≈1–1.5 days (user: 5–6 days too much).
 - **D1 (2026-10-26)**: results/ is committed to git (PROMPT.md requirement); files >50 MB go under results/**/tmp/ or *.large.* (ignored) and must be regenerable by a script.
 
 ## Tree
