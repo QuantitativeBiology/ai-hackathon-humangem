@@ -11,7 +11,7 @@ Literature scientist report, 2026-10-26. Scope: the eight topics set by the PI f
 1. **"Human1" needs an exact definition.** Published Human1 is v1.3.0: 13,417 reactions, 10,138 metabolites, 3,625 genes [1]. The **last v1.x release is v1.19.0** (2024-06-24): 12,971 reactions, 8,455 metabolites, 2,887 genes [L, GitHub]. The counts in the Human2 paper (2,848 genes, 12,931 reactions, 8,461 metabolites) [2] are **exactly v2.0.0**. Our local v2.1.1 has 12,748 reactions, 8,374 metabolites and 2,870 genes, with 130 GPRs changed since v2.0.1 [L]. All three are "Human2" by name, so we should benchmark the exact versions.
 2. **The reported GEM essentiality baselines are low and hard to compare.** Most report MCC ≈ 0.25–0.45 on binarised labels, after selection among many parameter sets [1, 5, 7, 17]. The only threshold-free numbers we found come from the Human-GEM repository (v2.1.1, ftINIT, Hart 2015 lines): **AUPRC 0.25–0.33 against base rates of 0.14–0.18, pooled AUPRC 0.289 against a base rate of 0.158** [L]. No published study reports per-gene or per-lineage AUPRC on DepMap at full scale with lineage hold-out. That gap is ours to fill.
 3. **Pooled metrics are inflated by gene identity.** One graph-learning predictor reports ROC 0.94 on random gene–line pairs but a mean per-gene AUROC of only 0.61 [6, P]. About 15% of Human2 metabolic genes screened in DepMap 26Q3 are DepMap "inferred common essentials" (419/2,798) [L]. Simple gene-prior baselines must be in the benchmark.
-4. **"Context-specific models cluster by method, not tissue"** is well supported for reaction content [7, 8, 9]. But almost all of that evidence comes from one lab lineage (the Lewis lab), with Recon1/Recon2.2/iHsa and NCI-60 or ≤4 cell lines. It has **not been tested on Human1/Human2 with ftINIT at DepMap scale**, so testing it there is a contribution.
+4. **"Context-specific models cluster by method, not tissue"** is well supported for reaction content [7, 8, 9]. But almost all of that evidence comes from one lab lineage (the Lewis lab), with Recon1/Recon2.2/iHsa and NCI-60 or ≤4 cell lines. ftINIT itself *has* been run at DepMap scale: Gustafsson et al. built ftINIT/tINIT models for 891 DepMap lines and scored essentiality by MCC [20]. What has **not** been tested is the method-vs-tissue question: variance partitioning of model content and predictions by extraction method vs lineage, on Human1/Human2, at DepMap scale. Testing that is a contribution. *(Corrected 2026-10-26, design review r1, PI decision 33.)*
 5. **Medium is a large, replicated confounder for metabolic essentiality** [R: 10, 11, 12]. In DepMap, culture medium associates with CRISPR dependency for 26% of variable metabolic genes versus 3% of other genes [10]. DepMap 26Q3 has per-condition medium annotation linked to each screen (`ScreenSequenceMap.ModelConditionID → ModelCondition.GrowthMedia`) [L]. Serum is the main unmodelled component.
 6. **GPR errors are a primary error source.** This is shown for E. coli with AUPRC [13], for Human1 versions [1] and for Human2 (wrong "OR" isozymes created false bypasses) [2]. Paralog buffering explains part of the variable essentiality [R: 14, 15].
 7. **Hybrid ML/FBA beats plain FBA in microbes and CHO cells** [16], but no peer-reviewed human-cancer study has shown this with a leakage-free split. The one cancer GEM+ML study (MCC 0.27 → 0.33) used random cross-validation in 50 breast lines [17].
@@ -73,7 +73,7 @@ Literature scientist report, 2026-10-26. Scope: the eight topics set by the PI f
 | Richelle 2019a [8] | Recon2.2/iHsa, 6 MEMs ± task protection | 20 NCI-60 lines | % predicted essentials with negative score | task protection +≤5% | S |
 | Tobalina 2016 [19] | fast context-specific reconstruction | 174 CCLE lines vs Achilles | agreement | conflicting; many essentials also appear with *random* expression; biomass strongly influences results | S |
 | Gustafsson 2023 [20] | Human1, ftINIT vs tINIT | 891 DepMap lines | MCC | ftINIT ≈ tINIT, >10× faster | S |
-| Vieira 2022 (Troppo) [5] | Human1-era, many threshold × MEM combos | 739 Achilles lines, CERES thresholds −1.5…−0.5 | MCC | best combination 0.44 vs <0.4 for Robinson; medium-constrained uptake improved prediction | S (best-of-grid, optimistic) |
+| Vieira 2022 (Troppo) [5] | Human-GEM template, >6,000 models, many threshold × MEM combos | **733 CCLE lines**; parameter combinations chosen using **MCF7 reference models** (fluxomics), then applied to all lines; CERES thresholds −1.5…−0.5 | MCC | best combination 0.44 vs <0.4 for Robinson; medium-constrained uptake improved prediction | S (configuration selected on one reference line, not a lineage hold-out; exact grid/selection details to re-check in full text) |
 | Kim 2026 [17] | Recon 2M.2, tINIT, MOMA ± RF on KO-flux features | 50 breast lines | MCC, sens. | MOMA MCC 0.27 (sens 0.37) → RF MCC 0.33 (sens 0.55, precision 0.31) | S, random 5-fold CV |
 | Human-GEM repo v2.1.1 | Human2, ftINIT, growth ratio | 5 Hart lines | AUPRC / base rate | 0.25–0.33 / 0.14–0.18 | L |
 
@@ -137,7 +137,7 @@ Literature scientist report, 2026-10-26. Scope: the eight topics set by the PI f
 - **Opdam 2017** [7]: the *expression threshold* drives most reaction-content variance; the *MEM* drives most variance in essentiality accuracy; uptake constraints matter least for essentiality but affect functions and growth. Stringent thresholds (top 10%, mean) gave better essentiality but fewer functions [S].
 - **Gopalakrishnan 2023** [9]: the spread of alternate optima depends strongly on the algorithm and on parent-model topology (fatty-acid metabolism, transport) [S].
 - **Counter-evidence (single method).** tINIT models of 33 tumours cluster with their tissue of origin [1]. Human2 organ models from GTEx and from independent GEO data have similarity coefficients > 0.9 [2]. ftINIT models group by tissue *and* by technology (bulk vs single-cell) [20]. So within one method, biology is visible; the problem is *between* methods and thresholds.
-- **Assessment.** The finding is consistent across these papers [R within the Lewis-lab lineage, plus [49]]. But it is (i) on Recon1/2.2/iHsa, (ii) on ≤44 lines, (iii) about reaction content more than predictions, and (iv) not tested with ftINIT on Human1/Human2 at DepMap scale.
+- **Assessment.** The finding is consistent across these papers [R within the Lewis-lab lineage, plus [49]]. But it is (i) on Recon1/2.2/iHsa, (ii) on ≤44 lines, (iii) about reaction content more than predictions, and (iv) not tested as a method-vs-tissue variance partition on Human1/Human2 at DepMap scale (ftINIT models of 891 DepMap lines exist [20], but were scored only for essentiality MCC).
 
 ### 3.3 How to test it (design-ready)
 - **Full-factorial build.** Lines × lineages × methods (≥3 families: ftINIT, iMAT-like, MBA-like such as FASTCORE/mCADRE, GIMME) × threshold rules (global percentile, ftINIT 1 TPM, StanDep/local [47]) × with and without task protection.
@@ -149,7 +149,7 @@ Literature scientist report, 2026-10-26. Scope: the eight topics set by the PI f
 ### 3.4 Thresholding
 - Thresholding is the main determinant of which reactions are "active" [54, S; consistent with 7]. Global thresholds remove low-expressed housekeeping enzymes; gene-specific thresholds help [47].
 - In Troppo, *global* thresholds affected essentiality more than local ones, and the best combinations used global + local [5].
-- **Rule for us:** fix the threshold family a priori, or tune it on training lineages only. Any best-of-grid number on the test labels is optimistic: Troppo's MCC 0.44 is a maximum over the grid [5].
+- **Rule for us:** fix the threshold family a priori, or tune it on training lineages only. Any configuration chosen with knowledge of the evaluation labels is optimistic. Troppo chose its parameter combinations using MCF7 reference models and then applied them to 733 lines [5]; its MCC 0.44 is therefore the score of a selected configuration, not a lineage-held-out estimate.
 
 ---
 
@@ -169,7 +169,7 @@ Literature scientist report, 2026-10-26. Scope: the eight topics set by the PI f
   - SCD dependency was stronger in NextGen models, probably masked by lipid-rich serum. Growth format mainly affected integrin and actin genes.
   - Organoid and spheroid screens are in DepMap; our 26Q3 `ModelCondition` lists OPAC conditions [L]. These models need their own medium definition or must be stratified.
 - **Mechanistic medium effects:** HPLM rewires metabolism. Uric acid inhibits UMPS and reduces 5-FU sensitivity [55]. Plasmax: supraphysiological pyruvate in commercial media stabilises HIF1α; arginine reverses ASL; selenium prevents ferroptosis [56]. Review [57]. Together these are [R] for "medium changes metabolic phenotype".
-- **In silico:** constraining uptake to medium-matched metabolites improved Troppo's flux and essentiality predictions [5, S]. In Opdam's grid, uptake constraints mattered least for essentiality but mattered for functions and growth [7, S]. In E. coli, many false essentiality calls came from vitamins and cofactors "available to mutants despite being absent from the medium" [13]. The human analogue is serum-derived metabolites (lipids, cholesterol, carnitine, nucleosides) [inference].
+- **In silico:** constraining uptake to medium-matched metabolites improved Troppo's flux and essentiality predictions [5, S]. In Opdam's grid, uptake constraints mattered least for essentiality but mattered for functions and growth [7, S]. In E. coli, many false essentiality calls came from vitamins and cofactors "available to mutants despite being absent from the medium" [13]. The human analogue is serum-derived metabolites (lipids, cholesterol, carnitine, nucleosides) [inference]. Cheng et al. 2023 found that cholesterol-synthesis genes are predicted essential in colorectal-cancer GEMs only when no cholesterol uptake reaction is allowed, and compared predictions with DepMap colorectal lines (abstract read) [4, S].
 
 ### 4.2 Sources of per-line medium annotation
 - **DepMap 26Q3** [L]:
@@ -186,7 +186,7 @@ Literature scientist report, 2026-10-26. Scope: the eight topics set by the PI f
 - **NCI-60 CORE** exometabolomics: 219 metabolites; glycine consumption correlates with proliferation [59].
 - **Dolfi 2013:** fluxes scale with cell volume and protein synthesis, so per-cell rates need size normalisation [60].
 - **Zielinski 2017:** NCI-60 flux states; glucose uptake correlates with chemoresistance [61].
-- **Caveat:** Robinson et al. kept only 11 NCI-60 lines with reliable exchange data [1]. Quantitative uptake bounds exist for very few DepMap lines. Medium composition gives *qualitative* availability, not rates. FBA essentiality under uptake bounds of 1000 is mostly an availability question [inference].
+- **Caveat:** Robinson et al. kept only 11 NCI-60 lines with reliable exchange data [1]. Quantitative uptake bounds exist for very few DepMap lines. Medium composition gives *qualitative* availability, not rates. FBA essentiality under uptake bounds of 1000 is mostly an availability question [inference]. The most recent Human-GEM precedent for quantitative exchange bounds is Huijer et al. 2026 [3]: regression-based exchange fluxes during exponential growth (REGP) constrained Human-GEM cell-line models much better than the common consumption-release (CORE) method; it does not address essentiality (abstract read) [S].
 
 ### 4.4 Implication for "error attributable to medium"
 The design should run a nested comparison on identical genes and lines:
@@ -214,6 +214,7 @@ Positive controls are genes with literature-documented medium dependence: ASNS (
   - Robinson et al. found that 57-task essentiality increased sensitivity over biomass-only essentiality, at some cost in specificity [1].
   - The Human-GEM repository now separates viability from capability tasks, because capability-only essentiality produces false positives against proliferation screens (e.g. ETF complex) [L].
   - Richelle 2019a protected data-inferred tasks during extraction; essentiality was still scored on biomass [8].
+- **Tasks beyond biomass for target finding.** Guil et al. 2024 added the essential metabolic tasks to genetic-minimal-cut-set analysis of Human GEMs; generic toxicities detected rose from 106 to 281, and new targets appeared in two myeloma lines (abstract read) [89, S]. Barrena et al. 2023 integrated Human1 with regulatory networks for gMCS-based essentiality and compared with large-scale silencing data [90, S].
 - **Other objectives.**
   - pFBA [63]; MOMA [64] (used for knockouts in [17]).
   - Multi-objective / Pareto optimisation of biomass vs other demands in NCI-60 [65, S].
@@ -311,6 +312,15 @@ Positive controls are genes with literature-documented medium dependence: ASNS (
 
 ---
 
+### 8.1 Searched, not found (2026-10-26)
+Absence claims in this document are absence of evidence from our searches, not proof of absence. The searches were made by the literature agent (this document) and by the prior-work reviewer (notes/design_review_r1/prior_work.md) on 2026-10-26, in PubMed, bioRxiv and general web search. **The exact query strings were not logged**; the literature agent must add them here before M1. Neither search found any of:
+- per-gene or per-lineage AUPRC of GEM essentiality predictions on DepMap at full scale with lineage hold-out;
+- an ablation that separates the gain from GPR curation from the gain from new constraints;
+- a head-to-head of flux-state features against their own input omics, with matched model capacity;
+- a released, DepMap-keyed resource of per-line Human1/Human2 SBML models other than the Human-GEM repository's own `code/DepMapGeneEss` pipeline (which produces models but does not distribute a versioned per-line resource). Metabolic Atlas (metabolicatlas.org) was **not** checked for hosted cell-line models; to do before REPORT.md.
+
+Flagged by the prior-work reviewer but **not verified** (not cited): bioRxiv 10.1101/593277, "On the inconsistent treatment of gene-protein-reaction rules in context-specific metabolic models" (authors and status unknown).
+
 ## 9. Implications for our design (actionable)
 
 ### (a) Models and labels
@@ -345,7 +355,7 @@ Positive controls are genes with literature-documented medium dependence: ASNS (
 |---|---|---|
 | Luo et al., *Reconstruction of human metabolic models with LLMs* — **SI Appendix and Datasets S01–S09; numeric values of Fig. 2D/E** | 10.1073/pnas.2516511123 | Exact MCC per Human-GEM version, the curated GPR change lists, DepMap/Project Score benchmark details. Main text was read via PMC; figure values and SI were not available. |
 | Robinson et al., *An atlas of human metabolism* — **Supplementary Figs S8–S11, Table S3** | 10.1126/scisignal.aaz1482 | MCC values for 621 DepMap lines, threshold sensitivity, biomass-only vs 57 tasks, per-version effects. Main text read via PMC. |
-| Tao et al. (DeepMeta), *Cell Reports* 2025 final version | 10.1016/j.celrep.2025.115945 | Only the bioRxiv preprint was read (10.1101/2025.02.26.640327); the final evaluation and AUPRC numbers may differ. |
+| Wu et al. (DeepMeta), *Cell Reports* 2025 final version (PDF now in `papers/`, not yet read) | 10.1016/j.celrep.2025.115945 | Only the bioRxiv preprint was read (10.1101/2025.02.26.640327); the final evaluation and AUPRC numbers may differ. |
 | Behan et al., *Prioritization of cancer therapeutic targets using CRISPR–Cas9 screens*, Nature 2019 | 10.1038/s41586-019-1103-9 | Project Score methods and labels (BAGEL, CRISPRcleanR) for our external test set; not in PMC. |
 | Hart et al., *High-resolution CRISPR screens reveal fitness genes…*, Cell 2015 | 10.1016/j.cell.2015.11.015 | Label definitions behind the Human-GEM repository benchmark (BF thresholds); not in PMC. |
 | Ito et al., *Paralog knockout profiling…*, Nat Genet 2021 | 10.1038/s41588-021-00967-z | 5,065 paralog pairs in a dual-knockout screen: direct test data for OR rules. Abstract only. |
@@ -364,9 +374,10 @@ Also unread but available on PMC if needed: Bernstein 2023 [13], Moscardó Garc�
 
 1. Robinson JL et al. An atlas of human metabolism. *Sci Signal* 2020;13:eaaz1482. doi:10.1126/scisignal.aaz1482. PMID 32209698.
 2. Luo J et al. Reconstruction of human metabolic models with large language models. *PNAS* 2026;123(15):e2516511123. doi:10.1073/pnas.2516511123. PMID 41950094.
-3–4. (numbers not used)
-5. Vieira et al. A pipeline for the reconstruction and evaluation of context-specific human metabolic models at a large-scale (Troppo). *PLoS Comput Biol* 2022. doi:10.1371/journal.pcbi.1009294. PMID 35749559.
-6. Tao W et al. Precise metabolic dependencies of cancer through deep learning and validations (DeepMeta). bioRxiv 2025, doi:10.1101/2025.02.26.640327; published *Cell Rep* 2025, doi:10.1016/j.celrep.2025.115945 (PMID 40616842; final version not read).
+3. Huijer CAM, Jiao X, Chen Y, Yu R. Improved flux profiling in genome-scale modeling of human cell metabolism. *Cell Rep Methods* 2026;6(1):101275. doi:10.1016/j.crmeth.2025.101275. PMID 41529686. (Added 2026-10-26, design review r1; abstract read.)
+4. Cheng CT, Lai JM, Chang PM, Hong YR, Huang CF, Wang FS. Identifying essential genes in genome-scale metabolic models of consensus molecular subtypes of colorectal cancer. *PLoS One* 2023;18:e0286032. doi:10.1371/journal.pone.0286032. PMID 37205704. (Added 2026-10-26; abstract read.)
+5. Vieira V, Ferreira J, Rocha M. A pipeline for the reconstruction and evaluation of context-specific human metabolic models at a large-scale (Troppo). *PLoS Comput Biol* 2022;18:e1009294. doi:10.1371/journal.pcbi.1009294. PMID 35749559. (733 CCLE lines; MCF7 reference used for parameter choice — per PubMed abstract, checked 2026-10-26.)
+6. Wu T, Zhao X, …, Liu XS. Precise metabolic dependencies of cancer through deep learning and validations (DeepMeta). *Cell Rep* 2025;44(7):115945. doi:10.1016/j.celrep.2025.115945. PMID 40616842 (confirmed in PubMed 2026-10-26; first author corrected from "Tao W"). Preprint: bioRxiv 2025, doi:10.1101/2025.02.26.640327 (the version read).
 7. Opdam S et al. A systematic evaluation of methods for tailoring genome-scale metabolic models. *Cell Syst* 2017;4:318–329. doi:10.1016/j.cels.2017.01.010. PMID 28215528.
 8. Richelle A et al. Increasing consensus of context-specific metabolic models by integrating data-inferred cell functions. *PLoS Comput Biol* 2019;15:e1006867. doi:10.1371/journal.pcbi.1006867. PMID 30986217.
 9. Gopalakrishnan S et al. Guidelines for extracting biologically relevant context-specific metabolic models using gene expression data. *Metab Eng* 2023;75:181. doi:10.1016/j.ymben.2022.12.003. PMID 36566974.
@@ -384,7 +395,7 @@ Also unread but available on PMC if needed: Bernstein 2023 [13], Moscardó Garc�
 21. Gatto F, Miess H, Schulze A et al. Flux balance analysis predicts essential genes in clear cell renal cell carcinoma metabolism. *Sci Rep* 2015;5:10738. doi:10.1038/srep10738. PMID 26040780 (abstract-level use only).
 22. Dempster JM et al. Chronos: a cell population dynamics model of CRISPR experiments that improves inference of gene fitness effects. *Genome Biol* 2021. doi:10.1186/s13059-021-02540-7. PMID 34930405.
 23. Hart T et al. Measuring error rates in genomic perturbation screens: gold standards for human functional genomics. *Mol Syst Biol* 2014;10:733. doi:10.15252/msb.20145216. PMID 24987113.
-24. Hart T et al. Evaluation and design of genome-wide CRISPR/SpCas9 knockout screens. *G3* 2017;7:2719. doi:10.1534/g3.117.041277. PMID 28655737. (Hart 2015 Cell, doi:10.1016/j.cell.2015.11.015, PMID 26627737, is the TKO screen source.)
+24. Hart T et al. Evaluation and design of genome-wide CRISPR/SpCas9 knockout screens. *G3* 2017;7:2719. doi:10.1534/g3.117.041277. PMID 28655737. (Hart 2015 *Cell*, the TKO screen source, is now ref 91.)
 25. Vinceti A et al. CoRe: a robustly benchmarked R package for identifying core-fitness genes in genome-wide pooled CRISPR-Cas9 screens. *BMC Genomics* 2021. doi:10.1186/s12864-021-08129-5. PMID 34789150.
 26. Dempster JM et al. Agreement between two large pan-cancer CRISPR-Cas9 gene dependency data sets. *Nat Commun* 2019. doi:10.1038/s41467-019-13805-y. PMID 31862961.
 27. Pacini C et al. Integrated cross-study datasets of genetic dependencies in cancer. *Nat Commun* 2021. doi:10.1038/s41467-021-21898-7. PMID 33712601.
@@ -449,6 +460,10 @@ Also unread but available on PMC if needed: Bernstein 2023 [13], Moscardó Garc�
 86. Saito T, Rehmsmeier M. The precision-recall plot is more informative than the ROC plot when evaluating binary classifiers on imbalanced datasets. *PLoS One* 2015;10:e0118432. doi:10.1371/journal.pone.0118432. PMID 25738806.
 87. McDermott MBA et al. A closer look at AUROC and AUPRC under class imbalance. NeurIPS 2024; arXiv:2401.06091. [abstract only]
 88. Kapoor S, Narayanan A. Leakage and the reproducibility crisis in machine-learning-based science. *Patterns* 2023;4:100804. doi:10.1016/j.patter.2023.100804. PMID 37720327.
+89. Guil F, García R, García JM. Adding metabolic tasks to human GEM models to improve the study of gene targets and their associated toxicities. *Sci Rep* 2024;14:17265. doi:10.1038/s41598-024-68073-8. PMID 39068208. (Added 2026-10-26; abstract read.)
+90. Barrena N, Valcárcel LV, Olaverri-Mendizabal D, Apaolaza I, Planes FJ. Synthetic lethality in large-scale integrated metabolic and regulatory network models of human cells. *NPJ Syst Biol Appl* 2023;9:32. doi:10.1038/s41540-023-00296-3. PMID 37454223. (Added 2026-10-26; abstract read; Human1 + regulatory networks, gMCS essentiality vs in-vitro silencing data.)
+91. Hart T et al. High-resolution CRISPR screens reveal fitness genes and genotype-specific cancer liabilities. *Cell* 2015;163:1515. doi:10.1016/j.cell.2015.11.015. PMID 26627737. (Split out of ref 24, 2026-10-26.)
+92. McSherry F, Najork M. Computing information retrieval performance measures efficiently in the presence of tied scores. *ECIR 2008*, LNCS 4956. (Tie-aware expected AP used in DESIGN.md §6; computer-science venue, not in PubMed; title/venue as given by the statistics reviewer — verify against the Springer record before M1.)
 
 Other DepMap resources cited: Tsherniak A et al. Defining a cancer dependency map. *Cell* 2017;170:564. doi:10.1016/j.cell.2017.06.010. PMID 28753430. Meyers RM et al. (CERES). *Nat Genet* 2017;49:1779. doi:10.1038/ng.3984. PMID 29083409. Ghandi M et al. (CCLE 2019). *Nature* 2019;569:503. doi:10.1038/s41586-019-1186-3. PMID 31068700. Thiele I et al. (Recon 2). *Nat Biotechnol* 2013;31:419. doi:10.1038/nbt.2488. PMID 23455439. Brunk E et al. (Recon3D). *Nat Biotechnol* 2018;36:272. doi:10.1038/nbt.4072. PMID 29457794.
 

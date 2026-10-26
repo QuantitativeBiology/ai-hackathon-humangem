@@ -25,11 +25,11 @@ Contents of `data/` are not versioned (only this file is). Re-download from the 
 | `Model.csv` | 2,554 models | Cell line annotation (lineage, OncoTree, etc.) |
 | `AchillesCommonEssentialControls.csv`, `CRISPRInferredCommonEssentials.csv` | gene lists | |
 
-Gene columns are labelled `SYMBOL (EntrezID)`; join to Human-GEM on Entrez ID (2,798 / 2,868 GEM genes with Entrez IDs are in `CRISPRGeneEffect.csv`).
+Gene columns are labelled `SYMBOL (EntrezID)`; join to Human-GEM on Entrez ID (screened-gene counts per model: `results/design/design_numbers.json` → `genes`).
 
 ## Additional datasets (fetched 2026-10-26 by `scripts/download_<name>.py`)
 - `proteomics_nusinow/`: `protein_quant_current_normalized.csv.gz` (12,755 protein rows x ~420 TMT channels; columns `Protein_Id, Gene_Symbol, ..., <CellLine_Tissue_TMTplex>`; includes bridge/replicate channels), `Table_S1_Sample_Information.xlsx` (channel -> CCLE name), `Table_S4_...xlsx`. Names are CCLE names, map to DepMap `Model.csv:CCLEName`.
-- `metabolomics_ccle/`: `CCLE_metabolomics_20190502.csv` (928 lines x 225 metabolites, has `DepMap_ID`), `Cell_lines_annotations_20181226.txt`.
+- `metabolomics_ccle/`: `CCLE_metabolomics_20190502.csv` (928 rows = 927 unique lines x 225 metabolites, has `DepMap_ID`), `Cell_lines_annotations_20181226.txt`.
 - `prism/repurposing_24Q2/`: single-dose PRISM Repurposing Public 24Q2 (LFC collapsed per compound, `Extended_Primary_Data_Matrix`, treatment and cell-line metadata, README). `prism/repurposing_20Q2_secondary/`: multi-dose curve parameters (AUC, IC50) for the secondary screen. Cell lines are keyed by DepMap ID (24Q2 `Cell_Line_Meta_Data` uses `depmap_id`).
 - `gdsc/`: GDSC1 and GDSC2 fitted dose-response (IC50, AUC, Z-score; xlsx), screened compounds, cell line details (COSMIC IDs).
 - `complexes/`: `complexportal_9606.tsv` (human complexes, UniProt members), `corum_humanComplexes.txt` + `corum_uniprotCorumMapping.txt` (CORUM 5.1).

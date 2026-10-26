@@ -1,0 +1,911 @@
+{
+ "_meta": {
+  "script": "scripts/design_numbers.py",
+  "generated": "2026-10-26 15:32",
+  "label_values_read": false,
+  "performance_computed": false
+ },
+ "cohort": {
+  "n_screened_lines": 1361,
+  "n_crispr_gene_columns": 18434,
+  "n_lineages": 30,
+  "lineage_counts": {
+   "CNS/Brain": 133,
+   "Lung": 126,
+   "Lymphoid": 97,
+   "Esophagus/Stomach": 96,
+   "Bowel": 85,
+   "Head and Neck": 77,
+   "Skin": 75,
+   "Pancreas": 71,
+   "Breast": 67,
+   "Ovary/Fallopian Tube": 62,
+   "Bone": 59,
+   "Soft Tissue": 50,
+   "Peripheral Nervous System": 47,
+   "Myeloid": 45,
+   "Uterus": 38,
+   "Biliary Tract": 36,
+   "Kidney": 35,
+   "Bladder/Urinary Tract": 34,
+   "Liver": 25,
+   "Pleura": 21,
+   "Prostate": 19,
+   "Cervix": 18,
+   "Eye": 15,
+   "Thyroid": 11,
+   "Ampulla of Vater": 9,
+   "Testis": 5,
+   "Vulva/Vagina": 2,
+   "Other": 1,
+   "Adrenal Gland": 1,
+   "Fibroblast": 1
+  },
+  "n_eligible_lineages": 23,
+  "n_lines_eligible_lineages": 1331,
+  "rare_lineages": {
+   "Thyroid": 11,
+   "Ampulla of Vater": 9,
+   "Testis": 5,
+   "Vulva/Vagina": 2,
+   "Other": 1,
+   "Adrenal Gland": 1,
+   "Fibroblast": 1
+  },
+  "n_lines_rare": 30,
+  "model_type_screened": {
+   "Cell Line": 1253,
+   "Organoid": 108
+  }
+ },
+ "label_files": {
+  "dependency_present": true,
+  "dependency_n_lines": 1361,
+  "dependency_n_gene_columns": 18434,
+  "dependency_lines_equal_effect": true,
+  "dependency_columns_equal_effect": true,
+  "dependency_lines_only_in_dep": 0,
+  "dependency_lines_only_in_effect": 0,
+  "dependency_cols_only_in_effect": 0
+ },
+ "genes": {
+  "human1_model_genes": 2887,
+  "human2_model_genes": 2870,
+  "human1_screened": 2825,
+  "human2_screened": 2807,
+  "U_union": 2866,
+  "U_intersection": 2766,
+  "U_only_human1": 59,
+  "U_only_human2": 41,
+  "depmap_inferred_common_essentials_total": 2263,
+  "depmap_inferred_common_essentials_in_U": 438,
+  "achilles_common_essential_controls_in_U": 226,
+  "achilles_nonessential_controls_in_U": 79
+ },
+ "baseline_ko": {
+  "human1": {
+   "genes": 2887,
+   "lethal_lt_0.01": 149,
+   "ratio_eq_1": 2664,
+   "distinct_ratio_r": 24,
+   "solver_values": [
+    "gurobi"
+   ],
+   "panel_ratio_r": {
+    "PPAT": 1.0,
+    "GART": 1.0,
+    "PFAS": 1.0,
+    "PAICS": 1.0,
+    "ADSL": 1.0,
+    "ATIC": 1.0,
+    "IMPDH2": 1.0,
+    "GMPS": 0.0,
+    "TYMS": 0.997546,
+    "DHFR": 1.0,
+    "DHODH": 1.0,
+    "UMPS": 1.0,
+    "CAD": 0.0,
+    "SQLE": 0.0,
+    "LSS": 0.0,
+    "DHCR7": 0.0,
+    "HMGCR": 0.0,
+    "MVK": 0.0,
+    "HMGCS1": 1.0,
+    "FDPS": 1.0,
+    "FASN": 0.0,
+    "ACACA": 0.0,
+    "SCD": 1.0,
+    "ASNS": 1.0,
+    "GOT1": 1.0,
+    "GOT2": 1.0,
+    "PHGDH": 1.0,
+    "PSAT1": 0.0,
+    "NAMPT": 1.0,
+    "SLC7A11": 1.0,
+    "ACADL": 1.0,
+    "HADHA": 0.999788,
+    "ECHS1": 1.0,
+    "CYP4F2": 1.0,
+    "BBOX1": 0.0,
+    "TMLHE": 0.0
+   },
+   "genes_closing_no_reaction": 1801,
+   "knockouts_wall_s_15workers": 52.6,
+   "addressable_genes_ko_closes_reaction": 1086
+  },
+  "human2": {
+   "genes": 2870,
+   "lethal_lt_0.01": 154,
+   "ratio_eq_1": 2625,
+   "distinct_ratio_r": 32,
+   "solver_values": [
+    "gurobi"
+   ],
+   "panel_ratio_r": {
+    "PPAT": 1.0,
+    "GART": 1.0,
+    "PFAS": 1.0,
+    "PAICS": 1.0,
+    "ADSL": 1.0,
+    "ATIC": 1.0,
+    "IMPDH2": 1.0,
+    "GMPS": 0.0,
+    "TYMS": 1.0,
+    "DHFR": 1.0,
+    "DHODH": 0.0,
+    "UMPS": 0.0,
+    "CAD": 0.0,
+    "SQLE": 0.0,
+    "LSS": 0.0,
+    "DHCR7": 0.0,
+    "HMGCR": 0.0,
+    "MVK": 0.0,
+    "HMGCS1": 1.0,
+    "FDPS": 1.0,
+    "FASN": 0.0,
+    "ACACA": 0.0,
+    "SCD": 1.0,
+    "ASNS": 1.0,
+    "GOT1": 1.0,
+    "GOT2": 1.0,
+    "PHGDH": 1.0,
+    "PSAT1": 0.0,
+    "NAMPT": 1.0,
+    "SLC7A11": 1.0,
+    "ACADL": 0.0,
+    "HADHA": 0.0,
+    "ECHS1": 0.0,
+    "CYP4F2": 0.0,
+    "BBOX1": 0.0,
+    "TMLHE": 0.0
+   },
+   "genes_closing_no_reaction": 1750,
+   "knockouts_wall_s_15workers": 55.5,
+   "addressable_genes_ko_closes_reaction": 1120
+  }
+ },
+ "tasks": {
+  "essential_n_tasks": 57,
+  "essential_by_category": {
+   "BS": 18,
+   "SU": 17,
+   "IC": 12,
+   "ER": 9,
+   "GR": 1
+  },
+  "essential_n_groups": 11,
+  "essential_group_names": [
+   "Rephosphorylation of nucleoside triphosphates",
+   "De novo synthesis of nucleotides",
+   "Uptake of essential amino acids",
+   "De novo synthesis of key intermediates",
+   "De novo synthesis of other compounds",
+   "Protein turnover",
+   "Electron transport chain and TCA",
+   "Beta oxidation of fatty acids",
+   "De novo synthesis of phospholipids",
+   "Vitamins and co-factors",
+   "Growth"
+  ],
+  "cellfie_n_tasks": 195,
+  "hams_gr_inputs_n": 44,
+  "hams_gr_inputs": [
+   "arginine[e]",
+   "histidine[e]",
+   "lysine[e]",
+   "methionine[e]",
+   "phenylalanine[e]",
+   "tryptophan[e]",
+   "tyrosine[e]",
+   "alanine[e]",
+   "glycine[e]",
+   "serine[e]",
+   "threonine[e]",
+   "aspartate[e]",
+   "glutamate[e]",
+   "asparagine[e]",
+   "glutamine[e]",
+   "isoleucine[e]",
+   "leucine[e]",
+   "proline[e]",
+   "valine[e]",
+   "cysteine[e]",
+   "thiamin[e]",
+   "hypoxanthine[e]",
+   "folate[e]",
+   "biotin[e]",
+   "pantothenate[e]",
+   "choline[e]",
+   "inositol[e]",
+   "nicotinamide[e]",
+   "pyridoxine[e]",
+   "riboflavin[e]",
+   "thymidine[e]",
+   "aquacob(III)alamin[e]",
+   "lipoic acid[e]",
+   "glucose[e]",
+   "sulfate[e]",
+   "linoleate[e]",
+   "linolenate[e]",
+   "O2[e]",
+   "H2O[e]",
+   "retinoate[e]",
+   "Fe2+[e]",
+   "Pi[e]",
+   "alpha-tocopherol[e]",
+   "gamma-tocopherol[e]"
+  ]
+ },
+ "hart_reference": {
+  "DLD1": {
+   "growthAUPRC": 0.3101,
+   "baseRate": 0.1669,
+   "viabilityMCC": 0.3614
+  },
+  "GBM": {
+   "growthAUPRC": 0.2946,
+   "baseRate": 0.1614,
+   "viabilityMCC": 0.3399
+  },
+  "HCT116": {
+   "growthAUPRC": 0.326,
+   "baseRate": 0.1791,
+   "viabilityMCC": 0.3652
+  },
+  "HELA": {
+   "growthAUPRC": 0.2648,
+   "baseRate": 0.1449,
+   "viabilityMCC": 0.3033
+  },
+  "RPE1": {
+   "growthAUPRC": 0.2501,
+   "baseRate": 0.1359,
+   "viabilityMCC": 0.2963
+  },
+  "all": {
+   "growthAUPRC": 0.2892,
+   "baseRate": 0.1579,
+   "viabilityMCC": null
+  }
+ },
+ "coverage_screened": {
+  "expression_default": 1292,
+  "no_expression": 69,
+  "cn_wgs_default": 1221,
+  "no_cn": 140,
+  "mutation_matrix": 1361,
+  "expr_and_cn": 1214,
+  "nusinow_raw_mapped_total": 375,
+  "nusinow_screened": 309,
+  "nusinow_screened_with_expr": 308,
+  "harmonized_gygi_total": 375,
+  "harmonized_gygi_screened": 309,
+  "procan_mapped_total": 947,
+  "procan_screened": 598,
+  "any_proteomics_screened": 659,
+  "metabolomics_total": 927,
+  "metabolomics_screened": 652,
+  "prism_24q2_or_20q2_screened": 735,
+  "ctrp_screened": 612,
+  "gdsc_screened": null
+ },
+ "coverage_by_lineage": {
+  "CNS/Brain": {
+   "screened": 133,
+   "expr": 126,
+   "cn": 110,
+   "proteomics_any": 46,
+   "nusinow": 12,
+   "metabolomics": 44,
+   "prism": 58
+  },
+  "Lung": {
+   "screened": 126,
+   "expr": 123,
+   "cn": 117,
+   "proteomics_any": 101,
+   "nusinow": 62,
+   "metabolomics": 102,
+   "prism": 87
+  },
+  "Lymphoid": {
+   "screened": 97,
+   "expr": 96,
+   "cn": 85,
+   "proteomics_any": 54,
+   "nusinow": 16,
+   "metabolomics": 60,
+   "prism": 44
+  },
+  "Esophagus/Stomach": {
+   "screened": 96,
+   "expr": 89,
+   "cn": 87,
+   "proteomics_any": 54,
+   "nusinow": 25,
+   "metabolomics": 51,
+   "prism": 51
+  },
+  "Bowel": {
+   "screened": 85,
+   "expr": 81,
+   "cn": 76,
+   "proteomics_any": 39,
+   "nusinow": 24,
+   "metabolomics": 40,
+   "prism": 36
+  },
+  "Head and Neck": {
+   "screened": 77,
+   "expr": 63,
+   "cn": 58,
+   "proteomics_any": 39,
+   "nusinow": 10,
+   "metabolomics": 28,
+   "prism": 38
+  },
+  "Skin": {
+   "screened": 75,
+   "expr": 74,
+   "cn": 71,
+   "proteomics_any": 32,
+   "nusinow": 24,
+   "metabolomics": 35,
+   "prism": 41
+  },
+  "Pancreas": {
+   "screened": 71,
+   "expr": 69,
+   "cn": 67,
+   "proteomics_any": 29,
+   "nusinow": 18,
+   "metabolomics": 35,
+   "prism": 40
+  },
+  "Breast": {
+   "screened": 67,
+   "expr": 65,
+   "cn": 64,
+   "proteomics_any": 35,
+   "nusinow": 24,
+   "metabolomics": 33,
+   "prism": 28
+  },
+  "Ovary/Fallopian Tube": {
+   "screened": 62,
+   "expr": 59,
+   "cn": 55,
+   "proteomics_any": 35,
+   "nusinow": 12,
+   "metabolomics": 40,
+   "prism": 40
+  },
+  "Bone": {
+   "screened": 59,
+   "expr": 49,
+   "cn": 51,
+   "proteomics_any": 26,
+   "nusinow": 7,
+   "metabolomics": 13,
+   "prism": 25
+  },
+  "Soft Tissue": {
+   "screened": 50,
+   "expr": 49,
+   "cn": 46,
+   "proteomics_any": 9,
+   "nusinow": 4,
+   "metabolomics": 7,
+   "prism": 28
+  },
+  "Peripheral Nervous System": {
+   "screened": 47,
+   "expr": 40,
+   "cn": 40,
+   "proteomics_any": 22,
+   "nusinow": 1,
+   "metabolomics": 16,
+   "prism": 17
+  },
+  "Myeloid": {
+   "screened": 45,
+   "expr": 43,
+   "cn": 40,
+   "proteomics_any": 25,
+   "nusinow": 12,
+   "metabolomics": 31,
+   "prism": 24
+  },
+  "Uterus": {
+   "screened": 38,
+   "expr": 38,
+   "cn": 37,
+   "proteomics_any": 21,
+   "nusinow": 11,
+   "metabolomics": 24,
+   "prism": 29
+  },
+  "Biliary Tract": {
+   "screened": 36,
+   "expr": 36,
+   "cn": 34,
+   "proteomics_any": 3,
+   "nusinow": 1,
+   "metabolomics": 5,
+   "prism": 28
+  },
+  "Kidney": {
+   "screened": 35,
+   "expr": 32,
+   "cn": 30,
+   "proteomics_any": 17,
+   "nusinow": 12,
+   "metabolomics": 19,
+   "prism": 22
+  },
+  "Bladder/Urinary Tract": {
+   "screened": 34,
+   "expr": 34,
+   "cn": 33,
+   "proteomics_any": 16,
+   "nusinow": 11,
+   "metabolomics": 23,
+   "prism": 28
+  },
+  "Liver": {
+   "screened": 25,
+   "expr": 25,
+   "cn": 25,
+   "proteomics_any": 18,
+   "nusinow": 13,
+   "metabolomics": 22,
+   "prism": 20
+  },
+  "Pleura": {
+   "screened": 21,
+   "expr": 21,
+   "cn": 20,
+   "proteomics_any": 7,
+   "nusinow": 3,
+   "metabolomics": 9,
+   "prism": 10
+  },
+  "Prostate": {
+   "screened": 19,
+   "expr": 19,
+   "cn": 15,
+   "proteomics_any": 6,
+   "nusinow": 5,
+   "metabolomics": 5,
+   "prism": 5
+  },
+  "Cervix": {
+   "screened": 18,
+   "expr": 18,
+   "cn": 18,
+   "proteomics_any": 10,
+   "nusinow": 0,
+   "metabolomics": 0,
+   "prism": 12
+  },
+  "Eye": {
+   "screened": 15,
+   "expr": 15,
+   "cn": 13,
+   "proteomics_any": 0,
+   "nusinow": 0,
+   "metabolomics": 0,
+   "prism": 3
+  },
+  "Thyroid": {
+   "screened": 11,
+   "expr": 11,
+   "cn": 11,
+   "proteomics_any": 9,
+   "nusinow": 2,
+   "metabolomics": 7,
+   "prism": 10
+  },
+  "Ampulla of Vater": {
+   "screened": 9,
+   "expr": 9,
+   "cn": 9,
+   "proteomics_any": 0,
+   "nusinow": 0,
+   "metabolomics": 2,
+   "prism": 5
+  },
+  "Testis": {
+   "screened": 5,
+   "expr": 4,
+   "cn": 5,
+   "proteomics_any": 2,
+   "nusinow": 0,
+   "metabolomics": 0,
+   "prism": 3
+  },
+  "Vulva/Vagina": {
+   "screened": 2,
+   "expr": 2,
+   "cn": 2,
+   "proteomics_any": 2,
+   "nusinow": 0,
+   "metabolomics": 0,
+   "prism": 1
+  },
+  "Other": {
+   "screened": 1,
+   "expr": 0,
+   "cn": 0,
+   "proteomics_any": 1,
+   "nusinow": 0,
+   "metabolomics": 0,
+   "prism": 0
+  },
+  "Adrenal Gland": {
+   "screened": 1,
+   "expr": 1,
+   "cn": 1,
+   "proteomics_any": 1,
+   "nusinow": 0,
+   "metabolomics": 0,
+   "prism": 1
+  },
+  "Fibroblast": {
+   "screened": 1,
+   "expr": 1,
+   "cn": 1,
+   "proteomics_any": 0,
+   "nusinow": 0,
+   "metabolomics": 1,
+   "prism": 1
+  }
+ },
+ "resource_scope": {
+  "default_expression_models": 2130,
+  "excluded_noncancer": 100,
+  "resource_models": 2030,
+  "resource_models_screened": 1277,
+  "resource_models_not_benchmarkable": 753
+ },
+ "screens": {
+  "library_class_counts": {
+   "Avana-containing": 1048,
+   "Humagne-only": 194,
+   "KY-only": 118,
+   "other": 1
+  },
+  "screen_type_counts": {
+   "2DS": 1204,
+   "3DO": 94,
+   "2DN": 26,
+   "3DN": 16,
+   "2DO": 14,
+   "2DR": 6,
+   "2DD+2DS": 1
+  },
+  "models_with_2plus_screens": 227
+ },
+ "medium": {
+  "tier_counts": {
+   "screen": 1225,
+   "imputed": 74,
+   "onboarded": 56,
+   "screen_mixed": 6
+  },
+  "screen_vs_onboarded_text_disagree": 57,
+  "screen_and_onboarded_both_present": 1220,
+  "base_class_counts": {
+   "sheet:RPMI": 582,
+   "sheet:DMEM": 185,
+   "sheet:MEM/EMEM": 115,
+   "organoid": 109,
+   "imputed": 74,
+   "sheet:DMEM:F12": 64,
+   "sheet:F12": 46,
+   "other_defined": 45,
+   "stem": 41,
+   "sheet:IMDM": 39,
+   "sheet:McCoy's 5A": 21,
+   "mixture_of_sheets": 18,
+   "sheet:L-15": 16,
+   "screen_mixed": 6
+  },
+  "mappable_to_requested_sheets": 1068,
+  "mappable_incl_mixtures": 1086,
+  "no_fbs_in_text": 160,
+  "screen_tier_sheet_mappable": 1018,
+  "screen_tier_sheet_or_mixture": 1034,
+  "onboarded_tier_sheet_or_mixture": 52,
+  "unmappable_organoid_stem_other": 195,
+  "kyonly_lines": 118,
+  "kyonly_without_screen_medium": 115,
+  "media_files_present": [
+   "DMEM_F12_NoGlutamine_NoHEPES.xlsx",
+   "DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx",
+   "IMDM_NoPhenolRed.xlsx",
+   "aau7314_sm.pdf",
+   "mmc1.xlsx",
+   "rpmi1640_ATCC.xlsx"
+  ],
+  "lineages_with_2_media_ge8": [
+   "Bladder/Urinary Tract",
+   "Bone",
+   "Breast",
+   "CNS/Brain",
+   "Head and Neck",
+   "Lung",
+   "Ovary/Fallopian Tube",
+   "Pancreas",
+   "Peripheral Nervous System",
+   "Pleura",
+   "Skin",
+   "Soft Tissue",
+   "Uterus"
+  ],
+  "n_lineages_with_2_media_ge8": 13
+ },
+ "backgrounds": {
+  "MTAP_del": {
+   "rule": "relCN(MTAP)<0.3",
+   "mechanism": "expected FBA failure (MTA/PRMT5)",
+   "n_screened_members": 233,
+   "n_screened_status_known": 1221,
+   "top_lineages": {
+    "CNS/Brain": 47,
+    "Pancreas": 24,
+    "Lung": 22,
+    "Myeloid": 15
+   },
+   "within_lineage_eligible_lineages": 19,
+   "members_in_eligible_lineages": 228,
+   "sens_relCN_0.1": 203,
+   "sens_relCN_0.5": 312
+  },
+  "ENO1_del": {
+   "rule": "relCN(ENO1)<0.3",
+   "mechanism": "ENO2",
+   "n_screened_members": 0,
+   "n_screened_status_known": 1221,
+   "top_lineages": {},
+   "within_lineage_eligible_lineages": 0,
+   "members_in_eligible_lineages": 0
+  },
+  "ME2_loss": {
+   "rule": "relCN(ME2)<0.3 or damaging",
+   "mechanism": "ME3",
+   "n_screened_members": 27,
+   "n_screened_status_known": 1361,
+   "top_lineages": {
+    "Pancreas": 7,
+    "Esophagus/Stomach": 4,
+    "Head and Neck": 3,
+    "Breast": 2
+   },
+   "within_lineage_eligible_lineages": 3,
+   "members_in_eligible_lineages": 14
+  },
+  "NAPRT_silenced": {
+   "rule": "log2(TPM+1)(NAPRT)<1",
+   "mechanism": "NAMPT",
+   "n_screened_members": 30,
+   "n_screened_status_known": 1292,
+   "top_lineages": {
+    "CNS/Brain": 7,
+    "Bone": 5,
+    "Peripheral Nervous System": 4,
+    "Breast": 3
+   },
+   "within_lineage_eligible_lineages": 4,
+   "members_in_eligible_lineages": 19
+  },
+  "ASS1_silenced": {
+   "rule": "log2(TPM+1)(ASS1)<1",
+   "mechanism": "arginine import",
+   "n_screened_members": 161,
+   "n_screened_status_known": 1292,
+   "top_lineages": {
+    "Skin": 39,
+    "Lymphoid": 35,
+    "CNS/Brain": 13,
+    "Myeloid": 12
+   },
+   "within_lineage_eligible_lineages": 14,
+   "members_in_eligible_lineages": 152
+  },
+  "NRF2_active": {
+   "rule": "KEAP1 damaging/del or NFE2L2 hotspot",
+   "mechanism": "SLC7A11/cystine, NADPH",
+   "n_screened_members": 49,
+   "n_screened_status_known": 1361,
+   "top_lineages": {
+    "Lung": 16,
+    "Esophagus/Stomach": 8,
+    "Head and Neck": 5,
+    "Uterus": 4
+   },
+   "within_lineage_eligible_lineages": 5,
+   "members_in_eligible_lineages": 36
+  },
+  "STK11_loss": {
+   "rule": "STK11 damaging or del",
+   "mechanism": "CPS1/pyrimidine",
+   "n_screened_members": 59,
+   "n_screened_status_known": 1361,
+   "top_lineages": {
+    "Lung": 27,
+    "Cervix": 9,
+    "Ovary/Fallopian Tube": 4,
+    "Esophagus/Stomach": 3
+   },
+   "within_lineage_eligible_lineages": 4,
+   "members_in_eligible_lineages": 43
+  },
+  "FH_SDH_loss": {
+   "rule": "FH/SDHx damaging or del",
+   "mechanism": "TCA truncation",
+   "n_screened_members": 34,
+   "n_screened_status_known": 1361,
+   "top_lineages": {
+    "Esophagus/Stomach": 5,
+    "CNS/Brain": 5,
+    "Head and Neck": 4,
+    "Lymphoid": 3
+   },
+   "within_lineage_eligible_lineages": 4,
+   "members_in_eligible_lineages": 17
+  },
+  "IDH_mut": {
+   "rule": "IDH1/2 hotspot",
+   "mechanism": "2-HG (needs added reaction)",
+   "n_screened_members": 8,
+   "n_screened_status_known": 1361,
+   "top_lineages": {
+    "CNS/Brain": 2,
+    "Biliary Tract": 2,
+    "Soft Tissue": 1,
+    "Skin": 1
+   },
+   "within_lineage_eligible_lineages": 0,
+   "members_in_eligible_lineages": 0
+  },
+  "PHGDH_amp": {
+   "rule": "relCN(PHGDH)>=2",
+   "mechanism": "serine synthesis",
+   "n_screened_members": 30,
+   "n_screened_status_known": 1221,
+   "top_lineages": {
+    "Bone": 5,
+    "Esophagus/Stomach": 4,
+    "Skin": 4,
+    "Breast": 4
+   },
+   "within_lineage_eligible_lineages": 5,
+   "members_in_eligible_lineages": 20
+  },
+  "KRAS_hotspot_negctrl": {
+   "rule": "KRAS hotspot",
+   "mechanism": "signalling negative control",
+   "n_screened_members": 209,
+   "n_screened_status_known": 1361,
+   "top_lineages": {
+    "Pancreas": 63,
+    "Bowel": 43,
+    "Lung": 38,
+    "Biliary Tract": 13
+   },
+   "within_lineage_eligible_lineages": 11,
+   "members_in_eligible_lineages": 197
+  }
+ },
+ "mutation_matrix_values": {
+  "damaging_STK11": {
+   "0.0": 2324,
+   "2.0": 57,
+   "1.0": 14
+  }
+ },
+ "split_simulation": {
+  "note": "1000 simulated draws on seeds 1..1000 (real seed 20261026+attempt NOT evaluated)",
+  "strata": {
+   "S1": [
+    "CNS/Brain",
+    "Lung",
+    "Lymphoid",
+    "Esophagus/Stomach",
+    "Bowel",
+    "Head and Neck",
+    "Skin",
+    "Pancreas"
+   ],
+   "S2": [
+    "Breast",
+    "Ovary/Fallopian Tube",
+    "Bone",
+    "Soft Tissue",
+    "Peripheral Nervous System",
+    "Myeloid",
+    "Uterus",
+    "Biliary Tract"
+   ],
+   "S3": [
+    "Kidney",
+    "Bladder/Urinary Tract",
+    "Liver",
+    "Pleura",
+    "Prostate",
+    "Cervix",
+    "Eye"
+   ]
+  },
+  "alloc_test": {
+   "S1": 2,
+   "S2": 2,
+   "S3": 3
+  },
+  "alloc_val": {
+   "S1": 1,
+   "S2": 1,
+   "S3": 2
+  },
+  "acceptance_rate": 0.854,
+  "constraint_fail_rate": {
+   "a_min10_expr_each": 0.0,
+   "b_test_ge250_expr_lines": 0.0,
+   "c_test_ge40_proteomic_lines": 0.0,
+   "d_not_both_heme_heldout": 0.146
+  },
+  "accepted_test_expr_lines_median_p05_p95": [
+   345.0,
+   296.65,
+   396.3499999999999
+  ],
+  "accepted_val_expr_lines_median_p05_p95": [
+   181.0,
+   146.0,
+   230.0
+  ],
+  "accepted_largest_lineage_share_median_p95": [
+   0.298,
+   0.363
+  ],
+  "accepted_test_proteomic_lines_median_p05": [
+   167.0,
+   128.0
+  ],
+  "background_test_feasibility_share": {
+   "MTAP_del": 1.0,
+   "ENO1_del": 0.0,
+   "ME2_loss": 0.294,
+   "NAPRT_silenced": 0.489,
+   "ASS1_silenced": 0.995,
+   "NRF2_active": 0.696,
+   "STK11_loss": 0.607,
+   "FH_SDH_loss": 0.478,
+   "IDH_mut": 0.0,
+   "PHGDH_amp": 0.471,
+   "KRAS_hotspot_negctrl": 0.982
+  },
+  "training_eligible_lineages_per_draw": 12
+ }
+}
