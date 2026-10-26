@@ -22,8 +22,15 @@ Current phase: literature and dataset survey (→ LITERATURE.md), with the gener
     - [ ] Paywalled papers to request from user (list in LITERATURE.md, batched with data requests).
   - [x] 1.2 Dataset survey/download (Sonnet, 49 min): fetched Nusinow proteomics (375 lines), CCLE metabolomics (928 lines), PRISM 24Q2 + 20Q2 secondary, GDSC1/2 r8.5, CORUM 5.1 + Complex Portal, Ensembl 116 paralogs, Cell Model Passports list (~0.9 GB). Blocked items → notes/USER_DOWNLOADS.md (asked user).
     - [!] Medium annotation: 2,097/2,554 models (1,282/1,361 CRISPR lines); base media RPMI 907, DMEM 291, MEM/EMEM 157, DMEM/F12 104, IMDM 72, F12 56, McCoy's 31, L-15 23; ~300 organoid/proprietary (unmappable); 239 serum-free. Model.csv OnboardedMedia/FormulationID columns are swapped (PI-verified).
-- [ ] 2. DESIGN.md draft
-  - [ ] 2.1 Review round 1 (external PI; prior work; statistics; data; algorithms/compute; AI-agent failure modes; domain experts)
+- [~] 2. DESIGN.md draft — v0 committed (b105f88, ~9.1k words, Opus author, 12 min)
+    - v0 primary endpoint: paired Δ mean per-line AUPRC (selected pipeline − best generic model) on locked test lineages, line bootstrap stratified by lineage, success = 95% CI lower bound > 0; per-gene AUPRC (≥5 pos & ≥5 neg lines) confirms context specificity. Splits: scripts/make_splits.py, seed 20261026, 5 test / 4 validation lineages, rest training with LOLO-CV. Seeds [11,23,37,41,53,67,79,83,97,101].
+  - [x] 2.1 Review round 1: 7 parallel reviewers (external PI, statistics, AI failure modes, algorithms/compute [Opus]; data, prior work, cancer-metabolism domain [Sonnet]; 3–33 min each) → notes/design_review_r1/. All verdicts: revise. PI decisions: notes/design_review_r1/PI_decisions.md (34 items).
+    - [!] Common essentials = 86.5% of positives (L-ge05) → confirmatory C1b without them (list from train∪val only).
+    - [!] sklearn step-wise AP rewards tie-breaking (+0.03–0.05/line under jitter) → tie-aware expected AP; B8 generic+expression tie-break baseline.
+    - [!] Generic Ham's medium contains hypoxanthine + thymidine → all de novo purine genes, TYMS, DHFR predicted non-essential in H1/H2.
+    - [!] Biomass needs micronutrients absent from RPMI/DMEM; naive expression pruning gave 12/12 non-growing models → growth checks + fixed repair rule before any sweep.
+    - Compute after fixes ≈2,650 CPU-h, ≈90 h wall-clock (ftINIT-bound).
+  - [~] 2.2 DESIGN v1 revision (design author)
   - [ ] 2.2 Review round 2 (if needed)
   - [ ] 2.3 Review round 3 (if needed)
 - [~] 3. Baseline: generic Human1 & Human2 (pipeline agent, Opus; predictions only, no DepMap scoring until DESIGN.md fixes labels/splits)
