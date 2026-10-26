@@ -21,4 +21,7 @@ Every viewing of DepMap label *values* (or label-derived summaries) by any agent
 ## Later entries
 
 - 2026-10-26, PI: two hook-liveness probes after restart were blocked (no values seen). Earlier pre-activation probes printed the gene-name header row only.
-- 2026-10-26, PI: read reviewer summaries containing all-line aggregate label statistics (common-essential share of positives 86.5%; ASNS essentiality 50% DMEM vs 6% RPMI; per-library positive rates). No gene × line values. The PI therefore does not author a priori lists (F-4); an unexposed agent re-approves them.
+- 2026-10-26, PI: read reviewer summaries containing all-line aggregate label statistics (common-essential share of positives, ASNS essentiality by base medium, per-library positive rates; values redacted here, see the reviews). No gene × line values. The PI therefore does not author a priori lists (F-4); an unexposed agent re-approves them.
+- 2026-10-26, round-3 verifier: read this register and the round-2 statistics review, which contained all-line aggregate label statistics (no gene × line values, nothing on the new test tier). Probe of raw labels blocked.
+- 2026-10-26, PI decision (resolves DESIGN F-4): **aggregate all-line label statistics do not disqualify** an agent from authoring or approving a priori lists. Disqualifying exposure = gene × line label values, or any label summary on the new (post-freeze) validation/test tiers. The design author (~10 values for one line) therefore does not author lists; the round-3 verifier (aggregates only) may, and authored `notes/apriori_lists_approved.md`.
+- 2026-10-26, PI: deleted remaining label-reading scratch scripts (testtier.py, stats1.py, prev.py, splits_sim.py, apnull.py, genes2.py) left by round-1 agents.
