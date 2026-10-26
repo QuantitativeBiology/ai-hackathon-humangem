@@ -3,8 +3,9 @@ data/*
 !data/README.md
 !data/checksums.tsv
 
-# Analysis outputs
-results/
+# Analysis outputs are committed (PROMPT.md); only bulky intermediates are ignored
+results/**/tmp/
+results/**/*.large.*
 
 # Python environment
 .venv/
@@ -19,3 +20,6 @@ __pycache__/
 # OS / editor
 .DS_Store
 *.swp
+
+# Papers (copyrighted; never committed)
+papers/

@@ -10,6 +10,7 @@ Current phase: literature and dataset survey (→ LITERATURE.md), with the gener
 
 ## Decisions
 - **D0 (2026-10-26)**: Human2 := Human-GEM v2.1.1 (local); Human1 := latest Human-GEM v1.x release (to fetch). Baseline infrastructure started before DESIGN.md is final because it uses only generic models and no DepMap labels for fitting. Git: commit locally; push only when the user asks. Time budget: multi-day effort (user, 2026-10-26); report runtime with every result.
+- **D1 (2026-10-26)**: results/ is committed to git (PROMPT.md requirement); files >50 MB go under results/**/tmp/ or *.large.* (ignored) and must be regenerable by a script.
 
 ## Tree
 - [~] 0. Setup & record keeping (PROMPT.md, RESEARCH_TREE.md, LESSONS.md, DATA.md)
@@ -19,14 +20,17 @@ Current phase: literature and dataset survey (→ LITERATURE.md), with the gener
     - [ ] Method-vs-tissue clustering never tested on Human1/2 + ftINIT at DepMap scale → variance partitioning + permuted-expression control.
     - [ ] Per-screen medium available locally (ScreenSequenceMap → ModelCondition.GrowthMedia); fetch CRISPRGeneDependency.csv.
     - [ ] Paywalled papers to request from user (list in LITERATURE.md, batched with data requests).
-  - [~] 1.2 Dataset survey/download agent (Sonnet) → data/, DATA.md, scripts/download_*.py
+  - [x] 1.2 Dataset survey/download (Sonnet, 49 min): fetched Nusinow proteomics (375 lines), CCLE metabolomics (928 lines), PRISM 24Q2 + 20Q2 secondary, GDSC1/2 r8.5, CORUM 5.1 + Complex Portal, Ensembl 116 paralogs, Cell Model Passports list (~0.9 GB). Blocked items → notes/USER_DOWNLOADS.md (asked user).
+    - [!] Medium annotation: 2,097/2,554 models (1,282/1,361 CRISPR lines); base media RPMI 907, DMEM 291, MEM/EMEM 157, DMEM/F12 104, IMDM 72, F12 56, McCoy's 31, L-15 23; ~300 organoid/proprietary (unmappable); 239 serum-free. Model.csv OnboardedMedia/FormulationID columns are swapped (PI-verified).
 - [ ] 2. DESIGN.md draft
   - [ ] 2.1 Review round 1 (external PI; prior work; statistics; data; algorithms/compute; AI-agent failure modes; domain experts)
   - [ ] 2.2 Review round 2 (if needed)
   - [ ] 2.3 Review round 3 (if needed)
 - [~] 3. Baseline: generic Human1 & Human2 (pipeline agent, Opus; predictions only, no DepMap scoring until DESIGN.md fixes labels/splits)
-  - [ ] 3.1 Fetch Human1; harmonise gene IDs to DepMap (Entrez)
-  - [ ] 3.2 FBA + single-gene KO of all metabolic genes; toy-model verification
+  - [x] 3.1 Human1 = v1.19.0 (commit 022ed5c) fetched; Entrez mapping 2,874/2,887 (H1), 2,857/2,870 (H2) one-to-one; 2 unmapped (GK3P, SLC37A4 alt ENSG); join on Entrez (symbols renamed for 7–10 genes)
+  - [~] 3.2 Single-gene KO, Ham's medium, Gurobi (16 WLS sessions OK): H1 149 / H2 154 lethal (ratio<0.01; none in 0.01–0.5); ~50 s per model on 15 workers. 36/37 checks pass. Independent review in progress (notes/review_baseline_ko.md).
+    - [!] Human1 UMPS/DHODH non-lethal on Ham's: thymidylate synthase MAR04644 reversible in H1 (irreversible in H2) → UMP via thymidine bypass. Kept as released; a model difference to report.
+    - Predicted ratios are near-binary → essentiality scores for AUPRC need a continuous score (e.g. ratio + tie-breaking / flux-based scores), to be fixed in DESIGN.md.
   - [ ] 3.3 Benchmark vs DepMap CRISPR (AUPRC overall / per gene / per lineage)
 - [ ] 4. Medium (exchange bounds) — per-line culture media; error attributable to medium
 - [ ] 5. Objectives / metabolic tasks (a-priori task set)
