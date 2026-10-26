@@ -12,7 +12,8 @@ Constraint-based modelling with the Human-GEM genome-scale metabolic model, inte
 - `src/nextgem/` — project package, installed editable (`import nextgem`). `model.py`: `load_model()`, `set_hams_medium()`.
 - `scripts/` — runnable scripts (e.g. `scripts/fba_sanity_check.py`).
 - `notebooks/` — exploratory notebooks.
-- `results/` — analysis outputs (git-ignored).
+- `results/` — analysis outputs, committed to git (bulky intermediates go under `results/**/tmp/` or `*.large.*`, which are ignored and must be regenerable).
+- Research record: `PROMPT.md` (goal), `RESEARCH_TREE.md` (status, decisions — resume from here), `DESIGN.md` (pre-registered design), `LESSONS.md`, `DATA.md`.
 - `data/` — git-ignored inputs; provenance in `data/README.md`. Human-GEM 2.1.1 in `data/Human-GEM-main/`, DepMap Public 26Q3 in `data/depmap/`. Treat `data/` as read-only.
 
 ## Modelling notes
@@ -26,6 +27,12 @@ Constraint-based modelling with the Human-GEM genome-scale metabolic model, inte
 - Gene columns are `SYMBOL (EntrezID)`; join to Human-GEM via `geneEntrezID` in `model/genes.tsv`.
 - `CRISPRGeneEffect.csv` is indexed by `ModelID`; expression has several rows per model — filter `IsDefaultEntryForModel == "Yes"`.
 - Files are large (up to ~630 MB); read only needed columns (`usecols`) and write intermediates as Parquet.
+
+## Labels and leakage (see DESIGN.md)
+- Never read raw DepMap label files (CRISPR gene effect/dependency, screen gene effect, common-essential/non-essential lists) directly. Labels are accessed only through `src/nextgem/labels.py` inside project scripts, fold-scoped.
+- A PreToolUse hook (`.claude/hooks/guard_labels.py`) blocks direct reads; never work around it. New agent sessions start with a probe that a label read is blocked.
+- Never run the real split seed or write label summaries into committed files outside the pre-registered pipeline. Test-tier results stay sealed in `data/locked/` until the design says otherwise.
+- Don't leave data or label copies in the scratchpad; write intermediates under `results/` via scripts.
 
 ## Housekeeping
 - `/data/tmpA` is a shared NFS volume that was ~98% full (~100 GB free); keep outputs compact.

@@ -1,3 +1,5 @@
+> **PI note (2026-10-26):** this review ran the real split seed 20261026 and reports label summaries on the resulting tiers. That seed is **retired** (DESIGN.md §4.1; PI decision r2-1); the tiers named below are not the project's splits. Logged in `notes/label_exposure.md`. Agents authoring a priori lists must not read this file.
+
 # Design review, round 1: evaluation statistics
 
 Reviewer: biostatistics agent (not the author). Reviewed: DESIGN.md v0.1. Also consulted: PROMPT.md, LITERATURE.md §2.2–2.3 and §8–9, and results/baseline/README.md.
