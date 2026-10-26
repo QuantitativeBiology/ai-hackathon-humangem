@@ -1,0 +1,8 @@
+Biomass MAR13082: Human1 'Generic human cell biomass reaction' (13 species), Human2 'Generic human cell biomass reaction' (13 species)
+  species only in Human1: []
+  species only in Human2: []
+  coefficient differences (Human1 vs Human2): {}
+Ham's medium exchanges: Human1 44, Human2 44, shared ids 44
+  only in Human1: []
+  only in Human2: []
+Genes: Human1 2887, Human2 2870, shared 2828, only Human1 59, only Human2 42

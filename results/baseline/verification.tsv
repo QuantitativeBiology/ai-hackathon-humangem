@@ -1,0 +1,47 @@
+check	passed	detail	known_model_issue
+toy_wt_growth[glpk]	True	wt=9 expected 9.0	
+toy_essential_set[glpk]	True	got ['g2a', 'g2b', 'g4c', 'g_mx', 'g_ta']; missing []; extra []	
+toy_exact_ratios[glpk]	True	6 ratios exact	
+toy_infeasible_ko[glpk]	True	g_mx status=infeasible growth=0.0	
+toy_model_unchanged[glpk]	True	bounds/medium/gene states restored after run	
+toy_wt_growth[gurobi]	True	wt=9 expected 9.0	
+toy_essential_set[gurobi]	True	got ['g2a', 'g2b', 'g4c', 'g_mx', 'g_ta']; missing []; extra []	
+toy_exact_ratios[gurobi]	True	6 ratios exact	
+toy_infeasible_ko[gurobi]	True	g_mx status=infeasible growth=0.0	
+toy_model_unchanged[gurobi]	True	bounds/medium/gene states restored after run	
+toy_gpr_closure	True	17 genes: closed reactions as expected	
+toy_medium_swap	True	wt=3; essential ['g2a', 'g2b', 'g4c', 'g_fsyn', 'g_mx', 'g_ta']	
+toy_objective_swap	True	wt=9; essential ['g_mx', 'g_side', 'g_ta']	
+toy_blocked_objective	True	wt=0; all ratios NaN, status wt_no_growth, warning raised, essential_genes raises on NaN (nan='exclude' -> empty)	
+toy_ratio_r_rounding	True	[1.0000000000002, 0.9999999999999, -1e-13, 0.3333333333, 1.5, nan] -> [1.0, 1.0, 0.0, 0.333333, 1.0, nan]	
+toy_wt_nonoptimal_raises	True	Wild-type solve status 'unbounded'	
+toy_ko_nonoptimal_raises	True	strict run raised; strict=False kept g2a as time_limit/NaN; essential_genes refused NaN	
+toy_untagged_tasks_file_refused	True	Model 'toy' has no release tag (notes['nextgem_release']); load it with load_model() from 	
+toy_serial_eq_parallel	True	17 genes, 3 processes, max |ratio diff|=6.6e-17, ratio_r identical	
+toy_unknown_gene_rejected	True	"""Not model genes: ['not_a_gene'] (1 total)"""	
+gpr_closure_human2	True	2870 genes; mismatches []; 1750 genes close no reaction (fully buffered)	
+human2_tasks_file_derived	True	data/Human-GEM-main/data/metabolicTasks/metabolicTasks_Essential.txt	
+human2_wt_growth	True	wt=74.7568 expected 74.7568	
+human2_lethal_CAD	True	ratio=0	
+human2_lethal_UMPS	True	ratio=0	
+human2_fva_consistency	True	60 single-reaction KOs; 17 required; mismatches []	
+human2_nonlethal_control	True	LAP3 (ENSG00000002549, only closes MAR07149, flux fixed at 0 at optimum): ratio=1	
+human2_reject_TP53_ensembl	True	ENSG00000141510 rejected	
+human2_reject_random_entrez_TNIP3 (79931)	True	79931 rejected	
+human2_reject_symbol_CAD	True	CAD rejected	
+human2_serial_eq_parallel	True	48 genes; max |ratio diff|=6.9e-15; ratio_r bitwise identical	
+human2_infeasible_ko	True	biomass lb=1: CAD status=infeasible ratio_r=0.0; ENSG00000002549 status=optimal ratio_r=1.0	
+solver_gurobi_vs_glpk_200	True	WT 74.7568 vs 74.7568; max |ratio diff|=3.7e-13; lethal calls agree 200/200; 10 lethal; time gurobi 10s, glpk 54s (incl. solver switch)	
+gpr_closure_human1	True	2887 genes; mismatches []; 1801 genes close no reaction (fully buffered)	
+human1_tasks_file_derived	True	data/Human1/data/metabolicTasks/metabolicTasks_Essential.txt	
+human1_wt_growth	True	wt=65.5734 (> 1 required)	
+human1_lethal_CAD	True	ratio=0	
+human1_lethal_UMPS	False	ratio=1	Human1 v1.19.0 has thymidylate synthase MAR04644 reversible, so thymidine (in Ham's) -> dTMP -> dUMP -> deoxyuridine -> uracil -> UMP (UPRT) bypasses UMPS; Human2 has MAR04644 irreversible. See check human1_UMPS_lethal_if_TYMS_irreversible.
+human1_UMPS_lethal_if_TYMS_irreversible	True	MAR04644 lb=0: UMPS ratio=0	
+human1_fva_consistency	True	60 single-reaction KOs; 14 required; mismatches []	
+human1_nonlethal_control	True	TGDS (ENSG00000088451, only closes MAR07697, flux fixed at 0 at optimum): ratio=1	
+human1_reject_TP53_ensembl	True	ENSG00000141510 rejected	
+human1_reject_random_entrez_TNNI2 (7136)	True	7136 rejected	
+human1_reject_symbol_CAD	True	CAD rejected	
+human1_serial_eq_parallel	True	48 genes; max |ratio diff|=1.5e-14; ratio_r bitwise identical	
+human1_infeasible_ko	True	biomass lb=1: CAD status=infeasible ratio_r=0.0; ENSG00000088451 status=optimal ratio_r=1.0	

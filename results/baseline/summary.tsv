@@ -1,0 +1,3 @@
+model	version	genes	wt_growth	solver	lethal_ratio_r_lt_0.01	lethal_ratio_r_lt_0.5	partial_ratio_r_0.01_to_1	ratio_r_eq_1	ratio_r_distinct	ratio_nan	genes_closing_no_reaction	status_counts	medium_exchanges	map_genes	map_one_to_one	map_one_to_many	map_unmapped	map_entrez_in_depmap_crispr	map_depmap_symbol_differs	processes	load_s	knockouts_wall_s	ko_solve_cpu_s	total_wall_s
+human1	v1.19.0	2887	65.57338319775573	gurobi	149	149	74	2664	24	0	1801	optimal=2887	44	2887	2874	11	2	2825	10	15	14.8	52.6	165.8	141.2
+human2	v2.1.1	2870	74.75676660379064	gurobi	154	154	91	2625	32	0	1750	optimal=2870	44	2870	2857	11	2	2807	7	15	15.1	55.5	208.6	141.2
