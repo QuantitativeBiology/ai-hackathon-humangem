@@ -22,7 +22,11 @@ def sha256(path: Path) -> tuple[str, str]:
 
 def main():
     roots = [DATA / s for s in sys.argv[1:]] or [DATA]
-    files = sorted(p for r in roots for p in r.rglob("*") if p.is_file() and p not in (OUT, DATA / "README.md"))
+    # data/locked and data/labels hold the built label files: their hashes live in FROZEN.tsv, and the
+    # tripwire (DESIGN.md §11.1) denies this script from opening them.
+    skip = (DATA / "locked", DATA / "labels")
+    files = sorted(p for r in roots for p in r.rglob("*") if p.is_file() and p not in (OUT, DATA / "README.md")
+                   and not any(s in p.parents for s in skip))
     # Keep entries for files outside the requested subdirs; path -> digest
     existing = {}
     if OUT.exists():

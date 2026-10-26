@@ -1,0 +1,3 @@
+nodeid	amendment	reason
+tests/test_frozen.py::test_test_runs_downgrade_and_disappearance	A1	replaced by test_test_runs_union_baseline_and_retirement (review S1)
+tests/test_splits.py::test_acceptance_stats_and_frozen_function_equality	A1	replaced by test_frozen_function_equality_and_pinned_inputs: the 1-1000 acceptance statistics include seeds 38-137 and now run only inside the production draw (review M2)

@@ -22,6 +22,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from nextgem import splits
+
 ROOT = Path(__file__).resolve().parents[1]
 D = ROOT / "data"
 DM = D / "depmap"
@@ -448,24 +450,17 @@ prot_any = nus | harm | procan
 prot_by_lin = {L: len(set(lin_of[lin_of == L].index) & prot_any) for L in lin_counts.index}
 
 
+# The draw function lives in src/nextgem/splits.py (DESIGN.md §4.1 step 1); make_splits.py imports it too.
+# make_splits.py checks it against the verbatim draw/checks of this script at the freeze commit 61b0beb.
+assert (splits.ALLOC_TEST, splits.ALLOC_VAL, splits.STRATA) == (ALLOC_TEST, ALLOC_VAL, STRATA)
+
+
 def draw(seed: int):
-    rng = np.random.default_rng(seed)
-    test, val = [], []
-    for s in ("S1", "S2", "S3"):
-        perm = list(rng.permutation(strata[s]))
-        test += perm[:ALLOC_TEST[s]]
-        val += perm[ALLOC_TEST[s]:ALLOC_TEST[s] + ALLOC_VAL[s]]
-    return test, val
+    return splits.draw(seed, strata)
 
 
 def checks(test, val):
-    ntest_expr = sum(expr_by_lin[L] for L in test)
-    return {
-        "a_min10_expr_each": all(expr_by_lin[L] >= 10 for L in test + val),
-        "b_test_ge250_expr_lines": ntest_expr >= 250,
-        "c_test_ge40_proteomic_lines": sum(prot_by_lin[L] for L in test) >= 40,
-        "d_not_both_heme_heldout": not ({"Lymphoid", "Myeloid"} <= set(test + val)),
-    }
+    return splits.checks(test, val, expr_by_lin, prot_by_lin)
 
 
 sims = []

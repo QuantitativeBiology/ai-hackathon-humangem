@@ -23,3 +23,6 @@ __pycache__/
 
 # Papers (copyrighted; never committed)
 papers/
+
+# Label-access log of the tripwire and scanner deletion log (DESIGN.md §11.1); local only
+logs/
