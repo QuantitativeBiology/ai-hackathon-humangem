@@ -14,3 +14,5 @@ One line per rule, with evidence. Pruned at each milestone.
 - Reviewers must never run the real split seed or write label summaries into committed files: a round-1 review published the seed-20261026 draw, forcing a re-seed. Give reviewers simulated seeds only. (Design review r2, 2026-10-26)
 - Hooks/settings edited mid-session don't load until /hooks or restart; verify with a live probe before relying on a guard (two probes got through). (Label guard, 2026-10-26)
 - Agents leave large intermediates (incl. label copies) in the shared scratchpad; sweep it at each milestone. (AI review r2, 2026-10-26)
+- Keep a commit-reveal secret (the split seed) out of every file, memory and prompt until its reveal point; the PI slipped it into a register entry and had to amend an unpushed commit. Grep for it before each commit until the reveal. (Seed handling, 2026-10-26)
+- Reading a file that quotes label aggregates is itself an exposure: keep label numbers out of process docs (register, reviews) so later unexposed agents can read them. (Round-3 verifier, 2026-10-26)
