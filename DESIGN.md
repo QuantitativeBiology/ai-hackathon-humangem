@@ -1,19 +1,19 @@
 # DESIGN.md — nextgem pre-registered design
 
-**Version v2 — candidate for freeze** (review rounds 1 and 2 applied), 2026-10-26. Author: design agent. Owner: PI.
-**Status:** candidate for freeze; not yet frozen. The design freezes at milestone M1, after at most three review rounds. After M1, changing labels, splits, metrics, controls, candidate sets or decision rules counts as an *amendment*. An amendment is dated and logged in §17 before the analysis it affects is run. A change made after its analysis has run is reported as post hoc.
+**Version v3 — FROZEN at M1** (review rounds 1–3 and user decision D2 applied), 2026-10-26. Author: design agent. Owner: PI. Freeze approved by the PI after the round-3 verifier's v3 final check; all its edits applied.
+**Status:** frozen. The design freezes at milestone M1, after at most three review rounds. After M1, changing labels, splits, metrics, controls, candidate sets or decision rules counts as an *amendment*. An amendment is dated and logged in §17 before the analysis it affects is run. A change made after its analysis has run is reported as post hoc.
 
 **Numbers.** Every numeric fact about the data comes from `scripts/design_numbers.py`, which writes `results/design/design_numbers.json`. The JSON key is given in brackets, e.g. **[dn:cohort.n_screened_lines]**.
 - That script opens **no label-bearing file** (the screened-line set comes from `CRISPRScreenMap.csv`, the gene universe from the baseline mapping tables) and computes no performance or prevalence (`_meta.label_values_read = false`).
 - Runtime and cost figures are not data facts. They cite their source: results/baseline/README.md, or the compute review probe in notes/design_review_r1/algorithms_compute.md.
 
-**Read with:** PROMPT.md; LITERATURE.md (§8.1, §9); DATA.md; results/baseline/README.md; notes/design_review_r1/ and notes/design_review_r2/ (seven reviews + PI_decisions.md each). Appendix D holds the review dispositions and §17 the revision history.
+**Read with:** PROMPT.md; LITERATURE.md (§8.1, §9); DATA.md; results/baseline/README.md; notes/design_review_r1/ and notes/design_review_r2/ (seven reviews + PI_decisions.md each); notes/design_review_r3/verification.md; **notes/apriori_lists_approved.md** (the frozen a priori lists, used verbatim); notes/label_exposure.md; RESEARCH_TREE.md decision D2. Appendix D holds the review dispositions and §17 the revision history.
 
 ---
 
 ## 0. Summary
 
-- **Question.** Do optimised genome-scale models of cancer cell lines predict metabolic-gene essentiality better than generic Human1/Human2, and better than the Human-GEM repository's per-line ftINIT protocol (B7; Python, series 1+1)? Whole lineages are held out. The optimisation levers are:
+- **Question.** Do optimised genome-scale models of cancer cell lines predict metabolic-gene essentiality better than generic Human1/Human2? Whole lineages are held out. **ftINIT is excluded by user decision D2**; the only GEM comparator is generic Human1/Human2 FBA, together with label-free and gene-prior baselines. The optimisation levers are:
   - medium;
   - tasks and objectives;
   - context-specific extraction;
@@ -23,10 +23,10 @@
   - *Measure:* the paired per-line ΔtAP between the selected GEM pipeline P1 and the stronger generic model G\*, on locked test lines, summarised as the **lineage-equal-weighted mean**. That is the mean, over the 7 test lineages, of each lineage's mean line ΔtAP.
   - *Inference:* a line bootstrap stratified by lineage, which is conditional on the 7 lineages, plus a sign-flip permutation p-value.
   - *Claim tiers (§6.4):* "detectable" if the one-sided α = 0.025 test passes; "improves" if, in addition, the point estimate is at least SESOI = 0.01; "meaningful" if the CI lower bound is at least SESOI. "Transfers to unseen tissue" requires the lineage-level t-interval together with the descriptive ≥5-of-7 rule.
-- **Confirmatory sequence.** Fixed-sequence gatekeeping C1 → C1b → C3 → C4 → C5 → C6, each at one-sided α = 0.025. Everything else is estimation.
+- **Confirmatory sequence.** Fixed-sequence gatekeeping C1 → C1b → C3 → C4 → C5, each at one-sided α = 0.025. Everything else is estimation.
   - **C1b** = C1 with common essentials removed, using a list derived from training ∪ validation lines only.
   - **C3** = context specificity: per-gene ΔtAP of P1 versus expression only, above a within-lineage permutation null.
-  - **C6** = P1 vs B7g (the repository ftINIT protocol scored by growth ratio). It is last so that its failure cannot block the core claims.
+- **Required secondary endpoints (D2).** MCC, F1, precision, recall and accuracy of binary essentiality calls, computed under the essentiality protocols of the Human1 paper (Robinson 2020) and the Human2 paper (Luo 2026), on our splits (§6.8). They serve comparability only; tAP stays primary.
 - **Leakage.**
   - A single label door, `src/nextgem/labels.py`, with fold-scoped access and an audit-hook tripwire.
   - Three tiers of whole lineages from a label-blind, size-stratified draw: 12 training lineages plus rare lines; 4 validation; 7 locked test. The split seed is **supplied by the user after the freeze commit**; the old seed 20261026 is retired because its draw was published in review round 1 (§4.1).
@@ -41,7 +41,7 @@
 |---|---|
 | FBA baseline on Human1 and Human2, all single KOs, AUPRC per gene, per lineage and overall | W1, §6 |
 | Context-specific models from genomics, transcriptomics and proteomics: by tissue, by genomic background, and combined | W4 |
-| Methods beyond CORDA/ftINIT; explicit test of the "cluster by method" failure mode | W4 (F0–F5; variance partition; permuted control) |
+| Methods beyond CORDA/ftINIT; explicit test of the "cluster by method" failure mode | W4 (F0, F2–F5, F3b CORDA; variance partition with ≥ 3 established non-ftINIT families; permuted control). ftINIT is excluded by D2. |
 | Exchange bounds from the documented medium; physiological variants; error attributable to medium alone | W2, §10.1–10.2 (attribution) |
 | Tasks as objectives or constraints, from an a priori set; which tasks help in which contexts | W3 |
 | GPR curation from proteomics and paralogs; curation vs constraints | W5, §10.1–10.2 |
@@ -59,14 +59,14 @@ Code that already exists on disk is reused, not re-implemented. Each reuse has a
 
 | Existing code | What it does | How we use it |
 |---|---|---|
-| Human-GEM `code/DepMapGeneEss/*.m` (MATLAB): `generate_DepMap_models_ftINIT.m`, `getTaskEssentialGenes.m`, `evaluateDepMapEssentialityPredictions.m` | The Robinson/Gustafsson DepMap protocol: per-line ftINIT, then task-essential genes compared with Achilles. Default series is `1+0`. | **Read, not run** (MATLAB RAVEN is not available). This is the *published* protocol (series `1+0`). **B7 is not this protocol**: B7 runs the repository's Python pipeline (series `1+1`, next row). The 1+0 vs 1+1 difference is stated wherever B7 is reported. |
-| Human-GEM `code/test/gradedEssentiality.py`, `estimateEssentialGenes.py`, `taskEssentialGenes.py`, `evaluateHart2015Essentiality.py` (Python) | ftINIT `1+1`, removeGenes = true, `resolve_ties`, `prove_abs_gap = 1`, time limit 900 s. Viability vs capability task scoring. Growth ratio on Ham's. Sharding and checkpointing. | **B7 runs exactly this configuration** (PI decision 9). W3's task-augmented scores call `taskEssentialGenes.py`/`raven_toolbox.tasks.check`. Equality test: our KO ratio = `growth_ratios()` on the Hart lines. |
-| `raven_toolbox` 3.0.0b1 (installed) | `init.ftinit`, `init.taskfill`, `init.score`, `tasks.check`, `tasks.tasklist`, `gapfilling` | F1, task checks, ftINIT scoring |
+| Human-GEM `code/DepMapGeneEss/*.m` (MATLAB): `generate_DepMap_models_ftINIT.m`, `getTaskEssentialGenes.m`, `evaluateDepMapEssentialityPredictions.m` | The Robinson/Gustafsson DepMap protocol: per-line ftINIT, then task-essential genes compared with Achilles. Default series is `1+0`. | **Read, not run.** MATLAB RAVEN is not available, and ftINIT is excluded (D2). Read for gene-ID handling and task-essential logic only. |
+| Human-GEM `code/test/gradedEssentiality.py`, `estimateEssentialGenes.py`, `taskEssentialGenes.py`, `evaluateHart2015Essentiality.py` (Python) | ftINIT `1+1`, removeGenes = true, `resolve_ties`, `prove_abs_gap = 1`, time limit 900 s. Viability vs capability task scoring. Growth ratio on Ham's. Sharding and checkpointing. | **No ftINIT is run** (D2). W3's task-augmented scores and the paper-protocol binary calls (§6.8) call `taskEssentialGenes.py`/`raven_toolbox.tasks.check`. Equality test: our KO ratio = `growth_ratios()` on the generic parents. |
+| `raven_toolbox` 3.0.0b1 (installed) | `tasks.check`, `tasks.tasklist`, `gapfilling` (`init.ftinit` is not used; D2) | task checks (W3, §6.8) |
 | cobra 0.32.1 | `add_moma`, `fastcc`, `single_gene_deletion` | O-MOMA; F3 core consistency; cross-check of our KO engine on a sample |
-| Repository Hart-2015 results (`data/testResults/gene-essential_summary.md`) | growth AUPRC per Hart line, pooled AUPRC and base rate [dn:hart_reference] | One-shot positive control for our ftINIT wrapper (§12) |
+| Repository Hart-2015 results (`data/testResults/gene-essential_summary.md`) | growth AUPRC per Hart line, pooled AUPRC and base rate [dn:hart_reference] | Context only. They come from ftINIT models, so they are not a control under D2. |
 
 **What is new relative to this code and the literature** (LITERATURE §8.1 lists what we searched for and did not find):
-1. A lineage-held-out, tie-aware AUPRC benchmark of generic H1/H2 *and* of the Human-GEM repository's per-line ftINIT protocol (B7), on DepMap 26Q3.
+1. A lineage-held-out, tie-aware AUPRC benchmark of generic H1/H2 on DepMap 26Q3, with binary metrics under the Human1- and Human2-paper protocols for comparability.
 2. A medium ladder with screen-level medium annotation and an attribution estimate.
 3. An a priori task set with negative controls.
 4. Evidence-based GPR curation with a curation × constraints factorial.
@@ -81,14 +81,14 @@ Code that already exists on disk is reused, not re-implemented. Each reuse has a
 ### 3.1 Models
 | Name | Version | Role |
 |---|---|---|
-| Human1 | Human-GEM **v1.19.0** (commit 022ed5c2) | Generic baseline B4 and a **full arm** at T1: P1 is re-applied to the H1 parent (PI decision 12) |
-| Human2 | Human-GEM **v2.1.1** | Generic baseline B5; default parent for optimisation; B7 (H2 only; §8) |
+| Human1 | Human-GEM **v1.19.0** (commit 022ed5c2) | Generic baseline B4 and a **full arm** at T1: P1 is re-applied to the H1 parent (PI decision 12), with LP families only (D2) |
+| Human2 | Human-GEM **v2.1.1** | Generic baseline B5; default parent for optimisation |
 | Human1-published | **v1.3.0** (fetched by tag with a pinned SHA-256) | W1 sensitivity only; first item on the cut list (§13) |
 
 - The generic baselines use the models as released.
 - Human1's reversible TYMS (MAR04644) bypasses UMPS/DHODH on thymidine-containing media (results/baseline/README.md). In **optimised** H1 pipelines it is set irreversible as a label-free W5 curation item, counted inside Δ_curation (domain S8, accepted as curation).
 - Biomass is MAR13082 in both models.
-- **M0 (Ham's)** = the 44 GR-task inputs [dn:tasks.hams_gr_inputs_n] at bound 1000. It includes hypoxanthine and thymidine and supplies cysteine, not cystine [dn:tasks.hams_gr_inputs]. As a result, de novo purine genes (PPAT, GART, PFAS, PAICS, ADSL, ATIC, IMPDH2) have ratio_r = 1 in both parents [dn:baseline_ko.human2.panel_ratio_r]. That is a systematic, medium-driven false-negative block, which W2 targets.
+- **M0 (Ham's)** = the 44 GR-task inputs [dn:tasks.hams_gr_inputs_n] at bound 1000. It includes hypoxanthine and thymidine and supplies cysteine, not cystine [dn:tasks.hams_gr_inputs]. As a result, the hypoxanthine-rescued de novo purine genes (PPAT, GART, PFAS, PAICS, ATIC) have ratio_r = 1 in both parents [dn:baseline_ko.human2.panel_ratio_r], a systematic, medium-driven false-negative block that W2 targets. ADSL and IMPDH2 also have ratio_r = 1, but hypoxanthine cannot rescue them biochemically (IMPDH1 OR-logic; ADSL to be traced); these are model errors, not medium errors (approved lists §1.2).
 
 ### 3.2 Data (all in DATA.md with SHA-256 and a `label_derived` column; §11.2)
 - **DepMap 26Q3:**
@@ -109,7 +109,8 @@ Code that already exists on disk is reused, not re-implemented. Each reuse has a
   - media composition files as they arrive [dn:medium.media_files_present];
   - CORUM 5.1 and Complex Portal;
   - Ensembl 116 paralogs;
-  - the Hart 2015 inputs shipped with Human-GEM.
+  - the Hart 2015 inputs shipped with Human-GEM (not used under D2);
+  - the Human1- and Human2-paper PDFs and supplements in `papers/`, which are the sources of the §6.8 protocols.
 
 ### 3.3 Gene universe
 - **U**: genes of H1 or H2 whose primary Entrez ID is a CRISPR column. |U| = 2,866 [dn:genes.U_union]. Of these, H1 contributes 2,825 and H2 2,807 [dn:genes.human1_screened, .human2_screened].
@@ -128,8 +129,8 @@ Code that already exists on disk is reused, not re-implemented. Each reuse has a
   1. **Freeze commit.** The PI commits the frozen DESIGN.md, FROZEN.tsv, `make_splits.py` and the draw function, which moves to `src/nextgem/splits.py` (importing `scripts/design_numbers.py` would run the whole script); both scripts import it from there. The commit SHA is recorded in the test ledger. **No draw with the production seed is computed before this commit**, by anyone; the production seed does not exist yet.
   2. **The user supplies an integer.** After the freeze commit, the user sends a positive integer S of their choosing by message. The PI records it verbatim in `results/splits/SEED_SOURCE.md` with the message timestamp and the freeze-commit SHA. A commit SHA, a timestamp or any value an agent can choose or grind is not acceptable as S.
   3. **`make_splits.py` runs once:** `make_splits.py --seed S --freeze-commit <SHA>`. It refuses to run if:
-     - S = 20261026, or S lies in 20261026…20261125 (the retired seed's attempt range);
-     - HEAD is not the freeze commit, or `src/`, `scripts/` or `tests/` differ from it;
+     - any attempt seed S + attempt (attempt 0…99) falls in 20261026…20261125, i.e. S lies in 20260927…20261125; the check is repeated per attempt inside the draw loop (V-2);
+     - the freeze commit is not an ancestor of HEAD, or `git diff --quiet <freeze SHA> HEAD -- src scripts tests DESIGN.md FROZEN.tsv` fails, or those paths are dirty in the working tree (only ledger rows and `results/splits/SEED_SOURCE.md` may be committed between the freeze commit and the draw) (V-1);
      - `results/splits/SPLIT_SHA256` already exists (PI decision r1-17).
   4. **Draw.** `numpy.random.default_rng(S + attempt)`, starting at attempt 0. Every attempt, its acceptance-check results and every rejected draw are written to `results/splits/attempt_log.tsv`. The output records S, the freeze-commit SHA, the script SHA and the number of redraws.
   5. **Ledger.** A ledger row records the split SHA. The split is never redrawn.
@@ -223,11 +224,11 @@ Steps:
 - **Library class** and **organoid** status (PI decision 24).
 - **CRISPR-artefact strata** (domain S5, accepted in part):
   - CN ≥ 4 (relative) amplicons;
-  - a fixed symbol list of multi-copy loci (UGT1A/2B, GSTM/GSTT, AMY1A–C, NAT1/2, GBA/GBAP1);
-  - a "housekeeping-adjacent" list (aminoacyl-tRNA synthetases, V-ATPase, Fe-S biogenesis, GPI/N-glycosylation, assembly factors);
-  - a separate moonlighting list.
+  - the multi-copy loci, including their completion rule;
+  - the housekeeping-adjacent families;
+  - the moonlighting list.
 
-  All lists are in `data/controls/gene_panels.tsv` (Appendix A). A guide-multiplicity stratum from the Avana/KY guide maps is approved at low priority (PI decision r2-17). It is added only if the maps arrive, and **no claim depends on it**.
+  These three lists are those of `notes/apriori_lists_approved.md` §1.6, used verbatim; `data/controls/gene_panels.tsv` is generated from that file at M1 (Appendix A). A guide-multiplicity stratum from the Avana/KY guide maps is approved at low priority (PI decision r2-17). It is added only if the maps arrive, and **no claim depends on it**.
 
 ---
 
@@ -264,9 +265,9 @@ Steps:
 | AUROC | same units | secondary |
 
 ### 6.3 Confirmatory contrasts (PI decisions 2, 4, 5, 7)
-Gatekeeping runs in the fixed order **C1 → C1b → C3 → C4 → C5 → C6** (PI decision r2-2). Each contrast is tested one-sided at α = 0.025, and testing stops at the first failure. Contrasts after a failure are reported as estimates only.
+Gatekeeping runs in the fixed order **C1 → C1b → C3 → C4 → C5** (PI decision r2-2 as amended by D2: C6 is removed with ftINIT). Each contrast is tested one-sided at α = 0.025, and testing stops at the first failure. Contrasts after a failure are reported as estimates only.
 
-**Consequence of the simple chain, stated in advance.** A C3 failure (P1 not beating expression at per-gene ranking, a high bar) removes confirmatory status from C4, C5 and C6, which are then reported as estimates. A graphical α split (Bretz 2009) was proposed in review and rejected by PI decision r2-2.
+**Consequence of the simple chain, stated in advance.** A C3 failure (P1 not beating expression at per-gene ranking, a high bar) removes confirmatory status from C4 and C5, which are then reported as estimates. A graphical α split (Bretz 2009) was proposed in review and rejected by PI decision r2-2.
 
 | ID | Statistic (test tier; parent and pipeline as stated) | Test | Look |
 |---|---|---|---|
@@ -275,35 +276,32 @@ Gatekeeping runs in the fixed order **C1 → C1b → C3 → C4 → C5 → C6** (
 | **C3** | mΔAP_gene(P1) − mΔAP_gene(B3), all genes | the line-bootstrap CI lower bound > 0, **and** mΔAP_gene(P1) above the **97.5th** percentile of a within-lineage label-permutation null (consistent with one-sided α = 0.025). That null permutes each gene's labels across lines within each lineage: **2,000** permutations spawned from SEEDS[0]. | T1 |
 | **C4** | Δ̄_lin(P2 − G\*) | as C1 | T2 |
 | **C5** | Δ̄_lin(P2 − B6) | as C1 | T2 |
-| **C6** | Δ̄_lin(P1 − **B7g**) — B7g is the only confirmatory comparator; B7t is an estimate | as C1. The statistic is computed at T1 (sealed scalar); its confirmatory status is resolved after C5 at T2. | T1 (value), T2 (status) |
 
 - **G\*** = the better of generic H1 and H2 on validation Δ̄_lin, fixed at M2.
 - **Estimates only (no test; point estimate and CI):**
   - C2 = P1 vs B2 (and vs B2m, B2c);
-  - P1 vs B7t;
   - P1 vs **B8+ and B8−** (both tie-break directions, PI decision r2-4) and B8′. "Adds information beyond generic + expression" requires P1 to exceed **all three** (stats r2);
   - within-parent P1(H1) − B4 and P1(H2) − B5 (PI decision 12);
   - MCC contrasts;
   - Δ̄_line;
   - library-class and organoid strata;
   - the expressed-pairs versions of C1 and C3.
-- **C6 labelling.** If P1 contains F1 per line (the same configuration as B7), C6 is labelled "medium / tasks / curation levers on top of the repository protocol", not "a different extraction method beats ftINIT" (ext-PI r2).
 - **C3 claim condition.** The claim "P1 captures line-specific dependency beyond expression" needs C3 to pass **and** the expressed-pairs version to have the same sign with CI lower bound > 0 (PI decision 8).
 
 ### 6.4 Effect size, claim language and transfer (PI decisions 2, 6)
-- **SESOI for C1, C4 and C6 = 0.01 absolute in Δ̄_lin (all genes).** Basis (PI decision r2-5):
+- **SESOI for C1, C4 and C5 = 0.01 absolute in Δ̄_lin (all genes).** Basis (PI decision r2-5):
   - It is a **convention fixed by expert judgement** before any model was scored, proposed independently by two reviewers. Whether 0.01 is *meaningful* rests on that judgement, not on data.
   - The power simulation answers a different question. It shows that 0.01 is *detectable* (statistics r2: on a ~350-line, 7-lineage tier the minimum detectable effect is ≈ 0.19·s, where s is the within-lineage SD of line ΔtAP). It is not evidence that 0.01 matters.
   - Under tAP, float-tie and tie-breaking artefacts are zero by construction, so 0.01 is not within metric noise.
   - REPORT.md also translates Δ into an interpretable unit: the change in the mean number of true positives among each line's top-k genes, with k = that line's number of positives.
 - **SESOI for C1b (no common essentials), lift-scaled.** Without common essentials the null AP is several-fold lower, so an absolute 0.01 would demand a much larger relative gain. Therefore SESOI_C1b = 0.01 × [mean E[AP_random] on U minus CE_fit] ÷ [mean E[AP_random] on U]. Both means are computed on **training lines at M2, before any model is scored**, and frozen. Basis: the same gain relative to the random-ranking null as 0.01 represents on all genes.
 - **C3 has no SESOI;** only "detectable" wording applies to it.
-- **Claim language** (C1, C1b, C4, C6, each with its own SESOI):
-  - "detectable improvement": C1 passes;
-  - "improves": C1 passes and the point estimate ≥ 0.01;
-  - "meaningfully improves": CI lower bound ≥ 0.01.
+- **Claim language** (C1, C1b, C4, C5, each with its own SESOI):
+  - "detectable improvement": the contrast passes its test;
+  - "improves": it passes and its point estimate ≥ its SESOI (0.01; SESOI_C1b for C1b);
+  - "meaningfully improves": its CI lower bound ≥ that SESOI.
 - **Headroom closed** = Δ̄_lin(P1 − G\*) / Δ̄_lin(B2 − G\*), with a bootstrap CI. It is reported only if the denominator's CI excludes 0; otherwise both raw contrasts are reported.
-- The abstract-level sentence must give C1, C1b and C6 together.
+- The abstract-level sentence must give C1 and C1b together, plus C4/C5 once T2 has run.
 - **Transfer to unseen tissue:**
   - (1) the C1 CI is **conditional on the 7 test lineages**, and the headline says so;
   - (2) a lineage-level t-interval with df = 6 on the 7 lineage means is reported, together with the exact sign-flip p over 2^7 configurations;
@@ -313,7 +311,7 @@ Gatekeeping runs in the fixed order **C1 → C1b → C3 → C4 → C5 → C6** (
 - **Optimistic supplementary estimate** (stats O3): the frozen P1 protocol's LOLO Δ over the 16 non-test eligible lineages, labelled selection-contaminated.
 
 ### 6.5 Uncertainty
-- **Bootstrap.** Lines are resampled within lineage, using SEEDS[0]. B = 10,000 for C1–C6; B = 2,000 otherwise. Intervals are percentiles; BCa is used only if the training-tier distribution of line ΔtAP has |skew| > 1 (checked at M2; stats O6).
+- **Bootstrap.** Lines are resampled within lineage, using SEEDS[0]. B = 10,000 for C1–C5; B = 2,000 otherwise. Intervals are percentiles; BCa is used only if the training-tier distribution of line ΔtAP has |skew| > 1 (checked at M2; stats O6).
 - **Pairing.** Methods are paired on identical gene × line sets, and an assertion fails otherwise.
 - **Conditionality.** The CI is conditional on the fitted models: predictions are fixed and lines are resampled.
 - **Multiplicity.** Benjamini–Hochberg (q = 0.05) is used, labelled exploratory, wherever many units are tested.
@@ -332,13 +330,65 @@ Every result table carries wall and CPU time per line and in total (build, KO sw
 
 ---
 
+### 6.8 Required secondary endpoints: binary metrics under the Human1- and Human2-paper protocols (user decision D2)
+
+**Purpose and status.**
+- These metrics exist for comparability with the published essentiality evaluations of Human1 (Robinson et al. 2020, *Sci Signal* 13:eaaz1482) and Human2 (Luo et al. 2026, *PNAS* 123:e2516511123).
+- They are **estimates**: outside the gatekeeping chain, never used for selection or for any gate, and reported for G\*, generic H1, generic H2, P1(H1) and P1(H2), each with lineage-stratified bootstrap CIs (§6.5) and paired differences vs G\*.
+- tAP stays the primary metric.
+
+**What "under the paper's protocol" means here.** Both papers built per-line tINIT/ftINIT models. Those are excluded by D2, so the protocol is applied as **the papers' KO call rule, label definition and metric definitions, used on our models and our splits**, not as their extraction step.
+
+**Protocol details extracted from the papers** (sources in `papers/`; page numbers are PDF pages):
+
+| Element | Human1 paper (Robinson 2020) | Human2 paper (Luo 2026) |
+|---|---|---|
+| Model per line | tINIT model per line from RNA-seq; 621 DepMap lines (DepMap 19Q3) plus 5 Hart 2015 lines (main text pp. 5–6; SM `aaz1482_sm.pdf` pp. 13–14) | ftINIT, series "1+1", per line (SI Appendix `pnas.2516511123.sapp.pdf` p. 2, lines 25–33); 5 Hart lines plus 625 DepMap 19Q3 lines (SI p. 3, lines 62–65); 908 Project Score lines (SI Fig. S3A, p. 11) |
+| KO call rule | the gene is deleted; reactions with no compensating isozyme get bounds 0; **"essential" if the deletion impairs at least one of the 57 metabolic tasks** (data file S3, sheet "HumanGEM") (SM p. 14) | **identical**: "a gene was considered 'essential' … if its deletion impaired at least one of these 57 metabolic tasks" (SI pp. 2–3, lines 58–62) |
+| Biomass-only variant | essential only if the growth (biomass) task fails (SM p. 14; Fig. S11, p. 29) | not reported |
+| Label (DepMap) | gene effect **< −0.6** = essential, taken from the dataset's own publication; robustness grid "from −1.0 … to 0.0" (SM p. 14; Fig. S10, p. 28) | **not stated** in the main text, the SI or Datasets S1–S9 (S1–S9 contain no essentiality data) (repository script: < −0.6) |
+| Metrics | confusion matrix per line; accuracy, sensitivity, specificity, MCC; hypergeometric enrichment with BH (main text p. 6; SM Fig. S9, p. 27). MCC is the headline, because accuracy is uninformative under imbalance (main text p. 6) | MCC (main text Fig. 2D legend, p. 3; SI Fig. S2D, p. 10; Fig. S3A, p. 11); "accuracy" (main-text Methods, p. 9) |
+| Aggregation over lines | per-line values, shown as distributions over 621 lines, plus the mean MCC (main text p. 6; SM Fig. S10, p. 28) | per-line values over 625 / 908 lines (SI Figs. S2D, S3A); summary statistic not stated |
+| Gene set scored | not stated in the papers; repository script: parent-model genes ∩ screened, non-NaN | not stated in the papers; repository script: parent-model genes ∩ screened, non-NaN |
+| Medium for task checks | each task's own inputs (data file S3, column "IN"); GR = Ham's | the same 57-task list (SI p. 2, line 30: "growth on Ham's media") |
+
+**Our pre-specified implementation** (fixed now; every choice for a detail the papers do not state is marked as ours):
+- **Call rule P57.** A gene is essential if its KO makes ≥ 1 of the 57 tasks of `metabolicTasks_Essential.txt` infeasible (`raven_toolbox.tasks.check`, each task's own inputs). This is the same 57-task list as Robinson data file S3 (to be confirmed by a script diff at M1). Applied to every GEM method.
+- **Call rule PGR (biomass only)**, from the Human1-paper protocol only: essential if the GR task becomes infeasible.
+- **Label L-ge06** = Chronos gene effect < −0.6. It is a new, frozen, secondary-only label, built by `labels.py` at M1.
+  - Robinson applied −0.6 to CERES (19Q3); we apply it to Chronos (26Q3). The scale difference is stated as a limitation.
+  - The Human2 paper does not state a DepMap threshold. Not stated in the paper; the Human-GEM evaluation script uses gene effect < −0.6 (line 117), i.e. L-ge06.
+  - Human1-paper robustness grid: 21 thresholds, −1.0 to 0.0 in steps of 0.05, as in SM Fig. S10 (p. 28) and `linspace(-1,0,21)` in `evaluateDepMapEssentialityPredictions.m` (line 106).
+- **Gene set (not stated in either paper; taken from the repository script, lines 121–146).** The parent model's genes (H1 for generic H1 and P1(H1); H2 for generic H2 and P1(H2)) that have a CRISPR column and a non-NaN label in that line. A parent gene absent from a line model is predicted non-essential. U-wide scoring is a sensitivity row.
+- **Metrics.**
+  - Per line: TP, FP, TN, FN, then MCC, F1, precision, recall (= sensitivity), specificity and accuracy. The papers report MCC, accuracy, sensitivity and specificity; we add precision and F1 from the same confusion matrix.
+  - MCC is the headline binary metric. Accuracy is reported, but it is dominated by negatives.
+  - A metric with a zero denominator is NaN, as in the repository script; NaN lines are excluded from the means and counted per method and protocol. A sensitivity row sets them to 0. F1 = 2TP/(2TP + FP + FN), as in the script.
+- **Summaries.** Three summaries:
+  - the lineage-equal-weighted mean (our convention, §6.2);
+  - the line-weighted mean (the papers' convention; Robinson 2020 reports the mean MCC);
+  - the per-line median (descriptive; Luo 2026 shows per-line violins).
+- **What each protocol reports:**
+  - *Human1-paper protocol:* P57 and PGR × L-ge06 (+ grid); MCC, accuracy, sensitivity, specificity, plus precision and F1.
+  - *Human2-paper protocol:* P57 × L-ge06; MCC and accuracy, plus F1, precision and recall.
+- **Not reproduced:**
+  - the papers' per-line extraction (D2);
+  - Hart 2015 and Project Score labels (not DepMap 26Q3 and not on our splits; Project Score is label-derived per §11.2);
+  - the hypergeometric enrichment test (it duplicates what tAP measures).
+- **Non-GEM baselines.** They have no task-based call. For context only, they are dichotomised at their fitting-line positive rate, flagged "not a paper protocol".
+- **When reported:**
+  - M2: generic H1/H2 on training and validation;
+  - validation looks: scalars only;
+  - T1: revealed scalars for G\* and P1 under both protocols;
+  - per-lineage detail sealed until T2 (§10.2).
+
 ## 7. Seeds
 - **SPLIT_SEED = S, supplied by the user after the M1 freeze commit** (§4.1). It is used for the split only. **20261026 is retired** and refused by `make_splits.py`.
 - **SEEDS = [11, 23, 37, 41, 53, 67, 79, 83, 97, 101]**, in `src/nextgem/config.py`. Uses:
   - bootstraps and permutation streams: SEEDS[0], expanded with `SeedSequence.spawn`;
   - random baselines, pseudo-tasks, random GPR edits and permuted-expression controls: SEEDS[0:5];
   - Gurobi `Seed` with Threads = 1: SEEDS[0];
-  - ftINIT stability study with `resolve_ties` off: SEEDS[0:3];
+  - LP-family stability study (Stage-A row A7): SEEDS[0:3];
   - ML and CV shuffles: SEEDS[0:3].
 - No unseeded randomness. A test greps for `default_rng()` and `random_state=None`, and flags sklearn estimators constructed without `random_state` (AI-review note).
 
@@ -356,12 +406,11 @@ Every result table carries wall and CPU time per line and in total (build, KO sw
 | B3 | Expression only: log2(TPM+1) of the gene | none |
 | B4 / B5 | Generic H1 / H2 FBA on M0 | none |
 | **B6** | Non-GEM ML: HistGradientBoosting on B2, B2m, own expression, CN, mutation, neighbour-enzyme expression (shared non-currency metabolite in H2; our re-implementation of the Lagziel-style feature, not their code), max paralog expression, isozyme count, **medium class + serum flag** from the **same tiered medium annotation as W2**, imputed lines included, so B6 and the GEM arms see identical medium information (PI decision 11; prior-work r2). No lineage features. | training LOLO; grid in W7 |
-| **B7** | **Human-GEM repository ftINIT protocol (Python, 1+1)** on H2 (PI decision r2-3). It is *not* the published MATLAB protocol, which uses series 1+0. Per-line ftINIT with the `estimateEssentialGenes.py` configuration (series 1+1, removeGenes = true, `resolve_ties`, `prove_abs_gap = 1`, `time_limit = 900`, repository default threshold), on the pinned v2.1.1 snapshot, RNA only, M0. **B7g** = growth ratio_r; **B7t** = task essentiality (viability tasks as in `gradedEssentiality.py`). Nothing is tuned. Time-limited incumbents are accepted as in the repository (§11.4). **Coverage:** the 100-line panel (Stage A), and all validation and test lines. Remaining training lines are **deferred** until P1 is known; they are built only if P1 contains per-line F1 (they are then needed for W8 anyway). **Stated gap:** F1's training gate and H1.4 are therefore evaluated on panel lines (and validation) only. B7 is H2 only; a B7-equivalent H1 build exists for validation and test only if the H1 pre-builds of §10.1 are made, and is then reported as an estimate. | none |
 | **B8+ / B8−** | Generic + expression tie-break: rank by e_{G\*}, and break ties by **higher** (B8+) or **lower** (B8−) expression. **Both directions are reported** (PI decision r2-4); neither is chosen on test. B8′ (sensitivity) = e_{G\*} with genes at TPM < 1 set to 0. | none |
 
 **Why B8 is needed.** Generic FBA scores are near-binary (§3.1, W1). Any pipeline that orders the large tied block by an expression-correlated quantity would gain without metabolic insight. B8 measures that gain directly, and "adds information beyond generic + expression" requires P1 > B8+, B8− and B8′ (estimates; ext-PI r1 MF1, stats r2).
 
-**Gate.** An optimised candidate is eligible for selection only if its paired validation Δ̄_lin vs G\* has CI lower bound > 0. It is always shown next to B2, B2m, B7 and B8±.
+**Gate.** An optimised candidate is eligible for selection only if its paired validation Δ̄_lin vs G\* has CI lower bound > 0. It is always shown next to B2, B2m, B6 and B8± (D2: the comparator set is generic H1/H2 as G\*, plus B0–B3, B6 and B8±/B8′).
 
 ---
 
@@ -372,7 +421,7 @@ Every result table carries wall and CPU time per line and in total (build, KO sw
 **Training gate (TG), harmonised with W7 (stats SF3):** a candidate passes TG on training (nested LOLO) if all three hold:
 1. mean Δ̄_lin vs the current reference ≥ 0.005;
 2. the paired line-bootstrap CI lower bound is > 0;
-3. Δ > 0 in ≥ 9 of the 12 LOLO folds. A fold with < 5 estimable lines counts as "not positive"; it is never dropped, so the denominator stays 12 (stats r2). For gates computed on the 10-lineage Stage-A panel, the bar is **≥ 8 of 10** folds (ext-PI r2 S3).
+3. Δ > 0 in ≥ 9 of the 12 LOLO folds. A fold with < 5 estimable lines counts as "not positive"; it is never dropped, so the denominator stays 12 (stats r2). For gates computed on the 10-lineage Stage-A panel (3 lines per lineage), the bar is **≥ 8 of 10** folds, and a panel fold counts as "not positive" if fewer than 2 of its 3 lines are estimable; the < 5-line rule applies to the 12 training-LOLO folds only (ext-PI r2 S3; r3 N-1).
 
 **Shortlist rule.** At most 3 candidates go to validation. Choice there follows the **paired-difference one-SE rule** (stats SF2): among candidates within one paired-difference SE of the best, pick the simplest in this pre-declared order: generic < medium < tasks < curation < extraction < combination. Fewer fitted parameters wins first.
 
@@ -381,15 +430,15 @@ Every result table carries wall and CPU time per line and in total (build, KO sw
 ### W1 — Baseline benchmark
 - **Hypotheses.**
   - H1.1: lift > 1 for generic H1 and H2 (mAP_line and pooled).
-  - H1.2: H2 > H1. Luo 2026 claim this in the main text, Fig. 2D.
+  - H1.2: H2 > H1. Luo 2026 claim this for DepMap 19Q3 in SI Fig. S2D (cited in the main text, p. 3); main-text Fig. 2D is the Hart-2015 version series.
   - H1.3: B2 > generic FBA.
-  - H1.4: B7 > generic FBA.
 - **Inputs.** The baseline KO parquets (149 / 154 lethal [dn:baseline_ko.*.lethal_lt_0.01]; 24 / 32 distinct ratio_r [dn:baseline_ko.*.distinct_ratio_r]); v1.3.0 KO; labels; split.
 - **Method.**
   - At M2 the full grid is computed on training and validation.
   - The **full-cohort benchmark appears only at T1**, and its per-lineage and per-gene parts stay sealed until T2.
   - **All error inspection before T1 is on training lines only** (AI SF9).
 - **Outputs.**
+  - The §6.8 binary endpoints (Human1- and Human2-paper protocols) for generic H1 and H2, on training and validation at M2.
   - A per-gene table (ext-PI SF1): generic call, fraction of training lines positive, positive predictive value of called genes, miss rate of uncalled genes, and error class.
   - The addressable-set mAP and recall ceiling (§5.4).
 - **Failure-mode tests (label-free unless stated).**
@@ -466,9 +515,9 @@ Every result table carries wall and CPU time per line and in total (build, KO sw
     - (iii) a **training-only medium oracle** (ext-PI SF5): per line, the best ladder variant chosen with its own labels. Reported as (doc − M0)/(oracle − M0).
   - **Label-free flip analysis** (domain O1): which generic calls any single nutrient addition or removal can flip. Expected to be tens of genes; a small attributable share is pre-registered as a plausible outcome, not a failure.
 - **Controls.**
-  - *Positive, label-free:* ASNS predicted essential in DMEM and not in RPMI; the **sterol branch** (FDFT1, SQLE, LSS, CYP51A1, MSMO1, NSDHL, HSD17B7, SC5D, EBP, DHCR7, DHCR24) gaining essentiality in serum-free media; GOT1/GOT2 essential under the gate in the absence of SLC1A3; SLC7A11 meaningful under cystine.
+  - *Positive, label-free:* the medium-dependent panel of `notes/apriori_lists_approved.md` §1.2, with the expected conditions stated there (e.g. ASNS, the sterol branch, GOT1/GOT2 under the gate, SLC7A11 under cystine).
   - *Positive, training labels:* ASNS by medium (Lagziel replication).
-  - *Mevalonate core* (HMGCS1, HMGCR, MVK, PMVK, MVD, IDI1, FDPS, GGPS1): expected essential in every medium. It is reported as a **diagnostic panel at every W2 step**, because serum cholesterol makes it non-essential in FBA until W3 B-add supplies the non-sterol demands. The W2 choice is re-checked in the M6 factorial, which crosses W2 with W3 B-add (domain r2 S-a).
+  - *Mevalonate core* (the genes listed in `notes/apriori_lists_approved.md` §1.1): expected essential in every medium. It is reported as a **diagnostic panel at every W2 step**. Ubiquinol is already a biomass component in H2, so HMGCR, MVK, PMVK and MVD should stay essential when serum cholesterol is supplied; a loss of essentiality under serum flags a modelling error (HMGCS1, IDI1, FDPS and GGPS1 are non-essential already on M0, for isozyme/GPR reasons; approved lists §1.1, §5). The W2 choice is re-checked in the M6 factorial, which crosses W2 with W3 B-add (domain r2 S-a).
   - *Note on ASNS:* asparagine uptake is not gated, so the ASNS control tests medium only (domain r2 S-c).
   - *Negative:* **shuffled medium** within lineage × serum-free status, SEEDS[0:5]. It needs 0 CPU-h, because it is a relabelling of cached sweeps. It has power only in lineages with ≥ 8 attribution-set lines in each of two media: **9 lineages on the four sheets on disk** [dn:medium.n_lineages_with_2_media_ge8_on_disk_sheets, .lineages_with_2_media_ge8_on_disk_sheets] (13 if all eight sheets arrive [dn:medium.n_lineages_with_2_media_ge8]). It is reported pooled and per eligible lineage. M-open is also a negative control.
 - **Physiological variants.** They are not expected to improve agreement with labels measured in culture. Reported:
@@ -483,7 +532,8 @@ Every result table carries wall and CPU time per line and in total (build, KO sw
   - The Essential task list: 57 tasks (BS 18, SU 17, IC 12, ER 9, GR 1) in 11 functional groups [dn:tasks.essential_n_tasks, .essential_by_category, .essential_n_groups].
   - The CellFie consensus list: 195 tasks [dn:tasks.cellfie_n_tasks].
 - **Capacity matrix (compute SF3).** For each (parent, selected medium), compute once the gene × task matrix of max output capacity after KO, using deduplicated KO sets. Every criterion mode is then post-processing.
-- **Task scoring.** It reuses `taskEssentialGenes.py` and `raven_toolbox.tasks.check`, with an equality test on the Hart lines.
+- **Task scoring.** It reuses `taskEssentialGenes.py` and `raven_toolbox.tasks.check`, with an equality test on the generic parents.
+- **Candidate sets and controls** are those of `notes/apriori_lists_approved.md` §5, used verbatim.
 
 | ID | Mode | Definition |
 |---|---|---|
@@ -497,8 +547,8 @@ Every result table carries wall and CPU time per line and in total (build, KO sw
 | O-cap | objective | e = 1 − min(ratio_biomass, min_t capacity ratio), over the T3 tasks |
 | O-NGAM_k, k ∈ {0, 0.1, 0.3} | objective | ATP-maintenance flux fixed at k × the **maximum** MAR03964 flux on the medium (computed once; the reaction ID is verified in both parents) |
 | O-MOMA | objective | QP MOMA (unique optimum; needs Gurobi, so it takes Gurobi slots) built once with `add_moma` per (model, pFBA-WT reference), with KO bounds toggled. Linear MOMA with a lexicographic biomass step is the fallback. **Dropped if the M3 pilot exceeds 1 CPU-h per model.** |
-| B-loo_j (j = 1…13) | biomass | leave one biomass component out |
-| B-add_c | biomass | add one demand at a time, and then all together, at a fixed coefficient of 1e-4 mmol/gDW per unit biomass (1e-3 as sensitivity). Demands: CoQ10, heme and heme A, dolichol-P, GPI-anchor precursor, lipoate, CoA, Fe-S cluster, SAM sink, spermidine (domain S1). Metabolite IDs per parent are frozen at M3. |
+| B-loo_j | biomass | leave one component out. The components are the direct reactants of MAR13082 except ATP and H2O, plus the cofactor-pool groups linked to the floor or to artefacts: retinoid and vitamin-D catabolites, tocopherol catabolites, carnitine, heme, ubiquinol, lipoate and cobamide. They are enumerated per parent by script at M3 and frozen (V-13; approved lists §5). |
+| B-add_c | biomass | add one demand at a time, and then all together, at a fixed coefficient of 1e-4 mmol/gDW per unit biomass (1e-3 as sensitivity). The demand list is `notes/apriori_lists_approved.md` §5 (B-add row), verbatim. **Any component already present in the parent's biomass is skipped for that parent and logged** (V-14). Metabolite IDs per parent are frozen at M3. |
 
 - **Composition scaling** (lipid ±50% etc.) is **rejected**: it changes coefficients, which LITERATURE §5 says barely affect essentiality, whereas B-loo and B-add cover presence.
 - **Metrics.**
@@ -509,14 +559,14 @@ Every result table carries wall and CPU time per line and in total (build, KO sw
   - *Negative:* random pseudo-tasks, where outputs are swapped for random producible metabolites of the same compartment (SEEDS[0:5]).
   - *Negative:* matched call rate. The same number of extra calls is assigned to the genes with the highest B2.
   - *Positive:* ETF capability-only false positives under T3 (label-free).
-  - *Positive:* mevalonate-core genes become essential under B-add (CoQ, dolichol, prenyl demands).
+  - *Positive:* the mevalonate-core control as restated in `notes/apriori_lists_approved.md` §5: "**no loss of mevalonate-core essentiality** when serum cholesterol is added under B-add".
 - **Decision.** At most 2 candidates that pass TG and beat both negative controls go to the shortlist.
 
 ### W4 — Context-specific models (PI decisions 28, 29, 32)
 - **Genomic constraint** (applies to every family; PI decision r2-11):
   - **Loss rule.** A gene is lost if it is:
     - homozygously damaged (damaging-matrix code 2); or
-    - heterozygously damaged (code 1) **and** shows LOH, low CN or TPM < 1; or
+    - heterozygously damaged (code 1) **and** shows LOH (proxied by relative CN < 0.5 until an LOH file exists) or TPM < 1; or
     - homozygously deleted (relative CN < 0.3, with 0.1 and 0.5 as sensitivities).
   - **Codes.** The damaging matrix holds DepMap's per-gene count of damaging alleles: 0 none, 1 heterozygous, 2 homozygous or two hits [dn:mutation_matrix_values] (data r2 N2). This is re-verified from the DepMap documentation at M1.
   - **LOH proxy.** No LOH file is on disk, so LOH is proxied by relative CN < 0.5 at the gene. A DepMap LOH call replaces the proxy if one is added to DATA.md before M1.
@@ -525,10 +575,10 @@ Every result table carries wall and CPU time per line and in total (build, KO sw
     1. Test each loss **alone** on the parent with the line's medium.
     2. Drop every loss that alone kills WT growth, and log it as a *model-contradicted loss*. These form an error-analysis output (domain r1 M4).
     3. Apply the remaining losses jointly.
-    4. If the joint set still kills growth, drop losses one at a time, in descending order of the lost gene's expression, until growth is restored, and log them.
+    4. If the joint set still kills growth, drop losses one at a time, in descending order of the lost gene's expression (ties broken by ascending Entrez ID), until growth is restored, and log them.
   - Lines without CN use mutations only (flagged).
   - Ploidy sensitivity: absolute CN ≈ relative CN × Cell Model Passports ploidy, with a homozygous deletion if < 0.5.
-- **Repair rule** (compute MF2; fixed now; applies to F0, F2, F3 and F5 and after the genomic constraint):
+- **Repair rule** (compute MF2; fixed now; applies to F0, F2, F3, F3b and F5 and after the genomic constraint):
   1. Solve one L1 LP that minimises Σ_r w_r·|v_r| over the closed reactions, with w_r = 1 + the expression deficit of r, subject to WT biomass ≥ 1% of the generic WT on the line's medium.
   2. Viability tasks are closed-system tests with their own inputs, so they cannot share that LP (compute r2 SF-a). Solve **one L1 LP per viability task** (GR and the 9 ER tasks) with the same weights, subject to that task being feasible.
   3. Re-open the **union** of reactions with |v_r| > 1e-6 across these LPs. The compute probe re-opened 1–2% of closed reactions in < 0.5 s per line.
@@ -537,18 +587,18 @@ Every result table carries wall and CPU time per line and in total (build, KO sw
 - **GPR → score convention** (pre-registered; prior-work SF6):
   - presence scoring (F0, F2, F3, F5): AND = min, OR = max;
   - E-Flux capacity (F4): AND = min, OR = sum;
-  - F1 uses RAVEN's own convention unchanged (documented at M3).
+  - CORDA (F3b) uses the same presence convention for its confidence levels.
 
 **Families.**
 
 | ID | Family | Implementation and specification |
 |---|---|---|
 | F0 | GPR pruning plus repair (naive reference) | own |
-| F1 | ftINIT. **Per line: only the B7 configuration** (the ≤1 ftINIT configuration per line). Other thresholds and the "growth on line medium" task variant are built on the panel and for group models only. **Repair (PI decision r2-10):** any F1 model scored on a medium other than M0 goes through the repair rule above (template reactions re-opened; logged). B7 itself stays unrepaired, on M0. | `raven_toolbox` via `estimateEssentialGenes.py` |
+| (F1) | ftINIT: **excluded by user decision D2** (in the user's own analysis it underperformed the generic model). The label F1 is retired, not reused. | — |
 | F2 | GIMME: required function 0.9 × max biomass; cutoff per threshold rule | `troppo` if it installs and passes toy tests at M3 (pinned); otherwise own |
-| F3 | FASTCORE: core = reactions scoring above threshold; consistency via cobra `fastcc`. F3b = CORDA (`corda` 0.5.1), included only if the M3 pilot is ≤ 2 CPU-h per model | own / `corda` |
+| F3 | FASTCORE: core = reactions scoring above threshold; consistency via cobra `fastcc`. F3b = CORDA (`corda` 0.5.1), the only PROMPT-named established method still in scope. Its panel scope is set by its M3 pilot cost (row A6) | own / `corda` |
 | F4 | **E-Flux** (Colijn 2009): internal bounds scaled by GPR capacity, with a floor of 10; GPR-less reactions and exchanges keep their default or medium bounds | own |
-| F5 | **Label-calibrated presence (LCP)**, tagged "label-calibrated" in every table: gene off if w_r·z_RNA + w_p·z_prot + w_c·loss < τ. A 4×4×3 grid is fitted by **nested** LOLO on the panel. Excluded from the variance panel. | own |
+| F5 | **Label-calibrated presence (LCP)**, tagged "label-calibrated" in every table: gene off if w_r·z_RNA + w_p·z_prot + w_c·loss < τ. A 24-point grid (Stage-A row A5) is fitted by **nested** LOLO on the panel. Excluded from the variance panel. | own |
 
 - **Thresholds:**
   - R1: global, TPM 1;
@@ -562,56 +612,54 @@ Every result table carries wall and CPU time per line and in total (build, KO sw
 
   Protein **absence** counts as evidence only for soluble enzymes; transporters use RNA only (domain S6). The protein arm is pooled across lineages with a lineage covariate, and it is descriptive on test (data SF10).
 
-**Staged run matrix (PI decision 29).**
-- **Stage A: 100-line training panel.** The panel takes 10 training lineages × 10 lines, sampled with SEEDS[0]; if a lineage has fewer lines, the gap is filled from the largest training lineages. n_p = panel lines with proteomics, counted at M1; the costs below assume n_p ≤ 60.
-  - **Stage-A build table (frozen; PI decision r2-12).** Unit costs: ftINIT ≈ 22 CPU-min per line (repository); LP build + repair + KO sweep ≈ 1.5 CPU-min per line (compute r2 probe, with the vectorised closure map).
+**Staged run matrix (PI decisions r1-29, r2-12; LP-only under D2).**
+- **Stage A: 30-line training panel.** The panel takes 10 training lineages × 3 lines, sampled with SEEDS[0]; if a lineage has fewer lines, the gap is filled from the largest training lineages. n_p = panel lines with proteomics, counted at M1; the costs below assume n_p ≤ 20.
+  - **Stage-A build table (frozen).** Unit cost: LP build + repair + KO sweep ≈ 1.5 CPU-min per line (compute r2 probe, with the vectorised closure map).
 
-| Row | Configuration | Line set | Seeds | Builds | Expected CPU-h (MILP) |
+| Row | Configuration | Line set | Seeds | Builds | Expected CPU-h |
 |---|---|---|---|---|---|
-| A1 | F1 × {R1, R3} × {real, permuted expression}, RNA (variance partition; F1 × R1 × real = **B7 on the panel**) | panel (100) | SEEDS[0] | 400 ftINIT | 147 (147) |
-| A2 | F1 × R1 × protein (ProCan) | panel lines with proteomics (≤ 60) | SEEDS[0] | ≤ 60 ftINIT | 22 (22) |
-| A3 | F0, F2, F3, F4 × {R1, R3} × {real, permuted}, RNA (variance partition) | panel (100) | SEEDS[0] | 1,600 LP | 40 (0) |
-| A4 | F0, F2, F3, F4 × R2 × real RNA | panel (100) | — | 400 LP | 10 (0) |
-| A5 | F0, F2, F3, F4 × {R1, R2, R3} × {protein, RNA+protein} | panel lines with proteomics (≤ 60) | — | ≤ 1,440 LP | 36 (0) |
-| A6 | ± genomic constraint, applied **post-extraction** (gene KO + repair + sweep), never as a rebuild, to every real-expression build of A1–A5 | as A1–A5 | — | ≤ 2,900 LP re-sweeps | 73 (0) |
-| A7 | F5 LCP: 24-point grid (coarse 12 + local refinement 12); nested panel LOLO reuses these label-free builds | panel (100) | — | 2,400 LP | 60 (0) |
-| A8 | F3b CORDA × R1 × RNA, **only if** its M3 pilot is ≤ 0.25 CPU-h per model; otherwise dropped | panel (100) | — | ≤ 100 | ≤ 25 (0) |
-| A9 | F1 stability: `resolve_ties` off × SEEDS[0:3] | 20 panel lines | SEEDS[0:3] | 60 ftINIT | 22 (22) |
-| | **Total Stage A** | | | **≈ 520 ftINIT + ≈ 8,800 LP** | **≈ 435 (≈ 191)** |
+| A1 | F0, F2, F3, F4 × {R1, R3} × {real, permuted expression}, RNA (variance partition) | panel (30) | SEEDS[0] | 480 | 12 |
+| A2 | F0, F2, F3, F4 × R2 × real RNA | panel (30) | — | 120 | 3 |
+| A3 | F0, F2, F3, F4 × {R1, R2, R3} × {protein, RNA+protein} | panel lines with proteomics (≤ 20) | — | ≤ 480 | 12 |
+| A4 | ± genomic constraint, applied **post-extraction** (gene KO + repair + sweep), never as a rebuild, to every real-expression build of A1–A3 | as A1–A3 | — | ≤ 840 re-sweeps | 21 |
+| A5 | F5 LCP: 24-point grid (coarse 12 + local refinement 12); nested panel LOLO reuses these label-free builds | panel (30) | — | 720 | 18 |
+| A6 | F3b CORDA × {R1, R3} × {real, permuted}, RNA, if its M3 pilot is ≤ 0.25 CPU-h per model. If the pilot is in (0.25, 1] CPU-h per model: CORDA × R1 × {real, permuted} on 15 panel lines. Above 1 CPU-h per model it is dropped and the drop is reported (V-9; verification Part 5 item 9). | panel (30), or 15 lines | SEEDS[0] | ≤ 120 | ≤ 30 |
+| A7 | Stability: F2 (GIMME, alternate optima via random objective perturbation) and F3 (FASTCORE, expression-noise perturbation) | 20 panel lines | SEEDS[0:3] | 120 | 3 |
+| | **Total Stage A** | | | **≈ 2,880 LP builds** | **≈ 100 (0 MILP)** |
 
   - Selection keeps ≤ 2 thresholds per family and the modality. Label-blind gates come first (growth, viability tasks, repair size ≤ 5% of reactions), then nested panel LOLO with the ≥ 8-of-10 bar.
-  - TG for the MILP families is computed on panel lines (stated).
-- **Stage B: all lines.** At most 4 configurations per line, of which at most 1 is ftINIT (that one is B7). Builds for validation and test lines are made only for configurations that passed TG (ext-PI SF6).
-- **Stage C: group models.** About 150 models (the stability study moved to row A9):
+- **Stage B: all lines.** At most 3 LP configurations per line. Builds for validation and test lines are made only for configurations that passed TG (ext-PI SF6).
+- **Stage C: group models.** About 150 models × ≤ 4 LP configurations:
   - per lineage, from the median expression of fitting lines; a test lineage's model uses its own lines' inputs;
   - per genomic background;
   - lineage × background, where ≥ 8 lines exist.
 
-**Genomic backgrounds (PI decision 32).** Groups are metabolism-linked, each with a GEM mechanism, and are counted label-free [dn:backgrounds]. The expected dependency of each group is pre-registered in `gene_panels.tsv`.
+**Genomic backgrounds (PI decision 32).** The groups, their expected dependencies, their status (approve, modify, drop, in-silico only) and the negative controls (the **primary** control is size-matched random within-lineage member sets, SEEDS[0:5]; KRAS_hotspot is a **secondary**, non-metabolic-driver control) are those of `notes/apriori_lists_approved.md` §2, used verbatim. The counts below are label-free [dn:backgrounds].
 
-| Group | Rule | Screened lines | Lineages eligible for within-lineage contrast | Expected dependency / status |
-|---|---|---|---|---|
-| MTAP_del | relCN < 0.3 | 233 | 19 | MAT2A/PRMT5: **expected FBA failure** (MTA inhibition is not stoichiometric) |
-| ASS1_silenced | log2(TPM+1) < 1 | 161 | 14 | arginine import |
-| NRF2_active | KEAP1 loss (r2-11 rule) or NFE2L2 hotspot | 43 | 5 | SLC7A11/cystine, NADPH |
-| STK11_loss | loss (r2-11 rule) | 52 | 4 | pyrimidine/CPS1 |
-| NAPRT_silenced | log2(TPM+1) < 1 | 30 | 4 | NAMPT |
-| FH_SDH_loss | loss (r2-11 rule) | 2 | 0 | **dropped** under the r2-11 rule (most v1 members were heterozygous); reported only under the v1-rule sensitivity |
-| PHGDH_amp | relCN ≥ 2 | 30 | 5 | serine synthesis |
-| ME2_loss | loss (r2-11 rule) | 23 | 3 | ME3 |
-| ENO1_del | relCN < 0.3 | 0 | 0 | in-silico check only (ENO1 KO → ENO2 essential) |
-| IDH_mut | IDH1/2 hotspot | 8 | 0 | **dropped** (too few lines; would need an added 2-HG reaction) |
-| KRAS_hotspot | hotspot | 209 | 11 | **negative-control** group (signalling; no GEM handle) |
+| Group | Rule | Screened lines | Lineages eligible for within-lineage contrast |
+|---|---|---|---|
+| MTAP_del | relCN < 0.3 | 233 | 19 |
+| ASS1_silenced | log2(TPM+1) < 1 | 161 | 14 |
+| NRF2_active | KEAP1 loss (r2-11 rule) or NFE2L2 hotspot | 43 | 5 |
+| STK11_loss | loss (r2-11 rule) | 52 | 4 |
+| NAPRT_silenced | log2(TPM+1) < 1 | 30 | 4 |
+| FH_SDH_loss | loss (r2-11 rule) | 2 | 0 |
+| PHGDH_amp | relCN ≥ 2 | 30 | 5 |
+| ME2_loss | loss (r2-11 rule) | 23 | 3 |
+| ENO1_del | relCN < 0.3 | 0 | 0 |
+| IDH_mut | IDH1/2 hotspot | 8 | 0 |
+| KRAS_hotspot | hotspot | 209 | 11 |
 
 Notes on the table:
 - Counts are from [dn:backgrounds.\*.n_screened_members] and [dn:backgrounds.\*.within_lineage_eligible_lineages]. "Eligible" means ≥3 members and ≥3 non-members in the lineage.
 - **Minimum n (a priori).** A group is evaluated in a tier only if ≥2 lineages in that tier are eligible and those lineages contain ≥10 members.
 - **Evaluation.** The contrast is pooled within lineages (lineage as stratum): the group model vs the same-lineage model on member lines. Two metrics are used: ΔtAP on the pre-registered expected-dependency genes, and Δ̄_lin.
 - **Feasibility on test.** The share of simulated accepted draws whose test tier can evaluate the group is given in [dn:split_simulation.background_test_feasibility_share]: MTAP 1.0, ASS1 0.995, KRAS 0.98, NRF2 0.70, STK11 0.61, NAPRT 0.49, PHGDH 0.47, ME2 0.29, FH/SDH 0. The evaluable list is fixed at M1 from the real split.
-- **All background contrasts are estimates (exploratory)** and are never part of the confirmatory family. Groups below 50 lines (ME2, NAPRT, PHGDH) are flagged as small (data r2 N4).
+- **All background contrasts are estimates (exploratory)** and are never part of the confirmatory family. Groups below 50 lines (NRF2, ME2, NAPRT, PHGDH) are flagged as small (data r2 N4).
 
 **Method-vs-tissue test (pre-registered).**
-- *Builds:* F0–F4 × {R1, R3} × {real expression, permuted expression}, where each gene's values are permuted across lines, on the 100-line panel.
+- *Builds:* F0, F2, F3, F4 (+ F3b CORDA per row A6) × {R1, R3} × {real expression, permuted expression}, where each gene's values are permuted across lines, on the 30-line panel (rows A1, A6). These are **≥ 3 established non-ftINIT families** (GIMME, FASTCORE, E-Flux, and CORDA where kept) plus F0 as the naive reference, which satisfies D2.
+- *Power:* with 10 lineages × 3 lines, the lineage R² is estimated with limited power. A null H4.2 result is reported as "not detected at this panel size", not as absence.
 - *Analysis:* PERMANOVA (999 permutations) with R² for method, threshold and lineage, at three levels:
   - reaction-content Jaccard;
   - the 57-task capability profile;
@@ -623,7 +671,7 @@ Notes on the table:
   - **H4.2:** within each method, R²(lineage | real) > the 95th percentile of R²(lineage | permuted). A method that fails is labelled "method-dominated".
   - **H4.3:** H4.1 and H4.2 on KO profiles.
 - *Positive controls:* TYR/DCT in Skin models; urea cycle absent from most lines.
-- *Stability:* 20 lines × F1 with `resolve_ties` off × SEEDS[0:3], plus expression-noise perturbation (compute MF3e).
+- *Stability:* row A7 (GIMME alternate optima; FASTCORE under expression noise; 20 lines × SEEDS[0:3]).
 
 **Metric and decision.**
 - TG is computed against the best shortlisted generic pipeline. TG reports must include the **expressed-pairs** Δ (ext-PI MF4) and mΔAP_gene vs B3.
@@ -641,7 +689,7 @@ Notes on the table:
 | OR → AND | the branch genes are **not** Ensembl paralogs of each other **and** are co-members of a CORUM or Complex Portal complex **and** have protein co-abundance r ≥ 0.5 over ≥ 30 lines (ProCan, then Nusinow) |
 | AND → OR | the genes are paralogs **and** are not co-members of any complex |
 | Remove OR branch | the gene has a UniProt function unrelated to the reaction (accession and entry version cited from a downloaded UniProt file added to DATA.md); or the gene is a **soluble enzyme** never detected in either proteomics set **and** has TPM < 1 in ≥ 95% of lines ("pan-cancer absent", tagged) |
-| Never edited automatically | a pre-registered list of heteromeric isozymes: LDHA/B, PFKL/M/P, ENO1/2/3, ALDOA/B/C, CKB/CKM, COX4I1/2, COX6A1/2, COX7A1/2, ATP5MC1/2/3, ATP6V1B1/2, ATP6V0A1–4 (domain S6) |
+| Never edited automatically | the isozyme-exception list of `notes/apriori_lists_approved.md` §3, used verbatim, including its notes on RRM2/RRM2B and on tissue-restricted isoforms |
 | Optimised H1 only | MAR04644 made irreversible (TYMS) |
 
 - **Arms.**
@@ -676,10 +724,10 @@ Notes on the table:
 - **Matched capacity.** Every block uses PCA-20 (PCA-50 as sensitivity), ridge regression, and identical folds (LOLO, or 5-fold within lineage for subtypes) with SEEDS[0:3]. Lineage is a covariate.
 - **Analyses:**
   1. Subtypes. Within-lineage OncotreeSubtype and `OmicsInferredMolecularSubtypes`, for lineages with ≥ 2 subtypes of ≥ 5 lines (list generated by script before fitting). Metrics: silhouette and kNN macro-F1.
-  2. Metabolic drugs. The compound list is **curated a priori**: compounds whose primary mechanism targets a Human-GEM enzyme or transporter; classes in Appendix A; kinase inhibitors excluded. Each compound has a prodrug/activation flag, and the activating gene is a second feature. The list is fixed by script and reviewed by a domain agent before W6.
+  2. Metabolic drugs. The compound list is **curated a priori**: compounds whose primary mechanism targets a Human-GEM enzyme or transporter; the rules, classes and compounds are those of `notes/apriori_lists_approved.md` §4, used verbatim (kinase inhibitors excluded; prodrug flag and activating genes; ≥ 100 lines with features, checked by script).
      - Response data: PRISM, GDSC2 and CTRP; a compound needs ≥ 100 lines with features.
      - Metric: held-out Spearman ρ. A fit-free test is also run: within-lineage ρ between the target's line-specific e and the response, compared with the target's expression.
-     - Positive controls: DHODH–brequinar, DHFR–methotrexate, HMGCR–statins, TYMS–5-FU, IMPDH–mycophenolate.
+     - Positive-control pairs: those of `notes/apriori_lists_approved.md` §4.
   3. Metabolomics. The 225 CCLE metabolites, scored by held-out ρ.
 - **Controls:**
   - permuted-flux features (shuffled within lineage);
@@ -726,7 +774,7 @@ Notes on the table:
   - The build starts **right after T1**, in parallel with W6/W7 (ext-PI SF6).
   - Builds cached by (config hash, input hash) are reused (compute SF8).
   - **Human2-parent models are released first. Human1-parent models follow if the budget allows; otherwise REPORT.md says they were not released and why** (ext-PI r1 SF8).
-  - **H1 resource scope, fixed now** (compute r2 SF-c). If P1 contains per-line F1, a full H1 F1 resource costs ≈ 545 MILP CPU-h. The H1 release is therefore the LP-family part of P1(H1) for all lines plus the P1(H1) F1 builds that already exist for validation and test lines. A full H1 F1 resource is built only if budget remains (cut list, §13).
+  - **H1 resource scope.** Under D2, P1 is LP-only, so P1(H1) for all 2,030 models costs ≈ 50 CPU-h (§13). It is built after the H2 release.
 - **Format and naming.**
   - SBML L3V1 FBC v2, gzipped, at `resource/v{X.Y.Z}/{ModelID}_{parent}-{version}_{pipelineID}.xml.gz`.
   - Notes record the medium source tier, pipeline ID, git commit, input SHAs and the repaired reactions.
@@ -751,17 +799,29 @@ Notes on the table:
 
 ### 10.1 Selection
 1. Shortlists come out of W2, W3, W4 and W5.
-2. The **combination factorial** (≤ 24 combinations) is first run on the 100-line panel. The top 3 are run on all training lines with nested LOLO (compute SF5) and then on validation.
+2. The **combination factorial** (≤ 24 combinations) is first run on the 30-line panel. The top 3 are run on all training lines with nested LOLO (compute SF5) and then on validation.
 3. The paired one-SE rule picks P1.
 4. P1 must pass the validation gate (§8). If no candidate passes, P1 is the best point estimate, labelled "gate not passed", and is still tested.
-5. **Before T1**, the **full factorial of P1's levers** is built on validation and test lines: ≤ 2^4 cells, label-free builds (PI decision r1-22). The levers are medium (gate-free), context (extraction, genomic constraint **and the transporter gate**, PI decision r2-8), tasks and curation.
-6. **H1 pre-builds** (compute r2 SF-e). At M5, H1 ftINIT builds in the B7-equivalent configuration are started for validation and test lines, so that P1(H1) is off the critical path. They are discarded if P1 has no per-line F1. If they are used, they also give a B7(H1) estimate.
+5. **Attribution (scope reduced by the user's compute decision, v3).** The **full 2^4 factorial of P1's levers runs on validation only**: main effects, the curation × constraints interaction, and Shapley shares. The levers are:
+   - medium (gate-free);
+   - context (extraction, the genomic constraint **and the transporter gate**, PI decision r2-8);
+   - tasks;
+   - curation.
+
+   On **test**, only these **pre-declared contrasts** are built and evaluated (all sealed at T1):
+   - (i) P1 vs G\*;
+   - (ii) "medium alone" = M0 → the best gate-free documented variant, on the generic parent;
+   - (iii) curation alone = curated vs generic GPRs on the generic parent;
+   - (iv) constraints alone = P1 with generic GPRs vs G\*;
+   - (v) curation given constraints = P1 vs P1 with generic GPRs.
+
+   Shapley shares are therefore validation-only estimates. On test, the curation-vs-constraints answer rests on (iii)–(v).
 
 ### 10.2 Test looks
 | Look | When | Revealed at the look | Computed and **sealed** (hash in the ledger; revealed after P2 is frozen) |
 |---|---|---|---|
 | Rehearsal | before T1 | `evaluate_test.py --rehearsal` runs on synthetic labels of the same shape, then on validation. The validation run **counts as a validation look** and gets a ledger row (AI r2 S6). | — |
-| **T1** | M6 | scalars and CIs of C1, C1b, C3, C2, C6 (value; status resolved at T2), the B8± and B8′ contrasts, within-parent contrasts, MCC, Δ̄_line, the lineage t-interval, the k-of-7 count, and **failed-build counts per method and lineage** | per-lineage and per-gene tables; the full W1 benchmark; the per-task table; library strata; the attribution factorial (main effects, curation × constraints interaction, **Shapley shares**); "medium alone" (M0 → documented medium on the generic parent); the failure account |
+| **T1** | M6 | scalars and CIs of C1, C1b, C3 and C2; the B8± and B8′ contrasts; within-parent contrasts; the §6.8 binary endpoints (both paper protocols) for G\* and P1; our fixed-cutoff MCC; Δ̄_line; the lineage t-interval; the k-of-7 count; and **failed-build counts per method and lineage** | per-lineage and per-gene tables; the full W1 benchmark; the per-task table; library strata; the pre-declared test contrasts (i)–(v) of §10.1, including "medium alone" (M0 → best gate-free documented variant on the generic parent; PD r2-8); the failure account |
 | **T2** | after the W7 stop | C4, C5 and P2's scalar grid; then all sealed T1 outputs are unsealed | — |
 
 - **Where sealed outputs go** (PI decision r2-16). `evaluate_test.py` writes sealed outputs only to `data/locked/sealed/<look>/`, which is git-ignored and protected by the hook and the tripwire. Only their SHA-256 values go into the ledger and git. The pre-commit guard against test-keyed tables stays on until the **T2 unseal** ledger row exists.
@@ -841,7 +901,7 @@ The 20 worst lineage × gene cells are traced by pFBA. The report states an uppe
 - **Label-informed by construction** (stated limitations):
   - L-prob and DepMap's common-essential list, which DepMap derives from all lines;
   - Human2's GPR curation, which may have been DepMap-informed (unknown).
-- **Hart 2015 control.** The ftINIT acceptance test uses Hart 2015 labels. It is **one-shot** with frozen parameters (AI SF7), and its reference values are read by script.
+- **Hart 2015.** No longer used: the ftINIT acceptance test was removed with D2.
 
 ### 11.3 Ledgers, caps and frozen artefacts (PI decisions 17, 18)
 - **Ledgers.** `nextgem.ledger.append()` maintains `results/{test_ledger,validation_ledger}.tsv`. The ledgers are hash-chained (each row holds the SHA of the previous row), file-locked, **committed on every append**, and checked by `scripts/verify_ledgers.py` (chain intact; additions only in git history; every output has a row).
@@ -864,19 +924,18 @@ The 20 worst lineage × gene cells are traced by pFBA. The report states an uppe
 - **Long jobs.** A job longer than 1 CPU-h runs from a pinned git worktree (`/data/tmpA/nextgem_runs/<commit>`).
 - **Writes.** Writes are atomic (tmp → fsync → rename). A free-space check of ≥ 20 GB runs before any job that writes > 1 GB.
 - **Solver infrastructure.**
-  - Gurobi slots: 16 `flock` slots on `/dev/shm`. A worker waits for a slot and never falls back to another solver.
-  - **Workers** (PI decision r2-13): start at **12 MILP + 16 LP**. The final counts are frozen as config at M3, from the measured ftINIT peak RSS, keeping **≥ 20 GB free** on the shared host. A job aborts if available memory falls below 10 GB. The MILP lane starts at M2.
+  - Gurobi slots: a `flock` pool on `/dev/shm` sized to the licence session limit verified at M3. A worker waits for a slot and never falls back silently to another solver.
+  - **Workers** (PI decision r2-13 as amended by D2 and r3): there is no MILP lane. Start at **24 LP workers + ≤ 4 Gurobi sessions** (≈ 41 GB; ≈ 1.45 GB per LP worker, measured). All 28 run on Gurobi only if an M3 check confirms that the WLS licence admits 28 concurrent sessions, in which case the `flock` pool is set to 28; otherwise LP workers beyond the licence pool run GLPK, only for families that pass the GLPK = Gurobi equality check and whose M3 GLPK per-line cost is ≤ 2× Gurobi. Raising to 28 LP workers at M3 requires measured RSS to keep ≥ 20 GB free. A job aborts below 10 GB.
   - Licence, environment and network errors raise `SolverInfraError`, which **aborts the job with no output**.
-  - Every KO parquet must have `solver` equal to its declared solver. LP sweeps may be declared GLPK (compute SF2), with a per-family check that GLPK and Gurobi give equal ratio_r. MILPs always use Gurobi.
-- **MILP time limits** (PI decision r2-6). For every MILP build (B7, F1 and any other ftINIT or MILP arm), a **feasible time-limited incumbent is accepted**, as in the repository pipeline. Its gap, step and `status = time_limit` are logged, and the share of time-limited builds is reported per method.
+  - Every KO parquet must have `solver` equal to its declared solver. LP sweeps may be declared GLPK (compute SF2), with a per-family check that GLPK and Gurobi give equal ratio_r. QP MOMA always uses Gurobi.
+- **Time limits** (PI decision r2-6, reduced to its remaining object under D2). No MILP arm remains. QP MOMA solves that hit their time limit are failed solves for that gene (NaN, counted). The MOMA arm is dropped if more than 0.1% of its pairs fail.
 - **Failed build.** Only these count as a failed build:
-  - no incumbent;
-  - infeasibility;
+  - no feasible model after the method's build (infeasibility);
   - WT growth ≤ threshold after the method's own repair rule;
   - a numerical non-optimal LP status that persists after one retry with NumericFocus = 2.
 
   Licence and solver errors are not failures: they still abort the job (r1 decision 20).
-- **No-information score.** A failed build gets the no-information score, applied **identically in every arm**, including B7 and the H1 arm.
+- **No-information score.** A failed build gets the no-information score, applied **identically in every arm**, including the H1 arm.
   - Per line: all genes are tied, so tAP_line = E[AP_random].
   - Per gene (for tAP_gene across lines): the failed line takes, for each gene, the method's **median score for that gene over its non-failed lines in the same tier**. That value is placed as a tie and carries no line-specific information (stats r2 SF-d).
   - It never gets e = 0 for single genes, and never the generic parent's scores.
@@ -888,7 +947,7 @@ The 20 worst lineage × gene cells are traced by pFBA. The report states an uppe
 ### 11.5 Process
 - **Single writer.** Only the PI writes RESEARCH_TREE.md, LESSONS.md, DESIGN.md, DATA.md and the checksums, and only the PI commits, never with `git add -A`. Sub-agents write under `results/<ws>/`, and their summaries go to `results/<ws>/agent_summaries/`.
 - **Job tracking.** A job registry (`results/jobs.tsv`) and `scripts/status.py` are run after any context reset. Each job declares a CPU budget and is killed at 2× it. Any step estimated above 10 CPU-h first runs a pilot of ≤ 10 lines. `results/budget.tsv` tracks spending. At most 4 sub-agents run at once (AI SF4, SF5).
-- **Label-exposure register** (`notes/label_exposure.md`, to be created by the PI; AI r1 SF1, r2 S5). It logs every viewing of label *values*. Entries to date, updated per PI decision r2-1:
+- **Label-exposure register** (created; see `notes/label_exposure.md`, which is authoritative; AI r1 SF1, r2 S5, V-16). It logs every viewing of label *values* or label-derived summaries. Entries as of v3:
   - the baseline review read the CRISPR header only;
   - the literature agent saw the all-line DepMap common-essential count;
   - the **round-1 statistics review**:
@@ -898,10 +957,17 @@ The 20 worst lineage × gene cells are traced by pFBA. The report states an uppe
     - also computed all-line prevalences and the common-essential share of positives;
   - the **round-1 data reviewer** computed ASNS prevalence by medium and per-library positive rates on all lines;
   - the **design author**, while inspecting a file header with `head`, printed about 10 L-prob values for one line (ACH-002730);
-  - the **all-line label copy** `ge_U.parquet` (CRISPRGeneEffect restricted to U, all 1,361 lines) and other derived scratch files (`testtier.py`, `splits.pkl`). These were written by a round-1 reviewer in the shared scratchpad and **deleted by the PI on 2026-10-26**;
-  - the **PI's header-only read** of a label file while testing the hook.
+  - the **all-line label copy** `ge_U.parquet` (CRISPRGeneEffect restricted to U, all 1,361 lines) and `splits.pkl`, written by a round-1 reviewer in the shared scratchpad and **deleted by the PI on 2026-10-26**. The remaining label-reading scratch scripts (`testtier.py`, `stats1.py`, `prev.py`, `splits_sim.py`, `apnull.py`, `genes2.py`) were deleted later the same day (V-10);
+  - the **PI's header-only read** of a label file while testing the hook;
+  - the **PI** read reviewer summaries containing all-line aggregate label statistics (no gene × line values);
+  - the **round-3 verifier** read the register and the round-2 statistics review, which contain all-line aggregates (no gene × line values, nothing on the new test tier).
 
-  **Consequences.** The retired seed's tiers are known, which is why the seed is replaced by a user-supplied one (§4.1). All other exposures are aggregate (no gene × line information on the new test tier) and method-symmetric. Agents in the register **must not author or approve** a priori lists, candidate sets or decision thresholds; the gene panels and the drug list are produced by unexposed agents at M1 (open question F-4 on the lists already in this document). Whoever writes an a priori list attests in the commit message that they are not in the register.
+  **Consequences.** The retired seed's tiers are known, which is why the seed is replaced by a user-supplied one (§4.1). All other exposures are aggregate (no gene × line information on the new test tier) and method-symmetric.
+
+  **Authorship rule** (PI decision recorded in the register; resolves F-4). Aggregate all-line label statistics do **not** disqualify an agent from authoring or approving a priori lists. **Disqualifying exposure** is gene × line label values, or any label summary on the post-freeze validation or test tiers.
+  - The design author (about 10 values for one line) therefore does not author lists.
+  - The round-3 verifier (aggregates only) authored `notes/apriori_lists_approved.md`, which DESIGN.md uses verbatim.
+  - Whoever writes an a priori list attests their register status in the commit message.
 - **Reviews.**
   - Each `REVIEW.md` has front matter (reviewed output SHA, commit, author, reviewer, verdict, independent code path).
   - `scripts/check_reviews.py` blocks a milestone if a cited output lacks a matching ACCEPT, or if the author and reviewer are the same agent.
@@ -921,13 +987,14 @@ The 20 worst lineage × gene cells are traced by pFBA. The report states an uppe
 | Component | Known-answer and toy tests | Positive control | Negative control |
 |---|---|---|---|
 | tAP and metrics | brute-force enumeration of tAP on toy rankings with ties; the O(n_g) form equals the hypergeometric form; constant → E[AP_random] exactly; failed-line per-gene median rule; mean over 1,000 seeds of score + 1e-9·noise equals tAP within MC error; perfect and reversed rankings; the ≥5-positive NA rule; set-mismatch assertion | synthetic known gap recovered | **bootstrap calibration**: 500 synthetic Δ = 0 datasets with a lineage random effect, near-binary score blocks and training-like per-line prevalence; coverage of the conditional CI and of the lineage t-interval reported (stats SF5) |
-| Splits | determinism; reproduces the simulated draws in design_numbers; no lineage in two tiers; all lines assigned; refuses to overwrite; **refuses seed 20261026 (and its attempt range), a non-freeze HEAD and dirty code** | — | **raw-level leakage canary** |
+| Splits | determinism; reproduces the simulated draws in design_numbers; no lineage in two tiers; all lines assigned; refuses to overwrite; **refuses any S whose attempt range overlaps the retired range 20261026…20261125; refuses code, DESIGN.md or FROZEN.tsv differing from the freeze commit, and dirty code** | — | **raw-level leakage canary** |
 | Agent guards | scanner flags a planted synthetic label copy (fingerprint and shape) and does not flag expression or CN matrices; hook liveness probe is denied; tripwire raises on `pyarrow.parquet.read_table` of a label file and on a private `labels.py` reader called from a non-entry-point script | — | the same reads from `build_labels.py` succeed |
+| §6.8 binary endpoints | toy confusion matrices with known MCC, F1, precision, recall and accuracy; undefined-MCC rule; the P57 call equals `taskEssentialGenes.py` on the generic parents; script diff confirming that `metabolicTasks_Essential.txt` = Robinson data file S3 (57 tasks) | — | constant-call method gives MCC 0 |
 | Labels | Entrez join on a toy matrix; NaN counting; fold scoping (a memorising method gets null AP on the held-out fold) | κ(L-prob, L-ge05) on training | tripwire raises on a raw open from a test module |
 | KO engine | the 36/37 existing checks; zero-flux shortcut is exact (kept for correctness only: it saves ≈ 5 s per 209 s, compute probe); GLPK = Gurobi per family; nextgem KO = `growth_ratios()` of `gradedEssentiality.py` | CAD/UMPS lethal (H2) | LAP3/TGDS ratio 1; M-open collapses |
 | W2 | toy nutrient removal; every formulation string parsed; per-medium WT-growth precheck table; floor non-binding assertion; req_c ≠ 0 for every unflagged serum component; growth calibration | ASNS DMEM vs RPMI; sterol branch serum-free; GOT2 with the gate | shuffled medium; M-open |
-| W3 | toy task; `add_moma` vs `moma` on 5 genes; D-mode feasibility log | ETF capability FP; mevalonate core under B-add | pseudo-tasks; matched call rate |
-| W4 | toy network per family; repair rule restores growth on the 12 lines the compute probe killed under F0; F1 repair on a non-M0 medium; loss-rule drop procedure gives the same result under shuffled input order | **B7 wrapper vs repository pipeline on the 5 Hart lines: per-line essential-gene Jaccard ≥ 0.95 and growth AUPRC within 0.01 of the repository values [dn:hart_reference] (one-shot)**; TYR/DCT in melanoma | permuted expression; F0 |
+| W3 | toy task; `add_moma` vs `moma` on 5 genes; D-mode feasibility log | ETF capability FP; no loss of mevalonate-core essentiality under serum + B-add | pseudo-tasks; matched call rate |
+| W4 | toy network per family; repair rule restores growth on the 12 lines the compute probe killed under F0; loss-rule drop procedure gives the same result under shuffled input order (ties broken by Entrez ID); GIMME/FASTCORE/E-Flux/CORDA toy networks with known answers (label-free positive controls replacing the removed ftINIT Hart test) | TYR/DCT in melanoma models; urea cycle absent from most lines | permuted expression; F0 |
 | W5 | toy edit flips the KO; evidence validator | v1 → v2 recovery (caveated) | random edits |
 | W6 | synthetic information injection | drug positive-control pairs | linear-of-expression null; permuted flux |
 | W7 | label permutation → AP ≈ E[AP_random] | B6 ≥ B2 on training | gene-grouped CV |
@@ -935,72 +1002,75 @@ The 20 worst lineage × gene cells are traced by pFBA. The report states an uppe
 
 ---
 
-## 13. Compute plan (PI decisions r1-29, r2-3, r2-12, r2-13; adapted from the compute reviews)
+## 13. Compute plan (v3: LP-only under D2; user target ≈ 1–1.5 days wall-clock)
 
-The unit costs are measured or cited:
+**Unit costs** (measured or cited; the M3 pilots replace the estimates):
 - generic LP sweep: 3.5 CPU-min (baseline README);
 - per-line LP build + repair + KO sweep: ≈ 1.5 CPU-min with the vectorised closure map (compute r2 probe);
-- ftINIT: ≈ 22 CPU-min per line, plus about 30 min of prep per template and task set (repository header);
+- 57-task (P57) calls for one line model: ≈ 0.1 CPU-h with a per-task zero-flux shortcut (**estimate; checked by the M3 pilot**);
 - QP MOMA: Gurobi.
 
-The M3 pilots replace these estimates. Every job declares a budget, and is killed at 2× its budget (§11.5).
+Every job declares a budget and is killed at 2× it (§11.5).
 
-| Block | CPU-h | of which Gurobi MILP/QP |
+| Block | CPU-h | of which Gurobi |
 |---|---|---|
-| W1 + W2 (per-medium × variant × gate sweeps, prechecks, floor) | 40 | 0 |
+| W1 + W2 (generic per-medium × variant × gate sweeps, prechecks, floor) | 40 | 0 |
 | W3 (capacity matrix, QP MOMA, NGAM, B-loo/B-add, pseudo-tasks) | 25 | 5 |
-| W5 (local re-evaluation, factorial on extracted sets) | 60 | 0 |
-| Prep, pilots, Hart test | 20 | 10 |
-| **Stage A** (frozen table, W4; includes B7 on the panel) | 435 | 191 |
-| **B7** on validation + test lines (≈ 526 lines at the simulated medians) | 200 | 200 |
+| W5 (enumeration, local re-evaluation, 2×2 on extracted sets) | 60 | 0 |
+| M3 pilots (floor, repair, CORDA, P57 cost, RSS) | 10 | 0 |
+| **Stage A** (frozen LP-only table, 30-line panel; W4) | 100 | 0 |
 | Stage B (≤ 3 LP configurations × TG-passing lines) | 100 | 0 |
-| Stage C (≈ 150 group models × ≤ 4 configurations) | 75 | 65 |
-| H1 arm: P1(H1) pre-built on validation + test at M5 | 200 | 190 |
-| Factorial (panel 24 combinations → top 3 on training → P1 2^4 on validation + test) | 335 | 0 |
-| W6 (including the three assay media; compute r2 SF-d) | 90 | 0 |
-| W7 (cap) | 300 | ≤ 50 |
-| W8, H2 resource: LP part and validation of 2,030 models | 105 | 0 |
-| Re-runs and fixes (+20%) | 400 | 140 |
-| **Total if P1 has no per-line F1** | **≈ 2,385** | **≈ 850** |
-| *Conditional:* deferred B7/F1 builds for the remaining ≈ 1,400 resource lines (2,030 minus the ≈ 626 panel, validation and test lines already built), if P1 contains per-line F1 (+20%) | +620 | +620 |
-| **Total if P1 contains per-line F1** | **≈ 3,005** | **≈ 1,470** |
-| *Cut-list item:* full H1 F1 resource | +545 | +545 |
+| Stage C (≈ 150 group models × ≤ 4 LP configurations) | 15 | 0 |
+| H1 arm: P1(H1) on validation + test lines (LP) | 15 | 0 |
+| §6.8 P57 calls for P1(H1) and P1(H2) on validation + test lines (≈ 526 lines × 2 parents) | 110 | 0 |
+| Factorial: 24 combinations on the panel → top 3 on training → **2^4 on validation only**; pre-declared test contrasts (i)–(v) | 160 | 0 |
+| W6 (including the three assay media) | 40 | 0 |
+| **W7 (cap)** | **100** | ≤ 10 |
+| W8: H2 and H1 resource builds (2 × 2,030 LP models) and validation | 150 | 0 |
+| Subtotal | 925 | ≈ 15 |
+| **Re-run buffer (+10%)** | 95 | — |
+| **Total** | **≈ 1,020** | **≈ 15** |
 
-- **Wall-clock**, at 12 MILP + 16 LP workers:
-  - The MILP lane before M6 is ≈ 660 CPU-h × 1.2 ≈ 66 h. It starts at M2 and is label-free.
-  - The LP lane before M6 is hidden under the MILP lane.
-  - M6 → T1 is ≈ 21 h, for the factorial on the LP lane.
-  - After T1: the conditional W8 F1 builds take ≈ 51 h on 12 slots, run in parallel with W7, which is agent-bound at ≈ 2 days.
-  - Compute-bound wall time is ≈ 110 h without per-line F1 in P1, and ≈ 140 h with it. Both fit the D+11 schedule with its 1.5× buffer only if the MILP lane starts at M2.
-- **Against the PI's ≈ 2,650 CPU-h budget.** The plan fits the budget if P1 has no per-line F1. If it does, the overrun (≈ 355 CPU-h) comes entirely from building the resource (W8) after T1. No confirmatory result depends on it, and it can be trimmed by building screened lines first (open question F-1).
-- **Disk.** ≤ 10 GB: KO parquets, reaction-set and GPR diffs (no per-line pickles), and the resource.
+**Workers.** 24–28 LP workers plus ≤ 4 Gurobi sessions (§11.4).
+
+**Critical path** (compute-bound; hours from the M1 freeze, H0):
+
+| Step | Work | CPU-h | Wall |
+|---|---|---|---|
+| 1 | W1 scoring; W2/W3/W5 generic sweeps ‖ Stage A builds | ≈ 235 | ≈ 9 h (H0 → H9) |
+| 2 | Shortlists → Stage B + Stage C | ≈ 115 | ≈ 4 h (H9 → H13) |
+| 3 | Combination factorial (panel → training) and the validation 2^4 factorial | ≈ 150 | ≈ 6 h (H13 → H19) |
+| 4 | P1 frozen → test contrasts, P1(H1) and P57 calls on test; T1 | ≈ 75 | ≈ 3 h (H19 → H22) |
+| 5 | W8 ‖ W6 ‖ W7 (W7 time-boxed at **8 h wall**, ≤ 100 CPU-h); T2 at the W7 stop, W8/W6 finish after | ≈ 290 | ≈ 11 h (H22 → H33) |
+| 6 | Resource validation complete; REPORT.md | — | ≈ 4 h (H33 → H37) |
+
+- **Expected wall-clock: ≈ 36–42 h (≈ 1.5–1.75 days) at 24–28 LP workers** from the freeze to REPORT.md; cut-list items 2 and 5 recover ≈ 4–6 h. That includes the 10% buffer and assumes the pipeline code (labels, guards, families, metrics) is implemented and verified **before** H0.
+- Implementation time is not included in this estimate (open item F-6).
+- **Budget.** ≈ 1,020 CPU-h, well under the earlier ≈ 2,650 CPU-h envelope. Disk ≤ 10 GB.
 - **Cut list, in order:**
   1. v1.3.0 sensitivity;
-  2. the full H1 F1 resource (REPORT.md states the release scope);
-  3. M3;
-  4. O-NGAM reduced to one level;
-  5. CORDA (A8);
-  6. variance panel reduced from 100 to 60 lines.
+  2. M3 (quantitative bounds);
+  3. O-NGAM reduced to one level;
+  4. CORDA reduced to its 15-line fallback (row A6);
+  5. the W7 time box cut to 4 h.
 
   The lineage × background combinations are never cut (PROMPT).
 
 ---
 
-## 14. Milestones and go/no-go
-
-Dates include a 1.5× buffer (AI SF5). D = M1 freeze day.
+## 14. Milestones and go/no-go (hours from the freeze, H0)
 
 | Milestone | Content | Go/no-go |
 |---|---|---|
-| **M1** freeze (D) | review rounds closed; `labels.py`, tripwire (`sitecustomize`), scanner, ledgers, FROZEN.tsv, pre-commit hooks; hook liveness probe denied; **freeze commit → user-supplied seed → split drawn once** (§4.1); labels built; κ rule applied; tAP library and toy tests; gene panels and drug list by unexposed agents; label-exposure register created; evaluable background groups listed | all §12 metric, split, label and guard tests pass; scanner clean; no blocking review item |
-| **M2** baseline (D+1) | W1 on training and validation; G\* fixed; B0–B6, B8±; addressable set; SESOI_C1b frozen from training; **MILP lane starts**: ftINIT prep, Stage A F1 rows and B7 on validation + test (all label-free) | H2 lift on training > 1, otherwise label-free audit (AI r1 SF2) |
-| **M3** pilots (D+2) | medium floor and growth prechecks; requirement table; attribution set recomputed from the sheets on disk; calibration; B7 one-shot Hart test; `add_moma`; repair rule; troppo/CORDA decisions; GLPK = Gurobi; ftINIT peak RSS → worker counts frozen | B7 test fails → B7 is still reported, flagged "unverified port"; a family is dropped if it fails its toy tests; MOMA is dropped above 1 CPU-h per model |
-| **M4** generic levers (D+3–4) | W2, W3 and W5 shortlists and attribution on training/validation; canary; red-team audit | only TG-passing candidates go forward; otherwise the workstream is marked [-] |
-| **M5** context models (D+4–6) | Stage A verdict (H4.1–H4.3); Stage B; Stage C; H1 pre-builds for validation + test start | method-vs-tissue verdict recorded; ≤ 2 configurations shortlisted |
-| **M6** integration + **T1** (D+6–7) | factorial; P1 frozen; P1 factorial on validation and test; rehearsal; canary; **T1** (scalars only) | C1 decides the headline |
-| **M7** (D+7–10) | W8 build starts right after T1; W6; W7 until its stop rule; P2 frozen; **T2**; unseal | C4/C5; stop rule documented |
-| **M8** resource (D+10) | validation gates pass for 100% of models; manifest | — |
-| **M9** REPORT.md (D+11) | claims register; `verify_report`, `verify_citations`; non-author review | all checks pass |
+| **M1** freeze (H0) | `labels.py`, tripwire (`sitecustomize`), scanner, ledgers, FROZEN.tsv, pre-commit hooks; hook liveness probe denied; **freeze commit → user-supplied seed → split drawn once** (§4.1); labels built (including L-ge06); κ rule applied; tAP and §6.8 metric libraries with toy tests; `data/controls/gene_panels.tsv` generated from `notes/apriori_lists_approved.md`; evaluable background groups listed | all §12 metric, split, label and guard tests pass; scanner clean |
+| **M2** baseline (H+1) | W1 on training and validation, including the §6.8 binary endpoints for generic H1/H2; G\* fixed; B0–B6, B8±; addressable set; SESOI_C1b frozen from training; label-free Stage-A and W2/W3/W5 sweeps already running | H2 lift on training > 1, otherwise label-free audit (AI r1 SF2) |
+| **M3** pilots (H+2) | medium floor and growth prechecks; requirement table; attribution set recomputed from the sheets on disk; calibration; `add_moma`; repair rule; troppo and CORDA decisions (row A6 cost bands); P57 per-line cost; GLPK = Gurobi; RSS → worker counts frozen | a family is dropped if it fails its toy tests; MOMA is dropped above 1 CPU-h per model; if P57 > 0.2 CPU-h per line model, the P57 calls run on the generic parents and on P1(H2) only (stated) |
+| **M4** generic levers (H+9) | W2, W3 and W5 shortlists and attribution on training/validation; canary; red-team audit | only TG-passing candidates go forward; otherwise the workstream is marked [-] |
+| **M5** context models (H+9 → H+13) | Stage A verdict (H4.1–H4.3); Stage B; Stage C | method-vs-tissue verdict recorded; ≤ 2 configurations shortlisted |
+| **M6** integration + **T1** (H+13 → H+22) | combination factorial; validation 2^4 factorial; P1 frozen; test contrasts; rehearsal; canary; **T1** (scalars only) | C1 decides the headline |
+| **M7** (H+22 → H+33) | W8 builds; W6; W7 until its stop rule or its 8 h time box; P2 frozen; **T2**; unseal | C4/C5; stop rule documented |
+| **M8** resource (H+33) | validation gates pass for 100% of models; manifest | — |
+| **M9** REPORT.md (H+37) | claims register; `verify_report`, `verify_citations`; non-author review | all checks pass |
 
 At each milestone: the RESEARCH_TREE status and decision note are updated, LESSONS.md is pruned, and a fresh agent is asked "what should we stop doing / what worked well?".
 
@@ -1009,7 +1079,12 @@ At each milestone: the RESEARCH_TREE status and decision note are updated, LESSO
 ## 15. Limitations stated a priori
 - **The test CI is conditional on 7 lineages.** Transfer to new tissues is weakly powered.
 - **Residual exposure of the retired seed.** Lineages named by the round-1 review may fall in the new test tier by chance. Only aggregate label statistics on them were ever computed (§11.5).
-- **B7 is the repository Python protocol (1+1), not the published MATLAB protocol (1+0).** C6 is a comparison with the former.
+- **ftINIT is excluded by user decision D2**, because it underperformed the generic model in the user's own analysis.
+  - The method-vs-tissue test covers LP families only (GIMME, FASTCORE, E-Flux, CORDA where kept, plus F0).
+  - The comparison with the Human1/Human2 papers (§6.8) uses their call rules, labels and metrics on our models, not their per-line extraction.
+- **The method-vs-tissue panel has 30 lines (10 lineages × 3),** so lineage R² is estimated with limited power.
+- **Attribution is split by tier.** Shapley shares are estimated on validation only; test carries only the pre-declared contrasts (i)–(v) of §10.1.
+- **L-ge06 applies the Human1 paper's −0.6 cutoff to Chronos.** That cutoff was used on CERES (19Q3), and the two scales differ; the Human2 paper states no threshold.
 - **Sanger-only (KY-only) lines are under-represented** among the lines evaluated for context-specific models, because they most often lack expression. The library stratum cannot be evaluated for context models on them (data r2 N3).
 - **LOH is proxied by low relative CN**, because no LOH file is on disk.
 - **Some labels and lists are all-line by construction.** L-prob and DepMap's common-essential lists are derived from all lines, and Human2's curation may have been DepMap-informed.
@@ -1019,32 +1094,34 @@ At each milestone: the RESEARCH_TREE status and decision note are updated, LESSO
 
 ---
 
-## 16. Open items for the freeze check (round-2 questions resolved by PI decisions r2-1 to r2-17)
+## 16. Open items for the PI freeze check (v3)
 
-Round-2 questions R2-1 to R2-11 are closed:
-- R2-1: C6 goes last (PD r2-2).
-- R2-2: no-information score, applied symmetrically, with sensitivities (PD r2-6; §11.4).
-- R2-3: B7 training lines deferred (PD r2-3).
-- R2-4: κ rule accepted, with its mechanics (§5.1).
-- R2-5: the floor is kept for every medium (§9 W2).
-- R2-6: the gate counts as context (PD r2-8).
-- R2-7: 9/12 folds, and 8/10 on the panel.
-- R2-8: both B8 directions (PD r2-4).
-- R2-9: approved (PD r2-17).
-- R2-10: SESOI restated (PD r2-5).
-- R2-11: register corrected, seed retired (PD r2-1).
+Round-2 questions R2-1 to R2-11 were closed in v2. In v3, D2 makes R2-1 (C6) and R2-3 (B7 lines) moot. **F-1 (compute) is resolved:** there is no per-line ftINIT, and the total is ≈ 1,020 CPU-h. **F-4 is resolved by the PI rule in `notes/label_exposure.md`:** aggregate-only exposure does not disqualify an agent from authoring lists. The a priori lists are `notes/apriori_lists_approved.md`, used verbatim.
 
-Items that remain for the PI at freeze:
-- **F-1. Compute.** If P1 contains per-line F1, the resource builds push the total to ≈ 3,005 CPU-h, against ≈ 2,650. Should W8 then build screened lines first and the 753 unscreened lines only as budget allows?
-- **F-2. PI actions outside this document:**
-  - create `notes/label_exposure.md` with the §11.5 entries;
-  - attach a note to `notes/design_review_r1/statistics.md` saying its predicted tiers refer to a retired seed;
-  - add the CLAUDE.md label-copy rule;
-  - fix the stale counts in DATA.md and `data/README.md` (2,798/2,868 genes; 928 metabolomics lines);
-  - apply the requested hook hardening (§11.1).
+Remaining items:
+- **F-2. PI housekeeping.** Done per `notes/label_exposure.md` and CLAUDE.md:
+  - the register is created;
+  - the round-1 statistics note is in place;
+  - the CLAUDE.md label rules are in place;
+  - the label-reading scratch scripts are deleted (V-10);
+  - the DATA.md metabolomics count is corrected.
+
+  - V-17 done (register redacted; PI note on the round-2 statistics review);
+  - hook hardening done (fail-closed; validation-label and `data/locked/` paths, recursive data searches).
 - **F-3. LOH.** LOH is proxied by relCN < 0.5. Should a DepMap LOH file be fetched before M1?
-- **F-4. Authorship of a priori lists.** The design author is in the exposure register (about 10 L-prob values for one line). The background groups, isozyme exceptions and drug classes in this document were drafted by the design author. Do these lists need re-approval by an unexposed agent at M1, or does the aggregate-only nature of the exposure suffice?
-- **F-5. Missing medium sheets.** MEM/EMEM, F12, McCoy's 5A and L-15 were requested from the user. If they arrive after M3, their lines stay `fallback_sheet_missing` for the whole project; nothing is re-selected.
+- **F-5. Missing medium sheets.** MEM/EMEM, F12, McCoy's 5A and L-15. If they arrive after M3, their lines stay `fallback_sheet_missing`.
+- **F-6. Implementation time.** The ≈ 30–36 h estimate covers compute and agent iteration from the freeze. It assumes the pipeline code and its §12 tests are ready at H0. Implementing them is a separate, unbudgeted phase.
+- **F-7. v3 choices by the design author, for PI ratification.** The design author has gene × line exposure (one line), so these protocol and threshold choices made in v3 should be ratified by the PI or by the unexposed verifier:
+  - the L-ge06 robustness grid steps (0.2);
+  - "undefined MCC = 0";
+  - the gene set and summaries in §6.8;
+  - the CORDA cost bands (row A6);
+  - the P57 fallback at M3;
+  - the 30-line panel composition (10 × 3);
+  - the W7 8-hour time box;
+  - the 28-worker count.
+
+  They are protocol parameters, not a priori lists. **Resolved:** ratified or amended by the unexposed round-3 verifier (`notes/design_review_r3/verification.md`, "v3 final check", §D): grid → 21 steps of 0.05; undefined metrics → NaN, excluded (0 as sensitivity); gene set → parent-model genes; workers → 24 + ≤ 4; CORDA bands, P57 fallback, 30-line panel (with the N-1 fold rule), W7 time box and per-line means ratified.
 
 ---
 
@@ -1137,48 +1214,48 @@ v1 (2026-10-26) → v2 (2026-10-26, candidate for freeze). Every round-2 must-fi
 - `openpyxl` 3.1.5 installed and pinned in `requirements.txt`, giving GDSC coverage; guide maps approved at low priority, and no claim depends on them (PD17).
 - `design_numbers.py` no longer opens any label-bearing file.
 
+### Revision history → v3 (review round 3 and user decision D2; final, pending PI freeze)
+v2 (2026-10-26) → v3 (2026-10-26). Sources: `notes/design_review_r3/verification.md` (items V-1 to V-17 and Part 5); RESEARCH_TREE.md decision D2 (user); the PI's v3 instructions (binary endpoints; a priori lists verbatim; compute target). All are pre-freeze changes, made before any analysis.
+
+| Item | Change | Section |
+|---|---|---|
+| V-1 | The HEAD check is replaced by "the freeze commit is an ancestor of HEAD + no diff in code/DESIGN/FROZEN + clean tree"; only ledger rows and `SEED_SOURCE.md` may be committed in between | §4.1, §12 |
+| V-2 | Retired-range check applied to S + attempt (S ∉ 20260927…20261125; re-checked per attempt) | §4.1, §12 |
+| V-4 | Claim tiers use each contrast's own SESOI | §6.4 |
+| V-5 | SESOI for C1, C4, C5 = 0.01; C5 named in the claim language | §6.4 |
+| V-6 | "Medium alone" = M0 → best gate-free documented variant, also in §10.2 | §10.1, §10.2 |
+| V-7 | Loss rule: LOH proxied by relCN < 0.5; drop order tie-broken by ascending Entrez ID | §9 W4 |
+| V-8 | Small-group flag includes NRF2 | §9 W4 |
+| V-9 | CORDA cost bands aligned to row A6 | §9 W4 |
+| V-10 | Register updated: remaining scratch scripts deleted by the PI | §11.5 |
+| V-11 | Stability study redefined and costed (row A7) | §9 W4 |
+| V-12 | Moot (B7 removed) | — |
+| V-13 | B-loo index defined from MAR13082's direct reactants plus the named cofactor-pool groups; enumerated by script at M3 | §9 W3 |
+| V-14 | B-add skips components already in biomass; list per `notes/apriori_lists_approved.md` §5 | §9 W3 |
+| V-15 | Appendix A replaced by a reference to `notes/apriori_lists_approved.md` (verbatim); the v2 addendum marked superseded | App. A, App. D |
+| V-16 | Register status: created | §11.5, §16 |
+| V-17 | Done by the PI: register redacted; warning note on the round-2 statistics review | §16 F-2 |
+| D2 / Part 5 items 1–14 | ftINIT removed everywhere. B7, B7g/B7t, C6, per-line F1, ftINIT Stage-A/C rows, H1 ftINIT pre-builds, the conditional resource builds, the Hart one-shot test and Appendix B are deleted. Chain C1→C1b→C3→C4→C5. Comparators are generic H1/H2 (G\*) plus B0–B3, B6 and B8±/B8′. The method-vs-tissue test uses ≥ 3 non-ftINIT families (GIMME, FASTCORE, E-Flux; CORDA where kept) plus F0. Stage A is LP-only. MILP rules are reduced to QP MOMA. Workers are LP only. | §0–§3, §6.3–6.5, §7, §8, §9 W1/W4/W8, §10, §11.2, §11.4, §12–§16 |
+| Part 5 item 15 / PI (c) | New §6.8: MCC, F1, precision, recall, specificity and accuracy under the Human1-paper (Robinson 2020) and Human2-paper (Luo 2026) protocols, extracted from the PDFs with page citations. Undocumented details are marked, with our pre-specified choices. New secondary label L-ge06. | §6.8, §12, §14, §15 |
+| PI (d) | All a priori lists are referenced to `notes/apriori_lists_approved.md` verbatim (W2 controls, W3 sets and controls, W4 backgrounds and negative controls, W5 isozyme exceptions, W6 drugs, §5.4 strata, App. A) | as listed |
+| PI (e) | Compute: 2^4 factorial on validation only plus pre-declared test contrasts (i)–(v); W7 cap 100 CPU-h with an 8 h time box; re-run buffer 10%; Stage A LP-only on a 30-line panel. ≈ 1,020 CPU-h; expected ≈ 30–36 h wall-clock. | §10.1, §13, §14 |
+| PI (f) | F-4 resolved by the PI authorship rule | §11.5, §16 |
+
 ---
 
-## Appendix A — Pre-registered lists (to be written as frozen files at M1)
-`data/controls/gene_panels.tsv` holds gene, class, expected condition and reference. It is produced by the domain agent from the classes below, with citations, before M1:
-- **Pan-medium essentials:** CAD, DHODH, UMPS, CTPS1, TYMS, DHFR, RRM1/2, GUK1, GMPS, PCYT1A, CHKA, CS, MDH2, SDH subunits, NAMPT, COASY, and the mevalonate core.
-- **Medium-dependent:**
-  - ASNS (Asn);
-  - the sterol branch (serum);
-  - de novo purine and pyrimidine synthesis (hypoxanthine and nucleoside media);
-  - GLUL (Gln);
-  - PYCR1/ALDH18A1 (Pro);
-  - SLC7A11 (cystine vs 2-ME);
-  - NAMPT/NAPRT (nicotinic acid);
-  - GOT1/GOT2 (pyruvate, Asp transporter);
-  - PHGDH/PSAT1/PSPH (Ser/Gly).
-- **Collateral and buffering pairs:** ENO1→ENO2, ME2→ME3, NAPRT→NAMPT.
-- **Known GEM false-positive classes:** H2 β-oxidation; xenobiotic CYP/UGT/GST; urea cycle; bile acid and steroid hormone synthesis; biomass-artefact lethals (CYP4F2, BBOX1, TMLHE, CYP26A1/B1, CYP24A1, CYP1A2).
-- **Known GEM false-negative classes:** V-ATPase (ATP6V\*), PGD, GPX4/ferroptosis, MTAP→MAT2A/PRMT5, mitochondrial translation and assembly factors.
-- **CRISPR-artefact and housekeeping-adjacent lists:** §5.4.
-- **Metabolic-drug classes** (W6):
-  - antifolates;
-  - TYMS inhibitors (5-FU, floxuridine, raltitrexed);
-  - RNR inhibitors (hydroxyurea, gemcitabine, triapine);
-  - DHODH inhibitors (brequinar, leflunomide, teriflunomide);
-  - IMPDH inhibitors (mycophenolate, ribavirin);
-  - purine analogues;
-  - statins and FDPS inhibitors;
-  - FASN, ACLY and SCD inhibitors;
-  - GLS inhibitor (CB-839);
-  - mutant-IDH inhibitors (caveat);
-  - ODC1 inhibitor (eflornithine);
-  - NAMPT inhibitors (FK866, GNE-617);
-  - complex I inhibitors (IACS-010759, phenformin).
+## Appendix A — Pre-registered lists
+The a priori lists are **`notes/apriori_lists_approved.md`, used verbatim**. They were authored by the round-3 verifier, who is not disqualified under the PI rule in `notes/label_exposure.md`. The file is frozen at M1, with its SHA-256 in FROZEN.tsv.
+- §1: gene panels (pan-medium, medium-dependent, buffering pairs, false-positive and false-negative classes, CRISPR-artefact strata);
+- §2: genomic-background groups and their negative controls;
+- §3: isozyme exceptions;
+- §4: metabolic-drug rules, classes and positive-control pairs;
+- §5: W3 task sets, B-loo/B-add and the W3 controls.
 
-  Each compound carries a prodrug flag and its activating gene.
+DESIGN.md does not restate, alter or reinterpret these lists. Where earlier versions listed items inline, the text now points to the file. `data/controls/gene_panels.tsv` and the W6 compound table are generated from it by script at M1.
 
-## Appendix B — Exact ftINIT score
-- **Gene score:** 5·ln(TPM / threshold), with the threshold from R1, R2 or R3, as in `raven_toolbox.init.score`.
-- **Reaction scoring:** RAVEN's built-in convention.
-- **B7 call:** `estimateEssentialGenes.py` defaults on the v2.1.1 prep, with the prep cached per template and task set. The exact call is committed to FROZEN.tsv at M3, before the Hart test.
+(Appendix B, the ftINIT score, was deleted in v3 under D2.)
 
-## Appendix C — Data facts used (from `results/design/design_numbers.json`, regenerated for v2)
+## Appendix C — Data facts used (from `results/design/design_numbers.json`; no data fact changed in v3)
 - **Cohort:** 1,361 screened lines (from CRISPRScreenMap); 30 lineages; 23 eligible.
 - **Coverage:** expression 1,292; CN 1,221; expression and CN 1,214.
 - **Proteomics:** Nusinow 309, ProCan 598 (2 ProCan IDs unmapped [dn:coverage_screened.procan_unmapped_ids]), either 659 (screened lines).
@@ -1357,6 +1434,6 @@ Each round-2 should-fix and optional item is marked A (accepted) or R (rejected)
 - SF3 A: B6 feature provenance and identical medium information.
 - SF4 A: claims about Huijer, Cheng, Guil and Barrena are kept to their abstracts.
 
-**Appendix A addendum (domain r2 S-b).**
+**Appendix A addendum (domain r2 S-b). Superseded in v3:** the gene-panel expectations below were replaced by `notes/apriori_lists_approved.md` §1, which corrects them (e.g. ADSL and IMPDH2 are not hypoxanthine-rescued; TYMS and DHFR are medium-dependent). Kept only as a historical record.
 - De novo purine genes (PPAT, GART, PFAS, PAICS, ADSL, ATIC, IMPDH2): **expected essential in RPMI/DMEM + serum, relaxed in F12-based media and HPLM** (hypoxanthine).
 - CAD/DHODH/UMPS: expected essential even with thymidine (F12). Only uridine or cytidine rescues the pyrimidine ring.

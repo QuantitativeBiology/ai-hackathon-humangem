@@ -2,6 +2,8 @@
 
 Every viewing of DepMap label *values* (or label-derived summaries) by any agent or the PI. Required by DESIGN.md §11.5. Agents listed here must not author or approve a priori lists, candidate sets or decision thresholds.
 
+> **Note (2026-10-26):** the "must not author or approve" rule below is superseded in part by the PI decision of 2026-10-26 at the end of this file (disqualifying exposure = gene × line values or post-freeze validation/test summaries).
+
 ## Entries (as of DESIGN v2, 2026-10-26)
 
 - the baseline review read the CRISPR header only;

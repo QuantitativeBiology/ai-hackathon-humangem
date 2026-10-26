@@ -1,7 +1,7 @@
 {
  "_meta": {
   "script": "scripts/design_numbers.py",
-  "generated": "2026-10-26 16:13",
+  "generated": "2026-10-26 17:03",
   "label_values_read": false,
   "performance_computed": false
  },
@@ -811,7 +811,7 @@
    "top_lineages": {
     "Biliary Tract": 2,
     "CNS/Brain": 2,
-    "Soft Tissue": 1,
+    "Lung": 1,
     "Pancreas": 1
    },
    "within_lineage_eligible_lineages": 0,

@@ -428,7 +428,7 @@ for name, (fn, rule, mech) in groups_def.items():
     by_lin = Counter(lin_of[list(members)])
     bg[name] = {"rule": rule, "mechanism": mech, "n_screened_members": len(members),
                 "n_screened_status_known": len(known),
-                "top_lineages": dict(by_lin.most_common(4)),
+                "top_lineages": dict(sorted(by_lin.items(), key=lambda kv: (-kv[1], kv[0]))[:4]),  # ties broken by name (deterministic)
                 "within_lineage_eligible_lineages": len(elig_lins), "members_in_eligible_lineages": n_in_elig}
 for g, (lo, hi) in {"MTAP": CN_DEL_SENS}.items():
     bg["MTAP_del"]["sens_relCN_0.1"] = int(((cnv(g) < lo) & cnv(g).index.isin(S)).sum())

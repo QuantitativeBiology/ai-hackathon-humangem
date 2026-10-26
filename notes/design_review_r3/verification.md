@@ -223,3 +223,148 @@ Each of these must be rewritten. I give the minimal change.
 - V-15: Appendix A expectations; use the approved lists.
 - V-10, V-17: PI housekeeping (scratch scripts; redact the aggregates in the register and the r2 statistics review).
 - Part 5: the v3 ftINIT removal and the binary endpoints.
+
+---
+
+# v3 final check (DESIGN.md v3, working tree, uncommitted; 2026-10-26)
+
+**Inputs.** DESIGN.md v3 (1,439 lines), `notes/label_exposure.md` (updated), and `notes/design_review_r2/statistics.md` (PI note added). For §6.8: `papers/aaz1482_sm.pdf`, the Robinson main text (`papers/5191391c-….pdf`), `papers/pnas.2516511123.sapp.pdf`, the Luo main text, and the Human-GEM script `code/DepMapGeneEss/evaluateDepMapEssentialityPredictions.m`. Text was extracted with ghostscript; figure pages were rendered to PNG to read their axes.
+
+**Label safety.** No label file was read; the listing of the locked directory was blocked.
+
+**Verdict: not freeze-ready as written; freeze-ready once the edits below are applied.** All edits are text-level, and no further review round is needed. Three items block the freeze:
+- **N-1:** the panel training gate cannot pass as written;
+- **N-7:** §6.8 deviates from the documented paper and repository protocol (D1, D2, D6);
+- **N-2:** worker counts versus the Gurobi slot pool (D5).
+
+The rest are minor.
+
+## A. V-items and Part-5 items in v3
+
+| Item | Status | Note |
+|---|---|---|
+| V-1 | PASS | §4.1 step 3 and §12 |
+| V-2 | PASS | §4.1 step 3 and §12 |
+| V-4 | PASS | §6.4 |
+| V-5 | PASS | §6.4 (C1, C4, C5; C5 is in the claim language) |
+| V-6 | PASS | §10.1 (ii), §10.2 |
+| V-7 | PASS | W4 loss rule and tie-break; §12 W4 |
+| V-8 | PASS | W4 notes |
+| V-9 | PASS | F3 row → A6 bands |
+| V-10 | PASS | §11.5 and the register (deletion logged) |
+| V-11 | PASS | Row A7 is costed; §7 seeds updated |
+| V-12 | MOOT | |
+| V-13 | PASS | W3 B-loo |
+| V-14 | PASS | W3 B-add skip rule; the list is taken by reference |
+| V-15 | PASS (one residual, N-5) | App. A points to the file; the v2 addendum is marked superseded |
+| V-16 | PASS | §11.5 |
+| V-17 | **Done in the tree but stale in DESIGN (N-8)** | The register is redacted and the PI note has been added to the r2 statistics review. DESIGN §16 F-2 and the §17 row still say "still open". |
+| Part 5, item 1 (§0) | PASS | |
+| Part 5, item 2 (§2) | PASS | |
+| Part 5, item 3 (§3.1) | PASS | |
+| Part 5, item 4 (§6.3 chain, C6 row, consequence) | PASS | |
+| Part 5, item 5 (§6.4) | PASS | |
+| Part 5, item 6 (§7) | PASS | |
+| Part 5, item 7 (§8) | PASS | |
+| Part 5, item 8 (W1) | PASS | Citation nit in N-6. |
+| Part 5, item 9 (W4: F1 retired; F0, F2–F4 + CORDA; ≥ 3 non-ftINIT families; stability; repair; GPR convention) | PASS | |
+| Part 5, item 10 (Stage A) | PASS (arithmetic) | Recomputed: A1 480/12, A2 120/3, A3 480/12, A4 840/21 (240 + 120 + 480 real builds), A5 720/18, A6 120/30 (band 2: 30 builds ≤ 30 h), A7 120/3. Total **2,880 builds / 99 ≈ 100 CPU-h**, matching §13. |
+| Part 5, item 11 (Stage C) | PASS | |
+| Part 5, item 12 (§10.1, §10.2, §11.4) | PASS, except N-2 (stale 16-slot pool vs workers) | |
+| Part 5, item 13 (§12) | PASS | |
+| Part 5, item 14 (§13–§16, App. B, §17 v3 row) | PASS, except N-3 (step-5 wall-clock) and N-8 | §13 column: 40+25+60+10+100+100+15+15+110+160+40+100+150 = 925, plus 95 = 1,020. Correct. |
+| Part 5, item 15 (§6.8) | PASS in structure; **amend per N-7** | |
+| `[dn:]` keys | PASS | 80/80 references resolve |
+| Gatekeeping | PASS | C1→C1b→C3→C4→C5 everywhere in operative text (§0, §6.3, §6.5 "C1–C5", §6.4) |
+
+## B. No ftINIT, B7 or C6 arm remains; lists are verbatim
+
+- **B7, C6, ftINIT.** In operative text these appear only as exclusion statements: §0, §1, §2 (rows "read, not run" or "context only"), §3.2 (Hart inputs "not used"), W4 "(F1) retired", §11.2, §12 W4 ("replacing the removed ftINIT Hart test"), §15 and §16. Every other mention is in the v1/v2 revision history and the Appendix D dispositions, which are historical records. **PASS.**
+- **Lists.** DESIGN no longer restates any list; it points to `notes/apriori_lists_approved.md` (§5.4, W2 controls, W3, W4 backgrounds, W5, W6, App. A). The file is unchanged since I wrote it. **PASS**, with two residual inline statements that contradict the approved file:
+  - **N-4 (fail, minor).** W2 "Controls", mevalonate core:
+    - old: `It is reported as a **diagnostic panel at every W2 step**, because serum cholesterol makes it non-essential in FBA until W3 B-add supplies the non-sterol demands.`
+    - new: `It is reported as a **diagnostic panel at every W2 step**. Ubiquinol is already a biomass component in H2, so HMGCR, MVK, PMVK and MVD should stay essential when serum cholesterol is supplied; a loss of essentiality under serum flags a modelling error (HMGCS1, IDI1, FDPS and GGPS1 are non-essential already on M0, for isozyme/GPR reasons; approved lists §1.1, §5).`
+    - §12 W3 positive control, old: `mevalonate core under B-add`; new: `no loss of mevalonate-core essentiality under serum + B-add`.
+  - **N-5 (fail, minor).** §3.1 M0 bullet:
+    - old: `As a result, de novo purine genes (PPAT, GART, PFAS, PAICS, ADSL, ATIC, IMPDH2) have ratio_r = 1 in both parents [dn:baseline_ko.human2.panel_ratio_r]. That is a systematic, medium-driven false-negative block, which W2 targets.`
+    - new: `As a result, the hypoxanthine-rescued de novo purine genes (PPAT, GART, PFAS, PAICS, ATIC) have ratio_r = 1 in both parents [dn:baseline_ko.human2.panel_ratio_r], a systematic, medium-driven false-negative block that W2 targets. ADSL and IMPDH2 also have ratio_r = 1, but hypoxanthine cannot rescue them biochemically (IMPDH1 OR-logic; ADSL to be traced); these are model errors, not medium errors (approved lists §1.2).`
+
+## C. Other defects found in v3
+
+- **N-1 (FAIL; blocks the panel training gate).** §9 TG item 3 counts a fold with < 5 estimable lines as "not positive". The Stage-A panel has 3 lines per lineage fold, so every panel fold is "not positive" and no LP family or threshold can reach ≥ 8 of 10.
+  - old: `For gates computed on the 10-lineage Stage-A panel, the bar is **≥ 8 of 10** folds (ext-PI r2 S3).`
+  - new: `For gates computed on the 10-lineage Stage-A panel (3 lines per lineage), the bar is **≥ 8 of 10** folds, and a panel fold counts as "not positive" if fewer than 2 of its 3 lines are estimable; the < 5-line rule applies to the 12 training-LOLO folds only (ext-PI r2 S3; r3 N-1).`
+- **N-2 (FAIL).** §11.4 keeps "Gurobi slots: 16 `flock` slots" but starts 28 LP workers plus ≤ 4 Gurobi sessions. Either the LP workers do not use Gurobi, which makes the unit costs (Gurobi-measured) invalid, or they exceed the slot pool. Fixed by the worker amendment in D5.
+- **N-3 (FAIL, minor). §13 step 5 is mis-timed.** Step 5 is ≈ 290 CPU-h in 8 h, which needs ≈ 36 workers. At 24–28 workers it takes ≈ 10.5–12 h.
+  - old: `| 5 | W8 ‖ W6 ‖ W7 (W7 time-boxed at **8 h wall**, ≤ 100 CPU-h); T2 | ≈ 290 | ≈ 8 h (H22 → H30) |`
+  - new: `| 5 | W8 ‖ W6 ‖ W7 (W7 time-boxed at **8 h wall**, ≤ 100 CPU-h); T2 at the W7 stop, W8/W6 finish after | ≈ 290 | ≈ 11 h (H22 → H33) |`
+  - Shift step 6 to H33 → H37 and the §14 M7–M9 hours by +3.
+  - Expected-wall-clock bullet, old: `**Expected wall-clock: ≈ 30–36 h (≈ 1.3–1.5 days)**`; new: `**Expected wall-clock: ≈ 36–42 h (≈ 1.5–1.75 days) at 24–28 LP workers**; cut-list items 2 and 5 recover ≈ 4–6 h`.
+  - At the upper end this exceeds the user's 1–1.5-day target. Flag it to the PI and user.
+- **N-6 (citation nits).**
+  - §6.8 "Model per line", Human1: change `main text p. 5` to `main text pp. 5–6`. The 621-line DepMap analysis is on p. 6.
+  - W1 H1.2, old: `Luo 2026 claim this in the main text, Fig. 2D.`; new: `Luo 2026 claim this for DepMap 19Q3 in SI Fig. S2D (cited in the main text, p. 3); main-text Fig. 2D is the Hart-2015 version series.`
+- **N-7 (FAIL).** §6.8 departs from the documented protocols in three places. See D1 (grid), D2 (undefined metrics) and D6 (gene set; Human2 threshold source).
+- **N-8 (stale).** §16 F-2: delete the "V-17 … still open" bullet and add "V-17 done (register redacted; PI note on the r2 statistics review)". In the §17 V-17 row, change `Still a PI action` to `Done by the PI`. After this check, F-7 becomes "ratified/amended per verification.md v3 final check, D".
+- **N-9 (PI action, register).** The opening paragraph of `notes/label_exposure.md` still says listed agents "must not author or approve a priori lists, candidate sets or decision thresholds". That contradicts the later PI decision (aggregate exposure does not disqualify). Add one line at the top: "Superseded in part by the PI decision of 2026-10-26 below (disqualifying exposure = gene × line values or post-freeze val/test summaries)".
+
+## D. Ratification of the design author's v3 choices (F-4 / F-7)
+
+I am unexposed by the PI's rule (aggregates only) and did not author DESIGN.md.
+
+1. **Binary-metric robustness grid: AMEND.**
+   - DESIGN chose −1.0 to 0.0 in steps of 0.2 as "our choice". The Human1 SM Fig. S10 (p. 28, axis read from the rendered page) shows **21 thresholds, −1.0 to 0.0 in steps of 0.05**. The Human-GEM evaluation script uses the same grid: `scan.threshold = linspace(-1,0,21)`, line 106.
+   - §6.8, old: `Human1-paper robustness grid, **our choice of steps:** −1.0, −0.8, −0.6, −0.4, −0.2, 0.0.`
+   - new: `Human1-paper robustness grid: 21 thresholds, −1.0 to 0.0 in steps of 0.05, as in SM Fig. S10 (p. 28) and `linspace(-1,0,21)` in `evaluateDepMapEssentialityPredictions.m` (line 106).`
+2. **Undefined MCC = 0: AMEND.**
+   - The repository script computes MCC = (TP·TN − FP·FN)/√(…) with no guard, so a zero denominator gives NaN. That is the papers' convention. For comparability, the paper-protocol summaries must use NaN-excluded means.
+   - old: `A line with no predicted or no true essentials has undefined MCC. It is set to 0, counted and reported; F1 and precision are treated the same way.`
+   - new: `A metric with a zero denominator is NaN, as in the repository script; NaN lines are excluded from the means and counted per method and protocol. A sensitivity row sets them to 0. F1 = 2TP/(2TP + FP + FN), as in the script.`
+   - Note: generic P57 calls are never empty, so this matters only for P1 models.
+3. **CORDA cost bands: RATIFY.** The bands are ≤ 0.25 CPU-h per model (full A6), (0.25, 1] (R1 × real/permuted on 15 lines) and > 1 (drop, reported).
+   - The arithmetic matches A6 (≤ 30 CPU-h either way).
+   - Each band is a cost rule, not a label-informed choice. The 15-line fallback keeps a PROMPT-named method in the variance partition, analysed within method (H4.2).
+4. **30-line LP-only Stage-A panel (10 × 3): RATIFY, conditional on N-1.**
+   - The power limitation is already stated (§15, W4 *Power*).
+   - Without the N-1 fold rule the panel gate is unpassable, so N-1 is required.
+   - Optional, not required: 10 × 5 = 50 lines costs ≈ +65 CPU-h (≈ +2.5 h wall) and doubles the within-lineage replication for H4.2.
+5. **Worker counts: AMEND.**
+   - 28 LP workers at 1.45 GB plus 4 Gurobi sessions is ≈ 47 GB. Keeping ≥ 20 GB free then needs ≥ 67 GB available on a shared host that had ≈ 69 GB available (compute r2).
+   - The 16-slot Gurobi pool also cannot serve 32 sessions.
+   - §11.4 Workers bullet, new text: `**Workers** (PI decision r2-13 as amended by D2 and r3): there is no MILP lane. Start at **24 LP workers + ≤ 4 Gurobi sessions** (≈ 41 GB). All 28 run on Gurobi only if an M3 check confirms that the WLS licence admits 28 concurrent sessions, in which case the `flock` pool is set to 28; otherwise LP workers beyond the licence pool run GLPK, only for families that pass the GLPK = Gurobi equality check and whose M3 GLPK per-line cost is ≤ 2× Gurobi. Raising to 28 LP workers at M3 requires measured RSS to keep ≥ 20 GB free. A job aborts below 10 GB.`
+   - Replace the "16 `flock` slots" bullet with `Gurobi slots: a flock pool sized to the licence session limit verified at M3.`
+   - §13 Workers line: `24–28 LP workers plus ≤ 4 Gurobi sessions (§11.4)`.
+6. **The Human2-paper gaps.** All four gaps are now filled from documented sources rather than "our choice":
+   - **−0.6: RATIFY, now with a documented source.** The Human2 paper and SI state no threshold (confirmed: SI pp. 2–3, lines 56–65). The Human-GEM evaluation script used for repository releases sets `threshold = -0.6` (line 117), and its header says it is copied from the Human1 paper's code. In §6.8, replace "Our choice: the same L-ge06, which inherits the Human-GEM lineage's documented choice" with `Not stated in the paper; the Human-GEM evaluation script uses gene effect < −0.6 (line 117), i.e. L-ge06.` In the table row "Label (DepMap)", Human2 column, add `(repository script: < −0.6)`.
+   - **Gene set U: AMEND.** The script scores **the reference (parent) model's genes ∩ screened genes with a non-NaN effect**, and counts parent genes absent from a line model as non-essential (lines 121–146). U-wide scoring would penalise each parent for the other parent's genes and break comparability with the papers.
+     - old: `**Gene set (not stated in either paper; our choice).** Genes in U with a non-NaN label in that line. A gene absent from the model is predicted non-essential, as in §3.3.`
+     - new: `**Gene set (not stated in either paper; taken from the repository script, lines 121–146).** The parent model's genes (H1 for generic H1 and P1(H1); H2 for generic H2 and P1(H2)) that have a CRISPR column and a non-NaN label in that line. A parent gene absent from a line model is predicted non-essential. U-wide scoring is a sensitivity row.`
+     - Table row "Gene set scored": `not stated in the papers; repository script: parent-model genes ∩ screened, non-NaN`.
+   - **Per-line means: RATIFY.** Robinson reports per-line distributions plus the mean MCC ("2.8-fold mean increase", main p. 6). Luo shows per-line violins (SI Figs. S2D, S3A; the summary statistic is not stated). Keep the line-weighted mean as the paper-comparable summary and the lineage-equal mean as ours. Add the per-line median as a third descriptive summary, because Luo's violins show a central bar.
+7. **Other F-7 items: RATIFY.**
+   - The P57 fallback (> 0.2 CPU-h per line model → generic parents and P1(H2) only) is a cost rule.
+   - The W7 8-hour time box is a stop rule, not label-tuned.
+   - The non-GEM dichotomisation at the fitting-line positive rate is training-only.
+
+## E. Check of the §6.8 extracted protocols against the cited pages
+
+| Claim in §6.8 | Source checked | Result |
+|---|---|---|
+| H1: tINIT per line; 621 DepMap 19Q3 lines; 5 Hart lines | SM p. 14 ("Evaluation with 621 human cell lines", 19Q3); SM p. 13 (5 lines); main pp. 5–6 | Correct (page nit N-6) |
+| H1: KO rule; reactions without a compensating isozyme set to 0; essential if ≥ 1 of 57 tasks impaired (data file S3) | SM p. 14 | Verbatim correct |
+| H1: biomass-only variant | SM p. 14 "Gene essentiality using only biomass production"; Fig. S11 p. 29 | Correct |
+| H1: gene effect < −0.6, from the dataset's publication; grid −1.0 to 0.0 | SM p. 14; Fig. S10 p. 28 | Correct. The grid is in 0.05 steps (D1). |
+| H1: metrics are accuracy, sensitivity, specificity, MCC, hypergeometric + BH; MCC headline; accuracy uninformative | main p. 6; SM Fig. S9 p. 27 | Correct |
+| H2: ftINIT "1+1"; 57 tasks; growth on Ham's | SI p. 2, lines 25–33 | Correct |
+| H2: same KO call rule | SI pp. 2–3, lines 58–62 | Verbatim correct |
+| H2: 625 DepMap 19Q3 lines; 908 Project Score lines | SI p. 3, lines 64–65; SI Fig. S3A p. 11 | Correct. The 625 is "RNA-Seq data from 625 cell lines" (SI line 64). |
+| H2: threshold not stated | SI pp. 2–3; main Methods p. 9 | Correct for the paper. The repository script supplies it (D6). |
+| H2: metrics MCC (Fig. 2D legend p. 3; SI S2D p. 10; S3A p. 11); "accuracy" (Methods p. 9) | as cited | Correct. Note that main Fig. 2D and the Methods "accuracy" refer to the Hart-line release checks, not DepMap (N-6). |
+| Both: medium for task checks = each task's own inputs; GR = Ham's | SI line 30; Robinson data file S3 | Correct |
+| Both: gene set "not stated" | papers | Correct for the papers, but the repository script states it (D6) |
+
+## F. Freeze checklist
+To freeze, apply the following, then re-run `scripts/design_numbers.py` (no data fact changes):
+- N-1, N-2/D5, N-3 and N-7/D1, D2, D6 (blocking);
+- N-4, N-5, N-6 and N-8 (minor);
+- N-9 (register note, PI).
