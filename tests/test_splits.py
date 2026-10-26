@@ -332,10 +332,12 @@ def test_production_overrides_refused(tmp_path, monkeypatch):
              (base, {"NEXTGEM_DATA_ROOT": str(tmp_path)}), (base, {"NEXTGEM_STATE_ROOT": str(tmp_path)})]
     import os
 
+    marker = toy.PROJECT / "results" / "splits" / "SPLIT_SHA256"
+    before = marker.read_bytes() if marker.exists() else None
     for args, env in cases:
         r = subprocess.run(args, capture_output=True, text=True, env={**os.environ, **env})
         assert r.returncode == 2 and "REFUSED" in r.stderr, (args, env, r.stderr[-500:])
-    assert not (toy.PROJECT / "results" / "splits" / "SPLIT_SHA256").exists()
+    assert (marker.read_bytes() if marker.exists() else None) == before  # the real split is untouched
 
 
 def test_sandbox_requires_large_seeds(tmp_path):

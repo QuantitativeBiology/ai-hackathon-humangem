@@ -1,0 +1,45 @@
+{
+ "code_commit": "639f3a9a6251a461e404d7197c353166ab15d6d7",
+ "created": "2026-10-26T19:59:28+0000",
+ "freeze_commit": "61b0beba6f098c55b62c2881b8bacec96de780db",
+ "git_checks": {
+  "enforced": true,
+  "failures": []
+ },
+ "lineages_per_tier": {
+  "test": 7,
+  "train": 19,
+  "validation": 4
+ },
+ "lines_per_tier": {
+  "test": 394,
+  "train": 767,
+  "validation": 200
+ },
+ "n_attempts": 1,
+ "n_lines": 1361,
+ "n_redraws": 0,
+ "pins": {
+  "split.draw_params_sha256": "6dfb9cf3b9d08f2802dbdfb8afb6d4bf291a9ae9cf37a3d92f2db0dd3f0bf3bc",
+  "split.expr_by_lineage_sha256": "d42ee4c8042b8474aade0c7a57899075f3170eaa84c620a14ff7025c81346547",
+  "split.inputs_sha256": "c408a775d71f5d3a145234780ab8247725c5f0adc10e51430539b3968b88b415",
+  "split.line_lineage_sha256": "df5a26aced4ffcfd8a875cc76c78309b96185dcf83ab54344f140d56fded5e5b",
+  "split.prot_by_lineage_sha256": "a79c72684acfea7cbac9320bda8ceb369ec3e928f3b0930217e4be4f5e15991e"
+ },
+ "reference_commit": "61b0beba6f098c55b62c2881b8bacec96de780db",
+ "rejected_attempts": [],
+ "runtime_s": 8.4,
+ "sandbox": false,
+ "script_sha256": {
+  "scripts/make_splits.py": "6d2a2c77d1f003961eecaf3d3a04a0b9cb788fe1f6f1a0627a59991bacfa1abb",
+  "src/nextgem/cohort.py": "d066ad9feca57b764a61fd5f9dd3b663903cc71619af0b3f4d05d67b5dc879e6",
+  "src/nextgem/splits.py": "9fc97d6ac270c817cb6af8a62b38ffe21f38b3165be86d0ef70d6303400dcf2d"
+ },
+ "seed": 38,
+ "seed_source": {
+  "mode": "production",
+  "path": "results/splits/SEED_SOURCE.md",
+  "sha256": "da01a684778ee9071fd499efd826becb852a7244fb71e04671191e0d89fcb099"
+ },
+ "split_sha256": "610fc623f4671fd9af1f27bd5edaf44fa37d980b88536929c13c5303c0c42835"
+}

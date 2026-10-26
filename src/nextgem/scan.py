@@ -74,6 +74,29 @@ class Context:
     test_ids: set[str] | None = None
     known_ids: set[str] | None = None
     container_rule: bool = False
+    canonical_split: Path | None = None  # results/splits/lineage_split.tsv of the state root
+    canonical_split_sha: str | None = None  # pinned by SPLIT_SHA256 (and split_meta.json, if present)
+
+
+def canonical_split_pin(splits_dir: Path) -> str | None:
+    """SHA-256 of the canonical split file as pinned by make_splits.py: SPLIT_SHA256, which must agree with
+    split_meta.json when that exists. None if there is no completed split (or the pins disagree)."""
+    import json
+
+    f = splits_dir / "SPLIT_SHA256"
+    if not f.exists():
+        return None
+    sha = (f.read_text().split() or [""])[0]
+    if not re.fullmatch(r"[0-9a-f]{64}", sha):
+        return None  # PENDING or malformed
+    meta = splits_dir / "split_meta.json"
+    if meta.exists():
+        try:
+            if json.loads(meta.read_text()).get("split_sha256") != sha:
+                return None
+        except ValueError:
+            return None
+    return sha
     allowlist: dict[str, str] = field(default_factory=dict)
 
 
@@ -404,6 +427,13 @@ def scan_file(path: Path, ctx: Context, data: bytes | None = None, rel: str | No
         else:
             res.note = "canonical label store (skipped)"
         return res
+    # the canonical split file (ModelID, tier, covariates; no labels) is exempt only at its own location and
+    # only if its content matches the make_splits.py pin; any copy or modification is scanned as usual
+    if ctx.canonical_split_sha and ctx.canonical_split is not None and path.resolve() == ctx.canonical_split.resolve():
+        content = data if data is not None else path.read_bytes()
+        if hashlib.sha256(content).hexdigest() == ctx.canonical_split_sha:
+            res.note = "canonical split (pinned by SPLIT_SHA256; skipped)"
+            return res
     if ctx.container_rule and rel and rel.startswith("results/") and name.endswith(BINARY_CONTAINERS):
         content = data if data is not None else path.read_bytes()
         if ctx.allowlist.get(rel) != hashlib.sha256(content).hexdigest():

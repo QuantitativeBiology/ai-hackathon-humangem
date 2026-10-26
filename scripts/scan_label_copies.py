@@ -84,6 +84,8 @@ def main(argv=None) -> int:
     if not ((a.test_keyed or a.staged or a.push_range) and not unsealed):
         ctx.test_ids = None
     ctx.container_rule = a.staged or a.tracked or a.push_range
+    ctx.canonical_split = paths.splits_dir() / "lineage_split.tsv"
+    ctx.canonical_split_sha = scan.canonical_split_pin(paths.splits_dir())
     al = paths.results_dir() / "scanner_allowlist.tsv"
     if al.exists():
         for ln in al.read_text().splitlines()[1:]:

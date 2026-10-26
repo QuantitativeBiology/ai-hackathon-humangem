@@ -1,0 +1,1362 @@
+ModelID	tier	stratum	lineage	library_class	n_screens	screen_type	model_type	medium_source	base_medium_class	has_expression	has_cn	has_nusinow	has_procan	has_proteomics_any	has_metabolomics	has_prism	has_ctrp
+ACH-000001	test	S2	Ovary/Fallopian Tube	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	True	True	True	True	True	True	False
+ACH-000004	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000005	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000007	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000009	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	False	True
+ACH-000011	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	False
+ACH-000012	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000013	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000014	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	False	True	True	True	True
+ACH-000015	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	True	True	True	True	True	True
+ACH-000017	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	False	False	False	True	False	True
+ACH-000018	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	True	True	True	True	True	True
+ACH-000019	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000021	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	False
+ACH-000022	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-000023	test	S1	Pancreas	KY-only	1	2DS	Cell Line	onboarded	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000024	validation	S1	Lymphoid	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	False	True
+ACH-000025	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-000026	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	False	False	False	False	True	True	False
+ACH-000028	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	False	True	True	False	True
+ACH-000029	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-000030	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000035	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000036	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-000037	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	False
+ACH-000039	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	False	True	True	True	True
+ACH-000040	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000041	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000042	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000045	train	S2	Myeloid	Avana-containing	2	2DS	Cell Line	screen	sheet:IMDM	True	True	False	True	True	True	False	True
+ACH-000047	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	False	True	False	True	True	True	True	False
+ACH-000048	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	other_defined	True	True	False	True	True	True	True	True
+ACH-000052	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000053	validation	S1	Lymphoid	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000054	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000055	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	False	False	True	True	True	False	True
+ACH-000060	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000067	test	S1	CNS/Brain	Avana-containing	3	2DS	Cell Line	screen	sheet:DMEM	True	False	False	True	True	True	True	True
+ACH-000070	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000074	train	S2	Myeloid	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000075	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	False	True	True	True	True
+ACH-000076	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000077	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	True	False	True
+ACH-000078	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000082	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	False	True	True	True	True	True
+ACH-000085	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	True	True	False
+ACH-000086	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000087	train	S2	Bone	Avana-containing	2	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	True	True	True	True	True	True
+ACH-000090	validation	S3	Prostate	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	True	True	True	True	True	True
+ACH-000092	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000093	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000094	test	S1	Pancreas	KY-only	1	2DS	Cell Line	onboarded	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-000095	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	True	False	False
+ACH-000096	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	True	True	True	True	True	True
+ACH-000097	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000098	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000099	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000100	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	True	True	True	True	True	True
+ACH-000101	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000103	test	S2	Ovary/Fallopian Tube	KY-only	1	2DS	Cell Line	onboarded	sheet:L-15	True	False	False	True	True	False	False	False
+ACH-000106	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000108	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000111	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	False	False
+ACH-000113	train	S2	Myeloid	Avana-containing	2	2DS	Cell Line	screen	other_defined	True	True	False	True	True	True	True	True
+ACH-000114	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000115	validation	S3	Prostate	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	False	True	True	True	True	False	True
+ACH-000116	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000118	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000120	train	S2	Peripheral Nervous System	Avana-containing	2	2DS	Cell Line	screen	mixture_of_sheets	True	True	False	True	True	True	True	True
+ACH-000123	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-000124	validation	S1	Lymphoid	KY-only	1	2DS	Cell Line	onboarded	other_defined	True	True	False	True	True	True	True	True
+ACH-000127	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-000128	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-000132	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	True	True	True	True	True	True
+ACH-000133	train	rare	Fibroblast	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-000137	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	True	True	True
+ACH-000138	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000139	test	S1	Pancreas	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000141	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000142	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000143	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-000144	train	S1	Esophagus/Stomach	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	True	False	True	True	True	True	False
+ACH-000145	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	False	True	False
+ACH-000146	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000147	test	S2	Breast	Avana-containing	3	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000148	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	False	True
+ACH-000149	train	S2	Peripheral Nervous System	KY-only	1	2DS	Cell Line	onboarded	sheet:MEM/EMEM	True	True	False	True	True	True	True	True
+ACH-000151	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	True	True	True	True	True	True
+ACH-000152	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	True	True	True
+ACH-000153	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000155	test	S1	Pancreas	KY-only	1	2DS	Cell Line	onboarded	sheet:L-15	True	True	True	True	True	True	True	True
+ACH-000159	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000160	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	True
+ACH-000161	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000163	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-000164	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	False	True	True	True	True
+ACH-000167	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000168	train	S2	Myeloid	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000169	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	True	True	True	True	True	True
+ACH-000172	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-000174	train	rare	Thyroid	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000176	train	S1	Lung	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	False	False	True	True	True	True	True
+ACH-000178	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000181	train	S1	Head and Neck	KY-only	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	True	True	True	True	True
+ACH-000182	train	rare	Ampulla of Vater	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000183	validation	S1	Lymphoid	Avana-containing	3	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000187	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	False
+ACH-000188	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	True	True	True	True	True	False
+ACH-000189	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000190	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000191	train	rare	Thyroid	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000192	train	S2	Uterus	KY-only	1	2DS	Cell Line	onboarded	mixture_of_sheets	True	True	True	True	True	True	True	False
+ACH-000195	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000197	validation	S1	Lymphoid	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000198	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000200	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000202	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000203	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000204	validation	S1	Lymphoid	Avana-containing	2	2DS	Cell Line	screen	sheet:IMDM	True	True	False	True	True	True	True	True
+ACH-000206	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-000207	train	S1	Head and Neck	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000208	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	False	False	False	False	False	True	False
+ACH-000209	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	True	False	True	True	True	True
+ACH-000210	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000211	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000212	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000213	test	S1	Pancreas	KY-only	1	2DS	Cell Line	onboarded	other_defined	True	False	True	True	True	True	True	True
+ACH-000215	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-000216	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-000217	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	True	True	True	True	True	True
+ACH-000219	train	S1	Skin	Avana-containing	4	2DD+2DS	Cell Line	screen_mixed	screen_mixed	True	True	True	True	True	True	True	True
+ACH-000221	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000222	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000223	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	False
+ACH-000226	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000227	train	S2	Peripheral Nervous System	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000228	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000231	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000232	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000233	validation	S1	Lymphoid	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000234	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	True	False	True	True	True	True
+ACH-000235	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000237	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	True	True	True
+ACH-000238	train	S1	Head and Neck	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	True	True	True	False	True
+ACH-000239	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	True	False	True	True	True	True
+ACH-000242	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	True	True	True	True	True	True
+ACH-000243	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000244	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000246	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	False	True	False	False	False	False	False	False
+ACH-000247	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	False	True
+ACH-000248	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000249	train	S1	Bowel	KY-only	1	2DS	Cell Line	onboarded	sheet:DMEM:F12	True	True	False	True	True	True	True	True
+ACH-000250	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000251	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-000252	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000253	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000255	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	True	False	True	True	True	True
+ACH-000256	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	True	True	False
+ACH-000257	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000258	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000259	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000260	train	S2	Peripheral Nervous System	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000261	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	True	True	True
+ACH-000262	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-000263	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	False	True
+ACH-000264	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000265	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	True	True	True	True	True	True
+ACH-000266	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000268	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	False	False	True	True	True
+ACH-000269	test	S1	CNS/Brain	KY-only	1	2DS	Cell Line	onboarded	sheet:MEM/EMEM	True	False	False	True	True	True	True	True
+ACH-000271	validation	S1	Lymphoid	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	False	False	True	True	True	False	True
+ACH-000272	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-000273	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000274	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-000276	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	other_defined	True	True	True	True	True	True	True	True
+ACH-000277	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000278	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	False	True	True	True	True
+ACH-000279	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-000280	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000281	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000286	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000287	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	True	True	True	False	False
+ACH-000288	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000290	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000291	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000292	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	True	True	True
+ACH-000293	train	S2	Uterus	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	True	True	True	True	True
+ACH-000294	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000295	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000296	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-000299	train	S2	Myeloid	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-000302	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000303	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	True	True	True	False	True
+ACH-000304	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	False	True
+ACH-000305	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000307	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000308	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000310	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	True	False	True
+ACH-000311	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000312	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	mixture_of_sheets	True	True	False	False	False	True	True	True
+ACH-000313	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-000315	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000316	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000317	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000318	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000319	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	False	True	True
+ACH-000320	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000322	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	False	True	True	True	True	True
+ACH-000323	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	mixture_of_sheets	True	True	False	True	True	True	True	True
+ACH-000324	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	True	True	True
+ACH-000325	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000326	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000329	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000330	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	False
+ACH-000331	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	False
+ACH-000332	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000334	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000335	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000336	train	S2	Myeloid	Avana-containing	2	2DS	Cell Line	screen	other_defined	True	True	False	False	False	True	True	True
+ACH-000337	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-000338	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000339	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	False	False	False	False	False
+ACH-000341	train	S2	Peripheral Nervous System	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000343	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000344	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000345	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	False
+ACH-000346	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000348	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000350	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000352	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000354	test	S1	Pancreas	KY-only	1	2DS	Cell Line	onboarded	sheet:IMDM	True	True	False	True	True	True	False	True
+ACH-000355	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	False
+ACH-000356	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000359	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	True	True	True
+ACH-000361	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000362	train	S2	Myeloid	Avana-containing	3	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000363	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000364	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	True	True	True	True	True	True
+ACH-000365	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000366	train	S2	Peripheral Nervous System	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000367	test	S3	Pleura	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000368	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000370	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	False
+ACH-000371	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000373	train	S2	Myeloid	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000374	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000375	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	True	True	True	True	True	True
+ACH-000376	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000377	train	rare	Ampulla of Vater	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000378	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000381	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	True	True	True	True	True
+ACH-000383	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000385	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-000387	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000389	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	False
+ACH-000390	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000391	train	S2	Bone	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000393	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	False	True	True	True	True
+ACH-000395	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000396	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000397	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	True	True	False
+ACH-000398	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000401	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000402	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000403	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000404	train	S1	Skin	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	False	True	False	True	True	True	True
+ACH-000405	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	True	False	True
+ACH-000406	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000407	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000408	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000410	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	True	True	True	True	True	False
+ACH-000411	train	S3	Kidney	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000414	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000415	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	False	True	True	True	True
+ACH-000416	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000417	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000420	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000421	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	False
+ACH-000422	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000424	train	S2	Bone	Avana-containing	2	2DS	Cell Line	screen	sheet:IMDM	True	True	True	True	True	True	True	True
+ACH-000425	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000426	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000427	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000430	test	S2	Ovary/Fallopian Tube	KY-only	1	2DS	Cell Line	onboarded	sheet:MEM/EMEM	True	False	True	True	True	True	True	True
+ACH-000431	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	True	True	True	True	True
+ACH-000433	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	True	True	True	True	True	True
+ACH-000434	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000435	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000436	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	False	False	False	False	False
+ACH-000437	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	False
+ACH-000438	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	False	True
+ACH-000441	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000442	train	S1	Lung	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	False	True	True	True	True	False	False
+ACH-000444	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000445	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-000446	train	S2	Peripheral Nervous System	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000448	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	False	False
+ACH-000450	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000452	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000454	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000455	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-000456	train	rare	Thyroid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000458	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	True	True	True
+ACH-000459	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000460	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000461	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000463	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000464	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000466	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000467	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	False	True	True	True	True
+ACH-000468	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000469	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	True	True	True
+ACH-000470	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000471	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000472	train	S1	Head and Neck	Avana-containing	2	2DS	Cell Line	screen_mixed	screen_mixed	True	True	False	True	True	True	True	True
+ACH-000473	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000475	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000476	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000477	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000478	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000479	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	False	True	True	True	True
+ACH-000480	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	False
+ACH-000481	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000483	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000484	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000485	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000486	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000487	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	False	True
+ACH-000488	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000489	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000490	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-000491	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	False	True
+ACH-000493	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000495	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	False	True	True	True	True
+ACH-000496	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000498	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	True	True	True	False	True
+ACH-000499	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-000500	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000501	train	S1	Bowel	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	False	False	True	True	True	False	True
+ACH-000502	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000503	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-000504	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000505	validation	S2	Soft Tissue	Avana-containing	2	2DS	Cell Line	screen	sheet:F12	True	True	False	True	True	True	True	True
+ACH-000507	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000510	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000511	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	True	False	True	True	True	True
+ACH-000512	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	False	False	False	False	False
+ACH-000514	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	True	True	True	True	True
+ACH-000515	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000516	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000517	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000518	train	S1	Head and Neck	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000519	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	False	False	True	False	True
+ACH-000520	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	False	False
+ACH-000521	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000522	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	False	True
+ACH-000524	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000525	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000527	test	S2	Ovary/Fallopian Tube	Avana-containing	3	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000528	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	False
+ACH-000532	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000533	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-000535	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000537	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000541	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000542	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000544	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000545	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	False
+ACH-000546	train	S1	Head and Neck	KY-only	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	False	True	True	True	True	False	True
+ACH-000547	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000548	train	S1	Head and Neck	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000549	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000550	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	False	True	True	True	True
+ACH-000551	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	True	True	True	True	True	False
+ACH-000552	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	True	True	True	True	True	True
+ACH-000554	test	S2	Breast	KY-only	1	2DS	Cell Line	onboarded	sheet:L-15	True	True	False	True	True	True	False	False
+ACH-000556	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	False	False	False
+ACH-000557	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	True	False	True
+ACH-000558	test	S1	CNS/Brain	KY-only	1	2DS	Cell Line	onboarded	sheet:DMEM	True	False	True	True	True	True	True	True
+ACH-000559	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	True	True	True	False	False
+ACH-000561	train	S1	Esophagus/Stomach	KY-only	1	2DS	Cell Line	onboarded	sheet:F12	True	False	False	True	True	True	True	False
+ACH-000562	train	S1	Lung	KY-only	1	2DS	Cell Line	imputed	imputed	True	True	False	True	True	True	True	True
+ACH-000563	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000565	train	S1	Bowel	KY-only	1	2DS	Cell Line	imputed	imputed	True	False	False	True	True	True	True	True
+ACH-000567	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000569	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	False	False	True	True	True	True	True
+ACH-000570	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000571	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	False	False	True	True	True	True	True
+ACH-000573	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	False	True	False
+ACH-000576	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000577	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	True	False	True
+ACH-000579	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000580	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000581	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000583	validation	S1	Lymphoid	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000584	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	True	True	True	False	False
+ACH-000585	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000587	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000588	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000589	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	False
+ACH-000591	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	False	False	False	False	False	False	False
+ACH-000592	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	True	True	True
+ACH-000593	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	False	False	False	True	True	True
+ACH-000595	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000596	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000597	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	False	False	False	True	True
+ACH-000599	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000601	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000602	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000604	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	False	False	True	True	True
+ACH-000605	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000606	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	True	False	True	True	False	True
+ACH-000607	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	True	True	True	True	True	True
+ACH-000608	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-000609	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	False	False	True	True	True	True	True
+ACH-000614	train	S1	Skin	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000616	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000618	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	imputed	imputed	True	True	False	False	False	True	True	False
+ACH-000619	train	S1	Head and Neck	Avana-containing	3	2DS	Cell Line	screen_mixed	screen_mixed	True	False	False	True	True	True	True	True
+ACH-000620	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	True	True	True	True	True	True
+ACH-000621	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	False	False
+ACH-000622	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000623	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000624	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000627	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000630	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000631	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	imputed	imputed	True	False	False	True	True	True	True	False
+ACH-000632	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	False	True	True	True	True
+ACH-000633	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	False	True
+ACH-000634	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-000637	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000638	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000639	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000645	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-000646	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	False
+ACH-000647	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000648	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000649	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000651	train	S1	Bowel	Avana-containing	3	2DS	Cell Line	screen	sheet:L-15	True	True	True	True	True	True	True	True
+ACH-000652	test	S1	Pancreas	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000653	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	imputed	imputed	True	True	False	True	True	True	True	True
+ACH-000654	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000655	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000656	validation	S1	Lymphoid	KY-only	1	2DS	Cell Line	imputed	imputed	True	False	False	True	True	True	True	True
+ACH-000657	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000660	validation	S1	Lymphoid	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	False	False	False	False	True	False	False
+ACH-000661	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	False
+ACH-000662	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	False
+ACH-000663	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000664	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000665	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000666	train	S1	Lung	KY-only	1	2DS	Cell Line	imputed	imputed	True	True	True	True	True	True	True	True
+ACH-000667	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000668	test	S2	Breast	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	True	True	True	True	True	False	False
+ACH-000671	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	False	True	True	True	True
+ACH-000672	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	False	True	True	True	True	True	True
+ACH-000673	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-000676	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-000677	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:L-15	True	True	True	True	True	True	True	True
+ACH-000681	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000682	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	False
+ACH-000683	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000684	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000685	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	False	True	False	True	True	True	True
+ACH-000688	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	True	True	True	True	True
+ACH-000693	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000694	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000695	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	False	True
+ACH-000696	test	S2	Ovary/Fallopian Tube	Avana-containing	4	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000697	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000698	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000699	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000700	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-000701	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	True	False	True	True	True	False
+ACH-000702	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	True	True	True	False	True
+ACH-000704	test	S2	Ovary/Fallopian Tube	KY-only	1	2DS	Cell Line	onboarded	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000706	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000709	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	True	False	True
+ACH-000711	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen_mixed	screen_mixed	True	True	True	True	True	True	True	True
+ACH-000713	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000714	validation	S1	Lymphoid	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000716	train	rare	Thyroid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000717	train	S1	Esophagus/Stomach	KY-only	1	2DS	Cell Line	imputed	imputed	True	False	False	True	True	True	True	True
+ACH-000718	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	False	True
+ACH-000719	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000720	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000721	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000722	train	S1	Bowel	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	False	True	True	True	True	False	True
+ACH-000724	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000725	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000732	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	True	True	True
+ACH-000734	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	True	False	True	True	True	True
+ACH-000735	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	True	True	True
+ACH-000736	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000738	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000739	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	False	True	True	True	True
+ACH-000740	train	S1	Head and Neck	Avana-containing	2	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	False	True	True	True	True	True
+ACH-000741	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	mixture_of_sheets	True	True	True	False	True	True	True	True
+ACH-000746	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000747	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000748	train	S2	Bone	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000749	train	S1	Lung	Humagne-only	1	2DS	Cell Line	onboarded	other_defined	True	True	True	True	True	True	True	True
+ACH-000753	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000754	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	False	True
+ACH-000756	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000757	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	False	True	False
+ACH-000758	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000760	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-000762	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000763	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000764	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000765	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000766	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	False
+ACH-000767	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000768	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000769	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000770	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000771	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-000773	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000774	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000775	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000776	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000777	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	mixture_of_sheets	True	True	True	False	True	True	True	True
+ACH-000778	train	S1	Head and Neck	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	False	True	True
+ACH-000781	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	True	True	True	True	True
+ACH-000782	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	True	False	True	True	True	True
+ACH-000783	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000784	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000785	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	True	False	True	True	True	True
+ACH-000787	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:F12	True	True	True	True	True	True	True	True
+ACH-000788	train	S1	Skin	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000790	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000791	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000792	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000793	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:IMDM	True	True	True	True	True	True	True	True
+ACH-000794	train	S1	Head and Neck	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	False	True	True	True	True	True	True
+ACH-000796	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	imputed	imputed	True	True	False	False	False	True	True	True
+ACH-000798	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	False	False	False	False	True	False	False
+ACH-000799	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	False	True	True	False	False
+ACH-000800	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000801	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	False	True
+ACH-000802	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000804	train	S2	Peripheral Nervous System	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000805	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	False
+ACH-000807	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	imputed	imputed	True	True	False	False	False	True	False	True
+ACH-000809	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000810	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000811	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	False	True	True	True	True	True
+ACH-000817	validation	S1	Lymphoid	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	False	True
+ACH-000819	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000820	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:L-15	True	True	True	False	True	True	False	False
+ACH-000821	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	False	False	True	True	True	False	True
+ACH-000822	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	True	True	True
+ACH-000823	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000824	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000826	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000827	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000829	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000831	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	imputed	imputed	True	True	True	False	True	True	True	True
+ACH-000832	train	S1	Head and Neck	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000833	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000834	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	True	True	True
+ACH-000835	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	False	True	True	True	True	True
+ACH-000836	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000837	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000838	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000839	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	imputed	imputed	True	True	False	False	False	True	True	True
+ACH-000840	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000841	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000843	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000845	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000846	train	S1	Head and Neck	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000847	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000848	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	True	True	True	True	True	False
+ACH-000849	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000851	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	False	False	True	False	True
+ACH-000853	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000855	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	mixture_of_sheets	True	True	True	True	True	True	True	True
+ACH-000856	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000858	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	other_defined	True	True	False	True	True	True	True	True
+ACH-000859	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000860	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000861	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000862	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-000863	test	S1	CNS/Brain	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	False	False	True	True	True	True	True
+ACH-000864	train	S2	Uterus	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000865	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	mixture_of_sheets	True	True	True	True	True	True	True	True
+ACH-000866	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	True	True	True	True	True	False
+ACH-000867	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000869	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000871	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	True	True	True	False	True
+ACH-000872	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-000873	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	mixture_of_sheets	True	True	False	True	True	True	True	False
+ACH-000874	validation	S1	Lymphoid	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000876	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:L-15	True	False	False	True	True	True	False	True
+ACH-000878	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000879	train	S2	Uterus	KY-only	1	2DS	Cell Line	onboarded	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000880	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	other_defined	True	True	True	True	True	True	True	True
+ACH-000881	train	S1	Skin	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000882	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000884	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000885	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	other_defined	True	True	False	True	True	True	True	True
+ACH-000886	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	True	True	True	True	True	True
+ACH-000887	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-000888	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	True	True	True	True	True	True
+ACH-000889	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	True
+ACH-000890	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000894	train	S1	Lung	KY-only	1	2DS	Cell Line	onboarded	sheet:DMEM:F12	True	True	False	False	False	True	False	True
+ACH-000896	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000898	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000899	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-000900	train	S1	Lung	Avana-containing	3	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000901	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	False
+ACH-000903	train	rare	Thyroid	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	True	True	True	True	True
+ACH-000905	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000906	test	S2	Ovary/Fallopian Tube	Avana-containing	3	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000907	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	False
+ACH-000910	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	True	True	True	True	True	True
+ACH-000911	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000912	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	False	True
+ACH-000913	train	S2	Uterus	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000914	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000915	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000916	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000917	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000919	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000920	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	True	True	True	True	True
+ACH-000921	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	False
+ACH-000922	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000924	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000926	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000928	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	True	False	True
+ACH-000929	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000932	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000934	test	S2	Breast	KY-only	1	2DS	Cell Line	onboarded	sheet:L-15	True	True	False	True	True	True	True	True
+ACH-000935	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	True	True	True	True	True	True
+ACH-000936	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000937	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000938	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000939	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	True	True	True
+ACH-000941	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	True	True	True
+ACH-000943	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000944	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000945	train	S1	Lung	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000946	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	False	True	True	True	True
+ACH-000947	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	True	True	True
+ACH-000948	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000950	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:F12	True	True	False	True	True	True	True	True
+ACH-000953	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000956	validation	S3	Prostate	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000957	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000958	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000959	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	True
+ACH-000960	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	False	True
+ACH-000961	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	False	True	True	True	True
+ACH-000962	test	S2	Ovary/Fallopian Tube	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000963	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000965	train	S2	Uterus	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	True	True	True	True	True
+ACH-000966	test	S2	Ovary/Fallopian Tube	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000968	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	False
+ACH-000969	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	True
+ACH-000970	train	S1	Bowel	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000971	train	S1	Bowel	other	3	2DS	Cell Line	onboarded	sheet:McCoy's 5A	True	True	True	True	True	True	True	True
+ACH-000972	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	True	True	True
+ACH-000973	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	True	True	True
+ACH-000974	train	S2	Uterus	Avana-containing	2	2DS	Cell Line	screen	sheet:F12	True	True	True	True	True	True	True	True
+ACH-000975	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-000976	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000977	validation	S3	Prostate	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000978	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000979	validation	S3	Prostate	KY-only	1	2DS	Cell Line	onboarded	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000980	train	S1	Lung	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	False	True	True	True	True	False	False
+ACH-000981	validation	S1	Lymphoid	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000983	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	True	True
+ACH-000984	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	False	True	True	True	True
+ACH-000985	train	S1	Bowel	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000986	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-000988	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	mixture_of_sheets	True	True	True	True	True	True	True	True
+ACH-000991	train	S1	Bowel	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	False	False	True	True	True	True	True
+ACH-000993	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	False	False	False	False	True	True	True
+ACH-000994	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	False	True	True	True	False
+ACH-000995	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-000996	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	False	True	True	True	True
+ACH-000997	train	S1	Bowel	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-001001	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	True	False
+ACH-001016	test	S1	CNS/Brain	KY-only	1	2DS	Cell Line	onboarded	sheet:MEM/EMEM	True	False	False	True	True	True	True	True
+ACH-001020	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	True
+ACH-001021	test	S3	Liver	Humagne-only	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	False	False	False
+ACH-001028	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:IMDM	True	False	False	False	False	False	True	False
+ACH-001029	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	True	False
+ACH-001031	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	False	False
+ACH-001033	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	True	False
+ACH-001036	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	False	False
+ACH-001038	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	True	False
+ACH-001039	train	S1	Bowel	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	True	True	True	False	False	True
+ACH-001041	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	False	False	False	False	False
+ACH-001048	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	False	False	False	False	False	False	False
+ACH-001050	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	False	False	False	False	False	True	False
+ACH-001053	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-001054	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-001061	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	True
+ACH-001065	test	S2	Breast	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-001067	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001075	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	False
+ACH-001081	train	S1	Bowel	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-001096	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001098	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001099	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001107	test	S1	Pancreas	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-001111	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001119	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001126	test	S1	CNS/Brain	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-001128	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001129	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	False	True	True	True	True
+ACH-001134	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	imputed	imputed	True	True	False	False	False	False	False	False
+ACH-001137	train	S1	Lung	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-001145	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	True	True	False
+ACH-001151	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	True	False	False
+ACH-001163	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	False	False	False	True	False
+ACH-001164	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	imputed	imputed	True	True	False	False	False	False	True	False
+ACH-001172	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	False	False	False	False	False	False	False
+ACH-001183	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001184	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001188	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	mixture_of_sheets	True	True	False	False	False	True	False	False
+ACH-001190	train	S1	Skin	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-001192	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001193	train	S2	Bone	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	False	True	False
+ACH-001194	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001196	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001197	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001201	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-001205	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001211	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001227	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	onboarded	sheet:MEM/EMEM	True	True	False	True	True	False	False	False
+ACH-001228	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001229	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001232	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	True	False
+ACH-001233	train	S1	Lung	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	True
+ACH-001239	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	True	False	True	True	True	True
+ACH-001270	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	False	False	False	False	False	False	False
+ACH-001274	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:L-15	True	True	False	True	True	False	False	True
+ACH-001275	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	True
+ACH-001277	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	True
+ACH-001278	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-001279	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001280	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-001283	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001289	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	False	False	False	False	False	True	False
+ACH-001295	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001300	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	True	False
+ACH-001301	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	True	False
+ACH-001302	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	False	False
+ACH-001303	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001306	train	rare	Thyroid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	True	True	True	True	True	True
+ACH-001307	train	rare	Thyroid	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	True	True	True	True	True	True
+ACH-001310	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	False	False	False	False	False	True	False
+ACH-001318	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	True	True	True
+ACH-001322	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-001328	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	False	False	False
+ACH-001329	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	False	False	False	False	False	True	False
+ACH-001331	train	S1	Head and Neck	KY-only	2	2DS	Cell Line	screen	sheet:DMEM:F12	False	False	False	False	False	False	False	False
+ACH-001332	train	S1	Head and Neck	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	False	True	False
+ACH-001333	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	False	True	False
+ACH-001334	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	True	True	False	True	False
+ACH-001335	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-001336	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	True	False
+ACH-001338	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001340	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-001341	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	False	True	False
+ACH-001344	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	True	False
+ACH-001345	train	S1	Bowel	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	False	True	False
+ACH-001346	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	True	False
+ACH-001347	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	True	False
+ACH-001349	test	S1	CNS/Brain	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001353	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	True	False
+ACH-001354	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	mixture_of_sheets	True	True	False	False	False	False	False	False
+ACH-001356	train	rare	Thyroid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001360	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	False	True	False
+ACH-001366	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-001367	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-001368	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	True	False
+ACH-001370	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	organoid	True	True	False	False	False	False	True	False
+ACH-001374	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	False	True	False
+ACH-001375	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	True	False
+ACH-001376	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-001377	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	True	False
+ACH-001379	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	True	False
+ACH-001380	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-001382	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-001385	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001386	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-001388	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001389	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001390	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	True	False
+ACH-001391	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	True	False
+ACH-001392	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001393	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001394	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001396	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001398	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:L-15	True	True	False	True	True	False	True	False
+ACH-001399	train	S1	Bowel	KY-only	1	2DS	Cell Line	onboarded	sheet:L-15	True	False	False	True	True	False	True	False
+ACH-001400	train	rare	Vulva/Vagina	Avana-containing	1	2DS	Cell Line	screen	sheet:L-15	True	True	False	True	True	False	True	False
+ACH-001401	train	rare	Adrenal Gland	Avana-containing	2	2DS	Cell Line	screen	sheet:L-15	True	True	False	True	True	False	True	False
+ACH-001402	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:L-15	True	True	False	True	True	False	True	False
+ACH-001403	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001407	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	True	False
+ACH-001408	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001409	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001411	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	True	False
+ACH-001412	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	True	False
+ACH-001413	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	True	False
+ACH-001414	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	True	False
+ACH-001415	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001416	validation	S3	Bladder/Urinary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001418	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-001419	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-001421	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001422	validation	S3	Prostate	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-001428	train	S2	Bone	Humagne-only	1	2DS	Cell Line	imputed	imputed	True	True	False	False	False	False	False	False
+ACH-001430	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001431	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001433	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-001436	train	rare	Testis	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	False	True	False	False	False	False	False	False
+ACH-001442	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	False	True	False
+ACH-001443	train	rare	Thyroid	Avana-containing	1	2DS	Cell Line	screen	mixture_of_sheets	True	True	False	True	True	False	False	False
+ACH-001450	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	False	False	False	True	False
+ACH-001451	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	True	False
+ACH-001453	validation	S3	Prostate	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	True	True	False	False	False
+ACH-001454	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	False	False
+ACH-001458	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	True	False
+ACH-001459	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	True	False
+ACH-001460	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	False	False
+ACH-001461	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	False	False
+ACH-001465	train	S2	Peripheral Nervous System	Humagne-only	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	False	False
+ACH-001481	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	False	False
+ACH-001484	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001494	train	S2	Biliary Tract	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	True	False
+ACH-001495	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001496	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-001497	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-001498	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-001500	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	False	True	False
+ACH-001502	train	rare	Testis	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001508	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-001509	train	S1	Head and Neck	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	True	False
+ACH-001510	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	True	False
+ACH-001511	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	True	False
+ACH-001513	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	True	False
+ACH-001515	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001517	train	S2	Uterus	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	False	True	False
+ACH-001518	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	True	False
+ACH-001520	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	False	False	False	False	False	False	False
+ACH-001521	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001522	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-001523	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001524	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	True	False
+ACH-001525	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	False	True	True	False	True	False
+ACH-001526	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	True	False
+ACH-001528	train	rare	Thyroid	Avana-containing	1	2DS	Cell Line	screen	mixture_of_sheets	True	True	False	True	True	False	True	False
+ACH-001529	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	True	False
+ACH-001530	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	False	True	False
+ACH-001532	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	False	False	False	False	False	True	False
+ACH-001533	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001536	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001538	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001539	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001542	train	S1	Head and Neck	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	False	True	False
+ACH-001543	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	True	False
+ACH-001544	train	S1	Esophagus/Stomach	KY-only	1	2DS	Cell Line	onboarded	mixture_of_sheets	False	False	False	True	True	False	False	False
+ACH-001547	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001548	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001549	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-001550	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001551	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001552	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001554	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001555	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001556	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001557	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001558	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001559	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001560	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001562	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001563	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001566	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001567	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001568	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001570	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001574	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001577	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-001578	train	rare	Testis	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	True	False
+ACH-001603	train	S2	Peripheral Nervous System	KY-only	1	2DS	Cell Line	onboarded	other_defined	True	True	False	True	True	False	False	False
+ACH-001605	test	S1	CNS/Brain	KY-only	1	2DS	Cell Line	onboarded	sheet:MEM/EMEM	True	False	False	True	True	False	False	False
+ACH-001606	test	S1	CNS/Brain	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	False	False	False
+ACH-001607	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	True	False
+ACH-001608	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001609	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001610	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001611	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-001613	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	False	False	False	False	False	False	False
+ACH-001616	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001618	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	False	False
+ACH-001619	train	S2	Biliary Tract	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001622	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-001623	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-001624	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001625	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	onboarded	sheet:DMEM:F12	True	False	False	True	True	False	False	False
+ACH-001626	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	onboarded	sheet:DMEM:F12	True	False	False	True	True	False	True	False
+ACH-001627	validation	S3	Prostate	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	False	False	False	False	False	False	False
+ACH-001628	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001630	test	S2	Ovary/Fallopian Tube	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-001632	test	S2	Ovary/Fallopian Tube	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	True	False	False	False	False	False	False	False
+ACH-001634	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001639	validation	S1	Lymphoid	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	False	False	False	True	True	False	False	False
+ACH-001641	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-001642	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	True	False
+ACH-001643	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	False	True	False	False	False	False	False	False
+ACH-001645	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001647	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	False	False
+ACH-001648	validation	S3	Prostate	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	False	False	False	False	False	False	False
+ACH-001649	validation	S3	Prostate	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	True	False
+ACH-001650	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	True	False
+ACH-001651	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	True	False
+ACH-001652	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	True	False
+ACH-001653	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	True	False
+ACH-001654	train	S1	Esophagus/Stomach	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	True	False
+ACH-001655	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	True	True	False	True	False
+ACH-001656	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001662	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001664	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001668	train	rare	Testis	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001669	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001670	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001673	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001674	train	S2	Peripheral Nervous System	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	False	True	False
+ACH-001675	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001676	train	S1	Head and Neck	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001677	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001683	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:L-15	True	True	False	False	False	False	False	False
+ACH-001685	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	mixture_of_sheets	True	True	False	False	False	False	False	False
+ACH-001687	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	True	False
+ACH-001688	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	True	False
+ACH-001690	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001691	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001692	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001694	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001695	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001696	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	True	False
+ACH-001698	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	True	False
+ACH-001699	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001701	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001702	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	False	True	False
+ACH-001707	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001709	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-001711	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	True	False
+ACH-001715	train	S2	Bone	Avana-containing	2	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	False	True	False
+ACH-001719	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	organoid	True	True	False	False	False	False	True	False
+ACH-001735	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001736	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001737	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001740	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	False	True	False	False	False	False	True	False
+ACH-001745	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001750	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001765	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-001786	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001791	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-001793	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-001794	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001795	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001796	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001799	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001802	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001804	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-001814	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-001819	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	False	False	False
+ACH-001820	test	S2	Breast	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-001834	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001835	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001836	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001838	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001839	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001841	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001842	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001843	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001844	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001848	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001849	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001850	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001852	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001853	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001856	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001857	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001858	train	S2	Biliary Tract	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001861	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	True	False
+ACH-001862	train	rare	Ampulla of Vater	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001863	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001864	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001959	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001960	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001961	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001970	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001972	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001973	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001975	train	S1	Skin	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001977	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001982	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-001986	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-001990	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-001991	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	True	False
+ACH-001992	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001993	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-001997	train	rare	Ampulla of Vater	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-001999	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	True	False
+ACH-002001	train	S1	Skin	Avana-containing	1	2DR	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002002	train	S1	Skin	Avana-containing	1	2DR	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002003	train	S1	Skin	Avana-containing	1	2DR	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002004	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002005	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002014	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002015	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-002016	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-002018	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002019	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-002020	train	S3	Cervix	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	True	True	False	False	False
+ACH-002021	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-002023	train	rare	Ampulla of Vater	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-002024	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002025	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	True	False
+ACH-002026	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-002027	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-002029	train	S1	Head and Neck	Avana-containing	3	2DS	Cell Line	screen_mixed	screen_mixed	True	True	False	True	True	False	False	False
+ACH-002030	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-002033	test	S3	Pleura	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-002035	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002039	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-002040	train	rare	Vulva/Vagina	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	True	True	False	False	False
+ACH-002041	train	rare	Thyroid	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	True	False
+ACH-002042	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	True	False
+ACH-002043	train	S1	Head and Neck	Avana-containing	2	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	True	True	False	False	False
+ACH-002044	train	S1	Head and Neck	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002045	train	S1	Head and Neck	Avana-containing	3	2DS	Cell Line	screen_mixed	screen_mixed	True	True	False	True	True	False	False	False
+ACH-002046	train	S2	Uterus	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	True	False
+ACH-002048	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	True	False
+ACH-002051	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-002052	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-002055	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002059	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-002060	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002061	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002062	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-002066	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002067	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-002069	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002070	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:F12	True	True	False	False	False	False	False	False
+ACH-002077	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-002080	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002083	train	S2	Peripheral Nervous System	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	False	False	False	True	True	False	False	False
+ACH-002084	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002105	train	S2	Bone	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002106	train	S2	Bone	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002109	train	S2	Bone	KY-only	1	2DS	Cell Line	onboarded	sheet:DMEM	False	True	False	True	True	False	False	False
+ACH-002110	train	S2	Bone	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002114	train	S2	Bone	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002116	train	S2	Bone	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002119	train	S2	Bone	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002140	test	S2	Ovary/Fallopian Tube	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002141	train	S1	Esophagus/Stomach	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002142	train	S2	Bone	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-002143	train	S1	Skin	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002150	train	S3	Kidney	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002156	train	S1	Lung	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002160	train	S2	Bone	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002161	train	S1	Esophagus/Stomach	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002179	test	S2	Breast	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002181	test	S2	Ovary/Fallopian Tube	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002183	test	S2	Ovary/Fallopian Tube	KY-only	1	2DS	Cell Line	onboarded	sheet:RPMI	False	False	False	True	True	False	False	False
+ACH-002186	test	S1	Pancreas	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002189	train	S3	Kidney	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002198	train	rare	Other	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002202	train	S1	Esophagus/Stomach	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002204	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	mixture_of_sheets	False	False	False	True	True	False	False	False
+ACH-002210	train	S2	Myeloid	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	False	False	False	False	False
+ACH-002212	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002214	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-002215	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-002228	test	S1	CNS/Brain	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002229	test	S1	CNS/Brain	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002230	test	S1	CNS/Brain	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002233	train	S1	Bowel	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002234	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002239	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002243	train	S1	Esophagus/Stomach	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002247	train	S2	Myeloid	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002249	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002250	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002251	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002257	test	S1	CNS/Brain	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002261	train	S2	Peripheral Nervous System	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002263	train	S1	Esophagus/Stomach	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002265	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002269	test	S1	CNS/Brain	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002278	train	S2	Peripheral Nervous System	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002280	train	S2	Peripheral Nervous System	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002282	train	S2	Peripheral Nervous System	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002283	train	S2	Peripheral Nervous System	Avana-containing	2	2DS	Cell Line	screen	sheet:RPMI	True	True	False	True	True	False	False	False
+ACH-002284	train	S2	Peripheral Nervous System	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002285	train	S2	Peripheral Nervous System	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002291	train	rare	Testis	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	True	True	False	False	False
+ACH-002294	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002295	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002296	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	False	False	False	False	False
+ACH-002297	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002298	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002304	test	S1	CNS/Brain	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002305	train	S1	Head and Neck	KY-only	1	2DS	Cell Line	imputed	imputed	False	False	False	True	True	False	False	False
+ACH-002399	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002400	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002401	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002408	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002410	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002411	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002414	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002415	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002418	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002433	train	S2	Bone	Humagne-only	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-002446	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002449	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002456	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002458	train	S1	Skin	Avana-containing	1	2DR	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002460	train	S1	Skin	Avana-containing	1	2DR	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002461	train	S1	Skin	Avana-containing	1	2DR	Cell Line	screen	sheet:RPMI	True	False	False	False	False	False	False	False
+ACH-002462	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	False	False	False	False	False	False	False
+ACH-002463	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002464	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002465	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002467	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	False	False	False	False	False	False	False
+ACH-002470	train	S2	Bone	Humagne-only	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002471	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002475	train	S2	Myeloid	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	False	False
+ACH-002478	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002485	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002486	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:McCoy's 5A	True	True	False	False	False	False	False	False
+ACH-002490	train	S1	Lung	Humagne-only	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002499	test	S2	Breast	Avana-containing	1	2DS	Cell Line	screen	sheet:L-15	True	True	False	False	False	False	False	False
+ACH-002500	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	False	False
+ACH-002506	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002508	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002510	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002511	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002512	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002522	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002523	test	S3	Liver	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002524	test	S2	Ovary/Fallopian Tube	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002526	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002528	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002530	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	False	True	False	False	False	False	False	False
+ACH-002531	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002533	train	S3	Kidney	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002535	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002538	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002544	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002647	train	S2	Biliary Tract	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-002650	train	S1	Lung	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002654	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002659	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002660	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002662	train	S1	Bowel	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002664	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002669	train	S1	Bowel	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002672	test	S1	Pancreas	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002677	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002678	validation	S1	Lymphoid	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002680	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-002681	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:MEM/EMEM	True	True	False	False	False	False	False	False
+ACH-002687	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002688	train	S2	Bone	Humagne-only	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002690	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002693	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002705	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002706	train	S1	Esophagus/Stomach	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002708	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002709	train	S2	Myeloid	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002710	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002711	train	S1	Head and Neck	Humagne-only	1	2DS	Cell Line	imputed	imputed	True	True	False	False	False	False	False	False
+ACH-002714	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002715	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-002730	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002731	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002736	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002742	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002743	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002744	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002745	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002778	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002779	train	S2	Bone	Humagne-only	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002780	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002782	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002784	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002785	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002792	validation	S2	Soft Tissue	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002799	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002800	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002801	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM:F12	True	True	False	False	False	False	False	False
+ACH-002806	test	S1	CNS/Brain	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002810	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	other_defined	True	True	False	False	False	False	False	True
+ACH-002811	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-002813	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002814	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-002816	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-002817	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-002818	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002821	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-002822	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-002824	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-002826	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-002828	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-002834	train	S2	Bone	Avana-containing	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-002836	train	S1	Esophagus/Stomach	Humagne-only	1	2DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002837	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002839	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002841	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002847	train	S1	Skin	Avana-containing	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-002849	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-002862	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002863	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002877	validation	S3	Prostate	Humagne-only	1	2DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002878	validation	S3	Prostate	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002879	validation	S3	Prostate	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002883	test	S2	Breast	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002884	test	S2	Breast	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002885	test	S2	Breast	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002890	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-002893	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-002907	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-002922	train	S2	Peripheral Nervous System	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002923	train	S2	Peripheral Nervous System	Humagne-only	1	2DS	Cell Line	screen	sheet:IMDM	True	True	False	False	False	False	False	False
+ACH-002925	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002926	test	S3	Eye	Avana-containing	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002928	train	S1	Skin	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-002947	test	S2	Breast	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002948	test	S2	Breast	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002950	test	S2	Breast	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002951	test	S2	Breast	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002954	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002958	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002959	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002964	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002965	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002966	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002968	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002975	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002978	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002979	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002982	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002983	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002989	validation	S3	Prostate	Humagne-only	1	2DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-002991	validation	S3	Prostate	Humagne-only	1	3DO	Organoid	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-002999	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003000	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003005	test	S2	Ovary/Fallopian Tube	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003012	train	S1	Lung	Avana-containing	2	2DS	Cell Line	imputed	imputed	True	True	False	False	False	False	False	False
+ACH-003013	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003014	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003015	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003030	test	S2	Breast	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003035	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003036	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003039	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003040	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003041	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003045	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003047	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003064	train	S2	Bone	Humagne-only	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-003065	test	S1	CNS/Brain	Humagne-only	1	2DS	Cell Line	imputed	imputed	True	True	False	False	False	False	False	False
+ACH-003126	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003130	test	S2	Breast	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003167	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-003169	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-003171	train	S2	Bone	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-003176	train	S2	Bone	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-003177	validation	S2	Soft Tissue	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-003178	train	S2	Bone	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-003180	validation	S2	Soft Tissue	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-003184	validation	S2	Soft Tissue	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-003185	train	S2	Bone	Humagne-only	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-003186	validation	S2	Soft Tissue	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-003189	validation	S2	Soft Tissue	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-003190	validation	S2	Soft Tissue	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-003191	train	S2	Bone	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-003193	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003203	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-003209	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-003216	test	S2	Breast	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003229	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-003230	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-003233	validation	S3	Prostate	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003235	validation	S3	Prostate	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003236	validation	S3	Prostate	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003237	validation	S3	Prostate	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003238	train	S2	Uterus	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003273	train	S2	Myeloid	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-003323	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	True
+ACH-003331	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003332	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003334	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003337	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003338	train	rare	Ampulla of Vater	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003339	train	rare	Ampulla of Vater	Humagne-only	1	2DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003340	train	rare	Ampulla of Vater	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003341	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003342	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003345	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003346	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003348	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003350	test	S2	Ovary/Fallopian Tube	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003355	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003356	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003357	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003358	train	rare	Ampulla of Vater	Humagne-only	1	2DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003359	test	S2	Breast	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003360	test	S2	Breast	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003364	train	S1	Bowel	Humagne-only	1	2DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003368	train	S2	Biliary Tract	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003369	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003372	train	S2	Biliary Tract	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003374	test	S2	Breast	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003377	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003380	test	S1	Pancreas	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003383	train	S1	Bowel	Humagne-only	1	2DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003386	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003387	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003388	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003390	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003391	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003394	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003395	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003397	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003398	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003399	train	S1	Bowel	Humagne-only	1	2DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003400	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003401	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003402	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003405	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-003410	train	S2	Bone	Humagne-only	1	2DS	Cell Line	screen	mixture_of_sheets	True	True	False	False	False	False	False	False
+ACH-003427	train	S1	Esophagus/Stomach	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003535	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-003565	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-003573	train	S2	Bone	Humagne-only	1	2DS	Cell Line	screen	sheet:DMEM	True	True	False	False	False	False	False	False
+ACH-003587	train	S2	Bone	Humagne-only	1	2DS	Cell Line	screen	other_defined	True	True	False	False	False	False	False	False
+ACH-003590	validation	S1	Lymphoid	Humagne-only	1	2DS	Cell Line	screen	sheet:RPMI	True	True	False	False	False	False	False	False
+ACH-003636	test	S1	CNS/Brain	Humagne-only	1	2DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False
+ACH-003704	test	S2	Breast	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003709	train	S2	Uterus	Humagne-only	1	2DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003710	train	S2	Uterus	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003711	train	S2	Uterus	Humagne-only	1	2DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003713	train	S1	Esophagus/Stomach	Humagne-only	1	2DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003716	train	S1	Esophagus/Stomach	Humagne-only	1	2DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003722	train	S1	Bowel	Humagne-only	1	3DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003723	test	S2	Ovary/Fallopian Tube	Humagne-only	1	2DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003724	train	S1	Bowel	Humagne-only	1	2DO	Organoid	screen	organoid	True	True	False	False	False	False	False	False
+ACH-003758	test	S1	CNS/Brain	Humagne-only	1	3DN	Cell Line	screen	stem	True	True	False	False	False	False	False	False

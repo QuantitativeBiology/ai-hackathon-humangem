@@ -133,3 +133,44 @@ def test_fingerprints_unreadable_outside_scanner(built_toy, monkeypatch):
     monkeypatch.setenv("NEXTGEM_DATA_ROOT", str(built_toy.data))
     with pytest.raises(PermissionError):
         labels.load_fingerprints()
+
+
+def test_canonical_split_exempt_but_copies_and_test_keyed_results_flagged(tmp_path_factory):
+    """The canonical split (pinned by SPLIT_SHA256 and split_meta.json) is not a test-keyed hit; a copy
+    elsewhere, a modified version in place, and a per-line results table keyed by test IDs still are."""
+    import hashlib
+    import json
+    import shutil
+
+    t = toy.make_toy(tmp_path_factory.mktemp("canon"))
+    sp = t.state / "results" / "splits"
+    split = pd.read_csv(sp / "lineage_split.tsv", sep="\t")
+    split["n_screens"] = [1 + i % 3 for i in range(len(split))]  # integer covariate (parsed as a gene column)
+    split["has_expression"] = True
+    split.to_csv(sp / "lineage_split.tsv", sep="\t", index=False)
+    sha = hashlib.sha256((sp / "lineage_split.tsv").read_bytes()).hexdigest()
+    (sp / "SPLIT_SHA256").write_text(f"{sha}  lineage_split.tsv\n")
+    (sp / "split_meta.json").write_text(json.dumps({"split_sha256": sha}))
+    other = t.state / "results" / "other"
+    other.mkdir()
+    shutil.copy(sp / "lineage_split.tsv", other / "split_copy.tsv")
+    test_ids = t.ids_in("test")
+    pd.DataFrame({"ModelID": test_ids, "n_called": [3, 5, 2, 7, 4], "mcc": [0.1, 0.2, 0.3, 0.4, 0.5]}).to_csv(
+        other / "per_line_results.tsv", sep="\t", index=False)
+
+    def scan_hits():
+        _, hits = _scan(t, "--test-keyed", "--roots", str(t.state / "results"))
+        return hits
+
+    hits = scan_hits()
+    assert "lineage_split.tsv" not in hits, hits.get("lineage_split.tsv")
+    assert "test-keyed" in hits.get("split_copy.tsv", "")
+    assert "test-keyed" in hits.get("per_line_results.tsv", "")
+    # modified in place -> no longer matches the pin -> flagged
+    with open(sp / "lineage_split.tsv", "a") as f:
+        f.write(f"{test_ids[0]}\ttest\tS3\tLinT\tAvana-containing\t9\tTrue\n")
+    assert "test-keyed" in scan_hits().get("lineage_split.tsv", "")
+    # pins that disagree -> no exemption
+    shutil.copy(other / "split_copy.tsv", sp / "lineage_split.tsv")
+    (sp / "split_meta.json").write_text(json.dumps({"split_sha256": "0" * 64}))
+    assert "test-keyed" in scan_hits().get("lineage_split.tsv", "")

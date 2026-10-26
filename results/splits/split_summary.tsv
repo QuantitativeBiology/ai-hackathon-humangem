@@ -1,0 +1,31 @@
+tier	stratum	lineage	n_lines	n_expression	n_cn	n_proteomics_any	n_nusinow	n_procan	n_organoid
+test	S1	CNS/Brain	133	126	110	46	12	43	0
+test	S1	Pancreas	71	69	67	29	18	26	23
+test	S2	Breast	67	65	64	35	24	33	14
+test	S2	Ovary/Fallopian Tube	62	59	55	35	12	32	3
+test	S3	Eye	15	15	13	0	0	0	0
+test	S3	Liver	25	25	25	18	13	14	0
+test	S3	Pleura	21	21	20	7	3	7	0
+train	S1	Bowel	85	81	76	39	24	36	22
+train	S1	Esophagus/Stomach	96	89	87	54	25	50	27
+train	S1	Head and Neck	77	63	58	39	10	37	0
+train	S1	Lung	126	123	117	101	62	94	0
+train	S1	Skin	75	74	71	32	24	24	0
+train	S2	Biliary Tract	36	36	34	3	1	2	2
+train	S2	Bone	59	49	51	26	7	25	0
+train	S2	Myeloid	45	43	40	25	12	19	0
+train	S2	Peripheral Nervous System	47	40	40	22	1	22	0
+train	S2	Uterus	38	38	37	21	11	14	4
+train	S3	Cervix	18	18	18	10	0	10	0
+train	S3	Kidney	35	32	30	17	12	15	0
+train	rare	Adrenal Gland	1	1	1	1	0	1	0
+train	rare	Ampulla of Vater	9	9	9	0	0	0	4
+train	rare	Fibroblast	1	1	1	0	0	0	0
+train	rare	Other	1	0	0	1	0	1	0
+train	rare	Testis	5	4	5	2	0	2	0
+train	rare	Thyroid	11	11	11	9	2	9	0
+train	rare	Vulva/Vagina	2	2	2	2	0	2	0
+validation	S1	Lymphoid	97	96	85	54	16	52	0
+validation	S2	Soft Tissue	50	49	46	9	4	8	0
+validation	S3	Bladder/Urinary Tract	34	34	33	16	11	14	0
+validation	S3	Prostate	19	19	15	6	5	6	9

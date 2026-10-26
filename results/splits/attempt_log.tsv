@@ -1,0 +1,2 @@
+attempt	rng_seed	accepted	a_min10_expr_each	b_test_ge250_expr_lines	c_test_ge40_proteomic_lines	d_not_both_heme_heldout	failed_checks	test_lineages	validation_lineages
+0	38	True	True	True	True	True		Pancreas;CNS/Brain;Ovary/Fallopian Tube;Breast;Eye;Pleura;Liver	Lymphoid;Soft Tissue;Prostate;Bladder/Urinary Tract

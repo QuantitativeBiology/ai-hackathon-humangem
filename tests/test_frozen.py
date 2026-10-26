@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import re
+
 import pytest
 
 import toy
@@ -81,7 +83,8 @@ def test_amendment_ids_only_from_table_data_rows(repo):
     frozen.upsert_rows([{**frozen.file_row("src/a.py"), "amendment": "Change"}])
     assert any("not in the DESIGN.md" in p for p in frozen.check())
     real = (toy.PROJECT / "DESIGN.md").read_text()
-    assert frozen.amendment_ids(real) == set()  # the frozen DESIGN has only the placeholder row
+    real_ids = frozen.amendment_ids(real)  # only explicit A<n> ids from data rows of the real §17 table
+    assert all(re.fullmatch(r"A\d+", i) for i in real_ids) and not ({"Change", "Date", "Section"} & real_ids)
 
 
 def test_test_runs_union_baseline_and_retirement(repo):
