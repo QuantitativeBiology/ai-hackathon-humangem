@@ -35,3 +35,7 @@ split.expr_by_lineage_sha256	value		d42ee4c8042b8474aade0c7a57899075f3170eaa84c6
 split.prot_by_lineage_sha256	value		a79c72684acfea7cbac9320bda8ceb369ec3e928f3b0930217e4be4f5e15991e	2026-10-26		split input pin (make_splits.py --compute-pins; review M3)
 split.draw_params_sha256	value		6dfb9cf3b9d08f2802dbdfb8afb6d4bf291a9ae9cf37a3d92f2db0dd3f0bf3bc	2026-10-26		split input pin (make_splits.py --compute-pins; review M3)
 scripts/pre_push_guard.py	file	scripts/pre_push_guard.py	9024551d13f7afe90d567dc39df6548b3a19746a5353fc20dfb469a9727f84bd	2026-10-26		M1 infrastructure (review fixes applied)
+labels.train	label_file	labels/labels_train.parquet	bfaa499b040e203504ff8722e688ca73f35f01778451ddf06170d6262d9d5d9c	2026-10-26		built by scripts/build_labels.py
+labels.validation	label_file	locked/labels_val.parquet	73380a40ac60248390dcb0ba9983726ad8d80102a81c6d9767915d195de67ea0	2026-10-26		built by scripts/build_labels.py
+labels.test	label_file	locked/labels_test.parquet	936a975e412b60abde6c572a658e3fc29cb0247ea7c0e89bff9abd3f01fc62c9	2026-10-26		built by scripts/build_labels.py
+label.primary	value		L_prob	2026-10-26		kappa rule (DESIGN 5.1); kappa=0.934475
