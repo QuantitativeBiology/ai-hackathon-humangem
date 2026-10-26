@@ -14,3 +14,4 @@ One line per rule, with evidence. Pruned at each milestone (M1: 13 -> 11; tool/d
 - Check column contents, not names: DepMap 26Q3 Model.csv OnboardedMedia/FormulationID are swapped. Record such quirks in DATA.md. (Data survey, 2026-10-26)
 - Keep RESEARCH_TREE.md to status, decisions and pointers; put finding detail and review text in notes/ so the tree stays a lean resume point. (M1 process review, RESEARCH_TREE ~10 KB)
 - Reveal a gating secret (split seed) only at the moment it is used, after the code that uses it is committed and reviewed: recording seed 38 at the freeze, before the split code existed, left a window in which any agent could compute the tiers. (M1 infra review, 2026-10-26)
+- The label hook splits shell commands on newlines before stripping quoted text, so a multi-line commit message naming a protected path is blocked; use one -m per paragraph and avoid protected path names in messages. (M1 label commit, 2026-10-26)
