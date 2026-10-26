@@ -17,3 +17,8 @@ Every dataset used by the project: source, version, checksum (SHA-256), license.
 | ProCan-DepMapSanger proteomics (Gonçalves et al. 2022, Cancer Cell) | `data/proteomics_goncalves/` | Cell Model Passports downloads (manual download by user, 2026-10-26) | release 20250211 (`Protein_matrix_averaged_20250211.tsv`, `..._zscore_...`, `proteomics_all_20250211.csv`) | Cell Model Passports terms of use — exact licence to verify before redistribution | see `data/checksums.tsv` |
 | DepMap 26Q3 `CRISPRGeneDependency.csv`, `AchillesNonessentialControls.csv` | `data/depmap/` | depmap.org data page (manual download by user, 2026-10-26) | 26Q3 | CC BY 4.0 | see `data/checksums.tsv` |
 | Culture-medium formulations (manual download by user, 2026-10-26) | `data/media/` | Gibco/ATCC formulation sheets: `rpmi1640_ATCC.xlsx`, `DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx`, `DMEM_F12_NoGlutamine_NoHEPES.xlsx`, `IMDM_NoPhenolRed.xlsx`; HPLM = Cantor et al. 2017 Cell Table S1 (`mmc1.xlsx`); Plasmax = Vande Voorde et al. 2019 Sci Adv supplement (`aau7314_sm.pdf`) | as downloaded 2026-10-26 | manufacturer sheets: vendor terms (composition facts, not redistributed); Cantor 2017 / Vande Voorde 2019 supplements: journal terms (Plasmax CC BY-NC per data review) | see `data/checksums.tsv` |
+
+## Known data quirks
+- DepMap 26Q3 `Model.csv`: the medium columns are swapped relative to their names. `OnboardedMedia` holds the formulation ID (e.g. `MF-001-001`), and `FormulationID` holds the text (e.g. "RPMI + 10% FBS"). PI-verified 2026-10-26.
+- DepMap 26Q3 `OmicsExpressionTPMLogp1HumanProteinCodingGenes.csv`: several rows per model; filter `IsDefaultEntryForModel == "Yes"` (one row per model).
+- CCLE metabolomics: 928 rows = 927 unique lines.
