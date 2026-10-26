@@ -1,0 +1,2 @@
+seq	timestamp	ledger	event	look_id	workstream	config_sha	output_sha	detail	author	head_commit	prev_sha	row_sha
+1	2026-10-26T20:06:19+0000	validation	non_look	kappa_rule	M1			{"kappa": 0.934475, "kappa_without_ce_fit_info_only": 0.884493, "n_pairs": 2166600, "primary_label": "L_prob", "rule": "kappa(L_prob, L_ge05) on training lines, pooled over U pairs; L_ge05 primary if < 0.5"}	scripts/build_labels.py	34575a9e67950721199b9f163d835ca54ffd0377	7d5c4a5cf8035fd0059a70f643d38b21ac5acfcf72142652fe12375d742618e2	887b66842133652ebc69714e21dfd301fa6adf9400d35f21ffbc514b39569b20
