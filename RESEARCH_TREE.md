@@ -43,7 +43,8 @@ Next (M1 implementation → M2): build and independently review the M1 infrastru
     - Compute ≈2,950 CPU-h (≈1,550 MILP), wall-clock ≈125–150 h; 12 MILP + 16 LP workers (RAM-bound).
   - [x] 2.4 DESIGN v2 "candidate for freeze" (design author, 19 min): 17 decisions applied; medium-attribution set 835 lines (4 sheets), 9 two-media lineages; FH/SDH background dropped (n=2); Stage-A table ≈435 CPU-h; total ≈2,950–3,005 CPU-h. LOH via low-CN proxy (no LOH file).
   - [x] 2.5 Round 3 (unexposed Opus verifier, 12 + 7 min): v2 → 17 fixes; a priori lists re-approved from biology only (notes/apriori_lists_approved.md); v3 final check → text fixes (panel fold rule, workers 24+≤4 vs licence, Human1/Human2 protocol alignment: 21-step grid, NaN MCC, parent-model gene sets) applied by PI.
-  - [x] 2.6 **M1: DESIGN.md v3 frozen.**
+  - [x] 2.6 **M1: DESIGN.md v3 frozen** (61b0beb).
+  - [~] 2.7 M1 implementation: (A) labels/splits/guards builder [Opus]; (B) metrics builder [Opus]; M1 process review [Sonnet] → notes/milestone_reviews/. Real split draw by PI after independent review.
 - [~] 3. Baseline: generic Human1 & Human2 (pipeline agent, Opus; predictions only, no DepMap scoring until DESIGN.md fixes labels/splits)
   - [x] 3.1 Human1 = v1.19.0 (commit 022ed5c) fetched; Entrez mapping 2,874/2,887 (H1), 2,857/2,870 (H2) one-to-one; 2 unmapped (GK3P, SLC37A4 alt ENSG); join on Entrez (symbols renamed for 7–10 genes)
   - [x] 3.2 Single-gene KO, Ham's medium, Gurobi (16 WLS sessions OK): H1 149 / H2 154 lethal (ratio_r<0.01; none in 0.01–0.5); ~50 s per model on 15 workers. Verification 45/46 (only known H1 UMPS). Independent review (notes/review_baseline_ko.md): all genes recomputed with own code, max diff 2e-12 → accept with fixes; fixes applied (ratio_r rounding → bitwise-identical reruns; loud failure on non-optimal; per-release task files; SHA-pinned Human1 download).
