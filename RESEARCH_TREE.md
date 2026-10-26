@@ -38,7 +38,7 @@ Current phase: literature and dataset survey (→ LITERATURE.md), with the gener
     - [!] Label hygiene: all-line label copy (ge_U.parquet + 11 derived files) left in scratch by a round-1 reviewer → deleted by PI; content-based scanner required. Guard hook hardened (fail-closed, labels_val, data/locked, recursive data searches) but inactive until user reloads /hooks.
     - Medium requirement redefined (non-limiting micronutrient floor; pFBA-based req for synthesisable serum lipids); transporter gate = context; time-limited MILP incumbents accepted in all arms (fair to B7); C6 last in gatekeeping.
     - Compute ≈2,950 CPU-h (≈1,550 MILP), wall-clock ≈125–150 h; 12 MILP + 16 LP workers (RAM-bound).
-  - [~] 2.4 DESIGN v2 (design author)
+  - [x] 2.4 DESIGN v2 "candidate for freeze" (design author, 19 min): 17 decisions applied; medium-attribution set 835 lines (4 sheets), 9 two-media lineages; FH/SDH background dropped (n=2); Stage-A table ≈435 CPU-h; total ≈2,950–3,005 CPU-h. LOH via low-CN proxy (no LOH file).
   - [ ] 2.5 Round 3: light independent verification of v2 against round-2 must-fixes, then freeze (M1)
 - [~] 3. Baseline: generic Human1 & Human2 (pipeline agent, Opus; predictions only, no DepMap scoring until DESIGN.md fixes labels/splits)
   - [x] 3.1 Human1 = v1.19.0 (commit 022ed5c) fetched; Entrez mapping 2,874/2,887 (H1), 2,857/2,870 (H2) one-to-one; 2 unmapped (GK3P, SLC37A4 alt ENSG); join on Entrez (symbols renamed for 7–10 genes)

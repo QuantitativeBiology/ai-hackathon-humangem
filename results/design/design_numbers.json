@@ -1,13 +1,12 @@
 {
  "_meta": {
   "script": "scripts/design_numbers.py",
-  "generated": "2026-10-26 15:32",
+  "generated": "2026-10-26 16:13",
   "label_values_read": false,
   "performance_computed": false
  },
  "cohort": {
   "n_screened_lines": 1361,
-  "n_crispr_gene_columns": 18434,
   "n_lineages": 30,
   "lineage_counts": {
    "CNS/Brain": 133,
@@ -37,9 +36,9 @@
    "Ampulla of Vater": 9,
    "Testis": 5,
    "Vulva/Vagina": 2,
-   "Other": 1,
+   "Fibroblast": 1,
    "Adrenal Gland": 1,
-   "Fibroblast": 1
+   "Other": 1
   },
   "n_eligible_lineages": 23,
   "n_lines_eligible_lineages": 1331,
@@ -48,25 +47,15 @@
    "Ampulla of Vater": 9,
    "Testis": 5,
    "Vulva/Vagina": 2,
-   "Other": 1,
+   "Fibroblast": 1,
    "Adrenal Gland": 1,
-   "Fibroblast": 1
+   "Other": 1
   },
   "n_lines_rare": 30,
   "model_type_screened": {
    "Cell Line": 1253,
    "Organoid": 108
   }
- },
- "label_files": {
-  "dependency_present": true,
-  "dependency_n_lines": 1361,
-  "dependency_n_gene_columns": 18434,
-  "dependency_lines_equal_effect": true,
-  "dependency_columns_equal_effect": true,
-  "dependency_lines_only_in_dep": 0,
-  "dependency_lines_only_in_effect": 0,
-  "dependency_cols_only_in_effect": 0
  },
  "genes": {
   "human1_model_genes": 2887,
@@ -76,11 +65,7 @@
   "U_union": 2866,
   "U_intersection": 2766,
   "U_only_human1": 59,
-  "U_only_human2": 41,
-  "depmap_inferred_common_essentials_total": 2263,
-  "depmap_inferred_common_essentials_in_U": 438,
-  "achilles_common_essential_controls_in_U": 226,
-  "achilles_nonessential_controls_in_U": 79
+  "U_only_human2": 41
  },
  "baseline_ko": {
   "human1": {
@@ -302,12 +287,25 @@
   "harmonized_gygi_screened": 309,
   "procan_mapped_total": 947,
   "procan_screened": 598,
+  "procan_unmapped_ids": 2,
   "any_proteomics_screened": 659,
   "metabolomics_total": 927,
   "metabolomics_screened": 652,
   "prism_24q2_or_20q2_screened": 735,
   "ctrp_screened": 612,
-  "gdsc_screened": null
+  "gdsc1_lines_total": 970,
+  "gdsc1_unmapped_sanger_ids": 2,
+  "gdsc1_screened": 608,
+  "gdsc2_lines_total": 969,
+  "gdsc2_unmapped_sanger_ids": 2,
+  "gdsc2_screened": 608,
+  "gdsc_any_screened": 610,
+  "gdsc_any_screened_with_expr": 546,
+  "gdsc_screen_medium_values": {
+   "R": 557,
+   "D/F12": 444,
+   "nan": 1
+  }
  },
  "coverage_by_lineage": {
   "CNS/Brain": {
@@ -553,14 +551,14 @@
    "metabolomics": 0,
    "prism": 1
   },
-  "Other": {
+  "Fibroblast": {
    "screened": 1,
-   "expr": 0,
-   "cn": 0,
-   "proteomics_any": 1,
+   "expr": 1,
+   "cn": 1,
+   "proteomics_any": 0,
    "nusinow": 0,
-   "metabolomics": 0,
-   "prism": 0
+   "metabolomics": 1,
+   "prism": 1
   },
   "Adrenal Gland": {
    "screened": 1,
@@ -571,14 +569,14 @@
    "metabolomics": 0,
    "prism": 1
   },
-  "Fibroblast": {
+  "Other": {
    "screened": 1,
-   "expr": 1,
-   "cn": 1,
-   "proteomics_any": 0,
+   "expr": 0,
+   "cn": 0,
+   "proteomics_any": 1,
    "nusinow": 0,
-   "metabolomics": 1,
-   "prism": 1
+   "metabolomics": 0,
+   "prism": 0
   }
  },
  "resource_scope": {
@@ -634,6 +632,7 @@
   "mappable_to_requested_sheets": 1068,
   "mappable_incl_mixtures": 1086,
   "no_fbs_in_text": 160,
+  "screen_multi_supplement": 0,
   "screen_tier_sheet_mappable": 1018,
   "screen_tier_sheet_or_mixture": 1034,
   "onboarded_tier_sheet_or_mixture": 52,
@@ -663,7 +662,39 @@
    "Soft Tissue",
    "Uterus"
   ],
-  "n_lineages_with_2_media_ge8": 13
+  "n_lineages_with_2_media_ge8": 13,
+  "sheet_bases_on_disk": [
+   "DMEM",
+   "DMEM:F12",
+   "IMDM",
+   "RPMI"
+  ],
+  "sheet_bases_missing": [
+   "F12",
+   "L-15",
+   "MEM/EMEM",
+   "McCoy's 5A"
+  ],
+  "attribution_set_screen_tier_on_disk": 835,
+  "attribution_set_by_base": {
+   "sheet:RPMI": 557,
+   "sheet:DMEM": 180,
+   "sheet:DMEM:F12": 60,
+   "sheet:IMDM": 38
+  },
+  "fallback_lines_sheet_missing_any_tier": 198,
+  "lineages_with_2_media_ge8_on_disk_sheets": [
+   "Bone",
+   "CNS/Brain",
+   "Head and Neck",
+   "Lung",
+   "Ovary/Fallopian Tube",
+   "Pancreas",
+   "Peripheral Nervous System",
+   "Skin",
+   "Soft Tissue"
+  ],
+  "n_lineages_with_2_media_ge8_on_disk_sheets": 9
  },
  "backgrounds": {
   "MTAP_del": {
@@ -692,9 +723,9 @@
    "members_in_eligible_lineages": 0
   },
   "ME2_loss": {
-   "rule": "relCN(ME2)<0.3 or damaging",
+   "rule": "loss rule r2-11 (ME2)",
    "mechanism": "ME3",
-   "n_screened_members": 27,
+   "n_screened_members": 23,
    "n_screened_status_known": 1361,
    "top_lineages": {
     "Pancreas": 7,
@@ -734,46 +765,43 @@
    "members_in_eligible_lineages": 152
   },
   "NRF2_active": {
-   "rule": "KEAP1 damaging/del or NFE2L2 hotspot",
+   "rule": "KEAP1 loss (r2-11) or NFE2L2 hotspot",
    "mechanism": "SLC7A11/cystine, NADPH",
-   "n_screened_members": 49,
+   "n_screened_members": 43,
    "n_screened_status_known": 1361,
    "top_lineages": {
     "Lung": 16,
-    "Esophagus/Stomach": 8,
+    "Esophagus/Stomach": 7,
     "Head and Neck": 5,
     "Uterus": 4
    },
    "within_lineage_eligible_lineages": 5,
-   "members_in_eligible_lineages": 36
+   "members_in_eligible_lineages": 35
   },
   "STK11_loss": {
-   "rule": "STK11 damaging or del",
+   "rule": "loss rule r2-11 (STK11)",
    "mechanism": "CPS1/pyrimidine",
-   "n_screened_members": 59,
+   "n_screened_members": 52,
    "n_screened_status_known": 1361,
    "top_lineages": {
-    "Lung": 27,
+    "Lung": 25,
     "Cervix": 9,
     "Ovary/Fallopian Tube": 4,
     "Esophagus/Stomach": 3
    },
    "within_lineage_eligible_lineages": 4,
-   "members_in_eligible_lineages": 43
+   "members_in_eligible_lineages": 41
   },
   "FH_SDH_loss": {
-   "rule": "FH/SDHx damaging or del",
+   "rule": "loss rule r2-11 (FH/SDHx)",
    "mechanism": "TCA truncation",
-   "n_screened_members": 34,
+   "n_screened_members": 2,
    "n_screened_status_known": 1361,
    "top_lineages": {
-    "Esophagus/Stomach": 5,
-    "CNS/Brain": 5,
-    "Head and Neck": 4,
-    "Lymphoid": 3
+    "CNS/Brain": 2
    },
-   "within_lineage_eligible_lineages": 4,
-   "members_in_eligible_lineages": 17
+   "within_lineage_eligible_lineages": 0,
+   "members_in_eligible_lineages": 0
   },
   "IDH_mut": {
    "rule": "IDH1/2 hotspot",
@@ -781,10 +809,10 @@
    "n_screened_members": 8,
    "n_screened_status_known": 1361,
    "top_lineages": {
-    "CNS/Brain": 2,
     "Biliary Tract": 2,
+    "CNS/Brain": 2,
     "Soft Tissue": 1,
-    "Skin": 1
+    "Pancreas": 1
    },
    "within_lineage_eligible_lineages": 0,
    "members_in_eligible_lineages": 0
@@ -796,9 +824,9 @@
    "n_screened_status_known": 1221,
    "top_lineages": {
     "Bone": 5,
+    "Breast": 4,
     "Esophagus/Stomach": 4,
-    "Skin": 4,
-    "Breast": 4
+    "Skin": 4
    },
    "within_lineage_eligible_lineages": 5,
    "members_in_eligible_lineages": 20
@@ -818,6 +846,18 @@
    "members_in_eligible_lineages": 197
   }
  },
+ "loss_rule_sensitivity_v1_rule_counts": {
+  "ME2": 27,
+  "KEAP1": 27,
+  "STK11": 59,
+  "FH": 1
+ },
+ "loss_rule_primary_counts": {
+  "ME2": 23,
+  "KEAP1": 20,
+  "STK11": 52,
+  "FH": 0
+ },
  "mutation_matrix_values": {
   "damaging_STK11": {
    "0.0": 2324,
@@ -826,7 +866,7 @@
   }
  },
  "split_simulation": {
-  "note": "1000 simulated draws on seeds 1..1000 (real seed 20261026+attempt NOT evaluated)",
+  "note": "1000 simulated draws on seeds 1..1000; the real seed is user-supplied after the M1 freeze commit and is never evaluated here; 20261026 is retired",
   "strata": {
    "S1": [
     "CNS/Brain",
@@ -901,11 +941,353 @@
    "ASS1_silenced": 0.995,
    "NRF2_active": 0.696,
    "STK11_loss": 0.607,
-   "FH_SDH_loss": 0.478,
+   "FH_SDH_loss": 0.0,
    "IDH_mut": 0.0,
    "PHGDH_amp": 0.471,
    "KRAS_hotspot_negctrl": 0.982
   },
-  "training_eligible_lineages_per_draw": 12
+  "training_eligible_lineages_per_draw": 12,
+  "reference_draws_seeds_1_to_20": {
+   "1": {
+    "test": [
+     "Head and Neck",
+     "CNS/Brain",
+     "Ovary/Fallopian Tube",
+     "Uterus",
+     "Pleura",
+     "Kidney",
+     "Prostate"
+    ],
+    "val": [
+     "Lung",
+     "Biliary Tract",
+     "Bladder/Urinary Tract",
+     "Cervix"
+    ]
+   },
+   "2": {
+    "test": [
+     "Skin",
+     "Head and Neck",
+     "Bone",
+     "Peripheral Nervous System",
+     "Eye",
+     "Bladder/Urinary Tract",
+     "Prostate"
+    ],
+    "val": [
+     "Pancreas",
+     "Breast",
+     "Pleura",
+     "Liver"
+    ]
+   },
+   "3": {
+    "test": [
+     "Skin",
+     "Pancreas",
+     "Uterus",
+     "Breast",
+     "Prostate",
+     "Liver",
+     "Cervix"
+    ],
+    "val": [
+     "Lymphoid",
+     "Peripheral Nervous System",
+     "Eye",
+     "Pleura"
+    ]
+   },
+   "4": {
+    "test": [
+     "Lung",
+     "Lymphoid",
+     "Ovary/Fallopian Tube",
+     "Peripheral Nervous System",
+     "Kidney",
+     "Eye",
+     "Liver"
+    ],
+    "val": [
+     "CNS/Brain",
+     "Breast",
+     "Pleura",
+     "Cervix"
+    ]
+   },
+   "5": {
+    "test": [
+     "Lung",
+     "Bowel",
+     "Breast",
+     "Ovary/Fallopian Tube",
+     "Eye",
+     "Liver",
+     "Pleura"
+    ],
+    "val": [
+     "Lymphoid",
+     "Soft Tissue",
+     "Bladder/Urinary Tract",
+     "Kidney"
+    ]
+   },
+   "6": {
+    "test": [
+     "Lymphoid",
+     "Head and Neck",
+     "Biliary Tract",
+     "Breast",
+     "Liver",
+     "Pleura",
+     "Eye"
+    ],
+    "val": [
+     "Esophagus/Stomach",
+     "Soft Tissue",
+     "Kidney",
+     "Bladder/Urinary Tract"
+    ]
+   },
+   "7": {
+    "test": [
+     "CNS/Brain",
+     "Skin",
+     "Biliary Tract",
+     "Soft Tissue",
+     "Prostate",
+     "Liver",
+     "Kidney"
+    ],
+    "val": [
+     "Pancreas",
+     "Uterus",
+     "Pleura",
+     "Cervix"
+    ]
+   },
+   "8": {
+    "test": [
+     "Esophagus/Stomach",
+     "Pancreas",
+     "Myeloid",
+     "Soft Tissue",
+     "Eye",
+     "Liver",
+     "Cervix"
+    ],
+    "val": [
+     "CNS/Brain",
+     "Uterus",
+     "Kidney",
+     "Bladder/Urinary Tract"
+    ]
+   },
+   "9": {
+    "test": [
+     "Esophagus/Stomach",
+     "Pancreas",
+     "Bone",
+     "Ovary/Fallopian Tube",
+     "Bladder/Urinary Tract",
+     "Cervix",
+     "Pleura"
+    ],
+    "val": [
+     "Head and Neck",
+     "Uterus",
+     "Kidney",
+     "Eye"
+    ]
+   },
+   "10": {
+    "test": [
+     "Lung",
+     "Lymphoid",
+     "Ovary/Fallopian Tube",
+     "Uterus",
+     "Pleura",
+     "Cervix",
+     "Prostate"
+    ],
+    "val": [
+     "Esophagus/Stomach",
+     "Myeloid",
+     "Liver",
+     "Kidney"
+    ]
+   },
+   "11": {
+    "test": [
+     "Esophagus/Stomach",
+     "Lung",
+     "Bone",
+     "Myeloid",
+     "Cervix",
+     "Liver",
+     "Bladder/Urinary Tract"
+    ],
+    "val": [
+     "Pancreas",
+     "Breast",
+     "Eye",
+     "Pleura"
+    ]
+   },
+   "12": {
+    "test": [
+     "Lung",
+     "Skin",
+     "Peripheral Nervous System",
+     "Uterus",
+     "Bladder/Urinary Tract",
+     "Pleura",
+     "Prostate"
+    ],
+    "val": [
+     "Esophagus/Stomach",
+     "Ovary/Fallopian Tube",
+     "Cervix",
+     "Liver"
+    ]
+   },
+   "13": {
+    "test": [
+     "CNS/Brain",
+     "Pancreas",
+     "Uterus",
+     "Ovary/Fallopian Tube",
+     "Pleura",
+     "Eye",
+     "Prostate"
+    ],
+    "val": [
+     "Esophagus/Stomach",
+     "Myeloid",
+     "Kidney",
+     "Cervix"
+    ]
+   },
+   "14": {
+    "test": [
+     "Esophagus/Stomach",
+     "Skin",
+     "Myeloid",
+     "Bone",
+     "Pleura",
+     "Eye",
+     "Prostate"
+    ],
+    "val": [
+     "Bowel",
+     "Ovary/Fallopian Tube",
+     "Kidney",
+     "Cervix"
+    ]
+   },
+   "15": {
+    "test": [
+     "Lymphoid",
+     "CNS/Brain",
+     "Uterus",
+     "Soft Tissue",
+     "Eye",
+     "Kidney",
+     "Prostate"
+    ],
+    "val": [
+     "Esophagus/Stomach",
+     "Ovary/Fallopian Tube",
+     "Cervix",
+     "Bladder/Urinary Tract"
+    ]
+   },
+   "16": {
+    "test": [
+     "Skin",
+     "CNS/Brain",
+     "Peripheral Nervous System",
+     "Ovary/Fallopian Tube",
+     "Liver",
+     "Pleura",
+     "Prostate"
+    ],
+    "val": [
+     "Bowel",
+     "Breast",
+     "Eye",
+     "Bladder/Urinary Tract"
+    ]
+   },
+   "17": {
+    "test": [
+     "Lung",
+     "CNS/Brain",
+     "Bone",
+     "Peripheral Nervous System",
+     "Pleura",
+     "Prostate",
+     "Cervix"
+    ],
+    "val": [
+     "Skin",
+     "Uterus",
+     "Kidney",
+     "Liver"
+    ]
+   },
+   "18": {
+    "test": [
+     "Lymphoid",
+     "Skin",
+     "Bone",
+     "Biliary Tract",
+     "Eye",
+     "Kidney",
+     "Pleura"
+    ],
+    "val": [
+     "CNS/Brain",
+     "Ovary/Fallopian Tube",
+     "Cervix",
+     "Bladder/Urinary Tract"
+    ]
+   },
+   "19": {
+    "test": [
+     "CNS/Brain",
+     "Lymphoid",
+     "Biliary Tract",
+     "Ovary/Fallopian Tube",
+     "Pleura",
+     "Prostate",
+     "Cervix"
+    ],
+    "val": [
+     "Lung",
+     "Peripheral Nervous System",
+     "Bladder/Urinary Tract",
+     "Kidney"
+    ]
+   },
+   "20": {
+    "test": [
+     "Skin",
+     "CNS/Brain",
+     "Myeloid",
+     "Biliary Tract",
+     "Pleura",
+     "Liver",
+     "Bladder/Urinary Tract"
+    ],
+    "val": [
+     "Bowel",
+     "Bone",
+     "Cervix",
+     "Prostate"
+    ]
+   }
+  }
  }
 }

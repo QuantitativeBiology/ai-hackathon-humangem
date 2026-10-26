@@ -1,12 +1,13 @@
 """Compute every numeric data fact quoted in DESIGN.md -> results/design/design_numbers.json.
 
-Label policy (DESIGN.md §4, PI decision 26): this script NEVER reads CRISPR label values.
-From CRISPRGeneEffect.csv / CRISPRGeneDependency.csv it reads only the ModelID index column
-(usecols=[0]) and the header row (nrows=0). It computes no performance metric and no label
-prevalence. The split section simulates the pre-registered draw on seeds that cannot collide with
-the real split seed (20261026 + attempt), so the real test lineages are not known before M1.
+Label policy (DESIGN.md §11.1, PI decisions r1-14/26, r2-14/15): this script opens NO label-bearing
+file (CRISPRGeneEffect, CRISPRGeneDependency, ScreenGeneEffect, common-essential/control lists).
+The screened-line set comes from CRISPRScreenMap.csv (screen -> model map, label-free); the gene
+universe comes from results/baseline/*_gene_mapping.tsv. It computes no performance and no prevalence.
+The split section simulates the draw function on seeds 1..1000 only; the real split seed is supplied
+by the user after the M1 freeze commit (DESIGN.md §4.1) and is never evaluated here.
 
-Run: .venv/bin/python scripts/design_numbers.py   (~30 s; reads only a few columns of the large omics files)
+Run: .venv/bin/python scripts/design_numbers.py   (~1-2 min; reads only a few columns of the large omics files)
 """
 
 from __future__ import annotations
@@ -26,8 +27,8 @@ D = ROOT / "data"
 DM = D / "depmap"
 OUT = ROOT / "results" / "design" / "design_numbers.json"
 
-REAL_SPLIT_SEED = 20261026
-SIM_SEEDS = range(1, 1001)  # never equal to 20261026 + attempt (attempt < 100)
+RETIRED_SPLIT_SEED = 20261026  # exposed in review round 1; make_splits.py refuses it
+SIM_SEEDS = range(1, 1001)
 MIN_LINES_ELIGIBLE = 15
 STRATA = {"S1": (0, 8), "S2": (8, 16), "S3": (16, 23)}  # rank slices of eligible lineages
 ALLOC_TEST = {"S1": 2, "S2": 2, "S3": 3}  # PI decision 3: 7 test lineages
@@ -40,6 +41,11 @@ CN_AMP = 2.0
 EXPR_SILENT = 1.0  # log2(TPM+1) < 1  <=>  TPM < 1
 
 SHEET_BASES = {"RPMI", "DMEM", "DMEM:F12", "MEM", "EMEM", "IMDM", "F12", "McCoy's 5A", "L-15"}
+# formulation-sheet file patterns in data/media/ (case-insensitive) -> base medium class
+SHEET_FILE_PATTERNS = {"RPMI": r"^rpmi", "DMEM": r"^dmem_highglucose", "DMEM:F12": r"^dmem_f12",
+                       "IMDM": r"^imdm", "MEM/EMEM": r"^e?mem_", "F12": r"^(f12|ham)", "McCoy's 5A": r"mccoy",
+                       "L-15": r"^(l-?15|leibovitz)"}
+CN_LOH_PROXY = 0.5  # no LOH file on disk: heterozygous damaging + relCN < 0.5 is the LOH proxy
 
 PANEL_GENES = ["PPAT", "GART", "PFAS", "PAICS", "ADSL", "ATIC", "IMPDH2", "GMPS", "TYMS", "DHFR",
                "DHODH", "UMPS", "CAD", "SQLE", "LSS", "DHCR7", "HMGCR", "MVK", "HMGCS1", "FDPS",
@@ -74,9 +80,7 @@ def default_rows(path: Path, symbols: list[str]) -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------- cohort / lineages
-screened = pd.read_csv(DM / "CRISPRGeneEffect.csv", usecols=[0]).iloc[:, 0]
-assert screened.is_unique
-crispr_cols = header(DM / "CRISPRGeneEffect.csv")[1:]
+screened = pd.Series(sorted(pd.read_csv(DM / "CRISPRScreenMap.csv").ModelID.unique()))
 model = pd.read_csv(DM / "Model.csv")
 model = model.set_index("ModelID")
 scr = model.loc[screened.values]
@@ -85,7 +89,6 @@ eligible = lin_counts[lin_counts >= MIN_LINES_ELIGIBLE]
 rare = lin_counts[lin_counts < MIN_LINES_ELIGIBLE]
 out["cohort"] = {
     "n_screened_lines": int(len(screened)),
-    "n_crispr_gene_columns": int(len(crispr_cols)),
     "n_lineages": int(len(lin_counts)),
     "lineage_counts": {k: int(v) for k, v in lin_counts.items()},
     "n_eligible_lineages": int(len(eligible)),
@@ -95,33 +98,11 @@ out["cohort"] = {
     "model_type_screened": {k: int(v) for k, v in scr.ModelType.value_counts().items()},
 }
 
-# label file: ID sets only (label-free verification, DESIGN §3)
-dep = DM / "CRISPRGeneDependency.csv"
-if dep.exists():
-    dep_ids = pd.read_csv(dep, usecols=[0]).iloc[:, 0]
-    dep_cols = header(dep)[1:]
-    out["label_files"] = {
-        "dependency_present": True,
-        "dependency_n_lines": int(len(dep_ids)),
-        "dependency_n_gene_columns": int(len(dep_cols)),
-        "dependency_lines_equal_effect": bool(set(dep_ids) == set(screened)),
-        "dependency_columns_equal_effect": bool(set(dep_cols) == set(crispr_cols)),
-        "dependency_lines_only_in_dep": int(len(set(dep_ids) - set(screened))),
-        "dependency_lines_only_in_effect": int(len(set(screened) - set(dep_ids))),
-        "dependency_cols_only_in_effect": int(len(set(crispr_cols) - set(dep_cols))),
-    }
-else:
-    out["label_files"] = {"dependency_present": False}
-
 # ---------------------------------------------------------------- gene universe
 maps = {m: pd.read_csv(ROOT / f"results/baseline/{m}_gene_mapping.tsv", sep="\t", dtype=str) for m in ("human1", "human2")}
 scr_genes = {m: set(df.depmap_column.dropna()) for m, df in maps.items()}
 U = scr_genes["human1"] | scr_genes["human2"]
 Ui = scr_genes["human1"] & scr_genes["human2"]
-ce = set(pd.read_csv(DM / "CRISPRInferredCommonEssentials.csv").iloc[:, 0])
-ace = set(pd.read_csv(DM / "AchillesCommonEssentialControls.csv").iloc[:, 0])
-ane_path = DM / "AchillesNonessentialControls.csv"
-ane = set(pd.read_csv(ane_path).iloc[:, 0]) if ane_path.exists() else set()
 out["genes"] = {
     "human1_model_genes": int(len(maps["human1"])),
     "human2_model_genes": int(len(maps["human2"])),
@@ -131,10 +112,6 @@ out["genes"] = {
     "U_intersection": int(len(Ui)),
     "U_only_human1": int(len(scr_genes["human1"] - scr_genes["human2"])),
     "U_only_human2": int(len(scr_genes["human2"] - scr_genes["human1"])),
-    "depmap_inferred_common_essentials_total": int(len(ce)),
-    "depmap_inferred_common_essentials_in_U": int(len(ce & U)),
-    "achilles_common_essential_controls_in_U": int(len(ace & U)),
-    "achilles_nonessential_controls_in_U": int(len(ane & U)),
 }
 
 # ---------------------------------------------------------------- baseline KO facts (label-free)
@@ -190,7 +167,8 @@ out["hart_reference"] = hart
 
 # ---------------------------------------------------------------- omics coverage of screened lines
 S = set(screened)
-expr = default_rows(DM / "OmicsExpressionTPMLogp1HumanProteinCodingGenes.csv",
+LOSS_GENES = ["KEAP1", "STK11", "ME2", "FH", "SDHA", "SDHB", "SDHC", "SDHD", "ENO1"]
+expr = default_rows(DM / "OmicsExpressionTPMLogp1HumanProteinCodingGenes.csv", LOSS_GENES +
                     ["NAPRT", "ASS1", "MTAP", "ENO1", "ME2", "PHGDH", "SLC1A3", "SLC1A1", "SLC1A2"])
 cn = default_rows(DM / "OmicsCNGeneWGS.csv", ["MTAP", "ENO1", "ME2", "PHGDH", "KEAP1", "STK11", "FH",
                                                "SDHA", "SDHB", "SDHC", "SDHD", "CDKN2A", "SMAD4"])
@@ -206,16 +184,33 @@ nus = set().union(*[ccle2ach[n] for n in nus_names if n in ccle2ach.index])
 harm = set(pd.read_csv(DM / "harmonized_MS_CCLE_Gygi.csv", usecols=[0]).iloc[:, 0]) if (DM / "harmonized_MS_CCLE_Gygi.csv").exists() else set()
 pc_path = D / "proteomics_goncalves/Protein_matrix_averaged_20250211.tsv"
 procan = set()
+procan_unmapped = None
 if pc_path.exists():
     pc = pd.read_csv(pc_path, sep="\t", usecols=[1], skiprows=3, header=None).iloc[:, 0]
     sid2ach = model.reset_index().dropna(subset=["SangerModelID"]).groupby("SangerModelID").ModelID.agg(set)
     procan = set().union(*[sid2ach[s] for s in pc if s in sid2ach.index])
+    procan_unmapped = int(sum(s not in sid2ach.index for s in pc))
 metab = set(pd.read_csv(D / "metabolomics_ccle/CCLE_metabolomics_20190502.csv", usecols=["DepMap_ID"]).DepMap_ID.dropna())
 prism24 = set(pd.read_csv(D / "prism/repurposing_24Q2/Repurposing_Public_24Q2_Cell_Line_Meta_Data.csv", usecols=["depmap_id"]).depmap_id.dropna())
 prism20 = set(pd.read_csv(D / "prism/repurposing_20Q2_secondary/prism-repurposing-20q2-secondary-screen-cell-line-info.csv", usecols=["depmap_id"]).depmap_id.dropna())
 ctrp_path = D / "ctrp/CTRPAUCMatrix.csv"
 ctrp = set(pd.read_csv(ctrp_path, usecols=[0]).iloc[:, 0]) if ctrp_path.exists() else set()
 E, C = set(expr.index), set(cn.index)
+# GDSC (xlsx; openpyxl pinned per PI decision r2-17): join on SangerModelID, cross-check on COSMICID
+gdsc_cov = {}
+sid2ach_all = model.reset_index().dropna(subset=["SangerModelID"]).groupby("SangerModelID").ModelID.agg(set)
+for tag, fn in (("gdsc1", "GDSC1_fitted_dose_response_27Oct23.xlsx"), ("gdsc2", "GDSC2_fitted_dose_response_27Oct23.xlsx")):
+    g = pd.read_excel(D / "gdsc" / fn, usecols=["SANGER_MODEL_ID", "COSMIC_ID"])
+    ids = set().union(*[sid2ach_all[x] for x in g.SANGER_MODEL_ID.dropna().unique() if x in sid2ach_all.index])
+    gdsc_cov[f"{tag}_lines_total"] = int(g.SANGER_MODEL_ID.nunique())
+    gdsc_cov[f"{tag}_unmapped_sanger_ids"] = int(sum(x not in sid2ach_all.index for x in g.SANGER_MODEL_ID.dropna().unique()))
+    gdsc_cov[f"{tag}_screened"] = len(set(screened) & ids)
+    gdsc_cov[f"_{tag}_set"] = ids
+gdsc_any = gdsc_cov.pop("_gdsc1_set") | gdsc_cov.pop("_gdsc2_set")
+gdsc_cov["gdsc_any_screened"] = len(set(screened) & gdsc_any)
+gdsc_cov["gdsc_any_screened_with_expr"] = len(set(screened) & gdsc_any & E)
+cld = pd.read_excel(D / "gdsc" / "Cell_Lines_Details.xlsx", sheet_name="Cell line details", usecols=["Screen Medium"])
+gdsc_cov["gdsc_screen_medium_values"] = {str(k): int(v) for k, v in cld["Screen Medium"].value_counts(dropna=False).items()}
 out["coverage_screened"] = {
     "expression_default": len(S & E), "no_expression": len(S - E),
     "cn_wgs_default": len(S & C), "no_cn": len(S - C),
@@ -223,12 +218,12 @@ out["coverage_screened"] = {
     "expr_and_cn": len(S & E & C),
     "nusinow_raw_mapped_total": len(nus), "nusinow_screened": len(S & nus), "nusinow_screened_with_expr": len(S & nus & E),
     "harmonized_gygi_total": len(harm), "harmonized_gygi_screened": len(S & harm),
-    "procan_mapped_total": len(procan), "procan_screened": len(S & procan),
+    "procan_mapped_total": len(procan), "procan_screened": len(S & procan), "procan_unmapped_ids": procan_unmapped,
     "any_proteomics_screened": len(S & (nus | harm | procan)),
     "metabolomics_total": len(metab), "metabolomics_screened": len(S & metab),
     "prism_24q2_or_20q2_screened": len(S & (prism24 | prism20)),
     "ctrp_screened": len(S & ctrp),
-    "gdsc_screened": None,  # GDSC tables are .xlsx and no xlsx reader is installed; computed at W6 start
+    **gdsc_cov,
 }
 lin_of = scr.OncotreeLineage
 cov_by_lin = {}
@@ -282,7 +277,8 @@ assert mc.FormulationID.dropna().str.contains(r"FBS|RPMI|DMEM", regex=True).mean
 assert mc.GrowthMedia.dropna().str.startswith("MF-").mean() > 0.9
 assert model.FormulationID.dropna().str.contains(r"FBS|RPMI|DMEM", regex=True).mean() > 0.5
 scrmed = ssm_ok.merge(mc, on="ModelConditionID", how="left").dropna(subset=["FormulationID"])
-scrmed_sets = scrmed.groupby("ModelID").FormulationID.agg(lambda s: sorted(set(s)))
+# modal text per model (data r2: several formulations sharing one base -> modal text, flagged)
+scrmed_sets = scrmed.groupby("ModelID").FormulationID.agg(lambda s: list(s.value_counts().index))
 
 
 def base_of(text: str) -> str:
@@ -303,7 +299,7 @@ def base_class(text: str) -> str:
     return "other_defined"
 
 
-tier, text_of, base_cls = {}, {}, {}
+tier, text_of, base_cls, multi_supp = {}, {}, {}, {}
 for mid in screened:
     if mid in scrmed_sets.index:
         texts = scrmed_sets[mid]
@@ -313,7 +309,8 @@ for mid in screened:
             text_of[mid] = None
         else:
             tier[mid] = "screen"
-            text_of[mid] = texts[0]
+            text_of[mid] = texts[0]  # modal formulation text
+            multi_supp[mid] = len(texts) > 1
     elif pd.notna(model.loc[mid, "FormulationID"]):
         tier[mid] = "onboarded"
         text_of[mid] = model.loc[mid, "FormulationID"]
@@ -334,6 +331,7 @@ out["medium"] = {
     "mappable_to_requested_sheets": int(base_s.str.startswith("sheet:").sum()),
     "mappable_incl_mixtures": int((base_s.str.startswith("sheet:") | (base_s == "mixture_of_sheets")).sum()),
     "no_fbs_in_text": int(serum_free),
+    "screen_multi_supplement": int(sum(multi_supp.values())),
     "screen_tier_sheet_mappable": int(((tier_s == "screen") & base_s.str.startswith("sheet:")).sum()),
     "screen_tier_sheet_or_mixture": int(((tier_s == "screen") & (base_s.str.startswith("sheet:") | (base_s == "mixture_of_sheets"))).sum()),
     "onboarded_tier_sheet_or_mixture": int(((tier_s == "onboarded") & (base_s.str.startswith("sheet:") | (base_s == "mixture_of_sheets"))).sum()),
@@ -350,6 +348,23 @@ for L, g in lin_med.groupby("lin"):
         pow_lins.append(L)
 out["medium"]["lineages_with_2_media_ge8"] = pow_lins
 out["medium"]["n_lineages_with_2_media_ge8"] = len(pow_lins)
+# PI decision r2-9: attribution set = screen-tier lines whose base-medium sheet is on disk
+media_files = [p.name.lower() for p in (D / "media").glob("*")]
+on_disk = sorted(b for b, pat in SHEET_FILE_PATTERNS.items() if any(re.search(pat, f) for f in media_files))
+on_disk_cls = {"sheet:" + b for b in on_disk}
+attr = (tier_s == "screen") & base_s.isin(on_disk_cls)
+out["medium"]["sheet_bases_on_disk"] = on_disk
+out["medium"]["sheet_bases_missing"] = sorted(set(SHEET_FILE_PATTERNS) - set(on_disk))
+out["medium"]["attribution_set_screen_tier_on_disk"] = int(attr.sum())
+out["medium"]["attribution_set_by_base"] = {k: int(v) for k, v in base_s[attr].value_counts().items()}
+out["medium"]["fallback_lines_sheet_missing_any_tier"] = int((base_s.str.startswith("sheet:") & ~base_s.isin(on_disk_cls)).sum())
+pow2 = []
+for L, g in lin_med[attr.reindex(lin_med.index).fillna(False).astype(bool)].groupby("lin"):
+    vc = g.base.value_counts()
+    if (vc >= 8).sum() >= 2:
+        pow2.append(L)
+out["medium"]["lineages_with_2_media_ge8_on_disk_sheets"] = pow2
+out["medium"]["n_lineages_with_2_media_ge8_on_disk_sheets"] = len(pow2)
 
 # ---------------------------------------------------------------- genomic backgrounds (label-free)
 def cnv(g):
@@ -367,15 +382,30 @@ def defined(*series_):
     return idx
 
 
+def lost(g):
+    """r2-11: homozygous damaging (code 2), or heterozygous damaging (code 1) with LOH proxy
+    (relCN < 0.5) or TPM < 1, or homozygous deletion (relCN < 0.3)."""
+    d, c = dm(g), cnv(g)
+    e = expr[g] if g in expr.columns else pd.Series(dtype=float)
+    idx = d.index.union(c.index)
+    d, c, e = d.reindex(idx), c.reindex(idx), e.reindex(idx)
+    return (d >= 2) | ((d == 1) & ((c < CN_LOH_PROXY) | (e < EXPR_SILENT))) | (c < CN_DEL)
+
+
+def lost_sens(g):
+    """v1 rule, kept as sensitivity: any damaging allele or relCN < 0.3."""
+    return (dm(g) >= 1) | (cnv(g) < CN_DEL)
+
+
 groups_def = {
     "MTAP_del": (lambda: cnv("MTAP") < CN_DEL, "relCN(MTAP)<0.3", "expected FBA failure (MTA/PRMT5)"),
     "ENO1_del": (lambda: cnv("ENO1") < CN_DEL, "relCN(ENO1)<0.3", "ENO2"),
-    "ME2_loss": (lambda: (cnv("ME2") < CN_DEL) | (dm("ME2") >= 1), "relCN(ME2)<0.3 or damaging", "ME3"),
+    "ME2_loss": (lambda: lost("ME2"), "loss rule r2-11 (ME2)", "ME3"),
     "NAPRT_silenced": (lambda: expr["NAPRT"] < EXPR_SILENT, "log2(TPM+1)(NAPRT)<1", "NAMPT"),
     "ASS1_silenced": (lambda: expr["ASS1"] < EXPR_SILENT, "log2(TPM+1)(ASS1)<1", "arginine import"),
-    "NRF2_active": (lambda: (dm("KEAP1") >= 1) | (cnv("KEAP1") < CN_DEL) | (hot["NFE2L2"] >= 1), "KEAP1 damaging/del or NFE2L2 hotspot", "SLC7A11/cystine, NADPH"),
-    "STK11_loss": (lambda: (dm("STK11") >= 1) | (cnv("STK11") < CN_DEL), "STK11 damaging or del", "CPS1/pyrimidine"),
-    "FH_SDH_loss": (lambda: pd.concat([(dm(g) >= 1) | (cnv(g) < CN_DEL) for g in ("FH", "SDHA", "SDHB", "SDHC", "SDHD")], axis=1).any(axis=1), "FH/SDHx damaging or del", "TCA truncation"),
+    "NRF2_active": (lambda: lost("KEAP1").reindex(hot.index.union(lost("KEAP1").index)).fillna(False) | (hot["NFE2L2"] >= 1).reindex(hot.index.union(lost("KEAP1").index)).fillna(False), "KEAP1 loss (r2-11) or NFE2L2 hotspot", "SLC7A11/cystine, NADPH"),
+    "STK11_loss": (lambda: lost("STK11"), "loss rule r2-11 (STK11)", "CPS1/pyrimidine"),
+    "FH_SDH_loss": (lambda: pd.concat([lost(g) for g in ("FH", "SDHA", "SDHB", "SDHC", "SDHD")], axis=1).fillna(False).any(axis=1), "loss rule r2-11 (FH/SDHx)", "TCA truncation"),
     "IDH_mut": (lambda: (hot["IDH1"] >= 1) | (hot["IDH2"] >= 1), "IDH1/2 hotspot", "2-HG (needs added reaction)"),
     "PHGDH_amp": (lambda: cnv("PHGDH") >= CN_AMP, "relCN(PHGDH)>=2", "serine synthesis"),
     "KRAS_hotspot_negctrl": (lambda: hot["KRAS"] >= 1, "KRAS hotspot", "signalling negative control"),
@@ -404,6 +434,10 @@ for g, (lo, hi) in {"MTAP": CN_DEL_SENS}.items():
     bg["MTAP_del"]["sens_relCN_0.1"] = int(((cnv(g) < lo) & cnv(g).index.isin(S)).sum())
     bg["MTAP_del"]["sens_relCN_0.5"] = int(((cnv(g) < hi) & cnv(g).index.isin(S)).sum())
 out["backgrounds"] = bg
+out["loss_rule_sensitivity_v1_rule_counts"] = {
+    g: int(lost_sens(g).fillna(False)[lambda s: s].index.isin(S).sum()) for g in ("ME2", "KEAP1", "STK11", "FH")}
+out["loss_rule_primary_counts"] = {
+    g: int(lost(g).fillna(False)[lambda s: s].index.isin(S).sum()) for g in ("ME2", "KEAP1", "STK11", "FH")}
 out["mutation_matrix_values"] = {"damaging_STK11": {str(k): int(v) for k, v in dmg["STK11"].value_counts().items()}}
 
 # ---------------------------------------------------------------- split simulation (label-free)
@@ -461,7 +495,7 @@ for name, members in group_members.items():
     feas[name] = round(ok / len(acc), 3)
 q = lambda s, p: float(np.quantile(s, p))  # noqa: E731
 out["split_simulation"] = {
-    "note": f"{len(sd)} simulated draws on seeds 1..1000 (real seed {REAL_SPLIT_SEED}+attempt NOT evaluated)",
+    "note": f"{len(sd)} simulated draws on seeds 1..1000; the real seed is user-supplied after the M1 freeze commit and is never evaluated here; {RETIRED_SPLIT_SEED} is retired",
     "strata": strata, "alloc_test": ALLOC_TEST, "alloc_val": ALLOC_VAL,
     "acceptance_rate": round(float(sd.ok.mean()), 3),
     "constraint_fail_rate": {k: round(float((~sd[k]).mean()), 3) for k in ("a_min10_expr_each", "b_test_ge250_expr_lines", "c_test_ge40_proteomic_lines", "d_not_both_heme_heldout")},
@@ -471,6 +505,7 @@ out["split_simulation"] = {
     "accepted_test_proteomic_lines_median_p05": [q(acc.test_prot, .5), q(acc.test_prot, .05)],
     "background_test_feasibility_share": feas,
     "training_eligible_lineages_per_draw": 23 - 7 - 4,
+    "reference_draws_seeds_1_to_20": {int(sd_): {"test": list(draw(sd_)[0]), "val": list(draw(sd_)[1])} for sd_ in range(1, 21)},
 }
 
 OUT.parent.mkdir(parents=True, exist_ok=True)
