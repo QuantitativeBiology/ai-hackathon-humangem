@@ -327,27 +327,45 @@
  "a5": {
   "grid_points": 720,
   "distinct_builds_projected": 400,
-  "glpk_build_cpu_min": 1.72,
-  "cpu_h": 11.5,
+  "glpk_build_cpu_min": 1.66,
+  "cpu_h": 11.1,
   "smoke_builds": 32,
   "smoke_failed": 0,
-  "smoke_repair_frac_max": 0.0237
+  "smoke_repair_frac_max": 0.0235
  },
  "stage_a_declared": {
   "gurobi_lane_cpu_h": 14.2,
-  "glpk_lane_cpu_h": 46.3,
-  "total_cpu_h": 60.5,
+  "glpk_lane_cpu_h": 45.9,
+  "total_cpu_h": 60.1,
   "wall_h_4_gurobi_20_glpk": 3.5
+ },
+ "stage_a_final": {
+  "per_job_overhead_cpu_s": 35.6,
+  "n_gurobi_jobs": 290,
+  "n_glpk_jobs": 1120,
+  "a6prime_cpu_h": 32.6,
+  "gurobi_lane_cpu_h": 49.7,
+  "glpk_lane_cpu_h": 57.0,
+  "total_cpu_h": 106.7,
+  "wall_h_8_gurobi_20_glpk": 6.2,
+  "memory_gb_8_plus_20": 47.5,
+  "smoke_wall_s": 5839.5,
+  "smoke_cpu_h": 7.73
  },
  "memory": {
   "host_total_gb": 134.8,
-  "available_gb_now": 69.7,
+  "available_gb_now": 69.4,
   "gurobi_worker_rss_gb": 1.43,
   "glpk_worker_rss_gb": 1.56,
   "corda_worker_rss_gb": 1.59,
-  "budget_gb": 49.7,
+  "budget_gb": 49.4,
   "max_workers_by_memory": 31,
   "plan_24_plus_4_gb": 43.8,
   "plan_28_gb": 44.5
+ },
+ "a6prime_comparison": {
+  "dir": "results/w4/stage_a_smoke",
+  "rows": 4,
+  "file": "results/w4/stage_a_smoke/a6prime_comparison.tsv"
  }
 }

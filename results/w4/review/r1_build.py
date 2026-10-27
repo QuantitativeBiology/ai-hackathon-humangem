@@ -29,7 +29,7 @@ slot = None
 if a.solver == "gurobi":
     from nextgem import gurobi_pool
 
-    slot = gurobi_pool.hold_slot(4, timeout=3600, poll=10)
+    slot = gurobi_pool.hold_slot(timeout=3600, poll=10)
 cobra.Configuration().solver = a.solver  # before any model exists: GLPK runs open no Gurobi session
 
 import numpy as np  # noqa: E402

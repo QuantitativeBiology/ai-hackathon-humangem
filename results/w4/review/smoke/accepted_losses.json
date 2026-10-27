@@ -54,23 +54,5 @@
 ],
 "cn_missing": false,
 "mut_missing": false
-},
-"ACH-002024": {
-"lost": [
-"ENSG00000089472",
-"ENSG00000114374",
-"ENSG00000184227",
-"ENSG00000197888"
-],
-"contradicted": [],
-"dropped_joint": [],
-"accepted": [
-"ENSG00000089472",
-"ENSG00000114374",
-"ENSG00000184227",
-"ENSG00000197888"
-],
-"cn_missing": false,
-"mut_missing": false
 }
 }

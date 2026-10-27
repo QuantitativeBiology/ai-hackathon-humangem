@@ -38,9 +38,9 @@ PROBE12 = ["ACH-001113", "ACH-001289", "ACH-001339", "ACH-001979", "ACH-002438",
 # ----------------------------------------------------------------------------- inputs (parent process)
 class Inputs:
     def __init__(self, lines, need_prot=False):
-        from nextgem.model import load_model  # noqa: F401  (genes table only needs the SBML genes)
         import cobra
 
+        cobra.Configuration().solver = "glpk"  # structure only (review B1)
         self.split = pd.read_csv(paths.splits_dir() / "lineage_split.tsv", sep="\t")
         self.panel = pd.read_csv(OUT / "stage_a_panel.tsv", sep="\t")
         m = cobra.io.read_sbml_model(str(paths.data_root() / "Human-GEM-main/model/Human-GEM.xml"))
@@ -75,6 +75,10 @@ def mask(split: pd.DataFrame, line: str, k: int) -> tuple[str, str]:
 def group(init_kwargs: dict, fn_name: str, payload) -> dict:
     """Run in a fresh worker process: init the parent, then call a pilot function on the payload."""
     t0, c0 = time.time(), time.process_time()
+    if init_kwargs.get("solver", "gurobi") == "gurobi":
+        from nextgem import gurobi_pool
+
+        cr._W["slot"] = gurobi_pool.hold_slot()
     cr.init_worker(**init_kwargs)
     res = globals()[fn_name](payload)
     return {"result": res, "load_wall_s": cr._W["load_wall_s"], "load_cpu_s": cr._W["load_cpu_s"],
@@ -252,6 +256,7 @@ def cmd_glpk(a):
     jobs = make_jobs(I, [line], families, genomic=("none",), tasks=False, accepted=acc)
     # (b) payload: Gurobi final reaction sets
     import cobra
+    cobra.Configuration().solver = "glpk"
     m = cobra.io.read_sbml_model(str(paths.data_root() / "Human-GEM-main/model/Human-GEM.xml"))
     rxn_ids = [r.id for r in m.reactions]
     items = []

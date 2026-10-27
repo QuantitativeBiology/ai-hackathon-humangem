@@ -66,10 +66,12 @@ LETHAL_FRACTION = 0.01  # a loss "kills WT growth" if growth < 1% of the generic
 FLUX_TOL = 1e-6
 FASTCORE_EPS = 1.0
 VIABILITY_TASK_TYPES = ("GR", "ER")
+LP_TIME_LIMIT_S = 300.0  # per LP solve, both solvers (review B2: nothing bounded a GLPK solve before)
 CORDA_PARAMS = dict(n=3, penalty_factor=100, support=5)
 # Amendment A4 (c): one declared solver per family, fixed for all reruns. F5 is not named in A4; it uses the
 # F0 machinery (pruning + repair), whose GLPK = Gurobi check passed, so it is declared GLPK (flagged to the PI).
 DECLARED_SOLVER = {"F0": "glpk", "F2": "glpk", "F4": "glpk", "F5": "glpk", "F3": "gurobi", "F3b": "gurobi"}
+LOSS_RULE_SOLVER = "glpk"  # Stage-A phase 0 (family-independent accepted losses); fixed for all reruns
 
 
 class BuildFailed(RuntimeError):
@@ -166,11 +168,15 @@ class Parent:
 
 
 def set_solver_params(model, seed: int = SEEDS[0]) -> None:
-    """Gurobi: Threads = 1 and Seed = SEEDS[0] (§7). No-op for other solvers."""
+    """Gurobi: Threads = 1, Seed = SEEDS[0] (§7), TimeLimit; GLPK: optlang timeout. A solve that hits the
+    limit is non-optimal and goes through ``_status_retry`` (one retry, then a failed solve, §11.4)."""
     if solver_name(model) == "gurobi":
         p = model.solver.problem.Params
         p.Threads = 1
         p.Seed = seed
+        p.TimeLimit = LP_TIME_LIMIT_S
+    elif solver_name(model) == "glpk":
+        model.solver.configuration.timeout = int(LP_TIME_LIMIT_S)
 
 
 def make_parent(model, name: str = "human2", medium=None, medium_name: str = "M0", tasks_file=None, genes_tsv=None) -> Parent:
@@ -238,16 +244,25 @@ def consistent_reactions(parent: Parent, cache_path=None) -> set:
 
 # ============================================================================= LP helpers
 def _status_retry(model) -> str:
-    """slim_optimize; on a numerical non-optimal status retry once with NumericFocus = 2 (§11.4)."""
+    """slim_optimize; on a non-optimal status (numerical or time limit) retry once (§11.4): Gurobi with
+    NumericFocus = 2, GLPK from the standard (slack) basis. A second failure is returned as is."""
     model.slim_optimize()
     st = model.solver.status
-    if st not in (OPTIMAL, INFEASIBLE) and solver_name(model) == "gurobi":
+    if st in (OPTIMAL, INFEASIBLE):
+        return st
+    if solver_name(model) == "gurobi":
         p = model.solver.problem.Params
         old = p.NumericFocus
         p.NumericFocus = 2
         model.slim_optimize()
         st = model.solver.status
         p.NumericFocus = old
+    elif solver_name(model) == "glpk":
+        import swiglpk
+
+        swiglpk.glp_std_basis(model.solver.problem)
+        model.slim_optimize()
+        st = model.solver.status
     return st
 
 

@@ -346,3 +346,26 @@ def lcp_scores(line: str, w_r: float, w_p: float, w_c: float, tau: float, genes:
         z_prot = _z(v, zs.prot_mean, zs.prot_sd).where(quant, 0.0)
     loss = pd.Series(np.where(idx.isin(list(accepted_losses)), -1.0, 0.0), index=idx)
     return (w_r * z_rna + w_p * z_prot + w_c * loss - tau).astype("float64")
+
+
+# ----------------------------------------------------------------------------- A6' line choice (amendment A7)
+A6P_TAG = "descriptive, not eligible for P1 (amendment A7)"
+def a6prime_lines(panel: pd.DataFrame, rna: pd.DataFrame, split: pd.DataFrame) -> pd.DataFrame:
+    """One representative panel line per panel lineage (amendment A7, label-free).
+
+    For each panel lineage: the lineage's median log2(TPM+1) profile over model genes (columns of ``rna``) is
+    taken over ALL training lines of that lineage with expression (the lineage profile, not only its 3 panel
+    lines); the chosen line is the panel line with the smallest Euclidean distance to it, ties broken by
+    ModelID. Returns lineage, ModelID, distance, n_lineage_lines, plus every candidate's distance.
+    """
+    tr = split[(split.tier == "train") & split.has_expression.astype(bool)]
+    rows = []
+    for lin, grp in panel.groupby("lineage", sort=True):
+        members = [m for m in tr[tr.lineage == lin].ModelID if m in rna.index]
+        med = rna.loc[members].median(axis=0)
+        cands = sorted(m for m in grp.ModelID if m in rna.index)
+        d = {m: float(np.sqrt(((rna.loc[m] - med) ** 2).sum())) for m in cands}
+        best = min(cands, key=lambda m: (d[m], m))
+        rows.append({"lineage": lin, "ModelID": best, "distance": d[best], "n_lineage_lines": len(members),
+                     "candidates": ";".join(f"{m}:{d[m]:.4f}" for m in cands)})
+    return pd.DataFrame(rows)

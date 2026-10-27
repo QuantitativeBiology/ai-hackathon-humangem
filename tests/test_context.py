@@ -308,22 +308,124 @@ def test_lcp_scores_known_answer():
     assert len(ci.LCP_GRID) == 24 and len(set(ci.LCP_GRID)) == 24
 
 
-def test_stage_a_refuses_undeclared_solver():
+def _stage_a_module():
     import importlib.util
     from pathlib import Path
-
-    from nextgem import context_run as cr
 
     spec = importlib.util.spec_from_file_location("w4_stage_a", Path(__file__).parents[1] / "scripts" / "w4_stage_a.py")
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
+    return mod
+
+
+def test_stage_a_refuses_undeclared_solver():
+    from types import SimpleNamespace
+
+    from nextgem import context_run as cr
+
+    mod = _stage_a_module()
     assert cx.DECLARED_SOLVER == {"F0": "glpk", "F2": "glpk", "F4": "glpk", "F5": "glpk", "F3": "gurobi", "F3b": "gurobi"}
+    m = cobra.Model("t")
+    m.solver = "glpk"
     old = dict(cr._W)
     try:
-        cr._W["solver"] = "gurobi"
-        job = cr.Job(build_id="x", line="L", family="F0", rule="R1", modality="rna", variant="real", scores=pd.Series(dtype=float))
-        with pytest.raises(RuntimeError, match="declared"):
-            mod.worker_run(job, None)
+        cr._W["parent"] = SimpleNamespace(model=m)
+        for fam, meta in (("F3", {}), ("F0", {"solver": "gurobi"})):  # declared, and declared-after-override
+            job = cr.Job(build_id="x", line="L", family=fam, rule="R1", modality="rna", variant="real",
+                         scores=pd.Series(dtype=float), meta=meta)
+            with pytest.raises(RuntimeError, match="declared"):
+                mod.worker_run(job, None)
     finally:
         cr._W.clear()
         cr._W.update(old)
+    a = mod.parse_args(["--pilot", "--out", "x"])  # --pilot alone keeps the declared solvers
+    assert a.solver_override == []
+    with pytest.raises(SystemExit):
+        mod.main(["--solver-override", "F0=gurobi", "--dry-run"])  # override needs --pilot
+
+
+def test_glpk_worker_never_touches_gurobi():
+    """Review B1: a GLPK worker (and the Stage-A parent's model read) must not create any gurobipy Model/Env."""
+    import subprocess
+    import sys
+
+    code = (
+        "import gurobipy\n"
+        "def boom(*a, **k): raise SystemExit('gurobipy used')\n"
+        "gurobipy.Model = boom; gurobipy.Env = boom\n"
+        "from nextgem import context_run as cr\n"
+        "cr.init_worker('human2', 'glpk', None)\n"
+        "p = cr._W['parent']; assert cr.cx.solver_name(p.model) == 'glpk'\n"
+        "import cobra; from nextgem import paths\n"
+        "m = cobra.io.read_sbml_model(str(paths.data_root() / 'Human-GEM-main/model/Human-GEM.xml'))\n"
+        "assert 'glpk' in m.solver.interface.__name__\n"
+        "print('OK')\n")
+    r = subprocess.run([sys.executable, "-c", code], capture_output=True, text=True, timeout=600)
+    assert r.returncode == 0 and r.stdout.strip().endswith("OK"), r.stdout[-2000:] + r.stderr[-2000:]
+    assert "Academic license" not in r.stdout + r.stderr  # no WLS banner
+
+
+def test_build_independent_of_job_order():
+    """Review B2: the same build gives a bitwise-identical open mask and KO table whether it runs first or after
+    another build in the same lane (one fresh process per build), for a GLPK family (F0, repair) and for F3 on
+    Gurobi (FASTCORE alternate optima)."""
+    import json as _json
+
+    from nextgem import context_inputs as ci
+    from nextgem import context_run as cr
+    from nextgem import paths
+
+    mod = _stage_a_module()
+    gm = pd.read_parquet(paths.results_dir() / "w4" / "threshold_gene_means.parquet").set_index("gene")
+    st = _json.loads((paths.results_dir() / "w4" / "threshold_stats.json").read_text())
+    import cobra as _cobra
+
+    _cobra.Configuration().solver = "glpk"
+    genes = ci.gene_table(_cobra.io.read_sbml_model(str(paths.data_root() / "Human-GEM-main/model/Human-GEM.xml")))
+    rs = ci.ThresholdStats("rna", st["rna"]["p25"], st["rna"]["p75"], gm.rna_mean.dropna(), st["rna"]["floor_value"], 714)
+    lines = ["ACH-002024", "ACH-000957"]
+    rna = ci.read_expression(genes, lines)
+    sub = tuple(sorted(genes.index)[::10])  # 287-gene KO subset keeps the test short
+
+    def job(line, fam):
+        lane = cx.DECLARED_SOLVER[fam]
+        return cr.Job(build_id=f"t|{line}|{fam}", line=line, family=fam, rule="R1", modality="rna", variant="real",
+                      scores=ci.signed_scores(line, "R1", "rna", genes, rna, rs), tasks=False, genes=sub,
+                      meta={"solver": lane}), lane
+
+    results = {}
+
+    def on_done(key, status, res, payload, wall):
+        assert status == "ok", res
+        results[key] = res
+
+    items = []
+    for fam in ("F0", "F3"):
+        x, lane = job("ACH-002024", fam)
+        y, _ = job("ACH-000957", "F2" if fam == "F0" else "F3")
+        items += [(f"{fam}:first", lane, x, None, None), (f"{fam}:other", lane, y, None, None),
+                  (f"{fam}:after", lane, x, None, None)]
+    mod.Runner({"glpk": 1, "gurobi": 1}, job_timeout=1800, fastcc_cache=str(mod.FASTCC)).run_all(items, on_done)
+    for fam in ("F0", "F3"):
+        a, b = results[f"{fam}:first"], results[f"{fam}:after"]
+        assert a["rows"][0]["open_mask"] == b["rows"][0]["open_mask"]
+        pd.testing.assert_frame_equal(a["ko"]["none"].reset_index(drop=True), b["ko"]["none"].reset_index(drop=True))
+
+
+def test_a6prime_line_choice():
+    """Amendment A7: per panel lineage, the panel line closest (Euclidean) to the lineage median profile over all
+    its training lines; ties by ModelID; never a non-training line."""
+    from nextgem import context_inputs as ci
+
+    split = pd.DataFrame({"ModelID": ["a1", "a2", "a3", "a4", "b1", "b2", "b3", "t1"],
+                          "tier": ["train"] * 7 + ["test"], "lineage": ["A"] * 4 + ["B"] * 3 + ["A"],
+                          "has_expression": [True] * 8})
+    rna = pd.DataFrame({"g1": [0, 2, 4, 10, 1, 1, 5, 100], "g2": [0, 2, 4, 10, 3, 3, 5, 100]},
+                       index=split.ModelID, dtype=float)
+    panel = pd.DataFrame({"ModelID": ["a1", "a3", "a4", "b2", "b1", "b3"], "lineage": ["A"] * 3 + ["B"] * 3})
+    out = ci.a6prime_lines(panel, rna, split).set_index("lineage")
+    # A: median over training a1..a4 = (3, 3); distances a1 18**.5, a3 2**.5, a4 98**.5 -> a3 (test line t1 ignored)
+    assert out.loc["A", "ModelID"] == "a3" and out.loc["A", "distance"] == pytest.approx(2 ** 0.5)
+    assert out.loc["A", "n_lineage_lines"] == 4
+    # B: median (1, 3); b1 and b2 tie at 0 -> lower ModelID b1
+    assert out.loc["B", "ModelID"] == "b1" and out.loc["B", "distance"] == 0

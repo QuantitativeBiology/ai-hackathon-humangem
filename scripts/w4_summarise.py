@@ -5,10 +5,13 @@ pilot_builds_gurobi_corda.tsv, glpk_vs_gurobi.tsv, pilot_builds_glpk_<line>.tsv,
 stage_a_panel.tsv. Label-free.
 """
 
+import argparse
 import json
 
+import numpy as np
 import pandas as pd
 import psutil
+from scipy.stats import spearmanr
 
 from nextgem import paths
 
@@ -22,7 +25,57 @@ def r(x, k=2):
     return None if x is None or pd.isna(x) else round(float(x), k)
 
 
+def _bits(hexmask: str) -> np.ndarray:
+    return np.unpackbits(np.frombuffer(bytes.fromhex(hexmask), dtype=np.uint8)).astype(bool)
+
+
+def a6prime_comparison(stage_dir) -> pd.DataFrame:
+    """Amendment A7, label-free: every CORDA (A6') build against F0/F2/F3/F4 built in A1 on the same line and
+    threshold (real RNA, no genomic constraint): reaction-set Jaccard, essential-set (ratio_r < 0.01) Jaccard and
+    sizes, Spearman of ratio_r over all genes, WT growth ratio, repair size and build CPU. Descriptive only."""
+    from nextgem.context_inputs import A6P_TAG
+
+    b = pd.read_csv(stage_dir / "builds.tsv", sep="\t")
+    b = b[b.genomic == "none"].set_index("build_id")
+    ko = pd.concat([pd.read_parquet(stage_dir / f"ko_{r}.parquet") for r in ("A1", "A6p")
+                    if (stage_dir / f"ko_{r}.parquet").exists()])
+    ko["build_id"] = ko.build_id.astype(str)
+    out = []
+    for bid, c in b[b.family == "F3b"].iterrows():
+        if c.get("failed", False) or pd.isna(c.get("open_mask")):
+            out.append({"line": c.line, "rule": c.rule, "family": "F3b", "corda_failed": True, "status": A6P_TAG})
+            continue
+        kc = ko[ko.build_id == bid].set_index("gene").ratio_r
+        for f in LP:
+            oid = f"A1|{c.line}|{f}|{c.rule}|rna|real|none"
+            if oid not in b.index:
+                continue
+            o = b.loc[oid]
+            ma, mb = _bits(c.open_mask), _bits(o.open_mask)
+            ko_o = ko[ko.build_id == oid].set_index("gene").ratio_r.reindex(kc.index)
+            ea, eb = set(kc.index[kc < 0.01]), set(ko_o.index[ko_o < 0.01])
+            out.append({
+                "line": c.line, "rule": c.rule, "vs_family": f,
+                "reaction_jaccard": r((ma & mb).sum() / max(1, (ma | mb).sum()), 4),
+                "essential_jaccard": r(len(ea & eb) / max(1, len(ea | eb)), 4), "n_essential_corda": len(ea),
+                "n_essential_other": len(eb), "ratio_r_spearman": r(spearmanr(kc, ko_o).statistic, 4),
+                "wt_ratio_corda": r(c.wt_ratio_generic, 3), "wt_ratio_other": r(o.wt_ratio_generic, 3),
+                "n_reopened_corda": int(c.n_reopened), "n_reopened_other": int(o.n_reopened),
+                "build_cpu_min_corda": r((c.extract_cpu_s + c.variant_cpu_s) / 60, 1),
+                "build_cpu_min_other": r((o.extract_cpu_s + o.variant_cpu_s) / 60, 2),
+                "n_open_corda": int(c.n_open), "n_open_other": int(o.n_open), "status": A6P_TAG})
+    df = pd.DataFrame(out)
+    df.to_csv(stage_dir / "a6prime_comparison.tsv", sep="\t", index=False)
+    return df
+
+
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--stage-a", default=str(W4 / "stage_a"), help="Stage-A output dir for the A6' comparison")
+    a = ap.parse_args()
+    from pathlib import Path
+
+    stage_dir = Path(a.stage_a)
     S = {}
     rp = pd.read_csv(W4 / "repair_probe12.tsv", sep="\t")
     S["repair12"] = {
@@ -137,9 +190,10 @@ def main():
     S["per_family_stage_a_cpu_h"] = {f: r(v, 1) for f, v in per_fam.items()}
 
     # A5 (amendment A4 d): distinct builds per line after deduplication, cost from the A5 GLPK smoke test
-    sm = W4 / "stage_a_smoke_a5" / "builds.tsv"
+    sm = W4 / "stage_a_smoke" / "builds.tsv"  # post-fix smoke of every row (A5 rows on 2 lines)
     if sm.exists():
         b5 = pd.read_csv(sm, sep="\t")
+        b5 = b5[b5.row == "A5"]
         a5_min = float(((b5.extract_cpu_s + b5.variant_cpu_s) / 60).mean())
         acc = json.loads((W4 / "tmp" / "accepted_losses_panel.json").read_text())
         n5 = sum(24 if p else (8 if acc.get(l) else 4) for l, p in zip(panel.ModelID, panel.has_procan.astype(bool)))
@@ -154,6 +208,31 @@ def main():
                                  "total_cpu_h": r(gur + glp, 1),
                                  "wall_h_4_gurobi_20_glpk": r(max(gur / 4, glp / 20), 1)}
 
+    # Projection after review fixes + A7 (A6' CORDA, 20 builds) with one build per process and Gurobi pool = 8.
+    # Per-job process overhead (spawn + model load + parent setup) from the post-fix smoke manifest.
+    sm_dir = W4 / "stage_a_smoke"
+    if (sm_dir / "MANIFEST.tsv").exists() and (sm_dir / "builds.tsv").exists() and "a5" in S:
+        man = pd.read_csv(sm_dir / "MANIFEST.tsv", sep="\t").iloc[-1]
+        bs = pd.read_csv(sm_dir / "builds.tsv", sep="\t")
+        extra = json.loads(man.extra)
+        n_jobs = int(bs.drop_duplicates("build_id").build_id.str.rsplit("|", n=1).str[0].nunique()) + extra.get("n_lines", 2)
+        build_cpu = float(extra["build_cpu_h"]) * 3600
+        over_s = max(0.0, (float(man.cpu_s) - build_cpu) / n_jobs)
+        corda = S.get("corda", {}).get("model_cpu_h", [1.63])
+        corda_h = float(np.mean(corda))
+        n_gur = 270 + 20  # F3 jobs (A1 120, A2 30, A3 60, A7 60) + A6' 20
+        n_glp = 3 * 210 + 60 + S["a5"]["distinct_builds_projected"] + 30  # F0/F2/F4 A1-A3, F2 A7, A5, loss rule
+        gur_h = per_fam["F3"] + 20 * corda_h + n_gur * over_s / 3600
+        glp_h = (sum(per_fam[f] * glpk_ratio[f] for f in ("F0", "F2", "F4")) + S["a5"]["cpu_h"]
+                 + n_glp * over_s / 3600)
+        S["stage_a_final"] = {
+            "per_job_overhead_cpu_s": r(over_s, 1), "n_gurobi_jobs": n_gur, "n_glpk_jobs": n_glp,
+            "a6prime_cpu_h": r(20 * corda_h, 1), "gurobi_lane_cpu_h": r(gur_h, 1), "glpk_lane_cpu_h": r(glp_h, 1),
+            "total_cpu_h": r(gur_h + glp_h, 1),
+            "wall_h_8_gurobi_20_glpk": r(max(gur_h / 8, glp_h / 20, corda_h * np.ceil(20 / 8)), 1),
+            "memory_gb_8_plus_20": r(8 * 1.6 + 20 * 1.56 + 3.5, 1),
+            "smoke_wall_s": float(man.wall_s), "smoke_cpu_h": r(float(man.cpu_s) / 3600, 2)}
+
     # worker counts from RSS
     vm = psutil.virtual_memory()
     rss_g = max(fam[f]["peak_rss_gb_max"] for f in LP)
@@ -166,6 +245,10 @@ def main():
                    "max_workers_by_memory": int((avail - GB_PER_SLOT_RESERVE) // max(rss_g, rss_l, rss_c)),
                    "plan_24_plus_4_gb": r(24 * rss_l + 4 * max(rss_g, rss_c), 1),
                    "plan_28_gb": r(28 * max(rss_g, rss_l, rss_c), 1)}
+    if (stage_dir / "builds.tsv").exists() and "F3b" in set(pd.read_csv(stage_dir / "builds.tsv", sep="\t").family):
+        cmp_ = a6prime_comparison(stage_dir)
+        S["a6prime_comparison"] = {"dir": str(stage_dir), "rows": len(cmp_),
+                                   "file": str(stage_dir / "a6prime_comparison.tsv")}
     (W4 / "pilot_summary.json").write_text(json.dumps(S, indent=1))
     print(json.dumps(S, indent=1))
 

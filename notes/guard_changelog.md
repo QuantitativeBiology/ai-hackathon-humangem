@@ -4,3 +4,4 @@ Guard-internal changes to frozen code are logged here instead of as DESIGN.md §
 
 | Date | Files | Change | Why | Frozen label/metric/split/list SHAs unchanged? |
 |---|---|---|---|---|
+| 2026-10-27 | tests/test_gurobi_pool.py | Two pre-review WIP tests renamed and strengthened: test_env_override → test_size_is_global_not_per_caller; test_slot_blocks_other_process → test_slot_blocks_other_process_and_crash_releases. Retired in results/test_retirements.tsv under A6. | M3 W4 review fixes (global pool size, crash release) | yes |

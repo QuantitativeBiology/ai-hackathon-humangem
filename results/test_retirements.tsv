@@ -3,3 +3,5 @@ tests/test_frozen.py::test_test_runs_downgrade_and_disappearance	A1	replaced by 
 tests/test_splits.py::test_acceptance_stats_and_frozen_function_equality	A1	replaced by test_frozen_function_equality_and_pinned_inputs: the 1-1000 acceptance statistics include seeds 38-137 and now run only inside the production draw (review M2)
 tests/test_evaluate_val.py::test_gstar_rule	A5	renamed pre-freeze: replaced by test_gstar_sign_rule and test_gstar_matches_sign_in_look (M2 review)
 tests/test_evaluate_val.py::test_scalar_guard_rejects_unit_keyed_output	A5	renamed pre-freeze: replaced by test_guard_rejects_unit_keys_in_cells, test_guard_rejects_unit_key_columns, test_guard_rejects_numeric_per_unit_columns (M2 review)
+tests/test_gurobi_pool.py::test_env_override	A6	renamed in W4 review fixes: replaced by test_size_is_global_not_per_caller (global pool size)
+tests/test_gurobi_pool.py::test_slot_blocks_other_process	A6	renamed in W4 review fixes: replaced by test_slot_blocks_other_process_and_crash_releases (adds crash release)

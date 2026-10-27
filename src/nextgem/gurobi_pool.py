@@ -1,9 +1,14 @@
 """Shared Gurobi session pool (DESIGN.md §11.4): a ``flock`` slot pool on /dev/shm.
 
-Every process that opens a Gurobi (WLS) environment first holds one slot. The pool size is the
-licence session limit allotted to the project (default 4; ``NEXTGEM_GUROBI_SLOTS`` overrides). All
-workstreams use the same directory and prefix, so W1, W2, W4 and later stages share one pool.
-A worker waits for a slot and never falls back silently to another solver.
+Every process that opens a Gurobi (WLS) environment first holds one slot. The pool size is ONE global
+number, the licence session limit allotted to the project: ``POOL_SLOTS`` (8), overridable only through
+the environment variable ``NEXTGEM_GUROBI_SLOTS``; callers cannot pass their own size (review NOTE 6b).
+All workstreams use the same directory and prefix, so W1, W2, W4 and later stages share one pool.
+A worker waits for a slot and never falls back silently to another solver. A crashed holder frees its
+slot (flock state dies with the process).
+
+Processes that must NOT use Gurobi set ``cobra.Configuration().solver = "glpk"`` before loading any
+model; building a cobra model under Gurobi opens a WLS environment outside this pool (review B1).
 
     from nextgem.gurobi_pool import hold_slot
     slot = hold_slot()          # blocks until a slot is free; keep the object alive while solving
@@ -24,7 +29,7 @@ from pathlib import Path
 
 DEFAULT_DIR = Path("/dev/shm")
 DEFAULT_PREFIX = "nextgem_gurobi_slot"
-DEFAULT_SLOTS = 4
+POOL_SLOTS = 8  # global licence pool for the project (coordinator, 2026-10-27: W2 finished)
 
 
 class SlotTimeout(TimeoutError):
@@ -51,13 +56,14 @@ class Slot:
         self.release()
 
 
-def n_slots(default: int = DEFAULT_SLOTS) -> int:
-    return int(os.environ.get("NEXTGEM_GUROBI_SLOTS", default))
+def n_slots() -> int:
+    """The global pool size: NEXTGEM_GUROBI_SLOTS if set, else POOL_SLOTS."""
+    return int(os.environ.get("NEXTGEM_GUROBI_SLOTS", POOL_SLOTS))
 
 
-def try_slot(n: int | None = None, directory: Path | str = DEFAULT_DIR, prefix: str = DEFAULT_PREFIX) -> Slot | None:
-    """Take a free slot without waiting; None if all ``n`` slots are held."""
-    n = n_slots() if n is None else n
+def try_slot(directory: Path | str = DEFAULT_DIR, prefix: str = DEFAULT_PREFIX) -> Slot | None:
+    """Take a free slot without waiting; None if all slots of the global pool are held."""
+    n = n_slots()
     directory = Path(directory)
     for k in range(n):
         path = directory / f"{prefix}_{k}.lock"
@@ -71,16 +77,16 @@ def try_slot(n: int | None = None, directory: Path | str = DEFAULT_DIR, prefix: 
     return None
 
 
-def hold_slot(n: int | None = None, directory: Path | str = DEFAULT_DIR, prefix: str = DEFAULT_PREFIX,
+def hold_slot(directory: Path | str = DEFAULT_DIR, prefix: str = DEFAULT_PREFIX,
               timeout: float | None = None, poll: float = 5.0) -> Slot:
     """Block until a slot is free (or ``timeout`` seconds pass: SlotTimeout)."""
     t0 = time.monotonic()
     while True:
-        slot = try_slot(n, directory, prefix)
+        slot = try_slot(directory, prefix)
         if slot is not None:
             return slot
         if timeout is not None and time.monotonic() - t0 >= timeout:
-            raise SlotTimeout(f"no free Gurobi slot among {n_slots() if n is None else n} after {timeout} s")
+            raise SlotTimeout(f"no free Gurobi slot among {n_slots()} after {timeout} s")
         time.sleep(poll)
 
 

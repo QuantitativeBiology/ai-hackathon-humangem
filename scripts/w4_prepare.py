@@ -6,11 +6,12 @@ Outputs (results/w4/):
   threshold_gene_means.parquet gene, rna_mean, protein_mean (R3 inputs); rna_sd, protein_mean_floor,
                                protein_sd_floor (A5 z-scores); training lines only
   fastcc_human2_M0.json        cobra fastcc consistent reactions of Human2 on M0 (FASTCORE input)
+  a6prime_lines.tsv            amendment A7: one representative panel line per panel lineage for CORDA (A6')
 
 Reads: the split file (tier and label-free covariates), DepMap expression, ProCan proteomics,
 Human-GEM. Opens no label file.
 
-Usage: .venv/bin/python scripts/w4_prepare.py [--skip-fastcc]
+Usage: .venv/bin/python scripts/w4_prepare.py [--skip-fastcc] [--only-a6prime]
 """
 
 import argparse
@@ -22,7 +23,8 @@ import pandas as pd
 
 from nextgem import paths
 from nextgem.context import consistent_reactions, make_parent
-from nextgem.context_inputs import gene_table, read_expression, read_procan, stage_a_panel, threshold_stats
+from nextgem.context_inputs import (A6P_TAG, a6prime_lines, gene_table, read_expression, read_procan, stage_a_panel,
+                                    threshold_stats)
 from nextgem.model import load_model
 
 OUT = paths.results_dir() / "w4"
@@ -31,14 +33,29 @@ OUT = paths.results_dir() / "w4"
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--skip-fastcc", action="store_true")
+    ap.add_argument("--only-a6prime", action="store_true", help="only (re)write a6prime_lines.tsv")
     a = ap.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     t0, c0 = time.time(), time.process_time()
     split = pd.read_csv(paths.splits_dir() / "lineage_split.tsv", sep="\t")
     panel = stage_a_panel(split)
+    if a.only_a6prime:
+        import cobra
+
+        cobra.Configuration().solver = "glpk"
+        genes = gene_table(load_model("human2"))
+        rna = read_expression(genes, split[(split.tier == "train") & split.has_expression.astype(bool)].ModelID)
+        a6p = a6prime_lines(panel, rna, split)
+        a6p["status"] = A6P_TAG
+        a6p.to_csv(OUT / "a6prime_lines.tsv", sep="\t", index=False)
+        print(a6p[["lineage", "ModelID", "distance", "n_lineage_lines"]].to_string())
+        return
     panel.to_csv(OUT / "stage_a_panel.tsv", sep="\t", index=False)
     print(panel.groupby("lineage").size().to_dict(), "procan:", int(panel.has_procan.sum()), "cn:", int(panel.has_cn.sum()))
 
+    import cobra
+
+    cobra.Configuration().solver = "glpk"  # structure only: no WLS session outside the pool (review B1)
     model = load_model("human2")
     genes = gene_table(model)
     train = split[(split.tier == "train")]
@@ -56,8 +73,17 @@ def main():
                        "protein_mean_floor": prot_z.mean(axis=0)}).rename_axis("gene").reset_index()
     gm.to_parquet(OUT / "threshold_gene_means.parquet", index=False)
     print(json.dumps(stats, indent=1))
+    a6p = a6prime_lines(panel, rna, split)
+    a6p["status"] = A6P_TAG
+    a6p.to_csv(OUT / "a6prime_lines.tsv", sep="\t", index=False)
+    print(a6p[["lineage", "ModelID", "distance", "n_lineage_lines"]].to_string())
 
-    if not a.skip_fastcc:
+    if not a.skip_fastcc:  # FASTCC on Gurobi (the F3 solver), inside a slot of the shared pool
+        from nextgem import gurobi_pool
+
+        _slot = gurobi_pool.hold_slot()
+        cobra.Configuration().solver = "gurobi"
+        model = load_model("human2")
         parent = make_parent(model)
         tf = time.process_time()
         cons = consistent_reactions(parent, OUT / "fastcc_human2_M0.json")

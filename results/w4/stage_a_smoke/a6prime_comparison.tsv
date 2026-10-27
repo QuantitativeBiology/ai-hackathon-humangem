@@ -1,0 +1,5 @@
+line	rule	vs_family	reaction_jaccard	essential_jaccard	n_essential_corda	n_essential_other	ratio_r_spearman	wt_ratio_corda	wt_ratio_other	n_reopened_corda	n_reopened_other	build_cpu_min_corda	build_cpu_min_other	n_open_corda	n_open_other	status
+ACH-000957	R1	F0	0.5866	0.9653	172	168	0.9578	0.87	0.876	0	35	95.6	2.09	7126	11261	descriptive, not eligible for P1 (amendment A7)
+ACH-000957	R1	F2	0.5866	0.9653	172	168	0.9028	0.87	0.999	0	0	95.6	1.82	7126	11269	descriptive, not eligible for P1 (amendment A7)
+ACH-000957	R1	F3	0.8328	0.9828	172	173	0.9165	0.87	0.968	0	91	95.6	2.62	7126	6721	descriptive, not eligible for P1 (amendment A7)
+ACH-000957	R1	F4	0.559	0.8953	172	154	0.8892	0.87	0.013	0	0	95.6	2.04	7126	12748	descriptive, not eligible for P1 (amendment A7)
