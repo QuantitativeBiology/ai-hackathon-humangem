@@ -25,7 +25,7 @@ The work has four strands:
 
 Whole lineages are held out for testing. The full brief is in [PROMPT.md](PROMPT.md).
 
-*Status as of 2026-10-27, 19:00 UTC.*
+*Status as of 2026-10-27, 21:45 UTC.*
 
 ## Status at a glance
 
@@ -34,8 +34,10 @@ Whole lineages are held out for testing. The full brief is in [PROMPT.md](PROMPT
 | M0 Setup, literature ([LITERATURE.md](LITERATURE.md)), data ([DATA.md](DATA.md)) | done |
 | M1 Pre-registered design ([DESIGN.md](DESIGN.md), frozen v3 after 3 review rounds); leakage infrastructure; lineage split (seed 38: 7 test / 4 validation / 12 training lineages) | done |
 | M2 Generic-model baseline (W1), training plus one validation look | done: **G\* = Human1** |
-| M3 Pilots: medium (W2, library frozen), context-model families (W4), Stage A on the 30-line training panel | builds done; scoring next |
-| M4–M9 Biomass/tasks (W3), GPR curation (W5), flux information (W6), auto-research loop (W7), SBML resource (W8), test looks T1/T2, REPORT.md | planned |
+| M3 Pilots: medium (W2, library frozen), context-model families (W4), Stage A on the 30-line training panel | done: **no family passes the training gate** |
+| M4 GPR curation (W5) | done: **fails the training gate** on both parents |
+| M4 Biomass/tasks/objectives (W3) | running |
+| M5–M9 Flux information (W6), auto-research loop (W7), SBML resource (W8, stub passes its gates), test looks T1/T2, REPORT.md (skeleton) | planned |
 
 The live research record is [RESEARCH_TREE.md](RESEARCH_TREE.md). It holds the decisions D0–D8 and the findings tree; resume from there.
 
@@ -54,19 +56,21 @@ The live research record is [RESEARCH_TREE.md](RESEARCH_TREE.md). It holds the d
 - **Medium.** Medium choice moves few genes (mean |Δratio| ≈ 0.001 per line). The design's growth-rate calibration is infeasible as specified, so that variant is reported as uncalibrated.
 - **Sterol branch.** Serum cholesterol cannot rescue the sterol-synthesis genes in either model. Biomass needs vitamin D3 products that can only be made from lathosterol, so this is a model-structure issue for W3/W5.
 - **GPRTransform** (Machado et al. 2016). Gene-level KO equals the Boolean KO exactly on both models, so it is not adopted as a family. The original isozyme encoding inflates capacity (+25% WT growth). A gene-pFBA cost tie-break is kept as an exploratory score.
+- **Context-specific models (W4 Stage A, training panel).** None of the six families beats G\* under the training gate. Δ̄ vs Human1 is F0 thresholding −0.0080, F2 GIMME −0.0067, F3 FASTCORE −0.0102, F4 E-Flux −0.0029, F5 calibrated presence −0.0114 and CORDA −0.0127. Choice of method explains more variance than tissue. F2 is carried forward to the combination factorial, flagged "fails TG".
+- **GPR curation (W5).** The curation as specified lowers tAP by 0.029 on both parents. The main cause is paralog AND→OR merges of RNA polymerase I/II/III subunits, which the reviewer rejected on biology. Fixing the direction of Human1's thymidylate synthase reaction helps (+0.0007), but the gain is below the SESOI.
+- **CAD lethality.** CAD KO stays lethal with uridine supplied because (S)-dihydroorotate is part of the biomass small-metabolite pool (MAR10064). This is being tested in W3.
 - **CORDA.** It costs 1.5–1.7 CPU-h per model, so it runs as a 10-line descriptive comparison only (user decision D8).
 
 ## Running now
-- **Stage A finished** (2026-10-27, 16:31 UTC): 1,380 distinct context-model builds plus genomic re-sweeps on the 30-line training panel, 0 failed and 0 timeouts, 108.7 CPU-h, 6.2 h wall, from the reviewed commit `c280413`. Outputs are in `results/w4/stage_a/`. Next comes label-blind gating and nested panel LOLO selection (training labels only), then independent review.
-- **W2 medium library frozen** after the two-agent extraction and re-check (A9).
-- **Starting:** W3 (objectives, tasks, biomass), W5 (GPR curation) and the W8 SBML export plus REPORT.md skeleton.
+- **W3** (biomass, metabolic tasks, objectives): capacity matrix, leave-one-out/add-one biomass components, NGAM, MOMA pilot, the sterol/vitamin-D and dihydroorotate structure fixes, and the gene-pFBA tie-break. Training scoring comes first, then independent review, then at most one validation look through the reviewed harness.
+- Next: the combination factorial (M6), flux information (W6) and the auto-research loop (W7). Combining GEM features with gene priors looks most promising, given the B2 baseline.
 
 ## Known pitfalls and open issues
 - Most generic KO scores are near-binary (lethal or 1), so ties dominate AUPRC. Every metric is tie-aware, and tie-break baselines (B8±) are mandatory.
 - Some a priori positive controls are non-informative as built (GOT1/2, SLC7A11 and CAD/uridine), because the models bypass them.
 - Several design gaps were resolved by documented amendments A1–A10 (DESIGN.md §17). Small changes to the guards are logged in [notes/guard_changelog.md](notes/guard_changelog.md) (user decision D7).
 - Compute budget: ≈1–1.5 days in total. Stage A is ≈110 CPU-h, above its ≈100 CPU-h row because of the CORDA comparison and one build per process.
-- Not yet started: SBML export, REPORT.md and the auto-research loop.
+- Started as stubs: SBML export (W8 demo passes all 5 gates) and REPORT.md (skeleton). Not started: the auto-research loop.
 
 ## Leakage controls (read before touching data)
 - DepMap labels (CRISPR gene effect and dependency, common-essential lists) are read **only** through `src/nextgem/labels.py`, fold-scoped. A PreToolUse hook blocks direct reads, and a runtime tripwire blocks them inside Python.
@@ -77,8 +81,8 @@ The live research record is [RESEARCH_TREE.md](RESEARCH_TREE.md). It holds the d
 ## Repository layout
 - `src/nextgem/`: package (model loading, knockouts, labels, metrics, splits, media, context-model families, provenance).
 - `scripts/`: runnable steps (`w1_*` baseline, `w2_*` medium, `w4_*` context models, `evaluate_val.py`, guards).
-- `tests/`: 461 tests, including known-answer tests for metrics and leakage guards.
-- `results/`: committed outputs per workstream (`w1/`, `w2/`, `w4/`, `gprt/`, `splits/`, …). Each has a README and a provenance manifest.
+- `tests/`: 506 tests, including known-answer tests for metrics and leakage guards.
+- `results/`: committed outputs per workstream (`w1/`, `w2/`, `w4/`, `w5/`, `gprt/`, `splits/`, …). Each has a README and a provenance manifest.
 - `notes/`: design reviews, milestone process reviews, independent result reviews and method assessments.
 - `data/` (git-ignored): Human-GEM, DepMap 26Q3 and other inputs. Provenance is in `data/README.md` and `DATA.md`.
 
