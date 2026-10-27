@@ -1,0 +1,11 @@
+{
+ "G_star": "Human1",
+ "delta_lin_H2_vs_H1": -0.007080617418658356,
+ "delta_ci": [
+  -0.007874045791277961,
+  -0.006273799798532821
+ ],
+ "tap_lin_H1": 0.3016764342464227,
+ "tap_lin_H2": 0.2945958168277643,
+ "rule": "Human1 iff delta_lin(H2 - H1) < 0 on L_prob/all genes/U/validation expression lines; else Human2 (a tie goes to Human2, the default parent)"
+}

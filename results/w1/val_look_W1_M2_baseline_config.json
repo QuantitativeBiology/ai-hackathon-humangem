@@ -1,0 +1,55 @@
+{
+ "B": 2000,
+ "binary_label": "L_ge06",
+ "code": {
+  "evaluate_val.py": "8f85a6667823a388aa965a7393687f96478e560870a3d8d3edb922ea8532a26c",
+  "labels.py": "291d648e8988ae6987ba1fcef347e75271688bff105a66276f5fe504af21fc6b",
+  "metrics.py": "3acc6ff45c6b969efa631a8c4ecb28ec570015d604f84baed05a4ac1a9382d98",
+  "run.py": "36c07907c5f81e562d57d7bf480dba992e070a96148349b44215eb93eda9b578",
+  "w1.py": "434875e1e47bd548da1da1b2b8b03d546609240914a96828e6e17036863d7a2b"
+ },
+ "config_sha": "331a2c8d1b25c509fb12ac6e1771fb792b9d48f13426f698ebd092b0801a60e5",
+ "genesets": [
+  "all",
+  "noCE",
+  "noDepMapCE"
+ ],
+ "gstar_rule": "Human1 iff delta_lin(H2 - H1) < 0 on L_prob/all genes/U/validation expression lines; else Human2 (a tie goes to Human2, the default parent)",
+ "include_b6": false,
+ "inputs": {
+  "cn": "42bf15fd19ab51f9b4636213c4a464f9907c63ce4d1a547a9670586a95ffc91c",
+  "expr": "22dccef65797e8c9be8a806278e5343246eeddf5420e9c2647aaa447e06ff137",
+  "gene_features": "7cf003f6eba4b0a9b5fa7fd81d9e6e802a6722eba984a3d3ce8128b215ec6f67",
+  "gene_panels": "e812724faaf1e9672b32460e73cc6659512d4caf10ff22839d00bba0e4a78318",
+  "human1_ko": "4e92d6e76176828c4dd76cae4bbe1657cc2af3e84b7d9e5200b6d9e22175c215",
+  "human2_ko": "fe96ea34d20083ba845ac025e6c04ef7d09e45ff4b5137ce8da611fab6aedf5d",
+  "line_features": "d96f43b07bd625fc56834addf60845608b45f8d0fd9cc682693dbd0e1c08b234",
+  "p57_human1": "0864b548cbce6b3f899861ec59ba0ff360864dd74c74c12f8bbcc5153453fd0c",
+  "p57_human2": "f7b41117148c7ff4a02023cf5416f61275c25c845b164e5a9bf4cd71b7ecf7e1",
+  "sesoi_c1b": "17254702a38c5258f3e4fff14e1dacc64ee0d05c02e78e1471d7923ed38719f2"
+ },
+ "labels": [
+  "L_prob",
+  "L_ge05",
+  "L_ge10"
+ ],
+ "look_id": "W1_M2_baseline",
+ "milestone": "M2",
+ "random_seeds": [
+  11,
+  23,
+  37,
+  41,
+  53
+ ],
+ "seed": 11,
+ "strata": [
+  "none",
+  "expressed_pairs"
+ ],
+ "universes": [
+  "U",
+  "Ucap"
+ ],
+ "workstream": "W1"
+}
