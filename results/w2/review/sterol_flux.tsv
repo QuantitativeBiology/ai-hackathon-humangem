@@ -1,0 +1,104 @@
+parent	step	reaction	flux	equation	gpr
+human2	0	SK_lathosterol_c	-6.713664419362497	lathosterol supplied	
+human2	1	MAR11370	6.707431621333091	lathosterol <=> lathosterol	
+human2	1	MAR01557	0.006232798029405446	H+ + lathosterol + NADH + O2 --> 2.0 H2O + NAD+ + provitamin D3	SC5D
+human2	2	MAR02206	6.707431621333091	lathosterol + NADP+ <=> 5alpha-cholesta-7,24-dien-3beta-ol + H+ + NADPH	DHCR24
+human2	2	MAR02114	0.006232798029405445	provitamin D3 --> vitamin D3	
+human2	3	MAR02115	0.006232798029405445	H+ + NADPH + O2 + vitamin D3 --> calcidiol + H2O + NADP+	CYP2R1
+human2	3	MAR01508	6.707431621333091	5alpha-cholesta-7,24-dien-3beta-ol + H+ + NADPH + O2 --> 7-dehydrodesmosterol + 2.0 H2O + NADP+	SC5D
+human2	4	MAR02118	0.0031163990147027227	calcidiol + H+ + NADPH + O2 --> calcitriol + H2O + NADP+	LRP2 and CUBN and CYP27B1 and GC
+human2	4	MAR08009	0.0031163990147027227	calcidiol <=> calcidiol	
+human2	4	MAR00227	6.707431621333091	7-dehydrodesmosterol + H+ + NADPH --> desmosterol + NADP+	DHCR7
+human2	5	MAR02127	0.0031163990147027227	calcitriol <=> calcitriol	
+human2	5	MAR02138	0.0031163990147027223	calcidiol + H+ + NADPH + O2 --> (24R)-24,25-dihydroxycalciol + H2O + NADP+	CYP24A1
+human2	5	MAR00222	6.707431621333094	desmosterol + FADH2 --> cholesterol + FAD	DHCR24
+human2	6	MAR02767	0.0031163990147027223	(24R)-24,25-dihydroxycalciol + H+ + NADH + O2 --> 23S,25,26-trihydroxyvitamin D3 + H2O + NAD+	CYP24A1
+human2	6	MAR01530	-6.707431621420333	cholesterol <=> cholesterol	
+human2	6	MAR02141	0.0031163990147027223	calcitriol + H+ + NADPH + O2 --> calcitetrol + H2O + NADP+	CYP24A1
+human2	6	MAR07791	6.707431621333094	FAD --> FAD	
+human1	0	SK_lathosterol_c	-1.8593049926937897	lathosterol supplied	
+human1	1	MAR01557	1.8593049926937892	H+ + lathosterol + NADH + O2 --> 2.0 H2O + NAD+ + provitamin D3	
+human1	2	MAR01565	1.853856742893371	H+ + NADPH + provitamin D3 --> cholesterol + NADP+	
+human1	2	MAR02114	0.005448249800418499	provitamin D3 --> vitamin D3	
+human1	3	MAR10063	14.597297188136777	0.1155 cholesterol + 0.0115 cholesterol-ester pool + 0.0205 CL pool + 0.5029 PC-LD pool + 0.1905 PE-LD pool + 0.0096 PG-CL pool + 0.0692 PI pool + 0.019 PS-LD p	
+human1	3	MAR00634	0.16786891766357276	cholesterol + PC-LD pool --> 2-lysolecithin pool + cholesterol-ester pool	
+human1	3	MAR02115	0.004086187350313874	H+ + NADPH + O2 + vitamin D3 --> calcidiol + H2O + NADP+	
+human1	3	MAR02116	0.0013620624501046248	H+ + vitamin D3 --> H+ + vitamin D3	
+human1	4	MAR13082	65.99139777638686	45.0 ATP + 0.0267 DNA + 45.0 H2O + 0.1124 RNA + 0.4062 glycogen + 0.0012 cofactor_pool_biomass + 5.3375 protein_pool_biomass + 0.2212 lipid_pool_biomass + 0.483	
+human1	4	MAR00632	0.16786891766357276	2-lysolecithin pool + acyl-CoA pool --> CoA + PC-LD pool	 or  or  or 
+human1	4	MAR02117	0.001362062450104625	H+ + NADPH + O2 + vitamin D3 --> calcidiol + H2O + NADP+	 or 
+human1	4	MAR02137	0.0013620624501046248	calcidiol + H+ + NADPH + O2 --> (24R)-24,25-dihydroxycalciol + H2O + NADP+	
+human1	4	MAR02129	0.0013620624501046248	calcidiol + H+ + NADPH + O2 --> 23s,25-dihydroxyvitamin D3 + H2O + NADP+	 or  or 
+human1	4	MAR02118	0.0013620624501046246	calcidiol + H+ + NADPH + O2 --> calcitriol + H2O + NADP+	 and  and  and 
+human1	5	MAR02138	0.001362062450104625	calcidiol + H+ + NADPH + O2 --> (24R)-24,25-dihydroxycalciol + H2O + NADP+	
+human1	5	MAR02591	1.1637783558921926	CoA + O-acetylcarnitine <=> acetyl-CoA + L-carnitine	 or  or 
+human1	5	MAR08442	0.0647546957530854	2-oxobutyrate + CoA + NAD+ --> CO2 + NADH + propanoyl-CoA	
+human1	5	MAR02602	0.010143369870092477	CoA + dodecanoylcarnitine <=> lauroyl-CoA + L-carnitine	 or  or 
+human1	5	MAR00213	0.00968331109495994	ATP + CoA + pentadecylic acid --> AMP + pentadecanoyl-CoA + PPi	 or  or  or  or  or  or  or 
+human1	5	MAR00192	0.009683311094959941	ATP + CoA + tridecylic acid --> AMP + PPi + tridecanoyl-CoA	 or  or  or  or  or  or  or 
+human1	5	MAR02654	15.990684526797914	CoA + stearoylcarnitine <=> L-carnitine + stearoyl-CoA	 or  or 
+human1	5	MAR00758	0.25533262019855796	ceramide pool + CoA + H+ --> sphingosine + acyl-CoA pool	 or  or  or  or  or 
+human1	5	MAR02608	0.3676971577908522	CoA + tetradecanoylcarnitine <=> L-carnitine + myristoyl-CoA	 or  or 
+human1	5	MAR00349	17.91079941030523	ATP + CoA + linolenate --> AMP + linolenoyl-CoA + PPi	 or  or  or  or  or  or  or 
+human1	5	MAR20131	-7.467717993452711	ADP + CoA <=> ADP + CoA	
+human1	5	MAR07152	8.031378250725531	ATP + CoA + linoleate --> AMP + linoleoyl-CoA + PPi	
+human1	5	MAR10064	31.906840824883044	0.0043 (S)-dihydroorotate + 0.0014 2,3-bisphospho-D-glycerate + 0.0022 3-phospho-D-glycerate + 0.0025 3-phosphoserine + 0.0002 acetyl-CoA + 0.0033 ADP + 0.0046 	
+human1	5	MAR00237	0.06040016044542229	ATP + CoA + margaric acid --> AMP + heptadecanoyl-CoA + PPi	 or  or  or  or  or  or  or 
+human1	5	MAR02139	0.0013620624501046248	(24R)-24,25-dihydroxycalciol + H+ + NADH + O2 --> calcitetrol + H2O + NAD+	
+human1	5	MAR02131	0.0013620624501046248	23s,25-dihydroxyvitamin D3 + H+ + NADH + O2 --> 23S,25,26-trihydroxyvitamin D3 + H2O + NAD+	 or  or 
+human1	5	MAR00736	0.8948143176327844	ceramide pool + PC-LD pool --> 1,2-diacylglycerol-LD-PC pool + SM pool	 or 
+human1	5	MAR00623	2.805533184584039	PC-LD pool + serine --> choline + PS-LD pool	
+human1	5	MAR02127	0.0013620624501046248	calcitriol <=> calcitriol	
+human1	5	MAR10023	65.99139777638686	biomass --> biomass	
+human1	6	MAR02133	0.0013620624501046248	23S,25,26-trihydroxyvitamin D3 + O2 --> 25-hydroxyvitamin D3-26,23-lactol + H2O2	 or  or 
+human1	6	MAR00627	2.5281845380094405	H+ + PS-LD pool --> CO2 + PE-LD pool	
+human1	6	MAR07800	-414.2673057917972	ADP + GDP <=> AMP + GTP	
+human1	6	MAR00578	1.4772464754394423	acyl-CoA pool --> acyl-CoA pool	
+human1	6	MAR07588	11.409247482247705	DHAP + acyl-CoA pool --> acylglycerone-phosphate + CoA	
+human1	6	MAR00589	10.146513940498025	1-acylglycerol-3P pool + acyl-CoA pool --> CoA + phosphatidate-LD-PC pool	 or  or  or  or  or  or  or  or 
+human1	6	MAR00592	1.010132965419065	1-acylglycerol-3P pool + acyl-CoA pool --> CoA + phosphatidate-LD-PI pool	 or  or  or  or  or  or  or  or 
+human1	6	MAR00590	0.2526005763306156	1-acylglycerol-3P pool + acyl-CoA pool --> CoA + phosphatidate-LD-PE pool	 or  or  or  or  or  or  or  or 
+human1	6	MAR00152	3.375206324273272	H+ + linoleoyl-CoA + NADH + O2 --> gamma-linolenoyl-CoA + 2.0 H2O + NAD+	 or 
+human1	6	MAR10036	-24.208277737399847	acyl-CoA pool <=> 0.0004 (10Z)-heptadecenoyl-CoA + 0.0004 (11Z)-docosenoyl-CoA + 0.0004 (11Z)-eicosenoyl-CoA + 0.0004 (11Z,14Z)-eicosadienoyl-CoA + 0.0004 (11Z,	
+human1	6	MAR02423	0.020286739740184946	H+ + linoleoyl-CoA + malonyl-CoA --> 3-oxoeicosa-cis,cis-11,14-dienoyl-CoA + CO2 + CoA	 or  or  or  or  or  or 
+human1	6	MAR02259	0.03043010961027741	H+ + heptadecanoyl-CoA + malonyl-CoA --> 3-oxononadecanoyl-CoA + CO2 + CoA	 or  or  or  or  or  or 
+human1	6	MAR02289	0.010143369870092475	H+ + heptadecanoyl-CoA + NADPH + O2 --> 9-heptadecenoyl-CoA + 2.0 H2O + NADP+	 or 
+human1	6	MAR02288	0.010143369870092475	H+ + heptadecanoyl-CoA + NADPH + O2 --> (10Z)-heptadecenoyl-CoA + 2.0 H2O + NADP+	 or 
+human1	6	MAR02767	0.001362062450104625	(24R)-24,25-dihydroxycalciol + H+ + NADH + O2 --> 23S,25,26-trihydroxyvitamin D3 + H2O + NAD+	
+human1	6	MAR00773	0.255332620198558	ATP + sphingosine --> ADP + H+ + sphingosine-1-phosphate	 or  or 
+human1	6	MAR10024	65.99139777638686	biomass --> 	
+human1	6	MAR00625	11.04132825813081	1,2-diacylglycerol-LD-PC pool + CDP-choline --> CMP + H+ + PC-LD pool	 or 
+human1	6	MAR04628	1.6591557228939182	acetyl-CoA + glucosamine-6-phosphate --> CoA + H+ + N-acetylglucosamine-6-phosphate	
+human1	6	MAR07673	6.965959258286009	acetyl-CoA + carboxybiotin-carboxyl-carrier --> apoC-lys_btn + malonyl-CoA	
+human1	6	MAR02201	0.040573479480369885	H+ + malonyl-CoA + stearoyl-CoA --> 3-oxoeicosanoyl-CoA + CO2 + CoA	 or  or  or  or  or  or 
+human1	6	MAR02295	0.010143369870092475	H+ + NADPH + O2 + stearoyl-CoA --> (9E)-octadecenoyl-CoA + 2.0 H2O + NADP+	 or 
+human1	6	MAR00250	0.17229201128713506	H2O + stearoyl-CoA --> CoA + H+ + stearate	 or  or  or  or 
+human1	6	MAR02292	0.010143369870092475	H+ + NADPH + O2 + stearoyl-CoA --> (13Z)-octadecenoyl-CoA + 2.0 H2O + NADP+	 or 
+human1	6	MAR01719	7.467717993452712	stearoyl-CoA <=> stearoyl-CoA	
+human1	6	MAR02296	0.030430109610277416	H+ + NADPH + O2 + stearoyl-CoA --> (7Z)-octadecenoyl-CoA + 2.0 H2O + NADP+	 or 
+human1	6	MAR00146	3.9584500918035888	H+ + NADH + O2 + stearoyl-CoA --> 2.0 H2O + NAD+ + oleoyl-CoA	
+human1	6	MAR00148	0.030430109610277423	H+ + NADH + O2 + stearoyl-CoA --> (2E)-octadecenoyl-CoA + 2.0 H2O + NAD+	
+human1	6	MAR02293	0.6441039867508722	H+ + NADPH + O2 + stearoyl-CoA --> cis-vaccenoyl-CoA + 2.0 H2O + NADP+	 or 
+human1	6	MAR02142	0.0013620624501046248	calcitetrol + H+ + NADPH + O2 --> 24-oxo-1alpha,25-dihydroxyvitamin D3 + 2.0 H2O + NADP+	 or  or 
+human1	6	MAR02530	0.020286739740184946	H+ + linolenoyl-CoA + malonyl-CoA --> 3-oxoeicosa-cis,cis,cis-11,14,17-trienoyl-CoA + CO2 + CoA	 or  or  or  or  or  or 
+human1	6	MAR00145	17.687163137570888	H+ + linolenoyl-CoA + NADH + O2 --> (6Z,9Z,12Z,15Z)-octadecatetraenoyl-CoA + 2.0 H2O + NAD+	
+human1	6	MAR02609	0.3676971577908522	L-carnitine + tetradecanoylcarnitine <=> L-carnitine + tetradecanoylcarnitine	 or  or  or  or 
+human1	6	MAR10065	0.07918967733166422	0.0345 11-cis-retinol + 0.0172 18-hydroxy-all-trans-retinoate + 0.0172 18-hydroxy-all-trans-retinoate + 0.0172 24-oxo-1alpha,23,25-trihydroxyvitamin D3 + 0.0172	
+human1	6	MAR02817	15.990684526797914	L-carnitine + stearoylcarnitine <=> L-carnitine + stearoylcarnitine	
+human1	6	MAR02429	-0.25533262019855807	L-carnitine + palmitate <=> L-carnitine + palmitate	
+human1	6	MAR02777	15.735351906599357	L-carnitine <=> L-carnitine	
+human1	6	MAR02340	-0.01639226320765607	L-carnitine + propanoyl-CoA <=> L-carnitine + propanoyl-CoA	
+human1	6	MAR02603	0.010143369870092482	dodecanoylcarnitine + L-carnitine <=> dodecanoylcarnitine + L-carnitine	 or  or  or  or 
+human1	6	MAR02590	0.7695455650235901	L-carnitine --> L-carnitine	
+human1	6	MAR02633	0.37784052766094467	7-hexadecenoyl-CoA + L-carnitine <=> CoA + hexadecenoylcarnitine(9)	 or  or 
+human1	6	MAR00189	0.00046005877513253705	H2O + lauroyl-CoA --> CoA + H+ + lauric acid	 or  or  or 
+human1	6	MAR00636	11.04132825813081	ATP + choline --> ADP + H+ + phosphocholine	 or 
+human1	6	MAR04696	0.0054640877358848325	choline + NAD+ --> betaine_aldehyde + H+ + NADH	
+human1	6	MAR02281	0.009683311094959937	H+ + myristoyl-CoA + NADPH + O2 --> (9E)-tetradecenoyl-CoA + 2.0 H2O + NADP+	 or 
+human1	6	MAR00197	0.015296954273156853	H2O + myristoyl-CoA --> CoA + H+ + myristic acid	 or  or  or  or 
+human1	6	MAR09938	0.0004600587751325371	H+ + myristoyl-CoA + NADH + O2 --> 2.0 H2O + NAD+ + Tetradecenoyl Coenzyme A (N-C14:1)	
+human1	6	MAR02284	0.010143369870092475	H+ + myristoyl-CoA + NADPH + O2 --> 5-tetradecenoyl-CoA + 2.0 H2O + NADP+	 or 
+human1	6	MAR02282	0.010143369870092475	H+ + myristoyl-CoA + NADPH + O2 --> (7Z)-tetradecenoyl-CoA + 2.0 H2O + NADP+	 or 
+human1	6	MAR00777	7.467717993452712	CoA + FAD + H2O + NAD+ + stearoyl-CoA --> acetyl-CoA + FADH2 + H+ + NADH + palmitoyl-CoA	( and  and ) or ( and  and )
+human1	6	MAR02141	0.0013620624501046246	calcitriol + H+ + NADPH + O2 --> calcitetrol + H2O + NADP+	
+human1	6	MAR02227	0.0811469589607399	[ACP] + propanoyl-CoA --> CoA + propanoyl-[ACP]	

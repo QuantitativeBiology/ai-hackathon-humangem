@@ -1,0 +1,411 @@
+medium	component	conc_uM	mapping_type	metabolite	stoich	met_uM	human1_rxn	human2_rxn	note
+RPMI	Glycine	133.33334	literal	glycine	1.0	133.33334	MAR09067	MAR09067	
+RPMI	L-Arginine	1149.4253	literal	arginine	1.0	1149.4253	MAR09066	MAR09066	
+RPMI	L-Asparagine	378.78788000000003	literal	asparagine	1.0	378.78788000000003	MAR09062	MAR09062	
+RPMI	L-Aspartic acid	150.37592999999998	literal	aspartate	1.0	150.37592999999998	MAR09070	MAR09070	
+RPMI	L-Cystine 2HCl	207.66773999999998	salt_dissociation	cystine	1.0	207.66773999999998	MAR09363	MAR09363	
+RPMI	L-Cystine 2HCl	207.66773999999998	salt_dissociation	chloride	2.0	415.33547999999996	MAR09150	MAR09150	
+RPMI	L-Glutamic Acid	136.05443	literal	glutamate	1.0	136.05443	MAR09071	MAR09071	
+RPMI	L-Glutamine	2054.7945	literal	glutamine	1.0	2054.7945	MAR09063	MAR09063	
+RPMI	L-Histidine	96.77418999999999	literal	histidine	1.0	96.77418999999999	MAR09038	MAR09038	
+RPMI	L-Hydroxyproline	152.67175	literal	trans-4-hydroxy-L-proline	1.0	152.67175	MAR08386	MAR08386	trans-4-hydroxy-L-proline
+RPMI	L-Isoleucine	381.6794	literal	isoleucine	1.0	381.6794	MAR09039	MAR09039	
+RPMI	L-Leucine	381.6794	literal	leucine	1.0	381.6794	MAR09040	MAR09040	
+RPMI	L-Lysine hydrochloride	218.57923000000002	salt_dissociation	lysine	1.0	218.57923000000002	MAR09041	MAR09041	
+RPMI	L-Lysine hydrochloride	218.57923000000002	salt_dissociation	chloride	1.0	218.57923000000002	MAR09150	MAR09150	
+RPMI	L-Methionine	100.67114000000001	literal	methionine	1.0	100.67114000000001	MAR09042	MAR09042	
+RPMI	L-Phenylalanine	90.90908999999999	literal	phenylalanine	1.0	90.90908999999999	MAR09043	MAR09043	
+RPMI	L-Proline	173.91305000000003	literal	proline	1.0	173.91305000000003	MAR09068	MAR09068	
+RPMI	L-Serine	285.7143	literal	serine	1.0	285.7143	MAR09069	MAR09069	
+RPMI	L-Threonine	168.06723000000002	literal	threonine	1.0	168.06723000000002	MAR09044	MAR09044	
+RPMI	L-Tryptophan	24.509804	literal	tryptophan	1.0	24.509804	MAR09045	MAR09045	
+RPMI	L-Tyrosine disodium salt dihydrate	111.11111	salt_dissociation	tyrosine	1.0	111.11111	MAR09064	MAR09064	
+RPMI	L-Tyrosine disodium salt dihydrate	111.11111	salt_dissociation	Na+	2.0	222.22222	MAR09077	MAR09077	
+RPMI	L-Valine	170.94018	literal	valine	1.0	170.94018	MAR09046	MAR09046	
+RPMI	Biotin	0.81967213	literal	biotin	1.0	0.81967213	MAR09109	MAR09109	
+RPMI	Choline chloride	21.428572	salt_dissociation	choline	1.0	21.428572	MAR09083	MAR09083	
+RPMI	Choline chloride	21.428572	salt_dissociation	chloride	1.0	21.428572	MAR09150	MAR09150	
+RPMI	D-Calcium pantothenate	0.524109	salt_dissociation	pantothenate	2.0	1.048218	MAR09145	MAR09145	Ca(pantothenate)2, MW 477
+RPMI	D-Calcium pantothenate	0.524109	salt_dissociation	Ca2+	1.0	0.524109	MAR09082	MAR09082	Ca(pantothenate)2, MW 477
+RPMI	Folic Acid	2.2675737	literal	folate	1.0	2.2675737	MAR09146	MAR09146	
+RPMI	Niacinamide	8.196721	literal	nicotinamide	1.0	8.196721	MAR09378	MAR09378	
+RPMI	Para-Aminobenzoic Acid	7.29927	unmapped						PABA: no exchange in either parent (not a human vitamin)
+RPMI	Pyridoxine hydrochloride	4.854369	salt_dissociation	pyridoxine	1.0	4.854369	MAR09144	MAR09144	
+RPMI	Pyridoxine hydrochloride	4.854369	salt_dissociation	chloride	1.0	4.854369	MAR09150	MAR09150	
+RPMI	Riboflavin	0.5319149	literal	riboflavin	1.0	0.5319149	MAR09143	MAR09143	
+RPMI	Thiamine hydrochloride	2.967359	salt_dissociation	thiamin	1.0	2.967359	MAR09159	MAR09159	thiamine chloride HCl (MW 337): 2 Cl-
+RPMI	Thiamine hydrochloride	2.967359	salt_dissociation	chloride	2.0	5.934718	MAR09150	MAR09150	thiamine chloride HCl (MW 337): 2 Cl-
+RPMI	Vitamin B12	0.003690037	nonliteral	aquacob(III)alamin	1.0	0.003690037	MAR09269	MAR09269	cyanocobalamin -> aquacob(III)alamin (only cobalamin exchange)
+RPMI	i-Inositol	194.44445	literal	inositol	1.0	194.44445	MAR09361	MAR09361	myo-inositol
+RPMI	Calcium nitrate (Ca(NO3)2 4H2O)	423.72882	salt_dissociation	Ca2+	1.0	423.72882	MAR09082	MAR09082	nitrate has no exchange
+RPMI	Calcium nitrate (Ca(NO3)2 4H2O)	423.72882	unmapped_ion	nitrate	2.0	847.45764			nitrate has no exchange
+RPMI	Magnesium Sulfate (MgSO4) (anhyd.)	407.0	salt_dissociation	Mg2+	1.0	407.0	MAR13072	MAR13072	
+RPMI	Magnesium Sulfate (MgSO4) (anhyd.)	407.0	salt_dissociation	sulfate	1.0	407.0	MAR09074	MAR09074	
+RPMI	Potassium Chloride (KCl)	5333.3335	salt_dissociation	K+	1.0	5333.3335	MAR09081	MAR09081	
+RPMI	Potassium Chloride (KCl)	5333.3335	salt_dissociation	chloride	1.0	5333.3335	MAR09150	MAR09150	
+RPMI	Sodium Bicarbonate (NaHCO3)	17857.143	salt_dissociation	Na+	1.0	17857.143	MAR09077	MAR09077	
+RPMI	Sodium Bicarbonate (NaHCO3)	17857.143	salt_dissociation	HCO3-	1.0	17857.143	MAR09078	MAR09078	
+RPMI	Sodium Chloride (NaCl)	103448.26999999999	salt_dissociation	Na+	1.0	103448.26999999999	MAR09077	MAR09077	
+RPMI	Sodium Chloride (NaCl)	103448.26999999999	salt_dissociation	chloride	1.0	103448.26999999999	MAR09150	MAR09150	
+RPMI	Sodium Phosphate dibasic (Na2HPO4) anhydrous	5633.803	salt_dissociation	Na+	2.0	11267.606	MAR09077	MAR09077	
+RPMI	Sodium Phosphate dibasic (Na2HPO4) anhydrous	5633.803	salt_dissociation	Pi	1.0	5633.803	MAR09072	MAR09072	
+RPMI	D-Glucose (Dextrose)	25000.0	literal	glucose	1.0	25000.0	MAR09034	MAR09034	
+RPMI	Glutathione (reduced)	3.2573289	literal	GSH	1.0	3.2573289	MAR09351	MAR09351	
+RPMI	HEPES	10012.605000000001	unmapped						buffer; not a model metabolite
+RPMI	Phenol Red	13.283741	unmapped						pH indicator; not a model metabolite
+RPMI	Sodium Pyruvate	1000.0	salt_dissociation	pyruvate	1.0	1000.0	MAR09133	MAR09133	
+RPMI	Sodium Pyruvate	1000.0	salt_dissociation	Na+	1.0	1000.0	MAR09077	MAR09077	
+DMEM	Glycine	400.0	literal	glycine	1.0	400.0	MAR09067	MAR09067	
+DMEM	L-Arginine hydrochloride	398.10427999999996	salt_dissociation	arginine	1.0	398.10427999999996	MAR09066	MAR09066	
+DMEM	L-Arginine hydrochloride	398.10427999999996	salt_dissociation	chloride	1.0	398.10427999999996	MAR09150	MAR09150	
+DMEM	L-Cystine 2HCl	201.27796	salt_dissociation	cystine	1.0	201.27796	MAR09363	MAR09363	
+DMEM	L-Cystine 2HCl	201.27796	salt_dissociation	chloride	2.0	402.55592	MAR09150	MAR09150	
+DMEM	L-Histidine hydrochloride-H2O	200.0	salt_dissociation	histidine	1.0	200.0	MAR09038	MAR09038	
+DMEM	L-Histidine hydrochloride-H2O	200.0	salt_dissociation	chloride	1.0	200.0	MAR09150	MAR09150	
+DMEM	L-Isoleucine	801.5267	literal	isoleucine	1.0	801.5267	MAR09039	MAR09039	
+DMEM	L-Leucine	801.5267	literal	leucine	1.0	801.5267	MAR09040	MAR09040	
+DMEM	L-Lysine hydrochloride	797.8142	salt_dissociation	lysine	1.0	797.8142	MAR09041	MAR09041	
+DMEM	L-Lysine hydrochloride	797.8142	salt_dissociation	chloride	1.0	797.8142	MAR09150	MAR09150	
+DMEM	L-Methionine	201.34228000000002	literal	methionine	1.0	201.34228000000002	MAR09042	MAR09042	
+DMEM	L-Phenylalanine	400.0	literal	phenylalanine	1.0	400.0	MAR09043	MAR09043	
+DMEM	L-Serine	400.0	literal	serine	1.0	400.0	MAR09069	MAR09069	
+DMEM	L-Threonine	798.31934	literal	threonine	1.0	798.31934	MAR09044	MAR09044	
+DMEM	L-Tryptophan	78.431375	literal	tryptophan	1.0	78.431375	MAR09045	MAR09045	
+DMEM	L-Tyrosine disodium salt dihydrate	398.46742	salt_dissociation	tyrosine	1.0	398.46742	MAR09064	MAR09064	
+DMEM	L-Tyrosine disodium salt dihydrate	398.46742	salt_dissociation	Na+	2.0	796.93484	MAR09077	MAR09077	
+DMEM	L-Valine	803.4188	literal	valine	1.0	803.4188	MAR09046	MAR09046	
+DMEM	Choline chloride	28.571429	salt_dissociation	choline	1.0	28.571429	MAR09083	MAR09083	
+DMEM	Choline chloride	28.571429	salt_dissociation	chloride	1.0	28.571429	MAR09150	MAR09150	
+DMEM	D-Calcium pantothenate	8.385744	salt_dissociation	pantothenate	2.0	16.771488	MAR09145	MAR09145	Ca(pantothenate)2, MW 477
+DMEM	D-Calcium pantothenate	8.385744	salt_dissociation	Ca2+	1.0	8.385744	MAR09082	MAR09082	Ca(pantothenate)2, MW 477
+DMEM	Folic Acid	9.070295000000002	literal	folate	1.0	9.070295000000002	MAR09146	MAR09146	
+DMEM	Niacinamide	32.786883	literal	nicotinamide	1.0	32.786883	MAR09378	MAR09378	
+DMEM	Pyridoxine hydrochloride	19.417476	salt_dissociation	pyridoxine	1.0	19.417476	MAR09144	MAR09144	
+DMEM	Pyridoxine hydrochloride	19.417476	salt_dissociation	chloride	1.0	19.417476	MAR09150	MAR09150	
+DMEM	Riboflavin	1.0638298	literal	riboflavin	1.0	1.0638298	MAR09143	MAR09143	
+DMEM	Thiamine hydrochloride	11.869436	salt_dissociation	thiamin	1.0	11.869436	MAR09159	MAR09159	thiamine chloride HCl (MW 337): 2 Cl-
+DMEM	Thiamine hydrochloride	11.869436	salt_dissociation	chloride	2.0	23.738872	MAR09150	MAR09150	thiamine chloride HCl (MW 337): 2 Cl-
+DMEM	i-Inositol	40.0	literal	inositol	1.0	40.0	MAR09361	MAR09361	myo-inositol
+DMEM	Calcium Chloride (CaCl2) (anhyd.)	1801.8018	salt_dissociation	Ca2+	1.0	1801.8018	MAR09082	MAR09082	
+DMEM	Calcium Chloride (CaCl2) (anhyd.)	1801.8018	salt_dissociation	chloride	2.0	3603.6036	MAR09150	MAR09150	
+DMEM	"Ferric Nitrate (Fe(NO3)3""9H2O)"	0.24752475999999998	salt_dissociation	Fe3+	1.0	0.24752475999999998	MAR09096	MAR09096	nitrate has no exchange
+DMEM	"Ferric Nitrate (Fe(NO3)3""9H2O)"	0.24752475999999998	unmapped_ion	nitrate	3.0	0.7425742799999999			nitrate has no exchange
+DMEM	Magnesium Sulfate (MgSO4) (anhyd.)	813.9166	salt_dissociation	Mg2+	1.0	813.9166	MAR13072	MAR13072	
+DMEM	Magnesium Sulfate (MgSO4) (anhyd.)	813.9166	salt_dissociation	sulfate	1.0	813.9166	MAR09074	MAR09074	
+DMEM	Potassium Chloride (KCl)	5333.3335	salt_dissociation	K+	1.0	5333.3335	MAR09081	MAR09081	
+DMEM	Potassium Chloride (KCl)	5333.3335	salt_dissociation	chloride	1.0	5333.3335	MAR09150	MAR09150	
+DMEM	Sodium Bicarbonate (NaHCO3)	44047.62	salt_dissociation	Na+	1.0	44047.62	MAR09077	MAR09077	
+DMEM	Sodium Bicarbonate (NaHCO3)	44047.62	salt_dissociation	HCO3-	1.0	44047.62	MAR09078	MAR09078	
+DMEM	Sodium Chloride (NaCl)	110344.826	salt_dissociation	Na+	1.0	110344.826	MAR09077	MAR09077	
+DMEM	Sodium Chloride (NaCl)	110344.826	salt_dissociation	chloride	1.0	110344.826	MAR09150	MAR09150	
+DMEM	Sodium Phosphate monobasic (NaH2PO4-H2O)	905.7971	salt_dissociation	Na+	1.0	905.7971	MAR09077	MAR09077	
+DMEM	Sodium Phosphate monobasic (NaH2PO4-H2O)	905.7971	salt_dissociation	Pi	1.0	905.7971	MAR09072	MAR09072	
+DMEM	D-Glucose (Dextrose)	25000.0	literal	glucose	1.0	25000.0	MAR09034	MAR09034	
+DMEM/F12	Glycine	250.0	literal	glycine	1.0	250.0	MAR09067	MAR09067	
+DMEM/F12	L-Alanine	49.999997	literal	alanine	1.0	49.999997	MAR09061	MAR09061	
+DMEM/F12	L-Arginine hydrochloride	699.0521600000001	salt_dissociation	arginine	1.0	699.0521600000001	MAR09066	MAR09066	
+DMEM/F12	L-Arginine hydrochloride	699.0521600000001	salt_dissociation	chloride	1.0	699.0521600000001	MAR09150	MAR09150	
+DMEM/F12	L-Asparagine-H2O	50.0	literal	asparagine	1.0	50.0	MAR09062	MAR09062	monohydrate
+DMEM/F12	L-Aspartic acid	50.0	literal	aspartate	1.0	50.0	MAR09070	MAR09070	
+DMEM/F12	L-Cysteine hydrochloride-H2O	99.77271999999999	salt_dissociation	cysteine	1.0	99.77271999999999	MAR09065	MAR09065	
+DMEM/F12	L-Cysteine hydrochloride-H2O	99.77271999999999	salt_dissociation	chloride	1.0	99.77271999999999	MAR09150	MAR09150	
+DMEM/F12	L-Cystine 2HCl	99.96805	salt_dissociation	cystine	1.0	99.96805	MAR09363	MAR09363	
+DMEM/F12	L-Cystine 2HCl	99.96805	salt_dissociation	chloride	2.0	199.9361	MAR09150	MAR09150	
+DMEM/F12	L-Glutamic Acid	50.0	literal	glutamate	1.0	50.0	MAR09071	MAR09071	
+DMEM/F12	L-Histidine hydrochloride-H2O	149.90476	salt_dissociation	histidine	1.0	149.90476	MAR09038	MAR09038	
+DMEM/F12	L-Histidine hydrochloride-H2O	149.90476	salt_dissociation	chloride	1.0	149.90476	MAR09150	MAR09150	
+DMEM/F12	L-Isoleucine	415.80152999999996	literal	isoleucine	1.0	415.80152999999996	MAR09039	MAR09039	
+DMEM/F12	L-Leucine	450.76334	literal	leucine	1.0	450.76334	MAR09040	MAR09040	
+DMEM/F12	L-Lysine hydrochloride	498.63390000000004	salt_dissociation	lysine	1.0	498.63390000000004	MAR09041	MAR09041	
+DMEM/F12	L-Lysine hydrochloride	498.63390000000004	salt_dissociation	chloride	1.0	498.63390000000004	MAR09150	MAR09150	
+DMEM/F12	L-Methionine	115.70469	literal	methionine	1.0	115.70469	MAR09042	MAR09042	
+DMEM/F12	L-Phenylalanine	215.0303	literal	phenylalanine	1.0	215.0303	MAR09043	MAR09043	
+DMEM/F12	L-Proline	150.0	literal	proline	1.0	150.0	MAR09068	MAR09068	
+DMEM/F12	L-Serine	250.0	literal	serine	1.0	250.0	MAR09069	MAR09069	
+DMEM/F12	L-Threonine	449.15968	literal	threonine	1.0	449.15968	MAR09044	MAR09044	
+DMEM/F12	L-Tryptophan	44.21569	literal	tryptophan	1.0	44.21569	MAR09045	MAR09045	
+DMEM/F12	L-Tyrosine disodium salt dihydrate	213.75479	salt_dissociation	tyrosine	1.0	213.75479	MAR09064	MAR09064	
+DMEM/F12	L-Tyrosine disodium salt dihydrate	213.75479	salt_dissociation	Na+	2.0	427.50958	MAR09077	MAR09077	
+DMEM/F12	L-Valine	220.94017	literal	valine	1.0	220.94017	MAR09046	MAR09046	
+DMEM/F12	Biotin	0.014344263	literal	biotin	1.0	0.014344263	MAR09109	MAR09109	
+DMEM/F12	Choline chloride	64.14285	salt_dissociation	choline	1.0	64.14285	MAR09083	MAR09083	
+DMEM/F12	Choline chloride	64.14285	salt_dissociation	chloride	1.0	64.14285	MAR09150	MAR09150	
+DMEM/F12	D-Calcium pantothenate	4.6960166999999995	salt_dissociation	pantothenate	2.0	9.392033399999999	MAR09145	MAR09145	Ca(pantothenate)2, MW 477
+DMEM/F12	D-Calcium pantothenate	4.6960166999999995	salt_dissociation	Ca2+	1.0	4.6960166999999995	MAR09082	MAR09082	Ca(pantothenate)2, MW 477
+DMEM/F12	Folic Acid	6.0090707	literal	folate	1.0	6.0090707	MAR09146	MAR09146	
+DMEM/F12	Niacinamide	16.557377000000002	literal	nicotinamide	1.0	16.557377000000002	MAR09378	MAR09378	
+DMEM/F12	Pyridoxine hydrochloride	9.708738	salt_dissociation	pyridoxine	1.0	9.708738	MAR09144	MAR09144	
+DMEM/F12	Pyridoxine hydrochloride	9.708738	salt_dissociation	chloride	1.0	9.708738	MAR09150	MAR09150	
+DMEM/F12	Riboflavin	0.5824467999999999	literal	riboflavin	1.0	0.5824467999999999	MAR09143	MAR09143	
+DMEM/F12	Thiamine hydrochloride	6.4391694	salt_dissociation	thiamin	1.0	6.4391694	MAR09159	MAR09159	thiamine chloride HCl (MW 337): 2 Cl-
+DMEM/F12	Thiamine hydrochloride	6.4391694	salt_dissociation	chloride	2.0	12.8783388	MAR09150	MAR09150	thiamine chloride HCl (MW 337): 2 Cl-
+DMEM/F12	Vitamin B12	0.50184503	nonliteral	aquacob(III)alamin	1.0	0.50184503	MAR09269	MAR09269	cyanocobalamin -> aquacob(III)alamin (only cobalamin exchange)
+DMEM/F12	i-Inositol	70.0	literal	inositol	1.0	70.0	MAR09361	MAR09361	myo-inositol
+DMEM/F12	Calcium Chloride (CaCl2) (anhyd.)	1050.4504	salt_dissociation	Ca2+	1.0	1050.4504	MAR09082	MAR09082	
+DMEM/F12	Calcium Chloride (CaCl2) (anhyd.)	1050.4504	salt_dissociation	chloride	2.0	2100.9008	MAR09150	MAR09150	
+DMEM/F12	Cupric sulfate (CuSO4-5H2O)	0.0052	salt_dissociation	Cu2+	1.0	0.0052	MAR13073	MAR13073	
+DMEM/F12	Cupric sulfate (CuSO4-5H2O)	0.0052	salt_dissociation	sulfate	1.0	0.0052	MAR09074	MAR09074	
+DMEM/F12	"Ferric Nitrate (Fe(NO3)3""9H2O)"	0.12376237999999999	salt_dissociation	Fe3+	1.0	0.12376237999999999	MAR09096	MAR09096	nitrate has no exchange
+DMEM/F12	"Ferric Nitrate (Fe(NO3)3""9H2O)"	0.12376237999999999	unmapped_ion	nitrate	3.0	0.37128713999999996			nitrate has no exchange
+DMEM/F12	Ferrous sulfate (FeSO4-7H2O)	1.5	salt_dissociation	Fe2+	1.0	1.5	MAR09076	MAR09076	
+DMEM/F12	Ferrous sulfate (FeSO4-7H2O)	1.5	salt_dissociation	sulfate	1.0	1.5	MAR09074	MAR09074	
+DMEM/F12	Magnesium Chloride (anhydrous)	301.47368	salt_dissociation	Mg2+	1.0	301.47368	MAR13072	MAR13072	
+DMEM/F12	Magnesium Chloride (anhydrous)	301.47368	salt_dissociation	chloride	2.0	602.94736	MAR09150	MAR09150	
+DMEM/F12	Magnesium Sulfate (MgSO4) (anhyd.)	407.0	salt_dissociation	Mg2+	1.0	407.0	MAR13072	MAR13072	
+DMEM/F12	Magnesium Sulfate (MgSO4) (anhyd.)	407.0	salt_dissociation	sulfate	1.0	407.0	MAR09074	MAR09074	
+DMEM/F12	Potassium Chloride (KCl)	4157.3333999999995	salt_dissociation	K+	1.0	4157.3333999999995	MAR09081	MAR09081	
+DMEM/F12	Potassium Chloride (KCl)	4157.3333999999995	salt_dissociation	chloride	1.0	4157.3333999999995	MAR09150	MAR09150	
+DMEM/F12	Sodium Bicarbonate (NaHCO3)	29023.81	salt_dissociation	Na+	1.0	29023.81	MAR09077	MAR09077	
+DMEM/F12	Sodium Bicarbonate (NaHCO3)	29023.81	salt_dissociation	HCO3-	1.0	29023.81	MAR09078	MAR09078	
+DMEM/F12	Sodium Chloride (NaCl)	120612.07	salt_dissociation	Na+	1.0	120612.07	MAR09077	MAR09077	
+DMEM/F12	Sodium Chloride (NaCl)	120612.07	salt_dissociation	chloride	1.0	120612.07	MAR09150	MAR09150	
+DMEM/F12	Sodium Phosphate dibasic (Na2HPO4) anhydrous	500.14084999999994	salt_dissociation	Na+	2.0	1000.2816999999999	MAR09077	MAR09077	
+DMEM/F12	Sodium Phosphate dibasic (Na2HPO4) anhydrous	500.14084999999994	salt_dissociation	Pi	1.0	500.14084999999994	MAR09072	MAR09072	
+DMEM/F12	Sodium Phosphate monobasic (NaH2PO4-H2O)	452.89856000000003	salt_dissociation	Na+	1.0	452.89856000000003	MAR09077	MAR09077	
+DMEM/F12	Sodium Phosphate monobasic (NaH2PO4-H2O)	452.89856000000003	salt_dissociation	Pi	1.0	452.89856000000003	MAR09072	MAR09072	
+DMEM/F12	Zinc sulfate (ZnSO4-7H2O)	1.5	salt_dissociation	zinc	1.0	1.5	MAR09080	MAR09080	
+DMEM/F12	Zinc sulfate (ZnSO4-7H2O)	1.5	salt_dissociation	sulfate	1.0	1.5	MAR09074	MAR09074	
+DMEM/F12	D-Glucose (Dextrose)	17505.555999999997	literal	glucose	1.0	17505.555999999997	MAR09034	MAR09034	
+DMEM/F12	Hypoxanthine Na	15.031448	salt_dissociation	hypoxanthine	1.0	15.031448	MAR09358	MAR09358	
+DMEM/F12	Hypoxanthine Na	15.031448	salt_dissociation	Na+	1.0	15.031448	MAR09077	MAR09077	
+DMEM/F12	Linoleic Acid	0.14999999	literal	linoleate	1.0	0.14999999	MAR09035	MAR09035	
+DMEM/F12	Lipoic Acid	0.5097087	literal	lipoic acid	1.0	0.5097087	MAR09167	MAR09167	
+DMEM/F12	Phenol Red	21.519661	unmapped						pH indicator; not a model metabolite
+DMEM/F12	Putrescine 2HCl	0.5031056	salt_dissociation	putrescine	1.0	0.5031056	MAR11426	MAR11426	
+DMEM/F12	Putrescine 2HCl	0.5031056	salt_dissociation	chloride	2.0	1.0062112	MAR09150	MAR09150	
+DMEM/F12	Sodium Pyruvate	500.0	salt_dissociation	pyruvate	1.0	500.0	MAR09133	MAR09133	
+DMEM/F12	Sodium Pyruvate	500.0	salt_dissociation	Na+	1.0	500.0	MAR09077	MAR09077	
+DMEM/F12	Thymidine	1.5082645	literal	thymidine	1.0	1.5082645	MAR09423	MAR09423	
+IMDM	Glycine	400.0	literal	glycine	1.0	400.0	MAR09067	MAR09067	
+IMDM	L-Alanine	280.89887000000004	literal	alanine	1.0	280.89887000000004	MAR09061	MAR09061	
+IMDM	L-Arginine hydrochloride	398.10427999999996	salt_dissociation	arginine	1.0	398.10427999999996	MAR09066	MAR09066	
+IMDM	L-Arginine hydrochloride	398.10427999999996	salt_dissociation	chloride	1.0	398.10427999999996	MAR09150	MAR09150	
+IMDM	L-Asparagine (freebase)	166.66666999999998	literal	asparagine	1.0	166.66666999999998	MAR09062	MAR09062	sheet MW 150 is the monohydrate MW (anhydrous 132)
+IMDM	L-Aspartic acid	225.56391	literal	aspartate	1.0	225.56391	MAR09070	MAR09070	
+IMDM	L-Cystine 2HCl	380.83333000000005	salt_dissociation	cystine	1.0	380.83333000000005	MAR09363	MAR09363	
+IMDM	L-Cystine 2HCl	380.83333000000005	salt_dissociation	chloride	2.0	761.6666600000001	MAR09150	MAR09150	
+IMDM	L-Glutamic Acid	510.20410000000004	literal	glutamate	1.0	510.20410000000004	MAR09071	MAR09071	
+IMDM	L-Glutamine	4000.0	literal	glutamine	1.0	4000.0	MAR09063	MAR09063	
+IMDM	L-Histidine hydrochloride-H2O	200.0	salt_dissociation	histidine	1.0	200.0	MAR09038	MAR09038	
+IMDM	L-Histidine hydrochloride-H2O	200.0	salt_dissociation	chloride	1.0	200.0	MAR09150	MAR09150	
+IMDM	L-Isoleucine	801.5267	literal	isoleucine	1.0	801.5267	MAR09039	MAR09039	
+IMDM	L-Leucine	801.5267	literal	leucine	1.0	801.5267	MAR09040	MAR09040	
+IMDM	L-Lysine hydrochloride	797.8142	salt_dissociation	lysine	1.0	797.8142	MAR09041	MAR09041	
+IMDM	L-Lysine hydrochloride	797.8142	salt_dissociation	chloride	1.0	797.8142	MAR09150	MAR09150	
+IMDM	L-Methionine	201.34228000000002	literal	methionine	1.0	201.34228000000002	MAR09042	MAR09042	
+IMDM	L-Phenylalanine	400.0	literal	phenylalanine	1.0	400.0	MAR09043	MAR09043	
+IMDM	L-Proline	347.82610000000005	literal	proline	1.0	347.82610000000005	MAR09068	MAR09068	
+IMDM	L-Serine	400.0	literal	serine	1.0	400.0	MAR09069	MAR09069	
+IMDM	L-Threonine	798.31934	literal	threonine	1.0	798.31934	MAR09044	MAR09044	
+IMDM	L-Tryptophan	78.431375	literal	tryptophan	1.0	78.431375	MAR09045	MAR09045	
+IMDM	L-Tyrosine disodium salt	462.22222	salt_dissociation	tyrosine	1.0	462.22222	MAR09064	MAR09064	sheet MW 225 = anhydrous Na2-Tyr; Gibco IMDM lists the dihydrate (MW 261)
+IMDM	L-Tyrosine disodium salt	462.22222	salt_dissociation	Na+	2.0	924.44444	MAR09077	MAR09077	sheet MW 225 = anhydrous Na2-Tyr; Gibco IMDM lists the dihydrate (MW 261)
+IMDM	L-Valine	803.4188	literal	valine	1.0	803.4188	MAR09046	MAR09046	
+IMDM	Biotin	0.053278690000000004	literal	biotin	1.0	0.053278690000000004	MAR09109	MAR09109	
+IMDM	Choline chloride	28.571429	salt_dissociation	choline	1.0	28.571429	MAR09083	MAR09083	
+IMDM	Choline chloride	28.571429	salt_dissociation	chloride	1.0	28.571429	MAR09150	MAR09150	
+IMDM	D-Calcium pantothenate	8.385744	salt_dissociation	pantothenate	2.0	16.771488	MAR09145	MAR09145	Ca(pantothenate)2, MW 477
+IMDM	D-Calcium pantothenate	8.385744	salt_dissociation	Ca2+	1.0	8.385744	MAR09082	MAR09082	Ca(pantothenate)2, MW 477
+IMDM	Folic Acid	9.070295000000002	literal	folate	1.0	9.070295000000002	MAR09146	MAR09146	
+IMDM	Niacinamide	32.786883	literal	nicotinamide	1.0	32.786883	MAR09378	MAR09378	
+IMDM	Pyridoxal hydrochloride	19.607844	salt_dissociation	pyridoxal	1.0	19.607844	MAR09400	MAR09400	IMDM uses pyridoxal, not pyridoxine
+IMDM	Pyridoxal hydrochloride	19.607844	salt_dissociation	chloride	1.0	19.607844	MAR09150	MAR09150	IMDM uses pyridoxal, not pyridoxine
+IMDM	Riboflavin	1.0638298	literal	riboflavin	1.0	1.0638298	MAR09143	MAR09143	
+IMDM	Thiamine hydrochloride	11.869436	salt_dissociation	thiamin	1.0	11.869436	MAR09159	MAR09159	thiamine chloride HCl (MW 337): 2 Cl-
+IMDM	Thiamine hydrochloride	11.869436	salt_dissociation	chloride	2.0	23.738872	MAR09150	MAR09150	thiamine chloride HCl (MW 337): 2 Cl-
+IMDM	Vitamin B12	0.009594096	nonliteral	aquacob(III)alamin	1.0	0.009594096	MAR09269	MAR09269	cyanocobalamin -> aquacob(III)alamin (only cobalamin exchange)
+IMDM	i-Inositol	40.0	literal	inositol	1.0	40.0	MAR09361	MAR09361	myo-inositol
+IMDM	Calcium Chloride (CaCl2) (anhyd.)	1486.4864	salt_dissociation	Ca2+	1.0	1486.4864	MAR09082	MAR09082	
+IMDM	Calcium Chloride (CaCl2) (anhyd.)	1486.4864	salt_dissociation	chloride	2.0	2972.9728	MAR09150	MAR09150	
+IMDM	Magnesium Sulfate (MgSO4) (anhyd.)	813.9166	salt_dissociation	Mg2+	1.0	813.9166	MAR13072	MAR13072	
+IMDM	Magnesium Sulfate (MgSO4) (anhyd.)	813.9166	salt_dissociation	sulfate	1.0	813.9166	MAR09074	MAR09074	
+IMDM	Potassium Chloride (KCl)	4400.0	salt_dissociation	K+	1.0	4400.0	MAR09081	MAR09081	
+IMDM	Potassium Chloride (KCl)	4400.0	salt_dissociation	chloride	1.0	4400.0	MAR09150	MAR09150	
+IMDM	Potassium Nitrate (KNO3)	0.7524752	salt_dissociation	K+	1.0	0.7524752	MAR09081	MAR09081	nitrate has no exchange
+IMDM	Potassium Nitrate (KNO3)	0.7524752	unmapped_ion	nitrate	1.0	0.7524752			nitrate has no exchange
+IMDM	Sodium Bicarbonate (NaHCO3)	36000.0	salt_dissociation	Na+	1.0	36000.0	MAR09077	MAR09077	
+IMDM	Sodium Bicarbonate (NaHCO3)	36000.0	salt_dissociation	HCO3-	1.0	36000.0	MAR09078	MAR09078	
+IMDM	Sodium Chloride (NaCl)	77586.205	salt_dissociation	Na+	1.0	77586.205	MAR09077	MAR09077	
+IMDM	Sodium Chloride (NaCl)	77586.205	salt_dissociation	chloride	1.0	77586.205	MAR09150	MAR09150	
+IMDM	Sodium Phosphate monobasic (NaH2PO4-H2O)	905.7971	salt_dissociation	Na+	1.0	905.7971	MAR09077	MAR09077	
+IMDM	Sodium Phosphate monobasic (NaH2PO4-H2O)	905.7971	salt_dissociation	Pi	1.0	905.7971	MAR09072	MAR09072	
+IMDM	Sodium Selenite (Na2SeO3-5H20)	0.06577946600000001	salt_dissociation	Na+	2.0	0.13155893200000002	MAR09077	MAR09077	selenite has no exchange (selenate MAR09169 exists; not substituted)
+IMDM	Sodium Selenite (Na2SeO3-5H20)	0.06577946600000001	unmapped_ion	selenite	1.0	0.06577946600000001			selenite has no exchange (selenate MAR09169 exists; not substituted)
+IMDM	D-Glucose (Dextrose)	25000.0	literal	glucose	1.0	25000.0	MAR09034	MAR09034	
+IMDM	HEPES	25033.612999999998	unmapped						buffer; not a model metabolite
+IMDM	Sodium Pyruvate	1000.0	salt_dissociation	pyruvate	1.0	1000.0	MAR09133	MAR09133	
+IMDM	Sodium Pyruvate	1000.0	salt_dissociation	Na+	1.0	1000.0	MAR09077	MAR09077	
+HPLM	Glucose	5000.0	literal	glucose	1.0	5000.0	MAR09034	MAR09034	
+HPLM	Alanine	430.0	literal	alanine	1.0	430.0	MAR09061	MAR09061	
+HPLM	Arginine	110.0	literal	arginine	1.0	110.0	MAR09066	MAR09066	
+HPLM	Asparagine	50.0	literal	asparagine	1.0	50.0	MAR09062	MAR09062	
+HPLM	Aspartate	20.0	literal	aspartate	1.0	20.0	MAR09070	MAR09070	
+HPLM	Cysteine	40.0	literal	cysteine	1.0	40.0	MAR09065	MAR09065	
+HPLM	Cystine	100.0	literal	cystine	1.0	100.0	MAR09363	MAR09363	
+HPLM	Glutamate	80.0	literal	glutamate	1.0	80.0	MAR09071	MAR09071	
+HPLM	Glutamine	550.0	literal	glutamine	1.0	550.0	MAR09063	MAR09063	
+HPLM	Glycine	300.0	literal	glycine	1.0	300.0	MAR09067	MAR09067	
+HPLM	Histidine	110.0	literal	histidine	1.0	110.0	MAR09038	MAR09038	
+HPLM	Isoleucine	70.0	literal	isoleucine	1.0	70.0	MAR09039	MAR09039	
+HPLM	Leucine	160.0	literal	leucine	1.0	160.0	MAR09040	MAR09040	
+HPLM	Lysine	200.0	literal	lysine	1.0	200.0	MAR09041	MAR09041	
+HPLM	Methionine	30.0	literal	methionine	1.0	30.0	MAR09042	MAR09042	
+HPLM	Phenylalanine	80.0	literal	phenylalanine	1.0	80.0	MAR09043	MAR09043	
+HPLM	Proline	200.0	literal	proline	1.0	200.0	MAR09068	MAR09068	
+HPLM	Serine	150.0	literal	serine	1.0	150.0	MAR09069	MAR09069	
+HPLM	Threonine	140.0	literal	threonine	1.0	140.0	MAR09044	MAR09044	
+HPLM	Tryptophan	60.0	literal	tryptophan	1.0	60.0	MAR09045	MAR09045	
+HPLM	Tyrosine	80.0	literal	tyrosine	1.0	80.0	MAR09064	MAR09064	
+HPLM	Valine	220.0	literal	valine	1.0	220.0	MAR09046	MAR09046	
+HPLM	Biotin	0.8186320658180181	literal	biotin	1.0	0.8186320658180181	MAR09109	MAR09109	
+HPLM	Choline	21.486892995272882	literal	choline	1.0	21.486892995272882	MAR09083	MAR09083	
+HPLM	Folate	2.2655188038060716	literal	folate	1.0	2.2655188038060716	MAR09146	MAR09146	
+HPLM	myo-Inositol	194.27175843694496	literal	inositol	1.0	194.27175843694496	MAR09361	MAR09361	
+HPLM	Niacinamide	8.188666885031116	literal	nicotinamide	1.0	8.188666885031116	MAR09378	MAR09378	
+HPLM	p-Aminobenzoate	7.291818579553742	unmapped						PABA: no exchange in either parent (not a human vitamin)
+HPLM	Pantothenate	1.0492298652788852	literal	pantothenate	1.0	1.0492298652788852	MAR09145	MAR09145	HPLM lists free pantothenate (= 2 x RPMI Ca-pantothenate molarity)
+HPLM	Pyridoxine	4.862867146469559	literal	pyridoxine	1.0	4.862867146469559	MAR09144	MAR09144	
+HPLM	Riboflavin	0.5314061005420342	literal	riboflavin	1.0	0.5314061005420342	MAR09143	MAR09143	
+HPLM	Thiamine	2.9649835443413295	literal	thiamin	1.0	2.9649835443413295	MAR09159	MAR09159	
+HPLM	Vitamin B-12	0.0036890295638829255	nonliteral	aquacob(III)alamin	1.0	0.0036890295638829255	MAR09269	MAR09269	cyanocobalamin -> aquacob(III)alamin (only cobalamin exchange)
+HPLM	2-hydroxybutyrate	50.0	literal	2-hydroxybutyrate	1.0	50.0	MAR09216	MAR09216	
+HPLM	3-hydroxybutyrate	50.0	literal	(R)-3-hydroxybutanoate	1.0	50.0	MAR09134	MAR09134	D-(R)-beta-hydroxybutyrate assumed
+HPLM	4-hydroxyproline	20.0	literal	trans-4-hydroxy-L-proline	1.0	20.0	MAR08386	MAR08386	trans-4-hydroxy-L-proline
+HPLM	Acetate	40.0	literal	acetate	1.0	40.0	MAR09086	MAR09086	
+HPLM	Acetone	60.0	literal	acetone	1.0	60.0	MAR09243	MAR09243	
+HPLM	Acetylglycine	90.0	unmapped						N-acetylglycine: no exchange in either parent
+HPLM	Alpha-aminobutyrate	20.0	literal	(S)-2-aminobutanoate	1.0	20.0	MAR10206	MAR10206	L-2-aminobutyrate (Plasmax PDF: symbol-font alpha)
+HPLM	Betaine	70.0	literal	betaine	1.0	70.0	MAR09341	MAR09341	
+HPLM	Carnitine	40.0	literal	L-carnitine	1.0	40.0	MAR09292	MAR09292	
+HPLM	Citrate	130.0	literal	citrate	1.0	130.0	MAR09286	MAR09286	
+HPLM	Citrulline	40.0	literal	citrulline	1.0	40.0	MAR09201	MAR09201	
+HPLM	Creatine	40.0	literal	creatine	1.0	40.0	MAR09290	MAR09290	
+HPLM	Creatinine	75.0	literal	creatinine	1.0	75.0	MAR09460	MAR09460	
+HPLM	Formate	50.0	literal	formate	1.0	50.0	MAR09318	MAR09318	
+HPLM	Fructose	40.0	literal	fructose	1.0	40.0	MAR09139	MAR09139	
+HPLM	Galactose	60.0	literal	galactose	1.0	60.0	MAR09140	MAR09140	
+HPLM	Glutathione	25.0	literal	GSH	1.0	25.0	MAR09351	MAR09351	reduced (GSH)
+HPLM	Glycerol	120.0	literal	glycerol	1.0	120.0	MAR09085	MAR09085	
+HPLM	Hypoxanthine	10.0	literal	hypoxanthine	1.0	10.0	MAR09358	MAR09358	
+HPLM	Lactate	1600.0	literal	L-lactate	1.0	1600.0	MAR09135	MAR09135	L-lactate assumed
+HPLM	Malonate	10.0	literal	malonate	1.0	10.0	MAR09164	MAR09164	
+HPLM	Ornithine	70.0	literal	ornithine	1.0	70.0	MAR09087	MAR09087	
+HPLM	Pyruvate	50.0	literal	pyruvate	1.0	50.0	MAR09133	MAR09133	
+HPLM	Succinate	20.0	literal	succinate	1.0	20.0	MAR09415	MAR09415	
+HPLM	Taurine	90.0	literal	taurine	1.0	90.0	MAR09418	MAR09418	
+HPLM	Urea	5000.0	literal	urea	1.0	5000.0	MAR09438	MAR09438	
+HPLM	Uric acid	350.0	literal	urate	1.0	350.0	MAR09075	MAR09075	
+HPLM	CaCl2	2350.0	salt_dissociation	Ca2+	1.0	2350.0	MAR09082	MAR09082	
+HPLM	CaCl2	2350.0	salt_dissociation	chloride	2.0	4700.0	MAR09150	MAR09150	
+HPLM	KCl	4100.0	salt_dissociation	K+	1.0	4100.0	MAR09081	MAR09081	
+HPLM	KCl	4100.0	salt_dissociation	chloride	1.0	4100.0	MAR09150	MAR09150	
+HPLM	MgCl2	480.0	salt_dissociation	Mg2+	1.0	480.0	MAR13072	MAR13072	
+HPLM	MgCl2	480.0	salt_dissociation	chloride	2.0	960.0	MAR09150	MAR09150	
+HPLM	MgSO4	350.0	salt_dissociation	Mg2+	1.0	350.0	MAR13072	MAR13072	
+HPLM	MgSO4	350.0	salt_dissociation	sulfate	1.0	350.0	MAR09074	MAR09074	
+HPLM	NaCl	105000.0	salt_dissociation	Na+	1.0	105000.0	MAR09077	MAR09077	
+HPLM	NaCl	105000.0	salt_dissociation	chloride	1.0	105000.0	MAR09150	MAR09150	
+HPLM	NaHCO3	24000.0	salt_dissociation	Na+	1.0	24000.0	MAR09077	MAR09077	
+HPLM	NaHCO3	24000.0	salt_dissociation	HCO3-	1.0	24000.0	MAR09078	MAR09078	
+HPLM	Na2HPO4	870.0	salt_dissociation	Na+	2.0	1740.0	MAR09077	MAR09077	
+HPLM	Na2HPO4	870.0	salt_dissociation	Pi	1.0	870.0	MAR09072	MAR09072	
+HPLM	Ca(NO3)2.4H2O	40.0	salt_dissociation	Ca2+	1.0	40.0	MAR09082	MAR09082	nitrate has no exchange
+HPLM	Ca(NO3)2.4H2O	40.0	unmapped_ion	nitrate	2.0	80.0			nitrate has no exchange
+HPLM	NH4Cl	40.0	salt_dissociation	NH4+	1.0	40.0	MAR11420	MAR11420	
+HPLM	NH4Cl	40.0	salt_dissociation	chloride	1.0	40.0	MAR09150	MAR09150	
+HPLM	Phenol red	14.0	unmapped						pH indicator; not a model metabolite
+Plasmax	L-Alanine	510.0	literal	alanine	1.0	510.0	MAR09061	MAR09061	
+Plasmax	L-Arginine	64.0	literal	arginine	1.0	64.0	MAR09066	MAR09066	
+Plasmax	L-Asparagine	41.0	literal	asparagine	1.0	41.0	MAR09062	MAR09062	
+Plasmax	L-Aspartic acid	6.0	literal	aspartate	1.0	6.0	MAR09070	MAR09070	
+Plasmax	L-Cysteine	33.0	literal	cysteine	1.0	33.0	MAR09065	MAR09065	
+Plasmax	L-Glutamate	98.0	literal	glutamate	1.0	98.0	MAR09071	MAR09071	
+Plasmax	L-Glutamine	650.0	literal	glutamine	1.0	650.0	MAR09063	MAR09063	
+Plasmax	Glycine	330.0	literal	glycine	1.0	330.0	MAR09067	MAR09067	
+Plasmax	L-Histidine	120.0	literal	histidine	1.0	120.0	MAR09038	MAR09038	
+Plasmax	L-Isoleucine	140.0	literal	isoleucine	1.0	140.0	MAR09039	MAR09039	
+Plasmax	L-Leucine	170.0	literal	leucine	1.0	170.0	MAR09040	MAR09040	
+Plasmax	L-Lysine	220.0	literal	lysine	1.0	220.0	MAR09041	MAR09041	
+Plasmax	L-Methionine	30.0	literal	methionine	1.0	30.0	MAR09042	MAR09042	
+Plasmax	L-Phenylalanine	68.0	literal	phenylalanine	1.0	68.0	MAR09043	MAR09043	
+Plasmax	L-Proline	360.0	literal	proline	1.0	360.0	MAR09068	MAR09068	
+Plasmax	L-Serine	140.0	literal	serine	1.0	140.0	MAR09069	MAR09069	
+Plasmax	L-Threonine	240.0	literal	threonine	1.0	240.0	MAR09044	MAR09044	
+Plasmax	L-Tryptophan	78.0	literal	tryptophan	1.0	78.0	MAR09045	MAR09045	
+Plasmax	L-Tyrosine	74.0	literal	tyrosine	1.0	74.0	MAR09064	MAR09064	
+Plasmax	L-Valine	230.0	literal	valine	1.0	230.0	MAR09046	MAR09046	
+Plasmax	alpha-Aminobutyrate	41.0	literal	(S)-2-aminobutanoate	1.0	41.0	MAR10206	MAR10206	L-2-aminobutyrate (Plasmax PDF: symbol-font alpha)
+Plasmax	L-Citrulline	55.0	literal	citrulline	1.0	55.0	MAR09201	MAR09201	
+Plasmax	L-Cystine	65.0	literal	cystine	1.0	65.0	MAR09363	MAR09363	
+Plasmax	L-Homocysteine	9.0	literal	homocysteine	1.0	9.0	MAR09853	MAR09853	
+Plasmax	4-Hydroxy-L-proline	13.0	literal	trans-4-hydroxy-L-proline	1.0	13.0	MAR08386	MAR08386	trans-4-hydroxy-L-proline
+Plasmax	L-Ornitine	80.0	literal	ornithine	1.0	80.0	MAR09087	MAR09087	source typo 'Ornitine'
+Plasmax	L-Pyroglutamate	20.0	literal	5-oxoproline	1.0	20.0	MAR09025	MAR09025	pyroglutamate = 5-oxoproline
+Plasmax	L-Acetyl glycine	70.0	unmapped						N-acetylglycine: no exchange in either parent
+Plasmax	L-Carnosine	6.0	literal	carnosine	1.0	6.0	MAR08644	MAR08644	
+Plasmax	Glutathione (reduced)	37.0	literal	GSH	1.0	37.0	MAR09351	MAR09351	
+Plasmax	Taurine	130.0	literal	taurine	1.0	130.0	MAR09418	MAR09418	
+Plasmax	N-Trimethylglycine (betaine)	72.0	literal	betaine	1.0	72.0	MAR09341	MAR09341	
+Plasmax	Acetate	42.0	literal	acetate	1.0	42.0	MAR09086	MAR09086	
+Plasmax	Acetone	55.0	literal	acetone	1.0	55.0	MAR09243	MAR09243	
+Plasmax	Acetyl carnitine	5.0	literal	O-acetylcarnitine	1.0	5.0	MAR09920	MAR09920	
+Plasmax	Citrate	114.0	literal	citrate	1.0	114.0	MAR09286	MAR09286	
+Plasmax	Carnitine	46.0	literal	L-carnitine	1.0	46.0	MAR09292	MAR09292	
+Plasmax	Creatine	37.0	literal	creatine	1.0	37.0	MAR09290	MAR09290	
+Plasmax	Creatinine	74.0	literal	creatinine	1.0	74.0	MAR09460	MAR09460	
+Plasmax	Formate	33.0	literal	formate	1.0	33.0	MAR09318	MAR09318	
+Plasmax	D-Glucose	5560.0	literal	glucose	1.0	5560.0	MAR09034	MAR09034	
+Plasmax	Glycerol	82.0	literal	glycerol	1.0	82.0	MAR09085	MAR09085	
+Plasmax	2-Hydroxybutyrate	31.0	literal	2-hydroxybutyrate	1.0	31.0	MAR09216	MAR09216	
+Plasmax	3-Hydroxybutyrate	77.0	literal	(R)-3-hydroxybutanoate	1.0	77.0	MAR09134	MAR09134	D-(R)-beta-hydroxybutyrate assumed
+Plasmax	3-Hydroxyisobutyrate	20.0	literal	3-hydroxyisobutyrate	1.0	20.0	MAR10185	MAR10185	
+Plasmax	Hypoxanthine	5.0	literal	hypoxanthine	1.0	5.0	MAR09358	MAR09358	
+Plasmax	Lactate	500.0	literal	L-lactate	1.0	500.0	MAR09135	MAR09135	L-lactate assumed
+Plasmax	Methyl acetoacetate	41.0	nonliteral	acetoacetate	1.0	41.0	MAR09132	MAR09132	methyl ester: no exchange; acetoacetate after hydrolysis (non-literal; alternative = unmapped)
+Plasmax	Phenol Red	25.0	unmapped						pH indicator; not a model metabolite
+Plasmax	Pyruvate	100.0	literal	pyruvate	1.0	100.0	MAR09133	MAR09133	
+Plasmax	Succinate	23.0	literal	succinate	1.0	23.0	MAR09415	MAR09415	
+Plasmax	Uracil	2.0	literal	uracil	1.0	2.0	MAR09437	MAR09437	
+Plasmax	Urate	270.0	literal	urate	1.0	270.0	MAR09075	MAR09075	
+Plasmax	Urea	3000.0	literal	urea	1.0	3000.0	MAR09438	MAR09438	
+Plasmax	Uridine	3.0	literal	uridine	1.0	3.0	MAR09439	MAR09439	
+Plasmax	Ammonium Chloride	50.0	salt_dissociation	NH4+	1.0	50.0	MAR11420	MAR11420	
+Plasmax	Ammonium Chloride	50.0	salt_dissociation	chloride	1.0	50.0	MAR09150	MAR09150	
+Plasmax	Calcium Chloride	1800.0	salt_dissociation	Ca2+	1.0	1800.0	MAR09082	MAR09082	
+Plasmax	Calcium Chloride	1800.0	salt_dissociation	chloride	2.0	3600.0	MAR09150	MAR09150	
+Plasmax	Magnesium Sulfate	813.0	salt_dissociation	Mg2+	1.0	813.0	MAR13072	MAR13072	
+Plasmax	Magnesium Sulfate	813.0	salt_dissociation	sulfate	1.0	813.0	MAR09074	MAR09074	
+Plasmax	Potassium Chloride	5330.0	salt_dissociation	K+	1.0	5330.0	MAR09081	MAR09081	
+Plasmax	Potassium Chloride	5330.0	salt_dissociation	chloride	1.0	5330.0	MAR09150	MAR09150	
+Plasmax	Sodium Bicarbonate	26191.0	salt_dissociation	Na+	1.0	26191.0	MAR09077	MAR09077	
+Plasmax	Sodium Bicarbonate	26191.0	salt_dissociation	HCO3-	1.0	26191.0	MAR09078	MAR09078	
+Plasmax	Sodium Chloride	118706.0	salt_dissociation	Na+	1.0	118706.0	MAR09077	MAR09077	
+Plasmax	Sodium Chloride	118706.0	salt_dissociation	chloride	1.0	118706.0	MAR09150	MAR09150	
+Plasmax	Sodium Phosphate monobasic	1010.0	salt_dissociation	Na+	1.0	1010.0	MAR09077	MAR09077	Plasmax; HPLM column marks dibasic
+Plasmax	Sodium Phosphate monobasic	1010.0	salt_dissociation	Pi	1.0	1010.0	MAR09072	MAR09072	Plasmax; HPLM column marks dibasic
+Plasmax	Ammonium Metavanadate	0.0026	salt_dissociation	NH4+	1.0	0.0026	MAR11420	MAR11420	vanadate has no exchange
+Plasmax	Ammonium Metavanadate	0.0026	unmapped_ion	vanadate	1.0	0.0026			vanadate has no exchange
+Plasmax	Cupric Sulfate	0.0052	salt_dissociation	Cu2+	1.0	0.0052	MAR13073	MAR13073	
+Plasmax	Cupric Sulfate	0.0052	salt_dissociation	sulfate	1.0	0.0052	MAR09074	MAR09074	
+Plasmax	Ferric Nitrate	0.1238	salt_dissociation	Fe3+	1.0	0.1238	MAR09096	MAR09096	nitrate has no exchange
+Plasmax	Ferric Nitrate	0.1238	unmapped_ion	nitrate	3.0	0.37139999999999995			nitrate has no exchange
+Plasmax	Ferric Sulfate	1.0428	salt_dissociation	Fe3+	2.0	2.0856	MAR09096	MAR09096	Fe2(SO4)3 assumed (source says 'Ferric Sulfate'; Advanced DMEM/F12 lists ferrous sulfate)
+Plasmax	Ferric Sulfate	1.0428	salt_dissociation	sulfate	3.0	3.1284	MAR09074	MAR09074	Fe2(SO4)3 assumed (source says 'Ferric Sulfate'; Advanced DMEM/F12 lists ferrous sulfate)
+Plasmax	Manganous Chloride	0.0002	unmapped_ion	Mn2+	1.0	0.0002			Mn2+ has no exchange
+Plasmax	Manganous Chloride	0.0002	salt_dissociation	chloride	2.0	0.0004	MAR09150	MAR09150	Mn2+ has no exchange
+Plasmax	Sodium Selenite	0.0289	salt_dissociation	Na+	2.0	0.0578	MAR09077	MAR09077	selenite has no exchange (selenate MAR09169 exists; not substituted)
+Plasmax	Sodium Selenite	0.0289	unmapped_ion	selenite	1.0	0.0289			selenite has no exchange (selenate MAR09169 exists; not substituted)
+Plasmax	Zinc Sulfate	1.5	salt_dissociation	zinc	1.0	1.5	MAR09080	MAR09080	
+Plasmax	Zinc Sulfate	1.5	salt_dissociation	sulfate	1.0	1.5	MAR09074	MAR09074	
+Plasmax	Ascorbate	62.0	literal	ascorbate	1.0	62.0	MAR09158	MAR09158	
+Plasmax	D-Biotin	4.1	literal	biotin	1.0	4.1	MAR09109	MAR09109	
+Plasmax	Choline	7.1	literal	choline	1.0	7.1	MAR09083	MAR09083	
+Plasmax	Folate	2.3	literal	folate	1.0	2.3	MAR09146	MAR09146	
+Plasmax	myo-Inositol	11.1	literal	inositol	1.0	11.1	MAR09361	MAR09361	
+Plasmax	Niacinamide	8.2	literal	nicotinamide	1.0	8.2	MAR09378	MAR09378	
+Plasmax	D-Pantothenic acid hemicalcium	4.2	salt_dissociation	pantothenate	1.0	4.2	MAR09145	MAR09145	hemicalcium salt: per pantothenate
+Plasmax	D-Pantothenic acid hemicalcium	4.2	salt_dissociation	Ca2+	0.5	2.1	MAR09082	MAR09082	hemicalcium salt: per pantothenate
+Plasmax	Pyridoxine	4.9	literal	pyridoxine	1.0	4.9	MAR09144	MAR09144	
+Plasmax	Riboflavin	0.3	literal	riboflavin	1.0	0.3	MAR09143	MAR09143	
+Plasmax	Thiamine	3.0	literal	thiamin	1.0	3.0	MAR09159	MAR09159	
+Plasmax	Vitamin B12	0.005	nonliteral	aquacob(III)alamin	1.0	0.005	MAR09269	MAR09269	cyanocobalamin -> aquacob(III)alamin (only cobalamin exchange)

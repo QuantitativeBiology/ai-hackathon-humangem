@@ -1,0 +1,12 @@
+parent	human1	human1	human1	human2	human2	human2
+medium	chol	chol+calcidiol	chol+vitD3	chol	chol+calcidiol	chol+vitD3
+gene						
+DHCR24	0.0	1.0	0.0	0.0	1.0	0.0
+DHCR7	1.0	1.0	1.0	1.0	1.0	1.0
+EBP	0.0	1.0	0.0	0.0	1.0	0.0
+FDFT1	0.0	1.0	0.0	0.0	1.0	0.0
+HMGCR	0.0	0.0	0.0	0.0	0.0	0.0
+HSD17B7	1.0	1.0	1.0	0.0	1.0	0.0
+LSS	0.0	1.0	0.0	0.0	1.0	0.0
+NSDHL	0.0	1.0	0.0	0.0	1.0	0.0
+SQLE	0.0	1.0	0.0	0.0	1.0	0.0

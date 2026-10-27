@@ -1,0 +1,182 @@
+parent	test	gene	metabolite	value	detail	cholesterol
+human1	pool_consumer		cholesterol[c]	-0.1155	MAR10063 -> lipid_pool_biomass	
+human1	pool_consumer		cholesterol[c]	-0.020401	MAR09932 -> ADP, H+, Pi, biomass	
+human1	pool_consumer		cholesterol[c]	-1.0	MAR00021 -> biomass	
+human1	pool_consumer		cholesterol[c]	-0.0082708	MAR12140 -> biomass	
+human1	pool_consumer		cholesterol[c]	-0.005	MAR00031 -> lipid droplet	
+human1	pool_consumer		cholesterol[c]	-0.020401	MAR04413 -> ADP, H+, Pi, biomass	
+human1	pool_consumer		cholesterol[c]	-0.020401	MAR09931 -> ADP, H+, Pi, biomass	
+human1	pool_consumer		cholesterol[r]	-500.0	MAR05244 -> VLDL	
+human1	pool_consumer		cholesterol[r]	-20.0	MAR05234 -> HDL	
+human1	pool_consumer		cholesterol[r]	-680.0	MAR05239 -> LDL	
+human1	ko	HMGCR		0.0		False
+human1	ko	FDFT1		0.0		False
+human1	ko	SQLE		0.0		False
+human1	ko	LSS		0.0		False
+human1	ko	CYP51A1		1.0		False
+human1	ko	TM7SF2		1.0		False
+human1	ko	MSMO1		1.0		False
+human1	ko	NSDHL		0.0		False
+human1	ko	HSD17B7		1.0		False
+human1	ko	EBP		0.0		False
+human1	ko	SC5D		1.0		False
+human1	ko	DHCR7		0.0		False
+human1	ko	DHCR24		0.0		False
+human1	ko	HMGCR		0.0		True
+human1	ko	FDFT1		0.0		True
+human1	rescue_by_sink	FDFT1	14-demethyllanosterol[c] MAM00367c	1.000019		True
+human1	rescue_by_sink	FDFT1	24,25-dihydrolanosterol[c] MAM00609c	1.000019		True
+human1	rescue_by_sink	FDFT1	4alpha-methylzymosterol[c] MAM00968c	1.000019		True
+human1	rescue_by_sink	FDFT1	5alpha-cholesta-7,24-dien-3beta-ol[c] MAM01066c	1.000019		True
+human1	rescue_by_sink	FDFT1	lanosterol[c] MAM02336c	1.000019		True
+human1	rescue_by_sink	FDFT1	lathosterol[c] MAM02343c	1.000019		True
+human1	rescue_by_sink	FDFT1	squalene[c] MAM02933c	1.000019		True
+human1	rescue_by_sink	FDFT1	zymosterol[c] MAM03158c	1.000019		True
+human1	rescue_by_sink	FDFT1	14-demethyllanosterol[r] MAM00367r	1.000019		True
+human1	rescue_by_sink	FDFT1	zymosterol[r] MAM03158r	1.000019		True
+human1	rescue_by_sink	FDFT1	5alpha-cholesta-7,24-dien-3beta-ol[r] MAM01066r	1.000019		True
+human1	rescue_by_sink	FDFT1	lathosterol[r] MAM02343r	1.000019		True
+human1	rescue_by_sink	FDFT1	lanosterol[r] MAM02336r	1.000019		True
+human1	rescue_by_sink	FDFT1	squalene[r] MAM02933r	1.000019		True
+human1	rescue_by_sink	FDFT1	4alpha-methylzymosterol[r] MAM00968r	1.000019		True
+human1	ko	SQLE		0.0		True
+human1	rescue_by_sink	SQLE	14-demethyllanosterol[c] MAM00367c	1.000019		True
+human1	rescue_by_sink	SQLE	24,25-dihydrolanosterol[c] MAM00609c	1.000019		True
+human1	rescue_by_sink	SQLE	4alpha-methylzymosterol[c] MAM00968c	1.000019		True
+human1	rescue_by_sink	SQLE	5alpha-cholesta-7,24-dien-3beta-ol[c] MAM01066c	1.000019		True
+human1	rescue_by_sink	SQLE	lanosterol[c] MAM02336c	1.000019		True
+human1	rescue_by_sink	SQLE	lathosterol[c] MAM02343c	1.000019		True
+human1	rescue_by_sink	SQLE	zymosterol[c] MAM03158c	1.000019		True
+human1	rescue_by_sink	SQLE	14-demethyllanosterol[r] MAM00367r	1.000019		True
+human1	rescue_by_sink	SQLE	zymosterol[r] MAM03158r	1.000019		True
+human1	rescue_by_sink	SQLE	5alpha-cholesta-7,24-dien-3beta-ol[r] MAM01066r	1.000019		True
+human1	rescue_by_sink	SQLE	lathosterol[r] MAM02343r	1.000019		True
+human1	rescue_by_sink	SQLE	lanosterol[r] MAM02336r	1.000019		True
+human1	rescue_by_sink	SQLE	4alpha-methylzymosterol[r] MAM00968r	1.000019		True
+human1	ko	LSS		0.0		True
+human1	rescue_by_sink	LSS	14-demethyllanosterol[c] MAM00367c	1.000019		True
+human1	rescue_by_sink	LSS	24,25-dihydrolanosterol[c] MAM00609c	1.000019		True
+human1	rescue_by_sink	LSS	4alpha-methylzymosterol[c] MAM00968c	1.000019		True
+human1	rescue_by_sink	LSS	5alpha-cholesta-7,24-dien-3beta-ol[c] MAM01066c	1.000019		True
+human1	rescue_by_sink	LSS	lanosterol[c] MAM02336c	1.000019		True
+human1	rescue_by_sink	LSS	lathosterol[c] MAM02343c	1.000019		True
+human1	rescue_by_sink	LSS	zymosterol[c] MAM03158c	1.000019		True
+human1	rescue_by_sink	LSS	14-demethyllanosterol[r] MAM00367r	1.000019		True
+human1	rescue_by_sink	LSS	zymosterol[r] MAM03158r	1.000019		True
+human1	rescue_by_sink	LSS	5alpha-cholesta-7,24-dien-3beta-ol[r] MAM01066r	1.000019		True
+human1	rescue_by_sink	LSS	lathosterol[r] MAM02343r	1.000019		True
+human1	rescue_by_sink	LSS	lanosterol[r] MAM02336r	1.000019		True
+human1	rescue_by_sink	LSS	4alpha-methylzymosterol[r] MAM00968r	1.000019		True
+human1	ko	CYP51A1		1.0		True
+human1	ko	TM7SF2		1.0		True
+human1	ko	MSMO1		1.0		True
+human1	ko	NSDHL		0.0		True
+human1	rescue_by_sink	NSDHL	5alpha-cholesta-7,24-dien-3beta-ol[c] MAM01066c	1.000019		True
+human1	rescue_by_sink	NSDHL	lathosterol[c] MAM02343c	1.000019		True
+human1	rescue_by_sink	NSDHL	zymosterol[c] MAM03158c	1.000019		True
+human1	rescue_by_sink	NSDHL	zymosterol[r] MAM03158r	1.000019		True
+human1	rescue_by_sink	NSDHL	5alpha-cholesta-7,24-dien-3beta-ol[r] MAM01066r	1.000019		True
+human1	rescue_by_sink	NSDHL	lathosterol[r] MAM02343r	1.000019		True
+human1	rescue_by_sink	NSDHL	4alpha-methylzymosterol[r] MAM00968r	1.000019		True
+human1	ko	HSD17B7		1.0		True
+human1	ko	EBP		0.0		True
+human1	rescue_by_sink	EBP	5alpha-cholesta-7,24-dien-3beta-ol[c] MAM01066c	1.000019		True
+human1	rescue_by_sink	EBP	lathosterol[c] MAM02343c	1.000019		True
+human1	rescue_by_sink	EBP	5alpha-cholesta-7,24-dien-3beta-ol[r] MAM01066r	1.000019		True
+human1	rescue_by_sink	EBP	lathosterol[r] MAM02343r	1.000019		True
+human1	ko	SC5D		1.0		True
+human1	ko	DHCR7		1.0		True
+human1	ko	DHCR24		0.0		True
+human1	rescue_by_sink	DHCR24	24,25-dihydrolanosterol[c] MAM00609c	1.000019		True
+human1	rescue_by_sink	DHCR24	lathosterol[c] MAM02343c	1.000019		True
+human1	rescue_by_sink	DHCR24	lathosterol[r] MAM02343r	1.000019		True
+human2	pool_consumer		cholesterol[c]	-1.0	MAR00021 -> biomass	
+human2	pool_consumer		cholesterol[c]	-0.020401	MAR09931 -> ADP, H+, Pi, biomass	
+human2	pool_consumer		cholesterol[c]	-0.1155	MAR10063 -> lipid_pool_biomass	
+human2	pool_consumer		cholesterol[c]	-0.020401	MAR09932 -> ADP, H+, Pi, biomass	
+human2	pool_consumer		cholesterol[c]	-0.005	MAR00031 -> lipid droplet	
+human2	pool_consumer		cholesterol[c]	-0.0082708	MAR12140 -> biomass	
+human2	pool_consumer		cholesterol[c]	-0.020401	MAR04413 -> ADP, H+, Pi, biomass	
+human2	pool_consumer		cholesterol[r]	-500.0	MAR05244 -> VLDL	
+human2	pool_consumer		cholesterol[r]	-20.0	MAR05234 -> HDL	
+human2	pool_consumer		cholesterol[r]	-680.0	MAR05239 -> LDL	
+human2	ko	HMGCR		0.0		False
+human2	ko	FDFT1		0.0		False
+human2	ko	SQLE		0.0		False
+human2	ko	LSS		0.0		False
+human2	ko	CYP51A1		1.0		False
+human2	ko	TM7SF2		1.0		False
+human2	ko	MSMO1		1.0		False
+human2	ko	NSDHL		0.0		False
+human2	ko	HSD17B7		0.0		False
+human2	ko	EBP		0.0		False
+human2	ko	SC5D		0.999738		False
+human2	ko	DHCR7		0.0		False
+human2	ko	DHCR24		0.0		False
+human2	ko	HMGCR		0.0		True
+human2	ko	FDFT1		0.0		True
+human2	rescue_by_sink	FDFT1	14-demethyllanosterol[c] MAM00367c	1.000857		True
+human2	rescue_by_sink	FDFT1	24,25-dihydrolanosterol[c] MAM00609c	1.000857		True
+human2	rescue_by_sink	FDFT1	4alpha-methylzymosterol[c] MAM00968c	1.000857		True
+human2	rescue_by_sink	FDFT1	5alpha-cholesta-7,24-dien-3beta-ol[c] MAM01066c	1.000857		True
+human2	rescue_by_sink	FDFT1	5alpha-cholesta-7,24-dien-3beta-ol[r] MAM01066r	1.000857		True
+human2	rescue_by_sink	FDFT1	lanosterol[c] MAM02336c	1.000857		True
+human2	rescue_by_sink	FDFT1	lanosterol[r] MAM02336r	1.000857		True
+human2	rescue_by_sink	FDFT1	lathosterol[c] MAM02343c	1.000857		True
+human2	rescue_by_sink	FDFT1	lathosterol[r] MAM02343r	1.000857		True
+human2	rescue_by_sink	FDFT1	squalene[c] MAM02933c	1.000857		True
+human2	rescue_by_sink	FDFT1	squalene[r] MAM02933r	1.000857		True
+human2	rescue_by_sink	FDFT1	zymosterol[c] MAM03158c	1.000857		True
+human2	rescue_by_sink	FDFT1	zymosterol[r] MAM03158r	1.000857		True
+human2	ko	SQLE		0.0		True
+human2	rescue_by_sink	SQLE	14-demethyllanosterol[c] MAM00367c	1.000857		True
+human2	rescue_by_sink	SQLE	24,25-dihydrolanosterol[c] MAM00609c	1.000857		True
+human2	rescue_by_sink	SQLE	4alpha-methylzymosterol[c] MAM00968c	1.000857		True
+human2	rescue_by_sink	SQLE	5alpha-cholesta-7,24-dien-3beta-ol[c] MAM01066c	1.000857		True
+human2	rescue_by_sink	SQLE	5alpha-cholesta-7,24-dien-3beta-ol[r] MAM01066r	1.000857		True
+human2	rescue_by_sink	SQLE	lanosterol[c] MAM02336c	1.000857		True
+human2	rescue_by_sink	SQLE	lanosterol[r] MAM02336r	1.000857		True
+human2	rescue_by_sink	SQLE	lathosterol[c] MAM02343c	1.000857		True
+human2	rescue_by_sink	SQLE	lathosterol[r] MAM02343r	1.000857		True
+human2	rescue_by_sink	SQLE	zymosterol[c] MAM03158c	1.000857		True
+human2	rescue_by_sink	SQLE	zymosterol[r] MAM03158r	1.000857		True
+human2	ko	LSS		0.0		True
+human2	rescue_by_sink	LSS	14-demethyllanosterol[c] MAM00367c	1.000857		True
+human2	rescue_by_sink	LSS	24,25-dihydrolanosterol[c] MAM00609c	1.000857		True
+human2	rescue_by_sink	LSS	4alpha-methylzymosterol[c] MAM00968c	1.000857		True
+human2	rescue_by_sink	LSS	5alpha-cholesta-7,24-dien-3beta-ol[c] MAM01066c	1.000857		True
+human2	rescue_by_sink	LSS	5alpha-cholesta-7,24-dien-3beta-ol[r] MAM01066r	1.000857		True
+human2	rescue_by_sink	LSS	lanosterol[c] MAM02336c	1.000857		True
+human2	rescue_by_sink	LSS	lanosterol[r] MAM02336r	1.000857		True
+human2	rescue_by_sink	LSS	lathosterol[c] MAM02343c	1.000857		True
+human2	rescue_by_sink	LSS	lathosterol[r] MAM02343r	1.000857		True
+human2	rescue_by_sink	LSS	zymosterol[c] MAM03158c	1.000857		True
+human2	rescue_by_sink	LSS	zymosterol[r] MAM03158r	1.000857		True
+human2	ko	CYP51A1		1.0		True
+human2	ko	TM7SF2		1.0		True
+human2	ko	MSMO1		1.0		True
+human2	ko	NSDHL		0.0		True
+human2	rescue_by_sink	NSDHL	5alpha-cholesta-7,24-dien-3beta-ol[c] MAM01066c	1.000857		True
+human2	rescue_by_sink	NSDHL	5alpha-cholesta-7,24-dien-3beta-ol[r] MAM01066r	1.000857		True
+human2	rescue_by_sink	NSDHL	lathosterol[c] MAM02343c	1.000857		True
+human2	rescue_by_sink	NSDHL	lathosterol[r] MAM02343r	1.000857		True
+human2	rescue_by_sink	NSDHL	zymosterol[c] MAM03158c	1.000857		True
+human2	rescue_by_sink	NSDHL	zymosterol[r] MAM03158r	1.000857		True
+human2	ko	HSD17B7		0.0		True
+human2	rescue_by_sink	HSD17B7	5alpha-cholesta-7,24-dien-3beta-ol[c] MAM01066c	1.000857		True
+human2	rescue_by_sink	HSD17B7	5alpha-cholesta-7,24-dien-3beta-ol[r] MAM01066r	1.000857		True
+human2	rescue_by_sink	HSD17B7	lathosterol[c] MAM02343c	1.000857		True
+human2	rescue_by_sink	HSD17B7	lathosterol[r] MAM02343r	1.000857		True
+human2	rescue_by_sink	HSD17B7	zymosterol[c] MAM03158c	1.000857		True
+human2	rescue_by_sink	HSD17B7	zymosterol[r] MAM03158r	1.000857		True
+human2	ko	EBP		0.0		True
+human2	rescue_by_sink	EBP	5alpha-cholesta-7,24-dien-3beta-ol[c] MAM01066c	1.000857		True
+human2	rescue_by_sink	EBP	5alpha-cholesta-7,24-dien-3beta-ol[r] MAM01066r	1.000857		True
+human2	rescue_by_sink	EBP	lathosterol[c] MAM02343c	1.000857		True
+human2	rescue_by_sink	EBP	lathosterol[r] MAM02343r	1.000857		True
+human2	ko	SC5D		1.0		True
+human2	ko	DHCR7		1.0		True
+human2	ko	DHCR24		0.0		True
+human2	rescue_by_sink	DHCR24	24,25-dihydrolanosterol[c] MAM00609c	1.000019		True
+human2	rescue_by_sink	DHCR24	lathosterol[c] MAM02343c	1.000019		True
+human2	rescue_by_sink	DHCR24	lathosterol[r] MAM02343r	1.000019		True

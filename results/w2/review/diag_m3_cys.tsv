@@ -1,0 +1,89 @@
+parent	block	item	value	detail
+human1	M3	O2=0.01	0.1233384177428581	growth (pFBA)
+human1	M3	O2=0.01 O2[c] consumer MAR02380	0.00756425573290967	 | Omega-6 fatty acid metabolism
+human1	M3	O2=0.01 O2[c] consumer MAR02293	0.001203835185563319	 | Fatty acid desaturation (even-chain)
+human1	M3	O2=0.01 O2[c] consumer MAR02472	0.0007393633423144792	 | Omega-3 fatty acid metabolism
+human1	M3	O2=0.01 O2[c] consumer MAR02359	5.6874103254959946e-05	 | Fatty acid desaturation (even-chain)
+human1	M3	O2=0.01 O2[c] consumer MAR02296	5.6874103254959946e-05	 | Fatty acid desaturation (even-chain)
+human1	M3	O2=0.01 O2[r] consumer MAR02200	3.054845930655109e-05	Lanosterol, NADPH:Oxygen Oxidoreductase (14-Methyl Cleaving) | Cholesterol metabolism
+human1	M3	O2=0.01 O2[r] consumer MAR02300	2.036563953770073e-05	Methylsterol Monooxygenase | Cholesterol metabolism
+human1	M3	O2=0.01 O2[c] consumer MAR02403	1.8958034418319988e-05	 | Omega-6 fatty acid metabolism
+human1	M3	O2=0.01 uptake aspartate	18.729503793926	C-mol/h 74.9 (46.4% of carbon uptake)
+human1	M3	O2=0.01 uptake glycine	24.777552714801583	C-mol/h 49.6 (30.7% of carbon uptake)
+human1	M3	O2=0.01 uptake trans-4-hydroxy-L-proline	5.6797515018354625	C-mol/h 28.4 (17.6% of carbon uptake)
+human1	M3	O2=0.01 uptake glucose	0.5	C-mol/h 3 (1.9% of carbon uptake)
+human1	M3	O2=0.01 uptake serine	0.4752451724399662	C-mol/h 1.43 (0.9% of carbon uptake)
+human1	M3	O2=0.01 uptake glutamine	0.07560926835921038	C-mol/h 0.378 (0.2% of carbon uptake)
+human1	M3	O2=0.01 uptake leucine	0.06058111118317961	C-mol/h 0.363 (0.2% of carbon uptake)
+human1	M3	O2=0.01 uptake lysine	0.047506061020548544	C-mol/h 0.285 (0.2% of carbon uptake)
+human1	M3	O2=1.0	3.2914085660601398	growth (pFBA)
+human1	M3	O2=1.0 O2[r] consumer MAR02200	0.2392865660051866	Lanosterol, NADPH:Oxygen Oxidoreductase (14-Methyl Cleaving) | Cholesterol metabolism
+human1	M3	O2=1.0 O2[c] consumer MAR00181	0.2018597009009391	Fatty Acyl Coenzyme A Desaturase (N-C20:3CoA -> N-C20:4CoA) | Fatty acid biosynthesis
+human1	M3	O2=1.0 O2[r] consumer MAR02300	0.15952437733679106	Methylsterol Monooxygenase | Cholesterol metabolism
+human1	M3	O2=1.0 O2[c] consumer MAR00146	0.11600864035301735	Stearoyl Coenzyme A Desaturase (N-C18:0CoA -> N-C18:1CoA) | Fatty acid biosynthesis
+human1	M3	O2=1.0 O2[r] consumer MAR01714	0.07976218866839553	Squalene Epoxidase, Endoplasmic Reticular (NADP) | Cholesterol metabolism
+human1	M3	O2=1.0 O2[r] consumer MAR01508	0.0794904499771816	Lathosterol Oxidase | Cholesterol metabolism
+human1	M3	O2=1.0 O2[c] consumer MAR00145	0.06394932557687301	Fatty Acyl Coenzyme A Desaturase (N-C18:2CoA -> N-C18:3CoA) | Fatty acid biosynthesis
+human1	M3	O2=1.0 O2[c] consumer MAR02293	0.032125541371452716	 | Fatty acid desaturation (even-chain)
+human1	M3	O2=1.0 uptake aspartate	597.0122541478792	C-mol/h 2.39e+03 (46.9% of carbon uptake)
+human1	M3	O2=1.0 uptake glycine	783.0348355787733	C-mol/h 1.57e+03 (30.8% of carbon uptake)
+human1	M3	O2=1.0 uptake trans-4-hydroxy-L-proline	201.32676187233383	C-mol/h 1.01e+03 (19.8% of carbon uptake)
+human1	M3	O2=1.0 uptake serine	3.826013339754332	C-mol/h 11.5 (0.2% of carbon uptake)
+human1	M3	O2=1.0 uptake glutamate	2.031698374460426	C-mol/h 10.2 (0.2% of carbon uptake)
+human1	M3	O2=1.0 uptake leucine	1.616667312089859	C-mol/h 9.7 (0.2% of carbon uptake)
+human1	M3	O2=1.0 uptake inositol	1.4041093794008548	C-mol/h 8.42 (0.2% of carbon uptake)
+human1	M3	O2=1.0 uptake GSH	0.7845447537781938	C-mol/h 7.85 (0.2% of carbon uptake)
+human1	SLC7A11	cystine[e] reaction MAR08687		MAM01629e + MAM02896c --> MAM01629c + MAM02896e | GPR:  and  and 
+human1	SLC7A11	cystine[e] reaction MAR06891		MAM01307c + MAM01629e --> MAM01307e + MAM01629c | GPR:  and 
+human1	SLC7A11	cystine[e] reaction MAR04931		MAM01629e + MAM01974c --> MAM01629c + MAM01974e | GPR:  and 
+human1	SLC7A11	cystine[e] reaction MAR06892		MAM01629e + MAM02360c --> MAM01629c + MAM02360e | GPR:  and 
+human1	SLC7A11	RPMI M1, GSH open		WT 46.3671; KO None
+human1	SLC7A11	RPMI M1, GSH closed		WT 46.3521; KO None
+human1	ATP	RPMI M1 + nothing	46.36713196733637	WT growth
+human1	ATP	RPMI M1 + ATP	66.26177403695041	WT growth
+human1	ATP	RPMI M1 + adenine+hypoxanthine+thymidine	65.66438051259624	WT growth
+human1	ATP	RPMI M1 + ATP+adenine+hypoxanthine+thymidine	83.80185961196663	WT growth
+human2	M3	O2=0.01	0.12295770531975109	growth (pFBA)
+human2	M3	O2=0.01 O2[c] consumer MAR00181	0.007540906916038348	fatty acyl-CoA desaturase (N-C20:3CoA -> N-C20:4CoA) | Fatty acid biosynthesis
+human2	M3	O2=0.01 O2[c] consumer MAR02293	0.001200119271098835	stearoyl-CoA 9-desaturase (stearoyl-CoA) | Fatty acid desaturation (even-chain)
+human2	M3	O2=0.01 O2[c] consumer MAR00145	0.0007370811271315678	fatty acyl-CoA desaturase (N-C18:2CoA -> N-C18:3CoA) | Fatty acid biosynthesis
+human2	M3	O2=0.01 O2[c] consumer MAR02359	5.669854824088983e-05	fatty acid desaturase (oleoyl-CoA) | Fatty acid desaturation (even-chain)
+human2	M3	O2=0.01 O2[c] consumer MAR02296	5.6698548240889825e-05	stearoyl-CoA 9-desaturase (stearoyl-CoA) | Fatty acid desaturation (even-chain)
+human2	M3	O2=0.01 O2[c] consumer MAR01497	3.054269400142618e-05	Cytochrome P450 Lanosterol 14-Alpha-Demethylase (NADP) | Cholesterol metabolism
+human2	M3	O2=0.01 O2[c] consumer MAR02289	1.8899516080296614e-05	stearoyl-CoA 9-desaturase (heptadecanoyl-CoA) | Fatty acid desaturation (odd-chain)
+human2	M3	O2=0.01 O2[c] consumer MAR02403	1.8899516080296614e-05	(9Z,12Z,15Z,18Z)-tetracosatetraenoyl-CoA hydroxylation | Omega-6 fatty acid metabolism
+human2	M3	O2=0.01 uptake glutamate	3.844664091465328	C-mol/h 19.2 (36.3% of carbon uptake)
+human2	M3	O2=0.01 uptake aspartate	3.3672830759287553	C-mol/h 13.5 (25.4% of carbon uptake)
+human2	M3	O2=0.01 uptake pyruvate	4.392125584075181	C-mol/h 13.2 (24.9% of carbon uptake)
+human2	M3	O2=0.01 uptake glucose	0.5	C-mol/h 3 (5.7% of carbon uptake)
+human2	M3	O2=0.01 uptake glutamine	0.07537588294457245	C-mol/h 0.377 (0.7% of carbon uptake)
+human2	M3	O2=0.01 uptake leucine	0.06039411363565944	C-mol/h 0.362 (0.7% of carbon uptake)
+human2	M3	O2=0.01 uptake serine	0.10459817103588273	C-mol/h 0.314 (0.6% of carbon uptake)
+human2	M3	O2=0.01 uptake lysine	0.04735942262568002	C-mol/h 0.284 (0.5% of carbon uptake)
+human2	M3	O2=1.0	2.927253675016788	growth (pFBA)
+human2	M3	O2=1.0 O2[c] consumer MAR01497	0.20847050044221876	Cytochrome P450 Lanosterol 14-Alpha-Demethylase (NADP) | Cholesterol metabolism
+human2	M3	O2=1.0 O2[c] consumer MAR00181	0.17952634546593924	fatty acyl-CoA desaturase (N-C20:3CoA -> N-C20:4CoA) | Fatty acid biosynthesis
+human2	M3	O2=1.0 O2[c] consumer MAR01470	0.06949016681407293	squalene,NADPH-hemoprotein:oxygen oxidoreductase (2,3-epoxidizing) | Cholesterol biosynthesis 1 (Bloch pathway)
+human2	M3	O2=1.0 O2[c] consumer MAR01502	0.06949016681407291	4alpha-methylsterol monooxygenase (4alpha-methylzymosterol) | Cholesterol biosynthesis 1 (Bloch pathway)
+human2	M3	O2=1.0 O2[c] consumer MAR01494	0.06949016681407291	4alpha-methylsterol monooxygenase | Cholesterol biosynthesis 1 (Bloch pathway)
+human2	M3	O2=1.0 O2[c] consumer MAR01490	0.06949016681407291	14-demethyllanosterol,ferrocytochrome-b5:oxygen oxidoreductase (hydroxylating) | Cholesterol biosynthesis 1 (Bloch pathway)
+human2	M3	O2=1.0 O2[c] consumer MAR01504	0.06949016681407291	4alpha-methylsterol monooxygenase | Cholesterol biosynthesis 1 (Bloch pathway)
+human2	M3	O2=1.0 O2[c] consumer MAR01503	0.06949016681407291	4alpha-methylsterol monooxygenase | Cholesterol biosynthesis 1 (Bloch pathway)
+human2	M3	O2=1.0 uptake glutamate	116.8690814214679	C-mol/h 584 (37.1% of carbon uptake)
+human2	M3	O2=1.0 uptake pyruvate	159.55396974552238	C-mol/h 479 (30.4% of carbon uptake)
+human2	M3	O2=1.0 uptake aspartate	93.38358305312998	C-mol/h 374 (23.7% of carbon uptake)
+human2	M3	O2=1.0 uptake inositol	5.065655541304496	C-mol/h 30.4 (1.9% of carbon uptake)
+human2	M3	O2=1.0 uptake serine	7.311979878406391	C-mol/h 21.9 (1.4% of carbon uptake)
+human2	M3	O2=1.0 uptake linoleate	0.680693112177401	C-mol/h 12.3 (0.8% of carbon uptake)
+human2	M3	O2=1.0 uptake leucine	1.4378024592247123	C-mol/h 8.63 (0.5% of carbon uptake)
+human2	M3	O2=1.0 uptake threonine	1.7291873095577013	C-mol/h 6.92 (0.4% of carbon uptake)
+human2	SLC7A11	cystine[e] reaction MAR06892		MAM01629e + MAM02360c --> MAM01629c + MAM02360e | GPR: SLC7A9 and SLC3A1
+human2	SLC7A11	cystine[e] reaction MAR04931		MAM01629e + MAM01974c --> MAM01629c + MAM01974e | GPR: SLC7A11 and SLC3A2
+human2	SLC7A11	cystine[e] reaction MAR06891		MAM01307c + MAM01629e --> MAM01307e + MAM01629c | GPR: SLC7A9 and SLC3A1
+human2	SLC7A11	cystine[e] reaction MAR08687		MAM01629e + MAM02896c --> MAM01629c + MAM02896e | GPR: SLC7A9 and SLC7A6 and SLC3A1
+human2	SLC7A11	RPMI M1, GSH open	0.99999999999999	WT 46.4001; KO 46.40006202058566
+human2	SLC7A11	RPMI M1, GSH closed	1.000000000000003	WT 46.3850; KO 46.38499383000427
+human2	ATP	RPMI M1 + nothing	46.400062020586056	WT growth
+human2	ATP	RPMI M1 + ATP	66.30981110060941	WT growth
+human2	ATP	RPMI M1 + adenine+hypoxanthine+thymidine	74.8242005871195	WT growth
+human2	ATP	RPMI M1 + ATP+adenine+hypoxanthine+thymidine	92.3577946186891	WT growth

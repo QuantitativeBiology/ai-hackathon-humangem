@@ -1,0 +1,611 @@
+medium	parent	rxn	metabolite	uM	components
+DMEM	human1	MAR09034	glucose	25000.0	D-Glucose (Dextrose)
+DMEM	human1	MAR09038	histidine	200.0	L-Histidine hydrochloride-H2O
+DMEM	human1	MAR09039	isoleucine	801.5267	L-Isoleucine
+DMEM	human1	MAR09040	leucine	801.5267	L-Leucine
+DMEM	human1	MAR09041	lysine	797.8142	L-Lysine hydrochloride
+DMEM	human1	MAR09042	methionine	201.34228000000002	L-Methionine
+DMEM	human1	MAR09043	phenylalanine	400.0	L-Phenylalanine
+DMEM	human1	MAR09044	threonine	798.31934	L-Threonine
+DMEM	human1	MAR09045	tryptophan	78.431375	L-Tryptophan
+DMEM	human1	MAR09046	valine	803.4188	L-Valine
+DMEM	human1	MAR09064	tyrosine	398.46742	L-Tyrosine disodium salt dihydrate
+DMEM	human1	MAR09066	arginine	398.10427999999996	L-Arginine hydrochloride
+DMEM	human1	MAR09067	glycine	400.0	Glycine
+DMEM	human1	MAR09069	serine	400.0	L-Serine
+DMEM	human1	MAR09072	Pi	905.7971	Sodium Phosphate monobasic (NaH2PO4-H2O)
+DMEM	human1	MAR09074	sulfate	813.9166	Magnesium Sulfate (MgSO4) (anhyd.)
+DMEM	human1	MAR09077	Na+	156095.17794	L-Tyrosine disodium salt dihydrate; Sodium Bicarbonate (NaHCO3); Sodium Chloride (NaCl); Sodium Phosphate monobasic (NaH2PO4-H2O)
+DMEM	human1	MAR09078	HCO3-	44047.62	Sodium Bicarbonate (NaHCO3)
+DMEM	human1	MAR09081	K+	5333.3335	Potassium Chloride (KCl)
+DMEM	human1	MAR09082	Ca2+	1810.187544	Calcium Chloride (CaCl2) (anhyd.); D-Calcium pantothenate
+DMEM	human1	MAR09083	choline	28.571429	Choline chloride
+DMEM	human1	MAR09096	Fe3+	0.24752475999999998	"Ferric Nitrate (Fe(NO3)3""9H2O)"
+DMEM	human1	MAR09143	riboflavin	1.0638298	Riboflavin
+DMEM	human1	MAR09144	pyridoxine	19.417476	Pyridoxine hydrochloride
+DMEM	human1	MAR09145	pantothenate	16.771488	D-Calcium pantothenate
+DMEM	human1	MAR09146	folate	9.070295000000002	Folic Acid
+DMEM	human1	MAR09150	chloride	121151.965277	Calcium Chloride (CaCl2) (anhyd.); Choline chloride; L-Arginine hydrochloride; L-Cystine 2HCl; L-Histidine hydrochloride-H2O; L-Lysine hydrochloride; Potassium Chloride (KCl); Pyridoxine hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride
+DMEM	human1	MAR09159	thiamin	11.869436	Thiamine hydrochloride
+DMEM	human1	MAR09361	inositol	40.0	i-Inositol
+DMEM	human1	MAR09363	cystine	201.27796	L-Cystine 2HCl
+DMEM	human1	MAR09378	nicotinamide	32.786883	Niacinamide
+DMEM	human1	MAR13072	Mg2+	813.9166	Magnesium Sulfate (MgSO4) (anhyd.)
+DMEM	human2	MAR09034	glucose	25000.0	D-Glucose (Dextrose)
+DMEM	human2	MAR09038	histidine	200.0	L-Histidine hydrochloride-H2O
+DMEM	human2	MAR09039	isoleucine	801.5267	L-Isoleucine
+DMEM	human2	MAR09040	leucine	801.5267	L-Leucine
+DMEM	human2	MAR09041	lysine	797.8142	L-Lysine hydrochloride
+DMEM	human2	MAR09042	methionine	201.34228000000002	L-Methionine
+DMEM	human2	MAR09043	phenylalanine	400.0	L-Phenylalanine
+DMEM	human2	MAR09044	threonine	798.31934	L-Threonine
+DMEM	human2	MAR09045	tryptophan	78.431375	L-Tryptophan
+DMEM	human2	MAR09046	valine	803.4188	L-Valine
+DMEM	human2	MAR09064	tyrosine	398.46742	L-Tyrosine disodium salt dihydrate
+DMEM	human2	MAR09066	arginine	398.10427999999996	L-Arginine hydrochloride
+DMEM	human2	MAR09067	glycine	400.0	Glycine
+DMEM	human2	MAR09069	serine	400.0	L-Serine
+DMEM	human2	MAR09072	Pi	905.7971	Sodium Phosphate monobasic (NaH2PO4-H2O)
+DMEM	human2	MAR09074	sulfate	813.9166	Magnesium Sulfate (MgSO4) (anhyd.)
+DMEM	human2	MAR09077	Na+	156095.17794	L-Tyrosine disodium salt dihydrate; Sodium Bicarbonate (NaHCO3); Sodium Chloride (NaCl); Sodium Phosphate monobasic (NaH2PO4-H2O)
+DMEM	human2	MAR09078	HCO3-	44047.62	Sodium Bicarbonate (NaHCO3)
+DMEM	human2	MAR09081	K+	5333.3335	Potassium Chloride (KCl)
+DMEM	human2	MAR09082	Ca2+	1810.187544	Calcium Chloride (CaCl2) (anhyd.); D-Calcium pantothenate
+DMEM	human2	MAR09083	choline	28.571429	Choline chloride
+DMEM	human2	MAR09096	Fe3+	0.24752475999999998	"Ferric Nitrate (Fe(NO3)3""9H2O)"
+DMEM	human2	MAR09143	riboflavin	1.0638298	Riboflavin
+DMEM	human2	MAR09144	pyridoxine	19.417476	Pyridoxine hydrochloride
+DMEM	human2	MAR09145	pantothenate	16.771488	D-Calcium pantothenate
+DMEM	human2	MAR09146	folate	9.070295000000002	Folic Acid
+DMEM	human2	MAR09150	chloride	121151.965277	Calcium Chloride (CaCl2) (anhyd.); Choline chloride; L-Arginine hydrochloride; L-Cystine 2HCl; L-Histidine hydrochloride-H2O; L-Lysine hydrochloride; Potassium Chloride (KCl); Pyridoxine hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride
+DMEM	human2	MAR09159	thiamin	11.869436	Thiamine hydrochloride
+DMEM	human2	MAR09361	inositol	40.0	i-Inositol
+DMEM	human2	MAR09363	cystine	201.27796	L-Cystine 2HCl
+DMEM	human2	MAR09378	nicotinamide	32.786883	Niacinamide
+DMEM	human2	MAR13072	Mg2+	813.9166	Magnesium Sulfate (MgSO4) (anhyd.)
+DMEM/F12	human1	MAR09034	glucose	17505.555999999997	D-Glucose (Dextrose)
+DMEM/F12	human1	MAR09035	linoleate	0.14999999	Linoleic Acid
+DMEM/F12	human1	MAR09038	histidine	149.90476	L-Histidine hydrochloride-H2O
+DMEM/F12	human1	MAR09039	isoleucine	415.80152999999996	L-Isoleucine
+DMEM/F12	human1	MAR09040	leucine	450.76334	L-Leucine
+DMEM/F12	human1	MAR09041	lysine	498.63390000000004	L-Lysine hydrochloride
+DMEM/F12	human1	MAR09042	methionine	115.70469	L-Methionine
+DMEM/F12	human1	MAR09043	phenylalanine	215.0303	L-Phenylalanine
+DMEM/F12	human1	MAR09044	threonine	449.15968	L-Threonine
+DMEM/F12	human1	MAR09045	tryptophan	44.21569	L-Tryptophan
+DMEM/F12	human1	MAR09046	valine	220.94017	L-Valine
+DMEM/F12	human1	MAR09061	alanine	49.999997	L-Alanine
+DMEM/F12	human1	MAR09062	asparagine	50.0	L-Asparagine-H2O
+DMEM/F12	human1	MAR09064	tyrosine	213.75479	L-Tyrosine disodium salt dihydrate
+DMEM/F12	human1	MAR09065	cysteine	99.77271999999999	L-Cysteine hydrochloride-H2O
+DMEM/F12	human1	MAR09066	arginine	699.0521600000001	L-Arginine hydrochloride
+DMEM/F12	human1	MAR09067	glycine	250.0	Glycine
+DMEM/F12	human1	MAR09068	proline	150.0	L-Proline
+DMEM/F12	human1	MAR09069	serine	250.0	L-Serine
+DMEM/F12	human1	MAR09070	aspartate	50.0	L-Aspartic acid
+DMEM/F12	human1	MAR09071	glutamate	50.0	L-Glutamic Acid
+DMEM/F12	human1	MAR09072	Pi	953.03941	Sodium Phosphate dibasic (Na2HPO4) anhydrous; Sodium Phosphate monobasic (NaH2PO4-H2O)
+DMEM/F12	human1	MAR09074	sulfate	410.0052	Cupric sulfate (CuSO4-5H2O); Ferrous sulfate (FeSO4-7H2O); Magnesium Sulfate (MgSO4) (anhyd.); Zinc sulfate (ZnSO4-7H2O)
+DMEM/F12	human1	MAR09076	Fe2+	1.5	Ferrous sulfate (FeSO4-7H2O)
+DMEM/F12	human1	MAR09077	Na+	152031.601288	Hypoxanthine Na; L-Tyrosine disodium salt dihydrate; Sodium Bicarbonate (NaHCO3); Sodium Chloride (NaCl); Sodium Phosphate dibasic (Na2HPO4) anhydrous; Sodium Phosphate monobasic (NaH2PO4-H2O); Sodium Pyruvate
+DMEM/F12	human1	MAR09078	HCO3-	29023.81	Sodium Bicarbonate (NaHCO3)
+DMEM/F12	human1	MAR09080	zinc	1.5	Zinc sulfate (ZnSO4-7H2O)
+DMEM/F12	human1	MAR09081	K+	4157.3333999999995	Potassium Chloride (KCl)
+DMEM/F12	human1	MAR09082	Ca2+	1055.1464167	Calcium Chloride (CaCl2) (anhyd.); D-Calcium pantothenate
+DMEM/F12	human1	MAR09083	choline	64.14285	Choline chloride
+DMEM/F12	human1	MAR09096	Fe3+	0.12376237999999999	"Ferric Nitrate (Fe(NO3)3""9H2O)"
+DMEM/F12	human1	MAR09109	biotin	0.014344263	Biotin
+DMEM/F12	human1	MAR09133	pyruvate	500.0	Sodium Pyruvate
+DMEM/F12	human1	MAR09143	riboflavin	0.5824467999999999	Riboflavin
+DMEM/F12	human1	MAR09144	pyridoxine	9.708738	Pyridoxine hydrochloride
+DMEM/F12	human1	MAR09145	pantothenate	9.392033399999999	D-Calcium pantothenate
+DMEM/F12	human1	MAR09146	folate	6.0090707	Folic Acid
+DMEM/F12	human1	MAR09150	chloride	129208.28733800001	Calcium Chloride (CaCl2) (anhyd.); Choline chloride; L-Arginine hydrochloride; L-Cysteine hydrochloride-H2O; L-Cystine 2HCl; L-Histidine hydrochloride-H2O; L-Lysine hydrochloride; Magnesium Chloride (anhydrous); Potassium Chloride (KCl); Putrescine 2HCl; Pyridoxine hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride
+DMEM/F12	human1	MAR09159	thiamin	6.4391694	Thiamine hydrochloride
+DMEM/F12	human1	MAR09167	lipoic acid	0.5097087	Lipoic Acid
+DMEM/F12	human1	MAR09269	aquacob(III)alamin	0.50184503	Vitamin B12
+DMEM/F12	human1	MAR09358	hypoxanthine	15.031448	Hypoxanthine Na
+DMEM/F12	human1	MAR09361	inositol	70.0	i-Inositol
+DMEM/F12	human1	MAR09363	cystine	99.96805	L-Cystine 2HCl
+DMEM/F12	human1	MAR09378	nicotinamide	16.557377000000002	Niacinamide
+DMEM/F12	human1	MAR09423	thymidine	1.5082645	Thymidine
+DMEM/F12	human1	MAR11426	putrescine	0.5031056	Putrescine 2HCl
+DMEM/F12	human1	MAR13072	Mg2+	708.4736800000001	Magnesium Chloride (anhydrous); Magnesium Sulfate (MgSO4) (anhyd.)
+DMEM/F12	human1	MAR13073	Cu2+	0.0052	Cupric sulfate (CuSO4-5H2O)
+DMEM/F12	human2	MAR09034	glucose	17505.555999999997	D-Glucose (Dextrose)
+DMEM/F12	human2	MAR09035	linoleate	0.14999999	Linoleic Acid
+DMEM/F12	human2	MAR09038	histidine	149.90476	L-Histidine hydrochloride-H2O
+DMEM/F12	human2	MAR09039	isoleucine	415.80152999999996	L-Isoleucine
+DMEM/F12	human2	MAR09040	leucine	450.76334	L-Leucine
+DMEM/F12	human2	MAR09041	lysine	498.63390000000004	L-Lysine hydrochloride
+DMEM/F12	human2	MAR09042	methionine	115.70469	L-Methionine
+DMEM/F12	human2	MAR09043	phenylalanine	215.0303	L-Phenylalanine
+DMEM/F12	human2	MAR09044	threonine	449.15968	L-Threonine
+DMEM/F12	human2	MAR09045	tryptophan	44.21569	L-Tryptophan
+DMEM/F12	human2	MAR09046	valine	220.94017	L-Valine
+DMEM/F12	human2	MAR09061	alanine	49.999997	L-Alanine
+DMEM/F12	human2	MAR09062	asparagine	50.0	L-Asparagine-H2O
+DMEM/F12	human2	MAR09064	tyrosine	213.75479	L-Tyrosine disodium salt dihydrate
+DMEM/F12	human2	MAR09065	cysteine	99.77271999999999	L-Cysteine hydrochloride-H2O
+DMEM/F12	human2	MAR09066	arginine	699.0521600000001	L-Arginine hydrochloride
+DMEM/F12	human2	MAR09067	glycine	250.0	Glycine
+DMEM/F12	human2	MAR09068	proline	150.0	L-Proline
+DMEM/F12	human2	MAR09069	serine	250.0	L-Serine
+DMEM/F12	human2	MAR09070	aspartate	50.0	L-Aspartic acid
+DMEM/F12	human2	MAR09071	glutamate	50.0	L-Glutamic Acid
+DMEM/F12	human2	MAR09072	Pi	953.03941	Sodium Phosphate dibasic (Na2HPO4) anhydrous; Sodium Phosphate monobasic (NaH2PO4-H2O)
+DMEM/F12	human2	MAR09074	sulfate	410.0052	Cupric sulfate (CuSO4-5H2O); Ferrous sulfate (FeSO4-7H2O); Magnesium Sulfate (MgSO4) (anhyd.); Zinc sulfate (ZnSO4-7H2O)
+DMEM/F12	human2	MAR09076	Fe2+	1.5	Ferrous sulfate (FeSO4-7H2O)
+DMEM/F12	human2	MAR09077	Na+	152031.601288	Hypoxanthine Na; L-Tyrosine disodium salt dihydrate; Sodium Bicarbonate (NaHCO3); Sodium Chloride (NaCl); Sodium Phosphate dibasic (Na2HPO4) anhydrous; Sodium Phosphate monobasic (NaH2PO4-H2O); Sodium Pyruvate
+DMEM/F12	human2	MAR09078	HCO3-	29023.81	Sodium Bicarbonate (NaHCO3)
+DMEM/F12	human2	MAR09080	zinc	1.5	Zinc sulfate (ZnSO4-7H2O)
+DMEM/F12	human2	MAR09081	K+	4157.3333999999995	Potassium Chloride (KCl)
+DMEM/F12	human2	MAR09082	Ca2+	1055.1464167	Calcium Chloride (CaCl2) (anhyd.); D-Calcium pantothenate
+DMEM/F12	human2	MAR09083	choline	64.14285	Choline chloride
+DMEM/F12	human2	MAR09096	Fe3+	0.12376237999999999	"Ferric Nitrate (Fe(NO3)3""9H2O)"
+DMEM/F12	human2	MAR09109	biotin	0.014344263	Biotin
+DMEM/F12	human2	MAR09133	pyruvate	500.0	Sodium Pyruvate
+DMEM/F12	human2	MAR09143	riboflavin	0.5824467999999999	Riboflavin
+DMEM/F12	human2	MAR09144	pyridoxine	9.708738	Pyridoxine hydrochloride
+DMEM/F12	human2	MAR09145	pantothenate	9.392033399999999	D-Calcium pantothenate
+DMEM/F12	human2	MAR09146	folate	6.0090707	Folic Acid
+DMEM/F12	human2	MAR09150	chloride	129208.28733800001	Calcium Chloride (CaCl2) (anhyd.); Choline chloride; L-Arginine hydrochloride; L-Cysteine hydrochloride-H2O; L-Cystine 2HCl; L-Histidine hydrochloride-H2O; L-Lysine hydrochloride; Magnesium Chloride (anhydrous); Potassium Chloride (KCl); Putrescine 2HCl; Pyridoxine hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride
+DMEM/F12	human2	MAR09159	thiamin	6.4391694	Thiamine hydrochloride
+DMEM/F12	human2	MAR09167	lipoic acid	0.5097087	Lipoic Acid
+DMEM/F12	human2	MAR09269	aquacob(III)alamin	0.50184503	Vitamin B12
+DMEM/F12	human2	MAR09358	hypoxanthine	15.031448	Hypoxanthine Na
+DMEM/F12	human2	MAR09361	inositol	70.0	i-Inositol
+DMEM/F12	human2	MAR09363	cystine	99.96805	L-Cystine 2HCl
+DMEM/F12	human2	MAR09378	nicotinamide	16.557377000000002	Niacinamide
+DMEM/F12	human2	MAR09423	thymidine	1.5082645	Thymidine
+DMEM/F12	human2	MAR11426	putrescine	0.5031056	Putrescine 2HCl
+DMEM/F12	human2	MAR13072	Mg2+	708.4736800000001	Magnesium Chloride (anhydrous); Magnesium Sulfate (MgSO4) (anhyd.)
+DMEM/F12	human2	MAR13073	Cu2+	0.0052	Cupric sulfate (CuSO4-5H2O)
+HPLM	human1	MAR08386	trans-4-hydroxy-L-proline	20.0	4-hydroxyproline
+HPLM	human1	MAR09034	glucose	5000.0	Glucose
+HPLM	human1	MAR09038	histidine	110.0	Histidine
+HPLM	human1	MAR09039	isoleucine	70.0	Isoleucine
+HPLM	human1	MAR09040	leucine	160.0	Leucine
+HPLM	human1	MAR09041	lysine	200.0	Lysine
+HPLM	human1	MAR09042	methionine	30.0	Methionine
+HPLM	human1	MAR09043	phenylalanine	80.0	Phenylalanine
+HPLM	human1	MAR09044	threonine	140.0	Threonine
+HPLM	human1	MAR09045	tryptophan	60.0	Tryptophan
+HPLM	human1	MAR09046	valine	220.0	Valine
+HPLM	human1	MAR09061	alanine	430.0	Alanine
+HPLM	human1	MAR09062	asparagine	50.0	Asparagine
+HPLM	human1	MAR09063	glutamine	550.0	Glutamine
+HPLM	human1	MAR09064	tyrosine	80.0	Tyrosine
+HPLM	human1	MAR09065	cysteine	40.0	Cysteine
+HPLM	human1	MAR09066	arginine	110.0	Arginine
+HPLM	human1	MAR09067	glycine	300.0	Glycine
+HPLM	human1	MAR09068	proline	200.0	Proline
+HPLM	human1	MAR09069	serine	150.0	Serine
+HPLM	human1	MAR09070	aspartate	20.0	Aspartate
+HPLM	human1	MAR09071	glutamate	80.0	Glutamate
+HPLM	human1	MAR09072	Pi	870.0	Na2HPO4
+HPLM	human1	MAR09074	sulfate	350.0	MgSO4
+HPLM	human1	MAR09075	urate	350.0	Uric acid
+HPLM	human1	MAR09077	Na+	130740.0	Na2HPO4; NaCl; NaHCO3
+HPLM	human1	MAR09078	HCO3-	24000.0	NaHCO3
+HPLM	human1	MAR09081	K+	4100.0	KCl
+HPLM	human1	MAR09082	Ca2+	2390.0	Ca(NO3)2.4H2O; CaCl2
+HPLM	human1	MAR09083	choline	21.486892995272882	Choline
+HPLM	human1	MAR09085	glycerol	120.0	Glycerol
+HPLM	human1	MAR09086	acetate	40.0	Acetate
+HPLM	human1	MAR09087	ornithine	70.0	Ornithine
+HPLM	human1	MAR09109	biotin	0.8186320658180181	Biotin
+HPLM	human1	MAR09133	pyruvate	50.0	Pyruvate
+HPLM	human1	MAR09134	(R)-3-hydroxybutanoate	50.0	3-hydroxybutyrate
+HPLM	human1	MAR09135	L-lactate	1600.0	Lactate
+HPLM	human1	MAR09139	fructose	40.0	Fructose
+HPLM	human1	MAR09140	galactose	60.0	Galactose
+HPLM	human1	MAR09143	riboflavin	0.5314061005420342	Riboflavin
+HPLM	human1	MAR09144	pyridoxine	4.862867146469559	Pyridoxine
+HPLM	human1	MAR09145	pantothenate	1.0492298652788852	Pantothenate
+HPLM	human1	MAR09146	folate	2.2655188038060716	Folate
+HPLM	human1	MAR09150	chloride	114800.0	CaCl2; KCl; MgCl2; NH4Cl; NaCl
+HPLM	human1	MAR09159	thiamin	2.9649835443413295	Thiamine
+HPLM	human1	MAR09164	malonate	10.0	Malonate
+HPLM	human1	MAR09201	citrulline	40.0	Citrulline
+HPLM	human1	MAR09216	2-hydroxybutyrate	50.0	2-hydroxybutyrate
+HPLM	human1	MAR09243	acetone	60.0	Acetone
+HPLM	human1	MAR09269	aquacob(III)alamin	0.0036890295638829255	Vitamin B-12
+HPLM	human1	MAR09286	citrate	130.0	Citrate
+HPLM	human1	MAR09290	creatine	40.0	Creatine
+HPLM	human1	MAR09292	L-carnitine	40.0	Carnitine
+HPLM	human1	MAR09318	formate	50.0	Formate
+HPLM	human1	MAR09341	betaine	70.0	Betaine
+HPLM	human1	MAR09351	GSH	25.0	Glutathione
+HPLM	human1	MAR09358	hypoxanthine	10.0	Hypoxanthine
+HPLM	human1	MAR09361	inositol	194.27175843694496	myo-Inositol
+HPLM	human1	MAR09363	cystine	100.0	Cystine
+HPLM	human1	MAR09378	nicotinamide	8.188666885031116	Niacinamide
+HPLM	human1	MAR09415	succinate	20.0	Succinate
+HPLM	human1	MAR09418	taurine	90.0	Taurine
+HPLM	human1	MAR09438	urea	5000.0	Urea
+HPLM	human1	MAR09460	creatinine	75.0	Creatinine
+HPLM	human1	MAR10206	(S)-2-aminobutanoate	20.0	Alpha-aminobutyrate
+HPLM	human1	MAR11420	NH4+	40.0	NH4Cl
+HPLM	human1	MAR13072	Mg2+	830.0	MgCl2; MgSO4
+HPLM	human2	MAR08386	trans-4-hydroxy-L-proline	20.0	4-hydroxyproline
+HPLM	human2	MAR09034	glucose	5000.0	Glucose
+HPLM	human2	MAR09038	histidine	110.0	Histidine
+HPLM	human2	MAR09039	isoleucine	70.0	Isoleucine
+HPLM	human2	MAR09040	leucine	160.0	Leucine
+HPLM	human2	MAR09041	lysine	200.0	Lysine
+HPLM	human2	MAR09042	methionine	30.0	Methionine
+HPLM	human2	MAR09043	phenylalanine	80.0	Phenylalanine
+HPLM	human2	MAR09044	threonine	140.0	Threonine
+HPLM	human2	MAR09045	tryptophan	60.0	Tryptophan
+HPLM	human2	MAR09046	valine	220.0	Valine
+HPLM	human2	MAR09061	alanine	430.0	Alanine
+HPLM	human2	MAR09062	asparagine	50.0	Asparagine
+HPLM	human2	MAR09063	glutamine	550.0	Glutamine
+HPLM	human2	MAR09064	tyrosine	80.0	Tyrosine
+HPLM	human2	MAR09065	cysteine	40.0	Cysteine
+HPLM	human2	MAR09066	arginine	110.0	Arginine
+HPLM	human2	MAR09067	glycine	300.0	Glycine
+HPLM	human2	MAR09068	proline	200.0	Proline
+HPLM	human2	MAR09069	serine	150.0	Serine
+HPLM	human2	MAR09070	aspartate	20.0	Aspartate
+HPLM	human2	MAR09071	glutamate	80.0	Glutamate
+HPLM	human2	MAR09072	Pi	870.0	Na2HPO4
+HPLM	human2	MAR09074	sulfate	350.0	MgSO4
+HPLM	human2	MAR09075	urate	350.0	Uric acid
+HPLM	human2	MAR09077	Na+	130740.0	Na2HPO4; NaCl; NaHCO3
+HPLM	human2	MAR09078	HCO3-	24000.0	NaHCO3
+HPLM	human2	MAR09081	K+	4100.0	KCl
+HPLM	human2	MAR09082	Ca2+	2390.0	Ca(NO3)2.4H2O; CaCl2
+HPLM	human2	MAR09083	choline	21.486892995272882	Choline
+HPLM	human2	MAR09085	glycerol	120.0	Glycerol
+HPLM	human2	MAR09086	acetate	40.0	Acetate
+HPLM	human2	MAR09087	ornithine	70.0	Ornithine
+HPLM	human2	MAR09109	biotin	0.8186320658180181	Biotin
+HPLM	human2	MAR09133	pyruvate	50.0	Pyruvate
+HPLM	human2	MAR09134	(R)-3-hydroxybutanoate	50.0	3-hydroxybutyrate
+HPLM	human2	MAR09135	L-lactate	1600.0	Lactate
+HPLM	human2	MAR09139	fructose	40.0	Fructose
+HPLM	human2	MAR09140	galactose	60.0	Galactose
+HPLM	human2	MAR09143	riboflavin	0.5314061005420342	Riboflavin
+HPLM	human2	MAR09144	pyridoxine	4.862867146469559	Pyridoxine
+HPLM	human2	MAR09145	pantothenate	1.0492298652788852	Pantothenate
+HPLM	human2	MAR09146	folate	2.2655188038060716	Folate
+HPLM	human2	MAR09150	chloride	114800.0	CaCl2; KCl; MgCl2; NH4Cl; NaCl
+HPLM	human2	MAR09159	thiamin	2.9649835443413295	Thiamine
+HPLM	human2	MAR09164	malonate	10.0	Malonate
+HPLM	human2	MAR09201	citrulline	40.0	Citrulline
+HPLM	human2	MAR09216	2-hydroxybutyrate	50.0	2-hydroxybutyrate
+HPLM	human2	MAR09243	acetone	60.0	Acetone
+HPLM	human2	MAR09269	aquacob(III)alamin	0.0036890295638829255	Vitamin B-12
+HPLM	human2	MAR09286	citrate	130.0	Citrate
+HPLM	human2	MAR09290	creatine	40.0	Creatine
+HPLM	human2	MAR09292	L-carnitine	40.0	Carnitine
+HPLM	human2	MAR09318	formate	50.0	Formate
+HPLM	human2	MAR09341	betaine	70.0	Betaine
+HPLM	human2	MAR09351	GSH	25.0	Glutathione
+HPLM	human2	MAR09358	hypoxanthine	10.0	Hypoxanthine
+HPLM	human2	MAR09361	inositol	194.27175843694496	myo-Inositol
+HPLM	human2	MAR09363	cystine	100.0	Cystine
+HPLM	human2	MAR09378	nicotinamide	8.188666885031116	Niacinamide
+HPLM	human2	MAR09415	succinate	20.0	Succinate
+HPLM	human2	MAR09418	taurine	90.0	Taurine
+HPLM	human2	MAR09438	urea	5000.0	Urea
+HPLM	human2	MAR09460	creatinine	75.0	Creatinine
+HPLM	human2	MAR10206	(S)-2-aminobutanoate	20.0	Alpha-aminobutyrate
+HPLM	human2	MAR11420	NH4+	40.0	NH4Cl
+HPLM	human2	MAR13072	Mg2+	830.0	MgCl2; MgSO4
+IMDM	human1	MAR09034	glucose	25000.0	D-Glucose (Dextrose)
+IMDM	human1	MAR09038	histidine	200.0	L-Histidine hydrochloride-H2O
+IMDM	human1	MAR09039	isoleucine	801.5267	L-Isoleucine
+IMDM	human1	MAR09040	leucine	801.5267	L-Leucine
+IMDM	human1	MAR09041	lysine	797.8142	L-Lysine hydrochloride
+IMDM	human1	MAR09042	methionine	201.34228000000002	L-Methionine
+IMDM	human1	MAR09043	phenylalanine	400.0	L-Phenylalanine
+IMDM	human1	MAR09044	threonine	798.31934	L-Threonine
+IMDM	human1	MAR09045	tryptophan	78.431375	L-Tryptophan
+IMDM	human1	MAR09046	valine	803.4188	L-Valine
+IMDM	human1	MAR09061	alanine	280.89887000000004	L-Alanine
+IMDM	human1	MAR09062	asparagine	166.66666999999998	L-Asparagine (freebase)
+IMDM	human1	MAR09063	glutamine	4000.0	L-Glutamine
+IMDM	human1	MAR09064	tyrosine	462.22222	L-Tyrosine disodium salt
+IMDM	human1	MAR09066	arginine	398.10427999999996	L-Arginine hydrochloride
+IMDM	human1	MAR09067	glycine	400.0	Glycine
+IMDM	human1	MAR09068	proline	347.82610000000005	L-Proline
+IMDM	human1	MAR09069	serine	400.0	L-Serine
+IMDM	human1	MAR09070	aspartate	225.56391	L-Aspartic acid
+IMDM	human1	MAR09071	glutamate	510.20410000000004	L-Glutamic Acid
+IMDM	human1	MAR09072	Pi	905.7971	Sodium Phosphate monobasic (NaH2PO4-H2O)
+IMDM	human1	MAR09074	sulfate	813.9166	Magnesium Sulfate (MgSO4) (anhyd.)
+IMDM	human1	MAR09077	Na+	116416.57809893199	L-Tyrosine disodium salt; Sodium Bicarbonate (NaHCO3); Sodium Chloride (NaCl); Sodium Phosphate monobasic (NaH2PO4-H2O); Sodium Pyruvate; Sodium Selenite (Na2SeO3-5H20)
+IMDM	human1	MAR09078	HCO3-	36000.0	Sodium Bicarbonate (NaHCO3)
+IMDM	human1	MAR09081	K+	4400.7524752	Potassium Chloride (KCl); Potassium Nitrate (KNO3)
+IMDM	human1	MAR09082	Ca2+	1494.872144	Calcium Chloride (CaCl2) (anhyd.); D-Calcium pantothenate
+IMDM	human1	MAR09083	choline	28.571429	Choline chloride
+IMDM	human1	MAR09109	biotin	0.053278690000000004	Biotin
+IMDM	human1	MAR09133	pyruvate	1000.0	Sodium Pyruvate
+IMDM	human1	MAR09143	riboflavin	1.0638298	Riboflavin
+IMDM	human1	MAR09145	pantothenate	16.771488	D-Calcium pantothenate
+IMDM	human1	MAR09146	folate	9.070295000000002	Folic Acid
+IMDM	human1	MAR09150	chloride	87188.681085	Calcium Chloride (CaCl2) (anhyd.); Choline chloride; L-Arginine hydrochloride; L-Cystine 2HCl; L-Histidine hydrochloride-H2O; L-Lysine hydrochloride; Potassium Chloride (KCl); Pyridoxal hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride
+IMDM	human1	MAR09159	thiamin	11.869436	Thiamine hydrochloride
+IMDM	human1	MAR09269	aquacob(III)alamin	0.009594096	Vitamin B12
+IMDM	human1	MAR09361	inositol	40.0	i-Inositol
+IMDM	human1	MAR09363	cystine	380.83333000000005	L-Cystine 2HCl
+IMDM	human1	MAR09378	nicotinamide	32.786883	Niacinamide
+IMDM	human1	MAR09400	pyridoxal	19.607844	Pyridoxal hydrochloride
+IMDM	human1	MAR13072	Mg2+	813.9166	Magnesium Sulfate (MgSO4) (anhyd.)
+IMDM	human2	MAR09034	glucose	25000.0	D-Glucose (Dextrose)
+IMDM	human2	MAR09038	histidine	200.0	L-Histidine hydrochloride-H2O
+IMDM	human2	MAR09039	isoleucine	801.5267	L-Isoleucine
+IMDM	human2	MAR09040	leucine	801.5267	L-Leucine
+IMDM	human2	MAR09041	lysine	797.8142	L-Lysine hydrochloride
+IMDM	human2	MAR09042	methionine	201.34228000000002	L-Methionine
+IMDM	human2	MAR09043	phenylalanine	400.0	L-Phenylalanine
+IMDM	human2	MAR09044	threonine	798.31934	L-Threonine
+IMDM	human2	MAR09045	tryptophan	78.431375	L-Tryptophan
+IMDM	human2	MAR09046	valine	803.4188	L-Valine
+IMDM	human2	MAR09061	alanine	280.89887000000004	L-Alanine
+IMDM	human2	MAR09062	asparagine	166.66666999999998	L-Asparagine (freebase)
+IMDM	human2	MAR09063	glutamine	4000.0	L-Glutamine
+IMDM	human2	MAR09064	tyrosine	462.22222	L-Tyrosine disodium salt
+IMDM	human2	MAR09066	arginine	398.10427999999996	L-Arginine hydrochloride
+IMDM	human2	MAR09067	glycine	400.0	Glycine
+IMDM	human2	MAR09068	proline	347.82610000000005	L-Proline
+IMDM	human2	MAR09069	serine	400.0	L-Serine
+IMDM	human2	MAR09070	aspartate	225.56391	L-Aspartic acid
+IMDM	human2	MAR09071	glutamate	510.20410000000004	L-Glutamic Acid
+IMDM	human2	MAR09072	Pi	905.7971	Sodium Phosphate monobasic (NaH2PO4-H2O)
+IMDM	human2	MAR09074	sulfate	813.9166	Magnesium Sulfate (MgSO4) (anhyd.)
+IMDM	human2	MAR09077	Na+	116416.57809893199	L-Tyrosine disodium salt; Sodium Bicarbonate (NaHCO3); Sodium Chloride (NaCl); Sodium Phosphate monobasic (NaH2PO4-H2O); Sodium Pyruvate; Sodium Selenite (Na2SeO3-5H20)
+IMDM	human2	MAR09078	HCO3-	36000.0	Sodium Bicarbonate (NaHCO3)
+IMDM	human2	MAR09081	K+	4400.7524752	Potassium Chloride (KCl); Potassium Nitrate (KNO3)
+IMDM	human2	MAR09082	Ca2+	1494.872144	Calcium Chloride (CaCl2) (anhyd.); D-Calcium pantothenate
+IMDM	human2	MAR09083	choline	28.571429	Choline chloride
+IMDM	human2	MAR09109	biotin	0.053278690000000004	Biotin
+IMDM	human2	MAR09133	pyruvate	1000.0	Sodium Pyruvate
+IMDM	human2	MAR09143	riboflavin	1.0638298	Riboflavin
+IMDM	human2	MAR09145	pantothenate	16.771488	D-Calcium pantothenate
+IMDM	human2	MAR09146	folate	9.070295000000002	Folic Acid
+IMDM	human2	MAR09150	chloride	87188.681085	Calcium Chloride (CaCl2) (anhyd.); Choline chloride; L-Arginine hydrochloride; L-Cystine 2HCl; L-Histidine hydrochloride-H2O; L-Lysine hydrochloride; Potassium Chloride (KCl); Pyridoxal hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride
+IMDM	human2	MAR09159	thiamin	11.869436	Thiamine hydrochloride
+IMDM	human2	MAR09269	aquacob(III)alamin	0.009594096	Vitamin B12
+IMDM	human2	MAR09361	inositol	40.0	i-Inositol
+IMDM	human2	MAR09363	cystine	380.83333000000005	L-Cystine 2HCl
+IMDM	human2	MAR09378	nicotinamide	32.786883	Niacinamide
+IMDM	human2	MAR09400	pyridoxal	19.607844	Pyridoxal hydrochloride
+IMDM	human2	MAR13072	Mg2+	813.9166	Magnesium Sulfate (MgSO4) (anhyd.)
+Plasmax	human1	MAR08386	trans-4-hydroxy-L-proline	13.0	4-Hydroxy-L-proline
+Plasmax	human1	MAR08644	carnosine	6.0	L-Carnosine
+Plasmax	human1	MAR09025	5-oxoproline	20.0	L-Pyroglutamate
+Plasmax	human1	MAR09034	glucose	5560.0	D-Glucose
+Plasmax	human1	MAR09038	histidine	120.0	L-Histidine
+Plasmax	human1	MAR09039	isoleucine	140.0	L-Isoleucine
+Plasmax	human1	MAR09040	leucine	170.0	L-Leucine
+Plasmax	human1	MAR09041	lysine	220.0	L-Lysine
+Plasmax	human1	MAR09042	methionine	30.0	L-Methionine
+Plasmax	human1	MAR09043	phenylalanine	68.0	L-Phenylalanine
+Plasmax	human1	MAR09044	threonine	240.0	L-Threonine
+Plasmax	human1	MAR09045	tryptophan	78.0	L-Tryptophan
+Plasmax	human1	MAR09046	valine	230.0	L-Valine
+Plasmax	human1	MAR09061	alanine	510.0	L-Alanine
+Plasmax	human1	MAR09062	asparagine	41.0	L-Asparagine
+Plasmax	human1	MAR09063	glutamine	650.0	L-Glutamine
+Plasmax	human1	MAR09064	tyrosine	74.0	L-Tyrosine
+Plasmax	human1	MAR09065	cysteine	33.0	L-Cysteine
+Plasmax	human1	MAR09066	arginine	64.0	L-Arginine
+Plasmax	human1	MAR09067	glycine	330.0	Glycine
+Plasmax	human1	MAR09068	proline	360.0	L-Proline
+Plasmax	human1	MAR09069	serine	140.0	L-Serine
+Plasmax	human1	MAR09070	aspartate	6.0	L-Aspartic acid
+Plasmax	human1	MAR09071	glutamate	98.0	L-Glutamate
+Plasmax	human1	MAR09072	Pi	1010.0	Sodium Phosphate monobasic
+Plasmax	human1	MAR09074	sulfate	817.6336	Cupric Sulfate; Ferric Sulfate; Magnesium Sulfate; Zinc Sulfate
+Plasmax	human1	MAR09075	urate	270.0	Urate
+Plasmax	human1	MAR09077	Na+	145907.0578	Sodium Bicarbonate; Sodium Chloride; Sodium Phosphate monobasic; Sodium Selenite
+Plasmax	human1	MAR09078	HCO3-	26191.0	Sodium Bicarbonate
+Plasmax	human1	MAR09080	zinc	1.5	Zinc Sulfate
+Plasmax	human1	MAR09081	K+	5330.0	Potassium Chloride
+Plasmax	human1	MAR09082	Ca2+	1802.1	Calcium Chloride; D-Pantothenic acid hemicalcium
+Plasmax	human1	MAR09083	choline	7.1	Choline
+Plasmax	human1	MAR09085	glycerol	82.0	Glycerol
+Plasmax	human1	MAR09086	acetate	42.0	Acetate
+Plasmax	human1	MAR09087	ornithine	80.0	L-Ornitine
+Plasmax	human1	MAR09096	Fe3+	2.2094	Ferric Nitrate; Ferric Sulfate
+Plasmax	human1	MAR09109	biotin	4.1	D-Biotin
+Plasmax	human1	MAR09132	acetoacetate	41.0	Methyl acetoacetate
+Plasmax	human1	MAR09133	pyruvate	100.0	Pyruvate
+Plasmax	human1	MAR09134	(R)-3-hydroxybutanoate	77.0	3-Hydroxybutyrate
+Plasmax	human1	MAR09135	L-lactate	500.0	Lactate
+Plasmax	human1	MAR09143	riboflavin	0.3	Riboflavin
+Plasmax	human1	MAR09144	pyridoxine	4.9	Pyridoxine
+Plasmax	human1	MAR09145	pantothenate	4.2	D-Pantothenic acid hemicalcium
+Plasmax	human1	MAR09146	folate	2.3	Folate
+Plasmax	human1	MAR09150	chloride	127686.0004	Ammonium Chloride; Calcium Chloride; Manganous Chloride; Potassium Chloride; Sodium Chloride
+Plasmax	human1	MAR09158	ascorbate	62.0	Ascorbate
+Plasmax	human1	MAR09159	thiamin	3.0	Thiamine
+Plasmax	human1	MAR09201	citrulline	55.0	L-Citrulline
+Plasmax	human1	MAR09216	2-hydroxybutyrate	31.0	2-Hydroxybutyrate
+Plasmax	human1	MAR09243	acetone	55.0	Acetone
+Plasmax	human1	MAR09269	aquacob(III)alamin	0.005	Vitamin B12
+Plasmax	human1	MAR09286	citrate	114.0	Citrate
+Plasmax	human1	MAR09290	creatine	37.0	Creatine
+Plasmax	human1	MAR09292	L-carnitine	46.0	Carnitine
+Plasmax	human1	MAR09318	formate	33.0	Formate
+Plasmax	human1	MAR09341	betaine	72.0	N-Trimethylglycine (betaine)
+Plasmax	human1	MAR09351	GSH	37.0	Glutathione (reduced)
+Plasmax	human1	MAR09358	hypoxanthine	5.0	Hypoxanthine
+Plasmax	human1	MAR09361	inositol	11.1	myo-Inositol
+Plasmax	human1	MAR09363	cystine	65.0	L-Cystine
+Plasmax	human1	MAR09378	nicotinamide	8.2	Niacinamide
+Plasmax	human1	MAR09415	succinate	23.0	Succinate
+Plasmax	human1	MAR09418	taurine	130.0	Taurine
+Plasmax	human1	MAR09437	uracil	2.0	Uracil
+Plasmax	human1	MAR09438	urea	3000.0	Urea
+Plasmax	human1	MAR09439	uridine	3.0	Uridine
+Plasmax	human1	MAR09460	creatinine	74.0	Creatinine
+Plasmax	human1	MAR09853	homocysteine	9.0	L-Homocysteine
+Plasmax	human1	MAR09920	O-acetylcarnitine	5.0	Acetyl carnitine
+Plasmax	human1	MAR10185	3-hydroxyisobutyrate	20.0	3-Hydroxyisobutyrate
+Plasmax	human1	MAR10206	(S)-2-aminobutanoate	41.0	alpha-Aminobutyrate
+Plasmax	human1	MAR11420	NH4+	50.0026	Ammonium Chloride; Ammonium Metavanadate
+Plasmax	human1	MAR13072	Mg2+	813.0	Magnesium Sulfate
+Plasmax	human1	MAR13073	Cu2+	0.0052	Cupric Sulfate
+Plasmax	human2	MAR08386	trans-4-hydroxy-L-proline	13.0	4-Hydroxy-L-proline
+Plasmax	human2	MAR08644	carnosine	6.0	L-Carnosine
+Plasmax	human2	MAR09025	5-oxoproline	20.0	L-Pyroglutamate
+Plasmax	human2	MAR09034	glucose	5560.0	D-Glucose
+Plasmax	human2	MAR09038	histidine	120.0	L-Histidine
+Plasmax	human2	MAR09039	isoleucine	140.0	L-Isoleucine
+Plasmax	human2	MAR09040	leucine	170.0	L-Leucine
+Plasmax	human2	MAR09041	lysine	220.0	L-Lysine
+Plasmax	human2	MAR09042	methionine	30.0	L-Methionine
+Plasmax	human2	MAR09043	phenylalanine	68.0	L-Phenylalanine
+Plasmax	human2	MAR09044	threonine	240.0	L-Threonine
+Plasmax	human2	MAR09045	tryptophan	78.0	L-Tryptophan
+Plasmax	human2	MAR09046	valine	230.0	L-Valine
+Plasmax	human2	MAR09061	alanine	510.0	L-Alanine
+Plasmax	human2	MAR09062	asparagine	41.0	L-Asparagine
+Plasmax	human2	MAR09063	glutamine	650.0	L-Glutamine
+Plasmax	human2	MAR09064	tyrosine	74.0	L-Tyrosine
+Plasmax	human2	MAR09065	cysteine	33.0	L-Cysteine
+Plasmax	human2	MAR09066	arginine	64.0	L-Arginine
+Plasmax	human2	MAR09067	glycine	330.0	Glycine
+Plasmax	human2	MAR09068	proline	360.0	L-Proline
+Plasmax	human2	MAR09069	serine	140.0	L-Serine
+Plasmax	human2	MAR09070	aspartate	6.0	L-Aspartic acid
+Plasmax	human2	MAR09071	glutamate	98.0	L-Glutamate
+Plasmax	human2	MAR09072	Pi	1010.0	Sodium Phosphate monobasic
+Plasmax	human2	MAR09074	sulfate	817.6336	Cupric Sulfate; Ferric Sulfate; Magnesium Sulfate; Zinc Sulfate
+Plasmax	human2	MAR09075	urate	270.0	Urate
+Plasmax	human2	MAR09077	Na+	145907.0578	Sodium Bicarbonate; Sodium Chloride; Sodium Phosphate monobasic; Sodium Selenite
+Plasmax	human2	MAR09078	HCO3-	26191.0	Sodium Bicarbonate
+Plasmax	human2	MAR09080	zinc	1.5	Zinc Sulfate
+Plasmax	human2	MAR09081	K+	5330.0	Potassium Chloride
+Plasmax	human2	MAR09082	Ca2+	1802.1	Calcium Chloride; D-Pantothenic acid hemicalcium
+Plasmax	human2	MAR09083	choline	7.1	Choline
+Plasmax	human2	MAR09085	glycerol	82.0	Glycerol
+Plasmax	human2	MAR09086	acetate	42.0	Acetate
+Plasmax	human2	MAR09087	ornithine	80.0	L-Ornitine
+Plasmax	human2	MAR09096	Fe3+	2.2094	Ferric Nitrate; Ferric Sulfate
+Plasmax	human2	MAR09109	biotin	4.1	D-Biotin
+Plasmax	human2	MAR09132	acetoacetate	41.0	Methyl acetoacetate
+Plasmax	human2	MAR09133	pyruvate	100.0	Pyruvate
+Plasmax	human2	MAR09134	(R)-3-hydroxybutanoate	77.0	3-Hydroxybutyrate
+Plasmax	human2	MAR09135	L-lactate	500.0	Lactate
+Plasmax	human2	MAR09143	riboflavin	0.3	Riboflavin
+Plasmax	human2	MAR09144	pyridoxine	4.9	Pyridoxine
+Plasmax	human2	MAR09145	pantothenate	4.2	D-Pantothenic acid hemicalcium
+Plasmax	human2	MAR09146	folate	2.3	Folate
+Plasmax	human2	MAR09150	chloride	127686.0004	Ammonium Chloride; Calcium Chloride; Manganous Chloride; Potassium Chloride; Sodium Chloride
+Plasmax	human2	MAR09158	ascorbate	62.0	Ascorbate
+Plasmax	human2	MAR09159	thiamin	3.0	Thiamine
+Plasmax	human2	MAR09201	citrulline	55.0	L-Citrulline
+Plasmax	human2	MAR09216	2-hydroxybutyrate	31.0	2-Hydroxybutyrate
+Plasmax	human2	MAR09243	acetone	55.0	Acetone
+Plasmax	human2	MAR09269	aquacob(III)alamin	0.005	Vitamin B12
+Plasmax	human2	MAR09286	citrate	114.0	Citrate
+Plasmax	human2	MAR09290	creatine	37.0	Creatine
+Plasmax	human2	MAR09292	L-carnitine	46.0	Carnitine
+Plasmax	human2	MAR09318	formate	33.0	Formate
+Plasmax	human2	MAR09341	betaine	72.0	N-Trimethylglycine (betaine)
+Plasmax	human2	MAR09351	GSH	37.0	Glutathione (reduced)
+Plasmax	human2	MAR09358	hypoxanthine	5.0	Hypoxanthine
+Plasmax	human2	MAR09361	inositol	11.1	myo-Inositol
+Plasmax	human2	MAR09363	cystine	65.0	L-Cystine
+Plasmax	human2	MAR09378	nicotinamide	8.2	Niacinamide
+Plasmax	human2	MAR09415	succinate	23.0	Succinate
+Plasmax	human2	MAR09418	taurine	130.0	Taurine
+Plasmax	human2	MAR09437	uracil	2.0	Uracil
+Plasmax	human2	MAR09438	urea	3000.0	Urea
+Plasmax	human2	MAR09439	uridine	3.0	Uridine
+Plasmax	human2	MAR09460	creatinine	74.0	Creatinine
+Plasmax	human2	MAR09853	homocysteine	9.0	L-Homocysteine
+Plasmax	human2	MAR09920	O-acetylcarnitine	5.0	Acetyl carnitine
+Plasmax	human2	MAR10185	3-hydroxyisobutyrate	20.0	3-Hydroxyisobutyrate
+Plasmax	human2	MAR10206	(S)-2-aminobutanoate	41.0	alpha-Aminobutyrate
+Plasmax	human2	MAR11420	NH4+	50.0026	Ammonium Chloride; Ammonium Metavanadate
+Plasmax	human2	MAR13072	Mg2+	813.0	Magnesium Sulfate
+Plasmax	human2	MAR13073	Cu2+	0.0052	Cupric Sulfate
+RPMI	human1	MAR08386	trans-4-hydroxy-L-proline	152.67175	L-Hydroxyproline
+RPMI	human1	MAR09034	glucose	25000.0	D-Glucose (Dextrose)
+RPMI	human1	MAR09038	histidine	96.77418999999999	L-Histidine
+RPMI	human1	MAR09039	isoleucine	381.6794	L-Isoleucine
+RPMI	human1	MAR09040	leucine	381.6794	L-Leucine
+RPMI	human1	MAR09041	lysine	218.57923000000002	L-Lysine hydrochloride
+RPMI	human1	MAR09042	methionine	100.67114000000001	L-Methionine
+RPMI	human1	MAR09043	phenylalanine	90.90908999999999	L-Phenylalanine
+RPMI	human1	MAR09044	threonine	168.06723000000002	L-Threonine
+RPMI	human1	MAR09045	tryptophan	24.509804	L-Tryptophan
+RPMI	human1	MAR09046	valine	170.94018	L-Valine
+RPMI	human1	MAR09062	asparagine	378.78788000000003	L-Asparagine
+RPMI	human1	MAR09063	glutamine	2054.7945	L-Glutamine
+RPMI	human1	MAR09064	tyrosine	111.11111	L-Tyrosine disodium salt dihydrate
+RPMI	human1	MAR09066	arginine	1149.4253	L-Arginine
+RPMI	human1	MAR09067	glycine	133.33334	Glycine
+RPMI	human1	MAR09068	proline	173.91305000000003	L-Proline
+RPMI	human1	MAR09069	serine	285.7143	L-Serine
+RPMI	human1	MAR09070	aspartate	150.37592999999998	L-Aspartic acid
+RPMI	human1	MAR09071	glutamate	136.05443	L-Glutamic Acid
+RPMI	human1	MAR09072	Pi	5633.803	Sodium Phosphate dibasic (Na2HPO4) anhydrous
+RPMI	human1	MAR09074	sulfate	407.0	Magnesium Sulfate (MgSO4) (anhyd.)
+RPMI	human1	MAR09077	Na+	133795.24122	L-Tyrosine disodium salt dihydrate; Sodium Bicarbonate (NaHCO3); Sodium Chloride (NaCl); Sodium Phosphate dibasic (Na2HPO4) anhydrous; Sodium Pyruvate
+RPMI	human1	MAR09078	HCO3-	17857.143	Sodium Bicarbonate (NaHCO3)
+RPMI	human1	MAR09081	K+	5333.3335	Potassium Chloride (KCl)
+RPMI	human1	MAR09082	Ca2+	424.252929	Calcium nitrate (Ca(NO3)2 4H2O); D-Calcium pantothenate
+RPMI	human1	MAR09083	choline	21.428572	Choline chloride
+RPMI	human1	MAR09109	biotin	0.81967213	Biotin
+RPMI	human1	MAR09133	pyruvate	1000.0	Sodium Pyruvate
+RPMI	human1	MAR09143	riboflavin	0.5319149	Riboflavin
+RPMI	human1	MAR09144	pyridoxine	4.854369	Pyridoxine hydrochloride
+RPMI	human1	MAR09145	pantothenate	1.048218	D-Calcium pantothenate
+RPMI	human1	MAR09146	folate	2.2675737	Folic Acid
+RPMI	human1	MAR09150	chloride	109447.735869	Choline chloride; L-Cystine 2HCl; L-Lysine hydrochloride; Potassium Chloride (KCl); Pyridoxine hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride
+RPMI	human1	MAR09159	thiamin	2.967359	Thiamine hydrochloride
+RPMI	human1	MAR09269	aquacob(III)alamin	0.003690037	Vitamin B12
+RPMI	human1	MAR09351	GSH	3.2573289	Glutathione (reduced)
+RPMI	human1	MAR09361	inositol	194.44445	i-Inositol
+RPMI	human1	MAR09363	cystine	207.66773999999998	L-Cystine 2HCl
+RPMI	human1	MAR09378	nicotinamide	8.196721	Niacinamide
+RPMI	human1	MAR13072	Mg2+	407.0	Magnesium Sulfate (MgSO4) (anhyd.)
+RPMI	human2	MAR08386	trans-4-hydroxy-L-proline	152.67175	L-Hydroxyproline
+RPMI	human2	MAR09034	glucose	25000.0	D-Glucose (Dextrose)
+RPMI	human2	MAR09038	histidine	96.77418999999999	L-Histidine
+RPMI	human2	MAR09039	isoleucine	381.6794	L-Isoleucine
+RPMI	human2	MAR09040	leucine	381.6794	L-Leucine
+RPMI	human2	MAR09041	lysine	218.57923000000002	L-Lysine hydrochloride
+RPMI	human2	MAR09042	methionine	100.67114000000001	L-Methionine
+RPMI	human2	MAR09043	phenylalanine	90.90908999999999	L-Phenylalanine
+RPMI	human2	MAR09044	threonine	168.06723000000002	L-Threonine
+RPMI	human2	MAR09045	tryptophan	24.509804	L-Tryptophan
+RPMI	human2	MAR09046	valine	170.94018	L-Valine
+RPMI	human2	MAR09062	asparagine	378.78788000000003	L-Asparagine
+RPMI	human2	MAR09063	glutamine	2054.7945	L-Glutamine
+RPMI	human2	MAR09064	tyrosine	111.11111	L-Tyrosine disodium salt dihydrate
+RPMI	human2	MAR09066	arginine	1149.4253	L-Arginine
+RPMI	human2	MAR09067	glycine	133.33334	Glycine
+RPMI	human2	MAR09068	proline	173.91305000000003	L-Proline
+RPMI	human2	MAR09069	serine	285.7143	L-Serine
+RPMI	human2	MAR09070	aspartate	150.37592999999998	L-Aspartic acid
+RPMI	human2	MAR09071	glutamate	136.05443	L-Glutamic Acid
+RPMI	human2	MAR09072	Pi	5633.803	Sodium Phosphate dibasic (Na2HPO4) anhydrous
+RPMI	human2	MAR09074	sulfate	407.0	Magnesium Sulfate (MgSO4) (anhyd.)
+RPMI	human2	MAR09077	Na+	133795.24122	L-Tyrosine disodium salt dihydrate; Sodium Bicarbonate (NaHCO3); Sodium Chloride (NaCl); Sodium Phosphate dibasic (Na2HPO4) anhydrous; Sodium Pyruvate
+RPMI	human2	MAR09078	HCO3-	17857.143	Sodium Bicarbonate (NaHCO3)
+RPMI	human2	MAR09081	K+	5333.3335	Potassium Chloride (KCl)
+RPMI	human2	MAR09082	Ca2+	424.252929	Calcium nitrate (Ca(NO3)2 4H2O); D-Calcium pantothenate
+RPMI	human2	MAR09083	choline	21.428572	Choline chloride
+RPMI	human2	MAR09109	biotin	0.81967213	Biotin
+RPMI	human2	MAR09133	pyruvate	1000.0	Sodium Pyruvate
+RPMI	human2	MAR09143	riboflavin	0.5319149	Riboflavin
+RPMI	human2	MAR09144	pyridoxine	4.854369	Pyridoxine hydrochloride
+RPMI	human2	MAR09145	pantothenate	1.048218	D-Calcium pantothenate
+RPMI	human2	MAR09146	folate	2.2675737	Folic Acid
+RPMI	human2	MAR09150	chloride	109447.735869	Choline chloride; L-Cystine 2HCl; L-Lysine hydrochloride; Potassium Chloride (KCl); Pyridoxine hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride
+RPMI	human2	MAR09159	thiamin	2.967359	Thiamine hydrochloride
+RPMI	human2	MAR09269	aquacob(III)alamin	0.003690037	Vitamin B12
+RPMI	human2	MAR09351	GSH	3.2573289	Glutathione (reduced)
+RPMI	human2	MAR09361	inositol	194.44445	i-Inositol
+RPMI	human2	MAR09363	cystine	207.66773999999998	L-Cystine 2HCl
+RPMI	human2	MAR09378	nicotinamide	8.196721	Niacinamide
+RPMI	human2	MAR13072	Mg2+	407.0	Magnesium Sulfate (MgSO4) (anhyd.)

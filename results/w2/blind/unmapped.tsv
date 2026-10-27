@@ -1,0 +1,21 @@
+medium	component	metabolite	conc_uM	mapping_type	note
+RPMI	Para-Aminobenzoic Acid		7.29927	unmapped	PABA: no exchange in either parent (not a human vitamin)
+RPMI	Calcium nitrate (Ca(NO3)2 4H2O)	nitrate	423.72882	unmapped_ion	nitrate has no exchange
+RPMI	HEPES		10012.605000000001	unmapped	buffer; not a model metabolite
+RPMI	Phenol Red		13.283741	unmapped	pH indicator; not a model metabolite
+DMEM	"Ferric Nitrate (Fe(NO3)3""9H2O)"	nitrate	0.24752475999999998	unmapped_ion	nitrate has no exchange
+DMEM/F12	"Ferric Nitrate (Fe(NO3)3""9H2O)"	nitrate	0.12376237999999999	unmapped_ion	nitrate has no exchange
+DMEM/F12	Phenol Red		21.519661	unmapped	pH indicator; not a model metabolite
+IMDM	Potassium Nitrate (KNO3)	nitrate	0.7524752	unmapped_ion	nitrate has no exchange
+IMDM	Sodium Selenite (Na2SeO3-5H20)	selenite	0.06577946600000001	unmapped_ion	selenite has no exchange (selenate MAR09169 exists; not substituted)
+IMDM	HEPES		25033.612999999998	unmapped	buffer; not a model metabolite
+HPLM	p-Aminobenzoate		7.291818579553742	unmapped	PABA: no exchange in either parent (not a human vitamin)
+HPLM	Acetylglycine		90.0	unmapped	N-acetylglycine: no exchange in either parent
+HPLM	Ca(NO3)2.4H2O	nitrate	40.0	unmapped_ion	nitrate has no exchange
+HPLM	Phenol red		14.0	unmapped	pH indicator; not a model metabolite
+Plasmax	L-Acetyl glycine		70.0	unmapped	N-acetylglycine: no exchange in either parent
+Plasmax	Phenol Red		25.0	unmapped	pH indicator; not a model metabolite
+Plasmax	Ammonium Metavanadate	vanadate	0.0026	unmapped_ion	vanadate has no exchange
+Plasmax	Ferric Nitrate	nitrate	0.1238	unmapped_ion	nitrate has no exchange
+Plasmax	Manganous Chloride	Mn2+	0.0002	unmapped_ion	Mn2+ has no exchange
+Plasmax	Sodium Selenite	selenite	0.0289	unmapped_ion	selenite has no exchange (selenate MAR09169 exists; not substituted)

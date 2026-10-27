@@ -1,0 +1,25 @@
+block	item	value	detail
+floor	H2 DMEM:F12 M1 floor at 100x req vs 1000	74.56714912396569	open 74.756767; rel 2.536e-03
+floor	only alpha-tocopherol raised to 1000	74.56714912396546	gain vs floor -3.049e-15; bound was 0.1921
+floor	only gamma-tocopherol raised to 1000	74.56714912396549	gain vs floor -2.668e-15; bound was 0.1921
+floor	only linolenate raised to 1000	74.56714912396549	gain vs floor -2.668e-15; bound was 1000
+floor	only retinoate raised to 1000	74.75676660379081	gain vs floor 2.543e-03; bound was 2.685
+CAD	CAD reactions (H2)		MAR04034: HCO3-:L-glutamine amido-ligase (ADP-forming, carbamate-phosphorylating) [CAD]; MAR04050: carbamoyl-phosphate:L-aspartate carbamoyltransferase [CAD]; MAR04608: (S)-dihydroorotate amidohydrolase [CAD]; MAR09802: L-glutamine amidohydrolase [CAD or GLS2]
+CAD	Plasmax M2 f=0.01 CAD KO ratio	0.0	uridine bound 1000.0
+CAD	CAD KO + supply carbamoyl-phosphate[c]	0.0	
+CAD	CAD KO + supply carbamoyl-phosphate[m]	0.0	
+CAD	CAD KO + supply carbamoyl-phosphate[r]	0.0	
+CAD	CAD KO + supply N-carbamoyl-L-aspartate[c]	0.0	
+CAD	CAD KO + supply N-carbamoyl-L-aspartate[e]	0.0	
+CAD	CAD KO + supply (S)-dihydroorotate[c]	1.0000780765500705	
+CAD	CAD KO + supply (S)-dihydroorotate[e]	1.0000780765500705	
+CAD	CAD KO + supply UMP[c]	0.0	
+CAD	CAD KO + supply UMP[e]	0.0	
+CAD	CAD KO + supply UMP[g]	0.0	
+CAD	CAD KO + supply UMP[l]	0.0	
+CAD	CAD KO + supply UMP[m]	0.0	
+CAD	CAD KO + supply UMP[n]	0.0	
+CAD	CAD KO + supply UMP[r]	0.0	
+CAD	CAD KO + supply orotate[c]	1.0000780765500665	
+CAD	CAD KO + supply orotate[e]	1.0000780765500774	
+CAD	carbamoyl-P[c] consumer MAR04050	0.13664796530697385	carbamoyl-phosphate:L-aspartate carbamoyltransferase | Pyrimidine metabolism | GPR CAD

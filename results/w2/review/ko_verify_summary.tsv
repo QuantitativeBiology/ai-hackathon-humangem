@@ -1,0 +1,8 @@
+check	value	detail
+M0_bitwise_human1	True	2887 genes; sweep human1:a35fcfdb65d63819; same gene set True
+M0_bitwise_human2	True	2870 genes; sweep human2:a35fcfdb65d63819; same gene set True
+sweeps_rebuilt_human1	True	190 in parquet; missing 0; extra 0
+sweeps_rebuilt_human2	True	190 in parquet; missing 0; extra 0
+pairs_glpk_no_shortcut	True	128 pairs over 16 sweeps; max |diff| 0.00e+00; strata {'ratio1_closure': 48, 'ratio_lt1': 48, 'shared_closure': 16, 'uniform': 16}
+full_sweep_gurobi_human1	True	human1:829820ec676795f8 (RPMI M2 f=0.1): 2887 genes, n_diff 0, max |diff| 0.00e+00, 163 s
+full_sweep_gurobi_human2	True	human2:1107a5ca9436f785 (RPMI M2 f=0.1): 2870 genes, n_diff 0, max |diff| 0.00e+00, 162 s
