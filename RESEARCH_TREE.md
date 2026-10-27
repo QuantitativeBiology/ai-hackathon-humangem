@@ -9,6 +9,7 @@ M2 is complete. The generic models were scored on 686 training lines (12 lineage
 Next (M3): Stage A of the context-model families on the 30-line training panel, starting after the W4 code passes its independent review (A4 specifications; ≈60 CPU-h, ≈3.5 h wall). In parallel, W2 (medium pilots) is finishing. Then come the M3 milestone review, LESSONS pruning and the fresh-agent "stop/continue" question.
 
 ## Decisions
+- **D8 (2026-10-27, user)**: CORDA is not dropped. It runs as a 10-line comparison (A7: one representative panel line per lineage, R1 and R3, real RNA, ≈ 33 CPU-h). It is descriptive only, not eligible for P1.
 - **D7 (2026-10-27, user)**: two process simplifications from the M2 process review, recorded as amendment A6. (1) Guard-internal changes go to notes/guard_changelog.md while frozen label, metric, split and list SHAs are unchanged. (2) New validation looks reuse the reviewed harness: a non-author config review, a dry run and the pre-flight, with no full code review unless harness code changes.
 - **D6 (2026-10-27, M2)**: G\* = Human1, fixed by the single pre-registered W1 validation look (09b69a2). The PI ratified the Stage-A specifications as amendment A4 (fixed label-free A5 grid, one solver per family, KO isozyme convention, A6 CORDA dropped by its frozen cost rule, Stage A on M0). Amendment A5 covers test renames and the staged check of git-ignored frozen inputs.
 - **D0 (2026-10-26)**: Human2 := Human-GEM v2.1.1 (local); Human1 := latest Human-GEM v1.x release (to fetch). Baseline infrastructure started before DESIGN.md is final because it uses only generic models and no DepMap labels for fitting. Git: commit locally; push only when the user asks. Time budget: multi-day effort (user, 2026-10-26); report runtime with every result.
@@ -64,7 +65,7 @@ Next (M3): Stage A of the context-model families on the 30-line training panel, 
 - [~] 4. Medium (exchange bounds) — per-line culture media; error attributable to medium
 - [ ] 5. Objectives / metabolic tasks (a-priori task set)
 - [~] 6. Context-specific models (omics integration; method-vs-tissue clustering test)
-  - [x] 6.1 W4 pilots (Opus): F0, F2 GIMME, F3 FASTCORE, F4 E-Flux, F5 LCP builder; repair rule restores 12/12 lines (0.62–0.88 of generic WT); loss rule order-independent; 1.7–3.3 CPU-min per build. CORDA 1.5–1.7 CPU-h per model → A6 dropped. Amendment A4.
+  - [x] 6.1 W4 pilots (Opus): F0, F2 GIMME, F3 FASTCORE, F4 E-Flux, F5 LCP builder; repair rule restores 12/12 lines (0.62–0.88 of generic WT); loss rule order-independent; 1.7–3.3 CPU-min per build. CORDA 1.5–1.7 CPU-h per model → full A6 dropped (A4); replaced by a 10-line comparison row A6′ (A7, user D8).
   - [~] 6.2 Independent review of the W4 code → then Stage A (A1–A5, A7; ≈60 CPU-h).
 - [ ] 7. GPR curation (proteomics, paralogs); curation vs constraint contribution
 - [ ] 8. Flux-state information content (subtypes, drug screens, metabolomics)
