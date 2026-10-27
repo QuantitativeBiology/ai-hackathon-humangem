@@ -6,6 +6,15 @@
 until it is committed (§11.4). The ratified version of this README (sha256 16f6aac0…a4, the hash A4 pins)
 is kept byte-identical as `README_ratified_A4.md`; this file has since changed (§0 added, projections updated).
 
+## Stage-A analysis (2026-10-27, training tier; full report in `stage_a_analysis/README.md`)
+- **Gates:** all configurations of F0, F2, F3, F5 and CORDA pass. F4 (E-Flux) fails the viability gate through the GR task alone: GR needs biomass ≥ 1 unit, and the ratified E-Flux scaling gives growth ≈ 1. F4 is scored descriptively; PI decision needed.
+- **Method vs tissue:** method dominates tissue at every level (H4.1 holds). F0, F2 and F3 are tissue-informed against the permuted-expression control; F4 is method-dominated (H4.2).
+- **Training TG (nested panel LOLO, ≥ 8 of 10, vs G\* = Human1): no family passes.**
+  - Best gate-passing configuration: F2 GIMME R1 RNA, Δ̄_lin −0.0067 vs H1 and −0.0001 vs the H2 parent.
+  - Less pruning is always better.
+  - The context models add a small per-gene signal (mΔAP_gene +0.007) but do not beat the generic G\*, B8′, B8+ or B2.
+- **Stage B:** F2 R1 is carried to M6, flagged "fails TG". Training-line builds only; no validation or test builds and no validation look under the frozen rule.
+
 ## 0. Amendment A4 (PI decisions, 2026-10-27) and their implementation
 
 | A4 | Decision | Implementation |

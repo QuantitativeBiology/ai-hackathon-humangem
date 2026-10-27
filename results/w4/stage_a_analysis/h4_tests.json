@@ -1,0 +1,152 @@
+{
+ "levels": {
+  "reactions": {
+   "H4.1": {
+    "r2_method": 0.5883506065725742,
+    "r2_lineage": 0.05187169537175132,
+    "diff": 0.5364789112008229,
+    "lo": 0.5007797491910255,
+    "hi": 0.5353594652898882,
+    "pass": true,
+    "basic_lo": 0.5375983571117576,
+    "basic_hi": 0.5721780732106203
+   },
+   "H4.2": {
+    "F0": {
+     "r2_lineage_real": 0.259848388964934,
+     "r2_lineage_perm": 0.18391604574398024,
+     "perm_null_q95": 0.20310789819794123,
+     "threshold": 0.20310789819794123,
+     "pass": true,
+     "label": "tissue-informed"
+    },
+    "F2": {
+     "r2_lineage_real": 0.26028974997825854,
+     "r2_lineage_perm": 0.18344438795643542,
+     "perm_null_q95": 0.20345163452442114,
+     "threshold": 0.20345163452442114,
+     "pass": true,
+     "label": "tissue-informed"
+    },
+    "F3": {
+     "r2_lineage_real": 0.24197178636004213,
+     "r2_lineage_perm": 0.18028151116003532,
+     "perm_null_q95": 0.19415651761426336,
+     "threshold": 0.19415651761426336,
+     "pass": true,
+     "label": "tissue-informed"
+    },
+    "F4": {
+     "r2_lineage_real": NaN,
+     "r2_lineage_perm": NaN,
+     "perm_null_q95": NaN,
+     "threshold": NaN,
+     "pass": false,
+     "label": "method-dominated"
+    }
+   }
+  },
+  "tasks57": {
+   "H4.1": {
+    "r2_method": 0.2535630592911383,
+    "r2_lineage": 0.07329240184523154,
+    "diff": 0.18027065744590676,
+    "lo": 0.12802595880940626,
+    "hi": 0.18943784279601808,
+    "pass": true,
+    "basic_lo": 0.17110347209579543,
+    "basic_hi": 0.23251535608240725
+   },
+   "H4.2": {
+    "F0": {
+     "r2_lineage_real": 0.19045020767394535,
+     "r2_lineage_perm": 0.11615980089192461,
+     "perm_null_q95": 0.16210334636961513,
+     "threshold": 0.16210334636961513,
+     "pass": true,
+     "label": "tissue-informed"
+    },
+    "F2": {
+     "r2_lineage_real": 0.18327045637637848,
+     "r2_lineage_perm": 0.09112354195933164,
+     "perm_null_q95": 0.15259105690865837,
+     "threshold": 0.15259105690865837,
+     "pass": true,
+     "label": "tissue-informed"
+    },
+    "F3": {
+     "r2_lineage_real": 0.3899610453486119,
+     "r2_lineage_perm": 0.123836283482184,
+     "perm_null_q95": 0.2716229817682581,
+     "threshold": 0.2716229817682581,
+     "pass": true,
+     "label": "tissue-informed"
+    },
+    "F4": {
+     "r2_lineage_real": 0.37966407643031663,
+     "r2_lineage_perm": 0.09322365844104985,
+     "perm_null_q95": 0.3867780824302562,
+     "threshold": 0.3867780824302562,
+     "pass": false,
+     "label": "method-dominated"
+    }
+   }
+  },
+  "ko_binary": {
+   "H4.1": {
+    "r2_method": 0.19872300022666325,
+    "r2_lineage": 0.08531065635305798,
+    "diff": 0.11341234387360527,
+    "lo": 0.04665582909756498,
+    "hi": 0.0973252570782408,
+    "pass": true,
+    "basic_lo": 0.12949943066896974,
+    "basic_hi": 0.18016885864964555
+   },
+   "H4.2": {
+    "F0": {
+     "r2_lineage_real": 0.18109088444453758,
+     "r2_lineage_perm": 0.14862769596002137,
+     "perm_null_q95": 0.16242417432362538,
+     "threshold": 0.16242417432362538,
+     "pass": true,
+     "label": "tissue-informed"
+    },
+    "F2": {
+     "r2_lineage_real": 0.1884999415219891,
+     "r2_lineage_perm": 0.14810505376649108,
+     "perm_null_q95": 0.1603780169572625,
+     "threshold": 0.1603780169572625,
+     "pass": true,
+     "label": "tissue-informed"
+    },
+    "F3": {
+     "r2_lineage_real": 0.18227700028146623,
+     "r2_lineage_perm": 0.16975756864750174,
+     "perm_null_q95": 0.1801627478342593,
+     "threshold": 0.1801627478342593,
+     "pass": true,
+     "label": "tissue-informed"
+    },
+    "F4": {
+     "r2_lineage_real": NaN,
+     "r2_lineage_perm": NaN,
+     "perm_null_q95": NaN,
+     "threshold": NaN,
+     "pass": false,
+     "label": "method-dominated"
+    }
+   }
+  }
+ },
+ "H4.3": {
+  "H4.1": true,
+  "H4.2_methods_passing": [
+   "F0",
+   "F2",
+   "F3"
+  ]
+ },
+ "expression_real_r2_lineage": 0.479938314826421,
+ "expression_perm_r2_lineage": 0.30628168220243307
+}

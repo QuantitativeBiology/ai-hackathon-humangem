@@ -1,0 +1,65 @@
+{
+ "look_id": "W4_M5_stageA_carry",
+ "workstream": "W4",
+ "milestone": "M5",
+ "configurations": [
+  {
+   "family": "F2",
+   "config": "F2|R1|rna|real|none",
+   "tag": "fails TG; carried to M6 per \u00a79 W4"
+  }
+ ],
+ "status": "no configuration passed the Stage-A panel TG; the best gate-passing configuration is carried to M6 flagged (\u00a79 W4). Under the frozen rule no validation builds are made for it until it passes TG.",
+ "reference": "G* = Human1 (W1_M2_baseline); also the Stage-A parent, generic Human2 on M0",
+ "primary": "\u0394\u0304_lin(config - G*), L_prob, all genes, U, validation expression lines; paired line bootstrap B = 2000, seed 11",
+ "secondary": [
+  "minus CE_fit (from all training lines, \u00a75.3)",
+  "expressed pairs (\u00a75.4)",
+  "m\u0394AP_gene vs B3",
+  "\u00a76.8 fixed-cutoff and PGR binary endpoints",
+  "\u0394 vs B8+/B8-/B8' and B2"
+ ],
+ "outputs": "scalars only (evaluate_val.assert_scalar_only)",
+ "B": 2000,
+ "seed": 11,
+ "n_validation_expression_lines": 198,
+ "validation_lineages": [
+  "Bladder/Urinary Tract",
+  "Lymphoid",
+  "Prostate",
+  "Soft Tissue"
+ ],
+ "inputs": {
+  "human1_ko": "4e92d6e76176828c4dd76cae4bbe1657cc2af3e84b7d9e5200b6d9e22175c215",
+  "human2_ko": "fe96ea34d20083ba845ac025e6c04ef7d09e45ff4b5137ce8da611fab6aedf5d",
+  "stage_a_selection": "f141bf0ccda5c1e8712853f415cc4edbe93eb7e3e5e39cec1ac3f37b393a0079",
+  "threshold_stats": "09cc0bf2792a61fe51a9eba49de2b06a6fce13d8d82d28b0ae2185ac2554a35a",
+  "threshold_gene_means": "7e9cd7c119795ed03eb9159d52feeb119635b5bf61248b8b29b33d9d12b4a102",
+  "stage_b_val_builds": null,
+  "stage_b_val_manifest": null,
+  "expr": "22dccef65797e8c9be8a806278e5343246eeddf5420e9c2647aaa447e06ff137",
+  "sesoi_c1b": "17254702a38c5258f3e4fff14e1dacc64ee0d05c02e78e1471d7923ed38719f2"
+ },
+ "code": {
+  "evaluate_val.py": "8f85a6667823a388aa965a7393687f96478e560870a3d8d3edb922ea8532a26c",
+  "labels.py": "291d648e8988ae6987ba1fcef347e75271688bff105a66276f5fe504af21fc6b",
+  "w1.py": "434875e1e47bd548da1da1b2b8b03d546609240914a96828e6e17036863d7a2b",
+  "metrics.py": "3acc6ff45c6b969efa631a8c4ecb28ec570015d604f84baed05a4ac1a9382d98",
+  "run.py": "36c07907c5f81e562d57d7bf480dba992e070a96148349b44215eb93eda9b578",
+  "context.py": "95dcf3a4db0eef3396d4f35177a1aa698d68d84c86a433b27201b98a378645fc",
+  "context_inputs.py": "ae3c4e38a43f9c1ce4c669c9e434a4b12d59f7e7d06da705814aa7e9b87caa0b",
+  "w4_analysis.py": "d6a1b123a4f81f69ef5d822c832e1ad1678ed25c741851283243980c07eea7af"
+ },
+ "config_sha": "8fffd0c73eb822c92a9d0975a5cc94c02e56d5797da298b4aec97d21514b6ed8",
+ "inputs_rel": {
+  "human1_ko": "results/baseline/human1_ko.parquet",
+  "human2_ko": "results/baseline/human2_ko.parquet",
+  "stage_a_selection": "results/w4/stage_a_analysis/train_selection.json",
+  "threshold_stats": "results/w4/threshold_stats.json",
+  "threshold_gene_means": "results/w4/threshold_gene_means.parquet",
+  "stage_b_val_builds": "results/w4/stage_b/ko_validation.parquet",
+  "stage_b_val_manifest": "results/w4/stage_b/MANIFEST.tsv",
+  "expr": "results/w1/tmp/expr.parquet",
+  "sesoi_c1b": "results/w1/sesoi_c1b.json"
+ }
+}

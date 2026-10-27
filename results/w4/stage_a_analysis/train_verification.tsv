@@ -1,0 +1,5 @@
+check	max_abs_diff	pass
+generic H1 tAP_line (all) equals W1 train_per_line (6-decimal TSV)	4.900333597235296e-07	True
+generic H1 tAP_line (noCE) equals W1 train_per_line (6-decimal TSV)	4.860505721238084e-07	True
+generic H2 tAP_line (all) equals W1 train_per_line (6-decimal TSV)	4.881876450313349e-07	True
+generic H2 tAP_line (noCE) equals W1 train_per_line (6-decimal TSV)	4.847897711601767e-07	True

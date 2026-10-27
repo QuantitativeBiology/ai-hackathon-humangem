@@ -1,0 +1,101 @@
+family	reference	heldout_lineage	chosen	outer_delta
+F0	H1	Bone	F0|R1|rna|real|none	-0.0028408361852641693
+F0	H1	Bowel	F0|R1|rna|real|none	-0.002676384645535379
+F0	H1	Cervix	F0|R1|rna|real|none	-0.015293339337522008
+F0	H1	Esophagus/Stomach	F0|R1|rna|real|none	-0.003125291298614663
+F0	H1	Head and Neck	F0|R1|rna|real|none	-0.014980249626318535
+F0	H1	Kidney	F0|R1|rna|real|none	-0.005976592175295022
+F0	H1	Myeloid	F0|R1|rna|real|none	-0.01087530433246973
+F0	H1	Peripheral Nervous System	F0|R1|rna|real|none	-0.007897351230641522
+F0	H1	Skin	F0|R1|rna|real|none	-0.009681069681744295
+F0	H1	Uterus	F0|R1|rna|real|none	-0.006540290781911595
+F0	H2	Bone	F0|R1|rna|real|none	0.0028593823524331596
+F0	H2	Bowel	F0|R1|rna|real|none	0.003286195050178372
+F0	H2	Cervix	F0|R1|rna|real|none	-0.007493347357417801
+F0	H2	Esophagus/Stomach	F0|R1|rna|real|none	-0.002645767726936162
+F0	H2	Head and Neck	F0|R1|rna|real|none	-0.0055231391315609946
+F0	H2	Kidney	F0|R1|rna|real|none	0.0006443075595779316
+F0	H2	Myeloid	F0|R1|rna|real|none	-0.0010867277656960717
+F0	H2	Peripheral Nervous System	F0|R1|rna|real|none	-0.00021576727941250798
+F0	H2	Skin	F0|R1|rna|real|none	-0.0033401867465993607
+F0	H2	Uterus	F0|R1|rna|real|none	-0.00010962817077212843
+F2	H1	Bone	F2|R1|rna|real|none	-0.0045634570127335294
+F2	H1	Bowel	F2|R1|rna|real|none	-0.00015590051539539815
+F2	H1	Cervix	F2|R1|rna|real|none	-0.01462199716062218
+F2	H1	Esophagus/Stomach	F2|R1|rna|real|none	0.0034481725416994715
+F2	H1	Head and Neck	F2|R1|rna|real|none	-0.014481965069021904
+F2	H1	Kidney	F2|R1|rna|real|none	-0.006939607670954306
+F2	H1	Myeloid	F2|R1|rna|real|none	-0.007806602205596554
+F2	H1	Peripheral Nervous System	F2|R1|rna|real|none	-0.009092827213089663
+F2	H1	Skin	F2|R1|rna|real|none	-0.007351537074671288
+F2	H1	Uterus	F2|R1|rna|real|none	-0.005529226395858382
+F2	H2	Bone	F2|R1|rna|real|none	0.0011367615249637992
+F2	H2	Bowel	F2|R1|rna|real|none	0.005806679180318353
+F2	H2	Cervix	F2|R1|rna|real|none	-0.006822005180517972
+F2	H2	Esophagus/Stomach	F2|R1|rna|real|none	0.003927696113377972
+F2	H2	Head and Neck	F2|R1|rna|real|none	-0.005024854574264363
+F2	H2	Kidney	F2|R1|rna|real|none	-0.00031870793608135273
+F2	H2	Myeloid	F2|R1|rna|real|none	0.0019819743611771043
+F2	H2	Peripheral Nervous System	F2|R1|rna|real|none	-0.0014112432618606507
+F2	H2	Skin	F2|R1|rna|real|none	-0.001010654139526353
+F2	H2	Uterus	F2|R1|rna|real|none	0.0009014362152810854
+F3	H1	Bone	F3|R1|rna|real|none	-0.007727902783718932
+F3	H1	Bowel	F3|R1|rna|real|none	-0.002425361206953691
+F3	H1	Cervix	F3|R1|rna|real|none	-0.01721216092578311
+F3	H1	Esophagus/Stomach	F3|R1|rna|real|none	0.0003899720647692617
+F3	H1	Head and Neck	F3|R1|rna|real|none	-0.019858685367556916
+F3	H1	Kidney	F3|R1|rna|real|none	-0.012408116896788779
+F3	H1	Myeloid	F3|R1|rna|real|none	-0.009451014554857992
+F3	H1	Peripheral Nervous System	F3|R1|rna|real|none	-0.015894655088800325
+F3	H1	Skin	F3|R1|rna|real|none	-0.008532527612801452
+F3	H1	Uterus	F3|R1|rna|real|none	-0.009026482221411466
+F3	H2	Bone	F3|R1|rna|real|none	-0.002027684246021603
+F3	H2	Bowel	F3|R1|rna|real|none	0.0035372184887600597
+F3	H2	Cervix	F3|R1|rna|real|none	-0.009412168945678904
+F3	H2	Esophagus/Stomach	F3|R1|rna|real|none	0.0008694956364477627
+F3	H2	Head and Neck	F3|R1|rna|real|none	-0.010401574872799376
+F3	H2	Kidney	F3|R1|rna|real|none	-0.005787217161915825
+F3	H2	Myeloid	F3|R1|rna|real|none	0.0003375620119156671
+F3	H2	Peripheral Nervous System	F3|R1|rna|real|none	-0.008213071137571313
+F3	H2	Skin	F3|R1|rna|real|none	-0.002191644677656516
+F3	H2	Uterus	F3|R1|rna|real|none	-0.002595819610271999
+F4	H1	Bone	F4|R1|rna|real|none	-0.0038717120390155215
+F4	H1	Bowel	F4|R1|rna|real|none	-0.0024163239308343334
+F4	H1	Cervix	F4|R1|rna|real|none	-0.004003442367731129
+F4	H1	Esophagus/Stomach	F4|R1|rna|real|none	0.0036965545325947278
+F4	H1	Head and Neck	F4|R2|rna|real|none	-0.0042414161929974865
+F4	H1	Kidney	F4|R1|rna|real|none	-0.002129827783629431
+F4	H1	Myeloid	F4|R1|rna|real|none	-0.008046813320445842
+F4	H1	Peripheral Nervous System	F4|R1|rna|real|none	-0.004018480604238243
+F4	H1	Skin	F4|R1|rna|real|none	-0.0016505147090170775
+F4	H1	Uterus	F4|R1|rna|real|none	-0.001922067014604678
+F4	H2	Bone	F4|R1|rna|real|none	0.0018285064986818071
+F4	H2	Bowel	F4|R1|rna|real|none	0.003546255764879417
+F4	H2	Cervix	F4|R1|rna|real|none	0.003796549612373079
+F4	H2	Esophagus/Stomach	F4|R1|rna|real|none	0.004176078104273229
+F4	H2	Head and Neck	F4|R2|rna|real|none	0.005215694301760054
+F4	H2	Kidney	F4|R1|rna|real|none	0.004491071951243523
+F4	H2	Myeloid	F4|R1|rna|real|none	0.0017417632463278172
+F4	H2	Peripheral Nervous System	F4|R1|rna|real|none	0.0036631033469907703
+F4	H2	Skin	F4|R1|rna|real|none	0.004690368226127857
+F4	H2	Uterus	F4|R1|rna|real|none	0.004508595596534788
+F5	H1	Bone	F5|wr1_wp0_wc0_tau-1.5	-0.00927851167023743
+F5	H1	Bowel	F5|wr1_wp0_wc0_tau-1.5	-0.0066270790417227166
+F5	H1	Cervix	F5|wr1_wp0_wc0_tau-1.5	-0.011580368163405094
+F5	H1	Esophagus/Stomach	F5|wr1_wp0_wc0_tau-1.5	-0.0046103270154781995
+F5	H1	Head and Neck	F5|wr1_wp0_wc0_tau-1.5	-0.01859988064310671
+F5	H1	Kidney	F5|wr1_wp0_wc1_tau-1.5	-0.006939455212388239
+F5	H1	Myeloid	F5|wr1_wp0_wc0_tau-1.5	-0.022172759223648048
+F5	H1	Peripheral Nervous System	F5|wr1_wp0_wc0_tau-1.5	-0.013113744094606083
+F5	H1	Skin	F5|wr1_wp0_wc0_tau-1.5	-0.008339481034280505
+F5	H1	Uterus	F5|wr1_wp0_wc0_tau-1.5	-0.012754715087641125
+F5	H2	Bone	F5|wr1_wp0_wc0_tau-1.5	-0.0035782931325401
+F5	H2	Bowel	F5|wr1_wp0_wc0_tau-1.5	-0.0006644993460089658
+F5	H2	Cervix	F5|wr1_wp0_wc0_tau-1.5	-0.0037803761833008855
+F5	H2	Esophagus/Stomach	F5|wr1_wp0_wc0_tau-1.5	-0.004130803443799698
+F5	H2	Head and Neck	F5|wr1_wp0_wc0_tau-1.5	-0.00914277014834917
+F5	H2	Kidney	F5|wr1_wp0_wc1_tau-1.5	-0.00031855547751528473
+F5	H2	Myeloid	F5|wr1_wp0_wc0_tau-1.5	-0.01238418265687439
+F5	H2	Peripheral Nervous System	F5|wr1_wp0_wc0_tau-1.5	-0.00543216014337707
+F5	H2	Skin	F5|wr1_wp0_wc0_tau-1.5	-0.00199859809913557
+F5	H2	Uterus	F5|wr1_wp0_wc0_tau-1.5	-0.006324052476501659

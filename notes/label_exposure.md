@@ -36,3 +36,5 @@ Every viewing of DepMap label *values* (or label-derived summaries) by any agent
 - 2026-10-27, M3 W4 reviewer: label-free review; incidentally opened results/w1/val_look_W1_M2_baseline_gstar.json (committed validation aggregates; not used in any check).
 - 2026-10-27, W2 engineer: read FROZEN.tsv (label.primary κ = 0.934, a label-agreement aggregate from M1). Otherwise label-free.
 - 2026-10-27, M2 process reviewer: process documents only, including the committed training and validation aggregates in RESEARCH_TREE.md.
+- 2026-10-27, W4 engineer (Stage-A analysis): computed and viewed training-tier aggregates (nested-LOLO tAP_line, Δ̄ vs H1/H2, MCC per family and threshold on the 30-line panel). No gene × line values; no validation or test; raw probe blocked.
+- 2026-10-27, PI: read the W4 Stage-A analysis summary (training aggregates only).

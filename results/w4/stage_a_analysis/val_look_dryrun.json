@@ -1,0 +1,23 @@
+{
+ "look_id": "W4_M5_stageA_carry",
+ "config_sha": "8fffd0c73eb822c92a9d0975a5cc94c02e56d5797da298b4aec97d21514b6ed8",
+ "labels_read": false,
+ "missing_inputs": [
+  "stage_b_val_builds",
+  "stage_b_val_manifest"
+ ],
+ "preflight_problems": [
+  "src/nextgem/context.py: no file row in the committed HEAD:FROZEN.tsv",
+  "src/nextgem/context_inputs.py: no file row in the committed HEAD:FROZEN.tsv",
+  "src/nextgem/w4_analysis.py: no file row in the committed HEAD:FROZEN.tsv",
+  "results/w4/stage_a_analysis/train_selection.json: no file row in the committed HEAD:FROZEN.tsv",
+  "results/w4/stage_a_analysis/train_selection.json: not tracked in git",
+  "results/w4/threshold_stats.json: no file row in the committed HEAD:FROZEN.tsv",
+  "results/w4/threshold_gene_means.parquet: no file row in the committed HEAD:FROZEN.tsv",
+  "results/w4/stage_b/ko_validation.parquet: missing",
+  "results/w4/stage_b/MANIFEST.tsv: missing",
+  "results/w1/tmp/expr.parquet: not tracked in git"
+ ],
+ "harness_change_needed": "evaluate_val.py has only the W1 look; a W4 look type (per-line context-model scores from Stage-B validation builds) must be added and fully reviewed (A6 (2))",
+ "ready": false
+}

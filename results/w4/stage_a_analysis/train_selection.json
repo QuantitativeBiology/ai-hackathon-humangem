@@ -1,0 +1,632 @@
+{
+ "rule": "TG-passing families (nested panel LOLO vs G* = H1, >= 8 of 10, gates first); <= 2 configurations, ranked by nested outer \u0394\u0304_lin; the best configuration is carried even if it fails TG (flagged)",
+ "tg_passing_families": [],
+ "w4_shortlist": [],
+ "best_if_none_pass": {
+  "family": "F2",
+  "config": "F2|R1|rna|real|none",
+  "flag": "fails TG; carried to M6 per \u00a79 W4"
+ },
+ "stage_b_configs": [
+  "F2|R1|rna|real|none"
+ ],
+ "kept_thresholds": {
+  "F0": [
+   "F0|R1|rna|real|none",
+   "F0|R2|rna|real|none"
+  ],
+  "F2": [
+   "F2|R1|rna|real|none",
+   "F2|R2|rna|real|none"
+  ],
+  "F3": [
+   "F3|R1|rna|real|none",
+   "F3|R2|rna|real|none"
+  ],
+  "F4": [
+   "F4|R1|rna|real|none",
+   "F4|R2|rna|real|none"
+  ]
+ },
+ "families": {
+  "F0": {
+   "family": "F0",
+   "candidates": 6,
+   "gate_passing": 6,
+   "status_tag": "",
+   "descriptive_only_gate_failed": false,
+   "vs_H1": {
+    "outer_delta_lin": -0.00798867092953169,
+    "lo": -0.01027188046003718,
+    "hi": -0.005276839584235127,
+    "folds_positive": 0,
+    "tg_pass": false,
+    "chosen_per_fold": {
+     "Bone": "F0|R1|rna|real|none",
+     "Bowel": "F0|R1|rna|real|none",
+     "Cervix": "F0|R1|rna|real|none",
+     "Esophagus/Stomach": "F0|R1|rna|real|none",
+     "Head and Neck": "F0|R1|rna|real|none",
+     "Kidney": "F0|R1|rna|real|none",
+     "Myeloid": "F0|R1|rna|real|none",
+     "Peripheral Nervous System": "F0|R1|rna|real|none",
+     "Skin": "F0|R1|rna|real|none",
+     "Uterus": "F0|R1|rna|real|none"
+    },
+    "full_panel_best": "F0|R1|rna|real|none",
+    "full_panel_rank": [
+     {
+      "config": "F0|R1|rna|real|none",
+      "score_lin": -0.007988670929531693,
+      "order": 0
+     },
+     {
+      "config": "F0|R1|rna|real|loss",
+      "score_lin": -0.0081011763894733,
+      "order": 1
+     },
+     {
+      "config": "F0|R2|rna|real|none",
+      "score_lin": -0.009098293487944983,
+      "order": 2
+     },
+     {
+      "config": "F0|R2|rna|real|loss",
+      "score_lin": -0.009173001380079386,
+      "order": 3
+     },
+     {
+      "config": "F0|R3|rna|real|loss",
+      "score_lin": -0.014944322845730653,
+      "order": 5
+     },
+     {
+      "config": "F0|R3|rna|real|none",
+      "score_lin": -0.015013992407325266,
+      "order": 4
+     }
+    ]
+   },
+   "vs_H2": {
+    "outer_delta_lin": -0.001362467921620557,
+    "lo": -0.0030017218312794075,
+    "hi": 0.0004458387437812449,
+    "folds_positive": 3,
+    "tg_pass": false,
+    "chosen_per_fold": {
+     "Bone": "F0|R1|rna|real|none",
+     "Bowel": "F0|R1|rna|real|none",
+     "Cervix": "F0|R1|rna|real|none",
+     "Esophagus/Stomach": "F0|R1|rna|real|none",
+     "Head and Neck": "F0|R1|rna|real|none",
+     "Kidney": "F0|R1|rna|real|none",
+     "Myeloid": "F0|R1|rna|real|none",
+     "Peripheral Nervous System": "F0|R1|rna|real|none",
+     "Skin": "F0|R1|rna|real|none",
+     "Uterus": "F0|R1|rna|real|none"
+    },
+    "full_panel_best": "F0|R1|rna|real|none",
+    "full_panel_rank": [
+     {
+      "config": "F0|R1|rna|real|none",
+      "score_lin": -0.0013624679216205564,
+      "order": 0
+     },
+     {
+      "config": "F0|R1|rna|real|loss",
+      "score_lin": -0.001474973381562165,
+      "order": 1
+     },
+     {
+      "config": "F0|R2|rna|real|none",
+      "score_lin": -0.002472090480033848,
+      "order": 2
+     },
+     {
+      "config": "F0|R2|rna|real|loss",
+      "score_lin": -0.002546798372168251,
+      "order": 3
+     },
+     {
+      "config": "F0|R3|rna|real|loss",
+      "score_lin": -0.008318119837819517,
+      "order": 5
+     },
+     {
+      "config": "F0|R3|rna|real|none",
+      "score_lin": -0.008387789399414132,
+      "order": 4
+     }
+    ]
+   },
+   "kept_thresholds": [
+    "F0|R1|rna|real|none",
+    "F0|R2|rna|real|none"
+   ]
+  },
+  "F2": {
+   "family": "F2",
+   "candidates": 6,
+   "gate_passing": 6,
+   "status_tag": "",
+   "descriptive_only_gate_failed": false,
+   "vs_H1": {
+    "outer_delta_lin": -0.006709494777624373,
+    "lo": -0.008974370737173996,
+    "hi": -0.004243110314390353,
+    "folds_positive": 1,
+    "tg_pass": false,
+    "chosen_per_fold": {
+     "Bone": "F2|R1|rna|real|none",
+     "Bowel": "F2|R1|rna|real|none",
+     "Cervix": "F2|R1|rna|real|none",
+     "Esophagus/Stomach": "F2|R1|rna|real|none",
+     "Head and Neck": "F2|R1|rna|real|none",
+     "Kidney": "F2|R1|rna|real|none",
+     "Myeloid": "F2|R1|rna|real|none",
+     "Peripheral Nervous System": "F2|R1|rna|real|none",
+     "Skin": "F2|R1|rna|real|none",
+     "Uterus": "F2|R1|rna|real|none"
+    },
+    "full_panel_best": "F2|R1|rna|real|none",
+    "full_panel_rank": [
+     {
+      "config": "F2|R1|rna|real|none",
+      "score_lin": -0.006709494777624374,
+      "order": 0
+     },
+     {
+      "config": "F2|R1|rna|real|loss",
+      "score_lin": -0.006776229500649949,
+      "order": 1
+     },
+     {
+      "config": "F2|R2|rna|real|none",
+      "score_lin": -0.007498157069783827,
+      "order": 2
+     },
+     {
+      "config": "F2|R2|rna|real|loss",
+      "score_lin": -0.00756042279525605,
+      "order": 3
+     },
+     {
+      "config": "F2|R3|rna|real|none",
+      "score_lin": -0.013235194688032716,
+      "order": 4
+     },
+     {
+      "config": "F2|R3|rna|real|loss",
+      "score_lin": -0.013241897413692343,
+      "order": 5
+     }
+    ]
+   },
+   "vs_H2": {
+    "outer_delta_lin": -8.329176971323763e-05,
+    "lo": -0.0016406349744285962,
+    "hi": 0.0015112232864767704,
+    "folds_positive": 5,
+    "tg_pass": false,
+    "chosen_per_fold": {
+     "Bone": "F2|R1|rna|real|none",
+     "Bowel": "F2|R1|rna|real|none",
+     "Cervix": "F2|R1|rna|real|none",
+     "Esophagus/Stomach": "F2|R1|rna|real|none",
+     "Head and Neck": "F2|R1|rna|real|none",
+     "Kidney": "F2|R1|rna|real|none",
+     "Myeloid": "F2|R1|rna|real|none",
+     "Peripheral Nervous System": "F2|R1|rna|real|none",
+     "Skin": "F2|R1|rna|real|none",
+     "Uterus": "F2|R1|rna|real|none"
+    },
+    "full_panel_best": "F2|R1|rna|real|none",
+    "full_panel_rank": [
+     {
+      "config": "F2|R1|rna|real|none",
+      "score_lin": -8.329176971323782e-05,
+      "order": 0
+     },
+     {
+      "config": "F2|R1|rna|real|loss",
+      "score_lin": -0.00015002649273881396,
+      "order": 1
+     },
+     {
+      "config": "F2|R2|rna|real|none",
+      "score_lin": -0.0008719540618726928,
+      "order": 2
+     },
+     {
+      "config": "F2|R2|rna|real|loss",
+      "score_lin": -0.0009342197873449141,
+      "order": 3
+     },
+     {
+      "config": "F2|R3|rna|real|none",
+      "score_lin": -0.006608991680121583,
+      "order": 4
+     },
+     {
+      "config": "F2|R3|rna|real|loss",
+      "score_lin": -0.006615694405781208,
+      "order": 5
+     }
+    ]
+   },
+   "kept_thresholds": [
+    "F2|R1|rna|real|none",
+    "F2|R2|rna|real|none"
+   ]
+  },
+  "F3": {
+   "family": "F3",
+   "candidates": 6,
+   "gate_passing": 6,
+   "status_tag": "",
+   "descriptive_only_gate_failed": false,
+   "vs_H1": {
+    "outer_delta_lin": -0.01021469345939034,
+    "lo": -0.013278156751629314,
+    "hi": -0.007219777709013692,
+    "folds_positive": 1,
+    "tg_pass": false,
+    "chosen_per_fold": {
+     "Bone": "F3|R1|rna|real|none",
+     "Bowel": "F3|R1|rna|real|none",
+     "Cervix": "F3|R1|rna|real|none",
+     "Esophagus/Stomach": "F3|R1|rna|real|none",
+     "Head and Neck": "F3|R1|rna|real|none",
+     "Kidney": "F3|R1|rna|real|none",
+     "Myeloid": "F3|R1|rna|real|none",
+     "Peripheral Nervous System": "F3|R1|rna|real|none",
+     "Skin": "F3|R1|rna|real|none",
+     "Uterus": "F3|R1|rna|real|none"
+    },
+    "full_panel_best": "F3|R1|rna|real|none",
+    "full_panel_rank": [
+     {
+      "config": "F3|R1|rna|real|none",
+      "score_lin": -0.010214693459390339,
+      "order": 0
+     },
+     {
+      "config": "F3|R1|rna|real|loss",
+      "score_lin": -0.010277383114539095,
+      "order": 1
+     },
+     {
+      "config": "F3|R2|rna|real|none",
+      "score_lin": -0.012441093276582207,
+      "order": 2
+     },
+     {
+      "config": "F3|R2|rna|real|loss",
+      "score_lin": -0.01246152355268918,
+      "order": 3
+     },
+     {
+      "config": "F3|R3|rna|real|none",
+      "score_lin": -0.016591765615829836,
+      "order": 4
+     },
+     {
+      "config": "F3|R3|rna|real|loss",
+      "score_lin": -0.01667083673309341,
+      "order": 5
+     }
+    ]
+   },
+   "vs_H2": {
+    "outer_delta_lin": -0.0035884904514792053,
+    "lo": -0.006206517566618644,
+    "hi": -0.001187767539494745,
+    "folds_positive": 3,
+    "tg_pass": false,
+    "chosen_per_fold": {
+     "Bone": "F3|R1|rna|real|none",
+     "Bowel": "F3|R1|rna|real|none",
+     "Cervix": "F3|R1|rna|real|none",
+     "Esophagus/Stomach": "F3|R1|rna|real|none",
+     "Head and Neck": "F3|R1|rna|real|none",
+     "Kidney": "F3|R1|rna|real|none",
+     "Myeloid": "F3|R1|rna|real|none",
+     "Peripheral Nervous System": "F3|R1|rna|real|none",
+     "Skin": "F3|R1|rna|real|none",
+     "Uterus": "F3|R1|rna|real|none"
+    },
+    "full_panel_best": "F3|R1|rna|real|none",
+    "full_panel_rank": [
+     {
+      "config": "F3|R1|rna|real|none",
+      "score_lin": -0.0035884904514792045,
+      "order": 0
+     },
+     {
+      "config": "F3|R1|rna|real|loss",
+      "score_lin": -0.003651180106627958,
+      "order": 1
+     },
+     {
+      "config": "F3|R2|rna|real|none",
+      "score_lin": -0.005814890268671072,
+      "order": 2
+     },
+     {
+      "config": "F3|R2|rna|real|loss",
+      "score_lin": -0.005835320544778045,
+      "order": 3
+     },
+     {
+      "config": "F3|R3|rna|real|none",
+      "score_lin": -0.009965562607918702,
+      "order": 4
+     },
+     {
+      "config": "F3|R3|rna|real|loss",
+      "score_lin": -0.010044633725182276,
+      "order": 5
+     }
+    ]
+   },
+   "kept_thresholds": [
+    "F3|R1|rna|real|none",
+    "F3|R2|rna|real|none"
+   ]
+  },
+  "F4": {
+   "family": "F4",
+   "candidates": 6,
+   "gate_passing": 0,
+   "status_tag": "",
+   "descriptive_only_gate_failed": true,
+   "vs_H1": {
+    "outer_delta_lin": -0.002860404342991901,
+    "lo": -0.004098977315082304,
+    "hi": -0.0015342699661186798,
+    "folds_positive": 1,
+    "tg_pass": false,
+    "chosen_per_fold": {
+     "Bone": "F4|R1|rna|real|none",
+     "Bowel": "F4|R1|rna|real|none",
+     "Cervix": "F4|R1|rna|real|none",
+     "Esophagus/Stomach": "F4|R1|rna|real|none",
+     "Head and Neck": "F4|R2|rna|real|none",
+     "Kidney": "F4|R1|rna|real|none",
+     "Myeloid": "F4|R1|rna|real|none",
+     "Peripheral Nervous System": "F4|R1|rna|real|none",
+     "Skin": "F4|R1|rna|real|none",
+     "Uterus": "F4|R1|rna|real|none"
+    },
+    "full_panel_best": "F4|R1|rna|real|none",
+    "full_panel_rank": [
+     {
+      "config": "F4|R1|rna|real|none",
+      "score_lin": -0.002846958281779479,
+      "order": 0
+     },
+     {
+      "config": "F4|R2|rna|real|none",
+      "score_lin": -0.002860066794256642,
+      "order": 2
+     },
+     {
+      "config": "F4|R1|rna|real|loss",
+      "score_lin": -0.00292311397819879,
+      "order": 1
+     },
+     {
+      "config": "F4|R2|rna|real|loss",
+      "score_lin": -0.0029362224906759526,
+      "order": 3
+     },
+     {
+      "config": "F4|R3|rna|real|none",
+      "score_lin": -0.003579683708915586,
+      "order": 4
+     },
+     {
+      "config": "F4|R3|rna|real|loss",
+      "score_lin": -0.003684239193003891,
+      "order": 5
+     }
+    ]
+   },
+   "vs_H2": {
+    "outer_delta_lin": 0.003765798664919234,
+    "lo": 0.003218817255446166,
+    "hi": 0.004339094878357985,
+    "folds_positive": 10,
+    "tg_pass": false,
+    "chosen_per_fold": {
+     "Bone": "F4|R1|rna|real|none",
+     "Bowel": "F4|R1|rna|real|none",
+     "Cervix": "F4|R1|rna|real|none",
+     "Esophagus/Stomach": "F4|R1|rna|real|none",
+     "Head and Neck": "F4|R2|rna|real|none",
+     "Kidney": "F4|R1|rna|real|none",
+     "Myeloid": "F4|R1|rna|real|none",
+     "Peripheral Nervous System": "F4|R1|rna|real|none",
+     "Skin": "F4|R1|rna|real|none",
+     "Uterus": "F4|R1|rna|real|none"
+    },
+    "full_panel_best": "F4|R1|rna|real|none",
+    "full_panel_rank": [
+     {
+      "config": "F4|R1|rna|real|none",
+      "score_lin": 0.003779244726131657,
+      "order": 0
+     },
+     {
+      "config": "F4|R2|rna|real|none",
+      "score_lin": 0.003766136213654494,
+      "order": 2
+     },
+     {
+      "config": "F4|R1|rna|real|loss",
+      "score_lin": 0.003703089029712346,
+      "order": 1
+     },
+     {
+      "config": "F4|R2|rna|real|loss",
+      "score_lin": 0.003689980517235183,
+      "order": 3
+     },
+     {
+      "config": "F4|R3|rna|real|none",
+      "score_lin": 0.0030465192989955502,
+      "order": 4
+     },
+     {
+      "config": "F4|R3|rna|real|loss",
+      "score_lin": 0.0029419638149072447,
+      "order": 5
+     }
+    ]
+   },
+   "kept_thresholds": [
+    "F4|R1|rna|real|none",
+    "F4|R2|rna|real|none"
+   ]
+  },
+  "F5": {
+   "family": "F5",
+   "candidates": 24,
+   "gate_passing": 24,
+   "status_tag": "label-calibrated (F5)",
+   "descriptive_only_gate_failed": false,
+   "vs_H1": {
+    "outer_delta_lin": -0.011401632118651415,
+    "lo": -0.013097623690221591,
+    "hi": -0.00954664924752627,
+    "folds_positive": 0,
+    "tg_pass": false,
+    "chosen_per_fold": {
+     "Bone": "F5|wr1_wp0_wc0_tau-1.5",
+     "Bowel": "F5|wr1_wp0_wc0_tau-1.5",
+     "Cervix": "F5|wr1_wp0_wc0_tau-1.5",
+     "Esophagus/Stomach": "F5|wr1_wp0_wc0_tau-1.5",
+     "Head and Neck": "F5|wr1_wp0_wc0_tau-1.5",
+     "Kidney": "F5|wr1_wp0_wc1_tau-1.5",
+     "Myeloid": "F5|wr1_wp0_wc0_tau-1.5",
+     "Peripheral Nervous System": "F5|wr1_wp0_wc0_tau-1.5",
+     "Skin": "F5|wr1_wp0_wc0_tau-1.5",
+     "Uterus": "F5|wr1_wp0_wc0_tau-1.5"
+    },
+    "full_panel_best": "F5|wr1_wp0_wc0_tau-1.5",
+    "full_panel_rank": [
+     {
+      "config": "F5|wr1_wp0_wc0_tau-1.5",
+      "score_lin": -0.011364549943456937,
+      "order": 3
+     },
+     {
+      "config": "F5|wr1_wp0_wc1_tau-1.5",
+      "score_lin": -0.011366173804707825,
+      "order": 7
+     },
+     {
+      "config": "F5|wr1_wp0.5_wc0_tau-1.5",
+      "score_lin": -0.011815065094729535,
+      "order": 11
+     },
+     {
+      "config": "F5|wr1_wp0.5_wc1_tau-1.5",
+      "score_lin": -0.01181668895598042,
+      "order": 15
+     },
+     {
+      "config": "F5|wr1_wp1_wc0_tau-1.5",
+      "score_lin": -0.011907218921894386,
+      "order": 19
+     },
+     {
+      "config": "F5|wr1_wp1_wc1_tau-1.5",
+      "score_lin": -0.011908842783145272,
+      "order": 23
+     }
+    ]
+   },
+   "vs_H2": {
+    "outer_delta_lin": -0.004775429110740281,
+    "lo": -0.006240135516842515,
+    "hi": -0.003299316084901965,
+    "folds_positive": 0,
+    "tg_pass": false,
+    "chosen_per_fold": {
+     "Bone": "F5|wr1_wp0_wc0_tau-1.5",
+     "Bowel": "F5|wr1_wp0_wc0_tau-1.5",
+     "Cervix": "F5|wr1_wp0_wc0_tau-1.5",
+     "Esophagus/Stomach": "F5|wr1_wp0_wc0_tau-1.5",
+     "Head and Neck": "F5|wr1_wp0_wc0_tau-1.5",
+     "Kidney": "F5|wr1_wp0_wc1_tau-1.5",
+     "Myeloid": "F5|wr1_wp0_wc0_tau-1.5",
+     "Peripheral Nervous System": "F5|wr1_wp0_wc0_tau-1.5",
+     "Skin": "F5|wr1_wp0_wc0_tau-1.5",
+     "Uterus": "F5|wr1_wp0_wc0_tau-1.5"
+    },
+    "full_panel_best": "F5|wr1_wp0_wc0_tau-1.5",
+    "full_panel_rank": [
+     {
+      "config": "F5|wr1_wp0_wc0_tau-1.5",
+      "score_lin": -0.004738346935545803,
+      "order": 3
+     },
+     {
+      "config": "F5|wr1_wp0_wc1_tau-1.5",
+      "score_lin": -0.004739970796796689,
+      "order": 7
+     },
+     {
+      "config": "F5|wr1_wp0.5_wc0_tau-1.5",
+      "score_lin": -0.0051888620868183995,
+      "order": 11
+     },
+     {
+      "config": "F5|wr1_wp0.5_wc1_tau-1.5",
+      "score_lin": -0.005190485948069284,
+      "order": 15
+     },
+     {
+      "config": "F5|wr1_wp1_wc0_tau-1.5",
+      "score_lin": -0.00528101591398325,
+      "order": 19
+     },
+     {
+      "config": "F5|wr1_wp1_wc1_tau-1.5",
+      "score_lin": -0.005282639775234137,
+      "order": 23
+     }
+    ]
+   }
+  }
+ },
+ "verification": [
+  {
+   "check": "generic H1 tAP_line (all) equals W1 train_per_line (6-decimal TSV)",
+   "max_abs_diff": 4.900333597235296e-07,
+   "pass": true
+  },
+  {
+   "check": "generic H1 tAP_line (noCE) equals W1 train_per_line (6-decimal TSV)",
+   "max_abs_diff": 4.860505721238084e-07,
+   "pass": true
+  },
+  {
+   "check": "generic H2 tAP_line (all) equals W1 train_per_line (6-decimal TSV)",
+   "max_abs_diff": 4.881876450313349e-07,
+   "pass": true
+  },
+  {
+   "check": "generic H2 tAP_line (noCE) equals W1 train_per_line (6-decimal TSV)",
+   "max_abs_diff": 4.847897711601767e-07,
+   "pass": true
+  }
+ ],
+ "m_delta_ap_gene_B3": -0.002890367315671435,
+ "m_delta_ap_gene_generic": {
+  "H1": 3.523153561116983e-17,
+  "H2": 3.523153561116983e-17
+ },
+ "wall_s": 30
+}

@@ -1,0 +1,3 @@
+family	n_lines	n_seeds	tap_sd_across_seeds_mean	tap_range_across_seeds_max	mean_delta_seed_minus_unperturbed	unperturbed_tap_line_mean
+F2	20	3	0.0	0.0	-0.0001647518365222672	0.28785319080428323
+F3	20	3	0.0018180040015847083	0.008350453416302084	-0.00010917074761545575	0.2849281450899698
