@@ -79,7 +79,12 @@ Next (M3): Stage A of the context-model families on the 30-line training panel, 
     - [!] Less pruning is always better (R1 > R2 > R3); the genomic constraint changes ≤ 0.0002.
     - [!] H4.1: method explains more variance than tissue (KO R² 0.199 vs 0.085). F0/F2/F3 carry tissue signal beyond the permuted control; F4 is method-dominated by construction.
     - Interpretation: expression-driven pruning removes the generic model's correct calls faster than it adds line-specific ones. The remaining levers are medium/tasks/GPR (W2/W3/W5) and W7 hybrids with gene priors.
-- [ ] 7. GPR curation (proteomics, paralogs); curation vs constraint contribution
+- [~] 7. GPR curation (proteomics, paralogs); curation vs constraint contribution
+  - [-] 7.1 **W5a/W5b as specified fail TG on both parents** (b280526; review notes/reviews/M3_W5_review.md, independently recomputed). Training LOLO Δ̄ vs parent: H1 −0.0286, H2 −0.0293 (0/12 folds). W5b = W5a (no co-essential pair reaches r ≥ 0.4). The ≥ 30% identity sensitivity gives −0.0021 / −0.0031. ≈ 0.7 CPU-h.
+    - [!] Literal "Ensembl paralog" AND→OR merges Pol I/II/III subunits on the lumped MAR07161 and costs 0.026. All 12 POLR merges were rejected on biology in the edit review.
+    - [!] The H1 TYMS irreversibility fix helps consistently (+0.0007, 9/12; +0.0021 without CE_fit) but stays below SESOI.
+    - [!] CAD lethality under uridine is caused by (S)-dihydroorotate in the biomass pool MAR10064; removing it makes the CAD KO ratio 1. This goes to W3.
+    - Open: the UniProt removal path (file requested from the user, USER_DOWNLOADS item 12).
 - [ ] 8. Flux-state information content (subtypes, drug screens, metabolomics)
 - [~] 9. Resource: SBML models per DepMap 26Q3 line
   - [x] 9.1 W8 stub (Sonnet, ≈ 17 min): src/nextgem/resource.py export and gates. The demo exports (2 generic parents and 2 F0 panel models) pass all 5 gates. REPORT.md skeleton.
