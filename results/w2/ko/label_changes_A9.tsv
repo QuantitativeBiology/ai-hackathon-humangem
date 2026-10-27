@@ -1,0 +1,619 @@
+parent	variant	medium_key	f	gate_open	role_old	sweep_id_old	n_lethal_old	role_new	sweep_id_new	n_lethal_new	change	new_sweep_solver	new_sweep_existed_before_A9
+human1	M-open			True	negative_control	human1:6b3c0478054ea913	91.0	negative_control	human1:6b3c0478054ea913	91.0	unchanged	gurobi	True
+human1	M0	Hams_GR		True	baseline	human1:a35fcfdb65d63819	149.0	baseline	human1:a35fcfdb65d63819	149.0	unchanged	gurobi	True
+human1	M1	DMEM		True	documented	human1:4cecb57fce4dd831	159.0	documented	human1:4cecb57fce4dd831	159.0	unchanged	gurobi	True
+human1	M1	DMEM+alanine+asparagine+aspartate+glutamate+proline		True	documented	human1:2e2e28285923db88	157.0	documented	human1:2e2e28285923db88	157.0	unchanged	gurobi	True
+human1	M1	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate		True	documented	human1:9dfb11dbacd76b42	157.0	documented	human1:9dfb11dbacd76b42	157.0	unchanged	gurobi	True
+human1	M1	DMEM+cortisol		True	documented	human1:fd0f90ff83d3be19	159.0	documented	human1:fd0f90ff83d3be19	159.0	unchanged	gurobi	True
+human1	M1	DMEM+pyruvate		True	documented	human1:4a88cc6261e369fe	159.0	documented	human1:4a88cc6261e369fe	159.0	unchanged	gurobi	True
+human1	M1	DMEM0.25:RPMI0.75		True	documented	human1:eb0bfc953676787c	154.0	documented	human1:5623bd7ed4cb5c15	154.0	repointed	gurobi	False
+human1	M1	DMEM0.5:RPMI0.5		True	documented	human1:eb0bfc953676787c	154.0	documented	human1:5623bd7ed4cb5c15	154.0	repointed	gurobi	False
+human1	M1	DMEM:F12		True	documented	human1:08b79bfd68f2043a	149.0	documented	human1:295aebde02b012ec	149.0	repointed	gurobi	True
+human1	M1	DMEM:F12+cortisol		True	documented	human1:ccb88854833c290a	149.0	documented	human1:37ea63b01bff59ae	149.0	repointed	gurobi	False
+human1	M1	DMEM:F12+cortisol+estradiol		True	documented	human1:d2d471f4ce570f23	149.0	documented	human1:b5b185e4bbe1b8a4	149.0	repointed	gurobi	False
+human1	M1	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine		True	documented	human1:dc1fc0acbdcb23ca	149.0	documented	human1:73c0354fe907c4c2	149.0	repointed	gurobi	False
+human1	M1	DMEM:F12|serum-free		True	documented	human1:08b79bfd68f2043a	149.0	documented	human1:295aebde02b012ec	149.0	repointed	gurobi	True
+human1	M1	IMDM		True	documented	human1:bca2ca8e3c727e52	156.0	documented	human1:bca2ca8e3c727e52	156.0	unchanged	gurobi	True
+human1	M1	IMDM0.8:RPMI0.2		True	documented	human1:deaa3604a5363b14	153.0	documented	human1:deaa3604a5363b14	153.0	unchanged	gurobi	True
+human1	M1	RPMI		True	documented	human1:406759d7bcfe5607	154.0	documented	human1:4f10fb05b4f8cd57	154.0	repointed	gurobi	True
+human1	M1	RPMI+ATP+adenine+hypoxanthine+thymidine		True	documented	human1:7d2489c89e41bbe7	146.0				label_removed		False
+human1	M1	RPMI+adenine+adenosine+hypoxanthine+thymidine		True				documented	human1:8ababc5451e9ac2d	146.0	label_added	gurobi	False
+human1	M1	RPMI+alanine		True	documented	human1:08115f1d9893cc13	154.0	documented	human1:a762f33f7ee33bdb	154.0	repointed	gurobi	False
+human1	M1	RPMI+alanine+pyruvate		True				documented	human1:08115f1d9893cc13	154.0	label_added	gurobi	True
+human1	M1	RPMI+cortisol		True	documented	human1:c77069f3c8e64108	154.0	documented	human1:9bce7c2b15b731b9	154.0	repointed	gurobi	False
+human1	M1	RPMI+cys(2-ME)		True	documented	human1:406759d7bcfe5607	154.0	documented	human1:4b344d4bfb1379ab	154.0	repointed	glpk	False
+human1	M1	RPMI+pyruvate		True				documented	human1:406759d7bcfe5607	154.0	label_added	gurobi	True
+human1	M1	RPMI+testosterone		True	documented	human1:b33dc33d4417bfce	154.0	documented	human1:21e140ca22f28271	154.0	repointed	gurobi	False
+human1	M1	SENS:DMEM+pyruvate		True	sensitivity	human1:4a88cc6261e369fe	159.0	sensitivity	human1:4a88cc6261e369fe	159.0	unchanged	gurobi	True
+human1	M1	SENS:DMEM-no-standard-Gln		True	sensitivity	human1:7824350b2f5a12cf	160.0	sensitivity	human1:7824350b2f5a12cf	160.0	unchanged	gurobi	True
+human1	M1	SENS:DMEM:F12-cysteine-closed		True	sensitivity	human1:295aebde02b012ec	149.0				label_removed		False
+human1	M1	SENS:DMEM:F12-cysteine-documented		True				sensitivity	human1:08b79bfd68f2043a	149.0	label_added	gurobi	True
+human1	M1	SENS:DMEM:F12-no-standard-Gln		True				sensitivity	human1:58e8a9fb98fddc8d	150.0	label_added	gurobi	False
+human1	M1	SENS:RPMI-ATCC		True				sensitivity	human1:406759d7bcfe5607	154.0	label_added	gurobi	True
+human1	M1	SENS:RPMI-no-pyruvate		True	sensitivity	human1:4f10fb05b4f8cd57	154.0				label_removed		False
+human1	M1g	DMEM+alanine+asparagine+aspartate+glutamate+proline		False	documented	human1:87e89c2a1772d241	157.0	documented	human1:87e89c2a1772d241	157.0	unchanged	gurobi	True
+human1	M1g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate		False	documented	human1:9b26d969a23a4cb9	157.0	documented	human1:9b26d969a23a4cb9	157.0	unchanged	gurobi	True
+human1	M1g	DMEM0.25:RPMI0.75		False	documented	human1:7bd06207527c3af0	154.0	documented	human1:9ea7d2cf6f76d00d	154.0	repointed	gurobi	False
+human1	M1g	DMEM0.5:RPMI0.5		False	documented	human1:7bd06207527c3af0	154.0	documented	human1:9ea7d2cf6f76d00d	154.0	repointed	gurobi	False
+human1	M1g	DMEM:F12		False	documented	human1:ad8024a2690b3a51	149.0	documented	human1:586ea66f2a1d1305	149.0	repointed	gurobi	True
+human1	M1g	DMEM:F12+cortisol		False	documented	human1:17884815f09b9131	149.0	documented	human1:7487043509edfcf2	149.0	repointed	gurobi	False
+human1	M1g	DMEM:F12+cortisol+estradiol		False	documented	human1:6a6fc2cb8a4a7f8f	149.0	documented	human1:6229ccd212123df5	149.0	repointed	gurobi	False
+human1	M1g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine		False	documented	human1:1c3f71d5c790f55c	149.0	documented	human1:793e4a5818f6fa70	149.0	repointed	gurobi	False
+human1	M1g	DMEM:F12|serum-free		False	documented	human1:ad8024a2690b3a51	149.0	documented	human1:586ea66f2a1d1305	149.0	repointed	gurobi	True
+human1	M1g	IMDM		False	documented	human1:e99abae91f5c2bee	156.0	documented	human1:e99abae91f5c2bee	156.0	unchanged	gurobi	True
+human1	M1g	IMDM0.8:RPMI0.2		False	documented	human1:520cf98d2a4f79e4	153.0	documented	human1:520cf98d2a4f79e4	153.0	unchanged	gurobi	True
+human1	M1g	RPMI		False	documented	human1:6d8457596bfa5e7a	154.0	documented	human1:538a51793a7086f4	154.0	repointed	gurobi	True
+human1	M1g	RPMI+ATP+adenine+hypoxanthine+thymidine		False	documented	human1:198f25c0d3a48b17	146.0				label_removed		False
+human1	M1g	RPMI+adenine+adenosine+hypoxanthine+thymidine		False				documented	human1:544b1e3edf4b89e5	146.0	label_added	gurobi	False
+human1	M1g	RPMI+alanine		False	documented	human1:a3966338fc27a3bc	154.0	documented	human1:df6448e440ea9276	154.0	repointed	gurobi	False
+human1	M1g	RPMI+alanine+pyruvate		False				documented	human1:a3966338fc27a3bc	154.0	label_added	gurobi	True
+human1	M1g	RPMI+cortisol		False	documented	human1:3bb2aeee33d7cc16	154.0	documented	human1:21961cdefc58db97	154.0	repointed	gurobi	False
+human1	M1g	RPMI+cys(2-ME)		False	documented	human1:6d8457596bfa5e7a	154.0	documented	human1:86af0a7592010fd2	154.0	repointed	glpk	False
+human1	M1g	RPMI+pyruvate		False				documented	human1:6d8457596bfa5e7a	154.0	label_added	gurobi	True
+human1	M1g	RPMI+testosterone		False	documented	human1:5b07de2a951a2e83	154.0	documented	human1:94eea26dd7072de9	154.0	repointed	gurobi	False
+human1	M1g	SENS:DMEM:F12-cysteine-closed		False	sensitivity	human1:586ea66f2a1d1305	149.0				label_removed		False
+human1	M1g	SENS:DMEM:F12-cysteine-documented		False				sensitivity	human1:ad8024a2690b3a51	149.0	label_added	gurobi	True
+human1	M1g	SENS:DMEM:F12-no-standard-Gln		False				sensitivity	human1:1504ae5f9e4f83f5	150.0	label_added	gurobi	False
+human1	M1g	SENS:RPMI-ATCC		False				sensitivity	human1:6d8457596bfa5e7a	154.0	label_added	gurobi	True
+human1	M1g	SENS:RPMI-no-pyruvate		False	sensitivity	human1:538a51793a7086f4	154.0				label_removed		False
+human1	M2	DMEM	0.001	True	documented	human1:af47aa47fed4088f	159.0	documented	human1:af47aa47fed4088f	159.0	unchanged	gurobi	True
+human1	M2	DMEM	0.01	True	documented	human1:d0648ab0ecf2194d	159.0	documented	human1:d0648ab0ecf2194d	159.0	unchanged	gurobi	True
+human1	M2	DMEM	0.1	True	documented	human1:9cca6ce01ffcae79	149.0	documented	human1:9cca6ce01ffcae79	149.0	unchanged	gurobi	True
+human1	M2	DMEM	1.0	True	documented	human1:5fe39a3dcfa2880f	149.0	documented	human1:5fe39a3dcfa2880f	149.0	unchanged	gurobi	True
+human1	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.001	True	documented	human1:1c583745990e0a94	157.0	documented	human1:1c583745990e0a94	157.0	unchanged	gurobi	True
+human1	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.01	True	documented	human1:686ee835cff0cc35	157.0	documented	human1:686ee835cff0cc35	157.0	unchanged	gurobi	True
+human1	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.1	True	documented	human1:10476bf971bc1136	147.0	documented	human1:10476bf971bc1136	147.0	unchanged	gurobi	True
+human1	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	1.0	True	documented	human1:c7bc04800b527a9b	147.0	documented	human1:c7bc04800b527a9b	147.0	unchanged	gurobi	True
+human1	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.001	True	documented	human1:2778d18f3eb161b5	157.0	documented	human1:2778d18f3eb161b5	157.0	unchanged	gurobi	True
+human1	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.01	True	documented	human1:a45b3a700d603e59	157.0	documented	human1:a45b3a700d603e59	157.0	unchanged	gurobi	True
+human1	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.1	True	documented	human1:e6966f6ec8ab35ca	147.0	documented	human1:e6966f6ec8ab35ca	147.0	unchanged	gurobi	True
+human1	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	1.0	True	documented	human1:8664d3c02595ea12	147.0	documented	human1:8664d3c02595ea12	147.0	unchanged	gurobi	True
+human1	M2	DMEM+cortisol	0.001	True	documented	human1:327078c5cef72690	159.0	documented	human1:327078c5cef72690	159.0	unchanged	gurobi	True
+human1	M2	DMEM+cortisol	0.01	True	documented	human1:4e34919ff51243e1	159.0	documented	human1:4e34919ff51243e1	159.0	unchanged	gurobi	True
+human1	M2	DMEM+cortisol	0.1	True	documented	human1:40edf40f84d8948a	149.0	documented	human1:40edf40f84d8948a	149.0	unchanged	gurobi	True
+human1	M2	DMEM+cortisol	1.0	True	documented	human1:68cf1f92e887a9fd	149.0	documented	human1:68cf1f92e887a9fd	149.0	unchanged	gurobi	True
+human1	M2	DMEM+pyruvate	0.001	True	documented	human1:a6754130001f999e	159.0	documented	human1:a6754130001f999e	159.0	unchanged	gurobi	True
+human1	M2	DMEM+pyruvate	0.01	True	documented	human1:fb03f60f0948b00a	159.0	documented	human1:fb03f60f0948b00a	159.0	unchanged	gurobi	True
+human1	M2	DMEM+pyruvate	0.1	True	documented	human1:92e47ae07d74d8a3	149.0	documented	human1:92e47ae07d74d8a3	149.0	unchanged	gurobi	True
+human1	M2	DMEM+pyruvate	1.0	True	documented	human1:671e836367589246	149.0	documented	human1:671e836367589246	149.0	unchanged	gurobi	True
+human1	M2	DMEM0.25:RPMI0.75	0.001	True	documented	human1:a62c032be0d92bdd	154.0	documented	human1:a2e2c3983ad3533e	154.0	repointed	gurobi	True
+human1	M2	DMEM0.25:RPMI0.75	0.01	True	documented	human1:852503e406963d44	154.0	documented	human1:29bb56fd766a2e4c	154.0	repointed	gurobi	True
+human1	M2	DMEM0.25:RPMI0.75	0.1	True	documented	human1:829820ec676795f8	144.0	documented	human1:cb47af91aa0126f5	144.0	repointed	gurobi	True
+human1	M2	DMEM0.25:RPMI0.75	1.0	True	documented	human1:06ce6a07dd2676d1	144.0	documented	human1:db9ebc6b123dcb99	144.0	repointed	gurobi	True
+human1	M2	DMEM0.5:RPMI0.5	0.001	True	documented	human1:a62c032be0d92bdd	154.0	documented	human1:a2e2c3983ad3533e	154.0	repointed	gurobi	True
+human1	M2	DMEM0.5:RPMI0.5	0.01	True	documented	human1:852503e406963d44	154.0	documented	human1:29bb56fd766a2e4c	154.0	repointed	gurobi	True
+human1	M2	DMEM0.5:RPMI0.5	0.1	True	documented	human1:829820ec676795f8	144.0	documented	human1:cb47af91aa0126f5	144.0	repointed	gurobi	True
+human1	M2	DMEM0.5:RPMI0.5	1.0	True	documented	human1:06ce6a07dd2676d1	144.0	documented	human1:db9ebc6b123dcb99	144.0	repointed	gurobi	True
+human1	M2	DMEM:F12	0.001	True	documented	human1:38864d16447ee36a	149.0	documented	human1:599b3e294520be00	149.0	repointed	gurobi	True
+human1	M2	DMEM:F12	0.01	True	documented	human1:14c982f4e47eb8b5	149.0	documented	human1:d2b9e7d4273505ce	149.0	repointed	gurobi	True
+human1	M2	DMEM:F12	0.1	True	documented	human1:91449252381bee40	139.0	documented	human1:a6d977bea3472efd	139.0	repointed	gurobi	True
+human1	M2	DMEM:F12	1.0	True	documented	human1:1fce1b065357ef47	139.0	documented	human1:24f533da22a08aee	139.0	repointed	gurobi	True
+human1	M2	DMEM:F12+cortisol	0.001	True	documented	human1:dbd64980c7ebf235	149.0	documented	human1:ffd6191b5a682a17	149.0	repointed	gurobi	False
+human1	M2	DMEM:F12+cortisol	0.01	True	documented	human1:ae320c0d85c53839	149.0	documented	human1:1747ec00563f859b	149.0	repointed	gurobi	False
+human1	M2	DMEM:F12+cortisol	0.1	True	documented	human1:69d17214c0e18b37	139.0	documented	human1:5ab2605af4a98d34	139.0	repointed	gurobi	False
+human1	M2	DMEM:F12+cortisol	1.0	True	documented	human1:65f40fa1ddf01487	139.0	documented	human1:474d632d7fd33d79	139.0	repointed	gurobi	False
+human1	M2	DMEM:F12+cortisol+estradiol	0.001	True	documented	human1:ac2fd4456f37fd80	149.0	documented	human1:51bde01e531dc582	149.0	repointed	gurobi	False
+human1	M2	DMEM:F12+cortisol+estradiol	0.01	True	documented	human1:cfd365bf22617482	149.0	documented	human1:199d328b58dad8ca	149.0	repointed	gurobi	False
+human1	M2	DMEM:F12+cortisol+estradiol	0.1	True	documented	human1:a52ed3289e020303	139.0	documented	human1:ee927ef751e39cfc	139.0	repointed	gurobi	False
+human1	M2	DMEM:F12+cortisol+estradiol	1.0	True	documented	human1:0b97cac00eca6f60	139.0	documented	human1:53a34923edc5a9e6	139.0	repointed	gurobi	False
+human1	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.001	True	documented	human1:65808df7bef59233	149.0	documented	human1:6db0ff0bfb9636f8	149.0	repointed	gurobi	False
+human1	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.01	True	documented	human1:42642ff1bd399ae6	149.0	documented	human1:ea01a5e343d3ff30	149.0	repointed	gurobi	False
+human1	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.1	True	documented	human1:84a1ab309acbdd38	139.0	documented	human1:45def0f53732f9a7	139.0	repointed	gurobi	False
+human1	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	1.0	True	documented	human1:62d24d1d331d6375	139.0	documented	human1:596d0d8beb7cba6b	139.0	repointed	gurobi	False
+human1	M2	DMEM:F12|serum-free	0.001	True	documented	human1:08b79bfd68f2043a	149.0	documented	human1:295aebde02b012ec	149.0	repointed	gurobi	True
+human1	M2	DMEM:F12|serum-free	0.01	True	documented	human1:08b79bfd68f2043a	149.0	documented	human1:295aebde02b012ec	149.0	repointed	gurobi	True
+human1	M2	DMEM:F12|serum-free	0.1	True	documented	human1:08b79bfd68f2043a	149.0	documented	human1:295aebde02b012ec	149.0	repointed	gurobi	True
+human1	M2	DMEM:F12|serum-free	1.0	True	documented	human1:08b79bfd68f2043a	149.0	documented	human1:295aebde02b012ec	149.0	repointed	gurobi	True
+human1	M2	IMDM	0.001	True	documented	human1:babb5d5add338646	156.0	documented	human1:babb5d5add338646	156.0	unchanged	gurobi	True
+human1	M2	IMDM	0.01	True	documented	human1:26044e1fa41847f3	156.0	documented	human1:26044e1fa41847f3	156.0	unchanged	gurobi	True
+human1	M2	IMDM	0.1	True	documented	human1:7aee21df5cacab86	146.0	documented	human1:7aee21df5cacab86	146.0	unchanged	gurobi	True
+human1	M2	IMDM	1.0	True	documented	human1:a339b0701b854c39	146.0	documented	human1:a339b0701b854c39	146.0	unchanged	gurobi	True
+human1	M2	IMDM0.8:RPMI0.2	0.001	True	documented	human1:66c56b47b3432dfb	153.0	documented	human1:66c56b47b3432dfb	153.0	unchanged	gurobi	True
+human1	M2	IMDM0.8:RPMI0.2	0.01	True	documented	human1:c56eb1e0eb3ccb13	153.0	documented	human1:c56eb1e0eb3ccb13	153.0	unchanged	gurobi	True
+human1	M2	IMDM0.8:RPMI0.2	0.1	True	documented	human1:c39cf17209a48f54	143.0	documented	human1:c39cf17209a48f54	143.0	unchanged	gurobi	True
+human1	M2	IMDM0.8:RPMI0.2	1.0	True	documented	human1:dedeef837ba95fab	143.0	documented	human1:dedeef837ba95fab	143.0	unchanged	gurobi	True
+human1	M2	M-HPLM	0.001	True	physiological	human1:5d35ca500195fe64	140.0	physiological	human1:06f689019fe703a5	140.0	repointed	gurobi	False
+human1	M2	M-HPLM	0.01	True	physiological	human1:e0fcfd5be1750c48	140.0	physiological	human1:1ed521270bdaed1c	140.0	repointed	gurobi	False
+human1	M2	M-HPLM	0.1	True	physiological	human1:6700e798f06b12f9	139.0	physiological	human1:f80d09677b3f8be2	139.0	repointed	gurobi	False
+human1	M2	M-HPLM	1.0	True	physiological	human1:60af2040c78876f9	139.0	physiological	human1:0bf81c4ca04fe2c4	139.0	repointed	gurobi	False
+human1	M2	M-HPLM|cys-documented	0.001	True				sensitivity	human1:5d35ca500195fe64	140.0	label_added	gurobi	True
+human1	M2	M-HPLM|cys-documented	0.01	True				sensitivity	human1:e0fcfd5be1750c48	140.0	label_added	gurobi	True
+human1	M2	M-HPLM|cys-documented	0.1	True				sensitivity	human1:6700e798f06b12f9	139.0	label_added	gurobi	True
+human1	M2	M-HPLM|cys-documented	1.0	True				sensitivity	human1:60af2040c78876f9	139.0	label_added	gurobi	True
+human1	M2	M-Plasmax	0.001	True	physiological	human1:fd52f92719f09c95	138.0	physiological	human1:48f34572c5c53129	138.0	repointed	gurobi	False
+human1	M2	M-Plasmax	0.01	True	physiological	human1:2fed622ca07b04dc	138.0	physiological	human1:f25d4596cfbac1e3	138.0	repointed	gurobi	False
+human1	M2	M-Plasmax	0.1	True	physiological	human1:da9de976761e0675	137.0	physiological	human1:dcdf0158e57dd9f0	137.0	repointed	gurobi	False
+human1	M2	M-Plasmax	1.0	True	physiological	human1:2b96b19f5a055b9b	137.0	physiological	human1:134bbd58202b6182	137.0	repointed	gurobi	False
+human1	M2	M-Plasmax|cys-documented	0.001	True				sensitivity	human1:fd52f92719f09c95	138.0	label_added	gurobi	True
+human1	M2	M-Plasmax|cys-documented	0.01	True				sensitivity	human1:2fed622ca07b04dc	138.0	label_added	gurobi	True
+human1	M2	M-Plasmax|cys-documented	0.1	True				sensitivity	human1:da9de976761e0675	137.0	label_added	gurobi	True
+human1	M2	M-Plasmax|cys-documented	1.0	True				sensitivity	human1:2b96b19f5a055b9b	137.0	label_added	gurobi	True
+human1	M2	RPMI	0.001	True	documented	human1:a62c032be0d92bdd	154.0	documented	human1:a2e2c3983ad3533e	154.0	repointed	gurobi	True
+human1	M2	RPMI	0.01	True	documented	human1:852503e406963d44	154.0	documented	human1:29bb56fd766a2e4c	154.0	repointed	gurobi	True
+human1	M2	RPMI	0.1	True	documented	human1:829820ec676795f8	144.0	documented	human1:cb47af91aa0126f5	144.0	repointed	gurobi	True
+human1	M2	RPMI	1.0	True	documented	human1:06ce6a07dd2676d1	144.0	documented	human1:db9ebc6b123dcb99	144.0	repointed	gurobi	True
+human1	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	0.001	True	documented	human1:72d0929fb8b7d5e7	146.0				label_removed		False
+human1	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	0.01	True	documented	human1:c8cde65885729f23	146.0				label_removed		False
+human1	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	0.1	True	documented	human1:fcc25c83c7be6c5f	136.0				label_removed		False
+human1	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	1.0	True	documented	human1:6789f5d39dc001e5	136.0				label_removed		False
+human1	M2	RPMI+adenine+adenosine+hypoxanthine+thymidine	0.001	True				documented	human1:ccfb3e5ae2207ec2	146.0	label_added	gurobi	False
+human1	M2	RPMI+adenine+adenosine+hypoxanthine+thymidine	0.01	True				documented	human1:00800cc4e2cc5200	146.0	label_added	gurobi	False
+human1	M2	RPMI+adenine+adenosine+hypoxanthine+thymidine	0.1	True				documented	human1:e2cd61c7f775a1d4	136.0	label_added	gurobi	False
+human1	M2	RPMI+adenine+adenosine+hypoxanthine+thymidine	1.0	True				documented	human1:d0d0efa49fd86b55	136.0	label_added	gurobi	False
+human1	M2	RPMI+alanine	0.001	True	documented	human1:a40361b9a6551f7f	154.0	documented	human1:6767e3b0619e9675	154.0	repointed	gurobi	False
+human1	M2	RPMI+alanine	0.01	True	documented	human1:d23fd8bbdae5b4c2	154.0	documented	human1:c4d0bb2f14a6f9e9	154.0	repointed	gurobi	False
+human1	M2	RPMI+alanine	0.1	True	documented	human1:cef25a6ffb036910	144.0	documented	human1:b593484e100b913a	144.0	repointed	gurobi	False
+human1	M2	RPMI+alanine	1.0	True	documented	human1:9e154acdebb57dbc	144.0	documented	human1:65d8d435a1994b98	144.0	repointed	gurobi	False
+human1	M2	RPMI+alanine+pyruvate	0.001	True				documented	human1:a40361b9a6551f7f	154.0	label_added	gurobi	True
+human1	M2	RPMI+alanine+pyruvate	0.01	True				documented	human1:d23fd8bbdae5b4c2	154.0	label_added	gurobi	True
+human1	M2	RPMI+alanine+pyruvate	0.1	True				documented	human1:cef25a6ffb036910	144.0	label_added	gurobi	True
+human1	M2	RPMI+alanine+pyruvate	1.0	True				documented	human1:9e154acdebb57dbc	144.0	label_added	gurobi	True
+human1	M2	RPMI+cortisol	0.001	True	documented	human1:7d04891252aa9a70	154.0	documented	human1:c92dd5b26f2cadef	154.0	repointed	gurobi	False
+human1	M2	RPMI+cortisol	0.01	True	documented	human1:4448db764b034a8e	154.0	documented	human1:b09c6fc796d2da6e	154.0	repointed	gurobi	False
+human1	M2	RPMI+cortisol	0.1	True	documented	human1:50ba35feb367750f	144.0	documented	human1:34b9dd091189e56f	144.0	repointed	gurobi	False
+human1	M2	RPMI+cortisol	1.0	True	documented	human1:97ef71855d67d166	144.0	documented	human1:f1e267130e2676ad	144.0	repointed	gurobi	False
+human1	M2	RPMI+cys(2-ME)	0.001	True	documented	human1:a62c032be0d92bdd	154.0	documented	human1:96d3e8801c1a5406	154.0	repointed	glpk	False
+human1	M2	RPMI+cys(2-ME)	0.01	True	documented	human1:852503e406963d44	154.0	documented	human1:bcf6327138a46759	154.0	repointed	glpk	False
+human1	M2	RPMI+cys(2-ME)	0.1	True	documented	human1:829820ec676795f8	144.0	documented	human1:159ca9ff5c70202e	144.0	repointed	glpk	False
+human1	M2	RPMI+cys(2-ME)	1.0	True	documented	human1:06ce6a07dd2676d1	144.0	documented	human1:e3d627ac12ad0458	144.0	repointed	glpk	False
+human1	M2	RPMI+pyruvate	0.001	True				documented	human1:a62c032be0d92bdd	154.0	label_added	gurobi	True
+human1	M2	RPMI+pyruvate	0.01	True				documented	human1:852503e406963d44	154.0	label_added	gurobi	True
+human1	M2	RPMI+pyruvate	0.1	True				documented	human1:829820ec676795f8	144.0	label_added	gurobi	True
+human1	M2	RPMI+pyruvate	1.0	True				documented	human1:06ce6a07dd2676d1	144.0	label_added	gurobi	True
+human1	M2	RPMI+testosterone	0.001	True	documented	human1:ba557aa7a65064a9	154.0	documented	human1:ddd515b67da7f599	154.0	repointed	gurobi	False
+human1	M2	RPMI+testosterone	0.01	True	documented	human1:e04d7deaddde2479	154.0	documented	human1:df5d5b2aba77cbc1	154.0	repointed	gurobi	False
+human1	M2	RPMI+testosterone	0.1	True	documented	human1:a2a07037d551e59f	144.0	documented	human1:2fa1a7eeb2dbcf92	144.0	repointed	gurobi	False
+human1	M2	RPMI+testosterone	1.0	True	documented	human1:36776104848ff21e	144.0	documented	human1:882c9ef79a8c89c0	144.0	repointed	gurobi	False
+human1	M2	SENS:DMEM+pyruvate	0.001	True	sensitivity	human1:a6754130001f999e	159.0	sensitivity	human1:a6754130001f999e	159.0	unchanged	gurobi	True
+human1	M2	SENS:DMEM+pyruvate	0.01	True	sensitivity	human1:fb03f60f0948b00a	159.0	sensitivity	human1:fb03f60f0948b00a	159.0	unchanged	gurobi	True
+human1	M2	SENS:DMEM+pyruvate	0.1	True	sensitivity	human1:92e47ae07d74d8a3	149.0	sensitivity	human1:92e47ae07d74d8a3	149.0	unchanged	gurobi	True
+human1	M2	SENS:DMEM+pyruvate	1.0	True	sensitivity	human1:671e836367589246	149.0	sensitivity	human1:671e836367589246	149.0	unchanged	gurobi	True
+human1	M2	SENS:DMEM-no-standard-Gln	0.001	True	sensitivity	human1:8b724ea1435e38da	160.0	sensitivity	human1:8b724ea1435e38da	160.0	unchanged	gurobi	True
+human1	M2	SENS:DMEM-no-standard-Gln	0.01	True	sensitivity	human1:346f7f8b918b1251	150.0	sensitivity	human1:346f7f8b918b1251	150.0	unchanged	gurobi	True
+human1	M2	SENS:DMEM-no-standard-Gln	0.1	True	sensitivity	human1:9228a6e35dda3f51	150.0	sensitivity	human1:9228a6e35dda3f51	150.0	unchanged	gurobi	True
+human1	M2	SENS:DMEM-no-standard-Gln	1.0	True	sensitivity	human1:236b6af96875715b	150.0	sensitivity	human1:236b6af96875715b	150.0	unchanged	gurobi	True
+human1	M2	SENS:DMEM:F12-cysteine-closed	0.001	True	sensitivity	human1:599b3e294520be00	149.0				label_removed		False
+human1	M2	SENS:DMEM:F12-cysteine-closed	0.01	True	sensitivity	human1:d2b9e7d4273505ce	149.0				label_removed		False
+human1	M2	SENS:DMEM:F12-cysteine-closed	0.1	True	sensitivity	human1:a6d977bea3472efd	139.0				label_removed		False
+human1	M2	SENS:DMEM:F12-cysteine-closed	1.0	True	sensitivity	human1:24f533da22a08aee	139.0				label_removed		False
+human1	M2	SENS:DMEM:F12-cysteine-documented	0.001	True				sensitivity	human1:38864d16447ee36a	149.0	label_added	gurobi	True
+human1	M2	SENS:DMEM:F12-cysteine-documented	0.01	True				sensitivity	human1:14c982f4e47eb8b5	149.0	label_added	gurobi	True
+human1	M2	SENS:DMEM:F12-cysteine-documented	0.1	True				sensitivity	human1:91449252381bee40	139.0	label_added	gurobi	True
+human1	M2	SENS:DMEM:F12-cysteine-documented	1.0	True				sensitivity	human1:1fce1b065357ef47	139.0	label_added	gurobi	True
+human1	M2	SENS:DMEM:F12-no-standard-Gln	0.001	True				sensitivity	human1:de0858433c6f4982	150.0	label_added	gurobi	False
+human1	M2	SENS:DMEM:F12-no-standard-Gln	0.01	True				sensitivity	human1:6acc6d1a09e62fbe	150.0	label_added	gurobi	False
+human1	M2	SENS:DMEM:F12-no-standard-Gln	0.1	True				sensitivity	human1:0ded7a4739a71e9e	140.0	label_added	gurobi	False
+human1	M2	SENS:DMEM:F12-no-standard-Gln	1.0	True				sensitivity	human1:8e3e0fe352714f6b	140.0	label_added	gurobi	False
+human1	M2	SENS:RPMI-ATCC	0.001	True				sensitivity	human1:a62c032be0d92bdd	154.0	label_added	gurobi	True
+human1	M2	SENS:RPMI-ATCC	0.01	True				sensitivity	human1:852503e406963d44	154.0	label_added	gurobi	True
+human1	M2	SENS:RPMI-ATCC	0.1	True				sensitivity	human1:829820ec676795f8	144.0	label_added	gurobi	True
+human1	M2	SENS:RPMI-ATCC	1.0	True				sensitivity	human1:06ce6a07dd2676d1	144.0	label_added	gurobi	True
+human1	M2	SENS:RPMI-no-pyruvate	0.001	True	sensitivity	human1:a2e2c3983ad3533e	154.0				label_removed		False
+human1	M2	SENS:RPMI-no-pyruvate	0.01	True	sensitivity	human1:29bb56fd766a2e4c	154.0				label_removed		False
+human1	M2	SENS:RPMI-no-pyruvate	0.1	True	sensitivity	human1:cb47af91aa0126f5	144.0				label_removed		False
+human1	M2	SENS:RPMI-no-pyruvate	1.0	True	sensitivity	human1:db9ebc6b123dcb99	144.0				label_removed		False
+human1	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.001	False	documented	human1:815f0a9d18c5c441	157.0	documented	human1:815f0a9d18c5c441	157.0	unchanged	gurobi	True
+human1	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.01	False	documented	human1:ced2389fd475e312	157.0	documented	human1:ced2389fd475e312	157.0	unchanged	gurobi	True
+human1	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.1	False	documented	human1:adb89dd87a6c7a35	147.0	documented	human1:adb89dd87a6c7a35	147.0	unchanged	gurobi	True
+human1	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	1.0	False	documented	human1:6c114587fe86f59d	147.0	documented	human1:6c114587fe86f59d	147.0	unchanged	gurobi	True
+human1	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.001	False	documented	human1:d30bd30f6989d685	157.0	documented	human1:d30bd30f6989d685	157.0	unchanged	gurobi	True
+human1	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.01	False	documented	human1:f65b239c474a4f33	157.0	documented	human1:f65b239c474a4f33	157.0	unchanged	gurobi	True
+human1	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.1	False	documented	human1:adab37e54c36ac83	147.0	documented	human1:adab37e54c36ac83	147.0	unchanged	gurobi	True
+human1	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	1.0	False	documented	human1:3d1327f3fce1efa2	147.0	documented	human1:3d1327f3fce1efa2	147.0	unchanged	gurobi	True
+human1	M2g	DMEM0.25:RPMI0.75	0.001	False	documented	human1:1100a8cf4296bf77	154.0	documented	human1:35c7f2ee9831b09c	154.0	repointed	gurobi	True
+human1	M2g	DMEM0.25:RPMI0.75	0.01	False	documented	human1:0e9b9dbc891870d8	154.0	documented	human1:7b9f90f5dd9fdff8	154.0	repointed	gurobi	True
+human1	M2g	DMEM0.25:RPMI0.75	0.1	False	documented	human1:a43c0e301163cf2f	144.0	documented	human1:2c7184196af41159	144.0	repointed	gurobi	True
+human1	M2g	DMEM0.25:RPMI0.75	1.0	False	documented	human1:8a421106a5ec4456	144.0	documented	human1:4251f37ddc664365	144.0	repointed	gurobi	True
+human1	M2g	DMEM0.5:RPMI0.5	0.001	False	documented	human1:1100a8cf4296bf77	154.0	documented	human1:35c7f2ee9831b09c	154.0	repointed	gurobi	True
+human1	M2g	DMEM0.5:RPMI0.5	0.01	False	documented	human1:0e9b9dbc891870d8	154.0	documented	human1:7b9f90f5dd9fdff8	154.0	repointed	gurobi	True
+human1	M2g	DMEM0.5:RPMI0.5	0.1	False	documented	human1:a43c0e301163cf2f	144.0	documented	human1:2c7184196af41159	144.0	repointed	gurobi	True
+human1	M2g	DMEM0.5:RPMI0.5	1.0	False	documented	human1:8a421106a5ec4456	144.0	documented	human1:4251f37ddc664365	144.0	repointed	gurobi	True
+human1	M2g	DMEM:F12	0.001	False	documented	human1:649ce42a1602bb9e	149.0	documented	human1:5574d82ace65253b	149.0	repointed	gurobi	True
+human1	M2g	DMEM:F12	0.01	False	documented	human1:30ee99a385ab4d93	149.0	documented	human1:fe426914284f0b6d	149.0	repointed	gurobi	True
+human1	M2g	DMEM:F12	0.1	False	documented	human1:3766dd037cf9e36d	139.0	documented	human1:a2e5a5699d7845ae	139.0	repointed	gurobi	True
+human1	M2g	DMEM:F12	1.0	False	documented	human1:d337322e50bbfed8	139.0	documented	human1:d165996515bf04d6	139.0	repointed	gurobi	True
+human1	M2g	DMEM:F12+cortisol	0.001	False	documented	human1:75578d69bd8e5e25	149.0	documented	human1:330fd8446798b459	149.0	repointed	gurobi	False
+human1	M2g	DMEM:F12+cortisol	0.01	False	documented	human1:8da87c5f067d32c9	149.0	documented	human1:25a1c9ad2d95050a	149.0	repointed	gurobi	False
+human1	M2g	DMEM:F12+cortisol	0.1	False	documented	human1:f4275d082e4b4bbd	139.0	documented	human1:a4588d4b84e3c2fc	139.0	repointed	gurobi	False
+human1	M2g	DMEM:F12+cortisol	1.0	False	documented	human1:cd64bcdbb2f04ab0	139.0	documented	human1:ee421e3b24bd23d0	139.0	repointed	gurobi	False
+human1	M2g	DMEM:F12+cortisol+estradiol	0.001	False	documented	human1:5feb43394cbbf85c	149.0	documented	human1:877261886b896bb0	149.0	repointed	gurobi	False
+human1	M2g	DMEM:F12+cortisol+estradiol	0.01	False	documented	human1:a0bf7245c9f04bad	149.0	documented	human1:802718a1466fc8a5	149.0	repointed	gurobi	False
+human1	M2g	DMEM:F12+cortisol+estradiol	0.1	False	documented	human1:c86879d0d664256d	139.0	documented	human1:c1c7cab15c0b99fa	139.0	repointed	gurobi	False
+human1	M2g	DMEM:F12+cortisol+estradiol	1.0	False	documented	human1:ba40188fd07ca732	139.0	documented	human1:6dd07c6e024bece7	139.0	repointed	gurobi	False
+human1	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.001	False	documented	human1:3109505eaa51bef7	149.0	documented	human1:8aef35b9a0acc7de	149.0	repointed	gurobi	False
+human1	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.01	False	documented	human1:00383863ad4204af	149.0	documented	human1:fe0afe42891e09ba	149.0	repointed	gurobi	False
+human1	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.1	False	documented	human1:018c1b8a4f1577dc	139.0	documented	human1:af090c5e93e656df	139.0	repointed	gurobi	False
+human1	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	1.0	False	documented	human1:8331003eb88f6198	139.0	documented	human1:3722b434257bf752	139.0	repointed	gurobi	False
+human1	M2g	DMEM:F12|serum-free	0.001	False	documented	human1:ad8024a2690b3a51	149.0	documented	human1:586ea66f2a1d1305	149.0	repointed	gurobi	True
+human1	M2g	DMEM:F12|serum-free	0.01	False	documented	human1:ad8024a2690b3a51	149.0	documented	human1:586ea66f2a1d1305	149.0	repointed	gurobi	True
+human1	M2g	DMEM:F12|serum-free	0.1	False	documented	human1:ad8024a2690b3a51	149.0	documented	human1:586ea66f2a1d1305	149.0	repointed	gurobi	True
+human1	M2g	DMEM:F12|serum-free	1.0	False	documented	human1:ad8024a2690b3a51	149.0	documented	human1:586ea66f2a1d1305	149.0	repointed	gurobi	True
+human1	M2g	IMDM	0.001	False	documented	human1:2ed798d41fa169eb	156.0	documented	human1:2ed798d41fa169eb	156.0	unchanged	gurobi	True
+human1	M2g	IMDM	0.01	False	documented	human1:963029bc78084d99	156.0	documented	human1:963029bc78084d99	156.0	unchanged	gurobi	True
+human1	M2g	IMDM	0.1	False	documented	human1:0fd8e1dc79eed524	146.0	documented	human1:0fd8e1dc79eed524	146.0	unchanged	gurobi	True
+human1	M2g	IMDM	1.0	False	documented	human1:de8ded9298a128a9	146.0	documented	human1:de8ded9298a128a9	146.0	unchanged	gurobi	True
+human1	M2g	IMDM0.8:RPMI0.2	0.001	False	documented	human1:38a6e9a670ec0359	153.0	documented	human1:38a6e9a670ec0359	153.0	unchanged	gurobi	True
+human1	M2g	IMDM0.8:RPMI0.2	0.01	False	documented	human1:03b21a6f250e1b7c	153.0	documented	human1:03b21a6f250e1b7c	153.0	unchanged	gurobi	True
+human1	M2g	IMDM0.8:RPMI0.2	0.1	False	documented	human1:bb176049049ee137	143.0	documented	human1:bb176049049ee137	143.0	unchanged	gurobi	True
+human1	M2g	IMDM0.8:RPMI0.2	1.0	False	documented	human1:6c4b1d2a55673bde	143.0	documented	human1:6c4b1d2a55673bde	143.0	unchanged	gurobi	True
+human1	M2g	M-HPLM	0.001	False	physiological	human1:9d6438f207260731	140.0	physiological	human1:17bdf622e57ec7f0	140.0	repointed	gurobi	False
+human1	M2g	M-HPLM	0.01	False	physiological	human1:f9dd6a951e3e09c9	140.0	physiological	human1:00d3a2677bd16b3d	140.0	repointed	gurobi	False
+human1	M2g	M-HPLM	0.1	False	physiological	human1:7617d512f3f1dcf1	139.0	physiological	human1:9ee88d096c1e76a5	139.0	repointed	gurobi	False
+human1	M2g	M-HPLM	1.0	False	physiological	human1:450da892b6223ccf	139.0	physiological	human1:faa4976fdd7aa8cc	139.0	repointed	gurobi	False
+human1	M2g	M-HPLM|cys-documented	0.001	False				sensitivity	human1:9d6438f207260731	140.0	label_added	gurobi	True
+human1	M2g	M-HPLM|cys-documented	0.01	False				sensitivity	human1:f9dd6a951e3e09c9	140.0	label_added	gurobi	True
+human1	M2g	M-HPLM|cys-documented	0.1	False				sensitivity	human1:7617d512f3f1dcf1	139.0	label_added	gurobi	True
+human1	M2g	M-HPLM|cys-documented	1.0	False				sensitivity	human1:450da892b6223ccf	139.0	label_added	gurobi	True
+human1	M2g	M-Plasmax	0.001	False	physiological	human1:c6441ec16cb92a1c	138.0	physiological	human1:9d6cd5666dd01f85	138.0	repointed	gurobi	False
+human1	M2g	M-Plasmax	0.01	False	physiological	human1:ee4243489f9e438c	138.0	physiological	human1:a097c02dff90bb73	138.0	repointed	gurobi	False
+human1	M2g	M-Plasmax	0.1	False	physiological	human1:a786ea13c8382f44	137.0	physiological	human1:4a580aa22a1fbd80	137.0	repointed	gurobi	False
+human1	M2g	M-Plasmax	1.0	False	physiological	human1:1244999ee8034302	137.0	physiological	human1:c02173add01c7bb8	137.0	repointed	gurobi	False
+human1	M2g	M-Plasmax|cys-documented	0.001	False				sensitivity	human1:c6441ec16cb92a1c	138.0	label_added	gurobi	True
+human1	M2g	M-Plasmax|cys-documented	0.01	False				sensitivity	human1:ee4243489f9e438c	138.0	label_added	gurobi	True
+human1	M2g	M-Plasmax|cys-documented	0.1	False				sensitivity	human1:a786ea13c8382f44	137.0	label_added	gurobi	True
+human1	M2g	M-Plasmax|cys-documented	1.0	False				sensitivity	human1:1244999ee8034302	137.0	label_added	gurobi	True
+human1	M2g	RPMI	0.001	False	documented	human1:1100a8cf4296bf77	154.0	documented	human1:35c7f2ee9831b09c	154.0	repointed	gurobi	True
+human1	M2g	RPMI	0.01	False	documented	human1:0e9b9dbc891870d8	154.0	documented	human1:7b9f90f5dd9fdff8	154.0	repointed	gurobi	True
+human1	M2g	RPMI	0.1	False	documented	human1:a43c0e301163cf2f	144.0	documented	human1:2c7184196af41159	144.0	repointed	gurobi	True
+human1	M2g	RPMI	1.0	False	documented	human1:8a421106a5ec4456	144.0	documented	human1:4251f37ddc664365	144.0	repointed	gurobi	True
+human1	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	0.001	False	documented	human1:c86cfa3aab939c84	146.0				label_removed		False
+human1	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	0.01	False	documented	human1:2e3d4f774d950559	146.0				label_removed		False
+human1	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	0.1	False	documented	human1:1336a30268e47351	136.0				label_removed		False
+human1	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	1.0	False	documented	human1:64d24d65531a77c6	136.0				label_removed		False
+human1	M2g	RPMI+adenine+adenosine+hypoxanthine+thymidine	0.001	False				documented	human1:29be2689f86f83a0	146.0	label_added	gurobi	False
+human1	M2g	RPMI+adenine+adenosine+hypoxanthine+thymidine	0.01	False				documented	human1:b8e3369a8e8f8ed8	146.0	label_added	gurobi	False
+human1	M2g	RPMI+adenine+adenosine+hypoxanthine+thymidine	0.1	False				documented	human1:7335a682e625591d	136.0	label_added	gurobi	False
+human1	M2g	RPMI+adenine+adenosine+hypoxanthine+thymidine	1.0	False				documented	human1:ba410f0fb820f20a	136.0	label_added	gurobi	False
+human1	M2g	RPMI+alanine	0.001	False	documented	human1:5d907730ac08ae24	154.0	documented	human1:204a430bc248f770	154.0	repointed	gurobi	False
+human1	M2g	RPMI+alanine	0.01	False	documented	human1:fee0c6dc85a56f0a	154.0	documented	human1:f86e53258f67ab23	154.0	repointed	gurobi	False
+human1	M2g	RPMI+alanine	0.1	False	documented	human1:9027014ce429a385	144.0	documented	human1:27dbde6f380c094b	144.0	repointed	gurobi	False
+human1	M2g	RPMI+alanine	1.0	False	documented	human1:1ed48f07504063d2	144.0	documented	human1:b2d3ad5a3c64cdc7	144.0	repointed	gurobi	False
+human1	M2g	RPMI+alanine+pyruvate	0.001	False				documented	human1:5d907730ac08ae24	154.0	label_added	gurobi	True
+human1	M2g	RPMI+alanine+pyruvate	0.01	False				documented	human1:fee0c6dc85a56f0a	154.0	label_added	gurobi	True
+human1	M2g	RPMI+alanine+pyruvate	0.1	False				documented	human1:9027014ce429a385	144.0	label_added	gurobi	True
+human1	M2g	RPMI+alanine+pyruvate	1.0	False				documented	human1:1ed48f07504063d2	144.0	label_added	gurobi	True
+human1	M2g	RPMI+cortisol	0.001	False	documented	human1:d08fc0e823479a5c	154.0	documented	human1:c245bfe23c4b9ad4	154.0	repointed	gurobi	False
+human1	M2g	RPMI+cortisol	0.01	False	documented	human1:18c94be0692112fa	154.0	documented	human1:fc2aea2d070a736a	154.0	repointed	gurobi	False
+human1	M2g	RPMI+cortisol	0.1	False	documented	human1:b0435afa81c3ba44	144.0	documented	human1:7b6bcf8590e50979	144.0	repointed	gurobi	False
+human1	M2g	RPMI+cortisol	1.0	False	documented	human1:33d5c81b2a1e1b83	144.0	documented	human1:7fdd0befbf23f6d9	144.0	repointed	gurobi	False
+human1	M2g	RPMI+cys(2-ME)	0.001	False	documented	human1:1100a8cf4296bf77	154.0	documented	human1:802e8ec24632bf4b	154.0	repointed	glpk	False
+human1	M2g	RPMI+cys(2-ME)	0.01	False	documented	human1:0e9b9dbc891870d8	154.0	documented	human1:5830afa4a3a87aba	154.0	repointed	glpk	False
+human1	M2g	RPMI+cys(2-ME)	0.1	False	documented	human1:a43c0e301163cf2f	144.0	documented	human1:9d97efcacbaa2322	144.0	repointed	glpk	False
+human1	M2g	RPMI+cys(2-ME)	1.0	False	documented	human1:8a421106a5ec4456	144.0	documented	human1:a43ea0478c2c616f	144.0	repointed	glpk	False
+human1	M2g	RPMI+pyruvate	0.001	False				documented	human1:1100a8cf4296bf77	154.0	label_added	gurobi	True
+human1	M2g	RPMI+pyruvate	0.01	False				documented	human1:0e9b9dbc891870d8	154.0	label_added	gurobi	True
+human1	M2g	RPMI+pyruvate	0.1	False				documented	human1:a43c0e301163cf2f	144.0	label_added	gurobi	True
+human1	M2g	RPMI+pyruvate	1.0	False				documented	human1:8a421106a5ec4456	144.0	label_added	gurobi	True
+human1	M2g	RPMI+testosterone	0.001	False	documented	human1:c4c25eefae1ff258	154.0	documented	human1:34108899fd2fe322	154.0	repointed	gurobi	False
+human1	M2g	RPMI+testosterone	0.01	False	documented	human1:d9b58391e21f1646	154.0	documented	human1:727e89a3aaa21836	154.0	repointed	gurobi	False
+human1	M2g	RPMI+testosterone	0.1	False	documented	human1:131860250f419b49	144.0	documented	human1:18f8051266405199	144.0	repointed	gurobi	False
+human1	M2g	RPMI+testosterone	1.0	False	documented	human1:7fa3afce7aecf4c0	144.0	documented	human1:0f4cd15994a52e24	144.0	repointed	gurobi	False
+human1	M2g	SENS:DMEM:F12-cysteine-closed	0.001	False	sensitivity	human1:5574d82ace65253b	149.0				label_removed		False
+human1	M2g	SENS:DMEM:F12-cysteine-closed	0.01	False	sensitivity	human1:fe426914284f0b6d	149.0				label_removed		False
+human1	M2g	SENS:DMEM:F12-cysteine-closed	0.1	False	sensitivity	human1:a2e5a5699d7845ae	139.0				label_removed		False
+human1	M2g	SENS:DMEM:F12-cysteine-closed	1.0	False	sensitivity	human1:d165996515bf04d6	139.0				label_removed		False
+human1	M2g	SENS:DMEM:F12-cysteine-documented	0.001	False				sensitivity	human1:649ce42a1602bb9e	149.0	label_added	gurobi	True
+human1	M2g	SENS:DMEM:F12-cysteine-documented	0.01	False				sensitivity	human1:30ee99a385ab4d93	149.0	label_added	gurobi	True
+human1	M2g	SENS:DMEM:F12-cysteine-documented	0.1	False				sensitivity	human1:3766dd037cf9e36d	139.0	label_added	gurobi	True
+human1	M2g	SENS:DMEM:F12-cysteine-documented	1.0	False				sensitivity	human1:d337322e50bbfed8	139.0	label_added	gurobi	True
+human1	M2g	SENS:DMEM:F12-no-standard-Gln	0.001	False				sensitivity	human1:db4f636a599abc83	150.0	label_added	gurobi	False
+human1	M2g	SENS:DMEM:F12-no-standard-Gln	0.01	False				sensitivity	human1:180b8649ec0483cc	150.0	label_added	gurobi	False
+human1	M2g	SENS:DMEM:F12-no-standard-Gln	0.1	False				sensitivity	human1:66dee652ff221086	140.0	label_added	gurobi	False
+human1	M2g	SENS:DMEM:F12-no-standard-Gln	1.0	False				sensitivity	human1:b1581524e5a2a349	140.0	label_added	gurobi	False
+human1	M2g	SENS:RPMI-ATCC	0.001	False				sensitivity	human1:1100a8cf4296bf77	154.0	label_added	gurobi	True
+human1	M2g	SENS:RPMI-ATCC	0.01	False				sensitivity	human1:0e9b9dbc891870d8	154.0	label_added	gurobi	True
+human1	M2g	SENS:RPMI-ATCC	0.1	False				sensitivity	human1:a43c0e301163cf2f	144.0	label_added	gurobi	True
+human1	M2g	SENS:RPMI-ATCC	1.0	False				sensitivity	human1:8a421106a5ec4456	144.0	label_added	gurobi	True
+human1	M2g	SENS:RPMI-no-pyruvate	0.001	False	sensitivity	human1:35c7f2ee9831b09c	154.0				label_removed		False
+human1	M2g	SENS:RPMI-no-pyruvate	0.01	False	sensitivity	human1:7b9f90f5dd9fdff8	154.0				label_removed		False
+human1	M2g	SENS:RPMI-no-pyruvate	0.1	False	sensitivity	human1:2c7184196af41159	144.0				label_removed		False
+human1	M2g	SENS:RPMI-no-pyruvate	1.0	False	sensitivity	human1:4251f37ddc664365	144.0				label_removed		False
+human2	M-open			True	negative_control	human2:801a66a36002b9d8	97.0	negative_control	human2:801a66a36002b9d8	97.0	unchanged	gurobi	True
+human2	M0	Hams_GR		True	baseline	human2:a35fcfdb65d63819	154.0	baseline	human2:a35fcfdb65d63819	154.0	unchanged	gurobi	True
+human2	M1	DMEM		True	documented	human2:c04e814252cee5a7	162.0	documented	human2:c04e814252cee5a7	162.0	unchanged	gurobi	True
+human2	M1	DMEM+alanine+asparagine+aspartate+glutamate+proline		True	documented	human2:eb20656419715f99	161.0	documented	human2:eb20656419715f99	161.0	unchanged	gurobi	True
+human2	M1	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate		True	documented	human2:79961ae66d8b8228	161.0	documented	human2:79961ae66d8b8228	161.0	unchanged	gurobi	True
+human2	M1	DMEM+cortisol		True	documented	human2:3c4e2ed9586e3deb	162.0	documented	human2:3c4e2ed9586e3deb	162.0	unchanged	gurobi	True
+human2	M1	DMEM+pyruvate		True	documented	human2:7d087c26d820e235	162.0	documented	human2:7d087c26d820e235	162.0	unchanged	gurobi	True
+human2	M1	DMEM0.25:RPMI0.75		True	documented	human2:1ef77ad0059ca506	158.0	documented	human2:4971cee5a3dd2176	158.0	repointed	gurobi	False
+human2	M1	DMEM0.5:RPMI0.5		True	documented	human2:1ef77ad0059ca506	158.0	documented	human2:4971cee5a3dd2176	158.0	repointed	gurobi	False
+human2	M1	DMEM:F12		True	documented	human2:84b0c90a8ce73d8c	154.0	documented	human2:d4c82c46365eaa87	154.0	repointed	gurobi	True
+human2	M1	DMEM:F12+cortisol		True	documented	human2:b784fe2b34e1f635	154.0	documented	human2:e39d2b4d4dbc31d0	154.0	repointed	gurobi	False
+human2	M1	DMEM:F12+cortisol+estradiol		True	documented	human2:b23d6aaf4f580d0a	154.0	documented	human2:c0741d19d3fd3cfa	154.0	repointed	gurobi	False
+human2	M1	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine		True	documented	human2:b86c18f3b920402f	154.0	documented	human2:4d5cb24dffcb1093	154.0	repointed	gurobi	False
+human2	M1	DMEM:F12|serum-free		True	documented	human2:84b0c90a8ce73d8c	154.0	documented	human2:d4c82c46365eaa87	154.0	repointed	gurobi	True
+human2	M1	IMDM		True	documented	human2:8b2aefb1ac96b8ce	160.0	documented	human2:8b2aefb1ac96b8ce	160.0	unchanged	gurobi	True
+human2	M1	IMDM0.8:RPMI0.2		True	documented	human2:8c5a52cb8e407bd7	157.0	documented	human2:8c5a52cb8e407bd7	157.0	unchanged	gurobi	True
+human2	M1	RPMI		True	documented	human2:9516ed3a5dc7e863	158.0	documented	human2:e2730b4882b51778	158.0	repointed	gurobi	True
+human2	M1	RPMI+ATP+adenine+hypoxanthine+thymidine		True	documented	human2:11d97914d3917a0f	151.0				label_removed		False
+human2	M1	RPMI+adenine+adenosine+hypoxanthine+thymidine		True				documented	human2:2b2e3c8713ff8056	151.0	label_added	gurobi	False
+human2	M1	RPMI+alanine		True	documented	human2:c2d2dc8cc91e3c5a	158.0	documented	human2:920a3a94fd2a2da5	158.0	repointed	gurobi	False
+human2	M1	RPMI+alanine+pyruvate		True				documented	human2:c2d2dc8cc91e3c5a	158.0	label_added	gurobi	True
+human2	M1	RPMI+cortisol		True	documented	human2:a5965fa1d026fae9	158.0	documented	human2:bca512ca85e8b742	158.0	repointed	gurobi	False
+human2	M1	RPMI+cys(2-ME)		True	documented	human2:9516ed3a5dc7e863	158.0	documented	human2:6a90d3b18a3a9e58	158.0	repointed	glpk	False
+human2	M1	RPMI+pyruvate		True				documented	human2:9516ed3a5dc7e863	158.0	label_added	gurobi	True
+human2	M1	RPMI+testosterone		True	documented	human2:de7be2e364ce22be	158.0	documented	human2:a5d721aaea2e54f5	158.0	repointed	gurobi	False
+human2	M1	SENS:DMEM+pyruvate		True	sensitivity	human2:7d087c26d820e235	162.0	sensitivity	human2:7d087c26d820e235	162.0	unchanged	gurobi	True
+human2	M1	SENS:DMEM-no-standard-Gln		True	sensitivity	human2:4a240d92dd0e5fff	163.0	sensitivity	human2:4a240d92dd0e5fff	163.0	unchanged	gurobi	True
+human2	M1	SENS:DMEM:F12-cysteine-closed		True	sensitivity	human2:d4c82c46365eaa87	154.0				label_removed		False
+human2	M1	SENS:DMEM:F12-cysteine-documented		True				sensitivity	human2:84b0c90a8ce73d8c	154.0	label_added	gurobi	True
+human2	M1	SENS:DMEM:F12-no-standard-Gln		True				sensitivity	human2:3cfdfd2e66bede43	155.0	label_added	gurobi	False
+human2	M1	SENS:RPMI-ATCC		True				sensitivity	human2:9516ed3a5dc7e863	158.0	label_added	gurobi	True
+human2	M1	SENS:RPMI-no-pyruvate		True	sensitivity	human2:e2730b4882b51778	158.0				label_removed		False
+human2	M1g	DMEM+alanine+asparagine+aspartate+glutamate+proline		False	documented	human2:571210e06b0991ca	161.0	documented	human2:571210e06b0991ca	161.0	unchanged	gurobi	True
+human2	M1g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate		False	documented	human2:1b96437898bdd50b	161.0	documented	human2:1b96437898bdd50b	161.0	unchanged	gurobi	True
+human2	M1g	DMEM0.25:RPMI0.75		False	documented	human2:1cfe74005f492e7b	158.0	documented	human2:7119e0605a45c7c8	158.0	repointed	gurobi	False
+human2	M1g	DMEM0.5:RPMI0.5		False	documented	human2:1cfe74005f492e7b	158.0	documented	human2:7119e0605a45c7c8	158.0	repointed	gurobi	False
+human2	M1g	DMEM:F12		False	documented	human2:113424e1a2143df1	154.0	documented	human2:a93df63af8730dc6	154.0	repointed	gurobi	True
+human2	M1g	DMEM:F12+cortisol		False	documented	human2:96cbe5e32170ea94	154.0	documented	human2:6f37bd42ac36e62a	154.0	repointed	gurobi	False
+human2	M1g	DMEM:F12+cortisol+estradiol		False	documented	human2:f1fa1753fe9ed7e0	154.0	documented	human2:cb43fb076b94bd58	154.0	repointed	gurobi	False
+human2	M1g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine		False	documented	human2:6fa9105f9f619daf	154.0	documented	human2:055651d75c321656	154.0	repointed	gurobi	False
+human2	M1g	DMEM:F12|serum-free		False	documented	human2:113424e1a2143df1	154.0	documented	human2:a93df63af8730dc6	154.0	repointed	gurobi	True
+human2	M1g	IMDM		False	documented	human2:ee8c92494863685b	160.0	documented	human2:ee8c92494863685b	160.0	unchanged	gurobi	True
+human2	M1g	IMDM0.8:RPMI0.2		False	documented	human2:49e8293ad28601d9	157.0	documented	human2:49e8293ad28601d9	157.0	unchanged	gurobi	True
+human2	M1g	RPMI		False	documented	human2:b9edd60b7aa8e65a	158.0	documented	human2:d2a402b71640fde6	158.0	repointed	gurobi	True
+human2	M1g	RPMI+ATP+adenine+hypoxanthine+thymidine		False	documented	human2:0f5fbc0f26458614	151.0				label_removed		False
+human2	M1g	RPMI+adenine+adenosine+hypoxanthine+thymidine		False				documented	human2:31ac3f3333a4c2cf	151.0	label_added	gurobi	False
+human2	M1g	RPMI+alanine		False	documented	human2:16a630fe4945c95d	158.0	documented	human2:57cc352552e37c46	158.0	repointed	gurobi	False
+human2	M1g	RPMI+alanine+pyruvate		False				documented	human2:16a630fe4945c95d	158.0	label_added	gurobi	True
+human2	M1g	RPMI+cortisol		False	documented	human2:249ea8a7edfd7c74	158.0	documented	human2:01ea53f59a7e7c05	158.0	repointed	gurobi	False
+human2	M1g	RPMI+cys(2-ME)		False	documented	human2:b9edd60b7aa8e65a	158.0	documented	human2:b1265a4b94b6339f	158.0	repointed	glpk	False
+human2	M1g	RPMI+pyruvate		False				documented	human2:b9edd60b7aa8e65a	158.0	label_added	gurobi	True
+human2	M1g	RPMI+testosterone		False	documented	human2:59a7aa427d4fcc37	158.0	documented	human2:2e1db2f6f1ba00e4	158.0	repointed	gurobi	False
+human2	M1g	SENS:DMEM:F12-cysteine-closed		False	sensitivity	human2:a93df63af8730dc6	154.0				label_removed		False
+human2	M1g	SENS:DMEM:F12-cysteine-documented		False				sensitivity	human2:113424e1a2143df1	154.0	label_added	gurobi	True
+human2	M1g	SENS:DMEM:F12-no-standard-Gln		False				sensitivity	human2:9f39fb529d2ead4e	155.0	label_added	gurobi	False
+human2	M1g	SENS:RPMI-ATCC		False				sensitivity	human2:b9edd60b7aa8e65a	158.0	label_added	gurobi	True
+human2	M1g	SENS:RPMI-no-pyruvate		False	sensitivity	human2:d2a402b71640fde6	158.0				label_removed		False
+human2	M2	DMEM	0.001	True	documented	human2:e9d1c662b37ae4d6	162.0	documented	human2:e9d1c662b37ae4d6	162.0	unchanged	gurobi	True
+human2	M2	DMEM	0.01	True	documented	human2:6245369a378f20e5	161.0	documented	human2:6245369a378f20e5	161.0	unchanged	gurobi	True
+human2	M2	DMEM	0.1	True	documented	human2:56a42b54fd91312d	152.0	documented	human2:56a42b54fd91312d	152.0	unchanged	gurobi	True
+human2	M2	DMEM	1.0	True	documented	human2:3b44fbeb77b8d4d5	152.0	documented	human2:3b44fbeb77b8d4d5	152.0	unchanged	gurobi	True
+human2	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.001	True	documented	human2:fa3b9b7162902ed7	161.0	documented	human2:fa3b9b7162902ed7	161.0	unchanged	gurobi	True
+human2	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.01	True	documented	human2:de3211533cfcec81	161.0	documented	human2:de3211533cfcec81	161.0	unchanged	gurobi	True
+human2	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.1	True	documented	human2:157da7b8f9cf9b8a	151.0	documented	human2:157da7b8f9cf9b8a	151.0	unchanged	gurobi	True
+human2	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	1.0	True	documented	human2:df1e07f86396d1c6	151.0	documented	human2:df1e07f86396d1c6	151.0	unchanged	gurobi	True
+human2	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.001	True	documented	human2:96193f23d17fe928	161.0	documented	human2:96193f23d17fe928	161.0	unchanged	gurobi	True
+human2	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.01	True	documented	human2:2c469ffa65d11ce5	161.0	documented	human2:2c469ffa65d11ce5	161.0	unchanged	gurobi	True
+human2	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.1	True	documented	human2:4fccc289c346b85d	151.0	documented	human2:4fccc289c346b85d	151.0	unchanged	gurobi	True
+human2	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	1.0	True	documented	human2:7781e00f5dfef416	151.0	documented	human2:7781e00f5dfef416	151.0	unchanged	gurobi	True
+human2	M2	DMEM+cortisol	0.001	True	documented	human2:9986f585c9a832da	162.0	documented	human2:9986f585c9a832da	162.0	unchanged	gurobi	True
+human2	M2	DMEM+cortisol	0.01	True	documented	human2:598e296746f4fbab	161.0	documented	human2:598e296746f4fbab	161.0	unchanged	gurobi	True
+human2	M2	DMEM+cortisol	0.1	True	documented	human2:0e849358b07d3b43	152.0	documented	human2:0e849358b07d3b43	152.0	unchanged	gurobi	True
+human2	M2	DMEM+cortisol	1.0	True	documented	human2:d3a0efa9b7164bde	152.0	documented	human2:d3a0efa9b7164bde	152.0	unchanged	gurobi	True
+human2	M2	DMEM+pyruvate	0.001	True	documented	human2:db5c5dac8ac43516	162.0	documented	human2:db5c5dac8ac43516	162.0	unchanged	gurobi	True
+human2	M2	DMEM+pyruvate	0.01	True	documented	human2:fc38e3d9cebd19ee	161.0	documented	human2:fc38e3d9cebd19ee	161.0	unchanged	gurobi	True
+human2	M2	DMEM+pyruvate	0.1	True	documented	human2:cdad0f0ad40339e1	152.0	documented	human2:cdad0f0ad40339e1	152.0	unchanged	gurobi	True
+human2	M2	DMEM+pyruvate	1.0	True	documented	human2:db4b2f905fe98a88	152.0	documented	human2:db4b2f905fe98a88	152.0	unchanged	gurobi	True
+human2	M2	DMEM0.25:RPMI0.75	0.001	True	documented	human2:471642c608e08f65	158.0	documented	human2:58e560125be7b586	158.0	repointed	gurobi	True
+human2	M2	DMEM0.25:RPMI0.75	0.01	True	documented	human2:fd328023365903c6	158.0	documented	human2:00a0660c3b52d018	158.0	repointed	gurobi	True
+human2	M2	DMEM0.25:RPMI0.75	0.1	True	documented	human2:1107a5ca9436f785	148.0	documented	human2:ee22903015de585a	148.0	repointed	gurobi	True
+human2	M2	DMEM0.25:RPMI0.75	1.0	True	documented	human2:f909285bf9042a1c	148.0	documented	human2:4cd587facad2c6fb	148.0	repointed	gurobi	True
+human2	M2	DMEM0.5:RPMI0.5	0.001	True	documented	human2:471642c608e08f65	158.0	documented	human2:58e560125be7b586	158.0	repointed	gurobi	True
+human2	M2	DMEM0.5:RPMI0.5	0.01	True	documented	human2:fd328023365903c6	158.0	documented	human2:00a0660c3b52d018	158.0	repointed	gurobi	True
+human2	M2	DMEM0.5:RPMI0.5	0.1	True	documented	human2:1107a5ca9436f785	148.0	documented	human2:ee22903015de585a	148.0	repointed	gurobi	True
+human2	M2	DMEM0.5:RPMI0.5	1.0	True	documented	human2:f909285bf9042a1c	148.0	documented	human2:4cd587facad2c6fb	148.0	repointed	gurobi	True
+human2	M2	DMEM:F12	0.001	True	documented	human2:ceb2ca4dad3fb477	154.0	documented	human2:a42cd0db236f0dae	154.0	repointed	gurobi	True
+human2	M2	DMEM:F12	0.01	True	documented	human2:2b6dbf5cae8759b6	154.0	documented	human2:9ca9970b2cb1c6e6	154.0	repointed	gurobi	True
+human2	M2	DMEM:F12	0.1	True	documented	human2:ea5d5ccc92257435	144.0	documented	human2:1c4af369ee8bae30	144.0	repointed	gurobi	True
+human2	M2	DMEM:F12	1.0	True	documented	human2:cc4b675fad0ec9d5	144.0	documented	human2:b5ed010051a44179	144.0	repointed	gurobi	True
+human2	M2	DMEM:F12+cortisol	0.001	True	documented	human2:bdda5299894f7252	154.0	documented	human2:fc203ad3ed532d12	154.0	repointed	gurobi	False
+human2	M2	DMEM:F12+cortisol	0.01	True	documented	human2:61e97fabce2efd47	154.0	documented	human2:b6984876e40f7db0	154.0	repointed	gurobi	False
+human2	M2	DMEM:F12+cortisol	0.1	True	documented	human2:c7986caf94b4e0c6	144.0	documented	human2:485e07e2be720d99	144.0	repointed	gurobi	False
+human2	M2	DMEM:F12+cortisol	1.0	True	documented	human2:ecd4d7499375d87d	144.0	documented	human2:860445f19032507e	144.0	repointed	gurobi	False
+human2	M2	DMEM:F12+cortisol+estradiol	0.001	True	documented	human2:512562332da3074a	154.0	documented	human2:bca017621ecb4113	154.0	repointed	gurobi	False
+human2	M2	DMEM:F12+cortisol+estradiol	0.01	True	documented	human2:5a011853ef359429	154.0	documented	human2:2440c444c5f2f85d	154.0	repointed	gurobi	False
+human2	M2	DMEM:F12+cortisol+estradiol	0.1	True	documented	human2:f2bb70488c2ce2b9	144.0	documented	human2:20fb70c93de522c0	144.0	repointed	gurobi	False
+human2	M2	DMEM:F12+cortisol+estradiol	1.0	True	documented	human2:8b7b11bdbce005f3	144.0	documented	human2:305fcee29931be4b	144.0	repointed	gurobi	False
+human2	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.001	True	documented	human2:e5828a1adf852cc5	154.0	documented	human2:bdf2914d6e2982b5	154.0	repointed	gurobi	False
+human2	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.01	True	documented	human2:15aa5fdc2b5a367c	154.0	documented	human2:f597a6d4a9e41c62	154.0	repointed	gurobi	False
+human2	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.1	True	documented	human2:8e5e4bd1a339838b	144.0	documented	human2:9d794c830767ce75	144.0	repointed	gurobi	False
+human2	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	1.0	True	documented	human2:42a717377f0625fa	144.0	documented	human2:23b0f4786babaee8	144.0	repointed	gurobi	False
+human2	M2	DMEM:F12|serum-free	0.001	True	documented	human2:84b0c90a8ce73d8c	154.0	documented	human2:d4c82c46365eaa87	154.0	repointed	gurobi	True
+human2	M2	DMEM:F12|serum-free	0.01	True	documented	human2:84b0c90a8ce73d8c	154.0	documented	human2:d4c82c46365eaa87	154.0	repointed	gurobi	True
+human2	M2	DMEM:F12|serum-free	0.1	True	documented	human2:84b0c90a8ce73d8c	154.0	documented	human2:d4c82c46365eaa87	154.0	repointed	gurobi	True
+human2	M2	DMEM:F12|serum-free	1.0	True	documented	human2:84b0c90a8ce73d8c	154.0	documented	human2:d4c82c46365eaa87	154.0	repointed	gurobi	True
+human2	M2	IMDM	0.001	True	documented	human2:0391fd571a954736	160.0	documented	human2:0391fd571a954736	160.0	unchanged	gurobi	True
+human2	M2	IMDM	0.01	True	documented	human2:bdd3505ba8ca3455	160.0	documented	human2:bdd3505ba8ca3455	160.0	unchanged	gurobi	True
+human2	M2	IMDM	0.1	True	documented	human2:637522803bd006e9	150.0	documented	human2:637522803bd006e9	150.0	unchanged	gurobi	True
+human2	M2	IMDM	1.0	True	documented	human2:a4636fc2575b1aac	150.0	documented	human2:a4636fc2575b1aac	150.0	unchanged	gurobi	True
+human2	M2	IMDM0.8:RPMI0.2	0.001	True	documented	human2:6bb100f290d483be	157.0	documented	human2:6bb100f290d483be	157.0	unchanged	gurobi	True
+human2	M2	IMDM0.8:RPMI0.2	0.01	True	documented	human2:8c6b5b5a9d9a3d91	157.0	documented	human2:8c6b5b5a9d9a3d91	157.0	unchanged	gurobi	True
+human2	M2	IMDM0.8:RPMI0.2	0.1	True	documented	human2:100ed59e487c50c1	147.0	documented	human2:100ed59e487c50c1	147.0	unchanged	gurobi	True
+human2	M2	IMDM0.8:RPMI0.2	1.0	True	documented	human2:6ee484d2ebadf22a	147.0	documented	human2:6ee484d2ebadf22a	147.0	unchanged	gurobi	True
+human2	M2	M-HPLM	0.001	True	physiological	human2:5ae3c8fa6828dad4	143.0	physiological	human2:12194b2437b120dd	143.0	repointed	gurobi	False
+human2	M2	M-HPLM	0.01	True	physiological	human2:3c99bc7258c9053a	143.0	physiological	human2:de6c233651e8aad6	143.0	repointed	gurobi	False
+human2	M2	M-HPLM	0.1	True	physiological	human2:f664d8b9d65ba5f7	142.0	physiological	human2:4b7dc6e9ae48a77f	142.0	repointed	gurobi	False
+human2	M2	M-HPLM	1.0	True	physiological	human2:c899dc2b535b7764	142.0	physiological	human2:2afcfc7cb2918e24	142.0	repointed	gurobi	False
+human2	M2	M-HPLM|cys-documented	0.001	True				sensitivity	human2:5ae3c8fa6828dad4	143.0	label_added	gurobi	True
+human2	M2	M-HPLM|cys-documented	0.01	True				sensitivity	human2:3c99bc7258c9053a	143.0	label_added	gurobi	True
+human2	M2	M-HPLM|cys-documented	0.1	True				sensitivity	human2:f664d8b9d65ba5f7	142.0	label_added	gurobi	True
+human2	M2	M-HPLM|cys-documented	1.0	True				sensitivity	human2:c899dc2b535b7764	142.0	label_added	gurobi	True
+human2	M2	M-Plasmax	0.001	True	physiological	human2:3f64c8b5f0516d89	141.0	physiological	human2:cdf452845dd13896	141.0	repointed	gurobi	False
+human2	M2	M-Plasmax	0.01	True	physiological	human2:fe634ed6cf58a993	141.0	physiological	human2:f3fa6231353b1b26	141.0	repointed	gurobi	False
+human2	M2	M-Plasmax	0.1	True	physiological	human2:57bc82877a2237a8	140.0	physiological	human2:dbbf2dc0de1f92d6	140.0	repointed	gurobi	False
+human2	M2	M-Plasmax	1.0	True	physiological	human2:5a7af5def606eeab	140.0	physiological	human2:bef0bb686626c695	140.0	repointed	gurobi	False
+human2	M2	M-Plasmax|cys-documented	0.001	True				sensitivity	human2:3f64c8b5f0516d89	141.0	label_added	gurobi	True
+human2	M2	M-Plasmax|cys-documented	0.01	True				sensitivity	human2:fe634ed6cf58a993	141.0	label_added	gurobi	True
+human2	M2	M-Plasmax|cys-documented	0.1	True				sensitivity	human2:57bc82877a2237a8	140.0	label_added	gurobi	True
+human2	M2	M-Plasmax|cys-documented	1.0	True				sensitivity	human2:5a7af5def606eeab	140.0	label_added	gurobi	True
+human2	M2	RPMI	0.001	True	documented	human2:471642c608e08f65	158.0	documented	human2:58e560125be7b586	158.0	repointed	gurobi	True
+human2	M2	RPMI	0.01	True	documented	human2:fd328023365903c6	158.0	documented	human2:00a0660c3b52d018	158.0	repointed	gurobi	True
+human2	M2	RPMI	0.1	True	documented	human2:1107a5ca9436f785	148.0	documented	human2:ee22903015de585a	148.0	repointed	gurobi	True
+human2	M2	RPMI	1.0	True	documented	human2:f909285bf9042a1c	148.0	documented	human2:4cd587facad2c6fb	148.0	repointed	gurobi	True
+human2	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	0.001	True	documented	human2:81a51087e2bea49a	151.0				label_removed		False
+human2	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	0.01	True	documented	human2:367321b9d8cfc7c2	151.0				label_removed		False
+human2	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	0.1	True	documented	human2:106de9cd6f75462d	141.0				label_removed		False
+human2	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	1.0	True	documented	human2:33a2e159960f9300	141.0				label_removed		False
+human2	M2	RPMI+adenine+adenosine+hypoxanthine+thymidine	0.001	True				documented	human2:3e4fefe32cd409d8	151.0	label_added	gurobi	False
+human2	M2	RPMI+adenine+adenosine+hypoxanthine+thymidine	0.01	True				documented	human2:313d51f2e225487e	151.0	label_added	gurobi	False
+human2	M2	RPMI+adenine+adenosine+hypoxanthine+thymidine	0.1	True				documented	human2:2cb43048805ca781	141.0	label_added	gurobi	False
+human2	M2	RPMI+adenine+adenosine+hypoxanthine+thymidine	1.0	True				documented	human2:22a129eb942f6bac	141.0	label_added	gurobi	False
+human2	M2	RPMI+alanine	0.001	True	documented	human2:2874f922af5b5607	158.0	documented	human2:b6b6b73c43f20eab	158.0	repointed	gurobi	False
+human2	M2	RPMI+alanine	0.01	True	documented	human2:4a64df246c619389	158.0	documented	human2:338ec7d686af4517	158.0	repointed	gurobi	False
+human2	M2	RPMI+alanine	0.1	True	documented	human2:bd0e6ee22bc41ce7	148.0	documented	human2:cdae85379211b4bd	148.0	repointed	gurobi	False
+human2	M2	RPMI+alanine	1.0	True	documented	human2:648ad196e363173d	148.0	documented	human2:d0e035ed57ac2896	148.0	repointed	gurobi	False
+human2	M2	RPMI+alanine+pyruvate	0.001	True				documented	human2:2874f922af5b5607	158.0	label_added	gurobi	True
+human2	M2	RPMI+alanine+pyruvate	0.01	True				documented	human2:4a64df246c619389	158.0	label_added	gurobi	True
+human2	M2	RPMI+alanine+pyruvate	0.1	True				documented	human2:bd0e6ee22bc41ce7	148.0	label_added	gurobi	True
+human2	M2	RPMI+alanine+pyruvate	1.0	True				documented	human2:648ad196e363173d	148.0	label_added	gurobi	True
+human2	M2	RPMI+cortisol	0.001	True	documented	human2:f1598229b62b35f0	158.0	documented	human2:7c31f5c27d140ef8	158.0	repointed	gurobi	False
+human2	M2	RPMI+cortisol	0.01	True	documented	human2:5f7bc3f46f00a032	158.0	documented	human2:ef76ca7749b95599	158.0	repointed	gurobi	False
+human2	M2	RPMI+cortisol	0.1	True	documented	human2:d6a1a19f6f4e1f40	148.0	documented	human2:cdc4456944c369db	148.0	repointed	gurobi	False
+human2	M2	RPMI+cortisol	1.0	True	documented	human2:94a1ee0091fdfb08	148.0	documented	human2:44d3214ef00e9de0	148.0	repointed	gurobi	False
+human2	M2	RPMI+cys(2-ME)	0.001	True	documented	human2:471642c608e08f65	158.0	documented	human2:de9f71e4cc5a63f4	158.0	repointed	glpk	False
+human2	M2	RPMI+cys(2-ME)	0.01	True	documented	human2:fd328023365903c6	158.0	documented	human2:227418244494f8e5	158.0	repointed	glpk	False
+human2	M2	RPMI+cys(2-ME)	0.1	True	documented	human2:1107a5ca9436f785	148.0	documented	human2:c04461208fa107bf	148.0	repointed	glpk	False
+human2	M2	RPMI+cys(2-ME)	1.0	True	documented	human2:f909285bf9042a1c	148.0	documented	human2:900a4bcbe7680770	148.0	repointed	glpk	False
+human2	M2	RPMI+pyruvate	0.001	True				documented	human2:471642c608e08f65	158.0	label_added	gurobi	True
+human2	M2	RPMI+pyruvate	0.01	True				documented	human2:fd328023365903c6	158.0	label_added	gurobi	True
+human2	M2	RPMI+pyruvate	0.1	True				documented	human2:1107a5ca9436f785	148.0	label_added	gurobi	True
+human2	M2	RPMI+pyruvate	1.0	True				documented	human2:f909285bf9042a1c	148.0	label_added	gurobi	True
+human2	M2	RPMI+testosterone	0.001	True	documented	human2:78e4fa0242803e23	158.0	documented	human2:8f4d7f59f2d090ea	158.0	repointed	gurobi	False
+human2	M2	RPMI+testosterone	0.01	True	documented	human2:989bbeb12408e3cf	158.0	documented	human2:d62d3b66a365b80c	158.0	repointed	gurobi	False
+human2	M2	RPMI+testosterone	0.1	True	documented	human2:2ae9424638678d51	148.0	documented	human2:90859f5658374699	148.0	repointed	gurobi	False
+human2	M2	RPMI+testosterone	1.0	True	documented	human2:4a1a7ce8e5dec9b6	148.0	documented	human2:20cc933a4b852b6a	148.0	repointed	gurobi	False
+human2	M2	SENS:DMEM+pyruvate	0.001	True	sensitivity	human2:db5c5dac8ac43516	162.0	sensitivity	human2:db5c5dac8ac43516	162.0	unchanged	gurobi	True
+human2	M2	SENS:DMEM+pyruvate	0.01	True	sensitivity	human2:fc38e3d9cebd19ee	161.0	sensitivity	human2:fc38e3d9cebd19ee	161.0	unchanged	gurobi	True
+human2	M2	SENS:DMEM+pyruvate	0.1	True	sensitivity	human2:cdad0f0ad40339e1	152.0	sensitivity	human2:cdad0f0ad40339e1	152.0	unchanged	gurobi	True
+human2	M2	SENS:DMEM+pyruvate	1.0	True	sensitivity	human2:db4b2f905fe98a88	152.0	sensitivity	human2:db4b2f905fe98a88	152.0	unchanged	gurobi	True
+human2	M2	SENS:DMEM-no-standard-Gln	0.001	True	sensitivity	human2:b47ae2bec5e9dbee	163.0	sensitivity	human2:b47ae2bec5e9dbee	163.0	unchanged	gurobi	True
+human2	M2	SENS:DMEM-no-standard-Gln	0.01	True	sensitivity	human2:f40f52a8f8784dd7	153.0	sensitivity	human2:f40f52a8f8784dd7	153.0	unchanged	gurobi	True
+human2	M2	SENS:DMEM-no-standard-Gln	0.1	True	sensitivity	human2:be598403096ace8a	153.0	sensitivity	human2:be598403096ace8a	153.0	unchanged	gurobi	True
+human2	M2	SENS:DMEM-no-standard-Gln	1.0	True	sensitivity	human2:cb136b49e1d5d28f	153.0	sensitivity	human2:cb136b49e1d5d28f	153.0	unchanged	gurobi	True
+human2	M2	SENS:DMEM:F12-cysteine-closed	0.001	True	sensitivity	human2:a42cd0db236f0dae	154.0				label_removed		False
+human2	M2	SENS:DMEM:F12-cysteine-closed	0.01	True	sensitivity	human2:9ca9970b2cb1c6e6	154.0				label_removed		False
+human2	M2	SENS:DMEM:F12-cysteine-closed	0.1	True	sensitivity	human2:1c4af369ee8bae30	144.0				label_removed		False
+human2	M2	SENS:DMEM:F12-cysteine-closed	1.0	True	sensitivity	human2:b5ed010051a44179	144.0				label_removed		False
+human2	M2	SENS:DMEM:F12-cysteine-documented	0.001	True				sensitivity	human2:ceb2ca4dad3fb477	154.0	label_added	gurobi	True
+human2	M2	SENS:DMEM:F12-cysteine-documented	0.01	True				sensitivity	human2:2b6dbf5cae8759b6	154.0	label_added	gurobi	True
+human2	M2	SENS:DMEM:F12-cysteine-documented	0.1	True				sensitivity	human2:ea5d5ccc92257435	144.0	label_added	gurobi	True
+human2	M2	SENS:DMEM:F12-cysteine-documented	1.0	True				sensitivity	human2:cc4b675fad0ec9d5	144.0	label_added	gurobi	True
+human2	M2	SENS:DMEM:F12-no-standard-Gln	0.001	True				sensitivity	human2:4593dcfb384c40cd	155.0	label_added	gurobi	False
+human2	M2	SENS:DMEM:F12-no-standard-Gln	0.01	True				sensitivity	human2:dc7d645c9107b260	155.0	label_added	gurobi	False
+human2	M2	SENS:DMEM:F12-no-standard-Gln	0.1	True				sensitivity	human2:858199d006e89aff	145.0	label_added	gurobi	False
+human2	M2	SENS:DMEM:F12-no-standard-Gln	1.0	True				sensitivity	human2:019ab84d59e827ef	145.0	label_added	gurobi	False
+human2	M2	SENS:RPMI-ATCC	0.001	True				sensitivity	human2:471642c608e08f65	158.0	label_added	gurobi	True
+human2	M2	SENS:RPMI-ATCC	0.01	True				sensitivity	human2:fd328023365903c6	158.0	label_added	gurobi	True
+human2	M2	SENS:RPMI-ATCC	0.1	True				sensitivity	human2:1107a5ca9436f785	148.0	label_added	gurobi	True
+human2	M2	SENS:RPMI-ATCC	1.0	True				sensitivity	human2:f909285bf9042a1c	148.0	label_added	gurobi	True
+human2	M2	SENS:RPMI-no-pyruvate	0.001	True	sensitivity	human2:58e560125be7b586	158.0				label_removed		False
+human2	M2	SENS:RPMI-no-pyruvate	0.01	True	sensitivity	human2:00a0660c3b52d018	158.0				label_removed		False
+human2	M2	SENS:RPMI-no-pyruvate	0.1	True	sensitivity	human2:ee22903015de585a	148.0				label_removed		False
+human2	M2	SENS:RPMI-no-pyruvate	1.0	True	sensitivity	human2:4cd587facad2c6fb	148.0				label_removed		False
+human2	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.001	False	documented	human2:c543e2a7bdf2c48b	161.0	documented	human2:c543e2a7bdf2c48b	161.0	unchanged	gurobi	True
+human2	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.01	False	documented	human2:7d540df567eca09b	161.0	documented	human2:7d540df567eca09b	161.0	unchanged	gurobi	True
+human2	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.1	False	documented	human2:9fd4932af5429196	151.0	documented	human2:9fd4932af5429196	151.0	unchanged	gurobi	True
+human2	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	1.0	False	documented	human2:563d7b17eb52fcd3	151.0	documented	human2:563d7b17eb52fcd3	151.0	unchanged	gurobi	True
+human2	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.001	False	documented	human2:4290198b6f23fb59	161.0	documented	human2:4290198b6f23fb59	161.0	unchanged	gurobi	True
+human2	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.01	False	documented	human2:2a96d69bd4611487	161.0	documented	human2:2a96d69bd4611487	161.0	unchanged	gurobi	True
+human2	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.1	False	documented	human2:6a7860ca37a0e45a	151.0	documented	human2:6a7860ca37a0e45a	151.0	unchanged	gurobi	True
+human2	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	1.0	False	documented	human2:1feff9de47a896c3	151.0	documented	human2:1feff9de47a896c3	151.0	unchanged	gurobi	True
+human2	M2g	DMEM0.25:RPMI0.75	0.001	False	documented	human2:1b6f646fc2d67dec	158.0	documented	human2:f3fdc1cc08a75d6d	158.0	repointed	gurobi	True
+human2	M2g	DMEM0.25:RPMI0.75	0.01	False	documented	human2:ce606d913ad7ab9a	158.0	documented	human2:210ff3a321998117	158.0	repointed	gurobi	True
+human2	M2g	DMEM0.25:RPMI0.75	0.1	False	documented	human2:7a653fc5e5bc2092	148.0	documented	human2:1b731bb95a8d812c	148.0	repointed	gurobi	True
+human2	M2g	DMEM0.25:RPMI0.75	1.0	False	documented	human2:cb339640de3180db	148.0	documented	human2:8fc4e30fde9977dc	148.0	repointed	gurobi	True
+human2	M2g	DMEM0.5:RPMI0.5	0.001	False	documented	human2:1b6f646fc2d67dec	158.0	documented	human2:f3fdc1cc08a75d6d	158.0	repointed	gurobi	True
+human2	M2g	DMEM0.5:RPMI0.5	0.01	False	documented	human2:ce606d913ad7ab9a	158.0	documented	human2:210ff3a321998117	158.0	repointed	gurobi	True
+human2	M2g	DMEM0.5:RPMI0.5	0.1	False	documented	human2:7a653fc5e5bc2092	148.0	documented	human2:1b731bb95a8d812c	148.0	repointed	gurobi	True
+human2	M2g	DMEM0.5:RPMI0.5	1.0	False	documented	human2:cb339640de3180db	148.0	documented	human2:8fc4e30fde9977dc	148.0	repointed	gurobi	True
+human2	M2g	DMEM:F12	0.001	False	documented	human2:b5df142d6d880e3c	154.0	documented	human2:387a764c104a1867	154.0	repointed	gurobi	True
+human2	M2g	DMEM:F12	0.01	False	documented	human2:878c79bd513ea5bb	154.0	documented	human2:158ef821fa9c6aec	154.0	repointed	gurobi	True
+human2	M2g	DMEM:F12	0.1	False	documented	human2:fcb35d1e040bbfe6	144.0	documented	human2:91c89a57ccc67c86	144.0	repointed	gurobi	True
+human2	M2g	DMEM:F12	1.0	False	documented	human2:491188028ad3ed51	144.0	documented	human2:fa27161b66b65cba	144.0	repointed	gurobi	True
+human2	M2g	DMEM:F12+cortisol	0.001	False	documented	human2:2c893e76703ce5d9	154.0	documented	human2:51a707fb7a554db7	154.0	repointed	gurobi	False
+human2	M2g	DMEM:F12+cortisol	0.01	False	documented	human2:411273a0893c41da	154.0	documented	human2:64233ba8de80b939	154.0	repointed	gurobi	False
+human2	M2g	DMEM:F12+cortisol	0.1	False	documented	human2:b201a0bbab1d65ac	144.0	documented	human2:18bcc4e070b8958a	144.0	repointed	gurobi	False
+human2	M2g	DMEM:F12+cortisol	1.0	False	documented	human2:e293b2b9518b2009	144.0	documented	human2:19d7bd31e972fb07	144.0	repointed	gurobi	False
+human2	M2g	DMEM:F12+cortisol+estradiol	0.001	False	documented	human2:c11e212331fe2989	154.0	documented	human2:7b8b0a2f725adb7a	154.0	repointed	gurobi	False
+human2	M2g	DMEM:F12+cortisol+estradiol	0.01	False	documented	human2:54beb4c53d64418b	154.0	documented	human2:e70946ef18069099	154.0	repointed	gurobi	False
+human2	M2g	DMEM:F12+cortisol+estradiol	0.1	False	documented	human2:433d812bbe672b06	144.0	documented	human2:fd26668a101b648f	144.0	repointed	gurobi	False
+human2	M2g	DMEM:F12+cortisol+estradiol	1.0	False	documented	human2:4632766be5a66755	144.0	documented	human2:49403a1e6ed190b6	144.0	repointed	gurobi	False
+human2	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.001	False	documented	human2:4ec5734cb119adab	154.0	documented	human2:79d97051cb618650	154.0	repointed	gurobi	False
+human2	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.01	False	documented	human2:e4662bdeac7a1a3f	154.0	documented	human2:ef8ededcb5b56e63	154.0	repointed	gurobi	False
+human2	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.1	False	documented	human2:aab12380664e1f94	144.0	documented	human2:d5e29f12e239971d	144.0	repointed	gurobi	False
+human2	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	1.0	False	documented	human2:8b19ec8e9dc63562	144.0	documented	human2:6091941a88319f07	144.0	repointed	gurobi	False
+human2	M2g	DMEM:F12|serum-free	0.001	False	documented	human2:113424e1a2143df1	154.0	documented	human2:a93df63af8730dc6	154.0	repointed	gurobi	True
+human2	M2g	DMEM:F12|serum-free	0.01	False	documented	human2:113424e1a2143df1	154.0	documented	human2:a93df63af8730dc6	154.0	repointed	gurobi	True
+human2	M2g	DMEM:F12|serum-free	0.1	False	documented	human2:113424e1a2143df1	154.0	documented	human2:a93df63af8730dc6	154.0	repointed	gurobi	True
+human2	M2g	DMEM:F12|serum-free	1.0	False	documented	human2:113424e1a2143df1	154.0	documented	human2:a93df63af8730dc6	154.0	repointed	gurobi	True
+human2	M2g	IMDM	0.001	False	documented	human2:a7479f29d899a700	160.0	documented	human2:a7479f29d899a700	160.0	unchanged	gurobi	True
+human2	M2g	IMDM	0.01	False	documented	human2:5cd4c6063e92f6b5	160.0	documented	human2:5cd4c6063e92f6b5	160.0	unchanged	gurobi	True
+human2	M2g	IMDM	0.1	False	documented	human2:4082b477e7455b89	150.0	documented	human2:4082b477e7455b89	150.0	unchanged	gurobi	True
+human2	M2g	IMDM	1.0	False	documented	human2:80dee9510d2815b1	150.0	documented	human2:80dee9510d2815b1	150.0	unchanged	gurobi	True
+human2	M2g	IMDM0.8:RPMI0.2	0.001	False	documented	human2:e63f2f6723dc9622	157.0	documented	human2:e63f2f6723dc9622	157.0	unchanged	gurobi	True
+human2	M2g	IMDM0.8:RPMI0.2	0.01	False	documented	human2:b9581ecdd6fedac9	157.0	documented	human2:b9581ecdd6fedac9	157.0	unchanged	gurobi	True
+human2	M2g	IMDM0.8:RPMI0.2	0.1	False	documented	human2:b234b8713814da8f	147.0	documented	human2:b234b8713814da8f	147.0	unchanged	gurobi	True
+human2	M2g	IMDM0.8:RPMI0.2	1.0	False	documented	human2:e1331f0c4ca41d88	147.0	documented	human2:e1331f0c4ca41d88	147.0	unchanged	gurobi	True
+human2	M2g	M-HPLM	0.001	False	physiological	human2:ed0c5080ac4bdb22	143.0	physiological	human2:89006aca7e0bc209	143.0	repointed	gurobi	False
+human2	M2g	M-HPLM	0.01	False	physiological	human2:13fb0028e1cd9f1e	143.0	physiological	human2:6124a75e1e647d35	143.0	repointed	gurobi	False
+human2	M2g	M-HPLM	0.1	False	physiological	human2:f9ff3d2921319a7c	142.0	physiological	human2:c9d454b69f51d432	142.0	repointed	gurobi	False
+human2	M2g	M-HPLM	1.0	False	physiological	human2:6b67c2aa1c5b9714	142.0	physiological	human2:3abbe5ddd7546a4d	142.0	repointed	gurobi	False
+human2	M2g	M-HPLM|cys-documented	0.001	False				sensitivity	human2:ed0c5080ac4bdb22	143.0	label_added	gurobi	True
+human2	M2g	M-HPLM|cys-documented	0.01	False				sensitivity	human2:13fb0028e1cd9f1e	143.0	label_added	gurobi	True
+human2	M2g	M-HPLM|cys-documented	0.1	False				sensitivity	human2:f9ff3d2921319a7c	142.0	label_added	gurobi	True
+human2	M2g	M-HPLM|cys-documented	1.0	False				sensitivity	human2:6b67c2aa1c5b9714	142.0	label_added	gurobi	True
+human2	M2g	M-Plasmax	0.001	False	physiological	human2:2d9bc7fda1438f8a	141.0	physiological	human2:6fae54476732f27b	141.0	repointed	gurobi	False
+human2	M2g	M-Plasmax	0.01	False	physiological	human2:70687c4b2f8f6484	141.0	physiological	human2:eb41abd2815200c9	141.0	repointed	gurobi	False
+human2	M2g	M-Plasmax	0.1	False	physiological	human2:272529411e2607a7	140.0	physiological	human2:3fd0259d6f1edf57	140.0	repointed	gurobi	False
+human2	M2g	M-Plasmax	1.0	False	physiological	human2:24e99d860b6f70ac	140.0	physiological	human2:851417808b9dafdd	140.0	repointed	gurobi	False
+human2	M2g	M-Plasmax|cys-documented	0.001	False				sensitivity	human2:2d9bc7fda1438f8a	141.0	label_added	gurobi	True
+human2	M2g	M-Plasmax|cys-documented	0.01	False				sensitivity	human2:70687c4b2f8f6484	141.0	label_added	gurobi	True
+human2	M2g	M-Plasmax|cys-documented	0.1	False				sensitivity	human2:272529411e2607a7	140.0	label_added	gurobi	True
+human2	M2g	M-Plasmax|cys-documented	1.0	False				sensitivity	human2:24e99d860b6f70ac	140.0	label_added	gurobi	True
+human2	M2g	RPMI	0.001	False	documented	human2:1b6f646fc2d67dec	158.0	documented	human2:f3fdc1cc08a75d6d	158.0	repointed	gurobi	True
+human2	M2g	RPMI	0.01	False	documented	human2:ce606d913ad7ab9a	158.0	documented	human2:210ff3a321998117	158.0	repointed	gurobi	True
+human2	M2g	RPMI	0.1	False	documented	human2:7a653fc5e5bc2092	148.0	documented	human2:1b731bb95a8d812c	148.0	repointed	gurobi	True
+human2	M2g	RPMI	1.0	False	documented	human2:cb339640de3180db	148.0	documented	human2:8fc4e30fde9977dc	148.0	repointed	gurobi	True
+human2	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	0.001	False	documented	human2:aa03a380fa53b7a8	151.0				label_removed		False
+human2	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	0.01	False	documented	human2:ed8fe7141893f821	151.0				label_removed		False
+human2	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	0.1	False	documented	human2:df53e43aec2653a4	141.0				label_removed		False
+human2	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	1.0	False	documented	human2:7924ad50275f193f	141.0				label_removed		False
+human2	M2g	RPMI+adenine+adenosine+hypoxanthine+thymidine	0.001	False				documented	human2:ee81b2887a2cb7c0	151.0	label_added	gurobi	False
+human2	M2g	RPMI+adenine+adenosine+hypoxanthine+thymidine	0.01	False				documented	human2:50023238a289895b	151.0	label_added	gurobi	False
+human2	M2g	RPMI+adenine+adenosine+hypoxanthine+thymidine	0.1	False				documented	human2:e12e1e40be9e1558	141.0	label_added	gurobi	False
+human2	M2g	RPMI+adenine+adenosine+hypoxanthine+thymidine	1.0	False				documented	human2:04a92f695a1320e4	141.0	label_added	gurobi	False
+human2	M2g	RPMI+alanine	0.001	False	documented	human2:d69640a60540301c	158.0	documented	human2:6223d2c81ebecda2	158.0	repointed	gurobi	False
+human2	M2g	RPMI+alanine	0.01	False	documented	human2:950ac8ed1bdb4d92	158.0	documented	human2:2b7d23c084a764e7	158.0	repointed	gurobi	False
+human2	M2g	RPMI+alanine	0.1	False	documented	human2:bddf93e3bf9edddb	148.0	documented	human2:60c708c6153a2ab5	148.0	repointed	gurobi	False
+human2	M2g	RPMI+alanine	1.0	False	documented	human2:9bd6ed6b31565e4b	148.0	documented	human2:46e96cadcad8245f	148.0	repointed	gurobi	False
+human2	M2g	RPMI+alanine+pyruvate	0.001	False				documented	human2:d69640a60540301c	158.0	label_added	gurobi	True
+human2	M2g	RPMI+alanine+pyruvate	0.01	False				documented	human2:950ac8ed1bdb4d92	158.0	label_added	gurobi	True
+human2	M2g	RPMI+alanine+pyruvate	0.1	False				documented	human2:bddf93e3bf9edddb	148.0	label_added	gurobi	True
+human2	M2g	RPMI+alanine+pyruvate	1.0	False				documented	human2:9bd6ed6b31565e4b	148.0	label_added	gurobi	True
+human2	M2g	RPMI+cortisol	0.001	False	documented	human2:271b0f55472027ba	158.0	documented	human2:027519e4dc29357e	158.0	repointed	gurobi	False
+human2	M2g	RPMI+cortisol	0.01	False	documented	human2:18d8dab611a0194f	158.0	documented	human2:f835e8fbaac41429	158.0	repointed	gurobi	False
+human2	M2g	RPMI+cortisol	0.1	False	documented	human2:76b073a1438165d0	148.0	documented	human2:4ef5d9e867f0ebaa	148.0	repointed	gurobi	False
+human2	M2g	RPMI+cortisol	1.0	False	documented	human2:7f01d252cbeec86f	148.0	documented	human2:3f2a96d68ba80d76	148.0	repointed	gurobi	False
+human2	M2g	RPMI+cys(2-ME)	0.001	False	documented	human2:1b6f646fc2d67dec	158.0	documented	human2:c46a84f7c2e02fc1	158.0	repointed	glpk	False
+human2	M2g	RPMI+cys(2-ME)	0.01	False	documented	human2:ce606d913ad7ab9a	158.0	documented	human2:e413021054bce474	158.0	repointed	glpk	False
+human2	M2g	RPMI+cys(2-ME)	0.1	False	documented	human2:7a653fc5e5bc2092	148.0	documented	human2:c6003cfea51f86f7	148.0	repointed	glpk	False
+human2	M2g	RPMI+cys(2-ME)	1.0	False	documented	human2:cb339640de3180db	148.0	documented	human2:db21a541c40d2846	148.0	repointed	glpk	False
+human2	M2g	RPMI+pyruvate	0.001	False				documented	human2:1b6f646fc2d67dec	158.0	label_added	gurobi	True
+human2	M2g	RPMI+pyruvate	0.01	False				documented	human2:ce606d913ad7ab9a	158.0	label_added	gurobi	True
+human2	M2g	RPMI+pyruvate	0.1	False				documented	human2:7a653fc5e5bc2092	148.0	label_added	gurobi	True
+human2	M2g	RPMI+pyruvate	1.0	False				documented	human2:cb339640de3180db	148.0	label_added	gurobi	True
+human2	M2g	RPMI+testosterone	0.001	False	documented	human2:881905c5900a72af	158.0	documented	human2:8820914e366e08c1	158.0	repointed	gurobi	False
+human2	M2g	RPMI+testosterone	0.01	False	documented	human2:432c4aa27a3d6560	158.0	documented	human2:c87d8d721e545f7f	158.0	repointed	gurobi	False
+human2	M2g	RPMI+testosterone	0.1	False	documented	human2:ef46b725aa0b8015	148.0	documented	human2:c47d6279d154d9a4	148.0	repointed	gurobi	False
+human2	M2g	RPMI+testosterone	1.0	False	documented	human2:6060339ac51bbc91	148.0	documented	human2:3f33b2d7935527ff	148.0	repointed	gurobi	False
+human2	M2g	SENS:DMEM:F12-cysteine-closed	0.001	False	sensitivity	human2:387a764c104a1867	154.0				label_removed		False
+human2	M2g	SENS:DMEM:F12-cysteine-closed	0.01	False	sensitivity	human2:158ef821fa9c6aec	154.0				label_removed		False
+human2	M2g	SENS:DMEM:F12-cysteine-closed	0.1	False	sensitivity	human2:91c89a57ccc67c86	144.0				label_removed		False
+human2	M2g	SENS:DMEM:F12-cysteine-closed	1.0	False	sensitivity	human2:fa27161b66b65cba	144.0				label_removed		False
+human2	M2g	SENS:DMEM:F12-cysteine-documented	0.001	False				sensitivity	human2:b5df142d6d880e3c	154.0	label_added	gurobi	True
+human2	M2g	SENS:DMEM:F12-cysteine-documented	0.01	False				sensitivity	human2:878c79bd513ea5bb	154.0	label_added	gurobi	True
+human2	M2g	SENS:DMEM:F12-cysteine-documented	0.1	False				sensitivity	human2:fcb35d1e040bbfe6	144.0	label_added	gurobi	True
+human2	M2g	SENS:DMEM:F12-cysteine-documented	1.0	False				sensitivity	human2:491188028ad3ed51	144.0	label_added	gurobi	True
+human2	M2g	SENS:DMEM:F12-no-standard-Gln	0.001	False				sensitivity	human2:59433cdaca573e51	155.0	label_added	gurobi	False
+human2	M2g	SENS:DMEM:F12-no-standard-Gln	0.01	False				sensitivity	human2:b9e4bd171ee1d120	155.0	label_added	gurobi	False
+human2	M2g	SENS:DMEM:F12-no-standard-Gln	0.1	False				sensitivity	human2:7de40fad0f21ed75	145.0	label_added	gurobi	False
+human2	M2g	SENS:DMEM:F12-no-standard-Gln	1.0	False				sensitivity	human2:c403a945c4b9fa05	145.0	label_added	gurobi	False
+human2	M2g	SENS:RPMI-ATCC	0.001	False				sensitivity	human2:1b6f646fc2d67dec	158.0	label_added	gurobi	True
+human2	M2g	SENS:RPMI-ATCC	0.01	False				sensitivity	human2:ce606d913ad7ab9a	158.0	label_added	gurobi	True
+human2	M2g	SENS:RPMI-ATCC	0.1	False				sensitivity	human2:7a653fc5e5bc2092	148.0	label_added	gurobi	True
+human2	M2g	SENS:RPMI-ATCC	1.0	False				sensitivity	human2:cb339640de3180db	148.0	label_added	gurobi	True
+human2	M2g	SENS:RPMI-no-pyruvate	0.001	False	sensitivity	human2:f3fdc1cc08a75d6d	158.0				label_removed		False
+human2	M2g	SENS:RPMI-no-pyruvate	0.01	False	sensitivity	human2:210ff3a321998117	158.0				label_removed		False
+human2	M2g	SENS:RPMI-no-pyruvate	0.1	False	sensitivity	human2:1b731bb95a8d812c	148.0				label_removed		False
+human2	M2g	SENS:RPMI-no-pyruvate	1.0	False	sensitivity	human2:8fc4e30fde9977dc	148.0				label_removed		False

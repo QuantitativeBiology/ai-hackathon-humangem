@@ -1,0 +1,16 @@
+check	ok	detail
+change_counts	True	{'label_added': 152, 'label_removed': 60, 'repointed': 272, 'unchanged': 134}
+new_sweeps	True	216
+removed_keys	True	['RPMI+ATP+adenine+hypoxanthine+thymidine', 'SENS:DMEM:F12-cysteine-closed', 'SENS:RPMI-no-pyruvate']
+added_keys	True	['M-HPLM|cys-documented', 'M-Plasmax|cys-documented', 'RPMI+adenine+adenosine+hypoxanthine+thymidine', 'RPMI+alanine+pyruvate', 'RPMI+pyruvate', 'SENS:DMEM:F12-cysteine-documented', 'SENS:DMEM:F12-no-standard-Gln', 'SENS:RPMI-ATCC']
+unchanged_keys_are_DMEM_IMDM_global	True	['', 'DMEM', 'DMEM+alanine+asparagine+aspartate+glutamate+proline', 'DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate', 'DMEM+cortisol', 'DMEM+pyruvate', 'Hams_GR', 'IMDM', 'IMDM0.8:RPMI0.2', 'SENS:DMEM+pyruvate', 'SENS:DMEM-no-standard-Gln']
+repointed_keys_are_RPMI_or_DMEMF12_or_physiological	True	['DMEM0.25:RPMI0.75', 'DMEM0.5:RPMI0.5', 'DMEM:F12', 'DMEM:F12+cortisol', 'DMEM:F12+cortisol+estradiol', 'DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine', 'DMEM:F12|serum-free', 'M-HPLM', 'M-Plasmax', 'RPMI', 'RPMI+alanine', 'RPMI+cortisol', 'RPMI+cys(2-ME)', 'RPMI+testosterone']
+inherits:RPMI<-old SENS:RPMI-no-pyruvate	True	20/20 labels point to the old sweep
+inherits:SENS:RPMI-ATCC<-old RPMI	True	20/20 labels point to the old sweep
+inherits:DMEM:F12<-old SENS:DMEM:F12-cysteine-closed	True	20/20 labels point to the old sweep
+inherits:SENS:DMEM:F12-cysteine-documented<-old DMEM:F12	True	20/20 labels point to the old sweep
+inherits:M-HPLM|cys-documented<-old M-HPLM	True	16/16
+inherits:M-Plasmax|cys-documented<-old M-Plasmax	True	16/16
+RPMI+cys(2-ME)_repointed_to_new_sweeps	True	20 labels; changes {'repointed': 20}
+human1_DMEM:F12_old_vs_new_ratio_changes	True	genes changed per label [0, 0, 0, 0, 0]; lethal flips [0, 0, 0, 0, 0]
+human2_DMEM:F12_old_vs_new_ratio_changes	True	genes changed per label [83, 83, 92, 93, 87]; lethal flips [0, 0, 0, 0, 0]

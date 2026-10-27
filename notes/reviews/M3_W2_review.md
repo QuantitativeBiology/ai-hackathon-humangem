@@ -358,3 +358,120 @@ independently (§1). It is conditional on the blocking fixes below, all of which
 - F7: write `calibration.tsv` and record the M3 verdict on it.
 - Fill the FBS reference concentrations in `serum_model.tsv` (documentation only; no bound uses them).
 - N4: flag f = 0.01 binary calls as knife-edge.
+
+---
+
+## 7. Re-check after A9 (2026-10-27, same reviewer)
+
+**Scope.** I re-checked the W2 author's A9 fixes (DESIGN §17 A9) before the media-library freeze.
+- **Probe:** the label-guard probe (`head -c 50` on the CRISPR gene-effect file) was **BLOCKED** again.
+- **Label-free:** no labels, no `data/locked/`. GLPK only; no Gurobi session was taken (the pool is held by W4 Stage A).
+- **Outputs:** in `results/w2/review/` (`*_v2*`, `rpmi_classic_check.*`, `label_check_A9.*`, `controls_recheck.*`).
+- **Re-check runtime:** ≈ 40 min wall, ≈ 12 CPU-min.
+- **Hashes verified:** `compositions.tsv` sha256 `1ae56834…8326` and `exchange_map.tsv` sha256 `b38111ab…4c02`
+  (`w2-media-map-v2`).
+
+| # | Check | Verdict |
+|---|---|---|
+| 1 | Extraction diff vs v2 tables | **PASS**: 0 unexplained differences |
+| 2 | 2-ME fix | **PASS**: correct and tested; my first review had missed this bug |
+| 3 | Classic RPMI composition; req_c reference kept on the ATCC sheet | **PASS** / **PASS (coherent; req_c identical to 4e-11)** |
+| 4 | New sweeps re-solved without shortcuts; M0 = baseline | **PASS**: 64 pairs over 16 new sweeps (8 GLPK-run, 8 Gurobi-run), max \|Δ\| = 0; M0 bitwise equal |
+| 5 | `label_changes_A9.tsv` vs A9 | **PASS**: 15/15 semantic checks |
+| 6 | Controls TSV statuses | **PASS**: 30/30 statuses reproduced (5 pass / 5 non-informative / 5 model-structure per parent) |
+| — | `pytest tests/test_w2_media.py` | **PASS**: 254 passed (7.7 s) |
+
+**7.1 Extraction diff** (`diff_extractions_v2.py` → `extraction_diff_v2.tsv`; exit 0)
+- Pairing: W2 `RPMI-ATCC` is compared with the blind `RPMI` (both are the on-disk ATCC sheet). The derived classic
+  `RPMI` has no blind counterpart and is checked in 7.3.
+- 313/313 components match by name. The thiamine (2 Cl⁻) and α-aminobutyrate fixes are confirmed.
+- Every remaining difference is adjudicated to W2 v2:
+  - IMDM cystine 292 µM: the A9(a) salt-MW correction, which the blind README itself recommended. It propagates to
+    the IMDM cystine and chloride totals.
+  - Acetylglycine → MAR10196: a blind miss.
+  - Ammonium → NH3: equivalent.
+  - Methyl acetoacetate left unmapped: literal default.
+
+**7.2 2-ME fix**
+- In the first version, `allow_cysteine` was set by 2-ME but cysteine was opened only if it was itself listed, and
+  RPMI lists only cystine. So `RPMI+cys(2-ME)` never opened cysteine; my first review did not catch this.
+- Now `uptake_bounds` opens cysteine whenever `allow_cysteine` and cystine is present (`media.py:751–753`), with the
+  biochemical rationale (2-ME reduces extracellular cystine; Ishii & Bannai 1985).
+- Tested in `tests/test_w2_media.py:381–388` (RPMI + 2-ME opens cysteine; plain RPMI does not) and in the
+  golden-table row for the 2-ME string.
+- Rebuilt bounds confirm (`ko_verify_v2_summary.tsv`, `cysteine_2ME_bounds`):
+
+  | Medium | Cysteine uptake |
+  |---|---|
+  | `RPMI+cys(2-ME)`, M1 and M2 | open |
+  | DMEM:F12, RPMI, M-HPLM, M-Plasmax defaults | closed |
+  | the three documented-cysteine sensitivities | open |
+
+  This holds in both models.
+- Impact on the cached sweeps: RPMI vs RPMI+cys(2-ME) changes 0 gene ratios in both models (cystine already
+  suffices). The fix is correct but numerically inert.
+- Minor (non-blocking): the module docstring at `media.py:29–30` still describes the old rule ("or the sheet itself
+  lists free cysteine").
+
+**7.3 Classic RPMI and the req_c reference** (`rpmi_classic_check.py` → `rpmi_classic_check.tsv`)
+- v2 `RPMI` is the ATCC sheet minus HEPES and sodium pyruvate, with glucose 11,111 µM and NaHCO₃ 23,809 µM taken
+  from Cantor 2017 "Classic synthetic media", RPMI 1640 (Thermo 11875) column.
+- Against all 36 metabolites in that column, the canonical v2 composition agrees within ≤ 2.3% (max: thiamine 2.97
+  vs 2.9, tryptophan 24.5 vs 25). These residuals are Cantor's rounding.
+- GSH (1 mg/L) is kept: Gibco 11875 contains it, though Cantor's table does not list it. Correct.
+- req_c was recomputed with W2's rules on both reference media (ATCC as frozen, and classic). Both reproduce the
+  frozen `requirements.tsv` to ≤ 4e-11 relative in both models. WT growth is identical (46.367 / 46.400): pyruvate
+  and HEPES do not change the reference optimum.
+- Keeping the on-disk sheet as the reference is therefore coherent with DESIGN line 502 ("sheet on disk") and
+  numerically indistinguishable from re-anchoring. The author's 8e-12 drift is solver noise. Keeping the reviewed
+  tables is right.
+
+**7.4 New sweeps** (`verify_ko_v2.py` → `ko_verify_v2_summary.tsv`, `ko_verify_v2_pairs.tsv`)
+- M0 sweep vs `results/baseline`: **bitwise equal** in both models.
+- All 236 + 236 parquet sweep ids, and all **558** label → sweep rows, are reproduced exactly by W2's own
+  `sweep_context` / `build_sweeps` / `labels_frame`.
+- 216 sweeps are new in A9: 196 Gurobi-run plus 20 GLPK-run. The 196 carry `reused_from_previous_run=True` because the
+  final assembly resumed from A9 checkpoints, so "new" was taken from `label_changes_A9.tsv`.
+- 64 gene × sweep pairs were re-solved **without shortcuts on GLPK**: 16 new sweeps, 4 GLPK-run and 4 Gurobi-run per
+  model; per sweep 2 ratio-1 genes with a non-empty closure and 2 ratio < 1 genes.
+  - **64/64 exactly equal** (max |Δ| = 0).
+  - WT growth agrees to 2e-11.
+- This complements the author's GLPK = Gurobi bitwise cross-check (`ko/solver_crosscheck.tsv`, 2 sweeps).
+
+**7.5 `label_changes_A9.tsv` vs A9** (`label_check_A9.py` → `label_check_A9.tsv`; 15/15 checks pass)
+- **Counts:** 134 unchanged / 272 repointed / 152 added / 60 removed; 216 new sweeps.
+- **Removed:** exactly `SENS:RPMI-no-pyruvate` and `SENS:DMEM:F12-cysteine-closed` (now the defaults), plus the ATP
+  key (A9h).
+- **Added:**
+  - `SENS:RPMI-ATCC` and `SENS:DMEM:F12-cysteine-documented`;
+  - `SENS:DMEM:F12-no-standard-Gln` (A9c);
+  - `M-HPLM|cys-documented` and `M-Plasmax|cys-documented`;
+  - `RPMI+pyruvate` and `RPMI+alanine+pyruvate` (texts that add pyruvate are now distinct from classic RPMI);
+  - the adenosine key.
+- **Unchanged:** only DMEM-, IMDM- and global keys (IMDM:RPMI 4:1 has identical bounds after A9d, because IMDM supplies
+  pyruvate).
+- **Repointed:** only RPMI-, DMEM:F12- and physiological keys.
+- **Inheritance by identical bounds:**
+  - new RPMI defaults → old `SENS:RPMI-no-pyruvate` sweeps (20/20);
+  - `SENS:RPMI-ATCC` → old RPMI defaults (20/20);
+  - DMEM:F12 defaults → old cysteine-closed sweeps (20/20);
+  - documented-cysteine sensitivities → old defaults (20/20, 16/16, 16/16).
+- `RPMI+cys(2-ME)` points to new sweeps (the bug fix).
+- Ratios reproduce the first review: Human1 DMEM:F12 old vs new 0 genes changed; Human2 0 lethal flips.
+
+**7.6 Controls** (`controls_recheck.py` → `controls_recheck.tsv`)
+- Every status was recomputed from the ratio matrices and labels; all **30/30 match** the TSV.
+- Pass: ASNS, purines in HPLM and in Plasmax, DHODH/UMPS in Plasmax (Plasmax-only, per A9g), mevalonate core.
+- Non-informative (equal values): GOT1, GOT2, SLC1A3 (gate), SLC7A11, pyruvate (RPMI-ATCC vs classic).
+- Model-structure failures:
+  - sterol branch at 4 f levels: serum-free lethal 7 (Human1) / 8 (Human2), and serum rescues only DHCR7, at
+    f ≥ 0.1. At f ≤ 0.01 DHCR7 sits at 0.00994, the N4 knife-edge;
+  - CAD in Plasmax.
+
+  The notes cite A9(j) correctly.
+
+**Re-check verdict: GO** to freeze `results/w2/media_library/compositions.tsv` (sha256 `1ae56834…8326`) and
+`exchange_map.tsv` (sha256 `b38111ab…4c02`).
+- The KO sweeps and labels as of this re-check are also consistent with A9 and with the engine.
+- No blocking items remain.
+- Non-blocking: update the stale docstring at `media.py:29–30`.

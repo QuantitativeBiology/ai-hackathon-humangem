@@ -1,0 +1,10 @@
+check	value	detail
+M0_bitwise_human1	True	2887 genes; human1:a35fcfdb65d63819
+M0_bitwise_human2	True	2870 genes; human2:a35fcfdb65d63819
+sweeps_rebuilt_human1	True	236 in parquet; rebuilt 236; missing 0; extra 0
+sweeps_rebuilt_human2	True	236 in parquet; rebuilt 236; missing 0; extra 0
+labels_rebuilt	True	558 W2 labels, 558 rebuilt, mismatches 0
+cysteine_2ME_bounds	True	human1:DMEM:F12:M1:None cys_open=[False] (want False); human1:RPMI+cys(2-ME):M1:None cys_open=[True] (want True); human1:RPMI+cys(2-ME):M2:0.01 cys_open=[True] (want True); human1:RPMI:M1:None cys_open=[False] (want False); human1:M-HPLM:M2:0.01 cys_open=[False] (want False); human1:M-Plasmax:M2:0.01 cys_open=[False] (want False); human1:SENS:DMEM:F12-cysteine-documented cys_open=[True] (want True); human1:M-HPLM|cys-documented cys_open=[True] (want True); human1:M-Plasmax|cys-documented cys_open=[True] (want True); human2:DMEM:F12:M1:None cys_open=[False] (want False); human2:RPMI+cys(2-ME):M1:None cys_open=[True] (want True); human2:RPMI+cys(2-ME):M2:0.01 cys_open=[True] (want True); human2:RPMI:M1:None cys_open=[False] (want False); human2:M-HPLM:M2:0.01 cys_open=[False] (want False); human2:M-Plasmax:M2:0.01 cys_open=[False] (want False); human2:SENS:DMEM:F12-cysteine-documented cys_open=[True] (want True); human2:M-HPLM|cys-documented cys_open=[True] (want True); human2:M-Plasmax|cys-documented cys_open=[True] (want True)
+ATP_uptake_never_open_outside_M-open	True	
+new_sweeps_in_A9	True	216 new sweeps: {'gurobi': 196, 'glpk': 20}
+pairs_new_sweeps_glpk_no_shortcut	True	64 pairs over 16 new sweeps (8 GLPK-run); max |diff| 0.00e+00; n exact 64

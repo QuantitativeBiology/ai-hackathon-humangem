@@ -36,7 +36,12 @@ ON_DISK = set(media.SHEET_FILES)  # base media whose sheet is on disk
 def main() -> None:
     out = w2_dir() / "media_library"
     out.mkdir(parents=True, exist_ok=True)
-    with Manifest("scripts/w2_build_library.py", solver="none") as man:
+    dm = media.paths.depmap_dir()
+    inputs = [media.media_dir() / f for f, _ in media.SHEET_FILES.values()] + [
+        media.media_dir() / media.HPLM_FILE, media.media_dir() / media.PLASMAX_FILE] + [
+        dm / f for f in ("Model.csv", "ModelCondition.csv", "ScreenSequenceMap.csv", "CRISPRScreenMap.csv",
+                         "OmicsExpressionTPMLogp1HumanProteinCodingGenes.csv")]
+    with Manifest("scripts/w2_build_library.py", solver="glpk", inputs=inputs) as man:
         rows = media.read_compositions()
         comp = media.canonical_composition(rows)
         comp["status"] = comp.canonical.map(media.mapping_status)

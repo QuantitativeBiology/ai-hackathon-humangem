@@ -7,7 +7,7 @@ DMEM	Mg2+	813.9166	Magnesium Sulfate (MgSO4) (anhyd.)	mapped	MAR13072
 DMEM	Na+	156095.17794	L-Tyrosine disodium salt dihydrate; Sodium Bicarbonate (NaHCO3); Sodium Chloride (NaCl); Sodium Phosphate monobasic (NaH2PO4-H2O)	mapped	MAR09077
 DMEM	Pi	905.7971	Sodium Phosphate monobasic (NaH2PO4-H2O)	mapped	MAR09072
 DMEM	arginine	398.10427999999996	L-Arginine hydrochloride	mapped	MAR09066
-DMEM	chloride	121140.095841	Calcium Chloride (CaCl2) (anhyd.); Choline chloride; L-Arginine hydrochloride; L-Cystine 2HCl; L-Histidine hydrochloride-H2O; L-Lysine hydrochloride; Potassium Chloride (KCl); Pyridoxine hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride	mapped	MAR09150
+DMEM	chloride	121151.965277	Calcium Chloride (CaCl2) (anhyd.); Choline chloride; L-Arginine hydrochloride; L-Cystine 2HCl; L-Histidine hydrochloride-H2O; L-Lysine hydrochloride; Potassium Chloride (KCl); Pyridoxine hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride	mapped	MAR09150
 DMEM	choline	28.571429	Choline chloride	mapped	MAR09083
 DMEM	cystine	201.27796	L-Cystine 2HCl	mapped	MAR09363
 DMEM	folate	9.070295000000002	Folic Acid	mapped	MAR09146
@@ -48,7 +48,7 @@ DMEM:F12	arginine	699.0521600000001	L-Arginine hydrochloride	mapped	MAR09066
 DMEM:F12	asparagine	50.0	L-Asparagine-H2O	mapped	MAR09062
 DMEM:F12	aspartate	50.0	L-Aspartic acid	mapped	MAR09070
 DMEM:F12	biotin	0.014344263	Biotin	mapped	MAR09109
-DMEM:F12	chloride	129201.8481686	Calcium Chloride (CaCl2) (anhyd.); Choline chloride; L-Arginine hydrochloride; L-Cysteine hydrochloride-H2O; L-Cystine 2HCl; L-Histidine hydrochloride-H2O; L-Lysine hydrochloride; Magnesium Chloride (anhydrous); Potassium Chloride (KCl); Putrescine 2HCl; Pyridoxine hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride	mapped	MAR09150
+DMEM:F12	chloride	129208.28733800001	Calcium Chloride (CaCl2) (anhyd.); Choline chloride; L-Arginine hydrochloride; L-Cysteine hydrochloride-H2O; L-Cystine 2HCl; L-Histidine hydrochloride-H2O; L-Lysine hydrochloride; Magnesium Chloride (anhydrous); Potassium Chloride (KCl); Putrescine 2HCl; Pyridoxine hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride	mapped	MAR09150
 DMEM:F12	choline	64.14285	Choline chloride	mapped	MAR09083
 DMEM:F12	cobalamin	0.50184503	Vitamin B12	mapped	MAR09269
 DMEM:F12	cysteine	99.77271999999999	L-Cysteine hydrochloride-H2O	mapped	MAR09065
@@ -166,10 +166,10 @@ IMDM	arginine	398.10427999999996	L-Arginine hydrochloride	mapped	MAR09066
 IMDM	asparagine	166.66666999999998	L-Asparagine (freebase)	mapped	MAR09062
 IMDM	aspartate	225.56391	L-Aspartic acid	mapped	MAR09070
 IMDM	biotin	0.053278690000000004	Biotin	mapped	MAR09109
-IMDM	chloride	87176.81164900001	Calcium Chloride (CaCl2) (anhyd.); Choline chloride; L-Arginine hydrochloride; L-Cystine 2HCl; L-Histidine hydrochloride-H2O; L-Lysine hydrochloride; Potassium Chloride (KCl); Pyridoxal hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride	mapped	MAR09150
+IMDM	chloride	87011.03998410543	Calcium Chloride (CaCl2) (anhyd.); Choline chloride; L-Arginine hydrochloride; L-Cystine 2HCl; L-Histidine hydrochloride-H2O; L-Lysine hydrochloride; Potassium Chloride (KCl); Pyridoxal hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride	mapped	MAR09150
 IMDM	choline	28.571429	Choline chloride	mapped	MAR09083
 IMDM	cobalamin	0.009594096	Vitamin B12	mapped	MAR09269
-IMDM	cystine	380.83333000000005	L-Cystine 2HCl	mapped	MAR09363
+IMDM	cystine	292.01277955271564	L-Cystine 2HCl	mapped	MAR09363
 IMDM	folate	9.070295000000002	Folic Acid	mapped	MAR09146
 IMDM	glucose	25000.0	D-Glucose (Dextrose)	mapped	MAR09034
 IMDM	glutamate	510.20410000000004	L-Glutamic Acid	mapped	MAR09071
@@ -197,7 +197,7 @@ IMDM	threonine	798.31934	L-Threonine	mapped	MAR09044
 IMDM	tryptophan	78.431375	L-Tryptophan	mapped	MAR09045
 IMDM	tyrosine	462.22222	L-Tyrosine disodium salt	mapped	MAR09064
 IMDM	valine	803.4188	L-Valine	mapped	MAR09046
-Plasmax	2-aminobutyrate	41.0	Aminobutyrate	mapped	MAR10206
+Plasmax	2-aminobutyrate	41.0	alpha-Aminobutyrate	mapped	MAR10206
 Plasmax	2-hydroxybutyrate	31.0	2-Hydroxybutyrate	mapped	MAR09216
 Plasmax	3-hydroxybutyrate	77.0	3-Hydroxybutyrate	mapped	MAR09134
 Plasmax	3-hydroxyisobutyrate	20.0	3-Hydroxyisobutyrate	mapped	MAR10185
@@ -280,25 +280,24 @@ Plasmax	uridine	3.0	Uridine	mapped	MAR09439
 Plasmax	valine	230.0	L-Valine	mapped	MAR09046
 Plasmax	vanadate	0.0026	Ammonium Metavanadate	no_exchange	
 RPMI	4-aminobenzoate	7.29927	Para-Aminobenzoic Acid	no_exchange	
-RPMI	<buffer>	10012.605000000001	HEPES	non_nutrient	
 RPMI	<dye>	13.283741	Phenol Red	non_nutrient	
 RPMI	Ca2+	424.252929	Calcium nitrate (Ca(NO3)2 4H2O); D-Calcium pantothenate	mapped	MAR09082
 RPMI	GSH	3.2573289	Glutathione (reduced)	mapped	MAR09351
-RPMI	HCO3-	17857.143	Sodium Bicarbonate (NaHCO3)	mapped	MAR09078
+RPMI	HCO3-	23809.0	Sodium Bicarbonate (NaHCO3)	mapped	MAR09078
 RPMI	K+	5333.3335	Potassium Chloride (KCl)	mapped	MAR09081
 RPMI	Mg2+	407.0	Magnesium Sulfate (MgSO4) (anhyd.)	mapped	MAR13072
-RPMI	Na+	133795.24122	L-Tyrosine disodium salt dihydrate; Sodium Bicarbonate (NaHCO3); Sodium Chloride (NaCl); Sodium Phosphate dibasic (Na2HPO4) anhydrous; Sodium Pyruvate	mapped	MAR09077
+RPMI	Na+	138747.09821999999	L-Tyrosine disodium salt dihydrate; Sodium Bicarbonate (NaHCO3); Sodium Chloride (NaCl); Sodium Phosphate dibasic (Na2HPO4) anhydrous	mapped	MAR09077
 RPMI	Pi	5633.803	Sodium Phosphate dibasic (Na2HPO4) anhydrous	mapped	MAR09072
 RPMI	arginine	1149.4253	L-Arginine	mapped	MAR09066
 RPMI	asparagine	378.78788000000003	L-Asparagine	mapped	MAR09062
 RPMI	aspartate	150.37592999999998	L-Aspartic acid	mapped	MAR09070
 RPMI	biotin	0.81967213	Biotin	mapped	MAR09109
-RPMI	chloride	109444.76851	Choline chloride; L-Cystine 2HCl; L-Lysine hydrochloride; Potassium Chloride (KCl); Pyridoxine hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride	mapped	MAR09150
+RPMI	chloride	109447.735869	Choline chloride; L-Cystine 2HCl; L-Lysine hydrochloride; Potassium Chloride (KCl); Pyridoxine hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride	mapped	MAR09150
 RPMI	choline	21.428572	Choline chloride	mapped	MAR09083
 RPMI	cobalamin	0.003690037	Vitamin B12	mapped	MAR09269
 RPMI	cystine	207.66773999999998	L-Cystine 2HCl	mapped	MAR09363
 RPMI	folate	2.2675737	Folic Acid	mapped	MAR09146
-RPMI	glucose	25000.0	D-Glucose (Dextrose)	mapped	MAR09034
+RPMI	glucose	11111.0	D-Glucose (Dextrose)	mapped	MAR09034
 RPMI	glutamate	136.05443	L-Glutamic Acid	mapped	MAR09071
 RPMI	glutamine	2054.7945	L-Glutamine	mapped	MAR09063
 RPMI	glycine	133.33334	Glycine	mapped	MAR09067
@@ -315,7 +314,6 @@ RPMI	pantothenate	1.048218	D-Calcium pantothenate	mapped	MAR09145
 RPMI	phenylalanine	90.90908999999999	L-Phenylalanine	mapped	MAR09043
 RPMI	proline	173.91305000000003	L-Proline	mapped	MAR09068
 RPMI	pyridoxine	4.854369	Pyridoxine hydrochloride	mapped	MAR09144
-RPMI	pyruvate	1000.0	Sodium Pyruvate	mapped	MAR09133
 RPMI	riboflavin	0.5319149	Riboflavin	mapped	MAR09143
 RPMI	serine	285.7143	L-Serine	mapped	MAR09069
 RPMI	sulfate	407.0	Magnesium Sulfate (MgSO4) (anhyd.)	mapped	MAR09074
@@ -324,3 +322,48 @@ RPMI	threonine	168.06723000000002	L-Threonine	mapped	MAR09044
 RPMI	tryptophan	24.509804	L-Tryptophan	mapped	MAR09045
 RPMI	tyrosine	111.11111	L-Tyrosine disodium salt dihydrate	mapped	MAR09064
 RPMI	valine	170.94018	L-Valine	mapped	MAR09046
+RPMI-ATCC	4-aminobenzoate	7.29927	Para-Aminobenzoic Acid	no_exchange	
+RPMI-ATCC	<buffer>	10012.605000000001	HEPES	non_nutrient	
+RPMI-ATCC	<dye>	13.283741	Phenol Red	non_nutrient	
+RPMI-ATCC	Ca2+	424.252929	Calcium nitrate (Ca(NO3)2 4H2O); D-Calcium pantothenate	mapped	MAR09082
+RPMI-ATCC	GSH	3.2573289	Glutathione (reduced)	mapped	MAR09351
+RPMI-ATCC	HCO3-	17857.143	Sodium Bicarbonate (NaHCO3)	mapped	MAR09078
+RPMI-ATCC	K+	5333.3335	Potassium Chloride (KCl)	mapped	MAR09081
+RPMI-ATCC	Mg2+	407.0	Magnesium Sulfate (MgSO4) (anhyd.)	mapped	MAR13072
+RPMI-ATCC	Na+	133795.24122	L-Tyrosine disodium salt dihydrate; Sodium Bicarbonate (NaHCO3); Sodium Chloride (NaCl); Sodium Phosphate dibasic (Na2HPO4) anhydrous; Sodium Pyruvate	mapped	MAR09077
+RPMI-ATCC	Pi	5633.803	Sodium Phosphate dibasic (Na2HPO4) anhydrous	mapped	MAR09072
+RPMI-ATCC	arginine	1149.4253	L-Arginine	mapped	MAR09066
+RPMI-ATCC	asparagine	378.78788000000003	L-Asparagine	mapped	MAR09062
+RPMI-ATCC	aspartate	150.37592999999998	L-Aspartic acid	mapped	MAR09070
+RPMI-ATCC	biotin	0.81967213	Biotin	mapped	MAR09109
+RPMI-ATCC	chloride	109447.735869	Choline chloride; L-Cystine 2HCl; L-Lysine hydrochloride; Potassium Chloride (KCl); Pyridoxine hydrochloride; Sodium Chloride (NaCl); Thiamine hydrochloride	mapped	MAR09150
+RPMI-ATCC	choline	21.428572	Choline chloride	mapped	MAR09083
+RPMI-ATCC	cobalamin	0.003690037	Vitamin B12	mapped	MAR09269
+RPMI-ATCC	cystine	207.66773999999998	L-Cystine 2HCl	mapped	MAR09363
+RPMI-ATCC	folate	2.2675737	Folic Acid	mapped	MAR09146
+RPMI-ATCC	glucose	25000.0	D-Glucose (Dextrose)	mapped	MAR09034
+RPMI-ATCC	glutamate	136.05443	L-Glutamic Acid	mapped	MAR09071
+RPMI-ATCC	glutamine	2054.7945	L-Glutamine	mapped	MAR09063
+RPMI-ATCC	glycine	133.33334	Glycine	mapped	MAR09067
+RPMI-ATCC	histidine	96.77418999999999	L-Histidine	mapped	MAR09038
+RPMI-ATCC	hydroxyproline	152.67175	L-Hydroxyproline	mapped	MAR08386
+RPMI-ATCC	inositol	194.44445	i-Inositol	mapped	MAR09361
+RPMI-ATCC	isoleucine	381.6794	L-Isoleucine	mapped	MAR09039
+RPMI-ATCC	leucine	381.6794	L-Leucine	mapped	MAR09040
+RPMI-ATCC	lysine	218.57923000000002	L-Lysine hydrochloride	mapped	MAR09041
+RPMI-ATCC	methionine	100.67114000000001	L-Methionine	mapped	MAR09042
+RPMI-ATCC	nicotinamide	8.196721	Niacinamide	mapped	MAR09378
+RPMI-ATCC	nitrate	847.45764	Calcium nitrate (Ca(NO3)2 4H2O)	no_exchange	
+RPMI-ATCC	pantothenate	1.048218	D-Calcium pantothenate	mapped	MAR09145
+RPMI-ATCC	phenylalanine	90.90908999999999	L-Phenylalanine	mapped	MAR09043
+RPMI-ATCC	proline	173.91305000000003	L-Proline	mapped	MAR09068
+RPMI-ATCC	pyridoxine	4.854369	Pyridoxine hydrochloride	mapped	MAR09144
+RPMI-ATCC	pyruvate	1000.0	Sodium Pyruvate	mapped	MAR09133
+RPMI-ATCC	riboflavin	0.5319149	Riboflavin	mapped	MAR09143
+RPMI-ATCC	serine	285.7143	L-Serine	mapped	MAR09069
+RPMI-ATCC	sulfate	407.0	Magnesium Sulfate (MgSO4) (anhyd.)	mapped	MAR09074
+RPMI-ATCC	thiamin	2.967359	Thiamine hydrochloride	mapped	MAR09159
+RPMI-ATCC	threonine	168.06723000000002	L-Threonine	mapped	MAR09044
+RPMI-ATCC	tryptophan	24.509804	L-Tryptophan	mapped	MAR09045
+RPMI-ATCC	tyrosine	111.11111	L-Tyrosine disodium salt dihydrate	mapped	MAR09064
+RPMI-ATCC	valine	170.94018	L-Valine	mapped	MAR09046

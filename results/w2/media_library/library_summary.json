@@ -1,6 +1,6 @@
 {
- "mapping_version": "w2-media-map-v1 (2026-10-26)",
- "cysteine_rule": "documented",
+ "mapping_version": "w2-media-map-v2 (2026-10-27; A9 fixes)",
+ "cysteine_rule": "design_literal",
  "sheet_bases_on_disk": [
   "DMEM",
   "DMEM:F12",
@@ -13,7 +13,8 @@
   "HPLM": 70,
   "IMDM": 41,
   "Plasmax": 80,
-  "RPMI": 42
+  "RPMI": 40,
+  "RPMI-ATCC": 42
  },
  "unmapped_by_medium": {
   "DMEM": [
@@ -43,6 +44,11 @@
   ],
   "RPMI": [
    "4-aminobenzoate",
+   "<dye>",
+   "nitrate"
+  ],
+  "RPMI-ATCC": [
+   "4-aminobenzoate",
    "<buffer>",
    "<dye>",
    "nitrate"
@@ -70,7 +76,7 @@
   "sheet:IMDM": 38
  },
  "n_distinct_strings": 157,
- "n_distinct_medium_keys": 20,
+ "n_distinct_medium_keys": 22,
  "n_serum_free_screened": 159,
  "gate_open_counts": {
   "True": 1133,

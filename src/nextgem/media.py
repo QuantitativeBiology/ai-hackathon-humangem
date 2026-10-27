@@ -26,8 +26,8 @@ Uptake-bound scheme (availability; DESIGN W2 variant ladder)
 - M-open: every exchange of the parent at 1000 (negative control).
 - M0: Ham's GR-task inputs at 1000 (``nextgem.model.hams_medium``).
 - M1: every mapped component of the documented medium at 1000, every other uptake 0; background O2 and H2O at
-  1000; cystine instead of cysteine (cysteine open only if 2-mercaptoethanol is present or the sheet itself lists
-  free cysteine, see `CYSTEINE_RULE`); plus the biomass micronutrient floor at ``FLOOR_MULT x req_c`` (1000 when the
+  1000; cystine instead of cysteine (A9: cysteine opens only when 2-mercaptoethanol and cystine are both present;
+  the sheet's documented free cysteine is used only by the sensitivity rule, see `CYSTEINE_RULE`); plus the biomass micronutrient floor at ``FLOOR_MULT x req_c`` (1000 when the
   medium itself supplies the component).
 - M2(f): M1 plus, if the medium contains serum, each synthesisable serum component at ``f x req_c`` (1000 if the
   medium itself supplies it) and the serum trace metals at 1000. Serum-free media get no serum.
@@ -49,7 +49,7 @@ import pandas as pd
 
 from nextgem import paths
 
-MAPPING_VERSION = "w2-media-map-v1 (2026-10-26)"
+MAPPING_VERSION = "w2-media-map-v2 (2026-10-27; A9 fixes)"
 
 # ----------------------------------------------------------------------------------------------- fixed parameters
 UPTAKE_OPEN = 1000.0
@@ -66,10 +66,11 @@ GATE_THRESHOLD = 1.0  # log2(TPM+1) >= 1 in any of the three opens the gate
 GATED = ("aspartate", "glutamate")
 BACKGROUND = ("O2", "H2O")  # environment, not formulation: open in every documented variant (as in M0)
 IMPUTED_TEXT = "RPMI + 10% FBS"  # DESIGN W2: imputed / fallback medium
-# 'documented' (default): cysteine is open if the sheet lists free cysteine (DMEM/F12, HPLM, Plasmax) or 2-ME is
-# present. 'design_literal': cysteine open only with 2-ME. DESIGN M1 text says "cysteine closed unless 2-ME is
-# present"; the DMEM/F12 sheet documents 0.1 mM free cysteine, so the default keeps the documented composition.
-CYSTEINE_RULE = "documented"
+# DESIGN M1 / amendment A9(b): 'design_literal' (default) = cysteine uptake closed unless 2-mercaptoethanol is
+# present, in every medium (free cysteine autoxidises to cystine in medium; Ishii & Bannai 1985, 1987).
+# 'documented' (sensitivity) = cysteine also open where the formulation lists free cysteine (DMEM/F12, HPLM, Plasmax).
+CYSTEINE_RULE = "design_literal"
+CYSTEINE_RULES = ("design_literal", "documented")
 
 # Serum model (DESIGN W2). f-scaled synthesisable components; trace metals at availability 1000.
 SERUM_F_SCALED = ("palmitate", "stearate", "oleate", "cholesterol", "carnitine", "ethanolamine")
@@ -106,7 +107,7 @@ EXCHANGES: dict[str, tuple[str, str]] = {
     "glucose": ("MAR09034", "glucose"), "pyruvate": ("MAR09133", "pyruvate"), "GSH": ("MAR09351", "gsh"),
     "hypoxanthine": ("MAR09358", "hypoxanthine"), "thymidine": ("MAR09423", "thymidine"),
     "uridine": ("MAR09439", "uridine"), "uracil": ("MAR09437", "uracil"), "urate": ("MAR09075", "urate"),
-    "adenine": ("MAR09253", "adenine"), "ATP": ("MAR00569", "atp"),
+    "adenine": ("MAR09253", "adenine"), "adenosine": ("MAR09254", "adenosine"),
     "linoleate": ("MAR09035", "linoleate"), "linolenate": ("MAR09036", "linolenate"),
     "lipoate": ("MAR09167", "lipoic acid"), "putrescine": ("MAR11426", "putrescine"),
     "2-hydroxybutyrate": ("MAR09216", "2-hydroxybutyrate"), "3-hydroxybutyrate": ("MAR09134", "(r)-3-hydroxybutanoate"),
@@ -162,7 +163,7 @@ RAW_COMPONENTS: dict[str, list[tuple[str, float]] | str] = {
     "Niacinamide": [("nicotinamide", 1)], "Para-Aminobenzoic Acid": [("4-aminobenzoate", 1)],
     "Pyridoxine hydrochloride": [("pyridoxine", 1), ("chloride", 1)],
     "Pyridoxal hydrochloride": [("pyridoxal", 1), ("chloride", 1)], "Riboflavin": [("riboflavin", 1)],
-    "Thiamine hydrochloride": [("thiamin", 1), ("chloride", 1)], "Vitamin B12": [("cobalamin", 1)],
+    "Thiamine hydrochloride": [("thiamin", 1), ("chloride", 2)],  # thiamine chloride hydrochloride (MW 337) "Vitamin B12": [("cobalamin", 1)],
     "i-Inositol": [("inositol", 1)],
     "Calcium nitrate (Ca(NO3)2 4H2O)": [("Ca2+", 1), ("nitrate", 2)],
     "Calcium Chloride (CaCl2) (anhyd.)": [("Ca2+", 1), ("chloride", 2)],
@@ -208,7 +209,7 @@ RAW_COMPONENTS: dict[str, list[tuple[str, float]] | str] = {
     "Ca(NO3)2.4H2O": [("Ca2+", 1), ("nitrate", 2)], "NH4Cl": [("NH4+", 1), ("chloride", 1)], "Phenol red": "dye",
     "Niacinamide ": [("nicotinamide", 1)], "Riboflavin ": [("riboflavin", 1)],
     # ---- Plasmax (Vande Voorde 2019 Table S1; uM; footnote digits stripped)
-    "L-Glutamate": [("glutamate", 1)], "L-Cysteine": [("cysteine", 1)], "Aminobutyrate": [("2-aminobutyrate", 1)],
+    "L-Glutamate": [("glutamate", 1)], "L-Cysteine": [("cysteine", 1)], "alpha-Aminobutyrate": [("2-aminobutyrate", 1)],
     "L-Citrulline": [("citrulline", 1)], "L-Cystine": [("cystine", 1)], "L-Homocysteine": [("homocysteine", 1)],
     "4-Hydroxy-L-proline": [("hydroxyproline", 1)], "L-Ornitine": [("ornithine", 1)],
     "L-Pyroglutamate": [("5-oxoproline", 1)], "L-Acetyl glycine": [("acetylglycine", 1)],
@@ -255,6 +256,17 @@ SHEET_FILES = {  # base medium -> (file in data/media, sheet name or None)
     "IMDM": ("IMDM_NoPhenolRed.xlsx", None),
 }
 HPLM_FILE, HPLM_SHEET = "mmc1.xlsx", "HPLM formulation"
+CLASSIC_SHEET = "Classic synthetic media"  # Cantor 2017 Table S1: BME, MEM, DMEM 11965, RPMI 1640 11875 (uM)
+RPMI_ATCC = "RPMI-ATCC"  # the on-disk ATCC 30-2001 sheet (4.5 g/L glucose, 10 mM HEPES, 1 mM pyruvate)
+# A9(d): the RPMI base is classic RPMI 1640 (Gibco 11875; Moore 1967): the ATCC sheet without pyruvate and HEPES,
+# with glucose and bicarbonate at the 11875 values taken from Cantor 2017 Table S1 "Classic synthetic media".
+RPMI_CLASSIC_DROP = ("Sodium Pyruvate", "HEPES")
+RPMI_CLASSIC_FROM_CANTOR = {"D-Glucose (Dextrose)": "Glucose", "Sodium Bicarbonate (NaHCO3)": "NaHCO3"}
+# A9(a): sheet errors corrected at parse time (recorded in the `correction` column of compositions.tsv).
+SHEET_CORRECTIONS = {
+    ("IMDM", "L-Cystine 2HCl"): dict(mw=313.0, note="IMDM sheet uses MW 240 (free cystine) for cystine 2HCl; corrected "
+                                               "to the salt MW 313 -> 292 uM (Gibco IMDM; A9a)"),
+}
 PLASMAX_FILE = "aau7314_sm.pdf"
 
 # Standard-formulation defaults for the on-disk "NoGlutamine" sheets (DESIGN ambiguity, flagged
@@ -293,8 +305,12 @@ def parse_vendor_sheet(path: Path, medium: str) -> pd.DataFrame:
             continue
         mw, mgl = float(mw), float(mgl)
         um = float(mm) * 1000 if pd.notna(mm) else mgl / mw * 1000
+        corr = SHEET_CORRECTIONS.get((medium, name))
+        if corr:
+            mw = corr["mw"]
+            um = mgl / mw * 1000
         rows.append(dict(medium=medium, section=section, raw_component=name, mw=mw, mg_per_L=mgl, uM=um,
-                         source=f"{path.name}:row{i + 1}"))
+                         source=f"{path.name}:row{i + 1}", correction=corr["note"] if corr else ""))
     return pd.DataFrame(rows)
 
 
@@ -329,7 +345,9 @@ _PLASMAX_SECTIONS = ["Proteinogenic Amino Acids", "Non-proteinogenic Amino Acids
 
 def _strip_footnote(name: str) -> str:
     """'L-Alanine1' -> 'L-Alanine'; 'Vitamin B126' -> 'Vitamin B12'; '(betaine) 2' -> '(betaine)'."""
-    name = re.sub(r"[\uf000-\uf0ff]", "", name).strip()  # Symbol-font glyphs ("alpha-") in the PDF text
+    # Symbol-font glyphs in the PDF text: U+F061 U+F02D = "alpha-" (A9a: keep the alpha in the name)
+    name = name.replace("\uf061\uf02d", "alpha-")
+    name = re.sub(r"[\uf000-\uf0ff]", "", name).strip()
     for cand in (name, re.sub(r"\s*\d$", "", name)):
         if cand in RAW_COMPONENTS:
             return cand
@@ -364,12 +382,49 @@ def parse_plasmax(path: Path) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def parse_cantor_classic(path: Path, column: str = "RPMI 1640") -> dict[str, float]:
+    """One column of Cantor 2017 Table S1 'Classic synthetic media' (uM), keyed by metabolite name."""
+    df = pd.read_excel(path, sheet_name=CLASSIC_SHEET, header=None)
+    assert "All concentrations in uM" in str(df.iloc[1, 0])
+    col = next(j for j in range(df.shape[1]) if str(df.iloc[3, j]).strip() == column)
+    assert str(df.iloc[4, col]).strip() == "11875" or column != "RPMI 1640"
+    out = {}
+    for i in range(6, len(df)):
+        name, v = df.iloc[i, 0], df.iloc[i, col]
+        if pd.isna(name) or str(name).strip() == "Small ion":
+            if out:
+                break
+            continue
+        out[str(name).strip()] = float(str(v).rstrip("*"))
+    return out
+
+
+def classic_rpmi(atcc_rows: pd.DataFrame, cantor: dict[str, float], cantor_file: str) -> pd.DataFrame:
+    """Classic RPMI 1640 (A9d) derived from the ATCC sheet rows (see RPMI_CLASSIC_*)."""
+    rows = atcc_rows[~atcc_rows.raw_component.isin(RPMI_CLASSIC_DROP)].copy()
+    rows["medium"] = "RPMI"
+    rows["correction"] = ""
+    for raw, cname in RPMI_CLASSIC_FROM_CANTOR.items():
+        i = rows.index[rows.raw_component == raw]
+        assert len(i) == 1, raw
+        um = cantor[cname]
+        rows.loc[i, "uM"] = um
+        rows.loc[i, "mg_per_L"] = um * rows.loc[i, "mw"] / 1000
+        rows.loc[i, "correction"] = f"classic RPMI 1640 (Gibco 11875) value from {cantor_file}:{CLASSIC_SHEET}"
+    rows["source"] = rows.source + " (derived: classic RPMI 1640, A9d)"
+    return rows
+
+
 def read_compositions(root: Path | None = None) -> pd.DataFrame:
-    """All formulation rows on disk (four vendor sheets, HPLM, Plasmax)."""
+    """All formulation rows: four vendor sheets (RPMI as the on-disk ATCC sheet `RPMI-ATCC` and the derived classic
+    RPMI 1640 `RPMI`), HPLM, Plasmax."""
     root = root or media_dir()
-    parts = [parse_vendor_sheet(root / f, base) for base, (f, _s) in SHEET_FILES.items()]
+    parts = [parse_vendor_sheet(root / f, RPMI_ATCC if base == "RPMI" else base) for base, (f, _s) in SHEET_FILES.items()]
+    parts.insert(1, classic_rpmi(parts[0], parse_cantor_classic(root / HPLM_FILE), HPLM_FILE))
     parts += [parse_hplm(root / HPLM_FILE), parse_plasmax(root / PLASMAX_FILE)]
-    return pd.concat(parts, ignore_index=True)
+    out = pd.concat(parts, ignore_index=True)
+    out["correction"] = out.correction.fillna("")
+    return out
 
 
 def canonical_composition(rows: pd.DataFrame) -> pd.DataFrame:
@@ -504,7 +559,8 @@ _SUPPLEMENTS: list[tuple[str, str, tuple[str, ...], float | None, str]] = [
     (r"glutathione", "nutrient", ("GSH",), 307.3, ""),
     (r"hypoxanthine", "nutrient", ("hypoxanthine",), 136.1, ""),
     (r"\badenine\b", "nutrient", ("adenine",), 135.1, ""),
-    (r"\batp\b", "nutrient", ("ATP",), 507.2, ""),
+    (r"\batp\b", "nutrient", ("adenosine", "Pi"), 507.2,
+     "ATP -> adenosine + phosphate (A9h: extracellular ATP is hydrolysed by ecto-nucleotidases, not taken up)"),
     (r"thymidine", "nutrient", ("thymidine",), 242.2, ""),
     (r"proline", "nutrient", ("proline",), 115.1, ""),
     (r"cystine", "nutrient", ("cystine",), 240.3, ""),
@@ -583,6 +639,7 @@ class Medium:
     serum: bool
     allow_cysteine: bool = False
     flags: tuple[str, ...] = ()
+    serum_pct: float = 10.0  # parsed serum % (used only by the A9(f) sensitivity f x pct/10)
 
     def present(self) -> set[str]:
         return {c for c, v in self.components.items() if v is None or v > 0}
@@ -599,7 +656,8 @@ def sheet_media(comp: pd.DataFrame) -> dict[str, dict[str, float]]:
 
 
 def build_medium(parsed: ParsedText, sheets: dict[str, dict[str, float]], add_standard_glutamine: bool = True,
-                 dmem_pyruvate: bool = False, key: str | None = None) -> Medium:
+                 dmem_pyruvate: bool = False, key: str | None = None, cysteine_rule: str | None = None,
+                 rpmi_base: str = "RPMI") -> Medium:
     """Documented medium for a parsed text whose sheet(s) are on disk (linear blend for mixtures)."""
     comps: dict[str, float | None] = {}
     flags = list(parsed.flags)
@@ -607,7 +665,9 @@ def build_medium(parsed: ParsedText, sheets: dict[str, dict[str, float]], add_st
     for base, frac in parsed.parts:
         if base not in sheets:
             raise KeyError(f"sheet for {base!r} not on disk")
-        base_comps = dict(sheets[base])
+        base_comps = dict(sheets[rpmi_base if base == "RPMI" else base])
+        if base == "RPMI" and rpmi_base != "RPMI":
+            flags.append(f"rpmi_base:{rpmi_base}")
         if add_standard_glutamine and base in STANDARD_GLN_UM and "glutamine" not in base_comps:
             base_comps["glutamine"] = STANDARD_GLN_UM[base]
             flags.append(f"gln_standard_default:{base}")
@@ -626,17 +686,26 @@ def build_medium(parsed: ParsedText, sheets: dict[str, dict[str, float]], add_st
                 comps.setdefault(c, None)
             else:
                 comps[c] = (comps.get(c) or 0.0) + v
-    if CYSTEINE_RULE == "documented":
+    rule = cysteine_rule or CYSTEINE_RULE
+    assert rule in CYSTEINE_RULES, rule
+    if rule == "documented":
         allow_cys |= sheet_cys
+        flags.append("cysteine_documented_sensitivity")
     return Medium(key or parsed.text, comps, serum=not parsed.serum_free, allow_cysteine=allow_cys,
-                  flags=tuple(sorted(set(flags))))
+                  flags=tuple(sorted(set(flags))), serum_pct=parsed.serum_pct)
 
 
-def physiological_medium(name: str, sheets: dict[str, dict[str, float]]) -> Medium:
-    """M-HPLM / M-Plasmax: composition as published, treated as serum-containing (DESIGN: + the M2 serum model)."""
+def physiological_medium(name: str, sheets: dict[str, dict[str, float]], cysteine_rule: str | None = None) -> Medium:
+    """M-HPLM / M-Plasmax: composition as published, treated as serum-containing (DESIGN: + the M2 serum model).
+
+    The cysteine rule applies as in every medium (A9b): the listed free cysteine is closed by default.
+    """
     comps = dict(sheets[name])
-    return Medium(f"M-{name}", comps, serum=True, allow_cysteine=comps.get("cysteine", 0) > 0,
-                  flags=("physiological_counterfactual",))
+    rule = cysteine_rule or CYSTEINE_RULE
+    documented = rule == "documented"
+    return Medium(f"M-{name}" + ("|cys-documented" if documented else ""), comps, serum=True,
+                  allow_cysteine=documented and comps.get("cysteine", 0) > 0,
+                  flags=("physiological_counterfactual",) + (("cysteine_documented_sensitivity",) if documented else ()))
 
 
 # ===================================================================================== 4. bounds
@@ -657,11 +726,13 @@ VARIANTS = ("M-open", "M0", "M1", "M2", "M3")
 
 def uptake_bounds(model, variant: str, medium: Medium | None = None, pc: ParentConstraints | None = None,
                   f: float | None = None, gate_open: bool = True, calibration: dict[str, float] | None = None,
-                  floor_override: float | None = None) -> dict[str, float]:
+                  floor_override: float | None = None, serum_pct_scaling: bool = False) -> dict[str, float]:
     """cobra medium dict {exchange id: max uptake} for one ladder variant (see module docstring).
 
     ``floor_override`` sets every floor component that the medium does not supply to that bound (used by the
     non-binding precheck: 1000 vs FLOOR_MULT x req_c).
+    ``serum_pct_scaling`` (A9f sensitivity, run only at the TG-chosen f): the serum components use
+    f_eff = f x serum_pct / 10 instead of f (10% serum = the reference).
     """
     from nextgem.model import hams_medium
 
@@ -677,6 +748,9 @@ def uptake_bounds(model, variant: str, medium: Medium | None = None, pc: ParentC
     for c in sorted(present):
         if c in EXCHANGES and (c != "cysteine" or medium.allow_cysteine):
             b[EXCHANGES[c][0]] = UPTAKE_OPEN
+    if medium.allow_cysteine and "cystine" in present:
+        # DESIGN M1 / A9(b): with 2-mercaptoethanol, extracellular cystine is reduced to cysteine -> cysteine uptake
+        b[EXCHANGES["cysteine"][0]] = UPTAKE_OPEN
     for c in BACKGROUND:
         b[EXCHANGES[c][0]] = UPTAKE_OPEN
     for c in pc.floor:
@@ -685,9 +759,10 @@ def uptake_bounds(model, variant: str, medium: Medium | None = None, pc: ParentC
     if variant in ("M2", "M3") and medium.serum:
         if f is None:
             raise ValueError("M2/M3 need f")
+        f_eff = f * medium.serum_pct / 10.0 if serum_pct_scaling else f
         for c in SERUM_F_SCALED:
             if c not in present:
-                b[EXCHANGES[c][0]] = f * pc.req[c]
+                b[EXCHANGES[c][0]] = f_eff * pc.req[c]
         for c in SERUM_TRACE_METALS:
             b[EXCHANGES[c][0]] = UPTAKE_OPEN
     if variant == "M3":
@@ -871,20 +946,30 @@ def documented_media(texts, sheets) -> dict[str, Medium]:
 
 
 def sensitivity_media(sheets) -> dict[str, Medium]:
-    """Pre-declared sensitivity variants (flagged; not part of the ladder)."""
+    """Pre-declared sensitivity variants (A9; flagged; not part of the ladder). M1 and M2(f) are swept for each."""
     p_rpmi, p_dmem, p_df12 = (parse_formulation(f"{b} + 10% FBS") for b in ("RPMI", "DMEM", "DMEM:F12"))
-    out = {}
-    m = build_medium(p_rpmi, sheets, key="SENS:RPMI-no-pyruvate")
-    m.components.pop("pyruvate")  # the on-disk ATCC RPMI sheet (30-2001) contains 1 mM pyruvate; Gibco 11875 does not
-    m.flags = m.flags + ("sens_rpmi_without_pyruvate",)
-    out[m.key] = m
-    out["SENS:DMEM+pyruvate"] = build_medium(p_dmem, sheets, dmem_pyruvate=True, key="SENS:DMEM+pyruvate")
-    out["SENS:DMEM-no-standard-Gln"] = build_medium(p_dmem, sheets, add_standard_glutamine=False,
-                                                    key="SENS:DMEM-no-standard-Gln")
-    m = build_medium(p_df12, sheets, key="SENS:DMEM:F12-cysteine-closed")
-    m.allow_cysteine = False  # DESIGN-literal M1 cysteine rule (closed unless 2-ME)
-    out[m.key] = m
+    out = {
+        # A9(d): the on-disk ATCC-modified RPMI (with 1 mM pyruvate) instead of classic RPMI 1640
+        "SENS:RPMI-ATCC": build_medium(p_rpmi, sheets, key="SENS:RPMI-ATCC", rpmi_base=RPMI_ATCC),
+        # DESIGN W2 parser rule: DMEM with unstated pyruvate -> none; with-pyruvate sensitivity
+        "SENS:DMEM+pyruvate": build_medium(p_dmem, sheets, dmem_pyruvate=True, key="SENS:DMEM+pyruvate"),
+        # A9(c): no standard glutamine added to plain DMEM / DMEM:F12
+        "SENS:DMEM-no-standard-Gln": build_medium(p_dmem, sheets, add_standard_glutamine=False,
+                                                  key="SENS:DMEM-no-standard-Gln"),
+        "SENS:DMEM:F12-no-standard-Gln": build_medium(p_df12, sheets, add_standard_glutamine=False,
+                                                      key="SENS:DMEM:F12-no-standard-Gln"),
+        # A9(b): documented free cysteine open
+        "SENS:DMEM:F12-cysteine-documented": build_medium(p_df12, sheets, key="SENS:DMEM:F12-cysteine-documented",
+                                                          cysteine_rule="documented"),
+    }
+    for m in out.values():
+        m.flags = m.flags + ("sensitivity",)
     return out
+
+
+def physiological_sensitivity_media(sheets) -> dict[str, Medium]:
+    """A9(b) sensitivity for the physiological media: HPLM / Plasmax with their listed free cysteine open."""
+    return {m.key: m for m in (physiological_medium(n, sheets, cysteine_rule="documented") for n in ("HPLM", "Plasmax"))}
 
 
 def floor_constraints(floor_tsv: Path, req_tsv: Path, mult_tsv: Path | None = None) -> dict[str, ParentConstraints]:

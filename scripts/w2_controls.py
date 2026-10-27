@@ -75,52 +75,70 @@ def main() -> None:
 
         # ---------------------------------------------------------------- positive controls
         pos = []
+        MS = "model_structure_failure (W3/W5)"
+
+        def row(control, p, expectation, observed, status, note=""):
+            pos.append(dict(control=control, parent=p, expectation=expectation, observed=observed, status=status,
+                            passed=status == "pass", note=note))
+
+        def directional(a, b):
+            """Expectation a >= b with a real change: equal values are non-informative (A9j), not passes."""
+            pairs = [(x, y) for x, y in zip(a, b) if not (np.isnan(x) or np.isnan(y))]
+            if not pairs or all(x == y for x, y in pairs):
+                return "non_informative"
+            return "pass" if all(x >= y for x, y in pairs) else "fail"
+
         for p in PARENTS:
             a_d, a_r = val(p, "M1", "DMEM", "ASNS"), val(p, "M1", "RPMI", "ASNS")
-            pos.append(dict(control="ASNS DMEM vs RPMI (M1)", parent=p, expectation="DMEM < 0.01 (no Asn); RPMI = 1",
-                            observed=f"DMEM {a_d}; RPMI {a_r}", passed=a_d < 0.01 and a_r == 1.0))
+            row("ASNS DMEM vs RPMI (M1)", p, "DMEM < 0.01 (no Asn); RPMI = 1", f"DMEM {a_d}; RPMI {a_r}",
+                "pass" if a_d < 0.01 and a_r == 1.0 else "fail")
             for f in media.SERUM_F_LEVELS:
                 sf = [val(p, "M1", "DMEM:F12|serum-free", g) for g in STEROL]
                 se = [val(p, f"M2(f={f:g})", "DMEM:F12", g) for g in STEROL]
-                pos.append(dict(control=f"sterol branch: serum-free vs serum M2(f={f:g})", parent=p,
-                                expectation="serum-free: lethal; serum: ratio rises with f (~f when cholesterol "
-                                            "uptake caps growth)",
-                                observed=f"serum-free n_lethal {sum(x < 0.01 for x in sf)}/{len(STEROL)}; "
-                                         f"serum median ratio {np.nanmedian(se):.4g}",
-                                passed=sum(x < 0.01 for x in sf) >= 10 and np.nanmedian(se) >= min(f, 1) * 0.5))
+                row(f"sterol branch: serum-free vs serum M2(f={f:g})", p,
+                    "serum-free: lethal; serum: rescued (ratio rises with f)",
+                    f"serum-free n_lethal {sum(x < 0.01 for x in sf)}/{len(STEROL)}; serum: "
+                    + "; ".join(f"{g} {x:.3g}" for g, x in zip(STEROL, se)), MS,
+                    "A9(j): biomass needs vitamin D3 products reachable only via 7-dehydrocholesterol; only DHCR7 is "
+                    "rescued by cholesterol. Not fixable through the medium.")
             for gene in ("GOT1", "GOT2", "SLC1A3"):
                 go, gc = val(p, "M2(f=0.01)", "RPMI", gene), val(p, "M2g(f=0.01)", "RPMI", gene)
-                pos.append(dict(control=f"{gene} with the gate (RPMI M2 f=0.01)", parent=p,
-                                expectation="ratio(gate closed) <= ratio(gate open)",
-                                observed=f"open {go}; closed {gc}", passed=gc <= go))
+                row(f"{gene} with the gate (RPMI M2 f=0.01)", p, "ratio(gate closed) < ratio(gate open)",
+                    f"open {go}; closed {gc}", directional([go], [gc]))
             s0 = float(mats[p].loc[lab[(lab.parent == p) & (lab.variant == "M0")].sweep_id.iloc[0]].get("SLC7A11",
                                                                                                       np.nan))
             s1 = val(p, "M1", "RPMI", "SLC7A11")
-            pos.append(dict(control="SLC7A11 cysteine (M0) vs cystine (M1 RPMI)", parent=p,
-                            expectation="M1 (cystine only) ratio <= M0", observed=f"M0 {s0}; M1 {s1}", passed=s1 <= s0))
-            for genes, name, key, ref, exp in (
-                    (PURINE, "purines lose essentiality in HPLM (hypoxanthine)", "M-HPLM", "RPMI", "HPLM >= RPMI"),
-                    (PYRIMIDINE, "pyrimidine core rescued by uridine in Plasmax", "M-Plasmax", "RPMI",
-                     "Plasmax >= RPMI"),
-                    (PURINE, "purines in Plasmax (hypoxanthine 5 uM)", "M-Plasmax", "RPMI", "Plasmax >= RPMI")):
+            row("SLC7A11 cysteine (M0) vs cystine (M1 RPMI)", p, "M1 (cystine only) ratio < M0", f"M0 {s0}; M1 {s1}",
+                directional([s0], [s1]))
+            for genes, name, key, exp in (
+                    (PURINE, "purines lose essentiality in HPLM (hypoxanthine)", "M-HPLM", "HPLM > RPMI"),
+                    (PURINE, "purines in Plasmax (hypoxanthine 5 uM)", "M-Plasmax", "Plasmax > RPMI")):
                 a = [val(p, "M2(f=0.01)", key, g) for g in genes]
-                b = [val(p, "M2(f=0.01)", ref, g) for g in genes]
-                pos.append(dict(control=f"physiological: {name} (M2 f=0.01)", parent=p, expectation=exp,
-                                observed="; ".join(f"{g} {x:.3g}/{y:.3g}" for g, x, y in zip(genes, a, b)),
-                                passed=all(x >= y for x, y in zip(a, b))))
-            a = [val(p, "M1", "RPMI", g) for g in PYR_GENES]
-            b = [val(p, "M1", "SENS:RPMI-no-pyruvate", g) for g in PYR_GENES]
-            pos.append(dict(control="physiological: pyruvate relaxes GOT/MDH/OXPHOS (RPMI vs RPMI-no-pyruvate, M1)",
-                            parent=p, expectation="with pyruvate >= without",
-                            observed="; ".join(f"{g} {x:.3g}/{y:.3g}" for g, x, y in zip(PYR_GENES, a, b)),
-                            passed=all(x >= y for x, y in zip(a, b))))
+                b = [val(p, "M2(f=0.01)", "RPMI", g) for g in genes]
+                row(f"physiological: {name} (M2 f=0.01)", p, exp,
+                    "; ".join(f"{g} {x:.3g}/{y:.3g}" for g, x, y in zip(genes, a, b)), directional(a, b))
+            # uridine: Plasmax only (A9g: Cantor 2017 HPLM has no uridine)
+            a = [val(p, "M2(f=0.01)", "M-Plasmax", g) for g in ("DHODH", "UMPS")]
+            b = [val(p, "M2(f=0.01)", "RPMI", g) for g in ("DHODH", "UMPS")]
+            row("physiological: DHODH/UMPS rescued by uridine, Plasmax only (M2 f=0.01)", p,
+                "Plasmax > RPMI (HPLM has no uridine)",
+                "; ".join(f"{g} {x:.3g}/{y:.3g}" for g, x, y in zip(("DHODH", "UMPS"), a, b)), directional(a, b))
+            c_pl, c_r = val(p, "M2(f=0.01)", "M-Plasmax", "CAD"), val(p, "M2(f=0.01)", "RPMI", "CAD")
+            row("physiological: CAD rescued by uridine, Plasmax only (M2 f=0.01)", p, "Plasmax > RPMI",
+                f"CAD {c_pl}/{c_r}", MS if c_pl == c_r else directional([c_pl], [c_r]),
+                "A9(j): CAD KO is rescued by dihydroorotate/orotate but not by UMP or uridine in the parents "
+                "(GEM structure).")
+            a = [val(p, "M1", "SENS:RPMI-ATCC", g) for g in PYR_GENES]
+            b = [val(p, "M1", "RPMI", g) for g in PYR_GENES]
+            row("physiological: pyruvate relaxes GOT/MDH/OXPHOS (RPMI-ATCC with pyruvate vs classic RPMI, M1)", p,
+                "with pyruvate > without", "; ".join(f"{g} {x:.3g}/{y:.3g}" for g, x, y in zip(PYR_GENES, a, b)),
+                directional(a, b))
             mev = panel[(panel.parent == p) & panel.role.isin(["documented", "physiological"])]
             core = ["HMGCR", "MVK", "PMVK", "MVD"]
             n_loss = int((mev[core] >= 0.01).any(axis=1).sum())
-            pos.append(dict(control="mevalonate core (HMGCR, MVK, PMVK, MVD) essential at every step", parent=p,
-                            expectation="lethal in every documented/physiological label",
-                            observed=f"{n_loss} of {len(mev)} labels lose essentiality of >= 1 core gene",
-                            passed=n_loss == 0))
+            row("mevalonate core (HMGCR, MVK, PMVK, MVD) essential at every step", p,
+                "lethal in every documented/physiological label",
+                f"{n_loss} of {len(mev)} labels lose essentiality of >= 1 core gene", "pass" if n_loss == 0 else "fail")
         pos = pd.DataFrame(pos)
 
         # ---------------------------------------------------------------- negative controls
@@ -130,7 +148,7 @@ def main() -> None:
             n0 = sw.loc[lab[(lab.parent == p) & (lab.variant == "M0")].sweep_id.iloc[0], "n_lethal"]
             no = sw.loc[lab[(lab.parent == p) & (lab.variant == "M-open")].sweep_id.iloc[0], "n_lethal"]
             neg.append(dict(control="M-open collapse", parent=p, metric="n_lethal M-open vs M0",
-                            value=f"{no} vs {n0}", passed=no < n0))
+                            value=f"{no} vs {n0}", status="pass" if no < n0 else "fail", passed=no < n0))
         lines = pd.read_csv(w2_dir() / "media_library" / "line_media.tsv", sep="\t")
         sh = pd.read_csv(w2_dir() / "media_library" / "shuffled_media.tsv", sep="\t")
         for p in PARENTS:
@@ -145,7 +163,8 @@ def main() -> None:
                     d = np.abs(doc - shm).mean(axis=1)
                     neg.append(dict(control="shuffled medium (label-free magnitude)", parent=p, metric=step,
                                     seed=s, value=f"lines with changed medium {changed:.3f}; mean per-line "
-                                                  f"|delta ratio_r| {d.mean():.2e}; max {d.max():.2e}", passed=None))
+                                                  f"|delta ratio_r| {d.mean():.2e}; max {d.max():.2e}",
+                                    status="magnitude_only (label-based evaluation later)", passed=None))
         neg = pd.DataFrame(neg)
 
         # ---------------------------------------------------------------- per-line sweep lookup

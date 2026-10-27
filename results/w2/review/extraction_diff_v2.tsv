@@ -1,0 +1,32 @@
+level	medium	item	a_value	b_value	diff_class	correct_side	reason
+concentration	IMDM	L-Cystine 2HCl	292.01277955271564	380.8333300000001	sheet_correction	A	rel diff 2.33e-01: A9(a): W2 v2 corrects the IMDM sheet's MW 240 (free cystine) to the salt MW 313 -> 292 uM (Gibco IMDM 0.29 mM). The blind extraction kept the sheet value 381 uM and flagged exactly this correction. A correct.
+source_value	IMDM	L-Cystine 2HCl	91.4 mg/L, MW 313.0	91.4 mg/L, MW 240.0	sheet_correction	A	: A9(a): MW 240 on the sheet is free cystine; v2 uses the 2HCl salt MW 313 (mg/L unchanged, 91.4). A correct.
+exchange	*	Acetylglycine	[('MAR10196', 1.0)]	[]	blind_miss	A	human1: model has 'Acetyl-Glycine' [e] exchange MAR10196 in both parents; blind name search missed the hyphenated name. W2 correct.
+exchange	*	Acetylglycine	[('MAR10196', 1.0)]	[]	blind_miss	A	human2: model has 'Acetyl-Glycine' [e] exchange MAR10196 in both parents; blind name search missed the hyphenated name. W2 correct.
+exchange	*	Ammonium Chloride	[('MAR09073', 1.0), ('MAR09150', 1.0)]	[('MAR09150', 1.0), ('MAR11420', 1.0)]	mapping_choice	A	human1: as NH4Cl
+exchange	*	Ammonium Chloride	[('MAR09073', 1.0), ('MAR09150', 1.0)]	[('MAR09150', 1.0), ('MAR11420', 1.0)]	mapping_choice	A	human2: as NH4Cl
+exchange	*	Ammonium Metavanadate	[('MAR09073', 1.0)]	[('MAR11420', 1.0)]	mapping_choice	A	human1: as NH4Cl (ammonium part)
+exchange	*	Ammonium Metavanadate	[('MAR09073', 1.0)]	[('MAR11420', 1.0)]	mapping_choice	A	human2: as NH4Cl (ammonium part)
+exchange	*	L-Acetyl glycine	[('MAR10196', 1.0)]	[]	blind_miss	A	human1: as Acetylglycine: MAR10196 exists. W2 correct.
+exchange	*	L-Acetyl glycine	[('MAR10196', 1.0)]	[]	blind_miss	A	human2: as Acetylglycine: MAR10196 exists. W2 correct.
+exchange	*	Methyl acetoacetate	[]	[('MAR09132', 1.0)]	mapping_choice	A	human1: no methyl-acetoacetate exchange. Blind mapped non-literally to acetoacetate; W2 leaves it unmapped. Literal reading (W2) is the conservative default; acetoacetate is a sensitivity at most.
+exchange	*	Methyl acetoacetate	[]	[('MAR09132', 1.0)]	mapping_choice	A	human2: no methyl-acetoacetate exchange. Blind mapped non-literally to acetoacetate; W2 leaves it unmapped. Literal reading (W2) is the conservative default; acetoacetate is a sensitivity at most.
+exchange	*	NH4Cl	[('MAR09073', 1.0), ('MAR09150', 1.0)]	[('MAR09150', 1.0), ('MAR11420', 1.0)]	mapping_choice	A	human1: NH4+[e] (MAR11420) vs NH3[e] (MAR09073): see model check; W2's NH3 choice is the usable route if NH4+[e] has no transport reaction. Physiologically equivalent (NH4+/NH3 equilibrium).
+exchange	*	NH4Cl	[('MAR09073', 1.0), ('MAR09150', 1.0)]	[('MAR09150', 1.0), ('MAR11420', 1.0)]	mapping_choice	A	human2: NH4+[e] (MAR11420) vs NH3[e] (MAR09073): see model check; W2's NH3 choice is the usable route if NH4+[e] has no transport reaction. Physiologically equivalent (NH4+/NH3 equilibrium).
+medium_exchange	HPLM	MAR09073	40.0		mapping_choice (propagated)	A	NH4+[e] (MAR11420) vs NH3[e] (MAR09073): see model check; W2's NH3 choice is the usable route if NH4+[e] has no transport reaction. Physiologically equivalent (NH4+/NH3 equilibrium).
+medium_exchange	HPLM	MAR10196	90.0		blind_miss (propagated)	A	model has 'Acetyl-Glycine' [e] exchange MAR10196 in both parents; blind name search missed the hyphenated name. W2 correct.
+medium_exchange	HPLM	MAR11420		40.0	mapping_choice (propagated)	A	NH4+[e] (MAR11420) vs NH3[e] (MAR09073): see model check; W2's NH3 choice is the usable route if NH4+[e] has no transport reaction. Physiologically equivalent (NH4+/NH3 equilibrium).
+medium_exchange	IMDM	MAR09150	87011.03998410543	87188.681085	sheet_correction (propagated)	A	A9(a): W2 v2 corrects the IMDM sheet's MW 240 (free cystine) to the salt MW 313 -> 292 uM (Gibco IMDM 0.29 mM). The blind extraction kept the sheet value 381 uM and flagged exactly this correction. A correct.
+medium_exchange	IMDM	MAR09363	292.01277955271564	380.8333300000001	sheet_correction (propagated)	A	A9(a): W2 v2 corrects the IMDM sheet's MW 240 (free cystine) to the salt MW 313 -> 292 uM (Gibco IMDM 0.29 mM). The blind extraction kept the sheet value 381 uM and flagged exactly this correction. A correct.
+medium_exchange	Plasmax	MAR09073	50.0026		mapping_choice (propagated)	A	NH4+[e] (MAR11420) vs NH3[e] (MAR09073): see model check; W2's NH3 choice is the usable route if NH4+[e] has no transport reaction. Physiologically equivalent (NH4+/NH3 equilibrium).
+medium_exchange	Plasmax	MAR09132		41.0	mapping_choice (propagated)	A	no methyl-acetoacetate exchange. Blind mapped non-literally to acetoacetate; W2 leaves it unmapped. Literal reading (W2) is the conservative default; acetoacetate is a sensitivity at most.
+medium_exchange	Plasmax	MAR10196	70.0		blind_miss (propagated)	A	model has 'Acetyl-Glycine' [e] exchange MAR10196 in both parents; blind name search missed the hyphenated name. W2 correct.
+medium_exchange	Plasmax	MAR11420		50.0026	mapping_choice (propagated)	A	NH4+[e] (MAR11420) vs NH3[e] (MAR09073): see model check; W2's NH3 choice is the usable route if NH4+[e] has no transport reaction. Physiologically equivalent (NH4+/NH3 equilibrium).
+model_check	*	human1:NH4+[e] MAM02579e		non-exchange reactions: MAR01528,MAR01529,MAR01534,MAR05023,MAR05128,MAR06526,MAR06527	info		
+model_check	*	human1:NH3[e] MAM02578e		non-exchange reactions: MAR04423,MAR04482,MAR04873,MAR05128,MAR06932,MAR06935,MAR06942,MAR06945,MAR06948,MAR06951,MAR07632,MAR08473,MAR08925	info		
+model_check	*	human1:Acetyl-Glycine[e] MAM03397e		non-exchange reactions: MAR09995	info		
+model_check	*	human1: NH3 MAR09073 in Ham's GR inputs		False	info		WT on Ham's = 65.5734
+model_check	*	human2:NH4+[e] MAM02579e		non-exchange reactions: MAR01528,MAR01529,MAR01534,MAR05023,MAR05128,MAR06526,MAR06527	info		
+model_check	*	human2:NH3[e] MAM02578e		non-exchange reactions: MAR04423,MAR04482,MAR04873,MAR05128,MAR06932,MAR06935,MAR06942,MAR06945,MAR06948,MAR06951,MAR07632,MAR08473,MAR08925	info		
+model_check	*	human2:Acetyl-Glycine[e] MAM03397e		non-exchange reactions: MAR09995	info		
+model_check	*	human2: NH3 MAR09073 in Ham's GR inputs		False	info		WT on Ham's = 74.7568

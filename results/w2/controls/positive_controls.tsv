@@ -1,29 +1,31 @@
-control	parent	expectation	observed	passed
-ASNS DMEM vs RPMI (M1)	human1	DMEM < 0.01 (no Asn); RPMI = 1	DMEM 0.0; RPMI 1.0	True
-sterol branch: serum-free vs serum M2(f=0.001)	human1	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 7/12; serum median ratio 0.000352	False
-sterol branch: serum-free vs serum M2(f=0.01)	human1	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 7/12; serum median ratio 0.003521	False
-sterol branch: serum-free vs serum M2(f=0.1)	human1	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 7/12; serum median ratio 0.03517	False
-sterol branch: serum-free vs serum M2(f=1)	human1	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 7/12; serum median ratio 0.3489	False
-GOT1 with the gate (RPMI M2 f=0.01)	human1	ratio(gate closed) <= ratio(gate open)	open 1.0; closed 1.0	True
-GOT2 with the gate (RPMI M2 f=0.01)	human1	ratio(gate closed) <= ratio(gate open)	open 1.0; closed 1.0	True
-SLC1A3 with the gate (RPMI M2 f=0.01)	human1	ratio(gate closed) <= ratio(gate open)	open 1.0; closed 1.0	True
-SLC7A11 cysteine (M0) vs cystine (M1 RPMI)	human1	M1 (cystine only) ratio <= M0	M0 1.0; M1 1.0	True
-physiological: purines lose essentiality in HPLM (hypoxanthine) (M2 f=0.01)	human1	HPLM >= RPMI	PPAT 1/0; GART 1/0; PFAS 1/0; PAICS 1/0; ATIC 1/0	True
-physiological: pyrimidine core rescued by uridine in Plasmax (M2 f=0.01)	human1	Plasmax >= RPMI	CAD 0/0; DHODH 1/0; UMPS 1/0	True
-physiological: purines in Plasmax (hypoxanthine 5 uM) (M2 f=0.01)	human1	Plasmax >= RPMI	PPAT 1/0; GART 1/0; PFAS 1/0; PAICS 1/0; ATIC 1/0	True
-physiological: pyruvate relaxes GOT/MDH/OXPHOS (RPMI vs RPMI-no-pyruvate, M1)	human1	with pyruvate >= without	GOT1 1/1; GOT2 1/1; MDH2 1/1; SDHA 0.706/0.706; CS 1/1; ATP5F1A 0.705/0.705	True
-mevalonate core (HMGCR, MVK, PMVK, MVD) essential at every step	human1	lethal in every documented/physiological label	0 of 201 labels lose essentiality of >= 1 core gene	True
-ASNS DMEM vs RPMI (M1)	human2	DMEM < 0.01 (no Asn); RPMI = 1	DMEM 0.0; RPMI 1.0	True
-sterol branch: serum-free vs serum M2(f=0.001)	human2	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 8/12; serum median ratio 0	False
-sterol branch: serum-free vs serum M2(f=0.01)	human2	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 8/12; serum median ratio 0	False
-sterol branch: serum-free vs serum M2(f=0.1)	human2	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 8/12; serum median ratio 0	False
-sterol branch: serum-free vs serum M2(f=1)	human2	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 8/12; serum median ratio 0	False
-GOT1 with the gate (RPMI M2 f=0.01)	human2	ratio(gate closed) <= ratio(gate open)	open 1.0; closed 1.0	True
-GOT2 with the gate (RPMI M2 f=0.01)	human2	ratio(gate closed) <= ratio(gate open)	open 1.0; closed 1.0	True
-SLC1A3 with the gate (RPMI M2 f=0.01)	human2	ratio(gate closed) <= ratio(gate open)	open 1.0; closed 1.0	True
-SLC7A11 cysteine (M0) vs cystine (M1 RPMI)	human2	M1 (cystine only) ratio <= M0	M0 1.0; M1 1.0	True
-physiological: purines lose essentiality in HPLM (hypoxanthine) (M2 f=0.01)	human2	HPLM >= RPMI	PPAT 1/0; GART 1/0; PFAS 1/0; PAICS 1/0; ATIC 1/0	True
-physiological: pyrimidine core rescued by uridine in Plasmax (M2 f=0.01)	human2	Plasmax >= RPMI	CAD 0/0; DHODH 1/0; UMPS 1/0	True
-physiological: purines in Plasmax (hypoxanthine 5 uM) (M2 f=0.01)	human2	Plasmax >= RPMI	PPAT 1/0; GART 1/0; PFAS 1/0; PAICS 1/0; ATIC 1/0	True
-physiological: pyruvate relaxes GOT/MDH/OXPHOS (RPMI vs RPMI-no-pyruvate, M1)	human2	with pyruvate >= without	GOT1 1/1; GOT2 1/1; MDH2 1/1; SDHA 1/1; CS 1/1; ATP5F1A 0.706/0.706	True
-mevalonate core (HMGCR, MVK, PMVK, MVD) essential at every step	human2	lethal in every documented/physiological label	0 of 201 labels lose essentiality of >= 1 core gene	True
+control	parent	expectation	observed	status	passed	note
+ASNS DMEM vs RPMI (M1)	human1	DMEM < 0.01 (no Asn); RPMI = 1	DMEM 0.0; RPMI 1.0	pass	True	
+sterol branch: serum-free vs serum M2(f=0.001)	human1	serum-free: lethal; serum: rescued (ratio rises with f)	serum-free n_lethal 7/12; serum: FDFT1 0; SQLE 0; LSS 0; CYP51A1 1; TM7SF2 1; MSMO1 1; NSDHL 0; HSD17B7 1; SC5D 1; EBP 0; DHCR7 0.000704; DHCR24 0	model_structure_failure (W3/W5)	False	A9(j): biomass needs vitamin D3 products reachable only via 7-dehydrocholesterol; only DHCR7 is rescued by cholesterol. Not fixable through the medium.
+sterol branch: serum-free vs serum M2(f=0.01)	human1	serum-free: lethal; serum: rescued (ratio rises with f)	serum-free n_lethal 7/12; serum: FDFT1 0; SQLE 0; LSS 0; CYP51A1 1; TM7SF2 1; MSMO1 1; NSDHL 0; HSD17B7 1; SC5D 1; EBP 0; DHCR7 0.00704; DHCR24 0	model_structure_failure (W3/W5)	False	A9(j): biomass needs vitamin D3 products reachable only via 7-dehydrocholesterol; only DHCR7 is rescued by cholesterol. Not fixable through the medium.
+sterol branch: serum-free vs serum M2(f=0.1)	human1	serum-free: lethal; serum: rescued (ratio rises with f)	serum-free n_lethal 7/12; serum: FDFT1 0; SQLE 0; LSS 0; CYP51A1 1; TM7SF2 1; MSMO1 1; NSDHL 0; HSD17B7 1; SC5D 1; EBP 0; DHCR7 0.0703; DHCR24 0	model_structure_failure (W3/W5)	False	A9(j): biomass needs vitamin D3 products reachable only via 7-dehydrocholesterol; only DHCR7 is rescued by cholesterol. Not fixable through the medium.
+sterol branch: serum-free vs serum M2(f=1)	human1	serum-free: lethal; serum: rescued (ratio rises with f)	serum-free n_lethal 7/12; serum: FDFT1 0; SQLE 0; LSS 0; CYP51A1 1; TM7SF2 1; MSMO1 1; NSDHL 0; HSD17B7 1; SC5D 1; EBP 0; DHCR7 0.698; DHCR24 0	model_structure_failure (W3/W5)	False	A9(j): biomass needs vitamin D3 products reachable only via 7-dehydrocholesterol; only DHCR7 is rescued by cholesterol. Not fixable through the medium.
+GOT1 with the gate (RPMI M2 f=0.01)	human1	ratio(gate closed) < ratio(gate open)	open 1.0; closed 1.0	non_informative	False	
+GOT2 with the gate (RPMI M2 f=0.01)	human1	ratio(gate closed) < ratio(gate open)	open 1.0; closed 1.0	non_informative	False	
+SLC1A3 with the gate (RPMI M2 f=0.01)	human1	ratio(gate closed) < ratio(gate open)	open 1.0; closed 1.0	non_informative	False	
+SLC7A11 cysteine (M0) vs cystine (M1 RPMI)	human1	M1 (cystine only) ratio < M0	M0 1.0; M1 1.0	non_informative	False	
+physiological: purines lose essentiality in HPLM (hypoxanthine) (M2 f=0.01)	human1	HPLM > RPMI	PPAT 1/0; GART 1/0; PFAS 1/0; PAICS 1/0; ATIC 1/0	pass	True	
+physiological: purines in Plasmax (hypoxanthine 5 uM) (M2 f=0.01)	human1	Plasmax > RPMI	PPAT 1/0; GART 1/0; PFAS 1/0; PAICS 1/0; ATIC 1/0	pass	True	
+physiological: DHODH/UMPS rescued by uridine, Plasmax only (M2 f=0.01)	human1	Plasmax > RPMI (HPLM has no uridine)	DHODH 1/0; UMPS 1/0	pass	True	
+physiological: CAD rescued by uridine, Plasmax only (M2 f=0.01)	human1	Plasmax > RPMI	CAD 0.0/0.0	model_structure_failure (W3/W5)	False	A9(j): CAD KO is rescued by dihydroorotate/orotate but not by UMP or uridine in the parents (GEM structure).
+physiological: pyruvate relaxes GOT/MDH/OXPHOS (RPMI-ATCC with pyruvate vs classic RPMI, M1)	human1	with pyruvate > without	GOT1 1/1; GOT2 1/1; MDH2 1/1; SDHA 0.706/0.706; CS 1/1; ATP5F1A 0.705/0.705	non_informative	False	
+mevalonate core (HMGCR, MVK, PMVK, MVD) essential at every step	human1	lethal in every documented/physiological label	0 of 221 labels lose essentiality of >= 1 core gene	pass	True	
+ASNS DMEM vs RPMI (M1)	human2	DMEM < 0.01 (no Asn); RPMI = 1	DMEM 0.0; RPMI 1.0	pass	True	
+sterol branch: serum-free vs serum M2(f=0.001)	human2	serum-free: lethal; serum: rescued (ratio rises with f)	serum-free n_lethal 8/12; serum: FDFT1 0; SQLE 0; LSS 0; CYP51A1 1; TM7SF2 1; MSMO1 1; NSDHL 0; HSD17B7 0; SC5D 1; EBP 0; DHCR7 0.00062; DHCR24 0	model_structure_failure (W3/W5)	False	A9(j): biomass needs vitamin D3 products reachable only via 7-dehydrocholesterol; only DHCR7 is rescued by cholesterol. Not fixable through the medium.
+sterol branch: serum-free vs serum M2(f=0.01)	human2	serum-free: lethal; serum: rescued (ratio rises with f)	serum-free n_lethal 8/12; serum: FDFT1 0; SQLE 0; LSS 0; CYP51A1 1; TM7SF2 1; MSMO1 1; NSDHL 0; HSD17B7 0; SC5D 1; EBP 0; DHCR7 0.0062; DHCR24 0	model_structure_failure (W3/W5)	False	A9(j): biomass needs vitamin D3 products reachable only via 7-dehydrocholesterol; only DHCR7 is rescued by cholesterol. Not fixable through the medium.
+sterol branch: serum-free vs serum M2(f=0.1)	human2	serum-free: lethal; serum: rescued (ratio rises with f)	serum-free n_lethal 8/12; serum: FDFT1 0; SQLE 0; LSS 0; CYP51A1 1; TM7SF2 1; MSMO1 1; NSDHL 0; HSD17B7 0; SC5D 1; EBP 0; DHCR7 0.0619; DHCR24 0	model_structure_failure (W3/W5)	False	A9(j): biomass needs vitamin D3 products reachable only via 7-dehydrocholesterol; only DHCR7 is rescued by cholesterol. Not fixable through the medium.
+sterol branch: serum-free vs serum M2(f=1)	human2	serum-free: lethal; serum: rescued (ratio rises with f)	serum-free n_lethal 8/12; serum: FDFT1 0; SQLE 0; LSS 0; CYP51A1 1; TM7SF2 1; MSMO1 1; NSDHL 0; HSD17B7 0; SC5D 1; EBP 0; DHCR7 0.614; DHCR24 0	model_structure_failure (W3/W5)	False	A9(j): biomass needs vitamin D3 products reachable only via 7-dehydrocholesterol; only DHCR7 is rescued by cholesterol. Not fixable through the medium.
+GOT1 with the gate (RPMI M2 f=0.01)	human2	ratio(gate closed) < ratio(gate open)	open 1.0; closed 1.0	non_informative	False	
+GOT2 with the gate (RPMI M2 f=0.01)	human2	ratio(gate closed) < ratio(gate open)	open 1.0; closed 1.0	non_informative	False	
+SLC1A3 with the gate (RPMI M2 f=0.01)	human2	ratio(gate closed) < ratio(gate open)	open 1.0; closed 1.0	non_informative	False	
+SLC7A11 cysteine (M0) vs cystine (M1 RPMI)	human2	M1 (cystine only) ratio < M0	M0 1.0; M1 1.0	non_informative	False	
+physiological: purines lose essentiality in HPLM (hypoxanthine) (M2 f=0.01)	human2	HPLM > RPMI	PPAT 1/0; GART 1/0; PFAS 1/0; PAICS 1/0; ATIC 1/0	pass	True	
+physiological: purines in Plasmax (hypoxanthine 5 uM) (M2 f=0.01)	human2	Plasmax > RPMI	PPAT 1/0; GART 1/0; PFAS 1/0; PAICS 1/0; ATIC 1/0	pass	True	
+physiological: DHODH/UMPS rescued by uridine, Plasmax only (M2 f=0.01)	human2	Plasmax > RPMI (HPLM has no uridine)	DHODH 1/0; UMPS 1/0	pass	True	
+physiological: CAD rescued by uridine, Plasmax only (M2 f=0.01)	human2	Plasmax > RPMI	CAD 0.0/0.0	model_structure_failure (W3/W5)	False	A9(j): CAD KO is rescued by dihydroorotate/orotate but not by UMP or uridine in the parents (GEM structure).
+physiological: pyruvate relaxes GOT/MDH/OXPHOS (RPMI-ATCC with pyruvate vs classic RPMI, M1)	human2	with pyruvate > without	GOT1 1/1; GOT2 1/1; MDH2 1/1; SDHA 1/1; CS 1/1; ATP5F1A 0.706/0.706	non_informative	False	
+mevalonate core (HMGCR, MVK, PMVK, MVD) essential at every step	human2	lethal in every documented/physiological label	0 of 221 labels lose essentiality of >= 1 core gene	pass	True	

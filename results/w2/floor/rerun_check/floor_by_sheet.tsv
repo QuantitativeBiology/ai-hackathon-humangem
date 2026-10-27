@@ -1,0 +1,9 @@
+parent	sheet	growth_M1_no_floor	candidates	growth_with_candidates	needed
+human1	DMEM	0.0	linoleate,linolenate,Fe2+,biotin,alpha-tocopherol,gamma-tocopherol,lipoate,cobalamin,retinoate	46.18021066592493	linoleate,linolenate,biotin,alpha-tocopherol,gamma-tocopherol,lipoate,cobalamin,retinoate
+human1	DMEM:F12	0.0	linolenate,alpha-tocopherol,gamma-tocopherol,retinoate	65.5733831977559	linolenate,alpha-tocopherol,gamma-tocopherol,retinoate
+human1	IMDM	0.0	linoleate,linolenate,Fe2+,pyridoxine,alpha-tocopherol,gamma-tocopherol,lipoate,retinoate	46.35208515344149	linoleate,linolenate,Fe2+,alpha-tocopherol,gamma-tocopherol,lipoate,retinoate
+human1	RPMI	0.0	linoleate,linolenate,Fe2+,alpha-tocopherol,gamma-tocopherol,lipoate,retinoate	46.36713196733639	linoleate,linolenate,Fe2+,alpha-tocopherol,gamma-tocopherol,lipoate,retinoate
+human2	DMEM	0.0	linoleate,linolenate,Fe2+,biotin,alpha-tocopherol,gamma-tocopherol,lipoate,cobalamin,retinoate	46.21287565686677	linoleate,linolenate,biotin,alpha-tocopherol,gamma-tocopherol,lipoate,cobalamin,retinoate
+human2	DMEM:F12	0.0	linolenate,alpha-tocopherol,gamma-tocopherol,retinoate	74.7567666037908	linolenate,alpha-tocopherol,gamma-tocopherol,retinoate
+human2	IMDM	0.0	linoleate,linolenate,Fe2+,pyridoxine,alpha-tocopherol,gamma-tocopherol,lipoate,retinoate	46.38499383000437	linoleate,linolenate,Fe2+,alpha-tocopherol,gamma-tocopherol,lipoate,retinoate
+human2	RPMI	0.0	linoleate,linolenate,Fe2+,alpha-tocopherol,gamma-tocopherol,lipoate,retinoate	46.40006202058602	linoleate,linolenate,Fe2+,alpha-tocopherol,gamma-tocopherol,lipoate,retinoate

@@ -7,7 +7,9 @@ Floor (drop-one-input on each parent):
   2. For each on-disk vendor sheet S (M1 availability bounds, no floor): candidates = E not supplied by S.
      If S + candidates grows, candidates are pruned greedily (sorted order) while growth persists -> needed(S).
   3. floor = union over the four sheets of needed(S); cholesterol is never in the floor (DESIGN).
-Requirements on the reference medium (RPMI sheet M1 + floor open at 1000, every other input as in the sheet):
+Requirements on the reference medium (the on-disk RPMI sheet, i.e. the ATCC sheet `RPMI-ATCC` (DESIGN: "RPMI-1640,
+the modal base, sheet on disk"; A9(d) changes the lines' base to classic RPMI, not the reference), M1 + floor open at
+1000, every other input as in the sheet):
   - floor (true auxotroph) components: req_c = FVA-min uptake of c at WT growth (biomass fixed at WT x (1 - 1e-9)).
   - synthesisable serum components: req_c = uptake of c in a pFBA solution at >= 99% of WT growth with c open at
     1000 (cobra.flux_analysis.pfba, fraction_of_optimum = 0.99).
@@ -40,7 +42,9 @@ def growth(model, bounds: dict[str, float]) -> float:
 
 
 def sheet_medium(base: str, sheets) -> media.Medium:
-    return media.build_medium(media.parse_formulation(f"{base} + 10% FBS"), sheets, key=base)
+    """The on-disk vendor sheet as an M1 medium (RPMI = the ATCC sheet on disk, as DESIGN's reference medium)."""
+    return media.build_medium(media.parse_formulation(f"{base} + 10% FBS"), sheets, key=base,
+                              rpmi_base=media.RPMI_ATCC)
 
 
 def main() -> None:
@@ -50,7 +54,8 @@ def main() -> None:
     sheets = media.sheet_media(comp)
     no_floor = media.ParentConstraints(floor=(), req={})
     drop_rows, sheet_rows, floor_rows, req_rows = [], [], [], []
-    with Manifest("scripts/w2_medium_floor.py", solver="gurobi", workers=1) as man:
+    with Manifest("scripts/w2_medium_floor.py", solver="gurobi", workers=1,
+                  inputs=[media.media_dir() / f for f, _ in media.SHEET_FILES.values()]) as man:
         for p in PARENTS:
             m = load_parent(p)
             m.objective = BIOMASS_REACTION

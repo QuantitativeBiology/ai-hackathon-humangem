@@ -1,0 +1,31 @@
+parent	control	status_review	status_w2	observed_review	agree
+human1	ASNS DMEM vs RPMI (M1)	pass	pass	DMEM 0.0 RPMI 1.0	True
+human1	sterol branch: serum-free vs serum M2(f=0.001)	model_structure_failure (W3/W5)	model_structure_failure (W3/W5)	serum-free lethal 7; rescued by serum []; still lethal ['FDFT1', 'SQLE', 'LSS', 'NSDHL', 'EBP', 'DHCR7', 'DHCR24']	True
+human1	sterol branch: serum-free vs serum M2(f=0.01)	model_structure_failure (W3/W5)	model_structure_failure (W3/W5)	serum-free lethal 7; rescued by serum []; still lethal ['FDFT1', 'SQLE', 'LSS', 'NSDHL', 'EBP', 'DHCR7', 'DHCR24']	True
+human1	sterol branch: serum-free vs serum M2(f=0.1)	model_structure_failure (W3/W5)	model_structure_failure (W3/W5)	serum-free lethal 7; rescued by serum ['DHCR7']; still lethal ['FDFT1', 'SQLE', 'LSS', 'NSDHL', 'EBP', 'DHCR24']	True
+human1	sterol branch: serum-free vs serum M2(f=1)	model_structure_failure (W3/W5)	model_structure_failure (W3/W5)	serum-free lethal 7; rescued by serum ['DHCR7']; still lethal ['FDFT1', 'SQLE', 'LSS', 'NSDHL', 'EBP', 'DHCR24']	True
+human1	GOT1 with the gate (RPMI M2 f=0.01)	non_informative	non_informative	open 1.0 closed 1.0	True
+human1	GOT2 with the gate (RPMI M2 f=0.01)	non_informative	non_informative	open 1.0 closed 1.0	True
+human1	SLC1A3 with the gate (RPMI M2 f=0.01)	non_informative	non_informative	open 1.0 closed 1.0	True
+human1	SLC7A11 cysteine (M0) vs cystine (M1 RPMI)	non_informative	non_informative	M0 1.0 M1 1.0	True
+human1	physiological: purines lose essentiality in HPLM (hypoxanthine) (M2 f=0.01)	pass	pass	[1.0, 1.0, 1.0, 1.0, 1.0] vs RPMI [0.0, 0.0, 0.0, 0.0, 0.0]	True
+human1	physiological: purines in Plasmax (hypoxanthine 5 uM) (M2 f=0.01)	pass	pass	[1.0, 1.0, 1.0, 1.0, 1.0] vs RPMI [0.0, 0.0, 0.0, 0.0, 0.0]	True
+human1	physiological: DHODH/UMPS rescued by uridine, Plasmax only (M2 f=0.01)	pass	pass	[1.0, 1.0] vs [0.0, 0.0]	True
+human1	physiological: CAD rescued by uridine, Plasmax only (M2 f=0.01)	model_structure_failure (W3/W5)	model_structure_failure (W3/W5)	Plasmax 0.0 RPMI 0.0	True
+human1	physiological: pyruvate relaxes GOT/MDH/OXPHOS (RPMI-ATCC with pyruvate vs classic RPMI, M1)	non_informative	non_informative	[1.0, 1.0, 1.0, 0.706221, 1.0, 0.705332] vs [1.0, 1.0, 1.0, 0.706221, 1.0, 0.705332]	True
+human1	mevalonate core (HMGCR, MVK, PMVK, MVD) essential at every step	pass	pass	0 of 193 sweeps lose a core gene	True
+human2	ASNS DMEM vs RPMI (M1)	pass	pass	DMEM 0.0 RPMI 1.0	True
+human2	sterol branch: serum-free vs serum M2(f=0.001)	model_structure_failure (W3/W5)	model_structure_failure (W3/W5)	serum-free lethal 8; rescued by serum []; still lethal ['FDFT1', 'SQLE', 'LSS', 'NSDHL', 'HSD17B7', 'EBP', 'DHCR7', 'DHCR24']	True
+human2	sterol branch: serum-free vs serum M2(f=0.01)	model_structure_failure (W3/W5)	model_structure_failure (W3/W5)	serum-free lethal 8; rescued by serum []; still lethal ['FDFT1', 'SQLE', 'LSS', 'NSDHL', 'HSD17B7', 'EBP', 'DHCR7', 'DHCR24']	True
+human2	sterol branch: serum-free vs serum M2(f=0.1)	model_structure_failure (W3/W5)	model_structure_failure (W3/W5)	serum-free lethal 8; rescued by serum ['DHCR7']; still lethal ['FDFT1', 'SQLE', 'LSS', 'NSDHL', 'HSD17B7', 'EBP', 'DHCR24']	True
+human2	sterol branch: serum-free vs serum M2(f=1)	model_structure_failure (W3/W5)	model_structure_failure (W3/W5)	serum-free lethal 8; rescued by serum ['DHCR7']; still lethal ['FDFT1', 'SQLE', 'LSS', 'NSDHL', 'HSD17B7', 'EBP', 'DHCR24']	True
+human2	GOT1 with the gate (RPMI M2 f=0.01)	non_informative	non_informative	open 1.0 closed 1.0	True
+human2	GOT2 with the gate (RPMI M2 f=0.01)	non_informative	non_informative	open 1.0 closed 1.0	True
+human2	SLC1A3 with the gate (RPMI M2 f=0.01)	non_informative	non_informative	open 1.0 closed 1.0	True
+human2	SLC7A11 cysteine (M0) vs cystine (M1 RPMI)	non_informative	non_informative	M0 1.0 M1 1.0	True
+human2	physiological: purines lose essentiality in HPLM (hypoxanthine) (M2 f=0.01)	pass	pass	[1.0, 1.0, 1.0, 1.0, 1.0] vs RPMI [0.0, 0.0, 0.0, 0.0, 0.0]	True
+human2	physiological: purines in Plasmax (hypoxanthine 5 uM) (M2 f=0.01)	pass	pass	[1.0, 1.0, 1.0, 1.0, 1.0] vs RPMI [0.0, 0.0, 0.0, 0.0, 0.0]	True
+human2	physiological: DHODH/UMPS rescued by uridine, Plasmax only (M2 f=0.01)	pass	pass	[1.0, 1.0] vs [0.0, 0.0]	True
+human2	physiological: CAD rescued by uridine, Plasmax only (M2 f=0.01)	model_structure_failure (W3/W5)	model_structure_failure (W3/W5)	Plasmax 0.0 RPMI 0.0	True
+human2	physiological: pyruvate relaxes GOT/MDH/OXPHOS (RPMI-ATCC with pyruvate vs classic RPMI, M1)	non_informative	non_informative	[1.0, 1.0, 1.0, 1.0, 1.0, 0.705717] vs [1.0, 1.0, 1.0, 1.0, 1.0, 0.705717]	True
+human2	mevalonate core (HMGCR, MVK, PMVK, MVD) essential at every step	pass	pass	0 of 193 sweeps lose a core gene	True

@@ -69,10 +69,11 @@ def build_sweeps(exchanges: dict[str, list[str]], hams: dict[str, dict[str, floa
         add(p, {e: media.UPTAKE_OPEN for e in exchanges[p]}, variant="M-open", medium_key="", f=None,
             gate_open=True, role="negative_control")
         add(p, dict(hams[p]), variant="M0", medium_key="Hams_GR", f=None, gate_open=True, role="baseline")
-        groups = [("documented", doc_media, ("M1", "M2")), ("physiological", phys_media, ("M2",)),
-                  ("sensitivity", sens_media, ("M1", "M2"))]
-        for role, meds, variants in groups:
+        groups = [("documented", doc_media), ("physiological", phys_media), ("sensitivity", sens_media)]
+        for role, meds in groups:
             for key, med in meds.items():
+                # physiological counterfactuals (and their sensitivities) are M2-only (DESIGN: + the M2 serum model)
+                variants = ("M2",) if "physiological_counterfactual" in med.flags else ("M1", "M2")
                 for v in variants:
                     for f in ([None] if v == "M1" else list(f_levels)):
                         b = _bounds(v, med, pc, f, True)
@@ -103,11 +104,16 @@ _GENES: dict = {}
 _VARNAMES: dict = {}
 
 
-def _init_worker(parents: tuple[str, ...]) -> None:
+_SOLVER = {"name": "gurobi"}
+
+
+def _init_worker(parents: tuple[str, ...], solver: str = "gurobi") -> None:
     from nextgem.w2_runtime import load_parent
 
+    # Gurobi: load_parent holds one shared-pool slot per worker process until it exits. GLPK: no slot.
+    _SOLVER["name"] = solver
     for p in parents:
-        m = load_parent(p, solver="gurobi")
+        m = load_parent(p, solver=solver)
         m.objective = BIOMASS_REACTION
         _MODELS[p] = m
         _GENES[p] = sorted(g.id for g in m.genes)
@@ -201,16 +207,17 @@ def ko_task(args) -> dict:
     if not wt > WT_GROWTH_TOL:
         ratio_r[:] = np.nan
     return dict(sweep_id=sweep_id, parent=parent, wt_growth=wt, n_solved=len(groups), n_genes_lp=len(idx_solve),
+                solver=_SOLVER["name"],
                 n_infeasible=int((status == INFEASIBLE).sum()), ratio_r=ratio_r.astype(np.float64),
                 runtime_s=time.perf_counter() - t0, shortcut_verify_max_dev=max_dev, n_verified=min(verify_n, len(short)))
 
 
-def make_pool(processes: int, parents=("human1", "human2")):
+def make_pool(processes: int, parents=("human1", "human2"), solver: str = "gurobi"):
     from concurrent.futures import ProcessPoolExecutor
     from multiprocessing import get_context
 
     return ProcessPoolExecutor(processes, mp_context=get_context("spawn"), initializer=_init_worker,
-                               initargs=(tuple(parents),))
+                               initargs=(tuple(parents), solver))
 
 
 def sweep_context(use_mult: bool = True):
@@ -221,7 +228,7 @@ def sweep_context(use_mult: bool = True):
     doc = media.documented_media(set(lines.medium_text_used.dropna()), sheets)
     assert set(doc) == set(lines.medium_key), set(lines.medium_key) ^ set(doc)
     phys = {f"M-{n}": media.physiological_medium(n, sheets) for n in ("HPLM", "Plasmax")}
-    sens = media.sensitivity_media(sheets)
+    sens = {**media.sensitivity_media(sheets), **media.physiological_sensitivity_media(sheets)}
     pcs = media.floor_constraints(w2_dir() / "floor" / "floor.tsv", w2_dir() / "floor" / "requirements.tsv",
                                   w2_dir() / "floor" / "floor_mult.tsv" if use_mult else None)
     exchanges, hams = {}, {}

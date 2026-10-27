@@ -36,10 +36,12 @@ CAL_F = (0.01, 1.0)
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--solver", default="gurobi", choices=("gurobi", "glpk"),
+                    help="worker LP solver (gurobi = shared-pool slots; glpk when the pool is fully held)")
     args = ap.parse_args()
     out = w2_dir() / "prechecks"
     out.mkdir(parents=True, exist_ok=True)
-    with Manifest("scripts/w2_prechecks.py", solver="gurobi", workers=args.workers) as man:
+    with Manifest("scripts/w2_prechecks.py", solver=args.solver, workers=args.workers) as man:
         lines, sheets, doc, phys, sens, pcs, exchanges, hams = eng.sweep_context(use_mult=False)
         allmeds = {**doc, **phys, **sens}
         cal_file = paths.data_root() / "media" / "calibration.tsv"
@@ -49,7 +51,7 @@ def main() -> None:
             for p in parents:
                 for key, med in allmeds.items():
                     for v, f in [("M1", None)] + [("M2", f) for f in media.SERUM_F_LEVELS]:
-                        if key in phys and v == "M1":
+                        if "physiological_counterfactual" in med.flags and v == "M1":
                             continue
                         for mode, ov in (("floor", None), ("open", media.UPTAKE_OPEN)):
                             b = media.uptake_bounds(None, v, med, pcs_[p], f=f, floor_override=ov)
@@ -67,7 +69,7 @@ def main() -> None:
                                  nonbinding=rel <= media.FLOOR_NONBINDING_RTOL))
             return pd.DataFrame(rows)
 
-        with eng.make_pool(args.workers) as pool:
+        with eng.make_pool(args.workers, solver=args.solver) as pool:
             # phase A: floor at FLOOR_MULT x req_c vs 1000 (gate open, every medium x M1 / M2(f))
             t, mt = floor_tasks(PARENTS, pcs)
             flt = floor_table({r["tag"]: r for r in pool.map(eng.wt_with_override_task, t, chunksize=8)}, mt)

@@ -1,0 +1,5 @@
+file	same_shape	nonnumeric_identical	max_rel_diff_numeric
+floor	True	True	8.29498997945193e-12
+requirements	True	True	8.29498997945193e-12
+drop_one_M0	True	True	0.0
+floor_by_sheet	True	True	4.444040091062491e-15

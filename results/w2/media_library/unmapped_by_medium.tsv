@@ -15,6 +15,9 @@ Plasmax	nitrate	no_exchange	0.37139999999999995	Ferric Nitrate	no nitrate exchan
 Plasmax	selenite	no_exchange	0.0289	Sodium Selenite	no selenite exchange in either parent (selenate MAR09169 is a different species): representability gap
 Plasmax	vanadate	no_exchange	0.0026	Ammonium Metavanadate	no vanadate exchange in either parent
 RPMI	4-aminobenzoate	no_exchange	7.29927	Para-Aminobenzoic Acid	no 4-aminobenzoate exchange in either parent
-RPMI	<buffer>	non_nutrient	10012.605000000001	HEPES	non-nutrient (buffer/dye)
 RPMI	<dye>	non_nutrient	13.283741	Phenol Red	non-nutrient (buffer/dye)
 RPMI	nitrate	no_exchange	847.45764	Calcium nitrate (Ca(NO3)2 4H2O)	no nitrate exchange in either parent
+RPMI-ATCC	4-aminobenzoate	no_exchange	7.29927	Para-Aminobenzoic Acid	no 4-aminobenzoate exchange in either parent
+RPMI-ATCC	<buffer>	non_nutrient	10012.605000000001	HEPES	non-nutrient (buffer/dye)
+RPMI-ATCC	<dye>	non_nutrient	13.283741	Phenol Red	non-nutrient (buffer/dye)
+RPMI-ATCC	nitrate	no_exchange	847.45764	Calcium nitrate (Ca(NO3)2 4H2O)	no nitrate exchange in either parent

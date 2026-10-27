@@ -233,7 +233,11 @@ def test_dmem_defaults_and_mixture(sheets):
     mix = media.build_medium(media.parse_formulation("DMEM:RPMI (1:1) + 10% FBS"), sheets)
     assert mix.components["asparagine"] == pytest.approx(sheets["RPMI"]["asparagine"] / 2)
     df12 = media.build_medium(media.parse_formulation("DMEM:F12 + 10% FBS"), sheets)
-    assert df12.allow_cysteine  # documented free cysteine (CYSTEINE_RULE = 'documented')
+    assert not df12.allow_cysteine  # A9(b): DESIGN-literal default, cysteine closed unless 2-ME
+    doc = media.build_medium(media.parse_formulation("DMEM:F12 + 10% FBS"), sheets, cysteine_rule="documented")
+    assert doc.allow_cysteine  # documented free cysteine = sensitivity
+    me = media.build_medium(media.parse_formulation("RPMI + 10% FBS + 50uM 2-Mercaptoethanol"), sheets)
+    assert me.allow_cysteine
 
 
 # ------------------------------------------------------------------------------------------------- outputs
@@ -247,3 +251,138 @@ def test_req_nonzero_unless_flagged():
     assert ((rq.req_c > 0) | flagged).all(), rq[~((rq.req_c > 0) | flagged)]
     assert set(media.SERUM_F_SCALED) <= set(rq.component)
     assert "cholesterol" not in set(rq[rq.kind == "floor"].component)
+
+
+# ------------------------------------------------------------------------------------------------- A9 fixes
+def test_a9_extraction_fixes(sheets):
+    rows = media.read_compositions()
+    # thiamine chloride hydrochloride -> 2 Cl-
+    assert media.RAW_COMPONENTS["Thiamine hydrochloride"] == [("thiamin", 1), ("chloride", 2)]
+    # Plasmax alpha-aminobutyrate keeps its name
+    pl = rows[rows.medium == "Plasmax"]
+    assert "alpha-Aminobutyrate" in set(pl.raw_component) and "Aminobutyrate" not in set(pl.raw_component)
+    # IMDM cystine 2HCl at the salt MW: 91.4 mg/L / 313 -> 292 uM
+    cy = rows[(rows.medium == "IMDM") & (rows.raw_component == "L-Cystine 2HCl")].iloc[0]
+    assert cy.mw == 313.0 and cy.uM == pytest.approx(292.01, abs=0.05) and cy.correction
+    assert sheets["IMDM"]["cystine"] == pytest.approx(292.01, abs=0.05)
+
+
+def test_a9_rpmi_classic_base(sheets):
+    r, a = sheets["RPMI"], sheets[media.RPMI_ATCC]
+    assert "pyruvate" not in r and a["pyruvate"] == pytest.approx(1000.0)
+    assert r["glucose"] == pytest.approx(11111.0) and a["glucose"] == pytest.approx(25000.0)
+    assert r["HCO3-"] == pytest.approx(23809.0)
+    for c in ("asparagine", "GSH", "cobalamin", "glutamine"):  # everything else as in the ATCC sheet
+        assert r[c] == pytest.approx(a[c])
+    rows = media.read_compositions()
+    assert not set(rows[rows.medium == "RPMI"].raw_component) & set(media.RPMI_CLASSIC_DROP)
+    sens = media.sensitivity_media(sheets)
+    assert "pyruvate" in sens["SENS:RPMI-ATCC"].present()
+    assert "glutamine" not in sens["SENS:DMEM:F12-no-standard-Gln"].present()
+    assert sens["SENS:DMEM:F12-cysteine-documented"].allow_cysteine
+
+
+def test_a9_atp_to_adenosine():
+    p = media.parse_formulation("RPMI + 10% FBS + 1 mg/L ATP")
+    comps = {c: v for s in p.supplements for c, v in s.components.items()}
+    assert set(comps) == {"adenosine", "Pi"} and "ATP" not in media.EXCHANGES
+    assert comps["adenosine"] == pytest.approx(1 / 507.2 * 1000)
+
+
+def test_a9_physiological_cysteine(sheets):
+    h = media.physiological_medium("HPLM", sheets)
+    assert not h.allow_cysteine and "cysteine" in h.present()
+    hd = media.physiological_sensitivity_media(sheets)["M-HPLM|cys-documented"]
+    assert hd.allow_cysteine
+
+
+def test_a9_serum_pct_sensitivity():
+    pc = media.ParentConstraints(floor=(), req={c: 2.0 for c in media.SERUM_F_SCALED})
+    med = media.Medium("A", {"glucose": 1.0}, serum=True, serum_pct=20.0)
+    ex = media.EXCHANGES["cholesterol"][0]
+    assert media.uptake_bounds(None, "M2", med, pc, f=0.1)[ex] == pytest.approx(0.2)
+    assert media.uptake_bounds(None, "M2", med, pc, f=0.1, serum_pct_scaling=True)[ex] == pytest.approx(0.4)
+
+
+# ------------------------------------------------------------------------------------------------- golden table
+# Full expected parses of representative strings (review F3): base, class, mixture parts, serum, every supplement
+# (kind and canonical components with uM; None = amount unstated), flags, and the medium key (None = not buildable
+# from the sheets on disk).
+_NEAA100 = {c: 100.0 for c in media.NEAA}
+GOLDEN = {
+    "RPMI + 10% FBS": ("RPMI", "sheet:RPMI", [("RPMI", 1.0)], 10.0, "FBS", [], set(), "RPMI"),
+    "DMEM + 10% FBS": ("DMEM", "sheet:DMEM", [("DMEM", 1.0)], 10.0, "FBS", [],
+                       {"dmem_glucose_unstated_default_high", "dmem_pyruvate_unstated_default_none"}, "DMEM"),
+    "DMEM:F12": ("DMEM:F12", "sheet:DMEM:F12", [("DMEM:F12", 1.0)], 0.0, "none", [], set(), "DMEM:F12|serum-free"),
+    "IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine": (
+        "IMDM:RPMI (4:1)", "mixture_of_sheets", [("IMDM", 0.8), ("RPMI", 0.2)], 10.0, "FBS",
+        [("nutrient", {"glutamine": 2000.0})], set(), "IMDM0.8:RPMI0.2"),
+    "RPMI + 10% FBS + 50uM 2-Mercaptoethanol": (
+        "RPMI", "sheet:RPMI", [("RPMI", 1.0)], 10.0, "FBS", [("cysteine_rule", {})], set(), "RPMI+cys(2-ME)"),
+    "RPMI + 10% FBS + 100uM NEAA": (
+        "RPMI", "sheet:RPMI", [("RPMI", 1.0)], 10.0, "FBS", [("nutrient", _NEAA100)], set(), "RPMI+alanine"),
+    "RPMI + 10% FBS + 1mM Sodium pyruvate": (
+        "RPMI", "sheet:RPMI", [("RPMI", 1.0)], 10.0, "FBS", [("nutrient", {"pyruvate": 1000.0, "Na+": 1000.0})],
+        set(), "RPMI+pyruvate"),
+    "DMEM + 10% FBS + 2mM Glutamine + 1mM Sodium pyruvate + 1mM NEAA": (
+        "DMEM", "sheet:DMEM", [("DMEM", 1.0)], 10.0, "FBS",
+        [("nutrient", {"glutamine": 2000.0}), ("nutrient", {"pyruvate": 1000.0, "Na+": 1000.0}),
+         ("nutrient", {c: 1000.0 for c in media.NEAA})],
+        {"dmem_glucose_unstated_default_high"}, "DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate"),
+    "RPMI + 10% FBS + 30 mg/L Proline + 35 mg/L Cystine + 3.57 g/L HEPES +15 mg/L Hypoxanthine +1 mg/L ATP "
+    "+10 mg/L Adenine + 1 mg/L Thymidine": (
+        "RPMI", "sheet:RPMI", [("RPMI", 1.0)], 10.0, "FBS",
+        [("nutrient", {"proline": 30 / 115.1 * 1000}), ("nutrient", {"cystine": 35 / 240.3 * 1000}),
+         ("non_nutrient", {}), ("nutrient", {"hypoxanthine": 15 / 136.1 * 1000}),
+         ("nutrient", {"adenosine": 1 / 507.2 * 1000, "Pi": 1 / 507.2 * 1000}),
+         ("nutrient", {"adenine": 10 / 135.1 * 1000}), ("nutrient", {"thymidine": 1 / 242.2 * 1000})],
+        set(), "RPMI+adenine+adenosine+hypoxanthine+thymidine"),
+    "IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium": (
+        "IMDM", "sheet:IMDM", [("IMDM", 1.0)], 20.0, "FBS",
+        [("nutrient", {"glutamine": 4000.0}), ("nutrient", {"selenite": None})], set(), "IMDM"),
+    "RPMI + 20% FBS + 100nM hydrocortisone": (
+        "RPMI", "sheet:RPMI", [("RPMI", 1.0)], 20.0, "FBS", [("nutrient", {"cortisol": 0.1})], set(),
+        "RPMI+cortisol"),
+    "DMEM:F12 + 20% horse serum": ("DMEM:F12", "sheet:DMEM:F12", [("DMEM:F12", 1.0)], 20.0, "horse serum", [],
+                                   {"non_FBS_serum_treated_as_serum"}, "DMEM:F12"),
+    "DMEM + 10% FBS+ 1% Glutamax": ("DMEM", "sheet:DMEM", [("DMEM", 1.0)], 10.0, "FBS",
+                                    [("nutrient", {"glutamine": None})],
+                                    {"dmem_glucose_unstated_default_high", "dmem_pyruvate_unstated_default_none"},
+                                    "DMEM"),
+    "OPAC:Ad+++ (1:1)": ("OPAC:Ad+++ (1:1)", "organoid", [], 0.0, "none", [], set(), None),
+    "MEM + 10% FBS + 2mM Glutamine + 100uM NEAA": (
+        "MEM", "sheet:MEM/EMEM", [("MEM", 1.0)], 10.0, "FBS",
+        [("nutrient", {"glutamine": 2000.0}), ("nutrient", _NEAA100)], set(), None),
+    "RPMI:F12 (1:1) + 10% FBS": ("RPMI:F12 (1:1)", "mixture_of_sheets", [("RPMI", 0.5), ("F12", 0.5)], 10.0, "FBS",
+                                 [], set(), None),
+}
+
+
+@pytest.mark.parametrize("text", sorted(GOLDEN))
+def test_golden_parse(text, sheets):
+    base, cls, parts, serum, stype, sups, flags, key = GOLDEN[text]
+    p = media.parse_formulation(text)
+    assert (p.base, p.base_class, p.serum_pct, p.serum_type) == (base, cls, serum, stype)
+    assert [(b, pytest.approx(f)) for b, f in parts] == p.parts
+    got = [(s.kind, s.components) for s in p.supplements]
+    assert len(got) == len(sups), got
+    for (k, comps), (gk, gcomps) in zip(sups, got):
+        assert k == gk and set(comps) == set(gcomps), (k, gk, comps, gcomps)
+        for c, v in comps.items():
+            assert (gcomps[c] is None) if v is None else gcomps[c] == pytest.approx(v, rel=1e-3), (c, gcomps[c], v)
+    assert set(p.flags) == flags
+    buildable = bool(p.parts) and all(b in sheets for b, _ in p.parts)
+    assert (key is None) == (not buildable)
+    if buildable:
+        med = media.build_medium(p, sheets)
+        assert media.medium_key(p, med, sheets) == key
+
+
+def test_2me_opens_cysteine_uptake(sheets):
+    """2-ME reduces medium cystine: cysteine uptake opens even when only cystine is listed (RPMI)."""
+    pc = media.ParentConstraints(floor=(), req={})
+    plain = media.build_medium(media.parse_formulation("RPMI + 10% FBS"), sheets)
+    me = media.build_medium(media.parse_formulation("RPMI + 10% FBS + 50uM 2-Mercaptoethanol"), sheets)
+    cys = media.EXCHANGES["cysteine"][0]
+    assert cys not in media.uptake_bounds(None, "M1", plain, pc)
+    assert cys in media.uptake_bounds(None, "M1", me, pc)
