@@ -1,0 +1,29 @@
+{
+ "config_sha": "0325ec02c01da0d60593f68aada7a35884ed691d68ca76b7b7e40aa6f7acc104",
+ "n_val_lines": 200,
+ "n_val_expr_lines": 198,
+ "t_context_s": 2.1,
+ "val_score_methods": 25,
+ "val_scores_all_finite": true,
+ "val_unknown_medium_class_lines": 0,
+ "t_label_free_scores_s": 4.7,
+ "pseudo_lineages": 4,
+ "pseudo_lines": 184,
+ "pseudo_out_rows": 856,
+ "pseudo_out_cols": 47,
+ "pseudo_sections": [
+  "binary_6.8",
+  "tAP_grid"
+ ],
+ "pseudo_gstar_keys": [
+  "G_star",
+  "delta_ci",
+  "delta_lin_H2_vs_H1",
+  "rule",
+  "tap_lin_H1",
+  "tap_lin_H2"
+ ],
+ "pseudo_scalar_guard_passed": true,
+ "t_pseudo_look_s": 195.7,
+ "t_total_s": 203.5
+}

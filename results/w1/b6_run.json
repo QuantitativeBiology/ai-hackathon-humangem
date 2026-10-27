@@ -1,0 +1,87 @@
+{
+ "label": "L_prob",
+ "folds": {
+  "Biliary Tract": {
+   "n_fit_pairs": 2064920,
+   "n_heldout_lines": 36,
+   "fit_s": 12.5
+  },
+  "Bone": {
+   "n_fit_pairs": 1999813,
+   "n_heldout_lines": 59,
+   "fit_s": 11.1
+  },
+  "Bowel": {
+   "n_fit_pairs": 1926147,
+   "n_heldout_lines": 85,
+   "fit_s": 10.9
+  },
+  "Cervix": {
+   "n_fit_pairs": 2115840,
+   "n_heldout_lines": 18,
+   "fit_s": 11.9
+  },
+  "Esophagus/Stomach": {
+   "n_fit_pairs": 1894848,
+   "n_heldout_lines": 96,
+   "fit_s": 10.8
+  },
+  "Head and Neck": {
+   "n_fit_pairs": 1949439,
+   "n_heldout_lines": 77,
+   "fit_s": 11.3
+  },
+  "Kidney": {
+   "n_fit_pairs": 2067918,
+   "n_heldout_lines": 35,
+   "fit_s": 11.4
+  },
+  "Lung": {
+   "n_fit_pairs": 1810840,
+   "n_heldout_lines": 126,
+   "fit_s": 10.5
+  },
+  "Myeloid": {
+   "n_fit_pairs": 2039440,
+   "n_heldout_lines": 45,
+   "fit_s": 11.1
+  },
+  "Peripheral Nervous System": {
+   "n_fit_pairs": 2033977,
+   "n_heldout_lines": 47,
+   "fit_s": 11.3
+  },
+  "Skin": {
+   "n_fit_pairs": 1954909,
+   "n_heldout_lines": 75,
+   "fit_s": 11.0
+  },
+  "Uterus": {
+   "n_fit_pairs": 2059306,
+   "n_heldout_lines": 38,
+   "fit_s": 11.4
+  }
+ },
+ "full_fit_pairs": 2166600,
+ "hgb": {
+  "max_iter": 200,
+  "learning_rate": 0.1,
+  "max_leaf_nodes": 31,
+  "early_stopping": false
+ },
+ "features": [
+  "b2",
+  "b2m",
+  "expr",
+  "cn",
+  "mut_dam",
+  "mut_hot",
+  "neigh_mean_expr",
+  "max_paralog_expr",
+  "n_isozyme_genes_h2",
+  "medium_class",
+  "serum"
+ ],
+ "seed": 11,
+ "wall_s": 167.6
+}

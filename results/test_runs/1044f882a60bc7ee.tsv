@@ -1,0 +1,2 @@
+nodeid	outcome
+tests/test_tripwire.py::test_entry_points_must_be_frozen	failed

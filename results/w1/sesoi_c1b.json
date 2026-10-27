@@ -1,0 +1,12 @@
+{
+ "SESOI_C1b": 0.005722808991032354,
+ "mean_e_random_U_minus_CE_fit": 0.07069433511168721,
+ "mean_e_random_U": 0.12353083113985683,
+ "n_training_lines": 767,
+ "n_lines_estimable_U": 767,
+ "n_lines_estimable_noCE": 767,
+ "CE_fit_size": 167,
+ "label": "L_prob",
+ "rule": "DESIGN 6.4: 0.01 x mean E[AP_random] on U minus CE_fit / mean E[AP_random] on U; training lines (all 767), estimable lines (>= 5 positives) of each set; CE_fit from all training lines",
+ "frozen_at": "M2 (before any validation look)"
+}

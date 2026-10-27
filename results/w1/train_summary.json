@@ -1,0 +1,185 @@
+{
+ "n_cells": 345,
+ "n_rows": 7335,
+ "wall_s": 487.2,
+ "workers": 14,
+ "ce_fit_sizes_per_fold": {
+  "Biliary Tract": {
+   "L_prob": 167,
+   "L_ge05": 165,
+   "L_ge10": 76,
+   "L_ge06": 141
+  },
+  "Bone": {
+   "L_prob": 168,
+   "L_ge05": 166,
+   "L_ge10": 76,
+   "L_ge06": 142
+  },
+  "Bowel": {
+   "L_prob": 168,
+   "L_ge05": 163,
+   "L_ge10": 79,
+   "L_ge06": 142
+  },
+  "Cervix": {
+   "L_prob": 166,
+   "L_ge05": 164,
+   "L_ge10": 76,
+   "L_ge06": 141
+  },
+  "Esophagus/Stomach": {
+   "L_prob": 166,
+   "L_ge05": 163,
+   "L_ge10": 78,
+   "L_ge06": 143
+  },
+  "Head and Neck": {
+   "L_prob": 167,
+   "L_ge05": 167,
+   "L_ge10": 77,
+   "L_ge06": 141
+  },
+  "Kidney": {
+   "L_prob": 167,
+   "L_ge05": 165,
+   "L_ge10": 77,
+   "L_ge06": 141
+  },
+  "Lung": {
+   "L_prob": 168,
+   "L_ge05": 165,
+   "L_ge10": 77,
+   "L_ge06": 144
+  },
+  "Myeloid": {
+   "L_prob": 167,
+   "L_ge05": 166,
+   "L_ge10": 76,
+   "L_ge06": 141
+  },
+  "Peripheral Nervous System": {
+   "L_prob": 168,
+   "L_ge05": 165,
+   "L_ge10": 77,
+   "L_ge06": 143
+  },
+  "Skin": {
+   "L_prob": 167,
+   "L_ge05": 162,
+   "L_ge10": 76,
+   "L_ge06": 141
+  },
+  "Uterus": {
+   "L_prob": 168,
+   "L_ge05": 165,
+   "L_ge10": 76,
+   "L_ge06": 141
+  }
+ },
+ "gate": {
+  "H2_lift_lin": 2.3592280628308706,
+  "H2_pooled_lift": 2.373964263739819,
+  "H1_lift_lin": 2.4235291979592866,
+  "H1_pooled_lift": 2.4394817134544726,
+  "pass": true
+ },
+ "bca_skew_check": {
+  "H2-H1": {
+   "skew": 0.14903119819526064,
+   "triggers_bca": false
+  },
+  "B2[L_prob]-H2": {
+   "skew": -1.678435505694036,
+   "triggers_bca": true
+  },
+  "B8+_H2-H2": {
+   "skew": -0.0539932395286365,
+   "triggers_bca": false
+  },
+  "B6[L_prob]-H2": {
+   "skew": -0.8432422535609029,
+   "triggers_bca": false
+  }
+ },
+ "sesoi_c1b": {
+  "SESOI_C1b": 0.005722808991032354,
+  "mean_e_random_U_minus_CE_fit": 0.07069433511168721,
+  "mean_e_random_U": 0.12353083113985683,
+  "n_training_lines": 767,
+  "n_lines_estimable_U": 767,
+  "n_lines_estimable_noCE": 767,
+  "CE_fit_size": 167,
+  "label": "L_prob",
+  "rule": "DESIGN 6.4: 0.01 x mean E[AP_random] on U minus CE_fit / mean E[AP_random] on U; training lines (all 767), estimable lines (>= 5 positives) of each set; CE_fit from all training lines",
+  "frozen_at": "M2 (before any validation look)"
+ },
+ "addressable": [
+  {
+   "label": "L_prob",
+   "parent": "human1",
+   "n_addressable_U": 1064,
+   "positive_pairs": 235187,
+   "frac_positives_in_addressable": 0.5486527741754433,
+   "recall_ceiling": 0.5486527741754433,
+   "frac_outside": 0.45134722582455666,
+   "positive_pairs_noCE": 124299,
+   "recall_ceiling_noCE": 0.5361587784294323
+  },
+  {
+   "label": "L_prob",
+   "parent": "human2",
+   "n_addressable_U": 1098,
+   "positive_pairs": 235187,
+   "frac_positives_in_addressable": 0.5767538171752691,
+   "recall_ceiling": 0.5767538171752691,
+   "frac_outside": 0.4232461828247309,
+   "positive_pairs_noCE": 124299,
+   "recall_ceiling_noCE": 0.5620801454557156
+  },
+  {
+   "label": "L_ge05",
+   "parent": "human1",
+   "n_addressable_U": 1064,
+   "positive_pairs": 224571,
+   "frac_positives_in_addressable": 0.5504584296280464,
+   "recall_ceiling": 0.5504584296280464,
+   "frac_outside": 0.44954157037195364,
+   "positive_pairs_noCE": 115466,
+   "recall_ceiling_noCE": 0.5385568046004885
+  },
+  {
+   "label": "L_ge05",
+   "parent": "human2",
+   "n_addressable_U": 1098,
+   "positive_pairs": 224571,
+   "frac_positives_in_addressable": 0.578761282623313,
+   "recall_ceiling": 0.578761282623313,
+   "frac_outside": 0.42123871737668706,
+   "positive_pairs_noCE": 115466,
+   "recall_ceiling_noCE": 0.5646077633242687
+  },
+  {
+   "label": "L_ge10",
+   "parent": "human1",
+   "n_addressable_U": 1064,
+   "positive_pairs": 109873,
+   "frac_positives_in_addressable": 0.5632229938201377,
+   "recall_ceiling": 0.5632229938201377,
+   "frac_outside": 0.43677700617986226,
+   "positive_pairs_noCE": 59269,
+   "recall_ceiling_noCE": 0.4776527358315477
+  },
+  {
+   "label": "L_ge10",
+   "parent": "human2",
+   "n_addressable_U": 1098,
+   "positive_pairs": 109873,
+   "frac_positives_in_addressable": 0.5996468650168831,
+   "recall_ceiling": 0.5996468650168831,
+   "frac_outside": 0.40035313498311687,
+   "positive_pairs_noCE": 59269,
+   "recall_ceiling_noCE": 0.5104860888491454
+  }
+ ]
+}

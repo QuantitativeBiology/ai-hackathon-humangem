@@ -1,0 +1,18 @@
+{
+ "model": "human1",
+ "version": "v1.19.0",
+ "tasks_file": "/data/tmpA/nextgem/data/Human1/data/metabolicTasks/metabolicTasks_Essential.txt",
+ "n_tasks": 57,
+ "n_testable": 57,
+ "n_passing_wt": 57,
+ "n_distinct_knockouts": 903,
+ "n_solves": 1671,
+ "p57_essential": 226,
+ "pgr_essential": 149,
+ "workers": 7,
+ "gurobi_sessions": 8,
+ "solver": "gurobi",
+ "wall_s": 360.5,
+ "parent_cpu_s": 108.4,
+ "peak_rss_parent_mb": 1537.0
+}

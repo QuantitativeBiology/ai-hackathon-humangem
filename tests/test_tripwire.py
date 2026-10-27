@@ -189,8 +189,18 @@ def test_entry_points_must_be_frozen(built_toy):
         r = subprocess.run([toy.PY, "-c", _ENTRY_CODE, str(toy.SCRIPTS / entry)], capture_output=True, text=True,
                            env={**os.environ, **built_toy.env})
         res[entry] = r.stdout.strip()
-    assert res["evaluate_val.py"] == "val:denied test:denied hash:denied"
-    assert res["evaluate_test.py"] == "val:denied test:denied hash:denied"
+    # A5: once a real evaluate script exists and is frozen, it is trusted for its own tier only.
+    from nextgem import frozen
+    frozen_sha = {r["path"]: r["sha256_or_value"] for r in frozen.read_rows() if r["kind"] == "file"}
+
+    def is_frozen(entry):
+        p = toy.SCRIPTS / entry
+        return p.exists() and frozen_sha.get(f"scripts/{entry}") == frozen.sha256_bytes(p.read_bytes())
+
+    val_ok = "ok" if is_frozen("evaluate_val.py") else "denied"
+    test_ok = "ok" if is_frozen("evaluate_test.py") else "denied"
+    assert res["evaluate_val.py"] == f"val:{val_ok} test:denied hash:denied"
+    assert res["evaluate_test.py"] == f"val:denied test:{test_ok} hash:denied"
     assert res["check_frozen.py"] == "val:denied test:denied hash:ok"
     assert res["not_an_entry.py"] == "val:denied test:denied hash:denied"
 

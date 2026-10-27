@@ -1,0 +1,52 @@
+{
+ "config_sha": "331a2c8d1b25c509fb12ac6e1771fb792b9d48f13426f698ebd092b0801a60e5",
+ "include_b6": false,
+ "n_val_lines": 200,
+ "n_val_expr_lines": 198,
+ "val_methods": [
+  "B0",
+  "B1_s11",
+  "B1_s23",
+  "B1_s37",
+  "B1_s41",
+  "B1_s53",
+  "B2[L_ge05]",
+  "B2[L_ge10]",
+  "B2[L_prob]",
+  "B2c",
+  "B2m[L_ge05]",
+  "B2m[L_ge10]",
+  "B2m[L_prob]",
+  "B3",
+  "B8'_H1",
+  "B8'_H2",
+  "B8+_H1",
+  "B8+_H2",
+  "B8-_H1",
+  "B8-_H2",
+  "H1",
+  "H1_task",
+  "H2",
+  "H2_task"
+ ],
+ "t_prepare_real_val_s": 2.4,
+ "pseudo_lines": 184,
+ "pseudo_out_rows": 844,
+ "pseudo_out_rows_by_section": {
+  "tAP_grid": 720,
+  "binary_6.8": 124
+ },
+ "pseudo_out_cols": 47,
+ "pseudo_guard_passed": true,
+ "pseudo_gstar_keys": [
+  "G_star",
+  "delta_ci",
+  "delta_lin_H2_vs_H1",
+  "rule",
+  "tap_lin_H1",
+  "tap_lin_H2"
+ ],
+ "pseudo_gstar_consistent_with_sign": true,
+ "t_pseudo_look_s": 188.8,
+ "t_total_s": 193.7
+}

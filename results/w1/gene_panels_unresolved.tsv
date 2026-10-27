@@ -1,0 +1,66 @@
+section	subpanel	phrase	reason	kind	panel
+1.1	K	the core complex I and complex III subunits	descriptive phrase, no gene names	unresolved_phrase	
+1.1	K	the ATP-synthase subunits	descriptive phrase, no gene names	unresolved_phrase	
+1.2	pyruvate (and uridine)	ETC subunits	descriptive phrase, no gene names	unresolved_phrase	
+1.2	selenium	selenoproteins (GPX4 named)	descriptive phrase, no gene names	unresolved_phrase	
+1.4	e:Medium misspecification	descriptive pathway names (sterol branch, heme pathway, carnitine synthesis / bile-acid and steroid-hormone synthesis)	descriptive phrase, no gene names	unresolved_phrase	
+1.4	g:Over-specified AND complexes	the 31-gene nucleoporin AND; the RNR AND (genes as in 1.4d / 1.3)	descriptive phrase, no gene names	unresolved_phrase	
+1.4	h:Unbounded-uptake artefacts	the OXPHOS partials	descriptive phrase, no gene names	unresolved_phrase	
+1.4	k:Bile-acid and steroid-hormone synthesis	descriptive pathway names (sterol branch, heme pathway, carnitine synthesis / bile-acid and steroid-hormone synthesis)	descriptive phrase, no gene names	unresolved_phrase	
+1.5	e:Demands absent from biomass	nucleotide-pool turnover, mitochondrial translation and OXPHOS assembly factors, NAD+/GSH turnover	descriptive phrase, no gene names	unresolved_phrase	
+1.5	i:No non-growth ATP maintenance	OXPHOS and glycolysis genes (no list)	descriptive phrase, no gene names	unresolved_phrase	
+1.6	b:High-identity paralogs and pseudogenes.	pseudogene >= 95% identity part of the rule (no local pseudogene identity table)	descriptive phrase, no gene names	unresolved_phrase	
+1.1	K:OXPHOS / TCA, pyruvate- or uridine-modulated	ATP		dropped_token	pan_medium
+1.2	proline	P5CS		dropped_token	medium_dependent
+1.2	pyruvate (and uridine)	ETC		dropped_token	medium_dependent
+1.2	serum carnitine	H2		dropped_token	medium_dependent
+1.2	serum carnitine	H1		dropped_token	medium_dependent
+1.4	a:Cofactor/vitamin pool dead-ends	H2		dropped_token	fp_class
+1.4	a:Cofactor/vitamin pool dead-ends	H1		dropped_token	fp_class
+1.4	a:Cofactor/vitamin pool dead-ends	T		dropped_token	fp_class
+1.4	a:Cofactor/vitamin pool dead-ends	AND		dropped_token	fp_class
+1.4	a:Cofactor/vitamin pool dead-ends	H		dropped_token	fp_class
+1.4	a:Cofactor/vitamin pool dead-ends	C		dropped_token	fp_class
+1.4	a:Cofactor/vitamin pool dead-ends	A		dropped_token	fp_class
+1.4	a:Cofactor/vitamin pool dead-ends	FBA		dropped_token	fp_class
+1.4	f:Single-gene transport annotation	H		dropped_token	fp_class
+1.4	h:Unbounded-uptake artefacts	OXPHOS		dropped_token	fp_class
+1.4	j:Urea cycle	LKB1		dropped_token	fp_class
+1.4	j:Urea cycle	A		dropped_token	fp_class
+1.5	b:Genes missing from the model	F		dropped_token	fn_class
+1.5	b:Genes missing from the model	S		dropped_token	fn_class
+1.5	b:Genes missing from the model	H		dropped_token	fn_class
+1.5	b:Genes missing from the model	H1		dropped_token	fn_class
+1.5	b:Genes missing from the model	H2		dropped_token	fn_class
+1.5	c:Isozyme `OR` masking the only expressed paralog	L		dropped_token	fn_class
+1.5	e:Demands absent from biomass	OXPHOS		dropped_token	fn_class
+1.5	e:Demands absent from biomass	NAD		dropped_token	fn_class
+1.5	e:Demands absent from biomass	GSH		dropped_token	fn_class
+1.5	f:Non-stoichiometric toxicity	LKB1-AMPK		dropped_token	fn_class
+1.5	g:Non-stoichiometric, compartment-physiological essentiality	V-ATP		dropped_token	fn_class
+1.5	g:Non-stoichiometric, compartment-physiological essentiality	ATP6V0A3		dropped_token	fn_class
+1.5	g:Non-stoichiometric, compartment-physiological essentiality	H		dropped_token	fn_class
+1.5	g:Non-stoichiometric, compartment-physiological essentiality	TORC1		dropped_token	fn_class
+1.5	h:Alternative de novo routes culture cells do not use	N		dropped_token	fn_class
+1.5	h:Alternative de novo routes culture cells do not use	MN		dropped_token	fn_class
+1.5	h:Alternative de novo routes culture cells do not use	H		dropped_token	fn_class
+1.6	a:mtDNA-encoded (13 per model)	N		dropped_token	crispr_artefact
+1.6	a:mtDNA-encoded (13 per model)	C		dropped_token	crispr_artefact
+1.6	a:mtDNA-encoded (13 per model)	E		dropped_token	crispr_artefact
+1.6	b:High-identity paralogs and pseudogenes.	GBAP1		dropped_token	crispr_artefact
+1.6	b:High-identity paralogs and pseudogenes.	GK3P		dropped_token	crispr_artefact
+1.6	c:Amplicon / copy-number effect	T		dropped_token	crispr_artefact
+1.6	d:Recurrently deleted / unscreenable	CN		dropped_token	crispr_artefact
+1.6	e:Gene-ID hazards	CRISPR		dropped_token	crispr_artefact
+1.6	e:Gene-ID hazards	GK3P		dropped_token	crispr_artefact
+1.6	e:Gene-ID hazards	ENSG00000281500		dropped_token	crispr_artefact
+1.6	e:Gene-ID hazards	E		dropped_token	crispr_artefact
+1.6	f:Moonlighting / structural roles	IRP1		dropped_token	crispr_artefact
+1.6	f:Moonlighting / structural roles	MBP-1		dropped_token	crispr_artefact
+1.6	f:Moonlighting / structural roles	PKM2		dropped_token	crispr_artefact
+1.6	f:Moonlighting / structural roles	DNA		dropped_token	crispr_artefact
+1.6	g:Housekeeping-adjacent, defined by family so it is reproducible	V-ATP		dropped_token	crispr_artefact
+1.6	g:Housekeeping-adjacent, defined by family so it is reproducible	F		dropped_token	crispr_artefact
+1.6	g:Housekeeping-adjacent, defined by family so it is reproducible	S		dropped_token	crispr_artefact
+1.6	g:Housekeeping-adjacent, defined by family so it is reproducible	N		dropped_token	crispr_artefact
+1.6	g:Housekeeping-adjacent, defined by family so it is reproducible	OXPHOS		dropped_token	crispr_artefact

@@ -1,0 +1,81 @@
+group	tier	n_lines	n_members	n_nonmembers	n_unknown	n_eligible_lineages	members_in_eligible_lineages	eligible_lineages	evaluable	note
+MTAP_loss	train	767	99	587	81	10	95	Biliary Tract(9);Bone(8);Esophagus/Stomach(14);Head and Neck(5);Kidney(6);Lung(23);Myeloid(17);Peripheral Nervous System(3);Skin(7);Thyroid(3)	True	
+MTAP_loss	validation	200	43	137	20	3	42	Bladder/Urinary Tract(13);Lymphoid(24);Soft Tissue(5)	True	
+MTAP_loss	test	394	117	244	33	6	115	Breast(15);CNS/Brain(51);Liver(4);Ovary/Fallopian Tube(8);Pancreas(25);Pleura(12)	True	
+MTAP_loss	all	1361	259	968	134	19	252	Biliary Tract(9);Bladder/Urinary Tract(13);Bone(8);Breast(15);CNS/Brain(51);Esophagus/Stomach(14);Head and Neck(5);Kidney(6);Liver(4);Lung(23);Lymphoid(24);Myeloid(17);Ovary/Fallopian Tube(8);Pancreas(25);Peripheral Nervous System(3);Pleura(12);Skin(7);Soft Tissue(5);Thyroid(3)	True	
+NEG-1_CDKN2A_del_MTAP_intact	train	767	74	608	85	7	69	Biliary Tract(5);Bone(6);Esophagus/Stomach(11);Head and Neck(10);Kidney(12);Lung(10);Skin(15)	True	negative control
+NEG-1_CDKN2A_del_MTAP_intact	validation	200	6	172	22	1	3	Lymphoid(3)	False	negative control
+NEG-1_CDKN2A_del_MTAP_intact	test	394	43	311	40	4	41	CNS/Brain(18);Ovary/Fallopian Tube(5);Pancreas(12);Pleura(6)	True	negative control
+NEG-1_CDKN2A_del_MTAP_intact	all	1361	123	1091	147	12	113	Biliary Tract(5);Bone(6);CNS/Brain(18);Esophagus/Stomach(11);Head and Neck(10);Kidney(12);Lung(10);Lymphoid(3);Ovary/Fallopian Tube(5);Pancreas(12);Pleura(6);Skin(15)	True	negative control
+ASS1_silenced	train	767	81	633	53	7	74	Esophagus/Stomach(3);Kidney(7);Lung(4);Myeloid(12);Peripheral Nervous System(6);Skin(39);Thyroid(3)	True	
+ASS1_silenced	validation	200	46	152	2	3	46	Bladder/Urinary Tract(4);Lymphoid(35);Soft Tissue(7)	True	
+ASS1_silenced	test	394	34	346	14	4	32	CNS/Brain(13);Eye(10);Liver(3);Ovary/Fallopian Tube(6)	True	
+ASS1_silenced	all	1361	161	1131	69	14	152	Bladder/Urinary Tract(4);CNS/Brain(13);Esophagus/Stomach(3);Eye(10);Kidney(7);Liver(3);Lung(4);Lymphoid(35);Myeloid(12);Ovary/Fallopian Tube(6);Peripheral Nervous System(6);Skin(39);Soft Tissue(7);Thyroid(3)	True	
+ASNS_low	train	767	6	708	53	0	0		False	
+ASNS_low	validation	200	0	198	2	0	0		False	
+ASNS_low	test	394	4	376	14	1	4	Liver(4)	False	
+ASNS_low	all	1361	10	1282	69	1	4	Liver(4)	False	
+NRF2_active	train	767	38	655	74	4	33	Esophagus/Stomach(8);Head and Neck(5);Lung(16);Uterus(4)	True	
+NRF2_active	validation	200	5	175	20	1	3	Bladder/Urinary Tract(3)	False	
+NRF2_active	test	394	6	348	40	0	0		False	
+NRF2_active	all	1361	49	1178	134	5	36	Bladder/Urinary Tract(3);Esophagus/Stomach(8);Head and Neck(5);Lung(16);Uterus(4)	True	
+STK11_loss	train	767	49	642	76	3	39	Cervix(9);Esophagus/Stomach(3);Lung(27)	True	
+STK11_loss	validation	200	2	177	21	0	0		False	
+STK11_loss	test	394	8	346	40	1	4	Ovary/Fallopian Tube(4)	False	
+STK11_loss	all	1361	59	1165	137	4	43	Cervix(9);Esophagus/Stomach(3);Lung(27);Ovary/Fallopian Tube(4)	True	
+NAPRT_silenced	train	767	17	697	53	2	9	Bone(5);Peripheral Nervous System(4)	False	
+NAPRT_silenced	validation	200	2	196	2	0	0		False	
+NAPRT_silenced	test	394	11	369	14	2	10	Breast(3);CNS/Brain(7)	True	
+NAPRT_silenced	all	1361	30	1262	69	4	19	Bone(5);Breast(3);CNS/Brain(7);Peripheral Nervous System(4)	True	
+PHGDH_amp	train	767	21	667	79	4	16	Bone(5);Esophagus/Stomach(4);Lung(3);Skin(4)	True	
+PHGDH_amp	validation	200	3	176	21	0	0		False	
+PHGDH_amp	test	394	6	348	40	1	4	Breast(4)	False	
+PHGDH_amp	all	1361	30	1191	140	5	20	Bone(5);Breast(4);Esophagus/Stomach(4);Lung(3);Skin(4)	True	
+ME2_loss	train	767	10	672	85	2	7	Esophagus/Stomach(4);Head and Neck(3)	False	
+ME2_loss	validation	200	2	176	22	0	0		False	
+ME2_loss	test	394	12	342	40	2	10	Breast(3);Pancreas(7)	True	
+ME2_loss	all	1361	24	1190	147	4	17	Breast(3);Esophagus/Stomach(4);Head and Neck(3);Pancreas(7)	True	
+SQLE_null	train	767	4	710	53	1	3	Uterus(3)	False	
+SQLE_null	validation	200	7	191	2	1	7	Lymphoid(7)	False	
+SQLE_null	test	394	0	380	14	0	0		False	
+SQLE_null	all	1361	11	1281	69	2	10	Lymphoid(7);Uterus(3)	True	
+HK1low_HK2high	train	767	10	704	53	1	4	Bowel(4)	False	
+HK1low_HK2high	validation	200	15	183	2	1	11	Lymphoid(11)	False	
+HK1low_HK2high	test	394	8	372	14	1	5	Liver(5)	False	
+HK1low_HK2high	all	1361	33	1259	69	3	20	Bowel(4);Liver(5);Lymphoid(11)	True	
+LDHB_null	train	767	21	693	53	4	19	Ampulla of Vater(4);Biliary Tract(6);Bowel(4);Esophagus/Stomach(5)	True	
+LDHB_null	validation	200	2	196	2	0	0		False	
+LDHB_null	test	394	16	364	14	2	14	Breast(6);Pancreas(8)	True	
+LDHB_null	all	1361	39	1253	69	6	33	Ampulla of Vater(4);Biliary Tract(6);Bowel(4);Breast(6);Esophagus/Stomach(5);Pancreas(8)	True	
+SLC7A11_null	train	767	17	697	53	1	4	Head and Neck(4)	False	
+SLC7A11_null	validation	200	11	187	2	2	10	Lymphoid(6);Soft Tissue(4)	True	
+SLC7A11_null	test	394	12	368	14	2	8	Breast(3);CNS/Brain(5)	False	
+SLC7A11_null	all	1361	40	1252	69	5	22	Breast(3);CNS/Brain(5);Head and Neck(4);Lymphoid(6);Soft Tissue(4)	True	
+CDS1_null	train	767	209	505	53	11	204	Biliary Tract(3);Bone(22);Bowel(4);Esophagus/Stomach(11);Kidney(6);Lung(35);Myeloid(40);Peripheral Nervous System(25);Skin(46);Thyroid(6);Uterus(6)	True	
+CDS1_null	validation	200	111	87	2	3	111	Bladder/Urinary Tract(7);Lymphoid(68);Soft Tissue(36)	True	
+CDS1_null	test	394	121	259	14	7	121	Breast(4);CNS/Brain(68);Eye(8);Liver(10);Ovary/Fallopian Tube(13);Pancreas(10);Pleura(8)	True	
+CDS1_null	all	1361	441	851	69	21	436	Biliary Tract(3);Bladder/Urinary Tract(7);Bone(22);Bowel(4);Breast(4);CNS/Brain(68);Esophagus/Stomach(11);Eye(8);Kidney(6);Liver(10);Lung(35);Lymphoid(68);Myeloid(40);Ovary/Fallopian Tube(13);Pancreas(10);Peripheral Nervous System(25);Pleura(8);Skin(46);Soft Tissue(36);Thyroid(6);Uterus(6)	True	
+VHL_loss	train	767	24	665	78	1	21	Kidney(21)	False	
+VHL_loss	validation	200	0	179	21	0	0		False	
+VHL_loss	test	394	2	352	40	0	0		False	
+VHL_loss	all	1361	26	1196	139	1	21	Kidney(21)	False	
+ENO1_del (in-silico only)	train	767	0	688	79	0	0		False	in-silico only per apriori_lists_final §2
+ENO1_del (in-silico only)	validation	200	0	179	21	0	0		False	in-silico only per apriori_lists_final §2
+ENO1_del (in-silico only)	test	394	0	354	40	0	0		False	in-silico only per apriori_lists_final §2
+ENO1_del (in-silico only)	all	1361	0	1221	140	0	0		False	in-silico only per apriori_lists_final §2
+IDH_mut (secondary, in-silico only)	train	767	4	763	0	0	0		False	in-silico only per apriori_lists_final §2
+IDH_mut (secondary, in-silico only)	validation	200	1	199	0	0	0		False	in-silico only per apriori_lists_final §2
+IDH_mut (secondary, in-silico only)	test	394	3	391	0	0	0		False	in-silico only per apriori_lists_final §2
+IDH_mut (secondary, in-silico only)	all	1361	8	1353	0	0	0		False	in-silico only per apriori_lists_final §2
+NEG-3_TTN_damaging_nonhyper	train	767	62	705	0	5	47	Bowel(4);Esophagus/Stomach(10);Head and Neck(6);Lung(13);Skin(14)	True	negative control
+NEG-3_TTN_damaging_nonhyper	validation	200	15	185	0	3	15	Bladder/Urinary Tract(5);Lymphoid(4);Soft Tissue(6)	True	negative control
+NEG-3_TTN_damaging_nonhyper	test	394	13	381	0	3	12	CNS/Brain(3);Liver(4);Pancreas(5)	True	negative control
+NEG-3_TTN_damaging_nonhyper	all	1361	90	1271	0	11	74	Bladder/Urinary Tract(5);Bowel(4);CNS/Brain(3);Esophagus/Stomach(10);Head and Neck(6);Liver(4);Lung(13);Lymphoid(4);Pancreas(5);Skin(14);Soft Tissue(6)	True	negative control
+NEG-4_SMARCA4_loss	train	767	41	647	79	4	34	Biliary Tract(3);Bowel(3);Lung(25);Uterus(3)	True	negative control
+NEG-4_SMARCA4_loss	validation	200	7	172	21	1	3	Lymphoid(3)	False	negative control
+NEG-4_SMARCA4_loss	test	394	16	339	39	2	11	CNS/Brain(3);Ovary/Fallopian Tube(8)	True	negative control
+NEG-4_SMARCA4_loss	all	1361	64	1158	139	7	48	Biliary Tract(3);Bowel(3);CNS/Brain(3);Lung(25);Lymphoid(3);Ovary/Fallopian Tube(8);Uterus(3)	True	negative control
+NEG-5_KRAS_hotspot (secondary)	train	767	120	647	0	6	112	Biliary Tract(13);Bowel(43);Esophagus/Stomach(8);Lung(38);Myeloid(3);Uterus(7)	True	negative control
+NEG-5_KRAS_hotspot (secondary)	validation	200	7	193	0	1	5	Lymphoid(5)	False	negative control
+NEG-5_KRAS_hotspot (secondary)	test	394	82	312	0	4	80	Breast(3);CNS/Brain(3);Ovary/Fallopian Tube(11);Pancreas(63)	True	negative control
+NEG-5_KRAS_hotspot (secondary)	all	1361	209	1152	0	11	197	Biliary Tract(13);Bowel(43);Breast(3);CNS/Brain(3);Esophagus/Stomach(8);Lung(38);Lymphoid(5);Myeloid(3);Ovary/Fallopian Tube(11);Pancreas(63);Uterus(7)	True	negative control

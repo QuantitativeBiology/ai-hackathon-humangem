@@ -94,11 +94,17 @@ def _staged_bytes(rel: str) -> bytes | None:
     return out.stdout if out.returncode == 0 else None
 
 
+def _git_ignored(rel: str) -> bool:
+    out = subprocess.run(["git", "-C", str(paths.state_root()), "check-ignore", "-q", "--", rel], capture_output=True)
+    return out.returncode == 0
+
+
 def _content_sha(rel: str, staged: bool) -> str | None:
-    if staged:  # what the commit will contain: the index only
+    p = paths.state_root() / rel
+    if staged and not _git_ignored(rel):  # what the commit will contain: the index only
         b = _staged_bytes(rel)
         return sha256_bytes(b) if b is not None else None
-    p = paths.state_root() / rel
+    # A5: git-ignored inputs (data/, results/**/tmp/) are never staged; they are checked in the working tree.
     return sha256_bytes(p.read_bytes()) if p.exists() else None
 
 

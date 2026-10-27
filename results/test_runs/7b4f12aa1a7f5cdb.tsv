@@ -1,0 +1,9 @@
+nodeid	outcome
+tests/test_frozen.py::test_amendment_ids_only_from_table_data_rows	passed
+tests/test_frozen.py::test_changed_row_needs_logged_amendment	passed
+tests/test_frozen.py::test_clean	passed
+tests/test_frozen.py::test_git_ignored_frozen_file_checked_in_working_tree	passed
+tests/test_frozen.py::test_modified_frozen_file	passed
+tests/test_frozen.py::test_new_rows_are_free	passed
+tests/test_frozen.py::test_removed_row_and_changed_value	passed
+tests/test_frozen.py::test_test_runs_union_baseline_and_retirement	passed

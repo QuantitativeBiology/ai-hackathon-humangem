@@ -7,7 +7,7 @@ src/nextgem/splits.py	file	src/nextgem/splits.py	9fc97d6ac270c817cb6af8a62b38ffe
 src/nextgem/cohort.py	file	src/nextgem/cohort.py	d066ad9feca57b764a61fd5f9dd3b663903cc71619af0b3f4d05d67b5dc879e6	2026-10-26		M1 infrastructure (review fixes applied)
 src/nextgem/cv.py	file	src/nextgem/cv.py	39fb17768650bd965444bbca0c80b207f4bfffe2f9328d6f0e0f552406108ae7	2026-10-26		M1 infrastructure (review fixes applied)
 src/nextgem/ledger.py	file	src/nextgem/ledger.py	21803d9761a4ba7b356b04e69e71a4af96aea78c40fa6ca1783fda6ef8c37b4e	2026-10-26		M1 infrastructure (review fixes applied)
-src/nextgem/frozen.py	file	src/nextgem/frozen.py	6a7a793e59f4b79543e384258300d30aa5953b737a0f19db47954d2eae11e285	2026-10-26		M1 infrastructure (review fixes applied)
+src/nextgem/frozen.py	file	src/nextgem/frozen.py	45150dd526ac8b4381c1fc2a44ce4b486f736fcf0aaf7539e1b1227543c5e010	2026-10-27	A5	A5: staged check of git-ignored frozen inputs
 src/nextgem/scan.py	file	src/nextgem/scan.py	dc1d7a71136666199e5d560cf1ec4f56f1ced8a4f9aed895cec5a44839b19ba2	2026-10-26	A3	A3: canonical split exempt from the test-keyed scanner rule
 scripts/make_splits.py	file	scripts/make_splits.py	6d2a2c77d1f003961eecaf3d3a04a0b9cb788fe1f6f1a0627a59991bacfa1abb	2026-10-26		
 scripts/build_labels.py	file	scripts/build_labels.py	0a85d84a53663f3dcaa9ff417f0d270fbdb2d340af42b337524dfdc55a65a6ad	2026-10-26		M1 infrastructure (review fixes applied)
@@ -20,12 +20,12 @@ scripts/install_git_hooks.py	file	scripts/install_git_hooks.py	982612f2732cdcac1
 scripts/design_numbers.py	file	scripts/design_numbers.py	10a47c95e4b00c679b6b546b4a72e42a35626bed71f5a6048c5f27d3eecf106e	2026-10-26		M1 infrastructure (review fixes applied)
 tests/conftest.py	file	tests/conftest.py	e53129ada1a84af1160bcefac5a784e448ed5392922f24d21ca6f90efdf1fbe7	2026-10-26		M1 infrastructure (review fixes applied)
 tests/toy.py	file	tests/toy.py	9912b06f3ef2d1bdd54b838216509a6cfb2941ee0b051743ecb3501af355bf81	2026-10-26		M1 infrastructure (review fixes applied)
-tests/test_tripwire.py	file	tests/test_tripwire.py	a6eda87186ea5bbb3ed3634366566fcc2f8dab0136d79d18543d27d9a15c6b61	2026-10-26		M1 infrastructure (review fixes applied)
+tests/test_tripwire.py	file	tests/test_tripwire.py	b82cd9a4fa74bfdbdeb2d2c8c433c9a6e748a1cca16c4a22bf373db7d6fd28dc	2026-10-27	A5	A5: entry-point test generalised to the frozen evaluate_val.py
 tests/test_labels.py	file	tests/test_labels.py	5116711f471252f13850985ae6354234afdde6bd4979fd0c3ccbb315626d53f4	2026-10-26		M1 infrastructure (review fixes applied)
 tests/test_splits.py	file	tests/test_splits.py	b13949fe82cdbb7d72051608c162d1b2b01e0ab338578d0acb96a0a74a0c4bc3	2026-10-26	A3	
 tests/test_scanner.py	file	tests/test_scanner.py	1e844720f9f69463b5106d0bea4dab9ed0af25e1a3280a327aa855ec3f9f4dc9	2026-10-26	A3	A3: canonical split exempt from the test-keyed scanner rule
 tests/test_ledger.py	file	tests/test_ledger.py	83c62b869a316ac43c471f3a21633041912f4b2c1f5d522bb2d923e9573113da	2026-10-26		M1 infrastructure (review fixes applied)
-tests/test_frozen.py	file	tests/test_frozen.py	7b1be52f78872f0ae173c0ab0d934625ded41e2b2ff9b0290072aebfbc7e4e0d	2026-10-26	A3	
+tests/test_frozen.py	file	tests/test_frozen.py	ceb6ee752ce5f2bafb6838d1ed0f58c84d0524113f1eec40d20916ea8c2f0199	2026-10-27	A5	A5: staged check of git-ignored frozen inputs
 tests/test_precommit.py	file	tests/test_precommit.py	4c1b7d4543be365cdab3817ed02126a9ceae93e4ea5d2d3647c9b67be6295929	2026-10-26		M1 infrastructure (review fixes applied)
 tests/test_hook.py	file	tests/test_hook.py	dc5665f31a1cef1cf508d6ed2881064be94067ccd90e6d9c21c1f7bf2cdd9766	2026-10-26		M1 infrastructure (review fixes applied)
 notes/apriori_lists_approved.md	file	notes/apriori_lists_approved.md	416adb8cbe4556b93558ea0813c8656b0e4e0396b97835c48f0eed599ae735c3	2026-10-26		a priori lists (DESIGN Appendix A, frozen at M1)
@@ -39,3 +39,25 @@ labels.train	label_file	labels/labels_train.parquet	bfaa499b040e203504ff8722e688
 labels.validation	label_file	locked/labels_val.parquet	73380a40ac60248390dcb0ba9983726ad8d80102a81c6d9767915d195de67ea0	2026-10-26		built by scripts/build_labels.py
 labels.test	label_file	locked/labels_test.parquet	936a975e412b60abde6c572a658e3fc29cb0247ea7c0e89bff9abd3f01fc62c9	2026-10-26		built by scripts/build_labels.py
 label.primary	value		L_prob	2026-10-26		kappa rule (DESIGN 5.1); kappa=0.934475
+scripts/evaluate_val.py	file	scripts/evaluate_val.py	8f85a6667823a388aa965a7393687f96478e560870a3d8d3edb922ea8532a26c	2026-10-27		W1 validation look: code (M2 review notes/reviews/M2_W1_review.md)
+src/nextgem/w1.py	file	src/nextgem/w1.py	434875e1e47bd548da1da1b2b8b03d546609240914a96828e6e17036863d7a2b	2026-10-27		W1 validation look: code (M2 review notes/reviews/M2_W1_review.md)
+src/nextgem/metrics.py	file	src/nextgem/metrics.py	3acc6ff45c6b969efa631a8c4ecb28ec570015d604f84baed05a4ac1a9382d98	2026-10-27		W1 validation look: code (M2 review notes/reviews/M2_W1_review.md)
+src/nextgem/run.py	file	src/nextgem/run.py	36c07907c5f81e562d57d7bf480dba992e070a96148349b44215eb93eda9b578	2026-10-27		W1 validation look: code (M2 review notes/reviews/M2_W1_review.md)
+src/nextgem/__init__.py	file	src/nextgem/__init__.py	d8b97bc8ac33cc1032f2a57858a63f07bc0e8a123a6c55f359f66d4dcbb6c552	2026-10-27		W1 validation look: code (M2 review notes/reviews/M2_W1_review.md)
+results/baseline/human1_ko.parquet	file	results/baseline/human1_ko.parquet	4e92d6e76176828c4dd76cae4bbe1657cc2af3e84b7d9e5200b6d9e22175c215	2026-10-27		W1 validation look: input
+results/baseline/human2_ko.parquet	file	results/baseline/human2_ko.parquet	fe96ea34d20083ba845ac025e6c04ef7d09e45ff4b5137ce8da611fab6aedf5d	2026-10-27		W1 validation look: input
+results/baseline/human1_gene_mapping.tsv	file	results/baseline/human1_gene_mapping.tsv	1be6ca5dfaf91c65e1990df1a3a429d2fd87c07d13c250ae42b83c2a2bf833bb	2026-10-27		W1 validation look: input
+results/baseline/human2_gene_mapping.tsv	file	results/baseline/human2_gene_mapping.tsv	cfe736ed42348e46af3c4ef756689106765c4cc086b40c908b3e30b601126e72	2026-10-27		W1 validation look: input
+results/w1/p57_human1.parquet	file	results/w1/p57_human1.parquet	0864b548cbce6b3f899861ec59ba0ff360864dd74c74c12f8bbcc5153453fd0c	2026-10-27		W1 validation look: input
+results/w1/p57_human2.parquet	file	results/w1/p57_human2.parquet	f7b41117148c7ff4a02023cf5416f61275c25c845b164e5a9bf4cd71b7ecf7e1	2026-10-27		W1 validation look: input
+results/w1/line_features.tsv	file	results/w1/line_features.tsv	d96f43b07bd625fc56834addf60845608b45f8d0fd9cc682693dbd0e1c08b234	2026-10-27		W1 validation look: input
+results/w1/gene_features.tsv	file	results/w1/gene_features.tsv	7cf003f6eba4b0a9b5fa7fd81d9e6e802a6722eba984a3d3ce8128b215ec6f67	2026-10-27		W1 validation look: input
+results/w1/tmp/expr.parquet	file	results/w1/tmp/expr.parquet	22dccef65797e8c9be8a806278e5343246eeddf5420e9c2647aaa447e06ff137	2026-10-27		W1 validation look: input
+results/w1/tmp/cn.parquet	file	results/w1/tmp/cn.parquet	42bf15fd19ab51f9b4636213c4a464f9907c63ce4d1a547a9670586a95ffc91c	2026-10-27		W1 validation look: input
+data/controls/gene_panels.tsv	file	data/controls/gene_panels.tsv	e812724faaf1e9672b32460e73cc6659512d4caf10ff22839d00bba0e4a78318	2026-10-27		W1 validation look: input
+results/w1/sesoi_c1b.json	file	results/w1/sesoi_c1b.json	17254702a38c5258f3e4fff14e1dacc64ee0d05c02e78e1471d7923ed38719f2	2026-10-27		W1 validation look: input
+tests/test_metrics.py	file	tests/test_metrics.py	96a0ff9c6a36ac1ea4362934b46b49184fd93fe7c046bca1b169057540494316	2026-10-27		known-answer test (DESIGN 11.3)
+tests/test_metrics_binary.py	file	tests/test_metrics_binary.py	c879871f0bca91af2e6c809ee976da31c9ca11614ec4beccd3187021889d3d2c	2026-10-27		known-answer test (DESIGN 11.3)
+tests/test_evaluate_val.py	file	tests/test_evaluate_val.py	4c7574bf9ce7176f92b63e47ffe1cb7189af92a9d7f006265e6fc8fcdec2f19d	2026-10-27		known-answer test (DESIGN 11.3)
+tests/test_run.py	file	tests/test_run.py	8701c122dd15f995aba8fa3ac76fc3686d3389740be7f226190a04578ba0bca4	2026-10-27		known-answer test (DESIGN 11.3)
+sesoi.C1b	value		0.005722808991032354	2026-10-27		DESIGN 6.4, frozen from training at M2 (results/w1/sesoi_c1b.json)

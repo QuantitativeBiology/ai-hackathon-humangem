@@ -42,6 +42,22 @@ def test_modified_frozen_file(repo):
     assert any("differs from its frozen" in p for p in frozen.check(staged=True))
 
 
+def test_git_ignored_frozen_file_checked_in_working_tree(repo):
+    """A5: an ignored input is never in the index, so staged mode checks it in the working tree."""
+    from nextgem import frozen
+
+    (repo / ".gitignore").write_text("tmp/\n")
+    (repo / "tmp").mkdir()
+    (repo / "tmp" / "x.parquet").write_bytes(b"x1")
+    frozen.upsert_rows([frozen.file_row("tmp/x.parquet")])
+    toy.commit_all(repo, "freeze ignored input")
+    assert frozen.check(staged=True) == []
+    (repo / "tmp" / "x.parquet").write_bytes(b"x2")
+    assert any("differs from its frozen" in p for p in frozen.check(staged=True))
+    (repo / "tmp" / "x.parquet").unlink()
+    assert any("is missing" in p for p in frozen.check(staged=True))
+
+
 def test_changed_row_needs_logged_amendment(repo):
     from nextgem import frozen
 

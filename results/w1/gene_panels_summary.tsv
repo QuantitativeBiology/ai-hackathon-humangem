@@ -1,0 +1,98 @@
+section	panel	subpanel	n	n_in_U
+1.1	pan_medium	A:Aminoacyl-tRNA charging	20	20
+1.1	pan_medium	B:Pyrimidine core	5	5
+1.1	pan_medium	C:Purine core not rescued by hypoxanthine	4	4
+1.1	pan_medium	D:Folate / 1C	3	3
+1.1	pan_medium	E:Cofactor activation and transport	9	9
+1.1	pan_medium	F:Fe-S assembly and lipoylation	6	6
+1.1	pan_medium	G:Lipid / membrane core	8	8
+1.1	pan_medium	H:Mevalonate trunk / isoprenoid branch	8	8
+1.1	pan_medium	I:Hexosamine / UDP-sugar core	5	5
+1.1	pan_medium	J:Glycolysis core	7	7
+1.1	pan_medium	K:OXPHOS / TCA, pyruvate- or uridine-modulated	9	9
+1.2	medium_dependent	arginine (citrulline bypass)	2	2
+1.2	medium_dependent	asparagine	1	1
+1.2	medium_dependent	biotin	5	5
+1.2	medium_dependent	cystine level; 2-mercaptoethanol or free cysteine; transsulf	1	1
+1.2	medium_dependent	glutamine	1	1
+1.2	medium_dependent	hypoxanthine **+** thymidine (HT)	1	1
+1.2	medium_dependent	hypoxanthine → HPRT1	5	5
+1.2	medium_dependent	lipoic acid	3	3
+1.2	medium_dependent	myo-inositol	1	1
+1.2	medium_dependent	nicotinic acid **plus** NAPRT expression	2	2
+1.2	medium_dependent	proline	4	4
+1.2	medium_dependent	putrescine	4	4
+1.2	medium_dependent	pyridoxal instead of pyridoxine	1	1
+1.2	medium_dependent	pyruvate (and uridine)	2	2
+1.2	medium_dependent	pyruvate; exogenous aspartate only where SLC1A3 is expressed	3	3
+1.2	medium_dependent	reduced glutathione; cystine	3	3
+1.2	medium_dependent	selenium	2	2
+1.2	medium_dependent	serine + glycine	3	3
+1.2	medium_dependent	serum LDL cholesterol	12	12
+1.2	medium_dependent	serum carnitine	5	5
+1.2	medium_dependent	serum hemin	5	5
+1.2	medium_dependent	serum palmitate/oleate	3	3
+1.2	medium_dependent	thymidine	2	2
+1.2	medium_dependent	uridine (and uric acid inhibits UMPS)	3	3
+1.2	medium_dependent	vitamin B12	3	3
+1.3	collateral_lethality	C1	4	2
+1.3	collateral_lethality	C2	2	2
+1.3	collateral_lethality	C3	3	2
+1.3	collateral_lethality	C4	2	2
+1.3	collateral_lethality	C5	2	2
+1.3	collateral_lethality	C6	2	2
+1.3	gpr_error	RNR_AND (RRM2B false positive)	1	1
+1.3	paralog_buffering	B01:ENO1/ENO2/ENO3	3	3
+1.3	paralog_buffering	B02:ALDOA/ALDOC/ALDOB	3	3
+1.3	paralog_buffering	B03:LDHA/LDHB	2	2
+1.3	paralog_buffering	B04:HK1/HK2/HK3/HKDC1	4	4
+1.3	paralog_buffering	B05:PFKL/PFKM/PFKP	3	3
+1.3	paralog_buffering	B06:PKM/PKLR	2	2
+1.3	paralog_buffering	B07:PRPS1/PRPS2	2	2
+1.3	paralog_buffering	B08:IMPDH1/IMPDH2	2	2
+1.3	paralog_buffering	B09:**CTPS1/CTPS2**	2	2
+1.3	paralog_buffering	B10:**CHKA/CHKB**	2	2
+1.3	paralog_buffering	B11:**RRM2/RRM2B**	2	2
+1.3	paralog_buffering	B12:NME1/NME2	2	2
+1.3	paralog_buffering	B13:ADSS1/ADSS2	2	2
+1.3	paralog_buffering	B14:AK1-AK4	4	4
+1.3	paralog_buffering	B15:GLS/GLS2	2	2
+1.3	paralog_buffering	B16:GLUD1/GLUD2	2	2
+1.3	paralog_buffering	B17:ME1/ME2/ME3	3	3
+1.3	paralog_buffering	B18:MTHFD1/MTHFD1L/MTHFD2/MTHFD2L	4	4
+1.3	paralog_buffering	B19:SHMT1/SHMT2	2	2
+1.3	paralog_buffering	B20:ACSS1/ACSS2/ACSS3	3	3
+1.3	paralog_buffering	B21:PTDSS1/PTDSS2	2	2
+1.3	paralog_buffering	B22:CDS1/CDS2	2	2
+1.3	paralog_buffering	B23:GYG1/GYG2	2	2
+1.3	paralog_buffering	B24:FADS1/FADS2	2	2
+1.3	paralog_buffering	B25:UGT1A*	9	9
+1.3	paralog_buffering	B26:SULT1A1/SULT1A2	2	2
+1.3	paralog_buffering	B27:AKR1C1/AKR1C2	2	1
+1.3	paralog_buffering	B28:GOT1/GOT2	2	2
+1.4	fp_class	a:Cofactor/vitamin pool dead-ends	27	27
+1.4	fp_class	b:Small-metabolite pool dead-ends	5	5
+1.4	fp_class	c:Glycogen in biomass	4	4
+1.4	fp_class	d:Pseudo-reaction GPRs	74	72
+1.4	fp_class	e:Medium misspecification	16	10
+1.4	fp_class	f:Single-gene transport annotation	6	6
+1.4	fp_class	g:Over-specified AND complexes	31	31
+1.4	fp_class	h:Unbounded-uptake artefacts	6	6
+1.4	fp_class	i:Xenobiotic metabolism	111	99
+1.4	fp_class	j:Urea cycle	6	5
+1.4	fp_class	k:Bile-acid and steroid-hormone synthesis	1	1
+1.5	fn_class	a:Structural non-predictions	1795	1795
+1.5	fn_class	b:Genes missing from the model	8	1
+1.5	fn_class	c:Isozyme `OR` masking the only expressed paralog	11	11
+1.5	fn_class	d:Compartment-blind redundancy	10	10
+1.5	fn_class	e:Demands absent from biomass	9	8
+1.5	fn_class	f:Non-stoichiometric toxicity	1	1
+1.5	fn_class	g:Non-stoichiometric, compartment-physiological essentiality	22	21
+1.5	fn_class	h:Alternative de novo routes culture cells do not use	4	4
+1.6	crispr_artefact	a:mtDNA-encoded (13 per model)	13	0
+1.6	crispr_artefact	b:High-identity paralogs and pseudogenes.	135	112
+1.6	crispr_artefact	c:Amplicon / copy-number effect	21	21
+1.6	crispr_artefact	d:Recurrently deleted / unscreenable	7	7
+1.6	crispr_artefact	e:Gene-ID hazards	12	9
+1.6	crispr_artefact	f:Moonlighting / structural roles	15	14
+1.6	crispr_artefact	g:Housekeeping-adjacent, defined by family so it is reproducible	205	160

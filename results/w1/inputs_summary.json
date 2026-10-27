@@ -1,0 +1,17 @@
+{
+ "n_lines": 1361,
+ "expr_lines": 1292,
+ "expr_genes": 3618,
+ "cn_lines": 1221,
+ "U": 2866,
+ "U_with_expression": 2856,
+ "addressable_human1": 1064,
+ "addressable_human2": 1098,
+ "serum_flag_counts": {
+  "1.0": 1128,
+  "0.0": 159,
+  "nan": 74
+ },
+ "currency_metabolites": 47,
+ "runtime_s": 53.6
+}

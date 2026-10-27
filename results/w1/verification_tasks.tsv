@@ -1,0 +1,3 @@
+check	passed	detail
+D2_p57_equals_taskEssentialGenes_human1	True	ours 226 vs Human-GEM 226; only ours []; only theirs []; category sets equal for 226/226 (theirs stop once all 5 categories are hit); 378 s
+D2_p57_equals_taskEssentialGenes_human2	True	ours 229 vs Human-GEM 229; only ours []; only theirs []; category sets equal for 229/229 (theirs stop once all 5 categories are hit); 385 s

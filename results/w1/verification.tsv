@@ -1,0 +1,35 @@
+check	passed	detail
+A1_second_path_tap_line_H1	True	686 estimable lines; max |diff| = 4.99e-07; NA pattern identical = True
+A2_second_path_tap_lin_H1	True	lineage-equal mean tAP 0.299576 vs grid 0.299576
+A3_second_path_pooled_H1	True	pooled tAP 0.295950 vs grid 0.295950
+A4_monte_carlo_H1_ACH-000004	True	MC mean 0.29761 (SE 2.3e-04) vs tAP 0.29718
+A4_monte_carlo_H1_ACH-000005	True	MC mean 0.27491 (SE 2.4e-04) vs tAP 0.27476
+A4_monte_carlo_H1_ACH-000007	True	MC mean 0.29751 (SE 2.4e-04) vs tAP 0.29712
+A4_monte_carlo_H1_ACH-000009	True	MC mean 0.32582 (SE 2.5e-04) vs tAP 0.32592
+A4_monte_carlo_H1_ACH-000012	True	MC mean 0.29425 (SE 2.4e-04) vs tAP 0.29407
+A1_second_path_tap_line_H2	True	686 estimable lines; max |diff| = 5.00e-07; NA pattern identical = True
+A2_second_path_tap_lin_H2	True	lineage-equal mean tAP 0.291627 vs grid 0.291627
+A3_second_path_pooled_H2	True	pooled tAP 0.288002 vs grid 0.288002
+A4_monte_carlo_H2_ACH-000004	True	MC mean 0.29333 (SE 2.3e-04) vs tAP 0.29307
+A4_monte_carlo_H2_ACH-000005	True	MC mean 0.27422 (SE 2.4e-04) vs tAP 0.27410
+A4_monte_carlo_H2_ACH-000007	True	MC mean 0.29102 (SE 2.4e-04) vs tAP 0.29057
+A4_monte_carlo_H2_ACH-000009	True	MC mean 0.32112 (SE 2.5e-04) vs tAP 0.32104
+A4_monte_carlo_H2_ACH-000012	True	MC mean 0.28421 (SE 2.3e-04) vs tAP 0.28397
+A5_second_path_mcc_H2_P57	True	sklearn lineage-equal MCC 0.331475 vs train_binary 0.331475
+B1_oracle_tap_1	True	686 estimable lines, min tAP 1.000000
+B2_oracle_mcc_1	True	oracle MCC 1.0
+B3_CAD_UMPS_lethal_H2	True	H2 CAD 0.0, UMPS 0.0
+B4_CAD_lethal_H1_UMPS_known_issue	True	H1 CAD 0.0, UMPS 1.0 (known: reversible TYMS)
+C1_constant_equals_null	True	B0 tAP_lin 0.123611 vs E[AP_random] 0.123611
+C2_random_lift_11	True	lift 0.9964; tAP 0.12317 [0.12213, 0.12426] vs null 0.12361
+C2_random_lift_23	True	lift 0.9980; tAP 0.12337 [0.12216, 0.12455] vs null 0.12361
+C2_random_lift_37	True	lift 0.9970; tAP 0.12324 [0.12212, 0.12438] vs null 0.12361
+C2_random_lift_41	True	lift 1.0027; tAP 0.12394 [0.12276, 0.12505] vs null 0.12361
+C2_random_lift_53	True	lift 0.9986; tAP 0.12344 [0.12232, 0.12460] vs null 0.12361
+C3_gene_shuffled_labels_H2_lift_1	True	H2 lift with labels shuffled across genes: 1.0017 (real 2.3592)
+C4_constant_caller_mcc	True	primary nan (n_nan 686); sensitivity 0.0
+C5_fold_scoped_memoriser_null	True	max |tAP - E[AP_random]| over 12 held-out folds = 2.8e-17
+C6_nonlethal_controls	True	H2 LAP3 1.0, H1 TGDS 1.0
+C7_orientation_lethal_more_positive	True	mean L_prob prevalence: H2-lethal 0.543 vs non-lethal 0.097
+D1_tasks_vs_Robinson_S3_human1	True	57 tasks vs S3 57; identical (id, description) 57/57; identical IN and OUT metabolite sets 55/57 (S3 compartment [s] read as [e])
+D1_tasks_vs_Robinson_S3_human2	True	57 tasks vs S3 57; identical (id, description) 57/57; identical IN and OUT metabolite sets 55/57 (S3 compartment [s] read as [e])
