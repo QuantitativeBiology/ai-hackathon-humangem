@@ -77,5 +77,11 @@ Next (M3): Stage A of the context-model families on the 30-line training panel, 
   - [~] 6.2 Independent review of the W4 code → then Stage A (A1–A5, A7; ≈60 CPU-h).
 - [ ] 7. GPR curation (proteomics, paralogs); curation vs constraint contribution
 - [ ] 8. Flux-state information content (subtypes, drug screens, metabolomics)
-- [ ] 9. Resource: SBML models per DepMap 26Q3 line
+- [~] 9. Resource: SBML models per DepMap 26Q3 line
+  - [x] 9.1 W8 stub (Sonnet, ≈ 17 min): src/nextgem/resource.py export and gates. The demo exports (2 generic parents and 2 F0 panel models) pass all 5 gates. REPORT.md skeleton.
+  - PI decisions:
+    - a KO gate floor of 1e-9 absolute next to 1e-6 relative (LP noise);
+    - closed reactions kept with bounds (0,0);
+    - `version` = the Human-GEM release.
+  - Open: builders must emit the re-opened (repaired) reaction set; F4 needs its scaled bounds stored to be exportable; MEMOTE/FROG need a separate venv.
 - [ ] 10. REPORT.md
