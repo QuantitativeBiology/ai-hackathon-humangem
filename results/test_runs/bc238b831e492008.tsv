@@ -1,0 +1,2 @@
+nodeid	outcome
+tests/test_w8_resource.py::test_w8_gr_passes	passed

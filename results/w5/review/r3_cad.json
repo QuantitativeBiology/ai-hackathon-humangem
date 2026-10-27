@@ -1,0 +1,122 @@
+{
+ "human2": {
+  "MAR10064_name": "Small metabolite pool for biomass reaction",
+  "dihydroorotate_in_MAR10064": {
+   "MAM00180c": [
+    "(S)-dihydroorotate",
+    "c",
+    -0.0043
+   ]
+  },
+  "MAR10064_product_in_biomass": {
+   "MAM10015c": -0.4835
+  },
+  "dho_reactions": {
+   "MAM00180c": [
+    "MAR04575:ENSG00000102967:lb=-1000.0",
+    "MAR04608:ENSG00000084774:lb=-1000.0",
+    "MAR10064::lb=0.0",
+    "MAR20201::lb=-1000.0"
+   ],
+   "MAM00180e": [
+    "MAR20201::lb=-1000.0",
+    "MAR20202::lb=-0.0"
+   ]
+  },
+  "uridine_exchange": [
+   "MAR09439"
+  ],
+  "orotate_exchange": [
+   "MAR09690"
+  ],
+  "genes": {
+   "CAD": "ENSG00000084774",
+   "DHODH": "ENSG00000102967",
+   "UMPS": "ENSG00000114491"
+  },
+  "growth": {
+   "hams": {
+    "wt": 74.7568,
+    "CAD_KO_ratio": -0.0,
+    "DHODH_KO_ratio": -0.0,
+    "UMPS_KO_ratio": -0.0,
+    "noDHOpool_wt": 74.7626,
+    "noDHOpool_CAD_KO_ratio": 0.0
+   },
+   "hams+uridine": {
+    "wt": 92.1333,
+    "CAD_KO_ratio": 0.0,
+    "DHODH_KO_ratio": 1.0,
+    "UMPS_KO_ratio": 1.0,
+    "noDHOpool_wt": 92.1393,
+    "noDHOpool_CAD_KO_ratio": 1.0
+   },
+   "hams+orotate": {
+    "wt": 75.083,
+    "CAD_KO_ratio": 1.0,
+    "DHODH_KO_ratio": 0.999921,
+    "UMPS_KO_ratio": -0.0,
+    "noDHOpool_wt": 75.083,
+    "noDHOpool_CAD_KO_ratio": 1.0
+   }
+  }
+ },
+ "human1": {
+  "MAR10064_name": "Small metabolite pool for biomass reaction",
+  "dihydroorotate_in_MAR10064": {
+   "MAM00180c": [
+    "(S)-dihydroorotate",
+    "c",
+    -0.0043
+   ]
+  },
+  "MAR10064_product_in_biomass": {
+   "MAM10015c": -0.4835
+  },
+  "dho_reactions": {
+   "MAM00180c": [
+    "MAR04575:ENSG00000102967:lb=-1000.0",
+    "MAR04608:ENSG00000084774:lb=-1000.0",
+    "MAR10064::lb=0.0"
+   ]
+  },
+  "uridine_exchange": [
+   "MAR09439"
+  ],
+  "orotate_exchange": [
+   "MAR09690"
+  ],
+  "genes": {
+   "CAD": "ENSG00000084774",
+   "DHODH": "ENSG00000102967",
+   "UMPS": "ENSG00000114491"
+  },
+  "growth": {
+   "hams": {
+    "wt": 65.5734,
+    "CAD_KO_ratio": 0.0,
+    "DHODH_KO_ratio": 1.0,
+    "UMPS_KO_ratio": 1.0,
+    "noDHOpool_wt": 65.5785,
+    "noDHOpool_CAD_KO_ratio": 1.0
+   },
+   "hams+uridine": {
+    "wt": 82.9607,
+    "CAD_KO_ratio": 0.0,
+    "DHODH_KO_ratio": 1.0,
+    "UMPS_KO_ratio": 1.0,
+    "noDHOpool_wt": 82.9664,
+    "noDHOpool_CAD_KO_ratio": 1.0
+   },
+   "hams+orotate": {
+    "wt": 65.6978,
+    "CAD_KO_ratio": 1.0,
+    "DHODH_KO_ratio": 0.999922,
+    "UMPS_KO_ratio": 0.998184,
+    "noDHOpool_wt": 65.6978,
+    "noDHOpool_CAD_KO_ratio": 1.0
+   }
+  }
+ },
+ "wall_s": 47.6
+}

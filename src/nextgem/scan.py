@@ -212,6 +212,9 @@ def read_frames(path: str | Path, data: bytes | None = None, max_rows: int | Non
 
 
 # ----------------------------------------------------------------------------- key detection
+MIN_BARE_INT_ROWS = 10  # integer columns shorter than this are never read as bare ModelIDs
+
+
 def norm_mid(v, known: set[str] | None) -> str | None:
     if isinstance(v, (int, np.integer)) and not isinstance(v, bool):
         return f"ACH-{int(v):06d}" if known and f"ACH-{int(v):06d}" in known else None
@@ -232,7 +235,8 @@ def _is_mid_col(series: pd.Series, known) -> bool:
     if s.empty:
         return False
     if pd.api.types.is_integer_dtype(s.dtype):  # bare IDs that lost their zero padding (e.g. CSV round trip)
-        return bool(known) and s.is_unique and float(np.mean([f"ACH-{int(v):06d}" in known for v in s])) >= 0.8
+        # guard changelog 2026-10-27: tiny integer columns (group ids, ranks) are not ModelIDs
+        return bool(known) and len(s) >= MIN_BARE_INT_ROWS and s.is_unique and float(np.mean([f"ACH-{int(v):06d}" in known for v in s])) >= 0.8
     if s.dtype != object:
         return False
     sample = s.iloc[:: max(1, len(s) // 500)]

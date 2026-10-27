@@ -1,0 +1,721 @@
+geneset	method	ref	lineage	delta_mean	n_lines
+all	H1_TYMS	H1	Biliary Tract	0.00147224	36
+all	H1_TYMS	H1	Bone	0.000296805	49
+all	H1_TYMS	H1	Bowel	0.00256936	81
+all	H1_TYMS	H1	Cervix	-0.000153121	18
+all	H1_TYMS	H1	Esophagus/Stomach	0.00123658	89
+all	H1_TYMS	H1	Head and Neck	3.49217e-05	63
+all	H1_TYMS	H1	Kidney	0.00087914	32
+all	H1_TYMS	H1	Lung	0.000799084	123
+all	H1_TYMS	H1	Myeloid	0.00147399	43
+all	H1_TYMS	H1	Peripheral Nervous System	-0.000628624	40
+all	H1_TYMS	H1	Skin	-7.56859e-05	74
+all	H1_TYMS	H1	Uterus	0.000341232	38
+all	H1_W5a	H1	Biliary Tract	-0.0271354	36
+all	H1_W5a	H1	Bone	-0.0292608	49
+all	H1_W5a	H1	Bowel	-0.0257045	81
+all	H1_W5a	H1	Cervix	-0.0293919	18
+all	H1_W5a	H1	Esophagus/Stomach	-0.0259607	89
+all	H1_W5a	H1	Head and Neck	-0.0303376	63
+all	H1_W5a	H1	Kidney	-0.0286544	32
+all	H1_W5a	H1	Lung	-0.0286866	123
+all	H1_W5a	H1	Myeloid	-0.0274804	43
+all	H1_W5a	H1	Peripheral Nervous System	-0.0309746	40
+all	H1_W5a	H1	Skin	-0.0296591	74
+all	H1_W5a	H1	Uterus	-0.0293495	38
+all	H1_W5a_gpr_only	H1	Biliary Tract	-0.0290077	36
+all	H1_W5a_gpr_only	H1	Bone	-0.0300858	49
+all	H1_W5a_gpr_only	H1	Bowel	-0.0286017	81
+all	H1_W5a_gpr_only	H1	Cervix	-0.0298173	18
+all	H1_W5a_gpr_only	H1	Esophagus/Stomach	-0.0275457	89
+all	H1_W5a_gpr_only	H1	Head and Neck	-0.0309588	63
+all	H1_W5a_gpr_only	H1	Kidney	-0.0300136	32
+all	H1_W5a_gpr_only	H1	Lung	-0.0299941	123
+all	H1_W5a_gpr_only	H1	Myeloid	-0.0293777	43
+all	H1_W5a_gpr_only	H1	Peripheral Nervous System	-0.0309103	40
+all	H1_W5a_gpr_only	H1	Skin	-0.0301298	74
+all	H1_W5a_gpr_only	H1	Uterus	-0.0302347	38
+all	H1_W5a_pid30	H1	Biliary Tract	-0.00118204	36
+all	H1_W5a_pid30	H1	Bone	-0.00243159	49
+all	H1_W5a_pid30	H1	Bowel	0.000365837	81
+all	H1_W5a_pid30	H1	Cervix	-0.00314396	18
+all	H1_W5a_pid30	H1	Esophagus/Stomach	-0.000673072	89
+all	H1_W5a_pid30	H1	Head and Neck	-0.00294234	63
+all	H1_W5a_pid30	H1	Kidney	-0.00212071	32
+all	H1_W5a_pid30	H1	Lung	-0.00215288	123
+all	H1_W5a_pid30	H1	Myeloid	-0.00122415	43
+all	H1_W5a_pid30	H1	Peripheral Nervous System	-0.00382475	40
+all	H1_W5a_pid30	H1	Skin	-0.00295784	74
+all	H1_W5a_pid30	H1	Uterus	-0.00249641	38
+all	H1_W5b	H1	Biliary Tract	-0.0271354	36
+all	H1_W5b	H1	Bone	-0.0292608	49
+all	H1_W5b	H1	Bowel	-0.0257045	81
+all	H1_W5b	H1	Cervix	-0.0293919	18
+all	H1_W5b	H1	Esophagus/Stomach	-0.0259607	89
+all	H1_W5b	H1	Head and Neck	-0.0303376	63
+all	H1_W5b	H1	Kidney	-0.0286544	32
+all	H1_W5b	H1	Lung	-0.0286866	123
+all	H1_W5b	H1	Myeloid	-0.0274804	43
+all	H1_W5b	H1	Peripheral Nervous System	-0.0309746	40
+all	H1_W5b	H1	Skin	-0.0296591	74
+all	H1_W5b	H1	Uterus	-0.0293495	38
+all	H1_W5b_loose	H1	Biliary Tract	-0.0271354	36
+all	H1_W5b_loose	H1	Bone	-0.0292608	49
+all	H1_W5b_loose	H1	Bowel	-0.0257045	81
+all	H1_W5b_loose	H1	Cervix	-0.0293919	18
+all	H1_W5b_loose	H1	Esophagus/Stomach	-0.0259607	89
+all	H1_W5b_loose	H1	Head and Neck	-0.0303376	63
+all	H1_W5b_loose	H1	Kidney	-0.0286544	32
+all	H1_W5b_loose	H1	Lung	-0.0286866	123
+all	H1_W5b_loose	H1	Myeloid	-0.0274804	43
+all	H1_W5b_loose	H1	Peripheral Nervous System	-0.0309746	40
+all	H1_W5b_loose	H1	Skin	-0.0296591	74
+all	H1_W5b_loose	H1	Uterus	-0.0293495	38
+all	H1_neg_s11	H1	Biliary Tract	-0.00909728	36
+all	H1_neg_s11	H1	Bone	-0.0100629	49
+all	H1_neg_s11	H1	Bowel	-0.008389	81
+all	H1_neg_s11	H1	Cervix	-0.0113587	18
+all	H1_neg_s11	H1	Esophagus/Stomach	-0.00965992	89
+all	H1_neg_s11	H1	Head and Neck	-0.0106659	63
+all	H1_neg_s11	H1	Kidney	-0.0101087	32
+all	H1_neg_s11	H1	Lung	-0.0102179	123
+all	H1_neg_s11	H1	Myeloid	-0.009634	43
+all	H1_neg_s11	H1	Peripheral Nervous System	-0.01074	40
+all	H1_neg_s11	H1	Skin	-0.0111752	74
+all	H1_neg_s11	H1	Uterus	-0.0111176	38
+all	H1_neg_s23	H1	Biliary Tract	-0.00387322	36
+all	H1_neg_s23	H1	Bone	-0.00641962	49
+all	H1_neg_s23	H1	Bowel	-0.0039327	81
+all	H1_neg_s23	H1	Cervix	-0.00530331	18
+all	H1_neg_s23	H1	Esophagus/Stomach	-0.00524973	89
+all	H1_neg_s23	H1	Head and Neck	-0.00688892	63
+all	H1_neg_s23	H1	Kidney	-0.00561727	32
+all	H1_neg_s23	H1	Lung	-0.00508989	123
+all	H1_neg_s23	H1	Myeloid	-0.00487347	43
+all	H1_neg_s23	H1	Peripheral Nervous System	-0.00759154	40
+all	H1_neg_s23	H1	Skin	-0.00785157	74
+all	H1_neg_s23	H1	Uterus	-0.00594523	38
+all	H1_neg_s37	H1	Biliary Tract	-0.0101423	36
+all	H1_neg_s37	H1	Bone	-0.00796586	49
+all	H1_neg_s37	H1	Bowel	-0.00811471	81
+all	H1_neg_s37	H1	Cervix	-0.0123188	18
+all	H1_neg_s37	H1	Esophagus/Stomach	-0.0100188	89
+all	H1_neg_s37	H1	Head and Neck	-0.00980629	63
+all	H1_neg_s37	H1	Kidney	-0.00824929	32
+all	H1_neg_s37	H1	Lung	-0.00911764	123
+all	H1_neg_s37	H1	Myeloid	-0.00857503	43
+all	H1_neg_s37	H1	Peripheral Nervous System	-0.00788266	40
+all	H1_neg_s37	H1	Skin	-0.00962996	74
+all	H1_neg_s37	H1	Uterus	-0.00889396	38
+all	H1_neg_s41	H1	Biliary Tract	-0.0102675	36
+all	H1_neg_s41	H1	Bone	-0.00941229	49
+all	H1_neg_s41	H1	Bowel	-0.00873234	81
+all	H1_neg_s41	H1	Cervix	-0.0116354	18
+all	H1_neg_s41	H1	Esophagus/Stomach	-0.0103906	89
+all	H1_neg_s41	H1	Head and Neck	-0.00944616	63
+all	H1_neg_s41	H1	Kidney	-0.0086745	32
+all	H1_neg_s41	H1	Lung	-0.0104533	123
+all	H1_neg_s41	H1	Myeloid	-0.00898444	43
+all	H1_neg_s41	H1	Peripheral Nervous System	-0.010832	40
+all	H1_neg_s41	H1	Skin	-0.0112362	74
+all	H1_neg_s41	H1	Uterus	-0.0097439	38
+all	H1_neg_s53	H1	Biliary Tract	-0.015333	36
+all	H1_neg_s53	H1	Bone	-0.0128653	49
+all	H1_neg_s53	H1	Bowel	-0.0140869	81
+all	H1_neg_s53	H1	Cervix	-0.0171365	18
+all	H1_neg_s53	H1	Esophagus/Stomach	-0.015516	89
+all	H1_neg_s53	H1	Head and Neck	-0.0150961	63
+all	H1_neg_s53	H1	Kidney	-0.0128795	32
+all	H1_neg_s53	H1	Lung	-0.0147132	123
+all	H1_neg_s53	H1	Myeloid	-0.0135406	43
+all	H1_neg_s53	H1	Peripheral Nervous System	-0.0136975	40
+all	H1_neg_s53	H1	Skin	-0.0144333	74
+all	H1_neg_s53	H1	Uterus	-0.0147469	38
+all	H2	H1	Biliary Tract	-0.00753153	36
+all	H2	H1	Bone	-0.00955241	49
+all	H2	H1	Bowel	-0.00559707	81
+all	H2	H1	Cervix	-0.00826502	18
+all	H2	H1	Esophagus/Stomach	-0.00721192	89
+all	H2	H1	Head and Neck	-0.00884328	63
+all	H2	H1	Kidney	-0.00743828	32
+all	H2	H1	Lung	-0.00870324	123
+all	H2	H1	Myeloid	-0.00656145	43
+all	H2	H1	Peripheral Nervous System	-0.0094025	40
+all	H2	H1	Skin	-0.00884834	74
+all	H2	H1	Uterus	-0.00742511	38
+all	H2_W5a	H1	Biliary Tract	-0.0362048	36
+all	H2_W5a	H1	Bone	-0.0390643	49
+all	H2_W5a	H1	Bowel	-0.0339405	81
+all	H2_W5a	H1	Cervix	-0.0376345	18
+all	H2_W5a	H1	Esophagus/Stomach	-0.0345567	89
+all	H2_W5a	H1	Head and Neck	-0.0392379	63
+all	H2_W5a	H1	Kidney	-0.0369877	32
+all	H2_W5a	H1	Lung	-0.0382268	123
+all	H2_W5a	H1	Myeloid	-0.0355915	43
+all	H2_W5a	H1	Peripheral Nervous System	-0.0397098	40
+all	H2_W5a	H1	Skin	-0.0384771	74
+all	H2_W5a	H1	Uterus	-0.0371605	38
+all	H2_W5a	H2	Biliary Tract	-0.0286733	36
+all	H2_W5a	H2	Bone	-0.0295119	49
+all	H2_W5a	H2	Bowel	-0.0283434	81
+all	H2_W5a	H2	Cervix	-0.0293694	18
+all	H2_W5a	H2	Esophagus/Stomach	-0.0273447	89
+all	H2_W5a	H2	Head and Neck	-0.0303946	63
+all	H2_W5a	H2	Kidney	-0.0295494	32
+all	H2_W5a	H2	Lung	-0.0295235	123
+all	H2_W5a	H2	Myeloid	-0.02903	43
+all	H2_W5a	H2	Peripheral Nervous System	-0.0303073	40
+all	H2_W5a	H2	Skin	-0.0296288	74
+all	H2_W5a	H2	Uterus	-0.0297354	38
+all	H2_W5a_pid30	H1	Biliary Tract	-0.0105245	36
+all	H2_W5a_pid30	H1	Bone	-0.0126331	49
+all	H2_W5a_pid30	H1	Bowel	-0.00813883	81
+all	H2_W5a_pid30	H1	Cervix	-0.0116352	18
+all	H2_W5a_pid30	H1	Esophagus/Stomach	-0.0095143	89
+all	H2_W5a_pid30	H1	Head and Neck	-0.0121822	63
+all	H2_W5a_pid30	H1	Kidney	-0.0107876	32
+all	H2_W5a_pid30	H1	Lung	-0.0120134	123
+all	H2_W5a_pid30	H1	Myeloid	-0.00960006	43
+all	H2_W5a_pid30	H1	Peripheral Nervous System	-0.0129205	40
+all	H2_W5a_pid30	H1	Skin	-0.012094	74
+all	H2_W5a_pid30	H1	Uterus	-0.0106182	38
+all	H2_W5a_pid30	H2	Biliary Tract	-0.00299299	36
+all	H2_W5a_pid30	H2	Bone	-0.0030807	49
+all	H2_W5a_pid30	H2	Bowel	-0.00254176	81
+all	H2_W5a_pid30	H2	Cervix	-0.00337015	18
+all	H2_W5a_pid30	H2	Esophagus/Stomach	-0.00230237	89
+all	H2_W5a_pid30	H2	Head and Neck	-0.00333892	63
+all	H2_W5a_pid30	H2	Kidney	-0.00334934	32
+all	H2_W5a_pid30	H2	Lung	-0.00331019	123
+all	H2_W5a_pid30	H2	Myeloid	-0.00303861	43
+all	H2_W5a_pid30	H2	Peripheral Nervous System	-0.00351798	40
+all	H2_W5a_pid30	H2	Skin	-0.00324567	74
+all	H2_W5a_pid30	H2	Uterus	-0.00319311	38
+all	H2_W5b	H1	Biliary Tract	-0.0362048	36
+all	H2_W5b	H1	Bone	-0.0390643	49
+all	H2_W5b	H1	Bowel	-0.0339405	81
+all	H2_W5b	H1	Cervix	-0.0376345	18
+all	H2_W5b	H1	Esophagus/Stomach	-0.0345567	89
+all	H2_W5b	H1	Head and Neck	-0.0392379	63
+all	H2_W5b	H1	Kidney	-0.0369877	32
+all	H2_W5b	H1	Lung	-0.0382268	123
+all	H2_W5b	H1	Myeloid	-0.0355915	43
+all	H2_W5b	H1	Peripheral Nervous System	-0.0397098	40
+all	H2_W5b	H1	Skin	-0.0384771	74
+all	H2_W5b	H1	Uterus	-0.0371605	38
+all	H2_W5b	H2	Biliary Tract	-0.0286733	36
+all	H2_W5b	H2	Bone	-0.0295119	49
+all	H2_W5b	H2	Bowel	-0.0283434	81
+all	H2_W5b	H2	Cervix	-0.0293694	18
+all	H2_W5b	H2	Esophagus/Stomach	-0.0273447	89
+all	H2_W5b	H2	Head and Neck	-0.0303946	63
+all	H2_W5b	H2	Kidney	-0.0295494	32
+all	H2_W5b	H2	Lung	-0.0295235	123
+all	H2_W5b	H2	Myeloid	-0.02903	43
+all	H2_W5b	H2	Peripheral Nervous System	-0.0303073	40
+all	H2_W5b	H2	Skin	-0.0296288	74
+all	H2_W5b	H2	Uterus	-0.0297354	38
+all	H2_W5b_loose	H1	Biliary Tract	-0.0362048	36
+all	H2_W5b_loose	H1	Bone	-0.0390643	49
+all	H2_W5b_loose	H1	Bowel	-0.0339405	81
+all	H2_W5b_loose	H1	Cervix	-0.0376345	18
+all	H2_W5b_loose	H1	Esophagus/Stomach	-0.0345567	89
+all	H2_W5b_loose	H1	Head and Neck	-0.0392379	63
+all	H2_W5b_loose	H1	Kidney	-0.0369877	32
+all	H2_W5b_loose	H1	Lung	-0.0382268	123
+all	H2_W5b_loose	H1	Myeloid	-0.0355915	43
+all	H2_W5b_loose	H1	Peripheral Nervous System	-0.0397098	40
+all	H2_W5b_loose	H1	Skin	-0.0384771	74
+all	H2_W5b_loose	H1	Uterus	-0.0371605	38
+all	H2_W5b_loose	H2	Biliary Tract	-0.0286733	36
+all	H2_W5b_loose	H2	Bone	-0.0295119	49
+all	H2_W5b_loose	H2	Bowel	-0.0283434	81
+all	H2_W5b_loose	H2	Cervix	-0.0293694	18
+all	H2_W5b_loose	H2	Esophagus/Stomach	-0.0273447	89
+all	H2_W5b_loose	H2	Head and Neck	-0.0303946	63
+all	H2_W5b_loose	H2	Kidney	-0.0295494	32
+all	H2_W5b_loose	H2	Lung	-0.0295235	123
+all	H2_W5b_loose	H2	Myeloid	-0.02903	43
+all	H2_W5b_loose	H2	Peripheral Nervous System	-0.0303073	40
+all	H2_W5b_loose	H2	Skin	-0.0296288	74
+all	H2_W5b_loose	H2	Uterus	-0.0297354	38
+all	H2_neg_s11	H1	Biliary Tract	-0.0117406	36
+all	H2_neg_s11	H1	Bone	-0.0172612	49
+all	H2_neg_s11	H1	Bowel	-0.0113874	81
+all	H2_neg_s11	H1	Cervix	-0.0131862	18
+all	H2_neg_s11	H1	Esophagus/Stomach	-0.0131713	89
+all	H2_neg_s11	H1	Head and Neck	-0.0164237	63
+all	H2_neg_s11	H1	Kidney	-0.011782	32
+all	H2_neg_s11	H1	Lung	-0.0131085	123
+all	H2_neg_s11	H1	Myeloid	-0.00958808	43
+all	H2_neg_s11	H1	Peripheral Nervous System	-0.0162113	40
+all	H2_neg_s11	H1	Skin	-0.0141987	74
+all	H2_neg_s11	H1	Uterus	-0.0132098	38
+all	H2_neg_s11	H2	Biliary Tract	-0.00420905	36
+all	H2_neg_s11	H2	Bone	-0.00770881	49
+all	H2_neg_s11	H2	Bowel	-0.00579029	81
+all	H2_neg_s11	H2	Cervix	-0.00492116	18
+all	H2_neg_s11	H2	Esophagus/Stomach	-0.00595938	89
+all	H2_neg_s11	H2	Head and Neck	-0.00758047	63
+all	H2_neg_s11	H2	Kidney	-0.00434375	32
+all	H2_neg_s11	H2	Lung	-0.00440523	123
+all	H2_neg_s11	H2	Myeloid	-0.00302663	43
+all	H2_neg_s11	H2	Peripheral Nervous System	-0.00680882	40
+all	H2_neg_s11	H2	Skin	-0.00535039	74
+all	H2_neg_s11	H2	Uterus	-0.00578464	38
+all	H2_neg_s23	H1	Biliary Tract	-0.0100961	36
+all	H2_neg_s23	H1	Bone	-0.012386	49
+all	H2_neg_s23	H1	Bowel	-0.00793804	81
+all	H2_neg_s23	H1	Cervix	-0.0117528	18
+all	H2_neg_s23	H1	Esophagus/Stomach	-0.0105214	89
+all	H2_neg_s23	H1	Head and Neck	-0.013094	63
+all	H2_neg_s23	H1	Kidney	-0.0106401	32
+all	H2_neg_s23	H1	Lung	-0.0111599	123
+all	H2_neg_s23	H1	Myeloid	-0.00909172	43
+all	H2_neg_s23	H1	Peripheral Nervous System	-0.013708	40
+all	H2_neg_s23	H1	Skin	-0.0117992	74
+all	H2_neg_s23	H1	Uterus	-0.0105155	38
+all	H2_neg_s23	H2	Biliary Tract	-0.00256453	36
+all	H2_neg_s23	H2	Bone	-0.00283359	49
+all	H2_neg_s23	H2	Bowel	-0.00234096	81
+all	H2_neg_s23	H2	Cervix	-0.00348783	18
+all	H2_neg_s23	H2	Esophagus/Stomach	-0.00330946	89
+all	H2_neg_s23	H2	Head and Neck	-0.00425072	63
+all	H2_neg_s23	H2	Kidney	-0.00320187	32
+all	H2_neg_s23	H2	Lung	-0.00245668	123
+all	H2_neg_s23	H2	Myeloid	-0.00253027	43
+all	H2_neg_s23	H2	Peripheral Nervous System	-0.00430547	40
+all	H2_neg_s23	H2	Skin	-0.00295082	74
+all	H2_neg_s23	H2	Uterus	-0.00309038	38
+all	H2_neg_s37	H1	Biliary Tract	-0.0167927	36
+all	H2_neg_s37	H1	Bone	-0.0193557	49
+all	H2_neg_s37	H1	Bowel	-0.0154189	81
+all	H2_neg_s37	H1	Cervix	-0.0190291	18
+all	H2_neg_s37	H1	Esophagus/Stomach	-0.0173213	89
+all	H2_neg_s37	H1	Head and Neck	-0.0197726	63
+all	H2_neg_s37	H1	Kidney	-0.0162185	32
+all	H2_neg_s37	H1	Lung	-0.019034	123
+all	H2_neg_s37	H1	Myeloid	-0.0162937	43
+all	H2_neg_s37	H1	Peripheral Nervous System	-0.0196572	40
+all	H2_neg_s37	H1	Skin	-0.0195406	74
+all	H2_neg_s37	H1	Uterus	-0.0180557	38
+all	H2_neg_s37	H2	Biliary Tract	-0.00926115	36
+all	H2_neg_s37	H2	Bone	-0.00980327	49
+all	H2_neg_s37	H2	Bowel	-0.00982182	81
+all	H2_neg_s37	H2	Cervix	-0.0107641	18
+all	H2_neg_s37	H2	Esophagus/Stomach	-0.0101094	89
+all	H2_neg_s37	H2	Head and Neck	-0.0109294	63
+all	H2_neg_s37	H2	Kidney	-0.00878025	32
+all	H2_neg_s37	H2	Lung	-0.0103308	123
+all	H2_neg_s37	H2	Myeloid	-0.0097322	43
+all	H2_neg_s37	H2	Peripheral Nervous System	-0.0102547	40
+all	H2_neg_s37	H2	Skin	-0.0106923	74
+all	H2_neg_s37	H2	Uterus	-0.0106306	38
+all	H2_neg_s41	H1	Biliary Tract	-0.022971	36
+all	H2_neg_s41	H1	Bone	-0.0258006	49
+all	H2_neg_s41	H1	Bowel	-0.0201028	81
+all	H2_neg_s41	H1	Cervix	-0.0233962	18
+all	H2_neg_s41	H1	Esophagus/Stomach	-0.0229685	89
+all	H2_neg_s41	H1	Head and Neck	-0.0264136	63
+all	H2_neg_s41	H1	Kidney	-0.0215111	32
+all	H2_neg_s41	H1	Lung	-0.0230176	123
+all	H2_neg_s41	H1	Myeloid	-0.0201845	43
+all	H2_neg_s41	H1	Peripheral Nervous System	-0.0225984	40
+all	H2_neg_s41	H1	Skin	-0.0236883	74
+all	H2_neg_s41	H1	Uterus	-0.0241805	38
+all	H2_neg_s41	H2	Biliary Tract	-0.0154395	36
+all	H2_neg_s41	H2	Bone	-0.0162482	49
+all	H2_neg_s41	H2	Bowel	-0.0145057	81
+all	H2_neg_s41	H2	Cervix	-0.0151312	18
+all	H2_neg_s41	H2	Esophagus/Stomach	-0.0157565	89
+all	H2_neg_s41	H2	Head and Neck	-0.0175703	63
+all	H2_neg_s41	H2	Kidney	-0.0140728	32
+all	H2_neg_s41	H2	Lung	-0.0143143	123
+all	H2_neg_s41	H2	Myeloid	-0.0136231	43
+all	H2_neg_s41	H2	Peripheral Nervous System	-0.0131959	40
+all	H2_neg_s41	H2	Skin	-0.0148399	74
+all	H2_neg_s41	H2	Uterus	-0.0167553	38
+all	H2_neg_s53	H1	Biliary Tract	-0.019612	36
+all	H2_neg_s53	H1	Bone	-0.0230697	49
+all	H2_neg_s53	H1	Bowel	-0.0173398	81
+all	H2_neg_s53	H1	Cervix	-0.0228489	18
+all	H2_neg_s53	H1	Esophagus/Stomach	-0.0198571	89
+all	H2_neg_s53	H1	Head and Neck	-0.0230772	63
+all	H2_neg_s53	H1	Kidney	-0.0192815	32
+all	H2_neg_s53	H1	Lung	-0.0214781	123
+all	H2_neg_s53	H1	Myeloid	-0.0163136	43
+all	H2_neg_s53	H1	Peripheral Nervous System	-0.0230855	40
+all	H2_neg_s53	H1	Skin	-0.0221188	74
+all	H2_neg_s53	H1	Uterus	-0.0195972	38
+all	H2_neg_s53	H2	Biliary Tract	-0.0120805	36
+all	H2_neg_s53	H2	Bone	-0.0135173	49
+all	H2_neg_s53	H2	Bowel	-0.0117427	81
+all	H2_neg_s53	H2	Cervix	-0.0145839	18
+all	H2_neg_s53	H2	Esophagus/Stomach	-0.0126451	89
+all	H2_neg_s53	H2	Head and Neck	-0.0142339	63
+all	H2_neg_s53	H2	Kidney	-0.0118432	32
+all	H2_neg_s53	H2	Lung	-0.0127748	123
+all	H2_neg_s53	H2	Myeloid	-0.00975218	43
+all	H2_neg_s53	H2	Peripheral Nervous System	-0.013683	40
+all	H2_neg_s53	H2	Skin	-0.0132705	74
+all	H2_neg_s53	H2	Uterus	-0.0121721	38
+noCE	H1_TYMS	H1	Biliary Tract	0.0030172	36
+noCE	H1_TYMS	H1	Bone	0.00173931	49
+noCE	H1_TYMS	H1	Bowel	0.00438071	81
+noCE	H1_TYMS	H1	Cervix	0.00102451	18
+noCE	H1_TYMS	H1	Esophagus/Stomach	0.00274731	89
+noCE	H1_TYMS	H1	Head and Neck	0.00144341	63
+noCE	H1_TYMS	H1	Kidney	0.00225914	32
+noCE	H1_TYMS	H1	Lung	0.00222816	123
+noCE	H1_TYMS	H1	Myeloid	0.00294718	43
+noCE	H1_TYMS	H1	Peripheral Nervous System	0.000650376	40
+noCE	H1_TYMS	H1	Skin	0.00123828	74
+noCE	H1_TYMS	H1	Uterus	0.00176553	38
+noCE	H1_W5a	H1	Biliary Tract	0.000192684	36
+noCE	H1_W5a	H1	Bone	-0.00092033	49
+noCE	H1_W5a	H1	Bowel	0.0021507	81
+noCE	H1_W5a	H1	Cervix	-0.00220897	18
+noCE	H1_W5a	H1	Esophagus/Stomach	0.00105233	89
+noCE	H1_W5a	H1	Head and Neck	-0.00231729	63
+noCE	H1_W5a	H1	Kidney	-0.000860312	32
+noCE	H1_W5a	H1	Lung	-0.000892066	123
+noCE	H1_W5a	H1	Myeloid	-8.58797e-05	43
+noCE	H1_W5a	H1	Peripheral Nervous System	-0.00227483	40
+noCE	H1_W5a	H1	Skin	-0.00198722	74
+noCE	H1_W5a	H1	Uterus	-0.00155814	38
+noCE	H1_W5a_gpr_only	H1	Biliary Tract	-0.00300722	36
+noCE	H1_W5a_gpr_only	H1	Bone	-0.00293265	49
+noCE	H1_W5a_gpr_only	H1	Bowel	-0.00237142	81
+noCE	H1_W5a_gpr_only	H1	Cervix	-0.00358278	18
+noCE	H1_W5a_gpr_only	H1	Esophagus/Stomach	-0.00181631	89
+noCE	H1_W5a_gpr_only	H1	Head and Neck	-0.00409308	63
+noCE	H1_W5a_gpr_only	H1	Kidney	-0.0033672	32
+noCE	H1_W5a_gpr_only	H1	Lung	-0.0034115	123
+noCE	H1_W5a_gpr_only	H1	Myeloid	-0.00325644	43
+noCE	H1_W5a_gpr_only	H1	Peripheral Nervous System	-0.00321991	40
+noCE	H1_W5a_gpr_only	H1	Skin	-0.00352544	74
+noCE	H1_W5a_gpr_only	H1	Uterus	-0.00362937	38
+noCE	H1_W5a_pid30	H1	Biliary Tract	0.00226902	36
+noCE	H1_W5a_pid30	H1	Bone	0.00101863	49
+noCE	H1_W5a_pid30	H1	Bowel	0.00427183	81
+noCE	H1_W5a_pid30	H1	Cervix	-0.00012442	18
+noCE	H1_W5a_pid30	H1	Esophagus/Stomach	0.00293748	89
+noCE	H1_W5a_pid30	H1	Head and Neck	0.000398079	63
+noCE	H1_W5a_pid30	H1	Kidney	0.00117194	32
+noCE	H1_W5a_pid30	H1	Lung	0.00111354	123
+noCE	H1_W5a_pid30	H1	Myeloid	0.00213939	43
+noCE	H1_W5a_pid30	H1	Peripheral Nervous System	-0.000544025	40
+noCE	H1_W5a_pid30	H1	Skin	0.000289599	74
+noCE	H1_W5a_pid30	H1	Uterus	0.00088342	38
+noCE	H1_W5b	H1	Biliary Tract	0.000192684	36
+noCE	H1_W5b	H1	Bone	-0.00092033	49
+noCE	H1_W5b	H1	Bowel	0.0021507	81
+noCE	H1_W5b	H1	Cervix	-0.00220897	18
+noCE	H1_W5b	H1	Esophagus/Stomach	0.00105233	89
+noCE	H1_W5b	H1	Head and Neck	-0.00231729	63
+noCE	H1_W5b	H1	Kidney	-0.000860312	32
+noCE	H1_W5b	H1	Lung	-0.000892066	123
+noCE	H1_W5b	H1	Myeloid	-8.58797e-05	43
+noCE	H1_W5b	H1	Peripheral Nervous System	-0.00227483	40
+noCE	H1_W5b	H1	Skin	-0.00198722	74
+noCE	H1_W5b	H1	Uterus	-0.00155814	38
+noCE	H1_W5b_loose	H1	Biliary Tract	0.000192684	36
+noCE	H1_W5b_loose	H1	Bone	-0.00092033	49
+noCE	H1_W5b_loose	H1	Bowel	0.0021507	81
+noCE	H1_W5b_loose	H1	Cervix	-0.00220897	18
+noCE	H1_W5b_loose	H1	Esophagus/Stomach	0.00105233	89
+noCE	H1_W5b_loose	H1	Head and Neck	-0.00231729	63
+noCE	H1_W5b_loose	H1	Kidney	-0.000860312	32
+noCE	H1_W5b_loose	H1	Lung	-0.000892066	123
+noCE	H1_W5b_loose	H1	Myeloid	-8.58797e-05	43
+noCE	H1_W5b_loose	H1	Peripheral Nervous System	-0.00227483	40
+noCE	H1_W5b_loose	H1	Skin	-0.00198722	74
+noCE	H1_W5b_loose	H1	Uterus	-0.00155814	38
+noCE	H1_neg_s11	H1	Biliary Tract	0.00219031	36
+noCE	H1_neg_s11	H1	Bone	0.00181662	49
+noCE	H1_neg_s11	H1	Bowel	0.00302016	81
+noCE	H1_neg_s11	H1	Cervix	-0.000350578	18
+noCE	H1_neg_s11	H1	Esophagus/Stomach	0.00113836	89
+noCE	H1_neg_s11	H1	Head and Neck	0.001134	63
+noCE	H1_neg_s11	H1	Kidney	0.0010116	32
+noCE	H1_neg_s11	H1	Lung	0.00104611	123
+noCE	H1_neg_s11	H1	Myeloid	0.00132579	43
+noCE	H1_neg_s11	H1	Peripheral Nervous System	0.00108199	40
+noCE	H1_neg_s11	H1	Skin	0.000204872	74
+noCE	H1_neg_s11	H1	Uterus	0.000496379	38
+noCE	H1_neg_s23	H1	Biliary Tract	0.00350554	36
+noCE	H1_neg_s23	H1	Bone	0.000996776	49
+noCE	H1_neg_s23	H1	Bowel	0.00296943	81
+noCE	H1_neg_s23	H1	Cervix	0.00208945	18
+noCE	H1_neg_s23	H1	Esophagus/Stomach	0.00148847	89
+noCE	H1_neg_s23	H1	Head and Neck	-0.00126883	63
+noCE	H1_neg_s23	H1	Kidney	0.00111673	32
+noCE	H1_neg_s23	H1	Lung	0.00208477	123
+noCE	H1_neg_s23	H1	Myeloid	0.00174595	43
+noCE	H1_neg_s23	H1	Peripheral Nervous System	-0.000372954	40
+noCE	H1_neg_s23	H1	Skin	-0.000961269	74
+noCE	H1_neg_s23	H1	Uterus	0.0015436	38
+noCE	H1_neg_s37	H1	Biliary Tract	-0.00522076	36
+noCE	H1_neg_s37	H1	Bone	-0.00227025	49
+noCE	H1_neg_s37	H1	Bowel	-0.00321524	81
+noCE	H1_neg_s37	H1	Cervix	-0.00760244	18
+noCE	H1_neg_s37	H1	Esophagus/Stomach	-0.00551119	89
+noCE	H1_neg_s37	H1	Head and Neck	-0.00464673	63
+noCE	H1_neg_s37	H1	Kidney	-0.00314516	32
+noCE	H1_neg_s37	H1	Lung	-0.00421464	123
+noCE	H1_neg_s37	H1	Myeloid	-0.00379741	43
+noCE	H1_neg_s37	H1	Peripheral Nervous System	-0.00228074	40
+noCE	H1_neg_s37	H1	Skin	-0.00445657	74
+noCE	H1_neg_s37	H1	Uterus	-0.0033804	38
+noCE	H1_neg_s41	H1	Biliary Tract	-0.00665417	36
+noCE	H1_neg_s41	H1	Bone	-0.00471225	49
+noCE	H1_neg_s41	H1	Bowel	-0.00485771	81
+noCE	H1_neg_s41	H1	Cervix	-0.00834423	18
+noCE	H1_neg_s41	H1	Esophagus/Stomach	-0.00687499	89
+noCE	H1_neg_s41	H1	Head and Neck	-0.00518093	63
+noCE	H1_neg_s41	H1	Kidney	-0.00462971	32
+noCE	H1_neg_s41	H1	Lung	-0.00696055	123
+noCE	H1_neg_s41	H1	Myeloid	-0.00527265	43
+noCE	H1_neg_s41	H1	Peripheral Nervous System	-0.00668363	40
+noCE	H1_neg_s41	H1	Skin	-0.00740507	74
+noCE	H1_neg_s41	H1	Uterus	-0.0054966	38
+noCE	H1_neg_s53	H1	Biliary Tract	-0.00661228	36
+noCE	H1_neg_s53	H1	Bone	-0.00299718	49
+noCE	H1_neg_s53	H1	Bowel	-0.0055379	81
+noCE	H1_neg_s53	H1	Cervix	-0.00857752	18
+noCE	H1_neg_s53	H1	Esophagus/Stomach	-0.007507	89
+noCE	H1_neg_s53	H1	Head and Neck	-0.00571173	63
+noCE	H1_neg_s53	H1	Kidney	-0.00385331	32
+noCE	H1_neg_s53	H1	Lung	-0.00590984	123
+noCE	H1_neg_s53	H1	Myeloid	-0.00491222	43
+noCE	H1_neg_s53	H1	Peripheral Nervous System	-0.00395532	40
+noCE	H1_neg_s53	H1	Skin	-0.00518249	74
+noCE	H1_neg_s53	H1	Uterus	-0.00533571	38
+noCE	H2	H1	Biliary Tract	-0.00270961	36
+noCE	H2	H1	Bone	-0.00444569	49
+noCE	H2	H1	Bowel	-0.000549079	81
+noCE	H2	H1	Cervix	-0.0036443	18
+noCE	H2	H1	Esophagus/Stomach	-0.00239743	89
+noCE	H2	H1	Head and Neck	-0.00367863	63
+noCE	H2	H1	Kidney	-0.00229464	32
+noCE	H2	H1	Lung	-0.00390387	123
+noCE	H2	H1	Myeloid	-0.00190753	43
+noCE	H2	H1	Peripheral Nervous System	-0.00441356	40
+noCE	H2	H1	Skin	-0.00411299	74
+noCE	H2	H1	Uterus	-0.00270111	38
+noCE	H2_W5a	H1	Biliary Tract	-0.00577043	36
+noCE	H2_W5a	H1	Bone	-0.00732513	49
+noCE	H2_W5a	H1	Bowel	-0.0030185	81
+noCE	H2_W5a	H1	Cervix	-0.00716674	18
+noCE	H2_W5a	H1	Esophagus/Stomach	-0.00440591	89
+noCE	H2_W5a	H1	Head and Neck	-0.00765074	63
+noCE	H2_W5a	H1	Kidney	-0.00562221	32
+noCE	H2_W5a	H1	Lung	-0.00726517	123
+noCE	H2_W5a	H1	Myeloid	-0.00517145	43
+noCE	H2_W5a	H1	Peripheral Nervous System	-0.00751982	40
+noCE	H2_W5a	H1	Skin	-0.00756927	74
+noCE	H2_W5a	H1	Uterus	-0.00623845	38
+noCE	H2_W5a	H2	Biliary Tract	-0.00306082	36
+noCE	H2_W5a	H2	Bone	-0.00287944	49
+noCE	H2_W5a	H2	Bowel	-0.00246942	81
+noCE	H2_W5a	H2	Cervix	-0.00352244	18
+noCE	H2_W5a	H2	Esophagus/Stomach	-0.00200848	89
+noCE	H2_W5a	H2	Head and Neck	-0.00397211	63
+noCE	H2_W5a	H2	Kidney	-0.00332757	32
+noCE	H2_W5a	H2	Lung	-0.0033613	123
+noCE	H2_W5a	H2	Myeloid	-0.00326392	43
+noCE	H2_W5a	H2	Peripheral Nervous System	-0.00310626	40
+noCE	H2_W5a	H2	Skin	-0.00345627	74
+noCE	H2_W5a	H2	Uterus	-0.00353735	38
+noCE	H2_W5a_pid30	H1	Biliary Tract	-0.00369522	36
+noCE	H2_W5a_pid30	H1	Bone	-0.00541783	49
+noCE	H2_W5a_pid30	H1	Bowel	-0.000903676	81
+noCE	H2_W5a_pid30	H1	Cervix	-0.00507979	18
+noCE	H2_W5a_pid30	H1	Esophagus/Stomach	-0.00252015	89
+noCE	H2_W5a_pid30	H1	Head and Neck	-0.00498101	63
+noCE	H2_W5a_pid30	H1	Kidney	-0.00361639	32
+noCE	H2_W5a_pid30	H1	Lung	-0.00527152	123
+noCE	H2_W5a_pid30	H1	Myeloid	-0.00295426	43
+noCE	H2_W5a_pid30	H1	Peripheral Nervous System	-0.00581485	40
+noCE	H2_W5a_pid30	H1	Skin	-0.0053236	74
+noCE	H2_W5a_pid30	H1	Uterus	-0.00383994	38
+noCE	H2_W5a_pid30	H2	Biliary Tract	-0.000985605	36
+noCE	H2_W5a_pid30	H2	Bone	-0.00097214	49
+noCE	H2_W5a_pid30	H2	Bowel	-0.000354597	81
+noCE	H2_W5a_pid30	H2	Cervix	-0.00143549	18
+noCE	H2_W5a_pid30	H2	Esophagus/Stomach	-0.000122716	89
+noCE	H2_W5a_pid30	H2	Head and Neck	-0.00130238	63
+noCE	H2_W5a_pid30	H2	Kidney	-0.00132175	32
+noCE	H2_W5a_pid30	H2	Lung	-0.00136765	123
+noCE	H2_W5a_pid30	H2	Myeloid	-0.00104674	43
+noCE	H2_W5a_pid30	H2	Peripheral Nervous System	-0.00140129	40
+noCE	H2_W5a_pid30	H2	Skin	-0.00121061	74
+noCE	H2_W5a_pid30	H2	Uterus	-0.00113884	38
+noCE	H2_W5b	H1	Biliary Tract	-0.00577043	36
+noCE	H2_W5b	H1	Bone	-0.00732513	49
+noCE	H2_W5b	H1	Bowel	-0.0030185	81
+noCE	H2_W5b	H1	Cervix	-0.00716674	18
+noCE	H2_W5b	H1	Esophagus/Stomach	-0.00440591	89
+noCE	H2_W5b	H1	Head and Neck	-0.00765074	63
+noCE	H2_W5b	H1	Kidney	-0.00562221	32
+noCE	H2_W5b	H1	Lung	-0.00726517	123
+noCE	H2_W5b	H1	Myeloid	-0.00517145	43
+noCE	H2_W5b	H1	Peripheral Nervous System	-0.00751982	40
+noCE	H2_W5b	H1	Skin	-0.00756927	74
+noCE	H2_W5b	H1	Uterus	-0.00623845	38
+noCE	H2_W5b	H2	Biliary Tract	-0.00306082	36
+noCE	H2_W5b	H2	Bone	-0.00287944	49
+noCE	H2_W5b	H2	Bowel	-0.00246942	81
+noCE	H2_W5b	H2	Cervix	-0.00352244	18
+noCE	H2_W5b	H2	Esophagus/Stomach	-0.00200848	89
+noCE	H2_W5b	H2	Head and Neck	-0.00397211	63
+noCE	H2_W5b	H2	Kidney	-0.00332757	32
+noCE	H2_W5b	H2	Lung	-0.0033613	123
+noCE	H2_W5b	H2	Myeloid	-0.00326392	43
+noCE	H2_W5b	H2	Peripheral Nervous System	-0.00310626	40
+noCE	H2_W5b	H2	Skin	-0.00345627	74
+noCE	H2_W5b	H2	Uterus	-0.00353735	38
+noCE	H2_W5b_loose	H1	Biliary Tract	-0.00577043	36
+noCE	H2_W5b_loose	H1	Bone	-0.00732513	49
+noCE	H2_W5b_loose	H1	Bowel	-0.0030185	81
+noCE	H2_W5b_loose	H1	Cervix	-0.00716674	18
+noCE	H2_W5b_loose	H1	Esophagus/Stomach	-0.00440591	89
+noCE	H2_W5b_loose	H1	Head and Neck	-0.00765074	63
+noCE	H2_W5b_loose	H1	Kidney	-0.00562221	32
+noCE	H2_W5b_loose	H1	Lung	-0.00726517	123
+noCE	H2_W5b_loose	H1	Myeloid	-0.00517145	43
+noCE	H2_W5b_loose	H1	Peripheral Nervous System	-0.00751982	40
+noCE	H2_W5b_loose	H1	Skin	-0.00756927	74
+noCE	H2_W5b_loose	H1	Uterus	-0.00623845	38
+noCE	H2_W5b_loose	H2	Biliary Tract	-0.00306082	36
+noCE	H2_W5b_loose	H2	Bone	-0.00287944	49
+noCE	H2_W5b_loose	H2	Bowel	-0.00246942	81
+noCE	H2_W5b_loose	H2	Cervix	-0.00352244	18
+noCE	H2_W5b_loose	H2	Esophagus/Stomach	-0.00200848	89
+noCE	H2_W5b_loose	H2	Head and Neck	-0.00397211	63
+noCE	H2_W5b_loose	H2	Kidney	-0.00332757	32
+noCE	H2_W5b_loose	H2	Lung	-0.0033613	123
+noCE	H2_W5b_loose	H2	Myeloid	-0.00326392	43
+noCE	H2_W5b_loose	H2	Peripheral Nervous System	-0.00310626	40
+noCE	H2_W5b_loose	H2	Skin	-0.00345627	74
+noCE	H2_W5b_loose	H2	Uterus	-0.00353735	38
+noCE	H2_neg_s11	H1	Biliary Tract	-0.00258941	36
+noCE	H2_neg_s11	H1	Bone	-0.00724885	49
+noCE	H2_neg_s11	H1	Bowel	-0.00242299	81
+noCE	H2_neg_s11	H1	Cervix	-0.00434774	18
+noCE	H2_neg_s11	H1	Esophagus/Stomach	-0.00445837	89
+noCE	H2_neg_s11	H1	Head and Neck	-0.00871928	63
+noCE	H2_neg_s11	H1	Kidney	-0.00234479	32
+noCE	H2_neg_s11	H1	Lung	-0.00397766	123
+noCE	H2_neg_s11	H1	Myeloid	-0.000634522	43
+noCE	H2_neg_s11	H1	Peripheral Nervous System	-0.00666909	40
+noCE	H2_neg_s11	H1	Skin	-0.00515635	74
+noCE	H2_neg_s11	H1	Uterus	-0.00420573	38
+noCE	H2_neg_s11	H2	Biliary Tract	0.000120203	36
+noCE	H2_neg_s11	H2	Bone	-0.00280315	49
+noCE	H2_neg_s11	H2	Bowel	-0.00187391	81
+noCE	H2_neg_s11	H2	Cervix	-0.000703434	18
+noCE	H2_neg_s11	H2	Esophagus/Stomach	-0.00206094	89
+noCE	H2_neg_s11	H2	Head and Neck	-0.00504064	63
+noCE	H2_neg_s11	H2	Kidney	-5.01546e-05	32
+noCE	H2_neg_s11	H2	Lung	-7.37934e-05	123
+noCE	H2_neg_s11	H2	Myeloid	0.00127301	43
+noCE	H2_neg_s11	H2	Peripheral Nervous System	-0.00225553	40
+noCE	H2_neg_s11	H2	Skin	-0.00104335	74
+noCE	H2_neg_s11	H2	Uterus	-0.00150462	38
+noCE	H2_neg_s23	H1	Biliary Tract	0.0027948	36
+noCE	H2_neg_s23	H1	Bone	0.00087304	49
+noCE	H2_neg_s23	H1	Bowel	0.00495942	81
+noCE	H2_neg_s23	H1	Cervix	0.000290201	18
+noCE	H2_neg_s23	H1	Esophagus/Stomach	0.00213883	89
+noCE	H2_neg_s23	H1	Head and Neck	-0.00116145	63
+noCE	H2_neg_s23	H1	Kidney	0.00270835	32
+noCE	H2_neg_s23	H1	Lung	0.00196887	123
+noCE	H2_neg_s23	H1	Myeloid	0.00325826	43
+noCE	H2_neg_s23	H1	Peripheral Nervous System	-0.000700757	40
+noCE	H2_neg_s23	H1	Skin	0.0014499	74
+noCE	H2_neg_s23	H1	Uterus	0.00178786	38
+noCE	H2_neg_s23	H2	Biliary Tract	0.00550441	36
+noCE	H2_neg_s23	H2	Bone	0.00531873	49
+noCE	H2_neg_s23	H2	Bowel	0.0055085	81
+noCE	H2_neg_s23	H2	Cervix	0.00393451	18
+noCE	H2_neg_s23	H2	Esophagus/Stomach	0.00453626	89
+noCE	H2_neg_s23	H2	Head and Neck	0.00251718	63
+noCE	H2_neg_s23	H2	Kidney	0.00500299	32
+noCE	H2_neg_s23	H2	Lung	0.00587273	123
+noCE	H2_neg_s23	H2	Myeloid	0.00516579	43
+noCE	H2_neg_s23	H2	Peripheral Nervous System	0.0037128	40
+noCE	H2_neg_s23	H2	Skin	0.00556289	74
+noCE	H2_neg_s23	H2	Uterus	0.00448897	38
+noCE	H2_neg_s37	H1	Biliary Tract	-0.00451525	36
+noCE	H2_neg_s37	H1	Bone	-0.00620734	49
+noCE	H2_neg_s37	H1	Bowel	-0.00331131	81
+noCE	H2_neg_s37	H1	Cervix	-0.00707263	18
+noCE	H2_neg_s37	H1	Esophagus/Stomach	-0.00564763	89
+noCE	H2_neg_s37	H1	Head and Neck	-0.00854474	63
+noCE	H2_neg_s37	H1	Kidney	-0.00311513	32
+noCE	H2_neg_s37	H1	Lung	-0.00680248	123
+noCE	H2_neg_s37	H1	Myeloid	-0.00429919	43
+noCE	H2_neg_s37	H1	Peripheral Nervous System	-0.00651107	40
+noCE	H2_neg_s37	H1	Skin	-0.00716029	74
+noCE	H2_neg_s37	H1	Uterus	-0.00570997	38
+noCE	H2_neg_s37	H2	Biliary Tract	-0.00180564	36
+noCE	H2_neg_s37	H2	Bone	-0.00176165	49
+noCE	H2_neg_s37	H2	Bowel	-0.00276223	81
+noCE	H2_neg_s37	H2	Cervix	-0.00342833	18
+noCE	H2_neg_s37	H2	Esophagus/Stomach	-0.0032502	89
+noCE	H2_neg_s37	H2	Head and Neck	-0.00486611	63
+noCE	H2_neg_s37	H2	Kidney	-0.000820492	32
+noCE	H2_neg_s37	H2	Lung	-0.00289862	123
+noCE	H2_neg_s37	H2	Myeloid	-0.00239166	43
+noCE	H2_neg_s37	H2	Peripheral Nervous System	-0.00209751	40
+noCE	H2_neg_s37	H2	Skin	-0.0030473	74
+noCE	H2_neg_s37	H2	Uterus	-0.00300886	38
+noCE	H2_neg_s41	H1	Biliary Tract	-0.00890649	36
+noCE	H2_neg_s41	H1	Bone	-0.00997935	49
+noCE	H2_neg_s41	H1	Bowel	-0.00593205	81
+noCE	H2_neg_s41	H1	Cervix	-0.00919933	18
+noCE	H2_neg_s41	H1	Esophagus/Stomach	-0.00915007	89
+noCE	H2_neg_s41	H1	Head and Neck	-0.0114568	63
+noCE	H2_neg_s41	H1	Kidney	-0.00691149	32
+noCE	H2_neg_s41	H1	Lung	-0.00877082	123
+noCE	H2_neg_s41	H1	Myeloid	-0.0063197	43
+noCE	H2_neg_s41	H1	Peripheral Nervous System	-0.00699273	40
+noCE	H2_neg_s41	H1	Skin	-0.00926388	74
+noCE	H2_neg_s41	H1	Uterus	-0.0097981	38
+noCE	H2_neg_s41	H2	Biliary Tract	-0.00619688	36
+noCE	H2_neg_s41	H2	Bone	-0.00553365	49
+noCE	H2_neg_s41	H2	Bowel	-0.00538297	81
+noCE	H2_neg_s41	H2	Cervix	-0.00555503	18
+noCE	H2_neg_s41	H2	Esophagus/Stomach	-0.00675264	89
+noCE	H2_neg_s41	H2	Head and Neck	-0.00777818	63
+noCE	H2_neg_s41	H2	Kidney	-0.00461685	32
+noCE	H2_neg_s41	H2	Lung	-0.00486695	123
+noCE	H2_neg_s41	H2	Myeloid	-0.00441217	43
+noCE	H2_neg_s41	H2	Peripheral Nervous System	-0.00257917	40
+noCE	H2_neg_s41	H2	Skin	-0.00515089	74
+noCE	H2_neg_s41	H2	Uterus	-0.00709699	38
+noCE	H2_neg_s53	H1	Biliary Tract	-0.00346852	36
+noCE	H2_neg_s53	H1	Bone	-0.0059061	49
+noCE	H2_neg_s53	H1	Bowel	-0.00126701	81
+noCE	H2_neg_s53	H1	Cervix	-0.00706402	18
+noCE	H2_neg_s53	H1	Esophagus/Stomach	-0.00440889	89
+noCE	H2_neg_s53	H1	Head and Neck	-0.0078502	63
+noCE	H2_neg_s53	H1	Kidney	-0.00263896	32
+noCE	H2_neg_s53	H1	Lung	-0.00532836	123
+noCE	H2_neg_s53	H1	Myeloid	-0.000368336	43
+noCE	H2_neg_s53	H1	Peripheral Nervous System	-0.00612153	40
+noCE	H2_neg_s53	H1	Skin	-0.00575412	74
+noCE	H2_neg_s53	H1	Uterus	-0.00300282	38
+noCE	H2_neg_s53	H2	Biliary Tract	-0.000758907	36
+noCE	H2_neg_s53	H2	Bone	-0.0014604	49
+noCE	H2_neg_s53	H2	Bowel	-0.000717933	81
+noCE	H2_neg_s53	H2	Cervix	-0.00341972	18
+noCE	H2_neg_s53	H2	Esophagus/Stomach	-0.00201146	89
+noCE	H2_neg_s53	H2	Head and Neck	-0.00417157	63
+noCE	H2_neg_s53	H2	Kidney	-0.000344324	32
+noCE	H2_neg_s53	H2	Lung	-0.00142449	123
+noCE	H2_neg_s53	H2	Myeloid	0.00153919	43
+noCE	H2_neg_s53	H2	Peripheral Nervous System	-0.00170797	40
+noCE	H2_neg_s53	H2	Skin	-0.00164113	74
+noCE	H2_neg_s53	H2	Uterus	-0.000301708	38

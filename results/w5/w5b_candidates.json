@@ -1,0 +1,659 @@
+{
+"human1": {
+"76": {
+"curated_rule": "(ENSG00000005075 or ENSG00000186184) and (ENSG00000013503 or ENSG00000047315 or ENSG00000125630) and ENSG00000058600 and (ENSG00000066379 or ENSG00000105258 or ENSG00000161980) and (ENSG00000068654 or ENSG00000148606 or ENSG00000181222) and (ENSG00000083223 or ENSG00000134744 or ENSG00000149016) and (ENSG00000090060 or ENSG00000115421 or ENSG00000164329) and ENSG00000099817 and ENSG00000099821 and ENSG00000100142 and (ENSG00000100413 or ENSG00000168002) and (ENSG00000102978 or ENSG00000171453) and ENSG00000107951 and (ENSG00000113356 or ENSG00000121851) and ENSG00000132664 and ENSG00000137054 and ENSG00000144231 and ENSG00000147669 and ENSG00000163882 and ENSG00000168495 and ENSG00000177700 and ENSG00000186141",
+"reactions": [
+"MAR07161",
+"MAR07162"
+],
+"candidates": [
+{
+"path": [
+13
+],
+"pairs": [
+[
+"ENSG00000113356",
+"ENSG00000121851"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"182": {
+"curated_rule": "ENSG00000023330 or ENSG00000178773",
+"reactions": [
+"MAR03939",
+"MAR04657",
+"MAR04742"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000023330",
+"ENSG00000178773"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"955": {
+"curated_rule": "ENSG00000119723 or ENSG00000130649 or ENSG00000145476",
+"reactions": [
+"MAR01927",
+"MAR02129",
+"MAR02130",
+"MAR02131",
+"MAR02132",
+"MAR02133",
+"MAR02134",
+"MAR02135",
+"MAR02136",
+"MAR02142",
+"MAR02143",
+"MAR02144",
+"MAR02145"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000119723",
+"ENSG00000130649"
+],
+[
+"ENSG00000119723",
+"ENSG00000145476"
+],
+[
+"ENSG00000130649",
+"ENSG00000145476"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"518": {
+"curated_rule": "ENSG00000092621 or ENSG00000134882",
+"reactions": [
+"MAR03839"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000092621",
+"ENSG00000134882"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"574": {
+"curated_rule": "ENSG00000100354 or ENSG00000239900",
+"reactions": [
+"MAR04412",
+"MAR04812"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000100354",
+"ENSG00000239900"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"1339": {
+"curated_rule": "ENSG00000152904 or ENSG00000160752",
+"reactions": [
+"MAR01457",
+"MAR01460",
+"MAR01532"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000152904",
+"ENSG00000160752"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"572": {
+"curated_rule": "ENSG00000100294 or ENSG00000169710",
+"reactions": [
+"MAR02151"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000100294",
+"ENSG00000169710"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"1333": {
+"curated_rule": "ENSG00000152463 or ENSG00000169710",
+"reactions": [
+"MAR02172",
+"MAR02177",
+"MAR02182",
+"MAR02248",
+"MAR02253",
+"MAR02258"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000152463",
+"ENSG00000169710"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"1216": {
+"curated_rule": "ENSG00000139428 or ENSG00000151611",
+"reactions": [
+"MAR08615",
+"MAR08616"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000139428",
+"ENSG00000151611"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"994": {
+"curated_rule": "ENSG00000123453 or ENSG00000179761",
+"reactions": [
+"MAR03849"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000123453",
+"ENSG00000179761"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"1109": {
+"curated_rule": "ENSG00000133116 or ENSG00000169919",
+"reactions": [
+"MAR06492",
+"MAR06496",
+"MAR07235",
+"MAR07505",
+"MAR07529",
+"MAR07546",
+"MAR07562",
+"MAR07571"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000133116",
+"ENSG00000169919"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+}
+},
+"human2": {
+"90": {
+"curated_rule": "(ENSG00000005075 or ENSG00000186184) and (ENSG00000013503 or ENSG00000047315 or ENSG00000125630) and ENSG00000058600 and (ENSG00000066379 or ENSG00000105258 or ENSG00000161980) and (ENSG00000068654 or ENSG00000148606 or ENSG00000181222) and (ENSG00000083223 or ENSG00000134744 or ENSG00000149016) and (ENSG00000090060 or ENSG00000115421 or ENSG00000164329) and ENSG00000099817 and ENSG00000099821 and ENSG00000100142 and (ENSG00000100413 or ENSG00000168002) and (ENSG00000102978 or ENSG00000171453) and ENSG00000107951 and (ENSG00000113356 or ENSG00000121851) and ENSG00000132664 and ENSG00000137054 and ENSG00000144231 and ENSG00000147669 and ENSG00000163882 and ENSG00000168495 and ENSG00000177700 and ENSG00000186141",
+"reactions": [
+"MAR07161",
+"MAR07162"
+],
+"candidates": [
+{
+"path": [
+13
+],
+"pairs": [
+[
+"ENSG00000113356",
+"ENSG00000121851"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"1326": {
+"curated_rule": "ENSG00000138109 or ENSG00000160868",
+"reactions": [
+"MAR20199",
+"MAR20200"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000138109",
+"ENSG00000160868"
+]
+],
+"anchored": true,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"232": {
+"curated_rule": "ENSG00000023330 or ENSG00000178773",
+"reactions": [
+"MAR04657",
+"MAR04742"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000023330",
+"ENSG00000178773"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"23": {
+"curated_rule": "(ENSG00000072506 or ENSG00000138796) and ENSG00000127884 and ENSG00000167315 and ENSG00000196177 and ENSG00000242110",
+"reactions": [
+"MAR06436",
+"MAR06453"
+],
+"candidates": [
+{
+"path": [
+0
+],
+"pairs": [
+[
+"ENSG00000072506",
+"ENSG00000138796"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"607": {
+"curated_rule": "ENSG00000092621 or ENSG00000134882",
+"reactions": [
+"MAR03839"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000092621",
+"ENSG00000134882"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"678": {
+"curated_rule": "ENSG00000100354 or ENSG00000239900",
+"reactions": [
+"MAR04412"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000100354",
+"ENSG00000239900"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"21": {
+"curated_rule": "(ENSG00000072506 or ENSG00000138796) and ENSG00000115361 and ENSG00000127884 and ENSG00000167315 and ENSG00000242110",
+"reactions": [
+"MAR06472",
+"MAR06486"
+],
+"candidates": [
+{
+"path": [
+0
+],
+"pairs": [
+[
+"ENSG00000072506",
+"ENSG00000138796"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"20": {
+"curated_rule": "(ENSG00000072506 or ENSG00000138796) and ENSG00000115361 and ENSG00000127884 and ENSG00000167315",
+"reactions": [
+"MAR06473",
+"MAR06488"
+],
+"candidates": [
+{
+"path": [
+0
+],
+"pairs": [
+[
+"ENSG00000072506",
+"ENSG00000138796"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"185": {
+"curated_rule": "ENSG00000015520 or ENSG00000073060",
+"reactions": [
+"MAR06474"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000015520",
+"ENSG00000073060"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"1482": {
+"curated_rule": "ENSG00000152904 or ENSG00000160752",
+"reactions": [
+"MAR01457",
+"MAR01460",
+"MAR01532"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000152904",
+"ENSG00000160752"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"676": {
+"curated_rule": "ENSG00000100294 or ENSG00000169710",
+"reactions": [
+"MAR02151"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000100294",
+"ENSG00000169710"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"1476": {
+"curated_rule": "ENSG00000152463 or ENSG00000169710",
+"reactions": [
+"MAR02172",
+"MAR02177",
+"MAR02182",
+"MAR02248",
+"MAR02253",
+"MAR02258"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000152463",
+"ENSG00000169710"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"1347": {
+"curated_rule": "ENSG00000139428 or ENSG00000151611",
+"reactions": [
+"MAR08615",
+"MAR08616"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000139428",
+"ENSG00000151611"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"284": {
+"curated_rule": "ENSG00000047457 or ENSG00000163755 or ENSG00000165060 or ENSG00000167996",
+"reactions": [
+"MAR03991"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000047457",
+"ENSG00000163755"
+],
+[
+"ENSG00000047457",
+"ENSG00000165060"
+],
+[
+"ENSG00000047457",
+"ENSG00000167996"
+],
+[
+"ENSG00000163755",
+"ENSG00000165060"
+],
+[
+"ENSG00000163755",
+"ENSG00000167996"
+],
+[
+"ENSG00000165060",
+"ENSG00000167996"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"1290": {
+"curated_rule": "ENSG00000136881 or ENSG00000159445",
+"reactions": [
+"MAR00324",
+"MAR00332",
+"MAR00426",
+"MAR00438"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000136881",
+"ENSG00000159445"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"1733": {
+"curated_rule": "ENSG00000178537 or ENSG00000197208",
+"reactions": [
+"MAR02603",
+"MAR02606",
+"MAR02644",
+"MAR02655",
+"MAR02676",
+"MAR02734",
+"MAR02748",
+"MAR02760"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000178537",
+"ENSG00000197208"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+},
+"1115": {
+"curated_rule": "ENSG00000123453 or ENSG00000179761",
+"reactions": [
+"MAR03849"
+],
+"candidates": [
+{
+"path": [],
+"pairs": [
+[
+"ENSG00000123453",
+"ENSG00000179761"
+]
+],
+"anchored": false,
+"loose": true,
+"coab_ok": false
+}
+]
+}
+}
+}

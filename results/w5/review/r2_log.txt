@@ -1,0 +1,102 @@
+tAP self-test: max |mine - brute| = 2.22e-16; max |mine - metrics.tap| = 2.22e-16
+ label        method     ref  delta_lin    ci_lo    ci_hi  folds_positive  n_folds  n_lines_est  TG_pass
+L_prob       H1_TYMS      H1    0.00069  0.00040  0.00094               9       12          686    False
+L_prob        H1_W5a      H1   -0.02855 -0.02894 -0.02819               0       12          686    False
+L_prob        H2_W5a      H2   -0.02928 -0.02950 -0.02906               0       12          686    False
+L_prob        H1_W5a H1_TYMS   -0.02924 -0.02946 -0.02900               0       12          686    False
+L_prob H1_W5a_noPOLR      H1   -0.00193 -0.00223 -0.00166               1       12          686    False
+L_prob H2_W5a_noPOLR      H2   -0.00299 -0.00308 -0.00289               0       12          686    False
+L_prob H1_author_W5a      H1   -0.02855 -0.02894 -0.02819               0       12          686    False
+L_prob H2_author_W5a      H2   -0.02928 -0.02950 -0.02906               0       12          686    False
+L_ge05       H1_TYMS      H1    0.00041  0.00015  0.00067               8       12          686    False
+L_ge05        H1_W5a      H1   -0.03006 -0.03045 -0.02969               0       12          686    False
+L_ge05        H2_W5a      H2   -0.03044 -0.03068 -0.03020               0       12          686    False
+L_ge05        H1_W5a H1_TYMS   -0.03047 -0.03071 -0.03022               0       12          686    False
+L_ge05 H1_W5a_noPOLR      H1   -0.00233 -0.00262 -0.00207               0       12          686    False
+L_ge05 H2_W5a_noPOLR      H2   -0.00309 -0.00318 -0.00299               0       12          686    False
+L_ge05 H1_author_W5a      H1   -0.03006 -0.03045 -0.02969               0       12          686    False
+L_ge05 H2_author_W5a      H2   -0.03044 -0.03068 -0.03020               0       12          686    False
+{
+ "H1_TYMS_full_vs_author_ratio_base_maxabs": 0.0,
+ "H1_TYMS_genes_changed_vs_released": [
+  "ACAA2",
+  "ATP5F1A",
+  "ATP5F1B",
+  "ATP5F1C",
+  "ATP5F1D",
+  "ATP5F1E",
+  "ATP5F1EP2",
+  "ATP5MC1",
+  "ATP5MC2",
+  "ATP5MC3",
+  "ATP5ME",
+  "ATP5MF",
+  "ATP5MG",
+  "ATP5MGL",
+  "ATP5MJ",
+  "ATP5MK",
+  "ATP5PB",
+  "ATP5PD",
+  "ATP5PF",
+  "ATP5PO",
+  "COX5A",
+  "COX5B",
+  "COX6C",
+  "COX7B",
+  "COX7B2",
+  "COX7C",
+  "COX8A",
+  "CRAT",
+  "CYC1",
+  "DHODH",
+  "DLD",
+  "DLST",
+  "DPYD",
+  "DPYS",
+  "GUK1",
+  "HADH",
+  "HADHA",
+  "HADHB",
+  "HSD17B10",
+  "KDSR",
+  "MECR",
+  "MMUT",
+  "MT-ATP6",
+  "MT-ATP8",
+  "MT-CO1",
+  "MT-CO2",
+  "MT-CO3",
+  "MT-CYB",
+  "NDUFA4",
+  "PCYT2",
+  "PISD",
+  "SC5D",
+  "SDHA",
+  "SDHB",
+  "SDHC",
+  "SDHD",
+  "SLC22A5",
+  "SLC29A2",
+  "SPTLC1",
+  "SPTLC2",
+  "SPTLC3",
+  "SUCLG1",
+  "TYMP",
+  "TYMS",
+  "UMPS",
+  "UPB1",
+  "UQCR10",
+  "UQCR11",
+  "UQCRB",
+  "UQCRC1",
+  "UQCRC2",
+  "UQCRFS1",
+  "UQCRH",
+  "UQCRQ"
+ ],
+ "H1_W5a_vs_author_maxabs": 0.0,
+ "H1_W5a_vs_author_score_maxabs_U": 0.0,
+ "H2_generic_glpk_vs_baseline_maxabs_affected": 0.0,
+ "H2_W5a_vs_author_maxabs": 0.0,
+ "H2_W5a_vs_author_score_maxabs_U": 0.0
+}

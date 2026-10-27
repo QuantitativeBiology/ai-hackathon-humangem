@@ -1,0 +1,41 @@
+{
+ "design": "DESIGN \u00a79 W5 Ablation: 2 x 2 on identical gene x line sets; broken down by edit class",
+ "arms": [
+  {
+   "gpr": "generic_gpr",
+   "constraints": "generic_constraints"
+  },
+  {
+   "gpr": "curated_gpr",
+   "constraints": "generic_constraints"
+  },
+  {
+   "gpr": "generic_gpr",
+   "constraints": "best_constraints"
+  },
+  {
+   "gpr": "curated_gpr",
+   "constraints": "best_constraints"
+  }
+ ],
+ "curated_gpr": {
+  "H2": "results/w5/curated_W5a_human2.tsv",
+  "H1": "results/w5/curated_W5a_human1.tsv (+ MAR04644 irreversible)"
+ },
+ "apply_rule": "curated trees substituted for reactions present in the extracted model; reactions removed by extraction stay removed; no re-extraction (P1-only sensitivity: re-extract with curated scores)",
+ "edit_class_breakdown": [
+  "RMBRANCH (pan-cancer absent)",
+  "AND2OR (paralogs, no shared complex)",
+  "OR2AND",
+  "TYMS (H1)"
+ ],
+ "constraint_arm": "stub: constraint arm of the W5 2x2 factorial: awaiting the W2/W3/W4 shortlists (DESIGN \u00a710.1)",
+ "check_generic_row": {
+  "parent": "human1",
+  "max_abs_diff_vs_W5a_arm": 0.0,
+  "n_differ": 0,
+  "n_genes": 2887
+ },
+ "wall_s": 68.8,
+ "cpu_s_self": 68.7
+}

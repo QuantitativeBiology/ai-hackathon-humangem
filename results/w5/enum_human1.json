@@ -1,0 +1,36 @@
+{
+ "parent": "human1",
+ "curation_base": "MAR04644 irreversible (0,1000)",
+ "engine_check_vs_baseline": {
+  "max_abs_diff_vs_baseline": 0.0,
+  "n_differ": 0,
+  "n_genes": 2887
+ },
+ "wt_growth_base": 65.41247796970924,
+ "n_reactions_with_gpr": 8043,
+ "n_gpr_groups": 1726,
+ "n_edits": 8307,
+ "n_edits_by_kind": {
+  "RMBRANCH": 3946,
+  "AND2OR": 3527,
+  "OR2AND": 834
+ },
+ "n_edit_gene_rows_changed_closure": 10448,
+ "n_unique_lps_solved": 523,
+ "n_flip_rows": 2154,
+ "n_groups_with_flip": 51,
+ "n_targets": 92,
+ "target_reactions": 1064,
+ "cut_key_at_rank_200": [
+  0,
+  0,
+  0
+ ],
+ "n_groups_tied_with_cut": 1634,
+ "n_groups_with_any_ratio_change": 92,
+ "n_base_lethal": 151,
+ "protected_unresolved_symbols": [],
+ "workers": 6,
+ "wall_s": 148.2,
+ "cpu_s_self": 130.7
+}

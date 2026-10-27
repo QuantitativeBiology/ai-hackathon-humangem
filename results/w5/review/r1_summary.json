@@ -1,0 +1,14 @@
+{
+ "H2_edited_reactions": 341,
+ "H2_closure_mismatches_vs_author": 0,
+ "H2_n_lp": 29,
+ "H2_wt": 74.75676660379047,
+ "H1_edited_reactions": 405,
+ "H1_closure_mismatches_vs_author": 0,
+ "H1_n_lp": 209,
+ "H1_wt": 65.41247796970924,
+ "n_edits_evidence_ok": 93,
+ "n_edits": 98,
+ "wall_s": 120.8,
+ "cpu_s": 120.8
+}

@@ -174,3 +174,15 @@ def test_canonical_split_exempt_but_copies_and_test_keyed_results_flagged(tmp_pa
     shutil.copy(other / "split_copy.tsv", sp / "lineage_split.tsv")
     (sp / "split_meta.json").write_text(json.dumps({"split_sha256": "0" * 64}))
     assert "test-keyed" in scan_hits().get("lineage_split.tsv", "")
+
+
+def test_small_integer_columns_are_not_bare_modelids():
+    """Guard changelog 2026-10-27: a 2-row table whose integer 'group'/'rank' columns happen to equal known
+    bare ModelIDs must not be read as ModelID-keyed; a long unique integer column still is."""
+    import pandas as pd
+
+    from nextgem import scan
+
+    known = {f"ACH-{i:06d}" for i in range(1, 2000)}
+    assert not scan._is_mid_col(pd.Series([76, 612]), known)
+    assert scan._is_mid_col(pd.Series(list(range(100, 140))), known)

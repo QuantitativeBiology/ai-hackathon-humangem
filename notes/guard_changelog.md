@@ -5,3 +5,4 @@ Guard-internal changes to frozen code are logged here instead of as DESIGN.md §
 | Date | Files | Change | Why | Frozen label/metric/split/list SHAs unchanged? |
 |---|---|---|---|---|
 | 2026-10-27 | tests/test_gurobi_pool.py | Two pre-review WIP tests renamed and strengthened: test_env_override → test_size_is_global_not_per_caller; test_slot_blocks_other_process → test_slot_blocks_other_process_and_crash_releases. Retired in results/test_retirements.tsv under A6. | M3 W4 review fixes (global pool size, crash release) | yes |
+| 2026-10-27 | src/nextgem/scan.py, tests/test_scanner.py | The bare-integer ModelID heuristic (IDs that lost their zero padding) now needs ≥ 10 rows (MIN_BARE_INT_ROWS). New test test_small_integer_columns_are_not_bare_modelids. | False positive: a 2-row W5 diagnostic table (results/w5/blocked_W5a_pid30_human1.tsv) with integer group/rank columns 76, 612 was read as test ModelIDs ACH-000076/ACH-000612; the file has no ModelIDs. | yes |

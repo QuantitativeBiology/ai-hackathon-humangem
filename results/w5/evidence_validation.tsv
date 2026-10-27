@@ -1,0 +1,539 @@
+edit_id	evidence_id	ok	check
+W5a_H1_001	NOT_DETECTED_PROCAN:Q9NRJ5	True	accession absent from ProCan matrix
+W5a_H1_001	NOT_DETECTED_NUSINOW:Q9NRJ5	True	accession absent from Nusinow
+W5a_H1_001	DEPMAP26Q3_EXPR_TPMlt1:56903	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_002	ENSEMBL116_PARALOG:ENSG00000005075|ENSG00000186184	True	pair row in Ensembl 116 paralog file
+W5a_H1_002	NO_SHARED_COMPLEX:ENSG00000005075|ENSG00000186184	True	no CORUM/CPX complex lists both
+W5a_H1_003	ENSEMBL116_PARALOG:ENSG00000013503|ENSG00000047315	True	pair row in Ensembl 116 paralog file
+W5a_H1_003	NO_SHARED_COMPLEX:ENSG00000013503|ENSG00000047315	True	no CORUM/CPX complex lists both
+W5a_H1_003	ENSEMBL116_PARALOG:ENSG00000013503|ENSG00000125630	True	pair row in Ensembl 116 paralog file
+W5a_H1_003	NO_SHARED_COMPLEX:ENSG00000013503|ENSG00000125630	True	no CORUM/CPX complex lists both
+W5a_H1_003	ENSEMBL116_PARALOG:ENSG00000047315|ENSG00000125630	True	pair row in Ensembl 116 paralog file
+W5a_H1_003	NO_SHARED_COMPLEX:ENSG00000047315|ENSG00000125630	True	no CORUM/CPX complex lists both
+W5a_H1_004	ENSEMBL116_PARALOG:ENSG00000066379|ENSG00000105258	True	pair row in Ensembl 116 paralog file
+W5a_H1_004	NO_SHARED_COMPLEX:ENSG00000066379|ENSG00000105258	True	no CORUM/CPX complex lists both
+W5a_H1_004	ENSEMBL116_PARALOG:ENSG00000066379|ENSG00000161980	True	pair row in Ensembl 116 paralog file
+W5a_H1_004	NO_SHARED_COMPLEX:ENSG00000066379|ENSG00000161980	True	no CORUM/CPX complex lists both
+W5a_H1_004	ENSEMBL116_PARALOG:ENSG00000105258|ENSG00000161980	True	pair row in Ensembl 116 paralog file
+W5a_H1_004	NO_SHARED_COMPLEX:ENSG00000105258|ENSG00000161980	True	no CORUM/CPX complex lists both
+W5a_H1_005	ENSEMBL116_PARALOG:ENSG00000068654|ENSG00000148606	True	pair row in Ensembl 116 paralog file
+W5a_H1_005	NO_SHARED_COMPLEX:ENSG00000068654|ENSG00000148606	True	no CORUM/CPX complex lists both
+W5a_H1_005	ENSEMBL116_PARALOG:ENSG00000068654|ENSG00000181222	True	pair row in Ensembl 116 paralog file
+W5a_H1_005	NO_SHARED_COMPLEX:ENSG00000068654|ENSG00000181222	True	no CORUM/CPX complex lists both
+W5a_H1_005	ENSEMBL116_PARALOG:ENSG00000148606|ENSG00000181222	True	pair row in Ensembl 116 paralog file
+W5a_H1_005	NO_SHARED_COMPLEX:ENSG00000148606|ENSG00000181222	True	no CORUM/CPX complex lists both
+W5a_H1_006	ENSEMBL116_PARALOG:ENSG00000100413|ENSG00000168002	True	pair row in Ensembl 116 paralog file
+W5a_H1_006	NO_SHARED_COMPLEX:ENSG00000100413|ENSG00000168002	True	no CORUM/CPX complex lists both
+W5a_H1_007	ENSEMBL116_PARALOG:ENSG00000102978|ENSG00000171453	True	pair row in Ensembl 116 paralog file
+W5a_H1_007	NO_SHARED_COMPLEX:ENSG00000102978|ENSG00000171453	True	no CORUM/CPX complex lists both
+W5a_H1_008	NOT_DETECTED_PROCAN:Q9HB55	True	accession absent from ProCan matrix
+W5a_H1_008	NOT_DETECTED_NUSINOW:Q9HB55	True	accession absent from Nusinow
+W5a_H1_008	DEPMAP26Q3_EXPR_TPMlt1:64816	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_009	NOT_DETECTED_PROCAN:P10632	True	accession absent from ProCan matrix
+W5a_H1_009	NOT_DETECTED_NUSINOW:P10632	True	accession absent from Nusinow
+W5a_H1_009	DEPMAP26Q3_EXPR_TPMlt1:1558	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_010	NOT_DETECTED_PROCAN:P05177	True	accession absent from ProCan matrix
+W5a_H1_010	NOT_DETECTED_NUSINOW:P05177	True	accession absent from Nusinow
+W5a_H1_010	DEPMAP26Q3_EXPR_TPMlt1:1544	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_011	NOT_DETECTED_PROCAN:P33261	True	accession absent from ProCan matrix
+W5a_H1_011	NOT_DETECTED_NUSINOW:P33261	True	accession absent from Nusinow
+W5a_H1_011	DEPMAP26Q3_EXPR_TPMlt1:1557	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_012	NOT_DETECTED_PROCAN:Q86W10	True	accession absent from ProCan matrix
+W5a_H1_012	NOT_DETECTED_NUSINOW:Q86W10	True	accession absent from Nusinow
+W5a_H1_012	DEPMAP26Q3_EXPR_TPMlt1:199974	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_013	NOT_DETECTED_PROCAN:P24903	True	accession absent from ProCan matrix
+W5a_H1_013	NOT_DETECTED_NUSINOW:P24903	True	accession absent from Nusinow
+W5a_H1_013	DEPMAP26Q3_EXPR_TPMlt1:1572	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_014	NOT_DETECTED_PROCAN:Q16696	True	accession absent from ProCan matrix
+W5a_H1_014	NOT_DETECTED_NUSINOW:Q16696	True	accession absent from Nusinow
+W5a_H1_014	DEPMAP26Q3_EXPR_TPMlt1:1553	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_015	NOT_DETECTED_PROCAN:P20853	True	accession absent from ProCan matrix
+W5a_H1_015	NOT_DETECTED_NUSINOW:P20853	True	accession absent from Nusinow
+W5a_H1_015	DEPMAP26Q3_EXPR_TPMlt1:1549	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_016	NOT_DETECTED_PROCAN:P11509	True	accession absent from ProCan matrix
+W5a_H1_016	NOT_DETECTED_NUSINOW:P11509	True	accession absent from Nusinow
+W5a_H1_016	DEPMAP26Q3_EXPR_TPMlt1:1548	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_017	NOT_DETECTED_PROCAN:P36537	True	accession absent from ProCan matrix
+W5a_H1_017	NOT_DETECTED_NUSINOW:P36537	True	accession absent from Nusinow
+W5a_H1_017	DEPMAP26Q3_EXPR_TPMlt1:7365	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_018	NOT_DETECTED_PROCAN:Q9BY64	True	accession absent from ProCan matrix
+W5a_H1_018	NOT_DETECTED_NUSINOW:Q9BY64	True	accession absent from Nusinow
+W5a_H1_018	DEPMAP26Q3_EXPR_TPMlt1:54490	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_019	NOT_DETECTED_PROCAN:Q6NUS8	True	accession absent from ProCan matrix
+W5a_H1_019	NOT_DETECTED_NUSINOW:Q6NUS8	True	accession absent from Nusinow
+W5a_H1_019	DEPMAP26Q3_EXPR_TPMlt1:133688	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_020	NOT_DETECTED_PROCAN:P0DTE4	True	accession absent from ProCan matrix
+W5a_H1_020	NOT_DETECTED_NUSINOW:P0DTE4	True	accession absent from Nusinow
+W5a_H1_020	DEPMAP26Q3_EXPR_TPMlt1:10941	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_021	NOT_DETECTED_PROCAN:P10745	True	accession absent from ProCan matrix
+W5a_H1_021	NOT_DETECTED_NUSINOW:P10745	True	accession absent from Nusinow
+W5a_H1_021	DEPMAP26Q3_EXPR_TPMlt1:5949	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_022	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file
+W5a_H1_022	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both
+W5a_H1_023	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file
+W5a_H1_023	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both
+W5a_H1_024	ENSEMBL116_PARALOG:ENSG00000140612|ENSG00000166562	True	pair row in Ensembl 116 paralog file
+W5a_H1_024	NO_SHARED_COMPLEX:ENSG00000140612|ENSG00000166562	True	no CORUM/CPX complex lists both
+W5a_H1_025	NOT_DETECTED_PROCAN:P22557	True	accession absent from ProCan matrix
+W5a_H1_025	NOT_DETECTED_NUSINOW:P22557	True	accession absent from Nusinow
+W5a_H1_025	DEPMAP26Q3_EXPR_TPMlt1:212	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_026	NOT_DETECTED_PROCAN:Q9BXS1	True	accession absent from ProCan matrix
+W5a_H1_026	NOT_DETECTED_NUSINOW:Q9BXS1	True	accession absent from Nusinow
+W5a_H1_026	DEPMAP26Q3_EXPR_TPMlt1:91734	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_027	NOT_DETECTED_PROCAN:Q9Y5L5	True	accession absent from ProCan matrix
+W5a_H1_027	NOT_DETECTED_NUSINOW:Q9Y5L5	True	accession absent from Nusinow
+W5a_H1_027	DEPMAP26Q3_EXPR_TPMlt1:55891	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_028	NOT_DETECTED_PROCAN:P22680	True	accession absent from ProCan matrix
+W5a_H1_028	NOT_DETECTED_NUSINOW:P22680	True	accession absent from Nusinow
+W5a_H1_028	DEPMAP26Q3_EXPR_TPMlt1:1581	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_029	NOT_DETECTED_PROCAN:Q5HYJ1	True	accession absent from ProCan matrix
+W5a_H1_029	NOT_DETECTED_NUSINOW:Q5HYJ1	True	accession absent from Nusinow
+W5a_H1_029	DEPMAP26Q3_EXPR_TPMlt1:253017	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_030	ENSEMBL116_PARALOG:ENSG00000131174|ENSG00000170516	True	pair row in Ensembl 116 paralog file
+W5a_H1_030	NO_SHARED_COMPLEX:ENSG00000131174|ENSG00000170516	True	no CORUM/CPX complex lists both
+W5a_H1_031	NOT_DETECTED_PROCAN:P14920	True	accession absent from ProCan matrix
+W5a_H1_031	NOT_DETECTED_NUSINOW:P14920	True	accession absent from Nusinow
+W5a_H1_031	DEPMAP26Q3_EXPR_TPMlt1:1610	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_032	NOT_DETECTED_PROCAN:Q5FVE4	True	accession absent from ProCan matrix
+W5a_H1_032	NOT_DETECTED_NUSINOW:Q5FVE4	True	accession absent from Nusinow
+W5a_H1_032	DEPMAP26Q3_EXPR_TPMlt1:81616	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_033	NOT_DETECTED_PROCAN:Q5FVE4	True	accession absent from ProCan matrix
+W5a_H1_033	NOT_DETECTED_NUSINOW:Q5FVE4	True	accession absent from Nusinow
+W5a_H1_033	DEPMAP26Q3_EXPR_TPMlt1:81616	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_034	NOT_DETECTED_PROCAN:Q8TDN7	True	accession absent from ProCan matrix
+W5a_H1_034	NOT_DETECTED_NUSINOW:Q8TDN7	True	accession absent from Nusinow
+W5a_H1_034	DEPMAP26Q3_EXPR_TPMlt1:125981	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_035	NOT_DETECTED_PROCAN:Q3I5F7	True	accession absent from ProCan matrix
+W5a_H1_035	NOT_DETECTED_NUSINOW:Q3I5F7	True	accession absent from Nusinow
+W5a_H1_035	DEPMAP26Q3_EXPR_TPMlt1:641372	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_036	NOT_DETECTED_PROCAN:Q3I5F7	True	accession absent from ProCan matrix
+W5a_H1_036	NOT_DETECTED_NUSINOW:Q3I5F7	True	accession absent from Nusinow
+W5a_H1_036	DEPMAP26Q3_EXPR_TPMlt1:641372	True	Entrez column in DepMap 26Q3 expression
+W5a_H1_037	ENSEMBL116_PARALOG:ENSG00000084754|ENSG00000138796	True	pair row in Ensembl 116 paralog file
+W5a_H1_037	NO_SHARED_COMPLEX:ENSG00000084754|ENSG00000138796	True	no CORUM/CPX complex lists both
+W5a_H1_038	ENSEMBL116_PARALOG:ENSG00000138029|ENSG00000167315	True	pair row in Ensembl 116 paralog file
+W5a_H1_038	NO_SHARED_COMPLEX:ENSG00000138029|ENSG00000167315	True	no CORUM/CPX complex lists both
+W5a_H2_001	NOT_DETECTED_PROCAN:Q9NRJ5	True	accession absent from ProCan matrix
+W5a_H2_001	NOT_DETECTED_NUSINOW:Q9NRJ5	True	accession absent from Nusinow
+W5a_H2_001	DEPMAP26Q3_EXPR_TPMlt1:56903	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_002	ENSEMBL116_PARALOG:ENSG00000005075|ENSG00000186184	True	pair row in Ensembl 116 paralog file
+W5a_H2_002	NO_SHARED_COMPLEX:ENSG00000005075|ENSG00000186184	True	no CORUM/CPX complex lists both
+W5a_H2_003	ENSEMBL116_PARALOG:ENSG00000013503|ENSG00000047315	True	pair row in Ensembl 116 paralog file
+W5a_H2_003	NO_SHARED_COMPLEX:ENSG00000013503|ENSG00000047315	True	no CORUM/CPX complex lists both
+W5a_H2_003	ENSEMBL116_PARALOG:ENSG00000013503|ENSG00000125630	True	pair row in Ensembl 116 paralog file
+W5a_H2_003	NO_SHARED_COMPLEX:ENSG00000013503|ENSG00000125630	True	no CORUM/CPX complex lists both
+W5a_H2_003	ENSEMBL116_PARALOG:ENSG00000047315|ENSG00000125630	True	pair row in Ensembl 116 paralog file
+W5a_H2_003	NO_SHARED_COMPLEX:ENSG00000047315|ENSG00000125630	True	no CORUM/CPX complex lists both
+W5a_H2_004	ENSEMBL116_PARALOG:ENSG00000066379|ENSG00000105258	True	pair row in Ensembl 116 paralog file
+W5a_H2_004	NO_SHARED_COMPLEX:ENSG00000066379|ENSG00000105258	True	no CORUM/CPX complex lists both
+W5a_H2_004	ENSEMBL116_PARALOG:ENSG00000066379|ENSG00000161980	True	pair row in Ensembl 116 paralog file
+W5a_H2_004	NO_SHARED_COMPLEX:ENSG00000066379|ENSG00000161980	True	no CORUM/CPX complex lists both
+W5a_H2_004	ENSEMBL116_PARALOG:ENSG00000105258|ENSG00000161980	True	pair row in Ensembl 116 paralog file
+W5a_H2_004	NO_SHARED_COMPLEX:ENSG00000105258|ENSG00000161980	True	no CORUM/CPX complex lists both
+W5a_H2_005	ENSEMBL116_PARALOG:ENSG00000068654|ENSG00000148606	True	pair row in Ensembl 116 paralog file
+W5a_H2_005	NO_SHARED_COMPLEX:ENSG00000068654|ENSG00000148606	True	no CORUM/CPX complex lists both
+W5a_H2_005	ENSEMBL116_PARALOG:ENSG00000068654|ENSG00000181222	True	pair row in Ensembl 116 paralog file
+W5a_H2_005	NO_SHARED_COMPLEX:ENSG00000068654|ENSG00000181222	True	no CORUM/CPX complex lists both
+W5a_H2_005	ENSEMBL116_PARALOG:ENSG00000148606|ENSG00000181222	True	pair row in Ensembl 116 paralog file
+W5a_H2_005	NO_SHARED_COMPLEX:ENSG00000148606|ENSG00000181222	True	no CORUM/CPX complex lists both
+W5a_H2_006	ENSEMBL116_PARALOG:ENSG00000100413|ENSG00000168002	True	pair row in Ensembl 116 paralog file
+W5a_H2_006	NO_SHARED_COMPLEX:ENSG00000100413|ENSG00000168002	True	no CORUM/CPX complex lists both
+W5a_H2_007	ENSEMBL116_PARALOG:ENSG00000102978|ENSG00000171453	True	pair row in Ensembl 116 paralog file
+W5a_H2_007	NO_SHARED_COMPLEX:ENSG00000102978|ENSG00000171453	True	no CORUM/CPX complex lists both
+W5a_H2_008	NOT_DETECTED_PROCAN:Q9HB55	True	accession absent from ProCan matrix
+W5a_H2_008	NOT_DETECTED_NUSINOW:Q9HB55	True	accession absent from Nusinow
+W5a_H2_008	DEPMAP26Q3_EXPR_TPMlt1:64816	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_009	NOT_DETECTED_PROCAN:P10632	True	accession absent from ProCan matrix
+W5a_H2_009	NOT_DETECTED_NUSINOW:P10632	True	accession absent from Nusinow
+W5a_H2_009	DEPMAP26Q3_EXPR_TPMlt1:1558	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_010	NOT_DETECTED_PROCAN:P05177	True	accession absent from ProCan matrix
+W5a_H2_010	NOT_DETECTED_NUSINOW:P05177	True	accession absent from Nusinow
+W5a_H2_010	DEPMAP26Q3_EXPR_TPMlt1:1544	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_011	NOT_DETECTED_PROCAN:P33261	True	accession absent from ProCan matrix
+W5a_H2_011	NOT_DETECTED_NUSINOW:P33261	True	accession absent from Nusinow
+W5a_H2_011	DEPMAP26Q3_EXPR_TPMlt1:1557	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_012	NOT_DETECTED_PROCAN:Q86W10	True	accession absent from ProCan matrix
+W5a_H2_012	NOT_DETECTED_NUSINOW:Q86W10	True	accession absent from Nusinow
+W5a_H2_012	DEPMAP26Q3_EXPR_TPMlt1:199974	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_013	NOT_DETECTED_PROCAN:P24903	True	accession absent from ProCan matrix
+W5a_H2_013	NOT_DETECTED_NUSINOW:P24903	True	accession absent from Nusinow
+W5a_H2_013	DEPMAP26Q3_EXPR_TPMlt1:1572	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_014	NOT_DETECTED_PROCAN:Q16696	True	accession absent from ProCan matrix
+W5a_H2_014	NOT_DETECTED_NUSINOW:Q16696	True	accession absent from Nusinow
+W5a_H2_014	DEPMAP26Q3_EXPR_TPMlt1:1553	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_015	NOT_DETECTED_PROCAN:P20853	True	accession absent from ProCan matrix
+W5a_H2_015	NOT_DETECTED_NUSINOW:P20853	True	accession absent from Nusinow
+W5a_H2_015	DEPMAP26Q3_EXPR_TPMlt1:1549	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_016	NOT_DETECTED_PROCAN:P11509	True	accession absent from ProCan matrix
+W5a_H2_016	NOT_DETECTED_NUSINOW:P11509	True	accession absent from Nusinow
+W5a_H2_016	DEPMAP26Q3_EXPR_TPMlt1:1548	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_017	NOT_DETECTED_PROCAN:Q9HB55	True	accession absent from ProCan matrix
+W5a_H2_017	NOT_DETECTED_NUSINOW:Q9HB55	True	accession absent from Nusinow
+W5a_H2_017	DEPMAP26Q3_EXPR_TPMlt1:64816	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_018	NOT_DETECTED_PROCAN:P10632	True	accession absent from ProCan matrix
+W5a_H2_018	NOT_DETECTED_NUSINOW:P10632	True	accession absent from Nusinow
+W5a_H2_018	DEPMAP26Q3_EXPR_TPMlt1:1558	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_019	NOT_DETECTED_PROCAN:P05177	True	accession absent from ProCan matrix
+W5a_H2_019	NOT_DETECTED_NUSINOW:P05177	True	accession absent from Nusinow
+W5a_H2_019	DEPMAP26Q3_EXPR_TPMlt1:1544	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_020	NOT_DETECTED_PROCAN:P33261	True	accession absent from ProCan matrix
+W5a_H2_020	NOT_DETECTED_NUSINOW:P33261	True	accession absent from Nusinow
+W5a_H2_020	DEPMAP26Q3_EXPR_TPMlt1:1557	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_021	NOT_DETECTED_PROCAN:Q86W10	True	accession absent from ProCan matrix
+W5a_H2_021	NOT_DETECTED_NUSINOW:Q86W10	True	accession absent from Nusinow
+W5a_H2_021	DEPMAP26Q3_EXPR_TPMlt1:199974	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_022	NOT_DETECTED_PROCAN:P24903	True	accession absent from ProCan matrix
+W5a_H2_022	NOT_DETECTED_NUSINOW:P24903	True	accession absent from Nusinow
+W5a_H2_022	DEPMAP26Q3_EXPR_TPMlt1:1572	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_023	NOT_DETECTED_PROCAN:Q16696	True	accession absent from ProCan matrix
+W5a_H2_023	NOT_DETECTED_NUSINOW:Q16696	True	accession absent from Nusinow
+W5a_H2_023	DEPMAP26Q3_EXPR_TPMlt1:1553	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_024	NOT_DETECTED_PROCAN:P20853	True	accession absent from ProCan matrix
+W5a_H2_024	NOT_DETECTED_NUSINOW:P20853	True	accession absent from Nusinow
+W5a_H2_024	DEPMAP26Q3_EXPR_TPMlt1:1549	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_025	NOT_DETECTED_PROCAN:P11509	True	accession absent from ProCan matrix
+W5a_H2_025	NOT_DETECTED_NUSINOW:P11509	True	accession absent from Nusinow
+W5a_H2_025	DEPMAP26Q3_EXPR_TPMlt1:1548	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_026	NOT_DETECTED_PROCAN:P36537	True	accession absent from ProCan matrix
+W5a_H2_026	NOT_DETECTED_NUSINOW:P36537	True	accession absent from Nusinow
+W5a_H2_026	DEPMAP26Q3_EXPR_TPMlt1:7365	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_027	NOT_DETECTED_PROCAN:Q9BY64	True	accession absent from ProCan matrix
+W5a_H2_027	NOT_DETECTED_NUSINOW:Q9BY64	True	accession absent from Nusinow
+W5a_H2_027	DEPMAP26Q3_EXPR_TPMlt1:54490	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_028	NOT_DETECTED_PROCAN:Q6NUS8	True	accession absent from ProCan matrix
+W5a_H2_028	NOT_DETECTED_NUSINOW:Q6NUS8	True	accession absent from Nusinow
+W5a_H2_028	DEPMAP26Q3_EXPR_TPMlt1:133688	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_029	NOT_DETECTED_PROCAN:P0DTE4	True	accession absent from ProCan matrix
+W5a_H2_029	NOT_DETECTED_NUSINOW:P0DTE4	True	accession absent from Nusinow
+W5a_H2_029	DEPMAP26Q3_EXPR_TPMlt1:10941	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_030	NOT_DETECTED_PROCAN:P10632	True	accession absent from ProCan matrix
+W5a_H2_030	NOT_DETECTED_NUSINOW:P10632	True	accession absent from Nusinow
+W5a_H2_030	DEPMAP26Q3_EXPR_TPMlt1:1558	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_031	NOT_DETECTED_PROCAN:P33261	True	accession absent from ProCan matrix
+W5a_H2_031	NOT_DETECTED_NUSINOW:P33261	True	accession absent from Nusinow
+W5a_H2_031	DEPMAP26Q3_EXPR_TPMlt1:1557	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_032	NOT_DETECTED_PROCAN:Q6V0L0	True	accession absent from ProCan matrix
+W5a_H2_032	NOT_DETECTED_NUSINOW:Q6V0L0	True	accession absent from Nusinow
+W5a_H2_032	DEPMAP26Q3_EXPR_TPMlt1:340665	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_033	NOT_DETECTED_PROCAN:P10745	True	accession absent from ProCan matrix
+W5a_H2_033	NOT_DETECTED_NUSINOW:P10745	True	accession absent from Nusinow
+W5a_H2_033	DEPMAP26Q3_EXPR_TPMlt1:5949	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_034	NOT_DETECTED_PROCAN:P10632	True	accession absent from ProCan matrix
+W5a_H2_034	NOT_DETECTED_NUSINOW:P10632	True	accession absent from Nusinow
+W5a_H2_034	DEPMAP26Q3_EXPR_TPMlt1:1558	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_035	NOT_DETECTED_PROCAN:P33261	True	accession absent from ProCan matrix
+W5a_H2_035	NOT_DETECTED_NUSINOW:P33261	True	accession absent from Nusinow
+W5a_H2_035	DEPMAP26Q3_EXPR_TPMlt1:1557	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_036	NOT_DETECTED_PROCAN:P10632	True	accession absent from ProCan matrix
+W5a_H2_036	NOT_DETECTED_NUSINOW:P10632	True	accession absent from Nusinow
+W5a_H2_036	DEPMAP26Q3_EXPR_TPMlt1:1558	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_037	NOT_DETECTED_PROCAN:Q6V0L0	True	accession absent from ProCan matrix
+W5a_H2_037	NOT_DETECTED_NUSINOW:Q6V0L0	True	accession absent from Nusinow
+W5a_H2_037	DEPMAP26Q3_EXPR_TPMlt1:340665	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_038	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file
+W5a_H2_038	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both
+W5a_H2_039	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file
+W5a_H2_039	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both
+W5a_H2_040	ENSEMBL116_PARALOG:ENSG00000140612|ENSG00000166562	True	pair row in Ensembl 116 paralog file
+W5a_H2_040	NO_SHARED_COMPLEX:ENSG00000140612|ENSG00000166562	True	no CORUM/CPX complex lists both
+W5a_H2_041	NOT_DETECTED_PROCAN:P10632	True	accession absent from ProCan matrix
+W5a_H2_041	NOT_DETECTED_NUSINOW:P10632	True	accession absent from Nusinow
+W5a_H2_041	DEPMAP26Q3_EXPR_TPMlt1:1558	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_042	NOT_DETECTED_PROCAN:Q6V0L0	True	accession absent from ProCan matrix
+W5a_H2_042	NOT_DETECTED_NUSINOW:Q6V0L0	True	accession absent from Nusinow
+W5a_H2_042	DEPMAP26Q3_EXPR_TPMlt1:340665	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_043	NOT_DETECTED_PROCAN:P22557	True	accession absent from ProCan matrix
+W5a_H2_043	NOT_DETECTED_NUSINOW:P22557	True	accession absent from Nusinow
+W5a_H2_043	DEPMAP26Q3_EXPR_TPMlt1:212	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_044	NOT_DETECTED_PROCAN:Q9BXS1	True	accession absent from ProCan matrix
+W5a_H2_044	NOT_DETECTED_NUSINOW:Q9BXS1	True	accession absent from Nusinow
+W5a_H2_044	DEPMAP26Q3_EXPR_TPMlt1:91734	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_045	NOT_DETECTED_PROCAN:Q9Y5L5	True	accession absent from ProCan matrix
+W5a_H2_045	NOT_DETECTED_NUSINOW:Q9Y5L5	True	accession absent from Nusinow
+W5a_H2_045	DEPMAP26Q3_EXPR_TPMlt1:55891	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_046	NOT_DETECTED_PROCAN:P22680	True	accession absent from ProCan matrix
+W5a_H2_046	NOT_DETECTED_NUSINOW:P22680	True	accession absent from Nusinow
+W5a_H2_046	DEPMAP26Q3_EXPR_TPMlt1:1581	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_047	NOT_DETECTED_PROCAN:Q5HYJ1	True	accession absent from ProCan matrix
+W5a_H2_047	NOT_DETECTED_NUSINOW:Q5HYJ1	True	accession absent from Nusinow
+W5a_H2_047	DEPMAP26Q3_EXPR_TPMlt1:253017	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_048	NOT_DETECTED_PROCAN:Q6V0L0	True	accession absent from ProCan matrix
+W5a_H2_048	NOT_DETECTED_NUSINOW:Q6V0L0	True	accession absent from Nusinow
+W5a_H2_048	DEPMAP26Q3_EXPR_TPMlt1:340665	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_049	NOT_DETECTED_PROCAN:Q6V0L0	True	accession absent from ProCan matrix
+W5a_H2_049	NOT_DETECTED_NUSINOW:Q6V0L0	True	accession absent from Nusinow
+W5a_H2_049	DEPMAP26Q3_EXPR_TPMlt1:340665	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_050	ENSEMBL116_PARALOG:ENSG00000131174|ENSG00000170516	True	pair row in Ensembl 116 paralog file
+W5a_H2_050	NO_SHARED_COMPLEX:ENSG00000131174|ENSG00000170516	True	no CORUM/CPX complex lists both
+W5a_H2_051	NOT_DETECTED_PROCAN:P14920	True	accession absent from ProCan matrix
+W5a_H2_051	NOT_DETECTED_NUSINOW:P14920	True	accession absent from Nusinow
+W5a_H2_051	DEPMAP26Q3_EXPR_TPMlt1:1610	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_052	NOT_DETECTED_PROCAN:Q5FVE4	True	accession absent from ProCan matrix
+W5a_H2_052	NOT_DETECTED_NUSINOW:Q5FVE4	True	accession absent from Nusinow
+W5a_H2_052	DEPMAP26Q3_EXPR_TPMlt1:81616	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_053	NOT_DETECTED_PROCAN:Q5FVE4	True	accession absent from ProCan matrix
+W5a_H2_053	NOT_DETECTED_NUSINOW:Q5FVE4	True	accession absent from Nusinow
+W5a_H2_053	DEPMAP26Q3_EXPR_TPMlt1:81616	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_054	NOT_DETECTED_PROCAN:Q8TDN7	True	accession absent from ProCan matrix
+W5a_H2_054	NOT_DETECTED_NUSINOW:Q8TDN7	True	accession absent from Nusinow
+W5a_H2_054	DEPMAP26Q3_EXPR_TPMlt1:125981	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_055	NOT_DETECTED_PROCAN:Q8N4E7	True	accession absent from ProCan matrix
+W5a_H2_055	NOT_DETECTED_NUSINOW:Q8N4E7	True	accession absent from Nusinow
+W5a_H2_055	DEPMAP26Q3_EXPR_TPMlt1:94033	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_056	NOT_DETECTED_PROCAN:Q3I5F7	True	accession absent from ProCan matrix
+W5a_H2_056	NOT_DETECTED_NUSINOW:Q3I5F7	True	accession absent from Nusinow
+W5a_H2_056	DEPMAP26Q3_EXPR_TPMlt1:641372	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_057	NOT_DETECTED_PROCAN:Q3I5F7	True	accession absent from ProCan matrix
+W5a_H2_057	NOT_DETECTED_NUSINOW:Q3I5F7	True	accession absent from Nusinow
+W5a_H2_057	DEPMAP26Q3_EXPR_TPMlt1:641372	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_058	ENSEMBL116_PARALOG:ENSG00000084754|ENSG00000138796	True	pair row in Ensembl 116 paralog file
+W5a_H2_058	NO_SHARED_COMPLEX:ENSG00000084754|ENSG00000138796	True	no CORUM/CPX complex lists both
+W5a_H2_059	NOT_DETECTED_PROCAN:Q9BYV1	True	accession absent from ProCan matrix
+W5a_H2_059	NOT_DETECTED_NUSINOW:Q9BYV1	True	accession absent from Nusinow
+W5a_H2_059	DEPMAP26Q3_EXPR_TPMlt1:64902	True	Entrez column in DepMap 26Q3 expression
+W5a_H2_060	NOT_DETECTED_PROCAN:Q9BYV1	True	accession absent from ProCan matrix
+W5a_H2_060	NOT_DETECTED_NUSINOW:Q9BYV1	True	accession absent from Nusinow
+W5a_H2_060	DEPMAP26Q3_EXPR_TPMlt1:64902	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_001	NOT_DETECTED_PROCAN:Q9NRJ5	True	accession absent from ProCan matrix
+W5a_pid30_H1_001	NOT_DETECTED_NUSINOW:Q9NRJ5	True	accession absent from Nusinow
+W5a_pid30_H1_001	DEPMAP26Q3_EXPR_TPMlt1:56903	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_002	NOT_DETECTED_PROCAN:Q9HB55	True	accession absent from ProCan matrix
+W5a_pid30_H1_002	NOT_DETECTED_NUSINOW:Q9HB55	True	accession absent from Nusinow
+W5a_pid30_H1_002	DEPMAP26Q3_EXPR_TPMlt1:64816	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_003	NOT_DETECTED_PROCAN:P10632	True	accession absent from ProCan matrix
+W5a_pid30_H1_003	NOT_DETECTED_NUSINOW:P10632	True	accession absent from Nusinow
+W5a_pid30_H1_003	DEPMAP26Q3_EXPR_TPMlt1:1558	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_004	NOT_DETECTED_PROCAN:P05177	True	accession absent from ProCan matrix
+W5a_pid30_H1_004	NOT_DETECTED_NUSINOW:P05177	True	accession absent from Nusinow
+W5a_pid30_H1_004	DEPMAP26Q3_EXPR_TPMlt1:1544	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_005	NOT_DETECTED_PROCAN:P33261	True	accession absent from ProCan matrix
+W5a_pid30_H1_005	NOT_DETECTED_NUSINOW:P33261	True	accession absent from Nusinow
+W5a_pid30_H1_005	DEPMAP26Q3_EXPR_TPMlt1:1557	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_006	NOT_DETECTED_PROCAN:Q86W10	True	accession absent from ProCan matrix
+W5a_pid30_H1_006	NOT_DETECTED_NUSINOW:Q86W10	True	accession absent from Nusinow
+W5a_pid30_H1_006	DEPMAP26Q3_EXPR_TPMlt1:199974	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_007	NOT_DETECTED_PROCAN:P24903	True	accession absent from ProCan matrix
+W5a_pid30_H1_007	NOT_DETECTED_NUSINOW:P24903	True	accession absent from Nusinow
+W5a_pid30_H1_007	DEPMAP26Q3_EXPR_TPMlt1:1572	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_008	NOT_DETECTED_PROCAN:Q16696	True	accession absent from ProCan matrix
+W5a_pid30_H1_008	NOT_DETECTED_NUSINOW:Q16696	True	accession absent from Nusinow
+W5a_pid30_H1_008	DEPMAP26Q3_EXPR_TPMlt1:1553	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_009	NOT_DETECTED_PROCAN:P20853	True	accession absent from ProCan matrix
+W5a_pid30_H1_009	NOT_DETECTED_NUSINOW:P20853	True	accession absent from Nusinow
+W5a_pid30_H1_009	DEPMAP26Q3_EXPR_TPMlt1:1549	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_010	NOT_DETECTED_PROCAN:P11509	True	accession absent from ProCan matrix
+W5a_pid30_H1_010	NOT_DETECTED_NUSINOW:P11509	True	accession absent from Nusinow
+W5a_pid30_H1_010	DEPMAP26Q3_EXPR_TPMlt1:1548	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_011	NOT_DETECTED_PROCAN:P36537	True	accession absent from ProCan matrix
+W5a_pid30_H1_011	NOT_DETECTED_NUSINOW:P36537	True	accession absent from Nusinow
+W5a_pid30_H1_011	DEPMAP26Q3_EXPR_TPMlt1:7365	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_012	NOT_DETECTED_PROCAN:Q9BY64	True	accession absent from ProCan matrix
+W5a_pid30_H1_012	NOT_DETECTED_NUSINOW:Q9BY64	True	accession absent from Nusinow
+W5a_pid30_H1_012	DEPMAP26Q3_EXPR_TPMlt1:54490	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_013	NOT_DETECTED_PROCAN:Q6NUS8	True	accession absent from ProCan matrix
+W5a_pid30_H1_013	NOT_DETECTED_NUSINOW:Q6NUS8	True	accession absent from Nusinow
+W5a_pid30_H1_013	DEPMAP26Q3_EXPR_TPMlt1:133688	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_014	NOT_DETECTED_PROCAN:P0DTE4	True	accession absent from ProCan matrix
+W5a_pid30_H1_014	NOT_DETECTED_NUSINOW:P0DTE4	True	accession absent from Nusinow
+W5a_pid30_H1_014	DEPMAP26Q3_EXPR_TPMlt1:10941	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_015	NOT_DETECTED_PROCAN:P10745	True	accession absent from ProCan matrix
+W5a_pid30_H1_015	NOT_DETECTED_NUSINOW:P10745	True	accession absent from Nusinow
+W5a_pid30_H1_015	DEPMAP26Q3_EXPR_TPMlt1:5949	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_016	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file
+W5a_pid30_H1_016	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both
+W5a_pid30_H1_017	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file
+W5a_pid30_H1_017	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both
+W5a_pid30_H1_018	ENSEMBL116_PARALOG:ENSG00000140612|ENSG00000166562	True	pair row in Ensembl 116 paralog file
+W5a_pid30_H1_018	NO_SHARED_COMPLEX:ENSG00000140612|ENSG00000166562	True	no CORUM/CPX complex lists both
+W5a_pid30_H1_019	NOT_DETECTED_PROCAN:P22557	True	accession absent from ProCan matrix
+W5a_pid30_H1_019	NOT_DETECTED_NUSINOW:P22557	True	accession absent from Nusinow
+W5a_pid30_H1_019	DEPMAP26Q3_EXPR_TPMlt1:212	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_020	NOT_DETECTED_PROCAN:Q9BXS1	True	accession absent from ProCan matrix
+W5a_pid30_H1_020	NOT_DETECTED_NUSINOW:Q9BXS1	True	accession absent from Nusinow
+W5a_pid30_H1_020	DEPMAP26Q3_EXPR_TPMlt1:91734	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_021	NOT_DETECTED_PROCAN:Q9Y5L5	True	accession absent from ProCan matrix
+W5a_pid30_H1_021	NOT_DETECTED_NUSINOW:Q9Y5L5	True	accession absent from Nusinow
+W5a_pid30_H1_021	DEPMAP26Q3_EXPR_TPMlt1:55891	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_022	NOT_DETECTED_PROCAN:P22680	True	accession absent from ProCan matrix
+W5a_pid30_H1_022	NOT_DETECTED_NUSINOW:P22680	True	accession absent from Nusinow
+W5a_pid30_H1_022	DEPMAP26Q3_EXPR_TPMlt1:1581	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_023	NOT_DETECTED_PROCAN:Q5HYJ1	True	accession absent from ProCan matrix
+W5a_pid30_H1_023	NOT_DETECTED_NUSINOW:Q5HYJ1	True	accession absent from Nusinow
+W5a_pid30_H1_023	DEPMAP26Q3_EXPR_TPMlt1:253017	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_024	ENSEMBL116_PARALOG:ENSG00000131174|ENSG00000170516	True	pair row in Ensembl 116 paralog file
+W5a_pid30_H1_024	NO_SHARED_COMPLEX:ENSG00000131174|ENSG00000170516	True	no CORUM/CPX complex lists both
+W5a_pid30_H1_025	NOT_DETECTED_PROCAN:P14920	True	accession absent from ProCan matrix
+W5a_pid30_H1_025	NOT_DETECTED_NUSINOW:P14920	True	accession absent from Nusinow
+W5a_pid30_H1_025	DEPMAP26Q3_EXPR_TPMlt1:1610	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_026	NOT_DETECTED_PROCAN:Q5FVE4	True	accession absent from ProCan matrix
+W5a_pid30_H1_026	NOT_DETECTED_NUSINOW:Q5FVE4	True	accession absent from Nusinow
+W5a_pid30_H1_026	DEPMAP26Q3_EXPR_TPMlt1:81616	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_027	NOT_DETECTED_PROCAN:Q5FVE4	True	accession absent from ProCan matrix
+W5a_pid30_H1_027	NOT_DETECTED_NUSINOW:Q5FVE4	True	accession absent from Nusinow
+W5a_pid30_H1_027	DEPMAP26Q3_EXPR_TPMlt1:81616	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_028	NOT_DETECTED_PROCAN:Q8TDN7	True	accession absent from ProCan matrix
+W5a_pid30_H1_028	NOT_DETECTED_NUSINOW:Q8TDN7	True	accession absent from Nusinow
+W5a_pid30_H1_028	DEPMAP26Q3_EXPR_TPMlt1:125981	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_029	NOT_DETECTED_PROCAN:Q3I5F7	True	accession absent from ProCan matrix
+W5a_pid30_H1_029	NOT_DETECTED_NUSINOW:Q3I5F7	True	accession absent from Nusinow
+W5a_pid30_H1_029	DEPMAP26Q3_EXPR_TPMlt1:641372	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_030	NOT_DETECTED_PROCAN:Q3I5F7	True	accession absent from ProCan matrix
+W5a_pid30_H1_030	NOT_DETECTED_NUSINOW:Q3I5F7	True	accession absent from Nusinow
+W5a_pid30_H1_030	DEPMAP26Q3_EXPR_TPMlt1:641372	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H1_031	ENSEMBL116_PARALOG:ENSG00000138029|ENSG00000167315	True	pair row in Ensembl 116 paralog file
+W5a_pid30_H1_031	NO_SHARED_COMPLEX:ENSG00000138029|ENSG00000167315	True	no CORUM/CPX complex lists both
+W5a_pid30_H2_001	NOT_DETECTED_PROCAN:Q9NRJ5	True	accession absent from ProCan matrix
+W5a_pid30_H2_001	NOT_DETECTED_NUSINOW:Q9NRJ5	True	accession absent from Nusinow
+W5a_pid30_H2_001	DEPMAP26Q3_EXPR_TPMlt1:56903	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_002	NOT_DETECTED_PROCAN:Q9HB55	True	accession absent from ProCan matrix
+W5a_pid30_H2_002	NOT_DETECTED_NUSINOW:Q9HB55	True	accession absent from Nusinow
+W5a_pid30_H2_002	DEPMAP26Q3_EXPR_TPMlt1:64816	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_003	NOT_DETECTED_PROCAN:P10632	True	accession absent from ProCan matrix
+W5a_pid30_H2_003	NOT_DETECTED_NUSINOW:P10632	True	accession absent from Nusinow
+W5a_pid30_H2_003	DEPMAP26Q3_EXPR_TPMlt1:1558	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_004	NOT_DETECTED_PROCAN:P05177	True	accession absent from ProCan matrix
+W5a_pid30_H2_004	NOT_DETECTED_NUSINOW:P05177	True	accession absent from Nusinow
+W5a_pid30_H2_004	DEPMAP26Q3_EXPR_TPMlt1:1544	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_005	NOT_DETECTED_PROCAN:P33261	True	accession absent from ProCan matrix
+W5a_pid30_H2_005	NOT_DETECTED_NUSINOW:P33261	True	accession absent from Nusinow
+W5a_pid30_H2_005	DEPMAP26Q3_EXPR_TPMlt1:1557	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_006	NOT_DETECTED_PROCAN:Q86W10	True	accession absent from ProCan matrix
+W5a_pid30_H2_006	NOT_DETECTED_NUSINOW:Q86W10	True	accession absent from Nusinow
+W5a_pid30_H2_006	DEPMAP26Q3_EXPR_TPMlt1:199974	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_007	NOT_DETECTED_PROCAN:P24903	True	accession absent from ProCan matrix
+W5a_pid30_H2_007	NOT_DETECTED_NUSINOW:P24903	True	accession absent from Nusinow
+W5a_pid30_H2_007	DEPMAP26Q3_EXPR_TPMlt1:1572	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_008	NOT_DETECTED_PROCAN:Q16696	True	accession absent from ProCan matrix
+W5a_pid30_H2_008	NOT_DETECTED_NUSINOW:Q16696	True	accession absent from Nusinow
+W5a_pid30_H2_008	DEPMAP26Q3_EXPR_TPMlt1:1553	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_009	NOT_DETECTED_PROCAN:P20853	True	accession absent from ProCan matrix
+W5a_pid30_H2_009	NOT_DETECTED_NUSINOW:P20853	True	accession absent from Nusinow
+W5a_pid30_H2_009	DEPMAP26Q3_EXPR_TPMlt1:1549	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_010	NOT_DETECTED_PROCAN:P11509	True	accession absent from ProCan matrix
+W5a_pid30_H2_010	NOT_DETECTED_NUSINOW:P11509	True	accession absent from Nusinow
+W5a_pid30_H2_010	DEPMAP26Q3_EXPR_TPMlt1:1548	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_011	NOT_DETECTED_PROCAN:Q9HB55	True	accession absent from ProCan matrix
+W5a_pid30_H2_011	NOT_DETECTED_NUSINOW:Q9HB55	True	accession absent from Nusinow
+W5a_pid30_H2_011	DEPMAP26Q3_EXPR_TPMlt1:64816	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_012	NOT_DETECTED_PROCAN:P10632	True	accession absent from ProCan matrix
+W5a_pid30_H2_012	NOT_DETECTED_NUSINOW:P10632	True	accession absent from Nusinow
+W5a_pid30_H2_012	DEPMAP26Q3_EXPR_TPMlt1:1558	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_013	NOT_DETECTED_PROCAN:P05177	True	accession absent from ProCan matrix
+W5a_pid30_H2_013	NOT_DETECTED_NUSINOW:P05177	True	accession absent from Nusinow
+W5a_pid30_H2_013	DEPMAP26Q3_EXPR_TPMlt1:1544	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_014	NOT_DETECTED_PROCAN:P33261	True	accession absent from ProCan matrix
+W5a_pid30_H2_014	NOT_DETECTED_NUSINOW:P33261	True	accession absent from Nusinow
+W5a_pid30_H2_014	DEPMAP26Q3_EXPR_TPMlt1:1557	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_015	NOT_DETECTED_PROCAN:Q86W10	True	accession absent from ProCan matrix
+W5a_pid30_H2_015	NOT_DETECTED_NUSINOW:Q86W10	True	accession absent from Nusinow
+W5a_pid30_H2_015	DEPMAP26Q3_EXPR_TPMlt1:199974	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_016	NOT_DETECTED_PROCAN:P24903	True	accession absent from ProCan matrix
+W5a_pid30_H2_016	NOT_DETECTED_NUSINOW:P24903	True	accession absent from Nusinow
+W5a_pid30_H2_016	DEPMAP26Q3_EXPR_TPMlt1:1572	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_017	NOT_DETECTED_PROCAN:Q16696	True	accession absent from ProCan matrix
+W5a_pid30_H2_017	NOT_DETECTED_NUSINOW:Q16696	True	accession absent from Nusinow
+W5a_pid30_H2_017	DEPMAP26Q3_EXPR_TPMlt1:1553	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_018	NOT_DETECTED_PROCAN:P20853	True	accession absent from ProCan matrix
+W5a_pid30_H2_018	NOT_DETECTED_NUSINOW:P20853	True	accession absent from Nusinow
+W5a_pid30_H2_018	DEPMAP26Q3_EXPR_TPMlt1:1549	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_019	NOT_DETECTED_PROCAN:P11509	True	accession absent from ProCan matrix
+W5a_pid30_H2_019	NOT_DETECTED_NUSINOW:P11509	True	accession absent from Nusinow
+W5a_pid30_H2_019	DEPMAP26Q3_EXPR_TPMlt1:1548	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_020	NOT_DETECTED_PROCAN:P36537	True	accession absent from ProCan matrix
+W5a_pid30_H2_020	NOT_DETECTED_NUSINOW:P36537	True	accession absent from Nusinow
+W5a_pid30_H2_020	DEPMAP26Q3_EXPR_TPMlt1:7365	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_021	NOT_DETECTED_PROCAN:Q9BY64	True	accession absent from ProCan matrix
+W5a_pid30_H2_021	NOT_DETECTED_NUSINOW:Q9BY64	True	accession absent from Nusinow
+W5a_pid30_H2_021	DEPMAP26Q3_EXPR_TPMlt1:54490	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_022	NOT_DETECTED_PROCAN:Q6NUS8	True	accession absent from ProCan matrix
+W5a_pid30_H2_022	NOT_DETECTED_NUSINOW:Q6NUS8	True	accession absent from Nusinow
+W5a_pid30_H2_022	DEPMAP26Q3_EXPR_TPMlt1:133688	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_023	NOT_DETECTED_PROCAN:P0DTE4	True	accession absent from ProCan matrix
+W5a_pid30_H2_023	NOT_DETECTED_NUSINOW:P0DTE4	True	accession absent from Nusinow
+W5a_pid30_H2_023	DEPMAP26Q3_EXPR_TPMlt1:10941	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_024	NOT_DETECTED_PROCAN:P10632	True	accession absent from ProCan matrix
+W5a_pid30_H2_024	NOT_DETECTED_NUSINOW:P10632	True	accession absent from Nusinow
+W5a_pid30_H2_024	DEPMAP26Q3_EXPR_TPMlt1:1558	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_025	NOT_DETECTED_PROCAN:P33261	True	accession absent from ProCan matrix
+W5a_pid30_H2_025	NOT_DETECTED_NUSINOW:P33261	True	accession absent from Nusinow
+W5a_pid30_H2_025	DEPMAP26Q3_EXPR_TPMlt1:1557	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_026	NOT_DETECTED_PROCAN:Q6V0L0	True	accession absent from ProCan matrix
+W5a_pid30_H2_026	NOT_DETECTED_NUSINOW:Q6V0L0	True	accession absent from Nusinow
+W5a_pid30_H2_026	DEPMAP26Q3_EXPR_TPMlt1:340665	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_027	NOT_DETECTED_PROCAN:P10745	True	accession absent from ProCan matrix
+W5a_pid30_H2_027	NOT_DETECTED_NUSINOW:P10745	True	accession absent from Nusinow
+W5a_pid30_H2_027	DEPMAP26Q3_EXPR_TPMlt1:5949	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_028	NOT_DETECTED_PROCAN:P10632	True	accession absent from ProCan matrix
+W5a_pid30_H2_028	NOT_DETECTED_NUSINOW:P10632	True	accession absent from Nusinow
+W5a_pid30_H2_028	DEPMAP26Q3_EXPR_TPMlt1:1558	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_029	NOT_DETECTED_PROCAN:P33261	True	accession absent from ProCan matrix
+W5a_pid30_H2_029	NOT_DETECTED_NUSINOW:P33261	True	accession absent from Nusinow
+W5a_pid30_H2_029	DEPMAP26Q3_EXPR_TPMlt1:1557	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_030	NOT_DETECTED_PROCAN:P10632	True	accession absent from ProCan matrix
+W5a_pid30_H2_030	NOT_DETECTED_NUSINOW:P10632	True	accession absent from Nusinow
+W5a_pid30_H2_030	DEPMAP26Q3_EXPR_TPMlt1:1558	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_031	NOT_DETECTED_PROCAN:Q6V0L0	True	accession absent from ProCan matrix
+W5a_pid30_H2_031	NOT_DETECTED_NUSINOW:Q6V0L0	True	accession absent from Nusinow
+W5a_pid30_H2_031	DEPMAP26Q3_EXPR_TPMlt1:340665	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_032	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file
+W5a_pid30_H2_032	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both
+W5a_pid30_H2_033	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file
+W5a_pid30_H2_033	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both
+W5a_pid30_H2_034	ENSEMBL116_PARALOG:ENSG00000140612|ENSG00000166562	True	pair row in Ensembl 116 paralog file
+W5a_pid30_H2_034	NO_SHARED_COMPLEX:ENSG00000140612|ENSG00000166562	True	no CORUM/CPX complex lists both
+W5a_pid30_H2_035	NOT_DETECTED_PROCAN:P10632	True	accession absent from ProCan matrix
+W5a_pid30_H2_035	NOT_DETECTED_NUSINOW:P10632	True	accession absent from Nusinow
+W5a_pid30_H2_035	DEPMAP26Q3_EXPR_TPMlt1:1558	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_036	NOT_DETECTED_PROCAN:Q6V0L0	True	accession absent from ProCan matrix
+W5a_pid30_H2_036	NOT_DETECTED_NUSINOW:Q6V0L0	True	accession absent from Nusinow
+W5a_pid30_H2_036	DEPMAP26Q3_EXPR_TPMlt1:340665	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_037	NOT_DETECTED_PROCAN:P22557	True	accession absent from ProCan matrix
+W5a_pid30_H2_037	NOT_DETECTED_NUSINOW:P22557	True	accession absent from Nusinow
+W5a_pid30_H2_037	DEPMAP26Q3_EXPR_TPMlt1:212	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_038	NOT_DETECTED_PROCAN:Q9BXS1	True	accession absent from ProCan matrix
+W5a_pid30_H2_038	NOT_DETECTED_NUSINOW:Q9BXS1	True	accession absent from Nusinow
+W5a_pid30_H2_038	DEPMAP26Q3_EXPR_TPMlt1:91734	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_039	NOT_DETECTED_PROCAN:Q9Y5L5	True	accession absent from ProCan matrix
+W5a_pid30_H2_039	NOT_DETECTED_NUSINOW:Q9Y5L5	True	accession absent from Nusinow
+W5a_pid30_H2_039	DEPMAP26Q3_EXPR_TPMlt1:55891	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_040	NOT_DETECTED_PROCAN:P22680	True	accession absent from ProCan matrix
+W5a_pid30_H2_040	NOT_DETECTED_NUSINOW:P22680	True	accession absent from Nusinow
+W5a_pid30_H2_040	DEPMAP26Q3_EXPR_TPMlt1:1581	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_041	NOT_DETECTED_PROCAN:Q5HYJ1	True	accession absent from ProCan matrix
+W5a_pid30_H2_041	NOT_DETECTED_NUSINOW:Q5HYJ1	True	accession absent from Nusinow
+W5a_pid30_H2_041	DEPMAP26Q3_EXPR_TPMlt1:253017	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_042	NOT_DETECTED_PROCAN:Q6V0L0	True	accession absent from ProCan matrix
+W5a_pid30_H2_042	NOT_DETECTED_NUSINOW:Q6V0L0	True	accession absent from Nusinow
+W5a_pid30_H2_042	DEPMAP26Q3_EXPR_TPMlt1:340665	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_043	NOT_DETECTED_PROCAN:Q6V0L0	True	accession absent from ProCan matrix
+W5a_pid30_H2_043	NOT_DETECTED_NUSINOW:Q6V0L0	True	accession absent from Nusinow
+W5a_pid30_H2_043	DEPMAP26Q3_EXPR_TPMlt1:340665	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_044	ENSEMBL116_PARALOG:ENSG00000131174|ENSG00000170516	True	pair row in Ensembl 116 paralog file
+W5a_pid30_H2_044	NO_SHARED_COMPLEX:ENSG00000131174|ENSG00000170516	True	no CORUM/CPX complex lists both
+W5a_pid30_H2_045	NOT_DETECTED_PROCAN:P14920	True	accession absent from ProCan matrix
+W5a_pid30_H2_045	NOT_DETECTED_NUSINOW:P14920	True	accession absent from Nusinow
+W5a_pid30_H2_045	DEPMAP26Q3_EXPR_TPMlt1:1610	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_046	NOT_DETECTED_PROCAN:Q5FVE4	True	accession absent from ProCan matrix
+W5a_pid30_H2_046	NOT_DETECTED_NUSINOW:Q5FVE4	True	accession absent from Nusinow
+W5a_pid30_H2_046	DEPMAP26Q3_EXPR_TPMlt1:81616	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_047	NOT_DETECTED_PROCAN:Q5FVE4	True	accession absent from ProCan matrix
+W5a_pid30_H2_047	NOT_DETECTED_NUSINOW:Q5FVE4	True	accession absent from Nusinow
+W5a_pid30_H2_047	DEPMAP26Q3_EXPR_TPMlt1:81616	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_048	NOT_DETECTED_PROCAN:Q8TDN7	True	accession absent from ProCan matrix
+W5a_pid30_H2_048	NOT_DETECTED_NUSINOW:Q8TDN7	True	accession absent from Nusinow
+W5a_pid30_H2_048	DEPMAP26Q3_EXPR_TPMlt1:125981	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_049	NOT_DETECTED_PROCAN:Q8N4E7	True	accession absent from ProCan matrix
+W5a_pid30_H2_049	NOT_DETECTED_NUSINOW:Q8N4E7	True	accession absent from Nusinow
+W5a_pid30_H2_049	DEPMAP26Q3_EXPR_TPMlt1:94033	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_050	NOT_DETECTED_PROCAN:Q3I5F7	True	accession absent from ProCan matrix
+W5a_pid30_H2_050	NOT_DETECTED_NUSINOW:Q3I5F7	True	accession absent from Nusinow
+W5a_pid30_H2_050	DEPMAP26Q3_EXPR_TPMlt1:641372	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_051	NOT_DETECTED_PROCAN:Q3I5F7	True	accession absent from ProCan matrix
+W5a_pid30_H2_051	NOT_DETECTED_NUSINOW:Q3I5F7	True	accession absent from Nusinow
+W5a_pid30_H2_051	DEPMAP26Q3_EXPR_TPMlt1:641372	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_052	NOT_DETECTED_PROCAN:Q9BYV1	True	accession absent from ProCan matrix
+W5a_pid30_H2_052	NOT_DETECTED_NUSINOW:Q9BYV1	True	accession absent from Nusinow
+W5a_pid30_H2_052	DEPMAP26Q3_EXPR_TPMlt1:64902	True	Entrez column in DepMap 26Q3 expression
+W5a_pid30_H2_053	NOT_DETECTED_PROCAN:Q9BYV1	True	accession absent from ProCan matrix
+W5a_pid30_H2_053	NOT_DETECTED_NUSINOW:Q9BYV1	True	accession absent from Nusinow
+W5a_pid30_H2_053	DEPMAP26Q3_EXPR_TPMlt1:64902	True	Entrez column in DepMap 26Q3 expression

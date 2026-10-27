@@ -1,0 +1,17 @@
+nodeid	outcome
+tests/test_w5.py::test_w5_convert_or_nodes_multiple_paths	passed
+tests/test_w5.py::test_w5_enumerate_edit_kinds_and_counts	passed
+tests/test_w5.py::test_w5_gpr_eval_matches_cobra	passed
+tests/test_w5.py::test_w5_or_pairs_use_distinguishing_genes	passed
+tests/test_w5.py::test_w5_parse_canon_roundtrip	passed
+tests/test_w5.py::test_w5_protected_or_never_converted	passed
+tests/test_w5.py::test_w5_protected_or_node	passed
+tests/test_w5.py::test_w5_protected_tokens_verbatim	passed
+tests/test_w5.py::test_w5_resolve_protected_human2	passed
+tests/test_w5.py::test_w5_rule_and2or_paralogs_without_shared_complex	passed
+tests/test_w5.py::test_w5_rule_or2and_requires_all_three	passed
+tests/test_w5.py::test_w5_rule_remove_absent_branch_and_protection	passed
+tests/test_w5.py::test_w5_toy_edit_flips_ko	passed
+tests/test_w5.py::test_w5_validator_checks_every_id	passed
+tests/test_w5.py::test_w5_validator_refuses_denylisted_source	passed
+tests/test_w5.py::test_w5_zero_flux_shortcut_is_exact	passed

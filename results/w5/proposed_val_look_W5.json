@@ -1,0 +1,85 @@
+{
+ "look_id": "W5_M3_gpr_curation",
+ "workstream": "W5",
+ "milestone": "M3 (shortlist -> validation)",
+ "harness": "scripts/evaluate_val.py (reviewed W1 harness, reused per A6); needs a new --look branch that loads the W5 score inputs below: a harness code change => full independent code review (A6 item 2)",
+ "reference": "G* = H1 (generic Human1 v1.19.0 on M0; D6)",
+ "status": "NOT TO BE RUN under the frozen rule: no W5 candidate passed TG on training (results/w5/README.md). Provided so that a PI decision (or the \u00a710.1 factorial, if P1 carries curation) can be executed without new W5 code; the methods listed are the training-best curated arms, not a shortlist",
+ "methods": [
+  "H1_TYMS",
+  "H1_W5a",
+  "H1_W5a_pid30",
+  "H1_W5b"
+ ],
+ "comparators_shown": [
+  "H1",
+  "H2",
+  "B2",
+  "B2m",
+  "B8+_H1",
+  "B8-_H1",
+  "B8'_H1"
+ ],
+ "W5b_fit": "co-essentiality (Chronos r >= 0.4, >= 30 lines) on ALL training lines via labels.train() (\u00a75.3)",
+ "cells": {
+  "labels": [
+   "L_prob",
+   "L_ge05",
+   "L_ge10"
+  ],
+  "genesets": [
+   "all",
+   "noCE"
+  ],
+  "universes": [
+   "U",
+   "Ucap"
+  ],
+  "strata": [
+   "none",
+   "expressed_pairs"
+  ],
+  "lines": "validation lines with a default expression profile"
+ },
+ "outputs": "scalars only (assert_scalar_only): tAP_line lineage-equal mean, lift, paired \u0394\u0304_lin vs H1 with lineage-stratified bootstrap CI (B = 2,000, SEEDS[0]); fixed-cutoff MCC; no per-line/per-gene tables",
+ "decision": "\u00a78 gate: eligible iff paired validation \u0394\u0304_lin vs G* has CI lower bound > 0; among eligible, paired-difference one-SE rule (curation ranks after medium and tasks); winner's-curse \u03c3\u221a(2 ln m) reported",
+ "B": 2000,
+ "seed": 11,
+ "inputs": {
+  "ko_human1": {
+   "path": "results/w5/ko_human1.parquet",
+   "sha256": "d2912f95b3627a8591e6e9c66e75148fc48a7fb4638b029ad6c0c1b89c1a5a65"
+  },
+  "ko_human2": {
+   "path": "results/w5/ko_human2.parquet",
+   "sha256": "d5fee6367de28473ebe8f70373c125c657b685b0ffef51713ecab575213332eb"
+  },
+  "curated_W5a_human1": {
+   "path": "results/w5/curated_W5a_human1.tsv",
+   "sha256": "48deec88e9f5a300228bd1b4e91a990228c872f1bb455bf8b90714a6f508348d"
+  },
+  "curated_W5a_human2": {
+   "path": "results/w5/curated_W5a_human2.tsv",
+   "sha256": "d617fa262f7ab9d83f5d9f56fe200ea59a3a685ce403968084104ad383478e94"
+  },
+  "edits_W5a_human1": {
+   "path": "results/w5/edits_W5a_human1.tsv",
+   "sha256": "86d489d0e386a869eaaaa5a474db5175a178c8679d8a13c79a6ac50402bb1b85"
+  },
+  "edits_W5a_human2": {
+   "path": "results/w5/edits_W5a_human2.tsv",
+   "sha256": "d9e32079eb0a7abf3f33bcd7b4c07e2978b64d7ea14c480162e363ac9a6b3dd5"
+  },
+  "w5b_candidates": {
+   "path": "results/w5/w5b_candidates.json",
+   "sha256": "35a02192891e8730eb9b992845a9bdf9ce1d322035cc3fd23f52657c96880802"
+  }
+ },
+ "code": {
+  "src/nextgem/w5.py": "82294c1dbd224a0159dd6e7683bf17e3451cfc745028ba17a88bc0103d048957",
+  "src/nextgem/w5_evidence.py": "38ea1b00705b60d76479d5527ef38a20db7442f9ae0424a149d7ddb135fbde81",
+  "scripts/w5_score_train.py": "de955661febc6128c85e0bd9fc60fa24d4bce91548c90e066b240a787fa23547",
+  "scripts/w5_val_dryrun.py": "59745bee1ea052a101fd57726b357a9ba1fbb4613df3a3478860a75aa3113cb1"
+ },
+ "config_sha": "bdc0f44c08df0a0372f4c0ac90a595a65a8b0440c23d0c4b8e925f9f823540d6"
+}

@@ -31,3 +31,14 @@ These are blocked for scripts (Cloudflare, JS pages, paywalls). Put each file in
 - Tao et al. 2025 *Cell Rep* (DeepMeta), doi:10.1016/j.celrep.2025.115945
 - Ito et al. 2021 *Nat Genet*; De Kegel et al. 2021 *Cell Syst* (main text)
 - Optional: GECKO 3.0 (doi:10.1038/s41596-023-00931-7), tINIT (doi:10.1002/msb.145122), iMAT (doi:10.1038/nbt.1487)
+
+## W5 (GPR curation), added 2026-10-27 by the W5 engineer — not downloaded by any agent
+
+| # | What | Where to get it | Save to |
+|---|---|---|---|
+| 12 | UniProtKB/Swiss-Prot human reviewed proteome as a versioned flat file or TSV with columns: Entry, Entry version, Gene Names, Function [CC], Catalytic activity, EC number, Subcellular location [CC], Transmembrane, Intramembrane, Rhea ID (e.g. the REST "stream" TSV for `reviewed:true AND organism_id:9606`, plus the release number) | https://www.uniprot.org/uniprotkb?query=reviewed:true+AND+organism_id:9606 (Download → TSV with the columns above), or ftp.uniprot.org `knowledgebase/complete/uniprot_sprot.dat.gz` filtered to human | `data/uniprot/` (record the release in DATA.md) |
+
+Why: DESIGN W5 "Remove OR branch" has two paths. Path 1 ("UniProt function unrelated to the reaction", with accession
+and entry version cited) needs this file; without it W5 implements only path 2 ("pan-cancer absent"). The same file
+would replace W5's label-free *soluble-enzyme proxy* (Human-GEM genes.tsv location + no transport reaction) by the
+UniProt Transmembrane/Subcellular-location annotation.

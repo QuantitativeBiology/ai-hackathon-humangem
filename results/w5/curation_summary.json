@@ -1,0 +1,111 @@
+{
+ "evidence": {
+  "model_genes_union": 2929,
+  "paralog_pairs_among_model_genes": 8971,
+  "paralog_pairs_by_type": {
+   "other_paralog": 8115,
+   "within_species_paralog": 856
+  },
+  "genes_in_any_complex": 930,
+  "complex_members_unmapped": 16204,
+  "procan_lines": 948,
+  "procan_proteins_model": 1653,
+  "nusinow_lines": 375,
+  "nusinow_proteins_model": 1966,
+  "expr_lines": 1292,
+  "transport_genes": 685
+ },
+ "W5a": {
+  "human1": {
+   "target_groups": 92,
+   "target_reactions": 1064,
+   "groups_edited": 20,
+   "reactions_edited": 405,
+   "edits_by_kind": {
+    "RMBRANCH": 26,
+    "AND2OR": 12
+   },
+   "or_nodes_examined": 79,
+   "or_nodes_protected": 10,
+   "or_nodes_all_nonparalog": 11,
+   "or_nodes_all_cocomplex": 0,
+   "or_nodes_all_coab": 1,
+   "and_paralog_pairs": 35,
+   "blocked": 1,
+   "w5b_candidate_or_nodes": 11,
+   "w5b_candidate_or_nodes_anchored": 0,
+   "protected_unresolved": []
+  },
+  "human2": {
+   "target_groups": 109,
+   "target_reactions": 928,
+   "groups_edited": 29,
+   "reactions_edited": 341,
+   "edits_by_kind": {
+    "RMBRANCH": 49,
+    "AND2OR": 11
+   },
+   "or_nodes_examined": 93,
+   "or_nodes_protected": 12,
+   "or_nodes_all_nonparalog": 17,
+   "or_nodes_all_cocomplex": 1,
+   "or_nodes_all_coab": 1,
+   "and_paralog_pairs": 34,
+   "blocked": 1,
+   "w5b_candidate_or_nodes": 17,
+   "w5b_candidate_or_nodes_anchored": 1,
+   "protected_unresolved": []
+  }
+ },
+ "W5a_pid30": {
+  "human1": {
+   "target_groups": 92,
+   "target_reactions": 1064,
+   "groups_edited": 19,
+   "reactions_edited": 360,
+   "edits_by_kind": {
+    "RMBRANCH": 26,
+    "AND2OR": 5
+   },
+   "or_nodes_examined": 79,
+   "or_nodes_protected": 10,
+   "or_nodes_all_nonparalog": 20,
+   "or_nodes_all_cocomplex": 0,
+   "or_nodes_all_coab": 1,
+   "and_paralog_pairs": 12,
+   "blocked": 2,
+   "w5b_candidate_or_nodes": null,
+   "w5b_candidate_or_nodes_anchored": null,
+   "protected_unresolved": []
+  },
+  "human2": {
+   "target_groups": 109,
+   "target_reactions": 928,
+   "groups_edited": 28,
+   "reactions_edited": 296,
+   "edits_by_kind": {
+    "RMBRANCH": 49,
+    "AND2OR": 4
+   },
+   "or_nodes_examined": 93,
+   "or_nodes_protected": 12,
+   "or_nodes_all_nonparalog": 27,
+   "or_nodes_all_cocomplex": 1,
+   "or_nodes_all_coab": 1,
+   "and_paralog_pairs": 11,
+   "blocked": 2,
+   "w5b_candidate_or_nodes": null,
+   "w5b_candidate_or_nodes_anchored": null,
+   "protected_unresolved": []
+  }
+ },
+ "validation": {
+  "n_ids": 538,
+  "n_ok": 538,
+  "n_failed": 0
+ },
+ "runtime": {
+  "wall_s": 51.5,
+  "cpu_s_self": 51.2
+ }
+}

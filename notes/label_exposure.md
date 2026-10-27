@@ -39,3 +39,5 @@ Every viewing of DepMap label *values* (or label-derived summaries) by any agent
 - 2026-10-27, W4 engineer (Stage-A analysis): computed and viewed training-tier aggregates (nested-LOLO tAP_line, Δ̄ vs H1/H2, MCC per family and threshold on the 30-line panel). No gene × line values; no validation or test; raw probe blocked.
 - 2026-10-27, PI: read the W4 Stage-A analysis summary (training aggregates only).
 - 2026-10-27, W4 Stage-A reviewer: recomputed training-tier aggregates (per-line tAP compared by max-abs difference only, nested Δ̄ per family, fold choices, variance partition) via labels.train()/fold(). No gene × line values written; no validation or test; raw probe blocked.
+- 2026-10-27, W5 engineer: training-tier aggregates only (LOLO Δ̄, CIs, fold counts, MCC, per-lineage Δ for the W5 arms; training positive fraction of ~100 changed genes; all-training co-essentiality r for 13 candidate pairs). No gene × line values; no validation or test; raw probe blocked.
+- 2026-10-27, W5 reviewer: training-tier aggregates only (LOLO Δ̄, CIs, fold counts for 8 contrasts under L_prob and L_ge05). No gene × line values; no validation or test; raw probe blocked.

@@ -1,0 +1,13 @@
+nodeid	outcome
+tests/test_w8_resource.py::test_w8_claim_tiers	passed
+tests/test_w8_resource.py::test_w8_collect_numbers_stub	passed
+tests/test_w8_resource.py::test_w8_corrupted_sbml_rejected	passed
+tests/test_w8_resource.py::test_w8_flags	passed
+tests/test_w8_resource.py::test_w8_headroom_rule	passed
+tests/test_w8_resource.py::test_w8_libsbml_new_errors_vs_parent	passed
+tests/test_w8_resource.py::test_w8_line_model_from_mask	passed
+tests/test_w8_resource.py::test_w8_random_ko_detects_difference	passed
+tests/test_w8_resource.py::test_w8_roundtrip_detects_bound_change	passed
+tests/test_w8_resource.py::test_w8_sesoi_c1b	passed
+tests/test_w8_resource.py::test_w8_toy_sbml_roundtrip	failed
+tests/test_w8_resource.py::test_w8_transfer_wording	passed
