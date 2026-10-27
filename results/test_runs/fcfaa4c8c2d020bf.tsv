@@ -1,0 +1,507 @@
+nodeid	outcome
+tests/test_context.py::test_a6prime_line_choice	passed
+tests/test_context.py::test_build_independent_of_job_order	passed
+tests/test_context.py::test_corda_known_answer[glpk]	passed
+tests/test_context.py::test_corda_known_answer[gurobi]	passed
+tests/test_context.py::test_eflux_known_answer[glpk]	passed
+tests/test_context.py::test_eflux_known_answer[gurobi]	passed
+tests/test_context.py::test_f0_prunes_and_repair_reopens_cheapest[glpk]	passed
+tests/test_context.py::test_f0_prunes_and_repair_reopens_cheapest[gurobi]	passed
+tests/test_context.py::test_fastcore_known_answer[glpk]	passed
+tests/test_context.py::test_fastcore_known_answer[gurobi]	passed
+tests/test_context.py::test_gimme_known_answer[glpk]	passed
+tests/test_context.py::test_gimme_known_answer[gurobi]	passed
+tests/test_context.py::test_glpk_worker_never_touches_gurobi	passed
+tests/test_context.py::test_lcp_scores_known_answer	passed
+tests/test_context.py::test_loss_rule_definition_known_answer	passed
+tests/test_context.py::test_loss_rule_order_independent[glpk]	passed
+tests/test_context.py::test_loss_rule_order_independent[gurobi]	passed
+tests/test_context.py::test_off_isozyme_does_not_buffer[glpk]	passed
+tests/test_context.py::test_off_isozyme_does_not_buffer[gurobi]	passed
+tests/test_context.py::test_panel_training_only_and_deterministic	passed
+tests/test_context.py::test_permutation_preserves_each_gene_distribution	passed
+tests/test_context.py::test_presence_score_matches_boolean_pruning	passed
+tests/test_context.py::test_stage_a_refuses_undeclared_solver	passed
+tests/test_evaluate_val.py::test_b6_branch_when_enabled	passed
+tests/test_evaluate_val.py::test_b6_excluded_by_default	passed
+tests/test_evaluate_val.py::test_cap_refuses_before_labels	passed
+tests/test_evaluate_val.py::test_config_json_required_before_started	passed
+tests/test_evaluate_val.py::test_gstar_matches_sign_in_look	passed
+tests/test_evaluate_val.py::test_gstar_sign_rule	passed
+tests/test_evaluate_val.py::test_guard_accepts_valid_output	passed
+tests/test_evaluate_val.py::test_guard_rejects_duplicate_family_rows	passed
+tests/test_evaluate_val.py::test_guard_rejects_numeric_per_unit_columns	passed
+tests/test_evaluate_val.py::test_guard_rejects_too_many_rows	passed
+tests/test_evaluate_val.py::test_guard_rejects_unit_key_columns	passed
+tests/test_evaluate_val.py::test_guard_rejects_unit_keys_in_cells[1005-gene]	passed
+tests/test_evaluate_val.py::test_guard_rejects_unit_keys_in_cells[ACH-000501-line ID]	passed
+tests/test_evaluate_val.py::test_guard_rejects_unit_keys_in_cells[GENEA-gene]	passed
+tests/test_evaluate_val.py::test_guard_rejects_unit_keys_in_cells[VA-lineage name]	passed
+tests/test_evaluate_val.py::test_label_free_failure_happens_before_started	passed
+tests/test_evaluate_val.py::test_outputs_are_scalar_only	passed
+tests/test_evaluate_val.py::test_preflight_frozen_and_clean	passed
+tests/test_evaluate_val.py::test_repeat_look_refused_without_reading_labels	passed
+tests/test_evaluate_val.py::test_resumed_look_is_logged_and_counted_once	passed
+tests/test_evaluate_val.py::test_started_committed_before_labels_and_completed	passed
+tests/test_frozen.py::test_amendment_ids_only_from_table_data_rows	passed
+tests/test_frozen.py::test_changed_row_needs_logged_amendment	passed
+tests/test_frozen.py::test_clean	passed
+tests/test_frozen.py::test_git_ignored_frozen_file_checked_in_working_tree	passed
+tests/test_frozen.py::test_modified_frozen_file	passed
+tests/test_frozen.py::test_new_rows_are_free	passed
+tests/test_frozen.py::test_removed_row_and_changed_value	passed
+tests/test_frozen.py::test_test_runs_union_baseline_and_retirement	passed
+tests/test_gurobi_pool.py::test_pool_limits_and_release	passed
+tests/test_gurobi_pool.py::test_size_is_global_not_per_caller	passed
+tests/test_gurobi_pool.py::test_slot_blocks_other_process_and_crash_releases	passed
+tests/test_hook.py::test_hook_allows[event0]	passed
+tests/test_hook.py::test_hook_allows[event1]	passed
+tests/test_hook.py::test_hook_denies[event0]	passed
+tests/test_hook.py::test_hook_denies[event1]	passed
+tests/test_hook.py::test_hook_denies[event2]	passed
+tests/test_hook.py::test_hook_denies[event3]	passed
+tests/test_hook.py::test_hook_denies[event4]	passed
+tests/test_labels.py::test_build_outputs_and_frozen_rows	passed
+tests/test_labels.py::test_entrez_join	passed
+tests/test_labels.py::test_fold_scoping_memoriser_gets_null_ap	passed
+tests/test_labels.py::test_kappa_rule_positive_control_and_ledger	passed
+tests/test_labels.py::test_kappa_rule_switches_when_low	passed
+tests/test_labels.py::test_label_derived_lists_need_purpose	passed
+tests/test_labels.py::test_label_variants_known_cells	passed
+tests/test_labels.py::test_nan_accounting	passed
+tests/test_labels.py::test_nested_lolo_never_shows_outer_fold	passed
+tests/test_labels.py::test_rebuild_reproduces_hashes_and_overwrites_nothing	passed
+tests/test_labels.py::test_sealed_tiers_unreachable_from_tests	passed
+tests/test_labels.py::test_tap_helper_known_answers	passed
+tests/test_ledger.py::test_append_chain_and_commit	passed
+tests/test_ledger.py::test_commit_failure_rolls_back	passed
+tests/test_ledger.py::test_commit_only_leaves_other_staged_changes	passed
+tests/test_ledger.py::test_history_rewrite_detected	passed
+tests/test_ledger.py::test_split_rows_once_and_unseal_after_t2	passed
+tests/test_ledger.py::test_tampering_detected_and_append_refused	passed
+tests/test_ledger.py::test_test_looks_idempotent	passed
+tests/test_ledger.py::test_validation_cap_and_authorisation	passed
+tests/test_ledger.py::test_w7_subcap	passed
+tests/test_metrics.py::test_auroc_and_top_k	passed
+tests/test_metrics.py::test_bootstrap_counts_and_determinism	passed
+tests/test_metrics.py::test_bootstrap_mean	passed
+tests/test_metrics.py::test_brute_force_enumeration_random_toys	passed
+tests/test_metrics.py::test_brute_force_single_big_block	passed
+tests/test_metrics.py::test_c3_decision_combines_bootstrap_and_null	passed
+tests/test_metrics.py::test_c3_permutation_null	passed
+tests/test_metrics.py::test_cell_rule	passed
+tests/test_metrics.py::test_claim_tier_respects_gatekeeping_state	passed
+tests/test_metrics.py::test_claim_tiers_and_sesoi	passed
+tests/test_metrics.py::test_confirmatory_contrast_end_to_end	passed
+tests/test_metrics.py::test_confirmatory_contrast_requires_contrast_specific_sesoi	passed
+tests/test_metrics.py::test_constant_scorer_equals_null[1-1]	passed
+tests/test_metrics.py::test_constant_scorer_equals_null[10-3]	passed
+tests/test_metrics.py::test_constant_scorer_equals_null[192-5]	passed
+tests/test_metrics.py::test_constant_scorer_equals_null[2-1]	passed
+tests/test_metrics.py::test_constant_scorer_equals_null[2-2]	passed
+tests/test_metrics.py::test_constant_scorer_equals_null[2450-37]	passed
+tests/test_metrics.py::test_constant_scorer_equals_null[2866-320]	passed
+tests/test_metrics.py::test_constant_scorer_equals_null[5000-4999]	passed
+tests/test_metrics.py::test_failed_line_rules	passed
+tests/test_metrics.py::test_fixed_sequence_enforces_gate_order	passed
+tests/test_metrics.py::test_fixed_sequence_gatekeeping	passed
+tests/test_metrics.py::test_gatekept_claims_downgrade_after_failure	passed
+tests/test_metrics.py::test_gene_bootstrap_matches_duplication	passed
+tests/test_metrics.py::test_gene_na_rule	passed
+tests/test_metrics.py::test_hand_example	passed
+tests/test_metrics.py::test_headroom_closed	passed
+tests/test_metrics.py::test_input_validation	passed
+tests/test_metrics.py::test_line_constant_scorer_gene_tap_equals_null	passed
+tests/test_metrics.py::test_line_na_rule	passed
+tests/test_metrics.py::test_lineage_equal_mean	passed
+tests/test_metrics.py::test_lineage_t_interval_and_exact_sign_flip	passed
+tests/test_metrics.py::test_no_unseeded_randomness	passed
+tests/test_metrics.py::test_noise_average_matches_tap[near_binary]	passed
+tests/test_metrics.py::test_noise_average_matches_tap[toy]	passed
+tests/test_metrics.py::test_null_vectorised_and_no_positive	passed
+tests/test_metrics.py::test_on_form_equals_hypergeometric_large_blocks	passed
+tests/test_metrics.py::test_on_form_equals_hypergeometric_random	passed
+tests/test_metrics.py::test_per_lineage_and_pooled	passed
+tests/test_metrics.py::test_perfect_and_reversed	passed
+tests/test_metrics.py::test_permute_within_lineage_preserves_structure	passed
+tests/test_metrics.py::test_set_mismatch_assertions	passed
+tests/test_metrics.py::test_sign_flip	passed
+tests/test_metrics.py::test_sklearn_sensitivity_row_penalises_ties	passed
+tests/test_metrics.py::test_stats_review_reference_value	passed
+tests/test_metrics.py::test_transfer_rule	passed
+tests/test_metrics.py::test_vectorised_and_weighted_forms_equal_tap	passed
+tests/test_metrics_binary.py::test_against_sklearn_where_defined	passed
+tests/test_metrics_binary.py::test_confusion_excludes_nan_truth_and_validates	passed
+tests/test_metrics_binary.py::test_constant_call_negative_control	passed
+tests/test_metrics_binary.py::test_fba_and_rate_calls	passed
+tests/test_metrics_binary.py::test_hand_computed[0-5-0-5-expect2]	passed
+tests/test_metrics_binary.py::test_hand_computed[10-20-60-10-expect3]	passed
+tests/test_metrics_binary.py::test_hand_computed[3-1-4-2-expect0]	passed
+tests/test_metrics_binary.py::test_hand_computed[5-0-5-0-expect1]	passed
+tests/test_metrics_binary.py::test_labels_from_effect_strict_and_nan	passed
+tests/test_metrics_binary.py::test_per_line_matches_scalar_path_and_sklearn	passed
+tests/test_metrics_binary.py::test_summaries	passed
+tests/test_metrics_binary.py::test_threshold_grid	passed
+tests/test_metrics_binary.py::test_zero_denominators_nan_and_sensitivity_row	passed
+tests/test_precommit.py::test_data_and_papers_rejected	passed
+tests/test_precommit.py::test_failing_test_not_edited_with_code_fix	passed
+tests/test_precommit.py::test_frozen_violation_rejected	passed
+tests/test_precommit.py::test_hooks_installed	passed
+tests/test_precommit.py::test_label_copy_rejected_expression_accepted	passed
+tests/test_precommit.py::test_large_file_rejected	passed
+tests/test_precommit.py::test_pre_push_scans_pushed_history	passed
+tests/test_precommit.py::test_record_commit_not_blocked_by_failing_full_run	passed
+tests/test_precommit.py::test_test_keyed_table_until_unseal	passed
+tests/test_run.py::test_dirty_tree_refused_unless_allowed	passed
+tests/test_run.py::test_no_row_when_body_fails	passed
+tests/test_run.py::test_provenance_row_full_shas_and_versions	passed
+tests/test_scanner.py::test_canonical_split_exempt_but_copies_and_test_keyed_results_flagged	passed
+tests/test_scanner.py::test_fingerprints_unreadable_outside_scanner	passed
+tests/test_scanner.py::test_scanner_delete_scratch_hits	passed
+tests/test_scanner.py::test_scanner_flags_planted_copies	passed
+tests/test_scanner.py::test_scanner_negative_on_real_expression_and_cn	passed
+tests/test_scanner.py::test_scanner_output_is_coarse_no_oracle	passed
+tests/test_scanner.py::test_small_integer_columns_are_not_bare_modelids	passed
+tests/test_splits.py::test_amendment_row_in_section17_allowed	passed
+tests/test_splits.py::test_attempt_loop_matches_frozen_loop	passed
+tests/test_splits.py::test_cli_enforces_git_checks_before_any_draw	passed
+tests/test_splits.py::test_cohort_matches_design_numbers	passed
+tests/test_splits.py::test_determinism	passed
+tests/test_splits.py::test_frozen_function_equality_and_pinned_inputs	passed
+tests/test_splits.py::test_git_checks_literal_freeze_rule_refuses_code_added_after_freeze	passed
+tests/test_splits.py::test_git_checks_pass_when_clean	passed
+tests/test_splits.py::test_git_checks_refuse[design_commit]	passed
+tests/test_splits.py::test_git_checks_refuse[design_lines_removed]	passed
+tests/test_splits.py::test_git_checks_refuse[design_sentence_added_before_code]	passed
+tests/test_splits.py::test_git_checks_refuse[dirty_design]	passed
+tests/test_splits.py::test_git_checks_refuse[dirty_src]	passed
+tests/test_splits.py::test_git_checks_refuse[freeze_not_ancestor]	passed
+tests/test_splits.py::test_git_checks_refuse[frozen_commit]	passed
+tests/test_splits.py::test_git_checks_refuse[seed_missing]	passed
+tests/test_splits.py::test_git_checks_refuse[seed_source_absent]	passed
+tests/test_splits.py::test_git_checks_refuse[src_commit]	passed
+tests/test_splits.py::test_git_checks_refuse[untracked_tests]	passed
+tests/test_splits.py::test_production_overrides_refused	passed
+tests/test_splits.py::test_reproduces_reference_draws	passed
+tests/test_splits.py::test_retired_seed_refused_by_cli	passed
+tests/test_splits.py::test_sandbox_draw_end_to_end	passed
+tests/test_splits.py::test_sandbox_records_redraws	passed
+tests/test_splits.py::test_sandbox_refuses_inside_project	passed
+tests/test_splits.py::test_sandbox_requires_large_seeds	passed
+tests/test_splits.py::test_seed_range_refusals	passed
+tests/test_tripwire.py::test_access_log_records_denials	passed
+tests/test_tripwire.py::test_copied_checkout_with_fake_entry_point_denied	passed
+tests/test_tripwire.py::test_direct_pyarrow_read_of_training_labels_denied_in_subprocess	passed
+tests/test_tripwire.py::test_entry_point_policy_table	passed
+tests/test_tripwire.py::test_entry_points_must_be_frozen	passed
+tests/test_tripwire.py::test_fail_closed_fallback	passed
+tests/test_tripwire.py::test_fold_api_allowed_from_any_entry_point	passed
+tests/test_tripwire.py::test_glob_arguments_denied	passed
+tests/test_tripwire.py::test_links_to_real_raw_files_denied	passed
+tests/test_tripwire.py::test_locked_dir_denied_by_path	passed
+tests/test_tripwire.py::test_open_and_pandas_read_of_raw_file_denied	passed
+tests/test_tripwire.py::test_private_labels_reader_from_non_entry_script_denied	passed
+tests/test_tripwire.py::test_process_arguments_naming_label_files_denied	passed
+tests/test_tripwire.py::test_pyarrow_readers_denied	passed
+tests/test_tripwire.py::test_sitecustomize_installed_and_current	passed
+tests/test_tripwire.py::test_symlink_to_label_file_denied	passed
+tests/test_tripwire.py::test_tripwire_active_without_importing_nextgem	passed
+tests/test_tripwire.py::test_unprotected_io_unaffected	passed
+tests/test_w2_media.py::test_2me_opens_cysteine_uptake	passed
+tests/test_w2_media.py::test_a9_atp_to_adenosine	passed
+tests/test_w2_media.py::test_a9_extraction_fixes	passed
+tests/test_w2_media.py::test_a9_physiological_cysteine	passed
+tests/test_w2_media.py::test_a9_rpmi_classic_base	passed
+tests/test_w2_media.py::test_a9_serum_pct_sensitivity	passed
+tests/test_w2_media.py::test_assignment_equals_design_numbers	passed
+tests/test_w2_media.py::test_bound_scheme_variants	passed
+tests/test_w2_media.py::test_dmem_defaults_and_mixture	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[ACL4 + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[ACL4]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[AR5]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[AlphaMEM + 10% FBS + 1x Pen-Strep]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[AlphaMEM + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[AlphaMEM + 20% FBS + 10ng/ml GM-CSF]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[AlphaMEM + 20% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[BEGM]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[BME + 20% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Breast Organoid Media]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[CM 100%]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[CM:RETM]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[CellGro + 10%FBS+1x glutamax]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 10% FBS + 0.01 mg/ml Transferrin]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 10% FBS + 100uM NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 10% FBS + 1ug/ml Insulin]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 10% FBS + 2mM Glutamine + 0.4ug/ml Hydrocortisone]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 10% FBS + 2mM Glutamine + 100uM NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 10% FBS + 2mM Glutamine + 1X Insulin-Transferrin-Selenium]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 10% FBS + 2mM Glutamine + 1mM Sodium pyruvate + 1mM NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 10% FBS + 2mM Glutamine + Sodium pyruvate + 1X Insulin-Transferrin-Selenium]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 10% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 10% FBS + 2mM glutamine + 500uM pyruvate]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 10% FBS + G408]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 10% FBS+ 1% Glutamax]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 15% FBS + 10 \xb5g/ml human insulin + 2 mM L-glutamine + 1 mM sodium pyruvate + 50 \xb5M mercaptoethanol]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 15% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 15% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 20% FBS + 1mM Sodium pyruvate]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 20% FBS + 2 mM L-glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 20% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 20% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM + 5% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 0.5% BSA + 2mM Glutamine + 10mM HEPES + 500uM sodium pyruvate + 20ug/ml Insulin + 10ug/ml Transferrin + 25nM Sodium Selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM Ethanolamine + 10uM Phosphorylethanolamine + 100pM Triiodo-L-Thyronine ]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 10% FBS + 0.4ug/ml Hydrocortisone]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 10% FBS + 100uM NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 10% FBS + 10ug/ml Insulin + 0.01U/ml Thyroid Stimulating Hormone (TSH) + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 10% FBS + 1x Insulin-Transferrin-Selenium + 10 nM Hydrocortisone + 10 nM beta-Estradiol + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 10% FBS + 1x Insulin-Transferrin-Selenium]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 10% FBS + 2.5 mM Glutamine + 1.2 g/L sodium bicarbonate + 15 mM HEPES + 0.5 mM sodium pyruvate + 400 ng/ml hydrocortisone]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 10% FBS + 2mM Glutamine + 500ng/ml Sodium hydrocortisone succinate]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 10% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 10% FBS + GlutaMAX]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 10%FBS + 2mM Glutamine + 20ug/ml Insulin + 10ug/ml Transferrin + 25nM Sodium Selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM Ethanolamine + 10uM Phosphorylethanolamine + 100pM Triiodo-L-Thyronine + 0.5% BSA + 10mM HEPES + 500uM Sodium Pyruvate]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 15% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 2% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 2.5% Nu-Serum + 1x Insulin-Transferrin-Selenium + 1.25mg/ml BSA + 5.35ug/ml Linoleic Acid]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 20% FBS + 1x Insulin-Transferrin-Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol + 10mM HEPES + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 20% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 20% horse serum]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 20ng/mL human recombinant EGF + 20ng/mL recombinant basic FGF + 2% B-27]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 5% FBS + 2.5 mM Glutamine + 0.2 g/L sodium bicarbonate + 15 mM HEPES + 0.5 mM sodium pyruvate + 400 ng/ml hydrocortisone]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 5% FBS + 2.5 mM Glutamine + 1.2 g/L Sodium Bicarbonate + 15 mM HEPES + 0.5 mM Sodium Pyruvate + 0.002 mg/ml Insulin + 0.005 mg/ml Transferrin + 40 ng/ml Hydrocortisone + 10 ng/ml Epidermal Growth Factor]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 5% FBS + 2mM Glutamine + 10ug/ml Insulin + 0.5ug/ml Hydrocortisone]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 0.01mg/ml Transferrin + 30nM Selenium + 10mM HEPES + 10nM Hydrocortisone + 10nM beta-Estradiol]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 5% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12 + 5% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:F12]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:KSFM (2:1) + 20% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:RPMI (1:1) + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[DMEM:RPMI (1:3) + 10% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[E8]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[EMEM + 10% FBS + 0.01 mg/ml recombinant insulin]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[EMEM + 10% FBS + 0.015 mg/ml 5-bromo-2'-deoxyuridine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[EMEM + 10% FBS + 100uM NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[EMEM + 10% FBS + 200uM NEAA + 1 mM sodium pyruvate + 100ug/L cyanocobalamin (vitamin B12)]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA + 1mM Sodium Pyruvate]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[EMEM + 10% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[EMEM + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[EMEM + 15% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[EMEM + 20% FBS + 1mM Sodium pyruvate + 100uM NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[EMEM + 20% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[EMEM + 5% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[EMEM + 5% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[EMEM:F12 + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[F-12K + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[F12 + 10% FBS + 1mM Glutamine + 44mM Glucose + 12mM Sodium Bicarbonate]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[F12 + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[F12 + 15% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[F12 + 15% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[F12 + 1X ITS + 10mM HEPES + 1ug/ml Hydrocortisone + 1g/l BSA + 10ng/ml EGF + 5mM Ethanolamine + 10nM Triiodo-L-Thyronine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[F12 + 20% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[F12 + 5% FBS + 5ug/ml Insulin + 10mM HEPES + 10ng/ml EGF]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[F12 + 5% FBS + 5ug/ml Insulin + 10mM HEPES + 1ug/ml Hydrocortisone]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[FM]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[HM Prostate Media]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[IMDM + 10% FBS + 1X Insulin-Transferrin-Selenium]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[IMDM + 10% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[IMDM + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[IMDM + 20% FBS + 1.5g/L NaCO3]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[IMDM + 20% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[IMDM + 5% FBS + 10ug/ml Insulin + 5ug/ml Transferrin + 2ng/ml GM-CSF]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[IMDM:Opti-MEM (1:1) + 20% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[IMDM:RPMI (4:1) + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[IMDM:RPMI (4:1) + 20% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[K-SFM]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[L-15 + 10% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[L-15 + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[L-15 + 15% FBS + 2mM Glutamine + 10ug/ml Insulin + 10ug/ml Glutathione]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[L-15 + 20% FBS + 2 mM Glutamine + 16ng/ml recombinant Insulin + 2mM Glutathione + 30ng/ml recombinant EGF]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[L-15 + 20% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[L-15 + 5% FBS + 10ug/ml transferrin + 10ug/ml insulin + 5ug/ml (55 U/ml) catalase + 3.6ug/ml (0.01 mM) hydrocortisone + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[MCDB 105:Medium 199 (1:1) + 15% FBS + 1.5g/l Sodium bicarbonate]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[MEBM + 2% FBS + 2mM Glutamine + MEGM SingleQuot + 10ng/ml EGF]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[MEBM + MEGM SingleQuot + 100ng/mL cholera toxin (no gentamycin-amphotericin B mix)]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[MEM + 10% FBS + 1mM Sodium pyruvate + 1mM NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[MEM + 10% FBS + 2mM Glutamine + 100uM NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[MEM + 10% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[MEM + 10% FBS + 4mM Glutamine + 1mM Sodium pyruvate + 2x MEM NEAA + EAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[MEM + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[MEM + 15% FBS + 2mM Glutamine + 1x Insulin-Transferrin-Selenium]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[MEM + 15% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[MEM + 20% FBS + 1mM Sodium pyruvate + 100uM NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[MEM + 20% FBS + 2mM Glutamine + 100uM NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[MEM + 20% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[McCoy's 5A + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[McCoy's 5A + 15% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[McCoy's 5A + 20% FBS + 30U/ml IL-6]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[McCoy's 5A + 20% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[NSA (proprietary)]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[OCMI-L]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[OPAC:Ad+++ (1:1)]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[OPAC:FM]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[OPAC]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Opti-MEM + 5% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Organoid Media Formulation #10]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Organoid Media Formulation #12]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Organoid Media Formulation #1]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Organoid Media Formulation #3]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Organoid Media Formulation #4]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Organoid Media Formulation #5]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Organoid Media Formulation #6]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Organoid Media Formulation #7]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Organoid Media Formulation #8]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Ovarian Organoid Media]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Pancreas Organoid Media (Wnt3A CM 50%, Basic Medium 40%, Panc, RspondinI CM 10%) + 5% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[PriGrow I (TM001) + 25 \u03bcg/ml BPE + 0.15 ng/ml EGF + 30 ng/ml Cholera Toxin + 5 \u03bcg/ml Gentamycin]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Propagenix Conditioned Media]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Prostate Organoid Media:NSA (1:1)]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RETM + 5% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RETM]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 1% Glutamax + 0.5% Gentamicin + HEPES]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 100uM NEAA + 20mM HEPES]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 100uM NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 10ng/ml of human recombinant GM-CSF]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 1mM Sodium pyruvate]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 2 mM Glutamine + 1x NEAA + 1 mM sodium pyruvate]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 2mM Glutamine + 1X NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 2mM Glutamine + 2mM Sodium pyruvate]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 2mM L-glutamine + 25mM sodium bicarbonate]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 2ng/ml G-CSF]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 2ug/ml Insulin]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 30 mg/L Proline + 35 mg/L Cystine + 3.57 g/L HEPES +15 mg/L Hypoxanthine +1 mg/L ATP +10 mg/L Adenine + 1 mg/L Thymidine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 50uM 2-Mercaptoethanol]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 5ml Insulin-Transferrin-Selenium]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS + 5ng/ml IL-2]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10% FCS + 1x Glutamax]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10%FBS + 1000U/ml IL-2]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 10%FBS + 50U/ml IL-2]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 15% FBS + 10 Units/ml recombinant Insulin]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 15% FBS + 2mM Glutamine + 1mM Sodium pyruvate + 60ug/ml Insulin + 10mM HEPES + 18mM Sodium bicarbonate + 25mM Glucose]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 15% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 15% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS + 0.01 mg/ml insulin]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS + 100nM hydrocortisone]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS + 10ng/ml GM-CSF]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS + 10ng/ml IL-6]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS + 10ug/ml Insulin]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS + 2 mM Glutamine + 1x MEM NEAA + 1 mM sodium pyruvate]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS + 2 mM L-glutamine + 18mM sodium bicarbonate + 25mM glucose + 10 mM HEPES + 1mM sodium pyruvate + 2 ng/ml human recombinant granulocyte macrophage colony stimulating factor]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS + 20ng/ml IL-2]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS + 20ng/ml Testosterone + 5ug/ml Transferrin + 5ng/ml Sodium Selenite + 5ug/ml Insulin]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS + 3mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS + 50ng/ml of GM-CSF]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS + 5ng/ml GM-CSF]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS + Glutamine + NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 20% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 25% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 5% FBS + 2mM Glutamine + 25mM HEPES]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10mM HEPES + 10nM Hydrocortisone + 10nM beta-Estradiol]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 5% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI + 5% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI:EMEM (1:1) + 10% FBS + 2 mM Glutamine + 1x Insulin-Transferrin-Sodium Selenite]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI:EMEM (1:1) + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI:EMEM (1:1) + 20% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI:EMEM (3:2) + 20% FBS + 2 mM L-glutamine + 100uM NEAA]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI:F12 (1:1) + 10% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI:F12 (1:1) + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI:F12 (1:1) + 20% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[RPMI:MEGM (1:1) + 3% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[SMGM]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Stemline Keratinocyte Medium II + 2% FBS + 2mM Glutamine + Stemline keratinocyte growth supplement]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Tumor Stem Media (not TSM DIPG)]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Tumor Stem Media + DMEM:F12 (2:1:1) + Glutamax + Sodium pyruvate + NEAA + 1M HEPES + B27 + EGF + FGF + LIF + Heparin]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Tumor Stem Media DIPG]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[WIT-P]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Waymouth's MB 752_1 + 10% FBS]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[Welm lab breast media]	passed
+tests/test_w2_media.py::test_every_formulation_string_parses[William's E medium + 10% FBS]	passed
+tests/test_w2_media.py::test_every_raw_component_classified	passed
+tests/test_w2_media.py::test_floor_binding_detected_on_toy	passed
+tests/test_w2_media.py::test_golden_parse[DMEM + 10% FBS + 2mM Glutamine + 1mM Sodium pyruvate + 1mM NEAA]	passed
+tests/test_w2_media.py::test_golden_parse[DMEM + 10% FBS+ 1% Glutamax]	passed
+tests/test_w2_media.py::test_golden_parse[DMEM + 10% FBS]	passed
+tests/test_w2_media.py::test_golden_parse[DMEM:F12 + 20% horse serum]	passed
+tests/test_w2_media.py::test_golden_parse[DMEM:F12]	passed
+tests/test_w2_media.py::test_golden_parse[IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium]	passed
+tests/test_w2_media.py::test_golden_parse[IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine]	passed
+tests/test_w2_media.py::test_golden_parse[MEM + 10% FBS + 2mM Glutamine + 100uM NEAA]	passed
+tests/test_w2_media.py::test_golden_parse[OPAC:Ad+++ (1:1)]	passed
+tests/test_w2_media.py::test_golden_parse[RPMI + 10% FBS + 100uM NEAA]	passed
+tests/test_w2_media.py::test_golden_parse[RPMI + 10% FBS + 1mM Sodium pyruvate]	passed
+tests/test_w2_media.py::test_golden_parse[RPMI + 10% FBS + 30 mg/L Proline + 35 mg/L Cystine + 3.57 g/L HEPES +15 mg/L Hypoxanthine +1 mg/L ATP +10 mg/L Adenine + 1 mg/L Thymidine]	passed
+tests/test_w2_media.py::test_golden_parse[RPMI + 10% FBS + 50uM 2-Mercaptoethanol]	passed
+tests/test_w2_media.py::test_golden_parse[RPMI + 10% FBS]	passed
+tests/test_w2_media.py::test_golden_parse[RPMI + 20% FBS + 100nM hydrocortisone]	passed
+tests/test_w2_media.py::test_golden_parse[RPMI:F12 (1:1) + 10% FBS]	passed
+tests/test_w2_media.py::test_known_parses[DMEM + 10% FBS+ 1% Glutamax-expect1]	passed
+tests/test_w2_media.py::test_known_parses[DMEM:F12 + 20% horse serum-expect6]	passed
+tests/test_w2_media.py::test_known_parses[DMEM:F12-expect5]	passed
+tests/test_w2_media.py::test_known_parses[IMDM:RPMI (4:1) + 20% FBS + 2mM Glutamine-expect2]	passed
+tests/test_w2_media.py::test_known_parses[MEM + 10% FBS + 4mM Glutamine + 1mM Sodium pyruvate + 2x MEM NEAA + EAA-expect3]	passed
+tests/test_w2_media.py::test_known_parses[RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate-expect0]	passed
+tests/test_w2_media.py::test_known_parses[RPMI + 10% FBS + 30 mg/L Proline + 35 mg/L Cystine + 3.57 g/L HEPES +15 mg/L Hypoxanthine +1 mg/L ATP +10 mg/L Adenine + 1 mg/L Thymidine-expect7]	passed
+tests/test_w2_media.py::test_known_parses[RPMI + 10% FBS + 50uM 2-Mercaptoethanol-expect4]	passed
+tests/test_w2_media.py::test_physiological_media	passed
+tests/test_w2_media.py::test_req_nonzero_unless_flagged	passed
+tests/test_w2_media.py::test_sheet_facts	passed
+tests/test_w2_media.py::test_shuffle_preserves_strata	passed
+tests/test_w2_media.py::test_strata_cover_all_lines	passed
+tests/test_w2_media.py::test_toy_nutrient_removal_flips_essentiality	passed
+tests/test_w2_media.py::test_unknown_token_raises	passed
+tests/test_w3.py::test_w3_cellfie_rule_and_gpr_score	passed
+tests/test_w3.py::test_w3_essential_task_groups	passed
+tests/test_w3.py::test_w3_ko_sweep_shortcut_equals_brute_force	passed
+tests/test_w3.py::test_w3_mode_e_rules	passed
+tests/test_w3.py::test_w3_pseudo_task_is_deterministic_and_producible	passed
+tests/test_w3.py::test_w3_task_essential_reactions_toy	passed
+tests/test_w3.py::test_w3_task_feasibility_and_capacity_toy	passed
+tests/test_w3.py::test_w3_variant_apply_is_reverted	passed
+tests/test_w4_analysis.py::test_w4a_gates_known_answer	passed
+tests/test_w4_analysis.py::test_w4a_jaccard_and_r2_known_answer	passed
+tests/test_w4_analysis.py::test_w4a_nested_selection_never_uses_heldout	passed
+tests/test_w4_analysis.py::test_w4a_permanova_detects_structure_and_not_noise	passed
+tests/test_w4_analysis.py::test_w4a_score_frame_convention	passed
+tests/test_w4_analysis.py::test_w4a_tg_panel_rule	passed
+tests/test_w5.py::test_w5_convert_or_nodes_multiple_paths	passed
+tests/test_w5.py::test_w5_enumerate_edit_kinds_and_counts	passed
+tests/test_w5.py::test_w5_gpr_eval_matches_cobra	passed
+tests/test_w5.py::test_w5_or_pairs_use_distinguishing_genes	passed
+tests/test_w5.py::test_w5_parse_canon_roundtrip	passed
+tests/test_w5.py::test_w5_protected_or_never_converted	passed
+tests/test_w5.py::test_w5_protected_or_node	passed
+tests/test_w5.py::test_w5_protected_tokens_verbatim	passed
+tests/test_w5.py::test_w5_resolve_protected_human2	passed
+tests/test_w5.py::test_w5_rule_and2or_paralogs_without_shared_complex	passed
+tests/test_w5.py::test_w5_rule_or2and_requires_all_three	passed
+tests/test_w5.py::test_w5_rule_remove_absent_branch_and_protection	passed
+tests/test_w5.py::test_w5_toy_edit_flips_ko	passed
+tests/test_w5.py::test_w5_validator_checks_every_id	passed
+tests/test_w5.py::test_w5_validator_refuses_denylisted_source	passed
+tests/test_w5.py::test_w5_zero_flux_shortcut_is_exact	passed
+tests/test_w8_resource.py::test_w8_claim_tiers	passed
+tests/test_w8_resource.py::test_w8_collect_numbers_stub	passed
+tests/test_w8_resource.py::test_w8_corrupted_sbml_rejected	passed
+tests/test_w8_resource.py::test_w8_flags	passed
+tests/test_w8_resource.py::test_w8_gr_passes	passed
+tests/test_w8_resource.py::test_w8_headroom_rule	passed
+tests/test_w8_resource.py::test_w8_libsbml_new_errors_vs_parent	passed
+tests/test_w8_resource.py::test_w8_line_model_from_mask	passed
+tests/test_w8_resource.py::test_w8_random_ko_detects_difference	passed
+tests/test_w8_resource.py::test_w8_rel_equal_noise_floor	passed
+tests/test_w8_resource.py::test_w8_roundtrip_detects_bound_change	passed
+tests/test_w8_resource.py::test_w8_sesoi_c1b	passed
+tests/test_w8_resource.py::test_w8_toy_sbml_roundtrip	passed
+tests/test_w8_resource.py::test_w8_transfer_wording	passed
