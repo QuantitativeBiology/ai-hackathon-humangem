@@ -29,7 +29,7 @@ def _bits(hexmask: str) -> np.ndarray:
     return np.unpackbits(np.frombuffer(bytes.fromhex(hexmask), dtype=np.uint8)).astype(bool)
 
 
-def a6prime_comparison(stage_dir) -> pd.DataFrame:
+def a6prime_comparison(stage_dir, out_path=None) -> pd.DataFrame:
     """Amendment A7, label-free: every CORDA (A6') build against F0/F2/F3/F4 built in A1 on the same line and
     threshold (real RNA, no genomic constraint): reaction-set Jaccard, essential-set (ratio_r < 0.01) Jaccard and
     sizes, Spearman of ratio_r over all genes, WT growth ratio, repair size and build CPU. Descriptive only."""
@@ -65,7 +65,7 @@ def a6prime_comparison(stage_dir) -> pd.DataFrame:
                 "build_cpu_min_other": r((o.extract_cpu_s + o.variant_cpu_s) / 60, 2),
                 "n_open_corda": int(c.n_open), "n_open_other": int(o.n_open), "status": A6P_TAG})
     df = pd.DataFrame(out)
-    df.to_csv(stage_dir / "a6prime_comparison.tsv", sep="\t", index=False)
+    df.to_csv(out_path or (stage_dir / "a6prime_comparison.tsv"), sep="\t", index=False)
     return df
 
 
