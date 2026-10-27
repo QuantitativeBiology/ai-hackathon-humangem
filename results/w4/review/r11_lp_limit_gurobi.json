@@ -1,0 +1,5 @@
+{
+ "solver": "gurobi",
+ "TimeLimit": 300.0,
+ "Threads": 1
+}

@@ -389,3 +389,160 @@ Joint drop (step 4) is not exercised on these lines, nor on any panel line (loss
 After B1–B3 are fixed and re-tested (pytest plus one smoke run per solver lane checking: no WLS banner in GLPK
 workers, an identical F3 mask across job orders, a MANIFEST row with input SHAs), Stage A can be launched:
 **GO conditional on B1–B3.**
+
+---
+
+## Re-check (2026-10-27, after the author's fixes; code at c280413)
+
+**Scope and probe.**
+- The label-guard probe (the same `head -c 50` on the raw CRISPR gene-effect file) was **BLOCKED** again.
+- The re-check is label-free: no `labels.*`, nothing under `data/locked/`.
+- Gurobi went only through the pool, at most 2 sessions at once.
+- I reviewed the W4 changes while they were staged; they were committed as c280413 during the re-check. The
+  W4 files in the working tree equal c280413 (their mtimes predate my review).
+- Commit c280413 also contains some of my in-progress review files (`r9`, `r10`, `with_slot.py`, `smoke/`). Its
+  copy of `r10_runner_repro.py` is the final one that ran. Later review files are uncommitted.
+- New review scripts and outputs: `results/w4/review/r9_a6prime.*`, `r10_runner_repro.*`, `r11_lp_limit_*`,
+  `r12_loss_variant_path.*`, `smoke/`.
+
+| Item | Verdict |
+|---|---|
+| (1) B1: no Gurobi session from GLPK processes | **PASS** |
+| (2) B2: one build per process, LP limit and retry, watchdog | **PASS** |
+| (3) B3: provenance, clean-tree and worktree guards | **PASS** (NOTE R3) |
+| (4) Non-blocking items | **PASS** |
+| (5) A6′ line choice and tagging | **PASS** |
+| (6) Projection | **PASS**: consistent with the smoke test (NOTE R6) |
+| Tests | **PASS**: 26 passed in 366 s (run under a pool slot, not recorded) |
+
+**(1) B1.**
+- `context_run.init_worker` sets `cobra.Configuration().solver` before `load_model`, and asserts the solver the
+  parent actually runs. `Inputs`, `a6p_subset`, `w4_prepare` and `w4_pilots` read SBML under GLPK.
+- The test `test_glpk_worker_never_touches_gurobi` replaces `gurobipy.Model` and `gurobipy.Env` with functions that
+  abort, then runs a GLPK worker init. It is meaningful: the old code path calls `gurobipy.Model()` and would fail.
+  It does not exercise `Inputs` itself; the banner counts below cover that.
+- **Banner spot-checks:**
+  - my pilot run (`results/w4/review/smoke/`: 1 line, F0 and F3, 2 + 2 builds plus 1 loss-rule job) printed
+    **2 WLS banners = 2 F3 processes**, none from the parent or the 3 GLPK processes;
+  - `r10` printed 3 banners = 3 F3 processes;
+  - the author's smoke log shows 23 banners = 22 F3 + 1 CORDA, in line with this.
+
+**(2) B2.**
+- **One build per process.** `context_run.Runner` spawns one process per job. `distinct_pids` holds over all jobs
+  in `r10_runner_repro.json`.
+- **My history repro, now through the Runner, is bitwise-identical:**
+  - F3 ACH-002024 run after another F3 build equals F3 ACH-002024 run alone: open-mask sha 694001df…, KO sha
+    5eb5edd3…;
+  - F0 ACH-000957 run after F0 ACH-002024 equals F0 ACH-000957 alone: mask 24fa439f…, KO 7529ae38….
+  Both equal my fresh-process results from the first review, so the results are also reproducible across sessions.
+- **A4 genomic variant** (`r12_loss_variant_path.json`). The `loss` variant, run after `none` in the same job,
+  equals the `loss` variant run alone (masks and KO tables identical) for F0 and F2 on ACH-002024 and ACH-003383.
+- **LP time limit** (`r11_lp_limit_*.json`):
+  - Gurobi: `TimeLimit` = 300, `Threads` = 1;
+  - GLPK: the optlang timeout is 300 s;
+  - a forced 1 s limit on a full-model L1 LP returns `time_limit` after the one retry from the standard basis.
+    The caller then records a failed build, or NaN for a KO solve. The objective restores correctly afterwards.
+- **Watchdog.** In `r10` (E), an F0 job with a 10 s CPU limit is killed and reported as `timeout`, and the next job
+  in the lane runs normally.
+- **Failed-timeout through the full script.** My `--pilot` run had `--job-timeout 110`:
+  - 3 jobs timed out (the F3 builds, and F0 real with both variants), and 1 F0 job finished;
+  - each timed-out variant is written to `builds.tsv` as `failed = True`, `error = failed-timeout`;
+  - consolidation and the provenance row still completed.
+- The author's `test_build_independent_of_job_order` passes. It guards against a regression to pooled workers.
+
+**(3) B3.**
+- `main()` runs under `nextgem.run.provenance()`. The MANIFEST row of my pilot run has the commit, dirty = True
+  (pilot) and 13 input SHA-256s, including `stage_a_panel.tsv`, `threshold_stats.json`,
+  `threshold_gene_means.parquet`, the FASTCC cache and the split. In production `a6prime_lines.tsv` is hashed too.
+  Output SHAs, versions, CPU (including children) and RSS are also recorded.
+- **Clean-tree guard.** Without `--pilot`, the script raised `DirtyTreeError` on the current main checkout. The
+  checkout is dirty because of W2's uncommitted `src/` and `scripts/` changes.
+- **Worktree guard.** A copy of the script run against the main-checkout `nextgem` exits with "nextgem imported
+  from …, script from …".
+- `--gurobi-workers 9` is refused (pool size 8).
+- An exported copy of c280413 dry-runs correctly with `PYTHONPATH=<copy>/src` and
+  `NEXTGEM_DATA_ROOT=/data/tmpA/nextgem/data` (1,700 specs; A5 deduplicates to 400 builds, giving 1,380 builds plus
+  30 loss-rule jobs).
+
+**NOTE R3.**
+- (a) Before the dirty-tree refusal, the script has already written `<out>/a6prime_lines.tsv` and created
+  `tmp/jobs_<hash>/` (`a6p.to_csv` is placed before `with provenance`). This is harmless but untidy; the write
+  could move inside the `with` block.
+- (b) `run.provenance()` itself still lacks the `nextgem.__file__` worktree assertion that §11.4 describes. W4
+  has its own check, but other scripts do not.
+
+**(4) Non-blocking items.**
+- Checkpoints live in `tmp/jobs_<sha of 7 code files + run parameters>/`, and the accepted losses moved into
+  that directory too.
+- `ratio_r` is float64 in every `ko_*.parquet`.
+- `worker_run` always asserts `solver_name(parent.model)` against the declared solver, with the override applied
+  only under `--pilot`.
+- The pool has one global size (`POOL_SLOTS` = 8 or `NEXTGEM_GUROBI_SLOTS`); `hold_slot` no longer takes n.
+  W1 ran with 8 concurrent sessions, which is the empirical basis for 8. W2 now also takes slots from this pool.
+- A7 uses the first 2 panel lines of each of the 10 lineages. Noise is independent per line (seed sequence
+  `[seed, panel position]`) and deterministic.
+
+**(5) A6′ (amendment A7).**
+- My independent implementation (`r9_a6prime.tsv`) reproduces `results/w4/a6prime_lines.tsv` on all 10 lineages:
+  same line, same distance to 1e-4, same n_lineage_lines (18–89). Every median line is training-tier.
+- The reading matters. A median over only the 3 panel lines would pick a different line in 6 of 10 lineages
+  (Bone, Esophagus/Stomach, Kidney, Myeloid, PNS, Skin). The coordinator has confirmed the all-training-lines
+  reading.
+- Margins to the second-closest line are 1.0–7.9.
+- **Tag "descriptive, not eligible for P1 (amendment A7)"** is present in:
+  - `a6prime_lines.tsv` (`status`);
+  - every F3b row of `builds.tsv` (`status_tag`, `p1_eligible = False`), including failed-timeout rows, since
+    the tag is applied at consolidation;
+  - `ko_A6p.parquet` (`status_tag`);
+  - `a6prime_comparison.tsv` (`status`).
+  No other F3b output exists.
+- **NOTE.** The 5 CPU-h per-build CORDA limit and the "failed-timeout" outcome are not in A7 or in §11.4's
+  failed-build list. The PI should say how a timed-out build is scored: presumably the §11.4 no-information
+  score, as for a failed build.
+
+**(6) Projection.**
+- I recomputed from the author's smoke test (`stage_a_smoke/builds.tsv`, which includes the 57-task profiles)
+  rather than the pilot. Mean per-variant build CPU:
+  - F0 2.34 / 2.11 min (none / loss);
+  - F2 1.93 / 1.76;
+  - F3 2.23 / 1.04;
+  - F4 2.37 / 1.94;
+  - F5 1.66;
+  - CORDA 95.6 min.
+- Process overhead is 35.6 CPU-s per job (smoke: 7.73 CPU-h in total against 6.63 h of build CPU over 110 jobs).
+- Job counts, confirmed by `--dry-run`: Gurobi 290 (F3 270 + A6′ 20); GLPK 1,120 (F0/F2/F4 630, F2 A7 60, A5 400,
+  loss rule 30).
+- **Totals:**
+
+| Lane | Build CPU | Overhead | Total |
+|---|---|---|---|
+| GLPK | ≈ 50.8 h | 11.1 h | **≈ 62 CPU-h** |
+| Gurobi | F3 ≈ 12.6 h + A6′ ≈ 32 h | 2.9 h | **≈ 48 CPU-h** |
+| **All** | | | **≈ 110 CPU-h** |
+
+- This is inside the author's 107–120 CPU-h range.
+- **Wall time:** max(48/8, 62/20, three CORDA rounds ≈ 4.9 h) ≈ **6.0–6.2 h** ✓.
+- **Memory:** 8 × 1.6 + 20 × 1.56 + 3.6 (parent peak in the smoke run) = **47.6 GB** ✓.
+- `--budget-cpu-h 110` aborts at 220 h of build CPU. Timeouts and process overhead are not counted, which is
+  acceptable at this margin.
+
+**NOTE R6.** These numbers assume conditions that do not hold right now:
+- **Gurobi slots.** At 10:06, 4 of the 8 pool slots were held by another workstream (W2). With 4 slots for W4, the
+  Gurobi lane takes ≈ 12 h of wall time; the CORDA rounds alone take ≈ 8 h.
+- **Memory.** Available memory was 61 GB. The README requires ≥ 68 GB to keep 20 GB free (§11.4), and the script
+  does not check this at launch; it aborts only below 10 GB.
+- 48 cores; load ≈ 5.
+
+**GO / NO-GO for `.venv/bin/python scripts/w4_stage_a.py --gurobi-workers 8 --glpk-workers 20 --budget-cpu-h 110`:
+GO for the code (B1–B3 resolved; no new blocker), with three launch conditions:**
+1. **L1. Launch from a pinned worktree at c280413.** On the main checkout the command refuses, correctly, because
+   W2's `src`/`scripts` changes are uncommitted. Use `git worktree add /data/tmpA/nextgem_runs/c280413 c280413`,
+   then from that directory:
+   `NEXTGEM_DATA_ROOT=/data/tmpA/nextgem/data PYTHONPATH=$PWD/src /data/tmpA/nextgem/.venv/bin/python scripts/w4_stage_a.py --gurobi-workers 8 --glpk-workers 20 --budget-cpu-h 110`.
+   Outputs then land in the worktree's `results/w4/stage_a/` and must be copied back.
+2. **L2. Memory.** Launch only with ≥ 68 GB available (61 GB at 10:06), or lower `--glpk-workers` (16 workers
+   need ≈ 61 GB).
+3. **L3. Gurobi slots.** Expect a longer wall time while W2 holds pool slots. This is correct behaviour, as
+   workers wait for slots, but the ≈ 6.2 h estimate assumes all 8.
+
+The PI should also decide how failed-timeout builds are scored (§11.4).

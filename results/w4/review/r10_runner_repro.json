@@ -1,0 +1,71 @@
+{
+ "A_B_C_D": {
+  "C_prev": {
+   "status": "ok",
+   "open_sha": "87ec8117f6899289",
+   "n_open": 11003,
+   "ko_sha": "6b89a2eeab9c9831",
+   "pid": 948631,
+   "wall": 83
+  },
+  "A_prev": {
+   "status": "ok",
+   "open_sha": "2a4b236830e2539a",
+   "n_open": 6721,
+   "ko_sha": "933569ad44ec6298",
+   "pid": 948534,
+   "wall": 138
+  },
+  "C": {
+   "status": "ok",
+   "open_sha": "24fa439fdf13dc92",
+   "n_open": 11261,
+   "ko_sha": "7529ae3841cc5cae",
+   "pid": 949952,
+   "wall": 74
+  },
+  "A": {
+   "status": "ok",
+   "open_sha": "694001df3dc72d1b",
+   "n_open": 6429,
+   "ko_sha": "5eb5edd3e18911de",
+   "pid": 950187,
+   "wall": 108
+  },
+  "D": {
+   "status": "ok",
+   "open_sha": "24fa439fdf13dc92",
+   "n_open": 11261,
+   "ko_sha": "7529ae3841cc5cae",
+   "pid": 950547,
+   "wall": 71
+  },
+  "B": {
+   "status": "ok",
+   "open_sha": "694001df3dc72d1b",
+   "n_open": 6429,
+   "ko_sha": "5eb5edd3e18911de",
+   "pid": 950736,
+   "wall": 107
+  }
+ },
+ "F3_identical_A_B": true,
+ "F0_identical_C_D": true,
+ "distinct_pids": true,
+ "E": {
+  "E_timeout": {
+   "status": "timeout",
+   "wall": 10,
+   "detail": null
+  },
+  "E_next": {
+   "status": "ok",
+   "open_sha": "87ec8117f6899289",
+   "n_open": 11003,
+   "ko_sha": "6b89a2eeab9c9831",
+   "pid": 951476,
+   "wall": 81
+  }
+ },
+ "wall_s": 548
+}

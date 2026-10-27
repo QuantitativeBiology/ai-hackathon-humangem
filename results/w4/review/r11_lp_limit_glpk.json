@@ -1,0 +1,7 @@
+{
+ "solver": "glpk",
+ "optlang_timeout": 300,
+ "forced_1s_status_after_retry": "time_limit",
+ "wall_s": 4.3,
+ "restored_wt_ok": true
+}

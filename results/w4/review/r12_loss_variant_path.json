@@ -1,0 +1,46 @@
+{
+ "ACH-002024|F0": {
+  "loss_mask_equal": true,
+  "n_open_reactions_differ": 0,
+  "loss_ko_equal": true,
+  "n_reopened": [
+   35,
+   35
+  ],
+  "ko_n_differ": 0,
+  "lethal_differ": 0
+ },
+ "ACH-002024|F2": {
+  "loss_mask_equal": true,
+  "n_open_reactions_differ": 0,
+  "loss_ko_equal": true,
+  "n_reopened": [
+   0,
+   0
+  ],
+  "ko_n_differ": 0,
+  "lethal_differ": 0
+ },
+ "ACH-003383|F0": {
+  "loss_mask_equal": true,
+  "n_open_reactions_differ": 0,
+  "loss_ko_equal": true,
+  "n_reopened": [
+   38,
+   38
+  ],
+  "ko_n_differ": 0,
+  "lethal_differ": 0
+ },
+ "ACH-003383|F2": {
+  "loss_mask_equal": true,
+  "n_open_reactions_differ": 0,
+  "loss_ko_equal": true,
+  "n_reopened": [
+   0,
+   0
+  ],
+  "ko_n_differ": 0,
+  "lethal_differ": 0
+ }
+}
