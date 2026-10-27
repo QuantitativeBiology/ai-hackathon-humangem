@@ -1,3 +1,18 @@
+(Human-written text starts)
+This is an exercise in assessing the bioinformatics capabilities of agentic AI. It is part of a hackathon run by the Beltrao lab at ETH Zurich, to which we (INESC-ID & IST - Universidade de Lisboa) contribute, where we used Claude to run bioinformatics projects (https://github.com/evocellnet/ai-hackathon/). All results in this project were generated entirely by AI with minimal human intervention. This is not intended to be viewed as a traditional publication and bioinformatics tool.
+
+
+[Project-specific text] The goal of this specific project was to improve the prediction of cancer essential genes and metabolic synthetic lethal interaction using human genome-scale metabolic models. It was executed by Claude Opus 5.5 with delegation to Opus 5.5/Sonnet 5.5 subagents.
+
+
+Currently none of the results have been verified by a human. We plan to verify the agent’s methodology and benchmarking, and we will update this section accordingly.
+
+
+The rest of this repository is entirely AI generated. It includes code for implementation of the predictive model and a AI-written report in the style of a journal article, detailing the final method, the path followed to reach it, and benchmarking against other methods.
+(Human-written text ends)
+
+---
+
 # nextgem: context-specific Human-GEM models for cancer gene essentiality
 
 Goal: optimise the human genome-scale metabolic models **Human1** (Human-GEM v1.19.0) and **Human2** (Human-GEM v2.1.1) so they predict metabolic gene essentiality in **DepMap Public 26Q3** CRISPR screens better than the generic model. Performance is measured by AUPRC per gene, per lineage and overall. MCC/F1 are also reported under the protocols of the Human1/Human2 papers, so results are comparable with them.
@@ -10,7 +25,7 @@ The work has four strands:
 
 Whole lineages are held out for testing. The full brief is in [PROMPT.md](PROMPT.md).
 
-*Status as of 2026-10-27, 11:15 UTC.*
+*Status as of 2026-10-27, 19:00 UTC.*
 
 ## Status at a glance
 
@@ -19,7 +34,7 @@ Whole lineages are held out for testing. The full brief is in [PROMPT.md](PROMPT
 | M0 Setup, literature ([LITERATURE.md](LITERATURE.md)), data ([DATA.md](DATA.md)) | done |
 | M1 Pre-registered design ([DESIGN.md](DESIGN.md), frozen v3 after 3 review rounds); leakage infrastructure; lineage split (seed 38: 7 test / 4 validation / 12 training lineages) | done |
 | M2 Generic-model baseline (W1), training plus one validation look | done: **G\* = Human1** |
-| M3 Pilots: medium (W2), context-model families (W4), Stage A on the 30-line training panel | **running** |
+| M3 Pilots: medium (W2, library frozen), context-model families (W4), Stage A on the 30-line training panel | builds done; scoring next |
 | M4–M9 Biomass/tasks (W3), GPR curation (W5), flux information (W6), auto-research loop (W7), SBML resource (W8), test looks T1/T2, REPORT.md | planned |
 
 The live research record is [RESEARCH_TREE.md](RESEARCH_TREE.md). It holds the decisions D0–D8 and the findings tree; resume from there.
@@ -42,13 +57,9 @@ The live research record is [RESEARCH_TREE.md](RESEARCH_TREE.md). It holds the d
 - **CORDA.** It costs 1.5–1.7 CPU-h per model, so it runs as a 10-line descriptive comparison only (user decision D8).
 
 ## Running now
-
-**Stage A**: 1,380 distinct context-model builds plus 600 genomic re-sweeps on the 30-line training panel.
-- Families: F0 thresholding, F2 GIMME, F3 FASTCORE, F4 E-Flux, F5 label-calibrated presence and F3b CORDA (10 lines).
-- It runs label-free from a pinned worktree at the reviewed commit `c280413`.
-- Progress at 11:15 UTC: 180/1,380 builds, about 12 CPU-h used, no failures. Estimated finish is ~17:30 UTC; projected total ≈ 110 CPU-h.
-
-**W2 medium library**: final fixes after an independent blind re-extraction (amendment A9). The library is frozen after that.
+- **Stage A finished** (2026-10-27, 16:31 UTC): 1,380 distinct context-model builds plus genomic re-sweeps on the 30-line training panel, 0 failed and 0 timeouts, 108.7 CPU-h, 6.2 h wall, from the reviewed commit `c280413`. Outputs are in `results/w4/stage_a/`. Next comes label-blind gating and nested panel LOLO selection (training labels only), then independent review.
+- **W2 medium library frozen** after the two-agent extraction and re-check (A9).
+- **Starting:** W3 (objectives, tasks, biomass), W5 (GPR curation) and the W8 SBML export plus REPORT.md skeleton.
 
 ## Known pitfalls and open issues
 - Most generic KO scores are near-binary (lethal or 1), so ties dominate AUPRC. Every metric is tie-aware, and tie-break baselines (B8±) are mandatory.
