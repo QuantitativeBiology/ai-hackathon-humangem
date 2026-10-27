@@ -36,3 +36,5 @@ Constraint-based modelling with the Human-GEM genome-scale metabolic model, inte
 
 ## Housekeeping
 - `/data/tmpA` is a shared NFS volume that was ~98% full (~100 GB free); keep outputs compact.
+- The label hook splits shell commands on newlines before stripping quotes: use one `-m` per paragraph in commit messages and avoid protected path names in them.
+- Background agents stopped by an API limit resume intact via SendMessage; have them check their own background processes first so they don't start duplicate runs.
