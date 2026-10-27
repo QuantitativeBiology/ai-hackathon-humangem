@@ -63,6 +63,11 @@ Next (M3): Stage A of the context-model families on the 30-line training panel, 
     - [-] The positive control B6 ≥ B2 fails with untuned defaults (0.888 vs 0.900). Tuning belongs to W7.
     - Task-augmented scores (P57) lower tAP on all genes but raise it without common essentials.
 - [~] 4. Medium (exchange bounds) — per-line culture media; error attributable to medium
+  - [x] 4.1 W2 pilots and media library (Opus; ≈ 17 CPU-h of sweeps). Blind two-agent extraction: 312/313 components agree and every difference is adjudicated. The library is frozen (63a51df; A9). 472 KO sweeps; M0 = baseline bitwise. Review notes/reviews/M3_W2_review.md (GO after re-check).
+    - [!] Medium moves few genes (mean |Δratio_r| ≈ 1e-3 per line), so the shuffled-medium null will be tight.
+    - [-] M3 calibration is infeasible as specified (growth ≈ 12.3 × the O2 bound; other uptakes stay at 1000), so M3 is reported as uncalibrated and excluded.
+    - [!] Sterol branch: serum cholesterol rescues only DHCR7. Biomass needs vitamin D3 products reachable only via lathosterol → 7-dehydrocholesterol, a model-structure issue for W3/W5. CAD is rescued by orotate but not uridine (W5).
+    - Bug found in the A9 fix round: 2-ME did not open cysteine uptake. It is fixed and changes 0 gene ratios.
 - [ ] 5. Objectives / metabolic tasks (a-priori task set)
 - [~] 6. Context-specific models (omics integration; method-vs-tissue clustering test)
   - [x] 6.1 W4 pilots (Opus): F0, F2 GIMME, F3 FASTCORE, F4 E-Flux, F5 LCP builder; repair rule restores 12/12 lines (0.62–0.88 of generic WT); loss rule order-independent; 1.7–3.3 CPU-min per build. CORDA 1.5–1.7 CPU-h per model → full A6 dropped (A4); replaced by a 10-line comparison row A6′ (A7, user D8).
