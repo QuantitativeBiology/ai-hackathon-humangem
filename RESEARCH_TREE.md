@@ -2,13 +2,14 @@
 
 Legend: [ ] planned · [~] in progress · [x] done · [-] abandoned/negative · [!] key finding
 
-## Status summary (2026-10-26, M1: design frozen)
+## Status summary (2026-10-27, M2: generic baseline fixed)
 
-DESIGN.md v3 is frozen after three review rounds (7 reviewers in rounds 1–2, an unexposed verifier in round 3) and user decision D2. The primary endpoint is the lineage-equal-weighted per-line ΔAP (tie-aware expected AP) of the selected pipeline versus the better generic parent (Human1 v1.19.0 / Human2 v2.1.1) on 7 locked test lineages, with confirmatory sequence C1→C1b→C3→C4→C5. MCC/F1/precision/recall/accuracy under the Human1/Human2 papers' own protocols are required secondary endpoints for comparability. ftINIT is excluded (user's own analysis); context-specific models use ≥3 LP families. Label leakage controls: a PreToolUse hook (active, verified), a labels.py-only access rule, a label-exposure register, sealed test outputs and a user-supplied split seed revealed after this freeze. The generic-model knockout baseline exists and was independently reviewed; nothing has yet been scored against labels.
+M2 is complete. The generic models were scored on 686 training lines (12 lineages). H1 beats H2 on tie-aware AUPRC: tAP_line 0.300 vs 0.292. Their paper-protocol MCCs are similar: 0.329 vs 0.331 (P57 × L-ge06). An independent reviewer recomputed every headline number with its own code and matched it exactly. The single W1 validation look (1 of 40, scalars only, 198 lines in 4 lineages) set **G\* = Human1**: Δ̄_lin(H2−H1) = −0.0071 [−0.0079, −0.0063]. Label-only gene-prior baselines score far higher (B2 tAP 0.90). About 42% of positive gene × line pairs fall outside the H2 addressable set. These two facts set the realistic bar for context-specific GEMs.
 
-Next (M1 implementation → M2): build and independently review the M1 infrastructure (labels.py with fold scoping, tripwire, label-copy scanner, ledgers, tie-aware AP and binary metrics with toy tests, make_splits.py), draw the split once with the user's seed, then benchmark the generic Human1/Human2 models (W1). Planned compute ≈1,020 CPU-h, all LP, ≈36–42 h wall-clock from the start of M2 once the code is verified; implementation time comes on top. Pending from the user: four medium sheets (MEM/EMEM, F12, McCoy's 5A, L-15); their lines are flagged as fallback until then.
+Next (M3): Stage A of the context-model families on the 30-line training panel, starting after the W4 code passes its independent review (A4 specifications; ≈60 CPU-h, ≈3.5 h wall). In parallel, W2 (medium pilots) is finishing. Then come the M3 milestone review, LESSONS pruning and the fresh-agent "stop/continue" question.
 
 ## Decisions
+- **D6 (2026-10-27, M2)**: G\* = Human1, fixed by the single pre-registered W1 validation look (09b69a2). The PI ratified the Stage-A specifications as amendment A4 (fixed label-free A5 grid, one solver per family, KO isozyme convention, A6 CORDA dropped by its frozen cost rule, Stage A on M0). Amendment A5 covers test renames and the staged check of git-ignored frozen inputs.
 - **D0 (2026-10-26)**: Human2 := Human-GEM v2.1.1 (local); Human1 := latest Human-GEM v1.x release (to fetch). Baseline infrastructure started before DESIGN.md is final because it uses only generic models and no DepMap labels for fitting. Git: commit locally; push only when the user asks. Time budget: multi-day effort (user, 2026-10-26); report runtime with every result.
 - **D3 (2026-10-26, M1)**: DESIGN.md v3 frozen. Round 3 found the v3 draft not freeze-ready; all its text fixes were applied by the PI (verification.md "v3 final check"), and the unexposed verifier ratified/amended the exposed author's protocol choices. design_numbers.py made deterministic (tie order). Split seed: supplied by the user, revealed only after this freeze commit.
 - **D5 (2026-10-26, user)**: F-4 — the PI's post-hoc relaxation of the list-authorship rule is not simply ratified; a blind re-derivation by a fully unexposed agent is reconciled with the approved lists. Changes to leakage/exposure rules need user ratification from now on.
@@ -48,15 +49,22 @@ Next (M1 implementation → M2): build and independently review the M1 infrastru
   - [x] 2.8 F-4 re-check (user decision D5): blind lists by a fully unexposed agent (57670ff, committed before seeing the approved lists), reconciled item by item → notes/apriori_lists_final.md (amendment A2). Corrections both ways (e.g. ATP5MC1/2/3 is an AND complex, not isozymes; ten wrong PMIDs fixed; FH/SDH dropped, n=3).
   - [x] 2.7 M1 implementation, independently reviewed (notes/reviews/M1_*_review.md): metrics (0c06695; 691 tAP + 17k binary cases, 0 mismatches), labels/splits/guards (code commit C = 639f3a9; reviewer GO after re-trying exploits). 156 tests pass. Amendments A1 (split procedure), A2 (final lists), A3 (scanner exempts pinned split file).
   - [x] 2.9 **Split drawn once** (S=38, 34575a9): test 7 lineages / 394 lines; validation 4 / 200; training 767. Labels built (c54e867; validation/test sealed). Residual guard bypasses documented as accepted risk (results/m1_infra/README.md).
-- [~] 3. Baseline: generic Human1 & Human2 (pipeline agent, Opus; predictions only, no DepMap scoring until DESIGN.md fixes labels/splits)
+- [x] 3. Baseline: generic Human1 & Human2 (pipeline agent, Opus; predictions only, no DepMap scoring until DESIGN.md fixes labels/splits)
   - [x] 3.1 Human1 = v1.19.0 (commit 022ed5c) fetched; Entrez mapping 2,874/2,887 (H1), 2,857/2,870 (H2) one-to-one; 2 unmapped (GK3P, SLC37A4 alt ENSG); join on Entrez (symbols renamed for 7–10 genes)
   - [x] 3.2 Single-gene KO, Ham's medium, Gurobi (16 WLS sessions OK): H1 149 / H2 154 lethal (ratio_r<0.01; none in 0.01–0.5); ~50 s per model on 15 workers. Verification 45/46 (only known H1 UMPS). Independent review (notes/review_baseline_ko.md): all genes recomputed with own code, max diff 2e-12 → accept with fixes; fixes applied (ratio_r rounding → bitwise-identical reruns; loud failure on non-optimal; per-release task files; SHA-pinned Human1 download).
     - [!] Human1 UMPS/DHODH non-lethal on Ham's: thymidylate synthase MAR04644 reversible in H1 (irreversible in H2) → UMP via thymidine bypass. Kept as released; a model difference to report.
     - Predicted ratios are near-binary → essentiality scores for AUPRC need a continuous score (e.g. ratio + tie-breaking / flux-based scores), to be fixed in DESIGN.md.
-  - [ ] 3.3 Benchmark vs DepMap CRISPR (AUPRC overall / per gene / per lineage)
-- [ ] 4. Medium (exchange bounds) — per-line culture media; error attributable to medium
+  - [x] 3.3 **M2: W1 benchmark** (W1 agent, Opus, ≈41 min wall / 3.5 CPU-h; review notes/reviews/M2_W1_review.md, GO after re-check). Training: tAP_line H1 0.300 / H2 0.292 (lift 2.42 / 2.36), without CE_fit 0.145 / 0.142; MCC P57×L-ge06 0.329 / 0.331, PGR 0.334 / 0.331. Baselines: B2 0.900, B6 0.888, B8+ 0.42, B3 0.33, B0/B1 = null 0.124. SESOI_C1b = 0.00572 (frozen). Validation look (1/40, 191 s): H1 0.302, H2 0.295 → G\* = Human1.
+    - [!] H1 > H2 in all 12 training lineages, and also on validation, so H1.2 (H2 improves on H1) is not supported. MCC is essentially tied.
+    - [!] The gene-prior baseline (B2, 0.90) is about 3× the generic GEM. Any context-specific gain must be read against B2/B8, not only G\*.
+    - [!] About 42% of positive pairs are outside the addressable set (GPR-mapped genes), which caps achievable recall for any GEM.
+    - [-] The positive control B6 ≥ B2 fails with untuned defaults (0.888 vs 0.900). Tuning belongs to W7.
+    - Task-augmented scores (P57) lower tAP on all genes but raise it without common essentials.
+- [~] 4. Medium (exchange bounds) — per-line culture media; error attributable to medium
 - [ ] 5. Objectives / metabolic tasks (a-priori task set)
-- [ ] 6. Context-specific models (omics integration; method-vs-tissue clustering test)
+- [~] 6. Context-specific models (omics integration; method-vs-tissue clustering test)
+  - [x] 6.1 W4 pilots (Opus): F0, F2 GIMME, F3 FASTCORE, F4 E-Flux, F5 LCP builder; repair rule restores 12/12 lines (0.62–0.88 of generic WT); loss rule order-independent; 1.7–3.3 CPU-min per build. CORDA 1.5–1.7 CPU-h per model → A6 dropped. Amendment A4.
+  - [~] 6.2 Independent review of the W4 code → then Stage A (A1–A5, A7; ≈60 CPU-h).
 - [ ] 7. GPR curation (proteomics, paralogs); curation vs constraint contribution
 - [ ] 8. Flux-state information content (subtypes, drug screens, metabolomics)
 - [ ] 9. Resource: SBML models per DepMap 26Q3 line
