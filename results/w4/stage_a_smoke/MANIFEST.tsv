@@ -1,0 +1,2 @@
+argv	commit	dirty	parent	medium	seeds	gurobi_workers	glpk_workers	glpk_families	n_builds	wall_s	worker_cpu_h	parent_cpu_s	parent_peak_rss_gb	worker_peak_rss_gb_max	outputs
+scripts/w4_stage_a.py --rows A1 --families F0 F3 --limit 2 --gurobi-workers 1 --glpk-workers 1 --glpk-families F0 --allow-dirty --out results/w4/stage_a_smoke --budget-cpu-h 1	3f118279e92938dd847bf622b6149d9bdcfd8dcf	True	human2	M0	[11, 23, 37]	1	1	F0	4	441	0.177	257	3.564152	1.556744	ko_A1.parquet,ko_A4.parquet

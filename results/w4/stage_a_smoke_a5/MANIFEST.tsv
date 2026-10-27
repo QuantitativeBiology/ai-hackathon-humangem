@@ -1,0 +1,2 @@
+argv	commit	dirty	parent	medium	seeds	gurobi_workers	glpk_workers	solvers	pilot	n_builds	wall_s	worker_cpu_h	parent_cpu_s	parent_peak_rss_gb	worker_peak_rss_gb_max	outputs
+scripts/w4_stage_a.py --pilot --out results/w4/stage_a_smoke_a5 --rows A5 --lines 2 --gurobi-workers 0 --glpk-workers 4 --budget-cpu-h 2	3f118279e92938dd847bf622b6149d9bdcfd8dcf	True	human2	M0	[11, 23, 37]	0	4	"{""F5"": ""glpk"", ""loss"": ""glpk""}"	True	32	989	0.919	343	3.47636	1.559648	ko_A5.parquet

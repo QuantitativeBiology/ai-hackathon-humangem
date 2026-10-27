@@ -1,0 +1,31 @@
+ModelID	lineage	how	has_cn	has_procan	base_medium_class
+ACH-000957	Bowel	drawn	True	True	sheet:MEM/EMEM
+ACH-002024	Bowel	drawn	True	False	sheet:RPMI
+ACH-003383	Bowel	drawn	True	False	organoid
+ACH-000899	Skin	drawn	True	False	sheet:RPMI
+ACH-001567	Skin	drawn	True	False	sheet:RPMI
+ACH-002928	Skin	drawn	True	False	sheet:RPMI
+ACH-000113	Myeloid	drawn	True	True	other_defined
+ACH-000299	Myeloid	drawn	True	False	sheet:RPMI
+ACH-001577	Myeloid	drawn	True	False	other_defined
+ACH-001283	Bone	drawn	True	False	sheet:RPMI
+ACH-001431	Bone	drawn	True	False	sheet:RPMI
+ACH-003410	Bone	drawn	True	False	mixture_of_sheets
+ACH-000533	Kidney	drawn	True	False	sheet:RPMI
+ACH-002528	Kidney	drawn	True	False	sheet:RPMI
+ACH-002533	Kidney	drawn	True	False	sheet:RPMI
+ACH-000345	Peripheral Nervous System	drawn	True	True	sheet:RPMI
+ACH-001344	Peripheral Nervous System	drawn	True	True	sheet:RPMI
+ACH-002283	Peripheral Nervous System	drawn	True	True	sheet:RPMI
+ACH-000736	Esophagus/Stomach	drawn	True	False	sheet:RPMI
+ACH-001496	Esophagus/Stomach	drawn	True	True	sheet:RPMI
+ACH-003357	Esophagus/Stomach	drawn	True	False	organoid
+ACH-001508	Head and Neck	drawn	True	False	sheet:DMEM:F12
+ACH-001692	Head and Neck	drawn	True	False	sheet:MEM/EMEM
+ACH-001701	Head and Neck	drawn	True	False	sheet:MEM/EMEM
+ACH-000407	Uterus	drawn	True	False	sheet:RPMI
+ACH-000974	Uterus	drawn	True	True	sheet:F12
+ACH-001530	Uterus	drawn	True	True	sheet:MEM/EMEM
+ACH-000490	Cervix	drawn	True	False	sheet:DMEM
+ACH-000556	Cervix	drawn	True	True	sheet:MEM/EMEM
+ACH-002020	Cervix	drawn	True	True	sheet:F12
