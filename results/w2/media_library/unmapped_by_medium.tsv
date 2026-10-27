@@ -1,0 +1,20 @@
+medium	canonical	status	uM	raw_components	note
+DMEM	nitrate	no_exchange	0.7425742799999999	"Ferric Nitrate (Fe(NO3)3""9H2O)"	no nitrate exchange in either parent
+DMEM:F12	<dye>	non_nutrient	21.519661	Phenol Red	non-nutrient (buffer/dye)
+DMEM:F12	nitrate	no_exchange	0.37128713999999996	"Ferric Nitrate (Fe(NO3)3""9H2O)"	no nitrate exchange in either parent
+HPLM	4-aminobenzoate	no_exchange	7.291818579553742	p-Aminobenzoate	no 4-aminobenzoate exchange in either parent
+HPLM	<dye>	non_nutrient	14.0	Phenol red	non-nutrient (buffer/dye)
+HPLM	nitrate	no_exchange	80.0	Ca(NO3)2.4H2O	no nitrate exchange in either parent
+IMDM	<buffer>	non_nutrient	25033.612999999998	HEPES	non-nutrient (buffer/dye)
+IMDM	nitrate	no_exchange	0.7524752	Potassium Nitrate (KNO3)	no nitrate exchange in either parent
+IMDM	selenite	no_exchange	0.06577946600000001	Sodium Selenite (Na2SeO3-5H20)	no selenite exchange in either parent (selenate MAR09169 is a different species): representability gap
+Plasmax	<dye>	non_nutrient	25.0	Phenol Red	non-nutrient (buffer/dye)
+Plasmax	Mn2+	no_exchange	0.0002	Manganous Chloride	no manganese exchange in either parent
+Plasmax	methyl acetoacetate	no_exchange	41.0	Methyl acetoacetate	no exchange in either parent
+Plasmax	nitrate	no_exchange	0.37139999999999995	Ferric Nitrate	no nitrate exchange in either parent
+Plasmax	selenite	no_exchange	0.0289	Sodium Selenite	no selenite exchange in either parent (selenate MAR09169 is a different species): representability gap
+Plasmax	vanadate	no_exchange	0.0026	Ammonium Metavanadate	no vanadate exchange in either parent
+RPMI	4-aminobenzoate	no_exchange	7.29927	Para-Aminobenzoic Acid	no 4-aminobenzoate exchange in either parent
+RPMI	<buffer>	non_nutrient	10012.605000000001	HEPES	non-nutrient (buffer/dye)
+RPMI	<dye>	non_nutrient	13.283741	Phenol Red	non-nutrient (buffer/dye)
+RPMI	nitrate	no_exchange	847.45764	Calcium nitrate (Ca(NO3)2 4H2O)	no nitrate exchange in either parent

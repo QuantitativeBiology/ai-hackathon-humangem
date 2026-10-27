@@ -1,0 +1,29 @@
+control	parent	expectation	observed	passed
+ASNS DMEM vs RPMI (M1)	human1	DMEM < 0.01 (no Asn); RPMI = 1	DMEM 0.0; RPMI 1.0	True
+sterol branch: serum-free vs serum M2(f=0.001)	human1	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 7/12; serum median ratio 0.000352	False
+sterol branch: serum-free vs serum M2(f=0.01)	human1	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 7/12; serum median ratio 0.003521	False
+sterol branch: serum-free vs serum M2(f=0.1)	human1	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 7/12; serum median ratio 0.03517	False
+sterol branch: serum-free vs serum M2(f=1)	human1	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 7/12; serum median ratio 0.3489	False
+GOT1 with the gate (RPMI M2 f=0.01)	human1	ratio(gate closed) <= ratio(gate open)	open 1.0; closed 1.0	True
+GOT2 with the gate (RPMI M2 f=0.01)	human1	ratio(gate closed) <= ratio(gate open)	open 1.0; closed 1.0	True
+SLC1A3 with the gate (RPMI M2 f=0.01)	human1	ratio(gate closed) <= ratio(gate open)	open 1.0; closed 1.0	True
+SLC7A11 cysteine (M0) vs cystine (M1 RPMI)	human1	M1 (cystine only) ratio <= M0	M0 1.0; M1 1.0	True
+physiological: purines lose essentiality in HPLM (hypoxanthine) (M2 f=0.01)	human1	HPLM >= RPMI	PPAT 1/0; GART 1/0; PFAS 1/0; PAICS 1/0; ATIC 1/0	True
+physiological: pyrimidine core rescued by uridine in Plasmax (M2 f=0.01)	human1	Plasmax >= RPMI	CAD 0/0; DHODH 1/0; UMPS 1/0	True
+physiological: purines in Plasmax (hypoxanthine 5 uM) (M2 f=0.01)	human1	Plasmax >= RPMI	PPAT 1/0; GART 1/0; PFAS 1/0; PAICS 1/0; ATIC 1/0	True
+physiological: pyruvate relaxes GOT/MDH/OXPHOS (RPMI vs RPMI-no-pyruvate, M1)	human1	with pyruvate >= without	GOT1 1/1; GOT2 1/1; MDH2 1/1; SDHA 0.706/0.706; CS 1/1; ATP5F1A 0.705/0.705	True
+mevalonate core (HMGCR, MVK, PMVK, MVD) essential at every step	human1	lethal in every documented/physiological label	0 of 201 labels lose essentiality of >= 1 core gene	True
+ASNS DMEM vs RPMI (M1)	human2	DMEM < 0.01 (no Asn); RPMI = 1	DMEM 0.0; RPMI 1.0	True
+sterol branch: serum-free vs serum M2(f=0.001)	human2	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 8/12; serum median ratio 0	False
+sterol branch: serum-free vs serum M2(f=0.01)	human2	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 8/12; serum median ratio 0	False
+sterol branch: serum-free vs serum M2(f=0.1)	human2	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 8/12; serum median ratio 0	False
+sterol branch: serum-free vs serum M2(f=1)	human2	serum-free: lethal; serum: ratio rises with f (~f when cholesterol uptake caps growth)	serum-free n_lethal 8/12; serum median ratio 0	False
+GOT1 with the gate (RPMI M2 f=0.01)	human2	ratio(gate closed) <= ratio(gate open)	open 1.0; closed 1.0	True
+GOT2 with the gate (RPMI M2 f=0.01)	human2	ratio(gate closed) <= ratio(gate open)	open 1.0; closed 1.0	True
+SLC1A3 with the gate (RPMI M2 f=0.01)	human2	ratio(gate closed) <= ratio(gate open)	open 1.0; closed 1.0	True
+SLC7A11 cysteine (M0) vs cystine (M1 RPMI)	human2	M1 (cystine only) ratio <= M0	M0 1.0; M1 1.0	True
+physiological: purines lose essentiality in HPLM (hypoxanthine) (M2 f=0.01)	human2	HPLM >= RPMI	PPAT 1/0; GART 1/0; PFAS 1/0; PAICS 1/0; ATIC 1/0	True
+physiological: pyrimidine core rescued by uridine in Plasmax (M2 f=0.01)	human2	Plasmax >= RPMI	CAD 0/0; DHODH 1/0; UMPS 1/0	True
+physiological: purines in Plasmax (hypoxanthine 5 uM) (M2 f=0.01)	human2	Plasmax >= RPMI	PPAT 1/0; GART 1/0; PFAS 1/0; PAICS 1/0; ATIC 1/0	True
+physiological: pyruvate relaxes GOT/MDH/OXPHOS (RPMI vs RPMI-no-pyruvate, M1)	human2	with pyruvate >= without	GOT1 1/1; GOT2 1/1; MDH2 1/1; SDHA 1/1; CS 1/1; ATP5F1A 0.706/0.706	True
+mevalonate core (HMGCR, MVK, PMVK, MVD) essential at every step	human2	lethal in every documented/physiological label	0 of 201 labels lose essentiality of >= 1 core gene	True

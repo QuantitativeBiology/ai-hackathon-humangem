@@ -1,0 +1,23 @@
+control	parent	metric	value	passed	seed
+M-open collapse	human1	n_lethal M-open vs M0	91 vs 149	True	
+M-open collapse	human2	n_lethal M-open vs M0	97 vs 154	True	
+shuffled medium (label-free magnitude)	human1	M1	lines with changed medium 0.443; mean per-line |delta ratio_r| 1.11e-03; max 5.47e-03		11.0
+shuffled medium (label-free magnitude)	human1	M1	lines with changed medium 0.455; mean per-line |delta ratio_r| 1.12e-03; max 5.47e-03		23.0
+shuffled medium (label-free magnitude)	human1	M1	lines with changed medium 0.453; mean per-line |delta ratio_r| 1.15e-03; max 5.47e-03		37.0
+shuffled medium (label-free magnitude)	human1	M1	lines with changed medium 0.440; mean per-line |delta ratio_r| 1.13e-03; max 5.47e-03		41.0
+shuffled medium (label-free magnitude)	human1	M1	lines with changed medium 0.435; mean per-line |delta ratio_r| 1.10e-03; max 5.47e-03		53.0
+shuffled medium (label-free magnitude)	human1	M2(f=0.01)	lines with changed medium 0.443; mean per-line |delta ratio_r| 1.11e-03; max 5.48e-03		11.0
+shuffled medium (label-free magnitude)	human1	M2(f=0.01)	lines with changed medium 0.455; mean per-line |delta ratio_r| 1.12e-03; max 5.48e-03		23.0
+shuffled medium (label-free magnitude)	human1	M2(f=0.01)	lines with changed medium 0.453; mean per-line |delta ratio_r| 1.15e-03; max 5.48e-03		37.0
+shuffled medium (label-free magnitude)	human1	M2(f=0.01)	lines with changed medium 0.440; mean per-line |delta ratio_r| 1.13e-03; max 5.48e-03		41.0
+shuffled medium (label-free magnitude)	human1	M2(f=0.01)	lines with changed medium 0.435; mean per-line |delta ratio_r| 1.10e-03; max 5.48e-03		53.0
+shuffled medium (label-free magnitude)	human2	M1	lines with changed medium 0.443; mean per-line |delta ratio_r| 1.14e-03; max 6.10e-03		11.0
+shuffled medium (label-free magnitude)	human2	M1	lines with changed medium 0.455; mean per-line |delta ratio_r| 1.15e-03; max 6.10e-03		23.0
+shuffled medium (label-free magnitude)	human2	M1	lines with changed medium 0.453; mean per-line |delta ratio_r| 1.19e-03; max 6.10e-03		37.0
+shuffled medium (label-free magnitude)	human2	M1	lines with changed medium 0.440; mean per-line |delta ratio_r| 1.16e-03; max 6.10e-03		41.0
+shuffled medium (label-free magnitude)	human2	M1	lines with changed medium 0.435; mean per-line |delta ratio_r| 1.12e-03; max 6.10e-03		53.0
+shuffled medium (label-free magnitude)	human2	M2(f=0.01)	lines with changed medium 0.443; mean per-line |delta ratio_r| 1.14e-03; max 6.11e-03		11.0
+shuffled medium (label-free magnitude)	human2	M2(f=0.01)	lines with changed medium 0.455; mean per-line |delta ratio_r| 1.15e-03; max 6.11e-03		23.0
+shuffled medium (label-free magnitude)	human2	M2(f=0.01)	lines with changed medium 0.453; mean per-line |delta ratio_r| 1.18e-03; max 6.11e-03		37.0
+shuffled medium (label-free magnitude)	human2	M2(f=0.01)	lines with changed medium 0.440; mean per-line |delta ratio_r| 1.16e-03; max 6.11e-03		41.0
+shuffled medium (label-free magnitude)	human2	M2(f=0.01)	lines with changed medium 0.435; mean per-line |delta ratio_r| 1.12e-03; max 6.11e-03		53.0

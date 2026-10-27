@@ -1,0 +1,314 @@
+medium	section	raw_component	mw	mg_per_L	uM	source
+RPMI	Amino Acids	Glycine	75.0	10.0	133.33334	rpmi1640_ATCC.xlsx:row3
+RPMI	Amino Acids	L-Arginine	174.0	200.0	1149.4253	rpmi1640_ATCC.xlsx:row4
+RPMI	Amino Acids	L-Asparagine	132.0	50.0	378.78788000000003	rpmi1640_ATCC.xlsx:row5
+RPMI	Amino Acids	L-Aspartic acid	133.0	20.0	150.37592999999998	rpmi1640_ATCC.xlsx:row6
+RPMI	Amino Acids	L-Cystine 2HCl	313.0	65.0	207.66773999999998	rpmi1640_ATCC.xlsx:row7
+RPMI	Amino Acids	L-Glutamic Acid	147.0	20.0	136.05443	rpmi1640_ATCC.xlsx:row8
+RPMI	Amino Acids	L-Glutamine	146.0	300.0	2054.7945	rpmi1640_ATCC.xlsx:row9
+RPMI	Amino Acids	L-Histidine	155.0	15.0	96.77418999999999	rpmi1640_ATCC.xlsx:row10
+RPMI	Amino Acids	L-Hydroxyproline	131.0	20.0	152.67175	rpmi1640_ATCC.xlsx:row11
+RPMI	Amino Acids	L-Isoleucine	131.0	50.0	381.6794	rpmi1640_ATCC.xlsx:row12
+RPMI	Amino Acids	L-Leucine	131.0	50.0	381.6794	rpmi1640_ATCC.xlsx:row13
+RPMI	Amino Acids	L-Lysine hydrochloride	183.0	40.0	218.57923000000002	rpmi1640_ATCC.xlsx:row14
+RPMI	Amino Acids	L-Methionine	149.0	15.0	100.67114000000001	rpmi1640_ATCC.xlsx:row15
+RPMI	Amino Acids	L-Phenylalanine	165.0	15.0	90.90908999999999	rpmi1640_ATCC.xlsx:row16
+RPMI	Amino Acids	L-Proline	115.0	20.0	173.91305000000003	rpmi1640_ATCC.xlsx:row17
+RPMI	Amino Acids	L-Serine	105.0	30.0	285.7143	rpmi1640_ATCC.xlsx:row18
+RPMI	Amino Acids	L-Threonine	119.0	20.0	168.06723000000002	rpmi1640_ATCC.xlsx:row19
+RPMI	Amino Acids	L-Tryptophan	204.0	5.0	24.509804	rpmi1640_ATCC.xlsx:row20
+RPMI	Amino Acids	L-Tyrosine disodium salt dihydrate	261.0	29.0	111.11111	rpmi1640_ATCC.xlsx:row21
+RPMI	Amino Acids	L-Valine	117.0	20.0	170.94018	rpmi1640_ATCC.xlsx:row22
+RPMI	Vitamins	Biotin	244.0	0.2	0.81967213	rpmi1640_ATCC.xlsx:row24
+RPMI	Vitamins	Choline chloride	140.0	3.0	21.428572	rpmi1640_ATCC.xlsx:row25
+RPMI	Vitamins	D-Calcium pantothenate	477.0	0.25	0.524109	rpmi1640_ATCC.xlsx:row26
+RPMI	Vitamins	Folic Acid	441.0	1.0	2.2675737	rpmi1640_ATCC.xlsx:row27
+RPMI	Vitamins	Niacinamide	122.0	1.0	8.196721	rpmi1640_ATCC.xlsx:row28
+RPMI	Vitamins	Para-Aminobenzoic Acid	137.0	1.0	7.29927	rpmi1640_ATCC.xlsx:row29
+RPMI	Vitamins	Pyridoxine hydrochloride	206.0	1.0	4.854369	rpmi1640_ATCC.xlsx:row30
+RPMI	Vitamins	Riboflavin	376.0	0.2	0.5319149	rpmi1640_ATCC.xlsx:row31
+RPMI	Vitamins	Thiamine hydrochloride	337.0	1.0	2.967359	rpmi1640_ATCC.xlsx:row32
+RPMI	Vitamins	Vitamin B12	1355.0	0.005	0.003690037	rpmi1640_ATCC.xlsx:row33
+RPMI	Vitamins	i-Inositol	180.0	35.0	194.44445	rpmi1640_ATCC.xlsx:row34
+RPMI	Inorganic Salts	Calcium nitrate (Ca(NO3)2 4H2O)	236.0	100.0	423.72882	rpmi1640_ATCC.xlsx:row36
+RPMI	Inorganic Salts	Magnesium Sulfate (MgSO4) (anhyd.)	120.0	48.84	407.0	rpmi1640_ATCC.xlsx:row37
+RPMI	Inorganic Salts	Potassium Chloride (KCl)	75.0	400.0	5333.3335	rpmi1640_ATCC.xlsx:row38
+RPMI	Inorganic Salts	Sodium Bicarbonate (NaHCO3)	84.0	1500.0	17857.143	rpmi1640_ATCC.xlsx:row39
+RPMI	Inorganic Salts	Sodium Chloride (NaCl)	58.0	6000.0	103448.26999999999	rpmi1640_ATCC.xlsx:row40
+RPMI	Inorganic Salts	Sodium Phosphate dibasic (Na2HPO4) anhydrous	142.0	800.0	5633.803	rpmi1640_ATCC.xlsx:row41
+RPMI	Other Components	D-Glucose (Dextrose)	180.0	4500.0	25000.0	rpmi1640_ATCC.xlsx:row43
+RPMI	Other Components	Glutathione (reduced)	307.0	1.0	3.2573289	rpmi1640_ATCC.xlsx:row44
+RPMI	Other Components	HEPES	238.0	2383.0	10012.605000000001	rpmi1640_ATCC.xlsx:row45
+RPMI	Other Components	Phenol Red	376.4	5.0	13.283741	rpmi1640_ATCC.xlsx:row46
+RPMI	Other Components	Sodium Pyruvate	110.0	110.0	1000.0	rpmi1640_ATCC.xlsx:row47
+DMEM	Amino Acids	Glycine	75.0	30.0	400.0	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row3
+DMEM	Amino Acids	L-Arginine hydrochloride	211.0	84.0	398.10427999999996	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row4
+DMEM	Amino Acids	L-Cystine 2HCl	313.0	63.0	201.27796	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row5
+DMEM	Amino Acids	L-Histidine hydrochloride-H2O	210.0	42.0	200.0	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row6
+DMEM	Amino Acids	L-Isoleucine	131.0	105.0	801.5267	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row7
+DMEM	Amino Acids	L-Leucine	131.0	105.0	801.5267	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row8
+DMEM	Amino Acids	L-Lysine hydrochloride	183.0	146.0	797.8142	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row9
+DMEM	Amino Acids	L-Methionine	149.0	30.0	201.34228000000002	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row10
+DMEM	Amino Acids	L-Phenylalanine	165.0	66.0	400.0	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row11
+DMEM	Amino Acids	L-Serine	105.0	42.0	400.0	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row12
+DMEM	Amino Acids	L-Threonine	119.0	95.0	798.31934	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row13
+DMEM	Amino Acids	L-Tryptophan	204.0	16.0	78.431375	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row14
+DMEM	Amino Acids	L-Tyrosine disodium salt dihydrate	261.0	104.0	398.46742	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row15
+DMEM	Amino Acids	L-Valine	117.0	94.0	803.4188	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row16
+DMEM	Vitamins	Choline chloride	140.0	4.0	28.571429	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row18
+DMEM	Vitamins	D-Calcium pantothenate	477.0	4.0	8.385744	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row19
+DMEM	Vitamins	Folic Acid	441.0	4.0	9.070295000000002	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row20
+DMEM	Vitamins	Niacinamide	122.0	4.0	32.786883	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row21
+DMEM	Vitamins	Pyridoxine hydrochloride	206.0	4.0	19.417476	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row22
+DMEM	Vitamins	Riboflavin	376.0	0.4	1.0638298	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row23
+DMEM	Vitamins	Thiamine hydrochloride	337.0	4.0	11.869436	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row24
+DMEM	Vitamins	i-Inositol	180.0	7.2	40.0	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row25
+DMEM	Inorganic Salts	Calcium Chloride (CaCl2) (anhyd.)	111.0	200.0	1801.8018	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row27
+DMEM	Inorganic Salts	"Ferric Nitrate (Fe(NO3)3""9H2O)"	404.0	0.1	0.24752475999999998	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row28
+DMEM	Inorganic Salts	Magnesium Sulfate (MgSO4) (anhyd.)	120.0	97.67	813.9166	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row29
+DMEM	Inorganic Salts	Potassium Chloride (KCl)	75.0	400.0	5333.3335	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row30
+DMEM	Inorganic Salts	Sodium Bicarbonate (NaHCO3)	84.0	3700.0	44047.62	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row31
+DMEM	Inorganic Salts	Sodium Chloride (NaCl)	58.0	6400.0	110344.826	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row32
+DMEM	Inorganic Salts	Sodium Phosphate monobasic (NaH2PO4-H2O)	138.0	125.0	905.7971	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row33
+DMEM	Other Components	D-Glucose (Dextrose)	180.0	4500.0	25000.0	DMEM_HighGlucose_NoGlutamine_NoPhenolRed.xlsx:row35
+DMEM:F12	Amino Acids	Glycine	75.0	18.75	250.0	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row3
+DMEM:F12	Amino Acids	L-Alanine	89.0	4.45	49.999997	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row4
+DMEM:F12	Amino Acids	L-Arginine hydrochloride	211.0	147.5	699.0521600000001	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row5
+DMEM:F12	Amino Acids	L-Asparagine-H2O	150.0	7.5	50.0	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row6
+DMEM:F12	Amino Acids	L-Aspartic acid	133.0	6.65	50.0	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row7
+DMEM:F12	Amino Acids	L-Cysteine hydrochloride-H2O	176.0	17.56	99.77271999999999	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row8
+DMEM:F12	Amino Acids	L-Cystine 2HCl	313.0	31.29	99.96805	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row9
+DMEM:F12	Amino Acids	L-Glutamic Acid	147.0	7.35	50.0	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row10
+DMEM:F12	Amino Acids	L-Histidine hydrochloride-H2O	210.0	31.48	149.90476	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row11
+DMEM:F12	Amino Acids	L-Isoleucine	131.0	54.47	415.80152999999996	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row12
+DMEM:F12	Amino Acids	L-Leucine	131.0	59.05	450.76334	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row13
+DMEM:F12	Amino Acids	L-Lysine hydrochloride	183.0	91.25	498.63390000000004	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row14
+DMEM:F12	Amino Acids	L-Methionine	149.0	17.24	115.70469	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row15
+DMEM:F12	Amino Acids	L-Phenylalanine	165.0	35.48	215.0303	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row16
+DMEM:F12	Amino Acids	L-Proline	115.0	17.25	150.0	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row17
+DMEM:F12	Amino Acids	L-Serine	105.0	26.25	250.0	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row18
+DMEM:F12	Amino Acids	L-Threonine	119.0	53.45	449.15968	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row19
+DMEM:F12	Amino Acids	L-Tryptophan	204.0	9.02	44.21569	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row20
+DMEM:F12	Amino Acids	L-Tyrosine disodium salt dihydrate	261.0	55.79	213.75479	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row21
+DMEM:F12	Amino Acids	L-Valine	117.0	25.85	220.94017	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row22
+DMEM:F12	Vitamins	Biotin	244.0	0.0035	0.014344263	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row24
+DMEM:F12	Vitamins	Choline chloride	140.0	8.98	64.14285	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row25
+DMEM:F12	Vitamins	D-Calcium pantothenate	477.0	2.24	4.6960166999999995	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row26
+DMEM:F12	Vitamins	Folic Acid	441.0	2.65	6.0090707	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row27
+DMEM:F12	Vitamins	Niacinamide	122.0	2.02	16.557377000000002	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row28
+DMEM:F12	Vitamins	Pyridoxine hydrochloride	206.0	2.0	9.708738	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row29
+DMEM:F12	Vitamins	Riboflavin	376.0	0.219	0.5824467999999999	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row30
+DMEM:F12	Vitamins	Thiamine hydrochloride	337.0	2.17	6.4391694	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row31
+DMEM:F12	Vitamins	Vitamin B12	1355.0	0.68	0.50184503	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row32
+DMEM:F12	Vitamins	i-Inositol	180.0	12.6	70.0	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row33
+DMEM:F12	Inorganic Salts	Calcium Chloride (CaCl2) (anhyd.)	111.0	116.6	1050.4504	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row35
+DMEM:F12	Inorganic Salts	Cupric sulfate (CuSO4-5H2O)	250.0	0.0013	0.0052	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row36
+DMEM:F12	Inorganic Salts	"Ferric Nitrate (Fe(NO3)3""9H2O)"	404.0	0.05	0.12376237999999999	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row37
+DMEM:F12	Inorganic Salts	Ferrous sulfate (FeSO4-7H2O)	278.0	0.417	1.5	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row38
+DMEM:F12	Inorganic Salts	Magnesium Chloride (anhydrous)	95.0	28.64	301.47368	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row39
+DMEM:F12	Inorganic Salts	Magnesium Sulfate (MgSO4) (anhyd.)	120.0	48.84	407.0	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row40
+DMEM:F12	Inorganic Salts	Potassium Chloride (KCl)	75.0	311.8	4157.3333999999995	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row41
+DMEM:F12	Inorganic Salts	Sodium Bicarbonate (NaHCO3)	84.0	2438.0	29023.81	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row42
+DMEM:F12	Inorganic Salts	Sodium Chloride (NaCl)	58.0	6995.5	120612.07	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row43
+DMEM:F12	Inorganic Salts	Sodium Phosphate dibasic (Na2HPO4) anhydrous	142.0	71.02	500.14084999999994	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row44
+DMEM:F12	Inorganic Salts	Sodium Phosphate monobasic (NaH2PO4-H2O)	138.0	62.5	452.89856000000003	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row45
+DMEM:F12	Inorganic Salts	Zinc sulfate (ZnSO4-7H2O)	288.0	0.432	1.5	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row46
+DMEM:F12	Other Components	D-Glucose (Dextrose)	180.0	3151.0	17505.555999999997	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row48
+DMEM:F12	Other Components	Hypoxanthine Na	159.0	2.39	15.031448	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row49
+DMEM:F12	Other Components	Linoleic Acid	280.0	0.042	0.14999999	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row50
+DMEM:F12	Other Components	Lipoic Acid	206.0	0.105	0.5097087	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row51
+DMEM:F12	Other Components	Phenol Red	376.4	8.1	21.519661	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row52
+DMEM:F12	Other Components	Putrescine 2HCl	161.0	0.081	0.5031056	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row53
+DMEM:F12	Other Components	Sodium Pyruvate	110.0	55.0	500.0	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row54
+DMEM:F12	Other Components	Thymidine	242.0	0.365	1.5082645	DMEM_F12_NoGlutamine_NoHEPES.xlsx:row55
+IMDM	Amino Acids	Glycine	75.0	30.0	400.0	IMDM_NoPhenolRed.xlsx:row3
+IMDM	Amino Acids	L-Alanine	89.0	25.0	280.89887000000004	IMDM_NoPhenolRed.xlsx:row4
+IMDM	Amino Acids	L-Arginine hydrochloride	211.0	84.0	398.10427999999996	IMDM_NoPhenolRed.xlsx:row5
+IMDM	Amino Acids	L-Asparagine (freebase)	150.0	25.0	166.66666999999998	IMDM_NoPhenolRed.xlsx:row6
+IMDM	Amino Acids	L-Aspartic acid	133.0	30.0	225.56391	IMDM_NoPhenolRed.xlsx:row7
+IMDM	Amino Acids	L-Cystine 2HCl	240.0	91.4	380.83333000000005	IMDM_NoPhenolRed.xlsx:row8
+IMDM	Amino Acids	L-Glutamic Acid	147.0	75.0	510.20410000000004	IMDM_NoPhenolRed.xlsx:row9
+IMDM	Amino Acids	L-Glutamine	146.0	584.0	4000.0	IMDM_NoPhenolRed.xlsx:row10
+IMDM	Amino Acids	L-Histidine hydrochloride-H2O	210.0	42.0	200.0	IMDM_NoPhenolRed.xlsx:row11
+IMDM	Amino Acids	L-Isoleucine	131.0	105.0	801.5267	IMDM_NoPhenolRed.xlsx:row12
+IMDM	Amino Acids	L-Leucine	131.0	105.0	801.5267	IMDM_NoPhenolRed.xlsx:row13
+IMDM	Amino Acids	L-Lysine hydrochloride	183.0	146.0	797.8142	IMDM_NoPhenolRed.xlsx:row14
+IMDM	Amino Acids	L-Methionine	149.0	30.0	201.34228000000002	IMDM_NoPhenolRed.xlsx:row15
+IMDM	Amino Acids	L-Phenylalanine	165.0	66.0	400.0	IMDM_NoPhenolRed.xlsx:row16
+IMDM	Amino Acids	L-Proline	115.0	40.0	347.82610000000005	IMDM_NoPhenolRed.xlsx:row17
+IMDM	Amino Acids	L-Serine	105.0	42.0	400.0	IMDM_NoPhenolRed.xlsx:row18
+IMDM	Amino Acids	L-Threonine	119.0	95.0	798.31934	IMDM_NoPhenolRed.xlsx:row19
+IMDM	Amino Acids	L-Tryptophan	204.0	16.0	78.431375	IMDM_NoPhenolRed.xlsx:row20
+IMDM	Amino Acids	L-Tyrosine disodium salt	225.0	104.0	462.22222	IMDM_NoPhenolRed.xlsx:row21
+IMDM	Amino Acids	L-Valine	117.0	94.0	803.4188	IMDM_NoPhenolRed.xlsx:row22
+IMDM	Vitamins	Biotin	244.0	0.013	0.053278690000000004	IMDM_NoPhenolRed.xlsx:row24
+IMDM	Vitamins	Choline chloride	140.0	4.0	28.571429	IMDM_NoPhenolRed.xlsx:row25
+IMDM	Vitamins	D-Calcium pantothenate	477.0	4.0	8.385744	IMDM_NoPhenolRed.xlsx:row26
+IMDM	Vitamins	Folic Acid	441.0	4.0	9.070295000000002	IMDM_NoPhenolRed.xlsx:row27
+IMDM	Vitamins	Niacinamide	122.0	4.0	32.786883	IMDM_NoPhenolRed.xlsx:row28
+IMDM	Vitamins	Pyridoxal hydrochloride	204.0	4.0	19.607844	IMDM_NoPhenolRed.xlsx:row29
+IMDM	Vitamins	Riboflavin	376.0	0.4	1.0638298	IMDM_NoPhenolRed.xlsx:row30
+IMDM	Vitamins	Thiamine hydrochloride	337.0	4.0	11.869436	IMDM_NoPhenolRed.xlsx:row31
+IMDM	Vitamins	Vitamin B12	1355.0	0.013	0.009594096	IMDM_NoPhenolRed.xlsx:row32
+IMDM	Vitamins	i-Inositol	180.0	7.2	40.0	IMDM_NoPhenolRed.xlsx:row33
+IMDM	Inorganic Salts	Calcium Chloride (CaCl2) (anhyd.)	111.0	165.0	1486.4864	IMDM_NoPhenolRed.xlsx:row35
+IMDM	Inorganic Salts	Magnesium Sulfate (MgSO4) (anhyd.)	120.0	97.67	813.9166	IMDM_NoPhenolRed.xlsx:row36
+IMDM	Inorganic Salts	Potassium Chloride (KCl)	75.0	330.0	4400.0	IMDM_NoPhenolRed.xlsx:row37
+IMDM	Inorganic Salts	Potassium Nitrate (KNO3)	101.0	0.076	0.7524752	IMDM_NoPhenolRed.xlsx:row38
+IMDM	Inorganic Salts	Sodium Bicarbonate (NaHCO3)	84.0	3024.0	36000.0	IMDM_NoPhenolRed.xlsx:row39
+IMDM	Inorganic Salts	Sodium Chloride (NaCl)	58.0	4500.0	77586.205	IMDM_NoPhenolRed.xlsx:row40
+IMDM	Inorganic Salts	Sodium Phosphate monobasic (NaH2PO4-H2O)	138.0	125.0	905.7971	IMDM_NoPhenolRed.xlsx:row41
+IMDM	Inorganic Salts	Sodium Selenite (Na2SeO3-5H20)	263.0	0.0173	0.06577946600000001	IMDM_NoPhenolRed.xlsx:row42
+IMDM	Other Components	D-Glucose (Dextrose)	180.0	4500.0	25000.0	IMDM_NoPhenolRed.xlsx:row44
+IMDM	Other Components	HEPES	238.0	5958.0	25033.612999999998	IMDM_NoPhenolRed.xlsx:row45
+IMDM	Other Components	Sodium Pyruvate	110.0	110.0	1000.0	IMDM_NoPhenolRed.xlsx:row46
+HPLM	Glucose	Glucose			5000.0	mmc1.xlsx:HPLM formulation:row7
+HPLM	Proteinogenic amino acids	Alanine			430.0	mmc1.xlsx:HPLM formulation:row9
+HPLM	Proteinogenic amino acids	Arginine			110.0	mmc1.xlsx:HPLM formulation:row10
+HPLM	Proteinogenic amino acids	Asparagine			50.0	mmc1.xlsx:HPLM formulation:row11
+HPLM	Proteinogenic amino acids	Aspartate			20.0	mmc1.xlsx:HPLM formulation:row12
+HPLM	Proteinogenic amino acids	Cysteine			40.0	mmc1.xlsx:HPLM formulation:row13
+HPLM	Proteinogenic amino acids	Cystine			100.0	mmc1.xlsx:HPLM formulation:row14
+HPLM	Proteinogenic amino acids	Glutamate			80.0	mmc1.xlsx:HPLM formulation:row15
+HPLM	Proteinogenic amino acids	Glutamine			550.0	mmc1.xlsx:HPLM formulation:row16
+HPLM	Proteinogenic amino acids	Glycine			300.0	mmc1.xlsx:HPLM formulation:row17
+HPLM	Proteinogenic amino acids	Histidine			110.0	mmc1.xlsx:HPLM formulation:row18
+HPLM	Proteinogenic amino acids	Isoleucine			70.0	mmc1.xlsx:HPLM formulation:row19
+HPLM	Proteinogenic amino acids	Leucine			160.0	mmc1.xlsx:HPLM formulation:row20
+HPLM	Proteinogenic amino acids	Lysine			200.0	mmc1.xlsx:HPLM formulation:row21
+HPLM	Proteinogenic amino acids	Methionine			30.0	mmc1.xlsx:HPLM formulation:row22
+HPLM	Proteinogenic amino acids	Phenylalanine			80.0	mmc1.xlsx:HPLM formulation:row23
+HPLM	Proteinogenic amino acids	Proline			200.0	mmc1.xlsx:HPLM formulation:row24
+HPLM	Proteinogenic amino acids	Serine			150.0	mmc1.xlsx:HPLM formulation:row25
+HPLM	Proteinogenic amino acids	Threonine			140.0	mmc1.xlsx:HPLM formulation:row26
+HPLM	Proteinogenic amino acids	Tryptophan			60.0	mmc1.xlsx:HPLM formulation:row27
+HPLM	Proteinogenic amino acids	Tyrosine			80.0	mmc1.xlsx:HPLM formulation:row28
+HPLM	Proteinogenic amino acids	Valine			220.0	mmc1.xlsx:HPLM formulation:row29
+HPLM	Vitamins	Biotin			0.8186320658180181	mmc1.xlsx:HPLM formulation:row31
+HPLM	Vitamins	Choline			21.486892995272882	mmc1.xlsx:HPLM formulation:row32
+HPLM	Vitamins	Folate			2.2655188038060716	mmc1.xlsx:HPLM formulation:row33
+HPLM	Vitamins	myo-Inositol			194.27175843694496	mmc1.xlsx:HPLM formulation:row34
+HPLM	Vitamins	Niacinamide			8.188666885031116	mmc1.xlsx:HPLM formulation:row35
+HPLM	Vitamins	p-Aminobenzoate			7.291818579553742	mmc1.xlsx:HPLM formulation:row36
+HPLM	Vitamins	Pantothenate			1.0492298652788852	mmc1.xlsx:HPLM formulation:row37
+HPLM	Vitamins	Pyridoxine			4.862867146469559	mmc1.xlsx:HPLM formulation:row38
+HPLM	Vitamins	Riboflavin			0.5314061005420342	mmc1.xlsx:HPLM formulation:row39
+HPLM	Vitamins	Thiamine			2.9649835443413295	mmc1.xlsx:HPLM formulation:row40
+HPLM	Vitamins	Vitamin B-12			0.0036890295638829255	mmc1.xlsx:HPLM formulation:row41
+HPLM	Additional polar metabolites	2-hydroxybutyrate			50.0	mmc1.xlsx:HPLM formulation:row43
+HPLM	Additional polar metabolites	3-hydroxybutyrate			50.0	mmc1.xlsx:HPLM formulation:row44
+HPLM	Additional polar metabolites	4-hydroxyproline			20.0	mmc1.xlsx:HPLM formulation:row45
+HPLM	Additional polar metabolites	Acetate			40.0	mmc1.xlsx:HPLM formulation:row46
+HPLM	Additional polar metabolites	Acetone			60.0	mmc1.xlsx:HPLM formulation:row47
+HPLM	Additional polar metabolites	Acetylglycine			90.0	mmc1.xlsx:HPLM formulation:row48
+HPLM	Additional polar metabolites	Alpha-aminobutyrate			20.0	mmc1.xlsx:HPLM formulation:row49
+HPLM	Additional polar metabolites	Betaine			70.0	mmc1.xlsx:HPLM formulation:row50
+HPLM	Additional polar metabolites	Carnitine			40.0	mmc1.xlsx:HPLM formulation:row51
+HPLM	Additional polar metabolites	Citrate			130.0	mmc1.xlsx:HPLM formulation:row52
+HPLM	Additional polar metabolites	Citrulline			40.0	mmc1.xlsx:HPLM formulation:row53
+HPLM	Additional polar metabolites	Creatine			40.0	mmc1.xlsx:HPLM formulation:row54
+HPLM	Additional polar metabolites	Creatinine			75.0	mmc1.xlsx:HPLM formulation:row55
+HPLM	Additional polar metabolites	Formate			50.0	mmc1.xlsx:HPLM formulation:row56
+HPLM	Additional polar metabolites	Fructose			40.0	mmc1.xlsx:HPLM formulation:row57
+HPLM	Additional polar metabolites	Galactose			60.0	mmc1.xlsx:HPLM formulation:row58
+HPLM	Additional polar metabolites	Glutathione			25.0	mmc1.xlsx:HPLM formulation:row59
+HPLM	Additional polar metabolites	Glycerol			120.0	mmc1.xlsx:HPLM formulation:row60
+HPLM	Additional polar metabolites	Hypoxanthine			10.0	mmc1.xlsx:HPLM formulation:row61
+HPLM	Additional polar metabolites	Lactate			1600.0	mmc1.xlsx:HPLM formulation:row62
+HPLM	Additional polar metabolites	Malonate			10.0	mmc1.xlsx:HPLM formulation:row63
+HPLM	Additional polar metabolites	Ornithine			70.0	mmc1.xlsx:HPLM formulation:row64
+HPLM	Additional polar metabolites	Pyruvate			50.0	mmc1.xlsx:HPLM formulation:row65
+HPLM	Additional polar metabolites	Succinate			20.0	mmc1.xlsx:HPLM formulation:row66
+HPLM	Additional polar metabolites	Taurine			90.0	mmc1.xlsx:HPLM formulation:row67
+HPLM	Additional polar metabolites	Urea			5000.0	mmc1.xlsx:HPLM formulation:row68
+HPLM	Additional polar metabolites	Uric acid			350.0	mmc1.xlsx:HPLM formulation:row69
+HPLM	Salts	CaCl2			2350.0	mmc1.xlsx:HPLM formulation:row71
+HPLM	Salts	KCl			4100.0	mmc1.xlsx:HPLM formulation:row72
+HPLM	Salts	MgCl2			480.0	mmc1.xlsx:HPLM formulation:row73
+HPLM	Salts	MgSO4			350.0	mmc1.xlsx:HPLM formulation:row74
+HPLM	Salts	NaCl			105000.0	mmc1.xlsx:HPLM formulation:row75
+HPLM	Salts	NaHCO3			24000.0	mmc1.xlsx:HPLM formulation:row76
+HPLM	Salts	Na2HPO4			870.0	mmc1.xlsx:HPLM formulation:row77
+HPLM	Salts	Ca(NO3)2.4H2O			40.0	mmc1.xlsx:HPLM formulation:row78
+HPLM	Salts	NH4Cl			40.0	mmc1.xlsx:HPLM formulation:row79
+HPLM	Other	Phenol red			14.0	mmc1.xlsx:HPLM formulation:row81
+Plasmax	Proteinogenic Amino Acids	L-Alanine			510.0	aau7314_sm.pdf:TableS1:line1
+Plasmax	Proteinogenic Amino Acids	L-Arginine			64.0	aau7314_sm.pdf:TableS1:line2
+Plasmax	Proteinogenic Amino Acids	L-Asparagine			41.0	aau7314_sm.pdf:TableS1:line3
+Plasmax	Proteinogenic Amino Acids	L-Aspartic acid			6.0	aau7314_sm.pdf:TableS1:line4
+Plasmax	Proteinogenic Amino Acids	L-Cysteine			33.0	aau7314_sm.pdf:TableS1:line5
+Plasmax	Proteinogenic Amino Acids	L-Glutamate			98.0	aau7314_sm.pdf:TableS1:line6
+Plasmax	Proteinogenic Amino Acids	L-Glutamine			650.0	aau7314_sm.pdf:TableS1:line7
+Plasmax	Proteinogenic Amino Acids	Glycine			330.0	aau7314_sm.pdf:TableS1:line8
+Plasmax	Proteinogenic Amino Acids	L-Histidine			120.0	aau7314_sm.pdf:TableS1:line9
+Plasmax	Proteinogenic Amino Acids	L-Isoleucine			140.0	aau7314_sm.pdf:TableS1:line10
+Plasmax	Proteinogenic Amino Acids	L-Leucine			170.0	aau7314_sm.pdf:TableS1:line11
+Plasmax	Proteinogenic Amino Acids	L-Lysine			220.0	aau7314_sm.pdf:TableS1:line12
+Plasmax	Proteinogenic Amino Acids	L-Methionine			30.0	aau7314_sm.pdf:TableS1:line13
+Plasmax	Proteinogenic Amino Acids	L-Phenylalanine			68.0	aau7314_sm.pdf:TableS1:line14
+Plasmax	Proteinogenic Amino Acids	L-Proline			360.0	aau7314_sm.pdf:TableS1:line15
+Plasmax	Proteinogenic Amino Acids	L-Serine			140.0	aau7314_sm.pdf:TableS1:line16
+Plasmax	Proteinogenic Amino Acids	L-Threonine			240.0	aau7314_sm.pdf:TableS1:line17
+Plasmax	Proteinogenic Amino Acids	L-Tryptophan			78.0	aau7314_sm.pdf:TableS1:line18
+Plasmax	Proteinogenic Amino Acids	L-Tyrosine			74.0	aau7314_sm.pdf:TableS1:line19
+Plasmax	Proteinogenic Amino Acids	L-Valine			230.0	aau7314_sm.pdf:TableS1:line20
+Plasmax	Non-proteinogenic Amino Acids	Aminobutyrate			41.0	aau7314_sm.pdf:TableS1:line21
+Plasmax	Non-proteinogenic Amino Acids	L-Citrulline			55.0	aau7314_sm.pdf:TableS1:line22
+Plasmax	Non-proteinogenic Amino Acids	L-Cystine			65.0	aau7314_sm.pdf:TableS1:line23
+Plasmax	Non-proteinogenic Amino Acids	L-Homocysteine			9.0	aau7314_sm.pdf:TableS1:line24
+Plasmax	Non-proteinogenic Amino Acids	4-Hydroxy-L-proline			13.0	aau7314_sm.pdf:TableS1:line25
+Plasmax	Non-proteinogenic Amino Acids	L-Ornitine			80.0	aau7314_sm.pdf:TableS1:line26
+Plasmax	Non-proteinogenic Amino Acids	L-Pyroglutamate			20.0	aau7314_sm.pdf:TableS1:line27
+Plasmax	Amino Acids Derivatives	L-Acetyl glycine			70.0	aau7314_sm.pdf:TableS1:line28
+Plasmax	Amino Acids Derivatives	L-Carnosine			6.0	aau7314_sm.pdf:TableS1:line29
+Plasmax	Amino Acids Derivatives	Glutathione (reduced)			37.0	aau7314_sm.pdf:TableS1:line30
+Plasmax	Amino Acids Derivatives	Taurine			130.0	aau7314_sm.pdf:TableS1:line31
+Plasmax	Amino Acids Derivatives	N-Trimethylglycine (betaine)			72.0	aau7314_sm.pdf:TableS1:line32
+Plasmax	Other Components	Acetate			42.0	aau7314_sm.pdf:TableS1:line33
+Plasmax	Other Components	Acetone			55.0	aau7314_sm.pdf:TableS1:line34
+Plasmax	Other Components	Acetyl carnitine			5.0	aau7314_sm.pdf:TableS1:line35
+Plasmax	Other Components	Citrate			114.0	aau7314_sm.pdf:TableS1:line36
+Plasmax	Other Components	Carnitine			46.0	aau7314_sm.pdf:TableS1:line37
+Plasmax	Other Components	Creatine			37.0	aau7314_sm.pdf:TableS1:line38
+Plasmax	Other Components	Creatinine			74.0	aau7314_sm.pdf:TableS1:line39
+Plasmax	Other Components	Formate			33.0	aau7314_sm.pdf:TableS1:line40
+Plasmax	Other Components	D-Glucose			5560.0	aau7314_sm.pdf:TableS1:line43
+Plasmax	Other Components	Glycerol			82.0	aau7314_sm.pdf:TableS1:line44
+Plasmax	Other Components	2-Hydroxybutyrate			31.0	aau7314_sm.pdf:TableS1:line45
+Plasmax	Other Components	3-Hydroxybutyrate			77.0	aau7314_sm.pdf:TableS1:line46
+Plasmax	Other Components	3-Hydroxyisobutyrate			20.0	aau7314_sm.pdf:TableS1:line47
+Plasmax	Other Components	Hypoxanthine			5.0	aau7314_sm.pdf:TableS1:line48
+Plasmax	Other Components	Lactate			500.0	aau7314_sm.pdf:TableS1:line49
+Plasmax	Other Components	Methyl acetoacetate			41.0	aau7314_sm.pdf:TableS1:line51
+Plasmax	Other Components	Phenol Red			25.0	aau7314_sm.pdf:TableS1:line52
+Plasmax	Other Components	Pyruvate			100.0	aau7314_sm.pdf:TableS1:line53
+Plasmax	Other Components	Succinate			23.0	aau7314_sm.pdf:TableS1:line54
+Plasmax	Other Components	Uracil			2.0	aau7314_sm.pdf:TableS1:line55
+Plasmax	Other Components	Urate			270.0	aau7314_sm.pdf:TableS1:line56
+Plasmax	Other Components	Urea			3000.0	aau7314_sm.pdf:TableS1:line57
+Plasmax	Other Components	Uridine			3.0	aau7314_sm.pdf:TableS1:line58
+Plasmax	Inorganic Salts	Ammonium Chloride			50.0	aau7314_sm.pdf:TableS1:line59
+Plasmax	Inorganic Salts	Calcium Chloride			1800.0	aau7314_sm.pdf:TableS1:line60
+Plasmax	Inorganic Salts	Magnesium Sulfate			813.0	aau7314_sm.pdf:TableS1:line63
+Plasmax	Inorganic Salts	Potassium Chloride			5330.0	aau7314_sm.pdf:TableS1:line64
+Plasmax	Inorganic Salts	Sodium Bicarbonate			26191.0	aau7314_sm.pdf:TableS1:line65
+Plasmax	Inorganic Salts	Sodium Chloride			118706.0	aau7314_sm.pdf:TableS1:line66
+Plasmax	Inorganic Salts	Sodium Phosphate monobasic			1010.0	aau7314_sm.pdf:TableS1:line67
+Plasmax	Trace Elements	Ammonium Metavanadate			0.0026	aau7314_sm.pdf:TableS1:line68
+Plasmax	Trace Elements	Cupric Sulfate			0.0052	aau7314_sm.pdf:TableS1:line69
+Plasmax	Trace Elements	Ferric Nitrate			0.1238	aau7314_sm.pdf:TableS1:line70
+Plasmax	Trace Elements	Ferric Sulfate			1.0428	aau7314_sm.pdf:TableS1:line71
+Plasmax	Trace Elements	Manganous Chloride			0.0002	aau7314_sm.pdf:TableS1:line72
+Plasmax	Trace Elements	Sodium Selenite			0.0289	aau7314_sm.pdf:TableS1:line73
+Plasmax	Trace Elements	Zinc Sulfate			1.5	aau7314_sm.pdf:TableS1:line74
+Plasmax	Vitamins	Ascorbate			62.0	aau7314_sm.pdf:TableS1:line76
+Plasmax	Vitamins	D-Biotin			4.1	aau7314_sm.pdf:TableS1:line77
+Plasmax	Vitamins	Choline			7.1	aau7314_sm.pdf:TableS1:line78
+Plasmax	Vitamins	Folate			2.3	aau7314_sm.pdf:TableS1:line79
+Plasmax	Vitamins	myo-Inositol			11.1	aau7314_sm.pdf:TableS1:line80
+Plasmax	Vitamins	Niacinamide			8.2	aau7314_sm.pdf:TableS1:line81
+Plasmax	Vitamins	D-Pantothenic acid hemicalcium			4.2	aau7314_sm.pdf:TableS1:line82
+Plasmax	Vitamins	Pyridoxine			4.9	aau7314_sm.pdf:TableS1:line83
+Plasmax	Vitamins	Riboflavin			0.3	aau7314_sm.pdf:TableS1:line84
+Plasmax	Vitamins	Thiamine			3.0	aau7314_sm.pdf:TableS1:line85
+Plasmax	Vitamins	Vitamin B12			0.005	aau7314_sm.pdf:TableS1:line86

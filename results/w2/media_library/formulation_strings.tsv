@@ -1,0 +1,158 @@
+text	base	base_class	parts	serum_pct	serum_type	serum_free	supplements	flags	buildable_from_disk	medium_key	n_lines_screen_or_onboarded
+AlphaMEM + 10% FBS	AlphaMEM	other_defined		10.0	FBS	False			False		6
+AlphaMEM + 10% FBS + 1x Pen-Strep	AlphaMEM	other_defined		10.0	FBS	False	1x Pen-Strep -> non_nutrient: [antibiotic / selection agent]		False		2
+AlphaMEM + 20% FBS	AlphaMEM	other_defined		20.0	FBS	False			False		1
+AlphaMEM + 20% FBS + 10ng/ml GM-CSF	AlphaMEM	other_defined		20.0	FBS	False	10ng/ml GM-CSF -> non_nutrient: [protein/peptide]		False		2
+AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium	AlphaMEM	other_defined		5.0	FBS	False	1X Insulin-Transferrin-Selenium -> nutrient:selenite= [ITS: insulin and transferrin are proteins (not mapped); selenite has no exchange]		False		4
+BME + 20% FBS + 2mM Glutamine	BME	other_defined		20.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		False		1
+Breast Organoid Media	Breast Organoid Media	organoid		0.0	none	True			False		14
+CellGro + 10%FBS+1x glutamax	CellGro	other_defined		10.0	FBS	False	1x glutamax -> nutrient:glutamine= [GlutaMAX (alanyl-glutamine) -> glutamine (DESIGN parser rule)]		False		1
+DMEM + 10% FBS	DMEM	sheet:DMEM	DMEM:1	10.0	FBS	False		dmem_pyruvate_unstated_default_none;dmem_glucose_unstated_default_high	True	DMEM	136
+DMEM + 10% FBS + 0.01 mg/ml Transferrin	DMEM	sheet:DMEM	DMEM:1	10.0	FBS	False	0.01 mg/ml Transferrin -> non_nutrient: [protein/peptide]	dmem_pyruvate_unstated_default_none;dmem_glucose_unstated_default_high	True	DMEM	1
+DMEM + 10% FBS + 100uM NEAA	DMEM	sheet:DMEM	DMEM:1	10.0	FBS	False	100uM NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)]	dmem_pyruvate_unstated_default_none;dmem_glucose_unstated_default_high	True	DMEM+alanine+asparagine+aspartate+glutamate+proline	4
+DMEM + 10% FBS + 1ug/ml Insulin	DMEM	sheet:DMEM	DMEM:1	10.0	FBS	False	1ug/ml Insulin -> non_nutrient: [protein/peptide]	dmem_pyruvate_unstated_default_none;dmem_glucose_unstated_default_high	True	DMEM	1
+DMEM + 10% FBS + 2mM Glutamine	DMEM	sheet:DMEM	DMEM:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0	dmem_pyruvate_unstated_default_none;dmem_glucose_unstated_default_high	True	DMEM	12
+DMEM + 10% FBS + 2mM Glutamine + 0.4ug/ml Hydrocortisone	DMEM	sheet:DMEM	DMEM:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 0.4ug/ml Hydrocortisone -> nutrient:cortisol=1.1034 [hydrocortisone = cortisol]	dmem_pyruvate_unstated_default_none;dmem_glucose_unstated_default_high	True	DMEM+cortisol	3
+DMEM + 10% FBS + 2mM Glutamine + 100uM NEAA	DMEM	sheet:DMEM	DMEM:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 100uM NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)]	dmem_pyruvate_unstated_default_none;dmem_glucose_unstated_default_high	True	DMEM+alanine+asparagine+aspartate+glutamate+proline	1
+DMEM + 10% FBS + 2mM Glutamine + 1X Insulin-Transferrin-Selenium	DMEM	sheet:DMEM	DMEM:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 1X Insulin-Transferrin-Selenium -> nutrient:selenite= [ITS: insulin and transferrin are proteins (not mapped); selenite has no exchange]	dmem_pyruvate_unstated_default_none;dmem_glucose_unstated_default_high	True	DMEM	2
+DMEM + 10% FBS + 2mM Glutamine + 1mM Sodium pyruvate + 1mM NEAA	DMEM	sheet:DMEM	DMEM:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 1mM Sodium pyruvate -> nutrient:pyruvate=1000.0,Na+=1000.0 | 1mM NEAA -> nutrient:glycine=1000.0,alanine=1000.0,asparagine=1000.0,aspartate=1000.0,glutamate=1000.0,proline=1000.0,serine=1000.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)]	dmem_glucose_unstated_default_high	True	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	1
+DMEM + 10% FBS + 2mM Glutamine + Sodium pyruvate + 1X Insulin-Transferrin-Selenium	DMEM	sheet:DMEM	DMEM:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | Sodium pyruvate -> nutrient:pyruvate=,Na+= | 1X Insulin-Transferrin-Selenium -> nutrient:selenite= [ITS: insulin and transferrin are proteins (not mapped); selenite has no exchange]	dmem_glucose_unstated_default_high	True	DMEM+pyruvate	1
+DMEM + 10% FBS + 2mM glutamine + 500uM pyruvate	DMEM	sheet:DMEM	DMEM:1	10.0	FBS	False	2mM glutamine -> nutrient:glutamine=2000.0 | 500uM pyruvate -> nutrient:pyruvate=500.0,Na+=500.0	dmem_glucose_unstated_default_high	True	DMEM+pyruvate	2
+DMEM + 10% FBS+ 1% Glutamax	DMEM	sheet:DMEM	DMEM:1	10.0	FBS	False	1% Glutamax -> nutrient:glutamine= [GlutaMAX (alanyl-glutamine) -> glutamine (DESIGN parser rule)]	dmem_pyruvate_unstated_default_none;dmem_glucose_unstated_default_high	True	DMEM	1
+DMEM + 15% FBS	DMEM	sheet:DMEM	DMEM:1	15.0	FBS	False		dmem_pyruvate_unstated_default_none;dmem_glucose_unstated_default_high	True	DMEM	1
+DMEM + 15% FBS + 2mM Glutamine	DMEM	sheet:DMEM	DMEM:1	15.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0	dmem_pyruvate_unstated_default_none;dmem_glucose_unstated_default_high	True	DMEM	1
+DMEM + 20% FBS	DMEM	sheet:DMEM	DMEM:1	20.0	FBS	False		dmem_pyruvate_unstated_default_none;dmem_glucose_unstated_default_high	True	DMEM	6
+DMEM + 20% FBS + 1mM Sodium pyruvate	DMEM	sheet:DMEM	DMEM:1	20.0	FBS	False	1mM Sodium pyruvate -> nutrient:pyruvate=1000.0,Na+=1000.0	dmem_glucose_unstated_default_high	True	DMEM+pyruvate	4
+DMEM + 20% FBS + 2mM Glutamine	DMEM	sheet:DMEM	DMEM:1	20.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0	dmem_pyruvate_unstated_default_none;dmem_glucose_unstated_default_high	True	DMEM	1
+DMEM + 5% FBS	DMEM	sheet:DMEM	DMEM:1	5.0	FBS	False		dmem_pyruvate_unstated_default_none;dmem_glucose_unstated_default_high	True	DMEM	7
+DMEM:F12	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	0.0	none	True			True	DMEM:F12|serum-free	2
+DMEM:F12 + 10% FBS	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	10.0	FBS	False			True	DMEM:F12	13
+DMEM:F12 + 10% FBS + 0.4ug/ml Hydrocortisone	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	10.0	FBS	False	0.4ug/ml Hydrocortisone -> nutrient:cortisol=1.1034 [hydrocortisone = cortisol]		True	DMEM:F12+cortisol	1
+DMEM:F12 + 10% FBS + 100uM NEAA	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	10.0	FBS	False	100uM NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)]		True	DMEM:F12	3
+DMEM:F12 + 10% FBS + 1x Insulin-Transferrin-Selenium	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	10.0	FBS	False	1x Insulin-Transferrin-Selenium -> nutrient:selenite= [ITS: insulin and transferrin are proteins (not mapped); selenite has no exchange]		True	DMEM:F12	2
+DMEM:F12 + 10% FBS + 2mM Glutamine	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		True	DMEM:F12	5
+DMEM:F12 + 10% FBS + 2mM Glutamine + 500ng/ml Sodium hydrocortisone succinate	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 500ng/ml Sodium hydrocortisone succinate -> nutrient:cortisol=1.3793 [hydrocortisone = cortisol]		True	DMEM:F12+cortisol	6
+DMEM:F12 + 10% FBS + GlutaMAX	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	10.0	FBS	False	GlutaMAX -> nutrient:glutamine= [GlutaMAX (alanyl-glutamine) -> glutamine (DESIGN parser rule)]		True	DMEM:F12	10
+DMEM:F12 + 10%FBS + 2mM Glutamine + 20ug/ml Insulin + 10ug/ml Transferrin + 25nM Sodium Selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM Ethanolamine + 10uM Phosphorylethanolamine + 100pM Triiodo-L-Thyronine + 0.5% BSA + 10mM HEPES + 500uM Sodium Pyruvate	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 20ug/ml Insulin -> non_nutrient: [protein/peptide] | 10ug/ml Transferrin -> non_nutrient: [protein/peptide] | 25nM Sodium Selenite -> unrepresentable:selenite=0.025 [selenite has no exchange] | 50nM Hydrocortisone -> nutrient:cortisol=0.05 [hydrocortisone = cortisol] | 1ng/ml EGF -> non_nutrient: [protein/peptide] | 10uM Ethanolamine -> nutrient:ethanolamine=10.0 | 10uM Phosphorylethanolamine -> nutrient:phosphoethanolamine=10.0 | 100pM Triiodo-L-Thyronine -> nutrient:triiodothyronine=0.0001 | 0.5% BSA -> non_nutrient: [protein/peptide] | 10mM HEPES -> non_nutrient: [buffer] | 500uM Sodium Pyruvate -> nutrient:pyruvate=500.0,Na+=500.0		True	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	1
+DMEM:F12 + 15% FBS	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	15.0	FBS	False			True	DMEM:F12	2
+DMEM:F12 + 20% FBS	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	20.0	FBS	False			True	DMEM:F12	3
+DMEM:F12 + 20% horse serum	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	20.0	horse serum	False		non_FBS_serum_treated_as_serum	True	DMEM:F12	1
+DMEM:F12 + 5% FBS	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	5.0	FBS	False			True	DMEM:F12	5
+DMEM:F12 + 5% FBS + 2.5 mM Glutamine + 0.2 g/L sodium bicarbonate + 15 mM HEPES + 0.5 mM sodium pyruvate + 400 ng/ml hydrocortisone	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	5.0	FBS	False	2.5 mM Glutamine -> nutrient:glutamine=2500.0 | 0.2 g/L sodium bicarbonate -> nutrient:HCO3-=2380.9524,Na+=2380.9524 | 15 mM HEPES -> non_nutrient: [buffer] | 0.5 mM sodium pyruvate -> nutrient:pyruvate=500.0,Na+=500.0 | 400 ng/ml hydrocortisone -> nutrient:cortisol=1.1034 [hydrocortisone = cortisol]		True	DMEM:F12+cortisol	1
+DMEM:F12 + 5% FBS + 2mM Glutamine + 10ug/ml Insulin + 0.5ug/ml Hydrocortisone	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	5.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 10ug/ml Insulin -> non_nutrient: [protein/peptide] | 0.5ug/ml Hydrocortisone -> nutrient:cortisol=1.3793 [hydrocortisone = cortisol]		True	DMEM:F12+cortisol	1
+DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 0.01mg/ml Transferrin + 30nM Selenium + 10mM HEPES + 10nM Hydrocortisone + 10nM beta-Estradiol	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	5.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 5ug/ml Insulin -> non_nutrient: [protein/peptide] | 0.01mg/ml Transferrin -> non_nutrient: [protein/peptide] | 30nM Selenium -> unrepresentable:selenite=0.03 [selenite has no exchange] | 10mM HEPES -> non_nutrient: [buffer] | 10nM Hydrocortisone -> nutrient:cortisol=0.01 [hydrocortisone = cortisol] | 10nM beta-Estradiol -> nutrient:estradiol=0.01		True	DMEM:F12+cortisol+estradiol	1
+DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	DMEM:F12	sheet:DMEM:F12	DMEM:F12:1	5.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 5ug/ml Insulin -> non_nutrient: [protein/peptide] | 10ug/ml Transferrin -> non_nutrient: [protein/peptide] | 30nM Selenium -> unrepresentable:selenite=0.03 [selenite has no exchange] | 10nM Hydrocortisone -> nutrient:cortisol=0.01 [hydrocortisone = cortisol] | 10nM beta-Estradiol -> nutrient:estradiol=0.01		True	DMEM:F12+cortisol+estradiol	7
+DMEM:KSFM (2:1) + 20% FBS	DMEM:KSFM (2:1)	other_defined		20.0	FBS	False			False		6
+DMEM:RPMI (1:1) + 10% FBS	DMEM:RPMI (1:1)	mixture_of_sheets	DMEM:0.5;RPMI:0.5	10.0	FBS	False			True	DMEM0.5:RPMI0.5	2
+DMEM:RPMI (1:3) + 10% FBS + 2mM Glutamine	DMEM:RPMI (1:3)	mixture_of_sheets	DMEM:0.25;RPMI:0.75	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		True	DMEM0.25:RPMI0.75	1
+EMEM + 10% FBS	EMEM	sheet:MEM/EMEM	EMEM:1	10.0	FBS	False			False		15
+EMEM + 10% FBS + 0.01 mg/ml recombinant insulin	EMEM	sheet:MEM/EMEM	EMEM:1	10.0	FBS	False	0.01 mg/ml recombinant insulin -> non_nutrient: [protein/peptide]		False		1
+EMEM + 10% FBS + 0.015 mg/ml 5-bromo-2'-deoxyuridine	EMEM	sheet:MEM/EMEM	EMEM:1	10.0	FBS	False	0.015 mg/ml 5-bromo-2'-deoxyuridine -> unrepresentable:BrdU= [BrdU (thymidine analogue) has no exchange]		False		1
+EMEM + 10% FBS + 100uM NEAA	EMEM	sheet:MEM/EMEM	EMEM:1	10.0	FBS	False	100uM NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)]		False		1
+EMEM + 10% FBS + 200uM NEAA + 1 mM sodium pyruvate + 100ug/L cyanocobalamin (vitamin B12)	EMEM	sheet:MEM/EMEM	EMEM:1	10.0	FBS	False	200uM NEAA -> nutrient:glycine=200.0,alanine=200.0,asparagine=200.0,aspartate=200.0,glutamate=200.0,proline=200.0,serine=200.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)] | 1 mM sodium pyruvate -> nutrient:pyruvate=1000.0,Na+=1000.0 | 100ug/L cyanocobalamin (vitamin B12) -> nutrient:cobalamin=0.0738		False		1
+EMEM + 10% FBS + 2mM Glutamine	EMEM	sheet:MEM/EMEM	EMEM:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		False		1
+EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA	EMEM	sheet:MEM/EMEM	EMEM:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 100uM NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)]		False		11
+EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA + 1mM Sodium Pyruvate	EMEM	sheet:MEM/EMEM	EMEM:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 100uM NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)] | 1mM Sodium Pyruvate -> nutrient:pyruvate=1000.0,Na+=1000.0		False		1
+EMEM + 15% FBS	EMEM	sheet:MEM/EMEM	EMEM:1	15.0	FBS	False			False		7
+EMEM + 20% FBS	EMEM	sheet:MEM/EMEM	EMEM:1	20.0	FBS	False			False		3
+EMEM + 20% FBS + 1mM Sodium pyruvate + 100uM NEAA	EMEM	sheet:MEM/EMEM	EMEM:1	20.0	FBS	False	1mM Sodium pyruvate -> nutrient:pyruvate=1000.0,Na+=1000.0 | 100uM NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)]		False		0
+EMEM + 5% FBS	EMEM	sheet:MEM/EMEM	EMEM:1	5.0	FBS	False			False		2
+EMEM + 5% FBS + 2mM Glutamine	EMEM	sheet:MEM/EMEM	EMEM:1	5.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		False		1
+EMEM:F12 + 10% FBS	EMEM:F12	mixture_of_sheets	EMEM:0.5;F12:0.5	10.0	FBS	False		mixture_ratio_unstated_assumed_1:1	False		3
+F-12K + 10% FBS	F-12K	other_defined		10.0	FBS	False			False		1
+F12 + 10% FBS	F12	sheet:F12	F12:1	10.0	FBS	False			False		20
+F12 + 10% FBS + 1mM Glutamine + 44mM Glucose + 12mM Sodium Bicarbonate	F12	sheet:F12	F12:1	10.0	FBS	False	1mM Glutamine -> nutrient:glutamine=1000.0 | 44mM Glucose -> nutrient:glucose=44000.0 | 12mM Sodium Bicarbonate -> nutrient:HCO3-=12000.0,Na+=12000.0		False		1
+F12 + 15% FBS	F12	sheet:F12	F12:1	15.0	FBS	False			False		7
+F12 + 15% FBS + 2mM Glutamine	F12	sheet:F12	F12:1	15.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		False		10
+F12 + 1X ITS + 10mM HEPES + 1ug/ml Hydrocortisone + 1g/l BSA + 10ng/ml EGF + 5mM Ethanolamine + 10nM Triiodo-L-Thyronine	F12	sheet:F12	F12:1	0.0	none	True	1X ITS -> nutrient:selenite= [ITS: insulin and transferrin are proteins (not mapped); selenite has no exchange] | 10mM HEPES -> non_nutrient: [buffer] | 1ug/ml Hydrocortisone -> nutrient:cortisol=2.7586 [hydrocortisone = cortisol] | 1g/l BSA -> non_nutrient: [protein/peptide] | 10ng/ml EGF -> non_nutrient: [protein/peptide] | 5mM Ethanolamine -> nutrient:ethanolamine=5000.0 | 10nM Triiodo-L-Thyronine -> nutrient:triiodothyronine=0.01		False		2
+F12 + 20% FBS	F12	sheet:F12	F12:1	20.0	FBS	False			False		1
+F12 + 5% FBS + 5ug/ml Insulin + 10mM HEPES + 10ng/ml EGF	F12	sheet:F12	F12:1	5.0	FBS	False	5ug/ml Insulin -> non_nutrient: [protein/peptide] | 10mM HEPES -> non_nutrient: [buffer] | 10ng/ml EGF -> non_nutrient: [protein/peptide]		False		1
+F12 + 5% FBS + 5ug/ml Insulin + 10mM HEPES + 1ug/ml Hydrocortisone	F12	sheet:F12	F12:1	5.0	FBS	False	5ug/ml Insulin -> non_nutrient: [protein/peptide] | 10mM HEPES -> non_nutrient: [buffer] | 1ug/ml Hydrocortisone -> nutrient:cortisol=2.7586 [hydrocortisone = cortisol]		False		4
+HM Prostate Media	HM Prostate Media	other_defined		0.0	none	True			False		1
+IMDM + 10% FBS	IMDM	sheet:IMDM	IMDM:1	10.0	FBS	False			True	IMDM	12
+IMDM + 10% FBS + 1X Insulin-Transferrin-Selenium	IMDM	sheet:IMDM	IMDM:1	10.0	FBS	False	1X Insulin-Transferrin-Selenium -> nutrient:selenite= [ITS: insulin and transferrin are proteins (not mapped); selenite has no exchange]		True	IMDM	1
+IMDM + 10% FBS + 2mM Glutamine	IMDM	sheet:IMDM	IMDM:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		True	IMDM	8
+IMDM + 20% FBS	IMDM	sheet:IMDM	IMDM:1	20.0	FBS	False			True	IMDM	6
+IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	IMDM	sheet:IMDM	IMDM:1	20.0	FBS	False	4mM Glutamine -> nutrient:glutamine=4000.0 | 1x Insulin-Transferrin-Selenium -> nutrient:selenite= [ITS: insulin and transferrin are proteins (not mapped); selenite has no exchange]		True	IMDM	11
+IMDM + 5% FBS + 10ug/ml Insulin + 5ug/ml Transferrin + 2ng/ml GM-CSF	IMDM	sheet:IMDM	IMDM:1	5.0	FBS	False	10ug/ml Insulin -> non_nutrient: [protein/peptide] | 5ug/ml Transferrin -> non_nutrient: [protein/peptide] | 2ng/ml GM-CSF -> non_nutrient: [protein/peptide]		True	IMDM	1
+IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine	IMDM:RPMI (4:1)	mixture_of_sheets	IMDM:0.8;RPMI:0.2	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		True	IMDM0.8:RPMI0.2	1
+IMDM:RPMI (4:1) + 20% FBS + 2mM Glutamine	IMDM:RPMI (4:1)	mixture_of_sheets	IMDM:0.8;RPMI:0.2	20.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		True	IMDM0.8:RPMI0.2	2
+K-SFM	K-SFM	other_defined		0.0	none	True			False		1
+L-15 + 10% FBS	L-15	sheet:L-15	L-15:1	10.0	FBS	False			False		10
+L-15 + 10% FBS + 2mM Glutamine	L-15	sheet:L-15	L-15:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		False		1
+L-15 + 15% FBS + 2mM Glutamine + 10ug/ml Insulin + 10ug/ml Glutathione	L-15	sheet:L-15	L-15:1	15.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 10ug/ml Insulin -> non_nutrient: [protein/peptide] | 10ug/ml Glutathione -> nutrient:GSH=32.5415		False		1
+L-15 + 20% FBS	L-15	sheet:L-15	L-15:1	20.0	FBS	False			False		2
+L-15 + 5% FBS + 10ug/ml transferrin + 10ug/ml insulin + 5ug/ml (55 U/ml) catalase + 3.6ug/ml (0.01 mM) hydrocortisone + 2mM Glutamine	L-15	sheet:L-15	L-15:1	5.0	FBS	False	10ug/ml transferrin -> non_nutrient: [protein/peptide] | 10ug/ml insulin -> non_nutrient: [protein/peptide] | 5ug/ml (55 U/ml) catalase -> non_nutrient: [protein/peptide] | 3.6ug/ml (0.01 mM) hydrocortisone -> nutrient:cortisol=9.931 [hydrocortisone = cortisol] | 2mM Glutamine -> nutrient:glutamine=2000.0		False		2
+MCDB 105:Medium 199 (1:1) + 15% FBS + 1.5g/l Sodium bicarbonate	MCDB 105:Medium 199 (1:1)	other_defined		15.0	FBS	False	1.5g/l Sodium bicarbonate -> nutrient:HCO3-=17857.1429,Na+=17857.1429		False		2
+MEBM + 2% FBS + 2mM Glutamine + MEGM SingleQuot + 10ng/ml EGF	MEBM	other_defined		2.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | MEGM SingleQuot -> non_nutrient: [proprietary kit / extract] | 10ng/ml EGF -> non_nutrient: [protein/peptide]		False		1
+MEM + 10% FBS	MEM	sheet:MEM/EMEM	MEM:1	10.0	FBS	False			False		46
+MEM + 10% FBS + 1mM Sodium pyruvate + 1mM NEAA	MEM	sheet:MEM/EMEM	MEM:1	10.0	FBS	False	1mM Sodium pyruvate -> nutrient:pyruvate=1000.0,Na+=1000.0 | 1mM NEAA -> nutrient:glycine=1000.0,alanine=1000.0,asparagine=1000.0,aspartate=1000.0,glutamate=1000.0,proline=1000.0,serine=1000.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)]		False		1
+MEM + 10% FBS + 2mM Glutamine	MEM	sheet:MEM/EMEM	MEM:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		False		2
+MEM + 10% FBS + 2mM Glutamine + 100uM NEAA	MEM	sheet:MEM/EMEM	MEM:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 100uM NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)]		False		11
+MEM + 10% FBS + 4mM Glutamine + 1mM Sodium pyruvate + 2x MEM NEAA + EAA	MEM	sheet:MEM/EMEM	MEM:1	10.0	FBS	False	4mM Glutamine -> nutrient:glutamine=4000.0 | 1mM Sodium pyruvate -> nutrient:pyruvate=1000.0,Na+=1000.0 | 2x MEM NEAA -> nutrient:glycine=200.0,alanine=200.0,asparagine=200.0,aspartate=200.0,glutamate=200.0,proline=200.0,serine=200.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)] | EAA -> nutrient:arginine=,cystine=,histidine=,isoleucine=,leucine=,lysine=,methionine=,phenylalanine=,threonine=,tryptophan=,tyrosine=,valine= [MEM essential amino acids]		False		1
+MEM + 15% FBS	MEM	sheet:MEM/EMEM	MEM:1	15.0	FBS	False			False		1
+MEM + 15% FBS + 2mM Glutamine + 1x Insulin-Transferrin-Selenium	MEM	sheet:MEM/EMEM	MEM:1	15.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 1x Insulin-Transferrin-Selenium -> nutrient:selenite= [ITS: insulin and transferrin are proteins (not mapped); selenite has no exchange]		False		1
+MEM + 20% FBS	MEM	sheet:MEM/EMEM	MEM:1	20.0	FBS	False			False		1
+MEM + 20% FBS + 1mM Sodium pyruvate + 100uM NEAA	MEM	sheet:MEM/EMEM	MEM:1	20.0	FBS	False	1mM Sodium pyruvate -> nutrient:pyruvate=1000.0,Na+=1000.0 | 100uM NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)]		False		1
+MEM + 20% FBS + 2mM Glutamine + 100uM NEAA	MEM	sheet:MEM/EMEM	MEM:1	20.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 100uM NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)]		False		5
+McCoy's 5A + 10% FBS	McCoy's 5A	sheet:McCoy's 5A	McCoy's 5A:1	10.0	FBS	False			False		19
+McCoy's 5A + 15% FBS	McCoy's 5A	sheet:McCoy's 5A	McCoy's 5A:1	15.0	FBS	False			False		2
+NSA (proprietary)	NSA (proprietary)	other_defined		0.0	none	True			False		1
+OCMI-L	OCMI-L	organoid		0.0	none	True			False		2
+OPAC:Ad+++ (1:1)	OPAC:Ad+++ (1:1)	organoid		0.0	none	True			False		52
+Opti-MEM + 5% FBS	Opti-MEM	other_defined		5.0	FBS	False			False		1
+Organoid Media Formulation #1	Organoid Media Formulation #1	organoid		0.0	none	True			False		15
+Organoid Media Formulation #10	Organoid Media Formulation #10	organoid		0.0	none	True			False		0
+Organoid Media Formulation #3	Organoid Media Formulation #3	organoid		0.0	none	True			False		8
+Organoid Media Formulation #4	Organoid Media Formulation #4	organoid		0.0	none	True			False		0
+Organoid Media Formulation #5	Organoid Media Formulation #5	organoid		0.0	none	True			False		0
+Organoid Media Formulation #6	Organoid Media Formulation #6	organoid		0.0	none	True			False		0
+Organoid Media Formulation #8	Organoid Media Formulation #8	organoid		0.0	none	True			False		0
+Ovarian Organoid Media	Ovarian Organoid Media	organoid		0.0	none	True			False		10
+Prostate Organoid Media:NSA (1:1)	Prostate Organoid Media:NSA (1:1)	organoid		0.0	none	True			False		8
+RPMI + 10% FBS	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False			True	RPMI	395
+RPMI + 10% FBS + 1% Glutamax + 0.5% Gentamicin + HEPES	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	1% Glutamax -> nutrient:glutamine= [GlutaMAX (alanyl-glutamine) -> glutamine (DESIGN parser rule)] | 0.5% Gentamicin -> non_nutrient: [antibiotic / selection agent] | HEPES -> non_nutrient: [buffer]		True	RPMI	1
+RPMI + 10% FBS + 100uM NEAA	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	100uM NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)]		True	RPMI+alanine	2
+RPMI + 10% FBS + 100uM NEAA + 20mM HEPES	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	100uM NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)] | 20mM HEPES -> non_nutrient: [buffer]		True	RPMI+alanine	1
+RPMI + 10% FBS + 10ng/ml of human recombinant GM-CSF	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	10ng/ml of human recombinant GM-CSF -> non_nutrient: [protein/peptide]		True	RPMI	1
+RPMI + 10% FBS + 1mM Sodium pyruvate	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	1mM Sodium pyruvate -> nutrient:pyruvate=1000.0,Na+=1000.0		True	RPMI	2
+RPMI + 10% FBS + 2 mM Glutamine + 1x NEAA + 1 mM sodium pyruvate	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	2 mM Glutamine -> nutrient:glutamine=2000.0 | 1x NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)] | 1 mM sodium pyruvate -> nutrient:pyruvate=1000.0,Na+=1000.0		True	RPMI+alanine	1
+RPMI + 10% FBS + 2mM Glutamine	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		True	RPMI	29
+RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 25mM HEPES -> non_nutrient: [buffer]		True	RPMI	9
+RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 25mM HEPES -> non_nutrient: [buffer] | 25mM Sodium bicarbonate -> nutrient:HCO3-=25000.0,Na+=25000.0		True	RPMI	28
+RPMI + 10% FBS + 2mM Glutamine + 2mM Sodium pyruvate	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 2mM Sodium pyruvate -> nutrient:pyruvate=2000.0,Na+=2000.0		True	RPMI	4
+RPMI + 10% FBS + 2ng/ml G-CSF	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	2ng/ml G-CSF -> non_nutrient: [protein/peptide]		True	RPMI	1
+RPMI + 10% FBS + 2ug/ml Insulin	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	2ug/ml Insulin -> non_nutrient: [protein/peptide]		True	RPMI	2
+RPMI + 10% FBS + 30 mg/L Proline + 35 mg/L Cystine + 3.57 g/L HEPES +15 mg/L Hypoxanthine +1 mg/L ATP +10 mg/L Adenine + 1 mg/L Thymidine	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	30 mg/L Proline -> nutrient:proline=260.6429 | 35 mg/L Cystine -> nutrient:cystine=145.6513 | 3.57 g/L HEPES -> non_nutrient: [buffer] | 15 mg/L Hypoxanthine -> nutrient:hypoxanthine=110.2131 | 1 mg/L ATP -> nutrient:ATP=1.9716 | 10 mg/L Adenine -> nutrient:adenine=74.0192 | 1 mg/L Thymidine -> nutrient:thymidine=4.1288		True	RPMI+ATP+adenine+hypoxanthine+thymidine	1
+RPMI + 10% FBS + 50uM 2-Mercaptoethanol	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	50uM 2-Mercaptoethanol -> cysteine_rule: [2-ME: cysteine uptake allowed (DESIGN parser rule)]		True	RPMI+cys(2-ME)	2
+RPMI + 10% FBS + 5ml Insulin-Transferrin-Selenium	RPMI	sheet:RPMI	RPMI:1	10.0	FBS	False	5ml Insulin-Transferrin-Selenium -> nutrient:selenite= [ITS: insulin and transferrin are proteins (not mapped); selenite has no exchange]		True	RPMI	1
+RPMI + 15% FBS	RPMI	sheet:RPMI	RPMI:1	15.0	FBS	False			True	RPMI	14
+RPMI + 15% FBS + 10 Units/ml recombinant Insulin	RPMI	sheet:RPMI	RPMI:1	15.0	FBS	False	10 Units/ml recombinant Insulin -> non_nutrient: [protein/peptide]		True	RPMI	1
+RPMI + 15% FBS + 2mM Glutamine	RPMI	sheet:RPMI	RPMI:1	15.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		True	RPMI	3
+RPMI + 15% FBS + 2mM Glutamine + 1mM Sodium pyruvate + 60ug/ml Insulin + 10mM HEPES + 18mM Sodium bicarbonate + 25mM Glucose	RPMI	sheet:RPMI	RPMI:1	15.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 1mM Sodium pyruvate -> nutrient:pyruvate=1000.0,Na+=1000.0 | 60ug/ml Insulin -> non_nutrient: [protein/peptide] | 10mM HEPES -> non_nutrient: [buffer] | 18mM Sodium bicarbonate -> nutrient:HCO3-=18000.0,Na+=18000.0 | 25mM Glucose -> nutrient:glucose=25000.0		True	RPMI	3
+RPMI + 20% FBS	RPMI	sheet:RPMI	RPMI:1	20.0	FBS	False			True	RPMI	43
+RPMI + 20% FBS + 0.01 mg/ml insulin	RPMI	sheet:RPMI	RPMI:1	20.0	FBS	False	0.01 mg/ml insulin -> non_nutrient: [protein/peptide]		True	RPMI	1
+RPMI + 20% FBS + 100nM hydrocortisone	RPMI	sheet:RPMI	RPMI:1	20.0	FBS	False	100nM hydrocortisone -> nutrient:cortisol=0.1 [hydrocortisone = cortisol]		True	RPMI+cortisol	1
+RPMI + 20% FBS + 10ng/ml GM-CSF	RPMI	sheet:RPMI	RPMI:1	20.0	FBS	False	10ng/ml GM-CSF -> non_nutrient: [protein/peptide]		True	RPMI	2
+RPMI + 20% FBS + 10ng/ml IL-6	RPMI	sheet:RPMI	RPMI:1	20.0	FBS	False	10ng/ml IL-6 -> non_nutrient: [protein/peptide]		True	RPMI	1
+RPMI + 20% FBS + 2 mM Glutamine + 1x MEM NEAA + 1 mM sodium pyruvate	RPMI	sheet:RPMI	RPMI:1	20.0	FBS	False	2 mM Glutamine -> nutrient:glutamine=2000.0 | 1x MEM NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)] | 1 mM sodium pyruvate -> nutrient:pyruvate=1000.0,Na+=1000.0		True	RPMI+alanine	2
+RPMI + 20% FBS + 20ng/ml Testosterone + 5ug/ml Transferrin + 5ng/ml Sodium Selenite + 5ug/ml Insulin	RPMI	sheet:RPMI	RPMI:1	20.0	FBS	False	20ng/ml Testosterone -> nutrient:testosterone=0.0693 | 5ug/ml Transferrin -> non_nutrient: [protein/peptide] | 5ng/ml Sodium Selenite -> unrepresentable:selenite= [selenite has no exchange] | 5ug/ml Insulin -> non_nutrient: [protein/peptide]		True	RPMI+testosterone	1
+RPMI + 20% FBS + 2mM Glutamine	RPMI	sheet:RPMI	RPMI:1	20.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		True	RPMI	3
+RPMI + 20% FBS + 3mM Glutamine	RPMI	sheet:RPMI	RPMI:1	20.0	FBS	False	3mM Glutamine -> nutrient:glutamine=3000.0		True	RPMI	4
+RPMI + 5% FBS	RPMI	sheet:RPMI	RPMI:1	5.0	FBS	False			True	RPMI	21
+RPMI + 5% FBS + 2mM Glutamine	RPMI	sheet:RPMI	RPMI:1	5.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		True	RPMI	1
+RPMI + 5% FBS + 2mM Glutamine + 25mM HEPES	RPMI	sheet:RPMI	RPMI:1	5.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | 25mM HEPES -> non_nutrient: [buffer]		True	RPMI	1
+RPMI:EMEM (1:1) + 10% FBS	RPMI:EMEM (1:1)	mixture_of_sheets	RPMI:0.5;EMEM:0.5	10.0	FBS	False			False		1
+RPMI:EMEM (1:1) + 10% FBS + 2 mM Glutamine + 1x Insulin-Transferrin-Sodium Selenite	RPMI:EMEM (1:1)	mixture_of_sheets	RPMI:0.5;EMEM:0.5	10.0	FBS	False	2 mM Glutamine -> nutrient:glutamine=2000.0 | 1x Insulin-Transferrin-Sodium Selenite -> nutrient:selenite= [ITS: insulin and transferrin are proteins (not mapped); selenite has no exchange]		False		1
+RPMI:EMEM (1:1) + 20% FBS	RPMI:EMEM (1:1)	mixture_of_sheets	RPMI:0.5;EMEM:0.5	20.0	FBS	False			False		1
+RPMI:EMEM (3:2) + 20% FBS + 2 mM L-glutamine + 100uM NEAA	RPMI:EMEM (3:2)	mixture_of_sheets	RPMI:0.6;EMEM:0.4	20.0	FBS	False	2 mM L-glutamine -> nutrient:glutamine=2000.0 | 100uM NEAA -> nutrient:glycine=100.0,alanine=100.0,asparagine=100.0,aspartate=100.0,glutamate=100.0,proline=100.0,serine=100.0 [MEM NEAA: Gly, Ala, Asn, Asp, Glu, Pro, Ser (100 uM each at 1x)]		False		1
+RPMI:F12 (1:1) + 10% FBS	RPMI:F12 (1:1)	mixture_of_sheets	RPMI:0.5;F12:0.5	10.0	FBS	False			False		3
+RPMI:F12 (1:1) + 10% FBS + 2mM Glutamine	RPMI:F12 (1:1)	mixture_of_sheets	RPMI:0.5;F12:0.5	10.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0		False		1
+RPMI:F12 (1:1) + 20% FBS	RPMI:F12 (1:1)	mixture_of_sheets	RPMI:0.5;F12:0.5	20.0	FBS	False			False		1
+RPMI:MEGM (1:1) + 3% FBS	RPMI:MEGM (1:1)	other_defined		3.0	FBS	False			False		0
+SMGM	SMGM	other_defined		0.0	none	True			False		2
+Stemline Keratinocyte Medium II + 2% FBS + 2mM Glutamine + Stemline keratinocyte growth supplement	Stemline Keratinocyte Medium II	other_defined		2.0	FBS	False	2mM Glutamine -> nutrient:glutamine=2000.0 | Stemline keratinocyte growth supplement -> non_nutrient: [proprietary kit / extract]		False		3
+Tumor Stem Media (not TSM DIPG)	Tumor Stem Media (not TSM DIPG)	stem		0.0	none	True			False		38
+Tumor Stem Media DIPG	Tumor Stem Media DIPG	stem		0.0	none	True			False		3
+Waymouth's MB 752_1 + 10% FBS	Waymouth's MB 752_1	other_defined		10.0	FBS	False			False		4
+William's E medium + 10% FBS	William's E medium	other_defined		10.0	FBS	False			False		5

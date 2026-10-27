@@ -1,0 +1,31 @@
+parent	component	kind	rule	req_c	ref_wt_growth	n_sheets_lacking	sheets_lacking	flagged
+human1	Fe2+	floor	FVA-min uptake at WT growth	0.0019195992615550495	46.3671319673366	2.0	IMDM,RPMI	
+human1	alpha-tocopherol	floor	FVA-min uptake at WT growth	0.0019195992615281359	46.3671319673366	4.0	DMEM,DMEM:F12,IMDM,RPMI	
+human1	biotin	floor	FVA-min uptake at WT growth	0.0019195992615281359	46.3671319673366	1.0	DMEM	
+human1	cobalamin	floor	FVA-min uptake at WT growth	0.0019195992615281359	46.3671319673366	1.0	DMEM	
+human1	gamma-tocopherol	floor	FVA-min uptake at WT growth	0.0019195992615281359	46.3671319673366	4.0	DMEM,DMEM:F12,IMDM,RPMI	
+human1	linoleate	floor	FVA-min uptake at WT growth	5.797790759179838	46.3671319673366	3.0	DMEM,IMDM,RPMI	
+human1	linolenate	floor	FVA-min uptake at WT growth	11.967728365645051	46.3671319673366	4.0	DMEM,DMEM:F12,IMDM,RPMI	
+human1	lipoate	floor	FVA-min uptake at WT growth	0.0019195992615550495	46.3671319673366	3.0	DMEM,IMDM,RPMI	
+human1	retinoate	floor	FVA-min uptake at WT growth	0.02683544127102755	46.3671319673366	4.0	DMEM,DMEM:F12,IMDM,RPMI	
+human1	palmitate	serum_synthesisable	pFBA uptake at >= 99% WT growth, c open at 1000	5.2993083539348635	46.46833398405656			False
+human1	stearate	serum_synthesisable	pFBA uptake at >= 99% WT growth, c open at 1000	11.173840700409299	46.578720337346596			False
+human1	oleate	serum_synthesisable	pFBA uptake at >= 99% WT growth, c open at 1000	8.142766179519093	46.47044809004446			False
+human1	cholesterol	serum_synthesisable	pFBA uptake at >= 99% WT growth, c open at 1000	1.2973116024006275	46.64662898152645			False
+human1	carnitine	serum_synthesisable	pFBA uptake at >= 99% WT growth, c open at 1000	0.0019004076484385735	46.36723877515746			False
+human1	ethanolamine	serum_synthesisable	pFBA uptake at >= 99% WT growth, c open at 1000	1.7585992017291854	46.36713196733665			False
+human2	Fe2+	floor	FVA-min uptake at WT growth	0.0019209625657197194	46.4000620205859	2.0	IMDM,RPMI	
+human2	alpha-tocopherol	floor	FVA-min uptake at WT growth	0.0019209625657312939	46.4000620205859	4.0	DMEM,DMEM:F12,IMDM,RPMI	
+human2	biotin	floor	FVA-min uptake at WT growth	0.0019209625656912976	46.4000620205859	1.0	DMEM	
+human2	cobalamin	floor	FVA-min uptake at WT growth	0.0019209625657312939	46.4000620205859	1.0	DMEM	
+human2	gamma-tocopherol	floor	FVA-min uptake at WT growth	0.0019209625657312939	46.4000620205859	4.0	DMEM,DMEM:F12,IMDM,RPMI	
+human2	linoleate	floor	FVA-min uptake at WT growth	5.801908366476213	46.4000620205859	3.0	DMEM,IMDM,RPMI	
+human2	linolenate	floor	FVA-min uptake at WT growth	11.969098344360868	46.4000620205859	4.0	DMEM,DMEM:F12,IMDM,RPMI	
+human2	lipoate	floor	FVA-min uptake at WT growth	0.0019209625657312939	46.4000620205859	3.0	DMEM,IMDM,RPMI	
+human2	retinoate	floor	FVA-min uptake at WT growth	0.026854499867831377	46.4000620205859	4.0	DMEM,DMEM:F12,IMDM,RPMI	
+human2	palmitate	serum_synthesisable	pFBA uptake at >= 99% WT growth, c open at 1000	5.303080156331306	46.5014079932996			False
+human2	stearate	serum_synthesisable	pFBA uptake at >= 99% WT growth, c open at 1000	11.181812629039863	46.61195172520938			False
+human2	oleate	serum_synthesisable	pFBA uptake at >= 99% WT growth, c open at 1000	8.008350053840338	46.55380215058964			False
+human2	cholesterol	serum_synthesisable	pFBA uptake at >= 99% WT growth, c open at 1000	1.2985790930260128	46.69220335612582			False
+human2	carnitine	serum_synthesisable	pFBA uptake at >= 99% WT growth, c open at 1000	0.0019017558645302302	46.400133326921065			False
+human2	ethanolamine	serum_synthesisable	pFBA uptake at >= 99% WT growth, c open at 1000	1.7598481632866545	46.400062020586034			False

@@ -1,0 +1,3 @@
+line	family	solver	author_cpu_s	author_n_open	author_n_reopened	author_failed	author_wt	author_n_lethal	author_open_mask_sha	author_ko_sha	author_n_nonoptimal	vs_gurobi_pilot_open_equal	vs_gurobi_pilot_jaccard	vs_gurobi_pilot_ko_n_differ	vs_glpk_pilot_open_equal	wall_s	own_gimme_obj	author_gimme_obj	own_n_open	open_jaccard_own_vs_author	open_symdiff	author_extract_closed_equal_own
+ACH-000957	F0	glpk	83.4	11261	35	False	65.45393218771602	168	24fa439fdf13dc92	7529ae3841cc5cae	0	False	0.99991	69	False	105						
+ACH-000957	F2	glpk	92.8	11269	0	False	74.6640593954739	168	e420bef0c0654167	8699591cbafa551a	0	False	0.99973	108	False	630	1633.6647321315868	1633.6647321315954	11269.0	1.0	0.0	True

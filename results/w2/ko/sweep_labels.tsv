@@ -1,0 +1,467 @@
+sweep_id	parent	signature	n_open	variant	medium_key	f	gate_open	role	wt_growth	rel_to_M0	precheck_pass	n_lethal	n_partial
+human1:6b3c0478054ea913	human1	6b3c0478054ea913	1660	M-open			True	negative_control	124.86814837744568	1.904250509705576	True	91	38
+human1:a35fcfdb65d63819	human1	a35fcfdb65d63819	44	M0	Hams_GR		True	baseline	65.57338319775587	1.0	True	149	74
+human1:4cecb57fce4dd831	human1	4cecb57fce4dd831	44	M1	DMEM		True	documented	46.180210665924605	0.7042523721348121	True	159	74
+human1:af47aa47fed4088f	human1	af47aa47fed4088f	52	M2	DMEM	0.001	True	documented	46.181370469583975	0.7042700592450817	True	159	74
+human1:d0648ab0ecf2194d	human1	d0648ab0ecf2194d	52	M2	DMEM	0.01	True	documented	46.191783889319765	0.7044288648339955	True	159	74
+human1:9cca6ce01ffcae79	human1	9cca6ce01ffcae79	52	M2	DMEM	0.1	True	documented	46.2586837147151	0.705449093196982	True	149	83
+human1:5fe39a3dcfa2880f	human1	5fe39a3dcfa2880f	52	M2	DMEM	1.0	True	documented	46.67028287955024	0.7117260175337033	True	149	75
+human1:2e2e28285923db88	human1	2e2e28285923db88	49	M1	DMEM+alanine+asparagine+aspartate+glutamate+proline		True	documented	46.35208515344139	0.7068734735502819	True	157	73
+human1:87e89c2a1772d241	human1	87e89c2a1772d241	47	M1g	DMEM+alanine+asparagine+aspartate+glutamate+proline		False	documented	46.35208515344123	0.7068734735502795	True	157	73
+human1:1c583745990e0a94	human1	1c583745990e0a94	57	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.001	True	documented	46.35324927368334	0.7068912264888247	True	157	73
+human1:815f0a9d18c5c441	human1	815f0a9d18c5c441	55	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.001	False	documented	46.35324927368321	0.7068912264888227	True	157	73
+human1:686ee835cff0cc35	human1	686ee835cff0cc35	57	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.01	True	documented	46.36370977269984	0.7070507500410098	True	157	73
+human1:ced2389fd475e312	human1	ced2389fd475e312	55	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.01	False	documented	46.363709772699565	0.7070507500410056	True	157	73
+human1:10476bf971bc1136	human1	10476bf971bc1136	57	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.1	True	documented	46.430870563698	0.7080749581529446	True	147	82
+human1:adb89dd87a6c7a35	human1	adb89dd87a6c7a35	55	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.1	False	documented	46.43087056369819	0.7080749581529476	True	147	82
+human1:c7bc04800b527a9b	human1	c7bc04800b527a9b	57	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	1.0	True	documented	46.84478589261376	0.7143872042005137	True	147	74
+human1:6c114587fe86f59d	human1	6c114587fe86f59d	55	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	1.0	False	documented	46.84478589261416	0.7143872042005198	True	147	74
+human1:fd0f90ff83d3be19	human1	fd0f90ff83d3be19	45	M1	DMEM+cortisol		True	documented	46.18021066592488	0.7042523721348162	True	159	74
+human1:327078c5cef72690	human1	327078c5cef72690	53	M2	DMEM+cortisol	0.001	True	documented	46.18137046958476	0.7042700592450937	True	159	74
+human1:4e34919ff51243e1	human1	4e34919ff51243e1	53	M2	DMEM+cortisol	0.01	True	documented	46.1917838893194	0.70442886483399	True	159	74
+human1:40edf40f84d8948a	human1	40edf40f84d8948a	53	M2	DMEM+cortisol	0.1	True	documented	46.2586837147152	0.7054490931969837	True	149	83
+human1:68cf1f92e887a9fd	human1	68cf1f92e887a9fd	53	M2	DMEM+cortisol	1.0	True	documented	46.67028287955006	0.7117260175337005	True	149	75
+human1:9dfb11dbacd76b42	human1	9dfb11dbacd76b42	50	M1	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate		True	documented	46.352085153441465	0.7068734735502831	True	157	73
+human1:9b26d969a23a4cb9	human1	9b26d969a23a4cb9	48	M1g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate		False	documented	46.3520851534414	0.7068734735502821	True	157	73
+human1:2778d18f3eb161b5	human1	2778d18f3eb161b5	58	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.001	True	documented	46.35324927368324	0.7068912264888232	True	157	73
+human1:d30bd30f6989d685	human1	d30bd30f6989d685	56	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.001	False	documented	46.3532492736832	0.7068912264888226	True	157	73
+human1:a45b3a700d603e59	human1	a45b3a700d603e59	58	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.01	True	documented	46.36370977269976	0.7070507500410085	True	157	73
+human1:f65b239c474a4f33	human1	f65b239c474a4f33	56	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.01	False	documented	46.36370977269976	0.7070507500410085	True	157	73
+human1:e6966f6ec8ab35ca	human1	e6966f6ec8ab35ca	58	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.1	True	documented	46.43087056369774	0.7080749581529407	True	147	82
+human1:adab37e54c36ac83	human1	adab37e54c36ac83	56	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.1	False	documented	46.43087056369816	0.7080749581529473	True	147	82
+human1:8664d3c02595ea12	human1	8664d3c02595ea12	58	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	1.0	True	documented	46.844785892613686	0.7143872042005126	True	147	74
+human1:3d1327f3fce1efa2	human1	3d1327f3fce1efa2	56	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	1.0	False	documented	46.8447858926136	0.7143872042005112	True	147	74
+human1:4a88cc6261e369fe	human1	4a88cc6261e369fe	45	M1	DMEM+pyruvate		True	documented	46.18021066592498	0.7042523721348178	True	159	74
+human1:4a88cc6261e369fe	human1	4a88cc6261e369fe	45	M1	SENS:DMEM+pyruvate		True	sensitivity	46.18021066592498	0.7042523721348178	True	159	74
+human1:a6754130001f999e	human1	a6754130001f999e	53	M2	DMEM+pyruvate	0.001	True	documented	46.18137046958469	0.7042700592450927	True	159	74
+human1:a6754130001f999e	human1	a6754130001f999e	53	M2	SENS:DMEM+pyruvate	0.001	True	sensitivity	46.18137046958469	0.7042700592450927	True	159	74
+human1:fb03f60f0948b00a	human1	fb03f60f0948b00a	53	M2	DMEM+pyruvate	0.01	True	documented	46.19178388931952	0.7044288648339918	True	159	74
+human1:fb03f60f0948b00a	human1	fb03f60f0948b00a	53	M2	SENS:DMEM+pyruvate	0.01	True	sensitivity	46.19178388931952	0.7044288648339918	True	159	74
+human1:92e47ae07d74d8a3	human1	92e47ae07d74d8a3	53	M2	DMEM+pyruvate	0.1	True	documented	46.25868371471525	0.7054490931969843	True	149	83
+human1:92e47ae07d74d8a3	human1	92e47ae07d74d8a3	53	M2	SENS:DMEM+pyruvate	0.1	True	sensitivity	46.25868371471525	0.7054490931969843	True	149	83
+human1:671e836367589246	human1	671e836367589246	53	M2	DMEM+pyruvate	1.0	True	documented	46.67028287955006	0.7117260175337005	True	149	75
+human1:671e836367589246	human1	671e836367589246	53	M2	SENS:DMEM+pyruvate	1.0	True	sensitivity	46.67028287955006	0.7117260175337005	True	149	75
+human1:08b79bfd68f2043a	human1	08b79bfd68f2043a	56	M1	DMEM:F12|serum-free		True	documented	65.57338319775582	0.9999999999999992	True	149	74
+human1:08b79bfd68f2043a	human1	08b79bfd68f2043a	56	M2	DMEM:F12|serum-free	0.001	True	documented	65.57338319775582	0.9999999999999992	True	149	74
+human1:08b79bfd68f2043a	human1	08b79bfd68f2043a	56	M2	DMEM:F12|serum-free	0.01	True	documented	65.57338319775582	0.9999999999999992	True	149	74
+human1:08b79bfd68f2043a	human1	08b79bfd68f2043a	56	M2	DMEM:F12|serum-free	0.1	True	documented	65.57338319775582	0.9999999999999992	True	149	74
+human1:08b79bfd68f2043a	human1	08b79bfd68f2043a	56	M2	DMEM:F12|serum-free	1.0	True	documented	65.57338319775582	0.9999999999999992	True	149	74
+human1:08b79bfd68f2043a	human1	08b79bfd68f2043a	56	M1	DMEM:F12		True	documented	65.57338319775582	0.9999999999999992	True	149	74
+human1:ad8024a2690b3a51	human1	ad8024a2690b3a51	54	M1g	DMEM:F12|serum-free		False	documented	65.57338319775582	0.9999999999999992	True	149	74
+human1:ad8024a2690b3a51	human1	ad8024a2690b3a51	54	M2g	DMEM:F12|serum-free	0.001	False	documented	65.57338319775582	0.9999999999999992	True	149	74
+human1:ad8024a2690b3a51	human1	ad8024a2690b3a51	54	M2g	DMEM:F12|serum-free	0.01	False	documented	65.57338319775582	0.9999999999999992	True	149	74
+human1:ad8024a2690b3a51	human1	ad8024a2690b3a51	54	M2g	DMEM:F12|serum-free	0.1	False	documented	65.57338319775582	0.9999999999999992	True	149	74
+human1:ad8024a2690b3a51	human1	ad8024a2690b3a51	54	M2g	DMEM:F12|serum-free	1.0	False	documented	65.57338319775582	0.9999999999999992	True	149	74
+human1:ad8024a2690b3a51	human1	ad8024a2690b3a51	54	M1g	DMEM:F12		False	documented	65.57338319775582	0.9999999999999992	True	149	74
+human1:38864d16447ee36a	human1	38864d16447ee36a	62	M2	DMEM:F12	0.001	True	documented	65.57457167763573	1.0000181244252149	True	149	74
+human1:649ce42a1602bb9e	human1	649ce42a1602bb9e	60	M2g	DMEM:F12	0.001	False	documented	65.5745716776357	1.0000181244252144	True	149	74
+human1:14c982f4e47eb8b5	human1	14c982f4e47eb8b5	62	M2	DMEM:F12	0.01	True	documented	65.58526799655544	1.0001812442521645	True	149	74
+human1:30ee99a385ab4d93	human1	30ee99a385ab4d93	60	M2g	DMEM:F12	0.01	False	documented	65.58526799655544	1.0001812442521645	True	149	74
+human1:91449252381bee40	human1	91449252381bee40	62	M2	DMEM:F12	0.1	True	documented	65.65650026326051	1.00126754273535	True	139	83
+human1:3766dd037cf9e36d	human1	3766dd037cf9e36d	60	M2g	DMEM:F12	0.1	False	documented	65.65650026326038	1.001267542735348	True	139	83
+human1:1fce1b065357ef47	human1	1fce1b065357ef47	62	M2	DMEM:F12	1.0	True	documented	66.17345442517849	1.0091511402669728	True	139	77
+human1:d337322e50bbfed8	human1	d337322e50bbfed8	60	M2g	DMEM:F12	1.0	False	documented	66.17345442517852	1.0091511402669733	True	139	77
+human1:ccb88854833c290a	human1	ccb88854833c290a	57	M1	DMEM:F12+cortisol		True	documented	65.57338319775583	0.9999999999999992	True	149	74
+human1:17884815f09b9131	human1	17884815f09b9131	55	M1g	DMEM:F12+cortisol		False	documented	65.57338319775565	0.9999999999999966	True	149	74
+human1:dbd64980c7ebf235	human1	dbd64980c7ebf235	63	M2	DMEM:F12+cortisol	0.001	True	documented	65.57457167763567	1.000018124425214	True	149	74
+human1:75578d69bd8e5e25	human1	75578d69bd8e5e25	61	M2g	DMEM:F12+cortisol	0.001	False	documented	65.57457167763563	1.000018124425213	True	149	74
+human1:ae320c0d85c53839	human1	ae320c0d85c53839	63	M2	DMEM:F12+cortisol	0.01	True	documented	65.58526799655537	1.0001812442521634	True	149	74
+human1:8da87c5f067d32c9	human1	8da87c5f067d32c9	61	M2g	DMEM:F12+cortisol	0.01	False	documented	65.58526799655559	1.0001812442521667	True	149	74
+human1:69d17214c0e18b37	human1	69d17214c0e18b37	63	M2	DMEM:F12+cortisol	0.1	True	documented	65.65650026326006	1.001267542735343	True	139	83
+human1:f4275d082e4b4bbd	human1	f4275d082e4b4bbd	61	M2g	DMEM:F12+cortisol	0.1	False	documented	65.65650026326006	1.001267542735343	True	139	83
+human1:65f40fa1ddf01487	human1	65f40fa1ddf01487	63	M2	DMEM:F12+cortisol	1.0	True	documented	66.1734544251785	1.009151140266973	True	139	77
+human1:cd64bcdbb2f04ab0	human1	cd64bcdbb2f04ab0	61	M2g	DMEM:F12+cortisol	1.0	False	documented	66.17345442517852	1.0091511402669733	True	139	77
+human1:dc1fc0acbdcb23ca	human1	dc1fc0acbdcb23ca	60	M1	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine		True	documented	65.6294580376881	1.000855146359661	True	149	68
+human1:1c3f71d5c790f55c	human1	1c3f71d5c790f55c	58	M1g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine		False	documented	65.62945803768815	1.000855146359662	True	149	68
+human1:65808df7bef59233	human1	65808df7bef59233	65	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.001	True	documented	65.63067321906198	1.0008736779850649	True	149	68
+human1:3109505eaa51bef7	human1	3109505eaa51bef7	63	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.001	False	documented	65.63067321906207	1.0008736779850664	True	149	68
+human1:42642ff1bd399ae6	human1	42642ff1bd399ae6	65	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.01	True	documented	65.64160985142676	1.001040462613697	True	149	68
+human1:00383863ad4204af	human1	00383863ad4204af	63	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.01	False	documented	65.64160985142676	1.001040462613697	True	149	68
+human1:84a1ab309acbdd38	human1	84a1ab309acbdd38	65	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.1	True	documented	65.71983988782291	1.0022334777149648	True	139	79
+human1:018c1b8a4f1577dc	human1	018c1b8a4f1577dc	63	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.1	False	documented	65.7198398878228	1.002233477714963	True	139	79
+human1:62d24d1d331d6375	human1	62d24d1d331d6375	65	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	1.0	True	documented	66.29532256921205	1.0110096404402218	True	139	77
+human1:8331003eb88f6198	human1	8331003eb88f6198	63	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	1.0	False	documented	66.29532256921205	1.0110096404402218	True	139	77
+human1:d2d471f4ce570f23	human1	d2d471f4ce570f23	58	M1	DMEM:F12+cortisol+estradiol		True	documented	65.57338319775572	0.9999999999999976	True	149	74
+human1:6a6fc2cb8a4a7f8f	human1	6a6fc2cb8a4a7f8f	56	M1g	DMEM:F12+cortisol+estradiol		False	documented	65.57338319775579	0.9999999999999988	True	149	74
+human1:ac2fd4456f37fd80	human1	ac2fd4456f37fd80	64	M2	DMEM:F12+cortisol+estradiol	0.001	True	documented	65.57457167763562	1.000018124425213	True	149	74
+human1:5feb43394cbbf85c	human1	5feb43394cbbf85c	62	M2g	DMEM:F12+cortisol+estradiol	0.001	False	documented	65.57457167763575	1.000018124425215	True	149	74
+human1:cfd365bf22617482	human1	cfd365bf22617482	64	M2	DMEM:F12+cortisol+estradiol	0.01	True	documented	65.58526799655564	1.0001812442521676	True	149	74
+human1:a0bf7245c9f04bad	human1	a0bf7245c9f04bad	62	M2g	DMEM:F12+cortisol+estradiol	0.01	False	documented	65.58526799655543	1.0001812442521645	True	149	74
+human1:a52ed3289e020303	human1	a52ed3289e020303	64	M2	DMEM:F12+cortisol+estradiol	0.1	True	documented	65.65650026326028	1.0012675427353466	True	139	83
+human1:c86879d0d664256d	human1	c86879d0d664256d	62	M2g	DMEM:F12+cortisol+estradiol	0.1	False	documented	65.65650026326028	1.0012675427353466	True	139	83
+human1:0b97cac00eca6f60	human1	0b97cac00eca6f60	64	M2	DMEM:F12+cortisol+estradiol	1.0	True	documented	66.17345442517848	1.0091511402669726	True	139	77
+human1:ba40188fd07ca732	human1	ba40188fd07ca732	62	M2g	DMEM:F12+cortisol+estradiol	1.0	False	documented	66.17345442517835	1.0091511402669706	True	139	77
+human1:eb0bfc953676787c	human1	eb0bfc953676787c	51	M1	DMEM0.5:RPMI0.5		True	documented	46.36713196733656	0.7071029388174589	True	154	73
+human1:eb0bfc953676787c	human1	eb0bfc953676787c	51	M1	DMEM0.25:RPMI0.75		True	documented	46.36713196733656	0.7071029388174589	True	154	73
+human1:7bd06207527c3af0	human1	7bd06207527c3af0	49	M1g	DMEM0.5:RPMI0.5		False	documented	46.36713196733656	0.7071029388174589	True	154	73
+human1:7bd06207527c3af0	human1	7bd06207527c3af0	49	M1g	DMEM0.25:RPMI0.75		False	documented	46.36713196733656	0.7071029388174589	True	154	73
+human1:a62c032be0d92bdd	human1	a62c032be0d92bdd	59	M2	DMEM0.5:RPMI0.5	0.001	True	documented	46.36829646547499	0.707120697518957	True	154	73
+human1:a62c032be0d92bdd	human1	a62c032be0d92bdd	59	M2	DMEM0.25:RPMI0.75	0.001	True	documented	46.36829646547499	0.707120697518957	True	154	73
+human1:a62c032be0d92bdd	human1	a62c032be0d92bdd	59	M2	RPMI	0.001	True	documented	46.36829646547499	0.707120697518957	True	154	73
+human1:a62c032be0d92bdd	human1	a62c032be0d92bdd	59	M2	RPMI+cys(2-ME)	0.001	True	documented	46.36829646547499	0.707120697518957	True	154	73
+human1:1100a8cf4296bf77	human1	1100a8cf4296bf77	57	M2g	DMEM0.5:RPMI0.5	0.001	False	documented	46.36829646547528	0.7071206975189613	True	154	73
+human1:1100a8cf4296bf77	human1	1100a8cf4296bf77	57	M2g	DMEM0.25:RPMI0.75	0.001	False	documented	46.36829646547528	0.7071206975189613	True	154	73
+human1:1100a8cf4296bf77	human1	1100a8cf4296bf77	57	M2g	RPMI	0.001	False	documented	46.36829646547528	0.7071206975189613	True	154	73
+human1:1100a8cf4296bf77	human1	1100a8cf4296bf77	57	M2g	RPMI+cys(2-ME)	0.001	False	documented	46.36829646547528	0.7071206975189613	True	154	73
+human1:852503e406963d44	human1	852503e406963d44	59	M2	DMEM0.5:RPMI0.5	0.01	True	documented	46.37876108900286	0.707280283970312	True	154	73
+human1:852503e406963d44	human1	852503e406963d44	59	M2	DMEM0.25:RPMI0.75	0.01	True	documented	46.37876108900286	0.707280283970312	True	154	73
+human1:852503e406963d44	human1	852503e406963d44	59	M2	RPMI	0.01	True	documented	46.37876108900286	0.707280283970312	True	154	73
+human1:852503e406963d44	human1	852503e406963d44	59	M2	RPMI+cys(2-ME)	0.01	True	documented	46.37876108900286	0.707280283970312	True	154	73
+human1:0e9b9dbc891870d8	human1	0e9b9dbc891870d8	57	M2g	DMEM0.5:RPMI0.5	0.01	False	documented	46.37876108900286	0.707280283970312	True	154	73
+human1:0e9b9dbc891870d8	human1	0e9b9dbc891870d8	57	M2g	DMEM0.25:RPMI0.75	0.01	False	documented	46.37876108900286	0.707280283970312	True	154	73
+human1:0e9b9dbc891870d8	human1	0e9b9dbc891870d8	57	M2g	RPMI	0.01	False	documented	46.37876108900286	0.707280283970312	True	154	73
+human1:0e9b9dbc891870d8	human1	0e9b9dbc891870d8	57	M2g	RPMI+cys(2-ME)	0.01	False	documented	46.37876108900286	0.707280283970312	True	154	73
+human1:829820ec676795f8	human1	829820ec676795f8	59	M2	DMEM0.5:RPMI0.5	0.1	True	documented	46.44594473055741	0.70830484055529	True	144	82
+human1:829820ec676795f8	human1	829820ec676795f8	59	M2	DMEM0.25:RPMI0.75	0.1	True	documented	46.44594473055741	0.70830484055529	True	144	82
+human1:829820ec676795f8	human1	829820ec676795f8	59	M2	RPMI	0.1	True	documented	46.44594473055741	0.70830484055529	True	144	82
+human1:829820ec676795f8	human1	829820ec676795f8	59	M2	RPMI+cys(2-ME)	0.1	True	documented	46.44594473055741	0.70830484055529	True	144	82
+human1:a43c0e301163cf2f	human1	a43c0e301163cf2f	57	M2g	DMEM0.5:RPMI0.5	0.1	False	documented	46.44594473055708	0.708304840555285	True	144	82
+human1:a43c0e301163cf2f	human1	a43c0e301163cf2f	57	M2g	DMEM0.25:RPMI0.75	0.1	False	documented	46.44594473055708	0.708304840555285	True	144	82
+human1:a43c0e301163cf2f	human1	a43c0e301163cf2f	57	M2g	RPMI	0.1	False	documented	46.44594473055708	0.708304840555285	True	144	82
+human1:a43c0e301163cf2f	human1	a43c0e301163cf2f	57	M2g	RPMI+cys(2-ME)	0.1	False	documented	46.44594473055708	0.708304840555285	True	144	82
+human1:06ce6a07dd2676d1	human1	06ce6a07dd2676d1	59	M2	DMEM0.5:RPMI0.5	1.0	True	documented	46.86006310708319	0.7146201830972003	True	144	74
+human1:06ce6a07dd2676d1	human1	06ce6a07dd2676d1	59	M2	DMEM0.25:RPMI0.75	1.0	True	documented	46.86006310708319	0.7146201830972003	True	144	74
+human1:06ce6a07dd2676d1	human1	06ce6a07dd2676d1	59	M2	RPMI	1.0	True	documented	46.86006310708319	0.7146201830972003	True	144	74
+human1:06ce6a07dd2676d1	human1	06ce6a07dd2676d1	59	M2	RPMI+cys(2-ME)	1.0	True	documented	46.86006310708319	0.7146201830972003	True	144	74
+human1:8a421106a5ec4456	human1	8a421106a5ec4456	57	M2g	DMEM0.5:RPMI0.5	1.0	False	documented	46.86006310708304	0.7146201830971982	True	144	74
+human1:8a421106a5ec4456	human1	8a421106a5ec4456	57	M2g	DMEM0.25:RPMI0.75	1.0	False	documented	46.86006310708304	0.7146201830971982	True	144	74
+human1:8a421106a5ec4456	human1	8a421106a5ec4456	57	M2g	RPMI	1.0	False	documented	46.86006310708304	0.7146201830971982	True	144	74
+human1:8a421106a5ec4456	human1	8a421106a5ec4456	57	M2g	RPMI+cys(2-ME)	1.0	False	documented	46.86006310708304	0.7146201830971982	True	144	74
+human1:bca2ca8e3c727e52	human1	bca2ca8e3c727e52	49	M1	IMDM		True	documented	46.3520851534414	0.7068734735502821	True	156	73
+human1:e99abae91f5c2bee	human1	e99abae91f5c2bee	47	M1g	IMDM		False	documented	46.352085153441415	0.7068734735502823	True	156	73
+human1:babb5d5add338646	human1	babb5d5add338646	58	M2	IMDM	0.001	True	documented	46.35324927368343	0.7068912264888261	True	156	73
+human1:2ed798d41fa169eb	human1	2ed798d41fa169eb	56	M2g	IMDM	0.001	False	documented	46.35324927368331	0.7068912264888243	True	156	73
+human1:26044e1fa41847f3	human1	26044e1fa41847f3	58	M2	IMDM	0.01	True	documented	46.36370977269946	0.7070507500410039	True	156	73
+human1:963029bc78084d99	human1	963029bc78084d99	56	M2g	IMDM	0.01	False	documented	46.36370977268229	0.7070507500407421	True	156	73
+human1:7aee21df5cacab86	human1	7aee21df5cacab86	58	M2	IMDM	0.1	True	documented	46.43087056368387	0.7080749581527293	True	146	82
+human1:0fd8e1dc79eed524	human1	0fd8e1dc79eed524	56	M2g	IMDM	0.1	False	documented	46.43087056369364	0.7080749581528782	True	146	82
+human1:a339b0701b854c39	human1	a339b0701b854c39	58	M2	IMDM	1.0	True	documented	46.84478589260136	0.7143872042003245	True	146	74
+human1:de8ded9298a128a9	human1	de8ded9298a128a9	56	M2g	IMDM	1.0	False	documented	46.8447858926137	0.7143872042005128	True	146	74
+human1:deaa3604a5363b14	human1	deaa3604a5363b14	52	M1	IMDM0.8:RPMI0.2		True	documented	46.36713196733671	0.7071029388174612	True	153	73
+human1:520cf98d2a4f79e4	human1	520cf98d2a4f79e4	50	M1g	IMDM0.8:RPMI0.2		False	documented	46.36713196733662	0.7071029388174598	True	153	73
+human1:66c56b47b3432dfb	human1	66c56b47b3432dfb	61	M2	IMDM0.8:RPMI0.2	0.001	True	documented	46.36829646547529	0.7071206975189616	True	153	73
+human1:38a6e9a670ec0359	human1	38a6e9a670ec0359	59	M2g	IMDM0.8:RPMI0.2	0.001	False	documented	46.36829646547503	0.7071206975189576	True	153	73
+human1:c56eb1e0eb3ccb13	human1	c56eb1e0eb3ccb13	61	M2	IMDM0.8:RPMI0.2	0.01	True	documented	46.378761089002566	0.7072802839703075	True	153	73
+human1:03b21a6f250e1b7c	human1	03b21a6f250e1b7c	59	M2g	IMDM0.8:RPMI0.2	0.01	False	documented	46.378761089002566	0.7072802839703075	True	153	73
+human1:c39cf17209a48f54	human1	c39cf17209a48f54	61	M2	IMDM0.8:RPMI0.2	0.1	True	documented	46.4459447305572	0.7083048405552869	True	143	82
+human1:bb176049049ee137	human1	bb176049049ee137	59	M2g	IMDM0.8:RPMI0.2	0.1	False	documented	46.44594473053546	0.7083048405549554	True	143	82
+human1:dedeef837ba95fab	human1	dedeef837ba95fab	61	M2	IMDM0.8:RPMI0.2	1.0	True	documented	46.86006310708315	0.7146201830971999	True	143	74
+human1:6c4b1d2a55673bde	human1	6c4b1d2a55673bde	59	M2g	IMDM0.8:RPMI0.2	1.0	False	documented	46.86006310708317	0.7146201830972001	True	143	74
+human1:406759d7bcfe5607	human1	406759d7bcfe5607	50	M1	RPMI		True	documented	46.36713196733663	0.70710293881746	True	154	73
+human1:406759d7bcfe5607	human1	406759d7bcfe5607	50	M1	RPMI+cys(2-ME)		True	documented	46.36713196733663	0.70710293881746	True	154	73
+human1:6d8457596bfa5e7a	human1	6d8457596bfa5e7a	48	M1g	RPMI		False	documented	46.367131967336974	0.7071029388174652	True	154	73
+human1:6d8457596bfa5e7a	human1	6d8457596bfa5e7a	48	M1g	RPMI+cys(2-ME)		False	documented	46.367131967336974	0.7071029388174652	True	154	73
+human1:08115f1d9893cc13	human1	08115f1d9893cc13	51	M1	RPMI+alanine		True	documented	46.36713196733656	0.7071029388174589	True	154	73
+human1:a3966338fc27a3bc	human1	a3966338fc27a3bc	49	M1g	RPMI+alanine		False	documented	46.36713196733656	0.7071029388174589	True	154	73
+human1:a40361b9a6551f7f	human1	a40361b9a6551f7f	60	M2	RPMI+alanine	0.001	True	documented	46.368296465475154	0.7071206975189596	True	154	73
+human1:5d907730ac08ae24	human1	5d907730ac08ae24	58	M2g	RPMI+alanine	0.001	False	documented	46.36829646547541	0.7071206975189634	True	154	73
+human1:d23fd8bbdae5b4c2	human1	d23fd8bbdae5b4c2	60	M2	RPMI+alanine	0.01	True	documented	46.37876108900286	0.707280283970312	True	154	73
+human1:fee0c6dc85a56f0a	human1	fee0c6dc85a56f0a	58	M2g	RPMI+alanine	0.01	False	documented	46.37876108900286	0.707280283970312	True	154	73
+human1:cef25a6ffb036910	human1	cef25a6ffb036910	60	M2	RPMI+alanine	0.1	True	documented	46.44594473055732	0.7083048405552886	True	144	82
+human1:9027014ce429a385	human1	9027014ce429a385	58	M2g	RPMI+alanine	0.1	False	documented	46.44594473055756	0.7083048405552923	True	144	82
+human1:9e154acdebb57dbc	human1	9e154acdebb57dbc	60	M2	RPMI+alanine	1.0	True	documented	46.86006310708356	0.7146201830972061	True	144	74
+human1:1ed48f07504063d2	human1	1ed48f07504063d2	58	M2g	RPMI+alanine	1.0	False	documented	46.86006310708356	0.7146201830972061	True	144	74
+human1:7d2489c89e41bbe7	human1	7d2489c89e41bbe7	54	M1	RPMI+ATP+adenine+hypoxanthine+thymidine		True	documented	83.8018596119664	1.277985907166589	True	146	80
+human1:198f25c0d3a48b17	human1	198f25c0d3a48b17	52	M1g	RPMI+ATP+adenine+hypoxanthine+thymidine		False	documented	83.8018596119664	1.277985907166589	True	146	80
+human1:72d0929fb8b7d5e7	human1	72d0929fb8b7d5e7	63	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	0.001	True	documented	83.80385549246618	1.2780163445239807	True	146	80
+human1:c86cfa3aab939c84	human1	c86cfa3aab939c84	61	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	0.001	False	documented	83.80385549246624	1.2780163445239816	True	146	80
+human1:c8cde65885729f23	human1	c8cde65885729f23	63	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	0.01	True	documented	83.82181841696423	1.2782902807405074	True	146	80
+human1:2e3d4f774d950559	human1	2e3d4f774d950559	61	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	0.01	False	documented	83.82181841696425	1.2782902807405077	True	146	80
+human1:fcc25c83c7be6c5f	human1	fcc25c83c7be6c5f	63	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	0.1	True	documented	83.96218786574104	1.280430927477515	True	136	90
+human1:1336a30268e47351	human1	1336a30268e47351	61	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	0.1	False	documented	83.96218786574104	1.280430927477515	True	136	90
+human1:6789f5d39dc001e5	human1	6789f5d39dc001e5	63	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	1.0	True	documented	85.15353654199126	1.2985991020958254	True	136	83
+human1:64d24d65531a77c6	human1	64d24d65531a77c6	61	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	1.0	False	documented	85.15353654199129	1.298599102095826	True	136	83
+human1:c77069f3c8e64108	human1	c77069f3c8e64108	51	M1	RPMI+cortisol		True	documented	46.36713196735631	0.7071029388177601	True	154	73
+human1:3bb2aeee33d7cc16	human1	3bb2aeee33d7cc16	49	M1g	RPMI+cortisol		False	documented	46.36713196734513	0.7071029388175896	True	154	73
+human1:7d04891252aa9a70	human1	7d04891252aa9a70	60	M2	RPMI+cortisol	0.001	True	documented	46.36829646549728	0.707120697519297	True	154	73
+human1:d08fc0e823479a5c	human1	d08fc0e823479a5c	58	M2g	RPMI+cortisol	0.001	False	documented	46.36829646547506	0.7071206975189581	True	154	73
+human1:4448db764b034a8e	human1	4448db764b034a8e	60	M2	RPMI+cortisol	0.01	True	documented	46.37876108900279	0.7072802839703108	True	154	73
+human1:18c94be0692112fa	human1	18c94be0692112fa	58	M2g	RPMI+cortisol	0.01	False	documented	46.37876108900279	0.7072802839703108	True	154	73
+human1:50ba35feb367750f	human1	50ba35feb367750f	60	M2	RPMI+cortisol	0.1	True	documented	46.4459447305584	0.7083048405553052	True	144	82
+human1:b0435afa81c3ba44	human1	b0435afa81c3ba44	58	M2g	RPMI+cortisol	0.1	False	documented	46.44594473055715	0.7083048405552861	True	144	82
+human1:97ef71855d67d166	human1	97ef71855d67d166	60	M2	RPMI+cortisol	1.0	True	documented	46.86006310708314	0.7146201830971998	True	144	74
+human1:33d5c81b2a1e1b83	human1	33d5c81b2a1e1b83	58	M2g	RPMI+cortisol	1.0	False	documented	46.86006310708313	0.7146201830971995	True	144	74
+human1:b33dc33d4417bfce	human1	b33dc33d4417bfce	51	M1	RPMI+testosterone		True	documented	46.36713196733665	0.7071029388174602	True	154	73
+human1:5b07de2a951a2e83	human1	5b07de2a951a2e83	49	M1g	RPMI+testosterone		False	documented	46.36713196733971	0.707102938817507	True	154	73
+human1:ba557aa7a65064a9	human1	ba557aa7a65064a9	60	M2	RPMI+testosterone	0.001	True	documented	46.36829646547508	0.7071206975189583	True	154	73
+human1:c4c25eefae1ff258	human1	c4c25eefae1ff258	58	M2g	RPMI+testosterone	0.001	False	documented	46.36829646547522	0.7071206975189605	True	154	73
+human1:e04d7deaddde2479	human1	e04d7deaddde2479	60	M2	RPMI+testosterone	0.01	True	documented	46.37876108900264	0.7072802839703086	True	154	73
+human1:d9b58391e21f1646	human1	d9b58391e21f1646	58	M2g	RPMI+testosterone	0.01	False	documented	46.37876108902788	0.7072802839706936	True	154	73
+human1:a2a07037d551e59f	human1	a2a07037d551e59f	60	M2	RPMI+testosterone	0.1	True	documented	46.44594473055728	0.7083048405552881	True	144	82
+human1:131860250f419b49	human1	131860250f419b49	58	M2g	RPMI+testosterone	0.1	False	documented	46.44594473055735	0.7083048405552892	True	144	82
+human1:36776104848ff21e	human1	36776104848ff21e	60	M2	RPMI+testosterone	1.0	True	documented	46.86006310708328	0.7146201830972018	True	144	74
+human1:7fa3afce7aecf4c0	human1	7fa3afce7aecf4c0	58	M2g	RPMI+testosterone	1.0	False	documented	46.86006310708311	0.7146201830971992	True	144	74
+human1:5d35ca500195fe64	human1	5d35ca500195fe64	85	M2	M-HPLM	0.001	True	physiological	46.72235014759717	0.7125200480611492	True	140	73
+human1:9d6438f207260731	human1	9d6438f207260731	83	M2g	M-HPLM	0.001	False	physiological	46.72235014759717	0.7125200480611492	True	140	73
+human1:e0fcfd5be1750c48	human1	e0fcfd5be1750c48	85	M2	M-HPLM	0.01	True	physiological	46.73290969760715	0.7126810821499064	True	140	73
+human1:f9dd6a951e3e09c9	human1	f9dd6a951e3e09c9	83	M2g	M-HPLM	0.01	False	physiological	46.732909697607184	0.712681082149907	True	140	73
+human1:6700e798f06b12f9	human1	6700e798f06b12f9	85	M2	M-HPLM	0.1	True	physiological	46.80062290768202	0.713713714702518	True	139	73
+human1:7617d512f3f1dcf1	human1	7617d512f3f1dcf1	83	M2g	M-HPLM	0.1	False	physiological	46.800622907681976	0.7137137147025173	True	139	73
+human1:60af2040c78876f9	human1	60af2040c78876f9	85	M2	M-HPLM	1.0	True	physiological	47.21943544211732	0.7201006435753541	True	139	65
+human1:450da892b6223ccf	human1	450da892b6223ccf	83	M2g	M-HPLM	1.0	False	physiological	47.21943544211752	0.7201006435753572	True	139	65
+human1:fd52f92719f09c95	human1	fd52f92719f09c95	90	M2	M-Plasmax	0.001	True	physiological	65.71548492997651	1.0021670642155536	True	138	65
+human1:c6441ec16cb92a1c	human1	c6441ec16cb92a1c	88	M2g	M-Plasmax	0.001	False	physiological	65.71548492997624	1.0021670642155494	True	138	65
+human1:2fed622ca07b04dc	human1	2fed622ca07b04dc	90	M2	M-Plasmax	0.01	True	physiological	65.72620327085181	1.002330519879309	True	138	65
+human1:ee4243489f9e438c	human1	ee4243489f9e438c	88	M2g	M-Plasmax	0.01	False	physiological	65.72620327085203	1.0023305198793129	True	138	65
+human1:da9de976761e0675	human1	da9de976761e0675	90	M2	M-Plasmax	0.1	True	physiological	65.79759581889357	1.003419262667316	True	137	65
+human1:a786ea13c8382f44	human1	a786ea13c8382f44	88	M2g	M-Plasmax	0.1	False	physiological	65.79759581889357	1.003419262667316	True	137	65
+human1:2b96b19f5a055b9b	human1	2b96b19f5a055b9b	90	M2	M-Plasmax	1.0	True	physiological	66.31621422197632	1.0113282400266008	True	137	59
+human1:1244999ee8034302	human1	1244999ee8034302	88	M2g	M-Plasmax	1.0	False	physiological	66.31621422197409	1.0113282400265668	True	137	59
+human1:4f10fb05b4f8cd57	human1	4f10fb05b4f8cd57	49	M1	SENS:RPMI-no-pyruvate		True	sensitivity	46.36713196733657	0.707102938817459	True	154	73
+human1:538a51793a7086f4	human1	538a51793a7086f4	47	M1g	SENS:RPMI-no-pyruvate		False	sensitivity	46.36713196733636	0.7071029388174558	True	154	73
+human1:a2e2c3983ad3533e	human1	a2e2c3983ad3533e	58	M2	SENS:RPMI-no-pyruvate	0.001	True	sensitivity	46.36829646547483	0.7071206975189546	True	154	73
+human1:35c7f2ee9831b09c	human1	35c7f2ee9831b09c	56	M2g	SENS:RPMI-no-pyruvate	0.001	False	sensitivity	46.36829646547512	0.707120697518959	True	154	73
+human1:29bb56fd766a2e4c	human1	29bb56fd766a2e4c	58	M2	SENS:RPMI-no-pyruvate	0.01	True	sensitivity	46.37876108900227	0.707280283970303	True	154	73
+human1:7b9f90f5dd9fdff8	human1	7b9f90f5dd9fdff8	56	M2g	SENS:RPMI-no-pyruvate	0.01	False	sensitivity	46.37876108900255	0.7072802839703072	True	154	73
+human1:cb47af91aa0126f5	human1	cb47af91aa0126f5	58	M2	SENS:RPMI-no-pyruvate	0.1	True	sensitivity	46.44594473055757	0.7083048405552924	True	144	82
+human1:2c7184196af41159	human1	2c7184196af41159	56	M2g	SENS:RPMI-no-pyruvate	0.1	False	sensitivity	46.44594473055737	0.7083048405552895	True	144	82
+human1:db9ebc6b123dcb99	human1	db9ebc6b123dcb99	58	M2	SENS:RPMI-no-pyruvate	1.0	True	sensitivity	46.86006310708311	0.7146201830971992	True	144	74
+human1:4251f37ddc664365	human1	4251f37ddc664365	56	M2g	SENS:RPMI-no-pyruvate	1.0	False	sensitivity	46.860063107083214	0.7146201830972008	True	144	74
+human1:7824350b2f5a12cf	human1	7824350b2f5a12cf	43	M1	SENS:DMEM-no-standard-Gln		True	sensitivity	45.496317735621005	0.6938229433490329	True	160	74
+human1:8b724ea1435e38da	human1	8b724ea1435e38da	51	M2	SENS:DMEM-no-standard-Gln	0.001	True	sensitivity	45.497460363492685	0.6938403685269933	True	160	74
+human1:346f7f8b918b1251	human1	346f7f8b918b1251	51	M2	SENS:DMEM-no-standard-Gln	0.01	True	sensitivity	45.50768706498423	0.6939963266458644	True	150	84
+human1:9228a6e35dda3f51	human1	9228a6e35dda3f51	51	M2	SENS:DMEM-no-standard-Gln	0.1	True	sensitivity	45.573549381607634	0.6950007329066301	True	150	83
+human1:236b6af96875715b	human1	236b6af96875715b	51	M2	SENS:DMEM-no-standard-Gln	1.0	True	sensitivity	45.974777349343626	0.7011194955534493	True	150	73
+human1:295aebde02b012ec	human1	295aebde02b012ec	55	M1	SENS:DMEM:F12-cysteine-closed		True	sensitivity	65.57338319775587	1.0	True	149	74
+human1:586ea66f2a1d1305	human1	586ea66f2a1d1305	53	M1g	SENS:DMEM:F12-cysteine-closed		False	sensitivity	65.57338319775579	0.9999999999999988	True	149	74
+human1:599b3e294520be00	human1	599b3e294520be00	61	M2	SENS:DMEM:F12-cysteine-closed	0.001	True	sensitivity	65.57457167763582	1.0000181244252162	True	149	74
+human1:5574d82ace65253b	human1	5574d82ace65253b	59	M2g	SENS:DMEM:F12-cysteine-closed	0.001	False	sensitivity	65.5745716776357	1.0000181244252144	True	149	74
+human1:d2b9e7d4273505ce	human1	d2b9e7d4273505ce	61	M2	SENS:DMEM:F12-cysteine-closed	0.01	True	sensitivity	65.58526799655566	1.0001812442521678	True	149	74
+human1:fe426914284f0b6d	human1	fe426914284f0b6d	59	M2g	SENS:DMEM:F12-cysteine-closed	0.01	False	sensitivity	65.58526799655552	1.0001812442521656	True	149	74
+human1:a6d977bea3472efd	human1	a6d977bea3472efd	61	M2	SENS:DMEM:F12-cysteine-closed	0.1	True	sensitivity	65.6565002632604	1.0012675427353483	True	139	83
+human1:a2e5a5699d7845ae	human1	a2e5a5699d7845ae	59	M2g	SENS:DMEM:F12-cysteine-closed	0.1	False	sensitivity	65.65650026326048	1.0012675427353497	True	139	83
+human1:24f533da22a08aee	human1	24f533da22a08aee	61	M2	SENS:DMEM:F12-cysteine-closed	1.0	True	sensitivity	66.17345442517832	1.0091511402669702	True	139	77
+human1:d165996515bf04d6	human1	d165996515bf04d6	59	M2g	SENS:DMEM:F12-cysteine-closed	1.0	False	sensitivity	66.17345442517845	1.0091511402669722	True	139	77
+human2:801a66a36002b9d8	human2	801a66a36002b9d8	1654	M-open			True	negative_control	138.53269864419127	1.853112499881276	True	97	39
+human2:a35fcfdb65d63819	human2	a35fcfdb65d63819	44	M0	Hams_GR		True	baseline	74.7567666037905	1.0	True	154	91
+human2:c04e814252cee5a7	human2	c04e814252cee5a7	44	M1	DMEM		True	documented	46.21287565686656	0.6181764909896914	True	162	63
+human2:e9d1c662b37ae4d6	human2	e9d1c662b37ae4d6	52	M2	DMEM	0.001	True	documented	46.21404396421967	0.6181921191047931	True	162	63
+human2:6245369a378f20e5	human2	6245369a378f20e5	52	M2	DMEM	0.01	True	documented	46.22453387233052	0.6183324396214153	True	161	64
+human2:56a42b54fd91312d	human2	56a42b54fd91312d	52	M2	DMEM	0.1	True	documented	46.292405071982216	0.6192403333511082	True	152	73
+human2:3b44fbeb77b8d4d5	human2	3b44fbeb77b8d4d5	52	M2	DMEM	1.0	True	documented	46.71574005002864	0.6249031649217952	True	152	70
+human2:eb20656419715f99	human2	eb20656419715f99	49	M1	DMEM+alanine+asparagine+aspartate+glutamate+proline		True	documented	46.38499383000424	0.6204788668274521	True	161	63
+human2:571210e06b0991ca	human2	571210e06b0991ca	47	M1g	DMEM+alanine+asparagine+aspartate+glutamate+proline		False	documented	46.38499383000418	0.6204788668274512	True	161	63
+human2:fa3b9b7162902ed7	human2	fa3b9b7162902ed7	57	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.001	True	documented	46.3861664886752	0.6204945531488947	True	161	63
+human2:c543e2a7bdf2c48b	human2	c543e2a7bdf2c48b	55	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.001	False	documented	46.38616648867527	0.6204945531488956	True	161	63
+human2:de3211533cfcec81	human2	de3211533cfcec81	57	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.01	True	documented	46.39670380619335	0.6206355078476713	True	161	63
+human2:7d540df567eca09b	human2	7d540df567eca09b	55	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.01	False	documented	46.39670380619317	0.620635507847669	True	161	63
+human2:157da7b8f9cf9b8a	human2	157da7b8f9cf9b8a	57	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.1	True	documented	46.464839791993526	0.6215469435463459	True	151	73
+human2:9fd4932af5429196	human2	9fd4932af5429196	55	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	0.1	False	documented	46.46483979199364	0.6215469435463474	True	151	73
+human2:df1e07f86396d1c6	human2	df1e07f86396d1c6	57	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline	1.0	True	documented	46.890537617939536	0.627241382261201	True	151	70
+human2:563d7b17eb52fcd3	human2	563d7b17eb52fcd3	55	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline	1.0	False	documented	46.89053761793934	0.6272413822611983	True	151	70
+human2:3c4e2ed9586e3deb	human2	3c4e2ed9586e3deb	45	M1	DMEM+cortisol		True	documented	46.21287565686652	0.6181764909896909	True	162	63
+human2:9986f585c9a832da	human2	9986f585c9a832da	53	M2	DMEM+cortisol	0.001	True	documented	46.21404396421937	0.6181921191047891	True	162	63
+human2:598e296746f4fbab	human2	598e296746f4fbab	53	M2	DMEM+cortisol	0.01	True	documented	46.22453387233052	0.6183324396214153	True	161	64
+human2:0e849358b07d3b43	human2	0e849358b07d3b43	53	M2	DMEM+cortisol	0.1	True	documented	46.292405071982536	0.6192403333511124	True	152	73
+human2:d3a0efa9b7164bde	human2	d3a0efa9b7164bde	53	M2	DMEM+cortisol	1.0	True	documented	46.71574005002872	0.6249031649217961	True	152	70
+human2:79961ae66d8b8228	human2	79961ae66d8b8228	50	M1	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate		True	documented	46.38499383000415	0.6204788668274509	True	161	63
+human2:1b96437898bdd50b	human2	1b96437898bdd50b	48	M1g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate		False	documented	46.38499383000403	0.6204788668274492	True	161	63
+human2:96193f23d17fe928	human2	96193f23d17fe928	58	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.001	True	documented	46.38616648867486	0.6204945531488901	True	161	63
+human2:4290198b6f23fb59	human2	4290198b6f23fb59	56	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.001	False	documented	46.386166488674974	0.6204945531488917	True	161	63
+human2:2c469ffa65d11ce5	human2	2c469ffa65d11ce5	58	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.01	True	documented	46.396703806193386	0.6206355078476719	True	161	63
+human2:2a96d69bd4611487	human2	2a96d69bd4611487	56	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.01	False	documented	46.396703806193386	0.6206355078476719	True	161	63
+human2:4fccc289c346b85d	human2	4fccc289c346b85d	58	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.1	True	documented	46.46483979199367	0.6215469435463478	True	151	73
+human2:6a7860ca37a0e45a	human2	6a7860ca37a0e45a	56	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	0.1	False	documented	46.46483979199367	0.6215469435463478	True	151	73
+human2:7781e00f5dfef416	human2	7781e00f5dfef416	58	M2	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	1.0	True	documented	46.89053761793955	0.6272413822612012	True	151	70
+human2:1feff9de47a896c3	human2	1feff9de47a896c3	56	M2g	DMEM+alanine+asparagine+aspartate+glutamate+proline+pyruvate	1.0	False	documented	46.89053761793955	0.6272413822612012	True	151	70
+human2:7d087c26d820e235	human2	7d087c26d820e235	45	M1	DMEM+pyruvate		True	documented	46.21287565686678	0.6181764909896943	True	162	63
+human2:7d087c26d820e235	human2	7d087c26d820e235	45	M1	SENS:DMEM+pyruvate		True	sensitivity	46.21287565686678	0.6181764909896943	True	162	63
+human2:db5c5dac8ac43516	human2	db5c5dac8ac43516	53	M2	DMEM+pyruvate	0.001	True	documented	46.21404396421948	0.6181921191047904	True	162	63
+human2:db5c5dac8ac43516	human2	db5c5dac8ac43516	53	M2	SENS:DMEM+pyruvate	0.001	True	sensitivity	46.21404396421948	0.6181921191047904	True	162	63
+human2:fc38e3d9cebd19ee	human2	fc38e3d9cebd19ee	53	M2	DMEM+pyruvate	0.01	True	documented	46.22453387232997	0.6183324396214078	True	161	64
+human2:fc38e3d9cebd19ee	human2	fc38e3d9cebd19ee	53	M2	SENS:DMEM+pyruvate	0.01	True	sensitivity	46.22453387232997	0.6183324396214078	True	161	64
+human2:cdad0f0ad40339e1	human2	cdad0f0ad40339e1	53	M2	DMEM+pyruvate	0.1	True	documented	46.292405071982415	0.6192403333511108	True	152	73
+human2:cdad0f0ad40339e1	human2	cdad0f0ad40339e1	53	M2	SENS:DMEM+pyruvate	0.1	True	sensitivity	46.292405071982415	0.6192403333511108	True	152	73
+human2:db4b2f905fe98a88	human2	db4b2f905fe98a88	53	M2	DMEM+pyruvate	1.0	True	documented	46.71574005002856	0.6249031649217941	True	152	70
+human2:db4b2f905fe98a88	human2	db4b2f905fe98a88	53	M2	SENS:DMEM+pyruvate	1.0	True	sensitivity	46.71574005002856	0.6249031649217941	True	152	70
+human2:84b0c90a8ce73d8c	human2	84b0c90a8ce73d8c	56	M1	DMEM:F12|serum-free		True	documented	74.56714912396536	0.9974635409148968	True	154	99
+human2:84b0c90a8ce73d8c	human2	84b0c90a8ce73d8c	56	M2	DMEM:F12|serum-free	0.001	True	documented	74.56714912396536	0.9974635409148968	True	154	99
+human2:84b0c90a8ce73d8c	human2	84b0c90a8ce73d8c	56	M2	DMEM:F12|serum-free	0.01	True	documented	74.56714912396536	0.9974635409148968	True	154	99
+human2:84b0c90a8ce73d8c	human2	84b0c90a8ce73d8c	56	M2	DMEM:F12|serum-free	0.1	True	documented	74.56714912396536	0.9974635409148968	True	154	99
+human2:84b0c90a8ce73d8c	human2	84b0c90a8ce73d8c	56	M2	DMEM:F12|serum-free	1.0	True	documented	74.56714912396536	0.9974635409148968	True	154	99
+human2:84b0c90a8ce73d8c	human2	84b0c90a8ce73d8c	56	M1	DMEM:F12		True	documented	74.56714912396536	0.9974635409148968	True	154	99
+human2:113424e1a2143df1	human2	113424e1a2143df1	54	M1g	DMEM:F12|serum-free		False	documented	71.61236125568306	0.9579381841810692	True	154	94
+human2:113424e1a2143df1	human2	113424e1a2143df1	54	M2g	DMEM:F12|serum-free	0.001	False	documented	71.61236125568306	0.9579381841810692	True	154	94
+human2:113424e1a2143df1	human2	113424e1a2143df1	54	M2g	DMEM:F12|serum-free	0.01	False	documented	71.61236125568306	0.9579381841810692	True	154	94
+human2:113424e1a2143df1	human2	113424e1a2143df1	54	M2g	DMEM:F12|serum-free	0.1	False	documented	71.61236125568306	0.9579381841810692	True	154	94
+human2:113424e1a2143df1	human2	113424e1a2143df1	54	M2g	DMEM:F12|serum-free	1.0	False	documented	71.61236125568306	0.9579381841810692	True	154	94
+human2:113424e1a2143df1	human2	113424e1a2143df1	54	M1g	DMEM:F12		False	documented	71.61236125568306	0.9579381841810692	True	154	94
+human2:ceb2ca4dad3fb477	human2	ceb2ca4dad3fb477	62	M2	DMEM:F12	0.001	True	documented	74.56838991215547	0.9974801385855354	True	154	99
+human2:b5df142d6d880e3c	human2	b5df142d6d880e3c	60	M2g	DMEM:F12	0.001	False	documented	71.61365526778555	0.9579554938128426	True	154	94
+human2:2b6dbf5cae8759b6	human2	2b6dbf5cae8759b6	62	M2	DMEM:F12	0.01	True	documented	74.57955700586827	0.9976295176213086	True	154	99
+human2:878c79bd513ea5bb	human2	878c79bd513ea5bb	60	M2g	DMEM:F12	0.01	False	documented	71.62530137670963	0.9581112804988268	True	154	94
+human2:ea5d5ccc92257435	human2	ea5d5ccc92257435	62	M2	DMEM:F12	0.1	True	documented	74.65651212117581	0.9986589243065308	True	144	108
+human2:fcb35d1e040bbfe6	human2	fcb35d1e040bbfe6	60	M2g	DMEM:F12	0.1	False	documented	71.70678201712235	0.9592012238459562	True	144	103
+human2:cc4b675fad0ec9d5	human2	cc4b675fad0ec9d5	62	M2	DMEM:F12	1.0	True	documented	75.28765765581485	1.0071015785746602	True	144	102
+human2:491188028ad3ed51	human2	491188028ad3ed51	60	M2g	DMEM:F12	1.0	False	documented	72.35668270823881	0.9678947605068036	True	144	110
+human2:b784fe2b34e1f635	human2	b784fe2b34e1f635	57	M1	DMEM:F12+cortisol		True	documented	74.75676660379067	1.0000000000000022	True	154	84
+human2:96cbe5e32170ea94	human2	96cbe5e32170ea94	55	M1g	DMEM:F12+cortisol		False	documented	73.49676390796216	0.9831453023843804	True	154	87
+human2:bdda5299894f7252	human2	bdda5299894f7252	63	M2	DMEM:F12+cortisol	0.001	True	documented	74.75793572568176	1.000015639010947	True	154	84
+human2:2c893e76703ce5d9	human2	2c893e76703ce5d9	61	M2g	DMEM:F12+cortisol	0.001	False	documented	73.49805792006471	0.9831626120161548	True	154	87
+human2:61e97fabce2efd47	human2	61e97fabce2efd47	63	M2	DMEM:F12+cortisol	0.01	True	documented	74.76845782270287	1.0001563901094646	True	154	84
+human2:411273a0893c41da	human2	411273a0893c41da	61	M2g	DMEM:F12+cortisol	0.01	False	documented	73.50970402898865	0.9833183987021368	True	154	87
+human2:c7986caf94b4e0c6	human2	c7986caf94b4e0c6	63	M2	DMEM:F12+cortisol	0.1	True	documented	74.8393580152961	1.0011048018160462	True	144	93
+human2:b201a0bbab1d65ac	human2	b201a0bbab1d65ac	61	M2g	DMEM:F12+cortisol	0.1	False	documented	73.59141047814717	0.9844113626286208	True	144	96
+human2:ecd4d7499375d87d	human2	ecd4d7499375d87d	63	M2	DMEM:F12+cortisol	1.0	True	documented	75.38634685494442	1.008421715916242	True	144	88
+human2:e293b2b9518b2009	human2	e293b2b9518b2009	61	M2g	DMEM:F12+cortisol	1.0	False	documented	74.24994765448062	0.9932204270953022	True	144	99
+human2:b86c18f3b920402f	human2	b86c18f3b920402f	60	M1	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine		True	documented	74.82053727936064	1.000853042185574	True	154	78
+human2:6fa9105f9f619daf	human2	6fa9105f9f619daf	58	M1g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine		False	documented	73.56829670718326	0.9841021762898589	True	154	83
+human2:e5828a1adf852cc5	human2	e5828a1adf852cc5	65	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.001	True	documented	74.82173303876725	1.0008690375189857	True	154	78
+human2:4ec5734cb119adab	human2	4ec5734cb119adab	63	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.001	False	documented	73.56961119547252	0.9841197598257576	True	154	83
+human2:15aa5fdc2b5a367c	human2	15aa5fdc2b5a367c	65	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.01	True	documented	74.83249487342744	1.0010129955197005	True	154	78
+human2:e4662bdeac7a1a3f	human2	e4662bdeac7a1a3f	63	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.01	False	documented	73.58144159007436	0.9842780116488272	True	154	83
+human2:8e5e4bd1a339838b	human2	8e5e4bd1a339838b	65	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.1	True	documented	74.909999364733	1.0020497510513615	True	144	89
+human2:aab12380664e1f94	human2	aab12380664e1f94	63	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	0.1	False	documented	73.6692819837358	0.9854530276059378	True	144	93
+human2:42a717377f0625fa	human2	42a717377f0625fa	65	M2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	1.0	True	documented	75.51143534766466	1.010094989098096	True	144	88
+human2:8b19ec8e9dc63562	human2	8b19ec8e9dc63562	63	M2g	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	1.0	False	documented	74.37906852588307	0.994947640259654	True	144	94
+human2:b23d6aaf4f580d0a	human2	b23d6aaf4f580d0a	58	M1	DMEM:F12+cortisol+estradiol		True	documented	74.75676660379067	1.0000000000000022	True	154	84
+human2:f1fa1753fe9ed7e0	human2	f1fa1753fe9ed7e0	56	M1g	DMEM:F12+cortisol+estradiol		False	documented	73.49676390796246	0.9831453023843844	True	154	87
+human2:512562332da3074a	human2	512562332da3074a	64	M2	DMEM:F12+cortisol+estradiol	0.001	True	documented	74.7579357256819	1.0000156390109487	True	154	84
+human2:c11e212331fe2989	human2	c11e212331fe2989	62	M2g	DMEM:F12+cortisol+estradiol	0.001	False	documented	73.49805792006481	0.983162612016156	True	154	87
+human2:5a011853ef359429	human2	5a011853ef359429	64	M2	DMEM:F12+cortisol+estradiol	0.01	True	documented	74.76845782270297	1.000156390109466	True	154	84
+human2:54beb4c53d64418b	human2	54beb4c53d64418b	62	M2g	DMEM:F12+cortisol+estradiol	0.01	False	documented	73.50970402898852	0.9833183987021352	True	154	87
+human2:f2bb70488c2ce2b9	human2	f2bb70488c2ce2b9	64	M2	DMEM:F12+cortisol+estradiol	0.1	True	documented	74.83935801529586	1.0011048018160429	True	144	93
+human2:433d812bbe672b06	human2	433d812bbe672b06	62	M2g	DMEM:F12+cortisol+estradiol	0.1	False	documented	73.59141047814714	0.9844113626286204	True	144	96
+human2:8b7b11bdbce005f3	human2	8b7b11bdbce005f3	64	M2	DMEM:F12+cortisol+estradiol	1.0	True	documented	75.38634685494442	1.008421715916242	True	144	88
+human2:4632766be5a66755	human2	4632766be5a66755	62	M2g	DMEM:F12+cortisol+estradiol	1.0	False	documented	74.24994765448052	0.9932204270953008	True	144	99
+human2:1ef77ad0059ca506	human2	1ef77ad0059ca506	51	M1	DMEM0.5:RPMI0.5		True	documented	46.40006202058576	0.6206804297262513	True	158	63
+human2:1ef77ad0059ca506	human2	1ef77ad0059ca506	51	M1	DMEM0.25:RPMI0.75		True	documented	46.40006202058576	0.6206804297262513	True	158	63
+human2:1cfe74005f492e7b	human2	1cfe74005f492e7b	49	M1g	DMEM0.5:RPMI0.5		False	documented	46.40006202058561	0.6206804297262493	True	158	63
+human2:1cfe74005f492e7b	human2	1cfe74005f492e7b	49	M1g	DMEM0.25:RPMI0.75		False	documented	46.40006202058561	0.6206804297262493	True	158	63
+human2:471642c608e08f65	human2	471642c608e08f65	59	M2	DMEM0.5:RPMI0.5	0.001	True	documented	46.40123506019527	0.6206961211434006	True	158	63
+human2:471642c608e08f65	human2	471642c608e08f65	59	M2	DMEM0.25:RPMI0.75	0.001	True	documented	46.40123506019527	0.6206961211434006	True	158	63
+human2:471642c608e08f65	human2	471642c608e08f65	59	M2	RPMI	0.001	True	documented	46.40123506019527	0.6206961211434006	True	158	63
+human2:471642c608e08f65	human2	471642c608e08f65	59	M2	RPMI+cys(2-ME)	0.001	True	documented	46.40123506019527	0.6206961211434006	True	158	63
+human2:1b6f646fc2d67dec	human2	1b6f646fc2d67dec	57	M2g	DMEM0.5:RPMI0.5	0.001	False	documented	46.40123506019456	0.6206961211433911	True	158	63
+human2:1b6f646fc2d67dec	human2	1b6f646fc2d67dec	57	M2g	DMEM0.25:RPMI0.75	0.001	False	documented	46.40123506019456	0.6206961211433911	True	158	63
+human2:1b6f646fc2d67dec	human2	1b6f646fc2d67dec	57	M2g	RPMI	0.001	False	documented	46.40123506019456	0.6206961211433911	True	158	63
+human2:1b6f646fc2d67dec	human2	1b6f646fc2d67dec	57	M2g	RPMI+cys(2-ME)	0.001	False	documented	46.40123506019456	0.6206961211433911	True	158	63
+human2:fd328023365903c6	human2	fd328023365903c6	59	M2	DMEM0.5:RPMI0.5	0.01	True	documented	46.41177653114521	0.6208371314014527	True	158	63
+human2:fd328023365903c6	human2	fd328023365903c6	59	M2	DMEM0.25:RPMI0.75	0.01	True	documented	46.41177653114521	0.6208371314014527	True	158	63
+human2:fd328023365903c6	human2	fd328023365903c6	59	M2	RPMI	0.01	True	documented	46.41177653114521	0.6208371314014527	True	158	63
+human2:fd328023365903c6	human2	fd328023365903c6	59	M2	RPMI+cys(2-ME)	0.01	True	documented	46.41177653114521	0.6208371314014527	True	158	63
+human2:ce606d913ad7ab9a	human2	ce606d913ad7ab9a	57	M2g	DMEM0.5:RPMI0.5	0.01	False	documented	46.41177653114547	0.6208371314014561	True	158	63
+human2:ce606d913ad7ab9a	human2	ce606d913ad7ab9a	57	M2g	DMEM0.25:RPMI0.75	0.01	False	documented	46.41177653114547	0.6208371314014561	True	158	63
+human2:ce606d913ad7ab9a	human2	ce606d913ad7ab9a	57	M2g	RPMI	0.01	False	documented	46.41177653114547	0.6208371314014561	True	158	63
+human2:ce606d913ad7ab9a	human2	ce606d913ad7ab9a	57	M2g	RPMI+cys(2-ME)	0.01	False	documented	46.41177653114547	0.6208371314014561	True	158	63
+human2:1107a5ca9436f785	human2	1107a5ca9436f785	59	M2	DMEM0.5:RPMI0.5	0.1	True	documented	46.47993570205222	0.6217488772407056	True	148	73
+human2:1107a5ca9436f785	human2	1107a5ca9436f785	59	M2	DMEM0.25:RPMI0.75	0.1	True	documented	46.47993570205222	0.6217488772407056	True	148	73
+human2:1107a5ca9436f785	human2	1107a5ca9436f785	59	M2	RPMI	0.1	True	documented	46.47993570205222	0.6217488772407056	True	148	73
+human2:1107a5ca9436f785	human2	1107a5ca9436f785	59	M2	RPMI+cys(2-ME)	0.1	True	documented	46.47993570205222	0.6217488772407056	True	148	73
+human2:7a653fc5e5bc2092	human2	7a653fc5e5bc2092	57	M2g	DMEM0.5:RPMI0.5	0.1	False	documented	46.4799357020524	0.6217488772407079	True	148	73
+human2:7a653fc5e5bc2092	human2	7a653fc5e5bc2092	57	M2g	DMEM0.25:RPMI0.75	0.1	False	documented	46.4799357020524	0.6217488772407079	True	148	73
+human2:7a653fc5e5bc2092	human2	7a653fc5e5bc2092	57	M2g	RPMI	0.1	False	documented	46.4799357020524	0.6217488772407079	True	148	73
+human2:7a653fc5e5bc2092	human2	7a653fc5e5bc2092	57	M2g	RPMI+cys(2-ME)	0.1	False	documented	46.4799357020524	0.6217488772407079	True	148	73
+human2:f909285bf9042a1c	human2	f909285bf9042a1c	59	M2	DMEM0.5:RPMI0.5	1.0	True	documented	46.90584066402033	0.6274460867552022	True	148	67
+human2:f909285bf9042a1c	human2	f909285bf9042a1c	59	M2	DMEM0.25:RPMI0.75	1.0	True	documented	46.90584066402033	0.6274460867552022	True	148	67
+human2:f909285bf9042a1c	human2	f909285bf9042a1c	59	M2	RPMI	1.0	True	documented	46.90584066402033	0.6274460867552022	True	148	67
+human2:f909285bf9042a1c	human2	f909285bf9042a1c	59	M2	RPMI+cys(2-ME)	1.0	True	documented	46.90584066402033	0.6274460867552022	True	148	67
+human2:cb339640de3180db	human2	cb339640de3180db	57	M2g	DMEM0.5:RPMI0.5	1.0	False	documented	46.90584066402018	0.6274460867552002	True	148	67
+human2:cb339640de3180db	human2	cb339640de3180db	57	M2g	DMEM0.25:RPMI0.75	1.0	False	documented	46.90584066402018	0.6274460867552002	True	148	67
+human2:cb339640de3180db	human2	cb339640de3180db	57	M2g	RPMI	1.0	False	documented	46.90584066402018	0.6274460867552002	True	148	67
+human2:cb339640de3180db	human2	cb339640de3180db	57	M2g	RPMI+cys(2-ME)	1.0	False	documented	46.90584066402018	0.6274460867552002	True	148	67
+human2:8b2aefb1ac96b8ce	human2	8b2aefb1ac96b8ce	49	M1	IMDM		True	documented	46.38499383000426	0.6204788668274523	True	160	63
+human2:ee8c92494863685b	human2	ee8c92494863685b	47	M1g	IMDM		False	documented	46.38499383000418	0.6204788668274512	True	160	63
+human2:0391fd571a954736	human2	0391fd571a954736	58	M2	IMDM	0.001	True	documented	46.38616648867493	0.6204945531488911	True	160	63
+human2:a7479f29d899a700	human2	a7479f29d899a700	56	M2g	IMDM	0.001	False	documented	46.38616648867499	0.6204945531488919	True	160	63
+human2:bdd3505ba8ca3455	human2	bdd3505ba8ca3455	58	M2	IMDM	0.01	True	documented	46.39670380619321	0.6206355078476694	True	160	63
+human2:5cd4c6063e92f6b5	human2	5cd4c6063e92f6b5	56	M2g	IMDM	0.01	False	documented	46.39670380619321	0.6206355078476694	True	160	63
+human2:637522803bd006e9	human2	637522803bd006e9	58	M2	IMDM	0.1	True	documented	46.4648397919936	0.6215469435463469	True	150	73
+human2:4082b477e7455b89	human2	4082b477e7455b89	56	M2g	IMDM	0.1	False	documented	46.46483979199392	0.6215469435463512	True	150	73
+human2:a4636fc2575b1aac	human2	a4636fc2575b1aac	58	M2	IMDM	1.0	True	documented	46.8905376179393	0.6272413822611979	True	150	70
+human2:80dee9510d2815b1	human2	80dee9510d2815b1	56	M2g	IMDM	1.0	False	documented	46.8905376179399	0.6272413822612058	True	150	70
+human2:8c5a52cb8e407bd7	human2	8c5a52cb8e407bd7	52	M1	IMDM0.8:RPMI0.2		True	documented	46.40006202058588	0.6206804297262529	True	157	63
+human2:49e8293ad28601d9	human2	49e8293ad28601d9	50	M1g	IMDM0.8:RPMI0.2		False	documented	46.40006202058522	0.620680429726244	True	157	63
+human2:6bb100f290d483be	human2	6bb100f290d483be	61	M2	IMDM0.8:RPMI0.2	0.001	True	documented	46.40123506019824	0.6206961211434403	True	157	63
+human2:e63f2f6723dc9622	human2	e63f2f6723dc9622	59	M2g	IMDM0.8:RPMI0.2	0.001	False	documented	46.40123506019483	0.6206961211433947	True	157	63
+human2:8c6b5b5a9d9a3d91	human2	8c6b5b5a9d9a3d91	61	M2	IMDM0.8:RPMI0.2	0.01	True	documented	46.41177653114488	0.6208371314014481	True	157	63
+human2:b9581ecdd6fedac9	human2	b9581ecdd6fedac9	59	M2g	IMDM0.8:RPMI0.2	0.01	False	documented	46.41177653114574	0.6208371314014598	True	157	63
+human2:100ed59e487c50c1	human2	100ed59e487c50c1	61	M2	IMDM0.8:RPMI0.2	0.1	True	documented	46.47993570205264	0.6217488772407113	True	147	73
+human2:b234b8713814da8f	human2	b234b8713814da8f	59	M2g	IMDM0.8:RPMI0.2	0.1	False	documented	46.47993570205264	0.6217488772407113	True	147	73
+human2:6ee484d2ebadf22a	human2	6ee484d2ebadf22a	61	M2	IMDM0.8:RPMI0.2	1.0	True	documented	46.90584066402015	0.6274460867551998	True	147	67
+human2:e1331f0c4ca41d88	human2	e1331f0c4ca41d88	59	M2g	IMDM0.8:RPMI0.2	1.0	False	documented	46.90584066402049	0.6274460867552043	True	147	67
+human2:9516ed3a5dc7e863	human2	9516ed3a5dc7e863	50	M1	RPMI		True	documented	46.400062020585935	0.6206804297262537	True	158	63
+human2:9516ed3a5dc7e863	human2	9516ed3a5dc7e863	50	M1	RPMI+cys(2-ME)		True	documented	46.400062020585935	0.6206804297262537	True	158	63
+human2:b9edd60b7aa8e65a	human2	b9edd60b7aa8e65a	48	M1g	RPMI		False	documented	46.4000620205859	0.6206804297262533	True	158	63
+human2:b9edd60b7aa8e65a	human2	b9edd60b7aa8e65a	48	M1g	RPMI+cys(2-ME)		False	documented	46.4000620205859	0.6206804297262533	True	158	63
+human2:c2d2dc8cc91e3c5a	human2	c2d2dc8cc91e3c5a	51	M1	RPMI+alanine		True	documented	46.4000620205859	0.6206804297262533	True	158	63
+human2:16a630fe4945c95d	human2	16a630fe4945c95d	49	M1g	RPMI+alanine		False	documented	46.40006202058553	0.6206804297262483	True	158	63
+human2:2874f922af5b5607	human2	2874f922af5b5607	60	M2	RPMI+alanine	0.001	True	documented	46.401235060195	0.620696121143397	True	158	63
+human2:d69640a60540301c	human2	d69640a60540301c	58	M2g	RPMI+alanine	0.001	False	documented	46.40123506019514	0.6206961211433989	True	158	63
+human2:4a64df246c619389	human2	4a64df246c619389	60	M2	RPMI+alanine	0.01	True	documented	46.41177653114527	0.6208371314014535	True	158	63
+human2:950ac8ed1bdb4d92	human2	950ac8ed1bdb4d92	58	M2g	RPMI+alanine	0.01	False	documented	46.4117765311458	0.6208371314014606	True	158	63
+human2:bd0e6ee22bc41ce7	human2	bd0e6ee22bc41ce7	60	M2	RPMI+alanine	0.1	True	documented	46.479935702051975	0.6217488772407024	True	148	73
+human2:bddf93e3bf9edddb	human2	bddf93e3bf9edddb	58	M2g	RPMI+alanine	0.1	False	documented	46.479935702051975	0.6217488772407024	True	148	73
+human2:648ad196e363173d	human2	648ad196e363173d	60	M2	RPMI+alanine	1.0	True	documented	46.90584066402016	0.6274460867551998	True	148	67
+human2:9bd6ed6b31565e4b	human2	9bd6ed6b31565e4b	58	M2g	RPMI+alanine	1.0	False	documented	46.90584066402028	0.6274460867552015	True	148	67
+human2:11d97914d3917a0f	human2	11d97914d3917a0f	54	M1	RPMI+ATP+adenine+hypoxanthine+thymidine		True	documented	92.3577946186891	1.2354439446021486	True	151	97
+human2:0f5fbc0f26458614	human2	0f5fbc0f26458614	52	M1g	RPMI+ATP+adenine+hypoxanthine+thymidine		False	documented	89.7287641179895	1.200276151502784	True	151	108
+human2:81a51087e2bea49a	human2	81a51087e2bea49a	63	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	0.001	True	documented	92.9312108226091	1.2431143700361311	True	151	99
+human2:aa03a380fa53b7a8	human2	aa03a380fa53b7a8	61	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	0.001	False	documented	90.44297050162206	1.2098298871186892	True	151	109
+human2:367321b9d8cfc7c2	human2	367321b9d8cfc7c2	63	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	0.01	True	documented	92.942578489833	1.2432664320867028	True	151	99
+human2:ed8fe7141893f821	human2	ed8fe7141893f821	61	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	0.01	False	documented	90.4539506289503	1.2099767651583246	True	151	109
+human2:106de9cd6f75462d	human2	106de9cd6f75462d	63	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	0.1	True	documented	93.02328523728234	1.244346023287819	True	141	108
+human2:df53e43aec2653a4	human2	df53e43aec2653a4	61	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	0.1	False	documented	90.53041025582124	1.2109995438356873	True	141	118
+human2:33a2e159960f9300	human2	33a2e159960f9300	63	M2	RPMI+ATP+adenine+hypoxanthine+thymidine	1.0	True	documented	93.7355954417332	1.2538743942542374	True	141	103
+human2:7924ad50275f193f	human2	7924ad50275f193f	61	M2g	RPMI+ATP+adenine+hypoxanthine+thymidine	1.0	False	documented	91.2001660258688	1.219958676239009	True	141	112
+human2:a5965fa1d026fae9	human2	a5965fa1d026fae9	51	M1	RPMI+cortisol		True	documented	46.40006202058572	0.6206804297262508	True	158	63
+human2:249ea8a7edfd7c74	human2	249ea8a7edfd7c74	49	M1g	RPMI+cortisol		False	documented	46.40006202058586	0.6206804297262526	True	158	63
+human2:f1598229b62b35f0	human2	f1598229b62b35f0	60	M2	RPMI+cortisol	0.001	True	documented	46.40123506019554	0.6206961211434042	True	158	63
+human2:271b0f55472027ba	human2	271b0f55472027ba	58	M2g	RPMI+cortisol	0.001	False	documented	46.40123506019541	0.6206961211434024	True	158	63
+human2:5f7bc3f46f00a032	human2	5f7bc3f46f00a032	60	M2	RPMI+cortisol	0.01	True	documented	46.41177653114573	0.6208371314014597	True	158	63
+human2:18d8dab611a0194f	human2	18d8dab611a0194f	58	M2g	RPMI+cortisol	0.01	False	documented	46.41177653114573	0.6208371314014597	True	158	63
+human2:d6a1a19f6f4e1f40	human2	d6a1a19f6f4e1f40	60	M2	RPMI+cortisol	0.1	True	documented	46.47993570205248	0.6217488772407092	True	148	73
+human2:76b073a1438165d0	human2	76b073a1438165d0	58	M2g	RPMI+cortisol	0.1	False	documented	46.479935702052025	0.621748877240703	True	148	73
+human2:94a1ee0091fdfb08	human2	94a1ee0091fdfb08	60	M2	RPMI+cortisol	1.0	True	documented	46.90584066402038	0.6274460867552029	True	148	67
+human2:7f01d252cbeec86f	human2	7f01d252cbeec86f	58	M2g	RPMI+cortisol	1.0	False	documented	46.90584066402042	0.6274460867552033	True	148	67
+human2:de7be2e364ce22be	human2	de7be2e364ce22be	51	M1	RPMI+testosterone		True	documented	46.400062020585885	0.620680429726253	True	158	63
+human2:59a7aa427d4fcc37	human2	59a7aa427d4fcc37	49	M1g	RPMI+testosterone		False	documented	46.4000620205854	0.6206804297262465	True	158	63
+human2:78e4fa0242803e23	human2	78e4fa0242803e23	60	M2	RPMI+testosterone	0.001	True	documented	46.40123506019503	0.6206961211433973	True	158	63
+human2:881905c5900a72af	human2	881905c5900a72af	58	M2g	RPMI+testosterone	0.001	False	documented	46.40123506019563	0.6206961211434054	True	158	63
+human2:989bbeb12408e3cf	human2	989bbeb12408e3cf	60	M2	RPMI+testosterone	0.01	True	documented	46.41177653114599	0.6208371314014631	True	158	63
+human2:432c4aa27a3d6560	human2	432c4aa27a3d6560	58	M2g	RPMI+testosterone	0.01	False	documented	46.41177653114636	0.620837131401468	True	158	63
+human2:2ae9424638678d51	human2	2ae9424638678d51	60	M2	RPMI+testosterone	0.1	True	documented	46.47993570205242	0.6217488772407084	True	148	73
+human2:ef46b725aa0b8015	human2	ef46b725aa0b8015	58	M2g	RPMI+testosterone	0.1	False	documented	46.47993570205238	0.6217488772407078	True	148	73
+human2:4a1a7ce8e5dec9b6	human2	4a1a7ce8e5dec9b6	60	M2	RPMI+testosterone	1.0	True	documented	46.90584066402029	0.6274460867552016	True	148	67
+human2:6060339ac51bbc91	human2	6060339ac51bbc91	58	M2g	RPMI+testosterone	1.0	False	documented	46.90584066401984	0.6274460867551956	True	148	67
+human2:5ae3c8fa6828dad4	human2	5ae3c8fa6828dad4	85	M2	M-HPLM	0.001	True	physiological	46.75575763682214	0.6254384687960998	True	143	61
+human2:ed0c5080ac4bdb22	human2	ed0c5080ac4bdb22	83	M2g	M-HPLM	0.001	False	physiological	46.75575763682208	0.625438468796099	True	143	61
+human2:3c99bc7258c9053a	human2	3c99bc7258c9053a	85	M2	M-HPLM	0.01	True	physiological	46.76639501523535	0.6255807619810042	True	143	61
+human2:13fb0028e1cd9f1e	human2	13fb0028e1cd9f1e	83	M2g	M-HPLM	0.01	False	physiological	46.76639501523535	0.6255807619810042	True	143	61
+human2:f664d8b9d65ba5f7	human2	f664d8b9d65ba5f7	85	M2	M-HPLM	0.1	True	physiological	46.83509477129455	0.626499739074052	True	142	62
+human2:f9ff3d2921319a7c	human2	f9ff3d2921319a7c	83	M2g	M-HPLM	0.1	False	physiological	46.83509477129455	0.626499739074052	True	142	62
+human2:c899dc2b535b7764	human2	c899dc2b535b7764	85	M2	M-HPLM	1.0	True	physiological	47.26582169531213	0.6322614506031291	True	142	56
+human2:6b67c2aa1c5b9714	human2	6b67c2aa1c5b9714	83	M2g	M-HPLM	1.0	False	physiological	47.26582169531223	0.6322614506031303	True	142	56
+human2:3f64c8b5f0516d89	human2	3f64c8b5f0516d89	90	M2	M-Plasmax	0.001	True	physiological	65.7154770373062	0.8790572415417194	True	141	59
+human2:2d9bc7fda1438f8a	human2	2d9bc7fda1438f8a	88	M2g	M-Plasmax	0.001	False	physiological	65.71547703730617	0.8790572415417189	True	141	59
+human2:fe634ed6cf58a993	human2	fe634ed6cf58a993	90	M2	M-Plasmax	0.01	True	physiological	65.72615632475116	0.8792000953318192	True	141	59
+human2:70687c4b2f8f6484	human2	70687c4b2f8f6484	88	M2g	M-Plasmax	0.01	False	physiological	65.72615632475116	0.8792000953318192	True	141	59
+human2:57bc82877a2237a8	human2	57bc82877a2237a8	90	M2	M-Plasmax	0.1	True	physiological	65.79739047011999	0.880152974229677	True	140	59
+human2:272529411e2607a7	human2	272529411e2607a7	88	M2g	M-Plasmax	0.1	False	physiological	65.79739047012029	0.880152974229681	True	140	59
+human2:5a7af5def606eeab	human2	5a7af5def606eeab	90	M2	M-Plasmax	1.0	True	physiological	66.31649753220951	0.8870969217232969	True	140	54
+human2:24e99d860b6f70ac	human2	24e99d860b6f70ac	88	M2g	M-Plasmax	1.0	False	physiological	66.31649753220951	0.8870969217232969	True	140	54
+human2:e2730b4882b51778	human2	e2730b4882b51778	49	M1	SENS:RPMI-no-pyruvate		True	sensitivity	46.40006202058588	0.6206804297262529	True	158	63
+human2:d2a402b71640fde6	human2	d2a402b71640fde6	47	M1g	SENS:RPMI-no-pyruvate		False	sensitivity	46.4000620205859	0.6206804297262533	True	158	63
+human2:58e560125be7b586	human2	58e560125be7b586	58	M2	SENS:RPMI-no-pyruvate	0.001	True	sensitivity	46.40123506019525	0.6206961211434003	True	158	63
+human2:f3fdc1cc08a75d6d	human2	f3fdc1cc08a75d6d	56	M2g	SENS:RPMI-no-pyruvate	0.001	False	sensitivity	46.401235060195525	0.620696121143404	True	158	63
+human2:00a0660c3b52d018	human2	00a0660c3b52d018	58	M2	SENS:RPMI-no-pyruvate	0.01	True	sensitivity	46.4117765311454	0.6208371314014552	True	158	63
+human2:210ff3a321998117	human2	210ff3a321998117	56	M2g	SENS:RPMI-no-pyruvate	0.01	False	sensitivity	46.41177653114588	0.6208371314014617	True	158	63
+human2:ee22903015de585a	human2	ee22903015de585a	58	M2	SENS:RPMI-no-pyruvate	0.1	True	sensitivity	46.47993570205232	0.6217488772407069	True	148	73
+human2:1b731bb95a8d812c	human2	1b731bb95a8d812c	56	M2g	SENS:RPMI-no-pyruvate	0.1	False	sensitivity	46.47993570205232	0.6217488772407069	True	148	73
+human2:4cd587facad2c6fb	human2	4cd587facad2c6fb	58	M2	SENS:RPMI-no-pyruvate	1.0	True	sensitivity	46.90584066402016	0.6274460867551999	True	148	67
+human2:8fc4e30fde9977dc	human2	8fc4e30fde9977dc	56	M2g	SENS:RPMI-no-pyruvate	1.0	False	sensitivity	46.90584066402042	0.6274460867552033	True	148	67
+human2:4a240d92dd0e5fff	human2	4a240d92dd0e5fff	43	M1	SENS:DMEM-no-standard-Gln		True	sensitivity	45.86789261947571	0.6135617510395375	True	163	63
+human2:b47ae2bec5e9dbee	human2	b47ae2bec5e9dbee	51	M2	SENS:DMEM-no-standard-Gln	0.001	True	sensitivity	45.86905220531499	0.6135772624894297	True	163	63
+human2:f40f52a8f8784dd7	human2	f40f52a8f8784dd7	51	M2	SENS:DMEM-no-standard-Gln	0.01	True	sensitivity	45.87944727530222	0.6137163143834519	True	153	73
+human2:be598403096ace8a	human2	be598403096ace8a	51	M2	SENS:DMEM-no-standard-Gln	0.1	True	sensitivity	45.94678802217886	0.6146171123972763	True	153	73
+human2:cb136b49e1d5d28f	human2	cb136b49e1d5d28f	51	M2	SENS:DMEM-no-standard-Gln	1.0	True	sensitivity	46.36540470246406	0.6202168286410763	True	153	70
+human2:d4c82c46365eaa87	human2	d4c82c46365eaa87	55	M1	SENS:DMEM:F12-cysteine-closed		True	sensitivity	74.54439067317782	0.9971591075930522	True	154	99
+human2:a93df63af8730dc6	human2	a93df63af8730dc6	53	M1g	SENS:DMEM:F12-cysteine-closed		False	sensitivity	71.61236125568288	0.9579381841810668	True	154	94
+human2:a42cd0db236f0dae	human2	a42cd0db236f0dae	61	M2	SENS:DMEM:F12-cysteine-closed	0.001	True	sensitivity	74.54562964297897	0.9971756809396192	True	154	99
+human2:387a764c104a1867	human2	387a764c104a1867	59	M2g	SENS:DMEM:F12-cysteine-closed	0.001	False	sensitivity	71.61365526778603	0.9579554938128492	True	154	94
+human2:9ca9970b2cb1c6e6	human2	9ca9970b2cb1c6e6	61	M2	SENS:DMEM:F12-cysteine-closed	0.01	True	sensitivity	74.55678037118906	0.9973248410587184	True	154	99
+human2:158ef821fa9c6aec	human2	158ef821fa9c6aec	59	M2g	SENS:DMEM:F12-cysteine-closed	0.01	False	sensitivity	71.62530137670934	0.9581112804988228	True	154	94
+human2:1c4af369ee8bae30	human2	1c4af369ee8bae30	61	M2	SENS:DMEM:F12-cysteine-closed	0.1	True	sensitivity	74.63356562600005	0.9983519755684004	True	144	108
+human2:91c89a57ccc67c86	human2	91c89a57ccc67c86	59	M2g	SENS:DMEM:F12-cysteine-closed	0.1	False	sensitivity	71.70678201712211	0.959201223845953	True	144	103
+human2:b5ed010051a44179	human2	b5ed010051a44179	61	M2	SENS:DMEM:F12-cysteine-closed	1.0	True	sensitivity	75.26016205003093	1.0067337776780585	True	144	102
+human2:fa27161b66b65cba	human2	fa27161b66b65cba	59	M2g	SENS:DMEM:F12-cysteine-closed	1.0	False	sensitivity	72.35668270823885	0.967894760506804	True	144	110

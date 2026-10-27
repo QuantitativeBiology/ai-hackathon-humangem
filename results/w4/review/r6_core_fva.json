@@ -1,0 +1,40 @@
+{
+ "ACH-000957": {
+  "n_missing": 24,
+  "n_max_abs_flux_below_0.99": 24,
+  "max_abs_flux": {
+   "MAR00006": 0.077695,
+   "MAR00586": 0.338992,
+   "MAR05241": 0.077695,
+   "MAR05259": 0.86436,
+   "MAR05280": 0.774248,
+   "MAR05282": 0.543867,
+   "MAR06436": 0.003091,
+   "MAR06453": 0.003091,
+   "MAR06465": 0.003091,
+   "MAR06467": 0.003091,
+   "MAR06477": 0.003091,
+   "MAR06479": 0.003091,
+   "MAR06657": 0.001541,
+   "MAR06658": 0.001541,
+   "MAR06668": 0.001541,
+   "MAR06669": 0.001541,
+   "MAR06681": 0.001541,
+   "MAR06682": 0.003091,
+   "MAR08614": 0.003091,
+   "MAR08615": 0.003091,
+   "MAR08616": 0.003091,
+   "MAR09608": 0.003091,
+   "MAR20197": 0.001541,
+   "MAR20198": 0.003091
+  },
+  "subsystems": [
+   "Glycerophospholipid metabolism",
+   "Protein degradation",
+   "Retinol metabolism",
+   "Transport reactions",
+   "Vitamin B12 metabolism",
+   "Vitamin E metabolism"
+  ]
+ }
+}

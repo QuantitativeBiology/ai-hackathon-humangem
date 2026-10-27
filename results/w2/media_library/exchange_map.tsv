@@ -1,0 +1,246 @@
+mapping_version	raw_component	canonical	stoich	status	note	exchange_human1	met_name_human1	exchange_human2	met_name_human2
+w2-media-map-v1 (2026-10-26)	2-Hydroxybutyrate	2-hydroxybutyrate	1.0	mapped		MAR09216	2-hydroxybutyrate	MAR09216	2-hydroxybutyrate
+w2-media-map-v1 (2026-10-26)	2-hydroxybutyrate	2-hydroxybutyrate	1.0	mapped		MAR09216	2-hydroxybutyrate	MAR09216	2-hydroxybutyrate
+w2-media-map-v1 (2026-10-26)	3-Hydroxybutyrate	3-hydroxybutyrate	1.0	mapped	3-hydroxybutyrate -> (R)-3-hydroxybutanoate	MAR09134	(R)-3-hydroxybutanoate	MAR09134	(R)-3-hydroxybutanoate
+w2-media-map-v1 (2026-10-26)	3-Hydroxyisobutyrate	3-hydroxyisobutyrate	1.0	mapped		MAR10185	3-hydroxyisobutyrate	MAR10185	3-hydroxyisobutyrate
+w2-media-map-v1 (2026-10-26)	3-hydroxybutyrate	3-hydroxybutyrate	1.0	mapped	3-hydroxybutyrate -> (R)-3-hydroxybutanoate	MAR09134	(R)-3-hydroxybutanoate	MAR09134	(R)-3-hydroxybutanoate
+w2-media-map-v1 (2026-10-26)	4-Hydroxy-L-proline	hydroxyproline	1.0	mapped	L-hydroxyproline / 4-hydroxy-L-proline -> trans-4-hydroxy-L-proline	MAR08386	trans-4-hydroxy-L-proline	MAR08386	trans-4-hydroxy-L-proline
+w2-media-map-v1 (2026-10-26)	4-hydroxyproline	hydroxyproline	1.0	mapped	L-hydroxyproline / 4-hydroxy-L-proline -> trans-4-hydroxy-L-proline	MAR08386	trans-4-hydroxy-L-proline	MAR08386	trans-4-hydroxy-L-proline
+w2-media-map-v1 (2026-10-26)	Acetate	acetate	1.0	mapped		MAR09086	acetate	MAR09086	acetate
+w2-media-map-v1 (2026-10-26)	Acetone	acetone	1.0	mapped		MAR09243	acetone	MAR09243	acetone
+w2-media-map-v1 (2026-10-26)	Acetyl carnitine	acetylcarnitine	1.0	mapped		MAR09920	O-acetylcarnitine	MAR09920	O-acetylcarnitine
+w2-media-map-v1 (2026-10-26)	Acetylglycine	acetylglycine	1.0	mapped		MAR10196	Acetyl-Glycine	MAR10196	Acetyl-Glycine
+w2-media-map-v1 (2026-10-26)	Alanine	alanine	1.0	mapped		MAR09061	alanine	MAR09061	alanine
+w2-media-map-v1 (2026-10-26)	Alpha-aminobutyrate	2-aminobutyrate	1.0	mapped	alpha-aminobutyrate -> (S)-2-aminobutanoate	MAR10206	(S)-2-aminobutanoate	MAR10206	(S)-2-aminobutanoate
+w2-media-map-v1 (2026-10-26)	Aminobutyrate	2-aminobutyrate	1.0	mapped	alpha-aminobutyrate -> (S)-2-aminobutanoate	MAR10206	(S)-2-aminobutanoate	MAR10206	(S)-2-aminobutanoate
+w2-media-map-v1 (2026-10-26)	Ammonium Chloride	NH4+	1.0	mapped	ammonium -> NH3 exchange (the parents carry ammonia as NH3)	MAR09073	NH3	MAR09073	NH3
+w2-media-map-v1 (2026-10-26)	Ammonium Chloride	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Ammonium Metavanadate	NH4+	1.0	mapped	ammonium -> NH3 exchange (the parents carry ammonia as NH3)	MAR09073	NH3	MAR09073	NH3
+w2-media-map-v1 (2026-10-26)	Ammonium Metavanadate	vanadate	1.0	no_exchange	no vanadate exchange in either parent				
+w2-media-map-v1 (2026-10-26)	Arginine	arginine	1.0	mapped		MAR09066	arginine	MAR09066	arginine
+w2-media-map-v1 (2026-10-26)	Ascorbate	ascorbate	1.0	mapped		MAR09158	ascorbate	MAR09158	ascorbate
+w2-media-map-v1 (2026-10-26)	Asparagine	asparagine	1.0	mapped		MAR09062	asparagine	MAR09062	asparagine
+w2-media-map-v1 (2026-10-26)	Aspartate	aspartate	1.0	mapped		MAR09070	aspartate	MAR09070	aspartate
+w2-media-map-v1 (2026-10-26)	Betaine	betaine	1.0	mapped		MAR09341	betaine	MAR09341	betaine
+w2-media-map-v1 (2026-10-26)	Biotin	biotin	1.0	mapped		MAR09109	biotin	MAR09109	biotin
+w2-media-map-v1 (2026-10-26)	Ca(NO3)2.4H2O	Ca2+	1.0	mapped		MAR09082	Ca2+	MAR09082	Ca2+
+w2-media-map-v1 (2026-10-26)	Ca(NO3)2.4H2O	nitrate	2.0	no_exchange	no nitrate exchange in either parent				
+w2-media-map-v1 (2026-10-26)	CaCl2	Ca2+	1.0	mapped		MAR09082	Ca2+	MAR09082	Ca2+
+w2-media-map-v1 (2026-10-26)	CaCl2	chloride	2.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Calcium Chloride	Ca2+	1.0	mapped		MAR09082	Ca2+	MAR09082	Ca2+
+w2-media-map-v1 (2026-10-26)	Calcium Chloride	chloride	2.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Calcium Chloride (CaCl2) (anhyd.)	Ca2+	1.0	mapped		MAR09082	Ca2+	MAR09082	Ca2+
+w2-media-map-v1 (2026-10-26)	Calcium Chloride (CaCl2) (anhyd.)	chloride	2.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Calcium nitrate (Ca(NO3)2 4H2O)	Ca2+	1.0	mapped		MAR09082	Ca2+	MAR09082	Ca2+
+w2-media-map-v1 (2026-10-26)	Calcium nitrate (Ca(NO3)2 4H2O)	nitrate	2.0	no_exchange	no nitrate exchange in either parent				
+w2-media-map-v1 (2026-10-26)	Carnitine	carnitine	1.0	mapped		MAR09292	L-carnitine	MAR09292	L-carnitine
+w2-media-map-v1 (2026-10-26)	Choline	choline	1.0	mapped		MAR09083	choline	MAR09083	choline
+w2-media-map-v1 (2026-10-26)	Choline chloride	choline	1.0	mapped		MAR09083	choline	MAR09083	choline
+w2-media-map-v1 (2026-10-26)	Choline chloride	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Citrate	citrate	1.0	mapped		MAR09286	citrate	MAR09286	citrate
+w2-media-map-v1 (2026-10-26)	Citrulline	citrulline	1.0	mapped		MAR09201	citrulline	MAR09201	citrulline
+w2-media-map-v1 (2026-10-26)	Creatine	creatine	1.0	mapped		MAR09290	creatine	MAR09290	creatine
+w2-media-map-v1 (2026-10-26)	Creatinine	creatinine	1.0	mapped		MAR09460	creatinine	MAR09460	creatinine
+w2-media-map-v1 (2026-10-26)	Cupric Sulfate	Cu2+	1.0	mapped		MAR13073	Cu2+	MAR13073	Cu2+
+w2-media-map-v1 (2026-10-26)	Cupric Sulfate	sulfate	1.0	mapped		MAR09074	sulfate	MAR09074	sulfate
+w2-media-map-v1 (2026-10-26)	Cupric sulfate (CuSO4-5H2O)	Cu2+	1.0	mapped		MAR13073	Cu2+	MAR13073	Cu2+
+w2-media-map-v1 (2026-10-26)	Cupric sulfate (CuSO4-5H2O)	sulfate	1.0	mapped		MAR09074	sulfate	MAR09074	sulfate
+w2-media-map-v1 (2026-10-26)	Cysteine	cysteine	1.0	mapped		MAR09065	cysteine	MAR09065	cysteine
+w2-media-map-v1 (2026-10-26)	Cystine	cystine	1.0	mapped		MAR09363	cystine	MAR09363	cystine
+w2-media-map-v1 (2026-10-26)	D-Biotin	biotin	1.0	mapped		MAR09109	biotin	MAR09109	biotin
+w2-media-map-v1 (2026-10-26)	D-Calcium pantothenate	pantothenate	2.0	mapped		MAR09145	pantothenate	MAR09145	pantothenate
+w2-media-map-v1 (2026-10-26)	D-Calcium pantothenate	Ca2+	1.0	mapped		MAR09082	Ca2+	MAR09082	Ca2+
+w2-media-map-v1 (2026-10-26)	D-Glucose	glucose	1.0	mapped		MAR09034	glucose	MAR09034	glucose
+w2-media-map-v1 (2026-10-26)	D-Glucose (Dextrose)	glucose	1.0	mapped		MAR09034	glucose	MAR09034	glucose
+w2-media-map-v1 (2026-10-26)	D-Pantothenic acid hemicalcium	pantothenate	1.0	mapped		MAR09145	pantothenate	MAR09145	pantothenate
+w2-media-map-v1 (2026-10-26)	D-Pantothenic acid hemicalcium	Ca2+	0.5	mapped		MAR09082	Ca2+	MAR09082	Ca2+
+w2-media-map-v1 (2026-10-26)	Ferric Nitrate	Fe3+	1.0	mapped		MAR09096	Fe3+	MAR09096	Fe3+
+w2-media-map-v1 (2026-10-26)	Ferric Nitrate	nitrate	3.0	no_exchange	no nitrate exchange in either parent				
+w2-media-map-v1 (2026-10-26)	"Ferric Nitrate (Fe(NO3)3""9H2O)"	Fe3+	1.0	mapped		MAR09096	Fe3+	MAR09096	Fe3+
+w2-media-map-v1 (2026-10-26)	"Ferric Nitrate (Fe(NO3)3""9H2O)"	nitrate	3.0	no_exchange	no nitrate exchange in either parent				
+w2-media-map-v1 (2026-10-26)	Ferric Sulfate	Fe3+	2.0	mapped		MAR09096	Fe3+	MAR09096	Fe3+
+w2-media-map-v1 (2026-10-26)	Ferric Sulfate	sulfate	3.0	mapped		MAR09074	sulfate	MAR09074	sulfate
+w2-media-map-v1 (2026-10-26)	Ferrous sulfate (FeSO4-7H2O)	Fe2+	1.0	mapped		MAR09076	Fe2+	MAR09076	Fe2+
+w2-media-map-v1 (2026-10-26)	Ferrous sulfate (FeSO4-7H2O)	sulfate	1.0	mapped		MAR09074	sulfate	MAR09074	sulfate
+w2-media-map-v1 (2026-10-26)	Folate	folate	1.0	mapped		MAR09146	folate	MAR09146	folate
+w2-media-map-v1 (2026-10-26)	Folic Acid	folate	1.0	mapped		MAR09146	folate	MAR09146	folate
+w2-media-map-v1 (2026-10-26)	Formate	formate	1.0	mapped		MAR09318	formate	MAR09318	formate
+w2-media-map-v1 (2026-10-26)	Fructose	fructose	1.0	mapped		MAR09139	fructose	MAR09139	fructose
+w2-media-map-v1 (2026-10-26)	Galactose	galactose	1.0	mapped		MAR09140	galactose	MAR09140	galactose
+w2-media-map-v1 (2026-10-26)	Glucose	glucose	1.0	mapped		MAR09034	glucose	MAR09034	glucose
+w2-media-map-v1 (2026-10-26)	Glutamate	glutamate	1.0	mapped		MAR09071	glutamate	MAR09071	glutamate
+w2-media-map-v1 (2026-10-26)	Glutamine	glutamine	1.0	mapped		MAR09063	glutamine	MAR09063	glutamine
+w2-media-map-v1 (2026-10-26)	Glutathione	GSH	1.0	mapped		MAR09351	GSH	MAR09351	GSH
+w2-media-map-v1 (2026-10-26)	Glutathione (reduced)	GSH	1.0	mapped		MAR09351	GSH	MAR09351	GSH
+w2-media-map-v1 (2026-10-26)	Glycerol	glycerol	1.0	mapped		MAR09085	glycerol	MAR09085	glycerol
+w2-media-map-v1 (2026-10-26)	Glycine	glycine	1.0	mapped		MAR09067	glycine	MAR09067	glycine
+w2-media-map-v1 (2026-10-26)	HEPES	<buffer>		non_nutrient	buffer: not a nutrient				
+w2-media-map-v1 (2026-10-26)	Histidine	histidine	1.0	mapped		MAR09038	histidine	MAR09038	histidine
+w2-media-map-v1 (2026-10-26)	Hypoxanthine	hypoxanthine	1.0	mapped		MAR09358	hypoxanthine	MAR09358	hypoxanthine
+w2-media-map-v1 (2026-10-26)	Hypoxanthine Na	hypoxanthine	1.0	mapped		MAR09358	hypoxanthine	MAR09358	hypoxanthine
+w2-media-map-v1 (2026-10-26)	Hypoxanthine Na	Na+	1.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	Isoleucine	isoleucine	1.0	mapped		MAR09039	isoleucine	MAR09039	isoleucine
+w2-media-map-v1 (2026-10-26)	KCl	K+	1.0	mapped		MAR09081	K+	MAR09081	K+
+w2-media-map-v1 (2026-10-26)	KCl	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	L-Acetyl glycine	acetylglycine	1.0	mapped		MAR10196	Acetyl-Glycine	MAR10196	Acetyl-Glycine
+w2-media-map-v1 (2026-10-26)	L-Alanine	alanine	1.0	mapped		MAR09061	alanine	MAR09061	alanine
+w2-media-map-v1 (2026-10-26)	L-Arginine	arginine	1.0	mapped		MAR09066	arginine	MAR09066	arginine
+w2-media-map-v1 (2026-10-26)	L-Arginine hydrochloride	arginine	1.0	mapped		MAR09066	arginine	MAR09066	arginine
+w2-media-map-v1 (2026-10-26)	L-Arginine hydrochloride	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	L-Asparagine	asparagine	1.0	mapped		MAR09062	asparagine	MAR09062	asparagine
+w2-media-map-v1 (2026-10-26)	L-Asparagine (freebase)	asparagine	1.0	mapped		MAR09062	asparagine	MAR09062	asparagine
+w2-media-map-v1 (2026-10-26)	L-Asparagine-H2O	asparagine	1.0	mapped		MAR09062	asparagine	MAR09062	asparagine
+w2-media-map-v1 (2026-10-26)	L-Aspartic acid	aspartate	1.0	mapped		MAR09070	aspartate	MAR09070	aspartate
+w2-media-map-v1 (2026-10-26)	L-Carnosine	carnosine	1.0	mapped		MAR08644	carnosine	MAR08644	carnosine
+w2-media-map-v1 (2026-10-26)	L-Citrulline	citrulline	1.0	mapped		MAR09201	citrulline	MAR09201	citrulline
+w2-media-map-v1 (2026-10-26)	L-Cysteine	cysteine	1.0	mapped		MAR09065	cysteine	MAR09065	cysteine
+w2-media-map-v1 (2026-10-26)	L-Cysteine hydrochloride-H2O	cysteine	1.0	mapped		MAR09065	cysteine	MAR09065	cysteine
+w2-media-map-v1 (2026-10-26)	L-Cysteine hydrochloride-H2O	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	L-Cystine	cystine	1.0	mapped		MAR09363	cystine	MAR09363	cystine
+w2-media-map-v1 (2026-10-26)	L-Cystine 2HCl	cystine	1.0	mapped		MAR09363	cystine	MAR09363	cystine
+w2-media-map-v1 (2026-10-26)	L-Cystine 2HCl	chloride	2.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	L-Glutamate	glutamate	1.0	mapped		MAR09071	glutamate	MAR09071	glutamate
+w2-media-map-v1 (2026-10-26)	L-Glutamic Acid	glutamate	1.0	mapped		MAR09071	glutamate	MAR09071	glutamate
+w2-media-map-v1 (2026-10-26)	L-Glutamine	glutamine	1.0	mapped		MAR09063	glutamine	MAR09063	glutamine
+w2-media-map-v1 (2026-10-26)	L-Histidine	histidine	1.0	mapped		MAR09038	histidine	MAR09038	histidine
+w2-media-map-v1 (2026-10-26)	L-Histidine hydrochloride-H2O	histidine	1.0	mapped		MAR09038	histidine	MAR09038	histidine
+w2-media-map-v1 (2026-10-26)	L-Histidine hydrochloride-H2O	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	L-Homocysteine	homocysteine	1.0	mapped		MAR09853	homocysteine	MAR09853	homocysteine
+w2-media-map-v1 (2026-10-26)	L-Hydroxyproline	hydroxyproline	1.0	mapped	L-hydroxyproline / 4-hydroxy-L-proline -> trans-4-hydroxy-L-proline	MAR08386	trans-4-hydroxy-L-proline	MAR08386	trans-4-hydroxy-L-proline
+w2-media-map-v1 (2026-10-26)	L-Isoleucine	isoleucine	1.0	mapped		MAR09039	isoleucine	MAR09039	isoleucine
+w2-media-map-v1 (2026-10-26)	L-Leucine	leucine	1.0	mapped		MAR09040	leucine	MAR09040	leucine
+w2-media-map-v1 (2026-10-26)	L-Lysine	lysine	1.0	mapped		MAR09041	lysine	MAR09041	lysine
+w2-media-map-v1 (2026-10-26)	L-Lysine hydrochloride	lysine	1.0	mapped		MAR09041	lysine	MAR09041	lysine
+w2-media-map-v1 (2026-10-26)	L-Lysine hydrochloride	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	L-Methionine	methionine	1.0	mapped		MAR09042	methionine	MAR09042	methionine
+w2-media-map-v1 (2026-10-26)	L-Ornitine	ornithine	1.0	mapped		MAR09087	ornithine	MAR09087	ornithine
+w2-media-map-v1 (2026-10-26)	L-Phenylalanine	phenylalanine	1.0	mapped		MAR09043	phenylalanine	MAR09043	phenylalanine
+w2-media-map-v1 (2026-10-26)	L-Proline	proline	1.0	mapped		MAR09068	proline	MAR09068	proline
+w2-media-map-v1 (2026-10-26)	L-Pyroglutamate	5-oxoproline	1.0	mapped	pyroglutamate = 5-oxoproline	MAR09025	5-oxoproline	MAR09025	5-oxoproline
+w2-media-map-v1 (2026-10-26)	L-Serine	serine	1.0	mapped		MAR09069	serine	MAR09069	serine
+w2-media-map-v1 (2026-10-26)	L-Threonine	threonine	1.0	mapped		MAR09044	threonine	MAR09044	threonine
+w2-media-map-v1 (2026-10-26)	L-Tryptophan	tryptophan	1.0	mapped		MAR09045	tryptophan	MAR09045	tryptophan
+w2-media-map-v1 (2026-10-26)	L-Tyrosine	tyrosine	1.0	mapped		MAR09064	tyrosine	MAR09064	tyrosine
+w2-media-map-v1 (2026-10-26)	L-Tyrosine disodium salt	tyrosine	1.0	mapped		MAR09064	tyrosine	MAR09064	tyrosine
+w2-media-map-v1 (2026-10-26)	L-Tyrosine disodium salt	Na+	2.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	L-Tyrosine disodium salt dihydrate	tyrosine	1.0	mapped		MAR09064	tyrosine	MAR09064	tyrosine
+w2-media-map-v1 (2026-10-26)	L-Tyrosine disodium salt dihydrate	Na+	2.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	L-Valine	valine	1.0	mapped		MAR09046	valine	MAR09046	valine
+w2-media-map-v1 (2026-10-26)	Lactate	lactate	1.0	mapped	lactate -> L-lactate	MAR09135	L-lactate	MAR09135	L-lactate
+w2-media-map-v1 (2026-10-26)	Leucine	leucine	1.0	mapped		MAR09040	leucine	MAR09040	leucine
+w2-media-map-v1 (2026-10-26)	Linoleic Acid	linoleate	1.0	mapped		MAR09035	linoleate	MAR09035	linoleate
+w2-media-map-v1 (2026-10-26)	Lipoic Acid	lipoate	1.0	mapped		MAR09167	lipoic acid	MAR09167	lipoic acid
+w2-media-map-v1 (2026-10-26)	Lysine	lysine	1.0	mapped		MAR09041	lysine	MAR09041	lysine
+w2-media-map-v1 (2026-10-26)	Magnesium Chloride (anhydrous)	Mg2+	1.0	mapped		MAR13072	Mg2+	MAR13072	Mg2+
+w2-media-map-v1 (2026-10-26)	Magnesium Chloride (anhydrous)	chloride	2.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Magnesium Sulfate	Mg2+	1.0	mapped		MAR13072	Mg2+	MAR13072	Mg2+
+w2-media-map-v1 (2026-10-26)	Magnesium Sulfate	sulfate	1.0	mapped		MAR09074	sulfate	MAR09074	sulfate
+w2-media-map-v1 (2026-10-26)	Magnesium Sulfate (MgSO4) (anhyd.)	Mg2+	1.0	mapped		MAR13072	Mg2+	MAR13072	Mg2+
+w2-media-map-v1 (2026-10-26)	Magnesium Sulfate (MgSO4) (anhyd.)	sulfate	1.0	mapped		MAR09074	sulfate	MAR09074	sulfate
+w2-media-map-v1 (2026-10-26)	Malonate	malonate	1.0	mapped		MAR09164	malonate	MAR09164	malonate
+w2-media-map-v1 (2026-10-26)	Manganous Chloride	Mn2+	1.0	no_exchange	no manganese exchange in either parent				
+w2-media-map-v1 (2026-10-26)	Manganous Chloride	chloride	2.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Methionine	methionine	1.0	mapped		MAR09042	methionine	MAR09042	methionine
+w2-media-map-v1 (2026-10-26)	Methyl acetoacetate	methyl acetoacetate	1.0	no_exchange	no exchange in either parent				
+w2-media-map-v1 (2026-10-26)	MgCl2	Mg2+	1.0	mapped		MAR13072	Mg2+	MAR13072	Mg2+
+w2-media-map-v1 (2026-10-26)	MgCl2	chloride	2.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	MgSO4	Mg2+	1.0	mapped		MAR13072	Mg2+	MAR13072	Mg2+
+w2-media-map-v1 (2026-10-26)	MgSO4	sulfate	1.0	mapped		MAR09074	sulfate	MAR09074	sulfate
+w2-media-map-v1 (2026-10-26)	N-Trimethylglycine (betaine)	betaine	1.0	mapped		MAR09341	betaine	MAR09341	betaine
+w2-media-map-v1 (2026-10-26)	NH4Cl	NH4+	1.0	mapped	ammonium -> NH3 exchange (the parents carry ammonia as NH3)	MAR09073	NH3	MAR09073	NH3
+w2-media-map-v1 (2026-10-26)	NH4Cl	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Na2HPO4	Na+	2.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	Na2HPO4	Pi	1.0	mapped	phosphate salts -> Pi	MAR09072	Pi	MAR09072	Pi
+w2-media-map-v1 (2026-10-26)	NaCl	Na+	1.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	NaCl	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	NaHCO3	Na+	1.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	NaHCO3	HCO3-	1.0	mapped		MAR09078	HCO3-	MAR09078	HCO3-
+w2-media-map-v1 (2026-10-26)	Niacinamide	nicotinamide	1.0	mapped		MAR09378	nicotinamide	MAR09378	nicotinamide
+w2-media-map-v1 (2026-10-26)	Ornithine	ornithine	1.0	mapped		MAR09087	ornithine	MAR09087	ornithine
+w2-media-map-v1 (2026-10-26)	Pantothenate	pantothenate	1.0	mapped		MAR09145	pantothenate	MAR09145	pantothenate
+w2-media-map-v1 (2026-10-26)	Para-Aminobenzoic Acid	4-aminobenzoate	1.0	no_exchange	no 4-aminobenzoate exchange in either parent				
+w2-media-map-v1 (2026-10-26)	Phenol Red	<dye>		non_nutrient	dye: not a nutrient				
+w2-media-map-v1 (2026-10-26)	Phenol red	<dye>		non_nutrient	dye: not a nutrient				
+w2-media-map-v1 (2026-10-26)	Phenylalanine	phenylalanine	1.0	mapped		MAR09043	phenylalanine	MAR09043	phenylalanine
+w2-media-map-v1 (2026-10-26)	Potassium Chloride	K+	1.0	mapped		MAR09081	K+	MAR09081	K+
+w2-media-map-v1 (2026-10-26)	Potassium Chloride	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Potassium Chloride (KCl)	K+	1.0	mapped		MAR09081	K+	MAR09081	K+
+w2-media-map-v1 (2026-10-26)	Potassium Chloride (KCl)	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Potassium Nitrate (KNO3)	K+	1.0	mapped		MAR09081	K+	MAR09081	K+
+w2-media-map-v1 (2026-10-26)	Potassium Nitrate (KNO3)	nitrate	1.0	no_exchange	no nitrate exchange in either parent				
+w2-media-map-v1 (2026-10-26)	Proline	proline	1.0	mapped		MAR09068	proline	MAR09068	proline
+w2-media-map-v1 (2026-10-26)	Putrescine 2HCl	putrescine	1.0	mapped		MAR11426	putrescine	MAR11426	putrescine
+w2-media-map-v1 (2026-10-26)	Putrescine 2HCl	chloride	2.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Pyridoxal hydrochloride	pyridoxal	1.0	mapped		MAR09400	pyridoxal	MAR09400	pyridoxal
+w2-media-map-v1 (2026-10-26)	Pyridoxal hydrochloride	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Pyridoxine	pyridoxine	1.0	mapped		MAR09144	pyridoxine	MAR09144	pyridoxine
+w2-media-map-v1 (2026-10-26)	Pyridoxine hydrochloride	pyridoxine	1.0	mapped		MAR09144	pyridoxine	MAR09144	pyridoxine
+w2-media-map-v1 (2026-10-26)	Pyridoxine hydrochloride	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Pyruvate	pyruvate	1.0	mapped		MAR09133	pyruvate	MAR09133	pyruvate
+w2-media-map-v1 (2026-10-26)	Riboflavin	riboflavin	1.0	mapped		MAR09143	riboflavin	MAR09143	riboflavin
+w2-media-map-v1 (2026-10-26)	Serine	serine	1.0	mapped		MAR09069	serine	MAR09069	serine
+w2-media-map-v1 (2026-10-26)	Sodium Bicarbonate	Na+	1.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	Sodium Bicarbonate	HCO3-	1.0	mapped		MAR09078	HCO3-	MAR09078	HCO3-
+w2-media-map-v1 (2026-10-26)	Sodium Bicarbonate (NaHCO3)	Na+	1.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	Sodium Bicarbonate (NaHCO3)	HCO3-	1.0	mapped		MAR09078	HCO3-	MAR09078	HCO3-
+w2-media-map-v1 (2026-10-26)	Sodium Chloride	Na+	1.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	Sodium Chloride	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Sodium Chloride (NaCl)	Na+	1.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	Sodium Chloride (NaCl)	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Sodium Phosphate dibasic (Na2HPO4) anhydrous	Na+	2.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	Sodium Phosphate dibasic (Na2HPO4) anhydrous	Pi	1.0	mapped	phosphate salts -> Pi	MAR09072	Pi	MAR09072	Pi
+w2-media-map-v1 (2026-10-26)	Sodium Phosphate monobasic	Na+	1.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	Sodium Phosphate monobasic	Pi	1.0	mapped	phosphate salts -> Pi	MAR09072	Pi	MAR09072	Pi
+w2-media-map-v1 (2026-10-26)	Sodium Phosphate monobasic (NaH2PO4-H2O)	Na+	1.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	Sodium Phosphate monobasic (NaH2PO4-H2O)	Pi	1.0	mapped	phosphate salts -> Pi	MAR09072	Pi	MAR09072	Pi
+w2-media-map-v1 (2026-10-26)	Sodium Pyruvate	pyruvate	1.0	mapped		MAR09133	pyruvate	MAR09133	pyruvate
+w2-media-map-v1 (2026-10-26)	Sodium Pyruvate	Na+	1.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	Sodium Selenite	Na+	2.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	Sodium Selenite	selenite	1.0	no_exchange	no selenite exchange in either parent (selenate MAR09169 is a different species): representability gap				
+w2-media-map-v1 (2026-10-26)	Sodium Selenite (Na2SeO3-5H20)	Na+	2.0	mapped		MAR09077	Na+	MAR09077	Na+
+w2-media-map-v1 (2026-10-26)	Sodium Selenite (Na2SeO3-5H20)	selenite	1.0	no_exchange	no selenite exchange in either parent (selenate MAR09169 is a different species): representability gap				
+w2-media-map-v1 (2026-10-26)	Succinate	succinate	1.0	mapped		MAR09415	succinate	MAR09415	succinate
+w2-media-map-v1 (2026-10-26)	Taurine	taurine	1.0	mapped		MAR09418	taurine	MAR09418	taurine
+w2-media-map-v1 (2026-10-26)	Thiamine	thiamin	1.0	mapped		MAR09159	thiamin	MAR09159	thiamin
+w2-media-map-v1 (2026-10-26)	Thiamine hydrochloride	thiamin	1.0	mapped		MAR09159	thiamin	MAR09159	thiamin
+w2-media-map-v1 (2026-10-26)	Thiamine hydrochloride	chloride	1.0	mapped		MAR09150	chloride	MAR09150	chloride
+w2-media-map-v1 (2026-10-26)	Threonine	threonine	1.0	mapped		MAR09044	threonine	MAR09044	threonine
+w2-media-map-v1 (2026-10-26)	Thymidine	thymidine	1.0	mapped		MAR09423	thymidine	MAR09423	thymidine
+w2-media-map-v1 (2026-10-26)	Tryptophan	tryptophan	1.0	mapped		MAR09045	tryptophan	MAR09045	tryptophan
+w2-media-map-v1 (2026-10-26)	Tyrosine	tyrosine	1.0	mapped		MAR09064	tyrosine	MAR09064	tyrosine
+w2-media-map-v1 (2026-10-26)	Uracil	uracil	1.0	mapped		MAR09437	uracil	MAR09437	uracil
+w2-media-map-v1 (2026-10-26)	Urate	urate	1.0	mapped		MAR09075	urate	MAR09075	urate
+w2-media-map-v1 (2026-10-26)	Urea	urea	1.0	mapped		MAR09438	urea	MAR09438	urea
+w2-media-map-v1 (2026-10-26)	Uric acid	urate	1.0	mapped		MAR09075	urate	MAR09075	urate
+w2-media-map-v1 (2026-10-26)	Uridine	uridine	1.0	mapped		MAR09439	uridine	MAR09439	uridine
+w2-media-map-v1 (2026-10-26)	Valine	valine	1.0	mapped		MAR09046	valine	MAR09046	valine
+w2-media-map-v1 (2026-10-26)	Vitamin B-12	cobalamin	1.0	mapped	cyanocobalamin (vitamin B12) represented by the parent's only cobalamin exchange, aquacob(III)alamin (as in the GR task)	MAR09269	aquacob(III)alamin	MAR09269	aquacob(III)alamin
+w2-media-map-v1 (2026-10-26)	Vitamin B12	cobalamin	1.0	mapped	cyanocobalamin (vitamin B12) represented by the parent's only cobalamin exchange, aquacob(III)alamin (as in the GR task)	MAR09269	aquacob(III)alamin	MAR09269	aquacob(III)alamin
+w2-media-map-v1 (2026-10-26)	Zinc Sulfate	Zn2+	1.0	mapped		MAR09080	zinc	MAR09080	zinc
+w2-media-map-v1 (2026-10-26)	Zinc Sulfate	sulfate	1.0	mapped		MAR09074	sulfate	MAR09074	sulfate
+w2-media-map-v1 (2026-10-26)	Zinc sulfate (ZnSO4-7H2O)	Zn2+	1.0	mapped		MAR09080	zinc	MAR09080	zinc
+w2-media-map-v1 (2026-10-26)	Zinc sulfate (ZnSO4-7H2O)	sulfate	1.0	mapped		MAR09074	sulfate	MAR09074	sulfate
+w2-media-map-v1 (2026-10-26)	i-Inositol	inositol	1.0	mapped		MAR09361	inositol	MAR09361	inositol
+w2-media-map-v1 (2026-10-26)	myo-Inositol	inositol	1.0	mapped		MAR09361	inositol	MAR09361	inositol
+w2-media-map-v1 (2026-10-26)	p-Aminobenzoate	4-aminobenzoate	1.0	no_exchange	no 4-aminobenzoate exchange in either parent				
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	ATP	1.0	mapped		MAR00569	ATP	MAR00569	ATP
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	H2O	1.0	mapped		MAR09047	H2O	MAR09047	H2O
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	O2	1.0	mapped		MAR09048	O2	MAR09048	O2
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	adenine	1.0	mapped		MAR09253	adenine	MAR09253	adenine
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	alpha-tocopherol	1.0	mapped		MAR09151	alpha-tocopherol	MAR09151	alpha-tocopherol
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	cholesterol	1.0	mapped		MAR09285	cholesterol	MAR09285	cholesterol
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	corticosterone	1.0	mapped		MAR09294	corticosterone	MAR09294	corticosterone
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	cortisol	1.0	mapped		MAR09293	cortisol	MAR09293	cortisol
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	estradiol	1.0	mapped		MAR09314	estradiol-17beta	MAR09314	estradiol-17beta
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	ethanolamine	1.0	mapped		MAR09084	ethanolamine	MAR09084	ethanolamine
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	gamma-tocopherol	1.0	mapped		MAR09153	gamma-tocopherol	MAR09153	gamma-tocopherol
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	linolenate	1.0	mapped		MAR09036	linolenate	MAR09036	linolenate
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	oleate	1.0	mapped		MAR00650	oleate	MAR00650	oleate
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	palmitate	1.0	mapped		MAR00611	palmitate	MAR00611	palmitate
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	phosphoethanolamine	1.0	mapped		MAR09849	ethanolamine-phosphate	MAR09849	ethanolamine-phosphate
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	progesterone	1.0	mapped		MAR09393	progesterone	MAR09393	progesterone
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	retinoate	1.0	mapped		MAR09404	retinoate	MAR09404	retinoate
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	retinol	1.0	mapped		MAR09147	retinol	MAR09147	retinol
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	stearate	1.0	mapped		MAR00639	stearate	MAR00639	stearate
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	testosterone	1.0	mapped		MAR09429	testosterone	MAR09429	testosterone
+w2-media-map-v1 (2026-10-26)	(supplement/serum/floor/background)	triiodothyronine	1.0	mapped		MAR09427	triiodothyronine	MAR09427	triiodothyronine

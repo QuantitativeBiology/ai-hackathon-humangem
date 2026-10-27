@@ -1,0 +1,3 @@
+parent	n_genes	n_equal	max_abs_diff	n_diff_gt_1e6	genes_missing
+human1	2887	2887	0.0	0	0
+human2	2870	2870	0.0	0	0

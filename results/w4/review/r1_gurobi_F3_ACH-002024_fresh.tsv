@@ -1,0 +1,2 @@
+line	family	solver	author_cpu_s	author_n_open	author_n_reopened	author_failed	author_wt	author_n_lethal	author_open_mask_sha	author_ko_sha	author_n_nonoptimal	vs_gurobi_pilot_open_equal	vs_gurobi_pilot_jaccard	vs_gurobi_pilot_ko_n_differ	n_core	n_core_consistent	n_core_cons_missing_from_support	author_unreachable_core	n_support	support_minus_consistent	n_open_final	wall_s
+ACH-002024	F3	gurobi	118.6	6429	91	False	72.330030566635	182	694001df3dc72d1b	5eb5edd3e18911de	0	False	0.98411	121	5875	4784	21	25	6338	0	6429	139

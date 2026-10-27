@@ -1,0 +1,131 @@
+{
+ "mapping_version": "w2-media-map-v1 (2026-10-26)",
+ "cysteine_rule": "documented",
+ "sheet_bases_on_disk": [
+  "DMEM",
+  "DMEM:F12",
+  "IMDM",
+  "RPMI"
+ ],
+ "n_components_by_medium": {
+  "DMEM": 30,
+  "DMEM:F12": 50,
+  "HPLM": 70,
+  "IMDM": 41,
+  "Plasmax": 80,
+  "RPMI": 42
+ },
+ "unmapped_by_medium": {
+  "DMEM": [
+   "nitrate"
+  ],
+  "DMEM:F12": [
+   "<dye>",
+   "nitrate"
+  ],
+  "HPLM": [
+   "4-aminobenzoate",
+   "<dye>",
+   "nitrate"
+  ],
+  "IMDM": [
+   "<buffer>",
+   "nitrate",
+   "selenite"
+  ],
+  "Plasmax": [
+   "<dye>",
+   "Mn2+",
+   "methyl acetoacetate",
+   "nitrate",
+   "selenite",
+   "vanadate"
+  ],
+  "RPMI": [
+   "4-aminobenzoate",
+   "<buffer>",
+   "<dye>",
+   "nitrate"
+  ]
+ },
+ "tier_counts": {
+  "screen": 1225,
+  "imputed": 74,
+  "onboarded": 56,
+  "screen_mixed": 6
+ },
+ "stratum_counts": {
+  "attribution": 835,
+  "fallback_sheet_missing": 210,
+  "unmappable": 201,
+  "imputed": 74,
+  "onboarded_sensitivity": 35,
+  "mixture_on_disk": 6
+ },
+ "attribution_set_n": 835,
+ "attribution_set_by_base": {
+  "sheet:RPMI": 557,
+  "sheet:DMEM": 180,
+  "sheet:DMEM:F12": 60,
+  "sheet:IMDM": 38
+ },
+ "n_distinct_strings": 157,
+ "n_distinct_medium_keys": 20,
+ "n_serum_free_screened": 159,
+ "gate_open_counts": {
+  "True": 1133,
+  "False": 159,
+  "NA": 69
+ },
+ "mf_disagreements": [
+  {
+   "mf_family": "MF-024",
+   "base": "L-15",
+   "n": 1,
+   "family_modal_base": "NSA (proprietary)",
+   "agrees": false
+  },
+  {
+   "mf_family": "MF-031",
+   "base": "Breast Organoid Media",
+   "n": 14,
+   "family_modal_base": "OPAC:Ad+++ (1:1)",
+   "agrees": false
+  },
+  {
+   "mf_family": "MF-031",
+   "base": "Ovarian Organoid Media",
+   "n": 10,
+   "family_modal_base": "OPAC:Ad+++ (1:1)",
+   "agrees": false
+  },
+  {
+   "mf_family": "MF-031",
+   "base": "Prostate Organoid Media:NSA (1:1)",
+   "n": 8,
+   "family_modal_base": "OPAC:Ad+++ (1:1)",
+   "agrees": false
+  },
+  {
+   "mf_family": "MF-031",
+   "base": "HM Prostate Media",
+   "n": 1,
+   "family_modal_base": "OPAC:Ad+++ (1:1)",
+   "agrees": false
+  },
+  {
+   "mf_family": "MF-032",
+   "base": "Tumor Stem Media DIPG",
+   "n": 3,
+   "family_modal_base": "Tumor Stem Media (not TSM DIPG)",
+   "agrees": false
+  },
+  {
+   "mf_family": "MF-051",
+   "base": "Organoid Media Formulation #3",
+   "n": 8,
+   "family_modal_base": "Organoid Media Formulation #1",
+   "agrees": false
+  }
+ ]
+}

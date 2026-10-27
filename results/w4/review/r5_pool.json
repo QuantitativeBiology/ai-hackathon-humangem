@@ -1,0 +1,6 @@
+{
+ "busy_while_child_holds": true,
+ "free_after_sigkill": true,
+ "lock_file_left_behind": true,
+ "caller_with_n6_gets_5th_slot_while_4_held": true
+}

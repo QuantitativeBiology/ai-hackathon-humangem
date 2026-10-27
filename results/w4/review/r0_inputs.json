@@ -1,0 +1,77 @@
+{
+ "own_expr": {
+  "n_model_genes_with_column": 2854,
+  "n_training_lines_with_expr": 714,
+  "n_train_has_expression_flag": 714
+ },
+ "thresholds": {
+  "own_p25": 0.36951563,
+  "author_p25": 0.36951563,
+  "own_p75": 5.227006449999999,
+  "author_p75": 5.227006449999999,
+  "author_n_lines": 714,
+  "max_abs_diff_gene_mean": 0.0,
+  "max_abs_diff_gene_sd": 0.0,
+  "n_genes_mean_author": 2854,
+  "n_genes_mean_own": 2854,
+  "gene_mean_diff_if_all_tiers_used_max": 0.6223112130367467
+ },
+ "protein": {
+  "n_train_lines_procan": 363,
+  "author_n_lines": 363,
+  "own_floor": -5.736011,
+  "author_floor": -5.736011,
+  "own_p25": 2.62568775,
+  "author_p25": 2.62568775,
+  "max_abs_diff_mean_floor": 0.0,
+  "max_abs_diff_sd_floor": 0.0
+ },
+ "panel": {
+  "eligible_training_lineages": [
+   "Biliary Tract",
+   "Bone",
+   "Bowel",
+   "Cervix",
+   "Esophagus/Stomach",
+   "Head and Neck",
+   "Kidney",
+   "Lung",
+   "Myeloid",
+   "Peripheral Nervous System",
+   "Skin",
+   "Uterus"
+  ],
+  "chosen": [
+   "Bowel",
+   "Skin",
+   "Myeloid",
+   "Bone",
+   "Kidney",
+   "Peripheral Nervous System",
+   "Esophagus/Stomach",
+   "Head and Neck",
+   "Uterus",
+   "Cervix"
+  ],
+  "own_equals_author": true,
+  "all_train": true,
+  "all_have_expression": true,
+  "n_procan": 10,
+  "n_cn": 30
+ },
+ "a5": {
+  "grid_points_total": 720,
+  "score_vector_mismatches_own_vs_author": 0,
+  "author_distinct_builds": 400,
+  "distinct_off_sets": 352,
+  "all_refine": true,
+  "procan_lines_with_no_accepted_loss": 0,
+  "rna_lines_with_no_accepted_loss": 0,
+  "smoke_map_rows": 48,
+  "smoke_distinct_builds_by_line": {
+   "ACH-000957": 24,
+   "ACH-002024": 8
+  }
+ },
+ "wall_s": 33.0
+}

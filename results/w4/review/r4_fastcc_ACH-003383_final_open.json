@@ -1,0 +1,11 @@
+{
+ "line": "ACH-003383",
+ "which": "final_open",
+ "n_set": 6587,
+ "n_consistent": 6587,
+ "n_blocked": 0,
+ "blocked_sample": [],
+ "core_blocked": 0,
+ "wall_s": 1559,
+ "cpu_s": 1559
+}

@@ -1,0 +1,509 @@
+{
+ "n_labels": 466,
+ "n_distinct_sweeps": 380,
+ "m0_growth": {
+  "human1": 65.57338319775587,
+  "human2": 74.7567666037905
+ },
+ "m_open_growth": {
+  "human1": 124.86814837744569,
+  "human2": 138.53269864419127
+ },
+ "precheck_fail": [],
+ "floor_mult": [
+  {
+   "parent": "human1",
+   "floor_mult": 10.0,
+   "raised_from": "",
+   "still_binding_cases": 0
+  },
+  {
+   "parent": "human2",
+   "floor_mult": 100.0,
+   "raised_from": 10.0,
+   "still_binding_cases": 20
+  }
+ ],
+ "floor_nonbinding_at_final_mult": false,
+ "floor_binding_cases": [
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12|serum-free",
+   "variant": "M1",
+   "f": NaN,
+   "floor_mult": 10.0,
+   "growth_floor": 74.56357565315372,
+   "growth_floor_open": 74.75676660379051,
+   "rel_diff": 0.002584260387567304,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12|serum-free",
+   "variant": "M2",
+   "f": 0.001,
+   "floor_mult": 10.0,
+   "growth_floor": 74.56357565315388,
+   "growth_floor_open": 74.7567666037908,
+   "rel_diff": 0.002584260387569005,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12|serum-free",
+   "variant": "M2",
+   "f": 0.01,
+   "floor_mult": 10.0,
+   "growth_floor": 74.56357565315358,
+   "growth_floor_open": 74.75676660379078,
+   "rel_diff": 0.0025842603875728073,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12|serum-free",
+   "variant": "M2",
+   "f": 0.1,
+   "floor_mult": 10.0,
+   "growth_floor": 74.56357565315365,
+   "growth_floor_open": 74.75676660379075,
+   "rel_diff": 0.0025842603875714776,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12|serum-free",
+   "variant": "M2",
+   "f": 1.0,
+   "floor_mult": 10.0,
+   "growth_floor": 74.56357565315375,
+   "growth_floor_open": 74.75676660379065,
+   "rel_diff": 0.0025842603875688196,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12",
+   "variant": "M1",
+   "f": NaN,
+   "floor_mult": 10.0,
+   "growth_floor": 74.56357565315415,
+   "growth_floor_open": 74.75676660379074,
+   "rel_diff": 0.0025842603875646346,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12",
+   "variant": "M2",
+   "f": 0.001,
+   "floor_mult": 10.0,
+   "growth_floor": 74.56481644134412,
+   "growth_floor_open": 74.75793572568192,
+   "rel_diff": 0.0025832613282211593,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12",
+   "variant": "M2",
+   "f": 0.01,
+   "floor_mult": 10.0,
+   "growth_floor": 74.5759835350566,
+   "growth_floor_open": 74.76845782270313,
+   "rel_diff": 0.0025742712000686612,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12",
+   "variant": "M2",
+   "f": 0.1,
+   "floor_mult": 10.0,
+   "growth_floor": 74.6529382210563,
+   "growth_floor_open": 74.8393580152959,
+   "rel_diff": 0.00249093256788088,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12",
+   "variant": "M2",
+   "f": 1.0,
+   "floor_mult": 10.0,
+   "growth_floor": 75.28354498603463,
+   "growth_floor_open": 75.38634685494449,
+   "rel_diff": 0.0013636669396869944,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "RPMI+ATP+adenine+hypoxanthine+thymidine",
+   "variant": "M1",
+   "f": NaN,
+   "floor_mult": 10.0,
+   "growth_floor": 92.35365694076322,
+   "growth_floor_open": 94.18675251129753,
+   "rel_diff": 0.019462350295116452,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "RPMI+ATP+adenine+hypoxanthine+thymidine",
+   "variant": "M2",
+   "f": 0.001,
+   "floor_mult": 10.0,
+   "growth_floor": 92.92773774962811,
+   "growth_floor_open": 94.18811361302757,
+   "rel_diff": 0.013381474742956654,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "RPMI+ATP+adenine+hypoxanthine+thymidine",
+   "variant": "M2",
+   "f": 0.01,
+   "floor_mult": 10.0,
+   "growth_floor": 92.93910541685263,
+   "growth_floor_open": 94.20036352859523,
+   "rel_diff": 0.013389100259254749,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "RPMI+ATP+adenine+hypoxanthine+thymidine",
+   "variant": "M2",
+   "f": 0.1,
+   "floor_mult": 10.0,
+   "growth_floor": 93.01981174114535,
+   "growth_floor_open": 94.290132657221,
+   "rel_diff": 0.013472469284710065,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "RPMI+ATP+adenine+hypoxanthine+thymidine",
+   "variant": "M2",
+   "f": 1.0,
+   "floor_mult": 10.0,
+   "growth_floor": 93.7321109945526,
+   "growth_floor_open": 95.09056046072843,
+   "rel_diff": 0.01428584982141161,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "SENS:DMEM:F12-cysteine-closed",
+   "variant": "M1",
+   "f": NaN,
+   "floor_mult": 10.0,
+   "growth_floor": 74.54082378929007,
+   "growth_floor_open": 74.75676660379057,
+   "rel_diff": 0.0028886055980054163,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "SENS:DMEM:F12-cysteine-closed",
+   "variant": "M2",
+   "f": 0.001,
+   "floor_mult": 10.0,
+   "growth_floor": 74.5420627590913,
+   "growth_floor_open": 74.75793572568183,
+   "rel_diff": 0.0028876261027680947,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "SENS:DMEM:F12-cysteine-closed",
+   "variant": "M2",
+   "f": 0.01,
+   "floor_mult": 10.0,
+   "growth_floor": 74.55321348730098,
+   "growth_floor_open": 74.76845782270277,
+   "rel_diff": 0.0028788120240783523,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "SENS:DMEM:F12-cysteine-closed",
+   "variant": "M2",
+   "f": 0.1,
+   "floor_mult": 10.0,
+   "growth_floor": 74.62999831355233,
+   "growth_floor_open": 74.839358015296,
+   "rel_diff": 0.0027974545385714713,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "SENS:DMEM:F12-cysteine-closed",
+   "variant": "M2",
+   "f": 1.0,
+   "floor_mult": 10.0,
+   "growth_floor": 75.25606274597692,
+   "growth_floor_open": 75.38634685494424,
+   "rel_diff": 0.0017282188937740237,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12|serum-free",
+   "variant": "M1",
+   "f": NaN,
+   "floor_mult": 100.0,
+   "growth_floor": 74.56714912396534,
+   "growth_floor_open": 74.75676660379078,
+   "rel_diff": 0.002536459085107466,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12|serum-free",
+   "variant": "M2",
+   "f": 0.001,
+   "floor_mult": 100.0,
+   "growth_floor": 74.56714912396525,
+   "growth_floor_open": 74.75676660379061,
+   "rel_diff": 0.0025364590851063313,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12|serum-free",
+   "variant": "M2",
+   "f": 0.01,
+   "floor_mult": 100.0,
+   "growth_floor": 74.56714912396534,
+   "growth_floor_open": 74.75676660379054,
+   "rel_diff": 0.0025364590851042427,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12|serum-free",
+   "variant": "M2",
+   "f": 0.1,
+   "floor_mult": 100.0,
+   "growth_floor": 74.56714912396534,
+   "growth_floor_open": 74.75676660379058,
+   "rel_diff": 0.0025364590851048112,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12|serum-free",
+   "variant": "M2",
+   "f": 1.0,
+   "floor_mult": 100.0,
+   "growth_floor": 74.56714912396538,
+   "growth_floor_open": 74.75676660379067,
+   "rel_diff": 0.002536459085105379,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12",
+   "variant": "M1",
+   "f": NaN,
+   "floor_mult": 100.0,
+   "growth_floor": 74.5671491239653,
+   "growth_floor_open": 74.75676660379052,
+   "rel_diff": 0.002536459085104623,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12",
+   "variant": "M2",
+   "f": 0.001,
+   "floor_mult": 100.0,
+   "growth_floor": 74.56838991215564,
+   "growth_floor_open": 74.75793572568196,
+   "rel_diff": 0.0025354607733130198,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12",
+   "variant": "M2",
+   "f": 0.01,
+   "floor_mult": 100.0,
+   "growth_floor": 74.5795570058681,
+   "growth_floor_open": 74.76845782270311,
+   "rel_diff": 0.0025264773720885415,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12",
+   "variant": "M2",
+   "f": 0.1,
+   "floor_mult": 100.0,
+   "growth_floor": 74.65651212117598,
+   "growth_floor_open": 74.83935801529579,
+   "rel_diff": 0.002443178281706232,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "DMEM:F12",
+   "variant": "M2",
+   "f": 1.0,
+   "floor_mult": 100.0,
+   "growth_floor": 75.28765765581447,
+   "growth_floor_open": 75.38634685494424,
+   "rel_diff": 0.001309112369109219,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "RPMI+ATP+adenine+hypoxanthine+thymidine",
+   "variant": "M1",
+   "f": NaN,
+   "floor_mult": 100.0,
+   "growth_floor": 92.35779461868913,
+   "growth_floor_open": 94.18675251129767,
+   "rel_diff": 0.01941841972297707,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "RPMI+ATP+adenine+hypoxanthine+thymidine",
+   "variant": "M2",
+   "f": 0.001,
+   "floor_mult": 100.0,
+   "growth_floor": 92.93121082260913,
+   "growth_floor_open": 94.1881136130276,
+   "rel_diff": 0.01334460095020543,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "RPMI+ATP+adenine+hypoxanthine+thymidine",
+   "variant": "M2",
+   "f": 0.01,
+   "floor_mult": 100.0,
+   "growth_floor": 92.94257848983291,
+   "growth_floor_open": 94.20036352859533,
+   "rel_diff": 0.013352231261619383,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "RPMI+ATP+adenine+hypoxanthine+thymidine",
+   "variant": "M2",
+   "f": 0.1,
+   "floor_mult": 100.0,
+   "growth_floor": 93.02328523728241,
+   "growth_floor_open": 94.29013265722091,
+   "rel_diff": 0.013435630900467111,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "RPMI+ATP+adenine+hypoxanthine+thymidine",
+   "variant": "M2",
+   "f": 1.0,
+   "floor_mult": 100.0,
+   "growth_floor": 93.7355954417332,
+   "growth_floor_open": 95.09056046072835,
+   "rel_diff": 0.0142492063610746,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "SENS:DMEM:F12-cysteine-closed",
+   "variant": "M1",
+   "f": NaN,
+   "floor_mult": 100.0,
+   "growth_floor": 74.54439067317804,
+   "growth_floor_open": 74.75676660379077,
+   "rel_diff": 0.0028408924069483962,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "SENS:DMEM:F12-cysteine-closed",
+   "variant": "M2",
+   "f": 0.001,
+   "floor_mult": 100.0,
+   "growth_floor": 74.54562964297895,
+   "growth_floor_open": 74.75793572568212,
+   "rel_diff": 0.0028399136578918416,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "SENS:DMEM:F12-cysteine-closed",
+   "variant": "M2",
+   "f": 0.01,
+   "floor_mult": 100.0,
+   "growth_floor": 74.55678037118886,
+   "growth_floor_open": 74.7684578227029,
+   "rel_diff": 0.0028311062937259168,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "SENS:DMEM:F12-cysteine-closed",
+   "variant": "M2",
+   "f": 0.1,
+   "floor_mult": 100.0,
+   "growth_floor": 74.63356562599982,
+   "growth_floor_open": 74.83935801529562,
+   "rel_diff": 0.002749788276560774,
+   "nonbinding": false
+  },
+  {
+   "parent": "human2",
+   "medium_key": "SENS:DMEM:F12-cysteine-closed",
+   "variant": "M2",
+   "f": 1.0,
+   "floor_mult": 100.0,
+   "growth_floor": 75.2601620500308,
+   "growth_floor_open": 75.38634685494448,
+   "rel_diff": 0.0016738416195770478,
+   "nonbinding": false
+  }
+ ],
+ "req_nonzero_all": true,
+ "calibration": [
+  {
+   "parent": "human1",
+   "f": 0.01,
+   "n_grid": 72,
+   "n_in_window": 16,
+   "min_growth": 0.012333841772054103,
+   "max_growth": 3.9265217443777627,
+   "verdict": "M3 UNCALIBRATED: data/media/calibration.tsv (literature-anchored glucose, glutamine and O2 rates with citations, DESIGN W2) does not exist; M3 is excluded from selection until it is fixed. The grid shows which rate combinations would place WT growth in 0.01-0.06 h^-1."
+  },
+  {
+   "parent": "human1",
+   "f": 1.0,
+   "n_grid": 72,
+   "n_in_window": 16,
+   "min_growth": 0.012333841763808712,
+   "max_growth": 4.074837242839728,
+   "verdict": "M3 UNCALIBRATED: data/media/calibration.tsv (literature-anchored glucose, glutamine and O2 rates with citations, DESIGN W2) does not exist; M3 is excluded from selection until it is fixed. The grid shows which rate combinations would place WT growth in 0.01-0.06 h^-1."
+  },
+  {
+   "parent": "human2",
+   "f": 0.01,
+   "n_grid": 72,
+   "n_in_window": 16,
+   "min_growth": 0.01229577053168334,
+   "max_growth": 16.49845239697847,
+   "verdict": "M3 UNCALIBRATED: data/media/calibration.tsv (literature-anchored glucose, glutamine and O2 rates with citations, DESIGN W2) does not exist; M3 is excluded from selection until it is fixed. The grid shows which rate combinations would place WT growth in 0.01-0.06 h^-1."
+  },
+  {
+   "parent": "human2",
+   "f": 1.0,
+   "n_grid": 72,
+   "n_in_window": 16,
+   "min_growth": 0.01229577053028684,
+   "max_growth": 17.363755023365545,
+   "verdict": "M3 UNCALIBRATED: data/media/calibration.tsv (literature-anchored glucose, glutamine and O2 rates with citations, DESIGN W2) does not exist; M3 is excluded from selection until it is fixed. The grid shows which rate combinations would place WT growth in 0.01-0.06 h^-1."
+  }
+ ]
+}

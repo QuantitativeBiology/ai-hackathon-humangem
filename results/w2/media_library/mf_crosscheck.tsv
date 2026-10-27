@@ -1,0 +1,42 @@
+mf_family	base	n	family_modal_base	agrees
+MF-001	RPMI	582	RPMI	True
+MF-002	DMEM	185	DMEM	True
+MF-003	AlphaMEM	15	AlphaMEM	True
+MF-004	F12	46	F12	True
+MF-005	IMDM	39	IMDM	True
+MF-006	MEM	70	MEM	True
+MF-007	DMEM:F12	64	DMEM:F12	True
+MF-008	DMEM:KSFM (2:1)	6	DMEM:KSFM (2:1)	True
+MF-009	DMEM:RPMI (1:1)	2	DMEM:RPMI (1:1)	True
+MF-010	DMEM:RPMI (1:3)	1	DMEM:RPMI (1:3)	True
+MF-011	RPMI:F12 (1:1)	5	RPMI:F12 (1:1)	True
+MF-012	IMDM:RPMI (4:1)	3	IMDM:RPMI (4:1)	True
+MF-014	BME	1	BME	True
+MF-015	EMEM	45	EMEM	True
+MF-017	MEBM	1	MEBM	True
+MF-018	SMGM	2	SMGM	True
+MF-019	Stemline Keratinocyte Medium II	3	Stemline Keratinocyte Medium II	True
+MF-020	Waymouth's MB 752_1	4	Waymouth's MB 752_1	True
+MF-021	L-15	15	L-15	True
+MF-022	William's E medium	5	William's E medium	True
+MF-023	McCoy's 5A	21	McCoy's 5A	True
+MF-024	L-15	1	NSA (proprietary)	False
+MF-024	NSA (proprietary)	1	NSA (proprietary)	True
+MF-027	EMEM:F12	3	EMEM:F12	True
+MF-028	F-12K	1	F-12K	True
+MF-031	OPAC:Ad+++ (1:1)	52	OPAC:Ad+++ (1:1)	True
+MF-031	Breast Organoid Media	14	OPAC:Ad+++ (1:1)	False
+MF-031	Ovarian Organoid Media	10	OPAC:Ad+++ (1:1)	False
+MF-031	Prostate Organoid Media:NSA (1:1)	8	OPAC:Ad+++ (1:1)	False
+MF-031	HM Prostate Media	1	OPAC:Ad+++ (1:1)	False
+MF-032	Tumor Stem Media (not TSM DIPG)	38	Tumor Stem Media (not TSM DIPG)	True
+MF-032	Tumor Stem Media DIPG	3	Tumor Stem Media (not TSM DIPG)	False
+MF-035	OCMI-L	2	OCMI-L	True
+MF-036	Opti-MEM	1	Opti-MEM	True
+MF-038	RPMI:EMEM (3:2)	1	RPMI:EMEM (3:2)	True
+MF-041	RPMI:EMEM (1:1)	3	RPMI:EMEM (1:1)	True
+MF-044	MCDB 105:Medium 199 (1:1)	2	MCDB 105:Medium 199 (1:1)	True
+MF-051	Organoid Media Formulation #1	15	Organoid Media Formulation #1	True
+MF-051	Organoid Media Formulation #3	8	Organoid Media Formulation #1	False
+MF-062	K-SFM	1	K-SFM	True
+MF-064	CellGro	1	CellGro	True

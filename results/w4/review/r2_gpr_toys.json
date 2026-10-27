@@ -1,0 +1,244 @@
+{
+ "random_gprs": {
+  "n": 5000,
+  "author_vs_own_mismatch": 0,
+  "sign_rule_violations": 0
+ },
+ "closure_presence": {
+  "got": {
+   "gI1": [
+    "Riso"
+   ],
+   "gB": [
+    "Rnest"
+   ],
+   "gA": [
+    "Rnest"
+   ],
+   "gX": [
+    "Rcplx"
+   ],
+   "gY": [
+    "Rcplx"
+   ],
+   "gZ": [
+    "Rbyp"
+   ],
+   "gU": [
+    "Runk"
+   ],
+   "gW": [
+    "Runk"
+   ]
+  },
+  "expected": {
+   "gI1": [
+    "Riso"
+   ],
+   "gA": [
+    "Rnest"
+   ],
+   "gB": [
+    "Rnest"
+   ],
+   "gX": [
+    "Rcplx"
+   ],
+   "gY": [
+    "Rcplx"
+   ],
+   "gZ": [
+    "Rbyp"
+   ],
+   "gU": [
+    "Runk"
+   ],
+   "gW": [
+    "Runk"
+   ]
+  },
+  "pass": true
+ },
+ "ko_presence": {
+  "author": {
+   "gA": 0.0,
+   "gB": 0.0,
+   "gC": 1.0,
+   "gD": 1.0,
+   "gI1": 0.0,
+   "gI2": 1.0,
+   "gU": 0.0,
+   "gV": 1.0,
+   "gW": 0.0,
+   "gX": 1.0,
+   "gY": 1.0,
+   "gZ": 1.0
+  },
+  "own_bruteforce": {
+   "gI1": 0.0,
+   "gI2": 1.0,
+   "gC": 1.0,
+   "gB": 0.0,
+   "gD": 1.0,
+   "gA": 0.0,
+   "gX": 1.0,
+   "gY": 1.0,
+   "gZ": 1.0,
+   "gV": 1.0,
+   "gU": 0.0,
+   "gW": 0.0
+  },
+  "equal": true,
+  "off_isozyme_does_not_buffer": true,
+  "generic_parent_buffers": "True"
+ },
+ "f0": {
+  "closed": [
+   "Rcplx"
+  ],
+  "expected_closed": [
+   "Rcplx"
+  ]
+ },
+ "eflux": {
+  "lin": {
+   "gA": 2.0,
+   "gB": 2.8284271247461903,
+   "gC": 0.0,
+   "gD": 8.0,
+   "gI1": 4.0,
+   "gI2": 0.0,
+   "gU": 2.0,
+   "gV": 0.0,
+   "gX": 2.0,
+   "gY": 0.0,
+   "gZ": 2.0
+  },
+  "cap_max": 4.0,
+  "bounds": {
+   "Rnest": [
+    0,
+    500.0
+   ],
+   "Runk": [
+    -500.0,
+    500.0
+   ],
+   "Riso": [
+    0,
+    1000
+   ],
+   "Rcplx": [
+    0,
+    10.0
+   ],
+   "Rbyp": [
+    0,
+    500.0
+   ]
+  },
+  "closures": {
+   "gX": [
+    "Rcplx"
+   ],
+   "gY": [
+    "Rcplx"
+   ],
+   "gZ": [
+    "Rbyp"
+   ],
+   "gU": [
+    "Runk"
+   ]
+  },
+  "rebound": {
+   "gI1": {
+    "Riso": [
+     0,
+     10.0
+    ]
+   },
+   "gB": {
+    "Rnest": [
+     0,
+     10.0
+    ]
+   },
+   "gA": {
+    "Rnest": [
+     0,
+     10.0
+    ]
+   }
+  },
+  "expected_bounds": {
+   "Riso": [
+    0,
+    1000.0
+   ],
+   "Rnest": [
+    0,
+    500.0
+   ],
+   "Rcplx": [
+    0,
+    10.0
+   ],
+   "Rbyp": [
+    0,
+    500.0
+   ],
+   "Runk": [
+    -500.0,
+    500.0
+   ]
+  },
+  "bounds_pass": true,
+  "ko_gI1_rebound_floor": true,
+  "ko_gZ_closes": true,
+  "ko_author": {
+   "gA": 1.0,
+   "gB": 1.0,
+   "gC": 1.0,
+   "gD": 1.0,
+   "gI1": 1.0,
+   "gI2": 1.0,
+   "gU": 0.0,
+   "gV": 1.0,
+   "gW": 1.0,
+   "gX": 1.0,
+   "gY": 1.0,
+   "gZ": 1.0
+  },
+  "ko_equal_own": true
+ },
+ "genomic": {
+  "closures": {
+   "gI1": [
+    "Riso"
+   ],
+   "gB": [
+    "Rnest"
+   ],
+   "gA": [
+    "Rnest"
+   ],
+   "gX": [
+    "Rcplx"
+   ],
+   "gY": [
+    "Rcplx"
+   ],
+   "gZ": [
+    "Rbyp"
+   ],
+   "gU": [
+    "Runk"
+   ],
+   "gW": [
+    "Runk"
+   ]
+  },
+  "gY_ko_closes_reopened_complex": true
+ }
+}

@@ -32,3 +32,7 @@ Every viewing of DepMap label *values* (or label-derived summaries) by any agent
 - 2026-10-26, PI: read the W1 summary (training-tier aggregates only).
 - 2026-10-26, M2 W1 reviewer (notes/reviews/M2_W1_review.md): recomputed and viewed training-tier aggregates via labels.train()/fold() only (lineage-equal tAP for H1/H2/B2, per-lineage sign of H2−H1, P57×L-ge06 MCC, CE_fit size, positive-pair count, fraction outside the addressable set); read W1 training outputs. No gene × line values; no validation/test labels or summaries; raw probe blocked. Label-free dry run of evaluate_val.py on validation line IDs printed no metric values.
 - 2026-10-26, PI: read the M2 W1 review (training-tier aggregates only).
+- 2026-10-27, PI: ran the single W1 validation look (scalars only: G* = Human1, Δ̄_lin(H2−H1) and CI, validation tAP and MCC summaries). The validation-look outputs are committed (09b69a2); any agent reading results/w1/val_look_* sees validation-tier aggregates.
+- 2026-10-27, M3 W4 reviewer: label-free review; incidentally opened results/w1/val_look_W1_M2_baseline_gstar.json (committed validation aggregates; not used in any check).
+- 2026-10-27, W2 engineer: read FROZEN.tsv (label.primary κ = 0.934, a label-agreement aggregate from M1). Otherwise label-free.
+- 2026-10-27, M2 process reviewer: process documents only, including the committed training and validation aggregates in RESEARCH_TREE.md.

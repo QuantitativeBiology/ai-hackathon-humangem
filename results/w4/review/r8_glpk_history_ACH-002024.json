@@ -1,0 +1,16 @@
+{
+ "line": "ACH-002024",
+ "n_reopened": [
+  35,
+  35
+ ],
+ "wt": [
+  46.744893442129055,
+  46.744893442129026
+ ],
+ "reopened_equal_1_2": true,
+ "symdiff_1_2": 0,
+ "ko_n_differ_1_2": 0,
+ "lethal_differ_1_2": 0,
+ "ko_max_abs_diff_1_2": 0.0
+}

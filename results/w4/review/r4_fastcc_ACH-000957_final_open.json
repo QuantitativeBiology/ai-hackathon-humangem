@@ -1,0 +1,11 @@
+{
+ "line": "ACH-000957",
+ "which": "final_open",
+ "n_set": 6721,
+ "n_consistent": 6721,
+ "n_blocked": 0,
+ "blocked_sample": [],
+ "core_blocked": 0,
+ "wall_s": 1795,
+ "cpu_s": 1794
+}
