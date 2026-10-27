@@ -74,7 +74,11 @@ Next (M3): Stage A of the context-model families on the 30-line training panel, 
   - [x] 6.1b GPRTransform (Machado 2016; user suggestion) assessed label-free (notes/methods/GPRTransform_assessment.md, ≈1.7 CPU-h). The gene-level KO is exactly equal to the Boolean KO on both parents. The paper's isozyme encoding inflates capacity (Human2 WT +25%). It has no regulatory network: "regulation" means only expression bounds on gene usage. The repo has no license, so the method was reimplemented.
     - [-] Gene-level E-Flux as family F6: no extra distinct KO values on the pilot → not adopted.
     - [ ] Gene-pFBA KO-cost tie-break: exploratory secondary score only (A8, ≈3.5 CPU-h), compared with B8 on training.
-  - [~] 6.2 Independent review of the W4 code → then Stage A (A1–A5, A7; ≈60 CPU-h).
+  - [x] 6.2 W4 code review (GO after B1–B3 fixes). Stage A run from a pinned worktree at c280413: 1,380 builds plus 600 re-sweeps, 0 failures, 108.7 CPU-h, 6.2 h wall.
+  - [-] 6.3 **Stage A training scoring** (75c0805; review notes/reviews/M3_W4_stageA_review.md, independently recomputed). **No family passes the training gate vs G\* = H1.** Nested LOLO Δ̄: F0 −0.0080, F2 −0.0067, F3 −0.0102, F4 −0.0029 (gate-failed; GR scale artefact), F5 −0.0114, CORDA −0.0127 (10 lines, descriptive). Vs H2 nothing reaches +0.005 (best F4 +0.0038). F2 R1 is carried to M6 flagged "fails TG".
+    - [!] Less pruning is always better (R1 > R2 > R3); the genomic constraint changes ≤ 0.0002.
+    - [!] H4.1: method explains more variance than tissue (KO R² 0.199 vs 0.085). F0/F2/F3 carry tissue signal beyond the permuted control; F4 is method-dominated by construction.
+    - Interpretation: expression-driven pruning removes the generic model's correct calls faster than it adds line-specific ones. The remaining levers are medium/tasks/GPR (W2/W3/W5) and W7 hybrids with gene priors.
 - [ ] 7. GPR curation (proteomics, paralogs); curation vs constraint contribution
 - [ ] 8. Flux-state information content (subtypes, drug screens, metabolomics)
 - [~] 9. Resource: SBML models per DepMap 26Q3 line
