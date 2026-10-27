@@ -1,0 +1,270 @@
+{
+ "formulation": {
+  "floor": 10.0,
+  "scale": 1000.0,
+  "lin": "2**s_g (s_g>=0) else 0; R1 RNA",
+  "encoding": "arm",
+  "solver": "glpk",
+  "parent": "human2",
+  "medium": "M0"
+ },
+ "inputs_wall_s": 28.060237646102905,
+ "wall_s": 396.3297863006592,
+ "lines": {
+  "ACH-000957": {
+   "line": "ACH-000957",
+   "wt_growth": 0.9895012985169658,
+   "cap_max": 21418.99249722779,
+   "n_genes_bounded": 2854,
+   "n_genes_floor": 2800,
+   "total_usage_wt": 765.4754712976305,
+   "n_genes_used_wt": 428,
+   "n_usage_at_bound_wt": 38,
+   "n_ko_solved": 428,
+   "load_transform_cpu_s": 25.920928227999998,
+   "wt_cpu_s": 26.979874635999998,
+   "pfba_cpu_s": 3.0059743810000015,
+   "sweep_cpu_s": 298.805991577,
+   "line_cpu_s": 328.791840594,
+   "gene_eflux": {
+    "n": 2870,
+    "distinct": 29,
+    "lethal_lt_0.01": 154,
+    "partial_0.01_1": 89,
+    "eq_1": 2627,
+    "quantiles_partial": [
+     0.6667,
+     0.8333,
+     0.9437,
+     0.9998,
+     1.0
+    ],
+    "largest_tie_group": 2627
+   },
+   "reaction_F4": {
+    "n": 2870,
+    "distinct": 31,
+    "lethal_lt_0.01": 154,
+    "partial_0.01_1": 87,
+    "eq_1": 2629,
+    "quantiles_partial": [
+     0.6592,
+     0.8327,
+     0.8327,
+     0.995,
+     1.0
+    ],
+    "largest_tie_group": 2629
+   },
+   "generic": {
+    "n": 2870,
+    "distinct": 32,
+    "lethal_lt_0.01": 154,
+    "partial_0.01_1": 91,
+    "eq_1": 2625,
+    "quantiles_partial": [
+     0.625,
+     0.7827,
+     0.875,
+     0.9988,
+     1.0
+    ],
+    "largest_tie_group": 2625
+   },
+   "n_genes_score_differs_vs_F4": 88,
+   "lethal_only_gene_level": 0,
+   "lethal_only_F4": 0,
+   "spearman_vs_F4": 0.9643485208584383,
+   "isozyme_genes_in_model": 2206,
+   "isozyme_genes_score_differs_vs_F4": 36,
+   "isozyme_genes_partial_here_but_1_in_F4": 7,
+   "examples_isozyme_partial_here_but_1_in_F4": [
+    "PKM",
+    "CRISP3",
+    "PGK2",
+    "PGM1",
+    "SLC29A1",
+    "DECR1",
+    "MECR"
+   ],
+   "isozyme_genes_lower_here": 10,
+   "isozyme_genes_higher_here": 26,
+   "status_counts": {
+    "zero_usage": 2442,
+    "optimal": 428
+   }
+  },
+  "ACH-002024": {
+   "line": "ACH-002024",
+   "wt_growth": 1.0794829995919288,
+   "cap_max": 17964.908912380324,
+   "n_genes_bounded": 2854,
+   "n_genes_floor": 2779,
+   "total_usage_wt": 813.2603270137922,
+   "n_genes_used_wt": 429,
+   "n_usage_at_bound_wt": 38,
+   "n_ko_solved": 429,
+   "load_transform_cpu_s": 26.505205948,
+   "wt_cpu_s": 26.821638208000003,
+   "pfba_cpu_s": 3.2695180079999986,
+   "sweep_cpu_s": 285.768085334,
+   "line_cpu_s": 315.85924155,
+   "gene_eflux": {
+    "n": 2870,
+    "distinct": 32,
+    "lethal_lt_0.01": 154,
+    "partial_0.01_1": 94,
+    "eq_1": 2622,
+    "quantiles_partial": [
+     0.6111,
+     0.8472,
+     0.922,
+     0.9998,
+     1.0
+    ],
+    "largest_tie_group": 2622
+   },
+   "reaction_F4": {
+    "n": 2870,
+    "distinct": 33,
+    "lethal_lt_0.01": 154,
+    "partial_0.01_1": 87,
+    "eq_1": 2629,
+    "quantiles_partial": [
+     0.6914,
+     0.8617,
+     0.8617,
+     0.9901,
+     1.0
+    ],
+    "largest_tie_group": 2629
+   },
+   "generic": {
+    "n": 2870,
+    "distinct": 32,
+    "lethal_lt_0.01": 154,
+    "partial_0.01_1": 91,
+    "eq_1": 2625,
+    "quantiles_partial": [
+     0.625,
+     0.7827,
+     0.875,
+     0.9988,
+     1.0
+    ],
+    "largest_tie_group": 2625
+   },
+   "n_genes_score_differs_vs_F4": 88,
+   "lethal_only_gene_level": 0,
+   "lethal_only_F4": 0,
+   "spearman_vs_F4": 0.9705008702687242,
+   "isozyme_genes_in_model": 2206,
+   "isozyme_genes_score_differs_vs_F4": 37,
+   "isozyme_genes_partial_here_but_1_in_F4": 10,
+   "examples_isozyme_partial_here_but_1_in_F4": [
+    "PKM",
+    "CRISP3",
+    "PKLR",
+    "PGAM4",
+    "ENO2",
+    "ENO3",
+    "PGM1",
+    "SLC29A1",
+    "MECR",
+    "DECR1"
+   ],
+   "isozyme_genes_lower_here": 13,
+   "isozyme_genes_higher_here": 24,
+   "status_counts": {
+    "zero_usage": 2441,
+    "optimal": 429
+   }
+  },
+  "ACH-003383": {
+   "line": "ACH-003383",
+   "wt_growth": 0.9942765022169836,
+   "cap_max": 17102.303102142276,
+   "n_genes_bounded": 2854,
+   "n_genes_floor": 2773,
+   "total_usage_wt": 768.0113471156467,
+   "n_genes_used_wt": 425,
+   "n_usage_at_bound_wt": 28,
+   "n_ko_solved": 425,
+   "load_transform_cpu_s": 25.271278618999997,
+   "wt_cpu_s": 26.96504649,
+   "pfba_cpu_s": 2.9866327350000006,
+   "sweep_cpu_s": 304.39417484,
+   "line_cpu_s": 334.345854065,
+   "gene_eflux": {
+    "n": 2870,
+    "distinct": 31,
+    "lethal_lt_0.01": 154,
+    "partial_0.01_1": 93,
+    "eq_1": 2623,
+    "quantiles_partial": [
+     0.6635,
+     0.8341,
+     0.9442,
+     0.9998,
+     1.0
+    ],
+    "largest_tie_group": 2623
+   },
+   "reaction_F4": {
+    "n": 2870,
+    "distinct": 33,
+    "lethal_lt_0.01": 154,
+    "partial_0.01_1": 89,
+    "eq_1": 2627,
+    "quantiles_partial": [
+     0.6587,
+     0.8325,
+     0.8325,
+     0.9937,
+     1.0
+    ],
+    "largest_tie_group": 2627
+   },
+   "generic": {
+    "n": 2870,
+    "distinct": 32,
+    "lethal_lt_0.01": 154,
+    "partial_0.01_1": 91,
+    "eq_1": 2625,
+    "quantiles_partial": [
+     0.625,
+     0.7827,
+     0.875,
+     0.9988,
+     1.0
+    ],
+    "largest_tie_group": 2625
+   },
+   "n_genes_score_differs_vs_F4": 91,
+   "lethal_only_gene_level": 0,
+   "lethal_only_F4": 0,
+   "spearman_vs_F4": 0.964983542137784,
+   "isozyme_genes_in_model": 2206,
+   "isozyme_genes_score_differs_vs_F4": 39,
+   "isozyme_genes_partial_here_but_1_in_F4": 9,
+   "examples_isozyme_partial_here_but_1_in_F4": [
+    "PKM",
+    "CRISP3",
+    "PGK2",
+    "PGM1",
+    "PGAM2",
+    "PGAM4",
+    "SLC29A1",
+    "DECR1",
+    "MECR"
+   ],
+   "isozyme_genes_lower_here": 12,
+   "isozyme_genes_higher_here": 27,
+   "status_counts": {
+    "zero_usage": 2445,
+    "optimal": 425
+   }
+  }
+ },
+ "cpu_s_total_lines": 1056.6943490039998
+}

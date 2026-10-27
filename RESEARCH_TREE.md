@@ -66,6 +66,9 @@ Next (M3): Stage A of the context-model families on the 30-line training panel, 
 - [ ] 5. Objectives / metabolic tasks (a-priori task set)
 - [~] 6. Context-specific models (omics integration; method-vs-tissue clustering test)
   - [x] 6.1 W4 pilots (Opus): F0, F2 GIMME, F3 FASTCORE, F4 E-Flux, F5 LCP builder; repair rule restores 12/12 lines (0.62–0.88 of generic WT); loss rule order-independent; 1.7–3.3 CPU-min per build. CORDA 1.5–1.7 CPU-h per model → full A6 dropped (A4); replaced by a 10-line comparison row A6′ (A7, user D8).
+  - [x] 6.1b GPRTransform (Machado 2016; user suggestion) assessed label-free (notes/methods/GPRTransform_assessment.md, ≈1.7 CPU-h). The gene-level KO is exactly equal to the Boolean KO on both parents. The paper's isozyme encoding inflates capacity (Human2 WT +25%). It has no regulatory network: "regulation" means only expression bounds on gene usage. The repo has no license, so the method was reimplemented.
+    - [-] Gene-level E-Flux as family F6: no extra distinct KO values on the pilot → not adopted.
+    - [ ] Gene-pFBA KO-cost tie-break: exploratory secondary score only (A8, ≈3.5 CPU-h), compared with B8 on training.
   - [~] 6.2 Independent review of the W4 code → then Stage A (A1–A5, A7; ≈60 CPU-h).
 - [ ] 7. GPR curation (proteomics, paralogs); curation vs constraint contribution
 - [ ] 8. Flux-state information content (subtypes, drug screens, metabolomics)
