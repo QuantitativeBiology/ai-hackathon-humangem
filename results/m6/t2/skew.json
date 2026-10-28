@@ -1,0 +1,46 @@
+{
+ "rule": "DESIGN §6.5: BCa for C4/C5 iff |skew| of the training-tier line ΔtAP > 1 (metrics.skew_triggers_bca); decided on C4 (P2 − G*), C5 (P2 − B6) reported",
+ "label": "L_prob",
+ "lines": "W1 primary training set, W7 screen nested 12-fold LOLO (held-out lines)",
+ "p2": "W7-05 (seed 11)",
+ "gstar": "H1 (Gstar)",
+ "b6": "W7-01 = B6 (seed 11)",
+ "synthetic_labels": false,
+ "contrasts": {
+  "C4": {
+   "skew": -1.2373583607222047,
+   "n_lines": 686,
+   "bca": true,
+   "bootstrap_method": "bca",
+   "mean_delta": 0.6018201260585467
+  },
+  "C5": {
+   "skew": 1.0581511732622457,
+   "n_lines": 686,
+   "bca": true,
+   "bootstrap_method": "bca",
+   "mean_delta": 0.01689876738964626
+  }
+ },
+ "decided_on": "C4",
+ "bootstrap_method": "bca",
+ "disagrees": [],
+ "skew_by_seed": {
+  "seed_11": {
+   "C4": -1.237358,
+   "C5": 1.058151
+  },
+  "seed_23": {
+   "C4": -1.238218,
+   "C5": 2.994946
+  },
+  "seed_37": {
+   "C4": -1.21371,
+   "C5": 1.372086
+  }
+ },
+ "inputs": {
+  "results/w7/tmp/perline_r2b_W7-05.parquet": "a23cde884f215bb5095f7ed90ac553cd69debbdd4d08b4d1d363374b591f59d8",
+  "results/w7/tmp/perline_r1_W7-01.parquet": "fcf39500e11910aa9252277cf171016110c8edc128463e425e91039758131be7"
+ }
+}

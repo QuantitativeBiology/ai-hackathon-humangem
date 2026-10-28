@@ -1,0 +1,65 @@
+{
+ "spec_id": "P2_M7",
+ "kind": "p2",
+ "milestone": "M7",
+ "pipeline": "W7-05 (B6 with a monotone increasing constraint on b2 and b2m; nextgem.w7.IDEAS['W7-05']), refitted on training ∪ validation (selected in the W7 validation look W7_P2_select, D14).",
+ "primary": "P2",
+ "methods": [
+  "H1",
+  "H2",
+  "P2"
+ ],
+ "scores": {
+  "test": {
+   "path": "results/m6/t2/p2_scores_test.parquet",
+   "sha256": "b2236f0f199c36bf15b8a5c806145553b61d3b5a4d11f3646864423e06db31a3",
+   "layout": "gene"
+  }
+ },
+ "failed_builds": {
+  "test": null
+ },
+ "labels": [
+  "L_prob",
+  "L_ge05",
+  "L_ge10"
+ ],
+ "genesets": [
+  "all",
+  "noCE",
+  "noDepMapCE"
+ ],
+ "universes": [
+  "U",
+  "Ucap"
+ ],
+ "strata": [
+  "none",
+  "expressed_pairs"
+ ],
+ "b6": {
+  "features": "w1",
+  "hgb": {
+   "max_iter": 200,
+   "learning_rate": 0.1,
+   "max_leaf_nodes": 31,
+   "early_stopping": false
+  }
+ },
+ "bootstrap_method": "bca",
+ "fitted_on_labels": true,
+ "refit": {
+  "recipe": "w7_idea",
+  "idea": "W7-05",
+  "method": "P2"
+ },
+ "provenance": {
+  "src/nextgem/w7.py": "ef31fe5b643cc6780e0593f8438281f9c92d170f81917c71e5393848a3fde175",
+  "scripts/w1_b6.py": "fe84857e348df1c0ea15a901eb7bdb3e2303c015b16d700b21422287ca4f41a8",
+  "scripts/t2_prep_spec.py": "e067c29d7a36ea99e20abcd03e5d4587ab5e6709f1f3caaa48fa5fda9cc02796",
+  "results/m6/t2/skew.json": "abf6f342aa835a2c343c8c7ceeb1d42015cc3bc0f61c5b985b92f57897b4e22f",
+  "results/w7/val/look_spec_W7_P2_select.json": "f30ffbbc0e88b651eec7541a83182f998c6e89d8753d2eb160f00b46777485f0",
+  "results/w7/val/val_look_W7_P2_select_decision.json": "7f39c876a7f0b03fb692f282f8fccee0971695aa47063517a7c4e2c529016301"
+ },
+ "notes": "P2 (RESEARCH_TREE D14, look 5/40 W7_P2_select, W7 2/20) = W7-05: the pre-registered B6 (W1 feature set, HistGradientBoosting at w7.HGB_M2) with a monotone increasing constraint on b2 and b2m; non-GEM, label-fitted. It is refitted once on training ∪ validation inside the harness through the reviewed w7_idea plug-in (w7.fit / w7.predict, seed SEEDS[0]); the score file carries only the generic H1/H2 columns (gene layout). No failed build (P2 builds no model). D12 wording applies in REPORT.md: C4 (P2 − G*) compares gene-prior ML with generic FBA and says nothing about GEMs; C5 (P2 − B6, the pre-registered B6) measures only the monotone constraint; W7's GEM result is negative (no idea with a GEM feature was promoted); P2 is reported next to B2, B2m and B8±. C3 was not confirmed at T1 (D15), so C4/C5 are estimates only. bootstrap_method from the §6.5 training skew check (results/m6/t2/skew.json): bca."
+}

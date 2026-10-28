@@ -155,3 +155,12 @@ results/m6/t1/tasks_bloo_human1_tasks.tsv	file	results/m6/t1/tasks_bloo_human1_t
 results/m6/t1/tasks_bloo_human2_tasks.tsv	file	results/m6/t1/tasks_bloo_human2_tasks.tsv	b88ae1873988808fa425f00990cb4016fe7463f9d2d61ffea5eba703e5403892	2026-10-28		T1: provenance
 results/m6/t1/build_summary.json	file	results/m6/t1/build_summary.json	aadb2300a8f9e70ee3120a4306dd9944f950c04af027bdef5e5b44871d450af4	2026-10-28		T1: provenance
 results/m6/t1/skew.json	file	results/m6/t1/skew.json	2a70c42bfd55a2fb449fab34488fb97a92e2e85850a8882a5c7a65074943b51f	2026-10-28		T1: provenance
+scripts/w1_common.py	file	scripts/w1_common.py	e77fed313e65d8245288c41124be4451dd262b35cc10a29359f839c6f8ce24a6	2026-10-28		test looks (T2)
+results/w1/tmp/mut_dam.parquet	file	results/w1/tmp/mut_dam.parquet	40120741609fe308eb956dff408c39fe6b07b13248c29a021d95fbc97cddcb22	2026-10-28		test looks (T2)
+results/w1/tmp/mut_hot.parquet	file	results/w1/tmp/mut_hot.parquet	f7221063c4969928ae8e339b3078fd32c78c0c3a8fff871854ea3319b548302f	2026-10-28		test looks (T2)
+results/w1/tmp/gene_neighbours.json	file	results/w1/tmp/gene_neighbours.json	b492702e51a20f64d58f8a4f3562d97e3d6442b3ac244d39f1ae977ca0fcc233	2026-10-28		test looks (T2)
+results/m6/p2_spec.json	file	results/m6/p2_spec.json	19bf298eddf52f558054d2737f7c5d125af31c84632bdc349d378dd4b65adb38	2026-10-28		test looks (T2)
+results/m6/t2/p2_scores_test.parquet	file	results/m6/t2/p2_scores_test.parquet	b2236f0f199c36bf15b8a5c806145553b61d3b5a4d11f3646864423e06db31a3	2026-10-28		test looks (T2)
+scripts/t2_prep_spec.py	file	scripts/t2_prep_spec.py	e067c29d7a36ea99e20abcd03e5d4587ab5e6709f1f3caaa48fa5fda9cc02796	2026-10-28		test looks (T2)
+results/m6/t2/skew.json	file	results/m6/t2/skew.json	abf6f342aa835a2c343c8c7ceeb1d42015cc3bc0f61c5b985b92f57897b4e22f	2026-10-28		test looks (T2)
+results/w7/val/val_look_W7_P2_select_decision.json	file	results/w7/val/val_look_W7_P2_select_decision.json	7f39c876a7f0b03fb692f282f8fccee0971695aa47063517a7c4e2c529016301	2026-10-28		test looks (T2)
