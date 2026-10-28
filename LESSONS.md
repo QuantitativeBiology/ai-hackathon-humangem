@@ -15,3 +15,4 @@ One line per rule, with evidence. Pruned at each milestone (M1: 13 -> 11; M2: 21
 - Stub every PROMPT.md deliverable at the first milestone that has a model, so gaps show early. (M2 process review)
 - Biomass artefacts dominate generic false positives: removing the cofactor pool gained +0.032 on validation, while every expression-pruning family lost tAP. Look for structural false positives before adding data. (W3 look 2; Stage A)
 - Agents must never delete files they did not create; the W2 agent removed ~37 shared scratch files. (M3)
+- Never export PYTHONPATH (or other code-path overrides) into a process that commits: the ledger's git commit ran the pre-commit scanner against the worktree's code, the tripwire refused it, and the rehearsal aborted (cleanly, before any validation read). Run looks from a clean main tree. (Rehearsal attempt 1, 2026-10-28)
