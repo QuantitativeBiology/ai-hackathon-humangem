@@ -135,3 +135,23 @@ results/w7/nested_W7-04_beta.json	file	results/w7/nested_W7-04_beta.json	4e30884
 results/w7/sweeps/ratio_r_human1.parquet	file	results/w7/sweeps/ratio_r_human1.parquet	86bebd6a85493e56477983ac950942cb687d89c41908de7c2860ac651241c387	2026-10-28		W7 validation look: provenance
 results/w7/sweeps/sweeps.json	file	results/w7/sweeps/sweeps.json	4d780281d30a7fc4c8ec7e905931d4d082069dd142ee813d8c7c65b1fdf93ea6	2026-10-28		W7 validation look: provenance
 results/w7/val/look_spec_W7_P2_select.json	file	results/w7/val/look_spec_W7_P2_select.json	f30ffbbc0e88b651eec7541a83182f998c6e89d8753d2eb160f00b46777485f0	2026-10-28		W7 validation look: input
+scripts/evaluate_test.py	file	scripts/evaluate_test.py	8f72687f410a84bc6db54d1d796886834cbc752d5f17a08337e18646f8d75d97	2026-10-28		Test-look harness (reviewed + re-checked: notes/reviews/M6_evaluate_test_review.md)
+tests/test_evaluate_test.py	file	tests/test_evaluate_test.py	84948f0d44a063d82b508c1f75a3cc8d166abbd3faa20d3f96a0610d3f9187f8	2026-10-28		known-answer test (DESIGN 11.3)
+results/m6/p1_spec.json	file	results/m6/p1_spec.json	750054c3e78510483e57bb49c0348bcacfc79a1dd71d3b81a4032e2e03b12104	2026-10-28		T1: P1 spec / input
+results/m6/t1/p1_scores_validation.parquet	file	results/m6/t1/p1_scores_validation.parquet	18665d5992b5b3fd2fea06f1fe1cb6e994e88943d12d1fa44f5acb5621dc30a0	2026-10-28		T1: P1 spec / input
+results/m6/t1/p1_calls_validation.parquet	file	results/m6/t1/p1_calls_validation.parquet	e7d39aa08ccd4ba48a7d0b14388ef804cdda05e3a1d6612f2333a39aeb64ef0f	2026-10-28		T1: P1 spec / input
+results/m6/tmp/t1/p1_scores_test.parquet	file	results/m6/tmp/t1/p1_scores_test.parquet	658b6d9b3c9f8d7a8de416151014bb03bf3b56c55c2fa8388ca50bef66925fb2	2026-10-28		T1: P1 spec / input
+results/m6/tmp/t1/p1_calls_test.parquet	file	results/m6/tmp/t1/p1_calls_test.parquet	04ce66b3fc1fb72be546daa190b74c5398ca5dab8eb45cf769b1427aa250ada9	2026-10-28		T1: P1 spec / input
+results/m6/t1/p1_task_calls.parquet	file	results/m6/t1/p1_task_calls.parquet	b769f20e73bb9806a9d902aee5fbc67061a01c1e9b6735b33301b755cf2f36e0	2026-10-28		T1: P1 spec / input
+results/m6/t1/p1_gene_annotations.parquet	file	results/m6/t1/p1_gene_annotations.parquet	074275d6f5e627352b0d8e8a22823f46a41ea4e61864f0a317219a0ea573758d	2026-10-28		T1: P1 spec / input
+scripts/t1_prep_common.py	file	scripts/t1_prep_common.py	efd35abec57826b6559af3b16999fc06e6b8dd9ccbc75fd30593ba1f9f2fd57d	2026-10-28		T1: provenance
+scripts/t1_prep_tasks.py	file	scripts/t1_prep_tasks.py	12b377eaa03be2d95b21668009c007bab7c7f7ac91a6ac6d93391e9e56a68541	2026-10-28		T1: provenance
+scripts/t1_prep_build.py	file	scripts/t1_prep_build.py	9b9133b4bfd07fddb6f0088c1d573dd36763534cb8ca789e026a931dc897db3d	2026-10-28		T1: provenance
+scripts/t1_prep_skew.py	file	scripts/t1_prep_skew.py	0d4b3d20f6cec0f30ac3dc333fbf51ebc54e092cab414d475e263d9c35ce1a18	2026-10-28		T1: provenance
+scripts/t1_prep_spec.py	file	scripts/t1_prep_spec.py	8390867e7b59c016b42f6d58558f6abb609c638443f6146d05e5532155ce2e7c	2026-10-28		T1: provenance
+results/m6/t1/tasks_bloo_human1.parquet	file	results/m6/t1/tasks_bloo_human1.parquet	2cdab12418140b366de00fc97f58bffccd09c314056d2aff75220cd4149d25a8	2026-10-28		T1: provenance
+results/m6/t1/tasks_bloo_human2.parquet	file	results/m6/t1/tasks_bloo_human2.parquet	b1e25f128f22b00c9007cf8c5446507b70ea1bcfb12a9427d5f7f358cbad16ec	2026-10-28		T1: provenance
+results/m6/t1/tasks_bloo_human1_tasks.tsv	file	results/m6/t1/tasks_bloo_human1_tasks.tsv	62f94d17d43034de632c614a46164e657f77ab5b2ba472905dbe1e56956f33d0	2026-10-28		T1: provenance
+results/m6/t1/tasks_bloo_human2_tasks.tsv	file	results/m6/t1/tasks_bloo_human2_tasks.tsv	b88ae1873988808fa425f00990cb4016fe7463f9d2d61ffea5eba703e5403892	2026-10-28		T1: provenance
+results/m6/t1/build_summary.json	file	results/m6/t1/build_summary.json	aadb2300a8f9e70ee3120a4306dd9944f950c04af027bdef5e5b44871d450af4	2026-10-28		T1: provenance
+results/m6/t1/skew.json	file	results/m6/t1/skew.json	2a70c42bfd55a2fb449fab34488fb97a92e2e85850a8882a5c7a65074943b51f	2026-10-28		T1: provenance
