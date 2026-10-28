@@ -25,60 +25,56 @@ The work has four strands:
 
 Whole lineages are held out for testing. The full brief is in [PROMPT.md](PROMPT.md).
 
-*Status as of 2026-10-28, 03:00 UTC.*
+*Status as of 2026-10-28, 08:00 UTC: all pre-registered looks done (T1, T2, unseal); REPORT.md complete, non-author review in progress.*
 
 ## Status at a glance
 
 | Milestone | State |
 |---|---|
-| M0 Setup, literature ([LITERATURE.md](LITERATURE.md)), data ([DATA.md](DATA.md)) | done |
-| M1 Pre-registered design ([DESIGN.md](DESIGN.md), frozen v3 after 3 review rounds); leakage infrastructure; lineage split (seed 38: 7 test / 4 validation / 12 training lineages) | done |
-| M2 Generic-model baseline (W1), training plus one validation look | done: **G\* = Human1** |
-| M3 Pilots: medium (W2, library frozen), context-model families (W4), Stage A on the 30-line training panel | done: **no family passes the training gate** |
-| M4 GPR curation (W5) | done: **fails the training gate** on both parents |
-| M5 Context models on top of P1 levers | done: not selected (< +0.005) |
-| M6 Factorial → P1 | done: **P1 = H1 + biomass edit + documented medium** |
-| M4 Biomass/tasks/objectives (W3) | done: **cofactor-pool biomass leave-out beats G\* on validation** (+0.032) |
-| M5–M9 Flux information (W6), auto-research loop (W7), SBML resource (W8, stub passes its gates), test looks T1/T2, REPORT.md (skeleton) | planned |
+| M0–M2 Setup, pre-registration ([DESIGN.md](DESIGN.md), amendments A1–A14), generic baseline | done: G\* = Human1 |
+| M3–M4 Medium (W2), biomass/tasks (W3), GPR curation (W5), context families (W4 Stage A) | done: W2 and W3 pass the training gate; W4 and W5 do not |
+| M5 Context models on top of the passing levers | done: not selected (< +0.005) |
+| M6 Factorial → **P1** = Human1 + biomass cofactor-pool removal + documented medium | done (validation look 3) |
+| M7 W6 flux information; W7 auto-research → **P2**; test looks **T1, T2**, unseal | done |
+| M8 SBML resource ([resource/](resource/)) | done: 48 models, 2,114 lines, 47/48 pass all gates |
+| M9 [REPORT.md](REPORT.md) | written; non-author review in progress |
 
-The live research record is [RESEARCH_TREE.md](RESEARCH_TREE.md). It holds the decisions D0–D8 and the findings tree; resume from there.
+Validation looks used: 6 of 40 (W7: 2 of 20). Test looks: T1, T2 and the unseal; no third look.
 
-## Key results so far
+## Key results
 
-**Generic models** (tie-aware AUPRC, mean per line, lineage-weighted):
+**Headline (T1, first test number, 7 held-out lineages, 394 lines):** P1 improves tie-aware AUPRC over the generic Human1 model from 0.297 to 0.347: **Δ̄ = +0.050 [0.048, 0.051]**, sign-flip p < 0.001, "meaningfully improves" (SESOI 0.01). The CI is conditional on the 7 test lineages. Without common essentials (C1b): +0.037 [0.035, 0.040], confirmed. The gain is positive in 7/7 test lineages, so the pre-registered "generalises to new tissues" criterion holds.
 
-| | Training (686 lines, 12 lineages) | Validation (198 lines, 4 lineages) | MCC, P57 × gene effect < −0.6 (paper protocol, training) |
-|---|---|---|---|
-| Human1 | 0.300 | 0.302 | 0.329 |
-| Human2 | 0.292 | 0.295 | 0.331 |
+| | Validation (4 lineages) | Test (7 lineages) |
+|---|---|---|
+| Generic Human1 (G\*) tAP | 0.302 | 0.297 |
+| P1 tAP | 0.353 | 0.347 |
+| P1 − G\* | +0.052 | +0.050 |
+| Medium alone − G\* | +0.017 | +0.013 |
+| Gene prior B2 tAP | — (0.90 on training) | 0.895 |
 
-- **Human1 vs Human2.** Human1 leads in all 12 training lineages and on validation: Δ(H2−H1) = −0.0071 [−0.0079, −0.0063]. So "Human2 improves on Human1" is not supported. MCC is tied and within the published range of ~0.25–0.44.
-- **Strong gene-prior baseline.** A label-only gene-prior baseline (B2) reaches AUPRC 0.90, about 3× the generic GEM. Every context-specific gain is read against B2 and the expression tie-break baseline B8, not only against G\*.
-- **Recall ceiling.** About 42% of essential gene × line pairs involve genes outside the model's GPR-addressable set.
-- **Medium.** Medium choice moves few genes (mean |Δratio| ≈ 0.001 per line). The design's growth-rate calibration is infeasible as specified, so that variant is reported as uncalibrated.
-- **Sterol branch.** Serum cholesterol cannot rescue the sterol-synthesis genes in either model. Biomass needs vitamin D3 products that can only be made from lathosterol, so this is a model-structure issue for W3/W5.
-- **GPRTransform** (Machado et al. 2016). Gene-level KO equals the Boolean KO exactly on both models, so it is not adopted as a family. The original isozyme encoding inflates capacity (+25% WT growth). A gene-pFBA cost tie-break is kept as an exploratory score.
-- **Selected pipeline P1 (M6 factorial, validation look 3 of 40): Human1 with the biomass cofactor pool removed, on each line's documented culture medium.** On the 4 held-out validation lineages it beats generic Human1 by Δ̄ tAP **+0.052 [0.050, 0.054]** (medium alone +0.017; biomass edit alone +0.032; the two are slightly super-additive). Flags: W3-MEV (under serum, the mevalonate-core genes lose essentiality), W2-SHUF (randomly shuffled media give ~96% of the medium gain, so this is "realistic medium vs Ham's", not line-specific medium), W3-D1, W2-MOPEN. Context-specific models (GIMME, E-Flux) add < 0.005 on top and were not selected. The test-set evaluation (T1) is next.
-- **Biomass (W3): first lever that beats the generic model on held-out lineages.** Removing the biomass cofactor pool from Human1 raises tAP from 0.302 to 0.334 on the 4 validation lineages: Δ̄ = +0.032 [0.031, 0.033], which replicates the training estimate of +0.034. It mostly removes false essential calls created by the biomass reaction itself: retinoid/vitamin-D catabolism, carnitine, BH4 and CoQ. It also loses some real requirements (heme, PDXK, TPK1, RFK). Two flags apply. W3-D1: no pre-registered negative control applies to biomass removals, and the control reading was fixed after seeing training results. W3-MEV: under serum media the variant makes the mevalonate-core genes non-essential.
-- **Context-specific models (W4 Stage A, training panel).** None of the six families beats G\* under the training gate. Δ̄ vs Human1 is F0 thresholding −0.0080, F2 GIMME −0.0067, F3 FASTCORE −0.0102, F4 E-Flux −0.0029, F5 calibrated presence −0.0114 and CORDA −0.0127. Choice of method explains more variance than tissue. F2 is carried forward to the combination factorial, flagged "fails TG".
-- **GPR curation (W5).** The curation as specified lowers tAP by 0.029 on both parents. The main cause is paralog AND→OR merges of RNA polymerase I/II/III subunits, which the reviewer rejected on biology. Fixing the direction of Human1's thymidylate synthase reaction helps (+0.0007), but the gain is below the SESOI.
-- **CAD lethality.** CAD KO stays lethal with uridine supplied because (S)-dihydroorotate is part of the biomass small-metabolite pool (MAR10064). This is being tested in W3.
-- **CORDA.** It costs 1.5–1.7 CPU-h per model, so it runs as a 10-line descriptive comparison only (user decision D8).
-
-## Running now
-- Next: the M6 combination factorial (medium × biomass × context family), W6 flux information and the W7 auto-research loop (hybrids of GEM features with gene priors; a narrower 'artefact groups only' biomass variant as exploratory).
-- Validation looks used: 3 of 40.
+- **What P1 is.** Two structural fixes to Human1. (1) The biomass reaction's cofactor pool is removed, which deletes false "essential" calls created by the biomass reaction itself (retinoid/vitamin-D catabolism, carnitine, BH4, CoQ). (2) Each line gets its documented culture medium instead of Ham's.
+- **What P1 is not.**
+  - It is not line-specific beyond the medium. Shuffled media give about 96% of the medium gain (flag W2-SHUF).
+  - It does not rank genes across lines better than expression: C3 failed on test (−0.011).
+  - It does not beat all three generic + expression baselines.
+  - Under serum, the mevalonate-core genes lose essentiality (flag W3-MEV); an exploratory artefact-only variant fixes this and keeps 57% of the gain.
+- **Context-specific models** (GIMME, FASTCORE, E-Flux, thresholding, CORDA, label-calibrated presence) all lose to the generic model on training lineages. On top of P1's biomass edit they add < 0.005, so they were not selected.
+- **GPR curation** as pre-registered loses 0.029. Its paralog AND→OR merges joined non-interchangeable RNA polymerase subunits.
+- **Flux states (W6)** add no information beyond omics + medium for subtypes, drug response or metabolomics; the positive control is recovered.
+- **Gene priors dominate.** GEM features add nothing to gene-prior ML (W7). P2, the best ML model (B6 with a monotone prior constraint, no GEM features), reaches test tAP of about 0.90. T2: P2 − G\* = +0.602, P2 − B6 = +0.014. Both are estimates only, because C3 failed. P1 closes 8.3% of the gap between G\* and B2.
+- **Paper-protocol MCC** (Human1 paper, P57 × gene effect < −0.6, test): G\* 0.322 → P1 0.345. With growth-only calls: 0.334 → 0.379.
+- **SBML resource:** 48 gzipped SBML models (Human1 and Human2 P1, one per medium signature), with a manifest mapping all 2,114 DepMap lines. 47/48 pass all six gates; the one miss is LP noise (−8e-9; exactly 0 in exact arithmetic). MEMOTE run on 10 models; FROG run.
 
 ## Known pitfalls and open issues
 - Most generic KO scores are near-binary (lethal or 1), so ties dominate AUPRC. Every metric is tie-aware, and tie-break baselines (B8±) are mandatory.
 - Some a priori positive controls are non-informative as built (GOT1/2, SLC7A11 and CAD/uridine), because the models bypass them.
 - Several design gaps were resolved by documented amendments A1–A10 (DESIGN.md §17). Small changes to the guards are logged in [notes/guard_changelog.md](notes/guard_changelog.md) (user decision D7).
 - Compute budget: ≈1–1.5 days in total. Stage A is ≈110 CPU-h, above its ≈100 CPU-h row because of the CORDA comparison and one build per process.
-- Started as stubs: SBML export (W8 demo passes all 5 gates) and REPORT.md (skeleton). Not started: the auto-research loop.
 
 ## Leakage controls (read before touching data)
 - DepMap labels (CRISPR gene effect and dependency, common-essential lists) are read **only** through `src/nextgem/labels.py`, fold-scoped. A PreToolUse hook blocks direct reads, and a runtime tripwire blocks them inside Python.
-- Validation and test labels are sealed. Validation is scored only by the frozen `scripts/evaluate_val.py`. Each look is scalar-only, logged in a hash-chained ledger and capped at 40 in total (3 used).
+- Validation and test labels are sealed. Validation is scored only by the frozen `scripts/evaluate_val.py`. Each look is scalar-only, logged in a hash-chained ledger and capped at 40 in total (6 used).
 - [FROZEN.tsv](FROZEN.tsv) pins code, inputs and values by SHA-256. It is checked at commit, at push and before every look.
 - Every agent or person who has seen label summaries is recorded in [notes/label_exposure.md](notes/label_exposure.md).
 
