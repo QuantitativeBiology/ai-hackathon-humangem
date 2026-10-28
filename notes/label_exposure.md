@@ -61,3 +61,4 @@ Every viewing of DepMap label *values* (or label-derived summaries) by any agent
 - 2026-10-28, W7 reviewer: training-tier aggregates only (autoresearch/results.tsv, screen_r2b/genecv, own LOLO aggregates, per-line training tAP in memory for comparison). Synthetic dry run only; no validation or test.
 - 2026-10-28, PI: ran validation look W7_shortlist_1 (scalar-only outputs).
 - 2026-10-28, PI: ran validation look W7_P2_select (scalar-only outputs).
+- 2026-10-28, REPORT drafter: committed training and validation aggregates only (as in README/results tables); no label files; raw probe blocked.
