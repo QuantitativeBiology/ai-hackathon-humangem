@@ -1,0 +1,37 @@
+{
+ "look_id": "M10_F2",
+ "reference": "H1",
+ "G_star": "Human1",
+ "primary_cell": {
+  "label": "L_prob",
+  "geneset": "all",
+  "universe": "U",
+  "stratum": "none"
+ },
+ "candidates": [
+  {
+   "method": "F2:H1+artBloo/M2(f=1)",
+   "delta_lin": 0.030954260858348823,
+   "delta_ci": [
+    0.029341021527832006,
+    0.03261416066632193
+   ],
+   "eligible": true,
+   "diff_vs_best": 0.0,
+   "se_diff": 0.0,
+   "within_1se": true
+  }
+ ],
+ "gate_passed": true,
+ "best_eligible": "F2:H1+artBloo/M2(f=1)",
+ "selected": "F2:H1+artBloo/M2(f=1)",
+ "winners_curse": {
+  "method": "F2:H1+artBloo/M2(f=1)",
+  "m": 1,
+  "sigma": 0.0008382456821506943,
+  "term": 0.0,
+  "best_delta_lin": 0.030954260858348823,
+  "best_delta_lin_minus_term": 0.030954260858348823
+ },
+ "rule": "A15 post hoc / exploratory follow-up F2 (RESEARCH_TREE D18). \u00a78 gate: the single candidate F2 (H1 + artefact-only B-loo W7-03 on M2(f=1)) is eligible iff its paired validation \u0394\u0304_lin vs G* (H1/M0, the W1 look's G-star) has CI lower bound > 0 (L_prob, all genes, U, no stratum); m = 1, so \u03c3\u00b7\u221a(2 ln m) = 0 and the one-SE rule is trivial. P1 (M6:H1+Bloo/M2(f=1)) is descriptive and is never selected here. The F2 question is the validated cost of the safer variant, F2 \u2212 P1, read as \u0394\u0304_lin(F2 \u2212 H1) \u2212 \u0394\u0304_lin(P1 \u2212 H1) on the identical primary-cell lines (exact point estimate; no CI from the harness). No claim that F2 beats P1; it never replaces T1/T2 or the headline, and no test evaluation follows."
+}
