@@ -311,6 +311,10 @@ W8_UNS = "results/w8/unscreened/build_summary.json"
 W8_MEMOTE6 = "results/w8/memote/memote_summary_release6.json"
 W8_FROG = "results/w8/frog/frog_summary.json"
 W8_NOISE = "results/w8/ko_noise/human2_20cc933a4b852b6a_summary.json"
+W3_CTX = "results/w3/train/context_claims.tsv"
+M6_MAN = "results/m6/MANIFEST.tsv"
+TEST_MAN = "results/m6/test/MANIFEST.tsv"
+RH_GATES = "results/m6/rehearsal/val_look_REHEARSAL_P1_M6_gates.json"
 BUDGET = "results/budget.tsv"
 
 PRIMARY = dict(label="L_prob", geneset="all", universe="U", stratum="none")
@@ -885,6 +889,46 @@ def _registry() -> dict[str, Number]:
     R["un.all.h1"] = _n(UN_ALL, lambda s: fx(T(s, UN_ALL, "tap_lin", method="H1")))
     R["un.all.b2"] = _n(UN_ALL, lambda s: fx(T(s, UN_ALL, "tap_lin", method="B2[L_prob]")))
     R["un.all.n"] = _n(UN_ALL, lambda s: ints(T(s, UN_ALL, "n_lines", method="H1")))
+
+    # --- review fixes (M9): extra test-tier, runtime and training numbers --------------------------------------------
+    def _bin(s, proto, call, lab, method, metric, col="lineage_equal_mean"):
+        return TW(s, T1_TSV, col, dict(section="binary_6.8", protocol=proto, call_rule=call, label=lab, method=method,
+                                       metric=metric, nan_policy="exclude", gene_set="parent"))
+    for mk, m in (("h1", "H1"), ("h2", "H2"), ("p1", "P1[H1]"), ("p1h2", "P1[H2]")):
+        R[f"t1.p57.linemcc.{mk}"] = _n(T1_TSV, lambda s, m=m: fx(_bin(s, "Human1-paper", "P57", "L_ge06", m, "mcc",
+                                                                      "line_mean")))
+        R[f"t1.pgr.f1.{mk}"] = _n(T1_TSV, lambda s, m=m: fx(_bin(s, "Human1-paper", "PGR", "L_ge06", m, "f1")))
+        for metric in ("accuracy", "specificity"):
+            R[f"t1.p57.{metric}.{mk}"] = _n(T1_TSV, lambda s, m=m, mt=metric: fx(_bin(s, "Human1-paper", "P57",
+                                                                                      "L_ge06", m, mt)))
+    for mk in ("h2", "p1h2"):
+        m = {"h2": "H2", "p1h2": "P1[H2]"}[mk]
+        R[f"t1.p57.f1.{mk}"] = _n(T1_TSV, lambda s, m=m: fx(_bin(s, "Human1-paper", "P57", "L_ge06", m, "f1")))
+    for k, m in (("h1", "H1"), ("h2", "H2"), ("h1task", "H1_task"), ("b0", "B0"), ("b3", "B3"),
+                 ("b2", "B2[L_prob]"), ("b2m", "B2m[L_prob]"), ("b8p", "B8+_H1"), ("b8m", "B8-_H1"),
+                 ("b8q", "B8'_H1"), ("m2", "M2[H1]"), ("p1", "P1[H1]"), ("p1h2", "P1[H2]")):
+        R[f"un.w1.{k}.pooled"] = _n(UN_W1, lambda s, m=m: fx(TW(s, UN_W1, "pooled_tap", dict(
+            label="L_prob", geneset="all", universe="U", stratum="none", method=m))))
+    for k, m in (("p2", "P2"), ("b6", "B6[L_prob]")):
+        R[f"t2.pooled.{k}"] = _n(T2_GRID, lambda s, m=m: fx(TW(s, T2_GRID, "pooled_tap", dict(
+            label="L_prob", geneset="all", universe="U", stratum="none", method=m))))
+    R["un.fail.outside"] = _n(UN_FAIL, lambda s: pct(1 - T(s, UN_FAIL, "upper_bound",
+                                                           **{"class": "upper_bound_addressable_positives"}), 1))
+    R["w2.shuf.precise"] = _n(W2_SHUF, lambda s: "{} [{}, {}]".format(
+        *(lambda r: (sx(r[0]), fx(r[1], 5), fx(r[2], 4)))(
+            [T(s, W2_SHUF, c, parent="human1", step="M2(f=1)", scope="pooled") for c in ("doc_minus_shuffled", "lo", "hi")])))
+    R["w3.ctx.tests"] = _n(W3_CTX, lambda s: ints(len(s.tsv(W3_CTX))))
+    R["w3.ctx.claims"] = _n(W3_CTX, lambda s: ints(s.tsv(W3_CTX)["claim_training"].astype(bool).sum()))
+    R["rh.c1"] = _n(RH_GATES, lambda s: sx(J(s, RH_GATES, "contrasts", "C1", "estimate")))
+    R["m6.val.c3.pt"] = _n(M6_DEC, lambda s: sx(_cand(s, M6_DEC, "M6:H1+Bloo/M2(f=1)")["delta_lin"]))
+    R["rt.p1.sweeps"] = _n(M6_MAN, lambda s: fx(float(next(r["cpu_s"] for r in _manifest_rows(s, M6_MAN)
+                                                           if r["script"] == "m6_sweeps.py" and "--workers 8" in r["argv"])) / 3600, 2))
+    for look in ("T1", "T2"):
+        R[f"rt.{look.lower()}.cpu"] = _n(TEST_MAN, lambda s, lk=look: ints(float(next(
+            r["cpu_s"] for r in _manifest_rows(s, TEST_MAN) if r["script"] == "evaluate_test.py"
+            and r["argv"].startswith(f"--look {lk} ")))))
+    R["rt.w7.05.screen"] = _n(BUDGET, lambda s: fx(s.tsv(BUDGET).loc[lambda d: d["job"].str.contains("r2b_W7-05")]
+                                                   ["cpu_h"].sum(), 2))
 
     # --- W8 full resource (screened + unscreened) ----------------------------------------------------------------
     R["res.models"] = _n(RES_MODELS, lambda s: ints(len(s.tsv(RES_MODELS))))

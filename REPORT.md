@@ -8,25 +8,25 @@
 
 **Background.** Published tests of genome-scale metabolic models (GEMs) against CRISPR screens report binary metrics after choosing among many settings, and none holds out whole tissues (LITERATURE.md §2.1). We asked whether medium-aware, curated, context-specific versions of Human1 (Human-GEM v1.19.0) and Human2 (v2.1.1) predict metabolic gene essentiality in DepMap 26Q3 better than the generic models on lineages they have never seen.
 
-**Design.** The benchmark was pre-registered (DESIGN.md v3, frozen at 61b0beb; amendments A1–A13). <!--n:split.n.total-->1,361 screened lines were split by lineage into 7 test, 4 validation and 12 training lineages (results/splits/split_meta.json). The primary metric is tie-aware average precision (tAP) per line, averaged with equal weight per lineage. Four levers were screened on training: medium, biomass and tasks, context-specific extraction, and GPR curation. At most 40 scalar-only validation looks were allowed; <!--n:looks.used-->6 were used, including the T1 rehearsal (results/validation_ledger.tsv).
+**Design.** The benchmark was pre-registered (DESIGN.md v3, frozen at 61b0beb; amendments A1–A14). <!--n:split.n.total-->1,361 screened lines were split by lineage into 7 test, 4 validation and 12 training lineages (results/splits/split_meta.json). The primary metric is tie-aware average precision (tAP) per line, averaged with equal weight per lineage. Four levers were screened on training: medium, biomass and tasks, context-specific extraction, and GPR curation. At most 40 scalar-only validation looks were allowed; <!--n:looks.used-->6 were used, including the T1 rehearsal (results/validation_ledger.tsv).
 
 **Selection.** Generic Human1 beat Human2 on validation (tAP <!--n:w1.val.h1-->0.302 vs <!--n:w1.val.h2-->0.295), so G\* = Human1 (results/w1/val_look_W1_M2_baseline.tsv, results/w1/val_look_W1_M2_baseline_gstar.json). No context-specific family beat G\* on training. Evidence-based GPR curation lowered tAP. A documented culture medium helped only as much as a shuffled one. Removing the cofactor/vitamin pool from the biomass reaction was the one structural fix that helped. The selected pipeline P1 (Human1, biomass pool removed, documented medium) carries four flags: W3-D1, W3-MEV, W2-SHUF and W2-MOPEN.
 
 **Test (7 locked lineages).**
-- **Headline (C1).** P1 improves lineage-averaged tAP over G\* by <!--n:t1.c1-->+0.0497 [0.0482, 0.0513] (sign-flip p <!--n:t1.c1.p-->< 0.001), i.e. it **<!--n:t1.c1.claim-->meaningfully improves** (results/m6/test/test_look_T1_gates.json).
+- **Headline (C1).** P1 improves lineage-averaged tAP over G\* by <!--n:t1.c1-->+0.0497 [0.0482, 0.0513] (sign-flip p <!--n:t1.c1.p-->< 0.001), i.e. it **<!--n:t1.c1.claim-->meaningfully improves**, conditional on the 7 test lineages (results/m6/test/test_look_T1_gates.json; flags W3-D1, W3-MEV, W2-SHUF, W2-MOPEN). P1 is generic Human1 with a biomass edit and the documented medium: no extraction and no curation.
 - **C1b.** Without common essentials the gain is <!--n:t1.c1b-->+0.0374 [0.0351, 0.0397], which also **<!--n:t1.c1b.claim-->meaningfully improves** against its lift-scaled SESOI.
-- **Transfer.** Δ > 0 in <!--n:t1.tr.k-->7/7 lineages, so P1 "generalises to new tissues". The CI is conditional on the 7 test lineages.
-- **C3 failed.** P1 does not rank genes across lines better than expression, so it carries no line-specific information beyond expression.
-- **C4 and C5 are estimates only.** The gene-prior model P2 beats G\* by <!--n:t2.c4-->+0.602 [0.598, 0.605] and the pre-registered B6 by <!--n:t2.c5-->+0.0138 [0.0116, 0.0167] (results/m6/test/test_look_T2_gates.json).
+- **Transfer.** The lineage t-interval <!--n:t1.tr.t-->[0.0474, 0.0521] excludes 0 and Δ > 0 in <!--n:t1.tr.k-->7/7 lineages, so P1 "generalises to new tissues", conditional on these 7 lineages (results/m6/test/test_look_T1_gates.json).
+- **C3 failed.** P1 does not rank genes across lines better than expression, so it shows no detectable line-specific signal beyond expression.
+- **C4 and C5 are estimates only.** P2 is non-GEM, so these say nothing about GEMs (D12). It exceeds G\* by an estimated <!--n:t2.c4-->+0.602 [0.598, 0.605] and the pre-registered B6 by <!--n:t2.c5-->+0.0138 [0.0116, 0.0167] (results/m6/test/test_look_T2_gates.json).
 
 **In context.** On test P1 scores tAP <!--n:t1.tap.p1-->0.347 against <!--n:t1.tap.gstar-->0.297 for G\* (results/m6/test/test_look_T1.tsv). That is below the generic model with an expression tie-break (B8+, <!--n:un.w1.b8p.all-->0.418) and far below a label-only gene prior (B2, <!--n:un.w1.b2.all-->0.895) (results/m6/test/unsealed/T1/w1_benchmark.tsv).
 
 **Other findings.**
 - Simulated flux states carried no information beyond the omics and the medium.
 - GEM features added nothing to gene-prior machine learning, so P2 is a non-GEM model.
-- We release <!--n:res.models-->48 SBML models covering <!--n:res.lines-->2,114 DepMap lines (resource/models.tsv, results/w8/unscreened/build_summary.json).
+- We release <!--n:res.models-->48 SBML models of P1, one per parent and medium signature (P1 has no line-specific parameters), mapped to <!--n:res.lines-->2,114 DepMap lines (resource/models.tsv, results/w8/unscreened/build_summary.json).
 
-**Conclusion.** On unseen lineages, GEM gains come from removing structural false positives of the generic model and from a realistic medium, not from line-specific modelling. The strongest predictor of CRISPR essentiality here is a gene prior learned from the labels, not a GEM.
+**Conclusion.** On unseen lineages, the confirmed GEM gain (flags W3-D1, W3-MEV, W2-SHUF, W2-MOPEN) comes from removing structural false positives of the generic model and from a realistic medium, not from line-specific modelling. The strongest predictor of CRISPR essentiality here is a gene prior learned from the labels, not a GEM.
 
 ## 1. Question and pre-registration
 
@@ -38,7 +38,7 @@
 - **W4 (H4.1–H4.3).** Extraction method explains more variance in model content and KO profiles than lineage. Within each method, lineage explains more than under permuted expression; methods that fail are "method-dominated".
 - **W6.** Flux states predict subtypes, drug response and metabolomics beyond the omics they were built from.
 
-**Design.** DESIGN.md v3 was frozen at 61b0beb after three review rounds by seven reviewer agents. Every later change is a dated row in §17 (A1–A13), and every user or PI decision is logged in RESEARCH_TREE.md (D0–D16). The user excluded ftINIT, because it underperformed the generic model in the user's own analysis, and set a compute target of about 1–1.5 days (D2).
+**Design.** DESIGN.md v3 was frozen at 61b0beb after three review rounds by seven reviewer agents. Every later change is a dated row in §17 (A1–A14), and every user or PI decision is logged in RESEARCH_TREE.md (D0–D16). The user excluded ftINIT, because it underperformed the generic model in the user's own analysis, and set a compute target of about 1–1.5 days (D2).
 
 **Endpoints and claim language** (DESIGN §6.3–6.4).
 - The primary endpoint, C1, is Δ̄_lin(P1 − G\*): the lineage-equal mean of per-line ΔtAP on the 7 locked test lineages.
@@ -93,7 +93,7 @@ B8 measures what any pipeline gains by ordering the tied block with an expressio
 
 The negative control shuffles media within lineage × serum status. The calibrated regime M3 was excluded as uncalibrated, because growth tracked the O2 bound (A9).
 
-**3.5 W3, tasks, objectives, biomass.** The modes:
+**3.5 W3, tasks, objectives, biomass.** The candidate task sets and controls were fixed a priori (notes/apriori_lists_final.md, A2). The modes:
 - Task criterion modes, including T5, a CellFie-inspired [50] line-specific set.
 - Objectives, including MOMA [64].
 - Demand constraints.
@@ -111,7 +111,7 @@ Pseudo-tasks and a matched-call-rate control are the negative controls; the meva
 - F4: E-Flux [43].
 - F5: label-calibrated presence.
 
-CORDA cost 1.5–1.7 CPU-h per build, so it ran as a 10-line descriptive comparison (A7, D8). A fixed repair rule restores growth and the viability tasks. A4 fixed the implementation details before any build was scored, and A10 fixed time limits. Method vs tissue was tested by PERMANOVA against permuted-expression builds, the failure mode reported by [7].
+CORDA (the `corda` 0.5.1 package; LITERATURE.md gives no reference) cost 1.5–1.7 CPU-h per build, so it ran as a 10-line descriptive comparison (A7, D8). A fixed repair rule restores growth and the viability tasks. A4 fixed the implementation details before any build was scored, and A10 fixed time limits. Method vs tissue was tested by PERMANOVA against permuted-expression builds, the failure mode reported by [7, 8].
 
 **3.7 W5, GPR curation.** For the 200 GPR groups where single edits flip most calls, evidence edits were scripted:
 - OR → AND for co-complex members;
@@ -134,7 +134,11 @@ W5b added training-fold co-essentiality. Human1's reversible thymidylate synthas
 - **Label access.** Labels pass only through `labels.py`. A PreToolUse hook blocks direct reads and is probed at every session start; a runtime tripwire and a label-copy scanner back it up.
 - **Looks.** FROZEN.tsv SHA pins are checked before each look. The ledgers are hash-chained. Validation looks reveal scalars only.
 - **Exposure.** Every agent that saw label aggregates is listed in an exposure register (notes/label_exposure.md).
-- **Review.** Every result relied on was recomputed by a non-author agent (notes/reviews/).
+- **Review.** Training and validation results were recomputed by non-author agents with their own code (notes/reviews/). The test tier could not be recomputed the same way, because the tripwire allows test-label reads only from the frozen `evaluate_test.py`. Four checks stand in for it:
+  - the test harness was reviewed and re-checked on synthetic labels (notes/reviews/M6_evaluate_test_review.md);
+  - its rehearsal on validation reproduced the independently reviewed M6 look exactly: C1 <!--n:rh.c1-->+0.0517 in the rehearsal (results/m6/rehearsal/val_look_REHEARSAL_P1_M6_gates.json) against <!--n:m6.val.c3.pt-->+0.0517 in the M6 look (results/m6/val/val_look_M6_factorial_decision.json);
+  - the PI recomputed the lineage-equal C1 from the unsealed per-lineage values (notes/reviews/M9_T1_partial_recompute.md);
+  - W8 had no separate review; its six gates and the reload checks against the M6 sweeps are automated.
 
 The GPR transform of Machado et al. (2016) was assessed and not adopted (A8). Its gene-level KOs equal the Boolean KOs exactly (notes/methods/GPRTransform_assessment.md).
 
@@ -167,7 +171,7 @@ Test values are in §4.10.
 - **Paper protocols** (results/w1/train_binary.tsv, results/w1/val_look_W1_M2_baseline.tsv).
   - P57 × L-ge06 MCC, Human1 / Human2: <!--n:w1.tr.mcc.h1.p57-->0.329 / <!--n:w1.tr.mcc.h2.p57-->0.331 on training; <!--n:w1.val.mcc.h1.p57-->0.330 / <!--n:w1.val.mcc.h2.p57-->0.333 on validation.
   - PGR (biomass only): <!--n:w1.tr.mcc.h1.pgr-->0.334 / <!--n:w1.tr.mcc.h2.pgr-->0.331 on training; <!--n:w1.val.mcc.h1.pgr-->0.337 / <!--n:w1.val.mcc.h2.pgr-->0.336 on validation.
-  - These lie within the published 0.25–0.44 range (LITERATURE §2.1).
+  - These lie within the published range of about 0.25–0.45 (LITERATURE.md §0, item 2).
 - **Recall ceiling.** Only <!--n:w1.addr.h2.n-->1,098 U genes are addressable in Human2, meaning their KO closes a reaction. <!--n:w1.addr.h2.out-->42% of positive training gene × line pairs lie outside that set (<!--n:w1.addr.h1.out-->45% for Human1) (results/w1/train_addressable.tsv).
 
 ### 4.2 Context-specific models (W4, Stage A): every family negative
@@ -201,7 +205,7 @@ CORDA, R1, 10 lines, descriptive: Δ <!--n:w4.corda-->−0.0127 vs Human1 (resul
 Training LOLO Δ̄_lin vs the generic parent (results/w5/train_summary.json).
 - **W5a (literal rules):** <!--n:w5.h1-->−0.0285 [−0.0289, −0.0282] on Human1 and <!--n:w5.h2-->−0.0293 [−0.0295, −0.0291] on Human2, 0/12 folds. This is worse than every matched random-edit control (Human1: <!--n:w5.neg.h1-->−0.0145 to −0.0057).
 - **W5b** equals W5a: no co-essential pair reached r ≥ 0.4.
-- **Cause.** The AND → OR paralog rule merged distant RNA polymerase I/II/III subunits inside one lumped GPR, which the edit reviewer rejected on biology. With paralogs restricted to ≥ 30% identity, W5a gives <!--n:w5.pid30.h1-->−0.0021 [−0.0024, −0.0018] (Human1) and <!--n:w5.pid30.h2-->−0.0031 [−0.0032, −0.0030] (Human2).
+- **Cause.** The AND → OR paralog rule merged distant RNA polymerase I/II/III subunits inside one lumped GPR, which the edit reviewer rejected on biology. With paralogs restricted to ≥ 30% identity (a sensitivity declared in code before scoring, not in DESIGN), W5a gives <!--n:w5.pid30.h1-->−0.0021 [−0.0024, −0.0018] (Human1) and <!--n:w5.pid30.h2-->−0.0031 [−0.0032, −0.0030] (Human2).
 - **Thymidylate synthase fix** (Human1): <!--n:w5.tyms-->+0.0007 [0.0004, 0.0010], <!--n:w5.tyms.folds-->9/12 folds. Consistent, but below the gate.
 
 The curation lever was not selected, so test contrasts (iii) and (v) read "lever not selected".
@@ -210,7 +214,7 @@ The curation lever was not selected, so test contrasts (iii) and (v) read "lever
 
 <!--n:w2.nattr-->466 training lines with a documented medium sheet; Human1; Δ̄_lin vs Ham's M0 (results/w2/train/shortlist.json).
 - **Documented medium plus serum, M2(f = 1):** <!--n:w2.m2-->+0.0159 [0.0146, 0.0172], <!--n:w2.m2.folds-->11/12 folds (one fold has too few lines to count), <!--n:w2.m2.noce-->+0.0182 minus CE_fit. It passed TG. Base medium alone (M1) gives <!--n:w2.m1-->+0.0089 (results/w2/train/step_scores.tsv).
-- **W2-SHUF.** Documented minus shuffled medium is <!--n:w2.shuf-->+0.0005 [−0.0000, 0.0010], and a shuffled medium keeps <!--n:w2.shuf.share-->97% of the gain (results/w2/train/shuffled_control.tsv). The gain means "a realistic culture medium instead of Ham's", not line-specific medium. Ham's hypoxanthine and thymidine mask purine and pyrimidine synthesis, while serum carnitine, cholesterol and glutathione rescue artefact calls. This direction agrees with the medium effects reported in DepMap [10]. mΔAP_gene ≈ 0.
+- **W2-SHUF.** Documented minus shuffled medium is <!--n:w2.shuf.precise-->+0.0005 [−0.00003, 0.0010], and a shuffled medium keeps <!--n:w2.shuf.share-->97% of the gain (results/w2/train/shuffled_control.tsv). The gain means "a realistic culture medium instead of Ham's", not line-specific medium. Ham's hypoxanthine and thymidine mask purine and pyrimidine synthesis, while serum carnitine, cholesterol and glutathione rescue artefact calls. Medium-dependent metabolic essentiality is reported in DepMap [10] and in physiological-medium screens, including purine synthesis rescued by hypoxanthine [11]. mΔAP_gene ≈ 0.
 - **W2-MOPEN.** The open-medium negative control gives <!--n:w2.mopen-->+0.0195 on all genes but <!--n:w2.mopen.noce-->−0.0168 minus CE_fit (results/w2/train/step_scores.tsv).
 - **Physiological media** score below the documented medium: HPLM <!--n:w2.hplm-->+0.0116, Plasmax <!--n:w2.plasmax-->+0.0100.
 - **Error attributable to medium** (results/w2/train/attribution.json). The documented medium reaches <!--n:w2.oracle-->0.979 of a per-line training oracle's gain, but net-corrects only <!--n:w2.netflip-->2.7% of the generic model's binary errors.
@@ -223,11 +227,12 @@ Training LOLO Δ̄_lin vs the generic parent, Human1, M0 (results/w3/train/short
   - Δ̄_lin <!--n:w3.tr.bloo-->+0.0343 [0.0336, 0.0349], <!--n:w3.tr.bloo.folds-->12/12 folds; <!--n:w3.tr.bloo.noce-->+0.0213 minus CE_fit; Human2 <!--n:w3.tr.bloo.h2-->+0.0369.
   - It removes biomass-artefact false positives (retinoid and vitamin-D catabolism, carnitine, BH4, CoQ).
   - It also loses some genuine requirements (heme, PDXK, TPK1, RFK).
-- **W3-D1.** No pre-registered negative control applies. The variant loses to a B2-informed symmetric removal comparator (<!--n:w3.tr.sym-->−0.020).
+- **W3-D1.** No pre-registered negative control applies. Under the symmetric control used in the first scoring run, no W3 mode, this one included, qualified (results/w3/README.md, D-1). The variant also loses to a B2-informed symmetric removal comparator (<!--n:w3.tr.sym-->−0.020).
 - **W3-MEV.** Under serum, HMGCR, MVK, PMVK and MVD become non-lethal, because ubiquinol leaves with the pool.
 - **Metabolite-pool leave-out:** <!--n:w3.tr.metpool-->+0.0056, withdrawn before the look. The winner's-curse term over 134 modes, <!--n:w3.wc-->0.049, exceeds every training effect.
 - **Task modes lower all-gene tAP but raise it minus CE_fit:** T3 <!--n:w3.tr.t3-->−0.0149 (<!--n:w3.tr.t3.noce-->+0.0094 minus CE_fit); T5 <!--n:w3.tr.t5-->−0.0288 (<!--n:w3.tr.t5.noce-->+0.0172). All task modes lose to the matched-call-rate control.
 - **Objectives do nothing:** MOMA <!--n:w3.tr.moma-->−0.0022; task capacity <!--n:w3.tr.ocap-->+0.0013; biosynthetic demands <!--n:w3.tr.dbs-->−0.0012.
+- **Which contexts (exploratory, training only).** <!--n:w3.ctx.claims-->1,416 of <!--n:w3.ctx.tests-->7,209 context × mode tests reached BH q < 0.05 on training (results/w3/train/context_claims.tsv). Per the W3 README, almost all of them restate the mode's global sign; the 3 reversals are Human2 contexts. None was checked on validation, so no context-specific task claim is made.
 - **Validation look 2: gate passed.** B-loo on Human1 gives <!--n:w3.val-->+0.0322 [0.0308, 0.0334] vs G\* (tAP <!--n:w3.val.tap-->0.334) and <!--n:w3.val.noce-->+0.0191 [0.0175, 0.0205] minus CE_fit (results/w3/val/val_look_W3_M4_shortlist_decision.json, results/w3/val/val_look_W3_M4_shortlist.tsv). This was the first lever to beat G\* on held-out lineages.
 
 ### 4.6 Context on top of the biomass fix (M5): small, not selected
@@ -236,7 +241,7 @@ On the 30-line panel, on top of Human1 + B-loo (results/m5/train/train_decision.
 - GIMME adds <!--n:m5.f2-->+0.0031 [0.0017, 0.0045] (<!--n:m5.f2.folds-->8/10 folds).
 - E-Flux adds <!--n:m5.f4-->+0.0044 [0.0035, 0.0052] (<!--n:m5.f4.folds-->10/10 folds; viability gate failed; method-dominated).
 
-Both are below the +0.005 bar, so Stage B and C were skipped.
+Both are below the +0.005 bar, so Stage B and C were skipped. As a result, no lineage, genomic-background or lineage × background group models were built or evaluated, although PROMPT.md asks for them. Genomic data entered only as the Stage A loss constraint, which changed tAP by at most 0.0002 (§4.2).
 
 ### 4.7 Integration factorial (M6) and P1
 
@@ -265,11 +270,11 @@ The test tier has <!--n:t1.n.lines-->380 expression lines in 7 lineages, plus <!
 
 | Contrast | Estimate [95% CI] | One-sided p | Status and claim (§6.4) |
 |---|---|---|---|
-| **C1**, P1 − G\*, all genes (headline) | <!--n:t1.c1-->+0.0497 [0.0482, 0.0513] | <!--n:t1.c1.p-->< 0.001 | confirmed; **<!--n:t1.c1.claim-->meaningfully improves**, conditional on the 7 test lineages |
-| **C1b**, P1 − G\*, minus CE_fit | <!--n:t1.c1b-->+0.0374 [0.0351, 0.0397] | <!--n:t1.c1b.p-->< 0.001 | <!--n:t1.c1b.status-->confirmed; **<!--n:t1.c1b.claim-->meaningfully improves** (SESOI_C1b) |
+| **C1**, P1 − G\*, all genes (headline) | <!--n:t1.c1-->+0.0497 [0.0482, 0.0513] | <!--n:t1.c1.p-->< 0.001 | confirmed; **<!--n:t1.c1.claim-->meaningfully improves**, conditional on the 7 test lineages; flags W3-D1, W3-MEV, W2-SHUF, W2-MOPEN |
+| **C1b**, P1 − G\*, minus CE_fit | <!--n:t1.c1b-->+0.0374 [0.0351, 0.0397] | <!--n:t1.c1b.p-->< 0.001 | <!--n:t1.c1b.status-->confirmed; **<!--n:t1.c1b.claim-->meaningfully improves** (SESOI_C1b); flags W3-D1, W3-MEV, W2-SHUF, W2-MOPEN |
 | **C3**, P1 per-gene ranking − B3 | <!--n:t1.c3-->−0.0114 [−0.0183, −0.0115] | <!--n:t1.c3.p-->0.64 | not confirmed; <!--n:t1.c3.claim-->no detectable improvement |
-| C4, P2 − G\* | <!--n:t2.c4-->+0.602 [0.598, 0.605] | <!--n:t2.c4.p-->< 0.001 | <!--n:t2.c4.status-->estimate only (C3 failed) |
-| C5, P2 − B6 (pre-registered M2 configuration) | <!--n:t2.c5-->+0.0138 [0.0116, 0.0167] | <!--n:t2.c5.p-->< 0.001 | <!--n:t2.c5.status-->estimate only (C3 failed) |
+| C4, P2 − G\* | <!--n:t2.c4-->+0.602 [0.598, 0.605] | — (not tested) | <!--n:t2.c4.status-->estimate only (C3 failed) |
+| C5, P2 − B6 (pre-registered M2 configuration) | <!--n:t2.c5-->+0.0138 [0.0116, 0.0167] | — (not tested) | <!--n:t2.c5.status-->estimate only (C3 failed) |
 
 Sources: results/m6/test/test_look_T1_gates.json, results/m6/test/test_look_T2_gates.json.
 
@@ -278,8 +283,8 @@ Sources: results/m6/test/test_look_T1_gates.json, results/m6/test/test_look_T2_g
 - **C3 (results/m6/test/test_look_T1.tsv).**
   - P1's mean per-gene ΔAP over the null is <!--n:t1.c3.mdap-->−0.0002 on <!--n:t1.c3.ngenes-->963 estimable genes, below the permutation threshold of <!--n:t1.c3.null-->0.0001.
   - Expression (B3) ranks genes across lines better, so the contrast is negative. The expressed-pairs version agrees: <!--n:t1.c3.expr-->−0.0117 [−0.0189, −0.0115].
-  - The bootstrap interval sits just below the point estimate, presumably because genes left without positives are dropped in each replicate (DESIGN §6.2). This does not change the verdict.
-  - P1 therefore carries **no line-specific information beyond expression**, which is consistent with W2-SHUF.
+  - The percentile interval excludes the point estimate. The cause (gene dropping or line duplication in the bootstrap) is not established. Both C3 criteria fail independently (CI and permutation), so the verdict does not depend on it.
+  - P1 therefore shows **no detectable line-specific information beyond expression**, which is consistent with W2-SHUF.
 - **Estimates** (results/m6/test/test_look_T1.tsv).
 
   | Contrast | Δ̄_lin [95% CI] |
@@ -307,11 +312,11 @@ Sources: results/m6/test/test_look_T1_gates.json, results/m6/test/test_look_T2_g
 - C5 measures only the monotone constraint that separates P2 from the pre-registered B6.
 - Both are estimates, because C3 failed. Each is positive in <!--n:t2.c4.k-->7/7 and <!--n:t2.c5.k-->7/7 lineages respectively (results/m6/test/test_look_T2_gates.json).
 - On test, P2 scores tAP <!--n:t2.tap.p2-->0.899 against <!--n:t2.tap.b6-->0.885 for B6 (results/m6/test/test_look_T2_grid.tsv). B2 scores <!--n:un.w1.b2.all-->0.895, B2m <!--n:un.w1.b2m.all-->0.896, B8+ <!--n:un.w1.b8p.all-->0.418 and B8− <!--n:un.w1.b8m.all-->0.223 (results/m6/test/unsealed/T1/w1_benchmark.tsv). These come from two looks on the same lines, so the comparison is descriptive.
-- C5's shrinkage path (training +0.014, validation +0.0007, test +0.014) is discussed in D16 (RESEARCH_TREE.md).
+- C5's path (training +0.014, validation +0.0007, test +0.014) is discussed in D16 (RESEARCH_TREE.md). Validation compared W7-05 with W7's B6 (W7-01); test compared it with the pre-registered B6 refit on training ∪ validation, so the three numbers are not the same contrast.
 
 ### 4.9 Binary endpoints vs the Human1/Human2 papers (test)
 
-MCC on the test expression lines, lineage-equal mean, parent gene set (results/m6/test/test_look_T1.tsv). Under P57 the Human2-paper rows are identical to the Human1-paper rows.
+MCC on the test expression lines, lineage-equal mean, parent gene set (results/m6/test/test_look_T1.tsv). P1 carries the flags W3-D1, W3-MEV, W2-SHUF, W2-MOPEN. Under P57 the Human2-paper rows are identical to the Human1-paper rows.
 
 | Call rule × label | G\* (Human1) | Human2 | P1(H1) | P1(H2) | P1(H1) − G\* [95% CI] |
 |---|---|---|---|---|---|
@@ -320,13 +325,13 @@ MCC on the test expression lines, lineage-equal mean, parent gene set (results/m
 | ratio_r < 0.01 × L-ge06 | <!--n:t1.mcc.fix06.h1-->0.334 | <!--n:t1.mcc.fix06.h2-->0.330 | <!--n:t1.mcc.fix06.p1-->0.387 | <!--n:t1.mcc.fix06.p1h2-->0.394 | |
 | ratio_r < 0.01 × L_prob | <!--n:t1.mcc.fixp.h1-->0.320 | <!--n:t1.mcc.fixp.h2-->0.316 | <!--n:t1.mcc.fixp.p1-->0.372 | <!--n:t1.mcc.fixp.p1h2-->0.377 | <!--n:t1.mcc.fixp.d-->+0.0522 [0.0503, 0.0539] |
 
-Under P57 × L-ge06, P1's precision rises from <!--n:t1.p57.precision.h1-->0.423 to <!--n:t1.p57.precision.p1-->0.473, while recall falls from <!--n:t1.p57.recall.h1-->0.343 to <!--n:t1.p57.recall.p1-->0.333. F1 goes from <!--n:t1.p57.f1.h1-->0.378 to <!--n:t1.p57.f1.p1-->0.390 (results/m6/test/test_look_T1.tsv). The biomass fix removes false positives; it adds no new true calls. All MCCs remain in the published 0.25–0.44 range. These are estimates, and comparability with the papers is in protocol, not in label scale (§7).
+Under P57 × L-ge06, P1's precision rises from <!--n:t1.p57.precision.h1-->0.423 to <!--n:t1.p57.precision.p1-->0.473, while recall falls from <!--n:t1.p57.recall.h1-->0.343 to <!--n:t1.p57.recall.p1-->0.333. F1 goes from <!--n:t1.p57.f1.h1-->0.378 to <!--n:t1.p57.f1.p1-->0.390 (results/m6/test/test_look_T1.tsv). Under PGR, F1 goes from <!--n:t1.pgr.f1.h1-->0.363 to <!--n:t1.pgr.f1.p1-->0.379 (Human2 <!--n:t1.pgr.f1.h2-->0.364, P1(H2) <!--n:t1.pgr.f1.p1h2-->0.384). Under P57, F1 for Human2 and P1(H2) is <!--n:t1.p57.f1.h2-->0.380 and <!--n:t1.p57.f1.p1h2-->0.393. Accuracy is <!--n:t1.p57.accuracy.h1-->0.892 → <!--n:t1.p57.accuracy.p1-->0.901 and specificity <!--n:t1.p57.specificity.h1-->0.951 → <!--n:t1.p57.specificity.p1-->0.961 (G\* → P1, P57). With the papers' line-weighted mean, P57 MCC is <!--n:t1.p57.linemcc.h1-->0.326 for G\* and <!--n:t1.p57.linemcc.p1-->0.349 for P1 (Human2 <!--n:t1.p57.linemcc.h2-->0.329, P1(H2) <!--n:t1.p57.linemcc.p1h2-->0.350). The 21-threshold L-ge06 grid of the Human1-paper protocol is in results/m6/test/unsealed/T1/binary_threshold_grid.tsv. The biomass fix removes false positives; it adds no new true calls. All MCCs remain in the published range of about 0.25–0.45 (LITERATURE.md §0, item 2). These are estimates, and comparability with the papers is in protocol, not in label scale (§7).
 
 ### 4.10 Breakdowns per lineage, gene and task (unsealed T1 outputs)
 
 **Per lineage** (results/m6/test/unsealed/T1/per_lineage.tsv). The table gives mean tAP_line with Δ vs G\*. Lineages are listed alphabetically, not ranked by raw AP (DESIGN §6.2).
 
-| Lineage (lines) | G\* | P1 | Δ P1(H1) | Δ P1(H2) | Δ Human2 | B2 |
+| Lineage (expression lines) | G\* | P1 | Δ P1(H1) | Δ P1(H2) | Δ Human2 | B2 |
 |---|---|---|---|---|---|---|
 | Breast (<!--n:un.lin.breast.n-->65) | <!--n:un.lin.breast.gstar-->0.309 | <!--n:un.lin.breast.p1-->0.364 | <!--n:un.lin.breast.d.p1-->+0.0543 | <!--n:un.lin.breast.d.p1h2-->+0.0477 | <!--n:un.lin.breast.d.h2-->−0.0058 | <!--n:un.lin.breast.b2-->0.886 |
 | CNS/Brain (<!--n:un.lin.cns.n-->126) | <!--n:un.lin.cns.gstar-->0.297 | <!--n:un.lin.cns.p1-->0.348 | <!--n:un.lin.cns.d.p1-->+0.0505 | <!--n:un.lin.cns.d.p1h2-->+0.0439 | <!--n:un.lin.cns.d.h2-->−0.0095 | <!--n:un.lin.cns.b2-->0.901 |
@@ -340,23 +345,23 @@ The P1 gain is homogeneous across lineages (<!--n:un.lin.range-->+0.0459 to +0.0
 
 **Full W1 benchmark on test** (lineage-equal tAP_line, L_prob, U; results/m6/test/unsealed/T1/w1_benchmark.tsv; P2 and B6 from results/m6/test/test_look_T2_grid.tsv).
 
-| Method | All genes | Minus CE_fit |
-|---|---|---|
-| G\* (Human1) | <!--n:un.w1.h1.all-->0.297 | <!--n:un.w1.h1.noce-->0.146 |
-| Human2 | <!--n:un.w1.h2.all-->0.289 | <!--n:un.w1.h2.noce-->0.143 |
-| Human1 + P57 task calls | <!--n:un.w1.h1task.all-->0.280 | <!--n:un.w1.h1task.noce-->0.153 |
-| Human1 / M2(f = 1), medium alone | <!--n:un.w1.m2.all-->0.310 | <!--n:un.w1.m2.noce-->0.161 |
-| **P1(H1)** | <!--n:un.w1.p1.all-->0.347 | <!--n:un.w1.p1.noce-->0.184 |
-| P1(H2) | <!--n:un.w1.p1h2.all-->0.341 | <!--n:un.w1.p1h2.noce-->0.180 |
-| B0 null | <!--n:un.w1.b0.all-->0.124 | <!--n:un.w1.b0.noce-->0.071 |
-| B3 expression | <!--n:un.w1.b3.all-->0.317 | <!--n:un.w1.b3.noce-->0.198 |
-| B8+ | <!--n:un.w1.b8p.all-->0.418 | <!--n:un.w1.b8p.noce-->0.212 |
-| B8− | <!--n:un.w1.b8m.all-->0.223 | <!--n:un.w1.b8m.noce-->0.109 |
-| B8′ | <!--n:un.w1.b8q.all-->0.305 | <!--n:un.w1.b8q.noce-->0.151 |
-| B2 gene prior | <!--n:un.w1.b2.all-->0.895 | <!--n:un.w1.b2.noce-->0.681 |
-| B2m | <!--n:un.w1.b2m.all-->0.896 | <!--n:un.w1.b2m.noce-->0.687 |
-| B6 (refit on training ∪ validation) | <!--n:t2.tap.b6-->0.885 | <!--n:t2.tap.b6.noce-->0.673 |
-| **P2** (W7-05, non-GEM) | <!--n:t2.tap.p2-->0.899 | <!--n:t2.tap.p2.noce-->0.693 |
+| Method | All genes | Minus CE_fit | Pooled over all pairs ("overall") |
+|---|---|---|---|
+| G\* (Human1) | <!--n:un.w1.h1.all-->0.297 | <!--n:un.w1.h1.noce-->0.146 | <!--n:un.w1.h1.pooled-->0.295 |
+| Human2 | <!--n:un.w1.h2.all-->0.289 | <!--n:un.w1.h2.noce-->0.143 | <!--n:un.w1.h2.pooled-->0.287 |
+| Human1 + P57 task calls | <!--n:un.w1.h1task.all-->0.280 | <!--n:un.w1.h1task.noce-->0.153 | <!--n:un.w1.h1task.pooled-->0.278 |
+| Human1 / M2(f = 1), medium alone | <!--n:un.w1.m2.all-->0.310 | <!--n:un.w1.m2.noce-->0.161 | <!--n:un.w1.m2.pooled-->0.309 |
+| **P1(H1)** | <!--n:un.w1.p1.all-->0.347 | <!--n:un.w1.p1.noce-->0.184 | <!--n:un.w1.p1.pooled-->0.346 |
+| P1(H2) | <!--n:un.w1.p1h2.all-->0.341 | <!--n:un.w1.p1h2.noce-->0.180 | <!--n:un.w1.p1h2.pooled-->0.340 |
+| B0 null | <!--n:un.w1.b0.all-->0.124 | <!--n:un.w1.b0.noce-->0.071 | <!--n:un.w1.b0.pooled-->0.121 |
+| B3 expression | <!--n:un.w1.b3.all-->0.317 | <!--n:un.w1.b3.noce-->0.198 | <!--n:un.w1.b3.pooled-->0.314 |
+| B8+ | <!--n:un.w1.b8p.all-->0.418 | <!--n:un.w1.b8p.noce-->0.212 | <!--n:un.w1.b8p.pooled-->0.416 |
+| B8− | <!--n:un.w1.b8m.all-->0.223 | <!--n:un.w1.b8m.noce-->0.109 | <!--n:un.w1.b8m.pooled-->0.222 |
+| B8′ | <!--n:un.w1.b8q.all-->0.305 | <!--n:un.w1.b8q.noce-->0.151 | <!--n:un.w1.b8q.pooled-->0.303 |
+| B2 gene prior | <!--n:un.w1.b2.all-->0.895 | <!--n:un.w1.b2.noce-->0.681 | <!--n:un.w1.b2.pooled-->0.890 |
+| B2m | <!--n:un.w1.b2m.all-->0.896 | <!--n:un.w1.b2m.noce-->0.687 | <!--n:un.w1.b2m.pooled-->0.893 |
+| B6 (refit on training ∪ validation) | <!--n:t2.tap.b6-->0.885 | <!--n:t2.tap.b6.noce-->0.673 | <!--n:t2.pooled.b6-->0.879 |
+| **P2** (W7-05, non-GEM) | <!--n:t2.tap.p2-->0.899 | <!--n:t2.tap.p2.noce-->0.693 | <!--n:t2.pooled.p2-->0.896 |
 
 - **Human2 vs Human1.** Human2 − Human1 on test is <!--n:un.w1.h2h1-->−0.0084 [−0.0089, −0.0079] (results/m6/test/unsealed/T1/w1_benchmark.tsv), so H1.2 is not supported on test either.
 - **All 394 lines.** Including the lines without expression, generic Human1 scores <!--n:un.all.h1-->0.297 and B2 <!--n:un.all.b2-->0.894 on <!--n:un.all.n-->394 lines (results/m6/test/unsealed/T1/generic_all_lines.tsv).
@@ -448,11 +453,11 @@ Sources: resource/models.tsv, results/w8/unscreened/build_summary.json, results/
 - **Contents of each model.** The SBML notes record the pipeline, Human-GEM release, medium signature and tier, W3 variant, git commit, input SHA-256s and flags. Closed reactions keep bounds (0, 0), and no reaction was repaired. `scripts/w8_line_sbml.py` writes per-line files on demand (resource/README.md).
 - **The one gate failure is LP noise.** One Human2 model, for a single-line RPMI + testosterone medium, misses the random-KO gate. Its reloaded KO growth is <!--n:res.noise.default-->−8.0e−09 under GLPK default tolerances, and <!--n:res.noise.exact-->0.0 with exact rational arithmetic (results/w8/ko_noise/human2_20cc933a4b852b6a_summary.json). The gate rule was left unchanged and the miss is documented. The original resource commit message claimed that all gates passed; RESEARCH_TREE.md corrects it.
 - **The unscreened extension.** It adds DESIGN's unscreened scope, using W2's frozen medium rule; non-documented lines get the flagged classic RPMI + 10% FBS. Its 8 new files were built from a dirty tree (results/w8/README.md).
-- **Deviations.** The resource ships per-signature files rather than per-line files, so it does not suggest more line specificity than P1 has. The Human1 FROG report has not been run. MEMOTE failures are properties of the parent models.
+- **Deviations.** No extraction-based context-specific models are released, because every extraction family failed TG and the context lever was not selected (§4.2, §4.6); the released models are P1. The resource ships per-signature files rather than per-line files, so it does not suggest more line specificity than P1 has. The Human1 FROG report has not been run. MEMOTE failures are properties of the parent models.
 
 ## 6. Failures and negative results
 
-**Failure account on test** (DESIGN §10.3; results/m6/test/unsealed/T1/failure_account.tsv). P1 makes <!--n:un.fail.all_errors.fn-->100,383 false-negative and <!--n:un.fail.all_errors.fp-->10,934 false-positive gene × line calls. A call can fall in several classes, so the shares overlap.
+**Failure account on test** (DESIGN §10.3; results/m6/test/unsealed/T1/failure_account.tsv). P1 makes <!--n:un.fail.all_errors.fn-->100,383 false-negative and <!--n:un.fail.all_errors.fp-->10,934 false-positive gene × line calls, using fixed-cutoff calls (ratio_r < 0.01) against L_prob. A call can fall in several classes, so the shares overlap.
 
 | Error class | False negatives (share) | False positives (share) |
 |---|---|---|
@@ -492,8 +497,8 @@ M3 calibration was infeasible as specified, and the W2 single-removal flip analy
 
 ## 7. Limitations
 
-- **Addressable-set ceiling.** <!--n:w1.addr.h2.out-->42% of positive training pairs lie in genes whose KO changes nothing in the parent (results/w1/train_addressable.tsv). Mechanisms outside FBA are invisible to every GEM arm, as the worst cells show.
-- **P1 is line-specific only through the medium.** C3 failed and W2-SHUF holds, so even that information is not line-specific: the confirmed C1 gain is a better generic ranking, not personalisation. This is why the resource holds <!--n:res.models-->48 models, not one per line (resource/models.tsv).
+- **Addressable-set ceiling.** For Human1, the parent of P1 and G\*, <!--n:w1.addr.h1.out-->45% of positive training pairs lie in genes whose KO changes nothing (Human2: <!--n:w1.addr.h2.out-->42%; results/w1/train_addressable.tsv). On test the Human1 share is <!--n:un.fail.outside-->45.3% (results/m6/test/unsealed/T1/failure_account.tsv). Mechanisms outside FBA are invisible to every GEM arm, as the worst cells show.
+- **P1 is line-specific only through the medium.** C3 failed and W2-SHUF holds, so even that shows no detectable line-specific information: the confirmed C1 gain is a better generic ranking, not personalisation. This is why the resource holds <!--n:res.models-->48 models, not one per line (resource/models.tsv).
 - **The gene prior dwarfs the GEMs.** On test, P1 closes only <!--n:t1.headroom-->8.3% [8.1%, 8.6%] of the headroom between G\* and B2 (results/m6/test/test_look_T1.tsv). Most label signal is gene identity shared across lineages.
 - **Near-binary scores.** Results depend on large tied blocks, and the B8+ expression tie-break beats P1 on test.
 - **Chronos vs CERES.** The Human1 paper applied gene effect < −0.6 to CERES (19Q3); we apply it to Chronos (26Q3), whose scale differs. The Human2 paper states no threshold. Our MCCs match the papers' protocol, not their label scale, and neither paper's per-line extraction was reproduced (D2).
@@ -530,7 +535,12 @@ Source: results/*/**/MANIFEST.tsv and PROVENANCE.tsv at HEAD, summed by `runtime
 - **Stage A dominates.** Its builds took <!--n:w4.buildcpu-->108.7 CPU-h (results/w4/stage_a/MANIFEST.tsv). The context families it built were all rejected.
 - **W7's ledger** records <!--n:rt.budget.w7-->8.8 CPU-h, including aborted runs (results/budget.tsv).
 - **Not in the manifests.** The FROG report took <!--n:res.frog.cpu-->0.66 CPU-h (results/w8/frog/frog_summary.json). Unrecorded losses quoted from READMEs, not checked: about 8.5 CPU-h of killed W3 runs, 1.3 of a stalled W2 run, and 7 of a BLAS-thread incident in W6 (results/w3/README.md, results/w2/README.md, RESEARCH_TREE.md item 8.1).
-- **Cost against accuracy.** The ratio strongly favours the gene prior: B2 costs seconds, while any GEM arm costs hours of LP solves.
+- **Runtime alongside accuracy** (test tAP in §4.10).
+  - G\*: one generic KO sweep took about 53 s wall on 15 workers (results/baseline/README.md; no manifest row).
+  - P1: the M6 sweeps of the biomass variant on 19 media × 2 parents took <!--n:rt.p1.sweeps-->0.63 CPU-h (results/m6/MANIFEST.tsv).
+  - B6 / P2: one full nested-LOLO training screen of W7-05 took <!--n:rt.w7.05.screen-->0.36 CPU-h (results/budget.tsv).
+  - Test looks: T1, which scores every method on the test lines, took <!--n:rt.t1.cpu-->2,638 CPU-s. T2, including the refit of B6 and P2 on training ∪ validation, took <!--n:rt.t2.cpu-->154 CPU-s (results/m6/test/MANIFEST.tsv).
+  - B2 is a column mean computed in seconds, and it is the most accurate per unit of compute by a wide margin.
 
 ## 9. Reproducibility
 
@@ -557,7 +567,7 @@ Source: results/*/**/MANIFEST.tsv and PROVENANCE.tsv at HEAD, summed by `runtime
 - **Independent recomputation is the core guarantee.** One review found a float-tie AP instability of up to 0.018 that 36 passing checks had missed. The W4 code review caught three defects, any of which would have invalidated Stage A.
 - **Fix control readings and eligible sets before looking.** W3-D1 exists because this was not done, and W2's eligible set could not be verified as fixed in advance (notes/reviews/M4_W2_review.md).
 - **Read every result against B2 and B8,** not only G\*. On test the GEM gain was confirmed, yet it is still below B8+.
-- **Look for structural false positives before adding data.** The biomass artefact fix replicated from training to test, whereas every data-driven extraction lost.
+- **Look for structural false positives before adding data.** The biomass edit alone was not scored on test. Descriptively, P1 minus medium alone is <!--n:un.w1.p1.all-->0.347 − <!--n:un.w1.m2.all-->0.310 in test tAP (results/m6/test/unsealed/T1/w1_benchmark.tsv), consistent with the training and validation effect, whereas every data-driven extraction lost.
 - **Every long job inherits time limits and pinned worktrees.** W3 lost about 8.5 CPU-h without them. About 40% of wall time went to review and fix rounds (notes/milestone_reviews/M3M4_process_review.md).
 
 **Process deviations recorded in reviews.**
@@ -572,6 +582,23 @@ Source: results/*/**/MANIFEST.tsv and PROVENANCE.tsv at HEAD, summed by `runtime
 - The first resource commit message overstated its gate results (§5).
 - The first rehearsal attempt aborted on an inherited PYTHONPATH and was rolled back without using a look (RESEARCH_TREE.md).
 
+## 11. Follow-ups and remaining ideas
+
+**Pipeline improvements.**
+- **The artefact-only biomass variant** (W7-03, exploratory) removes only the retinoid, vitamin-D, tocopherol and carnitine groups. It keeps the mevalonate core lethal under serum, so it fixes W3-MEV, at the cost of part of P1's gain. It is the first candidate for a P1 successor and needs its own validation look.
+- **Line-specific constraints beyond medium.** C3 shows that P1 carries no detectable line-specific signal. Copy number and LOH (here only a CN proxy), proteomics-based capacity bounds, uptake rates and enzyme constraints are untested as P1-level levers.
+- **Group models** (Stage C, skipped under A12): lineage, genomic-background (e.g. MTAP_del, ASS1_silenced) and lineage × background models, with their pre-registered within-lineage contrasts.
+- **Curated GPRs revisited** with the ≥ 30%-identity paralog rule, the UniProt removal path (file still requested from the user) and the edit-review rejections applied, re-scored as a fresh pre-registered arm.
+
+**Analyses still owed.**
+- **The pFBA traces of the 20 worst test cells** (DESIGN §10.3), which are not in the unsealed bundle.
+- **W3 context claims** checked for the same sign on validation, as DESIGN requires before any claim.
+- **The Human1 FROG report.**
+
+**Stated deviations.** These pre-registered outputs were not produced:
+- the §6.4 "top-k" unit, i.e. the change in true positives among each line's top-k genes;
+- the optimistic 16-lineage LOLO estimate of the frozen P1 protocol (§6.4).
+
 ## References
 
 Numbered as in LITERATURE.md; only works cited here are listed.
@@ -579,7 +606,9 @@ Numbered as in LITERATURE.md; only works cited here are listed.
 1. Robinson JL et al. An atlas of human metabolism. *Sci Signal* 2020;13:eaaz1482. doi:10.1126/scisignal.aaz1482.
 2. Luo J et al. Reconstruction of human metabolic models with large language models. *PNAS* 2026;123:e2516511123. doi:10.1073/pnas.2516511123.
 7. Opdam S et al. A systematic evaluation of methods for tailoring genome-scale metabolic models. *Cell Syst* 2017;4:318–329. doi:10.1016/j.cels.2017.01.010.
+8. Richelle A et al. Increasing consensus of context-specific metabolic models by integrating data-inferred cell functions. *PLoS Comput Biol* 2019;15:e1006867. doi:10.1371/journal.pcbi.1006867.
 10. Lagziel S, Lee WD, Shlomi T. Inferring cancer dependencies on metabolic genes from large-scale genetic screens. *BMC Biol* 2019;17:37. doi:10.1186/s12915-019-0654-4.
+11. Rossiter NJ et al. CRISPR screens in physiologic medium reveal conditionally essential genes in human cells. *Cell Metab* 2021;33:1248–1263. doi:10.1016/j.cmet.2021.02.005.
 22. Dempster JM et al. Chronos: a cell population dynamics model of CRISPR experiments that improves inference of gene fitness effects. *Genome Biol* 2021. doi:10.1186/s13059-021-02540-7.
 34. Becker SA, Palsson BO. Context-specific metabolic networks are consistent with experiments (GIMME). *PLoS Comput Biol* 2008;4:e1000082. doi:10.1371/journal.pcbi.1000082.
 40. Vlassis N, Pacheco MP, Sauter T. Fast reconstruction of compact context-specific metabolic network models (FASTCORE). *PLoS Comput Biol* 2014;10:e1003424. doi:10.1371/journal.pcbi.1003424.
@@ -588,6 +617,6 @@ Numbered as in LITERATURE.md; only works cited here are listed.
 55. Cantor JR et al. Physiologic medium rewires cellular metabolism and reveals uric acid as an endogenous inhibitor of UMP synthase (HPLM). *Cell* 2017. doi:10.1016/j.cell.2017.03.023.
 56. Vande Voorde J et al. Improving the metabolic fidelity of cancer models with a physiological cell culture medium (Plasmax). *Sci Adv* 2019;5:eaau7314. doi:10.1126/sciadv.aau7314.
 64. Segrè D, Vitkup D, Church GM. Analysis of optimality in natural and perturbed metabolic networks (MOMA). *PNAS* 2002;99:15112. doi:10.1073/pnas.232349399.
-92. McSherry F, Najork M. Computing information retrieval performance measures efficiently in the presence of tied scores. *ECIR 2008*, LNCS 4956.
+92. McSherry F, Najork M. Computing information retrieval performance measures efficiently in the presence of tied scores. *ECIR 2008*, LNCS 4956. (Title and venue as given in LITERATURE.md, which flags them for verification against the Springer record; not yet verified.)
 
 Not in LITERATURE.md, cited as given in DESIGN §17 A8: Machado et al. 2016. *PLoS Comput Biol*. doi:10.1371/journal.pcbi.1005140.
