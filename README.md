@@ -64,7 +64,7 @@ Validation looks used: 6 of 40 (W7: 2 of 20). Test looks: T1, T2 and the unseal;
 - **Flux states (W6)** add no information beyond omics + medium for subtypes, drug response or metabolomics; the positive control is recovered.
 - **Gene priors dominate.** GEM features add nothing to gene-prior ML (W7). P2, the best ML model (B6 with a monotone prior constraint, no GEM features), reaches test tAP of about 0.90. T2: P2 − G\* = +0.602, P2 − B6 = +0.014. Both are estimates only, because C3 failed. P1 closes 8.3% of the gap between G\* and B2.
 - **Paper-protocol MCC** (Human1 paper, P57 × gene effect < −0.6, test): G\* 0.322 → P1 0.345. With growth-only calls: 0.334 → 0.379.
-- **SBML resource:** 48 gzipped SBML models (Human1 and Human2 P1, one per medium signature), with a manifest mapping all 2,114 DepMap lines. 47/48 pass all six gates; the one miss is LP noise (−8e-9; exactly 0 in exact arithmetic). MEMOTE run on 10 models; FROG run on one Human2 model (Human1 in progress).
+- **SBML resource:** 48 gzipped SBML models (Human1 and Human2 P1, one per medium signature), with a manifest mapping all 2,114 DepMap lines. 47/48 pass all six gates; the one miss is LP noise (−8e-9; exactly 0 in exact arithmetic). MEMOTE run on 10 models; FROG run on both classic-RPMI models (Human1 and Human2); every model rebuilt from clean pinned commits.
 
 ## Known pitfalls and open issues
 - Most generic KO scores are near-binary (lethal or 1), so ties dominate AUPRC. Every metric is tie-aware, and tie-break baselines (B8±) are mandatory.
