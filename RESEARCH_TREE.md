@@ -4,9 +4,7 @@ Legend: [ ] planned · [~] in progress · [x] done · [-] abandoned/negative · 
 
 ## Status summary (2026-10-28: M0–M9 complete; post-hoc follow-ups F1–F4 under A15)
 
-M2 is complete. The generic models were scored on 686 training lines (12 lineages). H1 beats H2 on tie-aware AUPRC: tAP_line 0.300 vs 0.292. Their paper-protocol MCCs are similar: 0.329 vs 0.331 (P57 × L-ge06). An independent reviewer recomputed every headline number with its own code and matched it exactly. The single W1 validation look (1 of 40, scalars only, 198 lines in 4 lineages) set **G\* = Human1**: Δ̄_lin(H2−H1) = −0.0071 [−0.0079, −0.0063]. Label-only gene-prior baselines score far higher (B2 tAP 0.90). About 42% of positive gene × line pairs fall outside the H2 addressable set. These two facts set the realistic bar for context-specific GEMs.
-
-Update (2026-10-28): Stage A context families (W4) and GPR curation (W5) fail the training gate. W3's cofactor-pool biomass leave-out is the first lever to pass it (+0.034 on H1, flags W3-D1/W3-MEV); it passed its validation look (+0.032 [0.031, 0.033], look 2/40). Next: M6 combination factorial, W6 flux information, W7 hybrids with gene priors.
+The project is complete. P1 = Human1 + biomass cofactor-pool removal + documented medium. On test (T1, 7 held-out lineages) it improves tAP over generic Human1 by +0.0497 [0.0482, 0.0513] (D15). P2 (gene-prior ML, no GEM features) gives C4 = +0.602 and C5 = +0.014, estimates only (D16). The REPORT.md and SBML resource (48 models; 47/48 gates; 9.2) are final. Post-hoc follow-ups (A15): F1 curation fails TG; F3 traces done; F2 and F4 in progress. Earlier status lines below are historical.
 
 ## Decisions
 - **D19 (2026-10-28, A15 F4 rule, fixed before any F4 build or score)**: line-specific constraints beyond the medium, applied on top of P1 (H1 + W3 B-loo on the line's M2(f=1) medium), Human1 only. Two arms:
@@ -118,7 +116,7 @@ Update (2026-10-28): Stage A context families (W4) and GPR curation (W5) fail th
 - [-] 8. Flux-state information content (subtypes, drug screens, metabolomics)
   - [-] 8.1 W6 (3153ef0, pinned 71c2a7b, ≈ 9.8 CPU-h incl. ~7 lost to a BLAS-thread incident; recompute pending): **flux adds no information** beyond omics + medium in G* or P1, all 3 analyses (subtypes 150 tasks, drugs 106 units, metabolomics 225); all Holm p ≥ 0.38. 'Simulation beyond network mapping' also not supported (X_flux/X_KO well below X_rxnRNA). Synthetic positive recovered (Δρ +0.45, p 1e-6); synthetic negative null. Cause: generic-parent flux depends only on the assay medium (1 state for PRISM, 2 GDSC, ≤ 20 culture media).
 - [~] 9. Resource: SBML models per DepMap 26Q3 line
-  - [~] 9.2 W8 P1 resource v1.0.0 (6a71f7f, pinned b200324): 40 SBML models (2 parents × 20 medium signatures), manifest for 1,361 screened lines. **Correction: 39/40 models pass all gates.** The commit message said 'all gates pass', which is wrong: one Human2 model (single-line RPMI + testosterone) fails the random-KO gate by 8e-9. Extension to the remaining lines, MEMOTE (10 models) and FROG (2) are in progress.
+  - [~] 9.2 W8 P1 resource v1.0.0 (6a71f7f, pinned b200324): 40 SBML models (2 parents × 20 medium signatures), manifest for 1,361 screened lines. **Correction: 39/40 models passed in the first build; after the extension, 47/48 (one documented LP-noise miss).** The commit message said 'all gates pass', which is wrong: one Human2 model (single-line RPMI + testosterone) fails the random-KO gate by 8e-9. Extension to the remaining lines, MEMOTE (10 models) and FROG (2) are in progress.
   - [x] 9.1 W8 stub (Sonnet, ≈ 17 min): src/nextgem/resource.py export and gates. The demo exports (2 generic parents and 2 F0 panel models) pass all 5 gates. REPORT.md skeleton.
   - PI decisions:
     - a KO gate floor of 1e-9 absolute next to 1e-6 relative (LP noise);

@@ -51,7 +51,7 @@ Validation looks used: 6 of 40 (W7: 2 of 20). Test looks: T1, T2 and the unseal;
 | P1 tAP | 0.353 | 0.347 |
 | P1 − G\* | +0.052 | +0.050 |
 | Medium alone − G\* | +0.017 | +0.013 |
-| Gene prior B2 tAP | — (0.90 on training) | 0.895 |
+| Gene prior B2 tAP | 0.892 | 0.895 |
 
 - **What P1 is.** Two structural fixes to Human1. (1) The biomass reaction's cofactor pool is removed, which deletes false "essential" calls created by the biomass reaction itself (retinoid/vitamin-D catabolism, carnitine, BH4, CoQ). (2) Each line gets its documented culture medium instead of Ham's.
 - **What P1 is not.**

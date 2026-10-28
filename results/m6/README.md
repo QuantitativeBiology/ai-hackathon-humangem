@@ -1,4 +1,4 @@
-# M6: integration factorial toward P1 (training tier; validation look prepared, not run)
+# M6: integration factorial toward P1 (training; validation look M6_factorial run as look 3/40, see val/val_look_M6_factorial_decision.json; P1 selected, RESEARCH_TREE D11)
 
 **Author:** M6 engineer agent (Claude Opus). **Date:** 2026-10-28.
 **Design:** DESIGN.md §10.1, §10.2, §6.3–§6.8 and §17 (A10, A11, A12c). Cells were fixed in RESEARCH_TREE D10 before any factorial scoring.
@@ -136,7 +136,7 @@ The core stays lethal:
 
 So **flag W3-MEV applies to cell (3) on effectively every line.** It is a positive-control failure: the mevalonate core is a known essential pathway. If (3) is selected, P1 carries it.
 
-## 5. Validation look prepared (`val/look_spec_M6_factorial.json`; `scripts/m6_val_spec.py`); NOT run
+## 5. Validation look (`val/look_spec_M6_factorial.json`; `scripts/m6_val_spec.py`): run as look 3/40 (D11). Candidate order in the run follows DESIGN §9 (medium first), as corrected before scoring; text below that lists the biomass cell first predates the correction
 **Spec contents:**
 - kind "shortlist", layout line_gene;
 - methods: H1, H2, `M6:H1+Bloo/M0`, `M6:H1/M2(f=1)`, `M6:H1+Bloo/M2(f=1)` and the three H2 cells (descriptive);

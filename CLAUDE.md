@@ -20,7 +20,7 @@ Constraint-based modelling with the Human-GEM genome-scale metabolic model, inte
 - Load `data/Human-GEM-main/model/Human-GEM.xml` once (~15 s); use `with model:` or `model.copy()` for perturbations.
 - The raw model has all 1,654 exchanges open (cells can import ATP etc.) — always set a medium first. `set_hams_medium()` opens the 44 inputs of the `GR` task in `metabolicTasks_Essential.txt`.
 - Biomass reaction: `MAR13082`. With uptake bounds of 1000, growth values are in arbitrary units.
-- Expected on Ham's medium: growth ≈ 74.76, 0 anaerobically, CAD/UMPS KOs lethal (`scripts/fba_sanity_check.py`).
+- Expected on Ham's medium: growth ≈ 74.76 for Human2 (Human1 ≈ 65.57), 0 anaerobically, CAD/UMPS KOs lethal (`scripts/fba_sanity_check.py`).
 - Human-GEM's own essentiality/tINIT pipelines live in `data/Human-GEM-main/code/` (e.g. `code/test/gradedEssentiality.py`).
 
 ## DepMap notes
