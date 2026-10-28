@@ -1,0 +1,4 @@
+check	max_abs_diff	pass
+P1 tAP_line on the panel equals M6 train per_line (H1+Bloo/M2, all)	4.891506537041401e-07	True
+generic H1 tAP_line equals W1 train_per_line	4.900333597235296e-07	True
+W4-engine generic P1 builds equal the pinned P1 sweeps (<= 1e-6)	0.0	True

@@ -1,0 +1,4 @@
+config	n_lines	n_failed	n_lines_estimable	tap_lin	m_delta_ap_gene	mcc_L_prob_lin
+generic_H1	30	0	30	0.29824	3.52315e-17	0.315557
+P1	30	0	30	0.350549	-0.00130061	0.370862
+F4b	30	0	30	0.349835	0.000681461	0.370862

@@ -69,3 +69,4 @@ Every viewing of DepMap label *values* (or label-derived summaries) by any agent
 - 2026-10-28, F1 engineer: training-tier aggregates only (curated/TYMS/rule-only vs P1 and G*: tAP_lin, Δ̄ with CIs, folds, minus-CE and expressed pairs, fixed-cutoff MCC/F1); incidentally saw the F3 commit subject after the F1 rule was committed. No validation or test values.
 - 2026-10-28, F2 engineer: training-tier aggregates only (F1/F2/P1 contrasts recomputed; gene-group decomposition of P1 and F2 gains). No validation or test values.
 - 2026-10-28, PI: ran validation look M10_F2 (look 7/40, post hoc A15; scalar outputs).
+- 2026-10-28, F4 engineer: training-tier aggregates only (F4a/F4b vs P1 contrasts, per-arm tAP, panel fold means). No validation or test values.

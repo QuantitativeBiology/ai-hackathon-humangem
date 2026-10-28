@@ -1,0 +1,35 @@
+build_id	line	lineage	family	w2_sweep_id	failed	gate_growth	gate_viability	gate_repair	gate_all	viability_passed	tasks_passed	wt_growth	wt_ratio_generic	n_reopened	repair_frac_reactions	sweep_n_lethal	job_cpu_s
+generic|human1:474d632d7fd33d79|none	generic|human1:474d632d7fd33d79	-	generic	human1:474d632d7fd33d79	False	True	True	True	True	10	57	66.1774	1	0	0	103	99.2291
+generic|human1:5fe39a3dcfa2880f|none	generic|human1:5fe39a3dcfa2880f	-	generic	human1:5fe39a3dcfa2880f	False	True	True	True	True	10	57	46.6734	1	0	0	113	110.353
+generic|human1:db9ebc6b123dcb99|none	generic|human1:db9ebc6b123dcb99	-	generic	human1:db9ebc6b123dcb99	False	True	True	True	True	10	57	46.8632	1	0	0	108	113.384
+generic|human1:dedeef837ba95fab|none	generic|human1:dedeef837ba95fab	-	generic	human1:dedeef837ba95fab	False	True	True	True	True	10	57	46.8632	1	0	0	108	101.009
+F4b|ACH-000957|F4|R1|rna|real|none	ACH-000957	Bowel	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	52	0.655402	0.0139854	0	0	108	125.334
+F4b|ACH-002024|F4|R1|rna|real|none	ACH-002024	Bowel	F4	human1:db9ebc6b123dcb99	False	True	True	True	True	10	53	0.871333	0.0185931	0	0	108	121.819
+F4b|ACH-003383|F4|R1|rna|real|none	ACH-003383	Bowel	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	52	0.658073	0.0140424	0	0	108	125.052
+F4b|ACH-000899|F4|R1|rna|real|none	ACH-000899	Skin	F4	human1:db9ebc6b123dcb99	False	True	True	True	True	10	53	1.23015	0.0262497	0	0	108	126.355
+F4b|ACH-001567|F4|R1|rna|real|none	ACH-001567	Skin	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	52	0.616671	0.013159	0	0	108	126.707
+F4b|ACH-002928|F4|R1|rna|real|none	ACH-002928	Skin	F4	human1:db9ebc6b123dcb99	False	True	True	True	True	10	53	1.02206	0.0218093	0	0	108	127.19
+F4b|ACH-000113|F4|R1|rna|real|none	ACH-000113	Myeloid	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	51	0.50019	0.0106734	0	0	108	130.666
+F4b|ACH-000299|F4|R1|rna|real|none	ACH-000299	Myeloid	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	51	0.518835	0.0110713	0	0	108	128.137
+F4b|ACH-001577|F4|R1|rna|real|none	ACH-001577	Myeloid	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	51	0.50019	0.0106734	0	0	108	127.205
+F4b|ACH-001283|F4|R1|rna|real|none	ACH-001283	Bone	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	51	0.584782	0.0124785	0	0	108	128.635
+F4b|ACH-001431|F4|R1|rna|real|none	ACH-001431	Bone	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	51	0.555627	0.0118564	0	0	108	127.329
+F4b|ACH-003410|F4|R1|rna|real|none	ACH-003410	Bone	F4	human1:dedeef837ba95fab	False	True	False	True	False	9	51	0.50019	0.0106734	0	0	108	128.451
+F4b|ACH-000533|F4|R1|rna|real|none	ACH-000533	Kidney	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	51	0.542849	0.0115837	0	0	108	128.929
+F4b|ACH-002528|F4|R1|rna|real|none	ACH-002528	Kidney	F4	human1:db9ebc6b123dcb99	False	True	True	True	True	10	53	1.11923	0.023883	0	0	108	128.566
+F4b|ACH-002533|F4|R1|rna|real|none	ACH-002533	Kidney	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	52	0.752521	0.0160578	0	0	108	125.149
+F4b|ACH-000345|F4|R1|rna|real|none	ACH-000345	Peripheral Nervous System	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	52	0.724338	0.0154564	0	0	108	126.462
+F4b|ACH-001344|F4|R1|rna|real|none	ACH-001344	Peripheral Nervous System	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	52	0.6257	0.0133516	0	0	108	126.042
+F4b|ACH-002283|F4|R1|rna|real|none	ACH-002283	Peripheral Nervous System	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	51	0.506401	0.0108059	0	0	108	126.478
+F4b|ACH-000736|F4|R1|rna|real|none	ACH-000736	Esophagus/Stomach	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	52	0.746121	0.0159212	0	0	108	129.044
+F4b|ACH-001496|F4|R1|rna|real|none	ACH-001496	Esophagus/Stomach	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	52	0.65471	0.0139707	0	0	108	121.255
+F4b|ACH-003357|F4|R1|rna|real|none	ACH-003357	Esophagus/Stomach	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	51	0.500209	0.0106738	0	0	108	127.818
+F4b|ACH-001508|F4|R1|rna|real|none	ACH-001508	Head and Neck	F4	human1:474d632d7fd33d79	False	True	False	True	False	9	52	0.843539	0.0127466	0	0	103	119.947
+F4b|ACH-001692|F4|R1|rna|real|none	ACH-001692	Head and Neck	F4	human1:db9ebc6b123dcb99	False	True	True	True	True	10	53	1.00428	0.0214299	0	0	108	130.221
+F4b|ACH-001701|F4|R1|rna|real|none	ACH-001701	Head and Neck	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	52	0.651656	0.0139055	0	0	108	124.145
+F4b|ACH-000407|F4|R1|rna|real|none	ACH-000407	Uterus	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	52	0.71692	0.0152981	0	0	108	129.575
+F4b|ACH-000974|F4|R1|rna|real|none	ACH-000974	Uterus	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	51	0.50164	0.0107043	0	0	108	127.232
+F4b|ACH-001530|F4|R1|rna|real|none	ACH-001530	Uterus	F4	human1:db9ebc6b123dcb99	False	True	True	True	True	10	53	0.988812	0.0211	0	0	108	126.827
+F4b|ACH-000490|F4|R1|rna|real|none	ACH-000490	Cervix	F4	human1:5fe39a3dcfa2880f	False	True	True	True	True	10	53	0.960203	0.0205728	0	0	113	125.852
+F4b|ACH-000556|F4|R1|rna|real|none	ACH-000556	Cervix	F4	human1:db9ebc6b123dcb99	False	True	True	True	True	10	53	1.14437	0.0244193	0	0	108	124.492
+F4b|ACH-002020|F4|R1|rna|real|none	ACH-002020	Cervix	F4	human1:db9ebc6b123dcb99	False	True	False	True	False	9	51	0.541221	0.0115489	0	0	108	120.98

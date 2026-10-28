@@ -1,0 +1,231 @@
+{
+ "post_hoc": "A15 post hoc / exploratory",
+ "rule": "r2-11",
+ "n_lines": 686,
+ "n_lineages": 12,
+ "n_signatures": 15,
+ "n_lines_cn_missing": 32,
+ "n_lines_mut_missing": 0,
+ "n_lines_lost_ge1": 665,
+ "n_lines_accepted_ge1": 665,
+ "n_lines_closing_ge1": 544,
+ "n_lines_contradicted_ge1": 15,
+ "n_lines_dropped_joint_ge1": 0,
+ "n_lost_per_line": {
+  "median": 4.0,
+  "mean": 7.1938775510204085,
+  "max": 95
+ },
+ "n_closed_per_line": {
+  "median": 2.0,
+  "max": 258
+ },
+ "n_distinct_lost_genes": 1302,
+ "n_sweep_jobs": 610,
+ "n_sweep_jobs_full": 514,
+ "n_sweep_jobs_partial": 96,
+ "top_lost_genes": [
+  {
+   "gene": "ENSG00000114374",
+   "symbol": "USP9Y",
+   "n_lines_lost": 473,
+   "n_lines_accepted": 473,
+   "n_rxns_closed_alone": 0
+  },
+  {
+   "gene": "ENSG00000184227",
+   "symbol": "ACOT1",
+   "n_lines_lost": 305,
+   "n_lines_accepted": 305,
+   "n_rxns_closed_alone": 1
+  },
+  {
+   "gene": "ENSG00000197888",
+   "symbol": "UGT2B17",
+   "n_lines_lost": 236,
+   "n_lines_accepted": 236,
+   "n_rxns_closed_alone": 0
+  },
+  {
+   "gene": "ENSG00000099810",
+   "symbol": "MTAP",
+   "n_lines_lost": 90,
+   "n_lines_accepted": 90,
+   "n_rxns_closed_alone": 1
+  },
+  {
+   "gene": "ENSG00000171862",
+   "symbol": "PTEN",
+   "n_lines_lost": 53,
+   "n_lines_accepted": 53,
+   "n_rxns_closed_alone": 1
+  },
+  {
+   "gene": "ENSG00000101846",
+   "symbol": "STS",
+   "n_lines_lost": 32,
+   "n_lines_accepted": 32,
+   "n_rxns_closed_alone": 33
+  },
+  {
+   "gene": "ENSG00000084674",
+   "symbol": "APOB",
+   "n_lines_lost": 24,
+   "n_lines_accepted": 24,
+   "n_rxns_closed_alone": 1
+  },
+  {
+   "gene": "ENSG00000188921",
+   "symbol": "HACD4",
+   "n_lines_lost": 23,
+   "n_lines_accepted": 23,
+   "n_rxns_closed_alone": 0
+  },
+  {
+   "gene": "ENSG00000238205",
+   "symbol": "MPC1L",
+   "n_lines_lost": 21,
+   "n_lines_accepted": 21,
+   "n_rxns_closed_alone": 0
+  },
+  {
+   "gene": "ENSG00000134588",
+   "symbol": "USP26",
+   "n_lines_lost": 20,
+   "n_lines_accepted": 20,
+   "n_rxns_closed_alone": 0
+  },
+  {
+   "gene": "ENSG00000122824",
+   "symbol": "NUDT10",
+   "n_lines_lost": 18,
+   "n_lines_accepted": 18,
+   "n_rxns_closed_alone": 0
+  },
+  {
+   "gene": "ENSG00000006757",
+   "symbol": "PNPLA4",
+   "n_lines_lost": 18,
+   "n_lines_accepted": 18,
+   "n_rxns_closed_alone": 0
+  },
+  {
+   "gene": "ENSG00000107611",
+   "symbol": "CUBN",
+   "n_lines_lost": 17,
+   "n_lines_accepted": 17,
+   "n_rxns_closed_alone": 4
+  },
+  {
+   "gene": "ENSG00000167548",
+   "symbol": "KMT2D",
+   "n_lines_lost": 17,
+   "n_lines_accepted": 17,
+   "n_rxns_closed_alone": 0
+  },
+  {
+   "gene": "ENSG00000141338",
+   "symbol": "ABCA8",
+   "n_lines_lost": 16,
+   "n_lines_accepted": 16,
+   "n_rxns_closed_alone": 4
+  },
+  {
+   "gene": "ENSG00000081479",
+   "symbol": "LRP2",
+   "n_lines_lost": 16,
+   "n_lines_accepted": 16,
+   "n_rxns_closed_alone": 3
+  },
+  {
+   "gene": "ENSG00000257335",
+   "symbol": "MGAM",
+   "n_lines_lost": 16,
+   "n_lines_accepted": 16,
+   "n_rxns_closed_alone": 1
+  },
+  {
+   "gene": "ENSG00000139304",
+   "symbol": "PTPRQ",
+   "n_lines_lost": 16,
+   "n_lines_accepted": 16,
+   "n_rxns_closed_alone": 0
+  },
+  {
+   "gene": "ENSG00000130988",
+   "symbol": "RGN",
+   "n_lines_lost": 16,
+   "n_lines_accepted": 16,
+   "n_rxns_closed_alone": 1
+  },
+  {
+   "gene": "ENSG00000247746",
+   "symbol": "USP51",
+   "n_lines_lost": 16,
+   "n_lines_accepted": 16,
+   "n_rxns_closed_alone": 0
+  },
+  {
+   "gene": "ENSG00000169432",
+   "symbol": "SCN9A",
+   "n_lines_lost": 15,
+   "n_lines_accepted": 15,
+   "n_rxns_closed_alone": 0
+  },
+  {
+   "gene": "ENSG00000273820",
+   "symbol": "USP27X",
+   "n_lines_lost": 15,
+   "n_lines_accepted": 15,
+   "n_rxns_closed_alone": 0
+  },
+  {
+   "gene": "ENSG00000006756",
+   "symbol": "ARSD",
+   "n_lines_lost": 14,
+   "n_lines_accepted": 14,
+   "n_rxns_closed_alone": 0
+  },
+  {
+   "gene": "ENSG00000090402",
+   "symbol": "SI",
+   "n_lines_lost": 14,
+   "n_lines_accepted": 14,
+   "n_rxns_closed_alone": 3
+  },
+  {
+   "gene": "ENSG00000157399",
+   "symbol": "ARSL",
+   "n_lines_lost": 13,
+   "n_lines_accepted": 13,
+   "n_rxns_closed_alone": 0
+  }
+ ],
+ "contradicted_genes": {
+  "FASN": 2,
+  "NUP43": 2,
+  "DTYMK": 1,
+  "NUP160": 1,
+  "NUP188": 1,
+  "NUP205": 1,
+  "NUP210": 1,
+  "PFAS": 1,
+  "POLR1E": 1,
+  "POLR1H": 1,
+  "POLR2E": 1,
+  "POLR2J": 1,
+  "POLR2L": 1,
+  "POLR3K": 1,
+  "POLRMT": 1,
+  "PSAT1": 1,
+  "TECR": 1,
+  "TYMS": 1
+ },
+ "parent_wt_check": {
+  "n_checked": 15,
+  "n_pass": 15,
+  "unchecked": []
+ },
+ "job_cpu_s": 403.8,
+ "wall_s": 172.1
+}

@@ -1,0 +1,31 @@
+contrast	heldout_lineage	fold_mean_delta
+F4b vs P1	Bone	-0.00171456
+F4b vs P1	Bowel	-0.00397336
+F4b vs P1	Cervix	-0.0019558
+F4b vs P1	Esophagus/Stomach	-0.00407271
+F4b vs P1	Head and Neck	0.00370636
+F4b vs P1	Kidney	-6.98234e-05
+F4b vs P1	Myeloid	-0.00247073
+F4b vs P1	Peripheral Nervous System	0.000120392
+F4b vs P1	Skin	0.00203286
+F4b vs P1	Uterus	0.00125909
+P1 vs generic_H1	Bone	0.0617744
+P1 vs generic_H1	Bowel	0.0641414
+P1 vs generic_H1	Cervix	0.0449049
+P1 vs generic_H1	Esophagus/Stomach	0.061365
+P1 vs generic_H1	Head and Neck	0.0459391
+P1 vs generic_H1	Kidney	0.0529551
+P1 vs generic_H1	Myeloid	0.0357092
+P1 vs generic_H1	Peripheral Nervous System	0.0517978
+P1 vs generic_H1	Skin	0.0606194
+P1 vs generic_H1	Uterus	0.0438867
+F4b vs generic_H1	Bone	0.0600598
+F4b vs generic_H1	Bowel	0.060168
+F4b vs generic_H1	Cervix	0.0429491
+F4b vs generic_H1	Esophagus/Stomach	0.0572923
+F4b vs generic_H1	Head and Neck	0.0496455
+F4b vs generic_H1	Kidney	0.0528853
+F4b vs generic_H1	Myeloid	0.0332384
+F4b vs generic_H1	Peripheral Nervous System	0.0519182
+F4b vs generic_H1	Skin	0.0626522
+F4b vs generic_H1	Uterus	0.0451458

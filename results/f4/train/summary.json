@@ -1,0 +1,67 @@
+{
+ "post_hoc": "A15 post hoc / exploratory",
+ "synthetic_labels": false,
+ "n_lines": 686,
+ "n_lineages": 12,
+ "n_lines_accepted_loss": 665,
+ "n_lines_changed": 97,
+ "tg_rule": "delta_lin >= 0.005, CI lower > 0, >= 9/12 folds positive (L_prob, all U genes)",
+ "F4a_vs_P1": {
+  "delta_lin": -0.00012635276316073858,
+  "ci": [
+   -0.0002565304427657644,
+   -1.857741173950887e-05
+  ],
+  "folds_positive": 3,
+  "n_lines": 686,
+  "tg_pass": false
+ },
+ "F4a_vs_P1_noCE": {
+  "delta_lin": -0.00014937518597514402,
+  "ci": [
+   -0.00030212877787617274,
+   -2.640503539798168e-05
+  ],
+  "folds_positive": 3,
+  "n_lines": 686
+ },
+ "F4a_vs_P1_expressed_pairs": {
+  "delta_lin": -0.00011827790677679999,
+  "ci": [
+   -0.0002425480730056381,
+   -1.449793933962223e-05
+  ],
+  "folds_positive": 3,
+  "n_lines": 686
+ },
+ "F4a_vs_P1_changed_lines": {
+  "delta_lin": -0.000851052301804269,
+  "ci": [
+   -0.0017436450700255872,
+   -4.64342989773258e-05
+  ],
+  "folds_positive": 2,
+  "n_lines": 97
+ },
+ "P1_vs_H1": {
+  "delta_lin": 0.05336313555761964,
+  "ci": [
+   0.05228717550860616,
+   0.05453977783976623
+  ],
+  "folds_positive": 12,
+  "n_lines": 686
+ },
+ "F4a_vs_H1": {
+  "delta_lin": 0.05323678279445891,
+  "ci": [
+   0.052154118113549155,
+   0.05440065201126752
+  ],
+  "folds_positive": 12,
+  "n_lines": 686
+ },
+ "F4a_passes_TG": false,
+ "checks_pass": true,
+ "wall_s": 41.8
+}

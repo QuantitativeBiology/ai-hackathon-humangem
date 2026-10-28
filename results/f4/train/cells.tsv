@@ -1,0 +1,4 @@
+method_key	method	role	n_failed_lines	n_lines	n_lines_estimable	n_lineages	tap_lin	tap_lin_lo	tap_lin_hi	lift_lin	tap_line	m_delta_ap_gene	n_genes_estimable	tap_lin_noCE	tap_lin_expressed_pairs
+H1	H1	G*	0	686	686	12	0.299576	0.297773	0.301345	2.42353	0.300289	6.44628e-18	1148	0.145144	0.346433
+P1	M6:H1+Bloo/M2(f=1)	reference	0	686	686	12	0.352939	0.35074	0.355135	2.85523	0.353822	-0.000501207	1148	0.186136	0.396337
+F4a	F4a:H1+Bloo+loss/M2(f=1)	candidate	0	686	686	12	0.352812	0.350614	0.355022	2.85421	0.353672	-4.313e-05	1148	0.185986	0.396219

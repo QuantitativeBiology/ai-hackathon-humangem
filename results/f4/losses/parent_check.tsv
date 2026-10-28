@@ -1,0 +1,16 @@
+w2_sweep_id	medium_keys	n_lines	parent_wt	pinned_p1_wt	pass
+human1:24f533da22a08aee	DMEM:F12	19	66.1774	66.1774	True
+human1:295aebde02b012ec	DMEM:F12|serum-free	2	65.5774	65.5774	True
+human1:474d632d7fd33d79	DMEM:F12+cortisol	8	66.1774	66.1774	True
+human1:53a34923edc5a9e6	DMEM:F12+cortisol+estradiol	8	66.1774	66.1774	True
+human1:596d0d8beb7cba6b	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	1	66.2992	66.2992	True
+human1:5fe39a3dcfa2880f	DMEM	72	46.6734	46.6734	True
+human1:65d8d435a1994b98	RPMI+alanine	2	46.8632	46.8632	True
+human1:671e836367589246	DMEM+pyruvate	1	46.6734	46.6734	True
+human1:68cf1f92e887a9fd	DMEM+cortisol	3	46.6734	46.6734	True
+human1:9e154acdebb57dbc	RPMI+alanine+pyruvate	1	46.8632	46.8632	True
+human1:a339b0701b854c39	IMDM	26	46.8479	46.8479	True
+human1:c7bc04800b527a9b	DMEM+alanine+asparagine+aspartate+glutamate+proline	3	46.8479	46.8479	True
+human1:db9ebc6b123dcb99	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	537	46.8632	46.8632	True
+human1:dedeef837ba95fab	IMDM0.8:RPMI0.2	1	46.8632	46.8632	True
+human1:e3d627ac12ad0458	RPMI+cys(2-ME)	2	46.8632	46.8632	True

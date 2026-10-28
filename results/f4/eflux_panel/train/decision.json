@@ -1,0 +1,32 @@
+{
+ "rule": "D19: F4b proceeds to all training lines only if its \u0394\u0304_lin vs P1 is >= +0.005 on the 30-line panel (nested panel LOLO, Stage A's F4 configuration)",
+ "post_hoc": "A15 post hoc / exploratory",
+ "synthetic_labels": false,
+ "config": "F4|R1|rna|real|none",
+ "delta_lin_vs_P1": -0.0007138287189928982,
+ "ci": [
+  -0.0016628811382646894,
+  0.00021154115454305786
+ ],
+ "folds_positive": 4,
+ "n_folds": 10,
+ "n_failed_builds": 0,
+ "delta_noCE": -0.006860133659469714,
+ "delta_expr": -0.00036204425461074016,
+ "delta_mcc_L_prob": 0.0,
+ "build_gate_all_frac": 0.26666666666666666,
+ "build_gate_viability_frac": 0.26666666666666666,
+ "config_gate_pass": false,
+ "n_gr_task_fail": 22,
+ "proceeds_to_all_training_lines": false,
+ "verification_all_pass": true,
+ "wall_s": 18,
+ "sanity_P1_vs_H1": {
+  "delta_lin": 0.05230930608836106,
+  "ci": [
+   0.0478986641846079,
+   0.056818541395077804
+  ],
+  "folds_positive": 10
+ }
+}

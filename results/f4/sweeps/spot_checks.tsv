@@ -1,0 +1,6 @@
+check	job_key	reference	status	pass	max_abs_diff	n_genes_diff_gt_1e-6	n_lethal_w3_engine	n_lethal_w4_engine
+spot_p1	human1:db9ebc6b123dcb99|P1	pinned P1 sweep (M6/W3)	ok	True	0			
+spot_p1	human1:5fe39a3dcfa2880f|P1	pinned P1 sweep (M6/W3)	ok	True	0			
+spot_partial	human1:24f533da22a08aee|4cc720b4af9a	composed partial job	ok	True	0			
+cross_engine_w4	human1:24f533da22a08aee|172f1e42ef35	W4 engine (context.finish + context.ko_sweep)	ok	True	0	0	104	104
+cross_engine_w4	human1:db9ebc6b123dcb99|ffc5015e5e7a	W4 engine (context.finish + context.ko_sweep)	ok	True	0	0	108	108

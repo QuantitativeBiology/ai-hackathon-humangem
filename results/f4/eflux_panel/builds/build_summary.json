@@ -1,0 +1,59 @@
+{
+ "parent": "human1+B-loo:cofactor_pool_biomass on the line's M2(f=1)",
+ "config": "F4|R1|rna|real|none",
+ "n_builds": 30,
+ "n_failed": 0,
+ "timeouts": [],
+ "wt_ratio_parent": {
+  "min": 0.0106733959263491,
+  "median": 0.013938081113731845,
+  "max": 0.026249697810564368
+ },
+ "wt_growth": {
+  "min": 0.5001895709315326,
+  "median": 0.6550560812363446,
+  "max": 1.230145042454142
+ },
+ "n_wt_growth_lt_1": 25,
+ "n_gr_task_fail": 22,
+ "n_builds_with_er_fail": 0,
+ "gate_frac": {
+  "gate_growth": 1.0,
+  "gate_viability": 0.26666666666666666,
+  "gate_repair": 1.0,
+  "gate_all": 0.26666666666666666
+ },
+ "n_gate_all_pass": 8,
+ "config_gate_pass": false,
+ "sweep_n_lethal": {
+  "min": 103.0,
+  "median": 108.0,
+  "max": 113.0
+ },
+ "n_lethal_set_equal_to_P1": 30,
+ "sweep_n_nonoptimal_total": 0,
+ "tasks_passed": {
+  "min": 51.0,
+  "median": 52.0,
+  "max": 53.0
+ },
+ "generic_check": {
+  "n": 4,
+  "n_pass": 4,
+  "n_bitwise": 4,
+  "max_abs_diff": 0.0
+ },
+ "job_cpu_s": {
+  "mean": 126.39643839073332,
+  "max": 130.666042999
+ },
+ "peak_rss_gb_max": 1.414776,
+ "build_cpu_h": 1.3528,
+ "wall_s": 1381,
+ "medium_keys": {
+  "human1:474d632d7fd33d79": "DMEM:F12+cortisol",
+  "human1:5fe39a3dcfa2880f": "DMEM",
+  "human1:db9ebc6b123dcb99": "DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI",
+  "human1:dedeef837ba95fab": "IMDM0.8:RPMI0.2"
+ }
+}

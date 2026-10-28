@@ -1,0 +1,13 @@
+arm	reference	role	call_rule	label	metric	delta_lin	ci_lo	ci_hi	n_lines
+F4a	P1	primary	FBA<0.01	L_ge06	mcc	2.1994e-05	-1.23544e-05	5.90637e-05	686
+F4a	P1	primary	FBA<0.01	L_ge06	f1	3.99262e-05	7.15417e-06	7.93629e-05	686
+F4a	P1	primary	FBA<0.01	L_prob	mcc	2.31371e-05	-5.27976e-06	5.55078e-05	686
+F4a	P1	primary	FBA<0.01	L_prob	f1	4.23758e-05	1.44237e-05	7.68212e-05	686
+P1	H1	descriptive	FBA<0.01	L_ge06	mcc	0.0576542	0.0562719	0.0589533	686
+P1	H1	descriptive	FBA<0.01	L_ge06	f1	0.0206038	0.0194327	0.0217687	686
+P1	H1	descriptive	FBA<0.01	L_prob	mcc	0.0559401	0.0545608	0.0573467	686
+P1	H1	descriptive	FBA<0.01	L_prob	f1	0.0117003	0.0105762	0.0128738	686
+F4a	H1	descriptive	FBA<0.01	L_ge06	mcc	0.0576762	0.0562965	0.0589833	686
+F4a	H1	descriptive	FBA<0.01	L_ge06	f1	0.0206438	0.0194665	0.0218051	686
+F4a	H1	descriptive	FBA<0.01	L_prob	mcc	0.0559632	0.0545894	0.0573621	686
+F4a	H1	descriptive	FBA<0.01	L_prob	f1	0.0117427	0.0106266	0.0129106	686

@@ -1,0 +1,614 @@
+job_key	w2_sweep_id	mode	purpose	n_accepted	n_closed	wt_growth	wt_status	n_solved	n_genes_lp	n_infeasible	shortcut_verify_max_dev	status	n_genes	closure_ok	cpu_s	wall_s	medium_keys	serum	n_lines
+human1:24f533da22a08aee|172f1e42ef35	human1:24f533da22a08aee	full	arm	42	258	38.0306	optimal	147	277	0	2.22045e-15	ok	2887	True	30.18	30.1911	DMEM:F12	True	1
+human1:24f533da22a08aee|17fb52235613	human1:24f533da22a08aee	full	arm	2	1	66.1774	optimal	188	293	0	8.88178e-16	ok	2887	True	48.5029	48.5105	DMEM:F12	True	1
+human1:24f533da22a08aee|34e012a3a082	human1:24f533da22a08aee	full	arm	6	7	66.1774	optimal	178	283	0	1.66533e-15	ok	2887	True	50.8934	50.8974	DMEM:F12	True	1
+human1:24f533da22a08aee|4cc720b4af9a	human1:24f533da22a08aee	partial	arm	4	0	66.1774	optimal	1	1	0	7.99361e-15	ok	2	True	6.54527	6.54728	DMEM:F12	True	1
+human1:24f533da22a08aee|6c76558c0e21	human1:24f533da22a08aee	full	arm	7	6	66.1774	optimal	168	273	0	3.33067e-15	ok	2887	True	45.6321	45.6391	DMEM:F12	True	1
+human1:24f533da22a08aee|7bdbdedb3bde	human1:24f533da22a08aee	full	arm	5	3	66.1774	optimal	163	268	0	3.77476e-15	ok	2887	True	43.4888	43.4946	DMEM:F12	True	1
+human1:24f533da22a08aee|84ab0d1f91d4	human1:24f533da22a08aee	full	arm	4	1	66.1774	optimal	188	293	0	8.88178e-16	ok	2887	True	45.0516	45.0536	DMEM:F12	True	1
+human1:24f533da22a08aee|9660e8021300	human1:24f533da22a08aee	full	arm	3	1	66.1774	optimal	167	273	0	6.66134e-16	ok	2887	True	48.2158	48.2211	DMEM:F12	True	1
+human1:24f533da22a08aee|a31225a2ba85	human1:24f533da22a08aee	full	arm	3	1	66.1774	optimal	166	271	0	5.55112e-15	ok	2887	True	42.9705	42.9735	DMEM:F12	True	2
+human1:24f533da22a08aee|b3b83f4d660d	human1:24f533da22a08aee	partial	arm	2	0							ok	0	True	0.285867	0.285923	DMEM:F12	True	1
+human1:24f533da22a08aee|b5fed343974a	human1:24f533da22a08aee	full	arm	24	20	66.1774	optimal	152	255	0	4.32987e-15	ok	2887	True	36.5027	36.5043	DMEM:F12	True	1
+human1:24f533da22a08aee|d3583e7004d3	human1:24f533da22a08aee	full	arm	12	13	66.1774	optimal	167	272	0	2.22045e-16	ok	2887	True	38.3819	38.3841	DMEM:F12	True	1
+human1:24f533da22a08aee|dda8c471bcdf	human1:24f533da22a08aee	full	arm	3	3	66.1774	optimal	173	279	0	6.66134e-15	ok	2887	True	41.7218	41.7234	DMEM:F12	True	1
+human1:24f533da22a08aee|e57f63965874	human1:24f533da22a08aee	full	arm	13	12	66.1774	optimal	167	273	0	3.55271e-15	ok	2887	True	38.7125	38.7163	DMEM:F12	True	1
+human1:24f533da22a08aee|ebbef661ccc3	human1:24f533da22a08aee	full	arm	14	40	66.1774	optimal	177	282	0	6.21725e-15	ok	2887	True	40.317	40.3233	DMEM:F12	True	1
+human1:295aebde02b012ec|57901f5e8c92	human1:295aebde02b012ec	full	arm	2	3	65.5774	optimal	179	284	0	2.77556e-15	ok	2887	True	38.893	38.8975	DMEM:F12|serum-free	False	1
+human1:295aebde02b012ec|db4655dc9c1c	human1:295aebde02b012ec	partial	arm	4	0	65.5774	optimal	0	0	0	1.55431e-15	ok	2	True	1.70326	1.70605	DMEM:F12|serum-free	False	1
+human1:474d632d7fd33d79|12f8a4eb1409	human1:474d632d7fd33d79	full	arm	10	16	66.1774	optimal	188	294	0	2.55351e-15	ok	2887	True	40.4598	40.4624	DMEM:F12+cortisol	True	1
+human1:474d632d7fd33d79|2bc518e3808a	human1:474d632d7fd33d79	full	arm	4	1	66.1774	optimal	166	272	0	4.32987e-15	ok	2887	True	39.9389	39.9393	DMEM:F12+cortisol	True	1
+human1:474d632d7fd33d79|4dccea9388f8	human1:474d632d7fd33d79	full	arm	7	7	66.1774	optimal	178	281	0	4.77396e-15	ok	2887	True	42.6091	42.6096	DMEM:F12+cortisol	True	1
+human1:474d632d7fd33d79|5e67b8feac86	human1:474d632d7fd33d79	full	arm	3	3	66.1774	optimal	159	265	0	1.11022e-15	ok	2887	True	36.8321	36.8342	DMEM:F12+cortisol	True	1
+human1:474d632d7fd33d79|b705ffd559ff	human1:474d632d7fd33d79	full	arm	3	2	66.1774	optimal	165	270	0	2.66454e-15	ok	2887	True	38.4492	38.4526	DMEM:F12+cortisol	True	1
+human1:474d632d7fd33d79|ba60c298484e	human1:474d632d7fd33d79	full	arm	4	7	66.1774	optimal	151	255	0	6.21725e-15	ok	2887	True	36.5015	36.5052	DMEM:F12+cortisol	True	1
+human1:474d632d7fd33d79|c36d2de26a8a	human1:474d632d7fd33d79	partial	arm	2	0							ok	0	True	0.288629	0.289435	DMEM:F12+cortisol	True	1
+human1:474d632d7fd33d79|fc69b995946b	human1:474d632d7fd33d79	partial	arm	5	0							ok	0	True	0.276001	0.277222	DMEM:F12+cortisol	True	1
+human1:53a34923edc5a9e6|0a19fa871301	human1:53a34923edc5a9e6	full	arm	30	9	66.1774	optimal	163	268	0	2.10942e-15	ok	2887	True	39.703	39.7021	DMEM:F12+cortisol+estradiol	True	1
+human1:53a34923edc5a9e6|1a069ceb64af	human1:53a34923edc5a9e6	full	arm	9	9	66.1774	optimal	168	275	0	4.44089e-15	ok	2887	True	40.4684	40.4716	DMEM:F12+cortisol+estradiol	True	1
+human1:53a34923edc5a9e6|30f1e7a27641	human1:53a34923edc5a9e6	full	arm	4	9	66.1774	optimal	177	284	0	2.33147e-15	ok	2887	True	41.9794	41.9827	DMEM:F12+cortisol+estradiol	True	1
+human1:53a34923edc5a9e6|75e630f646ef	human1:53a34923edc5a9e6	full	arm	10	16	66.1774	optimal	174	281	0	5.32907e-15	ok	2887	True	45.1039	45.1079	DMEM:F12+cortisol+estradiol	True	1
+human1:53a34923edc5a9e6|af32b1456a99	human1:53a34923edc5a9e6	full	arm	1	1	66.1774	optimal	176	279	0	1.33227e-15	ok	2887	True	40.926	40.9299	DMEM:F12+cortisol+estradiol	True	1
+human1:53a34923edc5a9e6|cf3c29b2355d	human1:53a34923edc5a9e6	full	arm	3	1	66.1774	optimal	168	274	0	9.54792e-15	ok	2887	True	36.8685	36.8724	DMEM:F12+cortisol+estradiol	True	1
+human1:53a34923edc5a9e6|f1b6cb668cd3	human1:53a34923edc5a9e6	full	arm	7	8	66.1774	optimal	163	269	0	1.77636e-15	ok	2887	True	42.169	42.1765	DMEM:F12+cortisol+estradiol	True	1
+human1:53a34923edc5a9e6|ff7a25e8e8d3	human1:53a34923edc5a9e6	full	arm	24	67	50.6625	optimal	175	259	0	2.66454e-15	ok	2887	True	31.843	31.8473	DMEM:F12+cortisol+estradiol	True	1
+human1:596d0d8beb7cba6b|b52a9f92725b	human1:596d0d8beb7cba6b	full	arm	8	15	66.2992	optimal	163	267	0	3.44169e-15	ok	2887	True	40.9683	40.9739	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	True	1
+human1:5fe39a3dcfa2880f|01e0c0a9d64d	human1:5fe39a3dcfa2880f	full	arm	4	1	46.6734	optimal	181	287	0	1.11022e-15	ok	2887	True	46.86	46.8619	DMEM	True	1
+human1:5fe39a3dcfa2880f|0335835a00e6	human1:5fe39a3dcfa2880f	full	arm	2	1	46.6734	optimal	172	276	0	1.56319e-13	ok	2887	True	50.9194	50.921	DMEM	True	1
+human1:5fe39a3dcfa2880f|034f9c40e27b	human1:5fe39a3dcfa2880f	full	arm	4	4	46.6734	optimal	194	300	0	1.79856e-14	ok	2887	True	54.1152	54.1163	DMEM	True	1
+human1:5fe39a3dcfa2880f|047a9acd4d2b	human1:5fe39a3dcfa2880f	partial	arm	2	0							ok	0	True	0.27951	0.281234	DMEM	True	1
+human1:5fe39a3dcfa2880f|07d828c79322	human1:5fe39a3dcfa2880f	full	arm	4	2	46.6734	optimal	166	272	0	8.21565e-15	ok	2887	True	44.4067	44.4075	DMEM	True	1
+human1:5fe39a3dcfa2880f|09dc95464ac1	human1:5fe39a3dcfa2880f	full	arm	4	1	46.6734	optimal	182	286	0	1.55431e-15	ok	2887	True	46.5503	46.5525	DMEM	True	1
+human1:5fe39a3dcfa2880f|0c798ceed2ce	human1:5fe39a3dcfa2880f	partial	arm	5	0	46.6734	optimal	0	0	0	2.28706e-14	ok	2	True	1.67242	1.67542	DMEM	True	1
+human1:5fe39a3dcfa2880f|14ede7c6a461	human1:5fe39a3dcfa2880f	full	arm	9	95	46.6734	optimal	157	262	0	6.76126e-14	ok	2887	True	43.5654	43.5655	DMEM	True	1
+human1:5fe39a3dcfa2880f|164c433d2c20	human1:5fe39a3dcfa2880f	full	arm	9	10	46.6734	optimal	176	282	0	1.19904e-14	ok	2887	True	48.4879	48.4938	DMEM	True	1
+human1:5fe39a3dcfa2880f|17fb52235613	human1:5fe39a3dcfa2880f	full	arm	2	1	46.6734	optimal	169	274	0	1.11022e-15	ok	2887	True	51.6259	51.6322	DMEM	True	1
+human1:5fe39a3dcfa2880f|1a79740dfe5b	human1:5fe39a3dcfa2880f	full	arm	9	6	46.6734	optimal	171	275	0	1.77636e-14	ok	2887	True	45.3283	45.3318	DMEM	True	1
+human1:5fe39a3dcfa2880f|1babd7ee7c18	human1:5fe39a3dcfa2880f	full	arm	7	3	46.6734	optimal	179	285	0	4.50973e-13	ok	2887	True	50.8449	50.8476	DMEM	True	1
+human1:5fe39a3dcfa2880f|1e16ee63b340	human1:5fe39a3dcfa2880f	full	arm	2	1	46.6734	optimal	166	273	0	1.17684e-14	ok	2887	True	42.2608	42.2653	DMEM	True	1
+human1:5fe39a3dcfa2880f|206b7497ba88	human1:5fe39a3dcfa2880f	partial	arm	1	0	46.6734	optimal	0	0	0	5.32907e-15	ok	1	True	1.62507	1.62727	DMEM	True	1
+human1:5fe39a3dcfa2880f|2101332204b6	human1:5fe39a3dcfa2880f	full	arm	4	1	46.6734	optimal	176	282	0	7.66054e-15	ok	2887	True	46.2909	46.291	DMEM	True	1
+human1:5fe39a3dcfa2880f|2411b62732ad	human1:5fe39a3dcfa2880f	partial	arm	1	0							ok	0	True	0.277794	0.277798	DMEM	True	4
+human1:5fe39a3dcfa2880f|24e4630e30c8	human1:5fe39a3dcfa2880f	partial	arm	4	0							ok	0	True	0.267953	0.269275	DMEM	True	1
+human1:5fe39a3dcfa2880f|2749a7764682	human1:5fe39a3dcfa2880f	full	arm	4	4	46.6734	optimal	174	280	0	1.44329e-14	ok	2887	True	48.953	48.9545	DMEM	True	1
+human1:5fe39a3dcfa2880f|2840b1905304	human1:5fe39a3dcfa2880f	full	arm	4	6	46.6734	optimal	180	284	0	3.33067e-15	ok	2887	True	48.0928	48.095	DMEM	True	1
+human1:5fe39a3dcfa2880f|2b97e455ddc5	human1:5fe39a3dcfa2880f	full	arm	4	3	46.6734	optimal	184	293	0	9.99201e-15	ok	2887	True	51.0476	51.0556	DMEM	True	1
+human1:5fe39a3dcfa2880f|32a0550e4844	human1:5fe39a3dcfa2880f	full	arm	2	1	46.6734	optimal	180	286	0	1.5099e-14	ok	2887	True	50.3965	50.4033	DMEM	True	1
+human1:5fe39a3dcfa2880f|3341e920d1ef	human1:5fe39a3dcfa2880f	full	arm	5	3	33.1143	optimal	166	251	0	7.32747e-15	ok	2887	True	42.8635	42.8656	DMEM	True	1
+human1:5fe39a3dcfa2880f|39a12a128cd9	human1:5fe39a3dcfa2880f	full	arm	3	1	46.6734	optimal	172	276	0	1.5099e-14	ok	2887	True	46.5734	46.5755	DMEM	True	1
+human1:5fe39a3dcfa2880f|39f909dedf58	human1:5fe39a3dcfa2880f	full	arm	1	1	46.6734	optimal	164	271	0	9.10383e-15	ok	2887	True	48.856	48.8571	DMEM	True	2
+human1:5fe39a3dcfa2880f|3bafe08cc27c	human1:5fe39a3dcfa2880f	full	arm	10	10	46.6734	optimal	180	286	0	8.88178e-16	ok	2887	True	53.0678	53.072	DMEM	True	1
+human1:5fe39a3dcfa2880f|4680b7c58bab	human1:5fe39a3dcfa2880f	full	arm	4	1	46.6734	optimal	176	281	0	2.24265e-14	ok	2887	True	42.656	42.6594	DMEM	True	1
+human1:5fe39a3dcfa2880f|4803ad02cc57	human1:5fe39a3dcfa2880f	full	arm	3	1	46.6734	optimal	163	269	0	3.55271e-15	ok	2887	True	42.9771	42.9789	DMEM	True	1
+human1:5fe39a3dcfa2880f|4f0902e3e43c	human1:5fe39a3dcfa2880f	full	arm	5	1	46.6734	optimal	184	288	0	4.88498e-15	ok	2887	True	47.935	47.939	DMEM	True	1
+human1:5fe39a3dcfa2880f|5818b5e4c7ba	human1:5fe39a3dcfa2880f	full	arm	3	1	46.6734	optimal	168	275	0	1.33227e-14	ok	2887	True	45.2491	45.2508	DMEM	True	1
+human1:5fe39a3dcfa2880f|582fcc2408ab	human1:5fe39a3dcfa2880f	full	arm	4	1	46.6734	optimal	175	281	0	4.88498e-15	ok	2887	True	47.0521	47.0592	DMEM	True	1
+human1:5fe39a3dcfa2880f|5d19ac7027be	human1:5fe39a3dcfa2880f	full	arm	7	4	46.6734	optimal	182	288	0	9.10383e-15	ok	2887	True	47.4952	47.5017	DMEM	True	1
+human1:5fe39a3dcfa2880f|5ee0ad3a83b6	human1:5fe39a3dcfa2880f	full	arm	3	1	46.6734	optimal	175	281	0	1.84297e-14	ok	2887	True	45.1696	45.1739	DMEM	True	1
+human1:5fe39a3dcfa2880f|5fa83362c7ab	human1:5fe39a3dcfa2880f	full	arm	3	2	46.6734	optimal	178	285	0	1.5099e-14	ok	2887	True	47.1756	47.1794	DMEM	True	1
+human1:5fe39a3dcfa2880f|66db66a55339	human1:5fe39a3dcfa2880f	full	arm	29	112	46.6734	optimal	187	294	0	8.54872e-15	ok	2887	True	48.345	48.3465	DMEM	True	1
+human1:5fe39a3dcfa2880f|6ca2eac00fbe	human1:5fe39a3dcfa2880f	full	arm	5	12	46.6734	optimal	171	276	0	2.30926e-14	ok	2887	True	46.7593	46.7611	DMEM	True	1
+human1:5fe39a3dcfa2880f|6fd15aee3f03	human1:5fe39a3dcfa2880f	full	arm	2	2	46.6734	optimal	183	290	0	1.86517e-14	ok	2887	True	52.0889	52.0921	DMEM	True	1
+human1:5fe39a3dcfa2880f|74dd80677429	human1:5fe39a3dcfa2880f	full	arm	5	1	46.6734	optimal	178	281	0	1.08802e-14	ok	2887	True	48.2161	48.2207	DMEM	True	1
+human1:5fe39a3dcfa2880f|841c965ba651	human1:5fe39a3dcfa2880f	full	arm	8	24	46.6734	optimal	185	291	0	1.24345e-14	ok	2887	True	51.5914	51.5976	DMEM	True	1
+human1:5fe39a3dcfa2880f|86d6b21ab3e9	human1:5fe39a3dcfa2880f	full	arm	10	35	46.6734	optimal	176	282	0	1.28786e-14	ok	2887	True	49.581	49.5853	DMEM	True	1
+human1:5fe39a3dcfa2880f|87ac3062c921	human1:5fe39a3dcfa2880f	partial	arm	1	0							ok	0	True	0.278747	0.281905	DMEM	True	1
+human1:5fe39a3dcfa2880f|9702c0bb5bdc	human1:5fe39a3dcfa2880f	full	arm	4	2	46.6734	optimal	176	283	0	9.10383e-15	ok	2887	True	51.7394	51.7393	DMEM	True	1
+human1:5fe39a3dcfa2880f|9a46324d2592	human1:5fe39a3dcfa2880f	full	arm	6	3	46.6734	optimal	178	284	0	3.02092e-13	ok	2887	True	48.8507	48.8546	DMEM	True	1
+human1:5fe39a3dcfa2880f|9fdfe31c2af3	human1:5fe39a3dcfa2880f	full	arm	9	3	46.6734	optimal	173	278	0	4.44089e-16	ok	2887	True	50.773	50.7772	DMEM	True	1
+human1:5fe39a3dcfa2880f|a094bafa90da	human1:5fe39a3dcfa2880f	full	arm	9	7	46.611	optimal	180	287	0	3.07532e-14	ok	2887	True	53.1595	53.165	DMEM	True	1
+human1:5fe39a3dcfa2880f|a31225a2ba85	human1:5fe39a3dcfa2880f	full	arm	3	1	46.6734	optimal	179	287	0	8.32667e-15	ok	2887	True	49.1618	49.1643	DMEM	True	3
+human1:5fe39a3dcfa2880f|a524bedacdf8	human1:5fe39a3dcfa2880f	full	arm	4	8	46.6734	optimal	169	273	0	1.6398e-13	ok	2887	True	49.6436	49.6484	DMEM	True	1
+human1:5fe39a3dcfa2880f|a59b30a06cca	human1:5fe39a3dcfa2880f	full	arm	9	17	46.6734	optimal	173	278	0	4.88498e-15	ok	2887	True	48.9244	48.9316	DMEM	True	1
+human1:5fe39a3dcfa2880f|a830cab6c265	human1:5fe39a3dcfa2880f	full	arm	3	2	46.6734	optimal	179	285	0	1.84297e-14	ok	2887	True	50.0783	50.0814	DMEM	True	1
+human1:5fe39a3dcfa2880f|b271b587c454	human1:5fe39a3dcfa2880f	full	arm	2	2	46.6734	optimal	158	261	0	1.08802e-14	ok	2887	True	41.4514	41.455	DMEM	True	1
+human1:5fe39a3dcfa2880f|b4792234947a	human1:5fe39a3dcfa2880f	full	arm	9	21	46.6734	optimal	176	286	0	1.0103e-14	ok	2887	True	48.5429	48.5463	DMEM	True	1
+human1:5fe39a3dcfa2880f|b7716f312ff3	human1:5fe39a3dcfa2880f	partial	arm	3	0							ok	0	True	0.267194	0.267901	DMEM	True	1
+human1:5fe39a3dcfa2880f|c13d93a5c0d4	human1:5fe39a3dcfa2880f	full	arm	23	62	46.1802	optimal	169	277	0	6.88338e-14	ok	2887	True	42.6176	42.6214	DMEM	True	1
+human1:5fe39a3dcfa2880f|c599fcc80a59	human1:5fe39a3dcfa2880f	partial	arm	2	0	46.6734	optimal	0	0	0	1.03251e-14	ok	2	True	1.32679	1.32974	DMEM	True	1
+human1:5fe39a3dcfa2880f|cb9b4d26144b	human1:5fe39a3dcfa2880f	full	arm	11	10	46.6734	optimal	178	282	0	1.09912e-14	ok	2887	True	49.5827	49.5817	DMEM	True	1
+human1:5fe39a3dcfa2880f|d10c6e8577d7	human1:5fe39a3dcfa2880f	full	arm	3	2	46.6734	optimal	178	284	0	1.27232e-13	ok	2887	True	52.1992	52.2017	DMEM	True	1
+human1:5fe39a3dcfa2880f|e5550d6a3471	human1:5fe39a3dcfa2880f	full	arm	3	3	46.6734	optimal	170	273	0	5.66214e-15	ok	2887	True	52.5257	52.5321	DMEM	True	1
+human1:5fe39a3dcfa2880f|e596f9a9ddfb	human1:5fe39a3dcfa2880f	full	arm	27	7	46.6734	optimal	178	284	0	7.32747e-15	ok	2887	True	50.479	50.4873	DMEM	True	1
+human1:5fe39a3dcfa2880f|ec655398347e	human1:5fe39a3dcfa2880f	full	arm	10	1	46.6734	optimal	177	281	0	6.55032e-14	ok	2887	True	51.4514	51.4544	DMEM	True	1
+human1:5fe39a3dcfa2880f|eff0f6c8148a	human1:5fe39a3dcfa2880f	partial	arm	2	0							ok	0	True	0.266252	0.266161	DMEM	True	1
+human1:5fe39a3dcfa2880f|f07f39d209ae	human1:5fe39a3dcfa2880f	full	arm	6	3	46.6734	optimal	187	294	0	9.4369e-15	ok	2887	True	51.0539	51.0585	DMEM	True	1
+human1:5fe39a3dcfa2880f|f3b3f6db1faa	human1:5fe39a3dcfa2880f	full	arm	12	33	46.6734	optimal	177	281	0	1.64313e-14	ok	2887	True	48.8817	48.8854	DMEM	True	1
+human1:5fe39a3dcfa2880f|f949c2c06b92	human1:5fe39a3dcfa2880f	full	arm	5	1	46.6734	optimal	180	287	0	5.9952e-15	ok	2887	True	46.0318	46.0357	DMEM	True	1
+human1:5fe39a3dcfa2880f|fdce0134f504	human1:5fe39a3dcfa2880f	full	arm	19	21	46.6734	optimal	166	271	0	9.54792e-15	ok	2887	True	46.1891	46.1918	DMEM	True	1
+human1:5fe39a3dcfa2880f|ff28a5c1f118	human1:5fe39a3dcfa2880f	full	arm	5	1	46.6734	optimal	191	295	0	3.61933e-14	ok	2887	True	52.5896	52.591	DMEM	True	1
+human1:65d8d435a1994b98|bc0226ddb430	human1:65d8d435a1994b98	full	arm	4	1	46.8632	optimal	189	294	0	1.39888e-14	ok	2887	True	50.2797	50.2837	RPMI+alanine	True	1
+human1:65d8d435a1994b98|ef9a1065be67	human1:65d8d435a1994b98	full	arm	5	1	46.8632	optimal	166	271	0	7.32747e-15	ok	2887	True	41.2073	41.2114	RPMI+alanine	True	1
+human1:671e836367589246|a31225a2ba85	human1:671e836367589246	full	arm	3	1	46.6734	optimal	181	288	0	1.43219e-14	ok	2887	True	45.612	45.6141	DMEM+pyruvate	True	1
+human1:68cf1f92e887a9fd|1f470bf58f90	human1:68cf1f92e887a9fd	full	arm	3	2	46.6734	optimal	175	282	0	6.10623e-15	ok	2887	True	46.0215	46.0243	DMEM+cortisol	True	1
+human1:68cf1f92e887a9fd|3f5e4b746b2a	human1:68cf1f92e887a9fd	full	arm	5	2	46.6734	optimal	177	282	0	8.88178e-16	ok	2887	True	46.0865	46.0911	DMEM+cortisol	True	1
+human1:68cf1f92e887a9fd|cf517733a4f0	human1:68cf1f92e887a9fd	full	arm	1	1	46.6734	optimal	179	283	0	4.57967e-13	ok	2887	True	48.1515	48.1538	DMEM+cortisol	True	1
+human1:9e154acdebb57dbc|39f909dedf58	human1:9e154acdebb57dbc	full	arm	1	1	46.8632	optimal	179	282	0	3.9968e-15	ok	2887	True	47.9632	47.9648	RPMI+alanine+pyruvate	True	1
+human1:a339b0701b854c39|0335835a00e6	human1:a339b0701b854c39	full	arm	2	1	46.8479	optimal	177	281	0	2.55351e-15	ok	2887	True	45.0629	45.0687	IMDM	True	1
+human1:a339b0701b854c39|04b814c74fc7	human1:a339b0701b854c39	full	arm	5	1	46.8479	optimal	167	273	0	6.55032e-15	ok	2887	True	44.0452	44.0459	IMDM	True	1
+human1:a339b0701b854c39|0ad0fc3480f7	human1:a339b0701b854c39	partial	arm	3	0	46.8479	optimal	0	0	0	4.44089e-15	ok	1	True	1.54856	1.54922	IMDM	True	1
+human1:a339b0701b854c39|103cf58770af	human1:a339b0701b854c39	full	arm	5	1	46.8479	optimal	176	283	0	3.66374e-15	ok	2887	True	44.8275	44.831	IMDM	True	1
+human1:a339b0701b854c39|17fb52235613	human1:a339b0701b854c39	full	arm	2	1	46.8479	optimal	175	282	0	1.24345e-14	ok	2887	True	49.2365	49.2404	IMDM	True	2
+human1:a339b0701b854c39|1cee3ad107fc	human1:a339b0701b854c39	partial	arm	4	0	46.8479	optimal	1	1	0	8.88178e-16	ok	2	True	1.8458	1.84687	IMDM	True	1
+human1:a339b0701b854c39|2411b62732ad	human1:a339b0701b854c39	partial	arm	1	0							ok	0	True	0.275999	0.278214	IMDM	True	3
+human1:a339b0701b854c39|2aa8492d0492	human1:a339b0701b854c39	full	arm	2	1	46.8479	optimal	175	281	0	3.33067e-15	ok	2887	True	43.6294	43.6322	IMDM	True	1
+human1:a339b0701b854c39|41112281272c	human1:a339b0701b854c39	partial	arm	2	0	46.8479	optimal	0	0	0	2.44249e-15	ok	1	True	1.71066	1.71398	IMDM	True	1
+human1:a339b0701b854c39|43298a48a113	human1:a339b0701b854c39	full	arm	3	7	46.8479	optimal	182	285	0	1.57652e-14	ok	2887	True	45.2154	45.2136	IMDM	True	1
+human1:a339b0701b854c39|48a1b22c4edb	human1:a339b0701b854c39	partial	arm	2	0							ok	0	True	0.266176	0.266712	IMDM	True	1
+human1:a339b0701b854c39|52955cf261d4	human1:a339b0701b854c39	full	arm	6	3	46.8479	optimal	186	293	0	1.45439e-14	ok	2887	True	46.5671	46.5675	IMDM	True	1
+human1:a339b0701b854c39|63942578b10e	human1:a339b0701b854c39	partial	arm	3	0	46.8479	optimal	0	0	0	1.55431e-15	ok	1	True	1.44623	1.447	IMDM	True	1
+human1:a339b0701b854c39|69c486126837	human1:a339b0701b854c39	full	arm	4	18	46.8479	optimal	177	284	0	2.11386e-13	ok	2887	True	48.9347	48.9376	IMDM	True	1
+human1:a339b0701b854c39|6ba3bdfe69ec	human1:a339b0701b854c39	full	arm	3	1	46.8479	optimal	193	300	0	2.04281e-14	ok	2887	True	50.0564	50.0636	IMDM	True	1
+human1:a339b0701b854c39|8bc0d8521394	human1:a339b0701b854c39	partial	arm	2	0							ok	0	True	0.278646	0.282168	IMDM	True	1
+human1:a339b0701b854c39|977dfd9e1e16	human1:a339b0701b854c39	full	arm	5	2	46.8479	optimal	183	290	0	5.9952e-15	ok	2887	True	51.7982	51.803	IMDM	True	1
+human1:a339b0701b854c39|9dbea00446ef	human1:a339b0701b854c39	full	arm	5	10	46.8479	optimal	182	289	0	7.10543e-15	ok	2887	True	46.7764	46.7789	IMDM	True	1
+human1:a339b0701b854c39|bb406aee37c7	human1:a339b0701b854c39	full	arm	4	2	46.8479	optimal	177	284	0	1.31006e-14	ok	2887	True	50.0626	50.0638	IMDM	True	1
+human1:a339b0701b854c39|c8af760c5f4d	human1:a339b0701b854c39	full	arm	8	2	46.8479	optimal	180	286	0	1.53211e-14	ok	2887	True	53.9829	53.99	IMDM	True	1
+human1:a339b0701b854c39|d960eafb6bcd	human1:a339b0701b854c39	full	arm	2	12	46.8479	optimal	172	275	0	3.93396e-12	ok	2887	True	47.6482	47.652	IMDM	True	1
+human1:a339b0701b854c39|dad2df6f6fe3	human1:a339b0701b854c39	full	arm	13	6	46.8479	optimal	185	291	0	2.42029e-13	ok	2887	True	45.8815	45.8837	IMDM	True	1
+human1:a339b0701b854c39|eff0f6c8148a	human1:a339b0701b854c39	partial	arm	2	0							ok	0	True	0.291418	0.291479	IMDM	True	1
+human1:c7bc04800b527a9b|c05b067278dd	human1:c7bc04800b527a9b	partial	arm	2	0							ok	0	True	0.276001	0.278608	DMEM+alanine+asparagine+aspartate+glutamate+proline	True	1
+human1:c7bc04800b527a9b|e7772adf8633	human1:c7bc04800b527a9b	full	arm	5	1	46.8479	optimal	178	282	0	1.44329e-14	ok	2887	True	43.7705	43.7694	DMEM+alanine+asparagine+aspartate+glutamate+proline	True	1
+human1:db9ebc6b123dcb99|00235bb057df	human1:db9ebc6b123dcb99	full	arm	29	35	46.8632	optimal	175	278	0	1.33227e-14	ok	2887	True	46.2595	46.2649	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|00a7164c482a	human1:db9ebc6b123dcb99	full	arm	4	2	46.8632	optimal	174	276	0	1.46549e-14	ok	2887	True	50.3808	50.3888	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|00ba57a50082	human1:db9ebc6b123dcb99	full	arm	12	2	46.8632	optimal	157	260	0	8.65974e-15	ok	2887	True	45.1693	45.1735	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|0127e491d476	human1:db9ebc6b123dcb99	full	arm	11	10	46.8632	optimal	172	279	0	4.21885e-15	ok	2887	True	47.5736	47.5755	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|0193c50a74c5	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	177	281	0	1.24345e-14	ok	2887	True	45.885	45.8883	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|019a11970e32	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	170	274	0	1.53211e-14	ok	2887	True	41.8356	41.8397	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|01b87ccf644f	human1:db9ebc6b123dcb99	full	arm	4	2	46.8632	optimal	169	274	0	2.25375e-14	ok	2887	True	50.0244	50.0261	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|02364039e809	human1:db9ebc6b123dcb99	full	arm	5	20	46.8632	optimal	172	279	0	1.11022e-15	ok	2887	True	350.785	350.797	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|02670602a38f	human1:db9ebc6b123dcb99	full	arm	21	72	46.8632	optimal	170	274	0	1.17684e-14	ok	2887	True	44.1258	44.131	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|0294f368de09	human1:db9ebc6b123dcb99	full	arm	2	1	46.8632	optimal	161	267	0	9.88098e-15	ok	2887	True	47.6956	47.7006	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|02beb32ddbe5	human1:db9ebc6b123dcb99	full	arm	8	4	46.8632	optimal	167	272	0	1.9984e-15	ok	2887	True	41.9075	41.9136	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|02ee8a2b1c72	human1:db9ebc6b123dcb99	full	arm	5	63	46.8632	optimal	174	278	0	1.11022e-15	ok	2887	True	43.8305	43.8318	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|030cce459d9a	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	187	292	0	1.24345e-14	ok	2887	True	44.6767	44.6807	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|031ad9e7f2ac	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	164	269	0	2.03171e-14	ok	2887	True	44.0318	44.0351	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	2
+human1:db9ebc6b123dcb99|0335835a00e6	human1:db9ebc6b123dcb99	full	arm	2	1	46.8632	optimal	176	282	0	3.77476e-15	ok	2887	True	47.1251	47.1268	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	12
+human1:db9ebc6b123dcb99|036346e5d817	human1:db9ebc6b123dcb99	full	arm	22	43	46.1802	optimal	159	263	0	7.09655e-13	ok	2887	True	42.5652	42.5719	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|038b5346631c	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	170	275	0	1.15463e-14	ok	2887	True	47.7466	47.7505	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|03c1f2fd17cf	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	175	280	0	1.9984e-15	ok	2887	True	47.8808	47.886	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|0405d77d0fe9	human1:db9ebc6b123dcb99	full	arm	12	6	46.8632	optimal	166	269	0	1.23235e-14	ok	2887	True	41.4457	41.4474	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|04b78fb181fe	human1:db9ebc6b123dcb99	full	arm	24	37	46.8632	optimal	170	274	0	4.44089e-15	ok	2887	True	43.5263	43.5289	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|059bcd3adcf5	human1:db9ebc6b123dcb99	full	arm	24	70	46.8632	optimal	173	279	0	1.64313e-14	ok	2887	True	45.5177	45.5212	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|05ccbef71852	human1:db9ebc6b123dcb99	full	arm	14	19	46.8632	optimal	162	266	0	7.43849e-15	ok	2887	True	46.2887	46.2904	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|074fd88f65cc	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	191	298	0	1.05471e-13	ok	2887	True	49.168	49.1732	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|076ad504d9e7	human1:db9ebc6b123dcb99	partial	arm	5	0							ok	0	True	0.277521	0.281192	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|07ae995723a1	human1:db9ebc6b123dcb99	full	arm	3	33	46.8632	optimal	188	294	0	6.66134e-16	ok	2887	True	48.4193	48.4223	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|07e20f3b39f5	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	167	273	0	9.52571e-14	ok	2887	True	43.9812	43.9825	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|08135d119771	human1:db9ebc6b123dcb99	full	arm	6	5	46.8632	optimal	158	261	0	1.06581e-14	ok	2887	True	43.6467	43.6494	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|08664100ac62	human1:db9ebc6b123dcb99	partial	arm	5	0							ok	0	True	0.289229	0.289998	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|09b599edd1c2	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	176	284	0	2.15383e-14	ok	2887	True	47.4375	47.4414	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|0a4d1eb68340	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	177	284	0	1.54321e-14	ok	2887	True	47.2891	47.2937	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|0b0a0d07750e	human1:db9ebc6b123dcb99	full	arm	2	1	46.8632	optimal	173	278	0	2.44249e-15	ok	2887	True	42.8535	42.8556	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|0ba18c50e64d	human1:db9ebc6b123dcb99	partial	arm	1	0							ok	0	True	0.265603	0.266933	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|0c1f811fcada	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	162	266	0	1.69198e-13	ok	2887	True	43.3884	43.3913	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|0d524b44f4cd	human1:db9ebc6b123dcb99	full	arm	7	4	46.8632	optimal	177	282	0	6.21725e-15	ok	2887	True	47.8476	47.8483	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|0d5aa77b42af	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	187	291	0	1.16573e-14	ok	2887	True	49.9333	49.9344	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|0e191088e968	human1:db9ebc6b123dcb99	full	arm	10	10	46.8632	optimal	177	284	0	1.22125e-14	ok	2887	True	46.9794	46.9815	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|0fa6a0e11079	human1:db9ebc6b123dcb99	partial	arm	3	0	46.8632	optimal	0	0	0	7.11653e-14	ok	1	True	1.60033	1.6025	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|11851e3750c4	human1:db9ebc6b123dcb99	full	arm	29	34	46.8632	optimal	165	270	0	1.13243e-14	ok	2887	True	43.3987	43.3978	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|11dfb940a6f9	human1:db9ebc6b123dcb99	full	arm	10	22	33.3371	optimal	172	321	0	2.29816e-14	ok	2887	True	35.398	35.3995	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|127888d5c982	human1:db9ebc6b123dcb99	full	arm	54	132	46.1802	optimal	155	261	0	4.04565e-13	ok	2887	True	36.6911	36.6962	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|12cf712be3e5	human1:db9ebc6b123dcb99	full	arm	8	4	46.8632	optimal	178	282	0	2.03171e-14	ok	2887	True	46.4138	46.4188	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|13791d977e8b	human1:db9ebc6b123dcb99	partial	arm	3	0							ok	0	True	0.26696	0.270341	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|137c81f45185	human1:db9ebc6b123dcb99	full	arm	7	5	46.8632	optimal	175	280	0	3.33067e-14	ok	2887	True	43.2187	43.2187	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|13b234eda0ea	human1:db9ebc6b123dcb99	full	arm	6	29	46.8632	optimal	175	280	0	4.10783e-15	ok	2887	True	41.3375	41.3397	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|13bfc704a06e	human1:db9ebc6b123dcb99	partial	arm	3	0							ok	0	True	0.2735	0.276297	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|13c3d30ed324	human1:db9ebc6b123dcb99	full	arm	10	12	46.8632	optimal	173	276	0	1.22125e-14	ok	2887	True	42.0555	42.0544	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|1620c2a28a8b	human1:db9ebc6b123dcb99	full	arm	1	1	46.8632	optimal	176	279	0	7.77156e-15	ok	2887	True	45.7335	45.7344	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|16ce7ecf0bad	human1:db9ebc6b123dcb99	full	arm	3	4	46.8006	optimal	179	283	0	2.89768e-14	ok	2887	True	50.7333	50.7363	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|16fc447d8b18	human1:db9ebc6b123dcb99	full	arm	6	1	46.8632	optimal	178	283	0	1.53211e-14	ok	2887	True	43.491	43.4925	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|17fb52235613	human1:db9ebc6b123dcb99	full	arm	2	1	46.8632	optimal	189	293	0	7.77156e-15	ok	2887	True	42.4461	42.4502	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	2
+human1:db9ebc6b123dcb99|1893147f456e	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	163	271	0	3.27516e-14	ok	2887	True	44.5719	44.5738	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|1951e44c8808	human1:db9ebc6b123dcb99	partial	arm	3	0							ok	0	True	0.276394	0.277909	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|19fb1b1b4dba	human1:db9ebc6b123dcb99	full	arm	28	11	46.8632	optimal	162	264	0	3.45279e-14	ok	2887	True	44.6287	44.629	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|1a52b29015fe	human1:db9ebc6b123dcb99	full	arm	29	18	46.8632	optimal	167	271	0	6.88338e-15	ok	2887	True	41.803	41.8036	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|1b6f3b3b2c46	human1:db9ebc6b123dcb99	full	arm	9	13	46.8632	optimal	160	264	0	1.37668e-14	ok	2887	True	42.4019	42.404	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|1ba5695dc8e1	human1:db9ebc6b123dcb99	full	arm	1	13	46.8632	optimal	189	295	0	1.35447e-14	ok	2887	True	49.2728	49.2759	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|1cac2a60738a	human1:db9ebc6b123dcb99	partial	arm	2	0	46.8632	optimal	0	0	0	2.22045e-15	ok	1	True	1.65681	1.65879	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|1cbce6fd6d03	human1:db9ebc6b123dcb99	partial	arm	5	0	46.8632	optimal	0	0	0	4.44089e-15	ok	1	True	1.21599	1.21591	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|1cc3efa18626	human1:db9ebc6b123dcb99	full	arm	7	7	46.8632	optimal	176	280	0	9.32587e-15	ok	2887	True	44.5631	44.5631	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|1da09e80d9ba	human1:db9ebc6b123dcb99	partial	arm	1	0							ok	0	True	0.262085	0.264865	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|1dd224008e57	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	175	281	0	2.9976e-15	ok	2887	True	44.0202	44.0216	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|1e98fb931ebe	human1:db9ebc6b123dcb99	full	arm	24	24	46.8632	optimal	173	277	0	2.3348e-13	ok	2887	True	46.0044	46.007	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|1f05b8f9c6da	human1:db9ebc6b123dcb99	full	arm	5	4	46.8632	optimal	171	275	0	1.56541e-14	ok	2887	True	44.4775	44.479	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|1f3f0a13615e	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	165	268	0	2.5957e-13	ok	2887	True	44.0582	44.0624	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|1f4e137c850b	human1:db9ebc6b123dcb99	full	arm	21	14	46.8632	optimal	181	286	0	6.43929e-15	ok	2887	True	47.3645	47.3667	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|201a5d4c403c	human1:db9ebc6b123dcb99	full	arm	10	5	46.8632	optimal	176	280	0	9.99201e-15	ok	2887	True	48.5638	48.5689	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|20680da63efa	human1:db9ebc6b123dcb99	full	arm	2	33	46.8632	optimal	179	284	0	2.5091e-14	ok	2887	True	45.7998	45.8038	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|20b4bb1aad79	human1:db9ebc6b123dcb99	full	arm	31	71	46.8632	optimal	179	285	0	1.07692e-14	ok	2887	True	46.4342	46.4388	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|20c0eaa3d103	human1:db9ebc6b123dcb99	full	arm	5	10	46.8632	optimal	174	278	0	2.54241e-14	ok	2887	True	43.4052	43.4072	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|20fb4283ff24	human1:db9ebc6b123dcb99	full	arm	2	2	46.8632	optimal	173	279	0	6.55032e-15	ok	2887	True	46.7478	46.7504	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|211b3ceb47b8	human1:db9ebc6b123dcb99	full	arm	14	3	46.8632	optimal	179	286	0	7.77156e-15	ok	2887	True	45.3384	45.3399	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|21cea3e65cae	human1:db9ebc6b123dcb99	full	arm	13	13	46.8632	optimal	160	265	0	2.66454e-14	ok	2887	True	39.8965	39.901	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|22acc6f566ee	human1:db9ebc6b123dcb99	full	arm	5	3	46.8632	optimal	167	273	0	1.62093e-14	ok	2887	True	45.5932	45.5948	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|22b6dcc4da5f	human1:db9ebc6b123dcb99	partial	arm	3	0							ok	0	True	0.27894	0.281353	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|22dd6fa6e42f	human1:db9ebc6b123dcb99	full	arm	49	26	46.8632	optimal	173	278	0	4.41869e-14	ok	2887	True	39.6291	39.6306	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|23a6cbabc8e4	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	172	276	0	1.33227e-14	ok	2887	True	44.1704	44.1729	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|2411b62732ad	human1:db9ebc6b123dcb99	partial	arm	1	0							ok	0	True	0.273984	0.275225	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	18
+human1:db9ebc6b123dcb99|24228a6af421	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	180	285	0	2.44249e-15	ok	2887	True	45.2282	45.2322	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|2601802ff9d0	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	178	284	0	1.21014e-14	ok	2887	True	46.8326	46.837	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|26160b506640	human1:db9ebc6b123dcb99	full	arm	4	2	46.8632	optimal	182	285	0	5.55112e-16	ok	2887	True	47.8173	47.8195	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|28a945735868	human1:db9ebc6b123dcb99	full	arm	10	18	46.8632	optimal	181	286	0	3.33067e-16	ok	2887	True	49.7121	49.7153	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|29250c40e084	human1:db9ebc6b123dcb99	full	arm	4	2	46.8632	optimal	174	278	0	3.85247e-14	ok	2887	True	44.2534	44.2566	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|29dc5bf2213d	human1:db9ebc6b123dcb99	full	arm	4	2	46.8632	optimal	176	280	0	5.77316e-15	ok	2887	True	44.9983	45.0029	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|29e5adfd6f6b	human1:db9ebc6b123dcb99	full	arm	21	40	46.8632	optimal	178	284	0	1.08802e-14	ok	2887	True	44.6734	44.6747	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|2acf6371fd96	human1:db9ebc6b123dcb99	full	arm	7	2	46.8632	optimal	171	274	0	1.55431e-14	ok	2887	True	49.1322	49.1361	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|2af90e638fea	human1:db9ebc6b123dcb99	partial	arm	4	0	46.8632	optimal	0	0	0	3.33067e-16	ok	1	True	2.02902	2.03188	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|2b96e7592228	human1:db9ebc6b123dcb99	partial	arm	1	0							ok	0	True	0.264003	0.262848	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|2be33763a0fc	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	170	275	0	2.26485e-14	ok	2887	True	46.2076	46.2118	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|2c4daaac6948	human1:db9ebc6b123dcb99	full	arm	1	1	46.8632	optimal	154	258	0	4.996e-15	ok	2887	True	43.6027	43.6046	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|2df636d0baf0	human1:db9ebc6b123dcb99	full	arm	6	10	46.8632	optimal	158	262	0	7.32747e-15	ok	2887	True	43.0031	43.0083	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|2eea9a44d330	human1:db9ebc6b123dcb99	full	arm	7	5	46.8632	optimal	174	280	0	1.9873e-14	ok	2887	True	45.8686	45.8701	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|2f213b1a4953	human1:db9ebc6b123dcb99	full	arm	4	2	46.8632	optimal	163	265	0	1.27676e-13	ok	2887	True	45.544	45.5453	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|2fc03e974796	human1:db9ebc6b123dcb99	full	arm	4	9	46.8632	optimal	178	282	0	2.36922e-13	ok	2887	True	50.8897	50.8955	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|31a7a70e3129	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	170	275	0	5.77316e-15	ok	2887	True	44.4573	44.4602	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|31f07ef8f94f	human1:db9ebc6b123dcb99	partial	arm	3	0							ok	0	True	0.272358	0.275293	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|32a0550e4844	human1:db9ebc6b123dcb99	full	arm	2	1	46.8632	optimal	184	288	0	1.65423e-14	ok	2887	True	48.7502	48.7502	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|32a29076840d	human1:db9ebc6b123dcb99	partial	arm	4	0							ok	0	True	0.268583	0.271601	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|33da479ab160	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	182	288	0	2.12053e-14	ok	2887	True	47.8675	47.8717	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|33e6c03f0102	human1:db9ebc6b123dcb99	full	arm	7	3	46.8632	optimal	182	288	0	1.24345e-14	ok	2887	True	47.9017	47.905	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|34145758e4d7	human1:db9ebc6b123dcb99	full	arm	56	67	46.8632	optimal	179	284	0	2.22045e-16	ok	2887	True	45.4523	45.4577	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|343cc9c579f7	human1:db9ebc6b123dcb99	full	arm	26	17	46.8632	optimal	176	278	0	4.44089e-16	ok	2887	True	40.5132	40.5172	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|3484ff3d2bd2	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	174	279	0	4.44089e-15	ok	2887	True	47.5806	47.5844	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|3490fc3c147e	human1:db9ebc6b123dcb99	partial	arm	4	0	46.8632	optimal	0	0	0	6.77236e-15	ok	2	True	1.56438	1.56673	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|35477e415764	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	170	274	0	8.43769e-15	ok	2887	True	42.4793	42.4772	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|355db463eef7	human1:db9ebc6b123dcb99	full	arm	5	9	46.8632	optimal	176	282	0	1.37668e-14	ok	2887	True	44.2976	44.3042	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|359305fe3a2b	human1:db9ebc6b123dcb99	full	arm	26	24	46.8632	optimal	165	270	0	4.44089e-16	ok	2887	True	45.332	45.3354	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|35f005105f69	human1:db9ebc6b123dcb99	partial	arm	1	0	46.8632	optimal	1	1	0	0	ok	1	True	1.8312	1.83308	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|35f892f79301	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	169	272	0	3.9968e-15	ok	2887	True	47.1418	47.1467	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|36faefb1fc8e	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	181	287	0	4.10783e-15	ok	2887	True	49.7773	49.7795	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|374f8032e4bf	human1:db9ebc6b123dcb99	full	arm	10	4	46.8632	optimal	178	282	0	8.88178e-16	ok	2887	True	45.4697	45.4726	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|37621dcf9759	human1:db9ebc6b123dcb99	full	arm	7	1	46.8632	optimal	169	274	0	1.77636e-15	ok	2887	True	43.9466	43.9499	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|37a331bdedba	human1:db9ebc6b123dcb99	full	arm	2	33	46.8632	optimal	166	269	0	5.10703e-15	ok	2887	True	43.8865	43.892	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	2
+human1:db9ebc6b123dcb99|37cf6006b45a	human1:db9ebc6b123dcb99	full	arm	30	41	46.8632	optimal	169	272	0	9.54792e-15	ok	2887	True	42.6252	42.6277	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|38094cb35555	human1:db9ebc6b123dcb99	partial	arm	7	0							ok	0	True	0.466721	0.470178	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|383815f6959b	human1:db9ebc6b123dcb99	full	arm	2	35	46.8632	optimal	180	286	0	5.32907e-15	ok	2887	True	41.977	41.978	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|39f8d405b610	human1:db9ebc6b123dcb99	full	arm	10	9	46.8632	optimal	176	282	0	2.22045e-16	ok	2887	True	46.5229	46.5269	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|39f909dedf58	human1:db9ebc6b123dcb99	full	arm	1	1	46.8632	optimal	175	281	0	8.21565e-15	ok	2887	True	41.9398	41.9435	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	2
+human1:db9ebc6b123dcb99|3ad28c6e9bf1	human1:db9ebc6b123dcb99	partial	arm	2	0							ok	0	True	0.322862	0.325782	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|3bb9a3d3bbb9	human1:db9ebc6b123dcb99	full	arm	14	6	46.8632	optimal	183	289	0	8.99281e-15	ok	2887	True	47.2782	47.2809	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|3bc0de03340a	human1:db9ebc6b123dcb99	full	arm	4	8	46.8632	optimal	172	277	0	5.9952e-15	ok	2887	True	43.1945	43.193	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|3c6fc75d9f81	human1:db9ebc6b123dcb99	partial	arm	2	0							ok	0	True	0.266591	0.268194	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|3ce49e9f0059	human1:db9ebc6b123dcb99	full	arm	3	32	46.8632	optimal	162	264	0	8.77076e-15	ok	2887	True	39.8019	39.8046	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|3d2fa1aa99ca	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	175	281	0	1.11022e-14	ok	2887	True	46.1461	46.15	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|3d56dbc3387f	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	159	263	0	1.77636e-15	ok	2887	True	43.1317	43.135	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|3d583797a76a	human1:db9ebc6b123dcb99	full	arm	4	3	46.8632	optimal	169	273	0	2.22045e-15	ok	2887	True	40.0072	40.0111	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|3d751ba89ac8	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	164	269	0	4.44089e-15	ok	2887	True	44.1787	44.1829	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|3defa2a972a0	human1:db9ebc6b123dcb99	full	arm	5	3	46.8632	optimal	167	272	0	2.08722e-14	ok	2887	True	44.7991	44.8017	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|3ed10fc5080b	human1:db9ebc6b123dcb99	full	arm	5	5	46.8632	optimal	173	276	0	7.77156e-15	ok	2887	True	42.4806	42.4857	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|3ff6f9d21319	human1:db9ebc6b123dcb99	full	arm	9	6	46.863	optimal	170	274	0	3.9968e-15	ok	2887	True	41.7938	41.796	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|40e7bca51c02	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	167	273	0	1.65423e-14	ok	2887	True	45.5519	45.5558	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|40eceefb4339	human1:db9ebc6b123dcb99	full	arm	4	11	46.8632	optimal	183	290	0	3.66374e-15	ok	2887	True	48.8961	48.8995	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|41a9feae257c	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	174	279	0	4.4853e-14	ok	2887	True	45.4336	45.4374	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4227d7153218	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	169	274	0	2.44249e-15	ok	2887	True	43.4752	43.4795	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|422ad19f00f4	human1:db9ebc6b123dcb99	full	arm	47	41	46.8632	optimal	171	274	0	1.65423e-14	ok	2887	True	40.287	40.2913	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|42b0003d1a19	human1:db9ebc6b123dcb99	full	arm	3	63	46.8632	optimal	181	286	0	5.10703e-15	ok	2887	True	47.893	47.8984	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|43f134dd2c79	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	164	268	0	1.11022e-15	ok	2887	True	39.7081	39.7121	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|440855c31479	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	162	265	0	7.43849e-15	ok	2887	True	39.5538	39.5556	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|441a07ff9f25	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	180	285	0	3.59712e-14	ok	2887	True	46.7065	46.7096	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|44e22c373110	human1:db9ebc6b123dcb99	full	arm	2	1	46.8632	optimal	179	285	0	4.7895e-13	ok	2887	True	43.7382	43.7398	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|44fe61e2a4da	human1:db9ebc6b123dcb99	full	arm	4	32	46.8632	optimal	164	270	0	3.90799e-14	ok	2887	True	44.4029	44.4078	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|45854d1a938e	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	168	273	0	5.77316e-15	ok	2887	True	44.3793	44.3837	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|45b018e3b817	human1:db9ebc6b123dcb99	full	arm	9	1	46.8632	optimal	174	278	0	1.5099e-14	ok	2887	True	41.6222	41.6265	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|45ba58b8add1	human1:db9ebc6b123dcb99	full	arm	7	3	46.8632	optimal	170	272	0	5.88418e-15	ok	2887	True	43.2107	43.2114	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4692c0fdf987	human1:db9ebc6b123dcb99	partial	arm	5	0							ok	0	True	0.265934	0.266937	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|46a64234bd78	human1:db9ebc6b123dcb99	full	arm	2	3	46.8632	optimal	176	281	0	2.55351e-15	ok	2887	True	42.2832	42.286	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4740796f6a6d	human1:db9ebc6b123dcb99	full	arm	2	17	46.8632	optimal	169	271	0	1.02141e-14	ok	2887	True	43.9005	43.9048	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4803ad02cc57	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	171	277	0	1.84297e-14	ok	2887	True	40.9639	40.9663	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	2
+human1:db9ebc6b123dcb99|48de2f6184d0	human1:db9ebc6b123dcb99	full	arm	11	14	46.8632	optimal	169	272	0	1.65423e-14	ok	2887	True	40.3651	40.3686	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|49c586b899d2	human1:db9ebc6b123dcb99	full	arm	24	12	46.8006	optimal	175	281	0	1.9873e-14	ok	2887	True	43.5666	43.5718	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4a3b545de74a	human1:db9ebc6b123dcb99	partial	arm	3	0	46.8632	optimal	1	1	0	7.99361e-15	ok	2	True	1.85475	1.85568	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4bad4cf4084e	human1:db9ebc6b123dcb99	partial	arm	1	0							ok	0	True	0.263997	0.263834	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4bd59de5b54c	human1:db9ebc6b123dcb99	full	arm	6	7	46.8632	optimal	173	280	0	2.4869e-14	ok	2887	True	39.9592	39.9599	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4c034dc5136e	human1:db9ebc6b123dcb99	full	arm	5	8	46.8632	optimal	171	275	0	1.57652e-14	ok	2887	True	37.8188	37.8234	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4c1ddd8b30a7	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	169	273	0	8.9706e-14	ok	2887	True	43.0299	43.0312	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4dc7c55dc786	human1:db9ebc6b123dcb99	full	arm	7	37	46.8632	optimal	164	269	0	9.10383e-14	ok	2887	True	38.9582	38.9595	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	3
+human1:db9ebc6b123dcb99|4e99b3e6f982	human1:db9ebc6b123dcb99	full	arm	2	8	46.8632	optimal	164	269	0	1.77636e-14	ok	2887	True	40.3858	40.3884	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4ebcc44153a7	human1:db9ebc6b123dcb99	full	arm	4	2	46.8632	optimal	176	282	0	2.15383e-14	ok	2887	True	44.6121	44.6156	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4ef42b864b40	human1:db9ebc6b123dcb99	full	arm	4	3	46.8632	optimal	180	283	0	1.9762e-14	ok	2887	True	42.5118	42.5167	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4f1cf1d6089d	human1:db9ebc6b123dcb99	full	arm	4	6	46.8632	optimal	169	274	0	5.12923e-14	ok	2887	True	40.9249	40.93	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4f7ae8919da8	human1:db9ebc6b123dcb99	full	arm	53	150	46.8632	optimal	180	283	0	2.70894e-14	ok	2887	True	35.5642	35.5668	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|4fb3634a9113	human1:db9ebc6b123dcb99	full	arm	21	11	46.8632	optimal	164	272	0	1.11022e-15	ok	2887	True	42.5459	42.5503	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5053524fb26f	human1:db9ebc6b123dcb99	full	arm	9	18	46.8632	optimal	171	276	0	1.16573e-14	ok	2887	True	39.0175	39.02	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5131a574eb93	human1:db9ebc6b123dcb99	full	arm	10	7	46.8632	optimal	192	298	0	4.996e-15	ok	2887	True	45.3769	45.3806	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|51553f41575d	human1:db9ebc6b123dcb99	partial	arm	2	0							ok	0	True	0.262156	0.26495	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|51b4203db883	human1:db9ebc6b123dcb99	full	arm	6	1	46.8632	optimal	169	273	0	3.04845e-12	ok	2887	True	42.3667	42.3653	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|51fe842b79b9	human1:db9ebc6b123dcb99	full	arm	6	1	46.8632	optimal	184	290	0	6.21725e-15	ok	2887	True	41.5481	41.5513	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|520a3bd951ee	human1:db9ebc6b123dcb99	partial	arm	1	0	46.8632	optimal	0	0	0	1.42109e-14	ok	1	True	1.67862	1.6796	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|522897cc9e37	human1:db9ebc6b123dcb99	full	arm	12	8	46.8632	optimal	156	261	0	6.66134e-15	ok	2887	True	42.2309	42.2323	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|523d51057aa1	human1:db9ebc6b123dcb99	full	arm	6	1	46.8632	optimal	177	282	0	1.26565e-14	ok	2887	True	42.0869	42.0908	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|523d98fd3654	human1:db9ebc6b123dcb99	full	arm	11	43	46.8632	optimal	168	273	0	1.5099e-14	ok	2887	True	44.1977	44.2017	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5371f9d7825a	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	171	274	0	1.42109e-14	ok	2887	True	43.4781	43.4809	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|53c6e60f71a9	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	185	288	0	8.43769e-15	ok	2887	True	48.5321	48.535	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|544a01a481ab	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	180	286	0	1.74305e-14	ok	2887	True	44.8639	44.866	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|544b15658aac	human1:db9ebc6b123dcb99	full	arm	6	11	46.8632	optimal	170	275	0	6.66134e-15	ok	2887	True	39.3416	39.3422	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|55f44bdac285	human1:db9ebc6b123dcb99	full	arm	2	3	46.8632	optimal	169	277	0	3.55271e-15	ok	2887	True	38.2595	38.262	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5749c1e265c0	human1:db9ebc6b123dcb99	full	arm	3	3	46.8632	optimal	179	284	0	3.07532e-14	ok	2887	True	42.2555	42.261	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|580aeccd5854	human1:db9ebc6b123dcb99	partial	arm	4	0							ok	0	True	0.271927	0.273295	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5a23d1ec3229	human1:db9ebc6b123dcb99	full	arm	10	36	46.8632	optimal	176	282	0	9.88098e-14	ok	2887	True	39.7353	39.7352	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5a2999bc2490	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	171	279	0	1.90625e-13	ok	2887	True	37.7714	37.776	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5ae723d0e46d	human1:db9ebc6b123dcb99	full	arm	2	4	46.8632	optimal	164	267	0	9.54792e-15	ok	2887	True	40.0208	40.0251	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5c8a2ea792ce	human1:db9ebc6b123dcb99	full	arm	36	66	46.8632	optimal	178	281	0	1.54321e-14	ok	2887	True	41.4196	41.4232	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5c97a908fe27	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	171	276	0	3.13083e-14	ok	2887	True	41.5175	41.5212	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5da7ca9bac2d	human1:db9ebc6b123dcb99	full	arm	2	1	46.8632	optimal	172	276	0	6.66134e-16	ok	2887	True	40.4204	40.424	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5e6fa82754af	human1:db9ebc6b123dcb99	full	arm	10	59	46.8632	optimal	177	283	0	5.10703e-15	ok	2887	True	37.0089	37.0135	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5efc335c3f0a	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	172	278	0	1.12133e-14	ok	2887	True	41.0973	41.1003	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5f10bd688a0b	human1:db9ebc6b123dcb99	full	arm	14	39	46.8632	optimal	165	268	0	1.24345e-14	ok	2887	True	39.3739	39.3775	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5f4808b4373c	human1:db9ebc6b123dcb99	full	arm	4	2	46.8632	optimal	175	280	0	3.9968e-15	ok	2887	True	45.0417	45.0466	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|5f583295454e	human1:db9ebc6b123dcb99	full	arm	12	4	46.8632	optimal	167	272	0	3.39062e-13	ok	2887	True	44.9063	44.9091	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|6079d7b108b3	human1:db9ebc6b123dcb99	full	arm	7	10	46.8632	optimal	171	274	0	4.44089e-16	ok	2887	True	41.1392	41.1408	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|60ac2fd78a07	human1:db9ebc6b123dcb99	full	arm	4	6	46.8632	optimal	173	278	0	1.39888e-14	ok	2887	True	40.1061	40.1101	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|612b2453e5f4	human1:db9ebc6b123dcb99	full	arm	14	4	46.8632	optimal	168	273	0	1.9762e-14	ok	2887	True	40.7154	40.7195	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|628e47836b6c	human1:db9ebc6b123dcb99	full	arm	45	121	46.1802	optimal	173	321	0	3.77476e-15	ok	2887	True	38.8309	38.8347	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|62ff56d8ac79	human1:db9ebc6b123dcb99	partial	arm	2	0							ok	0	True	0.250358	0.252551	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|6370931499b3	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	163	266	0	1.77636e-14	ok	2887	True	41.0194	41.0179	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|64828ee8643f	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	179	283	0	2.66454e-15	ok	2887	True	43.7157	43.717	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|6553534d4998	human1:db9ebc6b123dcb99	full	arm	4	2	46.8632	optimal	186	292	0	6.66134e-15	ok	2887	True	46.2013	46.2032	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|65cf31e32445	human1:db9ebc6b123dcb99	full	arm	7	1	46.8632	optimal	178	284	0	1.45439e-14	ok	2887	True	43.6004	43.6037	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|65df6cb7052d	human1:db9ebc6b123dcb99	full	arm	6	2	46.8632	optimal	173	278	0	7.99361e-15	ok	2887	True	39.4535	39.4564	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|660b42e72e9f	human1:db9ebc6b123dcb99	partial	arm	3	0							ok	0	True	0.259674	0.261301	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|669a5d7a6e8b	human1:db9ebc6b123dcb99	full	arm	7	3	46.8632	optimal	195	304	0	4.88498e-15	ok	2887	True	46.282	46.2817	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|67b4909f530b	human1:db9ebc6b123dcb99	full	arm	8	12	46.8632	optimal	169	276	0	1.39888e-14	ok	2887	True	40.1152	40.1194	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|67f27e4e160a	human1:db9ebc6b123dcb99	full	arm	9	7	46.8632	optimal	174	279	0	1.13243e-14	ok	2887	True	42.8469	42.8497	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|69139614e2f4	human1:db9ebc6b123dcb99	full	arm	4	3	46.8632	optimal	184	290	0	1.5099e-14	ok	2887	True	41.2952	41.2988	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|6a1125a0d659	human1:db9ebc6b123dcb99	full	arm	9	2	46.8632	optimal	177	284	0	1.11022e-14	ok	2887	True	44.6896	44.6936	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|6acb041b258c	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	171	275	0	3.16414e-14	ok	2887	True	42.5129	42.5161	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|6ace5a70331f	human1:db9ebc6b123dcb99	full	arm	3	7	46.8632	optimal	188	292	0	3.55271e-15	ok	2887	True	43.0709	43.0743	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|6cc3f11a0f05	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	182	288	0	6.99441e-15	ok	2887	True	43.572	43.5765	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|6debe616e2ab	human1:db9ebc6b123dcb99	full	arm	4	34	46.8632	optimal	164	270	0	5.9952e-15	ok	2887	True	40.2461	40.2471	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|6f6df79bd6c5	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	188	293	0	1.21014e-14	ok	2887	True	48.7275	48.73	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|70253135bc82	human1:db9ebc6b123dcb99	full	arm	4	4	46.8632	optimal	171	278	0	2.498e-14	ok	2887	True	44.6251	44.6297	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|706020e595c5	human1:db9ebc6b123dcb99	full	arm	5	5	46.8632	optimal	167	272	0	6.55032e-15	ok	2887	True	39.8534	39.8576	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|713dfbc84a04	human1:db9ebc6b123dcb99	full	arm	15	45	20.841	optimal	162	291	0	3.79696e-14	ok	2887	True	34.4392	34.4404	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|71b2e2c6166c	human1:db9ebc6b123dcb99	partial	arm	3	0	46.8632	optimal	0	0	0	2.10942e-14	ok	1	True	1.84942	1.84948	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|727544ce831d	human1:db9ebc6b123dcb99	full	arm	6	1	46.8632	optimal	170	274	0	1.22125e-14	ok	2887	True	39.9035	39.907	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|733cd20776a3	human1:db9ebc6b123dcb99	full	arm	26	22	46.8632	optimal	163	265	0	1.46549e-14	ok	2887	True	38.5637	38.5672	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|735d4aa53a31	human1:db9ebc6b123dcb99	full	arm	6	9	46.8632	optimal	176	281	0	4.10783e-15	ok	2887	True	43.3379	43.3405	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|73a4fbfd8ff4	human1:db9ebc6b123dcb99	full	arm	6	4	46.8632	optimal	171	278	0	1.19904e-14	ok	2887	True	43.0696	43.0717	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|751ddce78028	human1:db9ebc6b123dcb99	full	arm	1	1	46.8632	optimal	178	281	0	9.54792e-15	ok	2887	True	44.0801	44.0836	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|7584711a9624	human1:db9ebc6b123dcb99	full	arm	1	1	46.8632	optimal	181	288	0	4.44089e-15	ok	2887	True	42.394	42.3962	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|75eade838dc5	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	187	293	0	2.9976e-15	ok	2887	True	43.7335	43.7378	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|7634e66f9d2d	human1:db9ebc6b123dcb99	full	arm	22	10	46.8632	optimal	163	268	0	1.54321e-14	ok	2887	True	41.3723	41.3755	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|7681ee59f364	human1:db9ebc6b123dcb99	full	arm	6	24	46.8632	optimal	168	273	0	7.10543e-15	ok	2887	True	41.2774	41.2799	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|76c25a538fa6	human1:db9ebc6b123dcb99	full	arm	9	52	46.8606	optimal	160	265	0	1.80189e-13	ok	2887	True	37.3834	37.3881	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|76eddda15bb0	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	172	275	0	2.83551e-13	ok	2887	True	43.9243	43.9291	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|7779d21a64b0	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	168	273	0	8.9706e-14	ok	2887	True	42.8644	42.868	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|790d9c96bcb2	human1:db9ebc6b123dcb99	partial	arm	2	0	46.8632	optimal	0	0	0	1.57652e-14	ok	1	True	1.68212	1.68285	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|79d541ed1117	human1:db9ebc6b123dcb99	partial	arm	2	0	46.8632	optimal	0	0	0	4.60965e-13	ok	1	True	1.10652	1.10742	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|7a63c3c88972	human1:db9ebc6b123dcb99	full	arm	36	61	46.8632	optimal	168	270	0	2.39808e-14	ok	2887	True	38.8913	38.8932	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|7a9c2cc4dafe	human1:db9ebc6b123dcb99	partial	arm	3	0							ok	0	True	0.248605	0.249491	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|7b1bb8c2b380	human1:db9ebc6b123dcb99	full	arm	5	13	46.8632	optimal	191	296	0	1.36557e-14	ok	2887	True	43.3262	43.3293	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|7cb18856fe46	human1:db9ebc6b123dcb99	full	arm	9	7	46.8632	optimal	181	287	0	6.43929e-15	ok	2887	True	47.2468	47.2486	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|7d2e28b209df	human1:db9ebc6b123dcb99	partial	arm	1	0							ok	0	True	0.255996	0.25855	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|7d7b85b07967	human1:db9ebc6b123dcb99	full	arm	63	129	46.8606	optimal	165	272	0	1.98197e-12	ok	2887	True	35.5145	35.5175	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|7e1183ed02dc	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	168	273	0	1.12133e-14	ok	2887	True	40.3661	40.3684	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|7f63dfff1b4c	human1:db9ebc6b123dcb99	full	arm	10	6	46.8632	optimal	180	282	0	5.55112e-16	ok	2887	True	45.3453	45.3466	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|7f772bdc2ff3	human1:db9ebc6b123dcb99	full	arm	4	2	46.8632	optimal	171	275	0	5.18474e-14	ok	2887	True	41.055	41.0576	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|7fb60e8b7552	human1:db9ebc6b123dcb99	full	arm	7	9	46.8632	optimal	178	283	0	5.45564e-13	ok	2887	True	44.0183	44.0219	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|819d894b84fe	human1:db9ebc6b123dcb99	full	arm	12	25	46.8632	optimal	185	290	0	5.44009e-15	ok	2887	True	44.15	44.1543	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|81fdfdca17da	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	171	275	0	1.52101e-14	ok	2887	True	42.2142	42.2167	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|82e210285804	human1:db9ebc6b123dcb99	partial	arm	2	0							ok	0	True	0.256914	0.258033	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|833c4a1387de	human1:db9ebc6b123dcb99	partial	arm	2	0							ok	0	True	0.26799	0.266437	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|84504edfd58b	human1:db9ebc6b123dcb99	full	arm	4	40	46.8632	optimal	178	282	0	1.33227e-14	ok	2887	True	43.6188	43.6204	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|847d49816e35	human1:db9ebc6b123dcb99	full	arm	4	84	46.8632	optimal	184	287	0	4.9627e-14	ok	2887	True	43.424	43.4274	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|84b01bc7143f	human1:db9ebc6b123dcb99	full	arm	5	7	46.8632	optimal	171	277	0	6.99441e-15	ok	2887	True	47.0407	47.0434	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|86184324ba6d	human1:db9ebc6b123dcb99	full	arm	9	1	46.8632	optimal	191	295	0	1.83187e-14	ok	2887	True	46.225	46.227	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|86667eb7b320	human1:db9ebc6b123dcb99	full	arm	6	1	46.8632	optimal	176	283	0	1.44329e-14	ok	2887	True	41.9242	41.9267	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8780e3ceec66	human1:db9ebc6b123dcb99	full	arm	14	11	46.1802	optimal	156	261	0	6.82787e-14	ok	2887	True	38.899	38.9009	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|887c16aabcc0	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	167	270	0	9.32587e-15	ok	2887	True	42.0748	42.0781	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|88a110422450	human1:db9ebc6b123dcb99	full	arm	4	6	46.8632	optimal	170	274	0	1.35447e-14	ok	2887	True	40.7361	40.7399	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|898fe0a0b3f7	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	177	281	0	1.12133e-14	ok	2887	True	44.5249	44.5262	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|89eed1260e43	human1:db9ebc6b123dcb99	partial	arm	1	0							ok	0	True	0.252272	0.255296	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8a3e47b84f62	human1:db9ebc6b123dcb99	full	arm	3	100	46.8632	optimal	171	274	0	6.90559e-14	ok	2887	True	41.1591	41.1567	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8a560bac4c28	human1:db9ebc6b123dcb99	full	arm	2	13	46.8632	optimal	172	275	0	2.73115e-14	ok	2887	True	43.6321	43.6326	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8a8d0cae734f	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	170	275	0	1.22125e-15	ok	2887	True	40.665	40.6685	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8b8ed433ceb9	human1:db9ebc6b123dcb99	full	arm	7	10	46.8632	optimal	181	287	0	1.04361e-14	ok	2887	True	44.8995	44.9044	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8bf22dee0939	human1:db9ebc6b123dcb99	partial	arm	2	0							ok	0	True	0.265951	0.2665	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8c11de4a25e2	human1:db9ebc6b123dcb99	full	arm	2	1	46.8632	optimal	182	287	0	3.31957e-14	ok	2887	True	40.0474	40.0473	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8c275d6eb31a	human1:db9ebc6b123dcb99	partial	arm	4	0							ok	0	True	0.265093	0.266708	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8cdc7a7232f0	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	166	269	0	5.9952e-15	ok	2887	True	38.8471	38.8465	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8d7edde585df	human1:db9ebc6b123dcb99	full	arm	5	19	46.8632	optimal	174	278	0	2.40918e-14	ok	2887	True	42.3878	42.3911	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8d82c5b5b9af	human1:db9ebc6b123dcb99	partial	arm	1	0	46.8632	optimal	1	1	0	0	ok	1	True	2.3542	2.35742	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8d959e0f8883	human1:db9ebc6b123dcb99	partial	arm	3	0	46.8632	optimal	0	0	0	9.76996e-15	ok	1	True	1.48267	1.48349	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8dcdbd0040c2	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	181	286	0	3.33067e-16	ok	2887	True	40.5186	40.5187	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8e1d6799795b	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	167	273	0	1.06581e-14	ok	2887	True	40.5394	40.5398	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8ef70f132aae	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	167	273	0	1.87628e-14	ok	2887	True	40.3459	40.3493	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|8f4302842b01	human1:db9ebc6b123dcb99	full	arm	5	5	46.8632	optimal	184	289	0	1.50391e-12	ok	2887	True	43.8953	43.9001	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|90741d3772cb	human1:db9ebc6b123dcb99	partial	arm	1	0							ok	0	True	0.274524	0.276256	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|90804e3d3308	human1:db9ebc6b123dcb99	full	arm	26	69	46.8632	optimal	178	284	0	1.30547e-11	ok	2887	True	40.9954	40.9961	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|90b438588157	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	178	280	0	1.75415e-14	ok	2887	True	43.1666	43.1691	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|90ff12e8a2e1	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	175	278	0	8.21565e-15	ok	2887	True	44.8734	44.8773	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|90ffd65b7f47	human1:db9ebc6b123dcb99	full	arm	6	9	46.8632	optimal	170	273	0	1.64313e-14	ok	2887	True	40.665	40.6671	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|925a23f9d714	human1:db9ebc6b123dcb99	full	arm	3	3	46.8632	optimal	169	275	0	1.42109e-14	ok	2887	True	35.926	35.9295	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|92723032b099	human1:db9ebc6b123dcb99	full	arm	2	2	46.8632	optimal	167	270	0	6.55032e-15	ok	2887	True	43.1264	43.1298	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|929485610f97	human1:db9ebc6b123dcb99	full	arm	4	2	46.8632	optimal	180	286	0	2.17604e-14	ok	2887	True	44.1795	44.1837	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	2
+human1:db9ebc6b123dcb99|9422b8af5e1e	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	173	279	0	8.43769e-15	ok	2887	True	43.5092	43.5148	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|94c2001edb21	human1:db9ebc6b123dcb99	full	arm	8	8	46.8632	optimal	164	267	0	5.55112e-16	ok	2887	True	40.652	40.6557	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|95c5259aeca3	human1:db9ebc6b123dcb99	full	arm	6	10	46.8632	optimal	172	275	0	2.17604e-14	ok	2887	True	40.4643	40.4651	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|95ddb02fee30	human1:db9ebc6b123dcb99	full	arm	82	153	46.8632	optimal	176	281	0	7.32747e-15	ok	2887	True	38.9866	38.9875	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|964989c581f9	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	176	281	0	2.26485e-14	ok	2887	True	38.0405	38.0436	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|96abf220807c	human1:db9ebc6b123dcb99	full	arm	6	6	46.8632	optimal	166	272	0	8.32667e-15	ok	2887	True	42.1181	42.1207	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|979abc2df872	human1:db9ebc6b123dcb99	full	arm	3	8	46.8632	optimal	174	279	0	1.08802e-14	ok	2887	True	44.1874	44.1887	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|97a2badc7561	human1:db9ebc6b123dcb99	full	arm	8	8	46.8632	optimal	181	285	0	1.02141e-14	ok	2887	True	45.133	45.1366	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|97c39efddd30	human1:db9ebc6b123dcb99	full	arm	6	1	46.8632	optimal	181	285	0	1.4877e-14	ok	2887	True	43.3861	43.3903	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|985682c2ebb2	human1:db9ebc6b123dcb99	full	arm	91	145	33.3456	optimal	152	234	0	3.17524e-14	ok	2887	True	32.2227	32.2245	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|98f0b6c55bc8	human1:db9ebc6b123dcb99	full	arm	6	67	46.8632	optimal	172	275	0	8.43769e-15	ok	2887	True	42.2817	42.2851	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|99446a408517	human1:db9ebc6b123dcb99	full	arm	3	35	46.8632	optimal	189	294	0	1.55431e-14	ok	2887	True	43.4383	43.4417	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|995395e74804	human1:db9ebc6b123dcb99	full	arm	12	8	46.8632	optimal	176	282	0	3.10862e-15	ok	2887	True	41.497	41.5002	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|9a118835ebf3	human1:db9ebc6b123dcb99	full	arm	9	1	46.8632	optimal	171	274	0	2.20934e-14	ok	2887	True	41.6573	41.6613	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|9a4dc04797d4	human1:db9ebc6b123dcb99	partial	arm	3	0							ok	0	True	0.266665	0.266624	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|9ae260c54361	human1:db9ebc6b123dcb99	partial	arm	1	0							ok	0	True	0.255999	0.259333	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|9b0fa0a6ffa7	human1:db9ebc6b123dcb99	full	arm	7	34	46.8632	optimal	170	277	0	1.77636e-15	ok	2887	True	44.1871	44.1904	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|9b5c4f621b69	human1:db9ebc6b123dcb99	full	arm	14	11	46.8632	optimal	174	280	0	1.26565e-14	ok	2887	True	37.445	37.4489	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|9ba1d15fe50b	human1:db9ebc6b123dcb99	full	arm	3	3	46.8632	optimal	165	268	0	4.06342e-14	ok	2887	True	37.7053	37.7073	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|9d83fe8ebf34	human1:db9ebc6b123dcb99	full	arm	6	5	46.8632	optimal	168	271	0	9.76996e-15	ok	2887	True	41.3943	41.3995	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|9d96a375d5eb	human1:db9ebc6b123dcb99	full	arm	2	2	46.8632	optimal	171	277	0	6.66134e-16	ok	2887	True	38.3868	38.3907	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|9ea0d61f026a	human1:db9ebc6b123dcb99	partial	arm	3	0							ok	0	True	0.252574	0.255591	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|9f2b8f1ada1d	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	175	281	0	6.88338e-15	ok	2887	True	43.6275	43.6266	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|a0633e9671aa	human1:db9ebc6b123dcb99	partial	arm	4	0							ok	0	True	0.250345	0.252927	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|a211098a3ecb	human1:db9ebc6b123dcb99	full	arm	6	23	46.8632	optimal	177	281	0	3.17524e-14	ok	2887	True	45.3526	45.3535	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|a234620aa38b	human1:db9ebc6b123dcb99	full	arm	4	34	46.8632	optimal	180	286	0	7.77156e-15	ok	2887	True	44.8701	44.8715	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|a2b19a4671ce	human1:db9ebc6b123dcb99	full	arm	2	50	46.8606	optimal	176	281	0	2.22045e-16	ok	2887	True	37.4312	37.4346	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|a31225a2ba85	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	169	273	0	8.99281e-15	ok	2887	True	41.0957	41.0981	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	6
+human1:db9ebc6b123dcb99|a431c1928966	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	187	292	0	3.66374e-15	ok	2887	True	42.4568	42.4584	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|a57a813d9ff3	human1:db9ebc6b123dcb99	full	arm	6	1	46.8632	optimal	173	277	0	4.81837e-14	ok	2887	True	44.8259	44.8273	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|a75d5e06626a	human1:db9ebc6b123dcb99	full	arm	9	2	46.8632	optimal	168	274	0	3.55271e-15	ok	2887	True	41.312	41.3156	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|a783d7ef793a	human1:db9ebc6b123dcb99	partial	arm	1	0							ok	0	True	0.252645	0.252926	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|a8fa47a5c8fa	human1:db9ebc6b123dcb99	full	arm	8	3	46.8632	optimal	187	291	0	5.77316e-15	ok	2887	True	43.4828	43.486	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|a98f9b3639d9	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	156	260	0	9.10383e-15	ok	2887	True	42.0321	42.0342	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|aa8c931c40ad	human1:db9ebc6b123dcb99	full	arm	4	5	46.8632	optimal	163	269	0	6.21725e-15	ok	2887	True	43.7135	43.7153	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|aaa81181e87c	human1:db9ebc6b123dcb99	full	arm	19	104	46.8632	optimal	167	272	0	8.65974e-15	ok	2887	True	39.8907	39.8944	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|aac9b3934203	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	173	278	0	3.44169e-15	ok	2887	True	42.4281	42.4297	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|aaceb54cd79e	human1:db9ebc6b123dcb99	full	arm	2	1	46.8632	optimal	157	259	0	4.03011e-14	ok	2887	True	39.0929	39.0947	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|aad68efe2631	human1:db9ebc6b123dcb99	full	arm	20	57	46.1802	optimal	169	276	0	2.07612e-14	ok	2887	True	41.8652	41.8697	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ab80d461fea4	human1:db9ebc6b123dcb99	full	arm	7	1	46.8632	optimal	174	280	0	5.55112e-15	ok	2887	True	41.2026	41.2071	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ac3651b81d9c	human1:db9ebc6b123dcb99	full	arm	23	8	46.8632	optimal	175	278	0	1.04361e-14	ok	2887	True	41.431	41.4324	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ac8ffee31fbc	human1:db9ebc6b123dcb99	full	arm	7	78	46.8632	optimal	157	260	0	5.9952e-15	ok	2887	True	37.2724	37.277	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ad0dc86295d7	human1:db9ebc6b123dcb99	full	arm	2	4	46.8632	optimal	179	284	0	1.29896e-14	ok	2887	True	46.0573	46.0594	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ad66083830f7	human1:db9ebc6b123dcb99	full	arm	6	4	46.8632	optimal	187	293	0	1.15463e-14	ok	2887	True	44.7591	44.7626	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|adb1220effd0	human1:db9ebc6b123dcb99	full	arm	6	2	46.8632	optimal	179	283	0	5.52891e-14	ok	2887	True	46.7412	46.7423	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ae7c208f0d02	human1:db9ebc6b123dcb99	full	arm	7	3	46.8632	optimal	185	291	0	1.06581e-14	ok	2887	True	43.6376	43.6392	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|af09d06bb93c	human1:db9ebc6b123dcb99	full	arm	3	33	46.8632	optimal	182	287	0	1.03251e-14	ok	2887	True	38.6222	38.6266	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|af0fff876aac	human1:db9ebc6b123dcb99	full	arm	19	29	46.8632	optimal	176	282	0	2.19824e-14	ok	2887	True	43.4217	43.4243	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|af4cf4d1b331	human1:db9ebc6b123dcb99	full	arm	2	1	46.8632	optimal	179	283	0	9.88098e-15	ok	2887	True	40.4078	40.409	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|afe49f046203	human1:db9ebc6b123dcb99	partial	arm	3	0	46.8632	optimal	0	0	0	1.11022e-16	ok	1	True	1.5622	1.56302	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b00a967b0b2b	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	186	291	0	1.5099e-14	ok	2887	True	46.9351	46.938	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b0e777f80d7b	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	164	269	0	8.88178e-15	ok	2887	True	41.3832	41.3863	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b12c9a5e6014	human1:db9ebc6b123dcb99	full	arm	6	8	46.8632	optimal	184	291	0	1.12133e-14	ok	2887	True	41.6529	41.6566	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b15f66bfc986	human1:db9ebc6b123dcb99	full	arm	6	35	46.8632	optimal	178	282	0	6.55032e-15	ok	2887	True	45.9974	45.9981	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b20fe32e0601	human1:db9ebc6b123dcb99	full	arm	21	6	46.8632	optimal	186	292	0	2.44249e-15	ok	2887	True	40.6218	40.6243	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b21eea08fe1b	human1:db9ebc6b123dcb99	full	arm	1	1	46.8632	optimal	169	272	0	1.17684e-14	ok	2887	True	39.4667	39.4712	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b294cab7bbc6	human1:db9ebc6b123dcb99	full	arm	36	88	46.8606	optimal	164	267	0	8.43769e-15	ok	2887	True	37.301	37.302	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b3e779b34bcb	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	201	306	0	2.22045e-16	ok	2887	True	44.7152	44.7206	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b4249beb7a98	human1:db9ebc6b123dcb99	partial	arm	3	0	46.8632	optimal	0	0	0	5.77316e-15	ok	1	True	1.68336	1.68448	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b519f2cc012b	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	180	286	0	8.77076e-15	ok	2887	True	47.5508	47.5513	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b519ff3c49b5	human1:db9ebc6b123dcb99	full	arm	4	2	46.8632	optimal	178	283	0	1.70974e-14	ok	2887	True	38.9564	38.9596	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	2
+human1:db9ebc6b123dcb99|b60ccd3d9ca4	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	166	269	0	7.54952e-15	ok	2887	True	38.8025	38.8067	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b825dca0aa3d	human1:db9ebc6b123dcb99	partial	arm	7	0	46.8632	optimal	1	1	0	2.31815e-13	ok	2	True	1.67288	1.67626	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b84c14b57601	human1:db9ebc6b123dcb99	full	arm	13	14	46.8632	optimal	167	274	0	4.14113e-14	ok	2887	True	39.0673	39.068	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b934ebd63773	human1:db9ebc6b123dcb99	partial	arm	4	0							ok	0	True	0.270824	0.27283	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|b99a9cd4e8a1	human1:db9ebc6b123dcb99	partial	arm	6	0							ok	0	True	0.255556	0.256868	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ba6f149bea3c	human1:db9ebc6b123dcb99	full	arm	4	3	46.8632	optimal	172	275	0	1.26565e-14	ok	2887	True	45.1348	45.1351	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ba934644c648	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	167	272	0	4.88498e-15	ok	2887	True	38.007	38.0086	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|bb09ea89fec7	human1:db9ebc6b123dcb99	full	arm	5	3	46.8632	optimal	170	275	0	1.40998e-14	ok	2887	True	40.3724	40.378	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|bc3299b19b66	human1:db9ebc6b123dcb99	full	arm	3	3	46.8632	optimal	178	285	0	8.32667e-15	ok	2887	True	45.7774	45.7819	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|bc9b4572c98b	human1:db9ebc6b123dcb99	partial	arm	2	0	46.8632	optimal	0	0	0	5.10703e-15	ok	2	True	1.66064	1.66305	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|bcdb36c8b476	human1:db9ebc6b123dcb99	full	arm	15	107	46.8632	optimal	181	286	0	1.27787e-13	ok	2887	True	39.1104	39.115	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|bceafa30fc20	human1:db9ebc6b123dcb99	full	arm	4	3	46.8632	optimal	185	292	0	6.88338e-15	ok	2887	True	45.013	45.017	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|bd36a8a6d8b4	human1:db9ebc6b123dcb99	full	arm	2	26	46.8632	optimal	166	272	0	1.24345e-14	ok	2887	True	41.1451	41.1463	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|bd4f6dc2da62	human1:db9ebc6b123dcb99	partial	arm	2	0							ok	0	True	0.262993	0.265187	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|bd72ea82640e	human1:db9ebc6b123dcb99	partial	arm	4	0							ok	0	True	0.267998	0.265842	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|bdc80ee30b61	human1:db9ebc6b123dcb99	full	arm	9	19	46.8632	optimal	168	274	0	1.46549e-14	ok	2887	True	39.6632	39.6642	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|bf4384379393	human1:db9ebc6b123dcb99	full	arm	16	15	46.8632	optimal	168	274	0	6.10623e-15	ok	2887	True	37.0002	37.0046	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|bfe339ee12c0	human1:db9ebc6b123dcb99	partial	arm	4	0	46.8632	optimal	1	1	0	0	ok	1	True	1.58953	1.59129	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c03d4023b02b	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	174	280	0	1.59872e-14	ok	2887	True	40.471	40.4715	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c097b4076057	human1:db9ebc6b123dcb99	full	arm	8	2	46.8632	optimal	176	278	0	5.10703e-15	ok	2887	True	40.6942	40.696	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c1685dddc110	human1:db9ebc6b123dcb99	full	arm	8	15	46.8632	optimal	177	280	0	7.32747e-15	ok	2887	True	41.7231	41.7252	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c169e1e8c328	human1:db9ebc6b123dcb99	partial	arm	1	0							ok	0	True	0.267089	0.267813	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c2accef773ca	human1:db9ebc6b123dcb99	full	arm	1	1	46.8632	optimal	162	268	0	2.22045e-16	ok	2887	True	38.2553	38.2559	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c2d023f3ad33	human1:db9ebc6b123dcb99	full	arm	5	4	46.8632	optimal	161	267	0	7.06102e-14	ok	2887	True	37.142	37.1445	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c3c2ba97d881	human1:db9ebc6b123dcb99	full	arm	4	2	46.8632	optimal	162	265	0	1.80966e-14	ok	2887	True	44.061	44.0632	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c5fa9135615f	human1:db9ebc6b123dcb99	full	arm	9	4	46.8632	optimal	168	273	0	2.17604e-14	ok	2887	True	41.6922	41.6984	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c66707659b2e	human1:db9ebc6b123dcb99	full	arm	5	9	46.8632	optimal	167	272	0	8.88178e-16	ok	2887	True	41.7332	41.734	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c6ade5fb1a7b	human1:db9ebc6b123dcb99	full	arm	4	8	46.8632	optimal	161	265	0	2.34479e-13	ok	2887	True	39.4432	39.4468	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c74e353f9806	human1:db9ebc6b123dcb99	full	arm	15	17	46.8632	optimal	172	276	0	1.23235e-14	ok	2887	True	42.9967	42.9982	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c77087239387	human1:db9ebc6b123dcb99	full	arm	11	4	46.8632	optimal	171	276	0	7.19425e-14	ok	2887	True	43.8215	43.8258	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c7bf3e7fcf49	human1:db9ebc6b123dcb99	partial	arm	8	0	46.8632	optimal	1	1	0	0	ok	1	True	1.54577	1.54826	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c8235b88aeb7	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	181	287	0	1.54321e-14	ok	2887	True	44.3784	44.3785	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c82eb83867fd	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	171	275	0	8.99281e-15	ok	2887	True	39.4712	39.4764	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c86caf345e5c	human1:db9ebc6b123dcb99	full	arm	10	6	46.8632	optimal	180	286	0	1.66533e-15	ok	2887	True	40.3447	40.3498	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c8e657292178	human1:db9ebc6b123dcb99	full	arm	3	3	46.8632	optimal	187	292	0	2.84217e-14	ok	2887	True	42.1218	42.1255	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|c8f95c65bf49	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	177	283	0	9.10383e-15	ok	2887	True	42.494	42.498	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ca147c90ec95	human1:db9ebc6b123dcb99	full	arm	8	2	46.8632	optimal	180	287	0	7.10543e-15	ok	2887	True	42.903	42.9042	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ca38a38fefc4	human1:db9ebc6b123dcb99	full	arm	15	16	46.8632	optimal	174	281	0	1.13243e-14	ok	2887	True	40.9925	40.9975	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|cc7eea783b91	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	176	281	0	1.73195e-14	ok	2887	True	42.3126	42.3184	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|cd19e5176229	human1:db9ebc6b123dcb99	full	arm	21	23	46.8632	optimal	182	286	0	3.15303e-14	ok	2887	True	40.4584	40.461	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|cdf295979522	human1:db9ebc6b123dcb99	partial	arm	3	0	46.8632	optimal	1	1	0	0	ok	1	True	1.24127	1.24281	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|cebf94db978c	human1:db9ebc6b123dcb99	full	arm	13	101	46.8632	optimal	167	271	0	1.55431e-15	ok	2887	True	36.3875	36.3868	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|cf573e171283	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	175	281	0	1.33227e-15	ok	2887	True	38.9702	38.974	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|cfd7bd002e36	human1:db9ebc6b123dcb99	full	arm	11	3	46.8632	optimal	157	262	0	1.86517e-14	ok	2887	True	38.5421	38.547	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|d0251eba3253	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	185	291	0	1.57652e-14	ok	2887	True	42.1186	42.1224	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|d22ce39f0a7d	human1:db9ebc6b123dcb99	full	arm	2	1	46.8632	optimal	168	274	0	5.89195e-13	ok	2887	True	44.2776	44.2811	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|d2b35eb3d5bc	human1:db9ebc6b123dcb99	full	arm	8	3	46.8632	optimal	160	264	0	2.59459e-13	ok	2887	True	39.6572	39.6619	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|d3f268f410d9	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	181	286	0	1.31006e-14	ok	2887	True	45.1254	45.1289	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|d4a2927ba934	human1:db9ebc6b123dcb99	full	arm	2	25	46.8632	optimal	168	274	0	4.44089e-15	ok	2887	True	41.042	41.0445	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|d4b5f7ab3fbd	human1:db9ebc6b123dcb99	full	arm	7	18	46.8632	optimal	163	267	0	1.06581e-14	ok	2887	True	42.5119	42.514	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|d4cd3980a34b	human1:db9ebc6b123dcb99	full	arm	4	33	46.8632	optimal	162	265	0	6.55032e-14	ok	2887	True	38.1952	38.2005	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|d5502a290115	human1:db9ebc6b123dcb99	full	arm	3	5	46.8632	optimal	178	284	0	6.21725e-15	ok	2887	True	44.5552	44.5564	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|d5b8550c9db8	human1:db9ebc6b123dcb99	partial	arm	3	0	46.8632	optimal	1	1	0	0	ok	1	True	1.95139	1.95484	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|d62c1629b948	human1:db9ebc6b123dcb99	full	arm	3	84	46.8632	optimal	173	277	0	6.99441e-15	ok	2887	True	42.0395	42.0386	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|d67617f60636	human1:db9ebc6b123dcb99	full	arm	5	5	46.8632	optimal	178	283	0	7.99361e-15	ok	2887	True	47.4431	47.4448	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|d6af74d1fdaa	human1:db9ebc6b123dcb99	full	arm	6	3	46.8632	optimal	175	281	0	8.43769e-15	ok	2887	True	39.0393	39.0415	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|d75c8a0d1948	human1:db9ebc6b123dcb99	full	arm	2	2	46.8632	optimal	175	281	0	2.88658e-15	ok	2887	True	42.7364	42.7387	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|d8b59884d652	human1:db9ebc6b123dcb99	full	arm	3	33	46.8632	optimal	172	277	0	2.66454e-15	ok	2887	True	41.4489	41.4536	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|dae558d8c9de	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	165	270	0	1.04361e-14	ok	2887	True	40.2655	40.2684	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|db0c0e86de1f	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	173	277	0	3.44169e-15	ok	2887	True	40.1508	40.1532	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|db9b6f110423	human1:db9ebc6b123dcb99	full	arm	55	198	46.8632	optimal	185	292	0	1.93179e-14	ok	2887	True	40.2607	40.2659	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|dc3a3b93e7f6	human1:db9ebc6b123dcb99	full	arm	4	2	46.8632	optimal	173	278	0	8.21565e-15	ok	2887	True	41.7319	41.7333	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|dcc88fbb932e	human1:db9ebc6b123dcb99	full	arm	33	69	46.8632	optimal	170	277	0	4.44089e-15	ok	2887	True	39.797	39.8015	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|dd9220bab048	human1:db9ebc6b123dcb99	full	arm	13	14	46.8632	optimal	175	278	0	9.88098e-15	ok	2887	True	45.2043	45.2062	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ddb3d70575fe	human1:db9ebc6b123dcb99	full	arm	3	6	46.8632	optimal	181	287	0	1.62093e-14	ok	2887	True	40.7236	40.7267	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|dde33045eb53	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	171	276	0	9.88098e-15	ok	2887	True	38.3462	38.3474	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|de9dca5f1827	human1:db9ebc6b123dcb99	full	arm	2	1	46.8632	optimal	184	289	0	1.9873e-14	ok	2887	True	43.7555	43.7598	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|dfd8a8a303d0	human1:db9ebc6b123dcb99	full	arm	6	3	46.8632	optimal	160	264	0	2.07612e-14	ok	2887	True	41.4368	41.4392	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e025d52f4959	human1:db9ebc6b123dcb99	partial	arm	4	0	46.8632	optimal	0	0	0	3.55271e-15	ok	1	True	1.06282	1.06361	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e094f8a902ab	human1:db9ebc6b123dcb99	full	arm	32	55	46.8632	optimal	179	281	0	1.19904e-14	ok	2887	True	40.2505	40.2522	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e0df1c64fc1e	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	173	278	0	2.54241e-14	ok	2887	True	44.3812	44.3827	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e15e413bf23e	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	183	287	0	4.55191e-15	ok	2887	True	44.7665	44.7693	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e269a11d9b87	human1:db9ebc6b123dcb99	full	arm	2	1	46.8632	optimal	175	281	0	3.31635e-12	ok	2887	True	43.0934	43.0969	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e2826e4c1328	human1:db9ebc6b123dcb99	full	arm	7	4	46.8632	optimal	171	274	0	7.29417e-14	ok	2887	True	39.6891	39.6929	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e34df3513753	human1:db9ebc6b123dcb99	full	arm	13	9	46.8632	optimal	162	268	0	1.22125e-14	ok	2887	True	38.7203	38.7225	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e46e217df08c	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	182	286	0	1.6831e-13	ok	2887	True	45.1683	45.1693	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e489e54dc338	human1:db9ebc6b123dcb99	full	arm	16	15	46.1802	optimal	169	276	0	2.08056e-13	ok	2887	True	43.2749	43.279	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e4e1eec7fe1b	human1:db9ebc6b123dcb99	full	arm	10	6	46.8632	optimal	158	261	0	2.65898e-12	ok	2887	True	36.881	36.8814	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e5d21891aa8d	human1:db9ebc6b123dcb99	full	arm	21	27	46.8632	optimal	175	281	0	1.9873e-14	ok	2887	True	40.845	40.8493	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e69809ce546f	human1:db9ebc6b123dcb99	full	arm	7	36	46.8632	optimal	173	279	0	1.11022e-16	ok	2887	True	40.5081	40.5093	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e6d344cfed45	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	165	268	0	1.42109e-14	ok	2887	True	40.4151	40.4204	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e70783066e76	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	164	270	0	5.85088e-14	ok	2887	True	40.8355	40.8359	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e872d598afcb	human1:db9ebc6b123dcb99	full	arm	13	1	46.8632	optimal	181	286	0	1.29896e-14	ok	2887	True	45.4033	45.4073	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e87fcf2db7e7	human1:db9ebc6b123dcb99	full	arm	6	4	46.8632	optimal	161	266	0	4.10783e-15	ok	2887	True	38.9742	38.9756	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e959bbe4eaa5	human1:db9ebc6b123dcb99	full	arm	10	39	46.8632	optimal	178	283	0	6.10623e-15	ok	2887	True	44.1715	44.1758	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e98ff5b59563	human1:db9ebc6b123dcb99	full	arm	9	4	46.8632	optimal	177	282	0	4.44089e-16	ok	2887	True	40.4179	40.4201	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|e9e012a5e6c5	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	169	274	0	2.4758e-14	ok	2887	True	41.7982	41.8025	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ea6baa14cbc8	human1:db9ebc6b123dcb99	partial	arm	3	0							ok	0	True	0.258042	0.258117	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ec24cfa0a8ce	human1:db9ebc6b123dcb99	full	arm	1	4	46.8632	optimal	168	270	0	1.18794e-14	ok	2887	True	46.2234	46.2262	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ecaac23017b5	human1:db9ebc6b123dcb99	full	arm	6	1	46.8632	optimal	169	272	0	1.64313e-14	ok	2887	True	38.3251	38.3271	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ed1dc485843a	human1:db9ebc6b123dcb99	full	arm	6	3	46.8632	optimal	172	277	0	7.54952e-15	ok	2887	True	42.594	42.5967	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ed9b7f945ccd	human1:db9ebc6b123dcb99	full	arm	9	5	33.3456	optimal	161	244	0	7.54952e-15	ok	2887	True	34.3922	34.3965	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|edb6f9a42c20	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	182	286	0	1.02141e-14	ok	2887	True	42.653	42.654	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ee015045a0ab	human1:db9ebc6b123dcb99	full	arm	24	12	46.8632	optimal	168	273	0	9.10383e-15	ok	2887	True	40.192	40.1942	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ee25ac7d525d	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	167	271	0	1.26565e-14	ok	2887	True	42.35	42.354	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ee670ac7d8ba	human1:db9ebc6b123dcb99	full	arm	5	101	46.8632	optimal	186	291	0	1.23235e-14	ok	2887	True	42.0865	42.0887	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|eee21d80abef	human1:db9ebc6b123dcb99	partial	arm	4	0	46.8632	optimal	0	0	0	6.66134e-16	ok	1	True	2.01993	2.02268	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|eef277d0ab97	human1:db9ebc6b123dcb99	full	arm	9	12	46.8632	optimal	177	282	0	8.21565e-15	ok	2887	True	44.2521	44.256	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|efa29f2ace7b	human1:db9ebc6b123dcb99	full	arm	3	1	46.8632	optimal	177	280	0	8.74856e-14	ok	2887	True	41.8232	41.8211	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|efd614dff03d	human1:db9ebc6b123dcb99	full	arm	5	7	46.8632	optimal	182	285	0	2.44249e-15	ok	2887	True	44.1661	44.1701	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|eff0f6c8148a	human1:db9ebc6b123dcb99	partial	arm	2	0							ok	0	True	0.256768	0.257883	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	4
+human1:db9ebc6b123dcb99|f00f64edafb9	human1:db9ebc6b123dcb99	full	arm	8	1	46.8632	optimal	173	278	0	1.19904e-14	ok	2887	True	43.9752	43.9751	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f01ddd73c174	human1:db9ebc6b123dcb99	full	arm	60	139	46.8606	optimal	164	272	0	1.07914e-13	ok	2887	True	37.58	37.5835	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f06ff4f56232	human1:db9ebc6b123dcb99	partial	arm	3	0	46.8632	optimal	1	1	0	2.55351e-15	ok	2	True	1.68653	1.68816	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f0770b332f09	human1:db9ebc6b123dcb99	partial	arm	5	0							ok	0	True	0.255997	0.255859	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f169ece481a1	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	182	288	0	4.61853e-14	ok	2887	True	38.8195	38.8212	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f20cb639d99c	human1:db9ebc6b123dcb99	full	arm	6	37	46.8632	optimal	195	301	0	1.77636e-15	ok	2887	True	42.5397	42.5432	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f216deb8f1c4	human1:db9ebc6b123dcb99	full	arm	12	1	46.8632	optimal	173	275	0	8.88178e-16	ok	2887	True	41.0768	41.0773	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f23e52403c06	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	173	279	0	4.4631e-14	ok	2887	True	41.4582	41.4623	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f25f43f4189f	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	174	278	0	7.10543e-15	ok	2887	True	48.7482	48.7524	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f2df5027c5fe	human1:db9ebc6b123dcb99	full	arm	8	4	46.8632	optimal	172	277	0	1.58762e-14	ok	2887	True	45.1273	45.1322	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f30439e73409	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	174	280	0	1.65423e-14	ok	2887	True	42.8528	42.854	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f364eba78935	human1:db9ebc6b123dcb99	partial	arm	3	0							ok	0	True	0.253269	0.255352	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f3795c2a3fb3	human1:db9ebc6b123dcb99	full	arm	13	39	46.8632	optimal	160	262	0	1.65423e-14	ok	2887	True	39.9747	39.9745	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f4260cd0129f	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	180	286	0	1.62093e-14	ok	2887	True	41.4145	41.4172	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f427cdf999b9	human1:db9ebc6b123dcb99	full	arm	3	2	46.8632	optimal	174	280	0	2.17604e-14	ok	2887	True	45.0703	45.0752	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f4397a1c41b7	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	182	286	0	1.68754e-14	ok	2887	True	43.9581	43.9616	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f4f33b470ab0	human1:db9ebc6b123dcb99	full	arm	68	86	46.8632	optimal	163	269	0	1.66533e-14	ok	2887	True	39.9067	39.9107	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f58d33aac594	human1:db9ebc6b123dcb99	full	arm	42	97	46.8632	optimal	164	269	0	7.77156e-15	ok	2887	True	39.0224	39.0242	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f5d441dea99b	human1:db9ebc6b123dcb99	full	arm	12	4	46.8632	optimal	179	286	0	2.02061e-14	ok	2887	True	45.0168	45.0189	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f66b1bcfbbc1	human1:db9ebc6b123dcb99	full	arm	6	1	46.8632	optimal	165	271	0	7.99361e-15	ok	2887	True	40.983	40.9845	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f71bf6ca4ccb	human1:db9ebc6b123dcb99	partial	arm	1	0							ok	0	True	0.262644	0.262754	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f74e20b1ce4e	human1:db9ebc6b123dcb99	full	arm	14	13	46.8632	optimal	185	289	0	1.77636e-15	ok	2887	True	44.6425	44.6437	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f790a1395b03	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	174	280	0	1.9873e-14	ok	2887	True	37.7165	37.7189	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f7b642a44c8e	human1:db9ebc6b123dcb99	full	arm	4	1	46.8632	optimal	178	280	0	9.10383e-15	ok	2887	True	41.1154	41.1178	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f7c618a03c07	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	170	274	0	2.17604e-14	ok	2887	True	41.0387	41.0426	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f843783ccede	human1:db9ebc6b123dcb99	full	arm	30	44	46.8632	optimal	163	268	0	8.65974e-15	ok	2887	True	38.1265	38.1292	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f84f4618b837	human1:db9ebc6b123dcb99	full	arm	5	5	46.8632	optimal	179	284	0	8.77076e-15	ok	2887	True	42.0721	42.0749	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f85fedc92bd0	human1:db9ebc6b123dcb99	full	arm	10	41	46.8632	optimal	165	269	0	1.46549e-14	ok	2887	True	36.8247	36.8265	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f8d0615b6f14	human1:db9ebc6b123dcb99	full	arm	5	1	46.8632	optimal	179	284	0	7.91589e-14	ok	2887	True	45.5635	45.5693	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f8fb1ef3b947	human1:db9ebc6b123dcb99	partial	arm	3	0	46.8632	optimal	0	0	0	5.10703e-15	ok	1	True	1.04964	1.04993	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f925375d2279	human1:db9ebc6b123dcb99	full	arm	5	2	46.8632	optimal	166	270	0	1.21014e-14	ok	2887	True	42.4384	42.4396	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|f933e231986d	human1:db9ebc6b123dcb99	full	arm	4	7	46.8632	optimal	164	271	0	3.33067e-15	ok	2887	True	37.5143	37.515	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|fa12755d6d8d	human1:db9ebc6b123dcb99	partial	arm	3	0							ok	0	True	0.262205	0.262297	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|fac49a82a5ec	human1:db9ebc6b123dcb99	full	arm	5	6	46.8632	optimal	175	278	0	1.57652e-14	ok	2887	True	44.0068	44.0105	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|fc5f713be300	human1:db9ebc6b123dcb99	full	arm	5	8	46.8632	optimal	171	274	0	9.25926e-14	ok	2887	True	41.2711	41.2728	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|fc99669fddbb	human1:db9ebc6b123dcb99	partial	arm	2	0							ok	0	True	0.261359	0.261849	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|fcb3d8502021	human1:db9ebc6b123dcb99	full	arm	79	144	46.8632	optimal	173	278	0	9.99201e-15	ok	2887	True	41.1631	41.1667	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|fce61bb3620a	human1:db9ebc6b123dcb99	partial	arm	2	0							ok	0	True	0.253421	0.254432	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|fd8e1994eaa0	human1:db9ebc6b123dcb99	full	arm	12	8	46.8632	optimal	168	270	0	8.32667e-14	ok	2887	True	42.8036	42.8063	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|fe0d361d9163	human1:db9ebc6b123dcb99	partial	arm	3	0	46.8632	optimal	0	0	0	2.498e-14	ok	1	True	1.32399	1.32636	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:db9ebc6b123dcb99|ffc5015e5e7a	human1:db9ebc6b123dcb99	full	arm	52	200	46.8632	optimal	165	271	0	1.66533e-14	ok	2887	True	36.5872	36.589	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	1
+human1:dedeef837ba95fab|92723032b099	human1:dedeef837ba95fab	full	arm	2	2	46.8632	optimal	169	274	0	1.47327e-13	ok	2887	True	41.2897	41.2901	IMDM0.8:RPMI0.2	True	1
+human1:e3d627ac12ad0458|3d1f0512fb67	human1:e3d627ac12ad0458	full	arm	5	9	46.8632	optimal	164	270	0	3.5083e-14	ok	2887	True	41.7813	41.7849	RPMI+cys(2-ME)	True	1
+human1:e3d627ac12ad0458|ae38f570586e	human1:e3d627ac12ad0458	full	arm	26	114	46.8632	optimal	168	272	0	7.99361e-15	ok	2887	True	43.5694	43.5703	RPMI+cys(2-ME)	True	1
+human1:db9ebc6b123dcb99|P1	human1:db9ebc6b123dcb99	full	spot_p1	0	0	46.8632	optimal	179	284	0	1.4877e-14	ok	2887	True	47.5703	47.5744	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	True	0
+human1:5fe39a3dcfa2880f|P1	human1:5fe39a3dcfa2880f	full	spot_p1	0	0	46.6734	optimal	190	297	0	6.40599e-14	ok	2887	True	48.0077	48.0172	DMEM	True	0
+human1:24f533da22a08aee|4cc720b4af9a	human1:24f533da22a08aee	full	spot_partial	4	0	66.1774	optimal	185	292	0	1.88738e-15	ok	2887	True	39.4982	39.5001	DMEM:F12	True	1

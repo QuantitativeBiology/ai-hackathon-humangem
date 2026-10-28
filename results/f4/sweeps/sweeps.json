@@ -1,0 +1,26 @@
+{
+ "post_hoc": "A15 post hoc / exploratory",
+ "n_lines": 686,
+ "n_lines_with_accepted_loss": 665,
+ "n_arm_jobs": 610,
+ "n_full": 514,
+ "n_partial": 96,
+ "n_failed": 0,
+ "status": {
+  "ok": 613
+ },
+ "n_jobs_changing_any_ratio": 95,
+ "n_genes_changed_any_job": 178,
+ "n_lethal_flips_to_lethal": 22,
+ "n_lethal_flips_to_viable": 0,
+ "job_cpu_s": 22955.5,
+ "wall_s": 3017.3,
+ "workers": 8,
+ "solver": "glpk",
+ "spot_all_pass": true,
+ "a10_limits": {
+  "lp_s": 300,
+  "lp_retries": 1,
+  "job_cpu_s": 1800
+ }
+}

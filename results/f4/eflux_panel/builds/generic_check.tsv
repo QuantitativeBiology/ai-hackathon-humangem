@@ -1,0 +1,5 @@
+w2_sweep_id	bitwise_equal	max_abs_diff	n_diff_gt_1e-6	n_lethal_w4_engine	n_lethal_p1	pass
+human1:474d632d7fd33d79	True	0	0	103	103	True
+human1:5fe39a3dcfa2880f	True	0	0	113	113	True
+human1:db9ebc6b123dcb99	True	0	0	108	108	True
+human1:dedeef837ba95fab	True	0	0	108	108	True
