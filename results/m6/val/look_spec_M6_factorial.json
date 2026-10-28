@@ -51,7 +51,7 @@
   "results/m6/sweeps/spot_checks.tsv": "6040156da2107090b067af2052b3258f32a568fbcdb973b935b958da24b5f17e",
   "results/m6/sweeps/ratio_r_human1.parquet": "71267b89b247793898f6e0441612e83dab223c53a9e14b6c5fe95c3cf17b7f18",
   "results/m6/sweeps/ratio_r_human2.parquet": "6567160983d0f6d86eb3b365be7ac9278f868fe0e1959ccd040577d82a47753c",
-  "results/m6/train/summary.json": "e810cfe73a8f00260cb8134be0a214cb40c9a9e19277b915dc52a7c2e2dc35e6",
+  "results/m6/train/summary.json": "4939ac4f9240964c11cfd2f5c2b58ac67f1a3c1efec051cfa134815cbfc422e6",
   "results/m6/train/contrasts.tsv": "686b1399ada34581a0eb0909a60948938449db8bbd46fe40e323ee256254a94b",
   "results/m6/train/cells.tsv": "dd3db376a5918b8595cee556a2e9792ae2ef7a4050621a4c7430167d6ed76e25",
   "results/m6/train/interaction.tsv": "dbea9f41799bed292339c7b515a9f64557feb6242e4e11c6e197bee29c040e6b",
