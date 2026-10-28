@@ -1,0 +1,37 @@
+{
+ "look_id": "W3_M4_shortlist",
+ "reference": "H1",
+ "G_star": "Human1",
+ "primary_cell": {
+  "label": "L_prob",
+  "geneset": "all",
+  "universe": "U",
+  "stratum": "none"
+ },
+ "candidates": [
+  {
+   "method": "W3:B-loo:cofactor_pool_biomass[H1]",
+   "delta_lin": 0.03216466520179326,
+   "delta_ci": [
+    0.03082854444221942,
+    0.033449913440217374
+   ],
+   "eligible": true,
+   "diff_vs_best": 0.0,
+   "se_diff": 0.0,
+   "within_1se": true
+  }
+ ],
+ "gate_passed": true,
+ "best_eligible": "W3:B-loo:cofactor_pool_biomass[H1]",
+ "selected": "W3:B-loo:cofactor_pool_biomass[H1]",
+ "winners_curse": {
+  "method": "W3:B-loo:cofactor_pool_biomass[H1]",
+  "m": 1,
+  "sigma": 0.0006636744767704877,
+  "term": 0.0,
+  "best_delta_lin": 0.03216466520179326,
+  "best_delta_lin_minus_term": 0.03216466520179326
+ },
+ "rule": "\u00a78 gate: a W3 candidate is eligible only if its paired validation \u0394\u0304_lin vs G* (H1) has CI lower bound > 0; among eligible candidates the paired-difference one-SE rule (\u00a79)."
+}

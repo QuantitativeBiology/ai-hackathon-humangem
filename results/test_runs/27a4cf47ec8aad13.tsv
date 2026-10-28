@@ -1,0 +1,9 @@
+nodeid	outcome
+tests/test_w3.py::test_w3_cellfie_rule_and_gpr_score	passed
+tests/test_w3.py::test_w3_essential_task_groups	passed
+tests/test_w3.py::test_w3_ko_sweep_shortcut_equals_brute_force	passed
+tests/test_w3.py::test_w3_mode_e_rules	passed
+tests/test_w3.py::test_w3_pseudo_task_is_deterministic_and_producible	passed
+tests/test_w3.py::test_w3_task_essential_reactions_toy	passed
+tests/test_w3.py::test_w3_task_feasibility_and_capacity_toy	passed
+tests/test_w3.py::test_w3_variant_apply_is_reverted	passed
