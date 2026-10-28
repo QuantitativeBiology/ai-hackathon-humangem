@@ -1,0 +1,15 @@
+class	n_fn	n_fp	frac_of_fn	frac_of_fp	annotated	n_positive_pairs	n_positive_pairs_addressable	upper_bound
+all_errors	100383	10934	1	1	True			
+common_essential	39252	526	0.391022	0.0481068	True			
+cn_amplified	197	4	0.00196248	0.000365831	True			
+unexpressed	2670	80	0.0265981	0.00731663	True			
+missing_from_model	3099	0	0.0308718	0	True			
+paralog_buffered	37154	0	0.370122	0	True			
+medium_sensitive	3951	3109	0.0393593	0.284342	True			
+gene_less_bypass					False			
+complex_subunit	48946	5038	0.487593	0.460765	True			
+housekeeping_adjacent	11643	4932	0.115986	0.45107	True			
+biomass_artefact_lethal	490	1500	0.0048813	0.137187	True			
+model_contradicted_loss					False			
+expected_fba_failure	4790	0	0.0477172	0	True			
+upper_bound_addressable_positives					True	129913	71121	0.547451

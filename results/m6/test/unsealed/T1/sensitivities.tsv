@@ -1,0 +1,6 @@
+name	estimate	ci_lo	ci_hi	line_mean	n_lines	n_lineages	note	method_a	method_b
+C1_expressed_pairs	0.0465607	0.0449651	0.0480336	0.0470039	380	7		P1[H1]	H1
+C1_L_ge05	0.0502517	0.0485253	0.05188	0.0511312	380	7		P1[H1]	H1
+C1_L_ge10	0.0473378	0.0460167	0.0487851	0.0471189	380	7		P1[H1]	H1
+C1_Ucap	0.053873	0.0521821	0.0554328	0.0545546	380	7		P1[H1]	H1
+failed_build_sensitivities					0		no failed build	P1[H1]	H1
