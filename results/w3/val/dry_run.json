@@ -1,12 +1,12 @@
 {
  "look_id": "W3_M4_shortlist",
- "config_sha": "bd22892c3d7ab0338c020684330eed6c8c5aa3873b1a04a0b3532aef50965b90",
+ "config_sha": "42d8bfe1d26e484c0e829e0f5017f69405fa2a673bd4acd335a6af31fa4e5852",
  "synthetic_labels": "Bernoulli(0.124), SEEDS[0]",
- "n_methods": 6,
- "n_rows": 24,
+ "n_methods": 4,
+ "n_rows": 16,
  "scalar_guard": "pass",
  "validation_labels_read": false,
  "ledger_rows_written": 0,
- "wall_s": 11.9,
+ "wall_s": 11.5,
  "synthetic_tap_lin_H1": 0.1268121266240727
 }

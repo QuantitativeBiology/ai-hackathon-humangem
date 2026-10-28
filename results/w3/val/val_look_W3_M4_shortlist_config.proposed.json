@@ -7,9 +7,9 @@
   "run.py": "36c07907c5f81e562d57d7bf480dba992e070a96148349b44215eb93eda9b578",
   "w1.py": "434875e1e47bd548da1da1b2b8b03d546609240914a96828e6e17036863d7a2b",
   "w3.py": "77cb2b75723f3f7edd0fecb4feffabea3ba14d406ac4378c64fc415c860224ae",
-  "w3_score_train.py": "73241064ebc781eda9bdac73ca6153bbfbf25795f7a228bbd10a8ff9d95571ee"
+  "w3_score_train.py": "20c9975d1ea6cc1112e9aa3a7ab1ecef7fece91ffff47c20e65a07f9c52932ff"
  },
- "config_sha": "bd22892c3d7ab0338c020684330eed6c8c5aa3873b1a04a0b3532aef50965b90",
+ "config_sha": "42d8bfe1d26e484c0e829e0f5017f69405fa2a673bd4acd335a6af31fa4e5852",
  "decision_rule": "\u00a78 gate: a W3 candidate is eligible only if its paired validation \u0394\u0304_lin vs G* (H1) has CI lower bound > 0; among eligible candidates the paired-difference one-SE rule (\u00a79). Context claims: same sign on validation lines of the same context (W3), reported only.",
  "genesets": [
   "all",
@@ -21,8 +21,8 @@
   "gene_panels": "e812724faaf1e9672b32460e73cc6659512d4caf10ff22839d00bba0e4a78318",
   "line_features": "d96f43b07bd625fc56834addf60845608b45f8d0fd9cc682693dbd0e1c08b234",
   "w3_mode_scores": "b6f2b52922abbe2b497080959960e2a16047bc8b75b3f587b2ff7629e0e2739d",
-  "w3_shortlist": "65a369da311960163f267444671f21f3c5654ba2a159ef676c0b58b5073f8345",
-  "w3_val_scores": "aeff6564aeede5859a7408924d63765e2367a47418aafd88b668d4bd065aad70"
+  "w3_shortlist": "c54c653cf84b2d3aea3a64b75cd54ae862624e3aaa9dd7e686e0388a390087f9",
+  "w3_val_scores": "3b537c027a0553c06622ac8443d0085a95c5015639341bcc8e6ee458dbb60020"
  },
  "labels": [
   "L_prob"
@@ -32,9 +32,7 @@
   "H1",
   "H2",
   "W3:B-loo:cofactor_pool_biomass[H1]",
-  "W3:B-loo:cofactor_pool_biomass[H2]",
-  "W3:B-loo:metabolite_pool_biomass[H1]",
-  "W3:B-loo:metabolite_pool_biomass[H2]"
+  "W3:B-loo:cofactor_pool_biomass[H2]"
  ],
  "milestone": "M4",
  "n_validation_expression_lines": 198,
