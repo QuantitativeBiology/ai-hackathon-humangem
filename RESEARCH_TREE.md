@@ -106,4 +106,5 @@ Update (2026-10-28): Stage A context families (W4) and GPR curation (W5) fail th
     - closed reactions kept with bounds (0,0);
     - `version` = the Human-GEM release.
   - Open: builders must emit the re-opened (repaired) reaction set; F4 needs its scaled bounds stored to be exportable; MEMOTE/FROG need a separate venv.
+- [~] 11. W7 auto-research loop (ea8823f; review pending). Stopped after 10 consecutive failures (~2.4 h of the 4 h box, 8.9 CPU-h). Current best at start B6 (0.889 tAP; B2 0.900). **GEM features add nothing to gene-prior ML** (H-a −0.003; stacking β ≈ 0). Promoted: **W7-05 = B6 with monotone b2/b2m** (0.903; +0.014 vs B6, +0.003 vs B2; no GEM content); look W7_shortlist_1 prepared. W7-03 artefact-only biomass variant fixes W3-MEV (mevalonate lethal in 19/19 serum media) and keeps 57% of P1's gain (exploratory). Gene-grouped CV: W7-05 0.185 vs null 0.124, i.e. the ML score is nearly all gene prior.
 - [ ] 10. REPORT.md
