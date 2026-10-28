@@ -1,0 +1,37 @@
+{
+ "look_id": "W7_shortlist_1",
+ "reference": "H1",
+ "G_star": "Human1",
+ "primary_cell": {
+  "label": "L_prob",
+  "geneset": "all",
+  "universe": "U",
+  "stratum": "none"
+ },
+ "candidates": [
+  {
+   "method": "W7:W7-05",
+   "delta_lin": 0.5943217999344607,
+   "delta_ci": [
+    0.5903891287316573,
+    0.5983609737461781
+   ],
+   "eligible": true,
+   "diff_vs_best": 0.0,
+   "se_diff": 0.0,
+   "within_1se": true
+  }
+ ],
+ "gate_passed": true,
+ "best_eligible": "W7:W7-05",
+ "selected": "W7:W7-05",
+ "winners_curse": {
+  "method": "W7:W7-05",
+  "m": 1,
+  "sigma": 0.0020871761119628635,
+  "term": 0.0,
+  "best_delta_lin": 0.5943217999344607,
+  "best_delta_lin_minus_term": 0.5943217999344607
+ },
+ "rule": "\u00a78 gate per candidate: eligible iff its paired validation \u0394\u0304_lin vs G* (H1/M0, the W1 look's G-star) has CI lower bound > 0 (L_prob, all genes, U, no stratum). Among eligible candidates the paired-difference one-SE rule (\u00a79) picks the first candidate in spec order (simplest first) whose \u0394\u0304_lin(best \u2212 candidate) <= its bootstrap SE. W7 protocol: one validation look per promoted idea; scalar only. P2 (DESIGN \u00a7W7 step 7) = best validated idea, the simpler of two within one paired SE. P1 and W7:B6 are descriptive methods (C5 contrast P2 \u2212 B6 is a T2 test-tier estimate, not decided here)."
+}
