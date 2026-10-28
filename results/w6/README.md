@@ -43,8 +43,10 @@ and +0.45 (P1), p = 9.5e-7.
 **Why the result is null.**
 - Generic flux depends only on the medium: one state for every PRISM line, 2 in GDSC, at most 20 for the culture
   media. With one state per assay, Δ = 0 exactly.
-- 77 of 106 drug units have Δ exactly 0: PRISM, plus GDSC and CTRP units where the medium state is constant within the
-  unit's PCA. The non-zero units are GDSC (RPMI vs DMEM:F12) and CTRP and metabolomics (culture media).
+- 77 of 106 drug units have Δ exactly 0, and all 77 are PRISM units (one assay medium, so one flux state). All GDSC2 (17)
+  and CTRP (19) units have more than one state and non-zero Δ (corrected after notes/reviews/M7_W6_review.md).
+  The largest per-unit gains (e.g. GDSC2 methotrexate, metabolite asparagine) reflect medium labels carried by the flux
+  state, not line-specific flux.
 - Comparators. Median held-out ρ: RNA 0.11 for drugs (CTRP 0.37, GDSC2 0.22, PRISM 0.03); for metabolomics, RNA 0.28,
   X_rxnRNA 0.23, X_flux −0.18.
 - **Note on H_sim magnitudes.** The pooled LOLO ρ of a predictor without line information is negative, not 0. Its
