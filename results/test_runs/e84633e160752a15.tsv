@@ -1,0 +1,13 @@
+nodeid	outcome
+tests/test_w7.py::test_deviation_features_use_training_norms_only	passed
+tests/test_w7.py::test_fit_rejects_non_training_lines	passed
+tests/test_w7.py::test_fitting_never_touches_non_training_lines	passed
+tests/test_w7.py::test_gene_groups_partition	passed
+tests/test_w7.py::test_held_out_training_rows_do_not_enter_fit	passed
+tests/test_w7.py::test_knn_prior_excludes_self_and_own_lineage	passed
+tests/test_w7.py::test_knn_prior_ideas_never_touch_non_training_lines[idea0]	passed
+tests/test_w7.py::test_knn_prior_ideas_never_touch_non_training_lines[idea1]	passed
+tests/test_w7.py::test_registered_ideas_are_logged	passed
+tests/test_w7.py::test_resid_and_mono_kinds_run	passed
+tests/test_w7.py::test_stack_scores	passed
+tests/test_w7.py::test_tg_rule	passed

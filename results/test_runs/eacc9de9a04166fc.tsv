@@ -1,0 +1,15 @@
+nodeid	outcome
+tests/test_t1_prep.py::test_annotation_classes_known_to_harness	passed
+tests/test_t1_prep.py::test_attribution_follows_template_rules	passed
+tests/test_t1_prep.py::test_calls_long_requires_gene_coverage	passed
+tests/test_t1_prep.py::test_calls_long_shape_and_values	passed
+tests/test_t1_prep.py::test_fba_call_from_e_cutoff_edges	passed
+tests/test_t1_prep.py::test_gene_long_maps_ko_groups_and_compare_generic	passed
+tests/test_t1_prep.py::test_method_names_pass_harness_checks	passed
+tests/test_t1_prep.py::test_p57_pgr_absent_genes_false_and_gr_subset	passed
+tests/test_t1_prep.py::test_rename_scores_subsets_and_renames	passed
+tests/test_t1_prep.py::test_skew_decision_threshold	passed
+tests/test_t1_prep.py::test_task_calls_table_and_duplicates	passed
+tests/test_t1_prep.py::test_test_files_are_under_tmp_and_gitignored_pattern	passed
+tests/test_t1_prep.py::test_toy_spec_passes_check_p1_spec	passed
+tests/test_t1_prep.py::test_toy_spec_refusals	passed
