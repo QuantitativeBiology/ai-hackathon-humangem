@@ -52,3 +52,4 @@ Every viewing of DepMap label *values* (or label-derived summaries) by any agent
 - 2026-10-28, PI: read the M5 pre-check report (same aggregates, summary level).
 - 2026-10-28, M5 reviewer: training-tier panel aggregates only (train_decision.json, own recomputed Δ̄/CI/folds and per-arm lineage-equal tAP). No per-line tables; no validation or test; raw probe blocked.
 - 2026-10-28, W2 M4 engineer: training-tier aggregates only (step_scores for 28 steps × 2 parents and strata; shuffled-medium control pooled and per-lineage for 5 lineages; attribution.json; shortlist; ASNS by medium; binary metrics; sensitivities). Synthetic dry run only; no validation or test; raw probe blocked.
+- 2026-10-28, W2 reviewer: training-tier aggregates only (attribution H1 rows for M2(f=1) and M-open; pooled shuffled-control row; own recomputed Δ̄/CI/folds). No per-line or per-gene tables; no validation or test; raw probe blocked.

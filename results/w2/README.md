@@ -142,7 +142,7 @@ Score e = 1 − ratio_r of the line's cached sweep (`controls/line_sweeps.tsv`);
 (both parents, asserted). Reference: generic parent on M0 (G\* = Human1). TG: Δ̄_lin ≥ 0.005, CI lower > 0,
 ≥ 9 of 12 training LOLO folds (DESIGN §9; a fold with < 5 estimable lines is "not positive": Cervix has 4
 attribution lines, so the maximum is 11/12; the brief's "8 of 10" is the Stage-A panel rule and is met as well).
-Eligible for the shortlist (fixed in `w2_score.py` before scoring): M1, M2(f) gate-free on H1. M3: uncalibrated,
+Eligible for the shortlist (as specified by DESIGN §W2 and A9i, committed in 63a51df; the code that first applied it was not committed before scoring, see notes/reviews/M4_W2_review.md): M1, M2(f) gate-free on H1. M3: uncalibrated,
 excluded, no sweep (A9i). Gate (+g): context lever, never in "medium alone".
 
 ### Ladder (attribution stratum, L_prob, all U genes; `train/step_scores.tsv`)
