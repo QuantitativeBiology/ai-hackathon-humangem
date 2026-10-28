@@ -1,0 +1,29 @@
+{
+ "rule": "DESIGN \u00a76.5: BCa for C1/C1b iff |skew| of the training-tier line \u0394tAP (P1 \u2212 G*) > 1 (metrics.skew_triggers_bca); decided on C1, C1b reported",
+ "label": "L_prob",
+ "lines": "W1 primary training set",
+ "p1_column": "M6:H1+Bloo/M2(f=1)",
+ "gstar_column": "H1",
+ "synthetic_labels": false,
+ "C1": {
+  "skew": 0.03274347045707467,
+  "n_lines": 686,
+  "bca": false,
+  "bootstrap_method": "percentile",
+  "n_lineages": 12,
+  "lineage_equal_mean_delta": 0.053363135557619644,
+  "max_abs_diff_vs_m6_per_line_tsv": 4.998238163356206e-07
+ },
+ "C1b": {
+  "skew": 0.38825084190243525,
+  "n_lines": 686,
+  "bca": false,
+  "bootstrap_method": "percentile",
+  "n_lineages": 12,
+  "lineage_equal_mean_delta": 0.040991267379558584,
+  "max_abs_diff_vs_m6_per_line_tsv": 4.997290379282759e-07
+ },
+ "bootstrap_method": "percentile",
+ "c1b_disagrees": false,
+ "wall_s": 38.0
+}

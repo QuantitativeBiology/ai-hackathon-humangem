@@ -1,0 +1,31 @@
+{
+ "model": "human1",
+ "variant": {
+  "name": "B-loo:cofactor_pool_biomass",
+  "kind": "remove",
+  "params": {
+   "mets": [
+    "MAM10012c"
+   ]
+  }
+ },
+ "list": "essential",
+ "n_tasks": 57,
+ "n_kos": 903,
+ "gr_task": [
+  "ESS057"
+ ],
+ "status_counts": {
+  "ok": 57
+ },
+ "n_solves": 1623,
+ "job_cpu_s": 967.3,
+ "wall_s": 196.7,
+ "workers": 8,
+ "solver": "glpk",
+ "lp_time_limit_s": 300,
+ "job_cpu_limit_s": 1800,
+ "n_genes_changed_vs_generic_nonGR": 0,
+ "n_genes_changed_vs_generic_GR": 35,
+ "n_genes_failing_GR": 114
+}

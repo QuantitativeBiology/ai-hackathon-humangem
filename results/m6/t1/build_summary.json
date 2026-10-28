@@ -1,0 +1,170 @@
+{
+ "checks": [
+  {
+   "check": "fba rule on e_H1 reproduces W1 fba_call_H1",
+   "pass": true
+  },
+  {
+   "check": "fba rule on e_H2 reproduces W1 fba_call_H2",
+   "pass": true
+  },
+  {
+   "check": "P1[H1]: PGR from the B-loo task run equals the M6 construction (B-loo|M0 sweep, KO growth < 1)",
+   "pass": true
+  },
+  {
+   "check": "P1[H1]: P57 from the B-loo task run equals the M6 construction (generic non-GR \u222a GR)",
+   "pass": true
+  },
+  {
+   "check": "P1[H1]: absent-from-parent genes are False",
+   "pass": true
+  },
+  {
+   "check": "P1[H2]: PGR from the B-loo task run equals the M6 construction (B-loo|M0 sweep, KO growth < 1)",
+   "pass": true
+  },
+  {
+   "check": "P1[H2]: P57 from the B-loo task run equals the M6 construction (generic non-GR \u222a GR)",
+   "pass": true
+  },
+  {
+   "check": "P1[H2]: absent-from-parent genes are False",
+   "pass": true
+  },
+  {
+   "check": "validation: H1 equals the W1 generic e_H1 (atol 1e-9)",
+   "pass": true
+  },
+  {
+   "check": "validation: H2 equals the W1 generic e_H2 (atol 1e-9)",
+   "pass": true
+  },
+  {
+   "check": "validation: P1[H1] equals its re-derivation from sweep_e + line_assignment (bitwise)",
+   "pass": true
+  },
+  {
+   "check": "validation: P1[H2] equals its re-derivation from sweep_e + line_assignment (bitwise)",
+   "pass": true
+  },
+  {
+   "check": "validation: M2[H1] equals its re-derivation from sweep_e + line_assignment (bitwise)",
+   "pass": true
+  },
+  {
+   "check": "validation: equals the M6 look's m6_val_scores.parquet (renamed)",
+   "pass": true
+  },
+  {
+   "check": "validation: n_lines = 198, n_genes = 2866",
+   "pass": true
+  },
+  {
+   "check": "validation: calls cover exactly lines x U per arm",
+   "pass": true
+  },
+  {
+   "check": "test: H1 equals the W1 generic e_H1 (atol 1e-9)",
+   "pass": true
+  },
+  {
+   "check": "test: H2 equals the W1 generic e_H2 (atol 1e-9)",
+   "pass": true
+  },
+  {
+   "check": "test: P1[H1] equals its re-derivation from sweep_e + line_assignment (bitwise)",
+   "pass": true
+  },
+  {
+   "check": "test: P1[H2] equals its re-derivation from sweep_e + line_assignment (bitwise)",
+   "pass": true
+  },
+  {
+   "check": "test: M2[H1] equals its re-derivation from sweep_e + line_assignment (bitwise)",
+   "pass": true
+  },
+  {
+   "check": "test: n_lines = 380, n_genes = 2866",
+   "pass": true
+  },
+  {
+   "check": "test: calls cover exactly lines x U per arm",
+   "pass": true
+  }
+ ],
+ "all_checks_pass": true,
+ "counts": {
+  "P1[H1]": {
+   "n_p57": 188,
+   "n_pgr": 112,
+   "n_p57_generic": 216,
+   "n_pgr_generic": 147,
+   "n_fba_pairs_validation": 21092,
+   "n_ratio_exactly_0.01_validation": 0,
+   "n_fba_pairs_test": 40571,
+   "n_ratio_exactly_0.01_test": 0
+  },
+  "P1[H2]": {
+   "n_p57": 191,
+   "n_pgr": 113,
+   "n_p57_generic": 219,
+   "n_pgr_generic": 152,
+   "n_fba_pairs_validation": 20878,
+   "n_ratio_exactly_0.01_validation": 0,
+   "n_fba_pairs_test": 40137,
+   "n_ratio_exactly_0.01_test": 0
+  }
+ },
+ "annotations": {
+  "paralog_buffered": 1458,
+  "medium_sensitive": 80,
+  "complex_subunit": 666,
+  "housekeeping_adjacent": 160,
+  "biomass_artefact_lethal": 36,
+  "expected_fba_failure": 24,
+  "medium_sensitive_panel_in_U": 75,
+  "medium_sensitive_sweeps_in_U": 24,
+  "n_bloo_h1_sweeps": 21,
+  "not_annotated": {
+   "gene_less_bypass": "no label-free rule fixed in advance",
+   "model_contradicted_loss": "context-family repair log; P1 has no context family"
+  }
+ },
+ "n_eval_lines": {
+  "validation": 198,
+  "test": 380
+ },
+ "n_genes_U": 2866,
+ "outputs": {
+  "results/m6/t1/p1_scores_validation.parquet": "18665d5992b5b3fd2fea06f1fe1cb6e994e88943d12d1fa44f5acb5621dc30a0",
+  "results/m6/t1/p1_calls_validation.parquet": "e7d39aa08ccd4ba48a7d0b14388ef804cdda05e3a1d6612f2333a39aeb64ef0f",
+  "results/m6/tmp/t1/p1_scores_test.parquet": "658b6d9b3c9f8d7a8de416151014bb03bf3b56c55c2fa8388ca50bef66925fb2",
+  "results/m6/tmp/t1/p1_calls_test.parquet": "04ce66b3fc1fb72be546daa190b74c5398ca5dab8eb45cf769b1427aa250ada9",
+  "results/m6/t1/p1_task_calls.parquet": "b769f20e73bb9806a9d902aee5fbc67061a01c1e9b6735b33301b755cf2f36e0",
+  "results/m6/t1/p1_gene_annotations.parquet": "074275d6f5e627352b0d8e8a22823f46a41ea4e61864f0a317219a0ea573758d"
+ },
+ "inputs_sha256": {
+  "results/m6/scores/SHA256SUMS.tsv": "f5613cf2140710bf7d35acb19db813f6f3f2e696c35f2515e819232c1ffc6817",
+  "results/m6/scores/sweep_e.parquet": "ea67f56637429bf53eca5afc2a4bdf2a390cc422facb969f2fcdd8e2b3b551cd",
+  "results/m6/scores/line_assignment.tsv": "ab0faa7b5b4e8f2638fa814d20a967f53edde7b82baa792d1dd3f9807e734858",
+  "results/m6/sweeps/catalog.tsv": "c7b906bf2b31340fcab1f5ac0510a2916bcaadc822383a0125911048721d9cb2",
+  "results/m6/val/m6_val_scores.parquet": "888d6ca268717d65cd0b629f2ff20ce58568d0fb23e34ab3ce1083b3adacdc65",
+  "results/m6/scores/scores_validation.large.parquet": "e59d90eeb4a9f4bde4cfcc5ec7a96eddcb1997ade5c28b94aa29bdc4ead9980d",
+  "results/m6/scores/scores_test.large.parquet": "7759f2afebb8baf8dca0db7bb5b9bafa7ff39e6a78058ab41b4ee534af9a5e5d",
+  "results/m6/t1/tasks_bloo_human1.parquet": "2cdab12418140b366de00fc97f58bffccd09c314056d2aff75220cd4149d25a8",
+  "results/m6/t1/tasks_bloo_human1_tasks.tsv": "62f94d17d43034de632c614a46164e657f77ab5b2ba472905dbe1e56956f33d0",
+  "results/m6/t1/tasks_bloo_human2.parquet": "b1e25f128f22b00c9007cf8c5446507b70ea1bcfb12a9427d5f7f358cbad16ec",
+  "results/m6/t1/tasks_bloo_human2_tasks.tsv": "b88ae1873988808fa425f00990cb4016fe7463f9d2d61ffea5eba703e5403892",
+  "results/w3/tasks/essential_human1.parquet": "e9a81dee0b90fe34d96f294c9588e0125450941445e644478f8a0e46b34ec46c",
+  "results/w3/tasks/essential_human1_tasks.tsv": "3d972739310d515e10666f9b23e3dcb8a2c2324706186c7c7cc32d2ed6e24bae",
+  "results/w3/tasks/essential_human2.parquet": "86d812afc01329d19e9852c21665a05602cd5f0d5cc1109933a7a5aa871ae6b4",
+  "results/w3/tasks/essential_human2_tasks.tsv": "47fa7e0160210dba6e6694dc0934dd32e0af5b293aeae3c8dbaed0700b320f25",
+  "results/baseline/human1_ko.parquet": "4e92d6e76176828c4dd76cae4bbe1657cc2af3e84b7d9e5200b6d9e22175c215",
+  "results/baseline/human2_ko.parquet": "fe96ea34d20083ba845ac025e6c04ef7d09e45ff4b5137ce8da611fab6aedf5d",
+  "data/controls/gene_panels.tsv": "e812724faaf1e9672b32460e73cc6659512d4caf10ff22839d00bba0e4a78318",
+  "data/paralogs/ensembl_human_paralogs.tsv": "3df848a9a5a861279bc1e4cbe6f133dc96803a75db32ff82ab7d748a31705a6b",
+  "data/complexes/corum_humanComplexes.txt": "0addafabee5a957fcb06aceb6c4c8575f8a0d4d3abac6cdfbbb6a5eb6fb11966"
+ },
+ "wall_s": 26.9
+}

@@ -1,0 +1,58 @@
+idx	status	error	n_required	fset_size	n_solves	cpu_s	task	category	description	n_genes_failing	n_genes_changed_vs_generic
+0	ok		1	46	25	17.7998	ESS001	ER	Aerobic rephosphorylation of ATP from glucose	0	0
+1	ok		1	46	24	15.7612	ESS002	ER	Aerobic rephosphorylation of GTP	0	0
+2	ok		1	49	27	18.1026	ESS003	ER	Aerobic rephosphorylation of CTP	0	0
+3	ok		1	48	24	17.5358	ESS004	ER	Aerobic rephosphorylation of UTP	0	0
+4	ok		1	86	40	30.4559	ESS005	BS	ATP de novo synthesis	8	0
+5	ok		1	65	21	23.7251	ESS006	BS	CTP de novo synthesis	25	0
+6	ok		1	94	42	31.5883	ESS007	BS	GTP de novo synthesis	9	0
+7	ok		1	69	24	24.8899	ESS008	BS	UTP de novo synthesis	25	0
+8	ok		1	90	41	23.9503	ESS009	BS	dATP de novo synthesis	8	0
+9	ok		1	65	21	17.9239	ESS010	BS	dCTP de novo synthesis	28	0
+10	ok		1	97	44	25.5143	ESS011	BS	dGTP de novo synthesis	9	0
+11	ok		1	90	35	19.2271	ESS012	BS	dTTP de novo synthesis	27	0
+12	ok		1	1	0	6.12373	ESS013	SU	Histidine uptake	0	0
+13	ok		1	1	0	5.95934	ESS014	SU	Isoleucine uptake	0	0
+14	ok		1	1	0	0.967974	ESS015	SU	Leucine uptake	0	0
+15	ok		1	1	0	6.07155	ESS016	SU	Lysine uptake	0	0
+16	ok		1	4	1	2.07193	ESS017	SU	Methionine uptake	0	0
+17	ok		1	1	0	0.923891	ESS018	SU	Phenylalanine uptake	0	0
+18	ok		1	1	0	5.69161	ESS019	SU	Threonine uptake	0	0
+19	ok		1	1	0	1.24395	ESS020	SU	Tryptophan uptake	0	0
+20	ok		1	1	0	1.39593	ESS021	SU	Valine uptake	0	0
+21	ok		1	20	6	5.13985	ESS022	IC	Glycerate 3-phosphate  de novo synthesis	0	0
+22	ok		1	31	15	10.0276	ESS023	IC	Mitochondrial acetyl-CoA de novo synthesis	0	0
+23	ok		1	41	22	10.3036	ESS024	IC	Mitochondrial AKG de novo synthesis	1	0
+24	ok		1	54	28	7.55576	ESS025	IC	Erythrose 4-phosphate de novo synthesis	0	0
+25	ok		1	50	25	12.9251	ESS026	IC	Fructose 6-phosphate de novo synthesis	0	0
+26	ok		1	49	26	7.96328	ESS027	IC	Glyceraldehyde 3-phosphate de novo synthesis	0	0
+27	ok		1	49	26	4.79988	ESS028	IC	Glucose 6-phosphate de novo synthesis	0	0
+28	ok		1	56	28	14.1435	ESS029	IC	Mitochondrial oxaloacetate de novo synthesis	0	0
+29	ok		1	22	5	11.4016	ESS030	IC	Phosphoenolpyruvate de novo synthesis	0	0
+30	ok		1	18	2	2.24393	ESS031	IC	Pyruvate de novo synthesis	0	0
+31	ok		1	55	27	4.85983	ESS032	IC	Ribose 5-phosphate de novo synthesis	0	0
+32	ok		1	59	30	11.7434	ESS033	IC	Mitochondrial succinyl-CoA de novo synthesis	0	0
+33	ok		1	72	36	23.7895	ESS034	BS	Cholesterol de novo synthesis	12	0
+34	ok		1	108	56	13.9413	ESS035	BS	Protein synthesis from AAs	21	0
+35	ok		3	11	8	13.6367	ESS036	ER	Oxidative phosphorylation	46	0
+36	ok		3	6	4	5.87018	ESS037	ER	Oxidative decarboxylation	4	0
+37	ok		4	16	10	10.0962	ESS038	ER	Krebs cycle NADH	9	0
+38	ok		2	13	9	6.36643	ESS039	ER	Ubiquinol-to-proton	21	0
+39	ok		2	7	5	11.4215	ESS040	ER	Ubiquinol-to-ATP	42	0
+40	ok		0	93	42	16.0825	ESS041	SU	Beta oxidation of saturated FA	21	0
+41	ok		0	132	56	19.5104	ESS042	SU	Beta oxidation of long-chain FA	12	0
+42	ok		0	92	38	16.6662	ESS043	SU	Beta oxidation of odd-chain FA	21	0
+43	ok		0	140	66	30.9752	ESS044	SU	Beta oxidation of unsaturated fatty acid (n-9)	29	0
+44	ok		0	115	53	16.1234	ESS045	SU	Beta oxidation of unsaturated fatty acid (n-6)	11	0
+45	ok		0	478	81	37.8333	ESS046	SU	Uptake and beta oxidation of all NEFAs	37	0
+46	ok		1	1	0	6.11583	ESS047	SU	Choline uptake	0	0
+47	ok		1	1	1	2.05164	ESS048	SU	Inositol uptake	0	0
+48	ok		1	555	84	48.3015	ESS049	BS	Phosphatidylcholine de novo synthesis	38	0
+49	ok		1	555	85	48.7766	ESS050	BS	Phosphatidylethanolamine de novo synthesis	38	0
+50	ok		1	555	83	49.2939	ESS051	BS	Phosphatidylserine de novo synthesis	38	0
+51	ok		1	556	86	54.3173	ESS052	BS	Phosphatidylinositol de novo synthesis	39	0
+52	ok		1	9	5	7.42734	ESS053	BS	Thiamin phosphorylation to TPP	1	0
+53	ok		1	96	41	28.1513	ESS054	BS	Coenzyme A synthesis from pantothenate	10	0
+54	ok		1	109	51	29.2293	ESS055	BS	FAD synthesis from riboflavin	9	0
+55	ok		1	94	41	12.4753	ESS056	BS	Heme biosynthesis	5	0
+56	ok		1	612	133	50.927	ESS057	GR	Growth on Ham's media (biomass production)	115	39
