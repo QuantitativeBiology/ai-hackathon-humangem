@@ -108,3 +108,29 @@ scripts/m6_sweeps.py	file	scripts/m6_sweeps.py	3efb195ed7fb7b31c3dd4c76e718a55be
 scripts/m6_scores.py	file	scripts/m6_scores.py	644020e8427f5cf6b0b63ff991e7478bdefb41eb5459e91d1f528e5792b8e275	2026-10-28		M6 validation look: provenance (A12c, A13)
 scripts/m6_score_train.py	file	scripts/m6_score_train.py	b99b7610f806efcd52cbbc9571674fddadfe4cf92cbe9104df205f043ab301c3	2026-10-28		M6 validation look: provenance (A12c, A13)
 scripts/m6_val_spec.py	file	scripts/m6_val_spec.py	42d35f6354367405a5a3fcedfb79004eb6e8bf3436dcaa87edfd6c9527a24a6a	2026-10-28		M6 validation look: provenance (A12c, A13)
+results/w7/val/look_spec_W7_shortlist_1.json	file	results/w7/val/look_spec_W7_shortlist_1.json	1b4c13b8cbca12077c080348df3182580464d2f1200b68617cfe355e9518c1bc	2026-10-28		W7 validation look: spec / input
+results/w7/val/w7_val_scores_W7_shortlist_1.parquet	file	results/w7/val/w7_val_scores_W7_shortlist_1.parquet	0bcf12c8e19439a99410117068855aa70d3820e802a39dd35a59bb340ca349fc	2026-10-28		W7 validation look: spec / input
+src/nextgem/w7.py	file	src/nextgem/w7.py	ef31fe5b643cc6780e0593f8438281f9c92d170f81917c71e5393848a3fde175	2026-10-28		W7 validation look: provenance
+scripts/w7_common.py	file	scripts/w7_common.py	10c487380c4436cdbf4a80634c1db96d7e257dc394e721545c7d97a0b73e67e3	2026-10-28		W7 validation look: provenance
+scripts/w7_screen.py	file	scripts/w7_screen.py	1d84752d907734e1fb889c1fe76fff3129329136dd0bcf8fd4a126841f6f0b1e	2026-10-28		W7 validation look: provenance
+scripts/w7_summarise.py	file	scripts/w7_summarise.py	ccef9281b4a56f121c0135a33bef138456cdf23972805978e24404e1d260688e	2026-10-28		W7 validation look: provenance
+scripts/w7_val_spec.py	file	scripts/w7_val_spec.py	55cf909f691b0b6bc62a192cea708e8b8a86f7231c2e136ebdbff5b649585c1b	2026-10-28		W7 validation look: provenance
+scripts/w1_b6.py	file	scripts/w1_b6.py	fe84857e348df1c0ea15a901eb7bdb3e2303c015b16d700b21422287ca4f41a8	2026-10-28		W7 validation look: provenance
+results/w7/screen_g1.tsv	file	results/w7/screen_g1.tsv	e706eeb8e586d5e20d998edfed63fd6508dde4b9cd4113d0a43a610dc90819e9	2026-10-28		W7 validation look: provenance
+results/w7/screen_genecv.tsv	file	results/w7/screen_genecv.tsv	d7d4245ed48a8613425150bc652b0b12ae1a282097c4b5828492a86ac7159245	2026-10-28		W7 validation look: provenance
+results/w7/screen_r1.tsv	file	results/w7/screen_r1.tsv	682349bbd353436fd41c0e7b2678c56057a6a2e82e35a02f3ca4b8d5dffeb99e	2026-10-28		W7 validation look: provenance
+results/w7/screen_r10.tsv	file	results/w7/screen_r10.tsv	32751266c39ae5215e7a56799e4ae490716d9d329e0f2dac8931cd39d0de1418	2026-10-28		W7 validation look: provenance
+results/w7/screen_r11.tsv	file	results/w7/screen_r11.tsv	6ad6cb803d32095b772563c7e6b64d2f12da028c17ae5c0fa18135d7c5c9e3d0	2026-10-28		W7 validation look: provenance
+results/w7/screen_r12.tsv	file	results/w7/screen_r12.tsv	bcb3b5ef8cdc26d21d366b3b8b87eec39d4a35f540433c93cc034077ea2494a1	2026-10-28		W7 validation look: provenance
+results/w7/screen_r13.tsv	file	results/w7/screen_r13.tsv	c088402905eb7e7e9a41b2e4271c3e2b4c7b0d66049f66fc37fe979f4a53406e	2026-10-28		W7 validation look: provenance
+results/w7/screen_r2a.tsv	file	results/w7/screen_r2a.tsv	d249bb2a36aec93826934d3f07dd2bc88d6977825ca26cd03592f13d671c675e	2026-10-28		W7 validation look: provenance
+results/w7/screen_r2b.tsv	file	results/w7/screen_r2b.tsv	8c4992ff39c61c73710daf4be598943f0bb7eeab9bbe007b41512c9102bf7fef	2026-10-28		W7 validation look: provenance
+results/w7/screen_r4.tsv	file	results/w7/screen_r4.tsv	d50273b03d21dda648106c8d0f15932234d85e81c14fb52067d2b29ae26c2478	2026-10-28		W7 validation look: provenance
+results/w7/screen_r5.tsv	file	results/w7/screen_r5.tsv	1df21045272ef4092685f3fbbf63c89cb385ec7ef82fa5ef5e0a13c13e39911a	2026-10-28		W7 validation look: provenance
+results/w7/screen_r6.tsv	file	results/w7/screen_r6.tsv	d51d3d94948b2a157ac0b7b7b90a6ba07ce9eb007785cfb980bd8f2a9c7ab147	2026-10-28		W7 validation look: provenance
+results/w7/screen_r7.tsv	file	results/w7/screen_r7.tsv	a428e568e0e1a58ac550a8044de2c2d78398b4eb59019705e6c9c0ff7629db9b	2026-10-28		W7 validation look: provenance
+results/w7/screen_r8.tsv	file	results/w7/screen_r8.tsv	c775218b07563be39cb28fd354f2ecfede60beb665f398f95708e728759a562a	2026-10-28		W7 validation look: provenance
+results/w7/screen_r9.tsv	file	results/w7/screen_r9.tsv	3565cfc07dbf56f48a5de96b1332b024d1341cd9787fe7bed0ba5e78a9e47fa3	2026-10-28		W7 validation look: provenance
+results/w7/nested_W7-04_beta.json	file	results/w7/nested_W7-04_beta.json	4e3088452c3bd7ba86fb086619331591b59b4eacd3f183a215176a8ab41f9ad2	2026-10-28		W7 validation look: provenance
+results/w7/sweeps/ratio_r_human1.parquet	file	results/w7/sweeps/ratio_r_human1.parquet	86bebd6a85493e56477983ac950942cb687d89c41908de7c2860ac651241c387	2026-10-28		W7 validation look: provenance
+results/w7/sweeps/sweeps.json	file	results/w7/sweeps/sweeps.json	4d780281d30a7fc4c8ec7e905931d4d082069dd142ee813d8c7c65b1fdf93ea6	2026-10-28		W7 validation look: provenance
