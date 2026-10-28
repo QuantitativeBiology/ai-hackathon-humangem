@@ -82,7 +82,7 @@ The live research record is [RESEARCH_TREE.md](RESEARCH_TREE.md). It holds the d
 ## Repository layout
 - `src/nextgem/`: package (model loading, knockouts, labels, metrics, splits, media, context-model families, provenance).
 - `scripts/`: runnable steps (`w1_*` baseline, `w2_*` medium, `w4_*` context models, `evaluate_val.py`, guards).
-- `tests/`: ~570 tests, including known-answer tests for metrics and leakage guards.
+- `tests/`: 567 tests, including known-answer tests for metrics and leakage guards.
 - `results/`: committed outputs per workstream (`w1/`, `w2/`, `w4/`, `w5/`, `gprt/`, `splits/`, …). Each has a README and a provenance manifest.
 - `notes/`: design reviews, milestone process reviews, independent result reviews and method assessments.
 - `data/` (git-ignored): Human-GEM, DepMap 26Q3 and other inputs. Provenance is in `data/README.md` and `DATA.md`.
