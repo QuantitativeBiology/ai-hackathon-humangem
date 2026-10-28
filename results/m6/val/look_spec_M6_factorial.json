@@ -11,16 +11,16 @@
  "methods": [
   "H1",
   "H2",
-  "M6:H1+Bloo/M0",
   "M6:H1/M2(f=1)",
+  "M6:H1+Bloo/M0",
   "M6:H1+Bloo/M2(f=1)",
   "M6:H2+Bloo/M0",
   "M6:H2/M2(f=1)",
   "M6:H2+Bloo/M2(f=1)"
  ],
  "candidates": [
-  "M6:H1+Bloo/M0",
   "M6:H1/M2(f=1)",
+  "M6:H1+Bloo/M0",
   "M6:H1+Bloo/M2(f=1)"
  ],
  "reference": "H1",
@@ -69,11 +69,11 @@
   "src/nextgem/w2_engine.py": "c0e55ed3f2d20a01bb16f3c9ec8f46535bfa2fee97448185631652b5aa47df7c",
   "src/nextgem/w2_score.py": "c8a3caf2bb51d1c7aad0d3a835e97ac76e1e16bd9a9f92d77cf264a0a767bab5",
   "src/nextgem/media.py": "a7e965f4129b5cadcb873ccefe906cc648a85fc6c3b105ed1a07b934f229f33c",
-  "scripts/m6_common.py": "0da962dd954f4073746250ea48a34d71e944fd79ced4cf5d6c9974df3a682f4c",
+  "scripts/m6_common.py": "7542d0a631aaf6c0e28a6495d0261a740588d786ae714b8d72c82f172392d2ef",
   "scripts/m6_sweeps.py": "3efb195ed7fb7b31c3dd4c76e718a55be82b90f8ca47ebe85d21d2724eec51bd",
   "scripts/m6_scores.py": "644020e8427f5cf6b0b63ff991e7478bdefb41eb5459e91d1f528e5792b8e275",
   "scripts/m6_score_train.py": "b99b7610f806efcd52cbbc9571674fddadfe4cf92cbe9104df205f043ab301c3",
-  "scripts/m6_val_spec.py": "ea872390a536e461e49f2472ef5956b045eef4d764ea988811b5ecc695d54c3a"
+  "scripts/m6_val_spec.py": "42d35f6354367405a5a3fcedfb79004eb6e8bf3436dcaa87edfd6c9527a24a6a"
  },
- "notes": "M6 integration factorial (A12c; cells fixed in RESEARCH_TREE D10 before any factorial scoring). Context lever not selected (M5 pre-check, A12b), so no context axis. Scores are line-specific (layout line_gene) over the 198 validation expression lines: e = 1 \u2212 ratio_r of the KO sweep of (parent, biomass variant, the line's medium); M2(f=1) = documented base medium + supplements + serum model f = 1, gate-free, as in results/w2/controls/line_sweeps.tsv (imputed / fallback / unmappable lines: W2's integrated-pipeline medium, classic RPMI + 10% FBS; onboarded lines: onboarded medium). B-loo = W3 B-loo:cofactor_pool_biomass (results/w3/structure/variants_<parent>.json). H1 and H2 columns equal the W1 generic scores. Flags carried: W3-D1 on cells (1) and (3) (no pre-registered negative control applies to biomass leave-outs; no claim may rest on 'beats controls'); W2-SHUF and W2-MOPEN on cells (2) and (3) (no line-specific-medium claim; the gain is 'realistic culture medium vs Ham's'); W3-MEV on cell (3) (under serum media the cofactor-pool B-loo makes HMGCR/MVK/PMVK/MVD non-lethal; results/m6/scores/w3_mev.tsv). Training (686 lines, 12 lineages; results/m6/train/): (1) H1+Bloo/M0: +0.0343 [+0.0336, +0.0349], 12/12, TG pass; (2) H1/M2: +0.0160 [+0.0152, +0.0168], 12/12, TG pass; (3) H1+Bloo/M2: +0.0534 [+0.0523, +0.0545], 12/12, TG pass. This single look is also W2's validation answer (D10). Harness fit: the spec's workstream 'M6' does not match the harness rule workstream == W<n> == results/<ws>/val (A11g), so the harness refuses it as is; PI decision needed (see results/m6/README.md)."
+ "notes": "M6 integration factorial (A12c; cells fixed in RESEARCH_TREE D10 before any factorial scoring). Context lever not selected (M5 pre-check, A12b), so no context axis. Scores are line-specific (layout line_gene) over the 198 validation expression lines: e = 1 \u2212 ratio_r of the KO sweep of (parent, biomass variant, the line's medium); M2(f=1) = documented base medium + supplements + serum model f = 1, gate-free, as in results/w2/controls/line_sweeps.tsv (imputed / fallback / unmappable lines: W2's integrated-pipeline medium, classic RPMI + 10% FBS; onboarded lines: onboarded medium). B-loo = W3 B-loo:cofactor_pool_biomass (results/w3/structure/variants_<parent>.json). H1 and H2 columns equal the W1 generic scores. Flags carried: W3-D1 on cells (2) and (3) (no pre-registered negative control applies to biomass leave-outs; no claim may rest on 'beats controls'); W2-SHUF and W2-MOPEN on cells (1) and (3) (no line-specific-medium claim; the gain is 'realistic culture medium vs Ham's'); W3-MEV on cell (3) (under serum media the cofactor-pool B-loo makes HMGCR/MVK/PMVK/MVD non-lethal; results/m6/scores/w3_mev.tsv). Training (686 lines, 12 lineages; results/m6/train/): (1) H1+Bloo/M0: +0.0343 [+0.0336, +0.0349], 12/12, TG pass; (2) H1/M2: +0.0160 [+0.0152, +0.0168], 12/12, TG pass; (3) H1+Bloo/M2: +0.0534 [+0.0523, +0.0545], 12/12, TG pass. This single look is also W2's validation answer (D10). Milestone-level look (A13). Candidate order follows DESIGN \u00a79 (medium < tasks < combination), correcting D10 before any validation scoring (notes/reviews/M6_harness_and_spec_review.md F-B1)."
 }
