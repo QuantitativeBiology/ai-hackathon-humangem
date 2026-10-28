@@ -25,7 +25,7 @@ The work has four strands:
 
 Whole lineages are held out for testing. The full brief is in [PROMPT.md](PROMPT.md).
 
-*Status as of 2026-10-28, 01:00 UTC.*
+*Status as of 2026-10-28, 03:00 UTC.*
 
 ## Status at a glance
 
@@ -36,6 +36,8 @@ Whole lineages are held out for testing. The full brief is in [PROMPT.md](PROMPT
 | M2 Generic-model baseline (W1), training plus one validation look | done: **G\* = Human1** |
 | M3 Pilots: medium (W2, library frozen), context-model families (W4), Stage A on the 30-line training panel | done: **no family passes the training gate** |
 | M4 GPR curation (W5) | done: **fails the training gate** on both parents |
+| M5 Context models on top of P1 levers | done: not selected (< +0.005) |
+| M6 Factorial → P1 | done: **P1 = H1 + biomass edit + documented medium** |
 | M4 Biomass/tasks/objectives (W3) | done: **cofactor-pool biomass leave-out beats G\* on validation** (+0.032) |
 | M5–M9 Flux information (W6), auto-research loop (W7), SBML resource (W8, stub passes its gates), test looks T1/T2, REPORT.md (skeleton) | planned |
 
@@ -56,6 +58,7 @@ The live research record is [RESEARCH_TREE.md](RESEARCH_TREE.md). It holds the d
 - **Medium.** Medium choice moves few genes (mean |Δratio| ≈ 0.001 per line). The design's growth-rate calibration is infeasible as specified, so that variant is reported as uncalibrated.
 - **Sterol branch.** Serum cholesterol cannot rescue the sterol-synthesis genes in either model. Biomass needs vitamin D3 products that can only be made from lathosterol, so this is a model-structure issue for W3/W5.
 - **GPRTransform** (Machado et al. 2016). Gene-level KO equals the Boolean KO exactly on both models, so it is not adopted as a family. The original isozyme encoding inflates capacity (+25% WT growth). A gene-pFBA cost tie-break is kept as an exploratory score.
+- **Selected pipeline P1 (M6 factorial, validation look 3 of 40): Human1 with the biomass cofactor pool removed, on each line's documented culture medium.** On the 4 held-out validation lineages it beats generic Human1 by Δ̄ tAP **+0.052 [0.050, 0.054]** (medium alone +0.017; biomass edit alone +0.032; the two are slightly super-additive). Flags: W3-MEV (under serum, the mevalonate-core genes lose essentiality), W2-SHUF (randomly shuffled media give ~96% of the medium gain, so this is "realistic medium vs Ham's", not line-specific medium), W3-D1, W2-MOPEN. Context-specific models (GIMME, E-Flux) add < 0.005 on top and were not selected. The test-set evaluation (T1) is next.
 - **Biomass (W3): first lever that beats the generic model on held-out lineages.** Removing the biomass cofactor pool from Human1 raises tAP from 0.302 to 0.334 on the 4 validation lineages: Δ̄ = +0.032 [0.031, 0.033], which replicates the training estimate of +0.034. It mostly removes false essential calls created by the biomass reaction itself: retinoid/vitamin-D catabolism, carnitine, BH4 and CoQ. It also loses some real requirements (heme, PDXK, TPK1, RFK). Two flags apply. W3-D1: no pre-registered negative control applies to biomass removals, and the control reading was fixed after seeing training results. W3-MEV: under serum media the variant makes the mevalonate-core genes non-essential.
 - **Context-specific models (W4 Stage A, training panel).** None of the six families beats G\* under the training gate. Δ̄ vs Human1 is F0 thresholding −0.0080, F2 GIMME −0.0067, F3 FASTCORE −0.0102, F4 E-Flux −0.0029, F5 calibrated presence −0.0114 and CORDA −0.0127. Choice of method explains more variance than tissue. F2 is carried forward to the combination factorial, flagged "fails TG".
 - **GPR curation (W5).** The curation as specified lowers tAP by 0.029 on both parents. The main cause is paralog AND→OR merges of RNA polymerase I/II/III subunits, which the reviewer rejected on biology. Fixing the direction of Human1's thymidylate synthase reaction helps (+0.0007), but the gain is below the SESOI.
@@ -64,7 +67,7 @@ The live research record is [RESEARCH_TREE.md](RESEARCH_TREE.md). It holds the d
 
 ## Running now
 - Next: the M6 combination factorial (medium × biomass × context family), W6 flux information and the W7 auto-research loop (hybrids of GEM features with gene priors; a narrower 'artefact groups only' biomass variant as exploratory).
-- Validation looks used: 2 of 40.
+- Validation looks used: 3 of 40.
 
 ## Known pitfalls and open issues
 - Most generic KO scores are near-binary (lethal or 1), so ties dominate AUPRC. Every metric is tie-aware, and tie-break baselines (B8±) are mandatory.
@@ -75,7 +78,7 @@ The live research record is [RESEARCH_TREE.md](RESEARCH_TREE.md). It holds the d
 
 ## Leakage controls (read before touching data)
 - DepMap labels (CRISPR gene effect and dependency, common-essential lists) are read **only** through `src/nextgem/labels.py`, fold-scoped. A PreToolUse hook blocks direct reads, and a runtime tripwire blocks them inside Python.
-- Validation and test labels are sealed. Validation is scored only by the frozen `scripts/evaluate_val.py`. Each look is scalar-only, logged in a hash-chained ledger and capped at 40 in total (2 used).
+- Validation and test labels are sealed. Validation is scored only by the frozen `scripts/evaluate_val.py`. Each look is scalar-only, logged in a hash-chained ledger and capped at 40 in total (3 used).
 - [FROZEN.tsv](FROZEN.tsv) pins code, inputs and values by SHA-256. It is checked at commit, at push and before every look.
 - Every agent or person who has seen label summaries is recorded in [notes/label_exposure.md](notes/label_exposure.md).
 
