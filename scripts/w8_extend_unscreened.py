@@ -168,10 +168,14 @@ def main(argv=None) -> int:
     a = ap.parse_args(argv)
     if a.workers > wb.MAX_WORKERS:
         raise SystemExit(f"at most {wb.MAX_WORKERS} worker processes")
+    import nextgem
     from nextgem import paths
     from nextgem.model import GEMS
     from nextgem.run import provenance
 
+    if not a.allow_dirty and PROJECT / "src" not in Path(nextgem.__file__).resolve().parents:
+        raise SystemExit(f"imported nextgem ({nextgem.__file__}) is not the package next to this script; run "
+                         "with PYTHONPATH=<worktree>/src (pinned-worktree guard, §11.4)")
     shared, per = wb.input_sets(wb.PARENT_ORDER)
     inputs = shared + [paths.depmap_dir() / EXPR_FILE, paths.depmap_dir() / "ModelCondition.csv",
                        paths.depmap_dir() / "ScreenSequenceMap.csv", paths.depmap_dir() / "CRISPRScreenMap.csv"]
@@ -263,6 +267,7 @@ def run_build(a, prov, GEMS, per) -> int:
     new = _new_sigs()
     models = pd.read_csv(RES / "models.tsv", sep="\t", dtype=str, keep_default_na=False)
     old_man = pd.read_csv(RES / "manifest.tsv", sep="\t", dtype=str, keep_default_na=False)
+    models, old_man = drop_previous_extension(models, old_man, new)
     release_status = models.release_status.iloc[0]
     commit, dirty = git_commit(), git_dirty()
     shared, _ = wb.input_sets(wb.PARENT_ORDER)
@@ -394,6 +399,14 @@ def run_readme(a, prov, GEMS, per) -> int:
     out = mc.atomic_write_text(wb.resource_readme(dict(full, per_parent=per_parent), models, man), RES / "README.md")
     prov.output(out)
     return 0
+
+
+def drop_previous_extension(models: pd.DataFrame, man: pd.DataFrame, new: pd.DataFrame):
+    """Make --step build idempotent: remove the model rows of the signatures being (re)built and every earlier
+    unscreened manifest row (screened = false); the screened cohort and its 40 models are kept as they are."""
+    key = set(zip(new.parent, new.w2_sweep_id))
+    keep = [(p, s) not in key for p, s in zip(models.parent, models.w2_sweep_id)]
+    return models[keep].reset_index(drop=True), man[man.screened.astype(str).str.lower() != "false"].reset_index(drop=True)
 
 
 def mevalonate_core_lethal(parent: str, ref_ratio: dict) -> bool:

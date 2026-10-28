@@ -24,21 +24,22 @@
    "cpu_s": 1337.2
   }
  },
- "objective": null,
- "n_gene_deletions": null,
- "n_reaction_deletions": null,
+ "cpu_s_total": 2376.2,
+ "objective": 46.9091554064199,
  "n_fva": 12748,
+ "n_gene_deletions": 2870,
+ "n_reaction_deletions": 12748,
  "status_counts": {
-  "objective": {
+  "objectives": {
    "optimal": 1
   },
   "fva": {
    "optimal": 12748
   },
-  "gene_deletion": {
+  "gene_deletions": {
    "optimal": 2870
   },
-  "reaction_deletion": {
+  "reaction_deletions": {
    "optimal": 12748
   }
  }

@@ -30,22 +30,69 @@
      "cpu_s": 1337.2
     }
    },
-   "objective": null,
-   "n_gene_deletions": null,
-   "n_reaction_deletions": null,
+   "cpu_s_total": 2376.2,
+   "objective": 46.9091554064199,
    "n_fva": 12748,
+   "n_gene_deletions": 2870,
+   "n_reaction_deletions": 12748,
    "status_counts": {
-    "objective": {
+    "objectives": {
      "optimal": 1
     },
     "fva": {
      "optimal": 12748
     },
-    "gene_deletion": {
+    "gene_deletions": {
      "optimal": 2870
     },
-    "reaction_deletion": {
+    "reaction_deletions": {
      "optimal": 12748
+    }
+   }
+  },
+  {
+   "model": "medium-db9ebc6b123dcb99_human1-1.19.0_P1.xml.gz",
+   "parts": [
+    "objective",
+    "gene_deletions",
+    "reaction_deletions",
+    "fva"
+   ],
+   "timing": {
+    "objective": {
+     "wall_s": 17.7,
+     "cpu_s": 17.7
+    },
+    "gene_deletions": {
+     "wall_s": 209.5,
+     "cpu_s": 209.4
+    },
+    "reaction_deletions": {
+     "wall_s": 646.5,
+     "cpu_s": 646.1
+    },
+    "fva": {
+     "wall_s": 1211.1,
+     "cpu_s": 1210.4
+    }
+   },
+   "cpu_s_total": 2083.6,
+   "objective": 46.863207772207886,
+   "n_fva": 12971,
+   "n_gene_deletions": 2887,
+   "n_reaction_deletions": 12971,
+   "status_counts": {
+    "objectives": {
+     "optimal": 1
+    },
+    "gene_deletions": {
+     "optimal": 2887
+    },
+    "reaction_deletions": {
+     "optimal": 12971
+    },
+    "fva": {
+     "optimal": 12971
     }
    }
   }

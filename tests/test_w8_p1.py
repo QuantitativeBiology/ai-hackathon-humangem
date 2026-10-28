@@ -315,3 +315,16 @@ def test_w8_build_main_propagates_exit_code(monkeypatch):
     assert wb.main(["--pilot", "1", "--allow-dirty", "--parents", "human2"]) == 3
     monkeypatch.setattr(wb, "run", lambda *a, **k: 0)
     assert wb.main(["--pilot", "1", "--allow-dirty", "--parents", "human2"]) == 0
+
+
+def test_w8_extension_build_idempotent():
+    """A re-run of the extension build drops its earlier rows first (models of the rebuilt signatures, unscreened
+    manifest rows) and keeps the screened cohort untouched."""
+    import w8_extend_unscreened as we
+
+    models = pd.DataFrame({"parent": ["human2", "human2", "human1"], "w2_sweep_id": ["human2:a", "human2:new", "human1:b"]})
+    man = pd.DataFrame({"ModelID": ["ACH-1", "ACH-2", "ACH-2"], "parent": ["human2", "human2", "human1"],
+                        "screened": ["true", "false", "false"]})
+    new = pd.DataFrame({"parent": ["human2"], "w2_sweep_id": ["human2:new"]})
+    m2, man2 = we.drop_previous_extension(models, man, new)
+    assert m2.w2_sweep_id.tolist() == ["human2:a", "human1:b"] and man2.ModelID.tolist() == ["ACH-1"]
