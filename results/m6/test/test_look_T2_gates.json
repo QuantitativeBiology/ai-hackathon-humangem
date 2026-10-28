@@ -1,0 +1,112 @@
+{
+ "G_star": "Human1",
+ "contrasts": {
+  "C4": {
+   "ci_high": 0.6051924677865801,
+   "ci_low": 0.5983661372108452,
+   "contrast": "C4",
+   "estimate": 0.6018777815193479,
+   "p": 9.999000099990002e-05,
+   "passed": true,
+   "sesoi": 0.01
+  },
+  "C5": {
+   "ci_high": 0.01668969034845639,
+   "ci_low": 0.011621925034505851,
+   "contrast": "C5",
+   "estimate": 0.013782359713735133,
+   "p": 9.999000099990002e-05,
+   "passed": true,
+   "sesoi": 0.01
+  }
+ },
+ "gates": [
+  {
+   "ci_low": 0.04821913219025517,
+   "claim": "meaningfully improves",
+   "confirmatory": true,
+   "contrast": "C1",
+   "estimate": 0.04973451870770146,
+   "passed": true,
+   "sesoi": 0.01,
+   "status": "confirmed"
+  },
+  {
+   "ci_low": 0.03514754474353756,
+   "claim": "meaningfully improves",
+   "confirmatory": true,
+   "contrast": "C1b",
+   "estimate": 0.037413587198674006,
+   "passed": true,
+   "sesoi": 0.005722808991032354,
+   "status": "confirmed"
+  },
+  {
+   "ci_low": -0.018298819010107714,
+   "claim": "no detectable improvement",
+   "confirmatory": true,
+   "contrast": "C3",
+   "estimate": -0.01141765513546442,
+   "passed": false,
+   "sesoi": null,
+   "status": "not confirmed"
+  },
+  {
+   "ci_low": 0.5983661372108452,
+   "claim": "estimate only (earlier gate failed)",
+   "confirmatory": false,
+   "contrast": "C4",
+   "estimate": 0.6018777815193479,
+   "passed": true,
+   "sesoi": 0.01,
+   "status": "estimate only"
+  },
+  {
+   "ci_low": 0.011621925034505851,
+   "claim": "estimate only (earlier gate failed)",
+   "confirmatory": false,
+   "contrast": "C5",
+   "estimate": 0.013782359713735133,
+   "passed": true,
+   "sesoi": 0.01,
+   "status": "estimate only"
+  }
+ ],
+ "headline": {
+  "ci": [
+   0.04821913219025517,
+   0.051252593330541926
+  ],
+  "claim": "meaningfully improves",
+  "conditional_on": "the 7 test lineages",
+  "contrast": "C1",
+  "estimate": 0.04973451870770146,
+  "p_sign_flip": 9.999000099990002e-05
+ },
+ "headline_rule": "the first T1 number stays the headline (\u00a710.2)",
+ "label": "L_prob",
+ "look": "T2",
+ "primary": "P2",
+ "transfer": {
+  "C4": {
+   "exact_sign_flip_p": 0.0078125,
+   "generalises": true,
+   "k_positive": 7,
+   "k_required": 5,
+   "n_lineages": 7,
+   "t_high": 0.6109770365591798,
+   "t_low": 0.5927785264795162,
+   "t_mean": 0.601877781519348
+  },
+  "C5": {
+   "exact_sign_flip_p": 0.0078125,
+   "generalises": true,
+   "k_positive": 7,
+   "k_required": 5,
+   "n_lineages": 7,
+   "t_high": 0.016518567391618222,
+   "t_low": 0.011046152035852052,
+   "t_mean": 0.013782359713735136
+  }
+ }
+}

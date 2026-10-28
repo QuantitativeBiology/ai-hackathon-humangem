@@ -1,0 +1,134 @@
+{
+ "B": 2000,
+ "B_conf": 10000,
+ "G_star": "Human1",
+ "G_star_short": "H1",
+ "alpha": 0.025,
+ "arms": {},
+ "b6": {
+  "features": "w1",
+  "hgb": {
+   "early_stopping": false,
+   "learning_rate": 0.1,
+   "max_iter": 200,
+   "max_leaf_nodes": 31
+  }
+ },
+ "binary_label": "L_ge06",
+ "bootstrap_method": "bca",
+ "code": {
+  "scripts/evaluate_test.py": "8f72687f410a84bc6db54d1d796886834cbc752d5f17a08337e18646f8d75d97",
+  "scripts/evaluate_val.py": "e1d10240fe94646c9e4e5c469cd32170865796af41f6389a420139b5f5fa246c",
+  "scripts/w1_b6.py": "fe84857e348df1c0ea15a901eb7bdb3e2303c015b16d700b21422287ca4f41a8",
+  "scripts/w1_common.py": "e77fed313e65d8245288c41124be4451dd262b35cc10a29359f839c6f8ce24a6",
+  "src/nextgem/labels.py": "291d648e8988ae6987ba1fcef347e75271688bff105a66276f5fe504af21fc6b",
+  "src/nextgem/ledger.py": "21803d9761a4ba7b356b04e69e71a4af96aea78c40fa6ca1783fda6ef8c37b4e",
+  "src/nextgem/metrics.py": "3acc6ff45c6b969efa631a8c4ecb28ec570015d604f84baed05a4ac1a9382d98",
+  "src/nextgem/run.py": "36c07907c5f81e562d57d7bf480dba992e070a96148349b44215eb93eda9b578",
+  "src/nextgem/w1.py": "434875e1e47bd548da1da1b2b8b03d546609240914a96828e6e17036863d7a2b",
+  "src/nextgem/w7.py": "ef31fe5b643cc6780e0593f8438281f9c92d170f81917c71e5393848a3fde175"
+ },
+ "config_sha": "cc20810b6b88569139a139755c6a45825d9134cd50bedb1f3eee4bf92f7d8319",
+ "fit_tiers": [
+  "train",
+  "validation"
+ ],
+ "genesets": [
+  "all",
+  "noCE",
+  "noDepMapCE"
+ ],
+ "inputs": {
+  "cn": "42bf15fd19ab51f9b4636213c4a464f9907c63ce4d1a547a9670586a95ffc91c",
+  "expr": "22dccef65797e8c9be8a806278e5343246eeddf5420e9c2647aaa447e06ff137",
+  "gene_features": "7cf003f6eba4b0a9b5fa7fd81d9e6e802a6722eba984a3d3ce8128b215ec6f67",
+  "gene_neighbours": "b492702e51a20f64d58f8a4f3562d97e3d6442b3ac244d39f1ae977ca0fcc233",
+  "gene_panels": "e812724faaf1e9672b32460e73cc6659512d4caf10ff22839d00bba0e4a78318",
+  "human1_ko": "4e92d6e76176828c4dd76cae4bbe1657cc2af3e84b7d9e5200b6d9e22175c215",
+  "human2_ko": "fe96ea34d20083ba845ac025e6c04ef7d09e45ff4b5137ce8da611fab6aedf5d",
+  "line_features": "d96f43b07bd625fc56834addf60845608b45f8d0fd9cc682693dbd0e1c08b234",
+  "mut_dam": "40120741609fe308eb956dff408c39fe6b07b13248c29a021d95fbc97cddcb22",
+  "mut_hot": "f7221063c4969928ae8e339b3078fd32c78c0c3a8fff871854ea3319b548302f",
+  "p1_spec": "750054c3e78510483e57bb49c0348bcacfc79a1dd71d3b81a4032e2e03b12104",
+  "p57_human1": "0864b548cbce6b3f899861ec59ba0ff360864dd74c74c12f8bbcc5153453fd0c",
+  "p57_human2": "f7b41117148c7ff4a02023cf5416f61275c25c845b164e5a9bf4cd71b7ecf7e1",
+  "scores_test": "b2236f0f199c36bf15b8a5c806145553b61d3b5a4d11f3646864423e06db31a3",
+  "sesoi_c1b": "17254702a38c5258f3e4fff14e1dacc64ee0d05c02e78e1471d7923ed38719f2",
+  "spec": "19bf298eddf52f558054d2737f7c5d125af31c84632bdc349d378dd4b65adb38",
+  "w1_gstar": "43663450ec5af961982f84971540928d2ca84ad7d0efa51eb40d77952106afa9"
+ },
+ "kind": "p2",
+ "labels": [
+  "L_prob",
+  "L_ge05",
+  "L_ge10"
+ ],
+ "look": "T2",
+ "methods": [
+  "H1",
+  "H2",
+  "P2"
+ ],
+ "milestone": "M7",
+ "n_flip": 10000,
+ "n_perm": 2000,
+ "notes": "P2 (RESEARCH_TREE D14, look 5/40 W7_P2_select, W7 2/20) = W7-05: the pre-registered B6 (W1 feature set, HistGradientBoosting at w7.HGB_M2) with a monotone increasing constraint on b2 and b2m; non-GEM, label-fitted. It is refitted once on training \u222a validation inside the harness through the reviewed w7_idea plug-in (w7.fit / w7.predict, seed SEEDS[0]); the score file carries only the generic H1/H2 columns (gene layout). No failed build (P2 builds no model). D12 wording applies in REPORT.md: C4 (P2 \u2212 G*) compares gene-prior ML with generic FBA and says nothing about GEMs; C5 (P2 \u2212 B6, the pre-registered B6) measures only the monotone constraint; W7's GEM result is negative (no idea with a GEM feature was promoted); P2 is reported next to B2, B2m and B8\u00b1. C3 was not confirmed at T1 (D15), so C4/C5 are estimates only. bootstrap_method from the \u00a76.5 training skew check (results/m6/t2/skew.json): bca.",
+ "post_hoc": false,
+ "primary": "P2",
+ "primary_label": "L_prob",
+ "provenance": {
+  "results/m6/t2/skew.json": "abf6f342aa835a2c343c8c7ceeb1d42015cc3bc0f61c5b985b92f57897b4e22f",
+  "results/w7/val/look_spec_W7_P2_select.json": "f30ffbbc0e88b651eec7541a83182f998c6e89d8753d2eb160f00b46777485f0",
+  "results/w7/val/val_look_W7_P2_select_decision.json": "7f39c876a7f0b03fb692f282f8fccee0971695aa47063517a7c4e2c529016301",
+  "scripts/t2_prep_spec.py": "e067c29d7a36ea99e20abcd03e5d4587ab5e6709f1f3caaa48fa5fda9cc02796",
+  "scripts/w1_b6.py": "fe84857e348df1c0ea15a901eb7bdb3e2303c015b16d700b21422287ca4f41a8",
+  "src/nextgem/w7.py": "ef31fe5b643cc6780e0593f8438281f9c92d170f81917c71e5393848a3fde175"
+ },
+ "random_seeds": [
+  11,
+  23,
+  37,
+  41,
+  53
+ ],
+ "refit": {
+  "idea": "W7-05",
+  "method": "P2",
+  "recipe": "w7_idea"
+ },
+ "runtime": {
+  "blas_threads": 1,
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "python": "3.11.17",
+  "scipy": "1.17.1",
+  "sklearn": "1.9.1"
+ },
+ "score_methods": [
+  "H1",
+  "H2"
+ ],
+ "seed": 11,
+ "sesoi": 0.01,
+ "sesoi_c1b": 0.005722808991032354,
+ "sources": {
+  "test": {
+   "calls": null,
+   "calls_layout": null,
+   "failed_builds": null,
+   "scores": "results/m6/t2/p2_scores_test.parquet",
+   "scores_layout": "gene"
+  }
+ },
+ "spec_id": "P2_M7",
+ "spec_path": "results/m6/p2_spec.json",
+ "strata": [
+  "none",
+  "expressed_pairs"
+ ],
+ "tier": "test",
+ "universes": [
+  "U",
+  "Ucap"
+ ]
+}

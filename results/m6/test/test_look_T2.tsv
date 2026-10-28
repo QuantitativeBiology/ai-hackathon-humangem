@@ -1,0 +1,5 @@
+section	name	label	geneset	stratum	method_a	method_b	estimate	ci_lo	ci_hi	p	passed	sesoi	line_mean	n_lines	n_lineages	status	claim	t_mean	t_low	t_high	exact_sign_flip_p	k_positive	k_required	generalises
+confirmatory	C4	L_prob	all	none	P2	H1	0.601878	0.598366	0.605192	9.999e-05	True	0.01	0.599743	380	7	estimate only	estimate only (earlier gate failed)							
+transfer	C4	L_prob	all	none	P2	H1									7			0.601878	0.592779	0.610977	0.0078125	7	5	True
+confirmatory	C5	L_prob	all	none	P2	B6[L_prob]	0.0137824	0.0116219	0.0166897	9.999e-05	True	0.01	0.0128254	380	7	estimate only	estimate only (earlier gate failed)							
+transfer	C5	L_prob	all	none	P2	B6[L_prob]									7			0.0137824	0.0110462	0.0165186	0.0078125	7	5	True
