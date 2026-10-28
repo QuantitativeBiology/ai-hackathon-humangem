@@ -2,7 +2,7 @@
 
 Legend: [ ] planned · [~] in progress · [x] done · [-] abandoned/negative · [!] key finding
 
-## Status summary (2026-10-28, M7 done: T1, T2, unseal complete)
+## Status summary (2026-10-28 08:30: project complete, M0–M9)
 
 M2 is complete. The generic models were scored on 686 training lines (12 lineages). H1 beats H2 on tie-aware AUPRC: tAP_line 0.300 vs 0.292. Their paper-protocol MCCs are similar: 0.329 vs 0.331 (P57 × L-ge06). An independent reviewer recomputed every headline number with its own code and matched it exactly. The single W1 validation look (1 of 40, scalars only, 198 lines in 4 lineages) set **G\* = Human1**: Δ̄_lin(H2−H1) = −0.0071 [−0.0079, −0.0063]. Label-only gene-prior baselines score far higher (B2 tAP 0.90). About 42% of positive gene × line pairs fall outside the H2 addressable set. These two facts set the realistic bar for context-specific GEMs.
 
@@ -119,4 +119,4 @@ Update (2026-10-28): Stage A context families (W4) and GPR curation (W5) fail th
     - `version` = the Human-GEM release.
   - Open: builders must emit the re-opened (repaired) reaction set; F4 needs its scaled bounds stored to be exportable; MEMOTE/FROG need a separate venv.
 - [~] 11. W7 auto-research loop (ea8823f; review pending). Stopped after 10 consecutive failures (~2.4 h of the 4 h box, 8.9 CPU-h). Current best at start B6 (0.889 tAP; B2 0.900). **GEM features add nothing to gene-prior ML** (H-a −0.003; stacking β ≈ 0). Promoted: **W7-05 = B6 with monotone b2/b2m** (0.903; +0.014 vs B6, +0.003 vs B2; no GEM content); look W7_shortlist_1 prepared. W7-03 artefact-only biomass variant fixes W3-MEV (mevalonate lethal in 19/19 serum media) and keeps 57% of P1's gain (exploratory). Gene-grouped CV: W7-05 0.185 vs null 0.124, i.e. the ML score is nearly all gene prior.
-- [ ] 10. REPORT.md
+- [x] 10. REPORT.md (1196e26/949ccb9): complete; non-author review M9 (APPROVE WITH FIXES, all applied); 570 numbers machine-checked; T1 partial recompute exact. Final process review notes/milestone_reviews/M5M9_process_review.md.
