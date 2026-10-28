@@ -1,0 +1,21 @@
+{
+ "n_val_lines": 198,
+ "seeds": [
+  11,
+  23,
+  37
+ ],
+ "n_rows_look": 567468,
+ "W7:B6": {
+  "n_missing": 0,
+  "max_abs_diff": 0.0,
+  "bitwise_equal": true
+ },
+ "W7:W7-05": {
+  "n_missing": 0,
+  "max_abs_diff": 0.0,
+  "bitwise_equal": true
+ },
+ "cpu_h": 0.06550145583333333,
+ "wall_h": 0.021821101837688022
+}
