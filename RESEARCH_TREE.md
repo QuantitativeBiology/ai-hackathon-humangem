@@ -6,7 +6,7 @@ Legend: [ ] planned · [~] in progress · [x] done · [-] abandoned/negative · 
 
 M2 is complete. The generic models were scored on 686 training lines (12 lineages). H1 beats H2 on tie-aware AUPRC: tAP_line 0.300 vs 0.292. Their paper-protocol MCCs are similar: 0.329 vs 0.331 (P57 × L-ge06). An independent reviewer recomputed every headline number with its own code and matched it exactly. The single W1 validation look (1 of 40, scalars only, 198 lines in 4 lineages) set **G\* = Human1**: Δ̄_lin(H2−H1) = −0.0071 [−0.0079, −0.0063]. Label-only gene-prior baselines score far higher (B2 tAP 0.90). About 42% of positive gene × line pairs fall outside the H2 addressable set. These two facts set the realistic bar for context-specific GEMs.
 
-Update (2026-10-28): Stage A context families (W4) and GPR curation (W5) fail the training gate. W3's cofactor-pool biomass leave-out is the first lever to pass it (+0.034 on H1, flags W3-D1/W3-MEV); it goes to one validation look once the generic shortlist harness passes review. Next: M6 combination factorial, W6 flux information, W7 hybrids with gene priors.
+Update (2026-10-28): Stage A context families (W4) and GPR curation (W5) fail the training gate. W3's cofactor-pool biomass leave-out is the first lever to pass it (+0.034 on H1, flags W3-D1/W3-MEV); it passed its validation look (+0.032 [0.031, 0.033], look 2/40). Next: M6 combination factorial, W6 flux information, W7 hybrids with gene priors.
 
 ## Decisions
 - **D8 (2026-10-27, user)**: CORDA is not dropped. It runs as a 10-line comparison (A7: one representative panel line per lineage, R1 and R3, real RNA, ≈ 33 CPU-h). It is descriptive only, not eligible for P1.
@@ -74,7 +74,7 @@ Update (2026-10-28): Stage A context families (W4) and GPR curation (W5) fail th
     - [-] Metabolite-pool B-loo (+0.0056, CE-only) withdrawn (A11c). Task modes, O-MOMA, O-NGAM, O-cap, D-modes do not qualify; task modes help only without common essentials (as W1).
     - [!] With vitamin-D B-loo, serum cholesterol rescues post-squalene sterol genes dose-dependently; dihydroorotate B-loo lets uridine rescue CAD. ETF positive control fails in H1.
     - [-] A8 gene-pFBA tie-break: +0.0003 vs ratio_r (H1), breaks only 13–14 ties; far below B8+.
-    - [ ] Validation look W3_M4_shortlist: generic 'shortlist' harness kind written (worktree), under independent code review (A6(2)).
+    - [x] **Validation look W3_M4_shortlist (look 2/40, 5537c83; harness 5e44fb6 reviewed + re-checked): gate PASSED.** Δ̄_lin vs G* = **+0.0322 [0.0308, 0.0334]** (198 lines, 4 lineages); tAP_lin 0.302 → 0.334; without CE_fit 0.149 → 0.168; expressed pairs 0.352 → 0.380. Training estimate +0.0343 replicated. H2 variant 0.329 (descriptive). Flags W3-D1, W3-MEV carried. This is the first lever to beat G* on held-out lineages; candidate component for P1 (M6).
     - [ ] W7 exploratory: 'artefact groups only' B-loo variant (reviewer suggestion, post hoc).
 - [~] 6. Context-specific models (omics integration; method-vs-tissue clustering test)
   - [x] 6.1 W4 pilots (Opus): F0, F2 GIMME, F3 FASTCORE, F4 E-Flux, F5 LCP builder; repair rule restores 12/12 lines (0.62–0.88 of generic WT); loss rule order-independent; 1.7–3.3 CPU-min per build. CORDA 1.5–1.7 CPU-h per model → full A6 dropped (A4); replaced by a 10-line comparison row A6′ (A7, user D8).
