@@ -1,0 +1,217 @@
+medium_sweep	entrez	ko	type	rank	reaction	name	subsystem	v_wt	v_ko	delta
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	reaction	1	MAR04855		Transport reactions	0	-181.141	-181.141
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	reaction	2	MAR04888		Transport reactions	-646.559	-764.789	-118.23
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	reaction	3	MAR04851		Transport reactions	116.579	0	-116.579
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	reaction	4	MAR04854		Transport reactions	-116.579	0	116.579
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	reaction	5	MAR08609	L-Proline:NADP+ 5-oxidoreductase	Arginine and proline metabolism	0	102.411	102.411
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	reaction	6	MAR00710	Isocitrate:NADP+ oxidoreductase (decarboxylating)	Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism	848.519	751.769	-96.7506
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	reaction	7	MAR03958	Isocitrate:NADP+ oxidoreductase (decarboxylating)	Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism	-848.635	-751.884	96.7506
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	reaction	8	MAR02303	Mitochondrial Carrier (Mc) Tcdb:2.A.29.7.2	Transport reactions	848.635	751.884	-96.7506
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	reaction	9	MAR04852		Transport reactions	883.421	973.724	90.3037
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	reaction	10	MAR13080	Htmi	Transport reactions	998.941	918.629	-80.3116
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	exchange	1	MAR11400	Exchange of fumarate	Exchange/demand reactions	120.221	184.783	64.5619
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	exchange	2	MAR11404	Exchange of malate	Exchange/demand reactions	856.886	792.324	-64.5619
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	exchange	3	MAR11420	Exchange of NH4+	Exchange/demand reactions	86.8598	135.235	48.3753
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	exchange	4	MAR10192	Exchange of dihydrothymine	Exchange/demand reactions	900.504	852.129	-48.3753
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	exchange	5	MAR09078	Exchange of HCO3-	Exchange/demand reactions	33.842	76.9242	43.0822
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	exchange	6	MAR10663	Exchange of Prolyl-Prolyl-Proline	Exchange/demand reactions	11.9315	28.0566	16.1251
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	exchange	7	MAR09079	Exchange of H+	Exchange/demand reactions	212.033	228.158	16.1251
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	reaction_ko	exchange	8	MAR09058	Exchange of CO2	Exchange/demand reactions	989.352	1000	10.6476
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	reaction	1	MAR11941	Assumed Passive Diffusion into Extracellular Space	Transport reactions	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	reaction	2	MAR04595	ATP:D-xylulose 5-phosphotransferase	Pentose and glucuronate interconversions	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	reaction	3	MAR04368	ATP:3-phospho-D-glycerate 1-phosphotransferase	Glycolysis / Gluconeogenesis	999.955	-0.0294935	-999.985
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	reaction	4	MAR04363	2-phospho-D-glycerate hydro-lyase (phosphoenolpyruvate-forming)	Glycolysis / Gluconeogenesis	999.805	-0.128507	-999.933
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	reaction	5	MAR04365	D-phosphoglycerate 2,3-phosphomutase	Glycolysis / Gluconeogenesis	-999.805	0.128507	999.933
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	reaction	6	MAR04358	ATP:pyruvate 2-O-phosphotransferase	Glycolysis / Gluconeogenesis	999.805	0	-999.805
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	reaction	7	MAR03949		Transport reactions	0	980.856	980.856
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	reaction	8	MAR03827	L-Aspartate:2-oxoglutarate aminotransferase	Alanine, aspartate and glutamate metabolism	0	-980.856	-980.856
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	reaction	9	MAR03825		Transport reactions	0	980.856	980.856
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	reaction	10	MAR04381	D-glucose-6-phosphate aldose-ketose-isomerase	Glycolysis / Gluconeogenesis	-19.7811	-982.021	-962.24
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	exchange	1	MAR11942	Exchange of D-xylulose	Exchange/demand reactions	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	exchange	2	MAR09034	Exchange of glucose	Exchange/demand reactions	-47.0879	-1000	-952.912
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	exchange	3	MAR11404	Exchange of malate	Exchange/demand reactions	856.886	0	-856.886
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	exchange	4	MAR09406	Exchange of ribose	Exchange/demand reactions	0	762.89	762.89
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	exchange	5	MAR09061	Exchange of alanine	Exchange/demand reactions	494.739	0	-494.739
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	exchange	6	MAR10687	Exchange of Tryptophanyl-Aspartyl-Aspartate	Exchange/demand reactions	0	481.778	481.778
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	exchange	7	MAR09045	Exchange of tryptophan	Exchange/demand reactions	-3.49357	-484.078	-480.584
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	reaction_ko	exchange	8	MAR09058	Exchange of CO2	Exchange/demand reactions	989.352	759.201	-230.152
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	reaction	1	MAR04381	D-glucose-6-phosphate aldose-ketose-isomerase	Glycolysis / Gluconeogenesis	-514.076	1000	1514.08
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	reaction	2	MAR04625	6-Phospho-D-glucono-1,5-lactone lactonohydrolase	Pentose phosphate pathway	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	reaction	3	MAR04446	5-methyltetrahydrofolate:NADP+ oxidoreductase	Folate metabolism	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	reaction	4	MAR04139	(S)-malate:NAD+ oxidoreductase	Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism	0	-1000	-1000
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	reaction	5	MAR04474	Phosphogluconate dehydrogenase	Pentose phosphate pathway	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	reaction	6	MAR08971	Glucose 6-Phosphate Dehydrogenase	Pentose phosphate pathway	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	reaction	7	MAR05078		Transport reactions	0	-1000	-1000
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	reaction	8	MAR04873		Transport reactions	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	reaction	9	MAR04477	D-Ribulose-5-phosphate 3-epimerase	Pentose phosphate pathway	6.49909	-844.844	-851.343
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	reaction	10	MAR09030	Transport of L-Malate	Transport reactions	-803.621	0	803.621
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	exchange	1	MAR09079	Exchange of H+	Exchange/demand reactions	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	exchange	2	MAR09047	Exchange of H2O	Exchange/demand reactions	0	-1000	-1000
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	exchange	3	MAR09073	Exchange of NH3	Exchange/demand reactions	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	exchange	4	MAR09078	Exchange of HCO3-	Exchange/demand reactions	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	exchange	5	MAR11404	Exchange of malate	Exchange/demand reactions	803.621	0	-803.621
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	exchange	6	MAR09363	Exchange of cystine	Exchange/demand reactions	-2.7556	-592.841	-590.085
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	exchange	7	MAR09685	Exchange of D-glucitol	Exchange/demand reactions	0	589.481	589.481
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	reaction_ko	exchange	8	MAR09146	Exchange of folate	Exchange/demand reactions	-419.18	-1000	-580.82
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	reaction	1	MAR04368	ATP:3-phospho-D-glycerate 1-phosphotransferase	Glycolysis / Gluconeogenesis	999.968	-0.0189571	-999.987
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	reaction	2	MAR04363	2-phospho-D-glycerate hydro-lyase (phosphoenolpyruvate-forming)	Glycolysis / Gluconeogenesis	999.862	0	-999.862
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	reaction	3	MAR04365	D-phosphoglycerate 2,3-phosphomutase	Glycolysis / Gluconeogenesis	-999.862	0	999.862
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	reaction	4	MAR04358	ATP:pyruvate 2-O-phosphotransferase	Glycolysis / Gluconeogenesis	999.491	0	-999.491
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	reaction	5	MAR05078		Transport reactions	0	-970.3	-970.3
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	reaction	6	MAR09802	L-glutamine amidohydrolase	Alanine, aspartate and glutamate metabolism	0	950.573	950.573
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	reaction	7	MAR04196	L-Glutamine:pyruvate aminotransferase	Alanine, aspartate and glutamate metabolism	901.276	0	-901.276
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	reaction	8	MAR04114	2-oxoglutaramate amidohydrolase	Alanine, aspartate and glutamate metabolism	901.276	0	-901.276
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	reaction	9	MAR03949		Transport reactions	0	812.073	812.073
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	reaction	10	MAR04139	(S)-malate:NAD+ oxidoreductase	Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism	0	-812.073	-812.073
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	exchange	1	MAR11404	Exchange of malate	Exchange/demand reactions	803.621	0	-803.621
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	exchange	2	MAR09061	Exchange of alanine	Exchange/demand reactions	897.423	124.729	-772.693
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	exchange	3	MAR09034	Exchange of glucose	Exchange/demand reactions	-533.335	-20.0021	513.333
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	exchange	4	MAR09069	Exchange of serine	Exchange/demand reactions	-397.881	-111.017	286.864
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	exchange	5	MAR09234	Exchange of 5-methyl-THF	Exchange/demand reactions	419.18	139.148	-280.032
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	exchange	6	MAR09067	Exchange of glycine	Exchange/demand reactions	356.126	86.1225	-270.003
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	exchange	7	MAR09421	Exchange of THF	Exchange/demand reactions	0	245.992	245.992
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	reaction_ko	exchange	8	MAR10687	Exchange of Tryptophanyl-Aspartyl-Aspartate	Exchange/demand reactions	0	212.317	212.317
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	reaction	1	MAR04381	D-glucose-6-phosphate aldose-ketose-isomerase	Glycolysis / Gluconeogenesis	-514.076	1000	1514.08
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	reaction	2	MAR08971	Glucose 6-Phosphate Dehydrogenase	Pentose phosphate pathway	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	reaction	3	MAR05078		Transport reactions	0	-1000	-1000
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	reaction	4	MAR04625	6-Phospho-D-glucono-1,5-lactone lactonohydrolase	Pentose phosphate pathway	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	reaction	5	MAR04474	Phosphogluconate dehydrogenase	Pentose phosphate pathway	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	reaction	6	MAR05068		Transport reactions	0	994.817	994.817
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	reaction	7	MAR03899	L-Alanine:2-oxoglutarate aminotransferase	Alanine, aspartate and glutamate metabolism	-92.9364	-1000	-907.064
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	reaction	8	MAR03829	L-Aspartate:2-oxoglutarate aminotransferase	Alanine, aspartate and glutamate metabolism	0	-891.386	-891.386
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	reaction	9	MAR04139	(S)-malate:NAD+ oxidoreductase	Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism	0	-891.386	-891.386
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	reaction	10	MAR00710	Isocitrate:NADP+ oxidoreductase (decarboxylating)	Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism	508.276	-350.529	-858.805
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	exchange	1	MAR09079	Exchange of H+	Exchange/demand reactions	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	exchange	2	MAR09078	Exchange of HCO3-	Exchange/demand reactions	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	exchange	3	MAR09066	Exchange of arginine	Exchange/demand reactions	-12.7888	-994.817	-982.029
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	exchange	4	MAR09061	Exchange of alanine	Exchange/demand reactions	935.384	2.1972	-933.187
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	exchange	5	MAR09047	Exchange of H2O	Exchange/demand reactions	0	-923.24	-923.24
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	exchange	6	MAR10532	Exchange of Asparaginyl-Alanyl-Arginine	Exchange/demand reactions	0	839.348	839.348
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	exchange	7	MAR11404	Exchange of malate	Exchange/demand reactions	803.621	0	-803.621
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	reaction_ko	exchange	8	MAR09133	Exchange of pyruvate	Exchange/demand reactions	0	-614.423	-614.423
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	reaction	1	MAR05078		Transport reactions	0	-1000	-1000
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	reaction	2	MAR04368	ATP:3-phospho-D-glycerate 1-phosphotransferase	Glycolysis / Gluconeogenesis	999.968	-0.0189571	-999.987
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	reaction	3	MAR04363	2-phospho-D-glycerate hydro-lyase (phosphoenolpyruvate-forming)	Glycolysis / Gluconeogenesis	999.862	0	-999.862
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	reaction	4	MAR04365	D-phosphoglycerate 2,3-phosphomutase	Glycolysis / Gluconeogenesis	-999.862	0	999.862
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	reaction	5	MAR04358	ATP:pyruvate 2-O-phosphotransferase	Glycolysis / Gluconeogenesis	999.495	0	-999.495
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	reaction	6	MAR09802	L-glutamine amidohydrolase	Alanine, aspartate and glutamate metabolism	0	967.054	967.054
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	reaction	7	MAR04852		Transport reactions	937.173	0	-937.173
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	reaction	8	MAR04196	L-Glutamine:pyruvate aminotransferase	Alanine, aspartate and glutamate metabolism	901.276	0	-901.276
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	reaction	9	MAR04114	2-oxoglutaramate amidohydrolase	Alanine, aspartate and glutamate metabolism	901.276	0	-901.276
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	reaction	10	MAR03949		Transport reactions	0	718.475	718.475
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	exchange	1	MAR09061	Exchange of alanine	Exchange/demand reactions	935.384	248.725	-686.659
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	exchange	2	MAR11404	Exchange of malate	Exchange/demand reactions	803.621	260.838	-542.783
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	exchange	3	MAR09034	Exchange of glucose	Exchange/demand reactions	-533.335	-20.0021	513.333
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	exchange	4	MAR10541	Exchange of Aspartyl-Methionyl-Aspartate	Exchange/demand reactions	10.1936	356.789	346.596
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	exchange	5	MAR09042	Exchange of methionine	Exchange/demand reactions	-15.8075	-360.158	-344.35
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	exchange	6	MAR09133	Exchange of pyruvate	Exchange/demand reactions	0	-262.119	-262.119
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	exchange	7	MAR09234	Exchange of 5-methyl-THF	Exchange/demand reactions	419.18	196.303	-222.877
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	reaction_ko	exchange	8	MAR09069	Exchange of serine	Exchange/demand reactions	-397.881	-183.371	214.51
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	reaction	1	MAR04381	D-glucose-6-phosphate aldose-ketose-isomerase	Glycolysis / Gluconeogenesis	-514.128	1000	1514.13
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	reaction	2	MAR04625	6-Phospho-D-glucono-1,5-lactone lactonohydrolase	Pentose phosphate pathway	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	reaction	3	MAR08971	Glucose 6-Phosphate Dehydrogenase	Pentose phosphate pathway	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	reaction	4	MAR04474	Phosphogluconate dehydrogenase	Pentose phosphate pathway	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	reaction	5	MAR09030	Transport of L-Malate	Transport reactions	-966.627	0	966.627
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	reaction	6	MAR00710	Isocitrate:NADP+ oxidoreductase (decarboxylating)	Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism	378.092	-503.033	-881.125
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	reaction	7	MAR03802	L-glutamate:NAD+ oxidoreductase (deaminating)	Alanine, aspartate and glutamate metabolism	0	674.935	674.935
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	reaction	8	MAR06380		Transport reactions	0	658.069	658.069
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	reaction	9	MAR04919		Transport reactions	384.768	1000	615.232
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	reaction	10	MAR03825		Transport reactions	28.2931	616.451	588.158
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	exchange	1	MAR11404	Exchange of malate	Exchange/demand reactions	966.627	0	-966.627
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	exchange	2	MAR09079	Exchange of H+	Exchange/demand reactions	134.619	879.447	744.828
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	exchange	3	MAR09063	Exchange of glutamine	Exchange/demand reactions	-339.81	-1000	-660.19
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	exchange	4	MAR09058	Exchange of CO2	Exchange/demand reactions	384.768	1000	615.232
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	exchange	5	MAR09034	Exchange of glucose	Exchange/demand reactions	-533.459	-32.7224	500.737
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	exchange	6	MAR09234	Exchange of 5-methyl-THF	Exchange/demand reactions	180.664	680.008	499.343
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	exchange	7	MAR09146	Exchange of folate	Exchange/demand reactions	-180.664	-680.008	-499.343
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	reaction_ko	exchange	8	MAR09361	Exchange of inositol	Exchange/demand reactions	-0.717103	-492.729	-492.012
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	reaction	1	MAR04368	ATP:3-phospho-D-glycerate 1-phosphotransferase	Glycolysis / Gluconeogenesis	999.968	-0.0190285	-999.987
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	reaction	2	MAR04365	D-phosphoglycerate 2,3-phosphomutase	Glycolysis / Gluconeogenesis	-999.862	0.0829097	999.945
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	reaction	3	MAR04363	2-phospho-D-glycerate hydro-lyase (phosphoenolpyruvate-forming)	Glycolysis / Gluconeogenesis	999.862	-0.0829097	-999.945
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	reaction	4	MAR04358	ATP:pyruvate 2-O-phosphotransferase	Glycolysis / Gluconeogenesis	999.862	0	-999.862
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	reaction	5	MAR09030	Transport of L-Malate	Transport reactions	-966.627	-68.6753	897.952
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	reaction	6	MAR03899	L-Alanine:2-oxoglutarate aminotransferase	Alanine, aspartate and glutamate metabolism	-967.171	-428.83	538.341
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	reaction	7	MAR04394	ATP:D-glucose 6-phosphotransferase	Glycolysis / Gluconeogenesis	533.459	20.0773	-513.382
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	reaction	8	MAR05029		Transport reactions	-533.459	-20.0773	513.382
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	reaction	9	MAR04139	(S)-malate:NAD+ oxidoreductase	Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism	0	-512.198	-512.198
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	reaction	10	MAR03829	L-Aspartate:2-oxoglutarate aminotransferase	Alanine, aspartate and glutamate metabolism	0	-512.115	-512.115
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	exchange	1	MAR11404	Exchange of malate	Exchange/demand reactions	966.627	68.6753	-897.952
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	exchange	2	MAR09034	Exchange of glucose	Exchange/demand reactions	-533.459	-20.0773	513.382
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	exchange	3	MAR09061	Exchange of alanine	Exchange/demand reactions	731.076	277.226	-453.849
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	exchange	4	MAR09070	Exchange of aspartate	Exchange/demand reactions	0	412.424	412.424
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	exchange	5	MAR11420	Exchange of NH4+	Exchange/demand reactions	329.752	15.7931	-313.959
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	exchange	6	MAR09038	Exchange of histidine	Exchange/demand reactions	-280.222	-9.18652	271.035
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	exchange	7	MAR09078	Exchange of HCO3-	Exchange/demand reactions	611.869	847.659	235.79
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	reaction_ko	exchange	8	MAR09234	Exchange of 5-methyl-THF	Exchange/demand reactions	180.664	13.9976	-166.667
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	reaction	1	MAR04888		Transport reactions	-1000	-512.268	487.732
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	reaction	2	MAR04854		Transport reactions	-487.37	0	487.37
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	reaction	3	MAR04851		Transport reactions	487.37	0	-487.37
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	reaction	4	MAR04408	(S)-malate hydro-lyase (fumarate-forming)	Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism	-483.046	-970.415	-487.37
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	reaction	5	MAR04410	(S)-malate hydro-lyase (fumarate-forming)	Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism	512.4	999.77	487.37
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	reaction	6	MAR04852		Transport reactions	512.4	970.745	458.345
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	reaction	7	MAR07638		Transport reactions	422.631	0	-422.631
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	reaction	8	MAR05016		Transport reactions	7.62282	429.892	422.269
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	reaction	9	MAR05015		Transport reactions	7.62282	429.892	422.269
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	reaction	10	MAR13080	Htmi	Transport reactions	1000	600.727	-399.273
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	exchange	1	MAR09034	Exchange of glucose	Exchange/demand reactions	-1.14432	-2.93672	-1.79241
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	exchange	2	MAR09406	Exchange of ribose	Exchange/demand reactions	680.544	681.997	1.45261
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	exchange	3	MAR09401	Exchange of ribitol	Exchange/demand reactions	248.891	249.589	0.698277
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	exchange	4	MAR09073	Exchange of NH3	Exchange/demand reactions	58.6758	58.3137	-0.362089
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	exchange	5	MAR09068	Exchange of proline	Exchange/demand reactions	0	-0.362089	-0.362089
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	exchange	6	MAR10192	Exchange of dihydrothymine	Exchange/demand reactions	929.077	929.439	0.362089
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	exchange	7	MAR09035	Exchange of linoleate	Exchange/demand reactions	-10.7682	-10.7423	0.0259008
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	reaction_ko	exchange	8	MAR09036	Exchange of linolenate	Exchange/demand reactions	-2.2307	-2.2566	-0.0259008
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	reaction	1	MAR11941	Assumed Passive Diffusion into Extracellular Space	Transport reactions	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	reaction	2	MAR04595	ATP:D-xylulose 5-phosphotransferase	Pentose and glucuronate interconversions	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	reaction	3	MAR04368	ATP:3-phospho-D-glycerate 1-phosphotransferase	Glycolysis / Gluconeogenesis	999.943	-0.0407152	-999.984
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	reaction	4	MAR04358	ATP:pyruvate 2-O-phosphotransferase	Glycolysis / Gluconeogenesis	999.752	0	-999.752
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	reaction	5	MAR04365	D-phosphoglycerate 2,3-phosphomutase	Glycolysis / Gluconeogenesis	-999.752	0	999.752
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	reaction	6	MAR04363	2-phospho-D-glycerate hydro-lyase (phosphoenolpyruvate-forming)	Glycolysis / Gluconeogenesis	999.752	0	-999.752
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	reaction	7	MAR04885		Transport reactions	0	-994.171	-994.171
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	reaction	8	MAR03949		Transport reactions	0	973.749	973.749
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	reaction	9	MAR03827	L-Aspartate:2-oxoglutarate aminotransferase	Alanine, aspartate and glutamate metabolism	0	-973.749	-973.749
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	reaction	10	MAR03825		Transport reactions	0	973.749	973.749
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	exchange	1	MAR11942	Exchange of D-xylulose	Exchange/demand reactions	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	exchange	2	MAR09047	Exchange of H2O	Exchange/demand reactions	0	-1000	-1000
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	exchange	3	MAR11400	Exchange of fumarate	Exchange/demand reactions	970.301	13.3857	-956.916
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	exchange	4	MAR10687	Exchange of Tryptophanyl-Aspartyl-Aspartate	Exchange/demand reactions	0	476.629	476.629
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	exchange	5	MAR09045	Exchange of tryptophan	Exchange/demand reactions	-4.44782	-479.804	-475.357
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	exchange	6	MAR09061	Exchange of alanine	Exchange/demand reactions	385.933	0	-385.933
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	exchange	7	MAR09034	Exchange of glucose	Exchange/demand reactions	-1.14432	-375.864	-374.719
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	reaction_ko	exchange	8	MAR09406	Exchange of ribose	Exchange/demand reactions	680.544	1000	319.456
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	reaction	1	MAR04381	D-glucose-6-phosphate aldose-ketose-isomerase	Glycolysis / Gluconeogenesis	-514.133	1000	1514.13
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	reaction	2	MAR04625	6-Phospho-D-glucono-1,5-lactone lactonohydrolase	Pentose phosphate pathway	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	reaction	3	MAR04474	Phosphogluconate dehydrogenase	Pentose phosphate pathway	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	reaction	4	MAR08971	Glucose 6-Phosphate Dehydrogenase	Pentose phosphate pathway	0	1000	1000
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	reaction	5	MAR13080	Htmi	Transport reactions	1000	0	-1000
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	reaction	6	MAR04141	(S)-malate:NAD+ oxidoreductase	Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism	-28.3023	-995.933	-967.631
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	reaction	7	MAR03827	L-Aspartate:2-oxoglutarate aminotransferase	Alanine, aspartate and glutamate metabolism	-28.3023	-995.933	-967.631
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	reaction	8	MAR03825		Transport reactions	28.3023	995.933	967.631
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	reaction	9	MAR04852		Transport reactions	966.8	0	-966.8
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	reaction	10	MAR09030	Transport of L-Malate	Transport reactions	-966.617	0	966.617
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	exchange	1	MAR11404	Exchange of malate	Exchange/demand reactions	966.617	0	-966.617
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	exchange	2	MAR09087	Exchange of ornithine	Exchange/demand reactions	311.614	988.538	676.925
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	exchange	3	MAR09063	Exchange of glutamine	Exchange/demand reactions	-340.33	-1000	-659.67
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	exchange	4	MAR09067	Exchange of glycine	Exchange/demand reactions	0	629.574	629.574
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	exchange	5	MAR09079	Exchange of H+	Exchange/demand reactions	134.66	758.001	623.341
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	exchange	6	MAR09069	Exchange of serine	Exchange/demand reactions	-41.5215	-662.352	-620.831
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	exchange	7	MAR09058	Exchange of CO2	Exchange/demand reactions	384.553	1000	615.447
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	reaction_ko	exchange	8	MAR09279	Exchange of cys-gly	Exchange/demand reactions	0	505.522	505.522
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	reaction	1	MAR13080	Htmi	Transport reactions	1000	0	-1000
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	reaction	2	MAR04368	ATP:3-phospho-D-glycerate 1-phosphotransferase	Glycolysis / Gluconeogenesis	999.968	-0.0190347	-999.987
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	reaction	3	MAR04365	D-phosphoglycerate 2,3-phosphomutase	Glycolysis / Gluconeogenesis	-999.862	0.0829369	999.945
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	reaction	4	MAR04363	2-phospho-D-glycerate hydro-lyase (phosphoenolpyruvate-forming)	Glycolysis / Gluconeogenesis	999.862	-0.0829369	-999.945
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	reaction	5	MAR04358	ATP:pyruvate 2-O-phosphotransferase	Glycolysis / Gluconeogenesis	999.862	0	-999.862
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	reaction	6	MAR09030	Transport of L-Malate	Transport reactions	-966.617	0	966.617
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	reaction	7	MAR03827	L-Aspartate:2-oxoglutarate aminotransferase	Alanine, aspartate and glutamate metabolism	-28.3023	-638.181	-609.879
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	reaction	8	MAR03825		Transport reactions	28.3023	638.181	609.879
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	reaction	9	MAR03899	L-Alanine:2-oxoglutarate aminotransferase	Alanine, aspartate and glutamate metabolism	-967.16	-359.001	608.159
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	reaction	10	MAR04852		Transport reactions	966.8	358.785	-608.015
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	exchange	1	MAR11404	Exchange of malate	Exchange/demand reactions	966.617	0	-966.617
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	exchange	2	MAR09070	Exchange of aspartate	Exchange/demand reactions	0	516.794	516.794
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	exchange	3	MAR09034	Exchange of glucose	Exchange/demand reactions	-533.47	-20.0839	513.386
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	exchange	4	MAR09061	Exchange of alanine	Exchange/demand reactions	730.155	242.025	-488.13
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	exchange	5	MAR11420	Exchange of NH4+	Exchange/demand reactions	329.844	15.6351	-314.209
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	exchange	6	MAR09038	Exchange of histidine	Exchange/demand reactions	-280.723	-9.18953	271.533
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	exchange	7	MAR09058	Exchange of CO2	Exchange/demand reactions	384.553	578.449	193.896
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	reaction_ko	exchange	8	MAR09234	Exchange of 5-methyl-THF	Exchange/demand reactions	180.306	13.7561	-166.55

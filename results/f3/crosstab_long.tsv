@@ -1,0 +1,11 @@
+failure_account_class	n_worst_cells	worst_cells_mechanisms	frac_of_all_fn_T1
+missing_from_model	1	outside_model=1	0.0308718
+unexpressed	0		0.0265981
+cn_amplified	0		0.00196248
+paralog_buffered	7	function_not_represented=4;alternative_pathway=2;isozyme_in_gpr=1	0.370122
+medium_sensitive	0		0.0393593
+complex_subunit	13	function_not_represented=7;isozyme_in_gpr=4;alternative_pathway=1;outside_model=1	0.487593
+housekeeping_adjacent	2	function_not_represented=2	0.115986
+biomass_artefact_lethal	0		0.0048813
+expected_fba_failure	1	function_not_represented=1	0.0477172
+common_essential		not reproduced (label-derived)	0.391022

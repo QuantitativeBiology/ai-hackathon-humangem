@@ -1,0 +1,18 @@
+{
+ "n_cells": 20,
+ "n_fn_cells": 20,
+ "n_fp_cells": 0,
+ "n_media": 6,
+ "classes": {
+  "function_not_represented": 13,
+  "isozyme_in_gpr": 4,
+  "alternative_pathway": 2,
+  "outside_model": 1
+ },
+ "gene_ko_ratio_matches_p1_sweep_e": true,
+ "max_abs_dev_vs_p1": 0.0,
+ "lines_traced_equal_n_lines": true,
+ "wall_s": 113.8,
+ "solver": "glpk",
+ "workers": 6
+}

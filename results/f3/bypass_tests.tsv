@@ -1,0 +1,50 @@
+medium_sweep	entrez	exchange	exchange_name	wt_growth_without	rxnko_growth_without	rel	bypass
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	226	MAR09034	Exchange of glucose	66.1766	66.1713	0.99992	False
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	MAR09034	Exchange of glucose	66.1766	39.7826	0.601158	False
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	MAR09045	Exchange of tryptophan	-7.40264e-13	-7.48507e-28		False
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	MAR09067	Exchange of glycine	66.1774	43.5714	0.658404	False
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	MAR09133	Exchange of pyruvate	66.1774	43.5714	0.658404	False
+B-loo:cofactor_pool_biomass|human1:24f533da22a08aee	2597	MAR09068	Exchange of proline	66.1774	43.5714	0.658404	False
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	MAR09047	Exchange of H2O	46.6734	37.2155	0.797359	False
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	MAR09363	Exchange of cystine	46.4697	37.0526	0.79735	False
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	MAR09146	Exchange of folate	46.6734	37.0378	0.793553	False
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	MAR09042	Exchange of methionine	1.78497e-12	-3.3824e-14		False
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	226	MAR09064	Exchange of tyrosine	46.6734	37.2155	0.797359	False
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	MAR09045	Exchange of tryptophan	2.99972e-13	0		False
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	MAR09042	Exchange of methionine	5.07545e-27	0		False
+B-loo:cofactor_pool_biomass|human1:5fe39a3dcfa2880f	2597	MAR00639	Exchange of stearate	46.6134	27.97	0.600042	False
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	MAR09066	Exchange of arginine	46.2035	36.8398	0.797338	False
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	MAR09047	Exchange of H2O	46.6734	37.2155	0.797359	False
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	MAR09133	Exchange of pyruvate	46.6734	37.2155	0.797359	False
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	MAR09038	Exchange of histidine	1.89211e-30	3.18846e-13		False
+B-loo:cofactor_pool_biomass|human1:671e836367589246	226	MAR09146	Exchange of folate	46.6734	37.2155	0.797359	False
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	MAR09042	Exchange of methionine	-4.08334e-14	0		False
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	MAR09133	Exchange of pyruvate	46.6734	28.0058	0.600038	False
+B-loo:cofactor_pool_biomass|human1:671e836367589246	2597	MAR00639	Exchange of stearate	46.6134	27.97	0.600042	False
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	MAR09063	Exchange of glutamine	46.3192	36.9323	0.797343	False
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	MAR09146	Exchange of folate	46.8479	37.355	0.797367	False
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	MAR09361	Exchange of inositol	46.8346	37.334	0.797145	False
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	MAR09069	Exchange of serine	46.8479	37.355	0.797367	False
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	226	MAR09066	Exchange of arginine	46.3745	36.9765	0.797345	False
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	MAR09071	Exchange of glutamate	46.8479	28.1112	0.600052	False
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	MAR09066	Exchange of arginine	46.3745	27.8254	0.600015	False
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	MAR09133	Exchange of pyruvate	46.8479	28.1112	0.600052	False
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	MAR09063	Exchange of glutamine	46.3192	27.792	0.600011	False
+B-loo:cofactor_pool_biomass|human1:a339b0701b854c39	2597	MAR00639	Exchange of stearate	46.7873	28.0751	0.600058	False
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	MAR09034	Exchange of glucose	84.2534	84.2511	0.999973	False
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	MAR09068	Exchange of proline	84.2534	84.2534	1	False
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	226	MAR09036	Exchange of linolenate	1.03581e-13	-9.12336e-15		False
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	MAR09047	Exchange of H2O	84.2534	60.1494	0.713911	False
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	MAR09045	Exchange of tryptophan	-8.94666e-15	6.59816e-14		False
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	MAR09034	Exchange of glucose	84.2534	58.7323	0.697091	False
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	MAR09069	Exchange of serine	84.2534	60.1494	0.713911	False
+B-loo:cofactor_pool_biomass|human1:d0d0efa49fd86b55	2597	MAR09068	Exchange of proline	84.2534	60.1494	0.713911	False
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	MAR09063	Exchange of glutamine	46.3341	36.9442	0.797344	False
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	MAR09069	Exchange of serine	46.8632	37.3672	0.797368	False
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	MAR09351	Exchange of GSH	46.8479	37.355	0.797367	False
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	MAR09361	Exchange of inositol	46.8498	37.3462	0.797146	False
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	226	MAR09146	Exchange of folate	46.8632	37.3672	0.797368	False
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	MAR09071	Exchange of glutamate	46.8632	28.1204	0.600053	False
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	MAR09066	Exchange of arginine	46.3895	27.8344	0.600016	False
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	MAR09063	Exchange of glutamine	46.3341	27.801	0.600012	False
+B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	2597	MAR00639	Exchange of stearate	46.8026	28.0843	0.600059	False

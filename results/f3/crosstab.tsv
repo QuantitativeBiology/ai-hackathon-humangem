@@ -1,0 +1,6 @@
+mechanism_class	n_cells	fa_missing_from_model	fa_unexpressed	fa_cn_amplified	fa_paralog_buffered	fa_medium_sensitive	fa_complex_subunit	fa_housekeeping_adjacent	fa_biomass_artefact_lethal	fa_expected_fba_failure
+alternative_pathway	2	0	0	0	2	0	1	0	0	0
+function_not_represented	13	0	0	0	4	0	7	2	0	1
+isozyme_in_gpr	4	0	0	0	1	0	4	0	0	0
+outside_model	1	1	0	0	0	0	1	0	0	0
+all	20	1	0	0	7	0	13	2	0	1
