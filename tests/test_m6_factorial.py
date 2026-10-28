@@ -18,7 +18,8 @@ import m6_common as mc  # noqa: E402
 
 
 def test_cells_fixed_by_d10():
-    assert [c.key for c in mc.CANDIDATES] == ["H1+Bloo/M0", "H1/M2", "H1+Bloo/M2"]
+    """D10 cells; candidate order per DESIGN §9 (medium < tasks < combination), D10 as corrected (review F-B1)."""
+    assert [c.key for c in mc.CANDIDATES] == ["H1/M2", "H1+Bloo/M0", "H1+Bloo/M2"]
     assert mc.REFERENCE.method == "H1" and mc.CELL["H2"].method == "H2"
     assert len(mc.CELLS) == 8 and len({c.method for c in mc.CELLS}) == 8
     for c in mc.CANDIDATES:
@@ -153,7 +154,7 @@ def test_job_status_mapping(monkeypatch, behaviour, expected):
 
 
 def test_look_spec_structure_and_workstream_rule(tmp_path):
-    """The M6 look spec passes every static harness check except the workstream rule (W<n> == results/<ws>/val)."""
+    """The M6 look spec passes every static harness check, as a milestone-level look (A13)."""
     import evaluate_val as ev
     import m6_val_spec as vs
 
@@ -161,10 +162,8 @@ def test_look_spec_structure_and_workstream_rule(tmp_path):
     assert spec["candidates"] == [c.method for c in mc.CANDIDATES]
     assert spec["methods"][:2] == ["H1", "H2"] and set(spec["methods"]) == {c.method for c in mc.CELLS}
     assert spec["reference"] == "H1" and spec["scores"]["layout"] == "line_gene"
-    with pytest.raises(ev.PreflightError, match="workstream"):
-        ev.check_spec(spec, "M6_factorial", "m6")
-    # with a W<n> workstream and a matching directory, every other static check passes
+    ev.check_spec(spec, "M6_factorial", "m6")
     alt = json.loads(json.dumps(spec))
-    alt["workstream"] = "W9"
-    alt["scores"]["path"] = "results/w9/val/m6_val_scores.parquet"
-    ev.check_spec(alt, "M6_factorial", "w9")
+    alt["milestone"] = "M4"  # an M<n> look must be that milestone's
+    with pytest.raises(ev.PreflightError, match="workstream"):
+        ev.check_spec(alt, "M6_factorial", "m6")

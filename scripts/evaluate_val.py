@@ -191,8 +191,10 @@ def check_spec(spec: dict, look_id: str, ws_dir: str) -> None:
     need(spec["look_id"] == look_id != W1_LOOK and spec["kind"] == "shortlist",
          "look_id must match the file name (and not be the W1 look); kind must be 'shortlist'")
     ws = spec["workstream"]
-    need(isinstance(ws, str) and re.fullmatch(r"W\d+", ws) is not None and ws.lower() == ws_dir,
-         f"workstream must be W<n> and match the spec's directory results/{ws_dir}/val (DESIGN §17 A11g; look caps)")
+    need(isinstance(ws, str) and re.fullmatch(r"[WM][1-9]\d*", ws) is not None and ws.lower() == ws_dir
+         and (ws[0] == "W" or spec.get("milestone") == ws),
+         f"workstream must be W<n> or M<n> (a milestone-level look whose milestone equals it, A13), without leading "
+         f"zeros, and match the spec's directory results/{ws_dir}/val (DESIGN §17 A11g; look caps)")
     methods, cands = spec["methods"], spec["candidates"]
     need(isinstance(methods, list) and len(set(methods)) == len(methods) and {"H1", "H2"} <= set(methods),
          "methods must be a list of unique names that includes H1 and H2")

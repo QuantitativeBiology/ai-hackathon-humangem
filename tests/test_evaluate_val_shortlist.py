@@ -469,12 +469,31 @@ def test_main_dry_run_prints_no_training_rates(setup, monkeypatch, capsys):
 def test_spec_workstream_must_match_directory(setup):
     """F2 (A11g): the W7 sub-cap counts looks by workstream, so a spec's workstream must be its directory's."""
     sha = ev._sha(setup["repo"] / SCORES_REL)
-    for ws in ("W3", "w9", "W9a", "M9"):
+    for ws in ("W3", "w9", "W9a", "M9", "W09"):
         _write_spec(setup["repo"], sha256=sha, workstream=ws)
         with pytest.raises(ev.PreflightError, match="workstream"):
             ev.shortlist_config(LOOK)
     _write_spec(setup["repo"], sha256=sha, workstream="W9")
     assert ev.shortlist_config(LOOK)["workstream"] == "W9"
+
+
+def test_spec_milestone_workstream_in_own_directory(setup):
+    """A13: a milestone-level look (M<n>) lives in results/m<n>/val and is not a W7 look."""
+    import shutil
+    repo, look = setup["repo"], "TOY_M9_M6"
+    scores = "results/m9/val/m9_val_scores.parquet"
+    (repo / scores).parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy(repo / SCORES_REL, repo / scores)
+    spec = _write_spec(repo, sha256=ev._sha(repo / scores), look_id=look, workstream="M9", milestone="M9")
+    spec["scores"]["path"] = scores
+    (repo / SPEC_REL).unlink()
+    (repo / f"results/m9/val/look_spec_{look}.json").write_text(json.dumps(spec, indent=1))
+    assert ev.shortlist_config(look)["workstream"] == "M9"
+    for ws, ms in (("W9", "M9"), ("m9", "M9"), ("X9", "M9"), ("M9", "M6"), ("M09", "M09")):
+        spec["workstream"], spec["milestone"] = ws, ms
+        (repo / f"results/m9/val/look_spec_{look}.json").write_text(json.dumps(spec, indent=1))
+        with pytest.raises(ev.PreflightError, match="workstream"):
+            ev.shortlist_config(look)
 
 
 def test_spec_primary_label_is_l_prob(setup):

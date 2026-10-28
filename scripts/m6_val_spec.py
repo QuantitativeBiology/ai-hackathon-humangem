@@ -4,12 +4,12 @@ For the reviewed generic harness (scripts/evaluate_val.py, look kind "shortlist"
 A11f-g, A12c). Scores: results/m6/val/m6_val_scores.parquet (written by scripts/m6_scores.py; the 198 validation
 expression lines x U, one column per method). Label-free: no label is read.
 
-Candidates in D10 order (simplest first): (1) H1 + B-loo / M0, (2) H1 / M2(f=1), (3) H1 + B-loo / M2(f=1); reference
+Candidates in DESIGN §9 order (simplest first: medium < tasks < combination; D10 as corrected): (1) H1 / M2(f=1),
+(2) H1 + B-loo / M0, (3) H1 + B-loo / M2(f=1); reference
 G* = H1 / M0; the H2 cells (generic H2 is a harness method anyway) are descriptive methods. Provenance pins the scores'
 inputs, the M6 code and the training outputs.
 
-Known harness fit issue (reported, harness not changed): check_spec requires workstream == "W<n>" and equal to the
-spec's directory results/<ws>/val (A11g look caps), so workstream "M6" in results/m6/val is refused.
+Workstream "M6" in results/m6/val is a milestone-level look (DESIGN §17 A13).
 
 Usage: .venv/bin/python scripts/m6_val_spec.py
 """
@@ -77,14 +77,14 @@ def build_spec(scores_sha: str, provenance: dict, train_summary: dict) -> dict:
             "results/w2/controls/line_sweeps.tsv (imputed / fallback / unmappable lines: W2's integrated-pipeline "
             "medium, classic RPMI + 10% FBS; onboarded lines: onboarded medium). B-loo = W3 B-loo:cofactor_pool_biomass "
             "(results/w3/structure/variants_<parent>.json). H1 and H2 columns equal the W1 generic scores. "
-            "Flags carried: W3-D1 on cells (1) and (3) (no pre-registered negative control applies to biomass "
-            "leave-outs; no claim may rest on 'beats controls'); W2-SHUF and W2-MOPEN on cells (2) and (3) (no "
+            "Flags carried: W3-D1 on cells (2) and (3) (no pre-registered negative control applies to biomass "
+            "leave-outs; no claim may rest on 'beats controls'); W2-SHUF and W2-MOPEN on cells (1) and (3) (no "
             "line-specific-medium claim; the gain is 'realistic culture medium vs Ham's'); W3-MEV on cell (3) (under "
             "serum media the cofactor-pool B-loo makes HMGCR/MVK/PMVK/MVD non-lethal; results/m6/scores/w3_mev.tsv). "
             f"Training (686 lines, 12 lineages; results/m6/train/): {tg_txt}. "
-            "This single look is also W2's validation answer (D10). Harness fit: the spec's workstream 'M6' does not "
-            "match the harness rule workstream == W<n> == results/<ws>/val (A11g), so the harness refuses it as is; "
-            "PI decision needed (see results/m6/README.md)."),
+            "This single look is also W2's validation answer (D10). Milestone-level look (A13). Candidate order "
+            "follows DESIGN §9 (medium < tasks < combination), correcting D10 before any validation scoring "
+            "(notes/reviews/M6_harness_and_spec_review.md F-B1)."),
     }
 
 

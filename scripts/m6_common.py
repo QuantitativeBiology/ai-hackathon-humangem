@@ -86,8 +86,8 @@ def _cells() -> list[Cell]:
 CELLS = _cells()
 CELL = {c.key: c for c in CELLS}
 REFERENCE = CELL["H1"]
-CANDIDATES = [CELL["H1+Bloo/M0"], CELL["H1/M2"], CELL["H1+Bloo/M2"]]  # D10 order (simplest first)
-CANDIDATE_LABEL = {"H1+Bloo/M0": "(1)", "H1/M2": "(2)", "H1+Bloo/M2": "(3)"}
+CANDIDATES = [CELL["H1/M2"], CELL["H1+Bloo/M0"], CELL["H1+Bloo/M2"]]  # DESIGN §9 order (medium < tasks < combination; D10 as corrected)
+CANDIDATE_LABEL = {"H1/M2": "(1)", "H1+Bloo/M0": "(2)", "H1+Bloo/M2": "(3)"}
 
 
 def sweep_key(variant: str, w2_sweep_id: str) -> str:
