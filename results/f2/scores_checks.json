@@ -1,0 +1,22 @@
+{
+ "gene_map_check_sweeps": 19,
+ "gene_map_check_bitwise_equal": true,
+ "mev_serum_signatures": 19,
+ "mev_F2_serum_signatures_core_lethal": 19,
+ "mev_F2_serum_core_max_ratio": 0.0,
+ "mev_F2_serum_free_signatures_core_lethal": "1/1",
+ "mev_lines_on_serum_signatures": 1359,
+ "mev_lines_core_lethal_F2": 1361,
+ "mev_lines_core_lethal_P1": 2,
+ "mev_n_lines_total": 1361,
+ "mev_P1_serum_signatures_core_lethal": 0,
+ "mev_agrees_with_w7_mev_tsv": true,
+ "val_lines": 198,
+ "val_genes": 2866,
+ "val_rows": 567468,
+ "val_H1_H2_P1_equal_M6_bitwise": true,
+ "val_pairs_F2_ne_P1": 15098,
+ "val_pairs_called_lethal_F2": 25836,
+ "val_pairs_called_lethal_P1": 21092,
+ "val_scores_sha256": "933f7e92836d8fe96edc52772eb9033fa7b9c626fbf6044d5a6c11b5f53321da"
+}
