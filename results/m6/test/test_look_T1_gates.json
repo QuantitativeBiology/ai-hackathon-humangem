@@ -1,0 +1,126 @@
+{
+ "G_star": "Human1",
+ "adds_beyond_generic_expression": {
+  "ci_lower_all_gt_0": false,
+  "claim": false,
+  "estimate_all_gt_0_descriptive": false,
+  "rule": "pre-declared claim rule: the paired \u0394\u0304_lin(P1 \u2212 B8x) CI lower bound > 0 for all three of B8+, B8\u2212, B8\u2032 (\u00a76.3, \u00a78); the all-point-estimates-positive version is descriptive only"
+ },
+ "c3_claim_condition": false,
+ "contrasts": {
+  "C1": {
+   "ci_high": 0.051252593330541926,
+   "ci_low": 0.04821913219025517,
+   "contrast": "C1",
+   "estimate": 0.04973451870770146,
+   "p": 9.999000099990002e-05,
+   "passed": true,
+   "sesoi": 0.01
+  },
+  "C1b": {
+   "ci_high": 0.039729634588004464,
+   "ci_low": 0.03514754474353756,
+   "contrast": "C1b",
+   "estimate": 0.037413587198674006,
+   "p": 9.999000099990002e-05,
+   "passed": true,
+   "sesoi": 0.005722808991032354
+  },
+  "C3": {
+   "ci_high": -0.011489530287609068,
+   "ci_low": -0.018298819010107714,
+   "contrast": "C3",
+   "estimate": -0.01141765513546442,
+   "p": 0.6381809095452274,
+   "passed": false,
+   "sesoi": null
+  }
+ },
+ "gates": [
+  {
+   "ci_low": 0.04821913219025517,
+   "claim": "meaningfully improves",
+   "confirmatory": true,
+   "contrast": "C1",
+   "estimate": 0.04973451870770146,
+   "passed": true,
+   "sesoi": 0.01,
+   "status": "confirmed"
+  },
+  {
+   "ci_low": 0.03514754474353756,
+   "claim": "meaningfully improves",
+   "confirmatory": true,
+   "contrast": "C1b",
+   "estimate": 0.037413587198674006,
+   "passed": true,
+   "sesoi": 0.005722808991032354,
+   "status": "confirmed"
+  },
+  {
+   "ci_low": -0.018298819010107714,
+   "claim": "no detectable improvement",
+   "confirmatory": true,
+   "contrast": "C3",
+   "estimate": -0.01141765513546442,
+   "passed": false,
+   "sesoi": null,
+   "status": "not confirmed"
+  },
+  {
+   "ci_low": null,
+   "claim": "estimate only (earlier gate failed)",
+   "confirmatory": false,
+   "contrast": "C4",
+   "estimate": null,
+   "passed": null,
+   "sesoi": null,
+   "status": "estimate only"
+  },
+  {
+   "ci_low": null,
+   "claim": "estimate only (earlier gate failed)",
+   "confirmatory": false,
+   "contrast": "C5",
+   "estimate": null,
+   "passed": null,
+   "sesoi": null,
+   "status": "estimate only"
+  }
+ ],
+ "generalises_to_new_tissues": true,
+ "headline": {
+  "ci": [
+   0.04821913219025517,
+   0.051252593330541926
+  ],
+  "claim": "meaningfully improves",
+  "conditional_on": "the 7 test lineages",
+  "contrast": "C1",
+  "estimate": 0.04973451870770146,
+  "p_sign_flip": 9.999000099990002e-05
+ },
+ "label": "L_prob",
+ "look": "T1",
+ "post_hoc": false,
+ "primary": "P1[H1]",
+ "tier": "test",
+ "transfer_C1": {
+  "exact_sign_flip_p": 0.0078125,
+  "generalises": true,
+  "k_positive": 7,
+  "k_required": 5,
+  "n_lineages": 7,
+  "t_high": 0.05209437535682132,
+  "t_low": 0.047374662058581596,
+  "t_mean": 0.04973451870770146
+ },
+ "with_C1b": {
+  "ci": [
+   0.03514754474353756,
+   0.039729634588004464
+  ],
+  "claim": "meaningfully improves",
+  "estimate": 0.037413587198674006
+ }
+}
