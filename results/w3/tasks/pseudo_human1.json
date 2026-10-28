@@ -1,0 +1,16 @@
+{
+ "model": "human1",
+ "list": "pseudo",
+ "n_kos": 903,
+ "n_jobs": 280,
+ "status_counts": {
+  "ok": 167,
+  "pseudo_not_generated": 113
+ },
+ "skipped_should_fail": [],
+ "n_solves": 5943,
+ "job_cpu_s": 20906.2,
+ "wall_s": 4422.1,
+ "workers": 5,
+ "solver": "glpk"
+}

@@ -1,0 +1,85 @@
+parent	medium	mode	demand	token	stoich	task	task_description
+human1	M0	D-BS	DM_w3_MAM01371c	ATP[c]	"{""MAM01371c"": -1.0}"	ESS005	ATP de novo synthesis
+human1	M0	D-BS	DM_w3_MAM01623c	CTP[c]	"{""MAM01623c"": -1.0}"	ESS006	CTP de novo synthesis
+human1	M0	D-BS	DM_w3_MAM02034c	GTP[c]	"{""MAM02034c"": -1.0}"	ESS007	GTP de novo synthesis
+human1	M0	D-BS	DM_w3_MAM03130c	UTP[c]	"{""MAM03130c"": -1.0}"	ESS008	UTP de novo synthesis
+human1	M0	D-BS	DM_w3_MAM01642c	dATP[c]	"{""MAM01642c"": -1.0}"	ESS009	dATP de novo synthesis
+human1	M0	D-BS	DM_w3_MAM01645c	dCTP[c]	"{""MAM01645c"": -1.0}"	ESS010	dCTP de novo synthesis
+human1	M0	D-BS	DM_w3_MAM01688c	dGTP[c]	"{""MAM01688c"": -1.0}"	ESS011	dGTP de novo synthesis
+human1	M0	D-BS	DM_w3_MAM01753c	dTTP[c]	"{""MAM01753c"": -1.0}"	ESS012	dTTP de novo synthesis
+human1	M0	D-BS	DM_w3_MAM01450c	cholesterol[c]	"{""MAM01450c"": -1.0}"	ESS034	Cholesterol de novo synthesis
+human1	M0	D-BS	DM_w3_MAM01308c	albumin[c]	"{""MAM01308c"": -1.0}"	ESS035	Protein synthesis from AAs
+human1	M0	D-BS	DM_w3_MAM02684c	PC-LD pool[c]	"{""MAM02684c"": -1.0}"	ESS049	Phosphatidylcholine de novo synthesis
+human1	M0	D-BS	DM_w3_MAM02685c	PE-LD pool[c]	"{""MAM02685c"": -1.0}"	ESS050	Phosphatidylethanolamine de novo synthesis
+human1	M0	D-BS	DM_w3_MAM02808c	PS-LD pool[c]	"{""MAM02808c"": -1.0}"	ESS051	Phosphatidylserine de novo synthesis
+human1	M0	D-BS	DM_w3_MAM02750c	PI pool[c]	"{""MAM02750c"": -1.0}"	ESS052	Phosphatidylinositol de novo synthesis
+human1	M0	D-BS	DM_w3_MAM02984c	thiamin-PP[c]	"{""MAM02984c"": -1.0}"	ESS053	Thiamin phosphorylation to TPP
+human1	M0	D-BS	DM_w3_MAM01597c	CoA[c]	"{""MAM01597c"": -1.0}"	ESS054	Coenzyme A synthesis from pantothenate
+human1	M0	D-BS	DM_w3_MAM01802c	FAD[c]	"{""MAM01802c"": -1.0}"	ESS055	FAD synthesis from riboflavin
+human1	M0	D-BS	DM_w3_MAM02049c	heme[c]	"{""MAM02049c"": -1.0}"	ESS056	Heme biosynthesis
+human1	M0	D-ER	DM_w3_ATP_hydrolysis	ATP_hydrolysis	"{""MAM01371c"": -1.0, ""MAM02040c"": -1.0, ""MAM01285c"": 1.0, ""MAM02751c"": 1.0, ""MAM02039c"": 1.0}"	ER	ATP_hydrolysis
+human1	M0	D-ER	DM_w3_NADH_oxidation	NADH_oxidation	"{""MAM02553c"": -1.0, ""MAM02039c"": -1.0, ""MAM02552c"": 1.0}"	ER	NADH_oxidation
+human1	M0	D-ER	DM_w3_NADPH_oxidation	NADPH_oxidation	"{""MAM02555c"": -1.0, ""MAM02039c"": -1.0, ""MAM02554c"": 1.0}"	ER	NADPH_oxidation
+human1	RPMI_M2f1	D-BS	DM_w3_MAM01371c	ATP[c]	"{""MAM01371c"": -1.0}"	ESS005	ATP de novo synthesis
+human1	RPMI_M2f1	D-BS	DM_w3_MAM01623c	CTP[c]	"{""MAM01623c"": -1.0}"	ESS006	CTP de novo synthesis
+human1	RPMI_M2f1	D-BS	DM_w3_MAM02034c	GTP[c]	"{""MAM02034c"": -1.0}"	ESS007	GTP de novo synthesis
+human1	RPMI_M2f1	D-BS	DM_w3_MAM03130c	UTP[c]	"{""MAM03130c"": -1.0}"	ESS008	UTP de novo synthesis
+human1	RPMI_M2f1	D-BS	DM_w3_MAM01642c	dATP[c]	"{""MAM01642c"": -1.0}"	ESS009	dATP de novo synthesis
+human1	RPMI_M2f1	D-BS	DM_w3_MAM01645c	dCTP[c]	"{""MAM01645c"": -1.0}"	ESS010	dCTP de novo synthesis
+human1	RPMI_M2f1	D-BS	DM_w3_MAM01688c	dGTP[c]	"{""MAM01688c"": -1.0}"	ESS011	dGTP de novo synthesis
+human1	RPMI_M2f1	D-BS	DM_w3_MAM01753c	dTTP[c]	"{""MAM01753c"": -1.0}"	ESS012	dTTP de novo synthesis
+human1	RPMI_M2f1	D-BS	DM_w3_MAM01450c	cholesterol[c]	"{""MAM01450c"": -1.0}"	ESS034	Cholesterol de novo synthesis
+human1	RPMI_M2f1	D-BS	DM_w3_MAM01308c	albumin[c]	"{""MAM01308c"": -1.0}"	ESS035	Protein synthesis from AAs
+human1	RPMI_M2f1	D-BS	DM_w3_MAM02684c	PC-LD pool[c]	"{""MAM02684c"": -1.0}"	ESS049	Phosphatidylcholine de novo synthesis
+human1	RPMI_M2f1	D-BS	DM_w3_MAM02685c	PE-LD pool[c]	"{""MAM02685c"": -1.0}"	ESS050	Phosphatidylethanolamine de novo synthesis
+human1	RPMI_M2f1	D-BS	DM_w3_MAM02808c	PS-LD pool[c]	"{""MAM02808c"": -1.0}"	ESS051	Phosphatidylserine de novo synthesis
+human1	RPMI_M2f1	D-BS	DM_w3_MAM02750c	PI pool[c]	"{""MAM02750c"": -1.0}"	ESS052	Phosphatidylinositol de novo synthesis
+human1	RPMI_M2f1	D-BS	DM_w3_MAM02984c	thiamin-PP[c]	"{""MAM02984c"": -1.0}"	ESS053	Thiamin phosphorylation to TPP
+human1	RPMI_M2f1	D-BS	DM_w3_MAM01597c	CoA[c]	"{""MAM01597c"": -1.0}"	ESS054	Coenzyme A synthesis from pantothenate
+human1	RPMI_M2f1	D-BS	DM_w3_MAM01802c	FAD[c]	"{""MAM01802c"": -1.0}"	ESS055	FAD synthesis from riboflavin
+human1	RPMI_M2f1	D-BS	DM_w3_MAM02049c	heme[c]	"{""MAM02049c"": -1.0}"	ESS056	Heme biosynthesis
+human1	RPMI_M2f1	D-ER	DM_w3_ATP_hydrolysis	ATP_hydrolysis	"{""MAM01371c"": -1.0, ""MAM02040c"": -1.0, ""MAM01285c"": 1.0, ""MAM02751c"": 1.0, ""MAM02039c"": 1.0}"	ER	ATP_hydrolysis
+human1	RPMI_M2f1	D-ER	DM_w3_NADH_oxidation	NADH_oxidation	"{""MAM02553c"": -1.0, ""MAM02039c"": -1.0, ""MAM02552c"": 1.0}"	ER	NADH_oxidation
+human1	RPMI_M2f1	D-ER	DM_w3_NADPH_oxidation	NADPH_oxidation	"{""MAM02555c"": -1.0, ""MAM02039c"": -1.0, ""MAM02554c"": 1.0}"	ER	NADPH_oxidation
+human2	M0	D-BS	DM_w3_MAM01371c	ATP[c]	"{""MAM01371c"": -1.0}"	ESS005	ATP de novo synthesis
+human2	M0	D-BS	DM_w3_MAM01623c	CTP[c]	"{""MAM01623c"": -1.0}"	ESS006	CTP de novo synthesis
+human2	M0	D-BS	DM_w3_MAM02034c	GTP[c]	"{""MAM02034c"": -1.0}"	ESS007	GTP de novo synthesis
+human2	M0	D-BS	DM_w3_MAM03130c	UTP[c]	"{""MAM03130c"": -1.0}"	ESS008	UTP de novo synthesis
+human2	M0	D-BS	DM_w3_MAM01642c	dATP[c]	"{""MAM01642c"": -1.0}"	ESS009	dATP de novo synthesis
+human2	M0	D-BS	DM_w3_MAM01645c	dCTP[c]	"{""MAM01645c"": -1.0}"	ESS010	dCTP de novo synthesis
+human2	M0	D-BS	DM_w3_MAM01688c	dGTP[c]	"{""MAM01688c"": -1.0}"	ESS011	dGTP de novo synthesis
+human2	M0	D-BS	DM_w3_MAM01753c	dTTP[c]	"{""MAM01753c"": -1.0}"	ESS012	dTTP de novo synthesis
+human2	M0	D-BS	DM_w3_MAM01450c	cholesterol[c]	"{""MAM01450c"": -1.0}"	ESS034	Cholesterol de novo synthesis
+human2	M0	D-BS	DM_w3_MAM01308c	albumin[c]	"{""MAM01308c"": -1.0}"	ESS035	Protein synthesis from AAs
+human2	M0	D-BS	DM_w3_MAM02684c	PC-LD pool[c]	"{""MAM02684c"": -1.0}"	ESS049	Phosphatidylcholine de novo synthesis
+human2	M0	D-BS	DM_w3_MAM02685c	PE-LD pool[c]	"{""MAM02685c"": -1.0}"	ESS050	Phosphatidylethanolamine de novo synthesis
+human2	M0	D-BS	DM_w3_MAM02808c	PS-LD pool[c]	"{""MAM02808c"": -1.0}"	ESS051	Phosphatidylserine de novo synthesis
+human2	M0	D-BS	DM_w3_MAM02750c	PI pool[c]	"{""MAM02750c"": -1.0}"	ESS052	Phosphatidylinositol de novo synthesis
+human2	M0	D-BS	DM_w3_MAM02984c	thiamin-PP[c]	"{""MAM02984c"": -1.0}"	ESS053	Thiamin phosphorylation to TPP
+human2	M0	D-BS	DM_w3_MAM01597c	CoA[c]	"{""MAM01597c"": -1.0}"	ESS054	Coenzyme A synthesis from pantothenate
+human2	M0	D-BS	DM_w3_MAM01802c	FAD[c]	"{""MAM01802c"": -1.0}"	ESS055	FAD synthesis from riboflavin
+human2	M0	D-BS	DM_w3_MAM02049c	heme[c]	"{""MAM02049c"": -1.0}"	ESS056	Heme biosynthesis
+human2	M0	D-ER	DM_w3_ATP_hydrolysis	ATP_hydrolysis	"{""MAM01371c"": -1.0, ""MAM02040c"": -1.0, ""MAM01285c"": 1.0, ""MAM02751c"": 1.0, ""MAM02039c"": 1.0}"	ER	ATP_hydrolysis
+human2	M0	D-ER	DM_w3_NADH_oxidation	NADH_oxidation	"{""MAM02553c"": -1.0, ""MAM02039c"": -1.0, ""MAM02552c"": 1.0}"	ER	NADH_oxidation
+human2	M0	D-ER	DM_w3_NADPH_oxidation	NADPH_oxidation	"{""MAM02555c"": -1.0, ""MAM02039c"": -1.0, ""MAM02554c"": 1.0}"	ER	NADPH_oxidation
+human2	RPMI_M2f1	D-BS	DM_w3_MAM01371c	ATP[c]	"{""MAM01371c"": -1.0}"	ESS005	ATP de novo synthesis
+human2	RPMI_M2f1	D-BS	DM_w3_MAM01623c	CTP[c]	"{""MAM01623c"": -1.0}"	ESS006	CTP de novo synthesis
+human2	RPMI_M2f1	D-BS	DM_w3_MAM02034c	GTP[c]	"{""MAM02034c"": -1.0}"	ESS007	GTP de novo synthesis
+human2	RPMI_M2f1	D-BS	DM_w3_MAM03130c	UTP[c]	"{""MAM03130c"": -1.0}"	ESS008	UTP de novo synthesis
+human2	RPMI_M2f1	D-BS	DM_w3_MAM01642c	dATP[c]	"{""MAM01642c"": -1.0}"	ESS009	dATP de novo synthesis
+human2	RPMI_M2f1	D-BS	DM_w3_MAM01645c	dCTP[c]	"{""MAM01645c"": -1.0}"	ESS010	dCTP de novo synthesis
+human2	RPMI_M2f1	D-BS	DM_w3_MAM01688c	dGTP[c]	"{""MAM01688c"": -1.0}"	ESS011	dGTP de novo synthesis
+human2	RPMI_M2f1	D-BS	DM_w3_MAM01753c	dTTP[c]	"{""MAM01753c"": -1.0}"	ESS012	dTTP de novo synthesis
+human2	RPMI_M2f1	D-BS	DM_w3_MAM01450c	cholesterol[c]	"{""MAM01450c"": -1.0}"	ESS034	Cholesterol de novo synthesis
+human2	RPMI_M2f1	D-BS	DM_w3_MAM01308c	albumin[c]	"{""MAM01308c"": -1.0}"	ESS035	Protein synthesis from AAs
+human2	RPMI_M2f1	D-BS	DM_w3_MAM02684c	PC-LD pool[c]	"{""MAM02684c"": -1.0}"	ESS049	Phosphatidylcholine de novo synthesis
+human2	RPMI_M2f1	D-BS	DM_w3_MAM02685c	PE-LD pool[c]	"{""MAM02685c"": -1.0}"	ESS050	Phosphatidylethanolamine de novo synthesis
+human2	RPMI_M2f1	D-BS	DM_w3_MAM02808c	PS-LD pool[c]	"{""MAM02808c"": -1.0}"	ESS051	Phosphatidylserine de novo synthesis
+human2	RPMI_M2f1	D-BS	DM_w3_MAM02750c	PI pool[c]	"{""MAM02750c"": -1.0}"	ESS052	Phosphatidylinositol de novo synthesis
+human2	RPMI_M2f1	D-BS	DM_w3_MAM02984c	thiamin-PP[c]	"{""MAM02984c"": -1.0}"	ESS053	Thiamin phosphorylation to TPP
+human2	RPMI_M2f1	D-BS	DM_w3_MAM01597c	CoA[c]	"{""MAM01597c"": -1.0}"	ESS054	Coenzyme A synthesis from pantothenate
+human2	RPMI_M2f1	D-BS	DM_w3_MAM01802c	FAD[c]	"{""MAM01802c"": -1.0}"	ESS055	FAD synthesis from riboflavin
+human2	RPMI_M2f1	D-BS	DM_w3_MAM02049c	heme[c]	"{""MAM02049c"": -1.0}"	ESS056	Heme biosynthesis
+human2	RPMI_M2f1	D-ER	DM_w3_ATP_hydrolysis	ATP_hydrolysis	"{""MAM01371c"": -1.0, ""MAM02040c"": -1.0, ""MAM01285c"": 1.0, ""MAM02751c"": 1.0, ""MAM02039c"": 1.0}"	ER	ATP_hydrolysis
+human2	RPMI_M2f1	D-ER	DM_w3_NADH_oxidation	NADH_oxidation	"{""MAM02553c"": -1.0, ""MAM02039c"": -1.0, ""MAM02552c"": 1.0}"	ER	NADH_oxidation
+human2	RPMI_M2f1	D-ER	DM_w3_NADPH_oxidation	NADPH_oxidation	"{""MAM02555c"": -1.0, ""MAM02039c"": -1.0, ""MAM02554c"": 1.0}"	ER	NADPH_oxidation

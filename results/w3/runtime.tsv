@@ -1,0 +1,23 @@
+timestamp	script	argv	solver	workers	wall_min	cpu_h	peak_rss_mb	superseded
+2026-10-27T19:23:44+0000	w3_tasks.py	--model human2 --list essential --workers 7	glpk	7	4.665	0.361417	1476.1	False
+2026-10-27T19:25:37+0000	w3_structure.py		glpk	1	5.85167	0.0980556	1618.8	True
+2026-10-27T19:28:36+0000	w3_tasks.py	--model human1 --list essential --workers 7	glpk	7	4.45167	0.352917	1429.4	False
+2026-10-27T19:32:30+0000	w3_structure.py		glpk	1	5.77	0.0971944	1618.6	True
+2026-10-27T19:32:50+0000	w3_tasks.py	--model human2 --list full_subset --workers 4	glpk	4	4.035	0.247333	1467.7	False
+2026-10-27T19:36:40+0000	w3_tasks.py	--model human1 --list full_subset --workers 4	glpk	4	3.805	0.231972	1421.6	False
+2026-10-27T19:51:34+0000	w3_tasks.py	--model human2 --list cellfie --workers 4	glpk	4	14.885	0.951333	1501.1	False
+2026-10-27T19:51:53+0000	w3_moma.py	--pilot 30 --workers 3	gurobi	3	23.025	0.59775	1735.6	False
+2026-10-27T20:07:50+0000	w3_tasks.py	--model human1 --list cellfie --workers 4	glpk	4	16.2383	1.03847	1459.2	False
+2026-10-27T20:28:45+0000	w3_moma.py	--workers 3	gurobi	3	36.605	1.80336	1529.8	False
+2026-10-27T21:08:17+0000	w3_structure.py		glpk	1	6.19167	0.104444	1618.5	False
+2026-10-27T21:32:46+0000	w3_sweeps.py	--model human2 --workers 3	glpk	3	24.4517	1.20697	1427.8	False
+2026-10-27T21:50:20+0000	w3_sterol.py	--workers 1	glpk	1	42.01	0.706056	1431.5	False
+2026-10-27T21:52:55+0000	w3_sweeps.py	--model human1 --workers 3	glpk	3	20.12	0.967222	1379.4	False
+2026-10-27T21:56:19+0000	w3_sterol.py	--workers 1 --panel pyrimidine	glpk	1	5.95333	0.104556	1429.1	False
+2026-10-27T22:36:51+0000	w3_gpfba.py	--workers 2	glpk	2	63.07	2.07681	1465.5	False
+2026-10-27T23:07:52+0000	w3_tasks.py	--model human1 --list pseudo --workers 5	glpk	5	73.89	5.56064	1446.1	False
+2026-10-27T23:12:47+0000	w3_score_train.py	--workers 6		6	4.67833	0.164278	2013.1	True
+2026-10-27T23:18:44+0000	w3_score_train.py	--workers 6		6	5.10667	0.191167	1954.4	True
+2026-10-27T23:20:08+0000	w3_val_dryrun.py			1	0.228333	0.00627778	1116.1	False
+2026-10-27T23:30:57+0000	w3_task_equality.py	--workers 2	glpk	2	34.4817	1.0085	1673.3	False
+2026-10-28T00:14:53+0000	w3_score_train.py	--workers 6		6	5.14833	0.19325	1955.3	False

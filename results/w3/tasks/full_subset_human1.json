@@ -1,0 +1,24 @@
+{
+ "model": "human1",
+ "list": "full_subset",
+ "n_kos": 903,
+ "n_jobs": 56,
+ "status_counts": {
+  "ok": 56
+ },
+ "skipped_should_fail": [
+  "FUL053",
+  "FUL055",
+  "FUL057",
+  "FUL059",
+  "FUL061",
+  "FUL063",
+  "FUL065",
+  "FUL067"
+ ],
+ "n_solves": 2467,
+ "job_cpu_s": 713.7,
+ "wall_s": 226.4,
+ "workers": 4,
+ "solver": "glpk"
+}

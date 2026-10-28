@@ -1,0 +1,13 @@
+{
+ "model": "human2",
+ "n_sweeps": 70,
+ "checks": {
+  "M0_T0_equals_baseline": true,
+  "RPMI_T0_equals_w2": true
+ },
+ "job_cpu_s": 4249.9,
+ "wall_s": 1466.8,
+ "workers": 3,
+ "solver": "glpk",
+ "max_shortcut_dev": 5.747624598484435e-13
+}

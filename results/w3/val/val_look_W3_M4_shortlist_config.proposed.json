@@ -1,0 +1,52 @@
+{
+ "B": 2000,
+ "code": {
+  "evaluate_val.py": "8f85a6667823a388aa965a7393687f96478e560870a3d8d3edb922ea8532a26c",
+  "labels.py": "291d648e8988ae6987ba1fcef347e75271688bff105a66276f5fe504af21fc6b",
+  "metrics.py": "3acc6ff45c6b969efa631a8c4ecb28ec570015d604f84baed05a4ac1a9382d98",
+  "run.py": "36c07907c5f81e562d57d7bf480dba992e070a96148349b44215eb93eda9b578",
+  "w1.py": "434875e1e47bd548da1da1b2b8b03d546609240914a96828e6e17036863d7a2b",
+  "w3.py": "77cb2b75723f3f7edd0fecb4feffabea3ba14d406ac4378c64fc415c860224ae",
+  "w3_score_train.py": "73241064ebc781eda9bdac73ca6153bbfbf25795f7a228bbd10a8ff9d95571ee"
+ },
+ "config_sha": "bd22892c3d7ab0338c020684330eed6c8c5aa3873b1a04a0b3532aef50965b90",
+ "decision_rule": "\u00a78 gate: a W3 candidate is eligible only if its paired validation \u0394\u0304_lin vs G* (H1) has CI lower bound > 0; among eligible candidates the paired-difference one-SE rule (\u00a79). Context claims: same sign on validation lines of the same context (W3), reported only.",
+ "genesets": [
+  "all",
+  "noCE"
+ ],
+ "harness_change_required": "evaluate_val.py implements only W1_M2_baseline; this look needs a 'W3_M4_shortlist' branch that loads w3_val_scores.parquet as line-constant methods. That is a harness change, so A6(2) requires a full independent code review of the diff.",
+ "inputs": {
+  "expr": "22dccef65797e8c9be8a806278e5343246eeddf5420e9c2647aaa447e06ff137",
+  "gene_panels": "e812724faaf1e9672b32460e73cc6659512d4caf10ff22839d00bba0e4a78318",
+  "line_features": "d96f43b07bd625fc56834addf60845608b45f8d0fd9cc682693dbd0e1c08b234",
+  "w3_mode_scores": "b6f2b52922abbe2b497080959960e2a16047bc8b75b3f587b2ff7629e0e2739d",
+  "w3_shortlist": "65a369da311960163f267444671f21f3c5654ba2a159ef676c0b58b5073f8345",
+  "w3_val_scores": "aeff6564aeede5859a7408924d63765e2367a47418aafd88b668d4bd065aad70"
+ },
+ "labels": [
+  "L_prob"
+ ],
+ "look_id": "W3_M4_shortlist",
+ "methods": [
+  "H1",
+  "H2",
+  "W3:B-loo:cofactor_pool_biomass[H1]",
+  "W3:B-loo:cofactor_pool_biomass[H2]",
+  "W3:B-loo:metabolite_pool_biomass[H1]",
+  "W3:B-loo:metabolite_pool_biomass[H2]"
+ ],
+ "milestone": "M4",
+ "n_validation_expression_lines": 198,
+ "reference": "H1 (= G*, generic Human1 = W3 T0 on M0)",
+ "scalars_only": true,
+ "seed": 11,
+ "strata": [
+  "none",
+  "expressed_pairs"
+ ],
+ "universes": [
+  "U"
+ ],
+ "workstream": "W3"
+}

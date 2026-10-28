@@ -1,0 +1,7 @@
+parent	variant	wt_growth	n_genes	n_lethal_lt_0.01	n_nonoptimal_not_infeasible	cpu_s
+human1	T0	65.57338319775587	2887	149	0	225.6
+human1	B-loo:cofactor_pool_biomass	65.5773723670815	2887	114	0	216.5
+human1	B-loo:metabolite_pool_biomass	66.07459756160942	2887	139	0	261.3
+human2	T0	74.75676660379047	2870	154	0	290.5
+human2	B-loo:cofactor_pool_biomass	74.76162545828504	2870	115	0	288.0
+human2	B-loo:metabolite_pool_biomass	75.40688415037793	2870	145	0	276.1

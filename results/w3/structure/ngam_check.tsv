@@ -1,0 +1,5 @@
+parent	medium	reaction	name	equation	compartments	bounds	gpr	is_atp_hydrolysis_c	max_flux_biomass_free
+human1	M0	MAR03964	ATP phosphohydrolase	ATP + H2O --> ADP + H+ + Pi	c	(0.0, 1000.0)		True	1000
+human1	RPMI_M2f1	MAR03964	ATP phosphohydrolase	ATP + H2O --> ADP + H+ + Pi	c	(0.0, 1000.0)		True	1000
+human2	M0	MAR03964	ATP phosphohydrolase	ATP + H2O --> ADP + H+ + Pi	c	(0.0, 1000.0)		True	1000
+human2	RPMI_M2f1	MAR03964	ATP phosphohydrolase	ATP + H2O --> ADP + H+ + Pi	c	(0.0, 1000.0)		True	1000

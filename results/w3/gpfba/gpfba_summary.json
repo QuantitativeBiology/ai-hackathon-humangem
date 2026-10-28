@@ -1,0 +1,32 @@
+{
+ "human1": {
+  "mu_wt": 65.57338319775577,
+  "cost_wt": 55462.13285616339,
+  "n_used_genes_wt": 392,
+  "n_solved": 395,
+  "ratio_mismatch_vs_baseline": 0,
+  "distinct_ratio_r": 24,
+  "distinct_score": 29,
+  "n_genes_score_ne_ratio": 74,
+  "n_negative_rel_cost": 50,
+  "tied_at_1_ratio": 2664,
+  "tied_at_1_score": 2650,
+  "cpu_s_lp": 3494.5,
+  "wall_s": 1801.1
+ },
+ "human2": {
+  "mu_wt": 74.75676660379048,
+  "cost_wt": 63840.076755721064,
+  "n_used_genes_wt": 420,
+  "n_solved": 426,
+  "ratio_mismatch_vs_baseline": 0,
+  "distinct_ratio_r": 32,
+  "distinct_score": 39,
+  "n_genes_score_ne_ratio": 86,
+  "n_negative_rel_cost": 72,
+  "tied_at_1_ratio": 2625,
+  "tied_at_1_score": 2612,
+  "cpu_s_lp": 3842.2,
+  "wall_s": 1980.1
+ }
+}

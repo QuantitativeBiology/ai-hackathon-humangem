@@ -1,0 +1,64 @@
+{
+ "rule": "TG pass & beats the literal matched-call-rate control & pseudo-tasks where they apply (A11a: neither applies to biomass leave-outs, which qualify on TG alone); A11c withdrawals; paired one-SE rule; <= 2 (DESIGN W3)",
+ "primary_parent": "human1 (G*)",
+ "gate_candidates": "Human1 (G*) variants only; Human2 variants are descriptive (A11c)",
+ "candidates": [
+  {
+   "parent": "human1",
+   "mode": "B-loo:cofactor_pool_biomass",
+   "delta_lin": 0.034269502865675046,
+   "ci": [
+    0.03364877286595089,
+    0.03487453576978123
+   ],
+   "folds_positive": 12,
+   "vs_mcr": 0.034269502865675046,
+   "vs_pseudo": NaN,
+   "vs_mcr_symmetric": -0.020056366278629455,
+   "within_1se_of_best": true,
+   "flags": {
+    "W3-D1": "passes TG; no pre-registered negative control applies to biomass leave-outs (the matched-call-rate control is defined for added calls only; pseudo-tasks n/a). The control reading was fixed after the training aggregates were seen. Loses to the B2-informed symmetric removal comparator; beats a post-hoc label-free random-removal control. No claim may rest on 'beats controls'.",
+    "W3-MEV": "under serum media (RPMI M2 f=1) the variant makes HMGCR/MVK/PMVK/MVD non-lethal in both parents, a mevalonate positive-control failure."
+   }
+  }
+ ],
+ "eligible": {
+  "human1": [
+   "B-loo:cofactor_pool_biomass",
+   "B-loo:metabolite_pool_biomass"
+  ],
+  "human2": [
+   "B-loo:cofactor_pool_biomass",
+   "B-loo:metabolite_pool_biomass",
+   "B-loo:tocopherol_catabolites"
+  ]
+ },
+ "withdrawn": [
+  {
+   "parent": "human1",
+   "mode": "B-loo:metabolite_pool_biomass",
+   "delta_lin": 0.005558954935463708,
+   "ci": [
+    0.005139342003715405,
+    0.005941592457775475
+   ],
+   "folds_positive": 12,
+   "reason": "A11c: withdrawn before the validation look (TG-floor effect within the winner's-curse band, gain only in common essentials, removes genuine demands); training result only"
+  },
+  {
+   "parent": "human2",
+   "mode": "B-loo:metabolite_pool_biomass",
+   "delta_lin": 0.005304453393439776,
+   "ci": [
+    0.004953448443154143,
+    0.005632543262467741
+   ],
+   "folds_positive": 12,
+   "reason": "A11c: withdrawn before the validation look (TG-floor effect within the winner's-curse band, gain only in common essentials, removes genuine demands); training result only"
+  }
+ ],
+ "amendment": "DESIGN \u00a717 A11",
+ "winners_curse_sigma_sqrt_2lnm": 0.04866347685478108,
+ "winners_curse_note": "sigma*sqrt(2 ln m) = 0.0487 exceeds the training effect of every TG-passing Human1 mode (max 0.0343)",
+ "n_eligible_h1": 1
+}

@@ -1,0 +1,15 @@
+{
+ "model": "human2",
+ "list": "essential",
+ "n_kos": 929,
+ "n_jobs": 57,
+ "status_counts": {
+  "ok": 57
+ },
+ "skipped_should_fail": [],
+ "n_solves": 3482,
+ "job_cpu_s": 1109.3,
+ "wall_s": 277.4,
+ "workers": 7,
+ "solver": "glpk"
+}

@@ -1,0 +1,59 @@
+item	kind	path	sha256_or_value	frozen_on	amendment	note
+results/w3/structure/bloo_components.tsv	file	results/w3/structure/bloo_components.tsv	ca9b98c5cb5fc2179df525aa1a8fc274955daafe1df8b011c8689f3c32408f4f	2026-10-28		W3 B-loo components per parent (V-13); incl. metpool:dihydroorotate added from the label-free M3_W5 review finding before W3 scoring
+results/w3/structure/badd_metabolites.tsv	file	results/w3/structure/badd_metabolites.tsv	ef633bd5f70f4854445471af4de270ce0364d0323d598e69b4aa047cc355f1aa	2026-10-28		W3 B-add metabolite IDs per parent (V-14); skips logged (heme A absent in both; Fe-S cluster absent in Human1)
+results/w3/structure/variants_human1.json	file	results/w3/structure/variants_human1.json	fc0feb26f05fad8b5e42dfe9ab73c407cc2551714d20664de1440465132be5ed	2026-10-28		W3 variant specs used by the KO sweeps (Human1)
+results/w3/structure/variants_human2.json	file	results/w3/structure/variants_human2.json	23185d3b1ab9172e1e610a842be3f59b9e6a99a7a9185860440afc4632dbabb3	2026-10-28		W3 variant specs used by the KO sweeps (Human2)
+results/w3/structure/demand_feasibility_log.tsv	file	results/w3/structure/demand_feasibility_log.tsv	e83de133257136781c6c78a5781f0a4d3131d5010bd6441ca7a465643ef98f7a	2026-10-28		W3 D-BS / D-ER demand feasibility log (all kept)
+results/w3/tasks/pseudo_human1_tasks.tsv	file	results/w3/tasks/pseudo_human1_tasks.tsv	04410747a135427ad359c2aa92c7e2595e620998b7efd7159570d61ae36486b4	2026-10-28		W3 pseudo-task definitions (swaps) for SEEDS[0:5], Human1 = G*
+w3.bloo.human1.direct:DNA	value		MAM01721n	2026-10-27		DESIGN W3 B-loo (V-13); remove; status ok
+w3.bloo.human1.direct:RNA	value		MAM02847c	2026-10-27		DESIGN W3 B-loo (V-13); remove; status ok
+w3.bloo.human1.direct:glycogen	value		MAM03161c	2026-10-27		DESIGN W3 B-loo (V-13); remove; status ok
+w3.bloo.human1.direct:cofactor_pool_biomass	value		MAM10012c	2026-10-27		DESIGN W3 B-loo (V-13); remove; status ok
+w3.bloo.human1.direct:protein_pool_biomass	value		MAM10013c	2026-10-27		DESIGN W3 B-loo (V-13); remove; status ok
+w3.bloo.human1.direct:lipid_pool_biomass	value		MAM10014c	2026-10-27		DESIGN W3 B-loo (V-13); remove; status ok
+w3.bloo.human1.direct:metabolite_pool_biomass	value		MAM10015c	2026-10-27		DESIGN W3 B-loo (V-13); remove; status ok
+w3.bloo.human1.pool:retinoid_catabolites	value		MAM00291c;MAM00427c;MAM00427r;MAM01008c;MAM01008r;MAM01022c;MAM01022r;MAM01024c;MAM01024r;MAM01026r;MAM01028c;MAM01028r;MAM01030c;MAM01030r;MAM01031c;MAM01031r;MAM01032c;MAM01060c;MAM01232c;MAM02624c	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human1.pool:vitaminD_catabolites	value		MAM00611c;MAM00611m;MAM00622c;MAM00622m	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human1.pool:tocopherol_catabolites	value		MAM00766c;MAM01924c	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human1.pool:carnitine	value		MAM02348c	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human1.pool:heme	value		MAM02049m	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human1.pool:ubiquinol	value		MAM03102m	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human1.pool:lipoate	value		MAM02394c	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human1.pool:cobamide	value		MAM01600m	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human1.metpool:dihydroorotate	value		MAM00180c	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human2.direct:DNA	value		MAM01721n	2026-10-27		DESIGN W3 B-loo (V-13); remove; status ok
+w3.bloo.human2.direct:RNA	value		MAM02847c	2026-10-27		DESIGN W3 B-loo (V-13); remove; status ok
+w3.bloo.human2.direct:glycogen	value		MAM03161c	2026-10-27		DESIGN W3 B-loo (V-13); remove; status ok
+w3.bloo.human2.direct:cofactor_pool_biomass	value		MAM10012c	2026-10-27		DESIGN W3 B-loo (V-13); remove; status ok
+w3.bloo.human2.direct:protein_pool_biomass	value		MAM10013c	2026-10-27		DESIGN W3 B-loo (V-13); remove; status ok
+w3.bloo.human2.direct:lipid_pool_biomass	value		MAM10014c	2026-10-27		DESIGN W3 B-loo (V-13); remove; status ok
+w3.bloo.human2.direct:metabolite_pool_biomass	value		MAM10015c	2026-10-27		DESIGN W3 B-loo (V-13); remove; status ok
+w3.bloo.human2.pool:retinoid_catabolites	value		MAM00291c;MAM00427c;MAM00427r;MAM01008c;MAM01008r;MAM01022c;MAM01022r;MAM01024c;MAM01024r;MAM01026r;MAM01028c;MAM01028r;MAM01030c;MAM01030r;MAM01031c;MAM01031r;MAM01032c;MAM01060c;MAM01232c;MAM02624c	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human2.pool:vitaminD_catabolites	value		MAM00611m;MAM00622m	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human2.pool:tocopherol_catabolites	value		MAM00766c;MAM01924c	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human2.pool:carnitine	value		MAM02348c	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human2.pool:heme	value		MAM02049m	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human2.pool:ubiquinol	value		MAM03102m	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human2.pool:lipoate	value		MAM02394c	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human2.pool:cobamide	value		MAM01600m	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.bloo.human2.metpool:dihydroorotate	value		MAM00180c	2026-10-27		DESIGN W3 B-loo (V-13); pool_remove; status ok
+w3.badd.human1.hemeA	value			2026-10-27		DESIGN W3 B-add (V-14); sink; status skipped_absent_in_parent
+w3.badd.human1.dolichol_P	value		"{""MAM01733r"": -1.0}"	2026-10-27		DESIGN W3 B-add (V-14); sink; status ok
+w3.badd.human1.GPI_anchor_precursor	value		"{""MAM03749r"": -1.0}"	2026-10-27		DESIGN W3 B-add (V-14); sink; status ok
+w3.badd.human1.FeS_cluster	value			2026-10-27		DESIGN W3 B-add (V-14); sink; status skipped_absent_in_parent
+w3.badd.human1.SAM_sink	value		"{""MAM02877c"": -1.0}"	2026-10-27		DESIGN W3 B-add (V-14); sink; status ok
+w3.badd.human1.spermidine	value		"{""MAM02923c"": -1.0}"	2026-10-27		DESIGN W3 B-add (V-14); sink; status ok
+w3.badd.human1.NAD_turnover	value		"{""MAM02552c"": -1.0, ""MAM02040c"": -1.0, ""MAM02583c"": 1.0, ""MAM01288c"": 1.0, ""MAM02039c"": 1.0}"	2026-10-27		DESIGN W3 B-add (V-14); turnover; status ok
+w3.badd.human1.GSH_turnover	value		"{""MAM02026c"": -1.0}"	2026-10-27		DESIGN W3 B-add (V-14); turnover; status ok
+w3.badd.human1.ALL@1e-4	value		"{""MAM01733r"": -0.0001, ""MAM03749r"": -0.0001, ""MAM02877c"": -0.0001, ""MAM02923c"": -0.0001, ""MAM02552c"": -0.0001, ""MAM02040c"": -0.0001, ""MAM02583c"": 0.0001, ""MAM01288c"": 0.0001, ""MAM02039c"": 0.0001, ""MAM02026c"": -0.0001}"	2026-10-27		DESIGN W3 B-add (V-14); all; status ok
+w3.badd.human1.ALL@1e-3	value		"{""MAM01733r"": -0.001, ""MAM03749r"": -0.001, ""MAM02877c"": -0.001, ""MAM02923c"": -0.001, ""MAM02552c"": -0.001, ""MAM02040c"": -0.001, ""MAM02583c"": 0.001, ""MAM01288c"": 0.001, ""MAM02039c"": 0.001, ""MAM02026c"": -0.001}"	2026-10-27		DESIGN W3 B-add (V-14); all; status ok
+w3.badd.human2.hemeA	value			2026-10-27		DESIGN W3 B-add (V-14); sink; status skipped_absent_in_parent
+w3.badd.human2.dolichol_P	value		"{""MAM01733r"": -1.0}"	2026-10-27		DESIGN W3 B-add (V-14); sink; status ok
+w3.badd.human2.GPI_anchor_precursor	value		"{""MAM03749r"": -1.0}"	2026-10-27		DESIGN W3 B-add (V-14); sink; status ok
+w3.badd.human2.FeS_cluster	value		"{""MAM20084m"": -1.0}"	2026-10-27		DESIGN W3 B-add (V-14); sink; status ok
+w3.badd.human2.SAM_sink	value		"{""MAM02877c"": -1.0}"	2026-10-27		DESIGN W3 B-add (V-14); sink; status ok
+w3.badd.human2.spermidine	value		"{""MAM02923c"": -1.0}"	2026-10-27		DESIGN W3 B-add (V-14); sink; status ok
+w3.badd.human2.NAD_turnover	value		"{""MAM02552c"": -1.0, ""MAM02040c"": -1.0, ""MAM02583c"": 1.0, ""MAM01288c"": 1.0, ""MAM02039c"": 1.0}"	2026-10-27		DESIGN W3 B-add (V-14); turnover; status ok
+w3.badd.human2.GSH_turnover	value		"{""MAM02026c"": -1.0}"	2026-10-27		DESIGN W3 B-add (V-14); turnover; status ok
+w3.badd.human2.ALL@1e-4	value		"{""MAM01733r"": -0.0001, ""MAM03749r"": -0.0001, ""MAM20084m"": -0.0001, ""MAM02877c"": -0.0001, ""MAM02923c"": -0.0001, ""MAM02552c"": -0.0001, ""MAM02040c"": -0.0001, ""MAM02583c"": 0.0001, ""MAM01288c"": 0.0001, ""MAM02039c"": 0.0001, ""MAM02026c"": -0.0001}"	2026-10-27		DESIGN W3 B-add (V-14); all; status ok
+w3.badd.human2.ALL@1e-3	value		"{""MAM01733r"": -0.001, ""MAM03749r"": -0.001, ""MAM20084m"": -0.001, ""MAM02877c"": -0.001, ""MAM02923c"": -0.001, ""MAM02552c"": -0.001, ""MAM02040c"": -0.001, ""MAM02583c"": 0.001, ""MAM01288c"": 0.001, ""MAM02039c"": 0.001, ""MAM02026c"": -0.001}"	2026-10-27		DESIGN W3 B-add (V-14); all; status ok

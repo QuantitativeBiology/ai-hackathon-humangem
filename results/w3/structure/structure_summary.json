@@ -1,0 +1,158 @@
+{
+ "variant_medium": {
+  "medium_key": "RPMI",
+  "step": "M2",
+  "f": 1.0
+ },
+ "w2_sweep_ids": {
+  "human1": {
+   "M0": "human1:a35fcfdb65d63819",
+   "RPMI_M2f1": "human1:db9ebc6b123dcb99"
+  },
+  "human2": {
+   "M0": "human2:a35fcfdb65d63819",
+   "RPMI_M2f1": "human2:4cd587facad2c6fb"
+  }
+ },
+ "pool_species_not_in_any_group": {
+  "human1": [
+   "MAM01401c biotin",
+   "MAM01803c FADH2",
+   "MAM02814c pyridoxal-phosphate",
+   "MAM02842c riboflavin",
+   "MAM02978c tetrahydrobiopterin",
+   "MAM02980c THF",
+   "MAM02984c thiamin-PP"
+  ],
+  "human2": [
+   "MAM01401c biotin",
+   "MAM01803c FADH2",
+   "MAM02814c pyridoxal-phosphate",
+   "MAM02842c riboflavin",
+   "MAM02978c tetrahydrobiopterin",
+   "MAM02980c THF",
+   "MAM02984c thiamin-PP"
+  ]
+ },
+ "demands": {
+  "human1": {
+   "D-BS|M0": {
+    "n_kept": 18,
+    "n_candidates": 18,
+    "wt_growth_T0": 65.57338319775562,
+    "wt_growth_with_demands": 59.440709492627896
+   },
+   "D-ER|M0": {
+    "n_kept": 3,
+    "n_candidates": 3,
+    "wt_growth_T0": 65.57338319775555,
+    "wt_growth_with_demands": 65.38603067433353
+   },
+   "D-BS|RPMI_M2f1": {
+    "n_kept": 18,
+    "n_candidates": 18,
+    "wt_growth_T0": 46.860063107083185,
+    "wt_growth_with_demands": 40.89559655571273
+   },
+   "D-ER|RPMI_M2f1": {
+    "n_kept": 3,
+    "n_candidates": 3,
+    "wt_growth_T0": 46.860063107083086,
+    "wt_growth_with_demands": 46.673735216113464
+   }
+  },
+  "human2": {
+   "D-BS|M0": {
+    "n_kept": 18,
+    "n_candidates": 18,
+    "wt_growth_T0": 74.75676660379081,
+    "wt_growth_with_demands": 68.04611409129278
+   },
+   "D-ER|M0": {
+    "n_kept": 3,
+    "n_candidates": 3,
+    "wt_growth_T0": 74.75676660379084,
+    "wt_growth_with_demands": 74.56987468728128
+   },
+   "D-BS|RPMI_M2f1": {
+    "n_kept": 18,
+    "n_candidates": 18,
+    "wt_growth_T0": 46.905840664020324,
+    "wt_growth_with_demands": 40.47974481549922
+   },
+   "D-ER|RPMI_M2f1": {
+    "n_kept": 3,
+    "n_candidates": 3,
+    "wt_growth_T0": 46.9058406640206,
+    "wt_growth_with_demands": 46.719379828929256
+   }
+  }
+ },
+ "ngam": {
+  "human1": {
+   "0|M0": {
+    "fixed_flux": 0.0,
+    "wt_growth": 65.57338319775555,
+    "status": "optimal"
+   },
+   "0.1|M0": {
+    "fixed_flux": 100.0,
+    "wt_growth": 63.69985796353406,
+    "status": "optimal"
+   },
+   "0.3|M0": {
+    "fixed_flux": 300.0,
+    "wt_growth": 59.95280749509078,
+    "status": "optimal"
+   },
+   "0|RPMI_M2f1": {
+    "fixed_flux": 0.0,
+    "wt_growth": 46.860063107083086,
+    "status": "optimal"
+   },
+   "0.1|RPMI_M2f1": {
+    "fixed_flux": 100.0,
+    "wt_growth": 44.98961551539454,
+    "status": "optimal"
+   },
+   "0.3|RPMI_M2f1": {
+    "fixed_flux": 300.0,
+    "wt_growth": 41.240480889111936,
+    "status": "optimal"
+   }
+  },
+  "human2": {
+   "0|M0": {
+    "fixed_flux": 0.0,
+    "wt_growth": 74.75676660379084,
+    "status": "optimal"
+   },
+   "0.1|M0": {
+    "fixed_flux": 100.0,
+    "wt_growth": 72.88784743869599,
+    "status": "optimal"
+   },
+   "0.3|M0": {
+    "fixed_flux": 300.0,
+    "wt_growth": 69.1500091085065,
+    "status": "optimal"
+   },
+   "0|RPMI_M2f1": {
+    "fixed_flux": 0.0,
+    "wt_growth": 46.9058406640206,
+    "status": "optimal"
+   },
+   "0.1|RPMI_M2f1": {
+    "fixed_flux": 100.0,
+    "wt_growth": 45.0337411859653,
+    "status": "optimal"
+   },
+   "0.3|RPMI_M2f1": {
+    "fixed_flux": 300.0,
+    "wt_growth": 41.28092942046757,
+    "status": "optimal"
+   }
+  }
+ },
+ "wall_s": 369.1
+}

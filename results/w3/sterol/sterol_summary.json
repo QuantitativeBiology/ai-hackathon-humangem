@@ -1,0 +1,63 @@
+{
+ "n_rows": 16960,
+ "mevalonate_core_lethal_everywhere": true,
+ "core_violations": [],
+ "wall_s": 2516.0,
+ "human1|T0|serum_chol=False|sterol_genes_lethal_in_all_media": [
+  "DHCR24",
+  "DHCR7",
+  "EBP",
+  "FDFT1",
+  "LSS",
+  "NSDHL",
+  "SQLE"
+ ],
+ "human1|T0|serum_chol=True|sterol_genes_lethal_in_all_media": [
+  "DHCR24",
+  "EBP",
+  "FDFT1",
+  "LSS",
+  "NSDHL",
+  "SQLE"
+ ],
+ "human1|B-loo:vitaminD|serum_chol=False|sterol_genes_lethal_in_all_media": [
+  "DHCR24",
+  "DHCR7",
+  "EBP",
+  "FDFT1",
+  "LSS",
+  "NSDHL",
+  "SQLE"
+ ],
+ "human1|B-loo:vitaminD|serum_chol=True|sterol_genes_lethal_in_all_media": [],
+ "human2|T0|serum_chol=False|sterol_genes_lethal_in_all_media": [
+  "DHCR24",
+  "DHCR7",
+  "EBP",
+  "FDFT1",
+  "HSD17B7",
+  "LSS",
+  "NSDHL",
+  "SQLE"
+ ],
+ "human2|T0|serum_chol=True|sterol_genes_lethal_in_all_media": [
+  "DHCR24",
+  "EBP",
+  "FDFT1",
+  "HSD17B7",
+  "LSS",
+  "NSDHL",
+  "SQLE"
+ ],
+ "human2|B-loo:vitaminD|serum_chol=False|sterol_genes_lethal_in_all_media": [
+  "DHCR24",
+  "DHCR7",
+  "EBP",
+  "FDFT1",
+  "HSD17B7",
+  "LSS",
+  "NSDHL",
+  "SQLE"
+ ],
+ "human2|B-loo:vitaminD|serum_chol=True|sterol_genes_lethal_in_all_media": []
+}

@@ -1,0 +1,412 @@
+parent	mode	family	medium	description	n_items
+human1	T1	criterion	M0	biomass + ER	9
+human1	T1@RPMI	criterion	RPMI	biomass + ER	9
+human1	T2	criterion	M0	biomass + ER + IC + BS	39
+human1	T2@RPMI	criterion	RPMI	biomass + ER + IC + BS	39
+human1	T3	criterion	M0	biomass + all 56 non-GR tasks (= P57)	56
+human1	T3@RPMI	criterion	RPMI	biomass + all 56 non-GR tasks (= P57)	56
+human1	T4_1	criterion	M0	biomass + group 1: Rephosphorylation of nucleoside triphosphates	4
+human1	T4_1@RPMI	criterion	RPMI	biomass + group 1: Rephosphorylation of nucleoside triphosphates	4
+human1	T4_2	criterion	M0	biomass + group 2: De novo synthesis of nucleotides	8
+human1	T4_2@RPMI	criterion	RPMI	biomass + group 2: De novo synthesis of nucleotides	8
+human1	T4_3	criterion	M0	biomass + group 3: Uptake of essential amino acids	9
+human1	T4_3@RPMI	criterion	RPMI	biomass + group 3: Uptake of essential amino acids	9
+human1	T4_4	criterion	M0	biomass + group 4: De novo synthesis of key intermediates	12
+human1	T4_4@RPMI	criterion	RPMI	biomass + group 4: De novo synthesis of key intermediates	12
+human1	T4_5	criterion	M0	biomass + group 5: De novo synthesis of other compounds	1
+human1	T4_5@RPMI	criterion	RPMI	biomass + group 5: De novo synthesis of other compounds	1
+human1	T4_6	criterion	M0	biomass + group 6: Protein turnover	1
+human1	T4_6@RPMI	criterion	RPMI	biomass + group 6: Protein turnover	1
+human1	T4_7	criterion	M0	biomass + group 7: Electron transport chain and TCA	5
+human1	T4_7@RPMI	criterion	RPMI	biomass + group 7: Electron transport chain and TCA	5
+human1	T4_8	criterion	M0	biomass + group 8: Beta oxidation of fatty acids	6
+human1	T4_8@RPMI	criterion	RPMI	biomass + group 8: Beta oxidation of fatty acids	6
+human1	T4_9	criterion	M0	biomass + group 9: De novo synthesis of phospholipids	6
+human1	T4_9@RPMI	criterion	RPMI	biomass + group 9: De novo synthesis of phospholipids	6
+human1	T4_10	criterion	M0	biomass + group 10: Vitamins and co-factors	4
+human1	T4_10@RPMI	criterion	RPMI	biomass + group 10: Vitamins and co-factors	4
+human1	L-T3	criterion	M0	list T3: biomass + 8 BS nucleotide tasks	8
+human1	L-T3@RPMI	criterion	RPMI	list T3: biomass + 8 BS nucleotide tasks	8
+human1	L-T4_1	criterion	M0	list T4_1: biomass + IC task Glycerate 3-phosphate  de novo synthesis	1
+human1	L-T4_1@RPMI	criterion	RPMI	list T4_1: biomass + IC task Glycerate 3-phosphate  de novo synthesis	1
+human1	L-T4_2	criterion	M0	list T4_2: biomass + IC task Mitochondrial acetyl-CoA de novo synthesis	1
+human1	L-T4_2@RPMI	criterion	RPMI	list T4_2: biomass + IC task Mitochondrial acetyl-CoA de novo synthesis	1
+human1	L-T4_3	criterion	M0	list T4_3: biomass + IC task Mitochondrial AKG de novo synthesis	1
+human1	L-T4_3@RPMI	criterion	RPMI	list T4_3: biomass + IC task Mitochondrial AKG de novo synthesis	1
+human1	L-T4_4	criterion	M0	list T4_4: biomass + IC task Erythrose 4-phosphate de novo synthesis	1
+human1	L-T4_4@RPMI	criterion	RPMI	list T4_4: biomass + IC task Erythrose 4-phosphate de novo synthesis	1
+human1	L-T4_5	criterion	M0	list T4_5: biomass + IC task Fructose 6-phosphate de novo synthesis	1
+human1	L-T4_5@RPMI	criterion	RPMI	list T4_5: biomass + IC task Fructose 6-phosphate de novo synthesis	1
+human1	L-T4_6	criterion	M0	list T4_6: biomass + IC task Glyceraldehyde 3-phosphate de novo synthesis	1
+human1	L-T4_6@RPMI	criterion	RPMI	list T4_6: biomass + IC task Glyceraldehyde 3-phosphate de novo synthesis	1
+human1	L-T4_7	criterion	M0	list T4_7: biomass + IC task Glucose 6-phosphate de novo synthesis	1
+human1	L-T4_7@RPMI	criterion	RPMI	list T4_7: biomass + IC task Glucose 6-phosphate de novo synthesis	1
+human1	L-T4_8	criterion	M0	list T4_8: biomass + IC task Mitochondrial oxaloacetate de novo synthesis	1
+human1	L-T4_8@RPMI	criterion	RPMI	list T4_8: biomass + IC task Mitochondrial oxaloacetate de novo synthesis	1
+human1	L-T4_9	criterion	M0	list T4_9: biomass + IC task Phosphoenolpyruvate de novo synthesis	1
+human1	L-T4_9@RPMI	criterion	RPMI	list T4_9: biomass + IC task Phosphoenolpyruvate de novo synthesis	1
+human1	L-T4_10	criterion	M0	list T4_10: biomass + IC task Pyruvate de novo synthesis	1
+human1	L-T4_10@RPMI	criterion	RPMI	list T4_10: biomass + IC task Pyruvate de novo synthesis	1
+human1	L-T4_11	criterion	M0	list T4_11: biomass + IC task Ribose 5-phosphate de novo synthesis	1
+human1	L-T4_11@RPMI	criterion	RPMI	list T4_11: biomass + IC task Ribose 5-phosphate de novo synthesis	1
+human1	L-T4_12	criterion	M0	list T4_12: biomass + IC task Mitochondrial succinyl-CoA de novo synthesis	1
+human1	L-T4_12@RPMI	criterion	RPMI	list T4_12: biomass + IC task Mitochondrial succinyl-CoA de novo synthesis	1
+human1	L-T5	criterion	M0	list T5: biomass + PC/PE/PS/PI/cholesterol + choline/inositol uptake	7
+human1	L-T5@RPMI	criterion	RPMI	list T5: biomass + PC/PE/PS/PI/cholesterol + choline/inositol uptake	7
+human1	L-T6	criterion	M0	list T6: biomass + TPP/CoA/FAD/heme	4
+human1	L-T6@RPMI	criterion	RPMI	list T6: biomass + TPP/CoA/FAD/heme	4
+human1	L-T5+	criterion	M0	list T5 + Full 104-111	15
+human1	L-T5+@RPMI	criterion	RPMI	list T5 + Full 104-111	15
+human1	L-T6+	criterion	M0	list T6 + Full 112-118	11
+human1	L-T6+@RPMI	criterion	RPMI	list T6 + Full 112-118	11
+human1	L-T8	criterion	M0	list T8: biomass + Full 42-50, 52-68, 77-99 (non-should-fail)	41
+human1	L-T8@RPMI	criterion	RPMI	list T8: biomass + Full 42-50, 52-68, 77-99 (non-should-fail)	41
+human1	T0	reference	M0	biomass only	0
+human1	B-loo:DNA	B-loo	M0	B-loo:DNA	1
+human1	B-loo:RNA	B-loo	M0	B-loo:RNA	1
+human1	B-loo:glycogen	B-loo	M0	B-loo:glycogen	1
+human1	B-loo:cofactor_pool_biomass	B-loo	M0	B-loo:cofactor_pool_biomass	1
+human1	B-loo:protein_pool_biomass	B-loo	M0	B-loo:protein_pool_biomass	1
+human1	B-loo:lipid_pool_biomass	B-loo	M0	B-loo:lipid_pool_biomass	1
+human1	B-loo:metabolite_pool_biomass	B-loo	M0	B-loo:metabolite_pool_biomass	1
+human1	B-loo:retinoid_catabolites	B-loo	M0	B-loo:retinoid_catabolites	1
+human1	B-loo:vitaminD_catabolites	B-loo	M0	B-loo:vitaminD_catabolites	1
+human1	B-loo:tocopherol_catabolites	B-loo	M0	B-loo:tocopherol_catabolites	1
+human1	B-loo:carnitine	B-loo	M0	B-loo:carnitine	1
+human1	B-loo:heme	B-loo	M0	B-loo:heme	1
+human1	B-loo:ubiquinol	B-loo	M0	B-loo:ubiquinol	1
+human1	B-loo:lipoate	B-loo	M0	B-loo:lipoate	1
+human1	B-loo:cobamide	B-loo	M0	B-loo:cobamide	1
+human1	B-loo:dihydroorotate	B-loo	M0	B-loo:dihydroorotate	1
+human1	L-T10	criterion	M0	list T10: de-artefacted biomass + list-T3 constraints	9
+human1	B-add:dolichol_P@1e-4	B-add	M0	B-add:dolichol_P@1e-4	1
+human1	B-add:GPI_anchor_precursor@1e-4	B-add	M0	B-add:GPI_anchor_precursor@1e-4	1
+human1	B-add:SAM_sink@1e-4	B-add	M0	B-add:SAM_sink@1e-4	1
+human1	B-add:spermidine@1e-4	B-add	M0	B-add:spermidine@1e-4	1
+human1	B-add:NAD_turnover@1e-4	B-add	M0	B-add:NAD_turnover@1e-4	1
+human1	B-add:GSH_turnover@1e-4	B-add	M0	B-add:GSH_turnover@1e-4	1
+human1	B-add:ALL@1e-4	B-add	M0	B-add:ALL@1e-4	1
+human1	B-add:dolichol_P@1e-3	B-add-sens	M0	B-add:dolichol_P@1e-3	1
+human1	B-add:GPI_anchor_precursor@1e-3	B-add-sens	M0	B-add:GPI_anchor_precursor@1e-3	1
+human1	B-add:SAM_sink@1e-3	B-add-sens	M0	B-add:SAM_sink@1e-3	1
+human1	B-add:spermidine@1e-3	B-add-sens	M0	B-add:spermidine@1e-3	1
+human1	B-add:NAD_turnover@1e-3	B-add-sens	M0	B-add:NAD_turnover@1e-3	1
+human1	B-add:GSH_turnover@1e-3	B-add-sens	M0	B-add:GSH_turnover@1e-3	1
+human1	B-add:ALL@1e-3	B-add-sens	M0	B-add:ALL@1e-3	1
+human1	D-BS	D-BS	M0	D-BS	1
+human1	D-ER	D-ER	M0	D-ER	1
+human1	O-NGAM_0	O-NGAM	M0	O-NGAM_0	1
+human1	O-NGAM_0.1	O-NGAM	M0	O-NGAM_0.1	1
+human1	O-NGAM_0.3	O-NGAM	M0	O-NGAM_0.3	1
+human1	O-cap	O-cap	M0	1 - min(ratio, min_t capacity_t)	56
+human1	T0@RPMI	reference	RPMI	biomass only	0
+human1	B-loo:DNA@RPMI	B-loo	RPMI	B-loo:DNA	1
+human1	B-loo:RNA@RPMI	B-loo	RPMI	B-loo:RNA	1
+human1	B-loo:glycogen@RPMI	B-loo	RPMI	B-loo:glycogen	1
+human1	B-loo:cofactor_pool_biomass@RPMI	B-loo	RPMI	B-loo:cofactor_pool_biomass	1
+human1	B-loo:protein_pool_biomass@RPMI	B-loo	RPMI	B-loo:protein_pool_biomass	1
+human1	B-loo:lipid_pool_biomass@RPMI	B-loo	RPMI	B-loo:lipid_pool_biomass	1
+human1	B-loo:metabolite_pool_biomass@RPMI	B-loo	RPMI	B-loo:metabolite_pool_biomass	1
+human1	B-loo:retinoid_catabolites@RPMI	B-loo	RPMI	B-loo:retinoid_catabolites	1
+human1	B-loo:vitaminD_catabolites@RPMI	B-loo	RPMI	B-loo:vitaminD_catabolites	1
+human1	B-loo:tocopherol_catabolites@RPMI	B-loo	RPMI	B-loo:tocopherol_catabolites	1
+human1	B-loo:carnitine@RPMI	B-loo	RPMI	B-loo:carnitine	1
+human1	B-loo:heme@RPMI	B-loo	RPMI	B-loo:heme	1
+human1	B-loo:ubiquinol@RPMI	B-loo	RPMI	B-loo:ubiquinol	1
+human1	B-loo:lipoate@RPMI	B-loo	RPMI	B-loo:lipoate	1
+human1	B-loo:cobamide@RPMI	B-loo	RPMI	B-loo:cobamide	1
+human1	B-loo:dihydroorotate@RPMI	B-loo	RPMI	B-loo:dihydroorotate	1
+human1	L-T10@RPMI	criterion	RPMI	list T10: de-artefacted biomass + list-T3 constraints	9
+human1	B-add:dolichol_P@1e-4@RPMI	B-add	RPMI	B-add:dolichol_P@1e-4	1
+human1	B-add:GPI_anchor_precursor@1e-4@RPMI	B-add	RPMI	B-add:GPI_anchor_precursor@1e-4	1
+human1	B-add:SAM_sink@1e-4@RPMI	B-add	RPMI	B-add:SAM_sink@1e-4	1
+human1	B-add:spermidine@1e-4@RPMI	B-add	RPMI	B-add:spermidine@1e-4	1
+human1	B-add:NAD_turnover@1e-4@RPMI	B-add	RPMI	B-add:NAD_turnover@1e-4	1
+human1	B-add:GSH_turnover@1e-4@RPMI	B-add	RPMI	B-add:GSH_turnover@1e-4	1
+human1	B-add:ALL@1e-4@RPMI	B-add	RPMI	B-add:ALL@1e-4	1
+human1	D-BS@RPMI	D-BS	RPMI	D-BS	1
+human1	D-ER@RPMI	D-ER	RPMI	D-ER	1
+human1	O-NGAM_0@RPMI	O-NGAM	RPMI	O-NGAM_0	1
+human1	O-NGAM_0.1@RPMI	O-NGAM	RPMI	O-NGAM_0.1	1
+human1	O-NGAM_0.3@RPMI	O-NGAM	RPMI	O-NGAM_0.3	1
+human1	O-cap@RPMI	O-cap	RPMI	1 - min(ratio, min_t capacity_t)	56
+human1	O-MOMA	O-MOMA	M0	QP MOMA biomass ratio	0
+human1	A8-gpFBA	exploratory	M0	gene-pFBA KO-cost tie-break (A8; exploratory)	0
+human1	PSEUDO[11]:T1	control_pseudo	M0	pseudo twin of T1, seed 11	4
+human1	PSEUDO[11]:T2	control_pseudo	M0	pseudo twin of T2, seed 11	34
+human1	PSEUDO[11]:T3	control_pseudo	M0	pseudo twin of T3, seed 11	34
+human1	PSEUDO[11]:T4_1	control_pseudo	M0	pseudo twin of T4_1, seed 11	4
+human1	PSEUDO[11]:T4_2	control_pseudo	M0	pseudo twin of T4_2, seed 11	8
+human1	PSEUDO[11]:T4_3	control_pseudo	M0	pseudo twin of T4_3, seed 11	0
+human1	PSEUDO[11]:T4_4	control_pseudo	M0	pseudo twin of T4_4, seed 11	12
+human1	PSEUDO[11]:T4_5	control_pseudo	M0	pseudo twin of T4_5, seed 11	1
+human1	PSEUDO[11]:T4_6	control_pseudo	M0	pseudo twin of T4_6, seed 11	1
+human1	PSEUDO[11]:T4_7	control_pseudo	M0	pseudo twin of T4_7, seed 11	0
+human1	PSEUDO[11]:T4_8	control_pseudo	M0	pseudo twin of T4_8, seed 11	0
+human1	PSEUDO[11]:T4_9	control_pseudo	M0	pseudo twin of T4_9, seed 11	4
+human1	PSEUDO[11]:T4_10	control_pseudo	M0	pseudo twin of T4_10, seed 11	4
+human1	PSEUDO[11]:L-T3	control_pseudo	M0	pseudo twin of L-T3, seed 11	8
+human1	PSEUDO[11]:L-T4_1	control_pseudo	M0	pseudo twin of L-T4_1, seed 11	1
+human1	PSEUDO[11]:L-T4_2	control_pseudo	M0	pseudo twin of L-T4_2, seed 11	1
+human1	PSEUDO[11]:L-T4_3	control_pseudo	M0	pseudo twin of L-T4_3, seed 11	1
+human1	PSEUDO[11]:L-T4_4	control_pseudo	M0	pseudo twin of L-T4_4, seed 11	1
+human1	PSEUDO[11]:L-T4_5	control_pseudo	M0	pseudo twin of L-T4_5, seed 11	1
+human1	PSEUDO[11]:L-T4_6	control_pseudo	M0	pseudo twin of L-T4_6, seed 11	1
+human1	PSEUDO[11]:L-T4_7	control_pseudo	M0	pseudo twin of L-T4_7, seed 11	1
+human1	PSEUDO[11]:L-T4_8	control_pseudo	M0	pseudo twin of L-T4_8, seed 11	1
+human1	PSEUDO[11]:L-T4_9	control_pseudo	M0	pseudo twin of L-T4_9, seed 11	1
+human1	PSEUDO[11]:L-T4_10	control_pseudo	M0	pseudo twin of L-T4_10, seed 11	1
+human1	PSEUDO[11]:L-T4_11	control_pseudo	M0	pseudo twin of L-T4_11, seed 11	1
+human1	PSEUDO[11]:L-T4_12	control_pseudo	M0	pseudo twin of L-T4_12, seed 11	1
+human1	PSEUDO[11]:L-T5	control_pseudo	M0	pseudo twin of L-T5, seed 11	5
+human1	PSEUDO[11]:L-T6	control_pseudo	M0	pseudo twin of L-T6, seed 11	4
+human1	PSEUDO[23]:T1	control_pseudo	M0	pseudo twin of T1, seed 23	4
+human1	PSEUDO[23]:T2	control_pseudo	M0	pseudo twin of T2, seed 23	33
+human1	PSEUDO[23]:T3	control_pseudo	M0	pseudo twin of T3, seed 23	33
+human1	PSEUDO[23]:T4_1	control_pseudo	M0	pseudo twin of T4_1, seed 23	4
+human1	PSEUDO[23]:T4_2	control_pseudo	M0	pseudo twin of T4_2, seed 23	8
+human1	PSEUDO[23]:T4_3	control_pseudo	M0	pseudo twin of T4_3, seed 23	0
+human1	PSEUDO[23]:T4_4	control_pseudo	M0	pseudo twin of T4_4, seed 23	12
+human1	PSEUDO[23]:T4_5	control_pseudo	M0	pseudo twin of T4_5, seed 23	1
+human1	PSEUDO[23]:T4_6	control_pseudo	M0	pseudo twin of T4_6, seed 23	1
+human1	PSEUDO[23]:T4_7	control_pseudo	M0	pseudo twin of T4_7, seed 23	0
+human1	PSEUDO[23]:T4_8	control_pseudo	M0	pseudo twin of T4_8, seed 23	0
+human1	PSEUDO[23]:T4_9	control_pseudo	M0	pseudo twin of T4_9, seed 23	4
+human1	PSEUDO[23]:T4_10	control_pseudo	M0	pseudo twin of T4_10, seed 23	3
+human1	PSEUDO[23]:L-T3	control_pseudo	M0	pseudo twin of L-T3, seed 23	8
+human1	PSEUDO[23]:L-T4_1	control_pseudo	M0	pseudo twin of L-T4_1, seed 23	1
+human1	PSEUDO[23]:L-T4_2	control_pseudo	M0	pseudo twin of L-T4_2, seed 23	1
+human1	PSEUDO[23]:L-T4_3	control_pseudo	M0	pseudo twin of L-T4_3, seed 23	1
+human1	PSEUDO[23]:L-T4_4	control_pseudo	M0	pseudo twin of L-T4_4, seed 23	1
+human1	PSEUDO[23]:L-T4_5	control_pseudo	M0	pseudo twin of L-T4_5, seed 23	1
+human1	PSEUDO[23]:L-T4_6	control_pseudo	M0	pseudo twin of L-T4_6, seed 23	1
+human1	PSEUDO[23]:L-T4_7	control_pseudo	M0	pseudo twin of L-T4_7, seed 23	1
+human1	PSEUDO[23]:L-T4_8	control_pseudo	M0	pseudo twin of L-T4_8, seed 23	1
+human1	PSEUDO[23]:L-T4_9	control_pseudo	M0	pseudo twin of L-T4_9, seed 23	1
+human1	PSEUDO[23]:L-T4_10	control_pseudo	M0	pseudo twin of L-T4_10, seed 23	1
+human1	PSEUDO[23]:L-T4_11	control_pseudo	M0	pseudo twin of L-T4_11, seed 23	1
+human1	PSEUDO[23]:L-T4_12	control_pseudo	M0	pseudo twin of L-T4_12, seed 23	1
+human1	PSEUDO[23]:L-T5	control_pseudo	M0	pseudo twin of L-T5, seed 23	5
+human1	PSEUDO[23]:L-T6	control_pseudo	M0	pseudo twin of L-T6, seed 23	3
+human1	PSEUDO[37]:T1	control_pseudo	M0	pseudo twin of T1, seed 37	4
+human1	PSEUDO[37]:T2	control_pseudo	M0	pseudo twin of T2, seed 37	34
+human1	PSEUDO[37]:T3	control_pseudo	M0	pseudo twin of T3, seed 37	34
+human1	PSEUDO[37]:T4_1	control_pseudo	M0	pseudo twin of T4_1, seed 37	4
+human1	PSEUDO[37]:T4_2	control_pseudo	M0	pseudo twin of T4_2, seed 37	8
+human1	PSEUDO[37]:T4_3	control_pseudo	M0	pseudo twin of T4_3, seed 37	0
+human1	PSEUDO[37]:T4_4	control_pseudo	M0	pseudo twin of T4_4, seed 37	12
+human1	PSEUDO[37]:T4_5	control_pseudo	M0	pseudo twin of T4_5, seed 37	1
+human1	PSEUDO[37]:T4_6	control_pseudo	M0	pseudo twin of T4_6, seed 37	1
+human1	PSEUDO[37]:T4_7	control_pseudo	M0	pseudo twin of T4_7, seed 37	0
+human1	PSEUDO[37]:T4_8	control_pseudo	M0	pseudo twin of T4_8, seed 37	0
+human1	PSEUDO[37]:T4_9	control_pseudo	M0	pseudo twin of T4_9, seed 37	4
+human1	PSEUDO[37]:T4_10	control_pseudo	M0	pseudo twin of T4_10, seed 37	4
+human1	PSEUDO[37]:L-T3	control_pseudo	M0	pseudo twin of L-T3, seed 37	8
+human1	PSEUDO[37]:L-T4_1	control_pseudo	M0	pseudo twin of L-T4_1, seed 37	1
+human1	PSEUDO[37]:L-T4_2	control_pseudo	M0	pseudo twin of L-T4_2, seed 37	1
+human1	PSEUDO[37]:L-T4_3	control_pseudo	M0	pseudo twin of L-T4_3, seed 37	1
+human1	PSEUDO[37]:L-T4_4	control_pseudo	M0	pseudo twin of L-T4_4, seed 37	1
+human1	PSEUDO[37]:L-T4_5	control_pseudo	M0	pseudo twin of L-T4_5, seed 37	1
+human1	PSEUDO[37]:L-T4_6	control_pseudo	M0	pseudo twin of L-T4_6, seed 37	1
+human1	PSEUDO[37]:L-T4_7	control_pseudo	M0	pseudo twin of L-T4_7, seed 37	1
+human1	PSEUDO[37]:L-T4_8	control_pseudo	M0	pseudo twin of L-T4_8, seed 37	1
+human1	PSEUDO[37]:L-T4_9	control_pseudo	M0	pseudo twin of L-T4_9, seed 37	1
+human1	PSEUDO[37]:L-T4_10	control_pseudo	M0	pseudo twin of L-T4_10, seed 37	1
+human1	PSEUDO[37]:L-T4_11	control_pseudo	M0	pseudo twin of L-T4_11, seed 37	1
+human1	PSEUDO[37]:L-T4_12	control_pseudo	M0	pseudo twin of L-T4_12, seed 37	1
+human1	PSEUDO[37]:L-T5	control_pseudo	M0	pseudo twin of L-T5, seed 37	5
+human1	PSEUDO[37]:L-T6	control_pseudo	M0	pseudo twin of L-T6, seed 37	4
+human1	PSEUDO[41]:T1	control_pseudo	M0	pseudo twin of T1, seed 41	4
+human1	PSEUDO[41]:T2	control_pseudo	M0	pseudo twin of T2, seed 41	33
+human1	PSEUDO[41]:T3	control_pseudo	M0	pseudo twin of T3, seed 41	33
+human1	PSEUDO[41]:T4_1	control_pseudo	M0	pseudo twin of T4_1, seed 41	4
+human1	PSEUDO[41]:T4_2	control_pseudo	M0	pseudo twin of T4_2, seed 41	8
+human1	PSEUDO[41]:T4_3	control_pseudo	M0	pseudo twin of T4_3, seed 41	0
+human1	PSEUDO[41]:T4_4	control_pseudo	M0	pseudo twin of T4_4, seed 41	12
+human1	PSEUDO[41]:T4_5	control_pseudo	M0	pseudo twin of T4_5, seed 41	1
+human1	PSEUDO[41]:T4_6	control_pseudo	M0	pseudo twin of T4_6, seed 41	1
+human1	PSEUDO[41]:T4_7	control_pseudo	M0	pseudo twin of T4_7, seed 41	0
+human1	PSEUDO[41]:T4_8	control_pseudo	M0	pseudo twin of T4_8, seed 41	0
+human1	PSEUDO[41]:T4_9	control_pseudo	M0	pseudo twin of T4_9, seed 41	4
+human1	PSEUDO[41]:T4_10	control_pseudo	M0	pseudo twin of T4_10, seed 41	3
+human1	PSEUDO[41]:L-T3	control_pseudo	M0	pseudo twin of L-T3, seed 41	8
+human1	PSEUDO[41]:L-T4_1	control_pseudo	M0	pseudo twin of L-T4_1, seed 41	1
+human1	PSEUDO[41]:L-T4_2	control_pseudo	M0	pseudo twin of L-T4_2, seed 41	1
+human1	PSEUDO[41]:L-T4_3	control_pseudo	M0	pseudo twin of L-T4_3, seed 41	1
+human1	PSEUDO[41]:L-T4_4	control_pseudo	M0	pseudo twin of L-T4_4, seed 41	1
+human1	PSEUDO[41]:L-T4_5	control_pseudo	M0	pseudo twin of L-T4_5, seed 41	1
+human1	PSEUDO[41]:L-T4_6	control_pseudo	M0	pseudo twin of L-T4_6, seed 41	1
+human1	PSEUDO[41]:L-T4_7	control_pseudo	M0	pseudo twin of L-T4_7, seed 41	1
+human1	PSEUDO[41]:L-T4_8	control_pseudo	M0	pseudo twin of L-T4_8, seed 41	1
+human1	PSEUDO[41]:L-T4_9	control_pseudo	M0	pseudo twin of L-T4_9, seed 41	1
+human1	PSEUDO[41]:L-T4_10	control_pseudo	M0	pseudo twin of L-T4_10, seed 41	1
+human1	PSEUDO[41]:L-T4_11	control_pseudo	M0	pseudo twin of L-T4_11, seed 41	1
+human1	PSEUDO[41]:L-T4_12	control_pseudo	M0	pseudo twin of L-T4_12, seed 41	1
+human1	PSEUDO[41]:L-T5	control_pseudo	M0	pseudo twin of L-T5, seed 41	5
+human1	PSEUDO[41]:L-T6	control_pseudo	M0	pseudo twin of L-T6, seed 41	3
+human1	PSEUDO[53]:T1	control_pseudo	M0	pseudo twin of T1, seed 53	4
+human1	PSEUDO[53]:T2	control_pseudo	M0	pseudo twin of T2, seed 53	33
+human1	PSEUDO[53]:T3	control_pseudo	M0	pseudo twin of T3, seed 53	33
+human1	PSEUDO[53]:T4_1	control_pseudo	M0	pseudo twin of T4_1, seed 53	4
+human1	PSEUDO[53]:T4_2	control_pseudo	M0	pseudo twin of T4_2, seed 53	8
+human1	PSEUDO[53]:T4_3	control_pseudo	M0	pseudo twin of T4_3, seed 53	0
+human1	PSEUDO[53]:T4_4	control_pseudo	M0	pseudo twin of T4_4, seed 53	12
+human1	PSEUDO[53]:T4_5	control_pseudo	M0	pseudo twin of T4_5, seed 53	1
+human1	PSEUDO[53]:T4_6	control_pseudo	M0	pseudo twin of T4_6, seed 53	1
+human1	PSEUDO[53]:T4_7	control_pseudo	M0	pseudo twin of T4_7, seed 53	0
+human1	PSEUDO[53]:T4_8	control_pseudo	M0	pseudo twin of T4_8, seed 53	0
+human1	PSEUDO[53]:T4_9	control_pseudo	M0	pseudo twin of T4_9, seed 53	4
+human1	PSEUDO[53]:T4_10	control_pseudo	M0	pseudo twin of T4_10, seed 53	3
+human1	PSEUDO[53]:L-T3	control_pseudo	M0	pseudo twin of L-T3, seed 53	8
+human1	PSEUDO[53]:L-T4_1	control_pseudo	M0	pseudo twin of L-T4_1, seed 53	1
+human1	PSEUDO[53]:L-T4_2	control_pseudo	M0	pseudo twin of L-T4_2, seed 53	1
+human1	PSEUDO[53]:L-T4_3	control_pseudo	M0	pseudo twin of L-T4_3, seed 53	1
+human1	PSEUDO[53]:L-T4_4	control_pseudo	M0	pseudo twin of L-T4_4, seed 53	1
+human1	PSEUDO[53]:L-T4_5	control_pseudo	M0	pseudo twin of L-T4_5, seed 53	1
+human1	PSEUDO[53]:L-T4_6	control_pseudo	M0	pseudo twin of L-T4_6, seed 53	1
+human1	PSEUDO[53]:L-T4_7	control_pseudo	M0	pseudo twin of L-T4_7, seed 53	1
+human1	PSEUDO[53]:L-T4_8	control_pseudo	M0	pseudo twin of L-T4_8, seed 53	1
+human1	PSEUDO[53]:L-T4_9	control_pseudo	M0	pseudo twin of L-T4_9, seed 53	1
+human1	PSEUDO[53]:L-T4_10	control_pseudo	M0	pseudo twin of L-T4_10, seed 53	1
+human1	PSEUDO[53]:L-T4_11	control_pseudo	M0	pseudo twin of L-T4_11, seed 53	1
+human1	PSEUDO[53]:L-T4_12	control_pseudo	M0	pseudo twin of L-T4_12, seed 53	1
+human1	PSEUDO[53]:L-T5	control_pseudo	M0	pseudo twin of L-T5, seed 53	5
+human1	PSEUDO[53]:L-T6	control_pseudo	M0	pseudo twin of L-T6, seed 53	3
+human2	T1	criterion	M0	biomass + ER	9
+human2	T1@RPMI	criterion	RPMI	biomass + ER	9
+human2	T2	criterion	M0	biomass + ER + IC + BS	39
+human2	T2@RPMI	criterion	RPMI	biomass + ER + IC + BS	39
+human2	T3	criterion	M0	biomass + all 56 non-GR tasks (= P57)	56
+human2	T3@RPMI	criterion	RPMI	biomass + all 56 non-GR tasks (= P57)	56
+human2	T4_1	criterion	M0	biomass + group 1: Rephosphorylation of nucleoside triphosphates	4
+human2	T4_1@RPMI	criterion	RPMI	biomass + group 1: Rephosphorylation of nucleoside triphosphates	4
+human2	T4_2	criterion	M0	biomass + group 2: De novo synthesis of nucleotides	8
+human2	T4_2@RPMI	criterion	RPMI	biomass + group 2: De novo synthesis of nucleotides	8
+human2	T4_3	criterion	M0	biomass + group 3: Uptake of essential amino acids	9
+human2	T4_3@RPMI	criterion	RPMI	biomass + group 3: Uptake of essential amino acids	9
+human2	T4_4	criterion	M0	biomass + group 4: De novo synthesis of key intermediates	12
+human2	T4_4@RPMI	criterion	RPMI	biomass + group 4: De novo synthesis of key intermediates	12
+human2	T4_5	criterion	M0	biomass + group 5: De novo synthesis of other compounds	1
+human2	T4_5@RPMI	criterion	RPMI	biomass + group 5: De novo synthesis of other compounds	1
+human2	T4_6	criterion	M0	biomass + group 6: Protein turnover	1
+human2	T4_6@RPMI	criterion	RPMI	biomass + group 6: Protein turnover	1
+human2	T4_7	criterion	M0	biomass + group 7: Electron transport chain and TCA	5
+human2	T4_7@RPMI	criterion	RPMI	biomass + group 7: Electron transport chain and TCA	5
+human2	T4_8	criterion	M0	biomass + group 8: Beta oxidation of fatty acids	6
+human2	T4_8@RPMI	criterion	RPMI	biomass + group 8: Beta oxidation of fatty acids	6
+human2	T4_9	criterion	M0	biomass + group 9: De novo synthesis of phospholipids	6
+human2	T4_9@RPMI	criterion	RPMI	biomass + group 9: De novo synthesis of phospholipids	6
+human2	T4_10	criterion	M0	biomass + group 10: Vitamins and co-factors	4
+human2	T4_10@RPMI	criterion	RPMI	biomass + group 10: Vitamins and co-factors	4
+human2	L-T3	criterion	M0	list T3: biomass + 8 BS nucleotide tasks	8
+human2	L-T3@RPMI	criterion	RPMI	list T3: biomass + 8 BS nucleotide tasks	8
+human2	L-T4_1	criterion	M0	list T4_1: biomass + IC task Glycerate 3-phosphate  de novo synthesis	1
+human2	L-T4_1@RPMI	criterion	RPMI	list T4_1: biomass + IC task Glycerate 3-phosphate  de novo synthesis	1
+human2	L-T4_2	criterion	M0	list T4_2: biomass + IC task Mitochondrial acetyl-CoA de novo synthesis	1
+human2	L-T4_2@RPMI	criterion	RPMI	list T4_2: biomass + IC task Mitochondrial acetyl-CoA de novo synthesis	1
+human2	L-T4_3	criterion	M0	list T4_3: biomass + IC task Mitochondrial AKG de novo synthesis	1
+human2	L-T4_3@RPMI	criterion	RPMI	list T4_3: biomass + IC task Mitochondrial AKG de novo synthesis	1
+human2	L-T4_4	criterion	M0	list T4_4: biomass + IC task Erythrose 4-phosphate de novo synthesis	1
+human2	L-T4_4@RPMI	criterion	RPMI	list T4_4: biomass + IC task Erythrose 4-phosphate de novo synthesis	1
+human2	L-T4_5	criterion	M0	list T4_5: biomass + IC task Fructose 6-phosphate de novo synthesis	1
+human2	L-T4_5@RPMI	criterion	RPMI	list T4_5: biomass + IC task Fructose 6-phosphate de novo synthesis	1
+human2	L-T4_6	criterion	M0	list T4_6: biomass + IC task Glyceraldehyde 3-phosphate de novo synthesis	1
+human2	L-T4_6@RPMI	criterion	RPMI	list T4_6: biomass + IC task Glyceraldehyde 3-phosphate de novo synthesis	1
+human2	L-T4_7	criterion	M0	list T4_7: biomass + IC task Glucose 6-phosphate de novo synthesis	1
+human2	L-T4_7@RPMI	criterion	RPMI	list T4_7: biomass + IC task Glucose 6-phosphate de novo synthesis	1
+human2	L-T4_8	criterion	M0	list T4_8: biomass + IC task Mitochondrial oxaloacetate de novo synthesis	1
+human2	L-T4_8@RPMI	criterion	RPMI	list T4_8: biomass + IC task Mitochondrial oxaloacetate de novo synthesis	1
+human2	L-T4_9	criterion	M0	list T4_9: biomass + IC task Phosphoenolpyruvate de novo synthesis	1
+human2	L-T4_9@RPMI	criterion	RPMI	list T4_9: biomass + IC task Phosphoenolpyruvate de novo synthesis	1
+human2	L-T4_10	criterion	M0	list T4_10: biomass + IC task Pyruvate de novo synthesis	1
+human2	L-T4_10@RPMI	criterion	RPMI	list T4_10: biomass + IC task Pyruvate de novo synthesis	1
+human2	L-T4_11	criterion	M0	list T4_11: biomass + IC task Ribose 5-phosphate de novo synthesis	1
+human2	L-T4_11@RPMI	criterion	RPMI	list T4_11: biomass + IC task Ribose 5-phosphate de novo synthesis	1
+human2	L-T4_12	criterion	M0	list T4_12: biomass + IC task Mitochondrial succinyl-CoA de novo synthesis	1
+human2	L-T4_12@RPMI	criterion	RPMI	list T4_12: biomass + IC task Mitochondrial succinyl-CoA de novo synthesis	1
+human2	L-T5	criterion	M0	list T5: biomass + PC/PE/PS/PI/cholesterol + choline/inositol uptake	7
+human2	L-T5@RPMI	criterion	RPMI	list T5: biomass + PC/PE/PS/PI/cholesterol + choline/inositol uptake	7
+human2	L-T6	criterion	M0	list T6: biomass + TPP/CoA/FAD/heme	4
+human2	L-T6@RPMI	criterion	RPMI	list T6: biomass + TPP/CoA/FAD/heme	4
+human2	L-T5+	criterion	M0	list T5 + Full 104-111	15
+human2	L-T5+@RPMI	criterion	RPMI	list T5 + Full 104-111	15
+human2	L-T6+	criterion	M0	list T6 + Full 112-118	11
+human2	L-T6+@RPMI	criterion	RPMI	list T6 + Full 112-118	11
+human2	L-T8	criterion	M0	list T8: biomass + Full 42-50, 52-68, 77-99 (non-should-fail)	41
+human2	L-T8@RPMI	criterion	RPMI	list T8: biomass + Full 42-50, 52-68, 77-99 (non-should-fail)	41
+human2	T0	reference	M0	biomass only	0
+human2	B-loo:DNA	B-loo	M0	B-loo:DNA	1
+human2	B-loo:RNA	B-loo	M0	B-loo:RNA	1
+human2	B-loo:glycogen	B-loo	M0	B-loo:glycogen	1
+human2	B-loo:cofactor_pool_biomass	B-loo	M0	B-loo:cofactor_pool_biomass	1
+human2	B-loo:protein_pool_biomass	B-loo	M0	B-loo:protein_pool_biomass	1
+human2	B-loo:lipid_pool_biomass	B-loo	M0	B-loo:lipid_pool_biomass	1
+human2	B-loo:metabolite_pool_biomass	B-loo	M0	B-loo:metabolite_pool_biomass	1
+human2	B-loo:retinoid_catabolites	B-loo	M0	B-loo:retinoid_catabolites	1
+human2	B-loo:vitaminD_catabolites	B-loo	M0	B-loo:vitaminD_catabolites	1
+human2	B-loo:tocopherol_catabolites	B-loo	M0	B-loo:tocopherol_catabolites	1
+human2	B-loo:carnitine	B-loo	M0	B-loo:carnitine	1
+human2	B-loo:heme	B-loo	M0	B-loo:heme	1
+human2	B-loo:ubiquinol	B-loo	M0	B-loo:ubiquinol	1
+human2	B-loo:lipoate	B-loo	M0	B-loo:lipoate	1
+human2	B-loo:cobamide	B-loo	M0	B-loo:cobamide	1
+human2	B-loo:dihydroorotate	B-loo	M0	B-loo:dihydroorotate	1
+human2	L-T10	criterion	M0	list T10: de-artefacted biomass + list-T3 constraints	9
+human2	B-add:dolichol_P@1e-4	B-add	M0	B-add:dolichol_P@1e-4	1
+human2	B-add:GPI_anchor_precursor@1e-4	B-add	M0	B-add:GPI_anchor_precursor@1e-4	1
+human2	B-add:FeS_cluster@1e-4	B-add	M0	B-add:FeS_cluster@1e-4	1
+human2	B-add:SAM_sink@1e-4	B-add	M0	B-add:SAM_sink@1e-4	1
+human2	B-add:spermidine@1e-4	B-add	M0	B-add:spermidine@1e-4	1
+human2	B-add:NAD_turnover@1e-4	B-add	M0	B-add:NAD_turnover@1e-4	1
+human2	B-add:GSH_turnover@1e-4	B-add	M0	B-add:GSH_turnover@1e-4	1
+human2	B-add:ALL@1e-4	B-add	M0	B-add:ALL@1e-4	1
+human2	B-add:dolichol_P@1e-3	B-add-sens	M0	B-add:dolichol_P@1e-3	1
+human2	B-add:GPI_anchor_precursor@1e-3	B-add-sens	M0	B-add:GPI_anchor_precursor@1e-3	1
+human2	B-add:FeS_cluster@1e-3	B-add-sens	M0	B-add:FeS_cluster@1e-3	1
+human2	B-add:SAM_sink@1e-3	B-add-sens	M0	B-add:SAM_sink@1e-3	1
+human2	B-add:spermidine@1e-3	B-add-sens	M0	B-add:spermidine@1e-3	1
+human2	B-add:NAD_turnover@1e-3	B-add-sens	M0	B-add:NAD_turnover@1e-3	1
+human2	B-add:GSH_turnover@1e-3	B-add-sens	M0	B-add:GSH_turnover@1e-3	1
+human2	B-add:ALL@1e-3	B-add-sens	M0	B-add:ALL@1e-3	1
+human2	D-BS	D-BS	M0	D-BS	1
+human2	D-ER	D-ER	M0	D-ER	1
+human2	O-NGAM_0	O-NGAM	M0	O-NGAM_0	1
+human2	O-NGAM_0.1	O-NGAM	M0	O-NGAM_0.1	1
+human2	O-NGAM_0.3	O-NGAM	M0	O-NGAM_0.3	1
+human2	O-cap	O-cap	M0	1 - min(ratio, min_t capacity_t)	56
+human2	T0@RPMI	reference	RPMI	biomass only	0
+human2	B-loo:DNA@RPMI	B-loo	RPMI	B-loo:DNA	1
+human2	B-loo:RNA@RPMI	B-loo	RPMI	B-loo:RNA	1
+human2	B-loo:glycogen@RPMI	B-loo	RPMI	B-loo:glycogen	1
+human2	B-loo:cofactor_pool_biomass@RPMI	B-loo	RPMI	B-loo:cofactor_pool_biomass	1
+human2	B-loo:protein_pool_biomass@RPMI	B-loo	RPMI	B-loo:protein_pool_biomass	1
+human2	B-loo:lipid_pool_biomass@RPMI	B-loo	RPMI	B-loo:lipid_pool_biomass	1
+human2	B-loo:metabolite_pool_biomass@RPMI	B-loo	RPMI	B-loo:metabolite_pool_biomass	1
+human2	B-loo:retinoid_catabolites@RPMI	B-loo	RPMI	B-loo:retinoid_catabolites	1
+human2	B-loo:vitaminD_catabolites@RPMI	B-loo	RPMI	B-loo:vitaminD_catabolites	1
+human2	B-loo:tocopherol_catabolites@RPMI	B-loo	RPMI	B-loo:tocopherol_catabolites	1
+human2	B-loo:carnitine@RPMI	B-loo	RPMI	B-loo:carnitine	1
+human2	B-loo:heme@RPMI	B-loo	RPMI	B-loo:heme	1
+human2	B-loo:ubiquinol@RPMI	B-loo	RPMI	B-loo:ubiquinol	1
+human2	B-loo:lipoate@RPMI	B-loo	RPMI	B-loo:lipoate	1
+human2	B-loo:cobamide@RPMI	B-loo	RPMI	B-loo:cobamide	1
+human2	B-loo:dihydroorotate@RPMI	B-loo	RPMI	B-loo:dihydroorotate	1
+human2	L-T10@RPMI	criterion	RPMI	list T10: de-artefacted biomass + list-T3 constraints	9
+human2	B-add:dolichol_P@1e-4@RPMI	B-add	RPMI	B-add:dolichol_P@1e-4	1
+human2	B-add:GPI_anchor_precursor@1e-4@RPMI	B-add	RPMI	B-add:GPI_anchor_precursor@1e-4	1
+human2	B-add:FeS_cluster@1e-4@RPMI	B-add	RPMI	B-add:FeS_cluster@1e-4	1
+human2	B-add:SAM_sink@1e-4@RPMI	B-add	RPMI	B-add:SAM_sink@1e-4	1
+human2	B-add:spermidine@1e-4@RPMI	B-add	RPMI	B-add:spermidine@1e-4	1
+human2	B-add:NAD_turnover@1e-4@RPMI	B-add	RPMI	B-add:NAD_turnover@1e-4	1
+human2	B-add:GSH_turnover@1e-4@RPMI	B-add	RPMI	B-add:GSH_turnover@1e-4	1
+human2	B-add:ALL@1e-4@RPMI	B-add	RPMI	B-add:ALL@1e-4	1
+human2	D-BS@RPMI	D-BS	RPMI	D-BS	1
+human2	D-ER@RPMI	D-ER	RPMI	D-ER	1
+human2	O-NGAM_0@RPMI	O-NGAM	RPMI	O-NGAM_0	1
+human2	O-NGAM_0.1@RPMI	O-NGAM	RPMI	O-NGAM_0.1	1
+human2	O-NGAM_0.3@RPMI	O-NGAM	RPMI	O-NGAM_0.3	1
+human2	O-cap@RPMI	O-cap	RPMI	1 - min(ratio, min_t capacity_t)	56
+human2	O-MOMA	O-MOMA	M0	QP MOMA biomass ratio	0
+human2	A8-gpFBA	exploratory	M0	gene-pFBA KO-cost tie-break (A8; exploratory)	0
+human1	T5	criterion	M0	biomass + CellFie-inspired active tasks (line-specific, LOLO thresholds)	
+human2	T5	criterion	M0	biomass + CellFie-inspired active tasks (line-specific, LOLO thresholds)	

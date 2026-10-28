@@ -1,0 +1,9 @@
+model	check	pass	detail
+human1	p57_equals_taskEssentialGenes_glpk	True	ours 226 vs Human-GEM 226; only ours []; only theirs []
+human1	category_sets_equal	True	226/226
+human1	p57_equals_w1_gurobi	True	ours 226 vs W1 226; sym diff []
+human1	GR_failures_equal_fba_lethal	True	GR fail 149 vs ratio_r<0.01 149; sym diff []
+human2	p57_equals_taskEssentialGenes_glpk	True	ours 229 vs Human-GEM 229; only ours []; only theirs []
+human2	category_sets_equal	True	229/229
+human2	p57_equals_w1_gurobi	True	ours 229 vs W1 229; sym diff []
+human2	GR_failures_equal_fba_lethal	True	GR fail 154 vs ratio_r<0.01 154; sym diff []

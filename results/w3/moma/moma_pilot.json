@@ -1,0 +1,97 @@
+{
+ "human1": {
+  "n_ko_sets_total": 903,
+  "n_ko_sets_touching_reference": 192,
+  "n_qp": 30,
+  "qp_cpu_s_mean": 17.306292267499998,
+  "qp_cpu_s_max": 34.73631148499999,
+  "status_counts": {
+   "optimal": 29,
+   "infeasible": 1
+  },
+  "projected_cpu_h_per_model": 0.9230022542666666,
+  "wall_s": 727.8,
+  "wt_biomass_ref": 65.57338319775587,
+  "check_add_moma_vs_moma": [
+   {
+    "gene": "ENSG00000103502",
+    "toggled": 0.0,
+    "fresh": 0.0,
+    "abs_diff": 0.0
+   },
+   {
+    "gene": "ENSG00000138074",
+    "toggled": 0.0,
+    "fresh": 0.0,
+    "abs_diff": 0.0
+   },
+   {
+    "gene": "ENSG00000156471",
+    "toggled": 65.42447920882506,
+    "fresh": 65.42447920882343,
+    "abs_diff": 1.6342482922482304e-12
+   },
+   {
+    "gene": "ENSG00000167186",
+    "toggled": 0.0,
+    "fresh": 0.0,
+    "abs_diff": 0.0
+   },
+   {
+    "gene": "ENSG00000185813",
+    "toggled": 65.55960105935449,
+    "fresh": 65.5596010837447,
+    "abs_diff": 2.439020363453892e-08
+   }
+  ],
+  "check_pass": true,
+  "rule_drop_if_gt_1_cpu_h": false
+ },
+ "human2": {
+  "n_ko_sets_total": 929,
+  "n_ko_sets_touching_reference": 204,
+  "n_qp": 30,
+  "qp_cpu_s_mean": 10.842554978466664,
+  "qp_cpu_s_max": 31.820006897000006,
+  "status_counts": {
+   "optimal": 30
+  },
+  "projected_cpu_h_per_model": 0.6144114487797776,
+  "wall_s": 603.0,
+  "wt_biomass_ref": 74.75676660379047,
+  "check_add_moma_vs_moma": [
+   {
+    "gene": "ENSG00000103502",
+    "toggled": 0.0,
+    "fresh": 0.0,
+    "abs_diff": 0.0
+   },
+   {
+    "gene": "ENSG00000134824",
+    "toggled": 74.63942196690806,
+    "fresh": 74.6394219669088,
+    "abs_diff": 7.389644451905042e-13
+   },
+   {
+    "gene": "ENSG00000157184",
+    "toggled": 74.73709212732501,
+    "fresh": 74.73709212732477,
+    "abs_diff": 2.4158453015843406e-13
+   },
+   {
+    "gene": "ENSG00000174915",
+    "toggled": 74.5895713943522,
+    "fresh": 74.58957139435054,
+    "abs_diff": 1.6626700016786344e-12
+   },
+   {
+    "gene": "ENSG00000241878",
+    "toggled": 74.52632784318212,
+    "fresh": 74.52632784318092,
+    "abs_diff": 1.1937117960769683e-12
+   }
+  ],
+  "check_pass": true,
+  "rule_drop_if_gt_1_cpu_h": false
+ }
+}

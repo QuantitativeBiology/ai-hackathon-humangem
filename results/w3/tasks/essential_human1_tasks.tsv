@@ -1,0 +1,58 @@
+idx	seed	tries	status	error	lam_wt	n_required	fset_size	lset_size	n_solves	ess_rxns	cpu_s	task	description	category	group	n_genes_failing
+0	-1		ok		1000	1	46	94	58		19.9108	ESS001	Aerobic rephosphorylation of ATP from glucose	ER	Rephosphorylation of nucleoside triphosphates	0
+1	-1		ok		1000	1	46	109	63		19.2342	ESS002	Aerobic rephosphorylation of GTP	ER	Rephosphorylation of nucleoside triphosphates	0
+2	-1		ok		1000	1	48	102	67		20.2594	ESS003	Aerobic rephosphorylation of CTP	ER	Rephosphorylation of nucleoside triphosphates	0
+3	-1		ok		1000	1	46	115	65		19.6691	ESS004	Aerobic rephosphorylation of UTP	ER	Rephosphorylation of nucleoside triphosphates	0
+4	-1		ok		76.9231	1	91	135	83		37.757	ESS005	ATP de novo synthesis	BS	De novo synthesis of nucleotides	7
+5	-1		ok		111.111	1	65	120	58		27.9243	ESS006	CTP de novo synthesis	BS	De novo synthesis of nucleotides	25
+6	-1		ok		76.9231	1	90	108	71		33.4258	ESS007	GTP de novo synthesis	BS	De novo synthesis of nucleotides	8
+7	-1		ok		125	1	70	114	61		24.2283	ESS008	UTP de novo synthesis	BS	De novo synthesis of nucleotides	25
+8	-1		ok		76.9231	1	93	184	73		26.7499	ESS009	dATP de novo synthesis	BS	De novo synthesis of nucleotides	7
+9	-1		ok		111.111	1	65	102	60		26.2819	ESS010	dCTP de novo synthesis	BS	De novo synthesis of nucleotides	28
+10	-1		ok		76.9231	1	92	118	84		31.0916	ESS011	dGTP de novo synthesis	BS	De novo synthesis of nucleotides	8
+11	-1		ok		117.647	1	78	121	78		28.4788	ESS012	dTTP de novo synthesis	BS	De novo synthesis of nucleotides	27
+12	-1		ok		1	1	1	1	0		7.01838	ESS013	Histidine uptake	SU	Uptake of essential amino acids	0
+13	-1		ok		1	1	1	1	0		7.58427	ESS014	Isoleucine uptake	SU	Uptake of essential amino acids	0
+14	-1		ok		1	1	1	1	0		2.35918	ESS015	Leucine uptake	SU	Uptake of essential amino acids	0
+15	-1		ok		1	1	1	1	0		7.60676	ESS016	Lysine uptake	SU	Uptake of essential amino acids	0
+16	-1		ok		1	1	4	6	1		2.0101	ESS017	Methionine uptake	SU	Uptake of essential amino acids	0
+17	-1		ok		1	1	1	1	0		2.21039	ESS018	Phenylalanine uptake	SU	Uptake of essential amino acids	0
+18	-1		ok		1	1	1	1	0		2.0042	ESS019	Threonine uptake	SU	Uptake of essential amino acids	0
+19	-1		ok		1	1	1	1	0		7.78032	ESS020	Tryptophan uptake	SU	Uptake of essential amino acids	0
+20	-1		ok		1	1	1	1	0		7.33476	ESS021	Valine uptake	SU	Uptake of essential amino acids	0
+21	-1		ok		666.667	1	20	22	10		4.77909	ESS022	Glycerate 3-phosphate  de novo synthesis	IC	De novo synthesis of key intermediates	0
+22	-1		ok		714.286	1	31	83	42		13.8503	ESS023	Mitochondrial acetyl-CoA de novo synthesis	IC	De novo synthesis of key intermediates	0
+23	-1		ok		333.333	1	48	70	48		12.3469	ESS024	Mitochondrial AKG de novo synthesis	IC	De novo synthesis of key intermediates	1
+24	-1		ok		840	1	55	77	56		18.5368	ESS025	Erythrose 4-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	0
+25	-1		ok		840	1	49	63	52		11.5395	ESS026	Fructose 6-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	0
+26	-1		ok		840	1	49	59	50		10.6163	ESS027	Glyceraldehyde 3-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	0
+27	-1		ok		840	1	49	56	47		10.3626	ESS028	Glucose 6-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	0
+28	-1		ok		333.333	1	60	104	64		14.6506	ESS029	Mitochondrial oxaloacetate de novo synthesis	IC	De novo synthesis of key intermediates	0
+29	-1		ok		400	1	22	54	18		11.9108	ESS030	Phosphoenolpyruvate de novo synthesis	IC	De novo synthesis of key intermediates	0
+30	-1		ok		666.667	1	18	22	8		3.62473	ESS031	Pyruvate de novo synthesis	IC	De novo synthesis of key intermediates	0
+31	-1		ok		840	1	54	79	55		11.4636	ESS032	Ribose 5-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	0
+32	-1		ok		400	1	64	145	90		18.9677	ESS033	Mitochondrial succinyl-CoA de novo synthesis	IC	De novo synthesis of key intermediates	0
+33	-1		ok		39.2638	1	78	139	89		23.8908	ESS034	Cholesterol de novo synthesis	BS	De novo synthesis of other compounds	11
+34	-1		ok		1000	1	106	140	112		16.7523	ESS035	Protein synthesis from AAs	BS	Protein turnover	21
+35	-1		ok		1	3	11	17	14		17.0291	ESS036	Oxidative phosphorylation	ER	Electron transport chain and TCA	46
+36	-1		ok		1	3	6	6	8		10.0659	ESS037	Oxidative decarboxylation	ER	Electron transport chain and TCA	4
+37	-1		ok		1	4	16	30	20		16.9603	ESS038	Krebs cycle NADH	ER	Electron transport chain and TCA	9
+38	-1		ok		1	2	13	14	14		11.6626	ESS039	Ubiquinol-to-proton	ER	Electron transport chain and TCA	21
+39	-1		ok		1	2	7	11	9		13.7587	ESS040	Ubiquinol-to-ATP	ER	Electron transport chain and TCA	42
+40	-1		ok		1	0	102		46		13.2937	ESS041	Beta oxidation of saturated FA	SU	Beta oxidation of fatty acids	11
+41	-1		ok		1	0	129		56		10.7561	ESS042	Beta oxidation of long-chain FA	SU	Beta oxidation of fatty acids	12
+42	-1		ok		1	0	98		42		12.5745	ESS043	Beta oxidation of odd-chain FA	SU	Beta oxidation of fatty acids	21
+43	-1		ok		1	0	126		59		25.9829	ESS044	Beta oxidation of unsaturated fatty acid (n-9)	SU	Beta oxidation of fatty acids	19
+44	-1		ok		1	0	105		46		11.0351	ESS045	Beta oxidation of unsaturated fatty acid (n-6)	SU	Beta oxidation of fatty acids	11
+45	-1		ok		1	0	482		78		29.5788	ESS046	Uptake and beta oxidation of all NEFAs	SU	Beta oxidation of fatty acids	34
+46	-1		ok		1	1	1	1	0		1.60128	ESS047	Choline uptake	SU	De novo synthesis of phospholipids	0
+47	-1		ok		1	1	1	5	2		5.70448	ESS048	Inositol uptake	SU	De novo synthesis of phospholipids	0
+48	-1		ok		1.31675	1	546	789	181		48.0453	ESS049	Phosphatidylcholine de novo synthesis	BS	De novo synthesis of phospholipids	35
+49	-1		ok		1.31675	1	549	1075	197		49.0752	ESS050	Phosphatidylethanolamine de novo synthesis	BS	De novo synthesis of phospholipids	35
+50	-1		ok		1.31675	1	551	880	213		49.7605	ESS051	Phosphatidylserine de novo synthesis	BS	De novo synthesis of phospholipids	35
+51	-1		ok		1.32723	1	548	699	196		51.3713	ESS052	Phosphatidylinositol de novo synthesis	BS	De novo synthesis of phospholipids	36
+52	-1		ok		500	1	9	8	3		7.88916	ESS053	Thiamin phosphorylation to TPP	BS	Vitamins and co-factors	1
+53	-1		ok		71.4286	1	95	123	70		28.6071	ESS054	Coenzyme A synthesis from pantothenate	BS	Vitamins and co-factors	9
+54	-1		ok		74.8663	1	112	126	89		20.7664	ESS055	FAD synthesis from riboflavin	BS	Vitamins and co-factors	8
+55	-1		ok		32.2581	1	91	101	74		15.3284	ESS056	Heme biosynthesis	BS	Vitamins and co-factors	5
+56	-1		ok		65.5734	1	783	1144	365		96.1589	ESS057	Growth on Ham's media (biomass production)	GR	Growth	149

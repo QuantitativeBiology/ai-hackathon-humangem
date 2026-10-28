@@ -1,0 +1,57 @@
+idx	seed	tries	status	error	lam_wt	n_required	fset_size	lset_size	n_solves	ess_rxns	cpu_s	task	description	category	group	n_genes_failing
+41	-1		ok		1000	1	25	78	25		16.1795	FUL042	Alanine de novo synthesis (minimal substrates, minimal excretion)	42		0
+42	-1		ok		213.4	1	85	103	81		34.6721	FUL043	Arginine de novo synthesis (minimal substrates, minimal excretion)	43		7
+43	-1		ok		333.333	1	62	113	75		27.6452	FUL044	Asparagine de novo synthesis (minimal substrates, minimal excretion)	44		2
+44	-1		ok		400	1	66	76	61		19.325	FUL045	Aspartate de novo synthesis (minimal substrates, minimal excretion)	45		0
+45	-1		ok		380.952	1	52	96	60		13.9902	FUL046	Glutamate de novo synthesis (minimal substrates, minimal excretion)	46		1
+46	-1		ok		1000	1	63	62	54		12.3006	FUL047	Glycine de novo synthesis (minimal substrates, minimal excretion)	47		0
+47	-1		ok		312.5	1	47	104	63		15.5506	FUL048	Glutamine de novo synthesis (minimal substrates, minimal excretion)	48		2
+48	-1		ok		385.542	1	48	85	49		11.6458	FUL049	Proline de novo synthesis (minimal substrates, minimal excretion)	49		1
+49	-1		ok		1000	1	27	71	33		7.07671	FUL050	Serine de novo synthesis (minimal substrates, minimal excretion)	50		0
+51	-1		ok		1	1	1	1	0		2.30259	FUL052	Histidine uptake	52		0
+53	-1		ok		1	1	1	1	0		1.8909	FUL054	Isoleucine uptake	54		0
+55	-1		ok		1	1	1	1	0		1.80603	FUL056	Leucine uptake	56		0
+57	-1		ok		1	1	1	1	0		2.74468	FUL058	Lysine uptake	58		0
+59	-1		ok		1	1	4	6	2		1.9534	FUL060	Methionine uptake	60		0
+61	-1		ok		1	1	1	1	0		2.22598	FUL062	Phenylalanine uptake	62		0
+63	-1		ok		1	1	1	1	0		2.03514	FUL064	Threonine uptake	64		0
+65	-1		ok		1	1	1	1	0		1.89538	FUL066	Tryptophan uptake	66		0
+67	-1		ok		1	1	1	1	0		2.37174	FUL068	Valine uptake	68		0
+76	-1		ok		1	0	0		0		1.05872	FUL077	Alanine degradation	77		0
+77	-1		ok		1	0	0		0		1.11385	FUL078	Arginine degradation	78		0
+78	-1		ok		1	0	0		0		1.41366	FUL079	Asparagine degradation	79		0
+79	-1		ok		1	0	0		0		1.00844	FUL080	Aspartate degradation	80		0
+80	-1		ok		1	0	0		0		1.60996	FUL081	Cysteine degradation	81		0
+81	-1		ok		1	0	0		0		0.963763	FUL082	Glutamate degradation	82		0
+82	-1		ok		1	0	0		0		0.737648	FUL083	Glycine degradation	83		0
+83	-1		ok		1	0	0		0		0.767578	FUL084	Histidine degradation	84		0
+84	-1		ok		1	0	0		0		0.936448	FUL085	Isoleucine degradation	85		0
+85	-1		ok		1	0	0		0		0.702466	FUL086	Glutamine degradation	86		0
+86	-1		ok		1	0	0		0		1.05737	FUL087	Leucine degradation	87		0
+87	-1		ok		1	0	0		0		0.75747	FUL088	Lysine degradation	88		0
+88	-1		ok		1	0	0		0		0.923661	FUL089	Methionine degradation	89		0
+89	-1		ok		1	0	0		0		0.682801	FUL090	Phenylalanine degradation	90		0
+90	-1		ok		1	0	0		0		1.06469	FUL091	Proline degradation	91		0
+91	-1		ok		1	0	0		0		0.804161	FUL092	Serine degradation	92		0
+92	-1		ok		1	0	0		0		0.714174	FUL093	Threonine degradation	93		0
+93	-1		ok		1	0	0		0		0.678346	FUL094	Tryptophan degradation	94		0
+94	-1		ok		1	0	0		0		1.01445	FUL095	Tyrosine degradation	95		0
+95	-1		ok		1	0	0		0		0.973841	FUL096	Valine degradation	96		0
+96	-1		ok		1	0	0		0		1.00111	FUL097	Homocysteine degradation	97		0
+97	-1		ok		1	1	79	81	74		29.0024	FUL098	Ornithine degradation	98		47
+98	-1		ok		1	0	0		0		0.771891	FUL099	beta-Alanine degradation	99		0
+103	-1		ok		152.646	1	414	458	154		29.1525	FUL104	PC de novo synthesis (physiological substrates, physiological excretion)	104		25
+104	-1		ok		152.37	1	420	460	166		42.5059	FUL105	PE de novo synthesis (physiological substrates, physiological excretion)	105		34
+105	-1		ok		106.069	1	435	486	162		47.0497	FUL106	PS de novo synthesis (physiological substrates, physiological excretion)	106		36
+106	-1		ok		166.022	1	419	478	170		45.7212	FUL107	PI de novo synthesis (physiological substrates, physiological excretion)	107		35
+107	-1		ok		78.9052	1	369	462	174		44.5205	FUL108	Cardiolipin de novo synthesis (physiological substrates, physiological excretion)	108		34
+108	-1		ok		108.246	1	439	487	172		43.5443	FUL109	SM de novo synthesis (physiological substrates, physiological excretion)	109		36
+109	-1		ok		134.44	1	413	494	162		49.1788	FUL110	Ceramide de novo synthesis (physiological substrates, physiological excretion)	110		36
+110	-1		ok		101.644	1	432	499	176		50.9678	FUL111	Lactosylceramide de novo synthesis (physiological substrates, physiological excretion)	111		39
+111	-1		ok		56.1798	1	137	161	120		43.1002	FUL112	CoA de novo synthesis (minimal substrates, physiological excretion)	112		33
+112	-1		ok		71.3073	1	111	132	100		26.9047	FUL113	NAD de novo synthesis (minimal substrates, physiological excretion)	113		8
+113	-1		ok		65.7277	1	114	126	102		30.8365	FUL114	NADP de novo synthesis (minimal substrates, physiological excretion)	114		9
+114	-1		ok		74.8663	1	107	123	98		28.8015	FUL115	FAD de novo synthesis (minimal substrates, physiological excretion)	115		9
+115	-1		ok		2.7533	1	151	190	150		35.9917	FUL116	Thioredoxin de novo synthesis (physiological substrates, physiological excretion)	116		45
+116	-1		ok		666.667	1	67	49	53		6.62525	FUL117	THF de novo synthesis (minimal substrates, physiological excretion)	117		0
+117	-1		ok		456.522	1	53	65	58		15.8809	FUL118	Pyridoxal-P de novo synthesis (minimal substrates, physiological excretion)	118		2

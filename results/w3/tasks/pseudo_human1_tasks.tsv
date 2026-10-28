@@ -1,0 +1,281 @@
+idx	seed	swaps	tries	status	error	lam_wt	n_required	fset_size	lset_size	n_solves	ess_rxns	cpu_s	task	description	category	group	n_genes_failing
+0	11	"[[""ATP[c] + H2O[c] => ADP[c] + Pi[c] + H+[c]"", ""4-cholesten-7alpha,27-diol-3-one[c]""]]"	6	ok			1	81		39		29.4344	ESS001	Aerobic rephosphorylation of ATP from glucose	ER	Rephosphorylation of nucleoside triphosphates	12
+1	11	"[[""GTP[c] + H2O[c] => GDP[c] + Pi[c] + H+[c]"", ""(24R)-24,25-dihydroxycalciol[c]""]]"	15	ok			1	82		38		32.9193	ESS002	Aerobic rephosphorylation of GTP	ER	Rephosphorylation of nucleoside triphosphates	11
+2	11	"[[""CTP[c] + H2O[c] => CDP[c] + Pi[c] + H+[c]"", ""propane-1,2-diol[c]""]]"	11	ok			1	56		25		9.30918	ESS003	Aerobic rephosphorylation of CTP	ER	Rephosphorylation of nucleoside triphosphates	0
+3	11	"[[""UTP[c] + H2O[c] => UDP[c] + Pi[c] + H+[c]"", ""5beta-cholestan-7alpha,12alpha,24(S)-triol-3-one[c]""]]"	1	ok			1	85		42		16.1343	ESS004	Aerobic rephosphorylation of UTP	ER	Rephosphorylation of nucleoside triphosphates	16
+4	11	"[[""ATP[c]"", ""urate[c]""]]"	7	ok			1	86		38		32.4993	ESS005	ATP de novo synthesis	BS	De novo synthesis of nucleotides	8
+5	11	"[[""CTP[c]"", ""coproporphyrin I[c]""]]"	6	ok			1	89		38		26.4647	ESS006	CTP de novo synthesis	BS	De novo synthesis of nucleotides	3
+6	11	"[[""GTP[c]"", ""D-glyceraldehyde 3-phosphate[c]""]]"	3	ok			1	11		4		12.316	ESS007	GTP de novo synthesis	BS	De novo synthesis of nucleotides	0
+7	11	"[[""UTP[c]"", ""GDP-mannose[c]""]]"	1	ok			1	92		37		22.0718	ESS008	UTP de novo synthesis	BS	De novo synthesis of nucleotides	9
+8	11	"[[""dATP[c]"", ""5beta-cholestane-3alpha,7alpha,12alpha,27,27-pentaol[c]""]]"	6	ok			1	91		39		33.1526	ESS009	dATP de novo synthesis	BS	De novo synthesis of nucleotides	13
+9	11	"[[""dCTP[c]"", ""N1,N12-diacetylspermine[c]""]]"	5	ok			1	77		36		28.1187	ESS010	dCTP de novo synthesis	BS	De novo synthesis of nucleotides	8
+10	11	"[[""dGTP[c]"", ""gamma-L-glutamyl-L-alanine[c]""]]"	1	ok			1	55		26		13.9248	ESS011	dGTP de novo synthesis	BS	De novo synthesis of nucleotides	4
+11	11	"[[""dTTP[c]"", ""D-myo-inositol-1,4,5-trisphosphate[c]""]]"	22	ok			1	138		32		60.3844	ESS012	dTTP de novo synthesis	BS	De novo synthesis of nucleotides	2
+12	11			pseudo_not_generated								186.286	ESS013	Histidine uptake	SU	Uptake of essential amino acids	
+13	11			pseudo_not_generated								176.37	ESS014	Isoleucine uptake	SU	Uptake of essential amino acids	
+14	11			pseudo_not_generated								166.04	ESS015	Leucine uptake	SU	Uptake of essential amino acids	
+15	11			pseudo_not_generated								172.951	ESS016	Lysine uptake	SU	Uptake of essential amino acids	
+16	11			pseudo_not_generated								187.006	ESS017	Methionine uptake	SU	Uptake of essential amino acids	
+17	11			pseudo_not_generated								171.493	ESS018	Phenylalanine uptake	SU	Uptake of essential amino acids	
+18	11			pseudo_not_generated								187.062	ESS019	Threonine uptake	SU	Uptake of essential amino acids	
+19	11			pseudo_not_generated								172.043	ESS020	Tryptophan uptake	SU	Uptake of essential amino acids	
+20	11			pseudo_not_generated								187.885	ESS021	Valine uptake	SU	Uptake of essential amino acids	
+21	11	"[[""3-phospho-D-glycerate[c]"", ""25-hydroxyvitamin D3-26,23-lactol[c]""]]"	7	ok			1	85		39		12.7938	ESS022	Glycerate 3-phosphate  de novo synthesis	IC	De novo synthesis of key intermediates	10
+22	11	"[[""acetyl-CoA[m] => CoA[m]"", ""3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanate[m]""]]"	2	ok			1	105		42		20.7452	ESS023	Mitochondrial acetyl-CoA de novo synthesis	IC	De novo synthesis of key intermediates	13
+23	11	"[[""AKG[m]"", ""3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-27-al[m]""]]"	11	ok			1	91		41		27.4913	ESS024	Mitochondrial AKG de novo synthesis	IC	De novo synthesis of key intermediates	13
+24	11	"[[""erythrose-4-phosphate[c]"", ""cholest-5-ene-3beta,7alpha,25-triol[c]""]]"	7	ok			1	103		46		25.3414	ESS025	Erythrose 4-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	12
+25	11	"[[""fructose-6-phosphate[c]"", ""myristic acid[c]""]]"	2	ok			1	56		23		8.29937	ESS026	Fructose 6-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	1
+26	11	"[[""D-glyceraldehyde 3-phosphate[c]"", ""succinate semialdehyde[c]""]]"	2	ok			1	53		24		9.57672	ESS027	Glyceraldehyde 3-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	2
+27	11	"[[""glucose-6-phosphate[c]"", ""L-gulonate[c]""]]"	5	ok			1	69		36		9.29275	ESS028	Glucose 6-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	0
+28	11	"[[""OAA[m]"", ""DHAP[m]""]]"	8	ok			1	83		37		15.5046	ESS029	Mitochondrial oxaloacetate de novo synthesis	IC	De novo synthesis of key intermediates	22
+29	11	"[[""PEP[c]"", ""myo-inositol-hexakisphosphate[c]""]]"	5	ok			1	89		35		8.82239	ESS030	Phosphoenolpyruvate de novo synthesis	IC	De novo synthesis of key intermediates	4
+30	11	"[[""pyruvate[c]"", ""Chenodeoxycholic acid-24glucuronide, CDCA-24G[c]""]]"	29	ok			1	116		44		42.4502	ESS031	Pyruvate de novo synthesis	IC	De novo synthesis of key intermediates	12
+31	11	"[[""ribose-5-phosphate[c]"", ""heneicosanoic acid[c]""]]"	1	ok			1	165		61		24.5093	ESS032	Ribose 5-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	33
+32	11	"[[""succinyl-CoA[m] => CoA[m]"", ""sn-glycerol-3-phosphate[m]""]]"	19	ok			1	63		31		23.3288	ESS033	Mitochondrial succinyl-CoA de novo synthesis	IC	De novo synthesis of key intermediates	0
+33	11	"[[""cholesterol[c]"", ""myristic acid[c]""]]"	2	ok			1	56		23		5.90224	ESS034	Cholesterol de novo synthesis	BS	De novo synthesis of other compounds	1
+34	11	"[[""albumin[c]"", ""adrenochrome-O-semiquinone[c]""]]"	2	ok			1	91		48		7.69379	ESS035	Protein synthesis from AAs	BS	Protein turnover	3
+35	11			pseudo_not_generated								214.412	ESS036	Oxidative phosphorylation	ER	Electron transport chain and TCA	
+36	11			pseudo_not_generated								192.59	ESS037	Oxidative decarboxylation	ER	Electron transport chain and TCA	
+37	11			pseudo_not_generated								221.29	ESS038	Krebs cycle NADH	ER	Electron transport chain and TCA	
+38	11			pseudo_not_generated								227.977	ESS039	Ubiquinol-to-proton	ER	Electron transport chain and TCA	
+39	11			pseudo_not_generated								228.509	ESS040	Ubiquinol-to-ATP	ER	Electron transport chain and TCA	
+40	11			pseudo_not_generated								0.000543147	ESS041	Beta oxidation of saturated FA	SU	Beta oxidation of fatty acids	
+41	11			pseudo_not_generated								0.000145088	ESS042	Beta oxidation of long-chain FA	SU	Beta oxidation of fatty acids	
+42	11			pseudo_not_generated								0.000127518	ESS043	Beta oxidation of odd-chain FA	SU	Beta oxidation of fatty acids	
+43	11			pseudo_not_generated								0.000133188	ESS044	Beta oxidation of unsaturated fatty acid (n-9)	SU	Beta oxidation of fatty acids	
+44	11			pseudo_not_generated								0.000115087	ESS045	Beta oxidation of unsaturated fatty acid (n-6)	SU	Beta oxidation of fatty acids	
+45	11			pseudo_not_generated								0.000109498	ESS046	Uptake and beta oxidation of all NEFAs	SU	Beta oxidation of fatty acids	
+46	11			pseudo_not_generated								183.851	ESS047	Choline uptake	SU	De novo synthesis of phospholipids	
+47	11			pseudo_not_generated								166.321	ESS048	Inositol uptake	SU	De novo synthesis of phospholipids	
+48	11	"[[""PC-LD pool[c]"", ""prostaglandin J2[c]""]]"	7	ok			1	490		76		47.6095	ESS049	Phosphatidylcholine de novo synthesis	BS	De novo synthesis of phospholipids	34
+49	11	"[[""PE-LD pool[c]"", ""spermidine monoaldehyde 1[c]""]]"	1	ok			1	483		74		20.9316	ESS050	Phosphatidylethanolamine de novo synthesis	BS	De novo synthesis of phospholipids	8
+50	11	"[[""PS-LD pool[c]"", ""O2[c]""]]"	2	ok			1	1		0		6.80507	ESS051	Phosphatidylserine de novo synthesis	BS	De novo synthesis of phospholipids	0
+51	11	"[[""PI pool[c]"", ""cis-gondoic acid[c]""]]"	11	ok			1	451		61		40.6233	ESS052	Phosphatidylinositol de novo synthesis	BS	De novo synthesis of phospholipids	1
+52	11	"[[""thiamin-PP[c]"", ""PPi[c]""]]"	107	ok			1	15		5		296.934	ESS053	Thiamin phosphorylation to TPP	BS	Vitamins and co-factors	0
+53	11	"[[""CoA[c]"", ""5beta-cholestane-3alpha,7alpha,12alpha,24r,25-pentol[c]""]]"	1	ok			1	92		39		19.4324	ESS054	Coenzyme A synthesis from pantothenate	BS	Vitamins and co-factors	13
+54	11	"[[""FAD[c]"", ""aspartate[c]""]]"	1	ok			1	60		28		9.44903	ESS055	FAD synthesis from riboflavin	BS	Vitamins and co-factors	0
+55	11	"[[""heme[c]"", ""Cholic acid-24glucuronide, CA-24G[c]""]]"	13	ok			1	170		72		38.0648	ESS056	Heme biosynthesis	BS	Vitamins and co-factors	18
+0	23	"[[""ATP[c] + H2O[c] => ADP[c] + Pi[c] + H+[c]"", ""4alpha-carboxy-4beta-methyl-5alpha-cholesta-8,24-dien-3beta-ol[c]""]]"	1	ok			1	66		30		3.80815	ESS001	Aerobic rephosphorylation of ATP from glucose	ER	Rephosphorylation of nucleoside triphosphates	7
+1	23	"[[""GTP[c] + H2O[c] => GDP[c] + Pi[c] + H+[c]"", ""Dodecanedioic Acid[c]""]]"	4	ok			1	88		39		9.15295	ESS002	Aerobic rephosphorylation of GTP	ER	Rephosphorylation of nucleoside triphosphates	10
+2	23	"[[""CTP[c] + H2O[c] => CDP[c] + Pi[c] + H+[c]"", ""pyruvate[c]""]]"	3	ok			1	18		4		2.7143	ESS003	Aerobic rephosphorylation of CTP	ER	Rephosphorylation of nucleoside triphosphates	0
+3	23	"[[""UTP[c] + H2O[c] => UDP[c] + Pi[c] + H+[c]"", ""Chenodeoxycholic acid-24glucuronide, CDCA-24G[c]""]]"	1	ok			1	116		43		14.6226	ESS004	Aerobic rephosphorylation of UTP	ER	Rephosphorylation of nucleoside triphosphates	12
+4	23	"[[""ATP[c]"", ""dGMP[c]""]]"	1	ok			1	88		37		21.4521	ESS005	ATP de novo synthesis	BS	De novo synthesis of nucleotides	8
+5	23	"[[""CTP[c]"", ""orotidine-5-phosphate[c]""]]"	4	ok			1	72		33		26.5272	ESS006	CTP de novo synthesis	BS	De novo synthesis of nucleotides	25
+6	23	"[[""GTP[c]"", ""27alpha-hydroxy-7-dehydrocholesterol[c]""]]"	2	ok			1	80		34		20.6252	ESS007	GTP de novo synthesis	BS	De novo synthesis of nucleotides	11
+7	23	"[[""UTP[c]"", ""dGDP[c]""]]"	3	ok			1	92		39		24.5907	ESS008	UTP de novo synthesis	BS	De novo synthesis of nucleotides	8
+8	23	"[[""dATP[c]"", ""NH3[c]""]]"	3	ok			1	1		1		7.83495	ESS009	dATP de novo synthesis	BS	De novo synthesis of nucleotides	0
+9	23	"[[""dCTP[c]"", ""uroporphyrin III[c]""]]"	2	ok			1	78		37		9.67241	ESS010	dCTP de novo synthesis	BS	De novo synthesis of nucleotides	3
+10	23	"[[""dGTP[c]"", ""N(omega)-(ADP-D-ribosyl)-L-arginine[c]""]]"	2	ok			1	112		52		28.131	ESS011	dGTP de novo synthesis	BS	De novo synthesis of nucleotides	13
+11	23	"[[""dTTP[c]"", ""N-acetylgalactosamine[c]""]]"	8	ok			1	58		26		23.7774	ESS012	dTTP de novo synthesis	BS	De novo synthesis of nucleotides	3
+12	23			pseudo_not_generated								177.059	ESS013	Histidine uptake	SU	Uptake of essential amino acids	
+13	23			pseudo_not_generated								187.009	ESS014	Isoleucine uptake	SU	Uptake of essential amino acids	
+14	23			pseudo_not_generated								167.125	ESS015	Leucine uptake	SU	Uptake of essential amino acids	
+15	23			pseudo_not_generated								175.849	ESS016	Lysine uptake	SU	Uptake of essential amino acids	
+16	23			pseudo_not_generated								183.025	ESS017	Methionine uptake	SU	Uptake of essential amino acids	
+17	23			pseudo_not_generated								158.176	ESS018	Phenylalanine uptake	SU	Uptake of essential amino acids	
+18	23			pseudo_not_generated								176.832	ESS019	Threonine uptake	SU	Uptake of essential amino acids	
+19	23			pseudo_not_generated								148.636	ESS020	Tryptophan uptake	SU	Uptake of essential amino acids	
+20	23			pseudo_not_generated								170.826	ESS021	Valine uptake	SU	Uptake of essential amino acids	
+21	23	"[[""3-phospho-D-glycerate[c]"", ""Methyl-Succinate[c]""]]"	3	ok			1	86		36		9.58773	ESS022	Glycerate 3-phosphate  de novo synthesis	IC	De novo synthesis of key intermediates	1
+22	23	"[[""acetyl-CoA[m] => CoA[m]"", ""20alpha,22beta dihydroxycholesterol[m]""]]"	5	ok			1	81		38		23.0117	ESS023	Mitochondrial acetyl-CoA de novo synthesis	IC	De novo synthesis of key intermediates	12
+23	23	"[[""AKG[m]"", ""5beta-cholestane-3alpha,7alpha,12alpha,27-tetraol[m]""]]"	2	ok			1	93		41		16.4832	ESS024	Mitochondrial AKG de novo synthesis	IC	De novo synthesis of key intermediates	13
+24	23	"[[""erythrose-4-phosphate[c]"", ""isopentenyl-pPP[c]""]]"	4	ok			1	57		25		11.1812	ESS025	Erythrose 4-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	4
+25	23	"[[""fructose-6-phosphate[c]"", ""ribose-1-phosphate[c]""]]"	2	ok			1	56		29		2.52766	ESS026	Fructose 6-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	0
+26	23	"[[""D-glyceraldehyde 3-phosphate[c]"", ""4alpha-formyl-4beta-methyl-5alpha-cholesta-8,24-dien-3beta-ol[c]""]]"	19	ok			1	66		30		20.166	ESS027	Glyceraldehyde 3-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	7
+27	23	"[[""glucose-6-phosphate[c]"", ""7alpha-hydroxy-5beta-cholestan-3-one[c]""]]"	11	ok			1	120		44		23.4722	ESS028	Glucose 6-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	12
+28	23	"[[""OAA[m]"", ""3-phospho-D-glycerate[m]""]]"	3	ok			1	21		6		9.07395	ESS029	Mitochondrial oxaloacetate de novo synthesis	IC	De novo synthesis of key intermediates	0
+29	23	"[[""PEP[c]"", ""tricosanoic acid[c]""]]"	18	ok			1	166		61		38.284	ESS030	Phosphoenolpyruvate de novo synthesis	IC	De novo synthesis of key intermediates	34
+30	23	"[[""pyruvate[c]"", ""behenic acid[c]""]]"	5	ok			1	67		26		15.673	ESS031	Pyruvate de novo synthesis	IC	De novo synthesis of key intermediates	2
+31	23	"[[""ribose-5-phosphate[c]"", ""3-Dehydrocholic acid; 3oxo-7alpha,12alpha-Dihydroxy-5beta-cholan-24-oic acid[c]""]]"	7	ok			1	134		51		20.2238	ESS032	Ribose 5-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	17
+32	23	"[[""succinyl-CoA[m] => CoA[m]"", ""acetate[m]""]]"	6	ok			1	58		25		9.80778	ESS033	Mitochondrial succinyl-CoA de novo synthesis	IC	De novo synthesis of key intermediates	0
+33	23	"[[""cholesterol[c]"", ""L-lactate[c]""]]"	5	ok			1	22		6		3.64073	ESS034	Cholesterol de novo synthesis	BS	De novo synthesis of other compounds	0
+34	23	"[[""albumin[c]"", ""L-erythrulose[c]""]]"	1	ok			1	0		0		1.73092	ESS035	Protein synthesis from AAs	BS	Protein turnover	0
+35	23			pseudo_not_generated								214.658	ESS036	Oxidative phosphorylation	ER	Electron transport chain and TCA	
+36	23			pseudo_not_generated								187.162	ESS037	Oxidative decarboxylation	ER	Electron transport chain and TCA	
+37	23			pseudo_not_generated								219.375	ESS038	Krebs cycle NADH	ER	Electron transport chain and TCA	
+38	23			pseudo_not_generated								222.943	ESS039	Ubiquinol-to-proton	ER	Electron transport chain and TCA	
+39	23			pseudo_not_generated								219.007	ESS040	Ubiquinol-to-ATP	ER	Electron transport chain and TCA	
+40	23			pseudo_not_generated								0.000199488	ESS041	Beta oxidation of saturated FA	SU	Beta oxidation of fatty acids	
+41	23			pseudo_not_generated								9.9816e-05	ESS042	Beta oxidation of long-chain FA	SU	Beta oxidation of fatty acids	
+42	23			pseudo_not_generated								8.2172e-05	ESS043	Beta oxidation of odd-chain FA	SU	Beta oxidation of fatty acids	
+43	23			pseudo_not_generated								7.7639e-05	ESS044	Beta oxidation of unsaturated fatty acid (n-9)	SU	Beta oxidation of fatty acids	
+44	23			pseudo_not_generated								7.5757e-05	ESS045	Beta oxidation of unsaturated fatty acid (n-6)	SU	Beta oxidation of fatty acids	
+45	23			pseudo_not_generated								7.5693e-05	ESS046	Uptake and beta oxidation of all NEFAs	SU	Beta oxidation of fatty acids	
+46	23			pseudo_not_generated								176.034	ESS047	Choline uptake	SU	De novo synthesis of phospholipids	
+47	23			pseudo_not_generated								173.059	ESS048	Inositol uptake	SU	De novo synthesis of phospholipids	
+48	23	"[[""PC-LD pool[c]"", ""deoxyuridine[c]""]]"	2	ok			1	83		31		20.0743	ESS049	Phosphatidylcholine de novo synthesis	BS	De novo synthesis of phospholipids	27
+49	23	"[[""PE-LD pool[c]"", ""acetaldehyde[c]""]]"	1	ok			1	60		23		10.3208	ESS050	Phosphatidylethanolamine de novo synthesis	BS	De novo synthesis of phospholipids	0
+50	23	"[[""PS-LD pool[c]"", ""lacto-N-fucopentaosyl-III-ceramide[c]""]]"	5	ok			1	518		92		53.0173	ESS051	Phosphatidylserine de novo synthesis	BS	De novo synthesis of phospholipids	48
+51	23	"[[""PI pool[c]"", ""PRPP[c]""]]"	5	ok			1	26		9		21.6454	ESS052	Phosphatidylinositol de novo synthesis	BS	De novo synthesis of phospholipids	0
+52	23			pseudo_not_generated								564.453	ESS053	Thiamin phosphorylation to TPP	BS	Vitamins and co-factors	
+53	23	"[[""CoA[c]"", ""4-cholesten-7alpha,27-diol-3-one[c]""]]"	3	ok			1	79		38		25.0003	ESS054	Coenzyme A synthesis from pantothenate	BS	Vitamins and co-factors	12
+54	23	"[[""FAD[c]"", ""cholest-5-ene-3beta,7alpha,27-triol[c]""]]"	7	ok			1	82		39		25.271	ESS055	FAD synthesis from riboflavin	BS	Vitamins and co-factors	11
+55	23	"[[""heme[c]"", ""spermidine[c]""]]"	23	ok			1	76		35		55.6865	ESS056	Heme biosynthesis	BS	Vitamins and co-factors	8
+0	37	"[[""ATP[c] + H2O[c] => ADP[c] + Pi[c] + H+[c]"", ""hydroxypyruvate[c]""]]"	34	ok			1	21		7		30.92	ESS001	Aerobic rephosphorylation of ATP from glucose	ER	Rephosphorylation of nucleoside triphosphates	1
+1	37	"[[""GTP[c] + H2O[c] => GDP[c] + Pi[c] + H+[c]"", ""3-oxopropanoate[c]""]]"	16	ok			1	47		20		16.1629	ESS002	Aerobic rephosphorylation of GTP	ER	Rephosphorylation of nucleoside triphosphates	1
+2	37	"[[""CTP[c] + H2O[c] => CDP[c] + Pi[c] + H+[c]"", ""acetaldehyde[c]""]]"	3	ok			1	67		28		10.7009	ESS003	Aerobic rephosphorylation of CTP	ER	Rephosphorylation of nucleoside triphosphates	0
+3	37	"[[""UTP[c] + H2O[c] => UDP[c] + Pi[c] + H+[c]"", ""(R)-3-hydroxybutanoate[c]""]]"	8	ok			1	41		16		9.86212	ESS004	Aerobic rephosphorylation of UTP	ER	Rephosphorylation of nucleoside triphosphates	11
+4	37	"[[""ATP[c]"", ""H+[c]""]]"	3	ok			1	65		31		13.6605	ESS005	ATP de novo synthesis	BS	De novo synthesis of nucleotides	0
+5	37	"[[""CTP[c]"", ""AIR[c]""]]"	13	ok			1	61		21		43.6763	ESS006	CTP de novo synthesis	BS	De novo synthesis of nucleotides	4
+6	37	"[[""GTP[c]"", ""Seryl-Glycyl-Glutamate[c]""]]"	4	ok			1	65		31		20.3716	ESS007	GTP de novo synthesis	BS	De novo synthesis of nucleotides	1
+7	37	"[[""UTP[c]"", ""ATP[c]""]]"	8	ok			1	91		36		32.9533	ESS008	UTP de novo synthesis	BS	De novo synthesis of nucleotides	7
+8	37	"[[""dATP[c]"", ""25-hydroxyvitamin D3-26,23-lactone[c]""]]"	2	ok			1	86		36		17.3986	ESS009	dATP de novo synthesis	BS	De novo synthesis of nucleotides	10
+9	37	"[[""dCTP[c]"", ""D-tagatose-6-phosphate[c]""]]"	4	ok			1	132		28		20.3449	ESS010	dCTP de novo synthesis	BS	De novo synthesis of nucleotides	0
+10	37	"[[""dGTP[c]"", ""1-acylglycerol-3P-ol[c]""]]"	8	ok			1	69		33		31.9105	ESS011	dGTP de novo synthesis	BS	De novo synthesis of nucleotides	1
+11	37	"[[""dTTP[c]"", ""sedoheptulose-7-phosphate[c]""]]"	3	ok			1	16		6		14.3301	ESS012	dTTP de novo synthesis	BS	De novo synthesis of nucleotides	0
+12	37			pseudo_not_generated								175.699	ESS013	Histidine uptake	SU	Uptake of essential amino acids	
+13	37			pseudo_not_generated								178.95	ESS014	Isoleucine uptake	SU	Uptake of essential amino acids	
+14	37			pseudo_not_generated								164.615	ESS015	Leucine uptake	SU	Uptake of essential amino acids	
+15	37			pseudo_not_generated								169.799	ESS016	Lysine uptake	SU	Uptake of essential amino acids	
+16	37			pseudo_not_generated								176.505	ESS017	Methionine uptake	SU	Uptake of essential amino acids	
+17	37			pseudo_not_generated								155.573	ESS018	Phenylalanine uptake	SU	Uptake of essential amino acids	
+18	37			pseudo_not_generated								172.29	ESS019	Threonine uptake	SU	Uptake of essential amino acids	
+19	37			pseudo_not_generated								141.803	ESS020	Tryptophan uptake	SU	Uptake of essential amino acids	
+20	37			pseudo_not_generated								170.052	ESS021	Valine uptake	SU	Uptake of essential amino acids	
+21	37	"[[""3-phospho-D-glycerate[c]"", ""3-deoxy-D-glycero-D-galacto-2-nonulosonic acid-9-phosphate[c]""]]"	4	ok			1	41		16		10.5721	ESS022	Glycerate 3-phosphate  de novo synthesis	IC	De novo synthesis of key intermediates	2
+22	37	"[[""acetyl-CoA[m] => CoA[m]"", ""2-methyl-3-oxopropanoate[m]""]]"	11	ok			1	111		52		31.961	ESS023	Mitochondrial acetyl-CoA de novo synthesis	IC	De novo synthesis of key intermediates	30
+23	37	"[[""AKG[m]"", ""3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-27-al[m]""]]"	4	ok			1	91		42		22.2808	ESS024	Mitochondrial AKG de novo synthesis	IC	De novo synthesis of key intermediates	13
+24	37	"[[""erythrose-4-phosphate[c]"", ""cholesterol[c]""]]"	8	ok			1	79		38		21.0408	ESS025	Erythrose 4-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	11
+25	37	"[[""fructose-6-phosphate[c]"", ""ribulose-5-phosphate[c]""]]"	5	ok			1	54		27		5.61784	ESS026	Fructose 6-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	0
+26	37	"[[""D-glyceraldehyde 3-phosphate[c]"", ""D-myo-inositol-1,4,5-trisphosphate[c]""]]"	4	ok			1	86		33		5.63139	ESS027	Glyceraldehyde 3-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	2
+27	37	"[[""glucose-6-phosphate[c]"", ""beta-D-galactose[c]""]]"	12	ok			1	55		28		16.048	ESS028	Glucose 6-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	2
+28	37	"[[""OAA[m]"", ""behenic acid[m]""]]"	1	ok			1	69		24		5.26667	ESS029	Mitochondrial oxaloacetate de novo synthesis	IC	De novo synthesis of key intermediates	2
+29	37	"[[""PEP[c]"", ""4alpha-methylzymosterol[c]""]]"	4	ok			1	74		32		5.44702	ESS030	Phosphoenolpyruvate de novo synthesis	IC	De novo synthesis of key intermediates	9
+30	37	"[[""pyruvate[c]"", ""D-lactate[c]""]]"	9	ok			1	31		11		10.4519	ESS031	Pyruvate de novo synthesis	IC	De novo synthesis of key intermediates	0
+31	37	"[[""ribose-5-phosphate[c]"", ""14-demethyllanosterol[c]""]]"	5	ok			1	59		27		6.19663	ESS032	Ribose 5-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	7
+32	37	"[[""succinyl-CoA[m] => CoA[m]"", ""succinate semialdehyde[m]""]]"	5	ok			1	52		24		7.08911	ESS033	Mitochondrial succinyl-CoA de novo synthesis	IC	De novo synthesis of key intermediates	2
+33	37	"[[""cholesterol[c]"", ""5beta-cholestane-3alpha,7alpha,12alpha,25,27-pentol[c]""]]"	5	ok			1	92		41		18.4983	ESS034	Cholesterol de novo synthesis	BS	De novo synthesis of other compounds	13
+34	37	"[[""albumin[c]"", ""Arginyl-Phenylalanine-Arginine[c]""]]"	3	ok			1	4		0		3.28272	ESS035	Protein synthesis from AAs	BS	Protein turnover	0
+35	37			pseudo_not_generated								217.392	ESS036	Oxidative phosphorylation	ER	Electron transport chain and TCA	
+36	37			pseudo_not_generated								205.207	ESS037	Oxidative decarboxylation	ER	Electron transport chain and TCA	
+37	37			pseudo_not_generated								220.563	ESS038	Krebs cycle NADH	ER	Electron transport chain and TCA	
+38	37			pseudo_not_generated								227.35	ESS039	Ubiquinol-to-proton	ER	Electron transport chain and TCA	
+39	37			pseudo_not_generated								218.568	ESS040	Ubiquinol-to-ATP	ER	Electron transport chain and TCA	
+40	37			pseudo_not_generated								0.000365732	ESS041	Beta oxidation of saturated FA	SU	Beta oxidation of fatty acids	
+41	37			pseudo_not_generated								0.000127059	ESS042	Beta oxidation of long-chain FA	SU	Beta oxidation of fatty acids	
+42	37			pseudo_not_generated								0.000102989	ESS043	Beta oxidation of odd-chain FA	SU	Beta oxidation of fatty acids	
+43	37			pseudo_not_generated								9.5129e-05	ESS044	Beta oxidation of unsaturated fatty acid (n-9)	SU	Beta oxidation of fatty acids	
+44	37			pseudo_not_generated								9.5769e-05	ESS045	Beta oxidation of unsaturated fatty acid (n-6)	SU	Beta oxidation of fatty acids	
+45	37			pseudo_not_generated								9.1671e-05	ESS046	Uptake and beta oxidation of all NEFAs	SU	Beta oxidation of fatty acids	
+46	37			pseudo_not_generated								190.043	ESS047	Choline uptake	SU	De novo synthesis of phospholipids	
+47	37			pseudo_not_generated								168.075	ESS048	Inositol uptake	SU	De novo synthesis of phospholipids	
+48	37	"[[""PC-LD pool[c]"", ""5,6-DHET[c]""]]"	7	ok			1	489		75		35.6168	ESS049	Phosphatidylcholine de novo synthesis	BS	De novo synthesis of phospholipids	13
+49	37	"[[""PE-LD pool[c]"", ""nLc8Cer[c]""]]"	4	ok			1	497		81		43.4935	ESS050	Phosphatidylethanolamine de novo synthesis	BS	De novo synthesis of phospholipids	42
+50	37	"[[""PS-LD pool[c]"", ""behenic acid[c]""]]"	4	ok			1	454		62		24.8653	ESS051	Phosphatidylserine de novo synthesis	BS	De novo synthesis of phospholipids	2
+51	37	"[[""PI pool[c]"", ""20-hydroxy-D4-neuroprostane[c]""]]"	1	ok			1	470		76		34.9367	ESS052	Phosphatidylinositol de novo synthesis	BS	De novo synthesis of phospholipids	35
+52	37	"[[""thiamin-PP[c]"", ""O2[c]""]]"	167	ok			1	1		0		465.57	ESS053	Thiamin phosphorylation to TPP	BS	Vitamins and co-factors	0
+53	37	"[[""CoA[c]"", ""G00006[c]""]]"	2	ok			1	101		41		14.0874	ESS054	Coenzyme A synthesis from pantothenate	BS	Vitamins and co-factors	14
+54	37	"[[""FAD[c]"", ""acetaldehyde[c]""]]"	2	ok			1	67		30		9.15072	ESS055	FAD synthesis from riboflavin	BS	Vitamins and co-factors	0
+55	37	"[[""heme[c]"", ""guanine[c]""]]"	7	ok			1	83		36		33.2546	ESS056	Heme biosynthesis	BS	Vitamins and co-factors	9
+0	41	"[[""ATP[c] + H2O[c] => ADP[c] + Pi[c] + H+[c]"", ""margaric acid[c]""]]"	1	ok			1	149		57		30.3714	ESS001	Aerobic rephosphorylation of ATP from glucose	ER	Rephosphorylation of nucleoside triphosphates	32
+1	41	"[[""GTP[c] + H2O[c] => GDP[c] + Pi[c] + H+[c]"", ""7-Ketolithocholate[c]""]]"	2	ok			1	113		41		16.4992	ESS002	Aerobic rephosphorylation of GTP	ER	Rephosphorylation of nucleoside triphosphates	11
+2	41	"[[""CTP[c] + H2O[c] => CDP[c] + Pi[c] + H+[c]"", ""cholest-5-ene-3beta,7alpha,27-triol[c]""]]"	10	ok			1	83		38		30.343	ESS003	Aerobic rephosphorylation of CTP	ER	Rephosphorylation of nucleoside triphosphates	11
+3	41	"[[""UTP[c] + H2O[c] => UDP[c] + Pi[c] + H+[c]"", ""4alpha-methyl-cholesta-8-enol[c]""]]"	7	ok			1	72		33		9.87023	ESS004	Aerobic rephosphorylation of UTP	ER	Rephosphorylation of nucleoside triphosphates	11
+4	41	"[[""ATP[c]"", ""6-lactoyl-5,6,7,8-tetrahydropterin[c]""]]"	2	ok			1	76		31		22.7519	ESS005	ATP de novo synthesis	BS	De novo synthesis of nucleotides	11
+5	41	"[[""CTP[c]"", ""3-ureidopropionate[c]""]]"	2	ok			1	72		32		14.9712	ESS006	CTP de novo synthesis	BS	De novo synthesis of nucleotides	25
+6	41	"[[""GTP[c]"", ""sn-glycerol-3-PE[c]""]]"	2	ok			1	229		44		11.1085	ESS007	GTP de novo synthesis	BS	De novo synthesis of nucleotides	0
+7	41	"[[""UTP[c]"", ""N-acetylglucosamine-1-phosphate[c]""]]"	2	ok			1	57		25		11.7996	ESS008	UTP de novo synthesis	BS	De novo synthesis of nucleotides	3
+8	41	"[[""dATP[c]"", ""Asparaginyl-Asparaginyl-Arginine[c]""]]"	4	ok			1	82		43		27.5193	ESS009	dATP de novo synthesis	BS	De novo synthesis of nucleotides	9
+9	41	"[[""dCTP[c]"", ""4,4-dimethyl-14alpha-hydroxymethyl-5alpha-cholesta-8,24-dien-3beta-ol[c]""]]"	2	ok			1	52		26		17.4826	ESS010	dCTP de novo synthesis	BS	De novo synthesis of nucleotides	8
+10	41	"[[""dGTP[c]"", ""D-alanine[c]""]]"	2	ok			1	71		29		12.329	ESS011	dGTP de novo synthesis	BS	De novo synthesis of nucleotides	0
+11	41	"[[""dTTP[c]"", ""1-acylglycerol-3P-13-docose[c]""]]"	2	ok			1	77		33		13.3427	ESS012	dTTP de novo synthesis	BS	De novo synthesis of nucleotides	1
+12	41			pseudo_not_generated								180.045	ESS013	Histidine uptake	SU	Uptake of essential amino acids	
+13	41			pseudo_not_generated								177.875	ESS014	Isoleucine uptake	SU	Uptake of essential amino acids	
+14	41			pseudo_not_generated								163.059	ESS015	Leucine uptake	SU	Uptake of essential amino acids	
+15	41			pseudo_not_generated								171.939	ESS016	Lysine uptake	SU	Uptake of essential amino acids	
+16	41			pseudo_not_generated								178.508	ESS017	Methionine uptake	SU	Uptake of essential amino acids	
+17	41			pseudo_not_generated								157.85	ESS018	Phenylalanine uptake	SU	Uptake of essential amino acids	
+18	41			pseudo_not_generated								167.578	ESS019	Threonine uptake	SU	Uptake of essential amino acids	
+19	41			pseudo_not_generated								148.76	ESS020	Tryptophan uptake	SU	Uptake of essential amino acids	
+20	41			pseudo_not_generated								178.265	ESS021	Valine uptake	SU	Uptake of essential amino acids	
+21	41	"[[""3-phospho-D-glycerate[c]"", ""sedoheptulose-1-phosphate[c]""]]"	12	ok			1	56		29		15.9309	ESS022	Glycerate 3-phosphate  de novo synthesis	IC	De novo synthesis of key intermediates	2
+22	41	"[[""acetyl-CoA[m] => CoA[m]"", ""3,7,24THCA[m]""]]"	53	ok			1	101		44		77.7618	ESS023	Mitochondrial acetyl-CoA de novo synthesis	IC	De novo synthesis of key intermediates	17
+23	41	"[[""AKG[m]"", ""5beta-cholestane-3alpha,7alpha,12alpha,27-tetraol[m]""]]"	4	ok			1	92		41		22.8912	ESS024	Mitochondrial AKG de novo synthesis	IC	De novo synthesis of key intermediates	13
+24	41	"[[""erythrose-4-phosphate[c]"", ""4-cholesten-7alpha,12alpha,24(S)-triol-3-one[c]""]]"	6	ok			1	84		41		19.3287	ESS025	Erythrose 4-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	15
+25	41	"[[""fructose-6-phosphate[c]"", ""glycogen[c]""]]"	13	ok			1	52		24		19.2299	ESS026	Fructose 6-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	0
+26	41	"[[""D-glyceraldehyde 3-phosphate[c]"", ""7-dehydrodesmosterol[c]""]]"	22	ok			1	79		35		26.1049	ESS027	Glyceraldehyde 3-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	11
+27	41	"[[""glucose-6-phosphate[c]"", ""2-deoxy-D-ribose-1-phosphate[c]""]]"	12	ok			1	78		38		13.0578	ESS028	Glucose 6-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	0
+28	41	"[[""OAA[m]"", ""palmitolate[m]""]]"	3	ok			1	59		24		6.32642	ESS029	Mitochondrial oxaloacetate de novo synthesis	IC	De novo synthesis of key intermediates	1
+29	41	"[[""PEP[c]"", ""1-acylglycerol-3P-11-eico[c]""]]"	5	ok			1	69		30		7.37965	ESS030	Phosphoenolpyruvate de novo synthesis	IC	De novo synthesis of key intermediates	1
+30	41	"[[""pyruvate[c]"", ""3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-al[c]""]]"	3	ok			1	91		42		17.514	ESS031	Pyruvate de novo synthesis	IC	De novo synthesis of key intermediates	14
+31	41	"[[""ribose-5-phosphate[c]"", ""3-Hydroxy-3-Methyl-Glutarate[c]""]]"	13	ok			1	44		18		13.7427	ESS032	Ribose 5-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	0
+32	41	"[[""succinyl-CoA[m] => CoA[m]"", ""3alpha,7alpha,24(S)-trihydroxy-5beta-cholestan-27-al[m]""]]"	3	ok			1	88		42		16.0849	ESS033	Mitochondrial succinyl-CoA de novo synthesis	IC	De novo synthesis of key intermediates	17
+33	41	"[[""cholesterol[c]"", ""mannose[c]""]]"	32	ok			1	112		48		40.8851	ESS034	Cholesterol de novo synthesis	BS	De novo synthesis of other compounds	23
+34	41	"[[""albumin[c]"", ""4-hydroxybenzoate[c]""]]"	5	ok			1	81		35		9.18198	ESS035	Protein synthesis from AAs	BS	Protein turnover	5
+35	41			pseudo_not_generated								357.254	ESS036	Oxidative phosphorylation	ER	Electron transport chain and TCA	
+36	41			pseudo_not_generated								187.574	ESS037	Oxidative decarboxylation	ER	Electron transport chain and TCA	
+37	41			pseudo_not_generated								219.72	ESS038	Krebs cycle NADH	ER	Electron transport chain and TCA	
+38	41			pseudo_not_generated								220.753	ESS039	Ubiquinol-to-proton	ER	Electron transport chain and TCA	
+39	41			pseudo_not_generated								208.997	ESS040	Ubiquinol-to-ATP	ER	Electron transport chain and TCA	
+40	41			pseudo_not_generated								0.000196537	ESS041	Beta oxidation of saturated FA	SU	Beta oxidation of fatty acids	
+41	41			pseudo_not_generated								0.000106604	ESS042	Beta oxidation of long-chain FA	SU	Beta oxidation of fatty acids	
+42	41			pseudo_not_generated								8.1081e-05	ESS043	Beta oxidation of odd-chain FA	SU	Beta oxidation of fatty acids	
+43	41			pseudo_not_generated								7.8057e-05	ESS044	Beta oxidation of unsaturated fatty acid (n-9)	SU	Beta oxidation of fatty acids	
+44	41			pseudo_not_generated								7.6726e-05	ESS045	Beta oxidation of unsaturated fatty acid (n-6)	SU	Beta oxidation of fatty acids	
+45	41			pseudo_not_generated								7.563e-05	ESS046	Uptake and beta oxidation of all NEFAs	SU	Beta oxidation of fatty acids	
+46	41			pseudo_not_generated								170.838	ESS047	Choline uptake	SU	De novo synthesis of phospholipids	
+47	41			pseudo_not_generated								158.072	ESS048	Inositol uptake	SU	De novo synthesis of phospholipids	
+48	41	"[[""PC-LD pool[c]"", ""itaconate[c]""]]"	9	ok			1	420		57		19.8453	ESS049	Phosphatidylcholine de novo synthesis	BS	De novo synthesis of phospholipids	3
+49	41	"[[""PE-LD pool[c]"", ""glycochenodeoxycholate[c]""]]"	1	ok			1	510		81		22.6867	ESS050	Phosphatidylethanolamine de novo synthesis	BS	De novo synthesis of phospholipids	12
+50	41	"[[""PS-LD pool[c]"", ""fumarate[c]""]]"	2	ok			1	425		66		13.8288	ESS051	Phosphatidylserine de novo synthesis	BS	De novo synthesis of phospholipids	0
+51	41	"[[""PI pool[c]"", ""calcitetrol[c]""]]"	2	ok			1	492		75		19.4404	ESS052	Phosphatidylinositol de novo synthesis	BS	De novo synthesis of phospholipids	11
+52	41			pseudo_not_generated								600.038	ESS053	Thiamin phosphorylation to TPP	BS	Vitamins and co-factors	
+53	41	"[[""CoA[c]"", ""geranyl-PP[c]""]]"	10	ok			1	51		22		29.424	ESS054	Coenzyme A synthesis from pantothenate	BS	Vitamins and co-factors	4
+54	41	"[[""FAD[c]"", ""urate radical[c]""]]"	2	ok			1	100		46		21.3052	ESS055	FAD synthesis from riboflavin	BS	Vitamins and co-factors	8
+55	41	"[[""heme[c]"", ""glycocholate[c]""]]"	15	ok			1	148		65		36.8849	ESS056	Heme biosynthesis	BS	Vitamins and co-factors	16
+0	53	"[[""ATP[c] + H2O[c] => ADP[c] + Pi[c] + H+[c]"", ""3alpha,7alpha-dihydroxy-5beta-cholestan-26-al[c]""]]"	3	ok			1	85		39		15.9017	ESS001	Aerobic rephosphorylation of ATP from glucose	ER	Rephosphorylation of nucleoside triphosphates	11
+1	53	"[[""GTP[c] + H2O[c] => GDP[c] + Pi[c] + H+[c]"", ""5-Hydroxyhexanoic Acid[c]""]]"	3	ok			1	68		32		5.30055	ESS002	Aerobic rephosphorylation of GTP	ER	Rephosphorylation of nucleoside triphosphates	1
+2	53	"[[""CTP[c] + H2O[c] => CDP[c] + Pi[c] + H+[c]"", ""4,4-Dimethylcholesta-8(9),14-Dien-3Beta-Ol[c]""]]"	32	ok			1	63		29		35.05	ESS003	Aerobic rephosphorylation of CTP	ER	Rephosphorylation of nucleoside triphosphates	10
+3	53	"[[""UTP[c] + H2O[c] => UDP[c] + Pi[c] + H+[c]"", ""Sebacicacid[c]""]]"	22	ok			1	83		40		25.3155	ESS004	Aerobic rephosphorylation of UTP	ER	Rephosphorylation of nucleoside triphosphates	3
+4	53	"[[""ATP[c]"", ""1-acylglycerol-3P-9-tetrade[c]""]]"	3	ok			1	67		31		18.052	ESS005	ATP de novo synthesis	BS	De novo synthesis of nucleotides	1
+5	53	"[[""CTP[c]"", ""cis-erucic acid[c]""]]"	10	ok			1	69		28		38.5636	ESS006	CTP de novo synthesis	BS	De novo synthesis of nucleotides	1
+6	53	"[[""GTP[c]"", ""GDP[c]""]]"	4	ok			1	90		38		28.0917	ESS007	GTP de novo synthesis	BS	De novo synthesis of nucleotides	8
+7	53	"[[""UTP[c]"", ""cis-erucic acid[c]""]]"	2	ok			1	69		28		12.0062	ESS008	UTP de novo synthesis	BS	De novo synthesis of nucleotides	1
+8	53	"[[""dATP[c]"", ""AKG[c]""]]"	7	ok			1	39		18		21.7529	ESS009	dATP de novo synthesis	BS	De novo synthesis of nucleotides	1
+9	53	"[[""dCTP[c]"", ""(S)-dihydroorotate[c]""]]"	6	ok			1	61		30		24.7534	ESS010	dCTP de novo synthesis	BS	De novo synthesis of nucleotides	2
+10	53	"[[""dGTP[c]"", ""glycoursodeoxycholate[c]""]]"	2	ok			1	135		54		20.2853	ESS011	dGTP de novo synthesis	BS	De novo synthesis of nucleotides	11
+11	53	"[[""dTTP[c]"", ""Prolyl-Prolyl-Arginine[c]""]]"	3	ok			1	68		29		20.7724	ESS012	dTTP de novo synthesis	BS	De novo synthesis of nucleotides	8
+12	53			pseudo_not_generated								177.028	ESS013	Histidine uptake	SU	Uptake of essential amino acids	
+13	53			pseudo_not_generated								173.197	ESS014	Isoleucine uptake	SU	Uptake of essential amino acids	
+14	53			pseudo_not_generated								161.499	ESS015	Leucine uptake	SU	Uptake of essential amino acids	
+15	53			pseudo_not_generated								174.505	ESS016	Lysine uptake	SU	Uptake of essential amino acids	
+16	53			pseudo_not_generated								173.803	ESS017	Methionine uptake	SU	Uptake of essential amino acids	
+17	53			pseudo_not_generated								151.996	ESS018	Phenylalanine uptake	SU	Uptake of essential amino acids	
+18	53			pseudo_not_generated								177.521	ESS019	Threonine uptake	SU	Uptake of essential amino acids	
+19	53			pseudo_not_generated								143.886	ESS020	Tryptophan uptake	SU	Uptake of essential amino acids	
+20	53			pseudo_not_generated								164.814	ESS021	Valine uptake	SU	Uptake of essential amino acids	
+21	53	"[[""3-phospho-D-glycerate[c]"", ""5alpha-cholesta-8-en-3-one[c]""]]"	18	ok			1	74		34		24.1573	ESS022	Glycerate 3-phosphate  de novo synthesis	IC	De novo synthesis of key intermediates	11
+22	53	"[[""acetyl-CoA[m] => CoA[m]"", ""5beta-cholestan-3alpha,7alpha,12alpha,24(S)-tetrol[m]""]]"	17	ok			1	87		43		35.2049	ESS023	Mitochondrial acetyl-CoA de novo synthesis	IC	De novo synthesis of key intermediates	17
+23	53	"[[""AKG[m]"", ""7alpha,12alpha-dihydroxycholest-4-en-3-one[m]""]]"	1	ok			1	86		39		18.3281	ESS024	Mitochondrial AKG de novo synthesis	IC	De novo synthesis of key intermediates	12
+24	53	"[[""erythrose-4-phosphate[c]"", ""L-gulono-1,4-lactone[c]""]]"	10	ok			1	69		34		9.34302	ESS025	Erythrose 4-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	0
+25	53	"[[""fructose-6-phosphate[c]"", ""glucose-6-phosphate[c]""]]"	8	ok			1	49		24		9.19613	ESS026	Fructose 6-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	0
+26	53	"[[""D-glyceraldehyde 3-phosphate[c]"", ""ribose-5-phosphate[c]""]]"	8	ok			1	55		27		9.32343	ESS027	Glyceraldehyde 3-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	0
+27	53	"[[""glucose-6-phosphate[c]"", ""Chenodeoxycholic acid-3glucuronide, CDCA-3G[c]""]]"	1	ok			1	115		43		13.1576	ESS028	Glucose 6-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	12
+28	53	"[[""OAA[m]"", ""CO2[m]""]]"	10	ok			1	41		19		12.4165	ESS029	Mitochondrial oxaloacetate de novo synthesis	IC	De novo synthesis of key intermediates	0
+29	53	"[[""PEP[c]"", ""L-fucose-1-phosphate[c]""]]"	2	ok			1	140		63		15.0207	ESS030	Phosphoenolpyruvate de novo synthesis	IC	De novo synthesis of key intermediates	36
+30	53	"[[""pyruvate[c]"", ""3-deoxy-D-glycero-D-galacto-2-nonulosonic acid[c]""]]"	14	ok			1	38		13		14.8394	ESS031	Pyruvate de novo synthesis	IC	De novo synthesis of key intermediates	2
+31	53	"[[""ribose-5-phosphate[c]"", ""5-pp-inspP5[c]""]]"	27	ok			1	98		36		24.6893	ESS032	Ribose 5-phosphate de novo synthesis	IC	De novo synthesis of key intermediates	4
+32	53	"[[""succinyl-CoA[m] => CoA[m]"", ""butyrate[m]""]]"	30	ok			1	85		38		38.8633	ESS033	Mitochondrial succinyl-CoA de novo synthesis	IC	De novo synthesis of key intermediates	3
+33	53	"[[""cholesterol[c]"", ""cholestenol[c]""]]"	3	ok			1	75		34		6.49605	ESS034	Cholesterol de novo synthesis	BS	De novo synthesis of other compounds	10
+34	53	"[[""albumin[c]"", ""3''-hydroxy-lovastatin acid form[c]""]]"	2	ok			1	0		0		2.98156	ESS035	Protein synthesis from AAs	BS	Protein turnover	0
+35	53			pseudo_not_generated								372.023	ESS036	Oxidative phosphorylation	ER	Electron transport chain and TCA	
+36	53			pseudo_not_generated								183.029	ESS037	Oxidative decarboxylation	ER	Electron transport chain and TCA	
+37	53			pseudo_not_generated								221.304	ESS038	Krebs cycle NADH	ER	Electron transport chain and TCA	
+38	53			pseudo_not_generated								249.495	ESS039	Ubiquinol-to-proton	ER	Electron transport chain and TCA	
+39	53			pseudo_not_generated								223.673	ESS040	Ubiquinol-to-ATP	ER	Electron transport chain and TCA	
+40	53			pseudo_not_generated								0.000197785	ESS041	Beta oxidation of saturated FA	SU	Beta oxidation of fatty acids	
+41	53			pseudo_not_generated								0.000103909	ESS042	Beta oxidation of long-chain FA	SU	Beta oxidation of fatty acids	
+42	53			pseudo_not_generated								8.604e-05	ESS043	Beta oxidation of odd-chain FA	SU	Beta oxidation of fatty acids	
+43	53			pseudo_not_generated								7.8466e-05	ESS044	Beta oxidation of unsaturated fatty acid (n-9)	SU	Beta oxidation of fatty acids	
+44	53			pseudo_not_generated								7.7456e-05	ESS045	Beta oxidation of unsaturated fatty acid (n-6)	SU	Beta oxidation of fatty acids	
+45	53			pseudo_not_generated								7.5642e-05	ESS046	Uptake and beta oxidation of all NEFAs	SU	Beta oxidation of fatty acids	
+46	53			pseudo_not_generated								167.207	ESS047	Choline uptake	SU	De novo synthesis of phospholipids	
+47	53			pseudo_not_generated								168.556	ESS048	Inositol uptake	SU	De novo synthesis of phospholipids	
+48	53	"[[""PC-LD pool[c]"", ""dCMP[c]""]]"	4	ok			1	112		43		22.298	ESS049	Phosphatidylcholine de novo synthesis	BS	De novo synthesis of phospholipids	30
+49	53	"[[""PE-LD pool[c]"", ""11-dehydro-thromboxane B2[c]""]]"	2	ok			1	490		76		36.4243	ESS050	Phosphatidylethanolamine de novo synthesis	BS	De novo synthesis of phospholipids	35
+50	53	"[[""PS-LD pool[c]"", ""N(omega)-(ADP-D-ribosyl)-L-arginine[c]""]]"	5	ok			1	108		49		34.2714	ESS051	Phosphatidylserine de novo synthesis	BS	De novo synthesis of phospholipids	13
+51	53	"[[""PI pool[c]"", ""1-acylglycerol-3P-cis-vac[c]""]]"	1	ok			1	461		71		12.2664	ESS052	Phosphatidylinositol de novo synthesis	BS	De novo synthesis of phospholipids	0
+52	53			pseudo_not_generated								550.872	ESS053	Thiamin phosphorylation to TPP	BS	Vitamins and co-factors	
+53	53	"[[""CoA[c]"", ""2-methylcitrate[c]""]]"	2	ok			1	83		36		30.9555	ESS054	Coenzyme A synthesis from pantothenate	BS	Vitamins and co-factors	30
+54	53	"[[""FAD[c]"", ""27alpha-hydroxy-7-dehydrocholesterol[c]""]]"	8	ok			1	79		36		24.5214	ESS055	FAD synthesis from riboflavin	BS	Vitamins and co-factors	11
+55	53	"[[""heme[c]"", ""cis-vaccenic acid[c]""]]"	6	ok			1	61		26		21.2991	ESS056	Heme biosynthesis	BS	Vitamins and co-factors	1

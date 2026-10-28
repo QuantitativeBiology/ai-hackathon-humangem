@@ -1,0 +1,17 @@
+{
+ "model": "human1",
+ "list": "cellfie",
+ "n_kos": 903,
+ "n_jobs": 193,
+ "status_counts": {
+  "ok": 184,
+  "wt_infeasible": 8,
+  "task_error": 1
+ },
+ "skipped_should_fail": [],
+ "n_solves": 9674,
+ "job_cpu_s": 3622.9,
+ "wall_s": 971.1,
+ "workers": 4,
+ "solver": "glpk"
+}

@@ -1,0 +1,756 @@
+{
+ "bloo": [
+  {
+   "name": "B-loo:DNA",
+   "kind": "remove",
+   "params": {
+    "mets": [
+     "MAM01721n"
+    ]
+   }
+  },
+  {
+   "name": "B-loo:RNA",
+   "kind": "remove",
+   "params": {
+    "mets": [
+     "MAM02847c"
+    ]
+   }
+  },
+  {
+   "name": "B-loo:glycogen",
+   "kind": "remove",
+   "params": {
+    "mets": [
+     "MAM03161c"
+    ]
+   }
+  },
+  {
+   "name": "B-loo:cofactor_pool_biomass",
+   "kind": "remove",
+   "params": {
+    "mets": [
+     "MAM10012c"
+    ]
+   }
+  },
+  {
+   "name": "B-loo:protein_pool_biomass",
+   "kind": "remove",
+   "params": {
+    "mets": [
+     "MAM10013c"
+    ]
+   }
+  },
+  {
+   "name": "B-loo:lipid_pool_biomass",
+   "kind": "remove",
+   "params": {
+    "mets": [
+     "MAM10014c"
+    ]
+   }
+  },
+  {
+   "name": "B-loo:metabolite_pool_biomass",
+   "kind": "remove",
+   "params": {
+    "mets": [
+     "MAM10015c"
+    ]
+   }
+  },
+  {
+   "name": "B-loo:retinoid_catabolites",
+   "kind": "pool_remove",
+   "params": {
+    "mets": [
+     "MAM00291c",
+     "MAM00427c",
+     "MAM00427r",
+     "MAM01008c",
+     "MAM01008r",
+     "MAM01022c",
+     "MAM01022r",
+     "MAM01024c",
+     "MAM01024r",
+     "MAM01026r",
+     "MAM01028c",
+     "MAM01028r",
+     "MAM01030c",
+     "MAM01030r",
+     "MAM01031c",
+     "MAM01031r",
+     "MAM01032c",
+     "MAM01060c",
+     "MAM01232c",
+     "MAM02624c"
+    ],
+    "pool": "MAR10065"
+   }
+  },
+  {
+   "name": "B-loo:vitaminD_catabolites",
+   "kind": "pool_remove",
+   "params": {
+    "mets": [
+     "MAM00611c",
+     "MAM00611m",
+     "MAM00622c",
+     "MAM00622m"
+    ],
+    "pool": "MAR10065"
+   }
+  },
+  {
+   "name": "B-loo:tocopherol_catabolites",
+   "kind": "pool_remove",
+   "params": {
+    "mets": [
+     "MAM00766c",
+     "MAM01924c"
+    ],
+    "pool": "MAR10065"
+   }
+  },
+  {
+   "name": "B-loo:carnitine",
+   "kind": "pool_remove",
+   "params": {
+    "mets": [
+     "MAM02348c"
+    ],
+    "pool": "MAR10065"
+   }
+  },
+  {
+   "name": "B-loo:heme",
+   "kind": "pool_remove",
+   "params": {
+    "mets": [
+     "MAM02049m"
+    ],
+    "pool": "MAR10065"
+   }
+  },
+  {
+   "name": "B-loo:ubiquinol",
+   "kind": "pool_remove",
+   "params": {
+    "mets": [
+     "MAM03102m"
+    ],
+    "pool": "MAR10065"
+   }
+  },
+  {
+   "name": "B-loo:lipoate",
+   "kind": "pool_remove",
+   "params": {
+    "mets": [
+     "MAM02394c"
+    ],
+    "pool": "MAR10065"
+   }
+  },
+  {
+   "name": "B-loo:cobamide",
+   "kind": "pool_remove",
+   "params": {
+    "mets": [
+     "MAM01600m"
+    ],
+    "pool": "MAR10065"
+   }
+  },
+  {
+   "name": "B-loo:dihydroorotate",
+   "kind": "pool_remove",
+   "params": {
+    "mets": [
+     "MAM00180c"
+    ],
+    "pool": "MAR10064"
+   }
+  }
+ ],
+ "t10": [
+  {
+   "name": "L-T10:biomass",
+   "kind": "remove",
+   "params": {
+    "mets": [
+     "MAM10012c",
+     "MAM03161c"
+    ]
+   }
+  }
+ ],
+ "badd": [
+  {
+   "name": "B-add:dolichol_P@1e-4",
+   "kind": "add",
+   "params": {
+    "stoich": {
+     "MAM01733r": -0.0001
+    }
+   }
+  },
+  {
+   "name": "B-add:GPI_anchor_precursor@1e-4",
+   "kind": "add",
+   "params": {
+    "stoich": {
+     "MAM03749r": -0.0001
+    }
+   }
+  },
+  {
+   "name": "B-add:SAM_sink@1e-4",
+   "kind": "add",
+   "params": {
+    "stoich": {
+     "MAM02877c": -0.0001
+    }
+   }
+  },
+  {
+   "name": "B-add:spermidine@1e-4",
+   "kind": "add",
+   "params": {
+    "stoich": {
+     "MAM02923c": -0.0001
+    }
+   }
+  },
+  {
+   "name": "B-add:NAD_turnover@1e-4",
+   "kind": "add",
+   "params": {
+    "stoich": {
+     "MAM02552c": -0.0001,
+     "MAM02040c": -0.0001,
+     "MAM02583c": 0.0001,
+     "MAM01288c": 0.0001,
+     "MAM02039c": 0.0001
+    }
+   }
+  },
+  {
+   "name": "B-add:GSH_turnover@1e-4",
+   "kind": "add",
+   "params": {
+    "stoich": {
+     "MAM02026c": -0.0001
+    }
+   }
+  },
+  {
+   "name": "B-add:ALL@1e-4",
+   "kind": "add",
+   "params": {
+    "stoich": {
+     "MAM01733r": -0.0001,
+     "MAM03749r": -0.0001,
+     "MAM02877c": -0.0001,
+     "MAM02923c": -0.0001,
+     "MAM02552c": -0.0001,
+     "MAM02040c": -0.0001,
+     "MAM02583c": 0.0001,
+     "MAM01288c": 0.0001,
+     "MAM02039c": 0.0001,
+     "MAM02026c": -0.0001
+    }
+   }
+  }
+ ],
+ "badd_sens": [
+  {
+   "name": "B-add:dolichol_P@1e-3",
+   "kind": "add",
+   "params": {
+    "stoich": {
+     "MAM01733r": -0.001
+    }
+   }
+  },
+  {
+   "name": "B-add:GPI_anchor_precursor@1e-3",
+   "kind": "add",
+   "params": {
+    "stoich": {
+     "MAM03749r": -0.001
+    }
+   }
+  },
+  {
+   "name": "B-add:SAM_sink@1e-3",
+   "kind": "add",
+   "params": {
+    "stoich": {
+     "MAM02877c": -0.001
+    }
+   }
+  },
+  {
+   "name": "B-add:spermidine@1e-3",
+   "kind": "add",
+   "params": {
+    "stoich": {
+     "MAM02923c": -0.001
+    }
+   }
+  },
+  {
+   "name": "B-add:NAD_turnover@1e-3",
+   "kind": "add",
+   "params": {
+    "stoich": {
+     "MAM02552c": -0.001,
+     "MAM02040c": -0.001,
+     "MAM02583c": 0.001,
+     "MAM01288c": 0.001,
+     "MAM02039c": 0.001
+    }
+   }
+  },
+  {
+   "name": "B-add:GSH_turnover@1e-3",
+   "kind": "add",
+   "params": {
+    "stoich": {
+     "MAM02026c": -0.001
+    }
+   }
+  },
+  {
+   "name": "B-add:ALL@1e-3",
+   "kind": "add",
+   "params": {
+    "stoich": {
+     "MAM01733r": -0.001,
+     "MAM03749r": -0.001,
+     "MAM02877c": -0.001,
+     "MAM02923c": -0.001,
+     "MAM02552c": -0.001,
+     "MAM02040c": -0.001,
+     "MAM02583c": 0.001,
+     "MAM01288c": 0.001,
+     "MAM02039c": 0.001,
+     "MAM02026c": -0.001
+    }
+   }
+  }
+ ],
+ "D-BS|M0": [
+  {
+   "name": "D-BS",
+   "kind": "demands",
+   "params": {
+    "demands": [
+     [
+      "DM_w3_MAM01371c",
+      {
+       "MAM01371c": -1.0
+      },
+      3.3333333333333237
+     ],
+     [
+      "DM_w3_MAM01623c",
+      {
+       "MAM01623c": -1.0
+      },
+      3.3333333333333197
+     ],
+     [
+      "DM_w3_MAM02034c",
+      {
+       "MAM02034c": -1.0
+      },
+      3.333333333333338
+     ],
+     [
+      "DM_w3_MAM03130c",
+      {
+       "MAM03130c": -1.0
+      },
+      3.333333333333357
+     ],
+     [
+      "DM_w3_MAM01642c",
+      {
+       "MAM01642c": -1.0
+      },
+      3.333333333333329
+     ],
+     [
+      "DM_w3_MAM01645c",
+      {
+       "MAM01645c": -1.0
+      },
+      3.333333333333338
+     ],
+     [
+      "DM_w3_MAM01688c",
+      {
+       "MAM01688c": -1.0
+      },
+      3.3333333333333406
+     ],
+     [
+      "DM_w3_MAM01753c",
+      {
+       "MAM01753c": -1.0
+      },
+      3.3333333333333366
+     ],
+     [
+      "DM_w3_MAM01450c",
+      {
+       "MAM01450c": -1.0
+      },
+      1.2877601253076778
+     ],
+     [
+      "DM_w3_MAM01308c",
+      {
+       "MAM01308c": -1.0
+      },
+      0.013136288998358074
+     ],
+     [
+      "DM_w3_MAM02684c",
+      {
+       "MAM02684c": -1.0
+      },
+      3.1181789834736584
+     ],
+     [
+      "DM_w3_MAM02685c",
+      {
+       "MAM02685c": -1.0
+      },
+      3.1181789834736424
+     ],
+     [
+      "DM_w3_MAM02808c",
+      {
+       "MAM02808c": -1.0
+      },
+      3.1181789834736606
+     ],
+     [
+      "DM_w3_MAM02750c",
+      {
+       "MAM02750c": -1.0
+      },
+      3.3255736614566036
+     ],
+     [
+      "DM_w3_MAM02984c",
+      {
+       "MAM02984c": -1.0
+      },
+      5.000000000000003
+     ],
+     [
+      "DM_w3_MAM01597c",
+      {
+       "MAM01597c": -1.0
+      },
+      3.3333333333333357
+     ],
+     [
+      "DM_w3_MAM01802c",
+      {
+       "MAM01802c": -1.0
+      },
+      4.999999999999991
+     ],
+     [
+      "DM_w3_MAM02049c",
+      {
+       "MAM02049c": -1.0
+      },
+      1.2499999999999996
+     ]
+    ]
+   }
+  }
+ ],
+ "D-ER|M0": [
+  {
+   "name": "D-ER",
+   "kind": "demands",
+   "params": {
+    "demands": [
+     [
+      "DM_w3_ATP_hydrolysis",
+      {
+       "MAM01371c": -1.0,
+       "MAM02040c": -1.0,
+       "MAM01285c": 1.0,
+       "MAM02751c": 1.0,
+       "MAM02039c": 1.0
+      },
+      10.0
+     ],
+     [
+      "DM_w3_NADH_oxidation",
+      {
+       "MAM02553c": -1.0,
+       "MAM02039c": -1.0,
+       "MAM02552c": 1.0
+      },
+      10.0
+     ],
+     [
+      "DM_w3_NADPH_oxidation",
+      {
+       "MAM02555c": -1.0,
+       "MAM02039c": -1.0,
+       "MAM02554c": 1.0
+      },
+      10.0
+     ]
+    ]
+   }
+  }
+ ],
+ "ngam|M0": [
+  {
+   "name": "O-NGAM_0",
+   "kind": "fix",
+   "params": {
+    "fluxes": {
+     "MAR03964": 0.0
+    }
+   }
+  },
+  {
+   "name": "O-NGAM_0.1",
+   "kind": "fix",
+   "params": {
+    "fluxes": {
+     "MAR03964": 100.0
+    }
+   }
+  },
+  {
+   "name": "O-NGAM_0.3",
+   "kind": "fix",
+   "params": {
+    "fluxes": {
+     "MAR03964": 300.0
+    }
+   }
+  }
+ ],
+ "D-BS|RPMI_M2f1": [
+  {
+   "name": "D-BS",
+   "kind": "demands",
+   "params": {
+    "demands": [
+     [
+      "DM_w3_MAM01371c",
+      {
+       "MAM01371c": -1.0
+      },
+      2.777777777777787
+     ],
+     [
+      "DM_w3_MAM01623c",
+      {
+       "MAM01623c": -1.0
+      },
+      3.333333333333334
+     ],
+     [
+      "DM_w3_MAM02034c",
+      {
+       "MAM02034c": -1.0
+      },
+      2.7272727272727177
+     ],
+     [
+      "DM_w3_MAM03130c",
+      {
+       "MAM03130c": -1.0
+      },
+      3.333333333333327
+     ],
+     [
+      "DM_w3_MAM01642c",
+      {
+       "MAM01642c": -1.0
+      },
+      2.7777777777777772
+     ],
+     [
+      "DM_w3_MAM01645c",
+      {
+       "MAM01645c": -1.0
+      },
+      3.333333333333333
+     ],
+     [
+      "DM_w3_MAM01688c",
+      {
+       "MAM01688c": -1.0
+      },
+      2.7272727272727377
+     ],
+     [
+      "DM_w3_MAM01753c",
+      {
+       "MAM01753c": -1.0
+      },
+      3.333333333333343
+     ],
+     [
+      "DM_w3_MAM01450c",
+      {
+       "MAM01450c": -1.0
+      },
+      1.1834012051591851
+     ],
+     [
+      "DM_w3_MAM01308c",
+      {
+       "MAM01308c": -1.0
+      },
+      0.00985221674876848
+     ],
+     [
+      "DM_w3_MAM02684c",
+      {
+       "MAM02684c": -1.0
+      },
+      1.5074858968226303
+     ],
+     [
+      "DM_w3_MAM02685c",
+      {
+       "MAM02685c": -1.0
+      },
+      1.5074858968226315
+     ],
+     [
+      "DM_w3_MAM02808c",
+      {
+       "MAM02808c": -1.0
+      },
+      1.5074858968226315
+     ],
+     [
+      "DM_w3_MAM02750c",
+      {
+       "MAM02750c": -1.0
+      },
+      1.5074858968226306
+     ],
+     [
+      "DM_w3_MAM02984c",
+      {
+       "MAM02984c": -1.0
+      },
+      4.999999999999994
+     ],
+     [
+      "DM_w3_MAM01597c",
+      {
+       "MAM01597c": -1.0
+      },
+      2.142857142857148
+     ],
+     [
+      "DM_w3_MAM01802c",
+      {
+       "MAM01802c": -1.0
+      },
+      2.727272727272717
+     ],
+     [
+      "DM_w3_MAM02049c",
+      {
+       "MAM02049c": -1.0
+      },
+      1.25
+     ]
+    ]
+   }
+  }
+ ],
+ "D-ER|RPMI_M2f1": [
+  {
+   "name": "D-ER",
+   "kind": "demands",
+   "params": {
+    "demands": [
+     [
+      "DM_w3_ATP_hydrolysis",
+      {
+       "MAM01371c": -1.0,
+       "MAM02040c": -1.0,
+       "MAM01285c": 1.0,
+       "MAM02751c": 1.0,
+       "MAM02039c": 1.0
+      },
+      10.0
+     ],
+     [
+      "DM_w3_NADH_oxidation",
+      {
+       "MAM02553c": -1.0,
+       "MAM02039c": -1.0,
+       "MAM02552c": 1.0
+      },
+      10.0
+     ],
+     [
+      "DM_w3_NADPH_oxidation",
+      {
+       "MAM02555c": -1.0,
+       "MAM02039c": -1.0,
+       "MAM02554c": 1.0
+      },
+      10.0
+     ]
+    ]
+   }
+  }
+ ],
+ "ngam|RPMI_M2f1": [
+  {
+   "name": "O-NGAM_0",
+   "kind": "fix",
+   "params": {
+    "fluxes": {
+     "MAR03964": 0.0
+    }
+   }
+  },
+  {
+   "name": "O-NGAM_0.1",
+   "kind": "fix",
+   "params": {
+    "fluxes": {
+     "MAR03964": 100.0
+    }
+   }
+  },
+  {
+   "name": "O-NGAM_0.3",
+   "kind": "fix",
+   "params": {
+    "fluxes": {
+     "MAR03964": 300.0
+    }
+   }
+  }
+ ]
+}

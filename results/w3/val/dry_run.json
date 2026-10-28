@@ -1,0 +1,12 @@
+{
+ "look_id": "W3_M4_shortlist",
+ "config_sha": "bd22892c3d7ab0338c020684330eed6c8c5aa3873b1a04a0b3532aef50965b90",
+ "synthetic_labels": "Bernoulli(0.124), SEEDS[0]",
+ "n_methods": 6,
+ "n_rows": 24,
+ "scalar_guard": "pass",
+ "validation_labels_read": false,
+ "ledger_rows_written": 0,
+ "wall_s": 11.9,
+ "synthetic_tap_lin_H1": 0.1268121266240727
+}

@@ -1,0 +1,21 @@
+parent	component	kind	metabolites	status	names	wt_growth_M0_1e-4	wt_growth_M0_1e-3
+human1	hemeA	sink		skipped_absent_in_parent			
+human1	dolichol_P	sink	"{""MAM01733r"": -1.0}"	ok	dolichyl-phosphate	65.5681	65.5206
+human1	GPI_anchor_precursor	sink	"{""MAM03749r"": -1.0}"	ok	Mannosyl-3-(Phosphoethanolaminyl-Mannosyl)-Glucosaminyl-Acylphosphatidylinositol (M4A))	65.5711	65.5504
+human1	FeS_cluster	sink		skipped_absent_in_parent			
+human1	SAM_sink	sink	"{""MAM02877c"": -1.0}"	ok	SAM	65.5729	65.5685
+human1	spermidine	sink	"{""MAM02923c"": -1.0}"	ok	spermidine	65.573	65.5697
+human1	NAD_turnover	turnover	"{""MAM02552c"": -1.0, ""MAM02040c"": -1.0, ""MAM02583c"": 1.0, ""MAM01288c"": 1.0, ""MAM02039c"": 1.0}"	ok	NAD+;H2O;nicotinamide;ADP-ribose;H+	65.5731	65.5709
+human1	GSH_turnover	turnover	"{""MAM02026c"": -1.0}"	ok	GSH	65.5731	65.5709
+human1	ALL@1e-4	all	"{""MAM01733r"": -0.0001, ""MAM03749r"": -0.0001, ""MAM02877c"": -0.0001, ""MAM02923c"": -0.0001, ""MAM02552c"": -0.0001, ""MAM02040c"": -0.0001, ""MAM02583c"": 0.0001, ""MAM01288c"": 0.0001, ""MAM02039c"": 0.0001, ""MAM02026c"": -0.0001}"	ok		65.5646	
+human1	ALL@1e-3	all	"{""MAM01733r"": -0.001, ""MAM03749r"": -0.001, ""MAM02877c"": -0.001, ""MAM02923c"": -0.001, ""MAM02552c"": -0.001, ""MAM02040c"": -0.001, ""MAM02583c"": 0.001, ""MAM01288c"": 0.001, ""MAM02039c"": 0.001, ""MAM02026c"": -0.001}"	ok			65.4854
+human2	hemeA	sink		skipped_absent_in_parent			
+human2	dolichol_P	sink	"{""MAM01733r"": -1.0}"	ok	dolichyl-phosphate	74.7508	74.6967
+human2	GPI_anchor_precursor	sink	"{""MAM03749r"": -1.0}"	ok	Mannosyl-3-(Phosphoethanolaminyl-Mannosyl)-Glucosaminyl-Acylphosphatidylinositol (M4A))	74.7541	74.7306
+human2	FeS_cluster	sink	"{""MAM20084m"": -1.0}"	ok	4Fe4S iron-sulfur cluster	74.7566	74.7554
+human2	SAM_sink	sink	"{""MAM02877c"": -1.0}"	ok	SAM	74.7562	74.7512
+human2	spermidine	sink	"{""MAM02923c"": -1.0}"	ok	spermidine	74.7563	74.7526
+human2	NAD_turnover	turnover	"{""MAM02552c"": -1.0, ""MAM02040c"": -1.0, ""MAM02583c"": 1.0, ""MAM01288c"": 1.0, ""MAM02039c"": 1.0}"	ok	NAD+;H2O;nicotinamide;ADP-ribose;H+	74.7565	74.754
+human2	GSH_turnover	turnover	"{""MAM02026c"": -1.0}"	ok	GSH	74.7565	74.754
+human2	ALL@1e-4	all	"{""MAM01733r"": -0.0001, ""MAM03749r"": -0.0001, ""MAM20084m"": -0.0001, ""MAM02877c"": -0.0001, ""MAM02923c"": -0.0001, ""MAM02552c"": -0.0001, ""MAM02040c"": -0.0001, ""MAM02583c"": 0.0001, ""MAM01288c"": 0.0001, ""MAM02039c"": 0.0001, ""MAM02026c"": -0.0001}"	ok		74.7466	
+human2	ALL@1e-3	all	"{""MAM01733r"": -0.001, ""MAM03749r"": -0.001, ""MAM20084m"": -0.001, ""MAM02877c"": -0.001, ""MAM02923c"": -0.001, ""MAM02552c"": -0.001, ""MAM02040c"": -0.001, ""MAM02583c"": 0.001, ""MAM01288c"": 0.001, ""MAM02039c"": 0.001, ""MAM02026c"": -0.001}"	ok			74.6553

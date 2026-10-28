@@ -1,0 +1,33 @@
+parent	component	kind	n_species	species	names	coefficient_sum	wt_growth_M0	status	reaction	origin
+human1	direct:DNA	remove	1	MAM01721n	DNA	-0.0267	65.7016	ok	MAR13082	DESIGN W3 B-loo definition
+human1	direct:RNA	remove	1	MAM02847c	RNA	-0.1124	66.1726	ok	MAR13082	DESIGN W3 B-loo definition
+human1	direct:glycogen	remove	1	MAM03161c	glycogen	-0.4062	66.0762	ok	MAR13082	DESIGN W3 B-loo definition
+human1	direct:cofactor_pool_biomass	remove	1	MAM10012c	cofactor_pool_biomass	-0.0012	65.5774	ok	MAR13082	DESIGN W3 B-loo definition
+human1	direct:protein_pool_biomass	remove	1	MAM10013c	protein_pool_biomass	-5.3375	72.8601	ok	MAR13082	DESIGN W3 B-loo definition
+human1	direct:lipid_pool_biomass	remove	1	MAM10014c	lipid_pool_biomass	-0.2212	67.6462	ok	MAR13082	DESIGN W3 B-loo definition
+human1	direct:metabolite_pool_biomass	remove	1	MAM10015c	metabolite_pool_biomass	-0.4835	66.0746	ok	MAR13082	DESIGN W3 B-loo definition
+human1	pool:retinoid_catabolites	pool_remove	20	MAM00291c;MAM00427c;MAM00427r;MAM01008c;MAM01008r;MAM01022c;MAM01022r;MAM01024c;MAM01024r;MAM01026r;MAM01028c;MAM01028r;MAM01030c;MAM01030r;MAM01031c;MAM01031r;MAM01032c;MAM01060c;MAM01232c;MAM02624c	11-cis-retinol;18-hydroxy-all-trans-retinoate;18-hydroxy-all-trans-retinoate;4-hydroxyvitamin A1;4-hydroxyvitamin A1;4-OH-13-cis-retinal;4-OH-13-cis-retinal;4-OH-retinal;4-OH-retinal;4-oxo-13-cis-retinoate;4-oxo-9-cis-retinal;4-oxo-9-cis-retinal;4-oxo-9-cis-retinoyl-beta-glucuronide;4-oxo-9-cis-retinoyl-beta-glucuronide;4-oxo-all-trans-retinoate;4-oxo-all-trans-retinoate;4-oxoretinol;5,8-epoxy-13-cis-retinoate;9-cis-retinol;N-retinylidene-N-retinylethanolamine	-0.4478	65.5735	ok	MAR10065	DESIGN W3 B-loo definition
+human1	pool:vitaminD_catabolites	pool_remove	4	MAM00611c;MAM00611m;MAM00622c;MAM00622m	24-oxo-1alpha,23,25-trihydroxyvitamin D3;24-oxo-1alpha,23,25-trihydroxyvitamin D3;25-hydroxyvitamin D3-26,23-lactone;25-hydroxyvitamin D3-26,23-lactone	-0.0688	65.5746	ok	MAR10065	DESIGN W3 B-loo definition
+human1	pool:tocopherol_catabolites	pool_remove	2	MAM00766c;MAM01924c	3-carboxy-alpha-chromanol;gamma-CEHC-glucuronide	-0.069	65.5739	ok	MAR10065	DESIGN W3 B-loo definition
+human1	pool:carnitine	pool_remove	1	MAM02348c	L-carnitine	-0.0345	65.5735	ok	MAR10065	DESIGN W3 B-loo definition
+human1	pool:heme	pool_remove	1	MAM02049m	heme	-0.0345	65.5734	ok	MAR10065	DESIGN W3 B-loo definition
+human1	pool:ubiquinol	pool_remove	1	MAM03102m	ubiquinol	-0.0345	65.5746	ok	MAR10065	DESIGN W3 B-loo definition
+human1	pool:lipoate	pool_remove	1	MAM02394c	lipoic acid	-0.0345	65.5734	ok	MAR10065	DESIGN W3 B-loo definition
+human1	pool:cobamide	pool_remove	1	MAM01600m	cobamide-coenzyme	-0.0345	65.5736	ok	MAR10065	DESIGN W3 B-loo definition
+human1	metpool:dihydroorotate	pool_remove	1	MAM00180c	(S)-dihydroorotate	-0.0043	65.5785	ok	MAR10064	label-free structural finding (M3_W5_review §4), added before W3 scoring
+human2	direct:DNA	remove	1	MAM01721n	DNA	-0.0267	74.9138	ok	MAR13082	DESIGN W3 B-loo definition
+human2	direct:RNA	remove	1	MAM02847c	RNA	-0.1124	75.5535	ok	MAR13082	DESIGN W3 B-loo definition
+human2	direct:glycogen	remove	1	MAM03161c	glycogen	-0.4062	75.3286	ok	MAR13082	DESIGN W3 B-loo definition
+human2	direct:cofactor_pool_biomass	remove	1	MAM10012c	cofactor_pool_biomass	-0.0012	74.7616	ok	MAR13082	DESIGN W3 B-loo definition
+human2	direct:protein_pool_biomass	remove	1	MAM10013c	protein_pool_biomass	-5.3375	82.6141	ok	MAR13082	DESIGN W3 B-loo definition
+human2	direct:lipid_pool_biomass	remove	1	MAM10014c	lipid_pool_biomass	-0.2212	77.093	ok	MAR13082	DESIGN W3 B-loo definition
+human2	direct:metabolite_pool_biomass	remove	1	MAM10015c	metabolite_pool_biomass	-0.4835	75.4069	ok	MAR13082	DESIGN W3 B-loo definition
+human2	pool:retinoid_catabolites	pool_remove	20	MAM00291c;MAM00427c;MAM00427r;MAM01008c;MAM01008r;MAM01022c;MAM01022r;MAM01024c;MAM01024r;MAM01026r;MAM01028c;MAM01028r;MAM01030c;MAM01030r;MAM01031c;MAM01031r;MAM01032c;MAM01060c;MAM01232c;MAM02624c	11-cis-retinol;18-hydroxy-all-trans-retinoate;18-hydroxy-all-trans-retinoate;4-hydroxyvitamin A1;4-hydroxyvitamin A1;4-OH-13-cis-retinal;4-OH-13-cis-retinal;4-OH-retinal;4-OH-retinal;4-oxo-13-cis-retinoate;4-oxo-9-cis-retinal;4-oxo-9-cis-retinal;4-oxo-9-cis-retinoyl-beta-glucuronide;4-oxo-9-cis-retinoyl-beta-glucuronide;4-oxo-all-trans-retinoate;4-oxo-all-trans-retinoate;4-oxoretinol;5,8-epoxy-13-cis-retinoate;9-cis-retinol;N-retinylidene-N-retinylethanolamine	-0.4478	74.757	ok	MAR10065	DESIGN W3 B-loo definition
+human2	pool:vitaminD_catabolites	pool_remove	2	MAM00611m;MAM00622m	24-oxo-1alpha,23,25-trihydroxyvitamin D3;25-hydroxyvitamin D3-26,23-lactone	-0.069	74.7582	ok	MAR10065	DESIGN W3 B-loo definition
+human2	pool:tocopherol_catabolites	pool_remove	2	MAM00766c;MAM01924c	3-carboxy-alpha-chromanol;gamma-CEHC-glucuronide	-0.069	74.7576	ok	MAR10065	DESIGN W3 B-loo definition
+human2	pool:carnitine	pool_remove	1	MAM02348c	L-carnitine	-0.0345	74.757	ok	MAR10065	DESIGN W3 B-loo definition
+human2	pool:heme	pool_remove	1	MAM02049m	heme	-0.0345	74.7568	ok	MAR10065	DESIGN W3 B-loo definition
+human2	pool:ubiquinol	pool_remove	1	MAM03102m	ubiquinol	-0.0345	74.7581	ok	MAR10065	DESIGN W3 B-loo definition
+human2	pool:lipoate	pool_remove	1	MAM02394c	lipoic acid	-0.0345	74.7568	ok	MAR10065	DESIGN W3 B-loo definition
+human2	pool:cobamide	pool_remove	1	MAM01600m	cobamide-coenzyme	-0.0345	74.757	ok	MAR10065	DESIGN W3 B-loo definition
+human2	metpool:dihydroorotate	pool_remove	1	MAM00180c	(S)-dihydroorotate	-0.0043	74.7626	ok	MAR10064	label-free structural finding (M3_W5_review §4), added before W3 scoring

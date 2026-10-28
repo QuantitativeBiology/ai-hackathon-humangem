@@ -1,0 +1,7 @@
+{
+ "all_runs_cpu_h": 18.07,
+ "final_runs_cpu_h": 17.52,
+ "gurobi_cpu_h": 2.4,
+ "all_runs_wall_h": 6.74,
+ "n_runs": 22
+}

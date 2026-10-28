@@ -1,0 +1,403 @@
+{
+ "n_lines": 686,
+ "n_modes_scored": 271,
+ "n_jobs": 970,
+ "checks": {
+  "T0_equals_w1_e_H1": true,
+  "T3_equals_w1_task_e_H1": true,
+  "T0_equals_w1_e_H2": true,
+  "T3_equals_w1_task_e_H2": true
+ },
+ "n_context_tests": 7209,
+ "n_context_claims": 1416,
+ "shortlist": {
+  "rule": "TG pass & beats the literal matched-call-rate control & pseudo-tasks where they apply (A11a: neither applies to biomass leave-outs, which qualify on TG alone); A11c withdrawals; paired one-SE rule; <= 2 (DESIGN W3)",
+  "primary_parent": "human1 (G*)",
+  "gate_candidates": "Human1 (G*) variants only; Human2 variants are descriptive (A11c)",
+  "candidates": [
+   {
+    "parent": "human1",
+    "mode": "B-loo:cofactor_pool_biomass",
+    "delta_lin": 0.034269502865675046,
+    "ci": [
+     0.03364877286595089,
+     0.03487453576978123
+    ],
+    "folds_positive": 12,
+    "vs_mcr": 0.034269502865675046,
+    "vs_pseudo": NaN,
+    "vs_mcr_symmetric": -0.020056366278629455,
+    "within_1se_of_best": true,
+    "flags": {
+     "W3-D1": "passes TG; no pre-registered negative control applies to biomass leave-outs (the matched-call-rate control is defined for added calls only; pseudo-tasks n/a). The control reading was fixed after the training aggregates were seen. Loses to the B2-informed symmetric removal comparator; beats a post-hoc label-free random-removal control. No claim may rest on 'beats controls'.",
+     "W3-MEV": "under serum media (RPMI M2 f=1) the variant makes HMGCR/MVK/PMVK/MVD non-lethal in both parents, a mevalonate positive-control failure."
+    }
+   }
+  ],
+  "eligible": {
+   "human1": [
+    "B-loo:cofactor_pool_biomass",
+    "B-loo:metabolite_pool_biomass"
+   ],
+   "human2": [
+    "B-loo:cofactor_pool_biomass",
+    "B-loo:metabolite_pool_biomass",
+    "B-loo:tocopherol_catabolites"
+   ]
+  },
+  "withdrawn": [
+   {
+    "parent": "human1",
+    "mode": "B-loo:metabolite_pool_biomass",
+    "delta_lin": 0.005558954935463708,
+    "ci": [
+     0.005139342003715405,
+     0.005941592457775475
+    ],
+    "folds_positive": 12,
+    "reason": "A11c: withdrawn before the validation look (TG-floor effect within the winner's-curse band, gain only in common essentials, removes genuine demands); training result only"
+   },
+   {
+    "parent": "human2",
+    "mode": "B-loo:metabolite_pool_biomass",
+    "delta_lin": 0.005304453393439776,
+    "ci": [
+     0.004953448443154143,
+     0.005632543262467741
+    ],
+    "folds_positive": 12,
+    "reason": "A11c: withdrawn before the validation look (TG-floor effect within the winner's-curse band, gain only in common essentials, removes genuine demands); training result only"
+   }
+  ],
+  "amendment": "DESIGN \u00a717 A11",
+  "winners_curse_sigma_sqrt_2lnm": 0.04866347685478108,
+  "winners_curse_note": "sigma*sqrt(2 ln m) = 0.0487 exceeds the training effect of every TG-passing Human1 mode (max 0.0343)",
+  "n_eligible_h1": 1
+ },
+ "positive_controls": {
+  "human1:ETF_T3": {
+   "ETFA": {
+    "T0": 0.0,
+    "T3": 0.0
+   },
+   "ETFB": {
+    "T0": 0.0,
+    "T3": 0.0
+   },
+   "ETFDH": {
+    "T0": 0.0,
+    "T3": 0.0
+   }
+  },
+  "human1:ETF_capability_only_FP": false,
+  "human1:mevalonate_serum_badd": {
+   "HMGCR": {
+    "M0|T0": 0.0,
+    "RPMI_M2f1|T0": 0.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 0.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 0.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 0.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 0.0
+   },
+   "MVK": {
+    "M0|T0": 0.0,
+    "RPMI_M2f1|T0": 0.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 0.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 0.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 0.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 0.0
+   },
+   "PMVK": {
+    "M0|T0": 0.0,
+    "RPMI_M2f1|T0": 0.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 0.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 0.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 0.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 0.0
+   },
+   "MVD": {
+    "M0|T0": 0.0,
+    "RPMI_M2f1|T0": 0.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 0.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 0.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 0.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 0.0
+   },
+   "HMGCS1": {
+    "M0|T0": 1.0,
+    "RPMI_M2f1|T0": 1.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 1.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 1.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 1.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 1.0
+   },
+   "IDI1": {
+    "M0|T0": 1.0,
+    "RPMI_M2f1|T0": 1.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 1.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 1.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 1.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 1.0
+   },
+   "FDPS": {
+    "M0|T0": 1.0,
+    "RPMI_M2f1|T0": 1.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 1.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 1.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 1.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 1.0
+   },
+   "GGPS1": {
+    "M0|T0": 1.0,
+    "RPMI_M2f1|T0": 1.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 1.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 1.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 1.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 1.0
+   }
+  },
+  "human1:mevalonate_core_no_loss": true,
+  "human1:mevalonate_core_under_B-loo:cofactor_pool_biomass": {
+   "HMGCR": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.985425
+   },
+   "MVK": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.985425
+   },
+   "PMVK": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.985425
+   },
+   "MVD": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.985425
+   }
+  },
+  "human1:mevalonate_core_lethal_under_B-loo:cofactor_pool_biomass|M0": true,
+  "human1:mevalonate_core_lethal_under_B-loo:cofactor_pool_biomass|RPMI_M2f1": false,
+  "human1:mevalonate_core_under_B-loo:metabolite_pool_biomass": {
+   "HMGCR": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.0
+   },
+   "MVK": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.0
+   },
+   "PMVK": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.0
+   },
+   "MVD": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.0
+   }
+  },
+  "human1:mevalonate_core_lethal_under_B-loo:metabolite_pool_biomass|M0": true,
+  "human1:mevalonate_core_lethal_under_B-loo:metabolite_pool_biomass|RPMI_M2f1": true,
+  "human2:ETF_T3": {
+   "ETFA": {
+    "T0": 0.000259,
+    "T3": 1.0
+   },
+   "ETFB": {
+    "T0": 0.000259,
+    "T3": 1.0
+   },
+   "ETFDH": {
+    "T0": 0.000259,
+    "T3": 1.0
+   }
+  },
+  "human2:ETF_capability_only_FP": true,
+  "human2:mevalonate_serum_badd": {
+   "HMGCR": {
+    "M0|T0": 0.0,
+    "RPMI_M2f1|T0": 0.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 0.0,
+    "RPMI_M2f1|B-add:FeS_cluster@1e-4": 0.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 0.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 0.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 0.0
+   },
+   "MVK": {
+    "M0|T0": 0.0,
+    "RPMI_M2f1|T0": 0.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 0.0,
+    "RPMI_M2f1|B-add:FeS_cluster@1e-4": 0.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 0.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 0.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 0.0
+   },
+   "PMVK": {
+    "M0|T0": 0.0,
+    "RPMI_M2f1|T0": 0.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 0.0,
+    "RPMI_M2f1|B-add:FeS_cluster@1e-4": 0.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 0.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 0.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 0.0
+   },
+   "MVD": {
+    "M0|T0": 0.0,
+    "RPMI_M2f1|T0": 0.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 0.0,
+    "RPMI_M2f1|B-add:FeS_cluster@1e-4": 0.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 0.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 0.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 0.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 0.0
+   },
+   "HMGCS1": {
+    "M0|T0": 1.0,
+    "RPMI_M2f1|T0": 1.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 1.0,
+    "RPMI_M2f1|B-add:FeS_cluster@1e-4": 1.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 1.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 1.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 1.0
+   },
+   "IDI1": {
+    "M0|T0": 1.0,
+    "RPMI_M2f1|T0": 1.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 1.0,
+    "RPMI_M2f1|B-add:FeS_cluster@1e-4": 1.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 1.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 1.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 1.0
+   },
+   "FDPS": {
+    "M0|T0": 1.0,
+    "RPMI_M2f1|T0": 1.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 1.0,
+    "RPMI_M2f1|B-add:FeS_cluster@1e-4": 1.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 1.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 1.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 1.0
+   },
+   "GGPS1": {
+    "M0|T0": 1.0,
+    "RPMI_M2f1|T0": 1.0,
+    "RPMI_M2f1|B-add:dolichol_P@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GPI_anchor_precursor@1e-4": 1.0,
+    "RPMI_M2f1|B-add:FeS_cluster@1e-4": 1.0,
+    "RPMI_M2f1|B-add:SAM_sink@1e-4": 1.0,
+    "RPMI_M2f1|B-add:spermidine@1e-4": 1.0,
+    "RPMI_M2f1|B-add:NAD_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:GSH_turnover@1e-4": 1.0,
+    "RPMI_M2f1|B-add:ALL@1e-4": 1.0
+   }
+  },
+  "human2:mevalonate_core_no_loss": true,
+  "human2:mevalonate_core_under_B-loo:cofactor_pool_biomass": {
+   "HMGCR": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.985421
+   },
+   "MVK": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.985421
+   },
+   "PMVK": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.985421
+   },
+   "MVD": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.985421
+   }
+  },
+  "human2:mevalonate_core_lethal_under_B-loo:cofactor_pool_biomass|M0": true,
+  "human2:mevalonate_core_lethal_under_B-loo:cofactor_pool_biomass|RPMI_M2f1": false,
+  "human2:mevalonate_core_under_B-loo:metabolite_pool_biomass": {
+   "HMGCR": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.0
+   },
+   "MVK": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.0
+   },
+   "PMVK": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.0
+   },
+   "MVD": {
+    "M0": 0.0,
+    "RPMI_M2f1": 0.0
+   }
+  },
+  "human2:mevalonate_core_lethal_under_B-loo:metabolite_pool_biomass|M0": true,
+  "human2:mevalonate_core_lethal_under_B-loo:metabolite_pool_biomass|RPMI_M2f1": true
+ },
+ "wall_s": 308.4,
+ "t5_active_tasks_per_line": {
+  "human1": {
+   "count": 686.0,
+   "mean": 101.10932944606414,
+   "std": 12.37850740925932,
+   "min": 36.0,
+   "25%": 96.0,
+   "50%": 103.0,
+   "75%": 109.0,
+   "max": 131.0
+  },
+  "human2": {
+   "count": 686.0,
+   "mean": 96.87755102040816,
+   "std": 13.005765946777476,
+   "min": 31.0,
+   "25%": 92.0,
+   "50%": 99.0,
+   "75%": 105.0,
+   "max": 126.0
+  }
+ },
+ "n_candidates_screened": 267
+}

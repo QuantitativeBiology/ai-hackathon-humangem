@@ -1,0 +1,85 @@
+metric	nan_policy	lineage_equal_mean	line_mean	median	n_lines_used	n_nan	ci_lo	ci_hi	parent	mode	label
+mcc	exclude	0.378845	0.379175	0.381241	686	0	0.376783	0.380919	human1	B-loo:cofactor_pool_biomass	L_ge06
+mcc	zero	0.378845	0.379175	0.381241	686	0			human1	B-loo:cofactor_pool_biomass	L_ge06
+f1	exclude	0.37858	0.378362	0.380206	686	0	0.37656	0.380602	human1	B-loo:cofactor_pool_biomass	L_ge06
+f1	zero	0.37858	0.378362	0.380206	686	0			human1	B-loo:cofactor_pool_biomass	L_ge06
+precision	exclude	0.640967	0.643962	0.642857	686	0	0.638438	0.643491	human1	B-loo:cofactor_pool_biomass	L_ge06
+precision	zero	0.640967	0.643962	0.642857	686	0			human1	B-loo:cofactor_pool_biomass	L_ge06
+recall	exclude	0.269331	0.26864	0.270223	686	0	0.267498	0.271198	human1	B-loo:cofactor_pool_biomass	L_ge06
+recall	zero	0.269331	0.26864	0.270223	686	0			human1	B-loo:cofactor_pool_biomass	L_ge06
+specificity	exclude	0.984046	0.984173	0.984127	686	0	0.983933	0.984155	human1	B-loo:cofactor_pool_biomass	L_ge06
+specificity	zero	0.984046	0.984173	0.984127	686	0			human1	B-loo:cofactor_pool_biomass	L_ge06
+accuracy	exclude	0.915018	0.914508	0.915827	686	0	0.914322	0.915692	human1	B-loo:cofactor_pool_biomass	L_ge06
+accuracy	zero	0.915018	0.914508	0.915827	686	0			human1	B-loo:cofactor_pool_biomass	L_ge06
+mcc	exclude	0.34314	0.343427	0.344867	686	0	0.341362	0.3448	human1	B-loo:metabolite_pool_biomass	L_ge06
+mcc	zero	0.34314	0.343427	0.344867	686	0			human1	B-loo:metabolite_pool_biomass	L_ge06
+f1	exclude	0.366027	0.365945	0.367394	686	0	0.364307	0.367647	human1	B-loo:metabolite_pool_biomass	L_ge06
+f1	zero	0.366027	0.365945	0.367394	686	0			human1	B-loo:metabolite_pool_biomass	L_ge06
+precision	exclude	0.540294	0.542857	0.540146	686	0	0.538105	0.542454	human1	B-loo:metabolite_pool_biomass	L_ge06
+precision	zero	0.540294	0.542857	0.540146	686	0			human1	B-loo:metabolite_pool_biomass	L_ge06
+recall	exclude	0.277612	0.276914	0.278388	686	0	0.275837	0.279304	human1	B-loo:metabolite_pool_biomass	L_ge06
+recall	zero	0.277612	0.276914	0.278388	686	0			human1	B-loo:metabolite_pool_biomass	L_ge06
+specificity	exclude	0.975006	0.975135	0.975089	686	0	0.974893	0.975118	human1	B-loo:metabolite_pool_biomass	L_ge06
+specificity	zero	0.975006	0.975135	0.975089	686	0			human1	B-loo:metabolite_pool_biomass	L_ge06
+accuracy	exclude	0.907654	0.907159	0.908273	686	0	0.906996	0.908287	human1	B-loo:metabolite_pool_biomass	L_ge06
+accuracy	zero	0.907654	0.907159	0.908273	686	0			human1	B-loo:metabolite_pool_biomass	L_ge06
+mcc	exclude	0.333934	0.33429	0.335927	686	0	0.332187	0.335653	human1	T0	L_ge06
+mcc	zero	0.333934	0.33429	0.335927	686	0			human1	T0	L_ge06
+f1	exclude	0.363553	0.363586	0.364914	686	0	0.361891	0.365152	human1	T0	L_ge06
+f1	zero	0.363553	0.363586	0.364914	686	0			human1	T0	L_ge06
+precision	exclude	0.512773	0.515331	0.513699	686	0	0.510555	0.514984	human1	T0	L_ge06
+precision	zero	0.512773	0.515331	0.513699	686	0			human1	T0	L_ge06
+recall	exclude	0.282519	0.281861	0.283582	686	0	0.28076	0.28421	human1	T0	L_ge06
+recall	zero	0.282519	0.281861	0.283582	686	0			human1	T0	L_ge06
+specificity	exclude	0.971575	0.971713	0.971566	686	0	0.971453	0.971696	human1	T0	L_ge06
+specificity	zero	0.971575	0.971713	0.971566	686	0			human1	T0	L_ge06
+accuracy	exclude	0.905041	0.904564	0.905536	686	0	0.9044	0.905654	human1	T0	L_ge06
+accuracy	zero	0.905041	0.904564	0.905536	686	0			human1	T0	L_ge06
+mcc	exclude	0.328646	0.329957	0.33001	686	0	0.326441	0.330813	human1	T3	L_ge06
+mcc	zero	0.328646	0.329957	0.33001	686	0			human1	T3	L_ge06
+f1	exclude	0.383603	0.384783	0.385246	686	0	0.38158	0.385569	human1	T3	L_ge06
+f1	zero	0.383603	0.384783	0.385246	686	0			human1	T3	L_ge06
+precision	exclude	0.430866	0.434073	0.430556	686	0	0.427729	0.434061	human1	T3	L_ge06
+precision	zero	0.430866	0.434073	0.430556	686	0			human1	T3	L_ge06
+recall	exclude	0.347134	0.347126	0.347139	686	0	0.345436	0.348828	human1	T3	L_ge06
+recall	zero	0.347134	0.347126	0.347139	686	0			human1	T3	L_ge06
+specificity	exclude	0.951249	0.951507	0.951356	686	0	0.951002	0.951497	human1	T3	L_ge06
+specificity	zero	0.951249	0.951507	0.951356	686	0			human1	T3	L_ge06
+accuracy	exclude	0.892981	0.892736	0.893525	686	0	0.892515	0.893422	human1	T3	L_ge06
+accuracy	zero	0.892981	0.892736	0.893525	686	0			human1	T3	L_ge06
+mcc	exclude	0.339899	0.340295	0.341419	686	0	0.338138	0.341581	human2	B-loo:metabolite_pool_biomass	L_ge06
+mcc	zero	0.339899	0.340295	0.341419	686	0			human2	B-loo:metabolite_pool_biomass	L_ge06
+f1	exclude	0.368157	0.368214	0.37037	686	0	0.366493	0.369744	human2	B-loo:metabolite_pool_biomass	L_ge06
+f1	zero	0.368157	0.368214	0.37037	686	0			human2	B-loo:metabolite_pool_biomass	L_ge06
+precision	exclude	0.516772	0.519444	0.517483	686	0	0.514583	0.519002	human2	B-loo:metabolite_pool_biomass	L_ge06
+precision	zero	0.516772	0.519444	0.517483	686	0			human2	B-loo:metabolite_pool_biomass	L_ge06
+recall	exclude	0.286951	0.286285	0.287277	686	0	0.285109	0.288697	human2	B-loo:metabolite_pool_biomass	L_ge06
+recall	zero	0.286951	0.286285	0.287277	686	0			human2	B-loo:metabolite_pool_biomass	L_ge06
+specificity	exclude	0.972489	0.97263	0.972466	686	0	0.972371	0.972608	human2	B-loo:metabolite_pool_biomass	L_ge06
+specificity	zero	0.972489	0.97263	0.972466	686	0			human2	B-loo:metabolite_pool_biomass	L_ge06
+accuracy	exclude	0.908126	0.907651	0.908795	686	0	0.907467	0.908768	human2	B-loo:metabolite_pool_biomass	L_ge06
+accuracy	zero	0.908126	0.907651	0.908795	686	0			human2	B-loo:metabolite_pool_biomass	L_ge06
+mcc	exclude	0.331217	0.331559	0.333174	686	0	0.329476	0.332891	human2	T0	L_ge06
+mcc	zero	0.331217	0.331559	0.333174	686	0			human2	T0	L_ge06
+f1	exclude	0.364976	0.365035	0.36658	686	0	0.363321	0.366568	human2	T0	L_ge06
+f1	zero	0.364976	0.365035	0.36658	686	0			human2	T0	L_ge06
+precision	exclude	0.492972	0.495493	0.493421	686	0	0.490641	0.495259	human2	T0	L_ge06
+precision	zero	0.492972	0.495493	0.493421	686	0			human2	T0	L_ge06
+recall	exclude	0.290829	0.290123	0.291208	686	0	0.289019	0.292591	human2	T0	L_ge06
+recall	zero	0.290829	0.290123	0.291208	686	0			human2	T0	L_ge06
+specificity	exclude	0.969316	0.969456	0.969301	686	0	0.969186	0.969444	human2	T0	L_ge06
+specificity	zero	0.969316	0.969456	0.969301	686	0			human2	T0	L_ge06
+accuracy	exclude	0.905623	0.90515	0.906261	686	0	0.904979	0.906253	human2	T0	L_ge06
+accuracy	zero	0.905623	0.90515	0.906261	686	0			human2	T0	L_ge06
+mcc	exclude	0.331475	0.332747	0.332071	686	0	0.329284	0.333668	human2	T3	L_ge06
+mcc	zero	0.331475	0.332747	0.332071	686	0			human2	T3	L_ge06
+f1	exclude	0.386838	0.38802	0.3875	686	0	0.384799	0.388843	human2	T3	L_ge06
+f1	zero	0.386838	0.38802	0.3875	686	0			human2	T3	L_ge06
+precision	exclude	0.42317	0.426325	0.424658	686	0	0.420092	0.42638	human2	T3	L_ge06
+precision	zero	0.42317	0.426325	0.424658	686	0			human2	T3	L_ge06
+recall	exclude	0.357937	0.357866	0.357955	686	0	0.356153	0.359698	human2	T3	L_ge06
+recall	zero	0.357937	0.357866	0.357955	686	0			human2	T3	L_ge06
+specificity	exclude	0.949743	0.950001	0.94992	686	0	0.949492	0.949997	human2	T3	L_ge06
+specificity	zero	0.949743	0.950001	0.94992	686	0			human2	T3	L_ge06
+accuracy	exclude	0.89425	0.894003	0.894718	686	0	0.893769	0.894689	human2	T3	L_ge06
+accuracy	zero	0.89425	0.894003	0.894718	686	0			human2	T3	L_ge06
