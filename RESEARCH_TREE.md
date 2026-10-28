@@ -2,11 +2,11 @@
 
 Legend: [ ] planned · [~] in progress · [x] done · [-] abandoned/negative · [!] key finding
 
-## Status summary (2026-10-27, M2: generic baseline fixed)
+## Status summary (2026-10-28, M4: first TG-passing lever)
 
 M2 is complete. The generic models were scored on 686 training lines (12 lineages). H1 beats H2 on tie-aware AUPRC: tAP_line 0.300 vs 0.292. Their paper-protocol MCCs are similar: 0.329 vs 0.331 (P57 × L-ge06). An independent reviewer recomputed every headline number with its own code and matched it exactly. The single W1 validation look (1 of 40, scalars only, 198 lines in 4 lineages) set **G\* = Human1**: Δ̄_lin(H2−H1) = −0.0071 [−0.0079, −0.0063]. Label-only gene-prior baselines score far higher (B2 tAP 0.90). About 42% of positive gene × line pairs fall outside the H2 addressable set. These two facts set the realistic bar for context-specific GEMs.
 
-Next (M3): Stage A of the context-model families on the 30-line training panel, starting after the W4 code passes its independent review (A4 specifications; ≈60 CPU-h, ≈3.5 h wall). In parallel, W2 (medium pilots) is finishing. Then come the M3 milestone review, LESSONS pruning and the fresh-agent "stop/continue" question.
+Update (2026-10-28): Stage A context families (W4) and GPR curation (W5) fail the training gate. W3's cofactor-pool biomass leave-out is the first lever to pass it (+0.034 on H1, flags W3-D1/W3-MEV); it goes to one validation look once the generic shortlist harness passes review. Next: M6 combination factorial, W6 flux information, W7 hybrids with gene priors.
 
 ## Decisions
 - **D8 (2026-10-27, user)**: CORDA is not dropped. It runs as a 10-line comparison (A7: one representative panel line per lineage, R1 and R3, real RNA, ≈ 33 CPU-h). It is descriptive only, not eligible for P1.
@@ -68,12 +68,19 @@ Next (M3): Stage A of the context-model families on the 30-line training panel, 
     - [-] M3 calibration is infeasible as specified (growth ≈ 12.3 × the O2 bound; other uptakes stay at 1000), so M3 is reported as uncalibrated and excluded.
     - [!] Sterol branch: serum cholesterol rescues only DHCR7. Biomass needs vitamin D3 products reachable only via lathosterol → 7-dehydrocholesterol, a model-structure issue for W3/W5. CAD is rescued by orotate but not uridine (W5).
     - Bug found in the A9 fix round: 2-ME did not open cysteine uptake. It is fixed and changes 0 gene ratios.
-- [ ] 5. Objectives / metabolic tasks (a-priori task set)
+- [~] 5. Objectives / metabolic tasks / biomass (W3)
+  - [x] 5.1 W3 M3–M4 (efc4138, clean-tree rerun 603cb9a; review notes/reviews/M4_W3_review.md, numbers reproduced bitwise; ≈ 24.5 CPU-h + 2.1 gene-pFBA). P57 equals Human-GEM taskEssentialGenes (8/8).
+    - [!] **B-loo:cofactor_pool_biomass passes TG**: H1 +0.0343 [0.0336, 0.0349], 12/12 folds (H2 +0.0369). It removes ~20 biomass-artefact calls (CYP26/24, carnitine, BH4, COQ) and ~15 real requirements (heme, PDXK, TPK1, RFK). Sole W3 candidate for the validation look W3_M4_shortlist, with flags W3-D1 (control reading fixed after seeing results; beats a post-hoc random-removal control by +0.062, loses to the B2-informed comparator) and W3-MEV (under serum it removes mevalonate-core essentiality) (A11).
+    - [-] Metabolite-pool B-loo (+0.0056, CE-only) withdrawn (A11c). Task modes, O-MOMA, O-NGAM, O-cap, D-modes do not qualify; task modes help only without common essentials (as W1).
+    - [!] With vitamin-D B-loo, serum cholesterol rescues post-squalene sterol genes dose-dependently; dihydroorotate B-loo lets uridine rescue CAD. ETF positive control fails in H1.
+    - [-] A8 gene-pFBA tie-break: +0.0003 vs ratio_r (H1), breaks only 13–14 ties; far below B8+.
+    - [ ] Validation look W3_M4_shortlist: generic 'shortlist' harness kind written (worktree), under independent code review (A6(2)).
+    - [ ] W7 exploratory: 'artefact groups only' B-loo variant (reviewer suggestion, post hoc).
 - [~] 6. Context-specific models (omics integration; method-vs-tissue clustering test)
   - [x] 6.1 W4 pilots (Opus): F0, F2 GIMME, F3 FASTCORE, F4 E-Flux, F5 LCP builder; repair rule restores 12/12 lines (0.62–0.88 of generic WT); loss rule order-independent; 1.7–3.3 CPU-min per build. CORDA 1.5–1.7 CPU-h per model → full A6 dropped (A4); replaced by a 10-line comparison row A6′ (A7, user D8).
   - [x] 6.1b GPRTransform (Machado 2016; user suggestion) assessed label-free (notes/methods/GPRTransform_assessment.md, ≈1.7 CPU-h). The gene-level KO is exactly equal to the Boolean KO on both parents. The paper's isozyme encoding inflates capacity (Human2 WT +25%). It has no regulatory network: "regulation" means only expression bounds on gene usage. The repo has no license, so the method was reimplemented.
     - [-] Gene-level E-Flux as family F6: no extra distinct KO values on the pilot → not adopted.
-    - [ ] Gene-pFBA KO-cost tie-break: exploratory secondary score only (A8, ≈3.5 CPU-h), compared with B8 on training.
+    - [x] Gene-pFBA KO-cost tie-break (A8): see 5.1; negligible.
   - [x] 6.2 W4 code review (GO after B1–B3 fixes). Stage A run from a pinned worktree at c280413: 1,380 builds plus 600 re-sweeps, 0 failures, 108.7 CPU-h, 6.2 h wall.
   - [-] 6.3 **Stage A training scoring** (75c0805; review notes/reviews/M3_W4_stageA_review.md, independently recomputed). **No family passes the training gate vs G\* = H1.** Nested LOLO Δ̄: F0 −0.0080, F2 −0.0067, F3 −0.0102, F4 −0.0029 (gate-failed; GR scale artefact), F5 −0.0114, CORDA −0.0127 (10 lines, descriptive). Vs H2 nothing reaches +0.005 (best F4 +0.0038). F2 R1 is carried to M6 flagged "fails TG".
     - [!] Less pruning is always better (R1 > R2 > R3); the genomic constraint changes ≤ 0.0002.
