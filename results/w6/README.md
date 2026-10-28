@@ -1,13 +1,80 @@
-# W6: information in flux states beyond the inputs (provisional, pre-P1)
+# W6: information in flux states beyond the inputs (provisional run = P1 arm)
 
 Author: W6 engineer (Claude Opus), 2026-10-28. Design: DESIGN.md §9 W6, §6.5 (W6 tests), §7 (seeds), §11, §13 (W6 budget
 40 CPU-h), amendments A2 (the a priori lists are `notes/apriori_lists_final.md`), A9 (frozen W2 media library), A11 (W3
 B-loo flags), A12 (scope). Nothing is committed by the author. DESIGN.md, FROZEN.tsv and the ledgers were not edited.
 
-**Status: READY TO COMMIT. No provisional result has been produced yet.** The full provisional run costs about 2 CPU-h,
-over the 1 CPU-h limit, so it must run from a pinned clean worktree (§11.4). Code and tests pass. Everything under
-`provisional_pilot/` is a label-free **pilot**: it checks cost and plumbing on 2 media states and a few units. It is
-not a result.
+**Status: provisional run complete** (pinned clean worktree `/data/tmpA/nextgem_runs/71c2a7b`, commit 71c2a7b, 2.06
+CPU-h, manifest rows dirty=False). The outputs, labelled "provisional (pre-P1)" in their file headers, are in
+`provisional/`; `provisional_pilot/` holds the earlier label-free pilot only.
+
+**P1 equivalence (coordinator, tree D11).** P1 = Human1 + W3 B-loo:cofactor_pool_biomass on M2(f = 1), gate-free,
+generic parent, no context family. The arm `H1+B-loo` uses exactly this bound scheme: W2 ladder step "M2" (not "M2g"),
+`gate_open = true`, which means no Asp/Glu gate is applied. Its flux features are therefore P1's. The arm `H1` (generic
+Human1, same bounds) is **G\***. In this README **P1 = arm `H1+B-loo`** and **G\* = arm `H1`**; the directory and
+file names keep the arm names. Flag W3-MEV applies to P1 (statin and FDPS targets); W3-D1 is carried.
+
+## 0. Results (both arms; `provisional/analysis/decisions.tsv`, `secondary.tsv`)
+
+**Decision (one-sided Wilcoxon per analysis, Holm across the 3 analyses, α = 0.025, above the permuted control):
+"not supported" for both hypotheses, both arms, all 3 analyses.**
+
+| Arm | Hypothesis | Subtypes (150 tasks, ΔF1) | Drugs (106 units, Δρ) | Metabolomics (225, Δρ) |
+|---|---|---|---|---|
+| G\* | flux adds info: RNA+X_flux − RNA | median 0 (40 tasks exactly 0), p_Holm 1 | median 0 (77/106 exactly 0), p 0.13, p_Holm 0.38 | median −0.007, p_Holm 1 |
+| P1 | flux adds info | median 0, p_Holm 1 | median 0 (77/106 exactly 0), p 0.34, p_Holm 1 | median −0.008, p_Holm 1 |
+| G\* | simulation > mapping: X_flux − X_rxnRNA | −0.044 | −0.239 | −0.399 (all p = 1) |
+| P1 | X_flux − X_rxnRNA | −0.044 | −0.240 | −0.398 (all p = 1) |
+| G\* / P1 | X_KO − X_rxnRNA | −0.051 / −0.047 | −0.240 / −0.240 | −0.405 / −0.408 (all p = 1) |
+
+**Permuted-flux control (SEEDS[0:5]).**
+- H_flux permuted medians: 0 for subtypes and drugs; −0.013 to −0.023 for metabolomics.
+- Metabolomics is the only "above permuted" case (real −0.007 > permuted −0.02). Its median is negative, so the
+  verdict is not supported.
+
+**Synthetic positive control** (flux-only tanh signal, 20 units): recovered. Δρ(RNA + flux − RNA) median +0.42 (G\*)
+and +0.45 (P1), p = 9.5e-7.
+
+**Synthetic negative control** (a block that is a linear function of RNA): no gain. Median Δ is −0.007 for drugs
+(p 0.97), +0.0003 for metabolomics (p 0.14) and 0 for subtypes (p 0.25).
+
+**Generic KO check.** The G\* KO e-vectors equal the W2 sweeps bitwise in all 20 bounds states.
+
+**Why the result is null.**
+- Generic flux depends only on the medium: one state for every PRISM line, 2 in GDSC, at most 20 for the culture
+  media. With one state per assay, Δ = 0 exactly.
+- 77 of 106 drug units have Δ exactly 0: PRISM, plus GDSC and CTRP units where the medium state is constant within the
+  unit's PCA. The non-zero units are GDSC (RPMI vs DMEM:F12) and CTRP and metabolomics (culture media).
+- Comparators. Median held-out ρ: RNA 0.11 for drugs (CTRP 0.37, GDSC2 0.22, PRISM 0.03); for metabolomics, RNA 0.28,
+  X_rxnRNA 0.23, X_flux −0.18.
+- **Note on H_sim magnitudes.** The pooled LOLO ρ of a predictor without line information is negative, not 0. Its
+  per-fold intercept anti-correlates with the held-out lineage's mean. So the H_sim Δ values partly measure "no
+  information" against "RNA-derived information".
+
+**Secondary** (unadjusted, exploratory):
+- RNA + X_KO − RNA: drugs median 0 (p 0.006 G\*, 0.002 P1); metabolomics +0.0005 G\* (p 0.002), +0.003 P1
+  (p 9e-6).
+- This is still medium-only information, and it is smaller than RNA + X_rxnRNA on metabolomics (+0.008, p 5e-5).
+- PROT + X_flux shows no gain. PCA-50 matches PCA-20. Off-model drugs show no gain.
+
+**Fit-free test and positive-control pairs.**
+- Target e is constant within every lineage for 100/104 (G\*) and 97/104 (P1) target × unit rows.
+- For the positive-control pairs: 46 (G\*) and 43 (P1) are non_informative and 10 have no eligible unit.
+- Evaluated pairs:
+  - TYMS–5-FU, GDSC2: ρ_e +0.23 vs ρ_expr −0.11. This is a medium effect: DMEM:F12 contains thymidine.
+  - TYMS–5-FU, CTRP: ρ_e −0.04.
+  - ATP5F1A–oligomycin, CTRP: ρ_e −0.13 vs ρ_expr +0.17.
+  - P1 only, HMGCR–statins, CTRP: ρ_e +0.01 to +0.10 vs ρ_expr −0.11 to −0.21. Here e varies only between serum and
+    serum-free media; this is W3-MEV.
+- Target expression across all fit-free rows: median ρ_expr −0.015.
+
+**Interpretation.** With generic-parent P1, flux states carry no information beyond the omics inputs and the medium.
+The pipeline can detect such information when it is present (the synthetic positive is recovered). The null is a
+property of line-invariant generic models, not of the test.
+
+**Cosmetic issue.** `w6_simulate.py` read the compound TSV back with NaN `targets`, so `features/checks.json` lists
+47 targets including a spurious "nan". It maps to no gene and is skipped; the features are unaffected. The fix is
+`target_genes` skipping NaN (not changed, to keep the run's commit).
 
 **Label hygiene.** The session-start probe `head -c 50 data/depmap/CRISPRGeneEffect.csv` was **blocked** by the
 PreToolUse hook. W6 reads no CRISPR label, no label-derived source (§11.2 denylist) and nothing in `data/locked/`.
@@ -158,7 +225,9 @@ Secondary contrasts are listed in `secondary.tsv`, unadjusted:
 | `w6_analyze.py` pilots: 3 runs | 0.18 | 6 drug, 10 metabolite and 10 subtype units and 4 synthetic units per arm. 130 CPU-s after the numpy LOO ridge replaced RidgeCV (366 s before) |
 | **Killed analysis pilot (no MANIFEST row)** | **≈ 7** (≥ 6.75 measured by `ps`) | **Incident.** OpenBLAS defaulted to ~40 threads on this 48-core host. The process ran at ~4,000% CPU, mostly thread spin, and was killed. Fixed: every W6 script pins 1 BLAS thread through environment variables and `threadpoolctl` |
 | Scratch timing probe and tests | ≈ 0.1 | |
-| **Spent so far** | **≈ 7.7** | of the 40 CPU-h W6 budget |
+| **Provisional run, pinned worktree 71c2a7b** (inputs 0.02, simulate 1.30, analyze 0.74) | **2.06** | 40 states at about 105 s each (about 21 KO-flux LPs per state); analysis 2,650 s |
+| Scanner (`--roots results/w6` + scratchpad): 0 hits | — | |
+| **Spent so far** | **≈ 9.8** | of the 40 CPU-h W6 budget. No separate P1 re-run is needed (arm H1+B-loo = P1) |
 
 **Projection for the full provisional run: ≈ 1.9 CPU-h**, so it needs the pinned worktree.
 - Inputs: 0.14.

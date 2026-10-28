@@ -1,0 +1,107 @@
+# provisional (pre-P1); config provisional.json
+# arm H1+B-loo
+dataset	compound	target	n_lines	rho_e_within	n_lineages_e	e_constant_within_every_lineage	rho_expr_within	n_lineages_expr
+CTRP	5-FU	TYMS	588	-0.0359921	10	False	-0.0311728	18
+CTRP	FK866/daporinad	NAMPT	505		0	True	-0.319484	17
+CTRP	GMX1778/CHS-828	NAMPT	574		0	True	-0.352493	18
+CTRP	cerulenin	FASN	571		0	True	0.0766304	18
+CTRP	erastin	SLC7A11	585		0	True	-0.227306	18
+CTRP	etomoxir	CPT1A	576		0	True	-0.0217631	18
+CTRP	fluvastatin	HMGCR	563	0.0139923	18	False	-0.108728	18
+CTRP	gemcitabine	RRM1	534		0	True	0.105308	17
+CTRP	lovastatin	HMGCR	586	0.0555952	18	False	-0.206213	18
+CTRP	methotrexate	DHFR	549		0	True	0.0367373	18
+CTRP	oligomycin-A	ATP5F1A	575	-0.132028	18	False	0.17178	18
+CTRP	simvastatin	HMGCR	526	0.0960295	16	False	-0.120645	16
+GDSC2	5-FU	TYMS	530	0.229169	17	False	-0.10868	17
+GDSC2	AGI-5198	IDH1	527		0	True	0.0778711	17
+GDSC2	AGI-6780	IDH2	500		0	True	-0.0708694	17
+GDSC2	FK866/daporinad	NAMPT	294		0	True	-0.325965	11
+GDSC2	gemcitabine	RRM1	528		0	True	0.0798877	17
+GDSC2	leflunomide	DHODH	501	0.0527046	17	False	-0.0367488	17
+GDSC2	methotrexate	DHFR	488		0	True	0.0793123	17
+GDSC2	mycophenolic acid / mofetil	IMPDH1	437		0	True	0.0191644	17
+GDSC2	mycophenolic acid / mofetil	IMPDH2	437		0	True	0.0242157	17
+GDSC2	zoledronate	FDPS	430		0	True	-0.0784503	16
+PRISM	2-deoxyglucose	HK1	458		0	True	0.00704153	16
+PRISM	2-deoxyglucose	HK2	458		0	True	0.0951289	16
+PRISM	3-bromopyruvate	HK2	436		0	True	0.0196721	16
+PRISM	3-bromopyruvate	GAPDH	436		0	True	-0.0133068	16
+PRISM	5-FU	TYMS	360		0	True	-0.0856421	13
+PRISM	6-mercaptopurine	PPAT	378		0	True	0.0128807	14
+PRISM	6-thioguanine	PPAT	553		0	True	0.0652924	18
+PRISM	A939572	SCD	717		0	True	0.1096	22
+PRISM	AGI-5198	IDH1	462		0	True	-0.00733141	16
+PRISM	AGI-6780	IDH2	463		0	True	-0.0964644	17
+PRISM	AZD3965	SLC16A1	397		0	True	0.136582	14
+PRISM	BAY-2402234	DHODH	717		0	True	-0.0289691	21
+PRISM	CB-839/telaglenastat	GLS	397		0	True	0.057073	14
+PRISM	CPI-613/devimistat	PDHA1	463		0	True	-0.0271793	17
+PRISM	CPI-613/devimistat	DLD	463		0	True	0.000600986	17
+PRISM	CPI-613/devimistat	DLST	463		0	True	0.072834	17
+PRISM	FK866/daporinad	NAMPT	558		0	True	-0.165036	19
+PRISM	GMX1778/CHS-828	NAMPT	396		0	True	-0.0892796	14
+PRISM	GSK2194069	FASN	396		0	True	0.0588111	14
+PRISM	GSK2837808A	LDHA	715		0	True	-0.110934	22
+PRISM	GSK2837808A	LDHB	715		0	True	0.0139165	22
+PRISM	STF-118804	NAMPT	386		0	True	-0.227154	14
+PRISM	acivicin	CTPS1	319		0	True	-0.0184044	13
+PRISM	alendronate	FDPS	436		0	True	-0.116447	16
+PRISM	allopurinol	XDH	443		0	True	0.0107151	16
+PRISM	atorvastatin	HMGCR	369		0	True	-0.0539125	13
+PRISM	atovaquone	MT-CYB	458		0	True	0.0655098	16
+PRISM	azaserine	PPAT	715		0	True	0.0373636	22
+PRISM	azaserine	PFAS	715		0	True	-0.0394075	22
+PRISM	bempedoic acid	ACLY	449		0	True	0.0353606	16
+PRISM	brequinar	DHODH	566		0	True	-0.0350564	19
+PRISM	buthionine sulfoximine	GCLC	353		0	True	-0.176572	14
+PRISM	buthionine sulfoximine	GCLM	353		0	True	-0.0165704	14
+PRISM	capecitabine	TYMS	477		0	True	-0.0393204	18
+PRISM	cerulenin	FASN	458		0	True	0.115686	16
+PRISM	disulfiram	ALDH2	402		0	True	0.0690446	14
+PRISM	eflornithine/DFMO	ODC1	464		0	True	-0.0757792	17
+PRISM	enasidenib	IDH2	432		0	True	0.150621	18
+PRISM	erastin	SLC7A11	330		0	True	-0.258583	13
+PRISM	etomoxir	CPT1A	367		0	True	0.0321106	13
+PRISM	firsocostat	ACACA	717		0	True	0.0502396	21
+PRISM	firsocostat	ACACB	717		0	True	0.0152574	21
+PRISM	floxuridine	TYMS	568		0	True	-0.100397	19
+PRISM	fluvastatin	HMGCR	393		0	True	-0.146352	14
+PRISM	gemcitabine	RRM1	321		0	True	-0.0028984	13
+PRISM	hydroxyurea	RRM2	381		0	True	0.0676885	13
+PRISM	ibandronate	FDPS	436		0	True	-0.0190075	16
+PRISM	ivosidenib	IDH1	465		0	True	0.100451	18
+PRISM	leflunomide	DHODH	450		0	True	-0.0284669	16
+PRISM	lonidamine	HK2	457		0	True	-0.0378008	16
+PRISM	lovastatin	HMGCR	231		0	True	-0.123598	12
+PRISM	metformin	MT-ND1	457		0	True	0.00990688	16
+PRISM	methotrexate	DHFR	514		0	True	-0.086266	18
+PRISM	mizoribine	IMPDH1	435		0	True	0.0219704	16
+PRISM	mizoribine	IMPDH2	435		0	True	0.00256942	16
+PRISM	mycophenolic acid / mofetil	IMPDH1	288		0	True	0.182283	13
+PRISM	mycophenolic acid / mofetil	IMPDH2	288		0	True	-0.099701	13
+PRISM	oligomycin-A	ATP5F1A	303		0	True	0.144957	13
+PRISM	orlistat	FASN	456		0	True	0.0202803	16
+PRISM	pemetrexed	TYMS	527		0	True	-0.135473	19
+PRISM	pemetrexed	DHFR	527		0	True	-0.0849966	19
+PRISM	pemetrexed	GART	527		0	True	-0.0323031	19
+PRISM	perhexiline	CPT1A	465		0	True	-0.037144	17
+PRISM	phenformin	MT-ND1	442		0	True	0.0895368	16
+PRISM	pitavastatin	HMGCR	284		0	True	-0.181622	13
+PRISM	pralatrexate	DHFR	561		0	True	-0.0318873	18
+PRISM	pyrimethamine	DHFR	391		0	True	-0.0751431	14
+PRISM	raltitrexed	TYMS	395		0	True	-0.0242644	14
+PRISM	ribavirin	IMPDH1	355		0	True	-0.0710682	13
+PRISM	ribavirin	IMPDH2	355		0	True	0.00325212	13
+PRISM	risedronate	FDPS	715		0	True	-0.00570463	22
+PRISM	rosuvastatin	HMGCR	717		0	True	0.0561713	21
+PRISM	simvastatin	HMGCR	384		0	True	-0.0300046	14
+PRISM	sulfasalazine	SLC7A11	335		0	True	0.0964632	14
+PRISM	terbinafine	SQLE	462		0	True	0.0662276	16
+PRISM	teriflunomide	DHODH	379		0	True	-0.0362344	14
+PRISM	triapine	RRM2	392		0	True	0.00156255	14
+PRISM	trifluridine+tipiracil	TYMS	389		0	True	0.0115103	14
+PRISM	trimethoprim	DHFR	463		0	True	-0.0701862	17
+PRISM	vorasidenib	IDH1	712		0	True	0.0113305	22
+PRISM	vorasidenib	IDH2	712		0	True	-0.00993825	22
+PRISM	zoledronate	FDPS	715		0	True	-0.0275775	22

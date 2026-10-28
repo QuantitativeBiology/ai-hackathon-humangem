@@ -1,0 +1,62 @@
+# provisional (pre-P1); config provisional.json
+# arm H1
+gene	compound	note	dataset	n_lines	rho_e_within	n_lineages_e	e_constant_within_every_lineage	rho_expr_within	n_lineages_expr	RNA	RNA+FLUX	status
+DHODH	brequinar		PRISM	566		0	True	-0.0350564	19	0.0950474	0.0950474	non_informative (target e constant within lineages)
+DHFR	methotrexate		CTRP	549		0	True	0.0367373	18	0.382868	0.406967	non_informative (target e constant within lineages)
+DHFR	methotrexate		GDSC2	488		0	True	0.0793123	17	0.206444	0.460201	non_informative (target e constant within lineages)
+DHFR	methotrexate		PRISM	514		0	True	-0.086266	18	0.225211	0.225211	non_informative (target e constant within lineages)
+TYMS	5-FU		CTRP	588	-0.0359921	10	False	-0.0311728	18	0.425972	0.419806	evaluated
+TYMS	5-FU		GDSC2	530	0.229169	17	False	-0.10868	17	0.216949	0.291938	evaluated
+TYMS	5-FU		PRISM	360		0	True	-0.0856421	13	0.0685	0.0685	non_informative (target e constant within lineages)
+TYMS	floxuridine		PRISM	568		0	True	-0.100397	19	0.149173	0.149173	non_informative (target e constant within lineages)
+TYMS	pemetrexed		PRISM	527		0	True	-0.135473	19	0.00431627	0.00431627	non_informative (target e constant within lineages)
+IMPDH2	mycophenolic acid / mofetil		GDSC2	437		0	True	0.0242157	17	0.3496	0.447566	non_informative (target e constant within lineages)
+IMPDH2	mycophenolic acid / mofetil		PRISM	288		0	True	-0.099701	13	0.108515	0.108515	non_informative (target e constant within lineages)
+RRM1	hydroxyurea											no eligible screen unit
+RRM1	gemcitabine		CTRP	534		0	True	0.105308	17	0.475869	0.466472	non_informative (target e constant within lineages)
+RRM1	gemcitabine		GDSC2	528		0	True	0.0798877	17	0.368872	0.362365	non_informative (target e constant within lineages)
+RRM1	gemcitabine		PRISM	321		0	True	-0.0028984	13	-0.218773	-0.218773	non_informative (target e constant within lineages)
+RRM2	hydroxyurea		PRISM	381		0	True	0.0676885	13	-0.212892	-0.212892	non_informative (target e constant within lineages)
+RRM2	gemcitabine											no eligible screen unit
+HMGCR	simvastatin		CTRP	526		0	True	-0.120645	16	0.254084	0.217556	non_informative (target e constant within lineages)
+HMGCR	simvastatin		PRISM	384		0	True	-0.0300046	14	0.00835954	0.00835954	non_informative (target e constant within lineages)
+HMGCR	lovastatin		CTRP	586		0	True	-0.206213	18	0.302023	0.250854	non_informative (target e constant within lineages)
+HMGCR	lovastatin		PRISM	231		0	True	-0.123598	12	0.0118158	0.0118158	non_informative (target e constant within lineages)
+HMGCR	atorvastatin		PRISM	369		0	True	-0.0539125	13	0.305531	0.305531	non_informative (target e constant within lineages)
+HMGCR	fluvastatin		CTRP	563		0	True	-0.108728	18	0.287841	0.251246	non_informative (target e constant within lineages)
+HMGCR	fluvastatin		PRISM	393		0	True	-0.146352	14	0.356946	0.356946	non_informative (target e constant within lineages)
+HMGCR	pitavastatin		PRISM	284		0	True	-0.181622	13	0.348397	0.348397	non_informative (target e constant within lineages)
+HMGCR	rosuvastatin		PRISM	717		0	True	0.0561713	21	-0.162609	-0.162609	non_informative (target e constant within lineages)
+SQLE	terbinafine		PRISM	462		0	True	0.0662276	16	-0.162927	-0.162927	non_informative (target e constant within lineages)
+FASN	GSK2194069		PRISM	396		0	True	0.0588111	14	-0.155884	-0.155884	non_informative (target e constant within lineages)
+FASN	TVB-2640/denifanstat											no eligible screen unit
+ACACA	ND-646											no eligible screen unit
+GLS	CB-839/telaglenastat		PRISM	397		0	True	0.057073	14	0.315862	0.315862	non_informative (target e constant within lineages)
+GLS	BPTES											no eligible screen unit
+SLC16A1	AZD3965		PRISM	397		0	True	0.136582	14	0.213778	0.213778	non_informative (target e constant within lineages)
+SLC2A1	BAY-876											no eligible screen unit
+CPT1A	etomoxir		CTRP	576		0	True	-0.0217631	18	-0.0434532	-0.0107063	non_informative (target e constant within lineages)
+CPT1A	etomoxir		PRISM	367		0	True	0.0321106	13	-0.199963	-0.199963	non_informative (target e constant within lineages)
+NAMPT	FK866/daporinad	NAPRT modifier	CTRP	505		0	True	-0.319484	17	0.372812	0.340294	non_informative (target e constant within lineages)
+NAMPT	FK866/daporinad	NAPRT modifier	GDSC2	294		0	True	-0.325965	11	0.472541	0.524166	non_informative (target e constant within lineages)
+NAMPT	FK866/daporinad	NAPRT modifier	PRISM	558		0	True	-0.165036	19	0.280243	0.280243	non_informative (target e constant within lineages)
+GCLC	buthionine sulfoximine		PRISM	353		0	True	-0.176572	14	0.135248	0.135248	non_informative (target e constant within lineages)
+GCLM	buthionine sulfoximine		PRISM	353		0	True	-0.0165704	14	0.135248	0.135248	non_informative (target e constant within lineages)
+SLC7A11	sulfasalazine		PRISM	335		0	True	0.0964632	14	-0.162101	-0.162101	non_informative (target e constant within lineages)
+SLC7A11	erastin		CTRP	585		0	True	-0.227306	18	0.372846	0.320744	non_informative (target e constant within lineages)
+SLC7A11	erastin		PRISM	330		0	True	-0.258583	13	0.255109	0.255109	non_informative (target e constant within lineages)
+ATP5F1A	oligomycin-A		CTRP	575	-0.132028	18	False	0.17178	18	0.284376	0.310427	evaluated
+ATP5F1A	oligomycin-A		PRISM	303		0	True	0.144957	13	0.0649552	0.0649552	non_informative (target e constant within lineages)
+PDHA1	CPI-613/devimistat		PRISM	463		0	True	-0.0271793	17	0.0760213	0.0760213	non_informative (target e constant within lineages)
+DLD	CPI-613/devimistat		PRISM	463		0	True	0.000600986	17	0.0760213	0.0760213	non_informative (target e constant within lineages)
+DLST	CPI-613/devimistat		PRISM	463		0	True	0.072834	17	0.0760213	0.0760213	non_informative (target e constant within lineages)
+HK1	2-deoxyglucose		PRISM	458		0	True	0.00704153	16	-0.00419806	-0.00419806	non_informative (target e constant within lineages)
+HK2	2-deoxyglucose		PRISM	458		0	True	0.0951289	16	-0.00419806	-0.00419806	non_informative (target e constant within lineages)
+ODC1	eflornithine/DFMO		PRISM	464		0	True	-0.0757792	17	-0.176522	-0.176522	non_informative (target e constant within lineages)
+SHMT1	SHIN1											no eligible screen unit
+SHMT1	SHIN2											no eligible screen unit
+SHMT2	SHIN1											no eligible screen unit
+SHMT2	SHIN2											no eligible screen unit
+IDH1	ivosidenib	restricted to IDH_mut lines	PRISM	465		0	True	0.100451	18	-0.188455	-0.188455	non_informative (target e constant within lineages)
+IDH1	AGI-5198	restricted to IDH_mut lines	GDSC2	527		0	True	0.0778711	17	0.209692	0.222227	non_informative (target e constant within lineages)
+IDH1	AGI-5198	restricted to IDH_mut lines	PRISM	462		0	True	-0.00733141	16	-0.132922	-0.132922	non_informative (target e constant within lineages)

@@ -1,0 +1,37 @@
+{
+ "arms": {
+  "H1": {
+   "fit_free_e_defined": 4,
+   "fit_free_rows": 104,
+   "n_units": {
+    "drugs": 121,
+    "drugs_primary": 106,
+    "metabolomics": 225,
+    "subtypes": 150
+   }
+  },
+  "H1+B-loo": {
+   "fit_free_e_defined": 7,
+   "fit_free_rows": 104,
+   "n_units": {
+    "drugs": 121,
+    "drugs_primary": 106,
+    "metabolomics": 225,
+    "subtypes": 150
+   }
+  }
+ },
+ "label": "provisional (pre-P1)",
+ "pca_cache_entries": 2351,
+ "timing_s": {
+  "H1+B-loo:drugs": 317.0,
+  "H1+B-loo:metabolomics": 843.8,
+  "H1+B-loo:subtypes": 201.2,
+  "H1+B-loo:synthetic": 5.4,
+  "H1:drugs": 332.6,
+  "H1:metabolomics": 747.0,
+  "H1:subtypes": 183.3,
+  "H1:synthetic": 4.7
+ },
+ "wall_s": 2649.8
+}

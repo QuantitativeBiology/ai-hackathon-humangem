@@ -1,0 +1,21 @@
+# provisional (pre-P1); config provisional.json
+# one-sided Wilcoxon of per-unit delta; Holm across the 3 analyses within each (arm, hypothesis, block); alpha 0.025; 'above_permuted' = real median > every permuted-seed median (SEEDS[0:5])
+arm	hypothesis	block	contrast	analysis	n_units	median_delta	mean_delta	n_positive	n_zero	p_wilcoxon_one_sided	p_holm	perm_medians	above_permuted	verdict	metric
+H1	H_flux	X_flux	RNA+FLUX - RNA	subtypes	150	0	-0.00580727	56	40	0.813325	1	11:0;23:0;37:0;41:0;53:0	False	not supported	knn_macro_f1
+H1	H_flux	X_flux	RNA+FLUX - RNA	drugs	106	0	0.00480483	17	77	0.128142	0.384426	11:0;23:0;37:0;41:0;53:0	False	not supported	rho
+H1	H_flux	X_flux	RNA+FLUX - RNA	metabolomics	225	-0.00680484	0.0139868	96	0	0.619566	1	11:-0.01864;23:-0.01524;37:-0.01763;41:-0.02039;53:-0.01326	True	not supported	rho
+H1	H_sim	X_flux	FLUX - RXN_RNA	subtypes	150	-0.0441256	-0.0843634	32	20	1	1	11:-0.05058;23:-0.04948;37:-0.05775;41:-0.05685;53:-0.05797	True	not supported	knn_macro_f1
+H1	H_sim	X_flux	FLUX - RXN_RNA	drugs	106	-0.23923	-0.28166	13	0	1	1	11:-0.2881;23:-0.2946;37:-0.2968;41:-0.3094;53:-0.2996	True	not supported	rho
+H1	H_sim	X_flux	FLUX - RXN_RNA	metabolomics	225	-0.398748	-0.401841	4	0	1	1	11:-0.4507;23:-0.4627;37:-0.4651;41:-0.4677;53:-0.4606	True	not supported	rho
+H1	H_sim	X_KO	KO - RXN_RNA	subtypes	150	-0.0508324	-0.087084	30	23	1	1	11:-0.05484;23:-0.04538;37:-0.05596;41:-0.05685;53:-0.05685	False	not supported	knn_macro_f1
+H1	H_sim	X_KO	KO - RXN_RNA	drugs	106	-0.24011	-0.281164	13	0	1	1	11:-0.2914;23:-0.2911;37:-0.2911;41:-0.3094;53:-0.3094	True	not supported	rho
+H1	H_sim	X_KO	KO - RXN_RNA	metabolomics	225	-0.40541	-0.408974	5	0	1	1	11:-0.4589;23:-0.4809;37:-0.4741;41:-0.4783;53:-0.4742	True	not supported	rho
+H1+B-loo	H_flux	X_flux	RNA+FLUX - RNA	subtypes	150	0	-0.00588325	56	40	0.812524	1	11:0;23:0;37:0;41:0;53:0	False	not supported	knn_macro_f1
+H1+B-loo	H_flux	X_flux	RNA+FLUX - RNA	drugs	106	0	0.00290164	15	77	0.344567	1	11:0;23:0;37:0;41:0;53:0	False	not supported	rho
+H1+B-loo	H_flux	X_flux	RNA+FLUX - RNA	metabolomics	225	-0.00790217	0.0124198	89	0	0.857356	1	11:-0.02204;23:-0.01556;37:-0.02326;41:-0.02018;53:-0.01334	True	not supported	rho
+H1+B-loo	H_sim	X_flux	FLUX - RXN_RNA	subtypes	150	-0.0441256	-0.0850392	31	20	1	1	11:-0.04792;23:-0.0497;37:-0.06039;41:-0.05484;53:-0.05797	True	not supported	knn_macro_f1
+H1+B-loo	H_sim	X_flux	FLUX - RXN_RNA	drugs	106	-0.24011	-0.283334	13	0	1	1	11:-0.299;23:-0.2946;37:-0.2968;41:-0.3094;53:-0.2911	True	not supported	rho
+H1+B-loo	H_sim	X_flux	FLUX - RXN_RNA	metabolomics	225	-0.398478	-0.403775	5	0	1	1	11:-0.4545;23:-0.4605;37:-0.4616;41:-0.4653;53:-0.4604	True	not supported	rho
+H1+B-loo	H_sim	X_KO	KO - RXN_RNA	subtypes	150	-0.0470416	-0.086601	29	24	1	1	11:-0.05484;23:-0.04451;37:-0.05685;41:-0.05685;53:-0.05685	False	not supported	knn_macro_f1
+H1+B-loo	H_sim	X_KO	KO - RXN_RNA	drugs	106	-0.24011	-0.281136	13	0	1	1	11:-0.2996;23:-0.2911;37:-0.2968;41:-0.3094;53:-0.3094	True	not supported	rho
+H1+B-loo	H_sim	X_KO	KO - RXN_RNA	metabolomics	225	-0.408279	-0.410126	5	0	1	1	11:-0.4642;23:-0.4907;37:-0.488;41:-0.4727;53:-0.4746	True	not supported	rho
