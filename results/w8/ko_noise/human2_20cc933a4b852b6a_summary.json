@@ -1,0 +1,94 @@
+{
+ "model": "v1.0.0/medium-20cc933a4b852b6a_human2-2.1.1_P1.xml.gz",
+ "genes_sampled": [
+  "ENSG00000091137",
+  "ENSG00000170271",
+  "ENSG00000166548",
+  "ENSG00000145495",
+  "ENSG00000155085",
+  "ENSG00000158470",
+  "ENSG00000152683",
+  "ENSG00000198610",
+  "ENSG00000090054",
+  "ENSG00000146373",
+  "ENSG00000089250",
+  "ENSG00000131067",
+  "ENSG00000140459",
+  "ENSG00000067225",
+  "ENSG00000099817",
+  "ENSG00000243708",
+  "ENSG00000139180",
+  "ENSG00000173638",
+  "ENSG00000016391",
+  "ENSG00000206077"
+ ],
+ "gate_mismatch_genes_build": [
+  "ENSG00000099817"
+ ],
+ "gate_mismatch_genes_rerun_glpk_default": [
+  "ENSG00000099817"
+ ],
+ "per_solver": {
+  "glpk_default": {
+   "source:ENSG00000099817": {
+    "value": -1.518277708671656e-11,
+    "status": "optimal",
+    "biomass_lb_violation": 1.518277708671656e-11,
+    "ratio": -3.2366340760504766e-13
+   },
+   "reloaded:ENSG00000099817": {
+    "value": -8.04106888958673e-09,
+    "status": "optimal",
+    "biomass_lb_violation": 8.04106888958673e-09,
+    "ratio": -1.7141789955327883e-10
+   },
+   "max_abs_diff_source_reloaded_all_sampled": 8.025886112500013e-09
+  },
+  "glpk_exact": {
+   "source:ENSG00000099817": {
+    "value": 0.0,
+    "status": "optimal",
+    "biomass_lb_violation": 0.0,
+    "ratio": 0.0
+   },
+   "reloaded:ENSG00000099817": {
+    "value": 0.0,
+    "status": "optimal",
+    "biomass_lb_violation": 0.0,
+    "ratio": 0.0
+   },
+   "max_abs_diff_source_reloaded_all_sampled": 0.0
+  },
+  "glpk_feastol1e-10": {
+   "source:ENSG00000099817": {
+    "value": 3.3303567527741377e-13,
+    "status": "optimal",
+    "biomass_lb_violation": 0.0,
+    "ratio": 7.0995879672529286e-15
+   },
+   "reloaded:ENSG00000099817": {
+    "value": -2.4758981461004444e-13,
+    "status": "optimal",
+    "biomass_lb_violation": 2.4758981461004444e-13,
+    "ratio": -5.2780701861914215e-15
+   },
+   "max_abs_diff_source_reloaded_all_sampled": 1.0302869668521453e-12
+  },
+  "gurobi_tol1e-9": {
+   "source:ENSG00000099817": {
+    "value": 0.0,
+    "status": "optimal",
+    "biomass_lb_violation": 0.0,
+    "ratio": 0.0
+   },
+   "reloaded:ENSG00000099817": {
+    "value": 0.0,
+    "status": "optimal",
+    "biomass_lb_violation": 0.0,
+    "ratio": 0.0
+   },
+   "max_abs_diff_source_reloaded_all_sampled": 0.0
+  }
+ },
+ "wall_s": 211.7
+}

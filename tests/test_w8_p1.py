@@ -231,3 +231,87 @@ def test_w8_viability_all_er_tasks(human2_ham):
     res = rs.viability_tasks(human2_ham, GEMS["human2"].essential_tasks)
     assert sorted(res) == sorted(["GR"] + [f"ER{i}" for i in range(1, 10)])
     assert all(res.values())
+
+
+def test_w8_canonical_group_members(tmp_path):
+    """Group members are written in a stable order (cobra keeps them in a set): identical models give identical
+    bytes whatever the member insertion order; membership survives the round trip."""
+    from cobra.core import Group
+
+    files = []
+    for order in (["R1", "R2", "R5", "TA"], ["TA", "R5", "R2", "R1"]):
+        m = rs.build_medium_variant_model(toy_parent(), MEDIUM, BLOO)
+        m.add_groups([Group("grp1", name="toy subsystem", members=[m.reactions.get_by_id(r) for r in order])])
+        files.append(rs.export_model(m, p1_meta(), tmp_path / "".join(order)))
+    assert files[0].read_bytes() == files[1].read_bytes()
+    raw = gzip.decompress(files[0].read_bytes())
+    i = [raw.index(f'idRef="R_{r}"'.encode()) for r in ("R1", "R2", "R5", "TA")]
+    assert i == sorted(i)
+    b = rs.load_checked(files[0])
+    assert {r.id for r in b.groups.get_by_id("grp1").members} == {"R1", "R2", "R5", "TA"}
+    assert rs.canonical_group_members(b"<x/>") == b"<x/>"
+
+
+def test_w8_mevalonate_rule_matches_m6():
+    """The W3-MEV rule used for new signatures reproduces results/m6/scores/w3_mev.tsv on every M6 P1 sweep."""
+    import m6_common as mc
+    import m6_sweeps
+    import w8_extend_unscreened as we
+
+    mev = pd.read_csv(mc.SCDIR / "w3_mev.tsv", sep="\t").set_index("key")
+    cat = pd.read_csv(mc.SWDIR / "catalog.tsv", sep="\t")
+    n = 0
+    for p in ("human1", "human2"):
+        ids = cat[(cat.parent == p) & (cat.variant == mc.BLOO) & (cat.step == mc.M2)].w2_sweep_id
+        new = pd.read_parquet(mc.SWDIR / f"ratio_r_{p}.parquet").set_index("sweep")
+        reused = m6_sweeps.reused_rows()[p]
+        for sid in ids:
+            k = mc.sweep_key(mc.BLOO, sid)
+            row = new.loc[k] if k in new.index else reused.loc[k]
+            assert we.mevalonate_core_lethal(p, row.to_dict()) == bool(mev.loc[k, "core_lethal"]), k
+            n += 1
+    assert n == 40
+
+
+def test_w8_unscreened_assignment_tables():
+    """The committed W8 extension tables: 753 in-scope unscreened lines, W2 tiers only (onboarded/imputed), one
+    signature per (parent, medium key), no overlap with the screened cohort."""
+    out = ROOT / "results" / "w8" / "unscreened"
+    if not (out / "line_media_unscreened.tsv").exists():
+        pytest.skip("extension not built")
+    lines = pd.read_csv(out / "line_media_unscreened.tsv", sep="\t")
+    sigs = pd.read_csv(out / "signatures.tsv", sep="\t")
+    la = pd.read_csv(ROOT / "results" / "m6" / "scores" / "line_assignment.tsv", sep="\t")
+    assert lines.ModelID.is_unique and len(lines) == 753
+    assert not set(lines.ModelID) & set(la.ModelID)
+    assert set(lines.tier) <= {"onboarded", "imputed"} and (lines.screened.astype(str).str.lower() == "false").all()
+    assert set(lines[lines.tier == "imputed"].medium_text_used) == {"RPMI + 10% FBS"}
+    assert not sigs.duplicated(["parent", "medium_key"]).any()
+    assert set(sigs.medium_key) == set(lines.medium_key)
+
+
+def test_w8_gate_exit_code(capsys):
+    ok = pd.DataFrame({"parent": ["human2"] * 2, "w2_sweep_id": ["a", "b"], "job_status": ["ok", "ok"],
+                       "validation_status": ["pass", "pass"], "validation_detail": ["", ""]})
+    assert rs.gate_exit_code(ok) == 0
+    one = ok.assign(validation_status=["pass", "fail"], validation_detail=["", "random_ko_match"])
+    assert rs.gate_exit_code(one) == 3 and "random_ko_match" in capsys.readouterr().err
+    assert rs.gate_exit_code(ok.assign(job_status=["ok", "failed-timeout"])) == 3
+    assert rs.gate_exit_code(ok.iloc[:0]) == 3
+
+
+def test_w8_build_main_propagates_exit_code(monkeypatch):
+    """main() returns run()'s code through the provenance block, and the script exits with it."""
+    import contextlib
+
+    import w8_build_p1 as wb
+
+    @contextlib.contextmanager
+    def fake_prov(*a, **k):
+        yield None
+
+    monkeypatch.setattr("nextgem.run.provenance", fake_prov)
+    monkeypatch.setattr(wb, "run", lambda *a, **k: 3)
+    assert wb.main(["--pilot", "1", "--allow-dirty", "--parents", "human2"]) == 3
+    monkeypatch.setattr(wb, "run", lambda *a, **k: 0)
+    assert wb.main(["--pilot", "1", "--allow-dirty", "--parents", "human2"]) == 0

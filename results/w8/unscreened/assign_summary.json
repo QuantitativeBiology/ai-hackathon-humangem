@@ -1,0 +1,24 @@
+{
+ "n_lines": 753,
+ "tier": {
+  "onboarded": 666,
+  "imputed": 87
+ },
+ "stratum": {
+  "onboarded_sensitivity": 409,
+  "unmappable": 194,
+  "imputed": 87,
+  "fallback_sheet_missing": 56,
+  "mixture_on_disk": 7
+ },
+ "n_keys": 17,
+ "new_signatures": {
+  "human2": 4,
+  "human1": 4
+ },
+ "lines_on_new_signatures": {
+  "human2": 6,
+  "human1": 6
+ },
+ "wall_s": 3.0
+}

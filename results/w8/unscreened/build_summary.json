@@ -1,0 +1,22 @@
+{
+ "n_new_models": 8,
+ "n_new_pass": 8,
+ "gate_pass": {
+  "gate_libsbml": 8,
+  "gate_roundtrip": 8,
+  "gate_wt_growth": 8,
+  "gate_random_ko": 8,
+  "gate_viability": 8,
+  "gate_reload_m6": 8
+ },
+ "n_unscreened_lines": 753,
+ "n_line_rows_total": 4228,
+ "n_lines_total": 2114,
+ "n_models_total": 48,
+ "new_model_bytes": 15482414,
+ "resource_model_bytes": 93343049,
+ "job_cpu_s": 1682.5,
+ "wall_s": 629.4,
+ "commit": "b0c8d2d05b5097ec430890e3fe71de74f10d6190",
+ "dirty": true
+}

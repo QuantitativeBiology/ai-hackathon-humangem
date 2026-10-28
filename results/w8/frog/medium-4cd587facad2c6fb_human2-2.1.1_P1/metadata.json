@@ -1,0 +1,22 @@
+{
+  "model_location": "./medium-4cd587facad2c6fb_human2-2.1.1_P1.xml",
+  "model_md5": "fe9455cb06c41b7e80efc02ff9d9f9c3",
+  "frog_id": "cobrapy_tsv",
+  "frog_software": {
+    "name": "fbc_curation",
+    "version": "0.3.2",
+    "url": "https://doi.org/10.5281/zenodo.3708271"
+  },
+  "curators": [],
+  "software": {
+    "name": "cobrapy",
+    "version": "0.32.1",
+    "url": "https://github.com/opencobra/cobrapy"
+  },
+  "solver": {
+    "name": "glpk",
+    "version": "5.0",
+    "url": null
+  },
+  "environment": "posix, Linux, 6.12.57+deb13-amd64"
+}

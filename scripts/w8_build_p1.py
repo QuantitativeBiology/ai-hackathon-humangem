@@ -357,7 +357,9 @@ def run(a, prov, shared, per_parent) -> int:
     prov.output(*outs, *files)
     prov.note(**{k: v for k, v in summ.items() if k not in ("a10_limits", "per_parent", "gate_pass")})
     print(json.dumps(summ, indent=1), flush=True)
-    return 0 if summ["n_models_pass"] == summ["n_models"] else 3
+    rc = rs.gate_exit_code(models)
+    print(f"exit code {rc} ({summ['n_models_pass']}/{summ['n_models']} models pass every gate)", flush=True)
+    return rc
 
 
 def resource_readme(summ: dict, models: pd.DataFrame, man: pd.DataFrame) -> str:
@@ -365,6 +367,11 @@ def resource_readme(summ: dict, models: pd.DataFrame, man: pd.DataFrame) -> str:
     from nextgem import resource as rs
 
     per = "\n".join(f"| {p} | {v['models']} | {v['pass']} | {v['lines']} |" for p, v in summ["per_parent"].items())
+    scr = man.drop_duplicates("ModelID").screened.astype(str).str.lower().value_counts().to_dict()
+    fails = models[models.validation_status != "pass"]
+    fail_txt = "\n".join(f"- `{r.file}` ({r.medium_keys}; {r.n_lines} line(s)): failed `{r.validation_detail}`; "
+                         "see results/w8/README.md" for r in fails.itertuples()) or "- none"
+    size_mb = sum(int(x) for x in models.size_bytes if str(x)) / 1e6
     return f"""# nextgem P1 resource v{summ['release']} ({summ['release_status']})
 
 {rs.P1_DESCRIPTION}.
@@ -382,6 +389,16 @@ P1 models differ across lines only by the line's medium signature, so this resou
 | Parent | Models | Gates passed | Lines |
 |---|---|---|---|
 {per}
+
+Lines: {scr.get('true', 0)} CRISPR-screened lines (W2/M6 medium assignment; `screened = true`) and
+{scr.get('false', 0)} unscreened DepMap 26Q3 models in the DESIGN W8 scope (default expression profile, cancer lineage;
+medium by W2's rule from the Model.csv onboarded text, else the flagged classic RPMI + 10% FBS fallback;
+`screened = false`). Model files: {len(models)}, {size_mb:.1f} MB.
+
+Gates per model (models.tsv): libSBML no new errors vs the parent, cobra round-trip, WT growth, 20 random KOs,
+viability tasks (GR + 9 ER), and the reloaded model's WT growth and 40-gene KO vector vs the reference KO sweep.
+Models failing a gate:
+{fail_txt}
 
 A per-line file (`<ModelID>_<parent>-<version>_P1.xml.gz`, the shared model plus the line's notes) is written on
 demand: `python scripts/w8_line_sbml.py --lines ACH-000001 --parent human2`; in Python,

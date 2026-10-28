@@ -1,0 +1,53 @@
+{
+ "fbc_curation_version": "0.3.2",
+ "cobra_version": "0.32.1",
+ "solver": "glpk",
+ "curator": "cobrapy",
+ "models": [
+  {
+   "model": "medium-4cd587facad2c6fb_human2-2.1.1_P1.xml.gz",
+   "parts": [
+    "objective",
+    "gene_deletions",
+    "reaction_deletions",
+    "fva"
+   ],
+   "timing": {
+    "objective": {
+     "wall_s": 16.0,
+     "cpu_s": 16.0
+    },
+    "gene_deletions": {
+     "wall_s": 197.3,
+     "cpu_s": 197.3
+    },
+    "reaction_deletions": {
+     "wall_s": 825.8,
+     "cpu_s": 825.7
+    },
+    "fva": {
+     "wall_s": 1337.6,
+     "cpu_s": 1337.2
+    }
+   },
+   "objective": null,
+   "n_gene_deletions": null,
+   "n_reaction_deletions": null,
+   "n_fva": 12748,
+   "status_counts": {
+    "objective": {
+     "optimal": 1
+    },
+    "fva": {
+     "optimal": 12748
+    },
+    "gene_deletion": {
+     "optimal": 2870
+    },
+    "reaction_deletion": {
+     "optimal": 12748
+    }
+   }
+  }
+ ]
+}

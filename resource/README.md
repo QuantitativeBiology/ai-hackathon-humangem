@@ -14,8 +14,18 @@ P1 models differ across lines only by the line's medium signature, so this resou
 
 | Parent | Models | Gates passed | Lines |
 |---|---|---|---|
-| human2 | 20 | 19 | 1361 |
-| human1 | 20 | 20 | 1361 |
+| human2 | 24 | 23 | 2114 |
+| human1 | 24 | 24 | 2114 |
+
+Lines: 1361 CRISPR-screened lines (W2/M6 medium assignment; `screened = true`) and
+753 unscreened DepMap 26Q3 models in the DESIGN W8 scope (default expression profile, cancer lineage;
+medium by W2's rule from the Model.csv onboarded text, else the flagged classic RPMI + 10% FBS fallback;
+`screened = false`). Model files: 48, 93.3 MB.
+
+Gates per model (models.tsv): libSBML no new errors vs the parent, cobra round-trip, WT growth, 20 random KOs,
+viability tasks (GR + 9 ER), and the reloaded model's WT growth and 40-gene KO vector vs the reference KO sweep.
+Models failing a gate:
+- `v1.0.0/medium-20cc933a4b852b6a_human2-2.1.1_P1.xml.gz` (RPMI+testosterone; 1 line(s)): failed `random_ko_match`; see results/w8/README.md
 
 A per-line file (`<ModelID>_<parent>-<version>_P1.xml.gz`, the shared model plus the line's notes) is written on
 demand: `python scripts/w8_line_sbml.py --lines ACH-000001 --parent human2`; in Python,

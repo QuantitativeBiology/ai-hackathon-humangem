@@ -1,0 +1,754 @@
+ModelID	lineage	tier	text	base_class	stratum	medium_text_used	medium_source	serum_free	serum_pct	medium_key	cancer	screened
+ACH-000002	Myeloid	onboarded	IMDM + 10% FBS	sheet:IMDM	onboarded_sensitivity	IMDM + 10% FBS	documented	False	10.0	IMDM	true	false
+ACH-000003	Bowel	onboarded	EMEM + 20% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	20.0	RPMI	true	false
+ACH-000006	Myeloid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000008	Skin	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000016	Kidney	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000020	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000027	CNS/Brain	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000031	Pancreas	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000032	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000033	Lung	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-000034	Myeloid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000044	Breast	onboarded	L-15 + 20% FBS	sheet:L-15	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	20.0	RPMI	true	false
+ACH-000046	Kidney	onboarded	MEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000050	Lymphoid	onboarded	RPMI + 10% FBS + 50uM 2-Mercaptoethanol	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 50uM 2-Mercaptoethanol	documented	False	10.0	RPMI+cys(2-ME)	true	false
+ACH-000051	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000056	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000057	Lymphoid	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000058	Thyroid	onboarded	DMEM + 20% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 20% FBS	documented	False	20.0	DMEM	true	false
+ACH-000059	Lymphoid	onboarded	IMDM + 20% FBS + 1.5g/L NaCO3	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS + 1.5g/L NaCO3	documented	False	20.0	IMDM	true	false
+ACH-000061	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000062	Lung	onboarded	EMEM + 10% FBS + 100uM NEAA	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000065	Myeloid	onboarded	AlphaMEM + 20% FBS + 10ng/ml GM-CSF	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	20.0	RPMI	true	false
+ACH-000066	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000068	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000069	Lymphoid	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000072	Myeloid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000073	Lymphoid	onboarded	DMEM + 10% FBS + 2mM Glutamine	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS + 2mM Glutamine	documented	False	10.0	DMEM	true	false
+ACH-000080	Myeloid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000081	Myeloid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000084	Myeloid	onboarded	AlphaMEM + 20% FBS + 10ng/ml GM-CSF	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	20.0	RPMI	true	false
+ACH-000089	Bowel	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000091	Ovary/Fallopian Tube	onboarded	DMEM:F12 + 5% FBS + 2mM Glutamine + 10ug/ml Insulin + 0.5ug/ml Hydrocortisone	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 5% FBS + 2mM Glutamine + 10ug/ml Insulin + 0.5ug/ml Hydrocortisone	documented	False	5.0	DMEM:F12+cortisol	true	false
+ACH-000102	CNS/Brain	onboarded	AlphaMEM + 10% FBS	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	10.0	RPMI	true	false
+ACH-000104	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000105	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000107	Pancreas	onboarded	McCoy's 5A + 10% FBS	sheet:McCoy's 5A	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000109	Lung	onboarded	ACL4 + 10% FBS	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	10.0	RPMI	true	false
+ACH-000110	Esophagus/Stomach	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000112	Myeloid	onboarded	IMDM + 10% FBS	sheet:IMDM	onboarded_sensitivity	IMDM + 10% FBS	documented	False	10.0	IMDM	true	false
+ACH-000117	Breast	onboarded	RPMI + 15% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 15% FBS + 2mM Glutamine	documented	False	15.0	RPMI	true	false
+ACH-000121	Lung	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-000122	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000126	CNS/Brain	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000129	Cervix	onboarded	DMEM:F12 + 0.5% BSA + 2mM Glutamine + 10mM HEPES + 500uM sodium pyruvate + 20ug/ml Insulin + 10ug/ml Transferrin + 25nM Sodium Selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM Ethanolamine + 10uM Phosphorylethanolamine + 100pM Triiodo-L-Thyronine 	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 0.5% BSA + 2mM Glutamine + 10mM HEPES + 500uM sodium pyruvate + 20ug/ml Insulin + 10ug/ml Transferrin + 25nM Sodium Selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM Ethanolamine + 10uM Phosphorylethanolamine + 100pM Triiodo-L-Thyronine 	documented	True	0	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine|serum-free	true	false
+ACH-000130	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000136	Peripheral Nervous System	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000140	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000150	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000156	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000157	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000158	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000162	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000166	Myeloid	onboarded	RPMI + 20% FBS + 2 mM L-glutamine + 18mM sodium bicarbonate + 25mM glucose + 10 mM HEPES + 1mM sodium pyruvate + 2 ng/ml human recombinant granulocyte macrophage colony stimulating factor	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS + 2 mM L-glutamine + 18mM sodium bicarbonate + 25mM glucose + 10 mM HEPES + 1mM sodium pyruvate + 2 ng/ml human recombinant granulocyte macrophage colony stimulating factor	documented	False	20.0	RPMI+pyruvate	true	false
+ACH-000171	Kidney	onboarded	EMEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000173	Uterus	onboarded	DMEM:F12 + 10% FBS + 100uM NEAA	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS + 100uM NEAA	documented	False	10.0	DMEM:F12	true	false
+ACH-000177	Prostate	onboarded	RPMI + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10mM HEPES + 10nM Hydrocortisone + 10nM beta-Estradiol	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10mM HEPES + 10nM Hydrocortisone + 10nM beta-Estradiol	documented	False	5.0	RPMI+cortisol+estradiol	true	false
+ACH-000179	Lung	onboarded	DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	documented	False	5.0	DMEM:F12+cortisol+estradiol	true	false
+ACH-000186	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000193	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000196	Breast	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000201	Kidney	onboarded	McCoy's 5A + 10% FBS	sheet:McCoy's 5A	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000205	Pancreas	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000218	Myeloid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000220	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000225	Esophagus/Stomach	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000236	Bowel	onboarded	L-15 + 10% FBS + 2mM Glutamine	sheet:L-15	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000241	Myeloid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000245	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000254	Head and Neck	onboarded	DMEM:F12 + 10% FBS + 2.5 mM Glutamine + 1.2 g/L sodium bicarbonate + 15 mM HEPES + 0.5 mM sodium pyruvate + 400 ng/ml hydrocortisone	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS + 2.5 mM Glutamine + 1.2 g/L sodium bicarbonate + 15 mM HEPES + 0.5 mM sodium pyruvate + 400 ng/ml hydrocortisone	documented	False	10.0	DMEM:F12+cortisol	true	false
+ACH-000267	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000270	Pancreas	onboarded	DMEM:F12 + 5% FBS + 2.5 mM Glutamine + 1.2 g/L Sodium Bicarbonate + 15 mM HEPES + 0.5 mM Sodium Pyruvate + 0.002 mg/ml Insulin + 0.005 mg/ml Transferrin + 40 ng/ml Hydrocortisone + 10 ng/ml Epidermal Growth Factor	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 5% FBS + 2.5 mM Glutamine + 1.2 g/L Sodium Bicarbonate + 15 mM HEPES + 0.5 mM Sodium Pyruvate + 0.002 mg/ml Insulin + 0.005 mg/ml Transferrin + 40 ng/ml Hydrocortisone + 10 ng/ml Epidermal Growth Factor	documented	False	5.0	DMEM:F12+cortisol	true	false
+ACH-000282	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000283	CNS/Brain	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000285	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000289	CNS/Brain	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-000297	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000298	Lung	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000300	Kidney	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000301	Myeloid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000314	Lung	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-000321	Myeloid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000327	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000328	CNS/Brain	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000333	Ovary/Fallopian Tube	onboarded	DMEM + 10% FBS + 100uM NEAA	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS + 100uM NEAA	documented	False	10.0	DMEM+alanine+asparagine+aspartate+glutamate+proline	true	false
+ACH-000342	Bowel	onboarded	DMEM:F12 + 20% FBS	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 20% FBS	documented	False	20.0	DMEM:F12	true	false
+ACH-000347	Pancreas	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000349	Breast	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000351	Esophagus/Stomach	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000353	Esophagus/Stomach	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000357	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000358	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000360	Bowel	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000369	Myeloid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000372	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000379	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000380	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000382	Lung	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-000384	Bladder/Urinary Tract	onboarded	L-15 + 10% FBS	sheet:L-15	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000386	Myeloid	onboarded	IMDM + 20% FBS	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS	documented	False	20.0	IMDM	true	false
+ACH-000388	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000392	Lung	onboarded	MEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000394	Lung	onboarded	DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	documented	False	5.0	DMEM:F12+cortisol+estradiol	true	false
+ACH-000399	Lung	onboarded	DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	documented	False	5.0	DMEM:F12+cortisol+estradiol	true	false
+ACH-000400	Bowel	onboarded	MEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000409	Ovary/Fallopian Tube	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000412	Bowel	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000418	Bone	onboarded	L-15 + 10% FBS	sheet:L-15	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000419	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000423	Skin	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000428	Kidney	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-000429	Kidney	onboarded	MEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000432	Lymphoid	onboarded	RPMI + 20% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS + 2mM Glutamine	documented	False	20.0	RPMI	true	false
+ACH-000439	Myeloid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000440	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000443	Ovary/Fallopian Tube	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000447	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000449	Uterus	onboarded	McCoy's 5A + 10% FBS	sheet:McCoy's 5A	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000451	Lung	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-000453	Lymphoid	onboarded	RPMI + 20% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS + 2mM Glutamine	documented	False	20.0	RPMI	true	false
+ACH-000457	Kidney	onboarded	DMEM + 20% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 20% FBS	documented	False	20.0	DMEM	true	false
+ACH-000462	Myeloid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000465	Skin	onboarded	EMEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000482	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000492	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000506	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000508	Lung	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-000509	Lymphoid	onboarded	IMDM + 20% FBS	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS	documented	False	20.0	IMDM	true	false
+ACH-000513	Kidney	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000523	Lung	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000530	Lung	onboarded	Waymouth's MB 752_1 + 10% FBS	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	10.0	RPMI	true	false
+ACH-000536	Breast	onboarded	MEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000538	Bowel	onboarded	MEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000543	CNS/Brain	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-000553	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000555	Kidney	onboarded	MEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000560	Esophagus/Stomach	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000564	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000566	Bladder/Urinary Tract	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000568	Breast	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000572	Skin	onboarded	McCoy's 5A + 10% FBS	sheet:McCoy's 5A	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000574	Ovary/Fallopian Tube	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000575	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000578	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000582	Skin	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000586	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000590	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000594	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000598	Lymphoid	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000600	Kidney	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000603	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000610	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000611	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000612	Lymphoid	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000613	Bone	onboarded	EMEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000615	Skin	onboarded	MEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000617	Ovary/Fallopian Tube	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000625	Liver	onboarded	MEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000626	Lymphoid	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000628	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000629	CNS/Brain	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000635	Ovary/Fallopian Tube	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000636	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000640	Skin	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000641	Myeloid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000643	Breast	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000644	Skin	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000650	Skin	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000659	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000669	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000670	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000674	Esophagus/Stomach	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000675	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000678	Esophagus/Stomach	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000679	Esophagus/Stomach	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-000680	Bowel	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000686	Liver	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000687	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000689	Soft Tissue	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000690	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000691	Breast	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-000692	Head and Neck	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000703	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000705	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000707	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000708	Bowel	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000710	Bowel	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000712	Lung	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-000715	Head and Neck	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000723	Head and Neck	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000726	Esophagus/Stomach	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000728	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000729	Lung	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000730	Skin	onboarded	MEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000731	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000733	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000737	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000743	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000744	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000745	Lymphoid	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000750	Skin	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000751	Myeloid	onboarded	IMDM + 10% FBS	sheet:IMDM	onboarded_sensitivity	IMDM + 10% FBS	documented	False	10.0	IMDM	true	false
+ACH-000752	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000755	Breast	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000759	Breast	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000761	Esophagus/Stomach	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000772	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000779	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000780	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000786	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000789	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000803	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000806	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000808	Biliary Tract	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000812	Skin	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000813	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000814	Skin	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000815	Lymphoid	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000816	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000818	Breast	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000825	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000828	Breast	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000830	Lung	onboarded	DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	documented	False	5.0	DMEM:F12+cortisol+estradiol	true	false
+ACH-000842	Bowel	onboarded	L-15 + 10% FBS	sheet:L-15	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000844	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000852	Lung	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-000854	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000857	Breast	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-000868	Lung	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-000870	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000875	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000877	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000883	CNS/Brain	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000891	Lung	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-000892	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000893	Lung	onboarded	DMEM:F12 + 10%FBS + 2mM Glutamine + 20ug/ml Insulin + 10ug/ml Transferrin + 25nM Sodium Selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM Ethanolamine + 10uM Phosphorylethanolamine + 100pM Triiodo-L-Thyronine + 0.5% BSA + 10mM HEPES + 500uM Sodium Pyruvate	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10%FBS + 2mM Glutamine + 20ug/ml Insulin + 10ug/ml Transferrin + 25nM Sodium Selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM Ethanolamine + 10uM Phosphorylethanolamine + 100pM Triiodo-L-Thyronine + 0.5% BSA + 10mM HEPES + 500uM Sodium Pyruvate	documented	False	10.0	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine	true	false
+ACH-000895	Bowel	onboarded	DMEM:F12 + 20% FBS	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 20% FBS	documented	False	20.0	DMEM:F12	true	false
+ACH-000897	Thyroid	onboarded	DMEM:F12 + 5% FBS + 2mM Glutamine	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 5% FBS + 2mM Glutamine	documented	False	5.0	DMEM:F12	true	false
+ACH-000902	Breast	onboarded	DMEM + 10% FBS + 2mM Glutamine	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS + 2mM Glutamine	documented	False	10.0	DMEM	true	false
+ACH-000904	Lung	onboarded	DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	documented	False	5.0	DMEM:F12+cortisol+estradiol	true	false
+ACH-000908	Esophagus/Stomach	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-000909	Uterus	onboarded	DMEM:F12 + 10% FBS	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS	documented	False	10.0	DMEM:F12	true	false
+ACH-000918	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000923	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-000925	Lung	onboarded	RPMI + 10% FBS + 2mM Glutamine + 1X NEAA	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 1X NEAA	documented	False	10.0	RPMI+alanine	true	false
+ACH-000927	Breast	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000930	Breast	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000931	Skin	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-000933	Pancreas	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-000940	Uterus	onboarded	MEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000942	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000949	Esophagus/Stomach	onboarded	DMEM + 5% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 5% FBS	documented	False	5.0	DMEM	true	false
+ACH-000951	Lung	onboarded	DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	documented	False	5.0	DMEM:F12+cortisol+estradiol	true	false
+ACH-000952	Prostate	onboarded	F12 + 20% FBS	sheet:F12	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	20.0	RPMI	true	false
+ACH-000954	Uterus	onboarded	McCoy's 5A + 10% FBS	sheet:McCoy's 5A	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000955	Bowel	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-000964	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000967	Bowel	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000982	Bowel	onboarded	EMEM + 10% FBS + 2mM Glutamine	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-000987	Skin	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000989	Bowel	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000990	Uterus	onboarded	MEM + 15% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	15.0	RPMI	true	false
+ACH-000998	Bowel	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-000999	Bowel	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001019	Skin	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001022	Bone	onboarded	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	documented	False	20.0	IMDM	true	false
+ACH-001024	Skin	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001030	Bone	onboarded	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	documented	False	20.0	IMDM	true	false
+ACH-001032	Bone	onboarded	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	documented	False	20.0	IMDM	true	false
+ACH-001034	Bone	onboarded	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	documented	False	20.0	IMDM	true	false
+ACH-001035	Bone	onboarded	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	documented	False	20.0	IMDM	true	false
+ACH-001046	Lung	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-001057	Lymphoid	onboarded	RPMI + 20% FBS + 20ng/ml IL-2	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS + 20ng/ml IL-2	documented	False	20.0	RPMI	true	false
+ACH-001059	Soft Tissue	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001060	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-001064	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001068	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001086	Cervix	onboarded	MEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-001097	Lymphoid	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-001100	Lymphoid	onboarded	RPMI + 10%FBS + 1000U/ml IL-2	sheet:RPMI	onboarded_sensitivity	RPMI + 10%FBS + 1000U/ml IL-2	documented	False	10.0	RPMI	true	false
+ACH-001106	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001109	Kidney	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001113	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-001131	Skin	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-001132	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001147	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001148	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001150	Bone	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-001200	Kidney	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-001209	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-001210	Kidney	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-001235	Skin	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-001321	Thyroid	onboarded	F12 + 10% FBS	sheet:F12	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-001339	Skin	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001350	Thyroid	onboarded	DMEM + 20% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 20% FBS	documented	False	20.0	DMEM	true	false
+ACH-001355	Peripheral Nervous System	onboarded	DMEM + 20% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 20% FBS	documented	False	20.0	DMEM	true	false
+ACH-001361	Peripheral Nervous System	onboarded	IMDM + 10% FBS	sheet:IMDM	onboarded_sensitivity	IMDM + 10% FBS	documented	False	10.0	IMDM	true	false
+ACH-001362	Lung	onboarded	ACL4 + 10% FBS	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	10.0	RPMI	true	false
+ACH-001369	Ovary/Fallopian Tube	onboarded	OCMI-L	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-001373	Ovary/Fallopian Tube	onboarded	DMEM:F12 + 5% FBS + 2mM Glutamine + 10ug/ml Insulin + 0.5ug/ml Hydrocortisone	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 5% FBS + 2mM Glutamine + 10ug/ml Insulin + 0.5ug/ml Hydrocortisone	documented	False	5.0	DMEM:F12+cortisol	true	false
+ACH-001378	Pancreas	onboarded	DMEM:KSFM (2:1) + 20% FBS	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	20.0	RPMI	true	false
+ACH-001384	Thyroid	onboarded	EMEM:F12 + 10% FBS	mixture_of_sheets	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-001395	Breast	onboarded	F12 + 1X ITS + 10mM HEPES + 1ug/ml Hydrocortisone + 1g/l BSA + 10ng/ml EGF + 5mM Ethanolamine + 10nM Triiodo-L-Thyronine	sheet:F12	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	True	0	RPMI	true	false
+ACH-001410	Bladder/Urinary Tract	onboarded	EMEM + 10% FBS + 2mM Glutamine + 100uM NEAA	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-001423	Kidney	onboarded	Propagenix Conditioned Media	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-001425	Soft Tissue	onboarded	CM 100%	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-001427	Bone	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-001435	Testis	onboarded	DMEM + 10% FBS + 2mM Glutamine	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS + 2mM Glutamine	documented	False	10.0	DMEM	true	false
+ACH-001437	Testis	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-001438	Testis	onboarded	DMEM + 10% FBS + 2mM Glutamine	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS + 2mM Glutamine	documented	False	10.0	DMEM	true	false
+ACH-001440	Testis	onboarded	DMEM + 10% FBS + 2mM Glutamine	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS + 2mM Glutamine	documented	False	10.0	DMEM	true	false
+ACH-001441	Eye	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-001445	Head and Neck	onboarded	DMEM + 10% FBS + 2mM Glutamine + 0.4ug/ml Hydrocortisone	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS + 2mM Glutamine + 0.4ug/ml Hydrocortisone	documented	False	10.0	DMEM+cortisol	true	false
+ACH-001447	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-001449	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-001452	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001456	Bowel	onboarded	IMDM + 10% FBS + 2mM Glutamine	sheet:IMDM	onboarded_sensitivity	IMDM + 10% FBS + 2mM Glutamine	documented	False	10.0	IMDM	true	false
+ACH-001489	Lung	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-001492	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001493	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-001501	Thyroid	onboarded	DMEM:F12 + 10% FBS + 10ug/ml Insulin + 0.01U/ml Thyroid Stimulating Hormone (TSH) + 2mM Glutamine	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS + 10ug/ml Insulin + 0.01U/ml Thyroid Stimulating Hormone (TSH) + 2mM Glutamine	documented	False	10.0	DMEM:F12	true	false
+ACH-001503	Lymphoid	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-001512	Ovary/Fallopian Tube	onboarded	EMEM + 15% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	15.0	RPMI	true	false
+ACH-001516	Cervix	onboarded	EMEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-001519	Bone	onboarded	DMEM:F12 + 10% FBS	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS	documented	False	10.0	DMEM:F12	true	false
+ACH-001537	Biliary Tract	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-001540	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-001541	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001553	Myeloid	onboarded	IMDM + 20% FBS	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS	documented	False	20.0	IMDM	true	false
+ACH-001561	Pleura	onboarded	F12 + 15% FBS + 2mM Glutamine	sheet:F12	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	15.0	RPMI	true	false
+ACH-001569	Skin	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES	documented	False	10.0	RPMI	true	false
+ACH-001571	Lymphoid	onboarded	IMDM + 20% FBS	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS	documented	False	20.0	IMDM	true	false
+ACH-001573	Myeloid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-001591	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001598	Adrenal Gland	onboarded	DMEM:F12 + 2.5% Nu-Serum + 1x Insulin-Transferrin-Selenium + 1.25mg/ml BSA + 5.35ug/ml Linoleic Acid	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 2.5% Nu-Serum + 1x Insulin-Transferrin-Selenium + 1.25mg/ml BSA + 5.35ug/ml Linoleic Acid	documented	False	2.5	DMEM:F12	true	false
+ACH-001617	Lymphoid	onboarded	IMDM + 10% FBS	sheet:IMDM	onboarded_sensitivity	IMDM + 10% FBS	documented	False	10.0	IMDM	true	false
+ACH-001633	Ovary/Fallopian Tube	onboarded	RPMI + 10% FBS + 2mM Glutamine + 2mM Sodium pyruvate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 2mM Sodium pyruvate	documented	False	10.0	RPMI+pyruvate	true	false
+ACH-001636	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001638	Lymphoid	onboarded	RPMI + 15% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 15% FBS	documented	False	15.0	RPMI	true	false
+ACH-001666	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001667	Soft Tissue	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001671	Testis	onboarded	McCoy's 5A + 15% FBS	sheet:McCoy's 5A	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	15.0	RPMI	true	false
+ACH-001672	Testis	onboarded	McCoy's 5A + 15% FBS	sheet:McCoy's 5A	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	15.0	RPMI	true	false
+ACH-001678	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001679	Lymphoid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-001680	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001684	Myeloid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-001686	Lymphoid	onboarded	IMDM:Opti-MEM (1:1) + 20% FBS	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	20.0	RPMI	true	false
+ACH-001693	Head and Neck	onboarded	MEM + 20% FBS + 2mM Glutamine + 100uM NEAA	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	20.0	RPMI	true	false
+ACH-001697	Head and Neck	onboarded	MEM + 10% FBS + 2mM Glutamine + 100uM NEAA	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-001700	Head and Neck	onboarded	MEM + 10% FBS + 2mM Glutamine + 100uM NEAA	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-001703	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001704	Skin	onboarded	EMEM + 10% FBS + 100uM NEAA	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-001705	Breast	onboarded	MEBM + 2% FBS + 2mM Glutamine + MEGM SingleQuot + 10ng/ml EGF	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	2.0	RPMI	true	false
+ACH-001708	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001712	Bone	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-001716	Peripheral Nervous System	onboarded	RPMI:EMEM (1:1) + 10% FBS	mixture_of_sheets	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-001743	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-001751	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-001756	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-001758	Soft Tissue	onboarded	DMEM + 10% FBS + G408	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS + G408	documented	False	10.0	DMEM	true	false
+ACH-001759	Soft Tissue	onboarded	DMEM + 10% FBS + G408	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS + G408	documented	False	10.0	DMEM	true	false
+ACH-001760	Soft Tissue	onboarded	DMEM + 10% FBS + G408	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS + G408	documented	False	10.0	DMEM	true	false
+ACH-001807	Soft Tissue	onboarded	F12 + 15% FBS + 2mM Glutamine	sheet:F12	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	15.0	RPMI	true	false
+ACH-001810	Bone	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-001813	Bone	onboarded	EMEM + 20% FBS + 1mM Sodium pyruvate + 100uM NEAA	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	20.0	RPMI	true	false
+ACH-001815	Bone	onboarded	EMEM + 20% FBS + 1mM Sodium pyruvate + 100uM NEAA	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	20.0	RPMI	true	false
+ACH-001817	Bone	onboarded	EMEM + 20% FBS + 1mM Sodium pyruvate + 100uM NEAA	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	20.0	RPMI	true	false
+ACH-001818	Bone	onboarded	EMEM + 20% FBS + 1mM Sodium pyruvate + 100uM NEAA	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	20.0	RPMI	true	false
+ACH-001845	Biliary Tract	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001846	Biliary Tract	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001847	Biliary Tract	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001855	Biliary Tract	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001949	Skin	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001953	Skin	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001971	Skin	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES	documented	False	10.0	RPMI	true	false
+ACH-001974	Skin	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES	documented	False	10.0	RPMI	true	false
+ACH-001976	Skin	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES	documented	False	10.0	RPMI	true	false
+ACH-001978	Skin	onboarded	AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-001979	Skin	onboarded	AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-001980	Skin	onboarded	AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-001981	Skin	onboarded	AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-001983	Skin	onboarded	AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-001984	Skin	onboarded	AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-001985	Skin	onboarded	AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-001987	Skin	onboarded	AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-001988	Skin	onboarded	AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-001989	Skin	onboarded	AlphaMEM + 5% FBS + 1X Insulin-Transferrin-Selenium	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-001994	Biliary Tract	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-001996	Biliary Tract	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002010	Eye	onboarded	RPMI + 25% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 25% FBS	documented	False	25.0	RPMI	true	false
+ACH-002011	Eye	onboarded	RPMI + 25% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 25% FBS	documented	False	25.0	RPMI	true	false
+ACH-002013	Eye	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-002017	Eye	onboarded	RPMI + 20% FBS + 3mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS + 3mM Glutamine	documented	False	20.0	RPMI	true	false
+ACH-002034	Lung	onboarded	F12 + 10% FBS	sheet:F12	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-002036	Lung	onboarded	MEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-002038	Ovary/Fallopian Tube	onboarded	F12 + 15% FBS	sheet:F12	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	15.0	RPMI	true	false
+ACH-002047	Uterus	onboarded	F12 + 15% FBS	sheet:F12	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	15.0	RPMI	true	false
+ACH-002050	Other	onboarded	F12 + 15% FBS	sheet:F12	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	15.0	RPMI	true	false
+ACH-002065	Peripheral Nervous System	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-002072	CNS/Brain	onboarded	DMEM:F12 + 10% FBS	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS	documented	False	10.0	DMEM:F12	true	false
+ACH-002073	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002074	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002075	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002087	Peripheral Nervous System	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-002170	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002175	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002178	Bone	onboarded	EMEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-002246	Soft Tissue	onboarded	DMEM + 10% FBS + 2mM Glutamine	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS + 2mM Glutamine	documented	False	10.0	DMEM	true	false
+ACH-002290	Myeloid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002403	Skin	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-002404	Skin	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-002405	Skin	onboarded	SMGM	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002409	CNS/Brain	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-002412	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002413	Soft Tissue	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002416	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002417	Lung	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002419	Uterus	onboarded	WIT-P	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002421	Pancreas	onboarded	Pancreas Organoid Media (Wnt3A CM 50%, Basic Medium 40%, Panc, RspondinI CM 10%) + 5% FBS	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-002424	Pancreas	onboarded	Pancreas Organoid Media (Wnt3A CM 50%, Basic Medium 40%, Panc, RspondinI CM 10%) + 5% FBS	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-002425	Pancreas	onboarded	Pancreas Organoid Media (Wnt3A CM 50%, Basic Medium 40%, Panc, RspondinI CM 10%) + 5% FBS	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-002426	Pancreas	onboarded	Pancreas Organoid Media (Wnt3A CM 50%, Basic Medium 40%, Panc, RspondinI CM 10%) + 5% FBS	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-002431	Peripheral Nervous System	onboarded	RETM + 5% FBS	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-002435	Kidney	onboarded	FM	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002438	Kidney	onboarded	FM	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002440	Thyroid	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-002443	Esophagus/Stomach	onboarded	CM 100%	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002447	Esophagus/Stomach	onboarded	Pancreas Organoid Media (Wnt3A CM 50%, Basic Medium 40%, Panc, RspondinI CM 10%) + 5% FBS	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-002448	Pancreas	onboarded	Pancreas Organoid Media (Wnt3A CM 50%, Basic Medium 40%, Panc, RspondinI CM 10%) + 5% FBS	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-002452	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002455	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002459	Skin	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002483	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002491	Lung	onboarded	DMEM:F12 + 0.5% BSA + 2mM Glutamine + 10mM HEPES + 500uM sodium pyruvate + 20ug/ml Insulin + 10ug/ml Transferrin + 25nM Sodium Selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM Ethanolamine + 10uM Phosphorylethanolamine + 100pM Triiodo-L-Thyronine 	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 0.5% BSA + 2mM Glutamine + 10mM HEPES + 500uM sodium pyruvate + 20ug/ml Insulin + 10ug/ml Transferrin + 25nM Sodium Selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM Ethanolamine + 10uM Phosphorylethanolamine + 100pM Triiodo-L-Thyronine 	documented	True	0	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine|serum-free	true	false
+ACH-002495	Breast	onboarded	DMEM:F12 + 10% FBS	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS	documented	False	10.0	DMEM:F12	true	false
+ACH-002497	Lung	onboarded	DMEM:F12 + 0.5% BSA + 2mM Glutamine + 10mM HEPES + 500uM sodium pyruvate + 20ug/ml Insulin + 10ug/ml Transferrin + 25nM Sodium Selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM Ethanolamine + 10uM Phosphorylethanolamine + 100pM Triiodo-L-Thyronine 	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 0.5% BSA + 2mM Glutamine + 10mM HEPES + 500uM sodium pyruvate + 20ug/ml Insulin + 10ug/ml Transferrin + 25nM Sodium Selenite + 50nM Hydrocortisone + 1ng/ml EGF + 10uM Ethanolamine + 10uM Phosphorylethanolamine + 100pM Triiodo-L-Thyronine 	documented	True	0	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine|serum-free	true	false
+ACH-002498	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002501	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-002504	Bone	onboarded	IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine	mixture_of_sheets	mixture_on_disk	IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine	documented_mixture	False	10.0	IMDM0.8:RPMI0.2	true	false
+ACH-002505	Bone	onboarded	IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine	mixture_of_sheets	mixture_on_disk	IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine	documented_mixture	False	10.0	IMDM0.8:RPMI0.2	true	false
+ACH-002507	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002509	Skin	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002529	Lung	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-002532	Bowel	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-002534	Kidney	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-002539	Bowel	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-002541	Esophagus/Stomach	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-002543	Bowel	onboarded	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine + 25mM HEPES + 25mM Sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-002643	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002644	Myeloid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-002648	Uterus	onboarded	DMEM + 20% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 20% FBS	documented	False	20.0	DMEM	true	false
+ACH-002651	Myeloid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-002653	Myeloid	onboarded	IMDM + 20% FBS	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS	documented	False	20.0	IMDM	true	false
+ACH-002665	Bowel	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-002667	Bowel	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-002668	Myeloid	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-002670	Peripheral Nervous System	onboarded	RPMI + 20% FBS + Glutamine + NEAA	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS + Glutamine + NEAA	documented	False	20.0	RPMI+alanine	true	false
+ACH-002675	Myeloid	onboarded	IMDM + 10% FBS	sheet:IMDM	onboarded_sensitivity	IMDM + 10% FBS	documented	False	10.0	IMDM	true	false
+ACH-002676	Myeloid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002689	Bone	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-002691	Peripheral Nervous System	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-002695	Peripheral Nervous System	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-002696	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002700	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002702	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002703	Esophagus/Stomach	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-002716	Myeloid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002722	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-002733	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002734	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002735	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002737	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002738	Pancreas	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002746	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002748	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002751	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002757	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002760	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002761	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002762	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002763	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002777	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002781	Bone	onboarded	DMEM:F12 + 10% FBS + GlutaMAX	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS + GlutaMAX	documented	False	10.0	DMEM:F12	true	false
+ACH-002787	Soft Tissue	onboarded	DMEM:F12 + 10% FBS + GlutaMAX	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS + GlutaMAX	documented	False	10.0	DMEM:F12	true	false
+ACH-002789	Soft Tissue	onboarded	DMEM:F12 + 10% FBS + GlutaMAX	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS + GlutaMAX	documented	False	10.0	DMEM:F12	true	false
+ACH-002790	Soft Tissue	onboarded	DMEM:F12 + 10% FBS + GlutaMAX	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS + GlutaMAX	documented	False	10.0	DMEM:F12	true	false
+ACH-002794	Soft Tissue	onboarded	DMEM:F12 + 10% FBS + GlutaMAX	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS + GlutaMAX	documented	False	10.0	DMEM:F12	true	false
+ACH-002795	Soft Tissue	onboarded	DMEM:F12 + 10% FBS + GlutaMAX	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS + GlutaMAX	documented	False	10.0	DMEM:F12	true	false
+ACH-002796	Soft Tissue	onboarded	DMEM:F12 + 10% FBS + GlutaMAX	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS + GlutaMAX	documented	False	10.0	DMEM:F12	true	false
+ACH-002797	Skin	onboarded	DMEM:F12 + 10% FBS + GlutaMAX	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS + GlutaMAX	documented	False	10.0	DMEM:F12	true	false
+ACH-002798	Skin	onboarded	DMEM:F12 + 10% FBS + GlutaMAX	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS + GlutaMAX	documented	False	10.0	DMEM:F12	true	false
+ACH-002802	Peripheral Nervous System	onboarded	DMEM:F12 + 10% FBS + GlutaMAX	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 10% FBS + GlutaMAX	documented	False	10.0	DMEM:F12	true	false
+ACH-002805	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002808	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002809	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002812	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002819	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002820	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002823	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002825	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002829	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002838	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002840	Bowel	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002843	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-002844	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-002846	Skin	onboarded	Opti-MEM + 5% FBS	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	5.0	RPMI	true	false
+ACH-002848	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002851	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002854	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002859	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002861	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002864	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002870	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002871	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002873	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002876	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002880	Breast	onboarded	DMEM + 10% FBS + 2mM Glutamine	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS + 2mM Glutamine	documented	False	10.0	DMEM	true	false
+ACH-002882	Breast	onboarded	Breast Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002886	Bowel	onboarded	RPMI + 10% FBS + 2mM L-glutamine + 25mM sodium bicarbonate	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM L-glutamine + 25mM sodium bicarbonate	documented	False	10.0	RPMI	true	false
+ACH-002891	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002919	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002921	Breast	onboarded	MEM + 10% FBS	sheet:MEM/EMEM	fallback_sheet_missing	RPMI + 10% FBS	imputed_flagged_fallback	False	10.0	RPMI	true	false
+ACH-002924	Eye	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002927	Eye	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-002932	Bowel	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-002936	Soft Tissue	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-002937	Kidney	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-002942	Soft Tissue	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-002945	Soft Tissue	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-002946	Myeloid	onboarded	RPMI + 20% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS + 2mM Glutamine	documented	False	20.0	RPMI	true	false
+ACH-002949	Breast	onboarded	Breast Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002952	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002955	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002956	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002957	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002960	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002962	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002963	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002967	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002969	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002971	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002972	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002980	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002981	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002990	Prostate	onboarded	HM Prostate Media	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002992	Prostate	onboarded	HM Prostate Media	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-002994	Myeloid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-003001	Ovary/Fallopian Tube	onboarded	Ovarian Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003003	Ovary/Fallopian Tube	onboarded	Ovarian Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003007	Ovary/Fallopian Tube	onboarded	Ovarian Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003009	Ovary/Fallopian Tube	onboarded	Ovarian Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003011	Ovary/Fallopian Tube	onboarded	Ovarian Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003022	Breast	onboarded	Breast Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003023	Breast	onboarded	Breast Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003024	Breast	onboarded	Breast Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003026	Breast	onboarded	Breast Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003027	Breast	onboarded	Breast Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003031	Pancreas	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003044	Pancreas	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003046	Pancreas	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003050	Ovary/Fallopian Tube	onboarded	Ovarian Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003051	Ovary/Fallopian Tube	onboarded	Ovarian Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003053	Ovary/Fallopian Tube	onboarded	Ovarian Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003054	Ovary/Fallopian Tube	onboarded	Ovarian Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003056	Ovary/Fallopian Tube	onboarded	Ovarian Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003060	Peripheral Nervous System	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003061	Lung	onboarded	DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 5% FBS + 2mM Glutamine + 5ug/ml Insulin + 10ug/ml Transferrin + 30nM Selenium + 10nM Hydrocortisone + 10nM beta-Estradiol	documented	False	5.0	DMEM:F12+cortisol+estradiol	true	false
+ACH-003067	CNS/Brain	onboarded	DMEM:F12 + 20ng/mL human recombinant EGF + 20ng/mL recombinant basic FGF + 2% B-27	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 20ng/mL human recombinant EGF + 20ng/mL recombinant basic FGF + 2% B-27	documented	True	0	DMEM:F12+GSH+alpha-tocopherol+carnitine+corticosterone+ethanolamine+galactose+linolenate+progesterone+retinol+triiodothyronine|serum-free	true	false
+ACH-003071	Lung	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-003099	Head and Neck	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003100	Lymphoid	onboarded	RPMI + 15% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 15% FBS	documented	False	15.0	RPMI	true	false
+ACH-003101	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-003103	Lymphoid	onboarded	AlphaMEM + 10% FBS	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	False	10.0	RPMI	true	false
+ACH-003105	Skin	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-003106	Lymphoid	onboarded	RPMI + 15% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 15% FBS	documented	False	15.0	RPMI	true	false
+ACH-003107	Lymphoid	onboarded	RPMI + 15% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 15% FBS	documented	False	15.0	RPMI	true	false
+ACH-003108	Lymphoid	onboarded	RPMI + 15% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 15% FBS	documented	False	15.0	RPMI	true	false
+ACH-003111	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003119	Lung	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-003120	Lung	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-003121	Lung	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-003122	Pancreas	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003124	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003125	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003127	Breast	onboarded	Breast Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003129	Breast	onboarded	Breast Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003131	Breast	onboarded	Breast Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003165	Ovary/Fallopian Tube	onboarded	RPMI + 20% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS + 2mM Glutamine	documented	False	20.0	RPMI	true	false
+ACH-003170	Soft Tissue	onboarded	RPMI + 10% FCS + 1x Glutamax	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FCS + 1x Glutamax	documented	False	10.0	RPMI	true	false
+ACH-003172	Soft Tissue	onboarded	RPMI + 10% FCS + 1x Glutamax	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FCS + 1x Glutamax	documented	False	10.0	RPMI	true	false
+ACH-003173	Bone	onboarded	RPMI + 10% FCS + 1x Glutamax	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FCS + 1x Glutamax	documented	False	10.0	RPMI	true	false
+ACH-003174	Soft Tissue	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-003179	Soft Tissue	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-003181	Soft Tissue	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-003182	Bone	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-003183	Soft Tissue	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-003187	Soft Tissue	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-003188	Bone	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-003192	Soft Tissue	onboarded	RPMI + 5% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 5% FBS	documented	False	5.0	RPMI	true	false
+ACH-003205	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003207	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003210	Breast	onboarded	Breast Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003215	Breast	onboarded	Breast Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003218	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003225	Soft Tissue	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-003226	Bone	onboarded	IMDM:RPMI (4:1) + 10% FBS	mixture_of_sheets	mixture_on_disk	IMDM:RPMI (4:1) + 10% FBS	documented_mixture	False	10.0	IMDM0.8:RPMI0.2	true	false
+ACH-003227	Bone	onboarded	IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine	mixture_of_sheets	mixture_on_disk	IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine	documented_mixture	False	10.0	IMDM0.8:RPMI0.2	true	false
+ACH-003228	Bone	onboarded	IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine	mixture_of_sheets	mixture_on_disk	IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine	documented_mixture	False	10.0	IMDM0.8:RPMI0.2	true	false
+ACH-003231	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003234	Prostate	onboarded	Prostate Organoid Media:NSA (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003239	Uterus	onboarded	Ovarian Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003265	Soft Tissue	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003266	Soft Tissue	onboarded	E8	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003267	Soft Tissue	onboarded	Propagenix Conditioned Media	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003268	Soft Tissue	onboarded	DMEM:F12 + 2% FBS	sheet:DMEM:F12	onboarded_sensitivity	DMEM:F12 + 2% FBS	documented	False	2.0	DMEM:F12	true	false
+ACH-003269	Soft Tissue	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003317	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003318	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003324	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003328	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003329	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003333	Bowel	onboarded	Organoid Media Formulation #1	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003335	Bowel	onboarded	Organoid Media Formulation #1	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003336	Bowel	onboarded	Organoid Media Formulation #1	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003353	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003362	Bowel	onboarded	Organoid Media Formulation #1	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003363	Bowel	onboarded	Organoid Media Formulation #1	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003365	Bowel	onboarded	Organoid Media Formulation #1	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003366	Bowel	onboarded	Organoid Media Formulation #1	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003367	Bowel	onboarded	Organoid Media Formulation #1	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003370	Pancreas	onboarded	Organoid Media Formulation #3	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003371	Pancreas	onboarded	Organoid Media Formulation #3	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003373	Pancreas	onboarded	Organoid Media Formulation #6	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003375	Biliary Tract	onboarded	Organoid Media Formulation #1	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003378	Pancreas	onboarded	Organoid Media Formulation #3	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003379	Pancreas	onboarded	Organoid Media Formulation #3	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003382	Pancreas	onboarded	Organoid Media Formulation #7	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003389	Bowel	onboarded	Organoid Media Formulation #4	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003392	Esophagus/Stomach	onboarded	Organoid Media Formulation #5	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003396	Esophagus/Stomach	onboarded	Organoid Media Formulation #5	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003404	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003408	Bone	onboarded	IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine	mixture_of_sheets	mixture_on_disk	IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine	documented_mixture	False	10.0	IMDM0.8:RPMI0.2	true	false
+ACH-003416	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003417	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003418	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003420	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003421	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003422	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003423	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003424	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003425	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003426	Esophagus/Stomach	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003432	Pancreas	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003433	Pancreas	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003434	Pancreas	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003437	Esophagus/Stomach	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003438	CNS/Brain	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003451	Kidney	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003455	Skin	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003456	Skin	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003457	Skin	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003458	Skin	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003459	Skin	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003460	Lymphoid	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003463	Lymphoid	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003464	Soft Tissue	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003465	Head and Neck	onboarded	RETM	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003466	Pancreas	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003467	Pancreas	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003468	Thyroid	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003469	Thyroid	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003470	Thyroid	onboarded	Propagenix Conditioned Media	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003471	Thyroid	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003472	Thyroid	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003473	Soft Tissue	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003474	Head and Neck	onboarded	Propagenix Conditioned Media	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003475	Head and Neck	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003476	Esophagus/Stomach	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003477	Pancreas	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003479	Pancreas	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003489	Lymphoid	onboarded	IMDM + 20% FBS	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS	documented	False	20.0	IMDM	true	false
+ACH-003490	Lymphoid	onboarded	IMDM + 20% FBS	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS	documented	False	20.0	IMDM	true	false
+ACH-003491	Lymphoid	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-003574	Bone	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003586	Bone	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003611	Bone	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003612	Bone	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003613	Bone	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003614	Bone	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003621	Bone	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-003622	Bone	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-003623	Bone	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-003624	Esophagus/Stomach	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003625	Esophagus/Stomach	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003626	Esophagus/Stomach	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003627	Esophagus/Stomach	onboarded	OPAC	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003628	Esophagus/Stomach	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003629	Esophagus/Stomach	onboarded	OPAC	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003630	Esophagus/Stomach	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003631	Esophagus/Stomach	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003632	Esophagus/Stomach	onboarded	OPAC	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003633	Esophagus/Stomach	onboarded	OPAC	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003634	Esophagus/Stomach	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003635	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003642	Eye	onboarded	RPMI + 20% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 20% FBS	documented	False	20.0	RPMI	true	false
+ACH-003651	CNS/Brain	onboarded	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	documented	False	20.0	IMDM	true	false
+ACH-003653	CNS/Brain	onboarded	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	documented	False	20.0	IMDM	true	false
+ACH-003655	CNS/Brain	onboarded	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	documented	False	20.0	IMDM	true	false
+ACH-003656	Peripheral Nervous System	onboarded	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	documented	False	20.0	IMDM	true	false
+ACH-003657	Bone	onboarded	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	documented	False	20.0	IMDM	true	false
+ACH-003659	Peripheral Nervous System	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-003660	Peripheral Nervous System	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-003661	Peripheral Nervous System	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-003662	Peripheral Nervous System	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-003663	Peripheral Nervous System	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-003664	CNS/Brain	onboarded	Tumor Stem Media (not TSM DIPG)	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003671	Peripheral Nervous System	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-003672	Peripheral Nervous System	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-003673	Peripheral Nervous System	onboarded	RPMI + 10% FBS + 2mM Glutamine	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS + 2mM Glutamine	documented	False	10.0	RPMI	true	false
+ACH-003674	Bone	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003675	Bone	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003676	Peripheral Nervous System	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003678	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003685	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003686	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003687	Soft Tissue	onboarded	DMEM + 10% FBS	sheet:DMEM	onboarded_sensitivity	DMEM + 10% FBS	documented	False	10.0	DMEM	true	false
+ACH-003699	Bone	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-003702	Bone	onboarded	IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine	mixture_of_sheets	mixture_on_disk	IMDM:RPMI (4:1) + 10% FBS + 2mM Glutamine	documented_mixture	False	10.0	IMDM0.8:RPMI0.2	true	false
+ACH-003705	Bowel	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003707	Bowel	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003712	Esophagus/Stomach	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003714	Esophagus/Stomach	onboarded	OPAC:Ad+++ (1:1)	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003715	Esophagus/Stomach	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003718	Head and Neck	onboarded	Organoid Media Formulation #12	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003719	Head and Neck	onboarded	Organoid Media Formulation #12	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003720	Lung	onboarded	Organoid Media Formulation #12	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003721	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003735	Peripheral Nervous System	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-003744	Eye	onboarded	DMEM + 15% FBS + 10 µg/ml human insulin + 2 mM L-glutamine + 1 mM sodium pyruvate + 50 µM mercaptoethanol	sheet:DMEM	onboarded_sensitivity	DMEM + 15% FBS + 10 µg/ml human insulin + 2 mM L-glutamine + 1 mM sodium pyruvate + 50 µM mercaptoethanol	documented	False	15.0	DMEM+pyruvate+cys(2-ME)	true	false
+ACH-003765	Eye	onboarded	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	documented	False	20.0	IMDM	true	false
+ACH-003766	Eye	onboarded	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	sheet:IMDM	onboarded_sensitivity	IMDM + 20% FBS + 4mM Glutamine + 1x Insulin-Transferrin-Selenium	documented	False	20.0	IMDM	true	false
+ACH-003768	Eye	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003790	CNS/Brain	onboarded	NSA (proprietary)	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003791	Bone	onboarded	RPMI + 10% FBS	sheet:RPMI	onboarded_sensitivity	RPMI + 10% FBS	documented	False	10.0	RPMI	true	false
+ACH-003822	CNS/Brain	onboarded	Tumor Stem Media DIPG	stem	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003827	Breast	onboarded	Welm lab breast media	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003834	Breast	onboarded	Welm lab breast media	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003835	Breast	onboarded	Welm lab breast media	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003839	Breast	onboarded	Welm lab breast media	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003880	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003881	Lung	imputed		imputed	imputed	RPMI + 10% FBS	imputed_flagged			RPMI	true	false
+ACH-003886	Lung	onboarded	AR5	other_defined	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false
+ACH-003903	Uterus	onboarded	Ovarian Organoid Media	organoid	unmappable	RPMI + 10% FBS	imputed_flagged_unmappable	True	0	RPMI	true	false

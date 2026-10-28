@@ -13,6 +13,7 @@ that ran; skipped tests count as 0 in MEMOTE's score, so the score is reported t
 
 Usage:
   .venv_memote/bin/python scripts/w8_memote.py MODEL.xml.gz [...] --out results/w8/memote [--solver-timeout 300]
+      [--summary memote_summary.json]
 """
 
 from __future__ import annotations
@@ -42,6 +43,7 @@ def main(argv=None) -> int:
     ap.add_argument("models", nargs="+")
     ap.add_argument("--out", required=True)
     ap.add_argument("--solver-timeout", type=int, default=300)
+    ap.add_argument("--summary", default="memote_summary.json", help="summary file name under --out")
     a = ap.parse_args(argv)
     if "nextgem" in sys.modules or ".venv_memote" not in sys.prefix:
         raise SystemExit("run with /data/tmpA/nextgem/.venv_memote/bin/python (separate venv)")
@@ -94,7 +96,7 @@ def main(argv=None) -> int:
     summ = {"memote_version": memote.__version__, "cobra_version": cobra.__version__, "solver": "glpk",
             "solver_timeout_s": a.solver_timeout, "skipped_tests": list(SKIP), "models": rows,
             "peak_rss_mb": round(_res.getrusage(_res.RUSAGE_SELF).ru_maxrss / 1024, 1)}
-    (out / "memote_summary.json").write_text(json.dumps(summ, indent=1) + "\n")
+    (out / a.summary).write_text(json.dumps(summ, indent=1) + "\n")
     return 0
 
 

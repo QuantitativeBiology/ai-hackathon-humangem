@@ -3,6 +3,53 @@
 **Author:** W8 resource engineer agent (Claude Opus). **Date:** 2026-10-28.
 **Status:** code and tests pass, two pilots pass every gate (4 models), and MEMOTE ran on a 4-model sample. The full build is about 3.3 CPU-h, above the 1 CPU-h limit, so it must run from a pinned clean worktree (§11.4). It has **not** been run, and the author has committed nothing. DESIGN.md, FROZEN.tsv, the ledgers and `evaluate_*.py` were not edited.
 
+## Status update (2026-10-28, after the pinned build; supersedes the projections in §§4–6 where they differ)
+- **Full build** (pinned b200324, committed 6a71f7f; `results/w8/p1/summary.json`).
+  - 40 models, 1,361 lines × 2 parents.
+  - 2.76 CPU-h (9,922 CPU-s), 1,610 s wall at 8 GLPK workers; 202–252 CPU-s per model; 77.9 MB of models.
+  - **39/40 models pass all six gates.** The one failure is `medium-20cc933a4b852b6a_human2-2.1.1_P1` (RPMI + testosterone, 1 line). It fails `random_ko_match` on gene ENSG00000099817: the in-memory model gives 0.0 and the reloaded model gives −8.04e-9, above the 1e-9 absolute floor (RESEARCH_TREE 9.1).
+- **Gate-miss investigation** (`scripts/w8_ko_noise_check.py` → `results/w8/ko_noise/`, 212 CPU-s). The gate's own 20-gene sample was re-solved on both models.
+
+  | Solver | ENSG00000099817 KO, in-memory model | ENSG00000099817 KO, reloaded model | Max \|Δ\| over all 20 genes |
+  |---|---|---|---|
+  | GLPK, default tolerances | −1.5e-11 | −8.04e-9 (reproduced) | 8.0e-9 |
+  | GLPK, feasibility tolerance 1e-10 | 3.3e-13 | −2.5e-13 | 1.0e-12 |
+  | GLPK exact (rational arithmetic) | **0** | **0** | 0 |
+  | Gurobi, tolerances 1e-9 | **0** | **0** | 0 |
+
+  - The −8.04e-9 value is a violation of the biomass lower bound (0). That violation is below GLPK's default primal feasibility tolerance of 1e-7, so it is LP noise. The KO is exactly lethal in both models, and the two models are equivalent.
+  - **The gate was not changed.** The miss stays recorded as a documented gate failure with its cause. Changing the rule needs a PI decision; options include tying the floor to the solver feasibility tolerance, clipping negative growth to 0 as `ratio_r` already does, or re-solving mismatches exactly.
+- **Exit code.** The committed script returns 3 when any model fails a gate: `run()` returns 3 when `n_models_pass < n_models`, `main()` returns that value and `SystemExit(main())` exits with it. So the observed "exit 0" most likely came from the invoking wrapper, for example a pipe to `tee` or a later command in the same shell line. I could not see that command.
+  - The exit logic is now explicit: `resource.gate_exit_code(models)` lists the failing models on stderr and returns 3.
+  - Both build scripts use it and print `exit code N (k/n …)`.
+  - Tests: `test_w8_gate_exit_code` and `test_w8_build_main_propagates_exit_code`.
+- **Extension to DESIGN's scope** (`scripts/w8_extend_unscreened.py`, `results/w8/unscreened/`; dirty tree; 3 runs totalling 2,712 CPU-s ≈ 0.75 CPU-h).
+  - Scope: **753** unscreened DepMap 26Q3 models with a default expression profile and a cancer lineage, exactly DESIGN's `resource_models_not_benchmarkable`.
+  - Media come from W2's frozen rule, `media.assign_line_media`, called on these lines; `media.py` was not edited. That gives 666 onboarded and 87 imputed lines. By stratum: onboarded_sensitivity 409, unmappable 194, imputed 87, fallback_sheet_missing 56, mixture_on_disk 7. Every non-documented line gets the flagged classic RPMI + 10% FBS.
+  - 17 medium keys. Every key shared with the screened cohort reproduces that cohort's W2 signature (asserted).
+  - 4 new signatures per parent, covering 6 lines each:
+    - DMEM + pyruvate + 2-ME;
+    - RPMI + cortisol + estradiol;
+    - 2 serum-free DMEM:F12 variants.
+  - Each new signature got a B-loo reference sweep with the M6 engine (8/8 ok, 565 CPU-s) and a model; **8/8 pass all six gates** (2,144 CPU-s). The 2 serum-free models per parent keep the mevalonate core lethal, so they carry no W3-MEV.
+  - The resource now holds **48 models (93.3 MB), 2,114 lines and 4,228 manifest rows** (`screened` = true for 1,361 lines, false for 753).
+  - Screened rows and the 40 existing files are unchanged, which was verified. `resource/README.md` was regenerated.
+  - The 8 new files were built from a dirty tree (`git_dirty: true` in their notes). For a clean release, re-run `--step sweeps` and `--step build` from a pinned worktree (≈ 0.75 CPU-h).
+- **Determinism finding.** cobra keeps group members in a Python set, so the SBML bytes and sha256 of an identical model differ between runs. A pilot file and the released file differ only in member order, apart from notes.
+  - `write_sbml_gz` now sorts group members (`canonical_group_members`; test `test_w8_canonical_group_members`).
+  - The released files are content-identical to what the fixed writer produces, but not byte-reproducible.
+- **MEMOTE on 10 models** (both parents × the 5 most-used signatures: classic RPMI, DMEM, IMDM, DMEM:F12, DMEM:F12 + cortisol + estradiol). Run in `.venv_memote` with the same skips as before (7 heavy tests plus the unscored `test_matrix`).
+  - 6 models run on the release files: 1,670 CPU-s, 28 min. The other 4 are the pilot runs, whose model content is identical to the release files once group order is canonicalised and notes are ignored (checked).
+  - Scores: **Human2 0.638** for all 5 media; **Human1 0.630** for all 5. Consistency 0.425; gene annotation 0.467; SBO 0.818.
+  - Summaries: `results/w8/memote/memote_summary.json` (4 pilot models) and `memote_summary_release6.json`.
+- **FROG** (`fbc_curation` 0.3.2 in `.venv_memote`, with pymetadata pinned to 0.5.12 because 0.8.2 breaks its import; cobrapy curator only).
+  - Classic-RPMI Human2 model: **complete**, 2,383 CPU-s (0.66 CPU-h), 39.8 min wall, 1 process.
+    - Timings: objective 16 s, gene deletions 197 s, reaction deletions 826 s, FVA 1,337 s.
+    - Every LP returned optimal: 2,870 gene deletions, 12,748 FVA rows, and all reaction deletions.
+    - Report: `results/w8/frog/medium-4cd587facad2c6fb_human2-2.1.1_P1/` (FROG TSVs + metadata, 2.8 MB).
+  - Known bug in `scripts/w8_frog.py`: `frog_summary.json` reads the wrong keys from `FrogReport.to_dfs()` (`objective`, `gene_deletion`, `reaction_deletion`), so it shows `objective` and two deletion counts as null. The TSVs are complete. The fix is deferred because code edits are paused.
+  - The Human1 model is still to run: ≈ 0.7 CPU-h.
+
 **Label hygiene.**
 - The session-start probe (`head -c 50` of the raw CRISPR gene-effect file) was **blocked** by the hook.
 - W8 is label-free. It never opens `labels.py`, a label file, a label-derived list or `data/locked/`.

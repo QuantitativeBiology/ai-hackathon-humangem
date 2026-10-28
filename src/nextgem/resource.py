@@ -89,14 +89,39 @@ def read_notes(model: cobra.Model) -> dict:
     return {k: html.unescape(str(v)) for k, v in model.notes.items()}
 
 
+_MEMBERS_BLOCK = None
+
+
+def canonical_group_members(raw: bytes) -> bytes:
+    """Sort the ``<groups:member .../>`` lines of every ``listOfMembers`` by their text (idRef first).
+
+    cobra keeps group members in a Python set of objects, so their write order changes between processes and the
+    file bytes (and sha256) of an identical model are not reproducible. Member order has no meaning in SBML groups."""
+    import re
+
+    global _MEMBERS_BLOCK
+    if _MEMBERS_BLOCK is None:
+        _MEMBERS_BLOCK = re.compile(rb"(<groups:listOfMembers[^>]*>\n)(.*?)(\n[ \t]*</groups:listOfMembers>)", re.S)
+
+    def _sort(m):
+        lines = m.group(2).split(b"\n")
+        if not all(ln.strip().startswith(b"<groups:member ") and ln.strip().endswith(b"/>") for ln in lines):
+            return m.group(0)  # unexpected layout (nested elements): leave untouched
+        key = re.compile(rb'idRef="([^"]*)"')
+        lines.sort(key=lambda ln: ((key.search(ln) or [b"", b""])[1], ln))
+        return m.group(1) + b"\n".join(lines) + m.group(3)
+
+    return _MEMBERS_BLOCK.sub(_sort, raw)
+
+
 def write_sbml_gz(model: cobra.Model, path: Path) -> None:
-    """SBML L3V1 FBC v2 (cobra default), gzipped deterministically."""
+    """SBML L3V1 FBC v2 (cobra default), gzipped deterministically (mtime 0, group members sorted)."""
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory() as td:
         tmp = Path(td) / "m.xml"
         cobra.io.write_sbml_model(model, str(tmp))
-        raw = tmp.read_bytes()
+        raw = canonical_group_members(tmp.read_bytes())
     with open(path, "wb") as fh, gzip.GzipFile(filename="", mode="wb", fileobj=fh, mtime=0, compresslevel=6) as gz:
         gz.write(raw)
 
@@ -526,3 +551,22 @@ def materialise_line(resource_dir: Path, model_id: str, parent: str, out_dir: Pa
     path = Path(out_dir) / f"{model_id}_{parent}-{row.version}_{row.pipeline_id}.xml.gz"
     write_sbml_gz(m, path)
     return path
+
+
+def gate_exit_code(models, stream=None) -> int:
+    """Process exit code of a resource build: 0 only if every model row has ``job_status == "ok"`` and
+    ``validation_status == "pass"``; otherwise 3, after listing the failing models on ``stream`` (stderr)."""
+    import sys
+
+    stream = stream or sys.stderr
+    bad = models[(models.job_status.astype(str) != "ok") | (models.validation_status.astype(str) != "pass")]
+    if len(models) == 0:
+        print("GATE FAILURE: no model rows", file=stream)
+        return 3
+    if len(bad):
+        print(f"GATE FAILURE: {len(bad)} of {len(models)} models fail:", file=stream)
+        for r in bad.itertuples():
+            print(f"  {r.parent} {r.w2_sweep_id} job={r.job_status} gates={r.validation_status} "
+                  f"detail={r.validation_detail}", file=stream)
+        return 3
+    return 0
