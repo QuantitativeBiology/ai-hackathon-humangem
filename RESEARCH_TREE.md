@@ -9,6 +9,7 @@ M2 is complete. The generic models were scored on 686 training lines (12 lineage
 Update (2026-10-28): Stage A context families (W4) and GPR curation (W5) fail the training gate. W3's cofactor-pool biomass leave-out is the first lever to pass it (+0.034 on H1, flags W3-D1/W3-MEV); it passed its validation look (+0.032 [0.031, 0.033], look 2/40). Next: M6 combination factorial, W6 flux information, W7 hybrids with gene priors.
 
 ## Decisions
+- **D13 (2026-10-28, PI)**: W7_shortlist_1 (look 4/40) passed W7-05 vs G* (+0.594), but on validation W7-05 leads B6 by only +0.0007 (training +0.014). DESIGN §W7 step 7 requires the comparison with the runner-up, B6 (W7-01). It is run as a second W7 look, W7_P2_select, with the reviewed harness: candidates [W7:B6, W7:W7-05], simplest first. P2 = W7-05 only if it beats B6 by more than one paired SE; otherwise P2 = B6.
 - **D12 (2026-10-28, PI, after notes/reviews/M7_W7_review.md)**: a non-GEM P2 is admissible: §W7 lets P2 be the best validated whitelisted idea, and the pre-registered B6 is itself non-GEM. If W7-05 passes its look and becomes P2, REPORT.md must say:
   - C4 (P2 − G*) compares gene-prior ML with generic FBA and says nothing about GEMs.
   - C5 (P2 − B6, using the pre-registered B6) measures only the monotone constraint.
