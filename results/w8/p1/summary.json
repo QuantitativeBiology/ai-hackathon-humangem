@@ -1,0 +1,49 @@
+{
+ "release": "1.0.0",
+ "release_status": "release candidate (P1 per D11; built before T1)",
+ "pilot": 0,
+ "parents": [
+  "human2",
+  "human1"
+ ],
+ "n_models": 40,
+ "n_models_built": 40,
+ "n_models_pass": 39,
+ "per_parent": {
+  "human2": {
+   "models": 20,
+   "pass": 19,
+   "lines": 1361
+  },
+  "human1": {
+   "models": 20,
+   "pass": 20,
+   "lines": 1361
+  }
+ },
+ "gate_pass": {
+  "gate_libsbml": 40,
+  "gate_roundtrip": 40,
+  "gate_wt_growth": 40,
+  "gate_random_ko": 39,
+  "gate_viability": 40,
+  "gate_reload_m6": 40
+ },
+ "job_status": {
+  "ok": 40
+ },
+ "n_line_rows": 2722,
+ "n_lines": 1361,
+ "model_bytes": 77860635,
+ "job_cpu_s": 9258.6,
+ "wall_s": 1609.7,
+ "workers": 8,
+ "solver": "glpk",
+ "a10_limits": {
+  "lp_s": 300,
+  "lp_retries": 1,
+  "job_cpu_s": 1800
+ },
+ "commit": "b200324e1cd2eb5a760e6213f188eb33fa0dc7ac",
+ "dirty": false
+}
