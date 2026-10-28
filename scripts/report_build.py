@@ -290,6 +290,27 @@ W7_VAL = "results/w7/val/val_look_W7_P2_select.tsv"
 W8_SUM = "results/w8/p1/summary.json"
 W8_MEMOTE = "results/w8/memote/memote_summary.json"
 RES_MODELS = "resource/models.tsv"
+T1_TSV = "results/m6/test/test_look_T1.tsv"
+T1_GATES = "results/m6/test/test_look_T1_gates.json"
+T2_GATES = "results/m6/test/test_look_T2_gates.json"
+T2_GRID = "results/m6/test/test_look_T2_grid.tsv"
+UN = "results/m6/test/unsealed/T1/"
+UN_ATTR = UN + "attribution.tsv"
+UN_LIN = UN + "per_lineage.tsv"
+UN_GENE = UN + "per_gene.tsv"
+UN_TASK = UN + "per_task.tsv"
+UN_FAIL = UN + "failure_account.tsv"
+UN_WORST = UN + "worst_cells.tsv"
+UN_STRATA = UN + "strata.tsv"
+UN_SENS = UN + "sensitivities.tsv"
+UN_W1 = UN + "w1_benchmark.tsv"
+UN_ALL = UN + "generic_all_lines.tsv"
+H1_MAP = "results/baseline/human1_gene_mapping.tsv"
+H2_MAP = "results/baseline/human2_gene_mapping.tsv"
+W8_UNS = "results/w8/unscreened/build_summary.json"
+W8_MEMOTE6 = "results/w8/memote/memote_summary_release6.json"
+W8_FROG = "results/w8/frog/frog_summary.json"
+W8_NOISE = "results/w8/ko_noise/human2_20cc933a4b852b6a_summary.json"
 BUDGET = "results/budget.tsv"
 
 PRIMARY = dict(label="L_prob", geneset="all", universe="U", stratum="none")
@@ -460,6 +481,41 @@ def _elapsed_h(s):
     last = s.git("log", "-1", "--format=%ct", s.ref or "HEAD", "--", "results").split()
     first = s.git("log", "--reverse", "--format=%ct", s.ref or "HEAD").split()
     return (int(last[0]) - int(first[0])) / 3600
+
+
+def _pfmt(p: float) -> str:
+    """Permutation p-values at the resolution floor 1/(1 + 10,000) are written as an inequality."""
+    return "< 0.001" if p < 0.001 else fx(p, 3)
+
+
+def _sci_e(x: float) -> str:
+    return f"{x:.1e}".replace("-", MINUS)
+
+
+def _gene_dn(s, method):
+    d = s.tsv(UN_GENE)
+    return d[(d.method == method) & (d.estimable.astype(bool))]["delta_null"]
+
+
+def _frog_count(s, part):
+    counts = J(s, W8_FROG, "models", 0, "status_counts")
+    key = part if part in counts else part + "s"  # the committed summary uses singular keys; a later fix plural
+    return counts[key]["optimal"]
+
+
+def _worst_symbols(s):
+    sym = {}
+    for path in (H2_MAP, H1_MAP):  # Human1 symbols win where both parents map the gene
+        m = s.tsv(path).dropna(subset=["entrez"])
+        sym.update({str(int(float(e))): g for e, g in zip(m["entrez"], m["symbol"])})
+    return ", ".join(sym.get(str(e), str(e)) for e in s.tsv(UN_WORST)["entrez"])
+
+
+def _memote_scores(s, parent):
+    vals = {round(m["total_score"], 4) for f in (W8_MEMOTE, W8_MEMOTE6) for m in J(s, f, "models") if parent in m["model"]}
+    if len(vals) != 1:
+        raise ValueError(f"MEMOTE scores differ across {parent} models: {sorted(vals)}")
+    return vals.pop()
 
 
 GIT_LOG = "git log"
@@ -679,6 +735,182 @@ def _registry() -> dict[str, Number]:
     R["w8.memote.h1"] = _n(W8_MEMOTE, lambda s: fx(next(m["total_score"] for m in J(s, W8_MEMOTE, "models")
                                                         if "human1" in m["model"]), 2))
 
+    # --- T1 / T2 / unseal (test tier; committed after the looks) ------------------------------------------------
+    def t1ci(s, name, d=4):
+        d_ = s.tsv(T1_TSV)
+        row = d_[(d_.name == name) & d_.section.isin(["confirmatory", "estimates"])]
+        if len(row) != 1:
+            raise LookupError(f"{T1_TSV}: {len(row)} rows for {name}")
+        r = row.iloc[0]
+        return sci(r.estimate, r.ci_lo, r.ci_hi, d)
+
+    for c in ("C1", "C1b"):
+        R[f"t1.{c.lower()}"] = _n(T1_GATES, lambda s, c=c: sci(J(s, T1_GATES, "contrasts", c, "estimate"),
+                                                               J(s, T1_GATES, "contrasts", c, "ci_low"),
+                                                               J(s, T1_GATES, "contrasts", c, "ci_high")))
+        R[f"t1.{c.lower()}.claim"] = _n(T1_GATES, lambda s, c=c: next(g["claim"] for g in J(s, T1_GATES, "gates")
+                                                                      if g["contrast"] == c))
+        R[f"t1.{c.lower()}.p"] = _n(T1_GATES, lambda s, c=c: _pfmt(J(s, T1_GATES, "contrasts", c, "p")))
+    R["t1.c1.short"] = _n(T1_GATES, lambda s: sci(J(s, T1_GATES, "contrasts", "C1", "estimate"),
+                                                  J(s, T1_GATES, "contrasts", "C1", "ci_low"),
+                                                  J(s, T1_GATES, "contrasts", "C1", "ci_high"), 3))
+    R["t1.c1.pt3"] = _n(T1_GATES, lambda s: sx(J(s, T1_GATES, "contrasts", "C1", "estimate"), 3))
+    R["t1.c1b.status"] = _n(T1_GATES, lambda s: next(g["status"] for g in J(s, T1_GATES, "gates")
+                                                     if g["contrast"] == "C1b"))
+    R["t1.c3"] = _n(T1_GATES, lambda s: sci(J(s, T1_GATES, "contrasts", "C3", "estimate"),
+                                            J(s, T1_GATES, "contrasts", "C3", "ci_low"),
+                                            J(s, T1_GATES, "contrasts", "C3", "ci_high")))
+    R["t1.c3.p"] = _n(T1_GATES, lambda s: fx(J(s, T1_GATES, "contrasts", "C3", "p"), 2))
+    R["t1.c3.claim"] = _n(T1_GATES, lambda s: next(g["claim"] for g in J(s, T1_GATES, "gates") if g["contrast"] == "C3"))
+    R["t1.c3.mdap"] = _n(T1_TSV, lambda s: sx(T(s, T1_TSV, "m_delta_ap_gene_p1", name="C3")))
+    R["t1.c3.null"] = _n(T1_TSV, lambda s: fx(T(s, T1_TSV, "null_threshold", name="C3"), 4))
+    R["t1.c3.ngenes"] = _n(T1_TSV, lambda s: ints(T(s, T1_TSV, "n_genes_eligible", name="C3")))
+    R["t1.c3.expr"] = _n(T1_TSV, lambda s: sci(*(T(s, T1_TSV, c, name="C3_expressed_pairs")
+                                                 for c in ("estimate", "ci_lo", "ci_hi"))))
+    tr = ("transfer_C1",)
+    R["t1.tr.t"] = _n(T1_GATES, lambda s: ci(J(s, T1_GATES, *tr, "t_low"), J(s, T1_GATES, *tr, "t_high")))
+    R["t1.tr.p"] = _n(T1_GATES, lambda s: fx(J(s, T1_GATES, *tr, "exact_sign_flip_p"), 4))
+    R["t1.tr.k"] = _n(T1_GATES, lambda s: f"{J(s, T1_GATES, *tr, 'k_positive')}/{J(s, T1_GATES, *tr, 'n_lineages')}")
+    R["t1.n.lines"] = _n(T1_TSV, lambda s: ints(T(s, T1_TSV, "n_lines", section="counts")))
+    R["t1.n.noexpr"] = _n(T1_TSV, lambda s: ints(T(s, T1_TSV, "n_lines_no_expression", section="counts")))
+    for k, name in (("b2", "C2:B2"), ("b2m", "C2:B2m"), ("b2c", "C2:B2c"), ("b8p", "B8+"), ("b8m", "B8-"),
+                    ("b8q", "B8'"), ("wp.h2", "within_parent:H2"), ("p1h2", "vs_G*:P1[H2]")):
+        R[f"t1.est.{k}"] = _n(T1_TSV, lambda s, n=name: t1ci(s, n))
+    R["t1.headroom"] = _n(T1_TSV, lambda s: "{} {}".format(
+        pct(T(s, T1_TSV, "estimate", name="headroom_closed"), 1),
+        "[{}, {}]".format(pct(T(s, T1_TSV, "ci_lo", name="headroom_closed"), 1),
+                          pct(T(s, T1_TSV, "ci_hi", name="headroom_closed"), 1))))
+    R["t1.headroom.den"] = _n(T1_TSV, lambda s: sci(*(T(s, T1_TSV, c, name="headroom_closed")
+                                                      for c in ("denominator", "den_ci_lo", "den_ci_hi"))))
+    for k, m in (("p1", "P1[H1]"), ("gstar", "H1"), ("p1h2", "P1[H2]")):
+        R[f"t1.tap.{k}"] = _n(T1_TSV, lambda s, m=m: fx(T(s, T1_TSV, "tap_lin", name=f"tap:{m}")))
+    R["t1.failed"] = _n(T1_TSV, lambda s: ints(s.tsv(T1_TSV).query("section == 'failed_builds' and lineage == 'all'")
+                                               ["n_failed"].sum()))
+    R["t1.adds"] = _n(T1_GATES, lambda s: "not claimed" if not J(s, T1_GATES, "adds_beyond_generic_expression", "claim")
+                      else "claimed")
+    R["t1.generalises"] = _n(T1_GATES, lambda s: "holds" if J(s, T1_GATES, "generalises_to_new_tissues") else "fails")
+    for proto, call, lab, kk in (("Human1-paper", "P57", "L_ge06", "p57"), ("Human1-paper", "PGR", "L_ge06", "pgr"),
+                                 ("fixed-cutoff", "FBA<0.01", "L_ge06", "fix06"),
+                                 ("fixed-cutoff", "FBA<0.01", "L_prob", "fixp")):
+        for mk, m in (("h1", "H1"), ("h2", "H2"), ("p1", "P1[H1]"), ("p1h2", "P1[H2]")):
+            R[f"t1.mcc.{kk}.{mk}"] = _n(T1_TSV, lambda s, p=proto, c=call, lb=lab, m=m: fx(TW(
+                s, T1_TSV, "lineage_equal_mean", dict(section="binary_6.8", protocol=p, call_rule=c, label=lb,
+                                                      method=m, metric="mcc", nan_policy="exclude",
+                                                      gene_set="parent"))))
+        if kk != "fix06":
+            R[f"t1.mcc.{kk}.d"] = _n(T1_TSV, lambda s, p=proto, c=call, lb=lab: (lambda w: sci(
+                TW(s, T1_TSV, "lineage_equal_mean", w), TW(s, T1_TSV, "ci_lo", w), TW(s, T1_TSV, "ci_hi", w)))(
+                dict(section="binary_6.8", protocol=p, call_rule=c, label=lb, method="P1[H1] - H1", metric="mcc",
+                     nan_policy="exclude", gene_set="parent")))
+    for metric in ("f1", "precision", "recall"):
+        for mk, m in (("h1", "H1"), ("p1", "P1[H1]")):
+            R[f"t1.p57.{metric}.{mk}"] = _n(T1_TSV, lambda s, mt=metric, m=m: fx(TW(
+                s, T1_TSV, "lineage_equal_mean", dict(section="binary_6.8", protocol="Human1-paper", call_rule="P57",
+                                                      label="L_ge06", method=m, metric=mt, nan_policy="exclude",
+                                                      gene_set="parent"))))
+    # T2
+    for c in ("C4", "C5"):
+        R[f"t2.{c.lower()}"] = _n(T2_GATES, lambda s, c=c: sci(J(s, T2_GATES, "contrasts", c, "estimate"),
+                                                               J(s, T2_GATES, "contrasts", c, "ci_low"),
+                                                               J(s, T2_GATES, "contrasts", c, "ci_high"),
+                                                               3 if c == "C4" else 4))
+        R[f"t2.{c.lower()}.status"] = _n(T2_GATES, lambda s, c=c: next(g["status"] for g in J(s, T2_GATES, "gates")
+                                                                       if g["contrast"] == c))
+        R[f"t2.{c.lower()}.p"] = _n(T2_GATES, lambda s, c=c: _pfmt(J(s, T2_GATES, "contrasts", c, "p")))
+        R[f"t2.{c.lower()}.t"] = _n(T2_GATES, lambda s, c=c: ci(J(s, T2_GATES, "transfer", c, "t_low"),
+                                                                J(s, T2_GATES, "transfer", c, "t_high"), 3 if c == "C4" else 4))
+        R[f"t2.{c.lower()}.k"] = _n(T2_GATES, lambda s, c=c: f"{J(s, T2_GATES, 'transfer', c, 'k_positive')}/"
+                                                            f"{J(s, T2_GATES, 'transfer', c, 'n_lineages')}")
+    for k, m, gs in (("p2", "P2", "all"), ("b6", "B6[L_prob]", "all"), ("p2.noce", "P2", "noCE"),
+                     ("b6.noce", "B6[L_prob]", "noCE")):
+        R[f"t2.tap.{k}"] = _n(T2_GRID, lambda s, m=m, g=gs: fx(TW(s, T2_GRID, "tap_lin", dict(
+            label="L_prob", geneset=g, universe="U", stratum="none", method=m))))
+    R["t2.p2.mdap"] = _n(T2_GRID, lambda s: sx(TW(s, T2_GRID, "m_delta_ap_gene", dict(
+        label="L_prob", geneset="all", universe="U", stratum="none", method="P2"))))
+    # unsealed T1 tables
+    for k, row in (("ii", "ii"),):
+        R[f"un.attr.{k}"] = _n(UN_ATTR, lambda s, r=row: sci(*(T(s, UN_ATTR, c, contrast=r)
+                                                               for c in ("estimate", "ci_lo", "ci_hi"))))
+    for lin in ("Breast", "CNS/Brain", "Eye", "Liver", "Ovary/Fallopian Tube", "Pancreas", "Pleura"):
+        key = lin.split("/")[0].split()[0].lower()
+        R[f"un.lin.{key}.n"] = _n(UN_LIN, lambda s, l=lin: ints(T(s, UN_LIN, "n_lines", lineage=l, method="H1")))
+        for mk, m in (("gstar", "H1"), ("p1", "P1[H1]"), ("b2", "B2[L_prob]")):
+            R[f"un.lin.{key}.{mk}"] = _n(UN_LIN, lambda s, l=lin, m=m: fx(T(s, UN_LIN, "mean_tap", lineage=l, method=m)))
+        for mk, m in (("d.p1", "P1[H1]"), ("d.p1h2", "P1[H2]"), ("d.h2", "H2")):
+            R[f"un.lin.{key}.{mk}"] = _n(UN_LIN, lambda s, l=lin, m=m: sx(T(s, UN_LIN, "delta_vs_ref", lineage=l, method=m)))
+    R["un.lin.range"] = _n(UN_LIN, lambda s: "{} to {}".format(
+        *(sx(v) for v in (lambda x: (x.min(), x.max()))(s.tsv(UN_LIN).query("method == 'P1[H1]'")["delta_vs_ref"]))))
+    R["un.gene.n"] = _n(UN_GENE, lambda s: ints(s.tsv(UN_GENE).query("method == 'P1[H1]' and estimable")["entrez"].nunique()))
+    for mk, m in (("p1", "P1[H1]"), ("b3", "B3"), ("b2m", "B2m[L_prob]"), ("b8p", "B8+_H1")):
+        R[f"un.gene.{mk}.mean"] = _n(UN_GENE, lambda s, m=m: sx(_gene_dn(s, m).mean()))
+    R["un.gene.p1.nz"] = _n(UN_GENE, lambda s: ints((_gene_dn(s, "P1[H1]").abs() > 1e-9).sum()))
+    R["un.gene.p1.pos"] = _n(UN_GENE, lambda s: ints((_gene_dn(s, "P1[H1]") > 1e-9).sum()))
+    R["un.gene.b3.pos"] = _n(UN_GENE, lambda s: ints((_gene_dn(s, "B3") > 1e-9).sum()))
+    R["un.task.adding"] = _n(UN_TASK, lambda s: ints((s.tsv(UN_TASK)["n_failing_not_base_lethal"] > 0).sum()))
+    R["un.task.n"] = _n(UN_TASK, lambda s: ints(len(s.tsv(UN_TASK))))
+    R["un.task.ci_pos"] = _n(UN_TASK, lambda s: ints((s.tsv(UN_TASK)["delta_lo"] > 0).sum()))
+    R["un.task.ci_neg"] = _n(UN_TASK, lambda s: ints((s.tsv(UN_TASK)["delta_hi"] < 0).sum()))
+    R["un.task.worst"] = _n(UN_TASK, lambda s: sx(s.tsv(UN_TASK)["delta_lin_vs_base"].min()))
+    for cls in ("all_errors", "common_essential", "complex_subunit", "paralog_buffered", "housekeeping_adjacent",
+                "expected_fba_failure", "medium_sensitive", "missing_from_model", "unexpressed",
+                "biomass_artefact_lethal", "cn_amplified"):
+        R[f"un.fail.{cls}.fn"] = _n(UN_FAIL, lambda s, c=cls: ints(T(s, UN_FAIL, "n_fn", **{"class": c})))
+        R[f"un.fail.{cls}.fp"] = _n(UN_FAIL, lambda s, c=cls: ints(T(s, UN_FAIL, "n_fp", **{"class": c})))
+        R[f"un.fail.{cls}.ffn"] = _n(UN_FAIL, lambda s, c=cls: pct(T(s, UN_FAIL, "frac_of_fn", **{"class": c}), 1))
+        R[f"un.fail.{cls}.ffp"] = _n(UN_FAIL, lambda s, c=cls: pct(T(s, UN_FAIL, "frac_of_fp", **{"class": c}), 1))
+    R["un.fail.upper"] = _n(UN_FAIL, lambda s: pct(T(s, UN_FAIL, "upper_bound", **{"class": "upper_bound_addressable_positives"}), 1))
+    R["un.worst.n"] = _n(UN_WORST, lambda s: ints(len(s.tsv(UN_WORST))))
+    R["un.worst.lineages"] = _n(UN_WORST, lambda s: ", ".join(sorted(s.tsv(UN_WORST)["lineage"].unique())))
+    R["un.worst.fp"] = _n(UN_WORST, lambda s: ints(s.tsv(UN_WORST)["n_fp"].sum()))
+    R["un.worst.genes"] = _n((UN_WORST, H1_MAP, H2_MAP), lambda s: _worst_symbols(s))
+    for k, st in (("expr", "expressed_pairs"), ("addr1", "addressable_H1"), ("avana", "lib_Avana"),
+                  ("humagne", "lib_Humagne"), ("ky", "lib_KY"), ("organoid", "organoid"), ("cn4", "cn_amp4_in"),
+                  ("multi", "multicopy_in"), ("hk", "housekeeping_in"), ("moon", "moonlighting_in")):
+        R[f"un.str.{k}"] = _n(UN_STRATA, lambda s, st=st: sci(*(T(s, UN_STRATA, c, stratum=st)
+                                                                for c in ("estimate", "ci_lo", "ci_hi"))))
+        R[f"un.str.{k}.n"] = _n(UN_STRATA, lambda s, st=st: ints(T(s, UN_STRATA, "n_lines", stratum=st)))
+    for k, nm in (("ge05", "C1_L_ge05"), ("ge10", "C1_L_ge10"), ("ucap", "C1_Ucap")):
+        R[f"un.sens.{k}"] = _n(UN_SENS, lambda s, nm=nm: sci(*(T(s, UN_SENS, c, name=nm)
+                                                               for c in ("estimate", "ci_lo", "ci_hi"))))
+    for k, m in (("h1", "H1"), ("h2", "H2"), ("h1task", "H1_task"), ("b0", "B0"), ("b3", "B3"),
+                 ("b2", "B2[L_prob]"), ("b2m", "B2m[L_prob]"), ("b8p", "B8+_H1"), ("b8m", "B8-_H1"),
+                 ("b8q", "B8'_H1"), ("m2", "M2[H1]"), ("p1", "P1[H1]"), ("p1h2", "P1[H2]")):
+        for g in ("all", "noCE"):
+            R[f"un.w1.{k}.{g.lower()}"] = _n(UN_W1, lambda s, m=m, g=g: fx(TW(s, UN_W1, "tap_lin", dict(
+                label="L_prob", geneset=g, universe="U", stratum="none", method=m))))
+    R["un.w1.h2h1"] = _n(UN_W1, lambda s: (lambda w: sci(TW(s, UN_W1, "delta_lin_vs_H1", w),
+                                                         TW(s, UN_W1, "delta_lo_vs_H1", w),
+                                                         TW(s, UN_W1, "delta_hi_vs_H1", w)))(
+        dict(label="L_prob", geneset="all", universe="U", stratum="none", method="H2")))
+    R["un.all.h1"] = _n(UN_ALL, lambda s: fx(T(s, UN_ALL, "tap_lin", method="H1")))
+    R["un.all.b2"] = _n(UN_ALL, lambda s: fx(T(s, UN_ALL, "tap_lin", method="B2[L_prob]")))
+    R["un.all.n"] = _n(UN_ALL, lambda s: ints(T(s, UN_ALL, "n_lines", method="H1")))
+
+    # --- W8 full resource (screened + unscreened) ----------------------------------------------------------------
+    R["res.models"] = _n(RES_MODELS, lambda s: ints(len(s.tsv(RES_MODELS))))
+    R["res.pass"] = _n(RES_MODELS, lambda s: ints((s.tsv(RES_MODELS)["validation_status"] == "pass").sum()))
+    R["res.perparent"] = _n(RES_MODELS, lambda s: ints((s.tsv(RES_MODELS)["parent"] == "human2").sum()))
+    R["res.mev"] = _n(RES_MODELS, lambda s: ints((~s.tsv(RES_MODELS)["mevalonate_core_lethal"].astype(bool)).sum()))
+    R["res.mb"] = _n(RES_MODELS, lambda s: fx(s.tsv(RES_MODELS)["size_bytes"].sum() / 1e6, 1))
+    R["res.lines"] = _n(W8_UNS, lambda s: ints(J(s, W8_UNS, "n_lines_total")))
+    R["res.rows"] = _n(W8_UNS, lambda s: ints(J(s, W8_UNS, "n_line_rows_total")))
+    R["res.uns.lines"] = _n(W8_UNS, lambda s: ints(J(s, W8_UNS, "n_unscreened_lines")))
+    R["res.uns.new"] = _n(W8_UNS, lambda s: f"{J(s, W8_UNS, 'n_new_pass')}/{J(s, W8_UNS, 'n_new_models')}")
+    R["res.memote.n"] = _n((W8_MEMOTE, W8_MEMOTE6), lambda s: ints(len(J(s, W8_MEMOTE, "models"))
+                                                                    + len(J(s, W8_MEMOTE6, "models"))))
+    R["res.memote.h2"] = _n((W8_MEMOTE, W8_MEMOTE6), lambda s: fx(_memote_scores(s, "human2"), 3))
+    R["res.memote.h1"] = _n((W8_MEMOTE, W8_MEMOTE6), lambda s: fx(_memote_scores(s, "human1"), 3))
+    R["res.frog.n"] = _n(W8_FROG, lambda s: ints(len(J(s, W8_FROG, "models"))))
+    R["res.frog.fva"] = _n(W8_FROG, lambda s: ints(J(s, W8_FROG, "models", 0, "status_counts", "fva", "optimal")))
+    R["res.frog.gd"] = _n(W8_FROG, lambda s: ints(_frog_count(s, "gene_deletion")))
+    R["res.frog.rd"] = _n(W8_FROG, lambda s: ints(_frog_count(s, "reaction_deletion")))
+    R["res.frog.cpu"] = _n(W8_FROG, lambda s: fx(sum(v["cpu_s"] for v in J(s, W8_FROG, "models", 0, "timing").values())
+                                                 / 3600, 2))
+    R["res.noise.default"] = _n(W8_NOISE, lambda s: _sci_e(J(s, W8_NOISE, "per_solver", "glpk_default",
+                                                             "reloaded:ENSG00000099817", "value")))
+    R["res.noise.exact"] = _n(W8_NOISE, lambda s: fx(J(s, W8_NOISE, "per_solver", "glpk_exact",
+                                                       "reloaded:ENSG00000099817", "value"), 1))
+
     # --- runtime ------------------------------------------------------------------------------------------------
     for g in RUNTIME_GROUPS + ("total", "other"):
         R[f"rt.{g}.cpu"] = _n(RUNTIME_SRC, lambda s, g=g: fx(_rt(s, g), 1))
@@ -723,7 +955,7 @@ def _block_of(text: str, pos: int) -> str:
     end = text.find("\n\n", pos)
     start = 0 if start < 0 else start
     end = len(text) if end < 0 else end
-    if text[start:end].lstrip("\n").startswith("|"):
+    if text[start:end].lstrip("\n").lstrip(" ").startswith("|"):  # tables, also when indented in a list
         prev = text.rfind("\n\n", 0, start)
         nxt = text.find("\n\n", end + 2)
         start = 0 if prev < 0 else prev

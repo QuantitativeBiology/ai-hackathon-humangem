@@ -99,6 +99,13 @@ def test_report_build_table_caption_counts_as_citation(tmp_path):
     assert issues == []
 
 
+def test_report_build_indented_table_in_list_uses_caption(tmp_path):
+    src = _toy(tmp_path)
+    text = ("- Estimates (res/t.tsv).\n\n  | m | tAP |\n  |---|---|\n  | H1 | <!--n:t.h1-->0.302 |\n\n- next item\n")
+    issues, _ = rb.check_text(text, src, _numbers())
+    assert issues == []
+
+
 def test_report_build_source_error_is_an_issue(tmp_path):
     issues, _ = rb.check_text("x <!--n:missing-->? (res/none.json)\n", _toy(tmp_path), _numbers())
     assert [i.kind for i in issues] == ["source-error"]
