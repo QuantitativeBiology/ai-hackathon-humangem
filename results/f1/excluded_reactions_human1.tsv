@@ -1,0 +1,2671 @@
+rxn	name	subsystem	n_genes	max_and_genes	exclusions
+MAR03859	(R)-Lactate:ferricytochrome-c 2-oxidoreductase	Pyruvate metabolism	2	0	E2 transport
+MAR08514	(S)-Lactate:ferricytochrome-c 2-oxidoreductase	Pyruvate metabolism	2	0	E2 transport
+MAR07160	Deoxynucleoside triphosphate:DNA deoxynucleotidyltransferase	Nucleotide metabolism	23	10	E3 pseudo/lumped (composition-weighted lumped stoichiometry); E4 AND complex >= 6 genes
+MAR07161	nucleoside-triphosphate:RNA nucleotidyltransferase (DNA-directed)	Nucleotide metabolism	37	37	E3 pseudo/lumped (composition-weighted lumped stoichiometry); E4 AND complex >= 6 genes
+MAR07162		Nucleotide metabolism	37	37	E3 pseudo/lumped (composition-weighted lumped stoichiometry); E4 AND complex >= 6 genes
+MAR07163		Nucleotide metabolism	4	2	E3 pseudo/lumped (composition-weighted lumped stoichiometry)
+MAR07164		Nucleotide metabolism	4	2	E3 pseudo/lumped (composition-weighted lumped stoichiometry)
+MAR08433		Glycine, serine and threonine metabolism	2	2	E2 transport
+MAR08434		Glycine, serine and threonine metabolism	2	2	E2 transport
+MAR08769		Glutathione metabolism	6	0	E2 transport
+MAR08770		Glutathione metabolism	2	0	E2 transport
+MAR08771		Transport reactions	2	0	E2 transport
+MAR07285		N-glycan metabolism	7	6	E4 AND complex >= 6 genes
+MAR06914	ferrocytochrome-c:oxygen oxidoreductase	Oxidative phosphorylation	19	19	E2 transport; E4 AND complex >= 6 genes
+MAR06916	ATP phosphohydrolase	Oxidative phosphorylation	21	21	E2 transport; E4 AND complex >= 6 genes
+MAR06918		Oxidative phosphorylation	10	10	E2 transport; E4 AND complex >= 6 genes
+MAR06921	NADH:ubiquinone oxidoreductase	Oxidative phosphorylation	45	45	E2 transport; E4 AND complex >= 6 genes
+MAR00160		Carnitine shuttle (mitochondrial)	1	0	E2 transport
+MAR00162		Carnitine shuttle (mitochondrial)	1	0	E2 transport
+MAR02592		Carnitine shuttle (mitochondrial)	2	0	E2 transport
+MAR02596		Carnitine shuttle (mitochondrial)	2	0	E2 transport
+MAR02600		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02603		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02606		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02609		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02612		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02616		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02621		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02624		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02629		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02634		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02638		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02644		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02649		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02652		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02655		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02658		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02661		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02664		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02667		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02670		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02673		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02676		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02679		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02682		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02685		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02688		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02691		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02695		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02700		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02703		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02706		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02709		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02712		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02715		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02718		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02722		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02727		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02731		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02734		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02737		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02740		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02744		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02748		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02753		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02757		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02760		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02764		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02769		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02772		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR02775		Carnitine shuttle (mitochondrial)	5	0	E2 transport
+MAR03029		Carnitine shuttle (peroxisomal)	1	0	E2 transport
+MAR03033		Carnitine shuttle (peroxisomal)	2	0	E2 transport
+MAR03035		Carnitine shuttle (peroxisomal)	2	0	E2 transport
+MAR02778		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02783		Carnitine shuttle (endoplasmic reticular)	2	0	E2 transport
+MAR02787		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02789		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02791		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02793		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02795		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02797		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02799		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02801		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02805		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02807		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02811		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02813		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02815		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02817		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02821		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02823		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02825		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02829		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02831		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02833		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02835		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02837		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02839		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02841		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02843		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02845		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02847		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02849		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02851		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02853		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02855		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02857		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02861		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02863		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02865		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02867		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02869		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02871		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02873		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02875		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02878		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02880		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02884		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02888		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02892		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02896		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02898		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02900		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02902		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02904		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02907		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02910		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02913		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02916		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02919		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02922		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02925		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02928		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR02931		Carnitine shuttle (endoplasmic reticular)	1	0	E2 transport
+MAR03481		Transport reactions	1	0	E2 transport
+MAR03517		Transport reactions	1	0	E2 transport
+MAR07228		Heparan sulfate degradation	1	0	E2 transport
+MAR07233		Heparan sulfate degradation	1	0	E2 transport
+MAR07239		Heparan sulfate degradation	1	0	E2 transport
+MAR07245		Heparan sulfate degradation	1	0	E2 transport
+MAR01619		Transport reactions	2	0	E2 transport
+MAR01620	3alpha,7alpha-Dihydroxy-5beta-cholestanate:CoA ligase (AMP-forming)	Transport reactions	2	0	E2 transport
+MAR01622		Transport reactions	1	0	E2 transport
+MAR01629		Transport reactions	1	0	E2 transport
+MAR01631		Transport reactions	1	0	E2 transport
+MAR01659		Bile acid biosynthesis	7	0	E2 transport
+MAR01665		Transport reactions	2	0	E2 transport
+MAR01694		Transport reactions	4	0	E2 transport
+MAR01696		Transport reactions	1	0	E2 transport
+MAR01852		Transport reactions	1	0	E2 transport
+MAR01853		Bile acid recycling	2	0	E2 transport
+MAR01855		Transport reactions	1	0	E2 transport
+MAR01862		Bile acid recycling	2	0	E2 transport
+MAR01863		Bile acid recycling	2	0	E2 transport
+MAR01864		Bile acid recycling	2	0	E2 transport
+MAR01865		Bile acid recycling	2	0	E2 transport
+MAR01866		Bile acid recycling	2	0	E2 transport
+MAR01867		Bile acid recycling	2	0	E2 transport
+MAR01868		Bile acid recycling	6	0	E2 transport
+MAR01870		Bile acid recycling	6	0	E2 transport
+MAR01872		Bile acid recycling	6	0	E2 transport
+MAR01874		Bile acid recycling	5	0	E2 transport
+MAR01875		Bile acid recycling	3	0	E2 transport
+MAR01876		Bile acid recycling	3	0	E2 transport
+MAR01877		Bile acid recycling	3	0	E2 transport
+MAR01878		Transport reactions	4	0	E2 transport
+MAR01879		Bile acid recycling	3	0	E2 transport
+MAR01880		Bile acid recycling	3	0	E2 transport
+MAR01881		Bile acid recycling	3	0	E2 transport
+MAR01882		Bile acid recycling	3	0	E2 transport
+MAR01883		Bile acid recycling	3	0	E2 transport
+MAR01884		Bile acid recycling	3	0	E2 transport
+MAR01885		Bile acid recycling	3	0	E2 transport
+MAR01886		Bile acid recycling	3	0	E2 transport
+MAR01887		Bile acid recycling	3	0	E2 transport
+MAR01888		Bile acid recycling	3	0	E2 transport
+MAR01889		Bile acid recycling	3	0	E2 transport
+MAR01890		Bile acid recycling	3	0	E2 transport
+MAR01891		Bile acid recycling	3	0	E2 transport
+MAR01892		Bile acid recycling	3	0	E2 transport
+MAR01893		Bile acid recycling	3	0	E2 transport
+MAR01894		Bile acid recycling	3	0	E2 transport
+MAR01895		Transport reactions	3	0	E2 transport
+MAR01896		Bile acid recycling	3	0	E2 transport
+MAR01897		Transport reactions	2	0	E2 transport
+MAR08279		Blood group biosynthesis	1	0	E2 transport
+MAR08317		Blood group biosynthesis	1	0	E2 transport
+MAR04271	NADPH:NAD+ oxidoreductase	Transport reactions	1	0	E2 transport
+MAR09580		Transport reactions	1	0	E2 transport
+MAR09581		Transport reactions	2	0	E2 transport
+MAR09582		Transport reactions	2	0	E2 transport
+MAR09583		Transport reactions	2	0	E2 transport
+MAR09584		Transport reactions	2	0	E2 transport
+MAR09585		Transport reactions	1	0	E2 transport
+MAR09586		Transport reactions	2	0	E2 transport
+MAR09587		Transport reactions	1	0	E2 transport
+MAR09588		Transport reactions	3	0	E2 transport
+MAR00010	1-acylglycerol acylhydrolase	Pool reactions	3	0	E3 pseudo/lumped (subsystem:Pool reactions)
+MAR00013		Pool reactions	1	0	E3 pseudo/lumped (subsystem:Pool reactions)
+MAR00014		Pool reactions	1	0	E3 pseudo/lumped (subsystem:Pool reactions)
+MAR00006		Transport reactions	6	0	E2 transport
+MAR00007	triacylglycerol acylhydrolase	Transport reactions	1	0	E2 transport
+MAR00008	1,2-diacyl-sn-glycerol acylhydrolase	Transport reactions	1	0	E2 transport
+MAR00018		Transport reactions	1	0	E2 transport
+MAR00019		Transport reactions	1	0	E2 transport
+MAR00155		Transport reactions	14	0	E2 transport
+MAR00164		Transport reactions	14	0	E2 transport
+MAR00167		Transport reactions	14	0	E2 transport
+MAR00170		Transport reactions	14	0	E2 transport
+MAR00173		Transport reactions	14	0	E2 transport
+MAR00176		Transport reactions	14	0	E2 transport
+MAR00179		Transport reactions	14	0	E2 transport
+MAR00183		Transport reactions	14	0	E2 transport
+MAR00187		Transport reactions	14	0	E2 transport
+MAR00190		Transport reactions	15	0	E2 transport
+MAR00191		Transport reactions	14	0	E2 transport
+MAR00194		Transport reactions	1	0	E2 transport
+MAR00195		Transport reactions	14	0	E2 transport
+MAR00198		Transport reactions	1	0	E2 transport
+MAR00199		Transport reactions	14	0	E2 transport
+MAR00202		Transport reactions	1	0	E2 transport
+MAR00203		Transport reactions	14	0	E2 transport
+MAR00207		Transport reactions	1	0	E2 transport
+MAR00208		Transport reactions	14	0	E2 transport
+MAR00211		Transport reactions	1	0	E2 transport
+MAR00212		Transport reactions	14	0	E2 transport
+MAR00215		Transport reactions	1	0	E2 transport
+MAR00216		Transport reactions	14	0	E2 transport
+MAR00224		Transport reactions	1	0	E2 transport
+MAR00225		Transport reactions	14	0	E2 transport
+MAR00231		Transport reactions	1	0	E2 transport
+MAR00232		Transport reactions	14	0	E2 transport
+MAR00235		Transport reactions	1	0	E2 transport
+MAR00236		Transport reactions	14	0	E2 transport
+MAR00239		Transport reactions	1	0	E2 transport
+MAR00240		Transport reactions	14	0	E2 transport
+MAR00243		Transport reactions	1	0	E2 transport
+MAR00244		Transport reactions	14	0	E2 transport
+MAR00247		Transport reactions	1	0	E2 transport
+MAR00248		Transport reactions	14	0	E2 transport
+MAR00253		Transport reactions	1	0	E2 transport
+MAR00254		Transport reactions	14	0	E2 transport
+MAR00257		Transport reactions	1	0	E2 transport
+MAR00258		Transport reactions	14	0	E2 transport
+MAR00261		Transport reactions	1	0	E2 transport
+MAR00262		Transport reactions	14	0	E2 transport
+MAR00265		Transport reactions	1	0	E2 transport
+MAR00266		Transport reactions	14	0	E2 transport
+MAR00269		Transport reactions	1	0	E2 transport
+MAR00270		Transport reactions	14	0	E2 transport
+MAR00273		Transport reactions	1	0	E2 transport
+MAR00274		Transport reactions	14	0	E2 transport
+MAR00277		Transport reactions	1	0	E2 transport
+MAR00278		Transport reactions	14	0	E2 transport
+MAR00281		Transport reactions	1	0	E2 transport
+MAR00282		Transport reactions	14	0	E2 transport
+MAR00287		Transport reactions	1	0	E2 transport
+MAR00288		Transport reactions	14	0	E2 transport
+MAR00291		Transport reactions	1	0	E2 transport
+MAR00292		Transport reactions	14	0	E2 transport
+MAR00295		Transport reactions	1	0	E2 transport
+MAR00296		Transport reactions	14	0	E2 transport
+MAR00299		Transport reactions	1	0	E2 transport
+MAR00300		Transport reactions	14	0	E2 transport
+MAR00303		Transport reactions	1	0	E2 transport
+MAR00304		Transport reactions	14	0	E2 transport
+MAR00307		Transport reactions	1	0	E2 transport
+MAR00308		Transport reactions	14	0	E2 transport
+MAR00311		Transport reactions	1	0	E2 transport
+MAR00312		Transport reactions	14	0	E2 transport
+MAR00317		Transport reactions	1	0	E2 transport
+MAR00318		Transport reactions	14	0	E2 transport
+MAR00321		Transport reactions	1	0	E2 transport
+MAR00322		Transport reactions	14	0	E2 transport
+MAR00325		Transport reactions	1	0	E2 transport
+MAR00326		Transport reactions	14	0	E2 transport
+MAR00329		Transport reactions	1	0	E2 transport
+MAR00330		Transport reactions	14	0	E2 transport
+MAR00335		Transport reactions	1	0	E2 transport
+MAR00336		Transport reactions	14	0	E2 transport
+MAR00339		Transport reactions	1	0	E2 transport
+MAR00340		Transport reactions	14	0	E2 transport
+MAR00343		Transport reactions	1	0	E2 transport
+MAR00344		Transport reactions	14	0	E2 transport
+MAR00347		Transport reactions	1	0	E2 transport
+MAR00348		Transport reactions	14	0	E2 transport
+MAR00351		Transport reactions	1	0	E2 transport
+MAR00352		Transport reactions	14	0	E2 transport
+MAR00355		Transport reactions	1	0	E2 transport
+MAR00356		Transport reactions	14	0	E2 transport
+MAR00359		Transport reactions	1	0	E2 transport
+MAR00360		Transport reactions	14	0	E2 transport
+MAR00363		Transport reactions	1	0	E2 transport
+MAR00364		Transport reactions	14	0	E2 transport
+MAR00367		Transport reactions	1	0	E2 transport
+MAR00368		Transport reactions	14	0	E2 transport
+MAR00371		Transport reactions	1	0	E2 transport
+MAR00372		Transport reactions	14	0	E2 transport
+MAR00375		Transport reactions	1	0	E2 transport
+MAR00376		Transport reactions	14	0	E2 transport
+MAR00379		Transport reactions	1	0	E2 transport
+MAR00380		Transport reactions	14	0	E2 transport
+MAR00383		Transport reactions	1	0	E2 transport
+MAR00384		Transport reactions	14	0	E2 transport
+MAR00387		Transport reactions	1	0	E2 transport
+MAR00388		Transport reactions	14	0	E2 transport
+MAR00391		Transport reactions	1	0	E2 transport
+MAR00392		Transport reactions	14	0	E2 transport
+MAR00395		Transport reactions	1	0	E2 transport
+MAR00396		Transport reactions	14	0	E2 transport
+MAR00399		Transport reactions	1	0	E2 transport
+MAR00400		Transport reactions	14	0	E2 transport
+MAR00403		Transport reactions	1	0	E2 transport
+MAR00404		Transport reactions	14	0	E2 transport
+MAR00407		Transport reactions	1	0	E2 transport
+MAR00408		Transport reactions	14	0	E2 transport
+MAR00411		Transport reactions	1	0	E2 transport
+MAR00412		Transport reactions	14	0	E2 transport
+MAR00415		Transport reactions	1	0	E2 transport
+MAR00416		Transport reactions	14	0	E2 transport
+MAR00419		Transport reactions	1	0	E2 transport
+MAR00420		Transport reactions	14	0	E2 transport
+MAR00423		Transport reactions	1	0	E2 transport
+MAR00424		Transport reactions	14	0	E2 transport
+MAR00427		Transport reactions	1	0	E2 transport
+MAR00428		Transport reactions	14	0	E2 transport
+MAR00431		Transport reactions	1	0	E2 transport
+MAR00432		Transport reactions	14	0	E2 transport
+MAR00435		Transport reactions	1	0	E2 transport
+MAR00436		Transport reactions	14	0	E2 transport
+MAR00439		Transport reactions	1	0	E2 transport
+MAR00444		Transport reactions	2	0	E2 transport
+MAR00470		Transport reactions	1	0	E2 transport
+MAR00476		Transport reactions	2	0	E2 transport
+MAR00770		Transport reactions	1	0	E2 transport
+MAR01082		Transport reactions	1	0	E2 transport
+MAR01086		Transport reactions	1	0	E2 transport
+MAR01898		Transport reactions	3	0	E2 transport
+MAR01899		Transport reactions	3	0	E2 transport
+MAR01900		Transport reactions	3	0	E2 transport
+MAR01901		Transport reactions	3	0	E2 transport
+MAR01902		Transport reactions	3	0	E2 transport
+MAR01903		Transport reactions	3	0	E2 transport
+MAR01904		Transport reactions	3	0	E2 transport
+MAR01905		Transport reactions	3	0	E2 transport
+MAR01906		Transport reactions	3	0	E2 transport
+MAR01907		Transport reactions	3	0	E2 transport
+MAR01908		Transport reactions	3	0	E2 transport
+MAR01909		Transport reactions	3	0	E2 transport
+MAR01911		Transport reactions	4	2	E2 transport
+MAR01914		Transport reactions	7	0	E2 transport
+MAR01919	3'-phosphoadenylyl-sulfate:cholesterol sulfotransferase	Transport reactions	2	0	E2 transport
+MAR03858		Transport reactions	7	0	E2 transport
+MAR03916		Transport reactions	2	0	E2 transport
+MAR04321		Transport reactions	6	0	E2 transport
+MAR04433		Transport reactions	2	2	E2 transport
+MAR04434		Transport reactions	2	2	E2 transport
+MAR04435		Transport reactions	2	2	E2 transport
+MAR04436		Transport reactions	2	2	E2 transport
+MAR04691		Transport reactions	4	0	E2 transport
+MAR04721		Transport reactions	1	0	E2 transport
+MAR04844		Transport reactions	1	0	E2 transport
+MAR04845		Transport reactions	3	0	E2 transport
+MAR04847		Transport reactions	1	0	E2 transport
+MAR04848		Transport reactions	1	0	E2 transport
+MAR04849		Transport reactions	1	0	E2 transport
+MAR04858		Transport reactions	5	0	E2 transport
+MAR04861		Transport reactions	1	0	E2 transport
+MAR04873		Transport reactions	1	0	E2 transport
+MAR04882		Transport reactions	1	0	E2 transport
+MAR04885		Transport reactions	10	0	E2 transport
+MAR04910		Transport reactions	8	0	E2 transport
+MAR04912		Transport reactions	3	0	E2 transport
+MAR04928		Transport reactions	7	0	E2 transport
+MAR04931		Transport reactions	2	2	E2 transport
+MAR04932		Transport reactions	5	0	E2 transport
+MAR04933		Transport reactions	1	0	E2 transport
+MAR04935		Transport reactions	7	0	E2 transport
+MAR04938		Transport reactions	1	0	E2 transport
+MAR04939		Transport reactions	1	0	E2 transport
+MAR04946		Transport reactions	7	0	E2 transport
+MAR04949		Transport reactions	3	0	E2 transport
+MAR04954		Transport reactions	8	0	E2 transport
+MAR04956		Transport reactions	2	0	E2 transport
+MAR04973		Transport reactions	3	0	E2 transport
+MAR04975		Transport reactions	1	0	E2 transport
+MAR04976		Transport reactions	7	0	E2 transport
+MAR04980		Transport reactions	1	0	E2 transport
+MAR04983		Transport reactions	1	0	E2 transport
+MAR04985		Transport reactions	1	0	E2 transport
+MAR04992		Transport reactions	1	0	E2 transport
+MAR04994		Transport reactions	1	0	E2 transport
+MAR04996		Transport reactions	3	0	E2 transport
+MAR04999		Transport reactions	3	0	E2 transport
+MAR05003		Transport reactions	2	0	E2 transport
+MAR05005		Transport reactions	1	0	E2 transport
+MAR05007		Transport reactions	3	0	E2 transport
+MAR05008		Transport reactions	2	0	E2 transport
+MAR05013		Transport reactions	1	0	E2 transport
+MAR05018		Transport reactions	7	0	E2 transport
+MAR05021		Transport reactions	2	0	E2 transport
+MAR05023		Transport reactions	1	0	E2 transport
+MAR05029		Transport reactions	13	0	E2 transport
+MAR05032		Transport reactions	3	0	E2 transport
+MAR05034		Transport reactions	2	0	E2 transport
+MAR05035		Transport reactions	2	0	E2 transport
+MAR05037		Transport reactions	2	0	E2 transport
+MAR05038		Transport reactions	1	0	E2 transport
+MAR05039		Transport reactions	1	0	E2 transport
+MAR05040		Transport reactions	1	0	E2 transport
+MAR05041		Transport reactions	1	0	E2 transport
+MAR05042		Transport reactions	2	0	E2 transport
+MAR05068		Transport reactions	4	0	E2 transport
+MAR05070		Transport reactions	10	2	E2 transport
+MAR05071		Transport reactions	4	0	E2 transport
+MAR05073		Transport reactions	10	2	E2 transport
+MAR05074		Transport reactions	11	2	E2 transport
+MAR05076		Transport reactions	12	2	E2 transport
+MAR05077		Transport reactions	11	2	E2 transport
+MAR05078		Transport reactions	10	2	E2 transport
+MAR05079		Transport reactions	11	2	E2 transport
+MAR05080		Transport reactions	11	2	E2 transport
+MAR05082		Transport reactions	11	2	E2 transport
+MAR05084		Transport reactions	11	2	E2 transport
+MAR05085		Transport reactions	10	2	E2 transport
+MAR05087		Transport reactions	9	0	E2 transport
+MAR05088		Transport reactions	10	2	E2 transport
+MAR05089		Transport reactions	10	2	E2 transport
+MAR05091		Transport reactions	11	2	E2 transport
+MAR05092		Transport reactions	10	2	E2 transport
+MAR05094		Transport reactions	4	0	E2 transport
+MAR05129		Transport reactions	2	0	E2 transport
+MAR05241		Transport reactions	1	0	E2 transport
+MAR05246		Transport reactions	1	0	E2 transport
+MAR05305		Transport reactions	10	0	E2 transport
+MAR05307		Transport reactions	2	0	E2 transport
+MAR05308		Transport reactions	6	0	E2 transport
+MAR05311		Transport reactions	4	0	E2 transport
+MAR05313		Transport reactions	2	0	E2 transport
+MAR05314		Transport reactions	2	0	E2 transport
+MAR05315		Transport reactions	9	0	E2 transport
+MAR05316		Transport reactions	2	0	E2 transport
+MAR05317		Transport reactions	1	0	E2 transport
+MAR05318		Transport reactions	1	0	E2 transport
+MAR05319		Transport reactions	7	0	E2 transport
+MAR05320		Transport reactions	4	0	E2 transport
+MAR05322		Transport reactions	6	0	E2 transport
+MAR05324		Transport reactions	6	0	E2 transport
+MAR05326		Transport reactions	4	0	E2 transport
+MAR05328		Transport reactions	5	0	E2 transport
+MAR05330		Transport reactions	7	0	E2 transport
+MAR05332		Transport reactions	3	0	E2 transport
+MAR05333		Transport reactions	2	0	E2 transport
+MAR05335		Transport reactions	1	0	E2 transport
+MAR05429		Transport reactions	9	3	E2 transport
+MAR05430		Transport reactions	6	0	E2 transport
+MAR05432		Transport reactions	1	0	E2 transport
+MAR05433		Transport reactions	4	2	E2 transport
+MAR05435		Transport reactions	2	0	E2 transport
+MAR05436		Transport reactions	2	0	E2 transport
+MAR05437		Transport reactions	2	0	E2 transport
+MAR05438		Transport reactions	2	0	E2 transport
+MAR05439		Transport reactions	2	0	E2 transport
+MAR05441		Transport reactions	1	0	E2 transport
+MAR05442		Transport reactions	1	0	E2 transport
+MAR05443		Transport reactions	1	0	E2 transport
+MAR05444		Transport reactions	1	0	E2 transport
+MAR05445		Transport reactions	1	0	E2 transport
+MAR05446		Transport reactions	1	0	E2 transport
+MAR05447		Transport reactions	5	0	E2 transport
+MAR05448		Transport reactions	2	0	E2 transport
+MAR05450		Transport reactions	5	0	E2 transport
+MAR05451		Transport reactions	1	0	E2 transport
+MAR05454		Transport reactions	1	0	E2 transport
+MAR05455		Transport reactions	2	0	E2 transport
+MAR05457		Transport reactions	1	0	E2 transport
+MAR05458		Transport reactions	3	0	E2 transport
+MAR05459		Transport reactions	1	0	E2 transport
+MAR05460		Transport reactions	3	0	E2 transport
+MAR05461		Transport reactions	1	0	E2 transport
+MAR05462		Transport reactions	1	0	E2 transport
+MAR05463		Transport reactions	1	0	E2 transport
+MAR05464		Transport reactions	1	0	E2 transport
+MAR05465		Transport reactions	3	2	E2 transport
+MAR05466		Transport reactions	1	0	E2 transport
+MAR05467		Transport reactions	1	0	E2 transport
+MAR05468		Transport reactions	1	0	E2 transport
+MAR05469		Transport reactions	1	0	E2 transport
+MAR05470		Transport reactions	3	0	E2 transport
+MAR05471		Transport reactions	1	0	E2 transport
+MAR05472		Transport reactions	1	0	E2 transport
+MAR05473		Transport reactions	3	0	E2 transport
+MAR05474		Transport reactions	1	0	E2 transport
+MAR05475		Transport reactions	1	0	E2 transport
+MAR05476		Transport reactions	1	0	E2 transport
+MAR05477		Transport reactions	1	0	E2 transport
+MAR05478		Transport reactions	1	0	E2 transport
+MAR05479		Transport reactions	1	0	E2 transport
+MAR05480		Transport reactions	1	0	E2 transport
+MAR05481		Transport reactions	1	0	E2 transport
+MAR05482		Transport reactions	1	0	E2 transport
+MAR05483		Transport reactions	1	0	E2 transport
+MAR05484		Transport reactions	1	0	E2 transport
+MAR05485		Transport reactions	1	0	E2 transport
+MAR05486		Transport reactions	1	0	E2 transport
+MAR05487		Transport reactions	3	0	E2 transport
+MAR05488		Transport reactions	1	0	E2 transport
+MAR05489		Transport reactions	1	0	E2 transport
+MAR05490		Transport reactions	1	0	E2 transport
+MAR05491		Transport reactions	1	0	E2 transport
+MAR05492		Transport reactions	3	2	E2 transport
+MAR05493		Transport reactions	1	0	E2 transport
+MAR05494		Transport reactions	1	0	E2 transport
+MAR05495		Transport reactions	1	0	E2 transport
+MAR05496		Transport reactions	1	0	E2 transport
+MAR05497		Transport reactions	3	0	E2 transport
+MAR05498		Transport reactions	1	0	E2 transport
+MAR05499		Transport reactions	1	0	E2 transport
+MAR05500		Transport reactions	1	0	E2 transport
+MAR05501		Transport reactions	1	0	E2 transport
+MAR05502		Transport reactions	1	0	E2 transport
+MAR05503		Transport reactions	1	0	E2 transport
+MAR05504		Transport reactions	1	0	E2 transport
+MAR05505		Transport reactions	1	0	E2 transport
+MAR05506		Transport reactions	1	0	E2 transport
+MAR05507		Transport reactions	1	0	E2 transport
+MAR05508		Transport reactions	1	0	E2 transport
+MAR05509		Transport reactions	1	0	E2 transport
+MAR05510		Transport reactions	1	0	E2 transport
+MAR05511		Transport reactions	1	0	E2 transport
+MAR05512		Transport reactions	1	0	E2 transport
+MAR05513		Transport reactions	1	0	E2 transport
+MAR05514		Transport reactions	1	0	E2 transport
+MAR05515		Transport reactions	1	0	E2 transport
+MAR05516		Transport reactions	2	2	E2 transport
+MAR05517		Transport reactions	1	0	E2 transport
+MAR05518		Transport reactions	1	0	E2 transport
+MAR05519		Transport reactions	1	0	E2 transport
+MAR05520		Transport reactions	1	0	E2 transport
+MAR05521		Transport reactions	1	0	E2 transport
+MAR05522		Transport reactions	1	0	E2 transport
+MAR05523		Transport reactions	1	0	E2 transport
+MAR05524		Transport reactions	1	0	E2 transport
+MAR05525		Transport reactions	1	0	E2 transport
+MAR05526		Transport reactions	1	0	E2 transport
+MAR05527		Transport reactions	2	0	E2 transport
+MAR05528		Transport reactions	2	0	E2 transport
+MAR05529		Transport reactions	2	0	E2 transport
+MAR05530		Transport reactions	2	0	E2 transport
+MAR05531		Transport reactions	2	0	E2 transport
+MAR05532		Transport reactions	2	0	E2 transport
+MAR05533		Transport reactions	2	0	E2 transport
+MAR05534		Transport reactions	2	0	E2 transport
+MAR05535		Transport reactions	2	0	E2 transport
+MAR05536		Transport reactions	2	0	E2 transport
+MAR05537		Transport reactions	2	0	E2 transport
+MAR05538		Transport reactions	2	0	E2 transport
+MAR05539		Transport reactions	2	0	E2 transport
+MAR05540		Transport reactions	2	0	E2 transport
+MAR05541		Transport reactions	2	0	E2 transport
+MAR05542		Transport reactions	1	0	E2 transport
+MAR05543		Transport reactions	1	0	E2 transport
+MAR05544		Transport reactions	1	0	E2 transport
+MAR05545		Transport reactions	1	0	E2 transport
+MAR05546		Transport reactions	1	0	E2 transport
+MAR05547		Transport reactions	2	0	E2 transport
+MAR05548		Transport reactions	1	0	E2 transport
+MAR05549		Transport reactions	1	0	E2 transport
+MAR05550		Transport reactions	2	2	E2 transport
+MAR05551		Transport reactions	1	0	E2 transport
+MAR05552		Transport reactions	1	0	E2 transport
+MAR05553		Transport reactions	1	0	E2 transport
+MAR05554		Transport reactions	1	0	E2 transport
+MAR05555		Transport reactions	1	0	E2 transport
+MAR05556		Transport reactions	1	0	E2 transport
+MAR05557		Transport reactions	1	0	E2 transport
+MAR05558		Transport reactions	1	0	E2 transport
+MAR05559		Transport reactions	1	0	E2 transport
+MAR05560		Transport reactions	1	0	E2 transport
+MAR05561		Transport reactions	1	0	E2 transport
+MAR05562		Transport reactions	1	0	E2 transport
+MAR05563		Transport reactions	1	0	E2 transport
+MAR05564		Transport reactions	1	0	E2 transport
+MAR05565		Transport reactions	1	0	E2 transport
+MAR05566		Transport reactions	1	0	E2 transport
+MAR05567		Transport reactions	1	0	E2 transport
+MAR05568		Transport reactions	1	0	E2 transport
+MAR05569		Transport reactions	1	0	E2 transport
+MAR05570		Transport reactions	1	0	E2 transport
+MAR05571		Transport reactions	1	0	E2 transport
+MAR05572		Transport reactions	1	0	E2 transport
+MAR05573		Transport reactions	1	0	E2 transport
+MAR05574		Transport reactions	1	0	E2 transport
+MAR05575		Transport reactions	1	0	E2 transport
+MAR05576		Transport reactions	1	0	E2 transport
+MAR05577		Transport reactions	1	0	E2 transport
+MAR05578		Transport reactions	3	0	E2 transport
+MAR05579		Transport reactions	2	0	E2 transport
+MAR05580		Transport reactions	2	0	E2 transport
+MAR05581		Transport reactions	2	0	E2 transport
+MAR05582		Transport reactions	2	0	E2 transport
+MAR05583		Transport reactions	2	0	E2 transport
+MAR05584		Transport reactions	2	0	E2 transport
+MAR05585		Transport reactions	2	0	E2 transport
+MAR05586		Transport reactions	2	0	E2 transport
+MAR05587		Transport reactions	2	0	E2 transport
+MAR05588		Transport reactions	2	0	E2 transport
+MAR05589		Transport reactions	2	0	E2 transport
+MAR05590		Transport reactions	2	0	E2 transport
+MAR05591		Transport reactions	2	0	E2 transport
+MAR05592		Transport reactions	2	0	E2 transport
+MAR05593		Transport reactions	2	0	E2 transport
+MAR05594		Transport reactions	2	0	E2 transport
+MAR05595		Transport reactions	2	0	E2 transport
+MAR05596		Transport reactions	2	0	E2 transport
+MAR05597		Transport reactions	2	0	E2 transport
+MAR05598		Transport reactions	2	0	E2 transport
+MAR05599		Transport reactions	2	0	E2 transport
+MAR05600		Transport reactions	2	0	E2 transport
+MAR05601		Transport reactions	2	0	E2 transport
+MAR05602		Transport reactions	2	0	E2 transport
+MAR05603		Transport reactions	2	0	E2 transport
+MAR05604		Transport reactions	3	0	E2 transport
+MAR05605		Transport reactions	2	0	E2 transport
+MAR05606		Transport reactions	2	0	E2 transport
+MAR05607		Transport reactions	2	0	E2 transport
+MAR05608		Transport reactions	2	0	E2 transport
+MAR05609		Transport reactions	3	0	E2 transport
+MAR05610		Transport reactions	2	0	E2 transport
+MAR05611		Transport reactions	2	0	E2 transport
+MAR05612		Transport reactions	2	0	E2 transport
+MAR05613		Transport reactions	2	0	E2 transport
+MAR05614		Transport reactions	3	0	E2 transport
+MAR05615		Transport reactions	2	0	E2 transport
+MAR05616		Transport reactions	2	0	E2 transport
+MAR05617		Transport reactions	2	0	E2 transport
+MAR05618		Transport reactions	2	0	E2 transport
+MAR05619		Transport reactions	2	0	E2 transport
+MAR05620		Transport reactions	2	0	E2 transport
+MAR05621		Transport reactions	2	0	E2 transport
+MAR05622		Transport reactions	2	0	E2 transport
+MAR05623		Transport reactions	2	0	E2 transport
+MAR05624		Transport reactions	2	0	E2 transport
+MAR05625		Transport reactions	2	0	E2 transport
+MAR05626		Transport reactions	2	0	E2 transport
+MAR05627		Transport reactions	2	0	E2 transport
+MAR05628		Transport reactions	2	0	E2 transport
+MAR05629		Transport reactions	2	0	E2 transport
+MAR05630		Transport reactions	2	0	E2 transport
+MAR05631		Transport reactions	2	0	E2 transport
+MAR05632		Transport reactions	2	0	E2 transport
+MAR05633		Transport reactions	3	0	E2 transport
+MAR05634		Transport reactions	2	0	E2 transport
+MAR05635		Transport reactions	2	0	E2 transport
+MAR05636		Transport reactions	2	0	E2 transport
+MAR05637		Transport reactions	2	0	E2 transport
+MAR05638		Transport reactions	2	0	E2 transport
+MAR05639		Transport reactions	3	0	E2 transport
+MAR05640		Transport reactions	2	0	E2 transport
+MAR05641		Transport reactions	2	0	E2 transport
+MAR05642		Transport reactions	2	0	E2 transport
+MAR05643		Transport reactions	2	0	E2 transport
+MAR05644		Transport reactions	3	0	E2 transport
+MAR05645		Transport reactions	2	0	E2 transport
+MAR05646		Transport reactions	2	0	E2 transport
+MAR05647		Transport reactions	2	0	E2 transport
+MAR05648		Transport reactions	2	0	E2 transport
+MAR05649		Transport reactions	2	0	E2 transport
+MAR05650		Transport reactions	2	0	E2 transport
+MAR05651		Transport reactions	2	0	E2 transport
+MAR05652		Transport reactions	2	0	E2 transport
+MAR05653		Transport reactions	2	0	E2 transport
+MAR05654		Transport reactions	2	0	E2 transport
+MAR05655		Transport reactions	2	0	E2 transport
+MAR05656		Transport reactions	2	0	E2 transport
+MAR05657		Transport reactions	2	0	E2 transport
+MAR05658		Transport reactions	2	0	E2 transport
+MAR05659		Transport reactions	2	0	E2 transport
+MAR05660		Transport reactions	2	0	E2 transport
+MAR05661		Transport reactions	2	0	E2 transport
+MAR05662		Transport reactions	2	0	E2 transport
+MAR05663		Transport reactions	2	0	E2 transport
+MAR05664		Transport reactions	2	0	E2 transport
+MAR05665		Transport reactions	2	0	E2 transport
+MAR05666		Transport reactions	2	0	E2 transport
+MAR05667		Transport reactions	2	0	E2 transport
+MAR05668		Transport reactions	2	0	E2 transport
+MAR05669		Transport reactions	2	0	E2 transport
+MAR05670		Transport reactions	2	0	E2 transport
+MAR05671		Transport reactions	2	0	E2 transport
+MAR05672		Transport reactions	2	0	E2 transport
+MAR05673		Transport reactions	2	0	E2 transport
+MAR05674		Transport reactions	2	0	E2 transport
+MAR05675		Transport reactions	2	0	E2 transport
+MAR05676		Transport reactions	2	0	E2 transport
+MAR05677		Transport reactions	1	0	E2 transport
+MAR05678		Transport reactions	1	0	E2 transport
+MAR05679		Transport reactions	1	0	E2 transport
+MAR05680		Transport reactions	1	0	E2 transport
+MAR05681		Transport reactions	1	0	E2 transport
+MAR05682		Transport reactions	1	0	E2 transport
+MAR05683		Transport reactions	1	0	E2 transport
+MAR05684		Transport reactions	1	0	E2 transport
+MAR05685		Transport reactions	1	0	E2 transport
+MAR05686		Transport reactions	1	0	E2 transport
+MAR05687		Transport reactions	1	0	E2 transport
+MAR05688		Transport reactions	1	0	E2 transport
+MAR05689		Transport reactions	1	0	E2 transport
+MAR05690		Transport reactions	1	0	E2 transport
+MAR05691		Transport reactions	1	0	E2 transport
+MAR05692		Transport reactions	1	0	E2 transport
+MAR05693		Transport reactions	1	0	E2 transport
+MAR05694		Transport reactions	1	0	E2 transport
+MAR05695		Transport reactions	1	0	E2 transport
+MAR05696		Transport reactions	1	0	E2 transport
+MAR05697		Transport reactions	1	0	E2 transport
+MAR05698		Transport reactions	1	0	E2 transport
+MAR05699		Transport reactions	1	0	E2 transport
+MAR05700		Transport reactions	1	0	E2 transport
+MAR05701		Transport reactions	1	0	E2 transport
+MAR05702		Transport reactions	1	0	E2 transport
+MAR05703		Transport reactions	1	0	E2 transport
+MAR05704		Transport reactions	1	0	E2 transport
+MAR05705		Transport reactions	1	0	E2 transport
+MAR05706		Transport reactions	1	0	E2 transport
+MAR05707		Transport reactions	1	0	E2 transport
+MAR05708		Transport reactions	3	0	E2 transport
+MAR05709		Transport reactions	3	0	E2 transport
+MAR05710		Transport reactions	3	0	E2 transport
+MAR05711		Transport reactions	1	0	E2 transport
+MAR05712		Transport reactions	1	0	E2 transport
+MAR05713		Transport reactions	1	0	E2 transport
+MAR05714		Transport reactions	1	0	E2 transport
+MAR05715		Transport reactions	1	0	E2 transport
+MAR05716		Transport reactions	1	0	E2 transport
+MAR05717		Transport reactions	3	0	E2 transport
+MAR05718		Transport reactions	1	0	E2 transport
+MAR05719		Transport reactions	4	0	E2 transport
+MAR05720		Transport reactions	1	0	E2 transport
+MAR05721		Transport reactions	1	0	E2 transport
+MAR05722		Transport reactions	1	0	E2 transport
+MAR05723		Transport reactions	1	0	E2 transport
+MAR05724		Transport reactions	1	0	E2 transport
+MAR05725		Transport reactions	1	0	E2 transport
+MAR05726		Transport reactions	1	0	E2 transport
+MAR05727		Transport reactions	1	0	E2 transport
+MAR05728		Transport reactions	1	0	E2 transport
+MAR05729		Transport reactions	1	0	E2 transport
+MAR05730		Transport reactions	1	0	E2 transport
+MAR05731		Transport reactions	1	0	E2 transport
+MAR05732		Transport reactions	1	0	E2 transport
+MAR05733		Transport reactions	1	0	E2 transport
+MAR05734		Transport reactions	1	0	E2 transport
+MAR05735		Transport reactions	1	0	E2 transport
+MAR05736		Transport reactions	1	0	E2 transport
+MAR05737		Transport reactions	1	0	E2 transport
+MAR05738		Transport reactions	1	0	E2 transport
+MAR05739		Transport reactions	1	0	E2 transport
+MAR05740		Transport reactions	1	0	E2 transport
+MAR05741		Transport reactions	1	0	E2 transport
+MAR05742		Transport reactions	1	0	E2 transport
+MAR05743		Transport reactions	1	0	E2 transport
+MAR05744		Transport reactions	1	0	E2 transport
+MAR05745		Transport reactions	1	0	E2 transport
+MAR05746		Transport reactions	1	0	E2 transport
+MAR05747		Transport reactions	1	0	E2 transport
+MAR05748		Transport reactions	1	0	E2 transport
+MAR05749		Transport reactions	1	0	E2 transport
+MAR05750		Transport reactions	1	0	E2 transport
+MAR05751		Transport reactions	1	0	E2 transport
+MAR05752		Transport reactions	1	0	E2 transport
+MAR05753		Transport reactions	2	0	E2 transport
+MAR05754		Transport reactions	2	0	E2 transport
+MAR05755		Transport reactions	2	0	E2 transport
+MAR05756		Transport reactions	1	0	E2 transport
+MAR05757		Transport reactions	1	0	E2 transport
+MAR05758		Transport reactions	1	0	E2 transport
+MAR05759		Transport reactions	1	0	E2 transport
+MAR05760		Transport reactions	2	0	E2 transport
+MAR05761		Transport reactions	1	0	E2 transport
+MAR05762		Transport reactions	1	0	E2 transport
+MAR05763		Transport reactions	1	0	E2 transport
+MAR05764		Transport reactions	2	0	E2 transport
+MAR05765		Transport reactions	1	0	E2 transport
+MAR05766		Transport reactions	1	0	E2 transport
+MAR05767		Transport reactions	1	0	E2 transport
+MAR05768		Transport reactions	1	0	E2 transport
+MAR05769		Transport reactions	1	0	E2 transport
+MAR05770		Transport reactions	1	0	E2 transport
+MAR05771		Transport reactions	1	0	E2 transport
+MAR05772		Transport reactions	1	0	E2 transport
+MAR05773		Transport reactions	1	0	E2 transport
+MAR05774		Transport reactions	1	0	E2 transport
+MAR05775		Transport reactions	1	0	E2 transport
+MAR05776		Transport reactions	1	0	E2 transport
+MAR05777		Transport reactions	1	0	E2 transport
+MAR05778		Transport reactions	1	0	E2 transport
+MAR05779		Transport reactions	1	0	E2 transport
+MAR05780		Transport reactions	1	0	E2 transport
+MAR05781		Transport reactions	1	0	E2 transport
+MAR05782		Transport reactions	1	0	E2 transport
+MAR05783		Transport reactions	3	0	E2 transport
+MAR05784		Transport reactions	2	0	E2 transport
+MAR05785		Transport reactions	3	0	E2 transport
+MAR05786		Transport reactions	1	0	E2 transport
+MAR05787		Transport reactions	1	0	E2 transport
+MAR05788		Transport reactions	1	0	E2 transport
+MAR05789		Transport reactions	1	0	E2 transport
+MAR05790		Transport reactions	3	0	E2 transport
+MAR05791		Transport reactions	1	0	E2 transport
+MAR05792		Transport reactions	1	0	E2 transport
+MAR05793		Transport reactions	2	0	E2 transport
+MAR05794		Transport reactions	1	0	E2 transport
+MAR05795		Transport reactions	1	0	E2 transport
+MAR05796		Transport reactions	1	0	E2 transport
+MAR05797		Transport reactions	1	0	E2 transport
+MAR05798		Transport reactions	1	0	E2 transport
+MAR05799		Transport reactions	1	0	E2 transport
+MAR05800		Transport reactions	1	0	E2 transport
+MAR05801		Transport reactions	1	0	E2 transport
+MAR05802		Transport reactions	1	0	E2 transport
+MAR05803		Transport reactions	1	0	E2 transport
+MAR05804		Transport reactions	1	0	E2 transport
+MAR05805		Transport reactions	1	0	E2 transport
+MAR05806		Transport reactions	1	0	E2 transport
+MAR05807		Transport reactions	1	0	E2 transport
+MAR05808		Transport reactions	1	0	E2 transport
+MAR05809		Transport reactions	1	0	E2 transport
+MAR05810		Transport reactions	1	0	E2 transport
+MAR05811		Transport reactions	1	0	E2 transport
+MAR05812		Transport reactions	1	0	E2 transport
+MAR05813		Transport reactions	1	0	E2 transport
+MAR05814		Transport reactions	1	0	E2 transport
+MAR05815		Transport reactions	1	0	E2 transport
+MAR05816		Transport reactions	1	0	E2 transport
+MAR05817		Transport reactions	1	0	E2 transport
+MAR05818		Transport reactions	1	0	E2 transport
+MAR05819		Transport reactions	1	0	E2 transport
+MAR05820		Transport reactions	1	0	E2 transport
+MAR05821		Transport reactions	1	0	E2 transport
+MAR05822		Transport reactions	1	0	E2 transport
+MAR05823		Transport reactions	1	0	E2 transport
+MAR05824		Transport reactions	1	0	E2 transport
+MAR05825		Transport reactions	1	0	E2 transport
+MAR05826		Transport reactions	1	0	E2 transport
+MAR05827		Transport reactions	1	0	E2 transport
+MAR05828		Transport reactions	1	0	E2 transport
+MAR05829		Transport reactions	1	0	E2 transport
+MAR05830		Transport reactions	1	0	E2 transport
+MAR05831		Transport reactions	1	0	E2 transport
+MAR05832		Transport reactions	1	0	E2 transport
+MAR05833		Transport reactions	1	0	E2 transport
+MAR05834		Transport reactions	1	0	E2 transport
+MAR05835		Transport reactions	1	0	E2 transport
+MAR05836		Transport reactions	1	0	E2 transport
+MAR05837		Transport reactions	1	0	E2 transport
+MAR05838		Transport reactions	1	0	E2 transport
+MAR05839		Transport reactions	1	0	E2 transport
+MAR05840		Transport reactions	1	0	E2 transport
+MAR05841		Transport reactions	1	0	E2 transport
+MAR05842		Transport reactions	3	0	E2 transport
+MAR05843		Transport reactions	1	0	E2 transport
+MAR05844		Transport reactions	1	0	E2 transport
+MAR05845		Transport reactions	1	0	E2 transport
+MAR05846		Transport reactions	1	0	E2 transport
+MAR05847		Transport reactions	1	0	E2 transport
+MAR05848		Transport reactions	1	0	E2 transport
+MAR05849		Transport reactions	1	0	E2 transport
+MAR05850		Transport reactions	1	0	E2 transport
+MAR05851		Transport reactions	1	0	E2 transport
+MAR05852		Transport reactions	1	0	E2 transport
+MAR05853		Transport reactions	1	0	E2 transport
+MAR05854		Transport reactions	1	0	E2 transport
+MAR05855		Transport reactions	1	0	E2 transport
+MAR05856		Transport reactions	1	0	E2 transport
+MAR05857		Transport reactions	1	0	E2 transport
+MAR05858		Transport reactions	1	0	E2 transport
+MAR05859		Transport reactions	1	0	E2 transport
+MAR05860		Transport reactions	1	0	E2 transport
+MAR05861		Transport reactions	1	0	E2 transport
+MAR05862		Transport reactions	1	0	E2 transport
+MAR05863		Transport reactions	1	0	E2 transport
+MAR05864		Transport reactions	1	0	E2 transport
+MAR05865		Transport reactions	1	0	E2 transport
+MAR05866		Transport reactions	1	0	E2 transport
+MAR05867		Transport reactions	1	0	E2 transport
+MAR05868		Transport reactions	1	0	E2 transport
+MAR05869		Transport reactions	1	0	E2 transport
+MAR05870		Transport reactions	1	0	E2 transport
+MAR05871		Transport reactions	1	0	E2 transport
+MAR05872		Transport reactions	1	0	E2 transport
+MAR05873		Transport reactions	3	0	E2 transport
+MAR05874		Transport reactions	1	0	E2 transport
+MAR05875		Transport reactions	1	0	E2 transport
+MAR05876		Transport reactions	1	0	E2 transport
+MAR05877		Transport reactions	1	0	E2 transport
+MAR05878		Transport reactions	1	0	E2 transport
+MAR05879		Transport reactions	1	0	E2 transport
+MAR05880		Transport reactions	1	0	E2 transport
+MAR05881		Transport reactions	1	0	E2 transport
+MAR05882		Transport reactions	1	0	E2 transport
+MAR05883		Transport reactions	1	0	E2 transport
+MAR05884		Transport reactions	1	0	E2 transport
+MAR05885		Transport reactions	1	0	E2 transport
+MAR05886		Transport reactions	1	0	E2 transport
+MAR05887		Transport reactions	1	0	E2 transport
+MAR05888		Transport reactions	1	0	E2 transport
+MAR05889		Transport reactions	1	0	E2 transport
+MAR05890		Transport reactions	1	0	E2 transport
+MAR05891		Transport reactions	1	0	E2 transport
+MAR05892		Transport reactions	1	0	E2 transport
+MAR05893		Transport reactions	1	0	E2 transport
+MAR05894		Transport reactions	1	0	E2 transport
+MAR05895		Transport reactions	1	0	E2 transport
+MAR05896		Transport reactions	1	0	E2 transport
+MAR05897		Transport reactions	1	0	E2 transport
+MAR05898		Transport reactions	1	0	E2 transport
+MAR05899		Transport reactions	1	0	E2 transport
+MAR05900		Transport reactions	1	0	E2 transport
+MAR05901		Transport reactions	1	0	E2 transport
+MAR05902		Transport reactions	1	0	E2 transport
+MAR05903		Transport reactions	1	0	E2 transport
+MAR05904		Transport reactions	1	0	E2 transport
+MAR05905		Transport reactions	1	0	E2 transport
+MAR05906		Transport reactions	1	0	E2 transport
+MAR05907		Transport reactions	3	3	E2 transport
+MAR05908		Transport reactions	3	3	E2 transport
+MAR05909		Transport reactions	3	3	E2 transport
+MAR05910		Transport reactions	3	3	E2 transport
+MAR05911		Transport reactions	3	3	E2 transport
+MAR05912		Transport reactions	3	3	E2 transport
+MAR05913		Transport reactions	3	3	E2 transport
+MAR05914		Transport reactions	3	3	E2 transport
+MAR05915		Transport reactions	3	3	E2 transport
+MAR05916		Transport reactions	3	3	E2 transport
+MAR05917		Transport reactions	3	3	E2 transport
+MAR05918		Transport reactions	3	3	E2 transport
+MAR05919		Transport reactions	3	3	E2 transport
+MAR05920		Transport reactions	3	3	E2 transport
+MAR05921		Transport reactions	3	3	E2 transport
+MAR05922		Transport reactions	3	3	E2 transport
+MAR05923		Transport reactions	3	3	E2 transport
+MAR05924		Transport reactions	3	3	E2 transport
+MAR05925		Transport reactions	3	3	E2 transport
+MAR05926		Transport reactions	3	3	E2 transport
+MAR05927		Transport reactions	3	3	E2 transport
+MAR05928		Transport reactions	3	3	E2 transport
+MAR05929		Transport reactions	3	3	E2 transport
+MAR05930		Transport reactions	3	3	E2 transport
+MAR05931		Transport reactions	3	3	E2 transport
+MAR05932		Transport reactions	3	3	E2 transport
+MAR05933		Transport reactions	3	3	E2 transport
+MAR05934		Transport reactions	3	3	E2 transport
+MAR05935		Transport reactions	3	3	E2 transport
+MAR05936		Transport reactions	3	3	E2 transport
+MAR05937		Transport reactions	3	3	E2 transport
+MAR05938		Transport reactions	3	3	E2 transport
+MAR05939		Transport reactions	3	3	E2 transport
+MAR05940		Transport reactions	3	3	E2 transport
+MAR05941		Transport reactions	3	3	E2 transport
+MAR05942		Transport reactions	3	3	E2 transport
+MAR05943		Transport reactions	3	3	E2 transport
+MAR05944		Transport reactions	3	3	E2 transport
+MAR05945		Transport reactions	3	3	E2 transport
+MAR05946		Transport reactions	3	3	E2 transport
+MAR05947		Transport reactions	3	3	E2 transport
+MAR05948		Transport reactions	3	3	E2 transport
+MAR05949		Transport reactions	3	3	E2 transport
+MAR05950		Transport reactions	3	3	E2 transport
+MAR05951		Transport reactions	3	3	E2 transport
+MAR05952		Transport reactions	3	3	E2 transport
+MAR05953		Transport reactions	3	3	E2 transport
+MAR05954		Transport reactions	3	3	E2 transport
+MAR05955		Transport reactions	3	3	E2 transport
+MAR05956		Transport reactions	3	3	E2 transport
+MAR05957		Transport reactions	3	3	E2 transport
+MAR05958		Transport reactions	3	3	E2 transport
+MAR05959		Transport reactions	3	3	E2 transport
+MAR05960		Transport reactions	3	3	E2 transport
+MAR05961		Transport reactions	3	3	E2 transport
+MAR05962		Transport reactions	3	3	E2 transport
+MAR05963		Transport reactions	3	3	E2 transport
+MAR05964		Transport reactions	3	3	E2 transport
+MAR05965		Transport reactions	3	3	E2 transport
+MAR05966		Transport reactions	3	3	E2 transport
+MAR05967		Transport reactions	3	3	E2 transport
+MAR05968		Transport reactions	3	3	E2 transport
+MAR05969		Transport reactions	3	3	E2 transport
+MAR05970		Transport reactions	3	3	E2 transport
+MAR05971		Transport reactions	3	3	E2 transport
+MAR05972		Transport reactions	3	3	E2 transport
+MAR05973		Transport reactions	3	3	E2 transport
+MAR05974		Transport reactions	3	3	E2 transport
+MAR05975		Transport reactions	3	3	E2 transport
+MAR05976		Transport reactions	3	3	E2 transport
+MAR05977		Transport reactions	3	3	E2 transport
+MAR05978		Transport reactions	3	3	E2 transport
+MAR05979		Transport reactions	3	3	E2 transport
+MAR05980		Transport reactions	3	3	E2 transport
+MAR05981		Transport reactions	3	3	E2 transport
+MAR05982		Transport reactions	3	3	E2 transport
+MAR05983		Transport reactions	3	3	E2 transport
+MAR05984		Transport reactions	3	3	E2 transport
+MAR05985		Transport reactions	3	3	E2 transport
+MAR05986		Transport reactions	3	3	E2 transport
+MAR05987		Transport reactions	3	0	E2 transport
+MAR05989		Transport reactions	11	0	E2 transport
+MAR05990		Transport reactions	4	0	E2 transport
+MAR05992		Transport reactions	1	0	E2 transport
+MAR05994		Transport reactions	2	0	E2 transport
+MAR05995		Transport reactions	1	0	E2 transport
+MAR05996		Transport reactions	2	0	E2 transport
+MAR05997		Transport reactions	1	0	E2 transport
+MAR05998		Transport reactions	7	0	E2 transport
+MAR06000		Transport reactions	7	0	E2 transport
+MAR06001		Transport reactions	7	0	E2 transport
+MAR06002		Transport reactions	7	0	E2 transport
+MAR06003		Transport reactions	7	0	E2 transport
+MAR06004		Transport reactions	7	0	E2 transport
+MAR06005		Transport reactions	7	0	E2 transport
+MAR06006		Transport reactions	7	0	E2 transport
+MAR06007		Transport reactions	7	0	E2 transport
+MAR06008		Transport reactions	7	0	E2 transport
+MAR06009		Transport reactions	7	0	E2 transport
+MAR06010		Transport reactions	7	0	E2 transport
+MAR06011		Transport reactions	7	0	E2 transport
+MAR06012		Transport reactions	7	0	E2 transport
+MAR06013		Transport reactions	7	0	E2 transport
+MAR06014		Transport reactions	7	0	E2 transport
+MAR06015		Transport reactions	7	0	E2 transport
+MAR06016		Transport reactions	7	0	E2 transport
+MAR06017		Transport reactions	7	0	E2 transport
+MAR06018		Transport reactions	7	0	E2 transport
+MAR06019		Transport reactions	7	0	E2 transport
+MAR06020		Transport reactions	7	0	E2 transport
+MAR06021		Transport reactions	7	0	E2 transport
+MAR06022		Transport reactions	7	0	E2 transport
+MAR06023		Transport reactions	7	0	E2 transport
+MAR06024		Transport reactions	7	0	E2 transport
+MAR06025		Transport reactions	7	0	E2 transport
+MAR06026		Transport reactions	7	0	E2 transport
+MAR06027		Transport reactions	7	0	E2 transport
+MAR06028		Transport reactions	7	0	E2 transport
+MAR06029		Transport reactions	7	0	E2 transport
+MAR06030		Transport reactions	7	0	E2 transport
+MAR06031		Transport reactions	7	0	E2 transport
+MAR06032		Transport reactions	7	0	E2 transport
+MAR06033		Transport reactions	7	0	E2 transport
+MAR06034		Transport reactions	7	0	E2 transport
+MAR06035		Transport reactions	7	0	E2 transport
+MAR06036		Transport reactions	7	0	E2 transport
+MAR06037		Transport reactions	7	0	E2 transport
+MAR06038		Transport reactions	7	0	E2 transport
+MAR06039		Transport reactions	7	0	E2 transport
+MAR06040		Transport reactions	7	0	E2 transport
+MAR06041		Transport reactions	7	0	E2 transport
+MAR06042		Transport reactions	7	0	E2 transport
+MAR06043		Transport reactions	7	0	E2 transport
+MAR06044		Transport reactions	7	0	E2 transport
+MAR06045		Transport reactions	7	0	E2 transport
+MAR06046		Transport reactions	7	0	E2 transport
+MAR06047		Transport reactions	7	0	E2 transport
+MAR06048		Transport reactions	7	0	E2 transport
+MAR06049		Transport reactions	7	0	E2 transport
+MAR06050		Transport reactions	7	0	E2 transport
+MAR06051		Transport reactions	7	0	E2 transport
+MAR06052		Transport reactions	7	0	E2 transport
+MAR06053		Transport reactions	7	0	E2 transport
+MAR06054		Transport reactions	7	0	E2 transport
+MAR06055		Transport reactions	5	0	E2 transport
+MAR06056		Transport reactions	1	0	E2 transport
+MAR06057		Transport reactions	1	0	E2 transport
+MAR06058		Transport reactions	2	0	E2 transport
+MAR06059		Transport reactions	2	0	E2 transport
+MAR06060		Transport reactions	2	2	E2 transport
+MAR06061		Transport reactions	2	2	E2 transport
+MAR06062		Transport reactions	2	2	E2 transport
+MAR06063		Transport reactions	2	2	E2 transport
+MAR06064		Transport reactions	2	2	E2 transport
+MAR06065		Transport reactions	2	2	E2 transport
+MAR06066		Transport reactions	2	2	E2 transport
+MAR06067		Transport reactions	2	2	E2 transport
+MAR06068		Transport reactions	2	2	E2 transport
+MAR06069		Transport reactions	2	2	E2 transport
+MAR06070		Transport reactions	2	2	E2 transport
+MAR06071		Transport reactions	2	2	E2 transport
+MAR06072		Transport reactions	2	2	E2 transport
+MAR06073		Transport reactions	2	2	E2 transport
+MAR06074		Transport reactions	2	2	E2 transport
+MAR06075		Transport reactions	2	2	E2 transport
+MAR06076		Transport reactions	2	2	E2 transport
+MAR06077		Transport reactions	2	2	E2 transport
+MAR06078		Transport reactions	2	2	E2 transport
+MAR06079		Transport reactions	2	2	E2 transport
+MAR06080		Transport reactions	2	2	E2 transport
+MAR06081		Transport reactions	2	2	E2 transport
+MAR06082		Transport reactions	2	2	E2 transport
+MAR06083		Transport reactions	2	2	E2 transport
+MAR06084		Transport reactions	2	2	E2 transport
+MAR06085		Transport reactions	2	2	E2 transport
+MAR06086		Transport reactions	2	2	E2 transport
+MAR06087		Transport reactions	2	2	E2 transport
+MAR06088		Transport reactions	2	2	E2 transport
+MAR06089		Transport reactions	2	2	E2 transport
+MAR06090		Transport reactions	2	2	E2 transport
+MAR06091		Transport reactions	2	2	E2 transport
+MAR06092		Transport reactions	2	2	E2 transport
+MAR06093		Transport reactions	2	2	E2 transport
+MAR06094		Transport reactions	2	2	E2 transport
+MAR06095		Transport reactions	2	2	E2 transport
+MAR06096		Transport reactions	4	0	E2 transport
+MAR06097		Transport reactions	2	2	E2 transport
+MAR06098		Transport reactions	5	0	E2 transport
+MAR06099		Transport reactions	2	2	E2 transport
+MAR06100		Transport reactions	2	2	E2 transport
+MAR06101		Transport reactions	4	0	E2 transport
+MAR06102		Transport reactions	2	2	E2 transport
+MAR06103		Transport reactions	1	0	E2 transport
+MAR06104		Transport reactions	1	0	E2 transport
+MAR06105		Transport reactions	1	0	E2 transport
+MAR06106		Transport reactions	1	0	E2 transport
+MAR06107		Transport reactions	1	0	E2 transport
+MAR06108		Transport reactions	2	2	E2 transport
+MAR06109		Transport reactions	2	2	E2 transport
+MAR06110		Transport reactions	2	2	E2 transport
+MAR06111		Transport reactions	2	2	E2 transport
+MAR06112		Transport reactions	2	2	E2 transport
+MAR06113		Transport reactions	2	2	E2 transport
+MAR06114		Transport reactions	2	2	E2 transport
+MAR06115		Transport reactions	2	2	E2 transport
+MAR06116		Transport reactions	2	2	E2 transport
+MAR06117		Transport reactions	2	2	E2 transport
+MAR06118		Transport reactions	2	2	E2 transport
+MAR06119		Transport reactions	2	2	E2 transport
+MAR06120		Transport reactions	2	2	E2 transport
+MAR06121		Transport reactions	2	2	E2 transport
+MAR06122		Transport reactions	2	2	E2 transport
+MAR06123		Transport reactions	1	0	E2 transport
+MAR06124		Transport reactions	1	0	E2 transport
+MAR06125		Transport reactions	1	0	E2 transport
+MAR06126		Transport reactions	1	0	E2 transport
+MAR06127		Transport reactions	1	0	E2 transport
+MAR06128		Transport reactions	1	0	E2 transport
+MAR06129		Transport reactions	7	0	E2 transport
+MAR06130		Transport reactions	1	0	E2 transport
+MAR06131		Transport reactions	1	0	E2 transport
+MAR06132		Transport reactions	1	0	E2 transport
+MAR06133		Transport reactions	1	0	E2 transport
+MAR06134		Transport reactions	1	0	E2 transport
+MAR06135		Transport reactions	1	0	E2 transport
+MAR06136		Transport reactions	1	0	E2 transport
+MAR06137		Transport reactions	1	0	E2 transport
+MAR06138		Transport reactions	1	0	E2 transport
+MAR06139		Transport reactions	1	0	E2 transport
+MAR06140		Transport reactions	1	0	E2 transport
+MAR06141		Transport reactions	1	0	E2 transport
+MAR06145		Transport reactions	1	0	E2 transport
+MAR06146		Transport reactions	1	0	E2 transport
+MAR06147		Transport reactions	1	0	E2 transport
+MAR06148		Transport reactions	1	0	E2 transport
+MAR06149		Transport reactions	1	0	E2 transport
+MAR06150		Transport reactions	1	0	E2 transport
+MAR06151		Transport reactions	1	0	E2 transport
+MAR06152		Transport reactions	1	0	E2 transport
+MAR06153		Transport reactions	1	0	E2 transport
+MAR06154		Transport reactions	1	0	E2 transport
+MAR06155		Transport reactions	1	0	E2 transport
+MAR06156		Transport reactions	1	0	E2 transport
+MAR06157		Transport reactions	1	0	E2 transport
+MAR06158		Transport reactions	1	0	E2 transport
+MAR06159		Transport reactions	1	0	E2 transport
+MAR06160		Transport reactions	1	0	E2 transport
+MAR06161		Transport reactions	1	0	E2 transport
+MAR06162		Transport reactions	1	0	E2 transport
+MAR06163		Transport reactions	1	0	E2 transport
+MAR06164		Transport reactions	1	0	E2 transport
+MAR06165		Transport reactions	1	0	E2 transport
+MAR06166		Transport reactions	1	0	E2 transport
+MAR06167		Transport reactions	1	0	E2 transport
+MAR06168		Transport reactions	1	0	E2 transport
+MAR06169		Transport reactions	1	0	E2 transport
+MAR06170		Transport reactions	1	0	E2 transport
+MAR06171		Transport reactions	1	0	E2 transport
+MAR06172		Transport reactions	1	0	E2 transport
+MAR06173		Transport reactions	1	0	E2 transport
+MAR06174		Transport reactions	1	0	E2 transport
+MAR06175		Transport reactions	1	0	E2 transport
+MAR06176		Transport reactions	1	0	E2 transport
+MAR06177		Transport reactions	1	0	E2 transport
+MAR06178		Transport reactions	1	0	E2 transport
+MAR06179		Transport reactions	1	0	E2 transport
+MAR06180		Transport reactions	1	0	E2 transport
+MAR06181		Transport reactions	1	0	E2 transport
+MAR06182		Transport reactions	1	0	E2 transport
+MAR06183		Transport reactions	1	0	E2 transport
+MAR06184		Transport reactions	1	0	E2 transport
+MAR06185		Transport reactions	1	0	E2 transport
+MAR06186		Transport reactions	1	0	E2 transport
+MAR06187		Transport reactions	1	0	E2 transport
+MAR06188		Transport reactions	1	0	E2 transport
+MAR06189		Transport reactions	1	0	E2 transport
+MAR06190		Transport reactions	1	0	E2 transport
+MAR06191		Transport reactions	1	0	E2 transport
+MAR06192		Transport reactions	1	0	E2 transport
+MAR06193		Transport reactions	1	0	E2 transport
+MAR06194		Transport reactions	1	0	E2 transport
+MAR06195		Transport reactions	1	0	E2 transport
+MAR06196		Transport reactions	1	0	E2 transport
+MAR06197		Transport reactions	1	0	E2 transport
+MAR06198		Transport reactions	1	0	E2 transport
+MAR06199		Transport reactions	1	0	E2 transport
+MAR06200		Transport reactions	1	0	E2 transport
+MAR06201		Transport reactions	1	0	E2 transport
+MAR06202		Transport reactions	1	0	E2 transport
+MAR06203		Transport reactions	1	0	E2 transport
+MAR06204		Transport reactions	1	0	E2 transport
+MAR06205		Transport reactions	1	0	E2 transport
+MAR06206		Transport reactions	1	0	E2 transport
+MAR06207		Transport reactions	1	0	E2 transport
+MAR06208		Transport reactions	1	0	E2 transport
+MAR06209		Transport reactions	1	0	E2 transport
+MAR06210		Transport reactions	1	0	E2 transport
+MAR06211		Transport reactions	1	0	E2 transport
+MAR06212		Transport reactions	1	0	E2 transport
+MAR06213		Transport reactions	1	0	E2 transport
+MAR06214		Transport reactions	2	2	E2 transport
+MAR06215		Transport reactions	2	2	E2 transport
+MAR06216		Transport reactions	2	2	E2 transport
+MAR06217		Transport reactions	2	2	E2 transport
+MAR06218		Transport reactions	1	0	E2 transport
+MAR06219		Transport reactions	1	0	E2 transport
+MAR06221		Transport reactions	1	0	E2 transport
+MAR06222		Transport reactions	1	0	E2 transport
+MAR06223		Transport reactions	1	0	E2 transport
+MAR06224		Transport reactions	1	0	E2 transport
+MAR06225		Transport reactions	1	0	E2 transport
+MAR06226		Transport reactions	1	0	E2 transport
+MAR06227		Transport reactions	1	0	E2 transport
+MAR06228		Transport reactions	1	0	E2 transport
+MAR06229		Transport reactions	1	0	E2 transport
+MAR06230		Transport reactions	1	0	E2 transport
+MAR06231		Transport reactions	1	0	E2 transport
+MAR06232		Transport reactions	1	0	E2 transport
+MAR06233		Transport reactions	1	0	E2 transport
+MAR06234		Transport reactions	1	0	E2 transport
+MAR06235		Transport reactions	1	0	E2 transport
+MAR06236		Transport reactions	1	0	E2 transport
+MAR06237		Transport reactions	1	0	E2 transport
+MAR06238		Transport reactions	1	0	E2 transport
+MAR06239		Transport reactions	1	0	E2 transport
+MAR06240		Transport reactions	1	0	E2 transport
+MAR06241		Transport reactions	4	0	E2 transport
+MAR06242		Transport reactions	2	0	E2 transport
+MAR06243		Transport reactions	4	0	E2 transport
+MAR06244		Transport reactions	1	0	E2 transport
+MAR06245		Transport reactions	3	0	E2 transport
+MAR06246		Transport reactions	5	0	E2 transport
+MAR06247		Transport reactions	4	0	E2 transport
+MAR06248		Transport reactions	1	0	E2 transport
+MAR06249		Transport reactions	2	0	E2 transport
+MAR06250		Transport reactions	1	0	E2 transport
+MAR06253		Transport reactions	1	0	E2 transport
+MAR06254		Transport reactions	1	0	E2 transport
+MAR06255		Transport reactions	1	0	E2 transport
+MAR06256		Transport reactions	1	0	E2 transport
+MAR06257		Transport reactions	3	0	E2 transport
+MAR06258		Transport reactions	1	0	E2 transport
+MAR06259		Transport reactions	1	0	E2 transport
+MAR06261		Transport reactions	1	0	E2 transport
+MAR06262		Transport reactions	1	0	E2 transport
+MAR06263		Transport reactions	1	0	E2 transport
+MAR06264		Transport reactions	1	0	E2 transport
+MAR06265		Transport reactions	1	0	E2 transport
+MAR06266		Transport reactions	1	0	E2 transport
+MAR06267		Transport reactions	1	0	E2 transport
+MAR06268		Transport reactions	2	0	E2 transport
+MAR06270		Transport reactions	1	0	E2 transport
+MAR06271		Transport reactions	1	0	E2 transport
+MAR06272		Transport reactions	1	0	E2 transport
+MAR06273		Transport reactions	1	0	E2 transport
+MAR06274		Transport reactions	1	0	E2 transport
+MAR06275		Transport reactions	2	0	E2 transport
+MAR06351		Transport reactions	2	0	E2 transport
+MAR06352		Transport reactions	3	0	E2 transport
+MAR06353		Transport reactions	2	0	E2 transport
+MAR06354		Transport reactions	2	0	E2 transport
+MAR06355		Transport reactions	1	0	E2 transport
+MAR06356		Transport reactions	1	0	E2 transport
+MAR06357		Transport reactions	1	0	E2 transport
+MAR06358		Transport reactions	1	0	E2 transport
+MAR06359		Transport reactions	1	0	E2 transport
+MAR06360		Transport reactions	1	0	E2 transport
+MAR06361		Transport reactions	1	0	E2 transport
+MAR06362		Transport reactions	1	0	E2 transport
+MAR06363		Transport reactions	1	0	E2 transport
+MAR06364		Transport reactions	1	0	E2 transport
+MAR06365		Transport reactions	1	0	E2 transport
+MAR06366		Transport reactions	2	0	E2 transport
+MAR06367		Transport reactions	2	0	E2 transport
+MAR06368		Transport reactions	2	0	E2 transport
+MAR06369		Transport reactions	2	0	E2 transport
+MAR06370		Transport reactions	1	0	E2 transport
+MAR06371		Transport reactions	4	0	E2 transport
+MAR06372		Transport reactions	4	0	E2 transport
+MAR06373		Transport reactions	4	0	E2 transport
+MAR06374		Transport reactions	4	0	E2 transport
+MAR06375		Transport reactions	5	0	E2 transport
+MAR06377		Transport reactions	5	0	E2 transport
+MAR06379		Transport reactions	3	0	E2 transport
+MAR06380		Transport reactions	2	0	E2 transport
+MAR06381		Transport reactions	4	0	E2 transport
+MAR06382		Transport reactions	4	0	E2 transport
+MAR06383		Transport reactions	3	0	E2 transport
+MAR06384		Transport reactions	2	0	E2 transport
+MAR06392		Transport reactions	1	0	E2 transport
+MAR06474		Transport reactions	2	2	E2 transport
+MAR06512		Transport reactions	11	0	E2 transport
+MAR06524		Transport reactions	1	0	E2 transport
+MAR06525		Transport reactions	6	0	E2 transport
+MAR06526		Transport reactions	2	0	E2 transport
+MAR06527		Transport reactions	3	0	E2 transport
+MAR06529		Transport reactions	1	0	E2 transport
+MAR06530		Transport reactions	1	0	E2 transport
+MAR06531		Transport reactions	1	0	E2 transport
+MAR06532		Transport reactions	3	0	E2 transport
+MAR06533		Transport reactions	1	0	E2 transport
+MAR06534		Transport reactions	4	0	E2 transport
+MAR06628		Transport reactions	4	3	E2 transport
+MAR06732		Transport reactions	4	0	E2 transport
+MAR06733		Transport reactions	2	0	E2 transport
+MAR06989		Transport reactions	1	0	E2 transport
+MAR07499		Transport reactions	1	0	E2 transport
+MAR07568		Transport reactions	3	0	E2 transport
+MAR07569		Transport reactions	3	0	E2 transport
+MAR07629		Transport reactions	9	0	E2 transport
+MAR07630		Transport reactions	3	0	E2 transport
+MAR07631		Transport reactions	5	0	E2 transport
+MAR07632		Transport reactions	2	0	E2 transport
+MAR07633		Transport reactions	2	0	E2 transport
+MAR07634		Transport reactions	2	0	E2 transport
+MAR07635		Transport reactions	2	0	E2 transport
+MAR07636		Transport reactions	2	0	E2 transport
+MAR07637		Transport reactions	2	0	E2 transport
+MAR07639		Transport reactions	5	0	E2 transport
+MAR07643		Transport reactions	2	2	E2 transport
+MAR07644		Transport reactions	2	2	E2 transport
+MAR07645		Transport reactions	1	0	E2 transport
+MAR07650		Transport reactions	1	0	E2 transport
+MAR07651		Transport reactions	5	0	E2 transport
+MAR07666		Transport reactions	1	0	E2 transport
+MAR07667		Transport reactions	1	0	E2 transport
+MAR07680		Transport reactions	2	0	E2 transport
+MAR07681		Transport reactions	1	0	E2 transport
+MAR07682		Transport reactions	1	0	E2 transport
+MAR07683		Transport reactions	1	0	E2 transport
+MAR07684		Transport reactions	1	0	E2 transport
+MAR07685		Transport reactions	1	0	E2 transport
+MAR07686		Transport reactions	1	0	E2 transport
+MAR07687		Transport reactions	1	0	E2 transport
+MAR07691		Transport reactions	3	0	E2 transport
+MAR07692		Transport reactions	3	0	E2 transport
+MAR07699		Transport reactions	2	0	E2 transport
+MAR07700		Transport reactions	1	0	E2 transport
+MAR07734		Transport reactions	1	0	E2 transport
+MAR07735		Transport reactions	1	0	E2 transport
+MAR07736		Transport reactions	1	0	E2 transport
+MAR07737		Transport reactions	1	0	E2 transport
+MAR07738		Transport reactions	1	0	E2 transport
+MAR07739		Transport reactions	1	0	E2 transport
+MAR07902		Transport reactions	3	0	E2 transport
+MAR07904		Transport reactions	1	0	E2 transport
+MAR07905		Transport reactions	1	0	E2 transport
+MAR07946		Transport reactions	2	0	E2 transport
+MAR07964		Transport reactions	1	0	E2 transport
+MAR07967		Transport reactions	1	0	E2 transport
+MAR07982		Transport reactions	1	0	E2 transport
+MAR07986		Transport reactions	1	0	E2 transport
+MAR07990		Transport reactions	1	0	E2 transport
+MAR08031		Transport reactions	1	0	E2 transport
+MAR08075		Transport reactions	3	0	E2 transport
+MAR08076		Transport reactions	4	0	E2 transport
+MAR08077		Transport reactions	4	0	E2 transport
+MAR08081		Transport reactions	1	0	E2 transport
+MAR08225		Transport reactions	1	0	E2 transport
+MAR08354		Transport reactions	1	0	E2 transport
+MAR08364		Transport reactions	3	0	E2 transport
+MAR08429		Transport reactions	1	0	E2 transport
+MAR08515		Transport reactions	1	0	E2 transport
+MAR08551		Transport reactions	2	0	E2 transport
+MAR08586		Transport reactions	1	0	E2 transport
+MAR08631		Transport reactions	1	0	E2 transport
+MAR08632		Transport reactions	2	0	E2 transport
+MAR08633		Transport reactions	1	0	E2 transport
+MAR08635		Transport reactions	1	0	E2 transport
+MAR08636		Transport reactions	1	0	E2 transport
+MAR08658		Transport reactions	2	0	E2 transport
+MAR08659		Transport reactions	3	0	E2 transport
+MAR08660		Transport reactions	2	0	E2 transport
+MAR08670		Transport reactions	1	0	E2 transport
+MAR08671		Transport reactions	1	0	E2 transport
+MAR08676		Transport reactions	2	0	E2 transport
+MAR08677		Transport reactions	3	0	E2 transport
+MAR08687		Transport reactions	3	3	E2 transport
+MAR08730		Transport reactions	1	0	E2 transport
+MAR08732		Transport reactions	1	0	E2 transport
+MAR08733		Transport reactions	2	2	E2 transport
+MAR08734		Transport reactions	2	2	E2 transport
+MAR08735		Transport reactions	1	0	E2 transport
+MAR08736		Transport reactions	1	0	E2 transport
+MAR08846		Transport reactions	3	0	E2 transport
+MAR08847		Transport reactions	4	0	E2 transport
+MAR08850		Transport reactions	1	0	E2 transport
+MAR08853		Transport reactions	1	0	E2 transport
+MAR08861		Transport reactions	2	0	E2 transport
+MAR08867		Transport reactions	1	0	E2 transport
+MAR08872		Transport reactions	1	0	E2 transport
+MAR08876		Transport reactions	1	0	E2 transport
+MAR08877		Transport reactions	1	0	E2 transport
+MAR08879		Transport reactions	3	0	E2 transport
+MAR08884		Transport reactions	1	0	E2 transport
+MAR08889		Transport reactions	1	0	E2 transport
+MAR08892		Transport reactions	3	2	E2 transport
+MAR08911		Transport reactions	1	0	E2 transport
+MAR08912		Transport reactions	2	0	E2 transport
+MAR08917		Transport reactions	1	0	E2 transport
+MAR08924		Transport reactions	1	0	E2 transport
+MAR08925		Transport reactions	3	0	E2 transport
+MAR08929		Transport reactions	1	0	E2 transport
+MAR08930		Transport reactions	1	0	E2 transport
+MAR08932		Transport reactions	1	0	E2 transport
+MAR08933		Transport reactions	1	0	E2 transport
+MAR08934		Transport reactions	1	0	E2 transport
+MAR08935		Transport reactions	1	0	E2 transport
+MAR08936		Transport reactions	1	0	E2 transport
+MAR08938		Transport reactions	1	0	E2 transport
+MAR08939		Transport reactions	4	0	E2 transport
+MAR08940		Transport reactions	4	0	E2 transport
+MAR08941		Transport reactions	4	0	E2 transport
+MAR08942		Transport reactions	4	0	E2 transport
+MAR08943		Transport reactions	4	0	E2 transport
+MAR08944		Transport reactions	4	0	E2 transport
+MAR08945		Transport reactions	4	0	E2 transport
+MAR08946		Transport reactions	4	0	E2 transport
+MAR08947		Transport reactions	4	0	E2 transport
+MAR09190		Transport reactions	2	2	E2 transport
+MAR09191		Transport reactions	2	2	E2 transport
+MAR09192		Transport reactions	3	0	E2 transport
+MAR09193		Transport reactions	1	0	E2 transport
+MAR09195		Transport reactions	1	0	E2 transport
+MAR09196		Transport reactions	2	0	E2 transport
+MAR09197		Transport reactions	1	0	E2 transport
+MAR09198		Transport reactions	1	0	E2 transport
+MAR09590		Transport reactions	2	0	E2 transport
+MAR09591		Transport reactions	2	0	E2 transport
+MAR09592		Transport reactions	2	0	E2 transport
+MAR09593		Transport reactions	2	0	E2 transport
+MAR09594		Transport reactions	2	0	E2 transport
+MAR09595		Transport reactions	2	0	E2 transport
+MAR09596		Transport reactions	2	0	E2 transport
+MAR09597		Transport reactions	2	0	E2 transport
+MAR09598		Transport reactions	2	0	E2 transport
+MAR09599		Transport reactions	2	0	E2 transport
+MAR09600		Transport reactions	2	0	E2 transport
+MAR09601		Transport reactions	3	0	E2 transport
+MAR09602		Transport reactions	1	0	E2 transport
+MAR09603		Transport reactions	1	0	E2 transport
+MAR09604		Transport reactions	1	0	E2 transport
+MAR09605		Transport reactions	1	0	E2 transport
+MAR09606		Transport reactions	1	0	E2 transport
+MAR09607		Transport reactions	1	0	E2 transport
+MAR09608		Transport reactions	1	0	E2 transport
+MAR09609		Transport reactions	1	0	E2 transport
+MAR09610		Transport reactions	1	0	E2 transport
+MAR09611		Transport reactions	1	0	E2 transport
+MAR09613		Transport reactions	3	0	E2 transport
+MAR09614		Transport reactions	1	0	E2 transport
+MAR09615		Transport reactions	2	0	E2 transport
+MAR09616		Transport reactions	2	0	E2 transport
+MAR09617		Transport reactions	1	0	E2 transport
+MAR09618		Transport reactions	2	0	E2 transport
+MAR09619		Transport reactions	2	0	E2 transport
+MAR09620		Transport reactions	1	0	E2 transport
+MAR09621		Transport reactions	1	0	E2 transport
+MAR09622		Transport reactions	1	0	E2 transport
+MAR09623		Transport reactions	2	0	E2 transport
+MAR09624		Transport reactions	2	0	E2 transport
+MAR04312		Transport reactions	6	0	E2 transport
+MAR08022		Transport reactions	1	0	E2 transport
+MAR09015		Transport reactions	1	0	E2 transport
+MAR09020		Transport reactions	1	0	E2 transport
+MAR00158		Transport reactions	18	0	E2 transport
+MAR00169		Transport reactions	1	0	E2 transport
+MAR02116		Transport reactions	1	0	E2 transport
+MAR02141	calcitriol,adrenodoxin:oxygen oxidoreductase (24-hydroxylating)	Transport reactions	1	0	E2 transport
+MAR02590		Transport reactions	1	0	E2 transport
+MAR03825		Transport reactions	2	0	E2 transport
+MAR03863		Transport reactions	2	0	E2 transport
+MAR03864		Transport reactions	2	0	E2 transport
+MAR03971		Transport reactions	1	0	E2 transport
+MAR04184	sulfite:ferricytochrome-c oxidoreductase	Transport reactions	1	0	E2 transport
+MAR04237		Transport reactions	1	0	E2 transport
+MAR04754		Transport reactions	1	0	E2 transport
+MAR04756		Transport reactions	1	0	E2 transport
+MAR04760		Transport reactions	1	0	E2 transport
+MAR04851		Transport reactions	1	0	E2 transport
+MAR04852		Transport reactions	1	0	E2 transport
+MAR04854		Transport reactions	1	0	E2 transport
+MAR04855		Transport reactions	1	0	E2 transport
+MAR04862		Transport reactions	1	0	E2 transport
+MAR04863		Transport reactions	1	0	E2 transport
+MAR04864		Transport reactions	1	0	E2 transport
+MAR04865		Transport reactions	1	0	E2 transport
+MAR04867		Transport reactions	1	0	E2 transport
+MAR04868		Transport reactions	1	0	E2 transport
+MAR04870		Transport reactions	1	0	E2 transport
+MAR04871		Transport reactions	1	0	E2 transport
+MAR04872		Transport reactions	1	0	E2 transport
+MAR04888		Transport reactions	1	0	E2 transport
+MAR04914		Transport reactions	2	0	E2 transport
+MAR04926		Transport reactions	3	2	E2 transport
+MAR04944		Transport reactions	1	0	E2 transport
+MAR04951		Transport reactions	1	0	E2 transport
+MAR04964		Transport reactions	1	0	E2 transport
+MAR04971		Transport reactions	1	0	E2 transport
+MAR04972		Transport reactions	1	0	E2 transport
+MAR04977		Transport reactions	1	0	E2 transport
+MAR04997		Transport reactions	2	0	E2 transport
+MAR05016		Transport reactions	1	0	E2 transport
+MAR05022		Transport reactions	3	0	E2 transport
+MAR05031		Transport reactions	1	0	E2 transport
+MAR05033		Transport reactions	1	0	E2 transport
+MAR05036		Transport reactions	1	0	E2 transport
+MAR05043		Transport reactions	1	0	E2 transport
+MAR05046		Transport reactions	1	0	E2 transport
+MAR05105		Transport reactions	2	0	E2 transport
+MAR05113		Transport reactions	1	0	E2 transport
+MAR05114		Transport reactions	2	0	E2 transport
+MAR05122		Transport reactions	2	0	E2 transport
+MAR05124		Transport reactions	1	0	E2 transport
+MAR05292		Transport reactions	3	0	E2 transport
+MAR05348		Transport reactions	7	0	E2 transport
+MAR05349		Transport reactions	7	0	E2 transport
+MAR05411		Transport reactions	1	0	E2 transport
+MAR05420		Transport reactions	2	0	E2 transport
+MAR06276		Transport reactions	1	0	E2 transport
+MAR06277		Transport reactions	1	0	E2 transport
+MAR06286		Transport reactions	1	0	E2 transport
+MAR06287		Transport reactions	1	0	E2 transport
+MAR06288		Transport reactions	1	0	E2 transport
+MAR06289		Transport reactions	1	0	E2 transport
+MAR06290		Transport reactions	1	0	E2 transport
+MAR06291		Transport reactions	1	0	E2 transport
+MAR06292		Transport reactions	1	0	E2 transport
+MAR06293		Transport reactions	1	0	E2 transport
+MAR06294		Transport reactions	1	0	E2 transport
+MAR06295		Transport reactions	1	0	E2 transport
+MAR06296		Transport reactions	1	0	E2 transport
+MAR06297		Transport reactions	1	0	E2 transport
+MAR06298		Transport reactions	1	0	E2 transport
+MAR06299		Transport reactions	1	0	E2 transport
+MAR06300		Transport reactions	1	0	E2 transport
+MAR06301		Transport reactions	2	0	E2 transport
+MAR06302		Transport reactions	2	0	E2 transport
+MAR06303		Transport reactions	1	0	E2 transport
+MAR06304		Transport reactions	1	0	E2 transport
+MAR06305		Transport reactions	1	0	E2 transport
+MAR06306		Transport reactions	1	0	E2 transport
+MAR06307		Transport reactions	2	0	E2 transport
+MAR06308		Transport reactions	2	0	E2 transport
+MAR06309		Transport reactions	1	0	E2 transport
+MAR06310		Transport reactions	1	0	E2 transport
+MAR06311		Transport reactions	1	0	E2 transport
+MAR06312		Transport reactions	1	0	E2 transport
+MAR06313		Transport reactions	2	0	E2 transport
+MAR06314		Transport reactions	2	0	E2 transport
+MAR06315		Transport reactions	1	0	E2 transport
+MAR06316		Transport reactions	1	0	E2 transport
+MAR06317		Transport reactions	2	0	E2 transport
+MAR06318		Transport reactions	2	0	E2 transport
+MAR06321		Transport reactions	2	0	E2 transport
+MAR06323		Transport reactions	2	0	E2 transport
+MAR06325		Transport reactions	1	0	E2 transport
+MAR06326		Transport reactions	1	0	E2 transport
+MAR06327		Transport reactions	2	0	E2 transport
+MAR06328	ATP:ADP phosphatransferase	Transport reactions	3	0	E2 transport
+MAR06330		Transport reactions	1	0	E2 transport
+MAR06331		Transport reactions	1	0	E2 transport
+MAR06332		Transport reactions	1	0	E2 transport
+MAR06333		Transport reactions	1	0	E2 transport
+MAR06334		Transport reactions	1	0	E2 transport
+MAR06335		Transport reactions	1	0	E2 transport
+MAR06336		Transport reactions	1	0	E2 transport
+MAR06337		Transport reactions	1	0	E2 transport
+MAR06338		Transport reactions	1	0	E2 transport
+MAR06339		Transport reactions	1	0	E2 transport
+MAR06340		Transport reactions	1	0	E2 transport
+MAR06341		Transport reactions	1	0	E2 transport
+MAR06342		Transport reactions	1	0	E2 transport
+MAR06343		Transport reactions	1	0	E2 transport
+MAR06389		Transport reactions	1	0	E2 transport
+MAR06521		Transport reactions	1	0	E2 transport
+MAR06522		Transport reactions	1	0	E2 transport
+MAR07638		Transport reactions	5	0	E2 transport
+MAR07719		Transport reactions	1	0	E2 transport
+MAR07723		Transport reactions	1	0	E2 transport
+MAR07757		Transport reactions	1	0	E2 transport
+MAR07760		Transport reactions	1	0	E2 transport
+MAR07769		Transport reactions	1	0	E2 transport
+MAR07804		Transport reactions	1	0	E2 transport
+MAR07806		Transport reactions	1	0	E2 transport
+MAR07808		Transport reactions	1	0	E2 transport
+MAR07810		Transport reactions	1	0	E2 transport
+MAR07812		Transport reactions	1	0	E2 transport
+MAR07814		Transport reactions	1	0	E2 transport
+MAR07815		Transport reactions	1	0	E2 transport
+MAR07816		Transport reactions	1	0	E2 transport
+MAR07818		Transport reactions	1	0	E2 transport
+MAR07820		Transport reactions	1	0	E2 transport
+MAR07822		Transport reactions	1	0	E2 transport
+MAR07824		Transport reactions	1	0	E2 transport
+MAR07825		Transport reactions	1	0	E2 transport
+MAR07826		Transport reactions	1	0	E2 transport
+MAR07827		Transport reactions	1	0	E2 transport
+MAR07828		Transport reactions	1	0	E2 transport
+MAR07829		Transport reactions	1	0	E2 transport
+MAR07830		Transport reactions	1	0	E2 transport
+MAR07831		Transport reactions	1	0	E2 transport
+MAR07832		Transport reactions	1	0	E2 transport
+MAR07833		Transport reactions	1	0	E2 transport
+MAR07834		Transport reactions	1	0	E2 transport
+MAR07835		Transport reactions	1	0	E2 transport
+MAR07836		Transport reactions	1	0	E2 transport
+MAR07837		Transport reactions	1	0	E2 transport
+MAR07838		Transport reactions	1	0	E2 transport
+MAR07839		Transport reactions	1	0	E2 transport
+MAR07840		Transport reactions	1	0	E2 transport
+MAR07841		Transport reactions	1	0	E2 transport
+MAR07842		Transport reactions	1	0	E2 transport
+MAR07843		Transport reactions	1	0	E2 transport
+MAR07844		Transport reactions	1	0	E2 transport
+MAR07845		Transport reactions	1	0	E2 transport
+MAR07846		Transport reactions	1	0	E2 transport
+MAR07847		Transport reactions	1	0	E2 transport
+MAR07848		Transport reactions	1	0	E2 transport
+MAR07849		Transport reactions	1	0	E2 transport
+MAR07850		Transport reactions	1	0	E2 transport
+MAR07851		Transport reactions	1	0	E2 transport
+MAR07852		Transport reactions	1	0	E2 transport
+MAR07853		Transport reactions	1	0	E2 transport
+MAR07854		Transport reactions	1	0	E2 transport
+MAR08089		Transport reactions	1	0	E2 transport
+MAR08365		Transport reactions	1	0	E2 transport
+MAR08475		Transport reactions	2	0	E2 transport
+MAR08513		Transport reactions	1	0	E2 transport
+MAR08614		Transport reactions	1	0	E2 transport
+MAR08741		Transport reactions	1	0	E2 transport
+MAR08742		Transport reactions	1	0	E2 transport
+MAR08910		Transport reactions	1	0	E2 transport
+MAR00713		Transport reactions	1	0	E2 transport
+MAR01443		Transport reactions	1	0	E2 transport
+MAR02407		Transport reactions	1	0	E2 transport
+MAR02509		Transport reactions	1	0	E2 transport
+MAR03007		Transport reactions	1	0	E2 transport
+MAR03008		Transport reactions	7	0	E2 transport
+MAR03011		Transport reactions	7	0	E2 transport
+MAR03013		Transport reactions	7	0	E2 transport
+MAR03014		Transport reactions	7	0	E2 transport
+MAR03017		Transport reactions	7	0	E2 transport
+MAR03018		Transport reactions	1	0	E2 transport
+MAR03019		Transport reactions	1	0	E2 transport
+MAR03020		Transport reactions	1	0	E2 transport
+MAR03021		Transport reactions	1	0	E2 transport
+MAR03022		Transport reactions	1	0	E2 transport
+MAR03023		Transport reactions	1	0	E2 transport
+MAR03024		Transport reactions	1	0	E2 transport
+MAR03025		Transport reactions	1	0	E2 transport
+MAR03026		Transport reactions	1	0	E2 transport
+MAR03473		Transport reactions	1	0	E2 transport
+MAR04908	ATP:ADP phosphatransferase	Transport reactions	7	0	E2 transport
+MAR04930		Transport reactions	7	0	E2 transport
+MAR04986		Transport reactions	1	0	E2 transport
+MAR05452		Transport reactions	1	0	E2 transport
+MAR07646		Transport reactions	1	0	E2 transport
+MAR02585		Transport reactions	2	0	E2 transport
+MAR04535		Transport reactions	1	0	E2 transport
+MAR07796		Transport reactions	24	7	E2 transport; E4 AND complex >= 6 genes
+MAR08476		Transport reactions	2	0	E2 transport
+MAR04314		Transport reactions	6	0	E2 transport
+MAR01917		Transport reactions	2	0	E2 transport
+MAR04907	ATP:ADP phosphatransferase	Transport reactions	7	0	E2 transport
+MAR05047		Transport reactions	1	0	E2 transport
+MAR05048		Transport reactions	1	0	E2 transport
+MAR05049		Transport reactions	1	0	E2 transport
+MAR05050		Transport reactions	1	0	E2 transport
+MAR05051		Transport reactions	1	0	E2 transport
+MAR05052		Transport reactions	1	0	E2 transport
+MAR05053		Transport reactions	1	0	E2 transport
+MAR05054		Transport reactions	1	0	E2 transport
+MAR05055		Transport reactions	1	0	E2 transport
+MAR05056		Transport reactions	1	0	E2 transport
+MAR05057		Transport reactions	1	0	E2 transport
+MAR05058		Transport reactions	1	0	E2 transport
+MAR05059		Transport reactions	1	0	E2 transport
+MAR05060		Transport reactions	1	0	E2 transport
+MAR05061		Transport reactions	1	0	E2 transport
+MAR05062		Transport reactions	2	0	E2 transport
+MAR05063		Transport reactions	1	0	E2 transport
+MAR05064		Transport reactions	1	0	E2 transport
+MAR05065		Transport reactions	1	0	E2 transport
+MAR05066		Transport reactions	1	0	E2 transport
+MAR05067		Transport reactions	1	0	E2 transport
+MAR07196		Transport reactions	1	0	E2 transport
+MAR07710		Transport reactions	1	0	E2 transport
+MAR07714		Transport reactions	1	0	E2 transport
+MAR07718		Transport reactions	1	0	E2 transport
+MAR07722		Transport reactions	1	0	E2 transport
+MAR07726		Transport reactions	1	0	E2 transport
+MAR07729		Transport reactions	1	0	E2 transport
+MAR07799		Transport reactions	10	0	E2 transport
+MAR08355		Transport reactions	1	0	E2 transport
+MAR08688		Transport reactions	1	0	E2 transport
+MAR08887		Transport reactions	1	0	E2 transport
+MAR08908		Transport reactions	1	0	E2 transport
+MAR08928		Transport reactions	1	0	E2 transport
+MAR09793		Transport reactions	1	0	E2 transport
+MAR00731		Transport reactions	1	0	E2 transport
+MAR00918		Transport reactions	3	0	E2 transport
+MAR01916		Transport reactions	2	0	E2 transport
+MAR04125		Transport reactions	1	0	E2 transport
+MAR06578		Transport reactions	6	0	E2 transport
+MAR07433		Transport reactions	1	0	E2 transport
+MAR07434		Transport reactions	1	0	E2 transport
+MAR07675		Transport reactions	1	0	E2 transport
+MAR07693		Transport reactions	1	0	E2 transport
+MAR07694		Transport reactions	2	0	E2 transport
+MAR07695		Transport reactions	2	0	E2 transport
+MAR07733		Transport reactions	1	0	E2 transport
+MAR07740		Transport reactions	1	0	E2 transport
+MAR07743		Transport reactions	3	0	E2 transport
+MAR07759		Transport reactions	1	0	E2 transport
+MAR07761		Transport reactions	1	0	E2 transport
+MAR08146		Transport reactions	1	0	E2 transport
+MAR08496		Transport reactions	3	0	E2 transport
+MAR08661		Transport reactions	1	0	E2 transport
+MAR08857		Transport reactions	3	0	E2 transport
+MAR09199		Transport reactions	2	0	E2 transport
+MAR04313		Transport reactions	6	0	E2 transport
+MAR00461		Transport reactions	1	0	E2 transport
+MAR00664		Transport reactions	2	0	E2 transport
+MAR00730		Transport reactions	5	0	E2 transport
+MAR00768		Transport reactions	1	0	E2 transport
+MAR01392		Transport reactions	2	0	E2 transport
+MAR02777		Transport reactions	1	0	E2 transport
+MAR04856	alpha-D-Glucose 6-phosphate ketol-isomerase	Transport reactions	1	0	E2 transport
+MAR04880		Transport reactions	1	0	E2 transport
+MAR04881		Transport reactions	1	0	E2 transport
+MAR04906	ATP:ADP phosphatransferase	Transport reactions	7	0	E2 transport
+MAR04942		Transport reactions	1	0	E2 transport
+MAR05004		Transport reactions	1	0	E2 transport
+MAR05027		Transport reactions	1	0	E2 transport
+MAR05342		Transport reactions	2	0	E2 transport
+MAR06385		Transport reactions	1	0	E2 transport
+MAR06386		Transport reactions	1	0	E2 transport
+MAR07649		Transport reactions	5	0	E2 transport
+MAR08369		Transport reactions	1	0	E2 transport
+MAR09200		Transport reactions	1	0	E2 transport
+MAR00031		Pool reactions	7	0	E3 pseudo/lumped (subsystem:Pool reactions)
+MAR00050	5-Formyltetrahydrofolate Transport via Anion Antiport	Transport reactions	1	0	E2 transport
+MAR00052	5-Hydroxy-L-Tryptophan Secretion via Secretory Vesicle (ATP Driven)	Transport reactions	2	0	E2 transport
+MAR00053	5-Methyltetrahydrofolate Transport via Anion Antiport	Transport reactions	1	0	E2 transport
+MAR00057	Acetyl Coenzyme A Transport	Transport reactions	1	0	E2 transport
+MAR00058	Acetylcholine Secretion via Secretory Vesicle (ATP Driven)	Transport reactions	1	0	E2 transport
+MAR00060	O-Acetylcarnintine Transport into Mitochondria via Diffusion	Transport reactions	1	0	E2 transport
+MAR00064	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR00065	Adrenaline Secretion via Secretory Vesicle (ATP Driven)	Transport reactions	2	0	E2 transport
+MAR00066	L-Alanine Reversible Transport via Proton Symport, Lysosomal	Transport reactions	1	0	E2 transport
+MAR00076	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR00079	Arginine Mitochondrial Transport via Ornithine Carrier	Transport reactions	2	0	E2 transport
+MAR00080	V-Type ATPase, H+ Transporting, Lysosomal	Transport reactions	22	22	E2 transport; E4 AND complex >= 6 genes
+MAR00087	B-Alanine Secretion via Secretory Vesicle (ATP Driven)	Transport reactions	1	0	E2 transport
+MAR00093	Biotin Reversible Transport via Proton Symport, Mitochondria	Transport reactions	1	0	E2 transport
+MAR00094	Biotin Transport via Sodium Symport	Transport reactions	1	0	E2 transport
+MAR00095	Biotin Uptake (Antiport)	Transport reactions	1	0	E2 transport
+MAR00097	Butyrate Mitochondrial Transport via Proton Symport, Reversible	Transport reactions	1	0	E2 transport
+MAR00102	C160 Transport into the Mitochondria	Fatty acid oxidation	1	0	E2 transport
+MAR00105	C161 Transport into the Mitochondria	Fatty acid oxidation	1	0	E2 transport
+MAR00106	C161 Transport into the Mitochondria	Fatty acid oxidation	1	0	E2 transport
+MAR00107	C180 Transport into the Mitochondria	Fatty acid oxidation	1	0	E2 transport
+MAR00110	C181 Transport into the Mitochondria	Fatty acid oxidation	1	0	E2 transport
+MAR00111	Arachidonic Acid Transport into the Mitochondria	Fatty acid oxidation	1	0	E2 transport
+MAR00119	Ca ATPase	Transport reactions	4	0	E2 transport
+MAR00124	Citrulline Mitochondrial Transport via Proton Antiport	Transport reactions	2	0	E2 transport
+MAR00125	Citrate Transport, Mitochondrial	Transport reactions	1	0	E2 transport
+MAR00126	Chloride Transport via Hydroxide Antiport (2:1)	Transport reactions	1	0	E2 transport
+MAR00128	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR00137	L-Carnitine Outward Transport (H+ Antiport)	Transport reactions	1	0	E2 transport
+MAR00143	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR00252	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR00334	Secretion of Dopamine via Secretory Vesicle (ATP Driven)	Transport reactions	2	0	E2 transport
+MAR00451	Transport of 8Z,11Z,14Z,17Z-Eicosatetraenoylcarnitine, Mitochondrial	Fatty acid oxidation	1	0	E2 transport
+MAR00465	Transport of (9E)-Octadecenoylcarnitine, Mitochondrial	Fatty acid oxidation	1	0	E2 transport
+MAR00970	Beta Oxidation of Long Chain Fatty Acid	Fatty acid oxidation	8	6	E4 AND complex >= 6 genes
+MAR01047	Folate Transport via Anion Antiport	Transport reactions	1	0	E2 transport
+MAR01169	Glycerol-3-Phosphate Dehydrogenase (FAD), Mitochondrial	Glycolysis / Gluconeogenesis	1	0	E2 transport
+MAR01314	GABA Secretion via Secretory Vesicle (ATP Driven)	Transport reactions	1	0	E2 transport
+MAR01378	Transport of D-Glucose  via Proton Symport	Transport reactions	1	0	E2 transport
+MAR01386	Transport of Glycine   via Proton Symport, Reversible, Lysosomal	Transport reactions	1	0	E2 transport
+MAR01396	Secretion of Glycine  via Secretory Vesicle (ATP Driven)	Transport reactions	1	0	E2 transport
+MAR01441	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR01442	Histamine Secretion via Secretory Vesicle (ATP Driven)	Transport reactions	2	0	E2 transport
+MAR01444	H+/K+ Gastric/Non-Gastric P-ATPase And ABC ATPase	Transport reactions	2	2	E2 transport
+MAR01452	Heptadecanoate Transport into the Mitochondria	Fatty acid oxidation	1	0	E2 transport
+MAR01463	Hypoxanthine Faciliated Transport from Lysosome	Transport reactions	1	0	E2 transport
+MAR01466	Transport of Inosine, Faciliated, Lysosomal	Transport reactions	1	0	E2 transport
+MAR01482	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR01485	Transport of L-Lactate via Diffusion, Mitochondrial	Transport reactions	1	0	E2 transport
+MAR01486	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR01487	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR01491	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR01492	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR01525	Bicarbonate Transport (HCl/ (Hcl/NaHCO3 Antiport)	Transport reactions	2	0	E2 transport
+MAR01527	Sodium Transport (Uniport)	Transport reactions	19	3	E2 transport
+MAR01528	Sodium/Ammonium Proton Antiporter	Transport reactions	3	0	E2 transport
+MAR01529	Na+/Ca2+-NH4+ Antiport	Transport reactions	2	0	E2 transport
+MAR01534	Transport of Ammonium ion via Proton Antiport	Transport reactions	2	0	E2 transport
+MAR01555	Secretion of Noradrenaline  via Secretory Vesicle (ATP Driven)	Transport reactions	2	0	E2 transport
+MAR01559	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR01583	Phosphatidylcholine Flippase	Transport reactions	1	0	E2 transport
+MAR01588	Transport into the Mitochondria from Cytosol (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR01594	Phosphatidylethanolamine Flippase	Transport reactions	3	0	E2 transport
+MAR01596	Phosphatidylethanolamine Flippase	Transport reactions	2	0	E2 transport
+MAR01621	Phosphate Transport, Endoplasmic Reticulum	Transport reactions	1	0	E2 transport
+MAR01636	Pantothenate Sodium Symporter Ii	Transport reactions	1	0	E2 transport
+MAR01650	Transport of L-Proline   via Proton Symport, Reversible, Lysosomal	Transport reactions	1	0	E2 transport
+MAR01661	Phosphatidylserine Flippase	Transport reactions	2	0	E2 transport
+MAR01664	Phosphatidylserine Flippase	Transport reactions	2	0	E2 transport
+MAR01671	Pentadecanoate Transport into the Mitochondria	Fatty acid oxidation	1	0	E2 transport
+MAR01721	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR01755	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR01763	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR01775	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR01780	Tetrahydrofolate Transport via Anion Antiport	Transport reactions	1	0	E2 transport
+MAR01782	Thiamine Monophosphate Transport in via Anion Antiport	Transport reactions	1	0	E2 transport
+MAR01793	Thiamine Triphosphate Transport in via Anion Antiport	Transport reactions	1	0	E2 transport
+MAR01799	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR01814	Transport into the Mitochondria (Carnitine)	Fatty acid oxidation	1	0	E2 transport
+MAR02216	Mitochondrial Carrier (Mc) Tcdb:2.A.29.7.2	Transport reactions	1	0	E2 transport
+MAR02220	Mitochondrial Carrier (Mc) Tcdb:2.A.29.7.2	Transport reactions	1	0	E2 transport
+MAR02221	ATP-Binding Cassette (ABC) Tcdb:3.A.1.204.5	Transport reactions	2	2	E2 transport
+MAR02226	Amino Acid-Polyamine-Organocation (Apc) Tcdb:2.A.3.8.15	Transport reactions	1	0	E2 transport
+MAR02271	Mitochondrial Carrier (Mc) Tcdb:2.A.29.19.1	Transport reactions	1	0	E2 transport
+MAR02272	Solute Carrier Family 27 (Fatty Acid Transporter), Member 5 Tcdb:4.C.1.1.5 Tcdb:4.C.1.1.8	Transport reactions	1	0	E2 transport
+MAR02303	Mitochondrial Carrier (Mc) Tcdb:2.A.29.7.2	Transport reactions	1	0	E2 transport
+MAR02351	Facilitated Diffusion	Transport reactions	1	0	E2 transport
+MAR02385	ATP-Binding Cassette (ABC) Tcdb:3.A.1.211.1	Transport reactions	1	0	E2 transport
+MAR02386	ATP-Binding Cassette (ABC) Tcdb:3.A.1.211.1	Transport reactions	1	0	E2 transport
+MAR02388	Neurotransmitter:Sodium Symporter (Nss) Tcdb:2.A.22.3.3	Transport reactions	1	0	E2 transport
+MAR02396	Resistance-Nodulation-Cell Division (Rnd) Tcdb:2.A.60.1.5	Transport reactions	1	0	E2 transport
+MAR02398	Resistance-Nodulation-Cell Division (Rnd) Tcdb:2.A.60.1.5	Transport reactions	1	0	E2 transport
+MAR02400	Resistance-Nodulation-Cell Division (Rnd) Tcdb:2.A.60.1.5	Transport reactions	1	0	E2 transport
+MAR02402	Resistance-Nodulation-Cell Division (Rnd) Tcdb:2.A.60.1.2	Transport reactions	1	0	E2 transport
+MAR02404	Organic Anion Transporter 5 Utilized Transport	Transport reactions	1	0	E2 transport
+MAR02405	Mitochondrial Carrier (Mc) Tcdb:2.A.29.7.2	Transport reactions	1	0	E2 transport
+MAR02406	Mitochondrial Carrier (Mc) Tcdb:2.A.29.7.2	Transport reactions	1	0	E2 transport
+MAR02413	Mitochondrial Carrier (Mc) Tcdb:2.A.29.7.2	Transport reactions	1	0	E2 transport
+MAR02414	Mitochondrial Carrier (Mc) Tcdb:2.A.29.7.2	Transport reactions	1	0	E2 transport
+MAR02416	Mitochondrial Carrier (Mc) Tcdb:2.A.29.7.2	Transport reactions	1	0	E2 transport
+MAR02418	Mitochondrial Carrier (Mc) Tcdb:2.A.29.7.2	Transport reactions	1	0	E2 transport
+MAR02420	Mitochondrial Carrier (Mc) Tcdb:2.A.29.7.2	Transport reactions	1	0	E2 transport
+MAR02422	Mitochondrial Carrier (Mc) Tcdb:2.A.29.7.2	Transport reactions	1	0	E2 transport
+MAR02424	ATP-Binding Cassette (ABC) Tcdb:3.A.1.203.3	Transport reactions	1	0	E2 transport
+MAR02425	ATP-Binding Cassette (ABC) Tcdb:3.A.1.203.3	Transport reactions	1	0	E2 transport
+MAR04438	Transport of 2-Methylcrotonoyl Coenzyme A into Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR04439	Transport of (R)-3-Hydroxybutanoyl Coenzyme A into Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR04479	Transport of Sebacoyl Carnitine into Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR04566	Transport of 3-Hydroxytetradecenoyl Coenzyme A from Mitochondria into Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR04578	Transport of 3-Hydroxytetradeca Dienoyl Coenzyme A from Mitochondria into Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR04616	Transport of 3-Hydroxy Trans7, 10-Hexadecadienoylcoa from Mitochondria into Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR04645	Transport of Acetylcarnitine from Peroxisomes to Cytosol	Transport reactions	1	0	E2 transport
+MAR04661	Transport of Succinyl Carnitine into Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR04674	Transport of Bytyrylcarnitine from Peroxisomes	Transport reactions	1	0	E2 transport
+MAR04677	Transport of Bytyrylcarnitine into Mitochondrial Matrix	Transport reactions	1	0	E2 transport
+MAR04678	Esterification of Butyrylcoa to Butyrylcarnitine for Transport	Transport reactions	1	0	E2 transport
+MAR04722	Esterification of Of Hexanoylcoa for Transport into Cytosol	Transport reactions	1	0	E2 transport
+MAR04726	Transport of Hexanoylcarnitine into Cytosol	Transport reactions	1	0	E2 transport
+MAR04728	Transport of Adipoyl Carnitine into Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR04782	Transport of Dimethylnonanoylcarnitine from Peroxisomes to Cytosol	Transport reactions	1	0	E2 transport
+MAR04793	Transport of Docosapentenoylcoa into Peroxisomes.	Transport reactions	2	2	E2 transport
+MAR04803	Transport of 13-Docosenoylcoa into Peroxisomes	Transport reactions	2	2	E2 transport
+MAR04805	Absorption Or Uptake of 13-Docosenoic Acid into Cells	Fatty acid oxidation	6	0	E2 transport
+MAR04811	Transport of Behenoylcoa into Peroxisomes	Transport reactions	2	2	E2 transport
+MAR05103	Transport of Dodecanedioyl Carnitine into Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR06485	Transport of Glutaryl Coenzyme A from Mitochondria into Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR06487	Transport of (S)-3-Hydroxydecanoyl Coenzyme A from Mitochondria into the Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR06489	Transport of (S)-3-Hydroxydodecanoyl Coenzyme A from Mitochondria into the Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR06491	Transport of 3-Hydroxyhexadecanoylcoa from Mitochondria into the Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR06493	Transport of 3-Hydroxyhexadecenoylcoa from Mitochondria into the Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR06499	Transport of Hexadecanedioyl Coa	Fatty acid oxidation	1	0	E2 transport
+MAR06502	Transport of Hexadecanedioyl Coa	Fatty acid oxidation	1	0	E2 transport
+MAR06503	Transport of 3-Hydroxyisovalerylcoa from Mitochondria into the Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR06528	Transport of (S)-3-Hydroxyoctadecanoyl Coenzyme A from Mitochondria into the Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR06538	Transport of 3-Hydroxyoctadecenoylcoa from Mitochondria into the Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR06586	Transport of (S)-3-Hydroxytetradecanoyl Coenzyme A from Mitochondria into the Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR06593	Transport of Isovaleryl Coenzyme A from Mitochondria into Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR06596	Transport of Lignocericyl Coenzyme A from Cytosol to Peroxisome.	Transport reactions	2	2	E2 transport
+MAR06597	Transport of Nervonylcoa into Peroxisomes	Transport reactions	2	2	E2 transport
+MAR06599	Transport of 11-Octadecenoyl Carnitine into the Mitochondrial Matrix	Fatty acid oxidation	1	0	E2 transport
+MAR06604	Uptake of Vaccenic Acid	Fatty acid oxidation	6	0	E2 transport
+MAR06688	Transport of 3-Hydroxyoctadecadienoyl Coenzyme A from Mitochondria into Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR06689	Transport of Octadecenoyl Coenzyme A into Mitochondrial Matrix	Fatty acid oxidation	1	0	E2 transport
+MAR06775	Transport of Pristanoylcoa from Cytosol to Peroxisomes.	Transport reactions	1	0	E2 transport
+MAR06779	Transport of Phytanoylcoa from Cytosol to Peroxisomes.	Transport reactions	1	0	E2 transport
+MAR06812	Transport of Stearoyl Coenzyme A from Cytosol to Peroxisomes	Transport reactions	1	0	E2 transport
+MAR06816	Transport of Stearidonylcoa into Peroxisomes.	Transport reactions	1	0	E2 transport
+MAR06825	Transport of Suberyl Carnitine into Cytosol	Fatty acid oxidation	1	0	E2 transport
+MAR06859	Transport of 3, 4-Dihydroxy-L-Phenylalanine by Lat1 in Association with 4F2Hc, Across the Apical Surface of the Membranes	Transport reactions	2	2	E2 transport
+MAR06860	Transport of L-Oh-Proline by the Apical Imino Amino Acid Transporters in Kidney And Intestine	Transport reactions	2	2	E2 transport
+MAR06862	Transport of Alanylalanine by the Apical Pept1 Amino Acid Transporters	Transport reactions	1	0	E2 transport
+MAR06863	Transport of Alanine by Y+Lat1 Or Y+Lat2 with Symporter of H	Transport reactions	3	2	E2 transport
+MAR06864	Transport of L-Ascorbate by Svct1 Or Svct2 Transporter	Transport reactions	2	0	E2 transport
+MAR06865	Transport of L-Asparagine by Atb0 Transporter	Transport reactions	1	0	E2 transport
+MAR06866	Transport of Beta Alanine by Pat1 in Renal And Intestinal Cells	Transport reactions	1	0	E2 transport
+MAR06871	Transport of L-Carnosine by the Apical Pept1 Amino Acid Transporters	Transport reactions	1	0	E2 transport
+MAR06872	Transport of L-Carnosine by Hpt3 Or Hpt4 Peptide Transporter	Transport reactions	2	0	E2 transport
+MAR06884	Transport of Adenosylcobalamin into the Intestine	Transport reactions	3	3	E2 transport
+MAR06887	Transport of L-Cysteine with Symport of Sodium And Antiport of Proton by Snat5 Transporter	Transport reactions	1	0	E2 transport
+MAR06891	Transport of L-Cystine (L-Alanine antiport) by B0, +At Transporter	Transport reactions	2	2	E2 transport
+MAR06892	Transport of L-Cystine (L-Leucine antiport) by B0, +At Transporter	Transport reactions	2	2	E2 transport
+MAR06893	Transport of Folate	Transport reactions	1	0	E2 transport
+MAR06896	Transport of L-Glutamine by Atb0 Transporter	Transport reactions	1	0	E2 transport
+MAR06897	Transport of Glutamine by Y+Lat1 Or Y+Lat2 with Symporter of H	Transport reactions	3	2	E2 transport
+MAR06898	Hydrolysis of Glycylycine for Uptake	Transport reactions	2	0	E2 transport
+MAR06899	Transport of Glycyl-Glycine by the Apical Pept1 Amino Acid Transporters	Transport reactions	1	0	E2 transport
+MAR06900	Transport of Glycylphenylalanine by the Apical Pept1 Amino Acid Transporters	Transport reactions	1	0	E2 transport
+MAR06913	Transport of Glycylproline by the Apical Pept1 Amino Acid Transporters	Transport reactions	1	0	E2 transport
+MAR06915	Hydrolysis of Glycylsarcosine for Uptake	Transport reactions	1	0	E2 transport
+MAR06917	Transport of Glycylsarcosine by the Apical Pept1 Amino Acid Transporters	Transport reactions	1	0	E2 transport
+MAR07101	Transport of L-Histidine by Hpt3 Or Hpt4 Peptide Transporters	Transport reactions	2	0	E2 transport
+MAR07102	Transport of L-Histidine by Y+Lat1 Or Y+Lat2 Transporters	Transport reactions	3	2	E2 transport
+MAR07105	Transport of Histidine by Y+Lat1 Or Y+Lat2 with Symporter of H	Transport reactions	3	2	E2 transport
+MAR07107	Transport of 5-HPETE into the Enterocytes	Transport reactions	1	0	E2 transport
+MAR07148	Transport of Leucylglycine by the Apical Pept1 Amino Acid Transporters	Transport reactions	1	0	E2 transport
+MAR07149	Hydrolysis of Leucylleucine	Transport reactions	1	0	E2 transport
+MAR07150	Transport of Leucylleucine by the Apical Pept1 Amino Acid Transporters	Transport reactions	1	0	E2 transport
+MAR07151	Transport of Leucine by Y+Lat1 Or Y+Lat2 with Symporter of H	Transport reactions	3	2	E2 transport
+MAR07152	Uptake of Linoleic Acid	Transport reactions	1	0	E2 transport
+MAR07153	Transport of Methionine by Y+Lat1 Or Y+Lat2 with Symporter of H	Transport reactions	3	2	E2 transport
+MAR07154	Transport of Nicotinate	Transport reactions	1	0	E2 transport
+MAR07155	Transport of Octadecenoyl Coeznyme A into the Enterocytes	Transport reactions	1	0	E2 transport
+MAR07156	Uptake of Octadecenoate	Transport reactions	1	0	E2 transport
+MAR07157	Transport of Hexadecanoate	Transport reactions	1	0	E2 transport
+MAR07178	Transport of Lysophosphatidylethanolamine	Transport reactions	1	0	E2 transport
+MAR07179	Transport of L-Phenylalanine by Atb0 Transporter	Transport reactions	1	0	E2 transport
+MAR07189	Transport of Phenylalanine by Y+Lat1 Or Y+Lat2 with Symport of H	Transport reactions	3	2	E2 transport
+MAR07190	Transport of Palmitoyl Coenzyme A	Transport reactions	1	0	E2 transport
+MAR07192	Transport of Prolylglycine by the Apical Pept1 Amino Acid Transporters	Transport reactions	1	0	E2 transport
+MAR07193	Hydrolysis of Glycylproline	Transport reactions	1	0	E2 transport
+MAR07194	Transport of L-Proline by the Apical Imino Amino Acid Transporters	Transport reactions	2	2	E2 transport
+MAR07589	Transport of Taurine by Pat1	Transport reactions	1	0	E2 transport
+MAR07593	Transport of L-Threonine by Atb0 Transporter	Transport reactions	1	0	E2 transport
+MAR07595	Transport of L-Tryptophan by Atb0 Transporter	Transport reactions	1	0	E2 transport
+MAR07657	Transport of L-Tyrosine by Atb0 Transporter	Transport reactions	1	0	E2 transport
+MAR07658	Efflux of Alpha-Tocopherol into the Lyphatics in Chylomicrons	Transport reactions	1	0	E2 transport
+MAR07753	Transport of Hydroxy-Proline	Transport reactions	1	0	E2 transport
+MAR07811	Aspartate Intake by System Asct-1 Transporter	Transport reactions	1	0	E2 transport
+MAR08301	Transport of dTTP into Mitochondria	Transport reactions	1	0	E2 transport
+MAR08969	Acid Phosphatase (FMN), Extracellular	Transport reactions	1	0	E2 transport
+MAR08972	Glutamate Intake by System Asct-1 Transporter	Transport reactions	1	0	E2 transport
+MAR09031	Orotate-Glutamate Antiport	Transport reactions	1	0	E2 transport
+MAR09059	Transport of 5-Hydroxyindoleacetate	Transport reactions	1	0	E2 transport
+MAR09274	Transport of L-Kynurenine	Transport reactions	2	0	E2 transport
+MAR09402	Transport of L-Kynurenine	Transport reactions	1	0	E2 transport
+MAR09403	Transport of L-Kynurenine	Transport reactions	1	0	E2 transport
+MAR09576	Transport of Kynurenic Acid	Transport reactions	2	0	E2 transport
+MAR09736	Transport of 3-Hydroxy-L-Kynurenine	Transport reactions	1	0	E2 transport
+MAR09819	Transport of Quinolinic Acid	Transport reactions	1	0	E2 transport
+MAR09869	Alanine Transport by B0At3	Transport reactions	2	2	E2 transport
+MAR09870	Arachidonate (N-C18:1) Transport by FATP	Transport reactions	2	0	E2 transport
+MAR09871	Arginine Transport by B0At3	Transport reactions	2	2	E2 transport
+MAR09872	Asparagine Transport by B0At3	Transport reactions	2	2	E2 transport
+MAR09873	Betaine Transport by Bgt	Transport reactions	1	0	E2 transport
+MAR09874	Butyrate Transport by Smct1	Transport reactions	1	0	E2 transport
+MAR09875	Carnitine Transport by Atb0	Transport reactions	1	0	E2 transport
+MAR09876	Cysteine Transport by B0At3	Transport reactions	2	2	E2 transport
+MAR09877	Dhea Transport by ABCa11	Transport reactions	1	0	E2 transport
+MAR09878	Dopa Transport by Ent4	Transport reactions	1	0	E2 transport
+MAR09879	17Beta-Estradiol 3-Glucosiduronic Acid Transport by ABCa8	Transport reactions	1	0	E2 transport
+MAR09880	Estrone-Sulphate Transport by ABCa11	Transport reactions	1	0	E2 transport
+MAR09881	Estrone-Sulphate Transport by ABCa8	Transport reactions	1	0	E2 transport
+MAR09882	Folate Transport by ABCa11	Transport reactions	7	0	E2 transport
+MAR09883	Folate Transport by Oat1	Transport reactions	1	0	E2 transport
+MAR09884	Folate Transport by Oats	Transport reactions	3	0	E2 transport
+MAR09885	Folate Transport by OATP	Transport reactions	2	0	E2 transport
+MAR09886	GABA Transport by Bgt	Transport reactions	1	0	E2 transport
+MAR09888	Glutamate Transport by B0At3	Transport reactions	2	2	E2 transport
+MAR09889	Guanosine Transport in via Proton Symport Reversible	Transport reactions	1	0	E2 transport
+MAR09890	Water And Glycerol Transport by Aqp	Transport reactions	4	0	E2 transport
+MAR09891	Iso-Leucine Transport by B0At3	Transport reactions	2	2	E2 transport
+MAR09892	Leucine Transport by B0At3	Transport reactions	2	2	E2 transport
+MAR09893	Leukotriene Transport by ABCa8	Transport reactions	1	0	E2 transport
+MAR09894	Lignocerate Transport by FATP	Transport reactions	2	0	E2 transport
+MAR09895	Methionine Transport by B0At3	Transport reactions	2	2	E2 transport
+MAR09896	Nicotinate Transport by Smct1	Transport reactions	1	0	E2 transport
+MAR09897	Phosphatidylglycerol Transport by ABCa3	Transport reactions	1	0	E2 transport
+MAR09898	Phenylalanine Transport by B0At3	Transport reactions	2	2	E2 transport
+MAR09899	Heme Transport by ABCg2	Transport reactions	1	0	E2 transport
+MAR09900	Propionate Transport by Smct1	Transport reactions	1	0	E2 transport
+MAR09901	Phosphatidylserine Transport by ABCa1	Transport reactions	1	0	E2 transport
+MAR09902	Pyruvate Transport by Smct1	Transport reactions	1	0	E2 transport
+MAR09903	Vitamin Transport by ABCa4	Transport reactions	1	0	E2 transport
+MAR09904	Serine Transport by B0At3	Transport reactions	2	2	E2 transport
+MAR09905	Serotonin Transport by Ent4	Transport reactions	1	0	E2 transport
+MAR09906	Bile Acid Transport by ABCa8	Transport reactions	1	0	E2 transport
+MAR09907	Tyrptophan Transport by B0At3	Transport reactions	2	2	E2 transport
+MAR09908	Tyrosine Transport by B0At3	Transport reactions	2	2	E2 transport
+MAR09909	Valine Transport by B0At3	Transport reactions	2	2	E2 transport
+MAR09910	Secretion of Riboflavin	Transport reactions	2	0	E2 transport
+MAR09912	Transport of O-Acetylcarnitine	Transport reactions	1	0	E2 transport
+MAR09913	Transport of O-Propanoylcarnitine	Transport reactions	1	0	E2 transport
+MAR09914	Transport of 6Z,9Z-Octadecadienoylcarnitine	Transport reactions	1	0	E2 transport
+MAR09915	Transport of L-Oleoylcarnitine	Transport reactions	1	0	E2 transport
+MAR09916	Transport of O-Octadecanoyl-R-Carnitine	Transport reactions	1	0	E2 transport
+MAR09917	Transport of L-Palmitoylcarnitine	Transport reactions	1	0	E2 transport
+MAR09918	Transport of Palmitoleoyl-Carnitine	Transport reactions	1	0	E2 transport
+MAR09985	Transport of 5-Amino-4-Oxopentanoate, Proton Symport	Transport reactions	1	0	E2 transport
+MAR10008	Transport of N-Acetylmethionine, Extracellular	Transport reactions	1	0	E2 transport
+MAR10010	Transport of Lithocholate, Active Transport	Transport reactions	3	0	E2 transport
+MAR10011	Transport of Lithocholate, Sodium Symport	Transport reactions	1	0	E2 transport
+MAR10014	Transport of Deoxycholate	Transport reactions	3	0	E2 transport
+MAR10020	Transport of Taurodeoxycholate	Transport reactions	3	0	E2 transport
+MAR10155	Transport of 5Beta-Cholestane-3Alpha, 7Alpha, 12Alpha, 24S, 25-Pentol, Active Transport	Transport reactions	3	0	E2 transport
+MAR10451	Transport of Bile Acid, Tauroursodeoxycholate, Active Transport	Bile acid biosynthesis	3	0	E2 transport
+MAR10452	Transport of Bile Acid, Glycoursodeoxycholate, Active Transport	Bile acid biosynthesis	3	0	E2 transport
+MAR10453	Transport of Bile Acid, Ursodeoxycholate, Active Transport	Transport reactions	4	0	E2 transport
+MAR10454	Transport of Bile Acid, Sulfochenodeoxycholate, Active Transport	Transport reactions	4	0	E2 transport
+MAR10464	Indoxyl Sulfate Transport into the Kidney via Oat1 (Slc22A6)	Transport reactions	1	0	E2 transport
+MAR10739	Transport of AlaArgCys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10740	Transport of AlaArgGly, Extracellular	Transport reactions	2	0	E2 transport
+MAR10741	Transport of AlaAsnLeu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10742	Transport of AlaGlyLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10743	Transport of AlaHisAla, Extracellular	Transport reactions	2	0	E2 transport
+MAR10744	Transport of AlaLysThr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10745	Transport of ArgAlaAla, Extracellular	Transport reactions	2	0	E2 transport
+MAR10746	Transport of ArgAlaPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10747	Transport of ArgAlaThr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10748	Transport of ArgArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10749	Transport of ArgArgLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10750	Transport of ArgArgMet, Extracellular	Transport reactions	2	0	E2 transport
+MAR10751	Transport of ArgCysGly, Extracellular	Transport reactions	2	0	E2 transport
+MAR10752	Transport of ArgCysSer, Extracellular	Transport reactions	2	0	E2 transport
+MAR10753	Transport of ArgGluGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10754	Transport of ArgGluPro, Extracellular	Transport reactions	2	0	E2 transport
+MAR10755	Transport of ArgGlyGly, Extracellular	Transport reactions	2	0	E2 transport
+MAR10756	Transport of ArgHisThr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10757	Transport of ArgLeuPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10758	Transport of ArgLysAsp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10759	Transport of ArgPheArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10760	Transport of ArgProMet, Extracellular	Transport reactions	2	0	E2 transport
+MAR10761	Transport of ArgProThr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10762	Transport of ArgSerSer, Extracellular	Transport reactions	2	0	E2 transport
+MAR10763	Transport of ArgTyrVal, Extracellular	Transport reactions	2	0	E2 transport
+MAR10764	Transport of ArgValCys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10765	Transport of ArgValTrp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10766	Transport of AsnAsnArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10767	Transport of AsnCysCys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10768	Transport of AsnMetPro, Extracellular	Transport reactions	2	0	E2 transport
+MAR10769	Transport of AsnPheAsp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10770	Transport of AsnPheCys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10771	Transport of AsnTyrGly, Extracellular	Transport reactions	2	0	E2 transport
+MAR10772	Transport of AsnTyrPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10773	Transport of AsnTyrThr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10774	Transport of AspAlaArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10775	Transport of AspAsnGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10776	Transport of AspGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10777	Transport of AspGluPro, Extracellular	Transport reactions	2	0	E2 transport
+MAR10778	Transport of AspGluTrp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10779	Transport of AspHisCys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10780	Transport of AspHisPro, Extracellular	Transport reactions	2	0	E2 transport
+MAR10781	Transport of AspLysGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10782	Transport of AspLysHis, Extracellular	Transport reactions	2	0	E2 transport
+MAR10783	Transport of AspMetAsp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10784	Transport of AspProLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10785	Transport of AspValAsn, Extracellular	Transport reactions	2	0	E2 transport
+MAR10786	Transport of CysAsnMet, Extracellular	Transport reactions	2	0	E2 transport
+MAR10787	Transport of CysAspPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10788	Transport of CysCys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10789	Transport of CysGlnMet, Extracellular	Transport reactions	2	0	E2 transport
+MAR10790	Transport of CysGluHis, Extracellular	Transport reactions	2	0	E2 transport
+MAR10791	Transport of CysGluTrp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10792	Transport of CysLeuThr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10793	Transport of CysSerMet, Extracellular	Transport reactions	2	0	E2 transport
+MAR10794	Transport of CysTyrAsn, Extracellular	Transport reactions	2	0	E2 transport
+MAR10795	Transport of GlnAsnGln, Extracellular	Transport reactions	2	0	E2 transport
+MAR10796	Transport of GlnHisHis, Extracellular	Transport reactions	2	0	E2 transport
+MAR10797	Transport of GlnHisLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10798	Transport of GlnLysLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10799	Transport of GlnLysTrp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10800	Transport of GlnProGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10801	Transport of GlnTrpGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10802	Transport of GlnTyrLeu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10803	Transport of GluArgLeu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10804	Transport of GluAsnLeu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10805	Transport of GluGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10806	Transport of GluIleLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10807	Transport of GluLeu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10808	Transport of GluMet, Extracellular	Transport reactions	2	0	E2 transport
+MAR10809	Transport of GluMetHis, Extracellular	Transport reactions	2	0	E2 transport
+MAR10810	Transport of GluThr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10811	Transport of GluThrLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10812	Transport of GluTrpAla, Extracellular	Transport reactions	2	0	E2 transport
+MAR10813	Transport of GlyHisAsn, Extracellular	Transport reactions	2	0	E2 transport
+MAR10814	Transport of GlyHisLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10815	Transport of GlyLysCys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10816	Transport of GlyLysPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10817	Transport of GlyTyrLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10818	Transport of GlyValHis, Extracellular	Transport reactions	2	0	E2 transport
+MAR10819	Transport of HisArgCys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10820	Transport of HisArgSer, Extracellular	Transport reactions	2	0	E2 transport
+MAR10821	Transport of HisAsp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10822	Transport of HisCysCys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10823	Transport of HisGlnAla, Extracellular	Transport reactions	2	0	E2 transport
+MAR10824	Transport of HisGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10825	Transport of HisGluGln, Extracellular	Transport reactions	2	0	E2 transport
+MAR10826	Transport of HisGlyLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10827	Transport of HisHisLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10828	Transport of HisLysAla, Extracellular	Transport reactions	2	0	E2 transport
+MAR10829	Transport of HisLysGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10830	Transport of HisLysIle, Extracellular	Transport reactions	2	0	E2 transport
+MAR10831	Transport of HisLysThr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10832	Transport of HisLysVal, Extracellular	Transport reactions	2	0	E2 transport
+MAR10833	Transport of HisMet, Extracellular	Transport reactions	2	0	E2 transport
+MAR10834	Transport of HisMetGln, Extracellular	Transport reactions	2	0	E2 transport
+MAR10835	Transport of HisPheArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10836	Transport of HisProLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10837	Transport of HisTrpHis, Extracellular	Transport reactions	2	0	E2 transport
+MAR10838	Transport of IleArgIle, Extracellular	Transport reactions	2	0	E2 transport
+MAR10839	Transport of IleAsnHis, Extracellular	Transport reactions	2	0	E2 transport
+MAR10840	Transport of IleAsp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10841	Transport of IleGlnGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10842	Transport of IleGlyArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10843	Transport of IleProLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10844	Transport of IleSerArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10845	Transport of IleTrpTyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10846	Transport of LeuAlaArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10847	Transport of LeuAsnAsp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10848	Transport of LeuAspLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10849	Transport of LeuLeuTrp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10850	Transport of LeuPro, Extracellular	Transport reactions	2	0	E2 transport
+MAR10851	Transport of LeuProArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10852	Transport of LeuSerTrp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10853	Transport of LeuTrp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10854	Transport of LeuTrpArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10855	Transport of Leutyrtyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10856	Transport of LeuVal, Extracellular	Transport reactions	2	0	E2 transport
+MAR10857	Transport of LysArgLeu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10858	Transport of LysCysHis, Extracellular	Transport reactions	2	0	E2 transport
+MAR10859	Transport of LysGlnPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10860	Transport of LysGluGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10861	Transport of LysLysLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10862	Transport of LysPheIle, Extracellular	Transport reactions	2	0	E2 transport
+MAR10863	Transport of LysTrpArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10864	Transport of LysTyrIle, Extracellular	Transport reactions	2	0	E2 transport
+MAR10865	Transport of LysValPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10866	Transport of LysValTrp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10867	Transport of MetArgLeu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10868	Transport of MetAsnTyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10869	Transport of MetGlnTyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10870	Transport of MetGlyArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10871	Transport of MetHisLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10872	Transport of MetMetIle, Extracellular	Transport reactions	2	0	E2 transport
+MAR10873	Transport of MetPheArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10874	Transport of MetTrpPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10875	Transport of PheAsnMet, Extracellular	Transport reactions	2	0	E2 transport
+MAR10876	Transport of PheAsp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10877	Transport of PheGlnPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10878	Transport of PheLeu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10879	Transport of PheLeuAsp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10880	Transport of PheLeuHis, Extracellular	Transport reactions	2	0	E2 transport
+MAR10881	Transport of PheLysAla, Extracellular	Transport reactions	2	0	E2 transport
+MAR10882	Transport of PheLysPro, Extracellular	Transport reactions	2	0	E2 transport
+MAR10883	Transport of PhePhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10884	Transport of PhePheAsn, Extracellular	Transport reactions	2	0	E2 transport
+MAR10885	Transport of PhePheThr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10886	Transport of PheProArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10887	Transport of PheSerTrp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10888	Transport of PheThrLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10889	Transport of PheTrpLeu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10890	Transport of Phetyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10891	Transport of PheTyrGln, Extracellular	Transport reactions	2	0	E2 transport
+MAR10892	Transport of PheTyrLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10893	Transport of ProArgAsp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10894	Transport of ProArgCys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10895	Transport of ProAsnCys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10896	Transport of ProCys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10897	Transport of ProGlnPro, Extracellular	Transport reactions	2	0	E2 transport
+MAR10898	Transport of ProGluLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10899	Transport of ProHis, Extracellular	Transport reactions	2	0	E2 transport
+MAR10900	Transport of ProHisTyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10901	Transport of ProLeuArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10902	Transport of ProLysPro, Extracellular	Transport reactions	2	0	E2 transport
+MAR10903	Transport of ProPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10904	Transport of ProProArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10905	Transport of ProProPro, Extracellular	Transport reactions	2	0	E2 transport
+MAR10906	Transport of ProTrpLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10907	Transport of ProTrpThr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10908	Transport of ProValGln, Extracellular	Transport reactions	2	0	E2 transport
+MAR10909	Transport of SerArgAla, Extracellular	Transport reactions	2	0	E2 transport
+MAR10910	Transport of SerArgTrp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10911	Transport of SerCysArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10912	Transport of SerGlyGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10913	Transport of SerLysHis, Extracellular	Transport reactions	2	0	E2 transport
+MAR10914	Transport of SerPheLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10915	Transport of SerTrpHis, Extracellular	Transport reactions	2	0	E2 transport
+MAR10916	Transport of ThrArgTyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10917	Transport of ThrAsnTyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10918	Transport of ThrGlnGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10919	Transport of ThrGlnTyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10920	Transport of ThrHisHis, Extracellular	Transport reactions	2	0	E2 transport
+MAR10921	Transport of ThrIleArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10922	Transport of ThrMetArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10923	Transport of ThrPheArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10924	Transport of ThrSerArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10925	Transport of ThrThrArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10926	Transport of ThrTyrMet, Extracellular	Transport reactions	2	0	E2 transport
+MAR10927	Transport of TrpAlaPro, Extracellular	Transport reactions	2	0	E2 transport
+MAR10928	Transport of TrpArgAla, Extracellular	Transport reactions	2	0	E2 transport
+MAR10929	Transport of TrpAspAsp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10930	Transport of TrpGlnGln, Extracellular	Transport reactions	2	0	E2 transport
+MAR10931	Transport of TrpGluGly, Extracellular	Transport reactions	2	0	E2 transport
+MAR10932	Transport of TrpGluLeu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10933	Transport of TrpGluPro, Extracellular	Transport reactions	2	0	E2 transport
+MAR10934	Transport of TrpGluTyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10935	Transport of TrpGlyLeu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10936	Transport of TrpGlyPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10937	Transport of TrpGlyVal, Extracellular	Transport reactions	2	0	E2 transport
+MAR10938	Transport of TrpHisMet, Extracellular	Transport reactions	2	0	E2 transport
+MAR10939	Transport of TrpIleLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10940	Transport of TrpIleTrp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10941	Transport of TrpLeuVal, Extracellular	Transport reactions	2	0	E2 transport
+MAR10942	Transport of TrpLys, Extracellular	Transport reactions	2	0	E2 transport
+MAR10943	Transport of TrpMetArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10944	Transport of TrpMetVal, Extracellular	Transport reactions	2	0	E2 transport
+MAR10945	Transport of TrpPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10946	Transport of TrpProGly, Extracellular	Transport reactions	2	0	E2 transport
+MAR10947	Transport of TrpProLeu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10948	Transport of TrpProVal, Extracellular	Transport reactions	2	0	E2 transport
+MAR10949	Transport of TrpSerTyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10950	Transport of TrpThrGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10951	Transport of TrpThrIle, Extracellular	Transport reactions	2	0	E2 transport
+MAR10952	Transport of TrpThrTyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10953	Transport of TrpTyrGln, Extracellular	Transport reactions	2	0	E2 transport
+MAR10954	Transport of Trptyrtyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10955	Transport of TrpValAsp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10956	Transport of TyrAla, Extracellular	Transport reactions	2	0	E2 transport
+MAR10957	Transport of TyrAlaPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10958	Transport of TyrArgGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10959	Transport of TyrArgSer, Extracellular	Transport reactions	2	0	E2 transport
+MAR10960	Transport of TyrAspArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10961	Transport of TyrCysGly, Extracellular	Transport reactions	2	0	E2 transport
+MAR10962	Transport of TyrCysThr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10963	Transport of TyrGlu, Extracellular	Transport reactions	2	0	E2 transport
+MAR10964	Transport of TyrLeuArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10965	Transport of TyrPheTyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10966	Transport of TyrThr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10967	Transport of TyrTrpPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10968	Transport of Tyrtyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10969	Transport of TyrValMet, Extracellular	Transport reactions	2	0	E2 transport
+MAR10970	Transport of ValArgGly, Extracellular	Transport reactions	2	0	E2 transport
+MAR10971	Transport of ValHisAsn, Extracellular	Transport reactions	2	0	E2 transport
+MAR10972	Transport of ValLeuPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10973	Transport of ValLysTyr, Extracellular	Transport reactions	2	0	E2 transport
+MAR10974	Transport of ValPheArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10975	Transport of ValProTrp, Extracellular	Transport reactions	2	0	E2 transport
+MAR10976	Transport of ValSerArg, Extracellular	Transport reactions	2	0	E2 transport
+MAR10977	Transport of ValTrpPhe, Extracellular	Transport reactions	2	0	E2 transport
+MAR10978	Transport of ValTrpVal, Extracellular	Transport reactions	2	0	E2 transport
+MAR10979	Transport of ValVal, Extracellular	Transport reactions	2	0	E2 transport
+MAR10980	Transport of TrpGlyAsp, Extracellular	Transport reactions	2	0	E2 transport
+MAR11223	Transport of Homovanillate by Oat3	Transport reactions	1	0	E2 transport
+MAR11307	5-Aminolevulinate Transport in via Proton Symport	Transport reactions	2	0	E2 transport
+MAR11374	Transport of 3Alpha, 7Alpha-Dihydroxy-5Beta-Cholestanate, Active Transport	Transport reactions	3	0	E2 transport
+MAR11375	Transport of 3Alpha, 7Alpha-Dihydroxy-5Beta-Cholestanate, Sodium Symport	Transport reactions	1	0	E2 transport
+MAR11377	Transport of 3Alpha, 7Alpha, 12Alpha-Trihydroxy-5Beta-Cholestanoate, Active Transport	Transport reactions	3	0	E2 transport
+MAR11378	Transport of 3Alpha, 7Alpha, 12Alpha-Trihydroxy-5Beta-Cholestanoate, Sodium Symport	Transport reactions	1	0	E2 transport
+MAR11380	Transport of 5Beta-Cholestane-3Alpha, 7Alpha, 26-Triol, Active Transport	Transport reactions	3	0	E2 transport
+MAR11381	Transport of 5Beta-Cholestane-3Alpha, 7Alpha, 26-Triol, Sodium Symport	Transport reactions	1	0	E2 transport
+MAR11383	Transport of 7Alpha-Hydroxycholest-4-En-3-One, Active Transport	Transport reactions	3	0	E2 transport
+MAR11384	Transport of 7Alpha-Hydroxycholest-4-En-3-One, Sodium Symport	Transport reactions	1	0	E2 transport
+MAR11386	Transport of 7Alpha, 12Alpha-Dihydroxycholest-4-En-3-One, Active Transport	Transport reactions	3	0	E2 transport
+MAR11388	Transport of 7-Ketolithocholate, Active Transport	Transport reactions	3	0	E2 transport
+MAR11389	Transport of 7-Ketolithocholate, Sodium Symport	Transport reactions	1	0	E2 transport
+MAR11395	Adenosine Transport Cnt3	Transport reactions	2	0	E2 transport
+MAR11396	Butyrate Transport via Proton Symport, Reversible	Transport reactions	1	0	E2 transport
+MAR11397	Cytidine Transport in via Proton Symport, Reversible	Transport reactions	1	0	E2 transport
+MAR11410	D-Galactose Transport via Proton Symport	Transport reactions	1	0	E2 transport
+MAR11411	Hydrolysis of Glycylleucine	Transport reactions	2	0	E2 transport
+MAR11412	Transport of Glycylleucine by the Apical Pept1 Amino Acid Transporters	Transport reactions	1	0	E2 transport
+MAR11414	Hydrolysis of Prolylglycine	Transport reactions	1	0	E2 transport
+MAR11415	Inosine Transport in via Proton Symport, Reversible	Transport reactions	1	0	E2 transport
+MAR11417	Thymidine Transport in via Proton Symport Reversible	Transport reactions	1	0	E2 transport
+MAR11418	Uridine Transport in via Proton Symport Reversible	Transport reactions	1	0	E2 transport
+MAR11433	Thiamine Transport in via Proton Antiport	Transport reactions	2	0	E2 transport
+MAR11442	Transport of Phenylpyruvate via Proton Symport	Transport reactions	3	0	E2 transport
+MAR11443	Transport of Phenylpyruvate via Proton Symport, Mitochondrial	Transport reactions	2	2	E2 transport
+MAR11450	2-Methylbutyrylglycine Transport, Extracellular	Transport reactions	1	0	E2 transport
+MAR11453	3-Methyl-Crotonyl-Glycine Transport, Extracellular	Transport reactions	1	0	E2 transport
+MAR11456	Isovalerylglycine Transport, Extracellular	Transport reactions	1	0	E2 transport
+MAR11518	Transport of 3-Hydroxy-Glutarate, Extracellular, Antiport	Transport reactions	1	0	E2 transport
+MAR11572	1-Alkyl 2-Acylglycerol 3-Phosphocholine Transport	Transport reactions	5	0	E2 transport
+MAR11577	Transport of 11-Cis-Eicosenoate, Active	Transport reactions	6	0	E2 transport
+MAR11578	Transport of 15-Hydroxy- (8Z, 11Z, 13E)-Eicosatrienoate, Active	Transport reactions	6	0	E2 transport
+MAR11581	Transport of 15-Tetracosenoate, Diffusion	Transport reactions	6	0	E2 transport
+MAR11582	Transport of 1-Alkyl 2-Acteylglycerol 3-Phosphocholine	Transport reactions	5	0	E2 transport
+MAR11587	Transport of 1-Docosahexenoylglycerophosphocholine (Delta 4, 7, 10, 13, 16, 19), Sn1-Lpc (22:6)	Transport reactions	5	0	E2 transport
+MAR11588	Transport of 2-Linoleoylglycerophosphocholine	Transport reactions	5	0	E2 transport
+MAR11589	Transport of 2-Oleoylglycerophosphocholine	Transport reactions	5	0	E2 transport
+MAR11590	Transport of 2-Stearoylglycerophosphocholine	Transport reactions	5	0	E2 transport
+MAR11591	Transport of 1-Arachidonoyl-Glycero-3-Phosphocholine	Transport reactions	5	0	E2 transport
+MAR11592	Transport of 1-Docosahexaenoylglycerophosphocholine	Transport reactions	5	0	E2 transport
+MAR11593	Transport of 1-Eicosadienoylglycerophosphocholine (Delta 11, 14)	Transport reactions	5	0	E2 transport
+MAR11594	Transport of 1-Eicosatrienoylglycerophosphocholine (Delta 11, 14, 17)	Transport reactions	5	0	E2 transport
+MAR11595	Transport of 1-Heptadecanoylglycerophosphocholine	Transport reactions	5	0	E2 transport
+MAR11596	Transport of 1-Linoleoylglycerophosphocholine (Delta 9, 12)	Transport reactions	5	0	E2 transport
+MAR11597	Transport of 1-Myristoylglycerophosphocholine	Transport reactions	5	0	E2 transport
+MAR11598	Transport of 1-Pentadecanoylglycerophosphocholine, Sn1-Lpc (15:0)	Transport reactions	5	0	E2 transport
+MAR11599	Transport of 1-Octadeca-Trienoylglycerophosphocholine, Sn1-Lpc (18:3, Delta 9, 12, 15)	Transport reactions	5	0	E2 transport
+MAR11600	Transport of 1-Octadeca-Trienoylglycerophosphocholine, Sn1-Lpc (18:3, Delta 6, 9, 12)	Transport reactions	5	0	E2 transport
+MAR11601	Transport of 1-NoNADecanoylglycerophosphocholine, Sn1-Lpc (19:0)	Transport reactions	5	0	E2 transport
+MAR11602	Transport of 1-Eicosenoylglycerophosphocholine (Delta 11) , Sn1-Lpc (20:1)	Transport reactions	5	0	E2 transport
+MAR11603	Transport of 1-Dihomo-Linolenoylglycerophosphocholine (20:3, Delta 8, 11, 14), Lysopc A C20:3	Transport reactions	5	0	E2 transport
+MAR11604	Transport of 1-Eicosatetraenoylglycerophosphocholine (Delta 8, 11, 14, 17), Sn1-Lpc (20:4)	Transport reactions	5	0	E2 transport
+MAR11605	Transport of 1-Eicosapentenoylglycerophosphocholine (Delta 5, 8, 11, 14, 17), Sn1-Lpc (20:5)	Transport reactions	5	0	E2 transport
+MAR11606	Transport of 1-Docosatetraenoylglycerophosphocholine (Delta 7, 10, 13, 16), Sn1-Lpc (22:4)	Transport reactions	5	0	E2 transport
+MAR11607	Transport of 1-Docosapentenoylglycerophosphocholine (Delta 7, 10, 13, 16, 19), Sn1-Lpc (22:5)-W3	Transport reactions	5	0	E2 transport
+MAR11608	Transport of 1-Docosapentenoylglycerophosphocholine (Delta 4, 7, 10, 13, 16), Sn1-Lpc (22:5)-W6	Transport reactions	5	0	E2 transport
+MAR11609	Transport of 1-Lignocericylglycerophosphocholine (24:0), Lysopc A C24	Transport reactions	5	0	E2 transport
+MAR11610	Transport of 1-Oleoylglycerophosphocholine (Delta 9)	Transport reactions	5	0	E2 transport
+MAR11611	Transport of 1-Palmitoleoylglycerophosphocholine (Delta 9)	Transport reactions	5	0	E2 transport
+MAR11612	Transport of 1-Stearoylglycerophosphocholine	Transport reactions	5	0	E2 transport
+MAR11613	Transport of 1-Didecanoylglycerophosphoethanolamine (C12:0 Pe)	Transport reactions	2	0	E2 transport
+MAR11614	Transport of 1-Tridecanoylglycerophosphoethanolamine (C13:0 Pe)	Transport reactions	2	0	E2 transport
+MAR11615	Transport of 1-Myristoylglycerophosphoethanolamine (C14:0 Pe)	Transport reactions	2	0	E2 transport
+MAR11616	Transport of 1-Pentadecanoylglycerophosphoethanolamine (C15:0 Pe)	Transport reactions	2	0	E2 transport
+MAR11617	Transport of 1-Hexadecenoylglycerophosphoethanolamine (C16:1 Pe, Delta 9)	Transport reactions	2	0	E2 transport
+MAR11618	Transport of 1-Heptadecanoylglycerophosphoethanolamine (C17:0 Pe)	Transport reactions	2	0	E2 transport
+MAR11619	1-Eicosatrienoylglycerophosphoethanolamine (Delta 11, 14, 17), Lpe (20:3)	Transport reactions	2	0	E2 transport
+MAR11620	Transport of 1-Docosahexenoylglyceroethanolamine (Delta 4, 7, 10, 13, 16, 19), Lpe (22:6)	Transport reactions	2	0	E2 transport
+MAR11621	Transport of 2-Linoleoylglycerophosphoethanolamine	Transport reactions	2	0	E2 transport
+MAR11622	Transport of 1-Arachidonoyl-Sn-Glycero-3-Phosphoethanolamine	Transport reactions	2	0	E2 transport
+MAR11623	Transport of 1-Dihomo-Linolenoylglycerophosphoethanolamine (20:3, Delta 8, 11, 14)	Transport reactions	2	0	E2 transport
+MAR11624	Transport of 1-Linoleoylglycerophosphoethanolamine (Delta 9, 12)	Transport reactions	2	0	E2 transport
+MAR11625	Transport of 1-Palmitoylglycerophosphoethanolamine	Transport reactions	2	0	E2 transport
+MAR11626	Transport of 1-Oleoylglycerophosphoethanolamine (Delta 9)	Transport reactions	2	0	E2 transport
+MAR11627	Transport of 1-Palmitoylglycerophosphocholine	Transport reactions	5	0	E2 transport
+MAR11628	Transport of 1-Stearoylglycerophosphoethanolamine	Transport reactions	2	0	E2 transport
+MAR11647	Hydroxyprogesterone Transport, Antiport	Transport reactions	1	0	E2 transport
+MAR11648	Extracellular Transport of Digalactosylceramidesulfate, Active Transport	Transport reactions	2	0	E2 transport
+MAR11695	Extracellular Transport of Sphingomyeline, Active Transport	Transport reactions	2	0	E2 transport
+MAR11696	Transport of Sphingomyelin (D18:0/24:1), Active Transport	Transport reactions	2	0	E2 transport
+MAR11698	Transport of Sphingomyelin (D18:1/14:0), Active Transport	Transport reactions	2	0	E2 transport
+MAR11700	Transport of Sphingomyelin (D18:1/15:0), Active Transport	Transport reactions	2	0	E2 transport
+MAR11702	Transport of Sphingomyelin (D18:1/16:0), Active Transport	Transport reactions	2	0	E2 transport
+MAR11704	Transport of Sphingomyelin (D18:1/16:1), Active Transport	Transport reactions	2	0	E2 transport
+MAR11706	Transport of Sphingomyelin (D18:1/17:0), Active	Transport reactions	2	0	E2 transport
+MAR11708	Transport of Sphingomyelin (D18:1/18:0), Active	Transport reactions	2	0	E2 transport
+MAR11710	Transport of Sphingomyelin (D18:1/18:1), Active	Transport reactions	2	0	E2 transport
+MAR11712	Transport of Sphingomyelin (D18:1/20:0), Active	Transport reactions	2	0	E2 transport
+MAR11714	Transport of Sphingomyelin (D18:1/20:1), Active	Transport reactions	2	0	E2 transport
+MAR11716	Transport of Sphingomyelin (D18:1/21:0), Active	Transport reactions	2	0	E2 transport
+MAR11718	Transport of Sphingomyelin (D18:1/22:0), Active Transport	Transport reactions	2	0	E2 transport
+MAR11720	Transport of Sphingomyelin (D18:1/22:1), Active	Transport reactions	2	0	E2 transport
+MAR11722	Transport of Sphingomyelin (D18:1/23:0), Active	Transport reactions	2	0	E2 transport
+MAR11724	Transport of Sphingomyelin (D18:0/24:0), Active Transport	Transport reactions	2	0	E2 transport
+MAR11726	Transport of Sphingomyelin (D18:0/25:0), Active Transport	Transport reactions	2	0	E2 transport
+MAR11731	Transport of 2-Hydroxy-Glutarate, Extracellular, Antiport	Transport reactions	1	0	E2 transport
+MAR11734	Transport of Glutarate, Extracellular, Antiport	Transport reactions	1	0	E2 transport
+MAR11737	Transport of 7Z, 10Z-Hexadecadienoic Acid into Cytosol	Transport reactions	1	0	E2 transport
+MAR11741	Transport of 7, 10, 13-Hexadecatrienoic Acid into Cytosol	Transport reactions	1	0	E2 transport
+MAR11746	Transport of Trans-Delta-2-Heptadecanoic Acid, Mitochondrial	Transport reactions	1	0	E2 transport
+MAR11753	Transport of 5, 8, 11, 14, 17-Eicosapentenoic Acid, Mitochondrial	Transport reactions	1	0	E2 transport
+MAR11756	Transport of Trans-4-Coumarate, Extracellular	Transport reactions	1	0	E2 transport
+MAR11757	Transport of Androst-4-Ene-3, 17-Dione, Extracellular	Transport reactions	1	0	E2 transport
+MAR11758	Transport of 16Alpha-Hydroxydehydroepiandrosterone, Extracellular	Transport reactions	1	0	E2 transport
+MAR11759	Transport of 3Alpha-Hydroxy-5Beta-Androstan-17-One, Extracellular	Transport reactions	1	0	E2 transport
+MAR11760	Transport of 5Alpha-Androstane-3, 17-Dione, Extracellular	Transport reactions	1	0	E2 transport
+MAR11761	Transport of 5Alpha-Androstane-3Alpha, 17Beta-Diol, Extracellular	Transport reactions	1	0	E2 transport
+MAR11762	Transport of 2-Hydroxyestradiol-17Beta, Extracellular	Transport reactions	1	0	E2 transport
+MAR11763	Transport of 2-Methoxyestrone, Extracellular	Transport reactions	1	0	E2 transport
+MAR11764	Transport of 2-Methoxyestradiol-17Beta, Extracellular	Transport reactions	1	0	E2 transport
+MAR11765	Transport of 21-Hydroxyallopregnanolone, Extracellular	Transport reactions	1	0	E2 transport
+MAR11766	Transport of 11-Deoxycortisol, Extracellular	Transport reactions	1	0	E2 transport
+MAR11767	Transport of 11-Deoxycorticosterone, Extracellular	Transport reactions	1	0	E2 transport
+MAR11768	Transport of Pregnenolone, Extracellular	Transport reactions	1	0	E2 transport
+MAR11769	Transport of Allopregnanolone, Extracellular	Transport reactions	1	0	E2 transport
+MAR11770	Transport of 17Alpha-Hydroxyprogesterone, Extracellular	Transport reactions	1	0	E2 transport
+MAR11771	Transport of 17Alpha-Hydroxypregnenolone, Extracellular	Transport reactions	1	0	E2 transport
+MAR11772	Transport of 5Alpha-Pregnane-3, 20-Dione, Extracellular	Transport reactions	1	0	E2 transport
+MAR11773	Transport of Pregnenolone Sulfate, Extracellular	Transport reactions	1	0	E2 transport
+MAR11774	Transport of 17Alpha-Hydroxypregnenolone Sulfate, Extracellular	Transport reactions	1	0	E2 transport
+MAR11775	Facilitated Diffusion via Aquaporin into Extracellular Space	Transport reactions	1	0	E2 transport
+MAR11776	Transport by Atb Binding Cassette Transporter ABCc2 into Extracellular Space	Transport reactions	1	0	E2 transport
+MAR11777	S-Adenosyl-L-Methionine:Histamine N-Tele-Methyltransferase, Extracellular	Transport reactions	1	0	E2 transport
+MAR11778	Transport (ATP-Dependent) into Extracellular Space	Transport reactions	1	0	E2 transport
+MAR11779	Transport by Glut-5 Transporter into Extracellular Space	Transport reactions	1	0	E2 transport
+MAR11780	2-Hydroxyphenylacetate Proton Symport, Cytosol	Transport reactions	1	0	E2 transport
+MAR11781	N (8)-Acetylspermidinium Transport, Cytosol	Transport reactions	1	0	E2 transport
+MAR11782	Facilitated Diffusion Through Uniport Oct1 into Extracellular Space	Transport reactions	1	0	E2 transport
+MAR11783	Facilitated Diffusion Through Uniport Oct2 into Extracellular Space	Transport reactions	1	0	E2 transport
+MAR11784	Facilitated Diffusion Through Uniport Oct2 into Extracellular Space	Transport reactions	1	0	E2 transport
+MAR11785	Transport by Monocarboxylate Transporter-2 into Extracellular Space	Transport reactions	1	0	E2 transport
+MAR11786	Transport by ABCg2 into Extracellular Space	Transport reactions	1	0	E2 transport
+MAR11787	Transport by Pcet into Extracellular Space	Transport reactions	1	0	E2 transport
+MAR11788	Tyraminium Proton Symport, Cytosol	Transport reactions	1	0	E2 transport
+MAR11789	Tryptaminium Transport, Cytosol	Transport reactions	1	0	E2 transport
+MAR11790	Transport by Pmat Transporter into Extracellular Space	Transport reactions	1	0	E2 transport
+MAR11791	Transport in via Sodium Symport into Extracellular Space	Transport reactions	6	2	E2 transport
+MAR11792	Transport (ATP-Dependent) into Extracellular Space	Transport reactions	2	0	E2 transport
+MAR11793	Transport (ATP-Dependent) into Extracellular Space	Transport reactions	2	0	E2 transport
+MAR11794	Transport (ATP-Dependent) into Extracellular Space	Transport reactions	2	0	E2 transport
+MAR11795	Transport (ATP-Dependent) into Extracellular Space	Transport reactions	2	0	E2 transport
+MAR11796	Transport (ATP-Dependent) into Extracellular Space	Transport reactions	2	0	E2 transport
+MAR11797	Transport by OATP1B Carriers into Extracellular Space	Transport reactions	2	0	E2 transport
+MAR11798	Transport by OATP1B Carriers into Extracellular Space	Transport reactions	3	0	E2 transport
+MAR11799	Transport by Atb Binding Cassette Transporter ABCc2 into Extracellular Space	Transport reactions	2	0	E2 transport
+MAR11800	Transport by Folr into Extracellular Space	Transport reactions	3	0	E2 transport
+MAR11801	Transport by Ent1/Ent2 into Extracellular Space	Transport reactions	2	0	E2 transport
+MAR11802	Export Mediated by ATP Binding Cassette (ABC) Transporters	Transport reactions	2	0	E2 transport
+MAR11803	Transport via Proton Antiport (Ammonium Transporter Rh Type C Or Type B) into Extracellular Space	Transport reactions	2	0	E2 transport
+MAR11804	Putrescine Export via Putrescine/Arginine Antiporter	Transport reactions	2	2	E2 transport
+MAR11805	Transport by Rfc into Extracellular Space	Transport reactions	1	0	E2 transport
+MAR11806	Tyraminium Transport, Cytosol	Transport reactions	3	0	E2 transport
+MAR11807	Facilitated Diffusion Through Uniport Octs Transporters into Extracellular Space	Transport reactions	3	0	E2 transport
+MAR11808	Uptake via Octn2 Transporter into Extracellular Space	Transport reactions	2	0	E2 transport
+MAR11809	Transport by ABCa11 into Extracellular Space	Transport reactions	7	0	E2 transport
+MAR11810	Transport by Y+Lat-2 into Extracellular Space	Transport reactions	2	2	E2 transport
+MAR11811	Transport by Oat1/Oat3 into Extracellular Space	Transport reactions	2	0	E2 transport
+MAR11812	(3, 4-Dihydroxyphenyl)Acetate (Dopac) Transport, Cytosol	Transport reactions	2	0	E2 transport
+MAR11813	3, 4-Dihydroxymandelate Transport, Cytosol	Transport reactions	2	0	E2 transport
+MAR11814	5-Methoxytryptophol Transport, Cytosol	Transport reactions	2	0	E2 transport
+MAR11815	Transport As Vitamin D	Transport reactions	3	0	E2 transport
+MAR12008	Dopamine 4-O-Glucuronide Transport	Transport reactions	1	0	E2 transport
+MAR12010	Dopamine 3-O-Glucuronide Transport	Transport reactions	1	0	E2 transport
+MAR12013	Transport of 5-S-Glutathionyl-L-Dopa	Transport reactions	2	0	E2 transport
+MAR12029	Transport of 5-S-Glutathionyl-Dopamine	Transport reactions	2	0	E2 transport
+MAR12142	12-Dehydrocholic acid ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12143	12-Dehydrocholic acid transport via bicarbonate countertransport	Transport reactions	4	0	E2 transport
+MAR12144	12-Dehydrocholic acid transport via sodium cotransport	Transport reactions	2	0	E2 transport
+MAR12147	3-Dehydrochenodeoxycholic acid ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12148	3-Dehydrochenodeoxycholic acid transport via bicarbonate countertransport	Transport reactions	4	0	E2 transport
+MAR12149	3-Dehydrochenodeoxycholic acid transport via sodium cotransport	Transport reactions	2	0	E2 transport
+MAR12150	3-Dehydrocholic acid  ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12151	3-Dehydrocholic acid  transport via bicarbonate countertransport	Transport reactions	4	0	E2 transport
+MAR12152	3-Dehydrocholic acid  transport via sodium cotransport	Transport reactions	2	0	E2 transport
+MAR12153	3-dehydro-deoxycholic acid ABC bile acid transporter	Transport reactions	3	0	E2 transport
+MAR12155	3-dehydro-deoxycholic acid transport via bicarbonate countertransport	Transport reactions	4	0	E2 transport
+MAR12156	3-dehydro-deoxycholic acid transport via sodium cotransport	Transport reactions	2	0	E2 transport
+MAR12157	3-dehydro-lithocholic acid ABC bile acid transporter	Transport reactions	3	0	E2 transport
+MAR12159	3-dehydro-lithocholic acid transport via bicarbonate countertransport	Transport reactions	4	0	E2 transport
+MAR12160	3-dehydro-lithocholic acid transport via sodium cotransport	Transport reactions	2	0	E2 transport
+MAR12161	7-Dehydrochenodeoxycholic acid ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12162	7-Dehydrochenodeoxycholic acid transport via bicarbonate countertransport	Transport reactions	4	0	E2 transport
+MAR12163	7-Dehydrochenodeoxycholic acid transport via sodium cotransport	Transport reactions	2	0	E2 transport
+MAR12164	7-Dehydrocholic acid ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12165	7-Dehydrocholic acid transport via bicarbonate countertransport	Transport reactions	4	0	E2 transport
+MAR12166	7-Dehydrocholic acid transport via sodium cotransport	Transport reactions	2	0	E2 transport
+MAR12169	Glucuronidated bile acid excretion (CA-24G)	Transport reactions	3	0	E2 transport
+MAR12171	Cholic acid 3-sulfate ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12172	Cholic acid 3-sulfate transport via bicarbonate countertransport	Transport reactions	2	0	E2 transport
+MAR12176	Glucuronidated bile acid excretion (CDCA-24G)	Transport reactions	4	0	E2 transport
+MAR12180	Glucuronidated bile acid excretion (CDCA-3G)	Transport reactions	4	0	E2 transport
+MAR12182	Chenodeoxycholic acid 3-sulfate transport via bicarbonate countertransport	Transport reactions	2	0	E2 transport
+MAR12184	Coprostanol ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12185	Coprostanol transport via bicarbonate countertransport	Transport reactions	4	0	E2 transport
+MAR12186	Coprostanol transport via sodium cotransport	Transport reactions	2	0	E2 transport
+MAR12189	Glucuronidated bile acid excretion (DCA-24g)	Transport reactions	4	0	E2 transport
+MAR12193	Glucuronidated bile acid excretion (DCA-3G)	Transport reactions	4	0	E2 transport
+MAR12195	Deoxycholic acid 3-sulfate ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12196	Deoxycholic acid 3-sulfate transport via bicarbonate countertransport	Transport reactions	2	0	E2 transport
+MAR12234	Glycocholic acid 3-sulfate ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12235	Glycocholic acid 3-sulfate transport via bicarbonate countertransport	Transport reactions	2	0	E2 transport
+MAR12237	Glycochenodeoxycholic acid 3-sulfate ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12238	Glycochenodeoxycholic acid 3-sulfate via bicarbonate countertransport	Transport reactions	2	0	E2 transport
+MAR12240	Glycodeoxycholic acid 3-sulfate ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12241	Glycodeoxycholic acid 3-sulfate via bicarbonate countertransport	Transport reactions	2	0	E2 transport
+MAR12243	Glycoursodeoxycholic acid 3-sulfate ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12244	Glycoursodeoxycholic acid 3-sulfate via bicarbonate countertransport	Transport reactions	2	0	E2 transport
+MAR12248	Glucuronidated bile acid excretion (HCA-24G)	Transport reactions	4	0	E2 transport
+MAR12252	Glucuronidated bile acid excretion (HCA-6G)	Transport reactions	4	0	E2 transport
+MAR12256	Glucuronidated bile acid excretion (HDCA-24G)	Transport reactions	4	0	E2 transport
+MAR12260	Glucuronidated bile acid excretion (HDCA-6G)	Transport reactions	4	0	E2 transport
+MAR12262	hyocholic acid ABC bile acid transporter	Transport reactions	3	0	E2 transport
+MAR12263	hyocholic acid transport via bicarbonate countertransport	Transport reactions	4	0	E2 transport
+MAR12264	hyocholic acid transport via sodium cotransport	Transport reactions	2	0	E2 transport
+MAR12266	Isochenodeoxycholic acid ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12267	Isochenodeoxycholic acid transport via bicarbonate countertransport	Transport reactions	4	0	E2 transport
+MAR12268	Isochenodeoxycholic acid transport via sodium cotransport	Transport reactions	2	0	E2 transport
+MAR12269	Isocholic acid ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12270	Isocholic acid transport via bicarbonate countertransport	Transport reactions	4	0	E2 transport
+MAR12271	Isocholic acid transport via sodium cotransport	Transport reactions	2	0	E2 transport
+MAR12274	Glucuronidated bile acid excretion (LCA-24G)	Transport reactions	4	0	E2 transport
+MAR12278	Glucuronidated bile acid excretion (LCA-3G)	Transport reactions	4	0	E2 transport
+MAR12280	Lithocholic acid 3-sulfate ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12281	Lithocholic acid 3-sulfate transport via bicarbonate countertransport	Transport reactions	2	0	E2 transport
+MAR12284	Taurocholic acid 3-sulfate ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12285	Taurocholic acid 3-sulfate transport via bicarbonate countertransport	Transport reactions	2	0	E2 transport
+MAR12287	Taurochenodeoxycholic acid 3-sulfate ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12288	Taurochenodeoxycholic acid 3-sulfate transport via bicarbonate countertransport	Transport reactions	2	0	E2 transport
+MAR12291	Taurodeoxycholic acid 3-sulfate ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12292	Taurodeoxycholic acid 3-sulfate transport via bicarbonate countertransport	Transport reactions	2	0	E2 transport
+MAR12294	taurohyocholic acid ABC bile acid transporter	Transport reactions	3	0	E2 transport
+MAR12295	taurohyocholic acid transport via bicarbonate countertransport	Transport reactions	4	0	E2 transport
+MAR12296	taurohyocholic acid transport via sodium cotransport	Transport reactions	2	0	E2 transport
+MAR12297	Tauroursodeoxycholic acid 3-sulfate ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12298	Tauroursodeoxycholic acid 3-sulfate transport via bicarbonate countertransport	Transport reactions	2	0	E2 transport
+MAR12300	Ursocholic acid ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12301	Ursocholic acid transport via bicarbonate countertransport	Transport reactions	4	0	E2 transport
+MAR12302	Ursocholic acid transport via sodium cotransport	Transport reactions	2	0	E2 transport
+MAR12303	Ursodeoxycholic acid 3-sulfate ABC bile acid transporter	Transport reactions	4	0	E2 transport
+MAR12304	Ursodeoxycholic acid 3-sulfate transport via bicarbonate countertransport	Transport reactions	2	0	E2 transport
+MAR12306	Ursodeoxycholic acid transport via bicarbonate countertransport	Transport reactions	4	0	E2 transport
+MAR12307	Ursodeoxycholic acid transport via sodium cotransport	Transport reactions	2	0	E2 transport
+MAR12341	efflux of 2-hydroxy-atorvastatin-acyl-glucuronide into bile	Drug metabolism	2	0	E2 transport
+MAR12344	efflux of 2-hydroxy-atorvastatin-acid into bile	Drug metabolism	2	0	E2 transport
+MAR12346	uptake of 2-hydroxy-atorvastatin-acid into hepatocytes	Drug metabolism	2	0	E2 transport
+MAR12348	efflux of 2-hydroxy-atorvastatin-lactone-glucuronide into bile	Drug metabolism	2	0	E2 transport
+MAR12350	efflux of 2-hydroxy-atorvastatin-lactone into bile	Drug metabolism	2	0	E2 transport
+MAR12352	uptake of 2-hydroxy-atorvastatin-lactone into hepatocytes	Drug metabolism	2	0	E2 transport
+MAR12362	uptake of 3-alpha-5-beta-dihydroxy pravastatin by hepatocytes	Drug metabolism	2	0	E2 transport
+MAR12373	efflux of 3-S-hydroxy-pravastatin-tetranor into bile	Drug metabolism	3	0	E2 transport
+MAR12376	efflux of 3-S-hydroxy-pravastatin into bile	Drug metabolism	3	0	E2 transport
+MAR12378	uptake of 3-hydroxy pravastatin by hepatocytes	Drug metabolism	2	0	E2 transport
+MAR12383	efflux of 3-alpha-iso-pravastatin into bile	Drug metabolism	3	0	E2 transport
+MAR12385	uptake of 3-alpha-iso-pravastatin by hepatocytes	Drug metabolism	2	0	E2 transport
+MAR12394	efflux of 4-hydroxy-atorvastatin-acid into bile	Drug metabolism	2	0	E2 transport
+MAR12396	uptake of 4-hydroxy-atorvastatin-acid into hepatocytes	Drug metabolism	2	0	E2 transport
+MAR12399	efflux of 4-hydroxy-atorvastatin-lactone into bile	Drug metabolism	2	0	E2 transport
+MAR12401	uptake of 4-hydroxy-atorvastatin-lactone into hepatocytes	Drug metabolism	2	0	E2 transport
+MAR12407	efflux of 3-keto-5,6,-dihydroxy-pravastatin into bile	Drug metabolism	3	0	E2 transport
+MAR12410	efflux of 5,6-epoxy-3-alpha-iso-pravastatin into bile	Drug metabolism	3	0	E2 transport
+MAR12428	efflux of 6-epipravastatin into bile	Drug metabolism	3	0	E2 transport
+MAR12431	uptake of 6-epi-pravastatin by hepatocytes	Drug metabolism	2	0	E2 transport
+MAR12441	release of 6-exomethylene-lovastatin-acid form into bile	Drug metabolism	1	0	E2 transport
+MAR12458	efflux of 7-hydroxy-3-alpha-iso-pravastatin into bile	Drug metabolism	3	0	E2 transport
+MAR12460	uptake of allopurinol by the enterocytes	Drug metabolism	1	0	E2 transport
+MAR12461	efflux of acetaminophen by P-gp from the enterocytes into lumen	Drug metabolism	1	0	E2 transport
+MAR12464	efflux of acetaminophen-glutathione-conjugate from enterocytes into portal blood	Drug metabolism	1	0	E2 transport
+MAR12465	uptake of acetaminophen-glutathione-conjugate by the hepatocytes	Drug metabolism	1	0	E2 transport
+MAR12466	efflux of acetaminophen-glucuronide-conjugate from enterocytes into portal blood	Drug metabolism	1	0	E2 transport
+MAR12467	uptake of acetaminophen-glucuronide-conjugate by the hepatocytes	Drug metabolism	1	0	E2 transport
+MAR12470	uptake of acetaminophen by the hepatocytes	Drug metabolism	1	0	E2 transport
+MAR12471	uptake of allopurinol by the enterocytes	Drug metabolism	3	0	E2 transport
+MAR12473	uptake of allopurinol by the hepatocytes	Drug metabolism	1	0	E2 transport
+MAR12509	uptake of atorvastatin by enterocytes by MCT1	Drug metabolism	1	0	E2 transport
+MAR12510	uptake of atorvastatin by enterocytes	Drug metabolism	1	0	E2 transport
+MAR12514	efflux of atorvastatin acid by P-gp from the enterocytes into lumen	Drug metabolism	1	0	E2 transport
+MAR12518	uptake of atorvastatin-lactone into hepatocytes	Drug metabolism	2	0	E2 transport
+MAR12523	efflux of atorvastatin lactone by P-gp from the enterocytes into lumen	Drug metabolism	1	0	E2 transport
+MAR12537	efflux of cerivastatin by P-gp or BCRP from the enterocytes into lumen	Drug metabolism	2	0	E2 transport
+MAR12541	efflux of cerivastatin-M1 into bile	Drug metabolism	1	0	E2 transport
+MAR12545	efflux of cerivastatin-M23 into bile	Drug metabolism	1	0	E2 transport
+MAR12547	efflux of cerivastatin-M24 into bile	Drug metabolism	1	0	E2 transport
+MAR12551	cerivastatin uptake by hepatocytes	Drug metabolism	1	0	E2 transport
+MAR12556	efflux of cyclosporine by P-gp from the enterocytes into lumen	Drug metabolism	1	0	E2 transport
+MAR12570	efflux of desacyl dehydro-pravastatin into bile	Drug metabolism	3	0	E2 transport
+MAR12727	uptake of fluvastatin by enterocytes	Drug metabolism	1	0	E2 transport
+MAR12754	release of 3-hydroxy-iso-delta-4,5-hydroxy acid form of lovastatin into bile	Drug metabolism	1	0	E2 transport
+MAR12760	efflux of losartan by P-gp from the enterocytes into lumen	Drug metabolism	1	0	E2 transport
+MAR12776	efflux of lovastatin acid by P-gp from the enterocytes into lumen	Drug metabolism	1	0	E2 transport
+MAR12782	efflux of lovastatin lactone by P-gp from the enterocytes into lumen	Drug metabolism	1	0	E2 transport
+MAR12786	efflux of midazolam by P-gp from the enterocytes into lumen	Drug metabolism	1	0	E2 transport
+MAR12787	efflux of acetaminophen-mercapturate-conjugate from enterocytes into portal blood	Drug metabolism	1	0	E2 transport
+MAR12788	uptake of acetaminophen-mercapturate-conjugate by the hepatocytes	Drug metabolism	1	0	E2 transport
+MAR12793	efflux of N-desmethyl-rosuvastatin into bile	Drug metabolism	1	0	E2 transport
+MAR12806	uptake of oxypurinol by hepatocytes	Drug metabolism	1	0	E2 transport
+MAR12811	efflux of pitavastatin by BCRP from the enterocytes into lumen	Drug metabolism	1	0	E2 transport
+MAR12816	efflux of pitavastatin-M3 into bile	Drug metabolism	1	0	E2 transport
+MAR12820	uptake of pitavastatin by enterocytes	Drug metabolism	2	0	E2 transport
+MAR12821	pravastatin efflux into lumen for excretion into feces	Drug metabolism	2	0	E2 transport
+MAR12823	efflux of pravastatin glucuronide into bile	Drug metabolism	3	0	E2 transport
+MAR12826	uptake of pravastatin by enterocytes	Drug metabolism	1	0	E2 transport
+MAR12828	efflux of rosuvastatin by BCRP from the enterocytes into lumen	Drug metabolism	1	0	E2 transport
+MAR12831	efflux of rosuvastatin-5S-lactone into bile	Drug metabolism	1	0	E2 transport
+MAR12835	uptake of rosuvastatin by enterocytes	Drug metabolism	2	0	E2 transport
+MAR12838	efflux of simvastatin dihydroxy acid form into bile	Drug metabolism	1	0	E2 transport
+MAR12841	efflux of simvastatin by P-gp from the enterocytes into lumen	Drug metabolism	1	0	E2 transport
+MAR12847	uptake of simvastatin by hepatocytes	Drug metabolism	1	0	E2 transport
+MAR12850	efflux of acetaminophen-sulphate into hepatic vein	Drug metabolism	2	0	E2 transport
+MAR12852	efflux of tacrolimus into intestinal lumen by P-gp	Drug metabolism	1	0	E2 transport
+MAR12867	uptake of torasemide into hepatocytes via OAT1	Drug metabolism	1	0	E2 transport
+MAR12870	efflux of triol metabolite of pravastatin into bile	Drug metabolism	3	0	E2 transport
+MAR13079	PIt2mi	Transport reactions	1	0	E2 transport
+MAR13080	Htmi	Transport reactions	5	0	E2 transport
+MAR13081	CYOOm3i	Oxidative phosphorylation	19	19	E2 transport; E4 AND complex >= 6 genes
+MAR10073		Transport reactions	2	0	E2 transport
+MAR10075		Transport reactions	2	0	E2 transport
+MAR10079		Transport reactions	2	0	E2 transport
+MAR10082		Transport reactions	2	0	E2 transport
+MAR10100		Transport reactions	2	0	E2 transport
+MAR10101		Transport reactions	2	0	E2 transport
+MAR10102		Transport reactions	2	0	E2 transport
+MAR10103		Transport reactions	2	0	E2 transport
+MAR10104		Transport reactions	2	0	E2 transport
+MAR10109		Transport reactions	2	0	E2 transport
+MAR10110		Transport reactions	2	0	E2 transport
+MAR10115		Transport reactions	2	0	E2 transport
+MAR10117		Transport reactions	2	0	E2 transport
+MAR10118		Transport reactions	1	0	E2 transport
+MAR10119		Transport reactions	1	0	E2 transport
+MAR10120		Transport reactions	1	0	E2 transport
+MAR10125		Transport reactions	2	0	E2 transport
+MAR10126		Transport reactions	2	0	E2 transport
+MAR10127		Transport reactions	1	0	E2 transport
+MAR13086		Transport reactions	32	32	E2 transport; E4 AND complex >= 6 genes
+MAR20115	MAR20115	Transport reactions	1	0	E2 transport
+MAR20116	MAR20116	Transport reactions	1	0	E2 transport
+MAR20118	MAR20118	Transport reactions	1	0	E2 transport
+MAR20119	MAR20119	Transport reactions	1	0	E2 transport
+MAR20120	MAR20120	Transport reactions	1	0	E2 transport
+MAR20121	MAR20121	Transport reactions	1	0	E2 transport
+MAR20122	MAR20122	Transport reactions	1	0	E2 transport
+MAR20123	MAR20123	Transport reactions	1	0	E2 transport
+MAR20124	MAR20124	Transport reactions	1	0	E2 transport
+MAR20125	MAR20125	Transport reactions	1	0	E2 transport
+MAR20126	MAR20126	Transport reactions	1	0	E2 transport
+MAR20127	MAR20127	Transport reactions	1	0	E2 transport
+MAR20128	MAR20128	Transport reactions	1	0	E2 transport
+MAR20129	MAR20129	Transport reactions	1	0	E2 transport
+MAR20130	MAR20130	Transport reactions	1	0	E2 transport
+MAR20131	MAR20131	Transport reactions	1	0	E2 transport
+MAR20132	MAR20132	Transport reactions	1	0	E2 transport
+MAR20133	MAR20133	Transport reactions	1	0	E2 transport
+MAR20134	MAR20134	Transport reactions	1	0	E2 transport
+MAR20135	MAR20135	Transport reactions	1	0	E2 transport
+MAR20136	MAR20136	Transport reactions	1	0	E2 transport
+MAR20137	MAR20137	Transport reactions	1	0	E2 transport
+MAR20138	MAR20138	Transport reactions	1	0	E2 transport
+MAR20139	MAR20139	Transport reactions	1	0	E2 transport
+MAR20140	MAR20140	Transport reactions	1	0	E2 transport
+MAR20141	MAR20141	Transport reactions	1	0	E2 transport
+MAR20142	MAR20142	Transport reactions	1	0	E2 transport
+MAR20143	MAR20143	Transport reactions	1	0	E2 transport
+MAR20144	MAR20144	Transport reactions	1	0	E2 transport
+MAR20145	MAR20145	Transport reactions	1	0	E2 transport
+MAR20146	MAR20146	Transport reactions	2	0	E2 transport
+MAR20147	MAR20147	Transport reactions	1	0	E2 transport
+MAR20148	MAR20148	Transport reactions	1	0	E2 transport
+MAR20149	MAR20149	Transport reactions	1	0	E2 transport
+MAR20150	MAR20150	Transport reactions	1	0	E2 transport
+MAR20151	MAR20151	Transport reactions	1	0	E2 transport
+MAR20152	MAR20152	Transport reactions	1	0	E2 transport
+MAR20153	MAR20153	Transport reactions	1	0	E2 transport
+MAR20154	MAR20154	Transport reactions	1	0	E2 transport
+MAR20155	MAR20155	Transport reactions	1	0	E2 transport
+MAR20156	MAR20156	Transport reactions	1	0	E2 transport
+MAR20157	MAR20157	Transport reactions	1	0	E2 transport
+MAR20158	MAR20158	Transport reactions	1	0	E2 transport
+MAR20159	MAR20159	Transport reactions	1	0	E2 transport
+MAR20160	MAR20160	Transport reactions	1	0	E2 transport
+MAR20161	MAR20161	Transport reactions	1	0	E2 transport
+MAR20162	MAR20162	Transport reactions	1	0	E2 transport
+MAR20163	MAR20163	Transport reactions	1	0	E2 transport
+MAR20164	MAR20164	Transport reactions	2	0	E2 transport
+MAR20165	MAR20165	Transport reactions	2	0	E2 transport
+MAR20166	MAR20166	Transport reactions	2	0	E2 transport
+MAR20167	MAR20167	Miscellaneous	1	0	E2 transport
+MAR20168	MAR20168	Miscellaneous	1	0	E2 transport
+MAR20181	Antiport of thiamine-diphosphate and thiamine-phosphate	Transport reactions	1	0	E2 transport
+MAR20182	Antiport of thiamine-phosphate and dATP	Transport reactions	1	0	E2 transport
+MAR20183	Antiport of thiamine-diphosphate and dATP	Transport reactions	1	0	E2 transport

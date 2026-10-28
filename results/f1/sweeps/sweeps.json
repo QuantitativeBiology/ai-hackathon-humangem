@@ -1,0 +1,24 @@
+{
+ "n_signatures": 20,
+ "n_jobs": 65,
+ "status": {
+  "ok": 65
+ },
+ "n_failed": 0,
+ "genes_with_any_change_vs_P1": {
+  "F1": 90,
+  "GPR": 2,
+  "TYMS": 88
+ },
+ "job_cpu_s": 1170.6,
+ "wall_s": 364.6,
+ "workers": 8,
+ "solver": "glpk",
+ "spot_all_bitwise_equal": true,
+ "max_shortcut_dev": 2.6978419498391304e-13,
+ "a10_limits": {
+  "lp_s": 300,
+  "lp_retries": 1,
+  "job_cpu_s": 1800
+ }
+}

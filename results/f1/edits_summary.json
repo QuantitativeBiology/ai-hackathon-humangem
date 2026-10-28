@@ -1,0 +1,168 @@
+{
+ "parent": "human1 (v1.19.0)",
+ "rule": {
+  "min_pid": 30.0,
+  "same_compartment": "equal non-empty genes.tsv compartment sets",
+  "no_shared_complex": true,
+  "max_and_genes_excluded_at": 6,
+  "lumped": "subsystem in Artificial/Pool reactions, or >= 2 non-integer coefficients on one side summing to 1",
+  "edit_types": "AND2OR only (+ TYMS bounds)",
+  "edit_unit": "single reaction"
+ },
+ "reactions_with_gpr": 8043,
+ "lumped_reactions_total": 76,
+ "lumped_reactions_with_gpr": 9,
+ "lumped_reactions_with_gpr_ids": [
+  "MAR00010",
+  "MAR00013",
+  "MAR00014",
+  "MAR00031",
+  "MAR07160",
+  "MAR07161",
+  "MAR07162",
+  "MAR07163",
+  "MAR07164"
+ ],
+ "excluded_gpr_reactions": {
+  "E1": 0,
+  "E2": 2659,
+  "E3": 9,
+  "E4": 13
+ },
+ "excluded_gpr_reactions_total": 2670,
+ "and_sibling_paralog_pairs_all": {
+  "pair_rows": 467,
+  "distinct_gene_pairs": 73,
+  "reactions": 369,
+  "POLR_pair_rows": 24,
+  "POLR_distinct_gene_pairs": 12
+ },
+ "w5_literal_rule_pairs": {
+  "pair_rows": 374,
+  "distinct_gene_pairs": 27,
+  "reactions": 326,
+  "POLR_pair_rows": 24,
+  "POLR_distinct_gene_pairs": 12
+ },
+ "w5_literal_rule_pairs_excluded_by_reaction": {
+  "E1": {
+   "pair_rows": 0,
+   "POLR_pair_rows": 0,
+   "distinct_gene_pairs": 0,
+   "reactions": 0
+  },
+  "E2": {
+   "pair_rows": 163,
+   "POLR_pair_rows": 0,
+   "distinct_gene_pairs": 5,
+   "reactions": 152
+  },
+  "E3": {
+   "pair_rows": 24,
+   "POLR_pair_rows": 24,
+   "distinct_gene_pairs": 12,
+   "reactions": 2
+  },
+  "E4": {
+   "pair_rows": 40,
+   "POLR_pair_rows": 24,
+   "distinct_gene_pairs": 15,
+   "reactions": 6
+  }
+ },
+ "w5_pid30_rule_pairs": {
+  "pair_rows": 242,
+  "distinct_gene_pairs": 11,
+  "reactions": 226,
+  "POLR_pair_rows": 4,
+  "POLR_distinct_gene_pairs": 2
+ },
+ "w5_pid30_rule_pairs_excluded_by_reaction": {
+  "E1": {
+   "pair_rows": 0,
+   "POLR_pair_rows": 0,
+   "distinct_gene_pairs": 0,
+   "reactions": 0
+  },
+  "E2": {
+   "pair_rows": 151,
+   "POLR_pair_rows": 0,
+   "distinct_gene_pairs": 4,
+   "reactions": 151
+  },
+  "E3": {
+   "pair_rows": 4,
+   "POLR_pair_rows": 4,
+   "distinct_gene_pairs": 2,
+   "reactions": 2
+  },
+  "E4": {
+   "pair_rows": 6,
+   "POLR_pair_rows": 4,
+   "distinct_gene_pairs": 3,
+   "reactions": 4
+  }
+ },
+ "pair_criteria_qualified": {
+  "pair_rows": 99,
+  "distinct_gene_pairs": 5,
+  "reactions": 85,
+  "POLR_pair_rows": 2,
+  "POLR_distinct_gene_pairs": 1
+ },
+ "pair_qualified_but_excluded_by_reaction": {
+  "E1": {
+   "pair_rows": 0,
+   "POLR_pair_rows": 0,
+   "distinct_gene_pairs": 0,
+   "reactions": 0
+  },
+  "E2": {
+   "pair_rows": 63,
+   "POLR_pair_rows": 0,
+   "distinct_gene_pairs": 1,
+   "reactions": 63
+  },
+  "E3": {
+   "pair_rows": 2,
+   "POLR_pair_rows": 2,
+   "distinct_gene_pairs": 1,
+   "reactions": 2
+  },
+  "E4": {
+   "pair_rows": 2,
+   "POLR_pair_rows": 2,
+   "distinct_gene_pairs": 1,
+   "reactions": 2
+  }
+ },
+ "pair_fail_counts_among_w5_pid30": {
+  "compartment": 143
+ },
+ "merges_applied": {
+  "edits_rxn_x_geneset": 20,
+  "and_node_merges": 34,
+  "reactions": 20,
+  "distinct_gene_sets": 3,
+  "gene_sets": [
+   "CYP4F2;CYP4F3",
+   "RRM2B;RRM2",
+   "SEC11A;SEC11C"
+  ]
+ },
+ "merges_qualified_not_applied_reaction_excluded": 65,
+ "blocked_non_clique_components": 0,
+ "reactions_with_changed_gpr": 20,
+ "genes_with_changed_ko_closure": 6,
+ "genes_with_changed_ko_closure_symbols": [
+  "CYP4F2",
+  "CYP4F3",
+  "RRM2",
+  "RRM2B",
+  "SEC11A",
+  "SEC11C"
+ ],
+ "evidence_check_all_ok": true,
+ "evidence_check_n": 80,
+ "wall_s": 21.9
+}

@@ -1,0 +1,81 @@
+edit_id	evidence_id	ok	check	check_source
+F1_H1_001	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_001	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_002	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_002	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_003	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_003	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_004	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_004	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_005	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_005	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_006	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_006	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_007	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_007	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_008	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_008	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_009	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_009	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_010	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_010	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_011	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_011	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_012	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_012	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_013	ENSEMBL116_PARALOG:ENSG00000140612|ENSG00000166562	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_013	NO_SHARED_COMPLEX:ENSG00000140612|ENSG00000166562	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_014	ENSEMBL116_PARALOG:ENSG00000140612|ENSG00000166562	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_014	NO_SHARED_COMPLEX:ENSG00000140612|ENSG00000166562	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_015	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_015	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_016	ENSEMBL116_PARALOG:ENSG00000048392|ENSG00000171848	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_016	NO_SHARED_COMPLEX:ENSG00000048392|ENSG00000171848	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_017	ENSEMBL116_PARALOG:ENSG00000186115|ENSG00000186529	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_017	NO_SHARED_COMPLEX:ENSG00000186115|ENSG00000186529	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_018	ENSEMBL116_PARALOG:ENSG00000186115|ENSG00000186529	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_018	NO_SHARED_COMPLEX:ENSG00000186115|ENSG00000186529	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_019	ENSEMBL116_PARALOG:ENSG00000186115|ENSG00000186529	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_019	NO_SHARED_COMPLEX:ENSG00000186115|ENSG00000186529	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_020	ENSEMBL116_PARALOG:ENSG00000186115|ENSG00000186529	True	pair row in Ensembl 116 paralog file	w5_evidence.validate
+F1_H1_020	NO_SHARED_COMPLEX:ENSG00000186115|ENSG00000186529	True	no CORUM/CPX complex lists both	w5_evidence.validate
+F1_H1_001	PID>=30:ENSG00000048392|ENSG00000171848	True	raw Ensembl min %id = 70.44	raw csv
+F1_H1_001	SAME_COMPARTMENTS:ENSG00000048392|ENSG00000171848	True	Cytosol;Nucleus vs Cytosol;Nucleus	raw csv
+F1_H1_002	PID>=30:ENSG00000048392|ENSG00000171848	True	raw Ensembl min %id = 70.44	raw csv
+F1_H1_002	SAME_COMPARTMENTS:ENSG00000048392|ENSG00000171848	True	Cytosol;Nucleus vs Cytosol;Nucleus	raw csv
+F1_H1_003	PID>=30:ENSG00000048392|ENSG00000171848	True	raw Ensembl min %id = 70.44	raw csv
+F1_H1_003	SAME_COMPARTMENTS:ENSG00000048392|ENSG00000171848	True	Cytosol;Nucleus vs Cytosol;Nucleus	raw csv
+F1_H1_004	PID>=30:ENSG00000048392|ENSG00000171848	True	raw Ensembl min %id = 70.44	raw csv
+F1_H1_004	SAME_COMPARTMENTS:ENSG00000048392|ENSG00000171848	True	Cytosol;Nucleus vs Cytosol;Nucleus	raw csv
+F1_H1_005	PID>=30:ENSG00000048392|ENSG00000171848	True	raw Ensembl min %id = 70.44	raw csv
+F1_H1_005	SAME_COMPARTMENTS:ENSG00000048392|ENSG00000171848	True	Cytosol;Nucleus vs Cytosol;Nucleus	raw csv
+F1_H1_006	PID>=30:ENSG00000048392|ENSG00000171848	True	raw Ensembl min %id = 70.44	raw csv
+F1_H1_006	SAME_COMPARTMENTS:ENSG00000048392|ENSG00000171848	True	Cytosol;Nucleus vs Cytosol;Nucleus	raw csv
+F1_H1_007	PID>=30:ENSG00000048392|ENSG00000171848	True	raw Ensembl min %id = 70.44	raw csv
+F1_H1_007	SAME_COMPARTMENTS:ENSG00000048392|ENSG00000171848	True	Cytosol;Nucleus vs Cytosol;Nucleus	raw csv
+F1_H1_008	PID>=30:ENSG00000048392|ENSG00000171848	True	raw Ensembl min %id = 70.44	raw csv
+F1_H1_008	SAME_COMPARTMENTS:ENSG00000048392|ENSG00000171848	True	Cytosol;Nucleus vs Cytosol;Nucleus	raw csv
+F1_H1_009	PID>=30:ENSG00000048392|ENSG00000171848	True	raw Ensembl min %id = 70.44	raw csv
+F1_H1_009	SAME_COMPARTMENTS:ENSG00000048392|ENSG00000171848	True	Cytosol;Nucleus vs Cytosol;Nucleus	raw csv
+F1_H1_010	PID>=30:ENSG00000048392|ENSG00000171848	True	raw Ensembl min %id = 70.44	raw csv
+F1_H1_010	SAME_COMPARTMENTS:ENSG00000048392|ENSG00000171848	True	Cytosol;Nucleus vs Cytosol;Nucleus	raw csv
+F1_H1_011	PID>=30:ENSG00000048392|ENSG00000171848	True	raw Ensembl min %id = 70.44	raw csv
+F1_H1_011	SAME_COMPARTMENTS:ENSG00000048392|ENSG00000171848	True	Cytosol;Nucleus vs Cytosol;Nucleus	raw csv
+F1_H1_012	PID>=30:ENSG00000048392|ENSG00000171848	True	raw Ensembl min %id = 70.44	raw csv
+F1_H1_012	SAME_COMPARTMENTS:ENSG00000048392|ENSG00000171848	True	Cytosol;Nucleus vs Cytosol;Nucleus	raw csv
+F1_H1_015	PID>=30:ENSG00000048392|ENSG00000171848	True	raw Ensembl min %id = 70.44	raw csv
+F1_H1_015	SAME_COMPARTMENTS:ENSG00000048392|ENSG00000171848	True	Cytosol;Nucleus vs Cytosol;Nucleus	raw csv
+F1_H1_016	PID>=30:ENSG00000048392|ENSG00000171848	True	raw Ensembl min %id = 70.44	raw csv
+F1_H1_016	SAME_COMPARTMENTS:ENSG00000048392|ENSG00000171848	True	Cytosol;Nucleus vs Cytosol;Nucleus	raw csv
+F1_H1_013	PID>=30:ENSG00000140612|ENSG00000166562	True	raw Ensembl min %id = 73.96	raw csv
+F1_H1_013	SAME_COMPARTMENTS:ENSG00000140612|ENSG00000166562	True	Endoplasmic reticulum;Golgi apparatus;Nucleus vs Endoplasmic reticulum;Golgi apparatus;Nucleus	raw csv
+F1_H1_014	PID>=30:ENSG00000140612|ENSG00000166562	True	raw Ensembl min %id = 73.96	raw csv
+F1_H1_014	SAME_COMPARTMENTS:ENSG00000140612|ENSG00000166562	True	Endoplasmic reticulum;Golgi apparatus;Nucleus vs Endoplasmic reticulum;Golgi apparatus;Nucleus	raw csv
+F1_H1_017	PID>=30:ENSG00000186115|ENSG00000186529	True	raw Ensembl min %id = 87.69	raw csv
+F1_H1_017	SAME_COMPARTMENTS:ENSG00000186115|ENSG00000186529	True	Endoplasmic reticulum vs Endoplasmic reticulum	raw csv
+F1_H1_018	PID>=30:ENSG00000186115|ENSG00000186529	True	raw Ensembl min %id = 87.69	raw csv
+F1_H1_018	SAME_COMPARTMENTS:ENSG00000186115|ENSG00000186529	True	Endoplasmic reticulum vs Endoplasmic reticulum	raw csv
+F1_H1_019	PID>=30:ENSG00000186115|ENSG00000186529	True	raw Ensembl min %id = 87.69	raw csv
+F1_H1_019	SAME_COMPARTMENTS:ENSG00000186115|ENSG00000186529	True	Endoplasmic reticulum vs Endoplasmic reticulum	raw csv
+F1_H1_020	PID>=30:ENSG00000186115|ENSG00000186529	True	raw Ensembl min %id = 87.69	raw csv
+F1_H1_020	SAME_COMPARTMENTS:ENSG00000186115|ENSG00000186529	True	Endoplasmic reticulum vs Endoplasmic reticulum	raw csv

@@ -1,0 +1,6 @@
+arm	w2_sweep_id	medium_keys	reference	status	bitwise_equal	max_abs_diff	n_lethal
+GPR	human1:db9ebc6b123dcb99	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	composed GPR (partial re-solve)	ok	True	0	106
+F1	human1:db9ebc6b123dcb99	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	composed F1 (partial re-solve)	ok	True	0	106
+F1	human1:5fe39a3dcfa2880f	DMEM	composed F1 (partial re-solve)	ok	True	0	111
+P1	human1:db9ebc6b123dcb99	DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI	M6/W3 pinned P1 sweep	ok	True	0	108
+P1	human1:5fe39a3dcfa2880f	DMEM	M6/W3 pinned P1 sweep	ok	True	0	113
