@@ -446,7 +446,7 @@ Training uses nested 12-fold LOLO on 686 lines (autoresearch/results.tsv). <!--n
 | Models flagged W3-MEV (serum media) | <!--n:res.mev-->42 |
 | Size | <!--n:res.mb-->93.3 MB |
 | MEMOTE total score (<!--n:res.memote.n-->10 models) | Human2 <!--n:res.memote.h2-->0.638, Human1 <!--n:res.memote.h1-->0.630; identical across media |
-| FROG reports | <!--n:res.frog.n-->1 model (Human2, classic RPMI): <!--n:res.frog.fva-->12,748 FVA rows, <!--n:res.frog.gd-->2,870 gene and <!--n:res.frog.rd-->12,748 reaction deletions, all optimal; <!--n:res.frog.cpu-->0.66 CPU-h |
+| FROG reports | <!--n:res.frog.n-->2 models (Human1 and Human2, classic RPMI; both all optimal, see results/w8/README.md). Human2: <!--n:res.frog.fva-->12,748 FVA rows, <!--n:res.frog.gd-->2,870 gene and <!--n:res.frog.rd-->12,748 reaction deletions, all optimal; <!--n:res.frog.cpu-->0.66 CPU-h |
 
 Sources: resource/models.tsv, results/w8/unscreened/build_summary.json, results/w8/memote/memote_summary.json, results/w8/memote/memote_summary_release6.json, results/w8/frog/frog_summary.json.
 
@@ -526,12 +526,12 @@ M3 calibration was infeasible as specified, and the W2 single-removal flip analy
 | M6 factorial, T1/T2 looks, rehearsal | <!--n:rt.m6.runs-->23 | <!--n:rt.m6.cpu-->2.7 | <!--n:rt.m6.wall-->0.8 |
 | W6 flux information | <!--n:rt.w6.runs-->9 | <!--n:rt.w6.cpu-->2.6 | <!--n:rt.w6.wall-->1.3 |
 | W7 auto-research | <!--n:rt.w7.runs-->23 | <!--n:rt.w7.cpu-->8.4 | <!--n:rt.w7.wall-->2.2 |
-| W8 resource | <!--n:rt.w8.runs-->9 | <!--n:rt.w8.cpu-->4.5 | <!--n:rt.w8.wall-->1.4 |
-| **Total** | <!--n:rt.total.runs-->148 | <!--n:rt.total.cpu-->200.5 | <!--n:rt.total.wall-->28.2 |
+| W8 resource | <!--n:rt.w8.runs-->13 | <!--n:rt.w8.cpu-->5.2 | <!--n:rt.w8.wall-->1.6 |
+| **Total** | <!--n:rt.total.runs-->152 | <!--n:rt.total.cpu-->201.2 | <!--n:rt.total.wall-->28.4 |
 
 Source: results/*/**/MANIFEST.tsv and PROVENANCE.tsv at HEAD, summed by `runtime_table` in `scripts/report_build.py`.
 
-- **Elapsed time.** <!--n:rt.elapsed-->41.9 h from the first commit to the last commit that changed results/ (git log), against a target of 1–1.5 days (D2). The process review blamed review and fix rounds, not compute (notes/milestone_reviews/M3M4_process_review.md).
+- **Elapsed time.** <!--n:rt.elapsed-->42.9 h from the first commit to the last commit that changed results/ (git log), against a target of 1–1.5 days (D2). The process review blamed review and fix rounds, not compute (notes/milestone_reviews/M3M4_process_review.md).
 - **Stage A dominates.** Its builds took <!--n:w4.buildcpu-->108.7 CPU-h (results/w4/stage_a/MANIFEST.tsv). The context families it built were all rejected.
 - **W7's ledger** records <!--n:rt.budget.w7-->8.8 CPU-h, including aborted runs (results/budget.tsv).
 - **Not in the manifests.** The FROG report took <!--n:res.frog.cpu-->0.66 CPU-h (results/w8/frog/frog_summary.json). Unrecorded losses quoted from READMEs, not checked: about 8.5 CPU-h of killed W3 runs, 1.3 of a stalled W2 run, and 7 of a BLAS-thread incident in W6 (results/w3/README.md, results/w2/README.md, RESEARCH_TREE.md item 8.1).
@@ -593,7 +593,6 @@ Source: results/*/**/MANIFEST.tsv and PROVENANCE.tsv at HEAD, summed by `runtime
 **Analyses still owed.**
 - **The pFBA traces of the 20 worst test cells** (DESIGN §10.3), which are not in the unsealed bundle.
 - **W3 context claims** checked for the same sign on validation, as DESIGN requires before any claim.
-- **The Human1 FROG report.**
 
 **Stated deviations.** These pre-registered outputs were not produced:
 - the §6.4 "top-k" unit, i.e. the change in true positives among each line's top-k genes;
