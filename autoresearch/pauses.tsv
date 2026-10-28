@@ -1,0 +1,2 @@
+pause_start	pause_end	minutes	reason	working_minutes_before	box_end_adjusted
+2026-10-28T03:58Z	2026-10-28T05:01Z	63	API usage limit; agent stopped, no W7 process running during the pause (r11, r12 had completed at 03:57-03:58Z; checked at resume, no duplicates started)	76 (02:42-03:58Z)	2026-10-28T07:45Z (4 h of working wall time = 02:42-03:58 + 05:01-07:45)

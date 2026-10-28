@@ -57,3 +57,4 @@ Every viewing of DepMap label *values* (or label-derived summaries) by any agent
 - 2026-10-28, PI: read the M6 training report (same aggregates, summary level).
 - 2026-10-28, PI: ran validation look M6_factorial (scalar-only outputs: lineage-weighted tAP/Δ̄ with CIs per cell, decision file).
 - 2026-10-28, T1-prep engineer: training-tier aggregates only (skew of P1 − G* per-line ΔtAP; lineage-equal mean ΔtAP for C1/C1b on training, matching M6). Synthetic dry run only; no validation or test values.
+- 2026-10-28, W7 engineer: training-tier aggregates only (tAP_lin/CI per idea and seed, paired Δ vs current best/P1/B2/G*, folds, nested β, gene-grouped CV tAP). No gene × line values; no validation or test; raw probe blocked.

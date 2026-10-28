@@ -1,0 +1,15 @@
+{
+ "workstream": "W7",
+ "stopped_at": "2026-10-28T05:10Z",
+ "stop_reason": "10 consecutive ideas failed promotion under TG against the current best (W7-06, W7-09, W7-11, W7-14, W7-13, W7-15, W7-16, W7-08, W7-17, W7-12, all after the last promotion W7-05)",
+ "other_stop_conditions": {
+  "time_box_4h_working_wall": "not reached (about 2 h 24 min working: 02:42-03:58Z and 05:01-05:10Z; 63 min API-limit pause excluded, autoresearch/pauses.tsv)",
+  "cpu_100h": "not reached (about 8.9 CPU-h logged in results/budget.tsv)",
+  "no_unlogged_promising_idea": "also effectively true: every line-specific addition to the gene prior gained <= +0.0023 against the 0.005 TG floor"
+ },
+ "current_best_start": "W7-01 = B6 (training tAP_lin 0.8886 > P1 0.3529)",
+ "promoted": ["W7-05"],
+ "current_best_end": "W7-05 (monotone B6, tAP_lin 0.9029)",
+ "logged_not_run": ["W7-07", "W7-10"],
+ "validation_look_prepared": {"look_id": "W7_shortlist_1", "candidate": "W7:W7-05", "spec": "results/w7/val/look_spec_W7_shortlist_1.json", "config_sha": "ed9b6876acea9f838c67ef5f16d6b63c7dfdf591472e15a818530de9a51af72c", "run": false}
+}

@@ -1,0 +1,21 @@
+{
+ "variant": "W7:artefact_bloo",
+ "groups": [
+  "B-loo:retinoid_catabolites",
+  "B-loo:vitaminD_catabolites",
+  "B-loo:tocopherol_catabolites",
+  "B-loo:carnitine"
+ ],
+ "n_new": 21,
+ "status": {
+  "ok": 22
+ },
+ "spot_T0_M0_bitwise_equal_W2": true,
+ "job_cpu_s": 1071.1,
+ "wall_s": 334.9,
+ "workers": 4,
+ "solver": "glpk",
+ "mev_serum_sweeps": 19,
+ "mev_serum_sweeps_core_all_lethal": 19,
+ "mev_core_max_ratio_serum": 0.0
+}

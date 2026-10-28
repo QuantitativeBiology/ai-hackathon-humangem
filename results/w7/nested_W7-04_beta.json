@@ -1,0 +1,27 @@
+{
+ "idea": "W7-04",
+ "seed": 11,
+ "beta_grid": [
+  0.0,
+  0.25,
+  0.5,
+  1.0,
+  2.0,
+  4.0
+ ],
+ "beta": {
+  "Biliary Tract": 0.0,
+  "Bone": 0.0,
+  "Bowel": 0.25,
+  "Cervix": 0.25,
+  "Esophagus/Stomach": 0.0,
+  "Head and Neck": 0.0,
+  "Kidney": 0.0,
+  "Lung": 0.25,
+  "Myeloid": 0.0,
+  "Peripheral Nervous System": 0.25,
+  "Skin": 0.0,
+  "Uterus": 0.0
+ },
+ "n_pair_fits": 66
+}

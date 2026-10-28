@@ -1,0 +1,25 @@
+date	workstream	agent	job	cpu_h	wall_h	note
+2026-10-28T02:50Z	W7	W7 auto-research engineer (Claude Opus)	w7_artefact_sweeps (run 1, crashed in the MEV step after all 22 sweeps; rerun)	0.300	0.06	22 GLPK sweeps, 8 workers
+2026-10-28T02:51Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen timing (W7-01)	0.012	0.011	2 jobs, seeds [11], 2 workers
+2026-10-28T02:57Z	W7	W7 auto-research engineer (Claude Opus)	w7_artefact_sweeps (run 2, complete)	0.310	0.093	22 GLPK sweeps, 4 workers; MEV check 19/19 serum sweeps core lethal
+2026-10-28T02:58Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen r1_W7-01 (W7-01)	0.366	0.094	48 jobs, seeds [11, 23, 37], 4 workers
+2026-10-28T03:00Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen r2 (W7-02,W7-05; aborted after ~6 jobs, split to stay < 1 CPU-h per run)	0.080	0.04	no outputs
+2026-10-28T03:08Z	W7	W7 auto-research engineer (Claude Opus)	w7_nested_pairs W7-04	0.681	0.176	66 pair fits
+2026-10-28T03:09Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen r2a_W7-02 (W7-02)	0.583	0.155	36 jobs, seeds [11, 23, 37], 4 workers
+2026-10-28T03:14Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen r2b_W7-05 (W7-05)	0.361	0.095	36 jobs, seeds [11, 23, 37], 4 workers
+2026-10-28T03:15Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen r4_W7-04 (W7-04)	0.387	0.103	48 jobs, seeds [11, 23, 37], 4 workers
+2026-10-28T03:19Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen r5_W7-06 (W7-06)	0.262	0.070	36 jobs, seeds [11, 23, 37], 4 workers
+2026-10-28T03:23Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen r6_W7-09 (W7-09)	0.489	0.129	36 jobs, seeds [11, 23, 37], 4 workers
+2026-10-28T03:27Z	W7	W7 auto-research engineer (Claude Opus)	w7_genecv g1_W7-05 (W7-05)	0.504	0.131	12 jobs x 5 gene groups, seed 11
+2026-10-28T03:29Z	W7	W7 auto-research engineer (Claude Opus)	w7_val_spec W7_shortlist_1	0.081	0.028	6 full-training fits
+2026-10-28T03:30Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen r7_W7-11 (W7-11)	0.437	0.111	36 jobs, seeds [11, 23, 37], 4 workers
+2026-10-28T03:31Z	W7	W7 auto-research engineer (Claude Opus)	w7_genecv g2 (W7-01; aborted after ~1 min for the worker cap)	0.060	0.02	no outputs
+2026-10-28T03:32Z	W7	W7 auto-research engineer (Claude Opus)	w7_val_spec W7_shortlist_1	0.080	0.029	6 full-training fits
+2026-10-28T03:40Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen r8_W7-14 (W7-14)	0.602	0.163	36 jobs, seeds [11, 23, 37], 4 workers
+2026-10-28T03:40Z	W7	W7 auto-research engineer (Claude Opus)	w7_genecv g2_W7-01 (W7-01)	0.519	0.134	12 jobs x 5 gene groups, seed 11
+2026-10-28T03:47Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen r9_W7-13 (W7-13)	0.452	0.118	36 jobs, seeds [11, 23, 37], 4 workers
+2026-10-28T03:48Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen r10_W7-15_16 (W7-15,W7-16)	0.456	0.116	72 jobs, seeds [11, 23, 37], 4 workers
+2026-10-28T03:57Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen r12_W7-17 (W7-17)	0.537	0.137	36 jobs, seeds [11, 23, 37], 4 workers
+2026-10-28T03:58Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen r11_W7-08 (W7-08)	0.657	0.176	36 jobs, seeds [11, 23, 37], 4 workers
+2026-10-28T05:06Z	W7	W7 auto-research engineer (Claude Opus)	w7_screen r13_W7-12 (W7-12)	0.552	0.077	36 jobs, seeds [11, 23, 37], 8 workers
+2026-10-28T05:07Z	W7	W7 auto-research engineer (Claude Opus)	w7_val_spec W7_shortlist_1	0.071	0.014	6 full-training fits
