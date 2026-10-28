@@ -164,3 +164,16 @@ results/m6/t2/p2_scores_test.parquet	file	results/m6/t2/p2_scores_test.parquet	b
 scripts/t2_prep_spec.py	file	scripts/t2_prep_spec.py	e067c29d7a36ea99e20abcd03e5d4587ab5e6709f1f3caaa48fa5fda9cc02796	2026-10-28		test looks (T2)
 results/m6/t2/skew.json	file	results/m6/t2/skew.json	abf6f342aa835a2c343c8c7ceeb1d42015cc3bc0f61c5b985b92f57897b4e22f	2026-10-28		test looks (T2)
 results/w7/val/val_look_W7_P2_select_decision.json	file	results/w7/val/val_look_W7_P2_select_decision.json	7f39c876a7f0b03fb692f282f8fccee0971695aa47063517a7c4e2c529016301	2026-10-28		test looks (T2)
+results/m10/val/look_spec_M10_F2.json	file	results/m10/val/look_spec_M10_F2.json	ccda32326250dd1421c42e14bc6748fcba5c4f4187dc1a934430ac2a61fdfbf1	2026-10-28		M10_F2 post-hoc validation look (A15/D18): spec / input / provenance
+results/m10/val/f2_val_scores.parquet	file	results/m10/val/f2_val_scores.parquet	933f7e92836d8fe96edc52772eb9033fa7b9c626fbf6044d5a6c11b5f53321da	2026-10-28		M10_F2 post-hoc validation look (A15/D18): spec / input / provenance
+results/w7/sweeps/sweeps.tsv	file	results/w7/sweeps/sweeps.tsv	1e8716f827d4477c24167ddfb8152e93436bf8499d34aa517f46c20958b042f8	2026-10-28		M10_F2 post-hoc validation look (A15/D18): spec / input / provenance
+results/w7/sweeps/mev.tsv	file	results/w7/sweeps/mev.tsv	9b9f7f68c35f4c3b06802eeb0459841160f2ff30e48012d5cf3a4299f4baa471	2026-10-28		M10_F2 post-hoc validation look (A15/D18): spec / input / provenance
+results/f2/mev_check.tsv	file	results/f2/mev_check.tsv	1cf039633cd7a3704cb421f4ed46362ca826299ed3e30035c375bb2639315d32	2026-10-28		M10_F2 post-hoc validation look (A15/D18): spec / input / provenance
+results/f2/scores_checks.json	file	results/f2/scores_checks.json	f37079b0664dc07a28d6909ce9d80ca3b8453179d2d732a4f6bb19818e70384c	2026-10-28		M10_F2 post-hoc validation look (A15/D18): spec / input / provenance
+scripts/w7_artefact_sweeps.py	file	scripts/w7_artefact_sweeps.py	5a8b91ef19f9bf2923f75e39cbd8bad4bbf005d817f6058e8f186eab96b45215	2026-10-28		M10_F2 post-hoc validation look (A15/D18): spec / input / provenance
+scripts/f2_common.py	file	scripts/f2_common.py	9bdc7c70acab505a6e73ef1c97bf4488c75e99e1f426689abd2328b2936014b1	2026-10-28		M10_F2 post-hoc validation look (A15/D18): spec / input / provenance
+scripts/f2_scores.py	file	scripts/f2_scores.py	05d35f81458dc7313bea2e3699b7fa62145d1568aae3fe9a8ad22e641456a125	2026-10-28		M10_F2 post-hoc validation look (A15/D18): spec / input / provenance
+scripts/f2_score_train.py	file	scripts/f2_score_train.py	3ab92b19ccdbcd7e7dc80815fa6dc269b31b3af8721572f3717918a808056ba4	2026-10-28		M10_F2 post-hoc validation look (A15/D18): spec / input / provenance
+scripts/f2_val_spec.py	file	scripts/f2_val_spec.py	d14bcb1ebb7941e0c3e765319e15c5043076e2abc12cc330fbcf851069fd1bdb	2026-10-28		M10_F2 post-hoc validation look (A15/D18): spec / input / provenance
+results/f2/train/summary.json	file	results/f2/train/summary.json	480a81151cb10621cc97fbe5001f055cb743dbd5653bd2a863892661884c11df	2026-10-28		M10_F2 post-hoc validation look (A15/D18): spec / input / provenance
+results/f2/train/contrasts.tsv	file	results/f2/train/contrasts.tsv	eb9bbc2b2a225a3c31b56499c7f98a679075933a1d04c3cead54ad48f43bf822	2026-10-28		M10_F2 post-hoc validation look (A15/D18): spec / input / provenance
