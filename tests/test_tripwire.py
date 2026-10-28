@@ -200,7 +200,8 @@ def test_entry_points_must_be_frozen(built_toy):
     val_ok = "ok" if is_frozen("evaluate_val.py") else "denied"
     test_ok = "ok" if is_frozen("evaluate_test.py") else "denied"
     assert res["evaluate_val.py"] == f"val:{val_ok} test:denied hash:denied"
-    assert res["evaluate_test.py"] == f"val:denied test:{test_ok} hash:denied"
+    # tripwire.py ENTRY_POINTS: evaluate_test.py reads val (train ∪ val refits, DESIGN §4.2/§5.3), test and sealed
+    assert res["evaluate_test.py"] == f"val:{test_ok} test:{test_ok} hash:denied"
     assert res["check_frozen.py"] == "val:denied test:denied hash:ok"
     assert res["not_an_entry.py"] == "val:denied test:denied hash:denied"
 
