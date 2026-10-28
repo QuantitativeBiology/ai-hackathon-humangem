@@ -62,3 +62,4 @@ Every viewing of DepMap label *values* (or label-derived summaries) by any agent
 - 2026-10-28, PI: ran validation look W7_shortlist_1 (scalar-only outputs).
 - 2026-10-28, PI: ran validation look W7_P2_select (scalar-only outputs).
 - 2026-10-28, REPORT drafter: committed training and validation aggregates only (as in README/results tables); no label files; raw probe blocked.
+- 2026-10-28, PI: ran the rehearsal (look 6/40, REHEARSAL_P1_M6): scalar outputs on validation revealed (results/m6/rehearsal/); per-unit outputs sealed by the harness (hashes only in the ledger).
