@@ -1,0 +1,49 @@
+{
+ "look_id": "W7_P2_select",
+ "reference": "H1",
+ "G_star": "Human1",
+ "primary_cell": {
+  "label": "L_prob",
+  "geneset": "all",
+  "universe": "U",
+  "stratum": "none"
+ },
+ "candidates": [
+  {
+   "method": "W7:B6",
+   "delta_lin": 0.5936049825705818,
+   "delta_ci": [
+    0.5897103817650148,
+    0.5976260467933633
+   ],
+   "eligible": true,
+   "diff_vs_best": 0.0007168173638786414,
+   "se_diff": 0.0001709139410587971,
+   "within_1se": false
+  },
+  {
+   "method": "W7:W7-05",
+   "delta_lin": 0.5943217999344607,
+   "delta_ci": [
+    0.5903891287316573,
+    0.5983609737461781
+   ],
+   "eligible": true,
+   "diff_vs_best": 0.0,
+   "se_diff": 0.0,
+   "within_1se": true
+  }
+ ],
+ "gate_passed": true,
+ "best_eligible": "W7:W7-05",
+ "selected": "W7:W7-05",
+ "winners_curse": {
+  "method": "W7:W7-05",
+  "m": 2,
+  "sigma": 0.0020871761119628635,
+  "term": 0.002457462072979956,
+  "best_delta_lin": 0.5943217999344607,
+  "best_delta_lin_minus_term": 0.5918643378614807
+ },
+ "rule": "DESIGN \u00a7W7 step 7 (stats O4), implemented with the reviewed shortlist harness: both candidates are gated vs G* (\u00a78, CI lower bound > 0, L_prob, all genes, U, no stratum); among eligible candidates the paired one-SE rule (\u00a79) picks the first in spec order, simplest first: W7:B6 (= idea W7-01, H-b, the B6 ablation, the runner-up) before W7:W7-05 (promoted idea). P2 = W7:W7-05 only if its \u0394\u0304_lin exceeds W7:B6's by more than the paired bootstrap SE; otherwise P2 = W7:B6. Scalars only."
+}
