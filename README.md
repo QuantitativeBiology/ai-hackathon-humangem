@@ -71,7 +71,7 @@ Validation looks used: 7 of 40 (W7: 2 of 20; look 7 is the post-hoc F2 look). Te
 - Most generic KO scores are near-binary (lethal or 1), so ties dominate AUPRC. Every metric is tie-aware, and tie-break baselines (B8±) are mandatory.
 - Some a priori positive controls are non-informative as built (GOT1/2, SLC7A11 and CAD/uridine), because the models bypass them.
 - Several design gaps were resolved by documented amendments A1–A14 (DESIGN.md §17). Small changes to the guards are logged in [notes/guard_changelog.md](notes/guard_changelog.md) (user decision D7).
-- Compute budget: the user's target was ≈1–1.5 days; the project took ≈2.2 days of wall time (compute ≈200 CPU-h; most of the overrun came from review and fix rounds, see notes/milestone_reviews/M3M4_process_review.md). Stage A is ≈110 CPU-h, above its ≈100 CPU-h row because of the CORDA comparison and one build per process.
+- Compute budget: the user's target was ≈1–1.5 days; compute met it (≈30 h summed run time, ≈210 CPU-h); elapsed time from first to last commit was ≈46 h, of which ≈13 h were usage-limit stalls and waits (docs/explainer/journey.md); earlier "2.2–2.3 days" figures were agent estimates. Stage A is ≈110 CPU-h, above its ≈100 CPU-h row because of the CORDA comparison and one build per process.
 
 ## Leakage controls (read before touching data)
 - DepMap labels (CRISPR gene effect and dependency, common-essential lists) are read **only** through `src/nextgem/labels.py`, fold-scoped. A PreToolUse hook blocks direct reads, and a runtime tripwire blocks them inside Python.
