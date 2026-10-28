@@ -531,7 +531,7 @@ M3 calibration was infeasible as specified, and the W2 single-removal flip analy
 
 Source: results/*/**/MANIFEST.tsv and PROVENANCE.tsv at HEAD, summed by `runtime_table` in `scripts/report_build.py`.
 
-- **Elapsed time.** <!--n:rt.elapsed-->46.1 h from the first commit to the last commit that changed results/ (git log), against a target of 1–1.5 days (D2). The process review blamed review and fix rounds, not compute (notes/milestone_reviews/M3M4_process_review.md).
+- **Elapsed time.** <!--n:rt.elapsed-->46.6 h from the first commit to the last commit that changed results/ (git log), against a target of 1–1.5 days (D2). The process review blamed review and fix rounds, not compute (notes/milestone_reviews/M3M4_process_review.md).
 - **Stage A dominates.** Its builds took <!--n:w4.buildcpu-->108.7 CPU-h (results/w4/stage_a/MANIFEST.tsv). The context families it built were all rejected.
 - **W7's ledger** records <!--n:rt.budget.w7-->8.8 CPU-h, including aborted runs (results/budget.tsv).
 - **Not in the manifests.** The FROG report took <!--n:res.frog.cpu-->0.66 CPU-h (results/w8/frog/frog_summary.json). Unrecorded losses quoted from READMEs, not checked: about 8.5 CPU-h of killed W3 runs, 1.3 of a stalled W2 run, and 7 of a BLAS-thread incident in W6 (results/w3/README.md, results/w2/README.md, RESEARCH_TREE.md item 8.1).
