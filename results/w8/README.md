@@ -168,7 +168,7 @@ The failures are properties of the parents and do not depend on the medium. They
 ## 6. Determinism
 cobra keeps group members in a set, so identical models were written with a different member order and therefore different sha256 between runs.
 - `write_sbml_gz` now sorts the members (`canonical_group_members`; test `test_w8_canonical_group_members`).
-- The 40 screened-cohort files were built before this fix. They are content-identical to the fixed writer's output but not byte-reproducible.
+- The 40 screened-cohort files were built before this fix. They are content-identical to the fixed writer's output but not byte-reproducible. The 8 extension files (rebuilt at 9884a35) use the fix.
 - Files built after the fix are byte-stable.
 
 ## 7. Provenance and runtime
@@ -176,23 +176,33 @@ cobra keeps group members in a set, so identical models were written with a diff
 |---|---|---|---|
 | `w8_build_p1.py --pilot 1` / `--pilot 2` | dirty | 716 s / 798 s | 874 s / 1,548 s |
 | **`w8_build_p1.py --workers 8 --release 1.0.0`** (40 models) | **pinned b200324** (committed 6a71f7f) | 1,610 s | **9,922 s (2.76 CPU-h)** |
-| `w8_extend_unscreened.py` assign / sweeps / build (8 models) | dirty (clean re-run pending, see below) | 4 s / 155 s / 630 s | 3 s / 565 s / 2,144 s |
+| `w8_extend_unscreened.py` assign / sweeps / build (8 models), first run | dirty (superseded) | 4 s / 155 s / 630 s | 3 s / 565 s / 2,144 s |
+| **`w8_extend_unscreened.py` assign / sweeps / build / readme (8 models)** | **pinned 9884a35** | 4 s / 127 s / 586 s / 1 s | **2 s / 470 s / 2,020 s (0.69 CPU-h)** |
 | `w8_ko_noise_check.py` | dirty | 212 s | 212 s |
 | MEMOTE timing run (1 model, matrix included) / 4 pilot models / 6 release models | `.venv_memote` | 2,011 s / 1,309 s / 1,682 s | 2,008 s / 1,295 s / 1,670 s |
 | FROG H2 classic RPMI | `.venv_memote` | 2,388 s | 2,383 s |
 | FROG H1 classic RPMI | `.venv_memote` | 2,092 s | 2,089 s |
 | tests (`tests/test_w8_p1.py` 17 + `tests/test_w8_resource.py` 14) | — | 42 s | — |
 
-- **W8 total:** ≈ 6.9 CPU-h (24,713 CPU-s). The pinned build is 2.76 CPU-h of that, and MEMOTE/FROG ≈ 2.6 CPU-h.
+- **W8 total:** ≈ 7.6 CPU-h (27,205 CPU-s). The pinned runs are 3.45 CPU-h of that (build 2.76 + extension 0.69), and MEMOTE/FROG ≈ 2.6 CPU-h.
 - **Provenance rows:** `results/w8/MANIFEST.tsv`.
 - **Disk:** `resource/` 91 MB, `results/w8/` ≈ 33 MB (FROG reports 5.6 MB), `.venv_memote` 576 MB.
 
-**Clean re-run of the extension (pending).** The 8 extension models were built from a dirty tree (`git_dirty: true` in their notes). For clean provenance, the assign, sweeps and build steps are re-run from a pinned worktree, ≈ 0.75 CPU-h. The build step is now idempotent (`drop_previous_extension`) and has the pinned-worktree guard:
+**Every released model now comes from a pinned clean tree.**
+- The 40 screened-cohort models come from b200324.
+- The 8 extension models were rebuilt from 9884a35 (`git_dirty: false` in their notes; MANIFEST rows `dirty = False`), with the four steps run as below:
 ```
-cd <worktree>; for s in assign sweeps build readme; do
-  OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 PYTHONPATH=$PWD/src /data/tmpA/nextgem/.venv/bin/python -u \
-    scripts/w8_extend_unscreened.py --step $s --workers 8 || break; done
+cd /data/tmpA/nextgem_runs/9884a35; for s in assign sweeps build readme; do
+  OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NEXTGEM_DATA_ROOT=/data/tmpA/nextgem/data PYTHONPATH=$PWD/src \
+    /data/tmpA/nextgem/.venv/bin/python -u scripts/w8_extend_unscreened.py --step $s --workers 8 || break; done
 ```
+- The clean run reproduces the first (dirty) run exactly:
+  - the line assignment and signature tables are byte-identical;
+  - the 8 reference sweeps are bitwise equal on `ratio_r`;
+  - 8 of 8 models pass all six gates;
+  - the 40 screened-cohort model rows and all 2,722 screened manifest rows are unchanged.
+- The 8 model files have new sha256s, because the group-member sorting fix now applies (§6). Every sha256 in `models.tsv` was re-verified against its file.
+- `resource.gate_exit_code` on the final `models.tsv` returns 3, listing the one documented failure (§4.1).
 
 ## 8. Deviations and notes
 1. **Per-signature files instead of per-line files** (§2). The per-line DESIGN naming is available on demand.

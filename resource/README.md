@@ -35,3 +35,10 @@ Flags (RESEARCH_TREE D11): W3-D1, W2-SHUF, W2-MOPEN on every model; W3-MEV on ev
 non-lethal). See results/w8/README.md.
 
 Licence: CC BY 4.0, inherited from Human-GEM. Medium bounds come from the W2 documented-media library (vendor sheets; no HPLM/Plasmax composition is used). The resource contains no per-protein values and no DepMap screen data.
+
+## Provenance
+- 40 screened-cohort models: pinned clean worktree at b200324 (`scripts/w8_build_p1.py --workers 8 --release 1.0.0`).
+- 8 unscreened-cohort models: pinned clean worktree at 9884a35 (`scripts/w8_extend_unscreened.py --step assign|sweeps|build|readme`).
+- Every file's notes record its commit, input SHA-256s and `git_dirty: false`; run rows are in `results/w8/MANIFEST.tsv`.
+- One documented gate failure (above) is LP noise. Exact GLPK and Gurobi give the same lethal KO (0) in both the in-memory and reloaded models (`results/w8/ko_noise/`). The gate is unchanged for v1.0.0 (PI decision).
+- MEMOTE (10 models) and FROG (2 models) reports: `results/w8/memote/`, `results/w8/frog/` (reported, not gated).

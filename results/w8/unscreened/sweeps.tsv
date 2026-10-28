@@ -1,9 +1,9 @@
 parent	w2_sweep_id	medium_key	wt_growth	wt_status	n_solved	n_genes_lp	n_infeasible	shortcut_verify_max_dev	status	cpu_s	wall_s	key
-human2	human2:f5adf8d1c33f90d9	DMEM+pyruvate+cys(2-ME)	46.719	optimal	166	315	0	1.04361e-14	ok	50.3846	50.4195	B-loo:cofactor_pool_biomass|human2:f5adf8d1c33f90d9
-human2	human2:428b72f293833aa6	DMEM:F12+GSH+alpha-tocopherol+carnitine+corticosterone+ethanolamine+galactose+linolenate+progesterone+retinol+triiodothyronine|serum-free	74.7861	optimal	186	292	0	6.21725e-15	ok	53.2113	53.225	B-loo:cofactor_pool_biomass|human2:428b72f293833aa6
-human2	human2:4d5cb24dffcb1093	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine|serum-free	74.8253	optimal	170	274	0	5.55112e-16	ok	45.6091	45.6283	B-loo:cofactor_pool_biomass|human2:4d5cb24dffcb1093
-human2	human2:2e775197f7062bf7	RPMI+cortisol+estradiol	46.9092	optimal	167	315	0	7.10543e-15	ok	43.5443	43.5699	B-loo:cofactor_pool_biomass|human2:2e775197f7062bf7
-human1	human1:4fb1efd2a0475a16	DMEM+pyruvate+cys(2-ME)	46.6734	optimal	181	288	0	1.08802e-14	ok	58.3313	58.3469	B-loo:cofactor_pool_biomass|human1:4fb1efd2a0475a16
-human1	human1:57342a22325e1044	DMEM:F12+GSH+alpha-tocopherol+carnitine+corticosterone+ethanolamine+galactose+linolenate+progesterone+retinol+triiodothyronine|serum-free	65.5989	optimal	164	269	0	4.44089e-15	ok	47.7256	47.7354	B-loo:cofactor_pool_biomass|human1:57342a22325e1044
-human1	human1:73c0354fe907c4c2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine|serum-free	65.6334	optimal	168	272	0	1.9984e-15	ok	57.414	57.4277	B-loo:cofactor_pool_biomass|human1:73c0354fe907c4c2
-human1	human1:ea519d8407e21a28	RPMI+cortisol+estradiol	46.8632	optimal	168	272	0	5.55112e-15	ok	60.8293	60.8445	B-loo:cofactor_pool_biomass|human1:ea519d8407e21a28
+human2	human2:f5adf8d1c33f90d9	DMEM+pyruvate+cys(2-ME)	46.719	optimal	166	315	0	1.04361e-14	ok	43.6185	43.6772	B-loo:cofactor_pool_biomass|human2:f5adf8d1c33f90d9
+human2	human2:428b72f293833aa6	DMEM:F12+GSH+alpha-tocopherol+carnitine+corticosterone+ethanolamine+galactose+linolenate+progesterone+retinol+triiodothyronine|serum-free	74.7861	optimal	186	292	0	6.21725e-15	ok	46.2361	46.2446	B-loo:cofactor_pool_biomass|human2:428b72f293833aa6
+human2	human2:4d5cb24dffcb1093	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine|serum-free	74.8253	optimal	170	274	0	5.55112e-16	ok	43.9429	43.9855	B-loo:cofactor_pool_biomass|human2:4d5cb24dffcb1093
+human2	human2:2e775197f7062bf7	RPMI+cortisol+estradiol	46.9092	optimal	167	315	0	7.10543e-15	ok	41.8992	41.9523	B-loo:cofactor_pool_biomass|human2:2e775197f7062bf7
+human1	human1:4fb1efd2a0475a16	DMEM+pyruvate+cys(2-ME)	46.6734	optimal	181	288	0	1.08802e-14	ok	48.4108	48.4234	B-loo:cofactor_pool_biomass|human1:4fb1efd2a0475a16
+human1	human1:57342a22325e1044	DMEM:F12+GSH+alpha-tocopherol+carnitine+corticosterone+ethanolamine+galactose+linolenate+progesterone+retinol+triiodothyronine|serum-free	65.5989	optimal	164	269	0	4.44089e-15	ok	38.5672	38.5724	B-loo:cofactor_pool_biomass|human1:57342a22325e1044
+human1	human1:73c0354fe907c4c2	DMEM:F12+cortisol+ethanolamine+phosphoethanolamine+triiodothyronine|serum-free	65.6334	optimal	168	272	0	1.9984e-15	ok	38.6186	38.6223	B-loo:cofactor_pool_biomass|human1:73c0354fe907c4c2
+human1	human1:ea519d8407e21a28	RPMI+cortisol+estradiol	46.8632	optimal	168	272	0	5.55112e-15	ok	41.6224	41.6265	B-loo:cofactor_pool_biomass|human1:ea519d8407e21a28
