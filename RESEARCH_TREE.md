@@ -97,7 +97,8 @@ Update (2026-10-28): Stage A context families (W4) and GPR curation (W5) fail th
     - [!] The H1 TYMS irreversibility fix helps consistently (+0.0007, 9/12; +0.0021 without CE_fit) but stays below SESOI.
     - [!] CAD lethality under uridine is caused by (S)-dihydroorotate in the biomass pool MAR10064; removing it makes the CAD KO ratio 1. This goes to W3.
     - Open: the UniProt removal path (file requested from the user, USER_DOWNLOADS item 12).
-- [ ] 8. Flux-state information content (subtypes, drug screens, metabolomics)
+- [-] 8. Flux-state information content (subtypes, drug screens, metabolomics)
+  - [-] 8.1 W6 (3153ef0, pinned 71c2a7b, ≈ 9.8 CPU-h incl. ~7 lost to a BLAS-thread incident; recompute pending): **flux adds no information** beyond omics + medium in G* or P1, all 3 analyses (subtypes 150 tasks, drugs 106 units, metabolomics 225); all Holm p ≥ 0.38. 'Simulation beyond network mapping' also not supported (X_flux/X_KO well below X_rxnRNA). Synthetic positive recovered (Δρ +0.45, p 1e-6); synthetic negative null. Cause: generic-parent flux depends only on the assay medium (1 state for PRISM, 2 GDSC, ≤ 20 culture media).
 - [~] 9. Resource: SBML models per DepMap 26Q3 line
   - [x] 9.1 W8 stub (Sonnet, ≈ 17 min): src/nextgem/resource.py export and gates. The demo exports (2 generic parents and 2 F0 panel models) pass all 5 gates. REPORT.md skeleton.
   - PI decisions:
