@@ -134,3 +134,4 @@ results/w7/screen_r9.tsv	file	results/w7/screen_r9.tsv	3565cfc07dbf56f48a5de96b1
 results/w7/nested_W7-04_beta.json	file	results/w7/nested_W7-04_beta.json	4e3088452c3bd7ba86fb086619331591b59b4eacd3f183a215176a8ab41f9ad2	2026-10-28		W7 validation look: provenance
 results/w7/sweeps/ratio_r_human1.parquet	file	results/w7/sweeps/ratio_r_human1.parquet	86bebd6a85493e56477983ac950942cb687d89c41908de7c2860ac651241c387	2026-10-28		W7 validation look: provenance
 results/w7/sweeps/sweeps.json	file	results/w7/sweeps/sweeps.json	4d780281d30a7fc4c8ec7e905931d4d082069dd142ee813d8c7c65b1fdf93ea6	2026-10-28		W7 validation look: provenance
+results/w7/val/look_spec_W7_P2_select.json	file	results/w7/val/look_spec_W7_P2_select.json	f30ffbbc0e88b651eec7541a83182f998c6e89d8753d2eb160f00b46777485f0	2026-10-28		W7 validation look: input
