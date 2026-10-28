@@ -43,7 +43,7 @@ Validation looks used: 6 of 40 (W7: 2 of 20). Test looks: T1, T2 and the unseal;
 
 ## Key results
 
-**Headline (T1, first test number, 7 held-out lineages, 394 lines):** P1 improves tie-aware AUPRC over the generic Human1 model from 0.297 to 0.347: **Δ̄ = +0.050 [0.048, 0.051]**, sign-flip p < 0.001, "meaningfully improves" (SESOI 0.01). The CI is conditional on the 7 test lineages. Without common essentials (C1b): +0.037 [0.035, 0.040], confirmed. The gain is positive in 7/7 test lineages, so the pre-registered "generalises to new tissues" criterion holds.
+**Headline (T1, first test number, 7 held-out lineages; 394 test lines, of which 380 have expression and are scored):** P1 improves tie-aware AUPRC over the generic Human1 model from 0.297 to 0.347: **Δ̄ = +0.050 [0.048, 0.051]**, sign-flip p < 0.001, "meaningfully improves" (SESOI 0.01). The CI is conditional on the 7 test lineages. Without common essentials (C1b): +0.037 [0.035, 0.040], confirmed. The gain is positive in 7/7 test lineages, so the pre-registered "generalises to new tissues" criterion holds.
 
 | | Validation (4 lineages) | Test (7 lineages) |
 |---|---|---|
@@ -55,7 +55,7 @@ Validation looks used: 6 of 40 (W7: 2 of 20). Test looks: T1, T2 and the unseal;
 
 - **What P1 is.** Two structural fixes to Human1. (1) The biomass reaction's cofactor pool is removed, which deletes false "essential" calls created by the biomass reaction itself (retinoid/vitamin-D catabolism, carnitine, BH4, CoQ). (2) Each line gets its documented culture medium instead of Ham's.
 - **What P1 is not.**
-  - It is not line-specific beyond the medium. Shuffled media give about 96% of the medium gain (flag W2-SHUF).
+  - It is not line-specific beyond the medium. Shuffled media give about 96–97% of the medium gain (flag W2-SHUF).
   - It does not rank genes across lines better than expression: C3 failed on test (−0.011).
   - It does not beat all three generic + expression baselines.
   - Under serum, the mevalonate-core genes lose essentiality (flag W3-MEV); an exploratory artefact-only variant fixes this and keeps 57% of the gain.
@@ -64,13 +64,13 @@ Validation looks used: 6 of 40 (W7: 2 of 20). Test looks: T1, T2 and the unseal;
 - **Flux states (W6)** add no information beyond omics + medium for subtypes, drug response or metabolomics; the positive control is recovered.
 - **Gene priors dominate.** GEM features add nothing to gene-prior ML (W7). P2, the best ML model (B6 with a monotone prior constraint, no GEM features), reaches test tAP of about 0.90. T2: P2 − G\* = +0.602, P2 − B6 = +0.014. Both are estimates only, because C3 failed. P1 closes 8.3% of the gap between G\* and B2.
 - **Paper-protocol MCC** (Human1 paper, P57 × gene effect < −0.6, test): G\* 0.322 → P1 0.345. With growth-only calls: 0.334 → 0.379.
-- **SBML resource:** 48 gzipped SBML models (Human1 and Human2 P1, one per medium signature), with a manifest mapping all 2,114 DepMap lines. 47/48 pass all six gates; the one miss is LP noise (−8e-9; exactly 0 in exact arithmetic). MEMOTE run on 10 models; FROG run.
+- **SBML resource:** 48 gzipped SBML models (Human1 and Human2 P1, one per medium signature), with a manifest mapping all 2,114 DepMap lines. 47/48 pass all six gates; the one miss is LP noise (−8e-9; exactly 0 in exact arithmetic). MEMOTE run on 10 models; FROG run on one Human2 model (Human1 in progress).
 
 ## Known pitfalls and open issues
 - Most generic KO scores are near-binary (lethal or 1), so ties dominate AUPRC. Every metric is tie-aware, and tie-break baselines (B8±) are mandatory.
 - Some a priori positive controls are non-informative as built (GOT1/2, SLC7A11 and CAD/uridine), because the models bypass them.
-- Several design gaps were resolved by documented amendments A1–A10 (DESIGN.md §17). Small changes to the guards are logged in [notes/guard_changelog.md](notes/guard_changelog.md) (user decision D7).
-- Compute budget: ≈1–1.5 days in total. Stage A is ≈110 CPU-h, above its ≈100 CPU-h row because of the CORDA comparison and one build per process.
+- Several design gaps were resolved by documented amendments A1–A14 (DESIGN.md §17, A1–A14). Small changes to the guards are logged in [notes/guard_changelog.md](notes/guard_changelog.md) (user decision D7).
+- Compute budget: the user's target was ≈1–1.5 days; the project took ≈2.2 days of wall time (compute ≈200 CPU-h; most of the overrun came from review and fix rounds, see notes/milestone_reviews/M3M4_process_review.md). Stage A is ≈110 CPU-h, above its ≈100 CPU-h row because of the CORDA comparison and one build per process.
 
 ## Leakage controls (read before touching data)
 - DepMap labels (CRISPR gene effect and dependency, common-essential lists) are read **only** through `src/nextgem/labels.py`, fold-scoped. A PreToolUse hook blocks direct reads, and a runtime tripwire blocks them inside Python.
