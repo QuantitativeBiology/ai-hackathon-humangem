@@ -1,0 +1,51 @@
+{
+ "_doc": {
+  "how_to_use": "Copy to results/m6/p1_spec.json, delete this _doc object (the checker refuses unknown keys), fill every field, commit, and freeze the spec and every file it names in FROZEN.tsv (scripts/evaluate_test.py --print-frozen-candidates lists the rows). The rehearsal and T1 refuse to start unless the committed HEAD:FROZEN.tsv carries those SHA-256 values. Static checks: check_p1_spec() in scripts/evaluate_test.py.",
+  "spec_id": "Look-id-safe name ([A-Za-z0-9_], <= 40 chars). The rehearsal's validation look id is REHEARSAL_<spec_id>; T1 requires that look to be completed with this exact spec file (its SHA-256 is in the rehearsal's started row).",
+  "kind": "Always 'p1'.",
+  "milestone": "Milestone label written into the ledger rows (M6).",
+  "pipeline": "Optional free text: what P1 is (levers, parent, medium, biomass variant), with the selecting validation look id.",
+  "primary": "The P1 arm that enters C1, C1b, C3, C2, B8 and the failure account: the arm on the parent on which P1 was selected (e.g. P1[H1] if P1 was selected on Human1). Must be a key of arms.",
+  "methods": "Every score column of the score files: H1 and H2 (the generic parents; checked equal to the W1 look's generic scores to 1e-9) plus the P1 arms and the attribution arms. Names may not look like a line ID, a gene, a lineage, a label or a W1 baseline name (B0..B8, H1_task, ...). 'G*' is reserved.",
+  "arms": "P1 re-applied to each parent (DESIGN §3.1 PI decision 12): {method: 'H1' | 'H2'}, one arm per parent. Used for the within-parent contrasts P1(H1) - B4, P1(H2) - B5 and for the §6.8 binary endpoints of P1(H1) and P1(H2).",
+  "scores": "Per tier (validation = the rehearsal's validation stage; test = T1/T3): {path, sha256, layout}. path is a .parquet below results/m6/. layout 'gene' = line-constant (columns entrez + methods; one row per U gene); 'line_gene' = line-specific (ModelID + entrez + methods; exactly the tier's expression lines x U). Scores are e = 1 - ratio_r style (higher = more essential), finite floats, a gene absent from the model scored 0 (§3.3). A line_gene file keyed by TEST lines must live under results/m6/tmp/ (git-ignored): the pre-commit guard refuses test-keyed tables until the T2 unseal row; it is pinned here by SHA-256 and must be regenerable. Both tiers may point to the same gene-layout file.",
+  "calls": "§6.8 binary calls of the P1 arms only (generic H1/H2 calls come from results/w1/p57_human{1,2}.parquet and the baseline KO parquets): {path, sha256, layout} per tier; columns entrez (+ ModelID for line_gene), method (each arm), p57, pgr, fba (bool). p57 = KO fails >= 1 of the 57 tasks of metabolicTasks_Essential.txt on the arm's model with each task's own inputs; pgr = the GR (growth) task fails; fba = ratio_r < 0.01 (§6.1). A parent gene absent from a line model is False. Must cover exactly the genes of U (and, for line_gene, exactly the tier's expression lines).",
+  "failed_builds": "Per tier: null (no failed build) or {path, sha256} of a parquet (ModelID, method) listing failed builds (§11.4, A10: infeasible, WT growth <= threshold after repair, persistent non-optimal LP, or timeout). The harness applies the no-information score identically in every arm (per line: all genes tied; per gene: the method's median over its non-failed lines), counts failures per method and lineage (revealed at T1, > 5% flagged), and seals the two sensitivities (failed lines excluded for all methods; generic fallback).",
+  "attribution": "§10.1 test contrasts, sealed at T1: i = [primary, 'G*'] (fixed); ii = medium alone (M0 -> best gate-free documented variant, generic parent) as [variant method, 'G*' or the generic parent]; iii = curation alone (curated vs generic GPRs, generic parent); iv = constraints alone (P1 with generic GPRs vs G*); v = curation given constraints (P1 vs P1 with generic GPRs). Each entry is [method_a, method_b] (methods of this spec or 'G*') or the string 'lever not selected' (A12c) when the lever had no shortlist item. If curation is not in P1, P1 with generic GPRs is P1 itself, so iv = [primary, 'G*'] and v = 'lever not selected'.",
+  "task_calls": "Optional, for the W3 per-task table on test (sealed at T1): {path, sha256} of a parquet (entrez int, task str, fails bool), one row per (gene, task) for the primary arm's model (from results/w3/tasks/essential_<parent>.parquet: fails = not feasible, seed == -1). null = table reported as not provided.",
+  "gene_annotations": "Optional, for the §10.3 failure account: {path, sha256} of a parquet with entrez (int, unique) and boolean label-free class columns among paralog_buffered, medium_sensitive, gene_less_bypass, complex_subunit, housekeeping_adjacent, biomass_artefact_lethal, model_contradicted_loss, expected_fba_failure. common_essential (CE_fit on training ∪ validation), cn_amplified (relCN >= 4), unexpressed (log2(TPM+1) < 1) and missing_from_model are computed by the harness. null = those classes reported as not annotated.",
+  "bootstrap_method": "'percentile' unless the training-tier distribution of P1 - G* line ΔtAP has |skew| > 1 (§6.5; metrics.skew_triggers_bca on P1's training LOLO output), then 'bca'. Applies to C1, C1b (and C4, C5 in the P2 spec); every estimate uses percentile intervals.",
+  "fitted_on_labels": "Must be false. A P1 with label-fitted components (e.g. F5 LCP thresholds, a learned combination) must be refitted once on training ∪ validation inside evaluate_test.py (§4.2), which needs a refit plug-in that does not exist yet; the harness refuses such a spec.",
+  "provenance": "Optional {path: sha256} pins (paths under results/, src/ or scripts/): the scripts and inputs that produced the score and call files. Checked at pre-flight like the W3 look spec's provenance.",
+  "notes": "Optional free text."
+ },
+ "spec_id": "P1_M6",
+ "kind": "p1",
+ "milestone": "M6",
+ "pipeline": "EXAMPLE ONLY: generic Human1 + W3 B-loo:cofactor_pool_biomass on M0 (selected in the M6 validation look <look_id>); P1[H2] = the same pipeline on Human2.",
+ "primary": "P1[H1]",
+ "methods": ["H1", "H2", "P1[H1]", "P1[H2]"],
+ "arms": {"P1[H1]": "H1", "P1[H2]": "H2"},
+ "scores": {
+  "validation": {"path": "results/m6/p1_scores_validation.parquet", "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "layout": "gene"},
+  "test": {"path": "results/m6/p1_scores_test.parquet", "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "layout": "gene"}
+ },
+ "calls": {
+  "validation": {"path": "results/m6/p1_calls.parquet", "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "layout": "gene"},
+  "test": {"path": "results/m6/p1_calls.parquet", "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "layout": "gene"}
+ },
+ "failed_builds": {"validation": null, "test": null},
+ "attribution": {
+  "i": ["P1[H1]", "G*"],
+  "ii": "lever not selected",
+  "iii": "lever not selected",
+  "iv": ["P1[H1]", "G*"],
+  "v": "lever not selected"
+ },
+ "task_calls": {"path": "results/m6/p1_task_calls.parquet", "sha256": "0000000000000000000000000000000000000000000000000000000000000000"},
+ "gene_annotations": null,
+ "bootstrap_method": "percentile",
+ "fitted_on_labels": false,
+ "provenance": {},
+ "notes": ""
+}
