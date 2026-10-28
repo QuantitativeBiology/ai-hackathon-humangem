@@ -9,6 +9,7 @@ results/**/*.large.*
 
 # Python environment
 .venv/
+.venv_memote/
 *.egg-info/
 __pycache__/
 *.py[cod]

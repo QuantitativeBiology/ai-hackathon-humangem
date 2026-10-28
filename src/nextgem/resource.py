@@ -31,7 +31,7 @@ REL_TOL = 1e-6
 N_RANDOM_KO = 20
 ABS_FLOOR = 1e-9  # LP noise floor: lethal KOs return 0 or ~1e-12 depending on the solve path
 NOTE_KEYS = ("release_status", "model_id", "parent", "parent_version", "pipeline_id", "medium", "medium_source_tier",
-             "git_commit", "input_shas", "repaired_reactions", "n_repaired_reactions", "build_time_s")
+             "git_commit", "input_shas", "repaired_reactions", "n_repaired_reactions", "build_time_s", "flags")
 MANIFEST_COLUMNS = ["file", "model_id", "parent", "version", "pipeline_id", "sha256", "size_bytes", "build_time_s",
                     "n_reactions", "n_metabolites", "n_genes", "n_closed_reactions", "medium", "medium_source_tier",
                     "benchmarked", "flags", "validation_status", "validation_detail", "release_status"]
@@ -59,6 +59,8 @@ class Meta:
     benchmarked: bool = False
     flags: str = ""
     release_status: str = "release"  # "demo, not a release" for demos
+    extra: dict = field(default_factory=dict)  # further notes (str values kept, others JSON-encoded)
+    repaired_note: str = "not_recorded"  # what an empty repaired_reactions list means for this pipeline
 
     def stem(self) -> str:
         return f"{self.model_id}_{self.parent}-{self.parent_version}_{self.pipeline_id}"
@@ -66,14 +68,19 @@ class Meta:
 
 def set_notes(model: cobra.Model, meta: Meta) -> None:
     n_rep = meta.n_repaired_reactions if meta.n_repaired_reactions is not None else len(meta.repaired_reactions)
+    reserved = set(NOTE_KEYS) | {"version"}
+    clash = reserved & set(meta.extra)
+    if clash:
+        raise ValueError(f"extra notes may not override {sorted(clash)}")
     model.notes.update({
         "release_status": meta.release_status, "model_id": meta.model_id, "parent": meta.parent,
         "parent_version": meta.parent_version, "pipeline_id": meta.pipeline_id, "medium": meta.medium,
         "medium_source_tier": meta.medium_source_tier, "git_commit": meta.git_commit,
         "input_shas": json.dumps(meta.input_shas, sort_keys=True),
-        "repaired_reactions": ";".join(sorted(meta.repaired_reactions)) if meta.repaired_reactions else "not_recorded",
-        "n_repaired_reactions": str(n_rep), "build_time_s": f"{meta.build_time_s:.1f}",
+        "repaired_reactions": ";".join(sorted(meta.repaired_reactions)) if meta.repaired_reactions else meta.repaired_note,
+        "n_repaired_reactions": str(n_rep), "build_time_s": f"{meta.build_time_s:.1f}", "flags": meta.flags,
     })
+    model.notes.update({k: (v if isinstance(v, str) else json.dumps(v, sort_keys=True)) for k, v in meta.extra.items()})
 
 
 def read_notes(model: cobra.Model) -> dict:
@@ -180,8 +187,15 @@ def roundtrip_diff(a: cobra.Model, b: cobra.Model) -> dict:
 
 
 def _growth(model: cobra.Model) -> float:
-    v = model.slim_optimize(error_value=math.nan)
-    return 0.0 if model.solver.status == "infeasible" else v
+    """Biomass optimum; 0 if infeasible; NaN if the LP stays non-optimal after the A10 retry (DESIGN §17 A10:
+    300 s per LP and one retry, via ``nextgem.w3.solve_status``)."""
+    from nextgem.w3 import SolverInfraError, solve_status
+
+    try:
+        st = solve_status(model)
+    except SolverInfraError:
+        return math.nan
+    return 0.0 if st == "infeasible" else model.solver.objective.value
 
 
 def _rel_equal(x: float, y: float, tol: float = REL_TOL) -> bool:
@@ -216,20 +230,34 @@ def viability_tasks(model: cobra.Model, tasks_file: Path, types=("GR", "ER")) ->
 
     tasks = [t for t in parse_task_list(str(tasks_file)) if t.id in types]
     maps = task_name_maps(model)
+    keys = task_keys(tasks)
     out = {}
-    for t in tasks:
+    for key, t in zip(keys, tasks):
         saved = None
         try:
             with model:
                 saved, err = cx._apply_task(model, t, maps)
                 if err:
-                    out[t.id] = False
+                    out[key] = False
                     continue
                 model.objective = {}
                 model.slim_optimize(error_value=math.nan)
-                out[t.id] = (model.solver.status == "optimal") != t.should_fail
+                out[key] = (model.solver.status == "optimal") != t.should_fail
         finally:
             cx._restore_mets(model, saved)
+    return out
+
+
+def task_keys(tasks) -> list[str]:
+    """Unique result keys for a task list. Raven task ids are categories (9 tasks share id "ER"), so a dict keyed by
+    ``t.id`` keeps only the last task of each category; repeated ids get a 1-based suffix (ER1..ER9), unique ids
+    (GR) stay as they are."""
+    n = Counter(t.id for t in tasks)
+    seen: Counter = Counter()
+    out = []
+    for t in tasks:
+        seen[t.id] += 1
+        out.append(t.id if n[t.id] == 1 else f"{t.id}{seen[t.id]}")
     return out
 
 
@@ -241,11 +269,13 @@ class Validation:
 
 
 def validate_model(source: cobra.Model, path: Path, parent_xml: Path | None, tasks_file: Path | None,
-                   parent_errors: Counter | None = None, n_ko: int = N_RANDOM_KO) -> Validation:
+                   parent_errors: Counter | None = None, n_ko: int = N_RANDOM_KO,
+                   extra_gates: dict | None = None) -> Validation:
     """Run all per-model gates for ``path`` against the in-memory ``source`` model it was exported from.
 
     The task gate runs on the re-read model ``b`` (what a user gets). ``tasks_file=None`` skips it and
     reports the gate as "skipped" (status fail for a resource build, allowed for toy tests).
+    ``extra_gates``: name -> callable(source, b) returning (ok: bool, detail), run after the five gates.
     """
     gates: dict = {}
     try:
@@ -267,6 +297,9 @@ def validate_model(source: cobra.Model, path: Path, parent_xml: Path | None, tas
     else:
         t = viability_tasks(b, tasks_file)
         gates["viability_tasks"] = (all(t.values()) and bool(t), t)
+    for name, fn in (extra_gates or {}).items():
+        ok, detail = fn(source, b)
+        gates[name] = (bool(ok), detail)
     failed = [k for k, (ok, _) in gates.items() if ok is not True]
     return Validation("pass" if not failed else "fail", gates, ",".join(failed))
 
@@ -312,3 +345,184 @@ def line_model_from_mask(parent: cobra.Model, hexmask: str) -> tuple[cobra.Model
 
 def now() -> float:
     return time.perf_counter()
+
+
+# ----------------------------------------------------------------------------- P1 resource (RESEARCH_TREE D11)
+# P1 = generic parent + W3 B-loo:cofactor_pool_biomass on the W2 documented medium M2(f=1), gate-free, no context
+# family. P1 models differ across lines only by the medium signature (the W2 bounds hash), so the resource stores one
+# SBML per (parent, medium signature) and a line manifest mapping every line to its model file.
+PIPELINE_P1 = "P1"
+P1_DESCRIPTION = ("P1 (RESEARCH_TREE D11): generic Human-GEM parent + W3 B-loo:cofactor_pool_biomass (the cofactor/"
+                  "vitamin pool species removed from the biomass reaction MAR13082) on the W2 documented medium "
+                  "M2(f=1) (base medium + supplements + serum model at f = 1), gate-free; no context family, no "
+                  "pruning, no repaired reactions; objective MAR13082")
+P1_FLAG_ORDER = ("W3-D1", "W3-MEV", "W2-SHUF", "W2-MOPEN")
+LICENCE = ("CC BY 4.0, inherited from Human-GEM. Medium bounds come from the W2 documented-media library "
+           "(vendor sheets; no HPLM/Plasmax composition is used).")
+FALLBACK_STRATA = ("imputed", "fallback_sheet_missing", "unmappable")
+REF_WT_REL_TOL = 1e-5  # the M6 sweep tables store WT growth at 6 significant digits
+P1_MODEL_COLUMNS = MANIFEST_COLUMNS + [
+    "w2_sweep_id", "medium_signature", "medium_keys", "serum", "n_uptake_open", "n_lines", "line_strata",
+    "wt_growth", "m6_wt_growth", "mevalonate_core_lethal",
+    "gate_libsbml", "gate_roundtrip", "gate_wt_growth", "gate_random_ko", "gate_viability", "gate_reload_m6",
+    "job_status", "cpu_s"]
+GATE_COLUMNS = {"gate_libsbml": "libsbml_no_new_errors", "gate_roundtrip": "roundtrip_identical",
+                "gate_wt_growth": "wt_growth_match", "gate_random_ko": "random_ko_match",
+                "gate_viability": "viability_tasks", "gate_reload_m6": "reload_vs_m6"}
+LINE_COLUMNS = ["ModelID", "parent", "version", "pipeline_id", "model_file", "model_sha256", "w2_sweep_id",
+                "medium_signature", "medium_key", "medium_text_used", "medium_source", "medium_stratum",
+                "medium_fallback", "serum_free", "serum_pct_documented", "lineage", "cancer", "screened", "flags",
+                "validation_status", "release_status"]
+
+
+def p1_flags(mevalonate_core_lethal: bool) -> str:
+    """Flags carried by a P1 model (D11): W3-D1, W2-SHUF and W2-MOPEN always; W3-MEV where the model's own KO
+    sweep shows the mevalonate core (HMGCR, MVK, PMVK, MVD) non-lethal (every serum medium; A11b)."""
+    flags = set(P1_FLAG_ORDER) - ({"W3-MEV"} if mevalonate_core_lethal else set())
+    return ";".join(f for f in P1_FLAG_ORDER if f in flags)
+
+
+def build_medium_variant_model(parent: cobra.Model, bounds: dict, variant) -> cobra.Model:
+    """A copy of ``parent`` with uptake bounds ``bounds`` (cobra medium: every other uptake closed, secretion
+    unchanged), the biomass variant applied permanently and the biomass objective; the same steps, in the same
+    order, as ``nextgem.w3.ko_sweep`` applies them inside its context."""
+    from nextgem.w3 import BIOMASS
+
+    m = parent.copy()
+    m.medium = dict(bounds)
+    variant.apply(m)
+    m.objective = BIOMASS
+    return m
+
+
+def n_closed(model: cobra.Model) -> int:
+    """Reactions with bounds (0, 0) (kept in the file, never deleted)."""
+    return sum(1 for r in model.reactions if r.lower_bound == 0 and r.upper_bound == 0)
+
+
+def ko_ratio_vector(model: cobra.Model, genes: list[str]) -> tuple[float, np.ndarray]:
+    """WT growth and KO/WT growth ratios for ``genes`` (``Gene.knock_out()``; 6 decimals, clipped to [0, 1]: the
+    W2/W3/M6 sweep convention). Every gene is solved explicitly (no shortcut)."""
+    from nextgem.knockouts import RATIO_DECIMALS, WT_GROWTH_TOL
+
+    wt = _growth(model)
+    out = np.full(len(genes), math.nan)
+    if not wt > WT_GROWTH_TOL:
+        return wt, out
+    for i, g in enumerate(genes):
+        with model:
+            model.genes.get_by_id(g).knock_out()
+            out[i] = _growth(model) / wt
+    return wt, np.clip(np.round(out, RATIO_DECIMALS), 0.0, 1.0) + 0.0
+
+
+def reload_sample(ref_ratio: dict, n_partial: int = 25, n_one: int = 15, seed: int = SEEDS[0]) -> list[str]:
+    """Deterministic gene sample for the reload check: up to ``n_partial`` genes whose reference KO ratio is < 1
+    and ``n_one`` genes at ratio 1 (sorted ids, ``seed``)."""
+    rng = np.random.default_rng(seed)
+    ids = sorted(g for g, v in ref_ratio.items() if not (isinstance(v, float) and math.isnan(v)))
+    low = [g for g in ids if ref_ratio[g] < 1]
+    one = [g for g in ids if ref_ratio[g] >= 1]
+    pick = [low[i] for i in sorted(rng.choice(len(low), size=min(n_partial, len(low)), replace=False))] if low else []
+    pick += [one[i] for i in sorted(rng.choice(len(one), size=min(n_one, len(one)), replace=False))] if one else []
+    return pick
+
+
+def reload_check(source: cobra.Model, b: cobra.Model, ref_ratio: dict, ref_wt: float, genes: list[str]
+                 ) -> tuple[bool, dict]:
+    """Reloaded model ``b`` vs in-memory ``source`` vs the M6 sweep (``ref_ratio``: gene -> ratio_r; ``ref_wt``):
+    WT growth (source = b within REL_TOL; = M6 within REF_WT_REL_TOL, the stored precision) and the KO ratio
+    vector on ``genes`` (all three equal within 1e-6, i.e. at the sweeps' 6-decimal rounding)."""
+    wa, ra = ko_ratio_vector(source, genes)
+    wb, rb = ko_ratio_vector(b, genes)
+    ref = np.array([ref_ratio[g] for g in genes], dtype=float)
+    ok_wt_ab = _rel_equal(wa, wb)
+    ok_wt_ref = (not math.isnan(wb)) and abs(wb - ref_wt) <= REF_WT_REL_TOL * max(abs(ref_wt), 1e-12)
+    d_ab = np.abs(ra - rb)
+    d_ref = np.abs(rb - ref)
+    ok_ab = bool(np.all(d_ab <= 1e-6))
+    ok_ref = bool(np.all(d_ref <= 1e-6))
+    bad = [(g, float(x), float(y), float(z)) for g, x, y, z in zip(genes, ra, rb, ref)
+           if not (abs(x - y) <= 1e-6 and abs(y - z) <= 1e-6)]
+    detail = {"wt_source": wa, "wt_reloaded": wb, "wt_m6": ref_wt, "n_genes": len(genes),
+              "n_partial": int((ref < 1).sum()), "max_abs_diff_source_reloaded": float(np.nanmax(d_ab)) if len(genes) else 0.0,
+              "max_abs_diff_reloaded_m6": float(np.nanmax(d_ref)) if len(genes) else 0.0, "mismatches": bad[:5]}
+    return ok_wt_ab and ok_wt_ref and ok_ab and ok_ref, detail
+
+
+def gate_cells(val: Validation) -> dict:
+    """pass / FAIL / skipped per manifest gate column."""
+    out = {}
+    for col, key in GATE_COLUMNS.items():
+        ok = val.gates.get(key, (None,))[0]
+        out[col] = "pass" if ok is True else ("skipped" if ok == "skipped" else ("FAIL" if key in val.gates else "not_run"))
+    return out
+
+
+def line_manifest(lines, models):
+    """One row per (line, parent): the line's own medium metadata + its model file (``models``: one row per
+    (parent, w2_sweep_id) with ``file``, ``sha256``, ``version``, ``pipeline_id``, ``medium_signature``, ``flags``,
+    ``validation_status``, ``release_status``). Every line must map to exactly one model."""
+    import pandas as pd
+
+    need = ["ModelID", "parent", "w2_sweep_id"]
+    if lines.duplicated(["ModelID", "parent"]).any():
+        raise ResourceError("a (line, parent) pair occurs twice in the line table")
+    mcols = ["parent", "w2_sweep_id", "file", "sha256", "version", "pipeline_id", "medium_signature", "flags",
+             "validation_status", "release_status"]
+    if models.duplicated(["parent", "w2_sweep_id"]).any():
+        raise ResourceError("two model files for one (parent, medium signature)")
+    m = lines.merge(models[mcols], on=["parent", "w2_sweep_id"], how="left", validate="many_to_one")
+    miss = m.file.isna()
+    if miss.any():
+        raise ResourceError(f"{int(miss.sum())} (line, parent) pairs have no model file, e.g. "
+                            f"{m.loc[miss, need].head(3).to_dict('records')}")
+    m = m.rename(columns={"file": "model_file", "sha256": "model_sha256"})
+    m["medium_fallback"] = m.medium_stratum.isin(FALLBACK_STRATA).map(
+        {True: "classic RPMI + 10% FBS (W2 integrated-pipeline fallback)", False: ""})
+    for c in LINE_COLUMNS:
+        if c not in m:
+            m[c] = ""
+    # Human2 rows first (DESIGN W8 release order), then by ModelID
+    return m[LINE_COLUMNS].sort_values(["parent", "ModelID"], ascending=[False, True]).reset_index(drop=True)
+
+
+LINE_NOTE_FIELDS = ("medium_key", "medium_text_used", "medium_source", "medium_stratum", "medium_fallback",
+                    "lineage", "cancer")
+
+
+def load_line(resource_dir: Path, model_id: str, parent: str, manifest: str = "manifest.tsv") -> cobra.Model:
+    """The P1 model of one line (read from its shared per-medium file, sha256-checked) with the line's own
+    metadata in its notes and id."""
+    import pandas as pd
+
+    resource_dir = Path(resource_dir)
+    man = pd.read_csv(resource_dir / manifest, sep="\t", dtype=str, keep_default_na=False)
+    row = man[(man.ModelID == model_id) & (man.parent == parent)]
+    if len(row) != 1:
+        raise ResourceError(f"{model_id}/{parent}: {len(row)} manifest rows")
+    row = row.iloc[0]
+    path = resource_dir / row.model_file
+    if sha256_file(path) != row.model_sha256:
+        raise ResourceError(f"{path.name}: sha256 differs from the manifest")
+    m = load_checked(path)
+    notes = read_notes(m)
+    notes.update({"shared_model_file": row.model_file, "shared_model_sha256": row.model_sha256,
+                  "shared_model_id": notes.get("model_id", ""), "model_id": model_id,
+                  **{f"line_{k}": str(row[k]) for k in LINE_NOTE_FIELDS}})
+    m.notes.clear()
+    m.notes.update(notes)
+    m.id = f"{model_id}_{parent}_{row.pipeline_id}".replace("-", "_")
+    return m
+
+
+def materialise_line(resource_dir: Path, model_id: str, parent: str, out_dir: Path) -> Path:
+    """Write a per-line SBML ``{ModelID}_{parent}-{version}_{pipeline}.xml.gz`` (DESIGN W8 naming) on demand."""
+    import pandas as pd
+
+    m = load_line(resource_dir, model_id, parent)
+    man = pd.read_csv(Path(resource_dir) / "manifest.tsv", sep="\t", dtype=str, keep_default_na=False)
+    row = man[(man.ModelID == model_id) & (man.parent == parent)].iloc[0]
+    path = Path(out_dir) / f"{model_id}_{parent}-{row.version}_{row.pipeline_id}.xml.gz"
+    write_sbml_gz(m, path)
+    return path
