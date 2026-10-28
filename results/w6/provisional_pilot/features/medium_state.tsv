@@ -1,0 +1,6 @@
+# provisional (pre-P1); config provisional.json; parent human1; GLPK
+arm	medium_key	state
+H1	RPMI	H1|db9ebc6b123dcb99
+H1	DMEM:F12	H1|24f533da22a08aee
+H1+B-loo	RPMI	H1+B-loo|db9ebc6b123dcb99
+H1+B-loo	DMEM:F12	H1+B-loo|24f533da22a08aee

@@ -1,0 +1,53 @@
+# provisional (pre-P1) — PILOT (cost/plumbing check, not a result); config provisional.json
+# exploratory / controls; no multiplicity correction
+arm	analysis	contrast	k	n_units	median_delta	p_wilcoxon_one_sided
+H1	subtypes	RNA+KO - RNA	20	10	0	1
+H1	subtypes	RNA+RXN_RNA - RNA	20	10	0.00225005	0.150391
+H1	subtypes	RNA+RXN - RNA	20	10	0	1
+H1	subtypes	RNA+NEG - RNA	20	10	0.0295312	0.15625
+H1	drugs	RNA+KO - RNA	20	6	0	0.3125
+H1	drugs	RNA+KOFLUX - RNA	20	6	0	0.3125
+H1	drugs	RNA+RXN_RNA - RNA	20	6	-0.00381052	0.71875
+H1	drugs	RNA+RXN - RNA	20	6	0	1
+H1	drugs	RNA+NEG - RNA	20	6	0.00152254	0.65625
+H1	drugs	PROT+FLUX - PROT	20	6	-0.00161576	0.6875
+H1	drugs	PROT+RXN_PROT - PROT	20	6	-0.0110869	0.84375
+H1	drugs	KOFLUX - RXN_RNA	20	6	-0.194781	0.984375
+H1	drugs	RNA+FLUX - RNA	50	6	0	0.4375
+H1	drugs	FLUX - RXN_RNA	50	6	-0.242377	0.984375
+H1	metabolomics	RNA+KO - RNA	20	10	-0.000966393	0.6875
+H1	metabolomics	RNA+RXN_RNA - RNA	20	10	-0.00017918	0.6875
+H1	metabolomics	RNA+RXN - RNA	20	10	0	1
+H1	metabolomics	RNA+NEG - RNA	20	10	-0.00775896	0.78418
+H1	metabolomics	PROT+FLUX - PROT	20	10	-0.000313357	0.384766
+H1	metabolomics	PROT+RXN_PROT - PROT	20	10	0.00535507	0.246094
+H1	metabolomics	RNA+FLUX - RNA	50	10	0.00163843	0.161133
+H1	metabolomics	FLUX - RXN_RNA	50	10	-0.418909	1
+H1	drugs_off_model	RNA+FLUX - RNA	20	0		1
+H1	subtypes(silhouette)	RNA+FLUX - RNA	20	10	0	1
+H1	synthetic_positive	RNA+FLUX - RNA	20	4	0.156006	0.0625
+H1+B-loo	subtypes	RNA+KO - RNA	20	10	0	1
+H1+B-loo	subtypes	RNA+RXN_RNA - RNA	20	10	0.00225005	0.150391
+H1+B-loo	subtypes	RNA+RXN - RNA	20	10	0	1
+H1+B-loo	subtypes	RNA+NEG - RNA	20	10	0.0295312	0.15625
+H1+B-loo	drugs	RNA+KO - RNA	20	6	0	0.3125
+H1+B-loo	drugs	RNA+KOFLUX - RNA	20	6	0	0.3125
+H1+B-loo	drugs	RNA+RXN_RNA - RNA	20	6	-0.00381052	0.71875
+H1+B-loo	drugs	RNA+RXN - RNA	20	6	0	1
+H1+B-loo	drugs	RNA+NEG - RNA	20	6	0.00152254	0.65625
+H1+B-loo	drugs	PROT+FLUX - PROT	20	6	-0.00161576	0.6875
+H1+B-loo	drugs	PROT+RXN_PROT - PROT	20	6	-0.0110869	0.84375
+H1+B-loo	drugs	KOFLUX - RXN_RNA	20	6	-0.194781	0.984375
+H1+B-loo	drugs	RNA+FLUX - RNA	50	6	0	0.4375
+H1+B-loo	drugs	FLUX - RXN_RNA	50	6	-0.242377	0.984375
+H1+B-loo	metabolomics	RNA+KO - RNA	20	10	-0.000966393	0.6875
+H1+B-loo	metabolomics	RNA+RXN_RNA - RNA	20	10	-0.00017918	0.6875
+H1+B-loo	metabolomics	RNA+RXN - RNA	20	10	0	1
+H1+B-loo	metabolomics	RNA+NEG - RNA	20	10	-0.00775896	0.78418
+H1+B-loo	metabolomics	PROT+FLUX - PROT	20	10	-0.000313357	0.384766
+H1+B-loo	metabolomics	PROT+RXN_PROT - PROT	20	10	0.00535507	0.246094
+H1+B-loo	metabolomics	RNA+FLUX - RNA	50	10	0.00163843	0.161133
+H1+B-loo	metabolomics	FLUX - RXN_RNA	50	10	-0.418909	1
+H1+B-loo	drugs_off_model	RNA+FLUX - RNA	20	0		1
+H1+B-loo	subtypes(silhouette)	RNA+FLUX - RNA	20	10	0	1
+H1+B-loo	synthetic_positive	RNA+FLUX - RNA	20	4	0.139238	0.0625

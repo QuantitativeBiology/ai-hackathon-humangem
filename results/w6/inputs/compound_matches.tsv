@@ -1,0 +1,316 @@
+compound	screen_id	matched_name	n_ids	n_lines_screen	dataset	source	n_lines_response	n_lines_features	eligible	class	off_model_control
+methotrexate	methotrexate	methotrexate	1	515	PRISM	PRISM 20Q2 secondary AUC	515	514	True	Antifolates	False
+pemetrexed	pemetrexed	pemetrexed	1	528	PRISM	PRISM 20Q2 secondary AUC	528	527	True	Antifolates	False
+pralatrexate	pralatrexate	pralatrexate	1	562	PRISM	PRISM 20Q2 secondary AUC	562	561	True	Antifolates	False
+raltitrexed	raltitrexed	raltitrexed	1	396	PRISM	PRISM 20Q2 secondary AUC	396	395	True	Antifolates	False
+pyrimethamine	pyrimethamine	pyrimethamine	1	392	PRISM	PRISM 20Q2 secondary AUC	392	391	True	Antifolates	False
+trimethoprim	BRD:BRD-K07208025-001-29-7	trimethoprim	1	464	PRISM	PRISM 24Q2 primary LFC	464	463	True	Antifolates	False
+5-FU	5-fluorouracil	5fluorouracil	1	361	PRISM	PRISM 20Q2 secondary AUC	361	360	True	TYMS	False
+floxuridine	floxuridine	floxuridine	1	569	PRISM	PRISM 20Q2 secondary AUC	569	568	True	TYMS	False
+capecitabine	capecitabine	capecitabine	1	478	PRISM	PRISM 20Q2 secondary AUC	478	477	True	TYMS	False
+trifluridine+tipiracil	trifluridine	trifluridine	1	390	PRISM	PRISM 20Q2 secondary AUC	390	389	True	TYMS	False
+hydroxyurea	hydroxyurea	hydroxyurea	1	382	PRISM	PRISM 20Q2 secondary AUC	382	381	True	RNR	False
+gemcitabine	gemcitabine	gemcitabine	1	322	PRISM	PRISM 20Q2 secondary AUC	322	321	True	RNR	False
+triapine	triapine	triapine	1	393	PRISM	PRISM 20Q2 secondary AUC	393	392	True	RNR	False
+brequinar	brequinar	brequinar	1	568	PRISM	PRISM 20Q2 secondary AUC	568	566	True	DHODH	False
+teriflunomide	teriflunomide	teriflunomide	1	380	PRISM	PRISM 20Q2 secondary AUC	380	379	True	DHODH	False
+leflunomide	BRD:BRD-K78692225-001-24-5	leflunomide	1	451	PRISM	PRISM 24Q2 primary LFC	451	450	True	DHODH	False
+BAY-2402234	BRD:BRD-K22379844-001-04-9	bay2402234	1	719	PRISM	PRISM 24Q2 primary LFC	719	717	True	DHODH	False
+mycophenolic acid / mofetil	mycophenolic-acid	mycophenolicacid	1	289	PRISM	PRISM 20Q2 secondary AUC	289	288	True	IMPDH	False
+ribavirin	ribavirin	ribavirin	1	356	PRISM	PRISM 20Q2 secondary AUC	356	355	True	IMPDH	False
+mizoribine	BRD:BRD-K88061624-001-21-4	mizoribine	1	436	PRISM	PRISM 24Q2 primary LFC	436	435	True	IMPDH	False
+6-mercaptopurine	mercaptopurine	mercaptopurine	1	379	PRISM	PRISM 20Q2 secondary AUC	379	378	True	Purine analogues	False
+6-thioguanine	thioguanine	thioguanine	1	555	PRISM	PRISM 20Q2 secondary AUC	555	553	True	Purine analogues	False
+fludarabine	fludarabine	fludarabine	1	366	PRISM	PRISM 20Q2 secondary AUC	366	365	True	Purine analogues	False
+cladribine	cladribine	cladribine	1	290	PRISM	PRISM 20Q2 secondary AUC	290	289	True	Purine analogues	False
+clofarabine	clofarabine	clofarabine	1	392	PRISM	PRISM 20Q2 secondary AUC	392	391	True	Purine analogues	False
+azaserine	BRD:BRD-K47464228-001-14-9	azaserine	1	717	PRISM	PRISM 24Q2 primary LFC	717	715	True	Purine analogues	False
+allopurinol	BRD:BRD-K86307448-001-17-5	allopurinol	2	444	PRISM	PRISM 24Q2 primary LFC	444	443	True	Purine analogues	False
+cytarabine	cytarabine	cytarabine	1	336	PRISM	PRISM 20Q2 secondary AUC	336	335	True	Pyrimidine analogues	False
+decitabine	decitabine	decitabine	1	556	PRISM	PRISM 20Q2 secondary AUC	556	555	True	Pyrimidine analogues	False
+azacitidine	azacitidine	azacitidine	1	555	PRISM	PRISM 20Q2 secondary AUC	555	553	True	Pyrimidine analogues	False
+CB-839/telaglenastat	BRD:BRD-K58070273-001-03-3	cb839	1	398	PRISM	PRISM 24Q2 primary LFC	398	397	True	Glutaminase / amidotransferase	False
+BPTES			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	Glutaminase / amidotransferase	False
+acivicin	acivicin	acivicin	1	319	PRISM	PRISM 20Q2 secondary AUC	319	319	True	Glutaminase / amidotransferase	False
+simvastatin	simvastatin	simvastatin	1	385	PRISM	PRISM 20Q2 secondary AUC	385	384	True	Statins and FDPS	False
+lovastatin	lovastatin	lovastatin	1	231	PRISM	PRISM 20Q2 secondary AUC	231	231	True	Statins and FDPS	False
+atorvastatin	atorvastatin	atorvastatin	1	369	PRISM	PRISM 20Q2 secondary AUC	369	369	True	Statins and FDPS	False
+fluvastatin	fluvastatin	fluvastatin	1	394	PRISM	PRISM 20Q2 secondary AUC	394	393	True	Statins and FDPS	False
+pitavastatin	pitavastatin	pitavastatin	1	285	PRISM	PRISM 20Q2 secondary AUC	285	284	True	Statins and FDPS	False
+rosuvastatin	BRD:BRD-K82941592-238-07-9	rosuvastatin	2	719	PRISM	PRISM 24Q2 primary LFC	719	717	True	Statins and FDPS	False
+zoledronate	BRD:BRD-K84253429-001-06-9	zoledronicacid	1	717	PRISM	PRISM 24Q2 primary LFC	717	715	True	Statins and FDPS	False
+alendronate	BRD:BRD-K75527158-360-04-9	alendronate	1	437	PRISM	PRISM 24Q2 primary LFC	437	436	True	Statins and FDPS	False
+ibandronate	BRD:BRD-K08681769-323-03-7	ibandronate	1	437	PRISM	PRISM 24Q2 primary LFC	437	436	True	Statins and FDPS	False
+risedronate	BRD:BRD-K05185389-001-02-6	risedronate	1	717	PRISM	PRISM 24Q2 primary LFC	717	715	True	Statins and FDPS	False
+terbinafine	BRD:BRD-K68132782-003-13-8	terbinafine	1	463	PRISM	PRISM 24Q2 primary LFC	463	462	True	SQLE	False
+TVB-3166			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+TVB-2640/denifanstat			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+GSK2194069	BRD:BRD-K95123482-001-01-6	gsk2194069	1	397	PRISM	PRISM 24Q2 primary LFC	397	396	True	FASN / ACLY / SCD / ACC	False
+orlistat	BRD:BRD-K63343048-001-12-2	orlistat	1	457	PRISM	PRISM 24Q2 primary LFC	457	456	True	FASN / ACLY / SCD / ACC	False
+cerulenin	BRD:BRD-K52075040-001-09-7	cerulenin	1	459	PRISM	PRISM 24Q2 primary LFC	459	458	True	FASN / ACLY / SCD / ACC	False
+BMS-303141			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+SB-204990			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+NDI-091143			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+bempedoic acid	BRD:BRD-K63177377-001-01-8	bempedoicacid	1	450	PRISM	PRISM 24Q2 primary LFC	450	449	True	FASN / ACLY / SCD / ACC	False
+A939572	BRD:BRD-K99308908-001-02-9	a939572	1	719	PRISM	PRISM 24Q2 primary LFC	719	717	True	FASN / ACLY / SCD / ACC	False
+CAY10566			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+MF-438			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+ND-646			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+firsocostat	BRD:BRD-K00003236-001-01-9	firsocostat	1	719	PRISM	PRISM 24Q2 primary LFC	719	717	True	FASN / ACLY / SCD / ACC	False
+BAY ACCi			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+etomoxir	etomoxir	etomoxir	1	368	PRISM	PRISM 20Q2 secondary AUC	368	367	True	CPT1 / FAO	False
+perhexiline	BRD:BRD-A19633847-050-32-1	perhexiline	1	466	PRISM	PRISM 24Q2 primary LFC	466	465	True	CPT1 / FAO	False
+2-deoxyglucose	BRD:BRD-K97808269-001-02-7	2deoxyglucose	1	459	PRISM	PRISM 24Q2 primary LFC	459	458	True	Glycolysis and transporters	False
+lonidamine	BRD:BRD-K78513633-001-15-7	lonidamine	1	458	PRISM	PRISM 24Q2 primary LFC	458	457	True	Glycolysis and transporters	False
+3-bromopyruvate	BRD:BRD-K92980438-001-03-3	3bromopyruvate	1	437	PRISM	PRISM 24Q2 primary LFC	437	436	True	Glycolysis and transporters	False
+TT-232/TLN-232			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	Glycolysis and transporters	False
+shikonin			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	Glycolysis and transporters	False
+AZD3965	BRD:BRD-K25210703-001-01-9	azd3965	1	398	PRISM	PRISM 24Q2 primary LFC	398	397	True	Glycolysis and transporters	False
+BAY-876			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	Glycolysis and transporters	False
+GSK2837808A	BRD:BRD-K50679358-001-02-9	gsk2837808a	1	717	PRISM	PRISM 24Q2 primary LFC	717	715	True	Glycolysis and transporters	False
+GNE-140			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	Glycolysis and transporters	False
+IACS-010759			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	OXPHOS	False
+rotenone			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	OXPHOS	False
+phenformin	BRD:BRD-K11399644-003-11-3	phenformin	1	443	PRISM	PRISM 24Q2 primary LFC	443	442	True	OXPHOS	False
+metformin	BRD:BRD-K79602928-003-19-9	metformin	1	458	PRISM	PRISM 24Q2 primary LFC	458	457	True	OXPHOS	False
+antimycin A			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	OXPHOS	False
+atovaquone	BRD:BRD-A19795905-001-08-0	atovaquone	1	459	PRISM	PRISM 24Q2 primary LFC	459	458	True	OXPHOS	False
+oligomycin-A	oligomycin-a	oligomycina	1	304	PRISM	PRISM 20Q2 secondary AUC	304	303	True	OXPHOS	False
+CPI-613/devimistat	BRD:BRD-A06916187-001-02-9	cpi613	1	464	PRISM	PRISM 24Q2 primary LFC	464	463	True	OXPHOS	False
+buthionine sulfoximine	buthionine-sulfoximine	buthioninesulfoximine	1	354	PRISM	PRISM 20Q2 secondary AUC	354	353	True	Redox / ferroptosis	False
+sulfasalazine	sulfasalazine	sulfasalazine	1	336	PRISM	PRISM 20Q2 secondary AUC	336	335	True	Redox / ferroptosis	False
+erastin	erastin	erastin	1	331	PRISM	PRISM 20Q2 secondary AUC	331	330	True	Redox / ferroptosis	False
+disulfiram	disulfiram	disulfiram	1	403	PRISM	PRISM 20Q2 secondary AUC	403	402	True	Redox / ferroptosis	False
+elesclomol	elesclomol	elesclomol	1	567	PRISM	PRISM 20Q2 secondary AUC	567	565	True	Redox / ferroptosis	False
+N-acetyl cysteine	acetylcysteine	acetylcysteine	1	343	PRISM	PRISM 20Q2 secondary AUC	343	343	True	Redox / ferroptosis	False
+α-lipoic acid	BRD:BRD-A16347691-001-13-1	thiocticacid	1	463	PRISM	PRISM 24Q2 primary LFC	463	462	True	Redox / ferroptosis	False
+FK866/daporinad	FK-866	fk866	1	559	PRISM	PRISM 20Q2 secondary AUC	559	558	True	NAD	False
+GNE-617			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	NAD	False
+GMX1778/CHS-828	BRD:BRD-K69832040-001-01-9	gmx1778	1	397	PRISM	PRISM 24Q2 primary LFC	397	396	True	NAD	False
+STF-118804	STF-118804	stf118804	1	387	PRISM	PRISM 20Q2 secondary AUC	387	386	True	NAD	False
+SHIN1			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	1C / SHMT	False
+SHIN2			0	0	PRISM	PRISM 20Q2 secondary AUC	0	0	False	1C / SHMT	False
+eflornithine/DFMO	BRD:BRD-A96292436-003-16-1	eflornithine	1	465	PRISM	PRISM 24Q2 primary LFC	465	464	True	Polyamines	False
+ivosidenib	ivosidenib	ivosidenib	1	466	PRISM	PRISM 20Q2 secondary AUC	466	465	True	Mutant IDH	False
+AGI-5198	BRD:BRD-A56371469-001-03-3	agi5198	1	463	PRISM	PRISM 24Q2 primary LFC	463	462	True	Mutant IDH	False
+enasidenib	enasidenib	enasidenib	1	433	PRISM	PRISM 20Q2 secondary AUC	433	432	True	Mutant IDH	False
+AGI-6780	BRD:BRD-K04691817-001-01-8	agi6780	1	464	PRISM	PRISM 24Q2 primary LFC	464	463	True	Mutant IDH	False
+vorasidenib	BRD:BRD-K00003460-001-01-9	vorasidenib	1	714	PRISM	PRISM 24Q2 primary LFC	714	712	True	Mutant IDH	False
+tigecycline	BRD:BRD-K00003349-001-01-9	tigecycline	1	719	PRISM	PRISM 24Q2 primary LFC	719	717	True	Off-model controls	True
+doxycycline	doxycycline	doxycycline	1	402	PRISM	PRISM 20Q2 secondary AUC	402	401	True	Off-model controls	True
+chloramphenicol	BRD:BRD-K08111712-001-16-7	chloramphenicol	1	459	PRISM	PRISM 24Q2 primary LFC	459	458	True	Off-model controls	True
+linezolid	BRD:BRD-K66876909-001-12-6	linezolid	1	458	PRISM	PRISM 24Q2 primary LFC	458	457	True	Off-model controls	True
+bortezomib	bortezomib	bortezomib	1	557	PRISM	PRISM 20Q2 secondary AUC	557	556	True	Off-model controls	True
+belinostat	belinostat	belinostat	1	566	PRISM	PRISM 20Q2 secondary AUC	566	565	True	Off-model controls	True
+alisertib	alisertib	alisertib	1	397	PRISM	PRISM 20Q2 secondary AUC	397	396	True	Off-model controls	True
+mitoxantrone	mitoxantrone	mitoxantrone	1	349	PRISM	PRISM 20Q2 secondary AUC	349	348	True	Off-model controls	True
+methotrexate	1008.0	methotrexate	1	560	GDSC2	GDSC2 AUC	560	488	True	Antifolates	False
+pemetrexed			0	0	GDSC2	GDSC2 AUC	0	0	False	Antifolates	False
+pralatrexate			0	0	GDSC2	GDSC2 AUC	0	0	False	Antifolates	False
+raltitrexed			0	0	GDSC2	GDSC2 AUC	0	0	False	Antifolates	False
+pyrimethamine			0	0	GDSC2	GDSC2 AUC	0	0	False	Antifolates	False
+trimethoprim			0	0	GDSC2	GDSC2 AUC	0	0	False	Antifolates	False
+5-FU	1073.0	5fluorouracil	1	608	GDSC2	GDSC2 AUC	608	530	True	TYMS	False
+floxuridine			0	0	GDSC2	GDSC2 AUC	0	0	False	TYMS	False
+capecitabine			0	0	GDSC2	GDSC2 AUC	0	0	False	TYMS	False
+trifluridine+tipiracil			0	0	GDSC2	GDSC2 AUC	0	0	False	TYMS	False
+hydroxyurea			0	0	GDSC2	GDSC2 AUC	0	0	False	RNR	False
+gemcitabine	1190.0	gemcitabine	1	606	GDSC2	GDSC2 AUC	606	528	True	RNR	False
+triapine			0	0	GDSC2	GDSC2 AUC	0	0	False	RNR	False
+brequinar			0	0	GDSC2	GDSC2 AUC	0	0	False	DHODH	False
+teriflunomide			0	0	GDSC2	GDSC2 AUC	0	0	False	DHODH	False
+leflunomide	1578.0	leflunomide	1	571	GDSC2	GDSC2 AUC	571	501	True	DHODH	False
+BAY-2402234			0	0	GDSC2	GDSC2 AUC	0	0	False	DHODH	False
+mycophenolic acid / mofetil	2055.0	mycophenolicacid	1	492	GDSC2	GDSC2 AUC	492	437	True	IMPDH	False
+ribavirin			0	0	GDSC2	GDSC2 AUC	0	0	False	IMPDH	False
+mizoribine			0	0	GDSC2	GDSC2 AUC	0	0	False	IMPDH	False
+6-mercaptopurine			0	0	GDSC2	GDSC2 AUC	0	0	False	Purine analogues	False
+6-thioguanine			0	0	GDSC2	GDSC2 AUC	0	0	False	Purine analogues	False
+fludarabine	1813.0	fludarabine	1	481	GDSC2	GDSC2 AUC	481	430	True	Purine analogues	False
+cladribine			0	0	GDSC2	GDSC2 AUC	0	0	False	Purine analogues	False
+clofarabine			0	0	GDSC2	GDSC2 AUC	0	0	False	Purine analogues	False
+azaserine			0	0	GDSC2	GDSC2 AUC	0	0	False	Purine analogues	False
+allopurinol			0	0	GDSC2	GDSC2 AUC	0	0	False	Purine analogues	False
+cytarabine	1006.0	cytarabine	1	497	GDSC2	GDSC2 AUC	497	443	True	Pyrimidine analogues	False
+decitabine			0	0	GDSC2	GDSC2 AUC	0	0	False	Pyrimidine analogues	False
+azacitidine	2156.0	5azacytidine	1	495	GDSC2	GDSC2 AUC	495	439	True	Pyrimidine analogues	False
+CB-839/telaglenastat			0	0	GDSC2	GDSC2 AUC	0	0	False	Glutaminase / amidotransferase	False
+BPTES			0	0	GDSC2	GDSC2 AUC	0	0	False	Glutaminase / amidotransferase	False
+acivicin			0	0	GDSC2	GDSC2 AUC	0	0	False	Glutaminase / amidotransferase	False
+simvastatin			0	0	GDSC2	GDSC2 AUC	0	0	False	Statins and FDPS	False
+lovastatin			0	0	GDSC2	GDSC2 AUC	0	0	False	Statins and FDPS	False
+atorvastatin			0	0	GDSC2	GDSC2 AUC	0	0	False	Statins and FDPS	False
+fluvastatin			0	0	GDSC2	GDSC2 AUC	0	0	False	Statins and FDPS	False
+pitavastatin			0	0	GDSC2	GDSC2 AUC	0	0	False	Statins and FDPS	False
+rosuvastatin			0	0	GDSC2	GDSC2 AUC	0	0	False	Statins and FDPS	False
+zoledronate	1802.0	zoledronicacid	1	481	GDSC2	GDSC2 AUC	481	430	True	Statins and FDPS	False
+alendronate			0	0	GDSC2	GDSC2 AUC	0	0	False	Statins and FDPS	False
+ibandronate			0	0	GDSC2	GDSC2 AUC	0	0	False	Statins and FDPS	False
+risedronate			0	0	GDSC2	GDSC2 AUC	0	0	False	Statins and FDPS	False
+terbinafine			0	0	GDSC2	GDSC2 AUC	0	0	False	SQLE	False
+TVB-3166			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+TVB-2640/denifanstat			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+GSK2194069			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+orlistat			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+cerulenin			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+BMS-303141			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+SB-204990			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+NDI-091143			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+bempedoic acid			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+A939572			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+CAY10566			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+MF-438			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+ND-646			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+firsocostat			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+BAY ACCi			0	0	GDSC2	GDSC2 AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+etomoxir			0	0	GDSC2	GDSC2 AUC	0	0	False	CPT1 / FAO	False
+perhexiline			0	0	GDSC2	GDSC2 AUC	0	0	False	CPT1 / FAO	False
+2-deoxyglucose			0	0	GDSC2	GDSC2 AUC	0	0	False	Glycolysis and transporters	False
+lonidamine			0	0	GDSC2	GDSC2 AUC	0	0	False	Glycolysis and transporters	False
+3-bromopyruvate			0	0	GDSC2	GDSC2 AUC	0	0	False	Glycolysis and transporters	False
+TT-232/TLN-232			0	0	GDSC2	GDSC2 AUC	0	0	False	Glycolysis and transporters	False
+shikonin			0	0	GDSC2	GDSC2 AUC	0	0	False	Glycolysis and transporters	False
+AZD3965			0	0	GDSC2	GDSC2 AUC	0	0	False	Glycolysis and transporters	False
+BAY-876			0	0	GDSC2	GDSC2 AUC	0	0	False	Glycolysis and transporters	False
+GSK2837808A			0	0	GDSC2	GDSC2 AUC	0	0	False	Glycolysis and transporters	False
+GNE-140			0	0	GDSC2	GDSC2 AUC	0	0	False	Glycolysis and transporters	False
+IACS-010759			0	0	GDSC2	GDSC2 AUC	0	0	False	OXPHOS	False
+rotenone			0	0	GDSC2	GDSC2 AUC	0	0	False	OXPHOS	False
+phenformin			0	0	GDSC2	GDSC2 AUC	0	0	False	OXPHOS	False
+metformin			0	0	GDSC2	GDSC2 AUC	0	0	False	OXPHOS	False
+antimycin A			0	0	GDSC2	GDSC2 AUC	0	0	False	OXPHOS	False
+atovaquone			0	0	GDSC2	GDSC2 AUC	0	0	False	OXPHOS	False
+oligomycin-A			0	0	GDSC2	GDSC2 AUC	0	0	False	OXPHOS	False
+CPI-613/devimistat			0	0	GDSC2	GDSC2 AUC	0	0	False	OXPHOS	False
+buthionine sulfoximine			0	0	GDSC2	GDSC2 AUC	0	0	False	Redox / ferroptosis	False
+sulfasalazine			0	0	GDSC2	GDSC2 AUC	0	0	False	Redox / ferroptosis	False
+erastin			0	0	GDSC2	GDSC2 AUC	0	0	False	Redox / ferroptosis	False
+disulfiram			0	0	GDSC2	GDSC2 AUC	0	0	False	Redox / ferroptosis	False
+elesclomol	1031.0	elesclomol	1	113	GDSC2	GDSC2 AUC	113	91	False	Redox / ferroptosis	False
+N-acetyl cysteine	2499.0	nacetylcysteine	1	497	GDSC2	GDSC2 AUC	497	442	True	Redox / ferroptosis	False
+α-lipoic acid	2498.0	alphalipoicacid	1	497	GDSC2	GDSC2 AUC	497	442	True	Redox / ferroptosis	False
+FK866/daporinad	1248.0	apo866	1	350	GDSC2	GDSC2 AUC	350	294	True	NAD	False
+GNE-617			0	0	GDSC2	GDSC2 AUC	0	0	False	NAD	False
+GMX1778/CHS-828			0	0	GDSC2	GDSC2 AUC	0	0	False	NAD	False
+STF-118804			0	0	GDSC2	GDSC2 AUC	0	0	False	NAD	False
+SHIN1			0	0	GDSC2	GDSC2 AUC	0	0	False	1C / SHMT	False
+SHIN2			0	0	GDSC2	GDSC2 AUC	0	0	False	1C / SHMT	False
+eflornithine/DFMO			0	0	GDSC2	GDSC2 AUC	0	0	False	Polyamines	False
+ivosidenib			0	0	GDSC2	GDSC2 AUC	0	0	False	Mutant IDH	False
+AGI-5198	1913.0	agi5198	1	603	GDSC2	GDSC2 AUC	603	527	True	Mutant IDH	False
+enasidenib			0	0	GDSC2	GDSC2 AUC	0	0	False	Mutant IDH	False
+AGI-6780	1634.0	agi6780	1	571	GDSC2	GDSC2 AUC	571	500	True	Mutant IDH	False
+vorasidenib			0	0	GDSC2	GDSC2 AUC	0	0	False	Mutant IDH	False
+tigecycline			0	0	GDSC2	GDSC2 AUC	0	0	False	Off-model controls	True
+doxycycline			0	0	GDSC2	GDSC2 AUC	0	0	False	Off-model controls	True
+chloramphenicol			0	0	GDSC2	GDSC2 AUC	0	0	False	Off-model controls	True
+linezolid			0	0	GDSC2	GDSC2 AUC	0	0	False	Off-model controls	True
+bortezomib	1191.0	bortezomib	1	602	GDSC2	GDSC2 AUC	602	527	True	Off-model controls	True
+belinostat			0	0	GDSC2	GDSC2 AUC	0	0	False	Off-model controls	True
+alisertib	1051.0	alisertib	1	598	GDSC2	GDSC2 AUC	598	520	True	Off-model controls	True
+mitoxantrone	1810.0	mitoxantrone	1	481	GDSC2	GDSC2 AUC	481	430	True	Off-model controls	True
+methotrexate	DPC-000234	methotrexate	1	551	CTRP	CTRP AUC	551	549	True	Antifolates	False
+pemetrexed			0	0	CTRP	CTRP AUC	0	0	False	Antifolates	False
+pralatrexate			0	0	CTRP	CTRP AUC	0	0	False	Antifolates	False
+raltitrexed			0	0	CTRP	CTRP AUC	0	0	False	Antifolates	False
+pyrimethamine			0	0	CTRP	CTRP AUC	0	0	False	Antifolates	False
+trimethoprim			0	0	CTRP	CTRP AUC	0	0	False	Antifolates	False
+5-FU	DPC-002828	fluorouracil	1	590	CTRP	CTRP AUC	590	588	True	TYMS	False
+floxuridine			0	0	CTRP	CTRP AUC	0	0	False	TYMS	False
+capecitabine			0	0	CTRP	CTRP AUC	0	0	False	TYMS	False
+trifluridine+tipiracil			0	0	CTRP	CTRP AUC	0	0	False	TYMS	False
+hydroxyurea			0	0	CTRP	CTRP AUC	0	0	False	RNR	False
+gemcitabine	DPC-002977	gemcitabine	1	536	CTRP	CTRP AUC	536	534	True	RNR	False
+triapine			0	0	CTRP	CTRP AUC	0	0	False	RNR	False
+brequinar			0	0	CTRP	CTRP AUC	0	0	False	DHODH	False
+teriflunomide			0	0	CTRP	CTRP AUC	0	0	False	DHODH	False
+leflunomide			0	0	CTRP	CTRP AUC	0	0	False	DHODH	False
+BAY-2402234			0	0	CTRP	CTRP AUC	0	0	False	DHODH	False
+mycophenolic acid / mofetil			0	0	CTRP	CTRP AUC	0	0	False	IMPDH	False
+ribavirin			0	0	CTRP	CTRP AUC	0	0	False	IMPDH	False
+mizoribine			0	0	CTRP	CTRP AUC	0	0	False	IMPDH	False
+6-mercaptopurine			0	0	CTRP	CTRP AUC	0	0	False	Purine analogues	False
+6-thioguanine			0	0	CTRP	CTRP AUC	0	0	False	Purine analogues	False
+fludarabine			0	0	CTRP	CTRP AUC	0	0	False	Purine analogues	False
+cladribine			0	0	CTRP	CTRP AUC	0	0	False	Purine analogues	False
+clofarabine	DPC-001835	clofarabine	1	585	CTRP	CTRP AUC	585	583	True	Purine analogues	False
+azaserine			0	0	CTRP	CTRP AUC	0	0	False	Purine analogues	False
+allopurinol			0	0	CTRP	CTRP AUC	0	0	False	Purine analogues	False
+cytarabine			0	0	CTRP	CTRP AUC	0	0	False	Pyrimidine analogues	False
+decitabine	DPC-002110	decitabine	1	587	CTRP	CTRP AUC	587	585	True	Pyrimidine analogues	False
+azacitidine	DPC-000141	azacitidine	1	551	CTRP	CTRP AUC	551	549	True	Pyrimidine analogues	False
+CB-839/telaglenastat			0	0	CTRP	CTRP AUC	0	0	False	Glutaminase / amidotransferase	False
+BPTES			0	0	CTRP	CTRP AUC	0	0	False	Glutaminase / amidotransferase	False
+acivicin			0	0	CTRP	CTRP AUC	0	0	False	Glutaminase / amidotransferase	False
+simvastatin	DPC-005959	simvastatin	1	528	CTRP	CTRP AUC	528	526	True	Statins and FDPS	False
+lovastatin	DPC-003889	lovastatin	1	588	CTRP	CTRP AUC	588	586	True	Statins and FDPS	False
+atorvastatin			0	0	CTRP	CTRP AUC	0	0	False	Statins and FDPS	False
+fluvastatin	DPC-002848	fluvastatin	1	565	CTRP	CTRP AUC	565	563	True	Statins and FDPS	False
+pitavastatin			0	0	CTRP	CTRP AUC	0	0	False	Statins and FDPS	False
+rosuvastatin			0	0	CTRP	CTRP AUC	0	0	False	Statins and FDPS	False
+zoledronate			0	0	CTRP	CTRP AUC	0	0	False	Statins and FDPS	False
+alendronate			0	0	CTRP	CTRP AUC	0	0	False	Statins and FDPS	False
+ibandronate			0	0	CTRP	CTRP AUC	0	0	False	Statins and FDPS	False
+risedronate			0	0	CTRP	CTRP AUC	0	0	False	Statins and FDPS	False
+terbinafine			0	0	CTRP	CTRP AUC	0	0	False	SQLE	False
+TVB-3166			0	0	CTRP	CTRP AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+TVB-2640/denifanstat			0	0	CTRP	CTRP AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+GSK2194069			0	0	CTRP	CTRP AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+orlistat			0	0	CTRP	CTRP AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+cerulenin	DPC-001619	cerulenin	1	573	CTRP	CTRP AUC	573	571	True	FASN / ACLY / SCD / ACC	False
+BMS-303141			0	0	CTRP	CTRP AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+SB-204990			0	0	CTRP	CTRP AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+NDI-091143			0	0	CTRP	CTRP AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+bempedoic acid			0	0	CTRP	CTRP AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+A939572			0	0	CTRP	CTRP AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+CAY10566			0	0	CTRP	CTRP AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+MF-438			0	0	CTRP	CTRP AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+ND-646			0	0	CTRP	CTRP AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+firsocostat			0	0	CTRP	CTRP AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+BAY ACCi			0	0	CTRP	CTRP AUC	0	0	False	FASN / ACLY / SCD / ACC	False
+etomoxir	DPC-002649	etomoxir	1	578	CTRP	CTRP AUC	578	576	True	CPT1 / FAO	False
+perhexiline			0	0	CTRP	CTRP AUC	0	0	False	CPT1 / FAO	False
+2-deoxyglucose			0	0	CTRP	CTRP AUC	0	0	False	Glycolysis and transporters	False
+lonidamine			0	0	CTRP	CTRP AUC	0	0	False	Glycolysis and transporters	False
+3-bromopyruvate			0	0	CTRP	CTRP AUC	0	0	False	Glycolysis and transporters	False
+TT-232/TLN-232			0	0	CTRP	CTRP AUC	0	0	False	Glycolysis and transporters	False
+shikonin			0	0	CTRP	CTRP AUC	0	0	False	Glycolysis and transporters	False
+AZD3965			0	0	CTRP	CTRP AUC	0	0	False	Glycolysis and transporters	False
+BAY-876			0	0	CTRP	CTRP AUC	0	0	False	Glycolysis and transporters	False
+GSK2837808A			0	0	CTRP	CTRP AUC	0	0	False	Glycolysis and transporters	False
+GNE-140			0	0	CTRP	CTRP AUC	0	0	False	Glycolysis and transporters	False
+IACS-010759			0	0	CTRP	CTRP AUC	0	0	False	OXPHOS	False
+rotenone			0	0	CTRP	CTRP AUC	0	0	False	OXPHOS	False
+phenformin			0	0	CTRP	CTRP AUC	0	0	False	OXPHOS	False
+metformin			0	0	CTRP	CTRP AUC	0	0	False	OXPHOS	False
+antimycin A			0	0	CTRP	CTRP AUC	0	0	False	OXPHOS	False
+atovaquone			0	0	CTRP	CTRP AUC	0	0	False	OXPHOS	False
+oligomycin-A	DPC-004751	oligomycina	1	577	CTRP	CTRP AUC	577	575	True	OXPHOS	False
+CPI-613/devimistat			0	0	CTRP	CTRP AUC	0	0	False	OXPHOS	False
+buthionine sulfoximine			0	0	CTRP	CTRP AUC	0	0	False	Redox / ferroptosis	False
+sulfasalazine			0	0	CTRP	CTRP AUC	0	0	False	Redox / ferroptosis	False
+erastin	DPC-002562	erastin	1	587	CTRP	CTRP AUC	587	585	True	Redox / ferroptosis	False
+disulfiram			0	0	CTRP	CTRP AUC	0	0	False	Redox / ferroptosis	False
+elesclomol			0	0	CTRP	CTRP AUC	0	0	False	Redox / ferroptosis	False
+N-acetyl cysteine			0	0	CTRP	CTRP AUC	0	0	False	Redox / ferroptosis	False
+α-lipoic acid			0	0	CTRP	CTRP AUC	0	0	False	Redox / ferroptosis	False
+FK866/daporinad	DPC-000635	apo866	1	507	CTRP	CTRP AUC	507	505	True	NAD	False
+GNE-617			0	0	CTRP	CTRP AUC	0	0	False	NAD	False
+GMX1778/CHS-828	DPC-003037	gmx1778	1	576	CTRP	CTRP AUC	576	574	True	NAD	False
+STF-118804			0	0	CTRP	CTRP AUC	0	0	False	NAD	False
+SHIN1			0	0	CTRP	CTRP AUC	0	0	False	1C / SHMT	False
+SHIN2			0	0	CTRP	CTRP AUC	0	0	False	1C / SHMT	False
+eflornithine/DFMO			0	0	CTRP	CTRP AUC	0	0	False	Polyamines	False
+ivosidenib			0	0	CTRP	CTRP AUC	0	0	False	Mutant IDH	False
+AGI-5198			0	0	CTRP	CTRP AUC	0	0	False	Mutant IDH	False
+enasidenib			0	0	CTRP	CTRP AUC	0	0	False	Mutant IDH	False
+AGI-6780			0	0	CTRP	CTRP AUC	0	0	False	Mutant IDH	False
+vorasidenib			0	0	CTRP	CTRP AUC	0	0	False	Mutant IDH	False
+tigecycline	DPC-006487	tigecycline	1	288	CTRP	CTRP AUC	288	287	True	Off-model controls	True
+doxycycline			0	0	CTRP	CTRP AUC	0	0	False	Off-model controls	True
+chloramphenicol			0	0	CTRP	CTRP AUC	0	0	False	Off-model controls	True
+linezolid			0	0	CTRP	CTRP AUC	0	0	False	Off-model controls	True
+bortezomib	DPC-001195	bortezomib	1	579	CTRP	CTRP AUC	579	577	True	Off-model controls	True
+belinostat	DPC-000965	belinostat	1	298	CTRP	CTRP AUC	298	297	True	Off-model controls	True
+alisertib	DPC-000428	alisertib	1	577	CTRP	CTRP AUC	577	575	True	Off-model controls	True
+mitoxantrone			0	0	CTRP	CTRP AUC	0	0	False	Off-model controls	True

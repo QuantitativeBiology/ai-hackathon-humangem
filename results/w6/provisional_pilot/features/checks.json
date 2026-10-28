@@ -1,0 +1,21 @@
+{
+ "generic_ko_equals_w2": {
+  "human1:24f533da22a08aee": true,
+  "human1:db9ebc6b123dcb99": true
+ },
+ "generic_ko_equals_w2_all": true,
+ "label": "provisional (pre-P1)",
+ "n_medium_keys": 2,
+ "n_states": 4,
+ "pilot": true,
+ "targets": [
+  "ACACA",
+  "ACACB",
+  "ACLY",
+  "ALDH2",
+  "ATP5F1A",
+  "CPT1A"
+ ],
+ "w2_labels_present": 279,
+ "wall_s": 93.5
+}

@@ -1,0 +1,11 @@
+# provisional (pre-P1) — PILOT (cost/plumbing check, not a result); config provisional.json
+# arm H1
+dataset	compound	target	n_lines	rho_e_within	n_lineages_e	e_constant_within_every_lineage	rho_expr_within	n_lineages_expr
+CTRP	5-FU	TYMS	465	0.0118543	9	False	-0.0359481	16
+CTRP	FK866/daporinad	NAMPT	390		0	True	-0.32408	15
+GDSC2	5-FU	TYMS	530	0.229169	17	False	-0.10868	17
+GDSC2	AGI-5198	IDH1	527		0	True	0.0778711	17
+PRISM	2-deoxyglucose	HK1	458		0	True	0.00704153	16
+PRISM	2-deoxyglucose	HK2	458		0	True	0.0951289	16
+PRISM	3-bromopyruvate	HK2	436		0	True	0.0196721	16
+PRISM	3-bromopyruvate	GAPDH	436		0	True	-0.0133068	16

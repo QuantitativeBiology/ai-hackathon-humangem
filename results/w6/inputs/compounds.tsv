@@ -1,0 +1,107 @@
+# provisional (pre-P1) run inputs; list = notes/apriori_lists_final.md §4 (A2), verbatim
+compound	class	targets	target_source	activators	modifiers	flags	aliases	off_model_control
+methotrexate	Antifolates	DHFR	table		SLC19A1;FPGS			False
+pemetrexed	Antifolates	TYMS;DHFR;GART	table					False
+pralatrexate	Antifolates	DHFR	class					False
+raltitrexed	Antifolates	TYMS	literature					False
+pyrimethamine	Antifolates	DHFR	class					False
+trimethoprim	Antifolates	DHFR	class			bacterial-selective DHFR inhibitor		False
+5-FU	TYMS	TYMS	table	UMPS;UPP1;UCK2;TYMP;TK1	DPYD	prodrug	fluorouracil;5-fluorouracil	False
+floxuridine	TYMS	TYMS	table	TK1		prodrug		False
+capecitabine	TYMS	TYMS	table	CES1;CES2;CDA;TYMP		prodrug		False
+trifluridine+tipiracil	TYMS	TYMS	table	TK1	TYMP	screened as trifluridine	trifluridine;trifluridine/tipiracil;TAS-102	False
+hydroxyurea	RNR	RRM2	table				hydroxycarbamide	False
+gemcitabine	RNR	RRM1	table	DCK		prodrug		False
+triapine	RNR	RRM2	table					False
+brequinar	DHODH	DHODH	class					False
+teriflunomide	DHODH	DHODH	class					False
+leflunomide	DHODH	DHODH	table			non-enzymatic conversion to teriflunomide		False
+BAY-2402234	DHODH	DHODH	class					False
+mycophenolic acid / mofetil	IMPDH	IMPDH1;IMPDH2	class	CES1			mycophenolic acid;mycophenolate mofetil	False
+ribavirin	IMPDH	IMPDH1;IMPDH2	class	ADK		prodrug		False
+mizoribine	IMPDH	IMPDH1;IMPDH2	class	ADK		prodrug		False
+6-mercaptopurine	Purine analogues	PPAT	literature	HPRT1		prodrug;'de novo purine' target -> PPAT	mercaptopurine;6-MP	False
+6-thioguanine	Purine analogues	PPAT	literature	HPRT1		prodrug;'de novo purine' target -> PPAT	thioguanine;tioguanine	False
+fludarabine	Purine analogues		none	DCK		prodrug		False
+cladribine	Purine analogues		none	DCK		prodrug		False
+clofarabine	Purine analogues		none	DCK		prodrug		False
+azaserine	Purine analogues	PPAT;PFAS	literature			glutamine amidotransferases		False
+allopurinol	Purine analogues	XDH	table					False
+cytarabine	Pyrimidine analogues		none	DCK		prodrug	ara-c	False
+decitabine	Pyrimidine analogues		none			no model target (DNMT1)		False
+azacitidine	Pyrimidine analogues		none			no model target (DNMT1)	5-azacytidine	False
+CB-839/telaglenastat	Glutaminase / amidotransferase	GLS	table					False
+BPTES	Glutaminase / amidotransferase	GLS	table					False
+acivicin	Glutaminase / amidotransferase	CTPS1	table					False
+simvastatin	Statins and FDPS	HMGCR	table			lactone prodrug		False
+lovastatin	Statins and FDPS	HMGCR	table			lactone prodrug		False
+atorvastatin	Statins and FDPS	HMGCR	table					False
+fluvastatin	Statins and FDPS	HMGCR	table					False
+pitavastatin	Statins and FDPS	HMGCR	table					False
+rosuvastatin	Statins and FDPS	HMGCR	table					False
+zoledronate	Statins and FDPS	FDPS	table				zoledronic acid	False
+alendronate	Statins and FDPS	FDPS	table				alendronic acid;alendronate sodium	False
+ibandronate	Statins and FDPS	FDPS	table				ibandronic acid	False
+risedronate	Statins and FDPS	FDPS	table				risedronic acid	False
+terbinafine	SQLE	SQLE	table					False
+TVB-3166	FASN / ACLY / SCD / ACC	FASN	table					False
+TVB-2640/denifanstat	FASN / ACLY / SCD / ACC	FASN	table					False
+GSK2194069	FASN / ACLY / SCD / ACC	FASN	table					False
+orlistat	FASN / ACLY / SCD / ACC	FASN	table					False
+cerulenin	FASN / ACLY / SCD / ACC	FASN	table					False
+BMS-303141	FASN / ACLY / SCD / ACC	ACLY	table					False
+SB-204990	FASN / ACLY / SCD / ACC	ACLY	table					False
+NDI-091143	FASN / ACLY / SCD / ACC	ACLY	table					False
+bempedoic acid	FASN / ACLY / SCD / ACC	ACLY	table	SLC27A2		prodrug;liver-restricted activation		False
+A939572	FASN / ACLY / SCD / ACC	SCD	table					False
+CAY10566	FASN / ACLY / SCD / ACC	SCD	table					False
+MF-438	FASN / ACLY / SCD / ACC	SCD	table					False
+ND-646	FASN / ACLY / SCD / ACC	ACACA;ACACB	table					False
+firsocostat	FASN / ACLY / SCD / ACC	ACACA;ACACB	table					False
+BAY ACCi	FASN / ACLY / SCD / ACC	ACACA;ACACB	table				BAY ACCi	False
+etomoxir	CPT1 / FAO	CPT1A	table			off-target at high dose		False
+perhexiline	CPT1 / FAO	CPT1A	class					False
+2-deoxyglucose	Glycolysis and transporters	HK1;HK2	table				2-deoxy-D-glucose	False
+lonidamine	Glycolysis and transporters	HK2	literature					False
+3-bromopyruvate	Glycolysis and transporters	HK2;GAPDH	literature					False
+TT-232/TLN-232	Glycolysis and transporters	PKM	table					False
+shikonin	Glycolysis and transporters	PKM	table					False
+AZD3965	Glycolysis and transporters	SLC16A1	table					False
+BAY-876	Glycolysis and transporters	SLC2A1	table					False
+GSK2837808A	Glycolysis and transporters	LDHA;LDHB	table					False
+GNE-140	Glycolysis and transporters	LDHA;LDHB	table					False
+IACS-010759	OXPHOS	MT-ND1	table					False
+rotenone	OXPHOS	MT-ND1	table					False
+phenformin	OXPHOS	MT-ND1	table					False
+metformin	OXPHOS	MT-ND1	table			weak, mechanism debated		False
+antimycin A	OXPHOS	MT-CYB	table					False
+atovaquone	OXPHOS	MT-CYB	table					False
+oligomycin-A	OXPHOS	ATP5F1A	table				oligomycin A	False
+CPI-613/devimistat	OXPHOS	PDHA1;DLD;DLST	table					False
+buthionine sulfoximine	Redox / ferroptosis	GCLC;GCLM	table				buthionine sulphoximine;BSO;L-buthionine-(S,R)-sulfoximine	False
+sulfasalazine	Redox / ferroptosis	SLC7A11	table					False
+erastin	Redox / ferroptosis	SLC7A11	table			also hits VDAC		False
+disulfiram	Redox / ferroptosis	ALDH2	table					False
+elesclomol	Redox / ferroptosis		none					False
+N-acetyl cysteine	Redox / ferroptosis		none				acetylcysteine;N-acetylcysteine	False
+α-lipoic acid	Redox / ferroptosis		none				lipoic acid;alpha-lipoic acid;thioctic acid	False
+FK866/daporinad	NAD	NAMPT	table		NAPRT		APO866	False
+GNE-617	NAD	NAMPT	table		NAPRT			False
+GMX1778/CHS-828	NAD	NAMPT	table		NAPRT			False
+STF-118804	NAD	NAMPT	table		NAPRT			False
+SHIN1	1C / SHMT	SHMT1;SHMT2	table					False
+SHIN2	1C / SHMT	SHMT1;SHMT2	table					False
+eflornithine/DFMO	Polyamines	ODC1	table					False
+ivosidenib	Mutant IDH	IDH1	table			negative-expectation class	AG-120	False
+AGI-5198	Mutant IDH	IDH1	table			negative-expectation class		False
+enasidenib	Mutant IDH	IDH2	table			negative-expectation class	AG-221	False
+AGI-6780	Mutant IDH	IDH2	table			negative-expectation class		False
+vorasidenib	Mutant IDH	IDH1;IDH2	literature			negative-expectation class	AG-881	False
+tigecycline	Off-model controls		none			off-model control (mitoribosome)		True
+doxycycline	Off-model controls		none			off-model control (mitoribosome)		True
+chloramphenicol	Off-model controls		none			off-model control (mitoribosome)		True
+linezolid	Off-model controls		none			off-model control (mitoribosome)		True
+bortezomib	Off-model controls		none			off-model control (no model target)		True
+belinostat	Off-model controls		none			off-model control (no model target)		True
+alisertib	Off-model controls		none			off-model control (no model target)		True
+mitoxantrone	Off-model controls		none			off-model control (no model target)		True

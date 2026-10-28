@@ -1,0 +1,6 @@
+# provisional (pre-P1); config provisional.json; parent human1; GLPK
+state	arm	signature	medium_keys	variant	bounds_variant	f	gate_open	n_open_exchanges	wt_growth	ko_wt_growth	ko_n_solved	shortcut_verify_max_dev	n_lp_koflux	n_shortcut_koflux	wall_s	cpu_s
+H1|db9ebc6b123dcb99	H1	db9ebc6b123dcb99	RPMI	none	M2	1	True	58	46.8601	46.8601	200	1.22125e-14	2	4	66.1	66.1
+H1|24f533da22a08aee	H1	24f533da22a08aee	DMEM:F12	none	M2	1	True	61	66.1735	66.1735	199	5.55112e-15	2	4	61.4	61.4
+H1+B-loo|db9ebc6b123dcb99	H1+B-loo	db9ebc6b123dcb99	RPMI	B-loo:cofactor_pool_biomass	M2	1	True	58	46.8632	46.8632	164	1.08802e-14	2	4	62	61.9
+H1+B-loo|24f533da22a08aee	H1+B-loo	24f533da22a08aee	DMEM:F12	B-loo:cofactor_pool_biomass	M2	1	True	61	66.1774	66.1774	157	3.21965e-15	2	4	53.3	53.3

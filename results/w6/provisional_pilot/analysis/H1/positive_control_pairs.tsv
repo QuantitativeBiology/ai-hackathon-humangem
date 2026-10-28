@@ -1,0 +1,47 @@
+# provisional (pre-P1) — PILOT (cost/plumbing check, not a result); config provisional.json
+# arm H1
+gene	compound	note	dataset	n_lines	rho_e_within	n_lineages_e	e_constant_within_every_lineage	rho_expr_within	n_lineages_expr	RNA	RNA+FLUX	status
+DHODH	brequinar											no eligible screen unit
+DHFR	methotrexate											no eligible screen unit
+TYMS	5-FU		CTRP	465	0.0118543	9	False	-0.0359481	16	0.413039	0.406773	evaluated
+TYMS	5-FU		GDSC2	530	0.229169	17	False	-0.10868	17	0.216949	0.291938	evaluated
+TYMS	floxuridine											no eligible screen unit
+TYMS	pemetrexed											no eligible screen unit
+IMPDH2	mycophenolic acid / mofetil											no eligible screen unit
+RRM1	hydroxyurea											no eligible screen unit
+RRM1	gemcitabine											no eligible screen unit
+RRM2	hydroxyurea											no eligible screen unit
+RRM2	gemcitabine											no eligible screen unit
+HMGCR	simvastatin											no eligible screen unit
+HMGCR	lovastatin											no eligible screen unit
+HMGCR	atorvastatin											no eligible screen unit
+HMGCR	fluvastatin											no eligible screen unit
+HMGCR	pitavastatin											no eligible screen unit
+HMGCR	rosuvastatin											no eligible screen unit
+SQLE	terbinafine											no eligible screen unit
+FASN	GSK2194069											no eligible screen unit
+FASN	TVB-2640/denifanstat											no eligible screen unit
+ACACA	ND-646											no eligible screen unit
+GLS	CB-839/telaglenastat											no eligible screen unit
+GLS	BPTES											no eligible screen unit
+SLC16A1	AZD3965											no eligible screen unit
+SLC2A1	BAY-876											no eligible screen unit
+CPT1A	etomoxir											no eligible screen unit
+NAMPT	FK866/daporinad	NAPRT modifier	CTRP	390		0	True	-0.32408	15	0.410663	0.409332	non_informative (target e constant within lineages)
+GCLC	buthionine sulfoximine											no eligible screen unit
+GCLM	buthionine sulfoximine											no eligible screen unit
+SLC7A11	sulfasalazine											no eligible screen unit
+SLC7A11	erastin											no eligible screen unit
+ATP5F1A	oligomycin-A											no eligible screen unit
+PDHA1	CPI-613/devimistat											no eligible screen unit
+DLD	CPI-613/devimistat											no eligible screen unit
+DLST	CPI-613/devimistat											no eligible screen unit
+HK1	2-deoxyglucose		PRISM	458		0	True	0.00704153	16	-0.00419806	-0.00419806	non_informative (target e constant within lineages)
+HK2	2-deoxyglucose		PRISM	458		0	True	0.0951289	16	-0.00419806	-0.00419806	non_informative (target e constant within lineages)
+ODC1	eflornithine/DFMO											no eligible screen unit
+SHMT1	SHIN1											no eligible screen unit
+SHMT1	SHIN2											no eligible screen unit
+SHMT2	SHIN1											no eligible screen unit
+SHMT2	SHIN2											no eligible screen unit
+IDH1	ivosidenib	restricted to IDH_mut lines										no eligible screen unit
+IDH1	AGI-5198	restricted to IDH_mut lines	GDSC2	527		0	True	0.0778711	17	0.209692	0.222227	non_informative (target e constant within lineages)

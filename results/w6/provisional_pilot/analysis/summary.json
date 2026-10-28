@@ -1,0 +1,37 @@
+{
+ "arms": {
+  "H1": {
+   "fit_free_e_defined": 2,
+   "fit_free_rows": 8,
+   "n_units": {
+    "drugs": 6,
+    "drugs_primary": 6,
+    "metabolomics": 10,
+    "subtypes": 10
+   }
+  },
+  "H1+B-loo": {
+   "fit_free_e_defined": 2,
+   "fit_free_rows": 8,
+   "n_units": {
+    "drugs": 6,
+    "drugs_primary": 6,
+    "metabolomics": 10,
+    "subtypes": 10
+   }
+  }
+ },
+ "label": "provisional (pre-P1) \u2014 PILOT (cost/plumbing check, not a result)",
+ "pca_cache_entries": 2124,
+ "timing_s": {
+  "H1+B-loo:drugs": 15.5,
+  "H1+B-loo:metabolomics": 22.0,
+  "H1+B-loo:subtypes": 9.7,
+  "H1+B-loo:synthetic": 0.6,
+  "H1:drugs": 47.0,
+  "H1:metabolomics": 22.4,
+  "H1:subtypes": 10.5,
+  "H1:synthetic": 0.6
+ },
+ "wall_s": 136.9
+}

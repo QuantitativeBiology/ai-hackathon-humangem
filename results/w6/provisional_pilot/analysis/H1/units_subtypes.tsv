@@ -1,0 +1,243 @@
+# provisional (pre-P1) — PILOT (cost/plumbing check, not a result); config provisional.json
+# arm H1
+unit	set	k	n	knn_macro_f1	silhouette
+Biliary Tract|Molecular:CDKN2A_LoF	RNA	20	31	0.393061	0.00630566
+Biliary Tract|Molecular:CDKN2A_LoF	RNA+FLUX	20	31	0.393061	0.00630566
+Biliary Tract|Molecular:CDKN2A_LoF	RNA+KO	20	31	0.393061	0.00630566
+Biliary Tract|Molecular:CDKN2A_LoF	RNA+RXN_RNA	20	31	0.458206	0.00426236
+Biliary Tract|Molecular:CDKN2A_LoF	RNA+RXN	20	31	0.393061	0.00630566
+Biliary Tract|Molecular:CDKN2A_LoF	FLUX	20	31	0.433338	
+Biliary Tract|Molecular:CDKN2A_LoF	KO	20	31	0.433338	
+Biliary Tract|Molecular:CDKN2A_LoF	RXN_RNA	20	31	0.549295	0.00332874
+Biliary Tract|Molecular:CDKN2A_LoF	RNA+NEG	20	31	0.46677	-0.00100677
+Biliary Tract|Molecular:CDKN2A_LoF	RNA+FLUX@perm11	20	31	0.393061	0.00630566
+Biliary Tract|Molecular:CDKN2A_LoF	FLUX@perm11	20	31	0.433338	
+Biliary Tract|Molecular:CDKN2A_LoF	KO@perm11	20	31	0.433338	
+Biliary Tract|Molecular:CDKN2A_LoF	RNA+FLUX@perm23	20	31	0.393061	0.00630566
+Biliary Tract|Molecular:CDKN2A_LoF	FLUX@perm23	20	31	0.433338	
+Biliary Tract|Molecular:CDKN2A_LoF	KO@perm23	20	31	0.433338	
+Biliary Tract|Molecular:CDKN2A_LoF	RNA+FLUX@perm37	20	31	0.393061	0.00630566
+Biliary Tract|Molecular:CDKN2A_LoF	FLUX@perm37	20	31	0.433338	
+Biliary Tract|Molecular:CDKN2A_LoF	KO@perm37	20	31	0.433338	
+Biliary Tract|Molecular:CDKN2A_LoF	RNA+FLUX@perm41	20	31	0.393061	0.00630566
+Biliary Tract|Molecular:CDKN2A_LoF	FLUX@perm41	20	31	0.433338	
+Biliary Tract|Molecular:CDKN2A_LoF	KO@perm41	20	31	0.433338	
+Biliary Tract|Molecular:CDKN2A_LoF	RNA+FLUX@perm53	20	31	0.393061	0.00630566
+Biliary Tract|Molecular:CDKN2A_LoF	FLUX@perm53	20	31	0.433338	
+Biliary Tract|Molecular:CDKN2A_LoF	KO@perm53	20	31	0.433338	
+Biliary Tract|Molecular:KRAS p.G12	RNA	20	33	0.530808	0.0046213
+Biliary Tract|Molecular:KRAS p.G12	RNA+FLUX	20	33	0.530808	0.0046213
+Biliary Tract|Molecular:KRAS p.G12	RNA+KO	20	33	0.530808	0.0046213
+Biliary Tract|Molecular:KRAS p.G12	RNA+RXN_RNA	20	33	0.531966	0.00870786
+Biliary Tract|Molecular:KRAS p.G12	RNA+RXN	20	33	0.530808	0.0046213
+Biliary Tract|Molecular:KRAS p.G12	FLUX	20	33	0.449035	
+Biliary Tract|Molecular:KRAS p.G12	KO	20	33	0.449035	
+Biliary Tract|Molecular:KRAS p.G12	RXN_RNA	20	33	0.417607	0.0138053
+Biliary Tract|Molecular:KRAS p.G12	RNA+NEG	20	33	0.436231	0.00962174
+Biliary Tract|Molecular:KRAS p.G12	RNA+FLUX@perm11	20	33	0.530808	0.0046213
+Biliary Tract|Molecular:KRAS p.G12	FLUX@perm11	20	33	0.449035	
+Biliary Tract|Molecular:KRAS p.G12	KO@perm11	20	33	0.449035	
+Biliary Tract|Molecular:KRAS p.G12	RNA+FLUX@perm23	20	33	0.530808	0.0046213
+Biliary Tract|Molecular:KRAS p.G12	FLUX@perm23	20	33	0.449035	
+Biliary Tract|Molecular:KRAS p.G12	KO@perm23	20	33	0.449035	
+Biliary Tract|Molecular:KRAS p.G12	RNA+FLUX@perm37	20	33	0.530808	0.0046213
+Biliary Tract|Molecular:KRAS p.G12	FLUX@perm37	20	33	0.449035	
+Biliary Tract|Molecular:KRAS p.G12	KO@perm37	20	33	0.449035	
+Biliary Tract|Molecular:KRAS p.G12	RNA+FLUX@perm41	20	33	0.530808	0.0046213
+Biliary Tract|Molecular:KRAS p.G12	FLUX@perm41	20	33	0.449035	
+Biliary Tract|Molecular:KRAS p.G12	KO@perm41	20	33	0.449035	
+Biliary Tract|Molecular:KRAS p.G12	RNA+FLUX@perm53	20	33	0.530808	0.0046213
+Biliary Tract|Molecular:KRAS p.G12	FLUX@perm53	20	33	0.449035	
+Biliary Tract|Molecular:KRAS p.G12	KO@perm53	20	33	0.449035	
+Biliary Tract|Molecular:KRAS p.G12D	RNA	20	33	0.459016	0.00820875
+Biliary Tract|Molecular:KRAS p.G12D	RNA+FLUX	20	33	0.459016	0.00820875
+Biliary Tract|Molecular:KRAS p.G12D	RNA+KO	20	33	0.459016	0.00820875
+Biliary Tract|Molecular:KRAS p.G12D	RNA+RXN_RNA	20	33	0.459016	0.010017
+Biliary Tract|Molecular:KRAS p.G12D	RNA+RXN	20	33	0.459016	0.00820875
+Biliary Tract|Molecular:KRAS p.G12D	FLUX	20	33	0.459016	
+Biliary Tract|Molecular:KRAS p.G12D	KO	20	33	0.459016	
+Biliary Tract|Molecular:KRAS p.G12D	RXN_RNA	20	33	0.459016	0.0118639
+Biliary Tract|Molecular:KRAS p.G12D	RNA+NEG	20	33	0.459016	0.0136351
+Biliary Tract|Molecular:KRAS p.G12D	RNA+FLUX@perm11	20	33	0.459016	0.00820875
+Biliary Tract|Molecular:KRAS p.G12D	FLUX@perm11	20	33	0.459016	
+Biliary Tract|Molecular:KRAS p.G12D	KO@perm11	20	33	0.459016	
+Biliary Tract|Molecular:KRAS p.G12D	RNA+FLUX@perm23	20	33	0.459016	0.00820875
+Biliary Tract|Molecular:KRAS p.G12D	FLUX@perm23	20	33	0.459016	
+Biliary Tract|Molecular:KRAS p.G12D	KO@perm23	20	33	0.459016	
+Biliary Tract|Molecular:KRAS p.G12D	RNA+FLUX@perm37	20	33	0.459016	0.00820875
+Biliary Tract|Molecular:KRAS p.G12D	FLUX@perm37	20	33	0.459016	
+Biliary Tract|Molecular:KRAS p.G12D	KO@perm37	20	33	0.459016	
+Biliary Tract|Molecular:KRAS p.G12D	RNA+FLUX@perm41	20	33	0.459016	0.00820875
+Biliary Tract|Molecular:KRAS p.G12D	FLUX@perm41	20	33	0.459016	
+Biliary Tract|Molecular:KRAS p.G12D	KO@perm41	20	33	0.459016	
+Biliary Tract|Molecular:KRAS p.G12D	RNA+FLUX@perm53	20	33	0.459016	0.00820875
+Biliary Tract|Molecular:KRAS p.G12D	FLUX@perm53	20	33	0.459016	
+Biliary Tract|Molecular:KRAS p.G12D	KO@perm53	20	33	0.459016	
+Biliary Tract|Molecular:MTAP_LoF	RNA	20	31	0.407596	-0.000961644
+Biliary Tract|Molecular:MTAP_LoF	RNA+FLUX	20	31	0.407596	-0.000961644
+Biliary Tract|Molecular:MTAP_LoF	RNA+KO	20	31	0.407596	-0.000961644
+Biliary Tract|Molecular:MTAP_LoF	RNA+RXN_RNA	20	31	0.460587	0.0046362
+Biliary Tract|Molecular:MTAP_LoF	RNA+RXN	20	31	0.407596	-0.000961644
+Biliary Tract|Molecular:MTAP_LoF	FLUX	20	31	0.425926	
+Biliary Tract|Molecular:MTAP_LoF	KO	20	31	0.425926	
+Biliary Tract|Molecular:MTAP_LoF	RXN_RNA	20	31	0.418705	0.010178
+Biliary Tract|Molecular:MTAP_LoF	RNA+NEG	20	31	0.553115	0.00855419
+Biliary Tract|Molecular:MTAP_LoF	RNA+FLUX@perm11	20	31	0.407596	-0.000961644
+Biliary Tract|Molecular:MTAP_LoF	FLUX@perm11	20	31	0.425926	
+Biliary Tract|Molecular:MTAP_LoF	KO@perm11	20	31	0.425926	
+Biliary Tract|Molecular:MTAP_LoF	RNA+FLUX@perm23	20	31	0.407596	-0.000961644
+Biliary Tract|Molecular:MTAP_LoF	FLUX@perm23	20	31	0.425926	
+Biliary Tract|Molecular:MTAP_LoF	KO@perm23	20	31	0.425926	
+Biliary Tract|Molecular:MTAP_LoF	RNA+FLUX@perm37	20	31	0.407596	-0.000961644
+Biliary Tract|Molecular:MTAP_LoF	FLUX@perm37	20	31	0.425926	
+Biliary Tract|Molecular:MTAP_LoF	KO@perm37	20	31	0.425926	
+Biliary Tract|Molecular:MTAP_LoF	RNA+FLUX@perm41	20	31	0.407596	-0.000961644
+Biliary Tract|Molecular:MTAP_LoF	FLUX@perm41	20	31	0.425926	
+Biliary Tract|Molecular:MTAP_LoF	KO@perm41	20	31	0.425926	
+Biliary Tract|Molecular:MTAP_LoF	RNA+FLUX@perm53	20	31	0.407596	-0.000961644
+Biliary Tract|Molecular:MTAP_LoF	FLUX@perm53	20	31	0.425926	
+Biliary Tract|Molecular:MTAP_LoF	KO@perm53	20	31	0.425926	
+Biliary Tract|Molecular:TP53_LoF	RNA	20	32	0.471548	0.00630499
+Biliary Tract|Molecular:TP53_LoF	RNA+FLUX	20	32	0.471548	0.00630499
+Biliary Tract|Molecular:TP53_LoF	RNA+KO	20	32	0.471548	0.00630499
+Biliary Tract|Molecular:TP53_LoF	RNA+RXN_RNA	20	32	0.474889	0.0151601
+Biliary Tract|Molecular:TP53_LoF	RNA+RXN	20	32	0.471548	0.00630499
+Biliary Tract|Molecular:TP53_LoF	FLUX	20	32	0.438596	
+Biliary Tract|Molecular:TP53_LoF	KO	20	32	0.438596	
+Biliary Tract|Molecular:TP53_LoF	RXN_RNA	20	32	0.438596	0.0235997
+Biliary Tract|Molecular:TP53_LoF	RNA+NEG	20	32	0.438596	0.0127502
+Biliary Tract|Molecular:TP53_LoF	RNA+FLUX@perm11	20	32	0.471548	0.00630499
+Biliary Tract|Molecular:TP53_LoF	FLUX@perm11	20	32	0.438596	
+Biliary Tract|Molecular:TP53_LoF	KO@perm11	20	32	0.438596	
+Biliary Tract|Molecular:TP53_LoF	RNA+FLUX@perm23	20	32	0.471548	0.00630499
+Biliary Tract|Molecular:TP53_LoF	FLUX@perm23	20	32	0.438596	
+Biliary Tract|Molecular:TP53_LoF	KO@perm23	20	32	0.438596	
+Biliary Tract|Molecular:TP53_LoF	RNA+FLUX@perm37	20	32	0.471548	0.00630499
+Biliary Tract|Molecular:TP53_LoF	FLUX@perm37	20	32	0.438596	
+Biliary Tract|Molecular:TP53_LoF	KO@perm37	20	32	0.438596	
+Biliary Tract|Molecular:TP53_LoF	RNA+FLUX@perm41	20	32	0.471548	0.00630499
+Biliary Tract|Molecular:TP53_LoF	FLUX@perm41	20	32	0.438596	
+Biliary Tract|Molecular:TP53_LoF	KO@perm41	20	32	0.438596	
+Biliary Tract|Molecular:TP53_LoF	RNA+FLUX@perm53	20	32	0.471548	0.00630499
+Biliary Tract|Molecular:TP53_LoF	FLUX@perm53	20	32	0.438596	
+Biliary Tract|Molecular:TP53_LoF	KO@perm53	20	32	0.438596	
+Biliary Tract|OncotreeSubtype	RNA	20	27	0.425532	0.00772244
+Biliary Tract|OncotreeSubtype	RNA+FLUX	20	27	0.425532	0.00772244
+Biliary Tract|OncotreeSubtype	RNA+KO	20	27	0.425532	0.00772244
+Biliary Tract|OncotreeSubtype	RNA+RXN_RNA	20	27	0.408696	0.00733426
+Biliary Tract|OncotreeSubtype	RNA+RXN	20	27	0.425532	0.00772244
+Biliary Tract|OncotreeSubtype	FLUX	20	27	0.248061	
+Biliary Tract|OncotreeSubtype	KO	20	27	0.248061	
+Biliary Tract|OncotreeSubtype	RXN_RNA	20	27	0.45314	0.00758241
+Biliary Tract|OncotreeSubtype	RNA+NEG	20	27	0.425532	0.00883819
+Biliary Tract|OncotreeSubtype	RNA+FLUX@perm11	20	27	0.425532	0.00772244
+Biliary Tract|OncotreeSubtype	FLUX@perm11	20	27	0.248061	
+Biliary Tract|OncotreeSubtype	KO@perm11	20	27	0.248061	
+Biliary Tract|OncotreeSubtype	RNA+FLUX@perm23	20	27	0.425532	0.00772244
+Biliary Tract|OncotreeSubtype	FLUX@perm23	20	27	0.248061	
+Biliary Tract|OncotreeSubtype	KO@perm23	20	27	0.248061	
+Biliary Tract|OncotreeSubtype	RNA+FLUX@perm37	20	27	0.425532	0.00772244
+Biliary Tract|OncotreeSubtype	FLUX@perm37	20	27	0.248061	
+Biliary Tract|OncotreeSubtype	KO@perm37	20	27	0.248061	
+Biliary Tract|OncotreeSubtype	RNA+FLUX@perm41	20	27	0.425532	0.00772244
+Biliary Tract|OncotreeSubtype	FLUX@perm41	20	27	0.248061	
+Biliary Tract|OncotreeSubtype	KO@perm41	20	27	0.248061	
+Biliary Tract|OncotreeSubtype	RNA+FLUX@perm53	20	27	0.425532	0.00772244
+Biliary Tract|OncotreeSubtype	FLUX@perm53	20	27	0.248061	
+Biliary Tract|OncotreeSubtype	KO@perm53	20	27	0.248061	
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	RNA	20	24	0.829982	0.0128975
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	RNA+FLUX	20	24	0.829982	0.0128975
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	RNA+KO	20	24	0.829982	0.0128975
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	RNA+RXN_RNA	20	24	0.826705	0.0114417
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	RNA+RXN	20	24	0.829982	0.0128975
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	FLUX	20	24	0.476273	
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	KO	20	24	0.476273	
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	RXN_RNA	20	24	0.784097	0.0105191
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	RNA+NEG	20	24	0.829952	0.00902239
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	RNA+FLUX@perm11	20	24	0.829982	0.0128975
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	FLUX@perm11	20	24	0.476273	
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	KO@perm11	20	24	0.476273	
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	RNA+FLUX@perm23	20	24	0.829982	0.0128975
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	FLUX@perm23	20	24	0.476273	
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	KO@perm23	20	24	0.476273	
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	RNA+FLUX@perm37	20	24	0.829982	0.0128975
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	FLUX@perm37	20	24	0.476273	
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	KO@perm37	20	24	0.476273	
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	RNA+FLUX@perm41	20	24	0.829982	0.0128975
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	FLUX@perm41	20	24	0.476273	
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	KO@perm41	20	24	0.476273	
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	RNA+FLUX@perm53	20	24	0.829982	0.0128975
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	FLUX@perm53	20	24	0.476273	
+Bladder/Urinary Tract|Molecular:CDKN2A_LoF	KO@perm53	20	24	0.476273	
+Bladder/Urinary Tract|Molecular:MTAP_LoF	RNA	20	24	0.590476	0.0100025
+Bladder/Urinary Tract|Molecular:MTAP_LoF	RNA+FLUX	20	24	0.590476	0.0100025
+Bladder/Urinary Tract|Molecular:MTAP_LoF	RNA+KO	20	24	0.590476	0.0100025
+Bladder/Urinary Tract|Molecular:MTAP_LoF	RNA+RXN_RNA	20	24	0.665562	0.00842153
+Bladder/Urinary Tract|Molecular:MTAP_LoF	RNA+RXN	20	24	0.590476	0.0100025
+Bladder/Urinary Tract|Molecular:MTAP_LoF	FLUX	20	24	0.469924	
+Bladder/Urinary Tract|Molecular:MTAP_LoF	KO	20	24	0.469924	
+Bladder/Urinary Tract|Molecular:MTAP_LoF	RXN_RNA	20	24	0.624339	0.0072823
+Bladder/Urinary Tract|Molecular:MTAP_LoF	RNA+NEG	20	24	0.665775	0.00603216
+Bladder/Urinary Tract|Molecular:MTAP_LoF	RNA+FLUX@perm11	20	24	0.590476	0.0100025
+Bladder/Urinary Tract|Molecular:MTAP_LoF	FLUX@perm11	20	24	0.469924	
+Bladder/Urinary Tract|Molecular:MTAP_LoF	KO@perm11	20	24	0.469924	
+Bladder/Urinary Tract|Molecular:MTAP_LoF	RNA+FLUX@perm23	20	24	0.590476	0.0100025
+Bladder/Urinary Tract|Molecular:MTAP_LoF	FLUX@perm23	20	24	0.469924	
+Bladder/Urinary Tract|Molecular:MTAP_LoF	KO@perm23	20	24	0.469924	
+Bladder/Urinary Tract|Molecular:MTAP_LoF	RNA+FLUX@perm37	20	24	0.590476	0.0100025
+Bladder/Urinary Tract|Molecular:MTAP_LoF	FLUX@perm37	20	24	0.469924	
+Bladder/Urinary Tract|Molecular:MTAP_LoF	KO@perm37	20	24	0.469924	
+Bladder/Urinary Tract|Molecular:MTAP_LoF	RNA+FLUX@perm41	20	24	0.590476	0.0100025
+Bladder/Urinary Tract|Molecular:MTAP_LoF	FLUX@perm41	20	24	0.469924	
+Bladder/Urinary Tract|Molecular:MTAP_LoF	KO@perm41	20	24	0.469924	
+Bladder/Urinary Tract|Molecular:MTAP_LoF	RNA+FLUX@perm53	20	24	0.590476	0.0100025
+Bladder/Urinary Tract|Molecular:MTAP_LoF	FLUX@perm53	20	24	0.469924	
+Bladder/Urinary Tract|Molecular:MTAP_LoF	KO@perm53	20	24	0.469924	
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	RNA	20	24	0.433001	0.0254425
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	RNA+FLUX	20	24	0.433001	0.0254425
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	RNA+KO	20	24	0.433001	0.0254425
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	RNA+RXN_RNA	20	24	0.44186	0.0224588
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	RNA+RXN	20	24	0.433001	0.0254425
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	FLUX	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	KO	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	RXN_RNA	20	24	0.44186	0.0197649
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	RNA+NEG	20	24	0.492063	0.0269685
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	RNA+FLUX@perm11	20	24	0.433001	0.0254425
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	FLUX@perm11	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	KO@perm11	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	RNA+FLUX@perm23	20	24	0.433001	0.0254425
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	FLUX@perm23	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	KO@perm23	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	RNA+FLUX@perm37	20	24	0.433001	0.0254425
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	FLUX@perm37	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	KO@perm37	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	RNA+FLUX@perm41	20	24	0.433001	0.0254425
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	FLUX@perm41	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	KO@perm41	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	RNA+FLUX@perm53	20	24	0.433001	0.0254425
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	FLUX@perm53	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:PIK3CA p.E545	KO@perm53	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:RB1_LoF	RNA	20	24	0.505088	0.0268063
+Bladder/Urinary Tract|Molecular:RB1_LoF	RNA+FLUX	20	24	0.505088	0.0268063
+Bladder/Urinary Tract|Molecular:RB1_LoF	RNA+KO	20	24	0.505088	0.0268063
+Bladder/Urinary Tract|Molecular:RB1_LoF	RNA+RXN_RNA	20	24	0.492063	0.0205362
+Bladder/Urinary Tract|Molecular:RB1_LoF	RNA+RXN	20	24	0.505088	0.0268063
+Bladder/Urinary Tract|Molecular:RB1_LoF	FLUX	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:RB1_LoF	KO	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:RB1_LoF	RXN_RNA	20	24	0.496493	0.0145184
+Bladder/Urinary Tract|Molecular:RB1_LoF	RNA+NEG	20	24	0.573016	0.0157799
+Bladder/Urinary Tract|Molecular:RB1_LoF	RNA+FLUX@perm11	20	24	0.505088	0.0268063
+Bladder/Urinary Tract|Molecular:RB1_LoF	FLUX@perm11	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:RB1_LoF	KO@perm11	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:RB1_LoF	RNA+FLUX@perm23	20	24	0.505088	0.0268063
+Bladder/Urinary Tract|Molecular:RB1_LoF	FLUX@perm23	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:RB1_LoF	KO@perm23	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:RB1_LoF	RNA+FLUX@perm37	20	24	0.505088	0.0268063
+Bladder/Urinary Tract|Molecular:RB1_LoF	FLUX@perm37	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:RB1_LoF	KO@perm37	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:RB1_LoF	RNA+FLUX@perm41	20	24	0.505088	0.0268063
+Bladder/Urinary Tract|Molecular:RB1_LoF	FLUX@perm41	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:RB1_LoF	KO@perm41	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:RB1_LoF	RNA+FLUX@perm53	20	24	0.505088	0.0268063
+Bladder/Urinary Tract|Molecular:RB1_LoF	FLUX@perm53	20	24	0.44186	
+Bladder/Urinary Tract|Molecular:RB1_LoF	KO@perm53	20	24	0.44186	

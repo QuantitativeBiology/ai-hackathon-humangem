@@ -37,4 +37,5 @@ Constraint-based modelling with the Human-GEM genome-scale metabolic model, inte
 ## Housekeeping
 - `/data/tmpA` is a shared NFS volume that was ~98% full (~100 GB free); keep outputs compact.
 - The label hook splits shell commands on newlines before stripping quotes: use one `-m` per paragraph in commit messages and avoid protected path names in them.
+- Pin BLAS/OpenMP to one thread in every worker and analysis script (`OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1`, or `threadpoolctl`): an unpinned numpy pilot spun ~40 threads on this 48-core shared host and burned ~7 CPU-h (W6, 2026-10-28).
 - Background agents stopped by an API limit resume intact via SendMessage; have them check their own background processes first so they don't start duplicate runs.

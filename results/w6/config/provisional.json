@@ -1,0 +1,10 @@
+{
+ "tag": "provisional",
+ "label": "provisional (pre-P1)",
+ "note": "P1 is not frozen. Provisional feature set: (i) generic Human1 on each assay medium; (ii) Human1 + W3 B-loo:cofactor_pool_biomass (results/w3/README.md; flags W3-D1, W3-MEV: under serum media the variant removes mevalonate-core essentiality). Bounds: W2 ladder M2 with f = 1 (serum model; all assays use FBS media), Asp/Glu gate open (the +g gate is a W2 option, not part of any provisional P1).",
+ "arms": [
+  {"name": "H1", "parent": "human1", "variant": null, "bounds_variant": "M2", "f": 1.0, "gate_open": true},
+  {"name": "H1+B-loo", "parent": "human1", "variant": "B-loo:cofactor_pool_biomass",
+   "variants_file": "results/w3/structure/variants_human1.json", "bounds_variant": "M2", "f": 1.0, "gate_open": true}
+ ]
+}

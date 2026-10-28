@@ -1,0 +1,11 @@
+# provisional (pre-P1) — PILOT (cost/plumbing check, not a result); config provisional.json
+# arm H1+B-loo
+unit	set	k	n	rho	rho_within	n_lineages_within	n_pred
+synthetic0	RNA	20	520	0.0366371	0.0659087	17	520
+synthetic0	RNA+FLUX	20	520	0.110305	0.0862003	17	520
+synthetic1	RNA	20	520	-0.0997783	0.0221006	17	520
+synthetic1	RNA+FLUX	20	520	0.119612	0.18924	17	520
+synthetic2	RNA	20	520	0.0442252	0.109201	17	520
+synthetic2	RNA+FLUX	20	520	0.173156	0.227622	17	520
+synthetic3	RNA	20	520	0.0543638	0.105881	17	520
+synthetic3	RNA+FLUX	20	520	0.203908	0.184297	17	520

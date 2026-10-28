@@ -1,0 +1,9 @@
+{
+ "tag": "p1",
+ "label": "P1 (frozen at M6; commit <fill>)",
+ "note": "Copy to p1.json once P1 is frozen and fill the arm from the frozen P1 spec. Generic parents with a W3 variant and any W2 bound scheme (M1, M2 with f, gate) run as is. A context family (W4) would make states line-specific: that needs a per-line state builder (not implemented; RunConfig refuses 'context_family').",
+ "arms": [
+  {"name": "P1", "parent": "human1", "variant": "B-loo:cofactor_pool_biomass",
+   "variants_file": "results/w3/structure/variants_human1.json", "bounds_variant": "M2", "f": 1.0, "gate_open": true}
+ ]
+}

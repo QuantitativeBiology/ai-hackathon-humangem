@@ -1,0 +1,44 @@
+gene	compound	note
+DHODH	brequinar	
+DHFR	methotrexate	
+TYMS	5-FU	
+TYMS	floxuridine	
+TYMS	pemetrexed	
+IMPDH2	mycophenolic acid / mofetil	
+RRM1	hydroxyurea	
+RRM1	gemcitabine	
+RRM2	hydroxyurea	
+RRM2	gemcitabine	
+HMGCR	simvastatin	
+HMGCR	lovastatin	
+HMGCR	atorvastatin	
+HMGCR	fluvastatin	
+HMGCR	pitavastatin	
+HMGCR	rosuvastatin	
+SQLE	terbinafine	
+FASN	GSK2194069	
+FASN	TVB-2640/denifanstat	
+ACACA	ND-646	
+GLS	CB-839/telaglenastat	
+GLS	BPTES	
+SLC16A1	AZD3965	
+SLC2A1	BAY-876	
+CPT1A	etomoxir	
+NAMPT	FK866/daporinad	NAPRT modifier
+GCLC	buthionine sulfoximine	
+GCLM	buthionine sulfoximine	
+SLC7A11	sulfasalazine	
+SLC7A11	erastin	
+ATP5F1A	oligomycin-A	
+PDHA1	CPI-613/devimistat	
+DLD	CPI-613/devimistat	
+DLST	CPI-613/devimistat	
+HK1	2-deoxyglucose	
+HK2	2-deoxyglucose	
+ODC1	eflornithine/DFMO	
+SHMT1	SHIN1	
+SHMT1	SHIN2	
+SHMT2	SHIN1	
+SHMT2	SHIN2	
+IDH1	ivosidenib	restricted to IDH_mut lines
+IDH1	AGI-5198	restricted to IDH_mut lines
