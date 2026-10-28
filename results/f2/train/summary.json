@@ -1,0 +1,194 @@
+{
+ "synthetic_labels": false,
+ "label": "L_prob",
+ "n_lines": 686,
+ "n_lines_estimable": 686,
+ "n_lineages": 12,
+ "n_genes_U": 2866,
+ "B": 2000,
+ "seed": 11,
+ "ci_tolerance": 0.0002,
+ "verification": {
+  "P1_scores_equal_M6_bitwise": true,
+  "Gstar_scores_equal_M6_bitwise": true,
+  "F1_n_delta_entries": 450,
+  "F1_n_genes": 82,
+  "F1_max_dev_P1_ratio_vs_sweep_e": 0.0,
+  "pairs_F1_ne_P1": 3943,
+  "pairs_F2_ne_P1": 52369,
+  "Gstar_all_tap_line_max_dev_vs_M6": 4.991634386386501e-07,
+  "Gstar_noCE_tap_line_max_dev_vs_M6": 4.994290050130967e-07,
+  "P1_all_tap_line_max_dev_vs_M6": 4.998238163911317e-07,
+  "P1_noCE_tap_line_max_dev_vs_M6": 4.997290379282759e-07
+ },
+ "tap_lin": {
+  "Gstar": {
+   "all": 0.2995755751056479,
+   "noCE": 0.145144289618854
+  },
+  "P1": {
+   "all": 0.3529387106632675,
+   "noCE": 0.18613555699841258
+  },
+  "F1": {
+   "all": 0.3523089718782432,
+   "noCE": 0.18819529847393193
+  },
+  "F2": {
+   "all": 0.3299276778527352,
+   "noCE": 0.1762948828322443
+  }
+ },
+ "contrasts": {
+  "F1_vs_P1": {
+   "delta_lin": -0.0006297387850243485,
+   "ci": [
+    -0.0007076713803669295,
+    -0.0005495729771377296
+   ],
+   "se_boot": 4.035599791205264e-05,
+   "delta_line": -0.0005977410431573802,
+   "folds_positive": 0,
+   "n_folds": 12,
+   "n_lines": 686,
+   "n_lineages": 12,
+   "contrast": "F1_vs_P1",
+   "geneset": "all",
+   "check": {
+    "reported": {
+     "delta_lin": -0.00063,
+     "ci": [
+      -0.00071,
+      -0.00055
+     ],
+     "folds_positive": 0
+    },
+    "estimate_agrees": true,
+    "ci_within_tol": true,
+    "folds_agree": true,
+    "agrees": true
+   },
+   "noCE": {
+    "delta_lin": 0.00205974147551938,
+    "ci": [
+     0.0019520607397363191,
+     0.0021789489074127717
+    ],
+    "folds_positive": 12
+   }
+  },
+  "F2_vs_Gstar": {
+   "delta_lin": 0.03035210274708731,
+   "ci": [
+    0.02938800995084455,
+    0.03124738612301466
+   ],
+   "se_boot": 0.00046940200867767165,
+   "delta_line": 0.03071821943606568,
+   "folds_positive": 12,
+   "n_folds": 12,
+   "n_lines": 686,
+   "n_lineages": 12,
+   "contrast": "F2_vs_Gstar",
+   "geneset": "all",
+   "check": {
+    "reported": {
+     "delta_lin": 0.0304,
+     "ci": [
+      0.0294,
+      0.0313
+     ],
+     "folds_positive": 12
+    },
+    "estimate_agrees": true,
+    "ci_within_tol": true,
+    "folds_agree": true,
+    "agrees": true
+   },
+   "noCE": {
+    "delta_lin": 0.03115059321339032,
+    "ci": [
+     0.02987455082593764,
+     0.032340414351938934
+    ],
+    "folds_positive": 12
+   }
+  },
+  "F2_vs_P1": {
+   "delta_lin": -0.023011032810532323,
+   "ci": [
+    -0.023653147344468585,
+    -0.022355336910312378
+   ],
+   "se_boot": 0.00033077536407460115,
+   "delta_line": -0.022814452067879923,
+   "folds_positive": 0,
+   "n_folds": 12,
+   "n_lines": 686,
+   "n_lineages": 12,
+   "contrast": "F2_vs_P1",
+   "geneset": "all",
+   "check": {
+    "reported": {
+     "delta_lin": -0.023,
+     "ci": [
+      -0.0236,
+      -0.0224
+     ],
+     "folds_positive": 0
+    },
+    "estimate_agrees": true,
+    "ci_within_tol": true,
+    "folds_agree": true,
+    "agrees": true
+   },
+   "noCE": {
+    "delta_lin": -0.009840674166168266,
+    "ci": [
+     -0.010668718704630214,
+     -0.009018807550353818
+    ],
+    "folds_positive": 0
+   }
+  },
+  "P1_vs_Gstar": {
+   "delta_lin": 0.05336313555761963,
+   "ci": [
+    0.05219376495134928,
+    0.05448286086940713
+   ],
+   "se_boot": 0.0005825444846884695,
+   "delta_line": 0.0535326715039456,
+   "folds_positive": 12,
+   "n_folds": 12,
+   "n_lines": 686,
+   "n_lineages": 12,
+   "contrast": "P1_vs_Gstar",
+   "geneset": "all",
+   "check": {
+    "reported": {
+     "delta_lin": 0.0534,
+     "ci": [
+      0.0523,
+      0.0545
+     ],
+     "folds_positive": 12
+    },
+    "estimate_agrees": true,
+    "ci_within_tol": true,
+    "folds_agree": true,
+    "agrees": true
+   },
+   "noCE": {
+    "delta_lin": 0.04099126737955858,
+    "ci": [
+     0.03932164390890818,
+     0.04256189957576528
+    ],
+    "folds_positive": 12
+   }
+  }
+ },
+ "all_agree": true,
+ "wall_s": 14.2
+}

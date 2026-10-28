@@ -1,0 +1,93 @@
+{
+ "synthetic_labels": false,
+ "label": "L_prob",
+ "n_lines": 686,
+ "n_lineages": 12,
+ "B": 2000,
+ "seed": 11,
+ "group_sizes": {
+  "mev_core": 4,
+  "sterol": 12,
+  "cofactor_pool": 35,
+  "medium_flip": 13,
+  "other": 2802
+ },
+ "group_symbols": {
+  "mev_core": [
+   "HMGCR",
+   "MVD",
+   "MVK",
+   "PMVK"
+  ],
+  "sterol": [
+   "CYP51A1",
+   "DHCR24",
+   "DHCR7",
+   "EBP",
+   "FDFT1",
+   "HSD17B7",
+   "LSS",
+   "MSMO1",
+   "NSDHL",
+   "SC5D",
+   "SQLE",
+   "TM7SF2"
+  ],
+  "cofactor_pool": [
+   "ABCB6",
+   "ALAD",
+   "ALDH9A1",
+   "BBOX1",
+   "COQ2",
+   "COQ3",
+   "COQ6",
+   "COQ7",
+   "CPOX",
+   "CYP1A2",
+   "CYP24A1",
+   "CYP26A1",
+   "CYP26B1",
+   "GCH1",
+   "HMBS",
+   "MMAA",
+   "NPC1L1",
+   "PDXK",
+   "PNPO",
+   "PTS",
+   "RFK",
+   "SCARB1",
+   "SEC11A",
+   "SEC11C",
+   "SHMT2",
+   "SLC25A26",
+   "SLC5A6",
+   "SPCS1",
+   "SPCS2",
+   "SPCS3",
+   "SPR",
+   "TMLHE",
+   "TPK1",
+   "UROD",
+   "UROS"
+  ],
+  "medium_flip": [
+   "ALDH4A1",
+   "ASNS",
+   "ATIC",
+   "DHODH",
+   "GART",
+   "GCLC",
+   "GCLM",
+   "GSS",
+   "PAICS",
+   "PFAS",
+   "PPAT",
+   "TYMS",
+   "UMPS"
+  ]
+ },
+ "verification": {
+  "P1_scores_equal_M6_bitwise": true,
+  "Gstar_scores_equal_M6_bitwise": true
+ }
+}
