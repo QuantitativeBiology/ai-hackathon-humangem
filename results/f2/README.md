@@ -2,7 +2,7 @@
 
 **Post hoc / exploratory (A15).** This follow-up comes after the T2 unseal (DESIGN §17 A15; RESEARCH_TREE D17, D18). It never replaces T1/T2 or the headline, and it gets no test evaluation. The F2 agent did not open any T1/T2 output, `results/m6/test/`, `results/f3/` or `data/locked/`.
 
-Author: F2 engineer agent (Claude Opus), 2026-10-28; a non-author of M6, W7 and F1. Status: **complete; validation look prepared, not run.** Code committed at 17c04d2 before any label read. The training recompute and the decomposition ran on real training labels from the clean pinned worktree of 17c04d2 (MANIFEST dirty=False); the spec was then rewritten with `--pin-train`.
+Author: F2 engineer agent (Claude Opus), 2026-10-28; a non-author of M6, W7 and F1. Status: **complete; validation look run as M10_F2 (look 7/40): F2 +0.0310 [0.0293, 0.0326] vs G*; see results/m10/val/.** Code committed at 17c04d2 before any label read. The training recompute and the decomposition ran on real training labels from the clean pinned worktree of 17c04d2 (MANIFEST dirty=False); the spec was then rewritten with `--pin-train`.
 
 ## Label hygiene
 

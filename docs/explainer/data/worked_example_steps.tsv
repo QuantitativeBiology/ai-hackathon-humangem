@@ -1,0 +1,5 @@
+step	label	variant	medium_step	wt_growth_au	wt_growth_committed_au	n_genes_scored_U	n_lethal	n_partial	n_no_effect	n_distinct_scores	n_lp_solved	n_genes_needing_lp	cpu_s	wall_s	max_abs_dev_vs_committed_sweep_e	tAP
+step0	Generic Human1 on Ham's medium (G*)	T0	M0	65.5734	65.5734	2866	147	66	2653	24	197	308	41.6	41.7	0.0	0.284479
+step1	+ cofactor pool removed from biomass (Ham's)	B-loo:cofactor_pool_biomass	M0	65.5774	65.5774	2866	112	59	2695	19	171	278	31.1	31.1	0.0	0.328539
+medium_only	Side cell: generic Human1 on the line's medium + serum	T0	M2(f=1)	46.8601	46.8601	2866	142	66	2658	19	213	322	43.7	43.8	0.0	0.290724
+step2	+ documented medium and serum = P1 model	B-loo:cofactor_pool_biomass	M2(f=1)	46.8632	46.8632	2866	106	64	2696	17	181	287	35.7	35.7	0.0	0.336405

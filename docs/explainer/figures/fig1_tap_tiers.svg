@@ -1,0 +1,883 @@
+<svg class="fx" role="img" aria-labelledby="fig1_tap_tiers-t fig1_tap_tiers-d" xmlns:xlink="http://www.w3.org/1999/xlink" width="961.792656pt" height="329.82794pt" viewBox="0 0 961.792656 329.82794" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="fig1_tap_tiers-t">Accuracy by pipeline and tier</title><desc id="fig1_tap_tiers-d">Lineage-equal tie-aware AUPRC with 95% CIs on training, validation and test lineages. P1 gains about 0.05 over generic Human1 on every tier, but sits far below the gene prior and below the expression tie-break.</desc><!--FX-STYLE--><style>.fx{--fx-ink:#1d1d1b;--fx-muted:#6b6a64;--fx-grid:#e3e2dc;--fx-s1:#2a78d6;--fx-s2:#eb6834;--fx-s3:#1baf7a;--fx-neutral:#8d8c85;--fx-band:#d7e6f8;--fx-stall:#efe3d6}@media (prefers-color-scheme: dark){.fx{--fx-ink:#ecebe6;--fx-muted:#a3a29a;--fx-grid:#3a3a37;--fx-s1:#3987e5;--fx-s2:#d95926;--fx-s3:#199e70;--fx-neutral:#8a8983;--fx-band:#1f3550;--fx-stall:#3d3127}}.fx text{font-family:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif}</style><!--/FX-STYLE-->
+ 
+ <defs>
+  <style type="text/css">.fx *{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig1_tap_tiers-figure_1">
+  <g id="fig1_tap_tiers-patch_1">
+   <path d="M 0 329.82794 
+L 961.792656 329.82794 
+L 961.792656 0 
+L 0 0 
+L 0 329.82794 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig1_tap_tiers-axes_1">
+   <g id="fig1_tap_tiers-patch_2">
+    <path d="M 216.408125 290.62712 
+L 502.561971 290.62712 
+L 502.561971 35.60312 
+L 216.408125 35.60312 
+L 216.408125 290.62712 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig1_tap_tiers-patch_3">
+    <path d="M 216.408125 214.23512 
+L 502.561971 214.23512 
+L 502.561971 183.99512 
+L 216.408125 183.99512 
+z
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: var(--fx-band, #d7e6f8)"/>
+   </g>
+   <g id="fig1_tap_tiers-matplotlib.axis_1">
+    <g id="fig1_tap_tiers-xtick_1">
+     <g id="fig1_tap_tiers-line2d_1">
+      <path d="M 216.408125 290.62712 
+L 216.408125 35.60312 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_2">
+      <defs>
+       <path id="fig1_tap_tiers-m51909d080f" d="M 0 0 
+L 0 3.5 
+" style="stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="216.408125" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_1">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="216.408125" y="305.604659" transform="rotate(-0 216.408125 305.604659)">0.28</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-xtick_2">
+     <g id="fig1_tap_tiers-line2d_3">
+      <path d="M 250.073283 290.62712 
+L 250.073283 35.60312 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_4">
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="250.073283" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_2">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="250.073283" y="305.604659" transform="rotate(-0 250.073283 305.604659)">0.29</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-xtick_3">
+     <g id="fig1_tap_tiers-line2d_5">
+      <path d="M 283.738442 290.62712 
+L 283.738442 35.60312 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_6">
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="283.738442" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_3">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="283.738442" y="305.604659" transform="rotate(-0 283.738442 305.604659)">0.30</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-xtick_4">
+     <g id="fig1_tap_tiers-line2d_7">
+      <path d="M 317.4036 290.62712 
+L 317.4036 35.60312 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_8">
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="317.4036" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_4">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="317.4036" y="305.604659" transform="rotate(-0 317.4036 305.604659)">0.31</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-xtick_5">
+     <g id="fig1_tap_tiers-line2d_9">
+      <path d="M 351.068758 290.62712 
+L 351.068758 35.60312 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_10">
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="351.068758" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_5">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="351.068758" y="305.604659" transform="rotate(-0 351.068758 305.604659)">0.32</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-xtick_6">
+     <g id="fig1_tap_tiers-line2d_11">
+      <path d="M 384.733917 290.62712 
+L 384.733917 35.60312 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_12">
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="384.733917" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_6">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="384.733917" y="305.604659" transform="rotate(-0 384.733917 305.604659)">0.33</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-xtick_7">
+     <g id="fig1_tap_tiers-line2d_13">
+      <path d="M 418.399075 290.62712 
+L 418.399075 35.60312 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_14">
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="418.399075" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_7">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="418.399075" y="305.604659" transform="rotate(-0 418.399075 305.604659)">0.34</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-xtick_8">
+     <g id="fig1_tap_tiers-line2d_15">
+      <path d="M 452.064234 290.62712 
+L 452.064234 35.60312 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_16">
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="452.064234" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_8">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="452.064234" y="305.604659" transform="rotate(-0 452.064234 305.604659)">0.35</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-xtick_9">
+     <g id="fig1_tap_tiers-line2d_17">
+      <path d="M 485.729392 290.62712 
+L 485.729392 35.60312 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_18">
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="485.729392" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_9">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="485.729392" y="305.604659" transform="rotate(-0 485.729392 305.604659)">0.36</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-text_10">
+     <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="359.485048" y="320.105479" transform="rotate(-0 359.485048 320.105479)">tie-aware AUPRC (tAP), GEM arms</text>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-matplotlib.axis_2">
+    <g id="fig1_tap_tiers-ytick_1">
+     <g id="fig1_tap_tiers-line2d_19"/>
+     <g id="fig1_tap_tiers-text_11">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="212.908125" y="59.1043" transform="rotate(-0 212.908125 59.1043)">Generic Human2</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-ytick_2">
+     <g id="fig1_tap_tiers-line2d_20"/>
+     <g id="fig1_tap_tiers-text_12">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="212.908125" y="95.1043" transform="rotate(-0 212.908125 95.1043)">Generic Human1 (reference)</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-ytick_3">
+     <g id="fig1_tap_tiers-line2d_21"/>
+     <g id="fig1_tap_tiers-text_13">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="212.908125" y="131.1043" transform="rotate(-0 212.908125 131.1043)">Medium fix only</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-ytick_4">
+     <g id="fig1_tap_tiers-line2d_22"/>
+     <g id="fig1_tap_tiers-text_14">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="212.908125" y="167.1043" transform="rotate(-0 212.908125 167.1043)">Biomass fix only</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-ytick_5">
+     <g id="fig1_tap_tiers-line2d_23"/>
+     <g id="fig1_tap_tiers-text_15">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="212.908125" y="203.1043" transform="rotate(-0 212.908125 203.1043)">P1: both fixes</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-ytick_6">
+     <g id="fig1_tap_tiers-line2d_24"/>
+     <g id="fig1_tap_tiers-text_16">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="212.908125" y="239.1043" transform="rotate(-0 212.908125 239.1043)">P1 built on Human2</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-ytick_7">
+     <g id="fig1_tap_tiers-line2d_25"/>
+     <g id="fig1_tap_tiers-text_17">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="212.908125" y="275.1043" transform="rotate(-0 212.908125 275.1043)">Safer biomass fix + medium (post hoc)</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_26">
+    <path d="M 249.504342 63.03512 
+L 261.610333 63.03512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_27">
+    <path d="M 255.550605 63.03512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <defs>
+     <path id="fig1_tap_tiers-m8e7f297988" d="M 0 3.25 
+C 0.86191 3.25 1.688635 2.907559 2.298097 2.298097 
+C 2.907559 1.688635 3.25 0.86191 3.25 0 
+C 3.25 -0.86191 2.907559 -1.688635 2.298097 -2.298097 
+C 1.688635 -2.907559 0.86191 -3.25 0 -3.25 
+C -0.86191 -3.25 -1.688635 -2.907559 -2.298097 -2.298097 
+C -2.907559 -1.688635 -3.25 -0.86191 -3.25 0 
+C -3.25 0.86191 -2.907559 1.688635 -2.298097 2.298097 
+C -1.688635 2.907559 -0.86191 3.25 0 3.25 
+z
+" style="stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </defs>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m8e7f297988" x="255.550605" y="63.03512" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_28">
+    <path d="M 249.800596 55.11512 
+L 280.422424 55.11512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s2, #eb6834); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_29">
+    <path d="M 265.54579 55.11512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <defs>
+     <path id="fig1_tap_tiers-m328e8c24e2" d="M -3.25 3.25 
+L 3.25 3.25 
+L 3.25 -3.25 
+L -3.25 -3.25 
+z
+" style="stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m328e8c24e2" x="265.54579" y="55.11512" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_30">
+    <path d="M 235.809356 47.19512 
+L 257.001573 47.19512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s3, #1baf7a); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_31">
+    <path d="M 246.588939 47.19512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <defs>
+     <path id="fig1_tap_tiers-m483c306c32" d="M -0 4.596194 
+L 4.596194 0 
+L 0 -4.596194 
+L -4.596194 -0 
+z
+" style="stroke: var(--fx-s3, #1baf7a); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m483c306c32" x="246.588939" y="47.19512" style="fill: var(--fx-s3, #1baf7a); stroke: var(--fx-s3, #1baf7a); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_32">
+    <path d="M 276.241211 99.03512 
+L 288.266406 99.03512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_33">
+    <path d="M 282.311039 99.03512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m8e7f297988" x="282.311039" y="99.03512" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_34">
+    <path d="M 273.679292 91.11512 
+L 304.0116 91.11512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s2, #eb6834); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_35">
+    <path d="M 289.380722 91.11512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m328e8c24e2" x="289.380722" y="91.11512" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_36">
+    <path d="M 264.276614 83.19512 
+L 285.125446 83.19512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s3, #1baf7a); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_37">
+    <path d="M 274.975401 83.19512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m483c306c32" x="274.975401" y="83.19512" style="fill: var(--fx-s3, #1baf7a); stroke: var(--fx-s3, #1baf7a); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_38">
+    <path d="M 328.880053 135.03512 
+L 343.786985 135.03512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_39">
+    <path d="M 336.299854 135.03512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m8e7f297988" x="336.299854" y="135.03512" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_40">
+    <path d="M 328.237048 127.11512 
+L 364.410261 127.11512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s2, #eb6834); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_41">
+    <path d="M 347.01884 127.11512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m328e8c24e2" x="347.01884" y="127.11512" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_42">
+    <path d="M 305.001356 119.19512 
+L 330.741736 119.19512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s3, #1baf7a); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_43">
+    <path d="M 317.851347 119.19512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m483c306c32" x="317.851347" y="119.19512" style="fill: var(--fx-s3, #1baf7a); stroke: var(--fx-s3, #1baf7a); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_44">
+    <path d="M 391.790134 171.03512 
+L 403.434912 171.03512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_45">
+    <path d="M 397.67817 171.03512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m8e7f297988" x="397.67817" y="171.03512" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_46">
+    <path d="M 382.175365 163.11512 
+L 411.339492 163.11512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s2, #eb6834); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_47">
+    <path d="M 397.664704 163.11512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m328e8c24e2" x="397.664704" y="163.11512" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_48">
+    <path d="M 454.555455 207.03512 
+L 469.351292 207.03512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_49">
+    <path d="M 461.958424 207.03512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m8e7f297988" x="461.958424" y="207.03512" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_50">
+    <path d="M 446.179564 199.11512 
+L 479.88512 199.11512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s2, #eb6834); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_51">
+    <path d="M 463.581084 199.11512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m328e8c24e2" x="463.581084" y="199.11512" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_52">
+    <path d="M 429.266188 191.19512 
+L 455.622641 191.19512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s3, #1baf7a); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_53">
+    <path d="M 442.409066 191.19512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m483c306c32" x="442.409066" y="191.19512" style="fill: var(--fx-s3, #1baf7a); stroke: var(--fx-s3, #1baf7a); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_54">
+    <path d="M 436.773519 243.03512 
+L 451.24617 243.03512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_55">
+    <path d="M 443.913899 243.03512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m8e7f297988" x="443.913899" y="243.03512" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_56">
+    <path d="M 427.663727 235.11512 
+L 459.551365 235.11512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s2, #eb6834); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_57">
+    <path d="M 444.267383 235.11512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m328e8c24e2" x="444.267383" y="235.11512" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_58">
+    <path d="M 410.346369 227.19512 
+L 435.672668 227.19512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s3, #1baf7a); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_59">
+    <path d="M 423.017935 227.19512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m483c306c32" x="423.017935" y="227.19512" style="fill: var(--fx-s3, #1baf7a); stroke: var(--fx-s3, #1baf7a); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_60">
+    <path d="M 384.490443 279.03512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <defs>
+     <path id="fig1_tap_tiers-m453543b655" d="M 0 3.25 
+C 0.86191 3.25 1.688635 2.907559 2.298097 2.298097 
+C 2.907559 1.688635 3.25 0.86191 3.25 0 
+C 3.25 -0.86191 2.907559 -1.688635 2.298097 -2.298097 
+C 1.688635 -2.907559 0.86191 -3.25 0 -3.25 
+C -0.86191 -3.25 -1.688635 -2.907559 -2.298097 -2.298097 
+C -2.907559 -1.688635 -3.25 -0.86191 -3.25 0 
+C -3.25 0.86191 -2.907559 1.688635 -2.298097 2.298097 
+C -1.688635 2.907559 -0.86191 3.25 0 3.25 
+z
+" style="stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </defs>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-m453543b655" x="384.490443" y="279.03512" style="fill-opacity: 0; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_61">
+    <path d="M 374.583872 271.11512 
+L 411.288994 271.11512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none; stroke: var(--fx-s2, #eb6834); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_62">
+    <path d="M 393.59122 271.11512 
+" clip-path="url(#fig1_tap_tiers-pd5a9011741)" style="fill: none"/>
+    <defs>
+     <path id="fig1_tap_tiers-me17b064952" d="M -3.25 3.25 
+L 3.25 3.25 
+L 3.25 -3.25 
+L -3.25 -3.25 
+z
+" style="stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#fig1_tap_tiers-pd5a9011741)">
+     <use xlink:href="#fig1_tap_tiers-me17b064952" x="393.59122" y="271.11512" style="fill-opacity: 0; stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-patch_4">
+    <path d="M 216.408125 290.62712 
+L 216.408125 35.60312 
+" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig1_tap_tiers-patch_5">
+    <path d="M 216.408125 290.62712 
+L 502.561971 290.62712 
+" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig1_tap_tiers-text_18">
+    <text style="font-size: 8.5px; text-anchor: start; fill: var(--fx-muted, #6b6a64)" x="219.774641" y="157.40346" transform="rotate(-0 219.774641 157.40346)">not scored on test</text>
+   </g>
+   <g id="fig1_tap_tiers-legend_1">
+    <g id="fig1_tap_tiers-line2d_63">
+     <path d="M 224.958125 14.893516 
+L 232.558125 14.893516 
+L 240.158125 14.893516 
+" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.6; stroke-linecap: square"/>
+     <defs>
+      <path id="fig1_tap_tiers-m4062bc5bc8" d="M 0 3.25 
+C 0.86191 3.25 1.688635 2.907559 2.298097 2.298097 
+C 2.907559 1.688635 3.25 0.86191 3.25 0 
+C 3.25 -0.86191 2.907559 -1.688635 2.298097 -2.298097 
+C 1.688635 -2.907559 0.86191 -3.25 0 -3.25 
+C -0.86191 -3.25 -1.688635 -2.907559 -2.298097 -2.298097 
+C -2.907559 -1.688635 -3.25 -0.86191 -3.25 0 
+C -3.25 0.86191 -2.907559 1.688635 -2.298097 2.298097 
+C -1.688635 2.907559 -0.86191 3.25 0 3.25 
+z
+" style="stroke: var(--fx-s1, #2a78d6)"/>
+     </defs>
+     <g>
+      <use xlink:href="#fig1_tap_tiers-m4062bc5bc8" x="232.558125" y="14.893516" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6)"/>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-text_19">
+     <text style="font-size: 9.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="247.758125" y="18.218516" transform="rotate(-0 247.758125 18.218516)">Training (12 lineages)</text>
+    </g>
+    <g id="fig1_tap_tiers-line2d_64">
+     <path d="M 369.573359 14.893516 
+L 377.173359 14.893516 
+L 384.773359 14.893516 
+" style="fill: none; stroke: var(--fx-s2, #eb6834); stroke-width: 1.6; stroke-linecap: square"/>
+     <defs>
+      <path id="fig1_tap_tiers-mea6ff23f63" d="M -3.25 3.25 
+L 3.25 3.25 
+L 3.25 -3.25 
+L -3.25 -3.25 
+z
+" style="stroke: var(--fx-s2, #eb6834); stroke-linejoin: miter"/>
+     </defs>
+     <g>
+      <use xlink:href="#fig1_tap_tiers-mea6ff23f63" x="377.173359" y="14.893516" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-linejoin: miter"/>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-text_20">
+     <text style="font-size: 9.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="392.373359" y="18.218516" transform="rotate(-0 392.373359 18.218516)">Validation (4 lineages)</text>
+    </g>
+    <g id="fig1_tap_tiers-line2d_65">
+     <path d="M 517.571484 14.893516 
+L 525.171484 14.893516 
+L 532.771484 14.893516 
+" style="fill: none; stroke: var(--fx-s3, #1baf7a); stroke-width: 1.6; stroke-linecap: square"/>
+     <defs>
+      <path id="fig1_tap_tiers-md57a696299" d="M -0 4.596194 
+L 4.596194 0 
+L 0 -4.596194 
+L -4.596194 -0 
+z
+" style="stroke: var(--fx-s3, #1baf7a); stroke-linejoin: miter"/>
+     </defs>
+     <g>
+      <use xlink:href="#fig1_tap_tiers-md57a696299" x="525.171484" y="14.893516" style="fill: var(--fx-s3, #1baf7a); stroke: var(--fx-s3, #1baf7a); stroke-linejoin: miter"/>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-text_21">
+     <text style="font-size: 9.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="540.371484" y="18.218516" transform="rotate(-0 540.371484 18.218516)">Test (7 lineages)</text>
+    </g>
+   </g>
+  </g>
+  <g id="fig1_tap_tiers-axes_2">
+   <g id="fig1_tap_tiers-patch_6">
+    <path d="M 523.165048 290.62712 
+L 752.088125 290.62712 
+L 752.088125 35.60312 
+L 523.165048 35.60312 
+L 523.165048 290.62712 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig1_tap_tiers-patch_7">
+    <path d="M 523.165048 100.696658 
+L 752.088125 100.696658 
+L 752.088125 47.19512 
+L 523.165048 47.19512 
+z
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: var(--fx-band, #d7e6f8)"/>
+   </g>
+   <g id="fig1_tap_tiers-matplotlib.axis_3">
+    <g id="fig1_tap_tiers-xtick_10">
+     <g id="fig1_tap_tiers-line2d_66">
+      <path d="M 523.165048 290.62712 
+L 523.165048 35.60312 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_67">
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="523.165048" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_22">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="523.165048" y="305.604659" transform="rotate(-0 523.165048 305.604659)">0.0</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-xtick_11">
+     <g id="fig1_tap_tiers-line2d_68">
+      <path d="M 568.949663 290.62712 
+L 568.949663 35.60312 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_69">
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="568.949663" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_23">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="568.949663" y="305.604659" transform="rotate(-0 568.949663 305.604659)">0.2</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-xtick_12">
+     <g id="fig1_tap_tiers-line2d_70">
+      <path d="M 614.734279 290.62712 
+L 614.734279 35.60312 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_71">
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="614.734279" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_24">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="614.734279" y="305.604659" transform="rotate(-0 614.734279 305.604659)">0.4</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-xtick_13">
+     <g id="fig1_tap_tiers-line2d_72">
+      <path d="M 660.518894 290.62712 
+L 660.518894 35.60312 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_73">
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="660.518894" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_25">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="660.518894" y="305.604659" transform="rotate(-0 660.518894 305.604659)">0.6</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-xtick_14">
+     <g id="fig1_tap_tiers-line2d_74">
+      <path d="M 706.30351 290.62712 
+L 706.30351 35.60312 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_75">
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="706.30351" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_26">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="706.30351" y="305.604659" transform="rotate(-0 706.30351 305.604659)">0.8</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-xtick_15">
+     <g id="fig1_tap_tiers-line2d_76">
+      <path d="M 752.088125 290.62712 
+L 752.088125 35.60312 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig1_tap_tiers-line2d_77">
+      <g>
+       <use xlink:href="#fig1_tap_tiers-m51909d080f" x="752.088125" y="290.62712" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig1_tap_tiers-text_27">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="752.088125" y="305.604659" transform="rotate(-0 752.088125 305.604659)">1.0</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-text_28">
+     <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="637.626587" y="320.105479" transform="rotate(-0 637.626587 320.105479)">tAP, same lines, full 0–1 scale</text>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-matplotlib.axis_4">
+    <g id="fig1_tap_tiers-ytick_8">
+     <g id="fig1_tap_tiers-line2d_78"/>
+     <g id="fig1_tap_tiers-text_29">
+      <text style="font-size: 10.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="755.588125" y="77.935069" transform="rotate(-0 755.588125 77.935069)">P1: both fixes</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-ytick_9">
+     <g id="fig1_tap_tiers-line2d_79"/>
+     <g id="fig1_tap_tiers-text_30">
+      <text style="font-size: 10.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="755.588125" y="141.627377" transform="rotate(-0 755.588125 141.627377)">Expression only</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-ytick_10">
+     <g id="fig1_tap_tiers-line2d_80"/>
+     <g id="fig1_tap_tiers-text_31">
+      <text style="font-size: 10.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="755.588125" y="205.319684" transform="rotate(-0 755.588125 205.319684)">Reference, ties broken by expression</text>
+     </g>
+    </g>
+    <g id="fig1_tap_tiers-ytick_11">
+     <g id="fig1_tap_tiers-line2d_81"/>
+     <g id="fig1_tap_tiers-text_32">
+      <text style="font-size: 10.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="755.588125" y="269.011992" transform="rotate(-0 755.588125 269.011992)">Gene prior (fraction of lines essential)</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_82">
+    <path d="M 603.457528 87.958197 
+L 604.463645 87.958197 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_83">
+    <path d="M 603.96093 87.958197 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-p786f10331e)">
+     <use xlink:href="#fig1_tap_tiers-m8e7f297988" x="603.96093" y="87.958197" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_84">
+    <path d="M 602.887967 73.945889 
+L 605.179945 73.945889 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-s2, #eb6834); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_85">
+    <path d="M 604.071271 73.945889 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-p786f10331e)">
+     <use xlink:href="#fig1_tap_tiers-m328e8c24e2" x="604.071271" y="73.945889" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_86">
+    <path d="M 601.737858 59.933582 
+L 603.530097 59.933582 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-s3, #1baf7a); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_87">
+    <path d="M 602.631574 59.933582 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-p786f10331e)">
+     <use xlink:href="#fig1_tap_tiers-m483c306c32" x="602.631574" y="59.933582" style="fill: var(--fx-s3, #1baf7a); stroke: var(--fx-s3, #1baf7a); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_88">
+    <path d="M 596.943064 151.650505 
+L 598.496994 151.650505 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_89">
+    <path d="M 597.711559 151.650505 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-p786f10331e)">
+     <use xlink:href="#fig1_tap_tiers-m8e7f297988" x="597.711559" y="151.650505" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_90">
+    <path d="M 597.142456 137.638197 
+L 600.737235 137.638197 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-s2, #eb6834); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_91">
+    <path d="M 598.981166 137.638197 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-p786f10331e)">
+     <use xlink:href="#fig1_tap_tiers-m328e8c24e2" x="598.981166" y="137.638197" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_92">
+    <path d="M 594.486719 123.625889 
+L 596.916509 123.625889 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-s3, #1baf7a); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_93">
+    <path d="M 595.738471 123.625889 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-p786f10331e)">
+     <use xlink:href="#fig1_tap_tiers-m483c306c32" x="595.738471" y="123.625889" style="fill: var(--fx-s3, #1baf7a); stroke: var(--fx-s3, #1baf7a); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_94">
+    <path d="M 619.686801 215.342812 
+L 620.880406 215.342812 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_95">
+    <path d="M 620.284977 215.342812 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-p786f10331e)">
+     <use xlink:href="#fig1_tap_tiers-m8e7f297988" x="620.284977" y="215.342812" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_96">
+    <path d="M 619.923278 201.330505 
+L 623.110803 201.330505 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-s2, #eb6834); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_97">
+    <path d="M 621.581597 201.330505 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-p786f10331e)">
+     <use xlink:href="#fig1_tap_tiers-m328e8c24e2" x="621.581597" y="201.330505" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_98">
+    <path d="M 617.797727 187.318197 
+L 619.837661 187.318197 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-s3, #1baf7a); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_99">
+    <path d="M 618.846424 187.318197 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-p786f10331e)">
+     <use xlink:href="#fig1_tap_tiers-m483c306c32" x="618.846424" y="187.318197" style="fill: var(--fx-s3, #1baf7a); stroke: var(--fx-s3, #1baf7a); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_100">
+    <path d="M 728.621907 279.03512 
+L 729.793078 279.03512 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_101">
+    <path d="M 729.226264 279.03512 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-p786f10331e)">
+     <use xlink:href="#fig1_tap_tiers-m8e7f297988" x="729.226264" y="279.03512" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_102">
+    <path d="M 725.851709 265.022812 
+L 728.619618 265.022812 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-s2, #eb6834); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_103">
+    <path d="M 727.29484 265.022812 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-p786f10331e)">
+     <use xlink:href="#fig1_tap_tiers-m328e8c24e2" x="727.29484" y="265.022812" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_104">
+    <path d="M 726.95695 251.010505 
+L 729.043126 251.010505 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke: var(--fx-s3, #1baf7a); stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="fig1_tap_tiers-line2d_105">
+    <path d="M 728.003586 251.010505 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none"/>
+    <g clip-path="url(#fig1_tap_tiers-p786f10331e)">
+     <use xlink:href="#fig1_tap_tiers-m483c306c32" x="728.003586" y="251.010505" style="fill: var(--fx-s3, #1baf7a); stroke: var(--fx-s3, #1baf7a); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig1_tap_tiers-line2d_106">
+    <path d="M 591.246084 290.62712 
+L 591.246084 35.60312 
+" clip-path="url(#fig1_tap_tiers-p786f10331e)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: var(--fx-neutral, #8d8c85)"/>
+   </g>
+   <g id="fig1_tap_tiers-patch_8">
+    <path d="M 523.165048 290.62712 
+L 752.088125 290.62712 
+" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig1_tap_tiers-text_33">
+    <text style="font-size: 8.5px; text-anchor: start; fill: var(--fx-muted, #6b6a64)" x="594.679931" y="302.261921" transform="rotate(-0 594.679931 302.261921)">generic Human1</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig1_tap_tiers-pd5a9011741">
+   <rect x="216.408125" y="35.60312" width="286.153846" height="255.024"/>
+  </clipPath>
+  <clipPath id="fig1_tap_tiers-p786f10331e">
+   <rect x="523.165048" y="35.60312" width="228.923077" height="255.024"/>
+  </clipPath>
+ </defs>
+</svg>

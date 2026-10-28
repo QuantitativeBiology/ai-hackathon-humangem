@@ -1,0 +1,14 @@
+symbol	ensembl	entrez	in_human1	pathway	role_in_example	e_step0	e_step1	e_medium_only	e_step2	P1_rank_block	test_frac_lines_essential	test_n_lines
+CYP26A1	ENSG00000095596	1592	True	retinoic-acid catabolism	biomass artefact: the pool demands retinoid catabolites	1.0	0.0	1.0	0.0	ranks 171-2866 of 2866 (tied with 2695 genes)	0.0079	380
+CYP24A1	ENSG00000019186	1591	True	vitamin-D catabolism	biomass artefact: the pool demands vitamin-D catabolites	1.0	0.0	1.0	0.0	ranks 171-2866 of 2866 (tied with 2695 genes)	0.0026	380
+BBOX1	ENSG00000129151	8424	True	carnitine synthesis	artefact twice over: pool demands carnitine; serum supplies it	1.0	0.0	0.020412	0.0	ranks 171-2866 of 2866 (tied with 2695 genes)	0.0	380
+COQ2	ENSG00000173085	27235	True	coenzyme Q synthesis	real cofactor, removed together with the pool	1.0	0.0	1.0	0.0	ranks 171-2866 of 2866 (tied with 2695 genes)	0.5	380
+HMBS	ENSG00000256269	3145	True	heme synthesis	real cofactor, removed together with the pool	1.0	0.0	1.0	0.0	ranks 171-2866 of 2866 (tied with 2695 genes)	0.1079	380
+PPAT	ENSG00000128059	5471	True	de novo purine synthesis	masked on Ham's by hypoxanthine	0.0	0.0	1.0	1.0	ranks 1-106 of 2866 (tied with 105 genes)	0.5868	380
+DHODH	ENSG00000102967	1723	True	de novo pyrimidine synthesis	masked on Ham's by thymidine (Human1 TYMS is reversible)	0.0	0.0	1.0	1.0	ranks 1-106 of 2866 (tied with 105 genes)	0.3605	380
+UMPS	ENSG00000114491	7372	True	de novo pyrimidine synthesis	masked on Ham's by thymidine (Human1 TYMS is reversible)	0.0	0.0	1.0	1.0	ranks 1-106 of 2866 (tied with 105 genes)	0.5921	380
+TYMS	ENSG00000176890	7298	True	thymidylate synthesis	masked on Ham's by thymidine	0.002454	0.002454	1.0	1.0	ranks 1-106 of 2866 (tied with 105 genes)	0.5158	380
+DHCR7	ENSG00000172893	1717	True	cholesterol synthesis (last step)	rescued by serum cholesterol	1.0	1.0	0.014509	0.014575	ranks 150-160 of 2866 (tied with 10 genes)	0.0079	380
+GCLC	ENSG00000001084	2729	True	glutathione synthesis	rescued by glutathione in the documented medium/serum model	1.0	1.0	0.0	0.0	ranks 171-2866 of 2866 (tied with 2695 genes)	0.0289	380
+HMGCR	ENSG00000113161	3156	True	mevalonate pathway	known cost: non-lethal once the pool is gone and serum is present	1.0	1.0	1.0	0.014575	ranks 150-160 of 2866 (tied with 10 genes)	0.9026	380
+CAD	ENSG00000084774	790	True	de novo pyrimidine synthesis (first step)	lethal at every step (control)	1.0	1.0	1.0	1.0	ranks 1-106 of 2866 (tied with 105 genes)	0.4684	380

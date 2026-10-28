@@ -1,0 +1,422 @@
+<svg class="fx" role="img" aria-labelledby="fig4_decomposition-t fig4_decomposition-d" xmlns:xlink="http://www.w3.org/1999/xlink" width="635.034102pt" height="290.29922pt" viewBox="0 0 635.034102 290.29922" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="fig4_decomposition-t">Where the gain comes from</title><desc id="fig4_decomposition-d">Training-tier decomposition of the gain by gene group. Un-calling the 35 cofactor-pool genes gives 62% of P1's gain; the mevalonate artefact costs 0.0014; the safer variant loses most of the cofactor-pool gain.</desc><!--FX-STYLE--><style>.fx{--fx-ink:#1d1d1b;--fx-muted:#6b6a64;--fx-grid:#e3e2dc;--fx-s1:#2a78d6;--fx-s2:#eb6834;--fx-s3:#1baf7a;--fx-neutral:#8d8c85;--fx-band:#d7e6f8;--fx-stall:#efe3d6}@media (prefers-color-scheme: dark){.fx{--fx-ink:#ecebe6;--fx-muted:#a3a29a;--fx-grid:#3a3a37;--fx-s1:#3987e5;--fx-s2:#d95926;--fx-s3:#199e70;--fx-neutral:#8a8983;--fx-band:#1f3550;--fx-stall:#3d3127}}.fx text{font-family:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif}</style><!--/FX-STYLE-->
+ 
+ <defs>
+  <style type="text/css">.fx *{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig4_decomposition-figure_1">
+  <g id="fig4_decomposition-patch_1">
+   <path d="M 0 290.29922 
+L 635.034102 290.29922 
+L 635.034102 0 
+L 0 0 
+L 0 290.29922 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig4_decomposition-axes_1">
+   <g id="fig4_decomposition-patch_2">
+    <path d="M 173.218672 251.0984 
+L 597.298672 251.0984 
+L 597.298672 34.8824 
+L 173.218672 34.8824 
+L 173.218672 251.0984 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig4_decomposition-matplotlib.axis_1">
+    <g id="fig4_decomposition-xtick_1">
+     <g id="fig4_decomposition-line2d_1">
+      <path d="M 212.667974 251.0984 
+L 212.667974 34.8824 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig4_decomposition-line2d_2">
+      <defs>
+       <path id="fig4_decomposition-m51909d080f" d="M 0 0 
+L 0 3.5 
+" style="stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig4_decomposition-m51909d080f" x="212.667974" y="251.0984" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig4_decomposition-text_1">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="212.667974" y="266.075939" transform="rotate(-0 212.667974 266.075939)">0.000</text>
+     </g>
+    </g>
+    <g id="fig4_decomposition-xtick_2">
+     <g id="fig4_decomposition-line2d_3">
+      <path d="M 261.979602 251.0984 
+L 261.979602 34.8824 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig4_decomposition-line2d_4">
+      <g>
+       <use xlink:href="#fig4_decomposition-m51909d080f" x="261.979602" y="251.0984" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig4_decomposition-text_2">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="261.979602" y="266.075939" transform="rotate(-0 261.979602 266.075939)">0.005</text>
+     </g>
+    </g>
+    <g id="fig4_decomposition-xtick_3">
+     <g id="fig4_decomposition-line2d_5">
+      <path d="M 311.29123 251.0984 
+L 311.29123 34.8824 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig4_decomposition-line2d_6">
+      <g>
+       <use xlink:href="#fig4_decomposition-m51909d080f" x="311.29123" y="251.0984" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig4_decomposition-text_3">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="311.29123" y="266.075939" transform="rotate(-0 311.29123 266.075939)">0.010</text>
+     </g>
+    </g>
+    <g id="fig4_decomposition-xtick_4">
+     <g id="fig4_decomposition-line2d_7">
+      <path d="M 360.602858 251.0984 
+L 360.602858 34.8824 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig4_decomposition-line2d_8">
+      <g>
+       <use xlink:href="#fig4_decomposition-m51909d080f" x="360.602858" y="251.0984" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig4_decomposition-text_4">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="360.602858" y="266.075939" transform="rotate(-0 360.602858 266.075939)">0.015</text>
+     </g>
+    </g>
+    <g id="fig4_decomposition-xtick_5">
+     <g id="fig4_decomposition-line2d_9">
+      <path d="M 409.914486 251.0984 
+L 409.914486 34.8824 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig4_decomposition-line2d_10">
+      <g>
+       <use xlink:href="#fig4_decomposition-m51909d080f" x="409.914486" y="251.0984" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig4_decomposition-text_5">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="409.914486" y="266.075939" transform="rotate(-0 409.914486 266.075939)">0.020</text>
+     </g>
+    </g>
+    <g id="fig4_decomposition-xtick_6">
+     <g id="fig4_decomposition-line2d_11">
+      <path d="M 459.226114 251.0984 
+L 459.226114 34.8824 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig4_decomposition-line2d_12">
+      <g>
+       <use xlink:href="#fig4_decomposition-m51909d080f" x="459.226114" y="251.0984" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig4_decomposition-text_6">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="459.226114" y="266.075939" transform="rotate(-0 459.226114 266.075939)">0.025</text>
+     </g>
+    </g>
+    <g id="fig4_decomposition-xtick_7">
+     <g id="fig4_decomposition-line2d_13">
+      <path d="M 508.537742 251.0984 
+L 508.537742 34.8824 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig4_decomposition-line2d_14">
+      <g>
+       <use xlink:href="#fig4_decomposition-m51909d080f" x="508.537742" y="251.0984" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig4_decomposition-text_7">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="508.537742" y="266.075939" transform="rotate(-0 508.537742 266.075939)">0.030</text>
+     </g>
+    </g>
+    <g id="fig4_decomposition-xtick_8">
+     <g id="fig4_decomposition-line2d_15">
+      <path d="M 557.84937 251.0984 
+L 557.84937 34.8824 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig4_decomposition-line2d_16">
+      <g>
+       <use xlink:href="#fig4_decomposition-m51909d080f" x="557.84937" y="251.0984" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig4_decomposition-text_8">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="557.84937" y="266.075939" transform="rotate(-0 557.84937 266.075939)">0.035</text>
+     </g>
+    </g>
+    <g id="fig4_decomposition-text_9">
+     <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="385.258672" y="280.576759" transform="rotate(-0 385.258672 280.576759)">contribution to training gain vs generic Human1 (totals: P1 +0.0534, safer variant +0.0304)</text>
+    </g>
+   </g>
+   <g id="fig4_decomposition-matplotlib.axis_2">
+    <g id="fig4_decomposition-ytick_1">
+     <g id="fig4_decomposition-line2d_17"/>
+     <g id="fig4_decomposition-text_10">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="169.718672" y="61.070489" transform="rotate(-0 169.718672 61.070489)">Cofactor-pool genes (35)</text>
+     </g>
+    </g>
+    <g id="fig4_decomposition-ytick_2">
+     <g id="fig4_decomposition-line2d_18"/>
+     <g id="fig4_decomposition-text_11">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="169.718672" y="95.434125" transform="rotate(-0 169.718672 95.434125)">Sterol synthesis (12)</text>
+     </g>
+    </g>
+    <g id="fig4_decomposition-ytick_3">
+     <g id="fig4_decomposition-line2d_19"/>
+     <g id="fig4_decomposition-text_12">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="169.718672" y="129.797762" transform="rotate(-0 169.718672 129.797762)">Medium-dependent genes (13)</text>
+     </g>
+    </g>
+    <g id="fig4_decomposition-ytick_4">
+     <g id="fig4_decomposition-line2d_20"/>
+     <g id="fig4_decomposition-text_13">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="169.718672" y="164.161398" transform="rotate(-0 169.718672 164.161398)">All other genes (2,802)</text>
+     </g>
+    </g>
+    <g id="fig4_decomposition-ytick_5">
+     <g id="fig4_decomposition-line2d_21"/>
+     <g id="fig4_decomposition-text_14">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="169.718672" y="198.525034" transform="rotate(-0 169.718672 198.525034)">Mevalonate core (4)</text>
+     </g>
+    </g>
+    <g id="fig4_decomposition-ytick_6">
+     <g id="fig4_decomposition-line2d_22"/>
+     <g id="fig4_decomposition-text_15">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="169.718672" y="232.888671" transform="rotate(-0 169.718672 232.888671)">Interaction (total − sum)</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig4_decomposition-patch_3">
+    <path d="M 212.667974 56.394036 
+L 539.197739 56.394036 
+L 539.197739 44.7104 
+L 212.667974 44.7104 
+z
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: var(--fx-s1, #2a78d6)"/>
+   </g>
+   <g id="fig4_decomposition-patch_4">
+    <path d="M 212.667974 90.757673 
+L 283.482233 90.757673 
+L 283.482233 79.074036 
+L 212.667974 79.074036 
+z
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: var(--fx-s1, #2a78d6)"/>
+   </g>
+   <g id="fig4_decomposition-patch_5">
+    <path d="M 212.667974 125.121309 
+L 273.171172 125.121309 
+L 273.171172 113.437673 
+L 212.667974 113.437673 
+z
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: var(--fx-s1, #2a78d6)"/>
+   </g>
+   <g id="fig4_decomposition-patch_6">
+    <path d="M 212.667974 159.484945 
+L 241.126602 159.484945 
+L 241.126602 147.801309 
+L 212.667974 147.801309 
+z
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: var(--fx-s1, #2a78d6)"/>
+   </g>
+   <g id="fig4_decomposition-patch_7">
+    <path d="M 212.667974 193.848582 
+L 198.639802 193.848582 
+L 198.639802 182.164945 
+L 212.667974 182.164945 
+z
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: var(--fx-s1, #2a78d6)"/>
+   </g>
+   <g id="fig4_decomposition-patch_8">
+    <path d="M 212.667974 228.212218 
+L 266.674562 228.212218 
+L 266.674562 216.528582 
+L 212.667974 216.528582 
+z
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: var(--fx-s1, #2a78d6)"/>
+   </g>
+   <g id="fig4_decomposition-patch_9">
+    <path d="M 212.667974 69.452218 
+L 337.735084 69.452218 
+L 337.735084 57.768582 
+L 212.667974 57.768582 
+z
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: var(--fx-s2, #eb6834)"/>
+   </g>
+   <g id="fig4_decomposition-patch_10">
+    <path d="M 212.667974 103.815855 
+L 283.482233 103.815855 
+L 283.482233 92.132218 
+L 212.667974 92.132218 
+z
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: var(--fx-s2, #eb6834)"/>
+   </g>
+   <g id="fig4_decomposition-patch_11">
+    <path d="M 212.667974 138.179491 
+L 273.171172 138.179491 
+L 273.171172 126.495855 
+L 212.667974 126.495855 
+z
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: var(--fx-s2, #eb6834)"/>
+   </g>
+   <g id="fig4_decomposition-patch_12">
+    <path d="M 212.667974 172.543127 
+L 238.161691 172.543127 
+L 238.161691 160.859491 
+L 212.667974 160.859491 
+z
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: var(--fx-s2, #eb6834)"/>
+   </g>
+   <g id="fig4_decomposition-patch_13">
+    <path d="M 212.667974 206.906764 
+L 212.667974 206.906764 
+L 212.667974 195.223127 
+L 212.667974 195.223127 
+z
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: var(--fx-s2, #eb6834)"/>
+   </g>
+   <g id="fig4_decomposition-patch_14">
+    <path d="M 212.667974 241.2704 
+L 230.13218 241.2704 
+L 230.13218 229.586764 
+L 212.667974 229.586764 
+z
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: var(--fx-s2, #eb6834)"/>
+   </g>
+   <g id="fig4_decomposition-line2d_23">
+    <path d="M 533.18468 50.552218 
+L 544.988897 50.552218 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-linecap: square"/>
+   </g>
+   <g id="fig4_decomposition-line2d_24">
+    <path d="M 282.199737 84.915855 
+L 284.750923 84.915855 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-linecap: square"/>
+   </g>
+   <g id="fig4_decomposition-line2d_25">
+    <path d="M 265.990018 119.279491 
+L 280.108332 119.279491 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-linecap: square"/>
+   </g>
+   <g id="fig4_decomposition-line2d_26">
+    <path d="M 239.75209 153.643127 
+L 242.506144 153.643127 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-linecap: square"/>
+   </g>
+   <g id="fig4_decomposition-line2d_27">
+    <path d="M 196.922476 188.006764 
+L 200.343914 188.006764 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-linecap: square"/>
+   </g>
+   <g id="fig4_decomposition-line2d_28">
+    <path d="M 336.117662 63.6104 
+L 339.438307 63.6104 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-linecap: square"/>
+   </g>
+   <g id="fig4_decomposition-line2d_29">
+    <path d="M 282.199737 97.974036 
+L 284.750923 97.974036 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-linecap: square"/>
+   </g>
+   <g id="fig4_decomposition-line2d_30">
+    <path d="M 265.990018 132.337673 
+L 280.108332 132.337673 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-linecap: square"/>
+   </g>
+   <g id="fig4_decomposition-line2d_31">
+    <path d="M 236.778106 166.701309 
+L 239.555928 166.701309 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-linecap: square"/>
+   </g>
+   <g id="fig4_decomposition-line2d_32">
+    <path d="M 212.667974 201.064945 
+L 212.667974 201.064945 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-linecap: square"/>
+   </g>
+   <g id="fig4_decomposition-line2d_33">
+    <path d="M 212.667974 251.0984 
+L 212.667974 34.8824 
+" clip-path="url(#fig4_decomposition-p9d881d8a49)" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-linecap: square"/>
+   </g>
+   <g id="fig4_decomposition-patch_15">
+    <path d="M 173.218672 251.0984 
+L 173.218672 34.8824 
+" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig4_decomposition-patch_16">
+    <path d="M 173.218672 251.0984 
+L 597.298672 251.0984 
+" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig4_decomposition-text_16">
+    <text style="font-size: 8.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="543.197739" y="52.760226" transform="rotate(-0 543.197739 52.760226)">+0.0331</text>
+   </g>
+   <g id="fig4_decomposition-text_17">
+    <text style="font-size: 8.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="287.482233" y="87.123862" transform="rotate(-0 287.482233 87.123862)">+0.0072</text>
+   </g>
+   <g id="fig4_decomposition-text_18">
+    <text style="font-size: 8.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="277.171172" y="121.487499" transform="rotate(-0 277.171172 121.487499)">+0.0061</text>
+   </g>
+   <g id="fig4_decomposition-text_19">
+    <text style="font-size: 8.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="245.126602" y="155.851135" transform="rotate(-0 245.126602 155.851135)">+0.0029</text>
+   </g>
+   <g id="fig4_decomposition-text_20">
+    <text style="font-size: 8.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="216.667974" y="190.214771" transform="rotate(-0 216.667974 190.214771)">-0.0014</text>
+   </g>
+   <g id="fig4_decomposition-text_21">
+    <text style="font-size: 8.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="270.674562" y="224.578408" transform="rotate(-0 270.674562 224.578408)">+0.0055</text>
+   </g>
+   <g id="fig4_decomposition-text_22">
+    <text style="font-size: 8.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="341.735084" y="65.818408" transform="rotate(-0 341.735084 65.818408)">+0.0127</text>
+   </g>
+   <g id="fig4_decomposition-text_23">
+    <text style="font-size: 8.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="287.482233" y="100.182044" transform="rotate(-0 287.482233 100.182044)">+0.0072</text>
+   </g>
+   <g id="fig4_decomposition-text_24">
+    <text style="font-size: 8.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="277.171172" y="134.545681" transform="rotate(-0 277.171172 134.545681)">+0.0061</text>
+   </g>
+   <g id="fig4_decomposition-text_25">
+    <text style="font-size: 8.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="242.161691" y="168.909317" transform="rotate(-0 242.161691 168.909317)">+0.0026</text>
+   </g>
+   <g id="fig4_decomposition-text_26">
+    <text style="font-size: 8.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="216.667974" y="203.272953" transform="rotate(-0 216.667974 203.272953)">+0.0000</text>
+   </g>
+   <g id="fig4_decomposition-text_27">
+    <text style="font-size: 8.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="234.13218" y="237.63659" transform="rotate(-0 234.13218 237.63659)">+0.0018</text>
+   </g>
+   <g id="fig4_decomposition-legend_1">
+    <g id="fig4_decomposition-patch_17">
+     <path d="M 181.768672 18.218516 
+L 200.768672 18.218516 
+L 200.768672 11.568516 
+L 181.768672 11.568516 
+z
+" style="fill: var(--fx-s1, #2a78d6)"/>
+    </g>
+    <g id="fig4_decomposition-text_28">
+     <text style="font-size: 9.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="208.368672" y="18.218516" transform="rotate(-0 208.368672 18.218516)">P1 (whole pool removed)</text>
+    </g>
+    <g id="fig4_decomposition-patch_18">
+     <path d="M 346.102344 18.218516 
+L 365.102344 18.218516 
+L 365.102344 11.568516 
+L 346.102344 11.568516 
+z
+" style="fill: var(--fx-s2, #eb6834)"/>
+    </g>
+    <g id="fig4_decomposition-text_29">
+     <text style="font-size: 9.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="372.702344" y="18.218516" transform="rotate(-0 372.702344 18.218516)">Safer variant: artefacts only removed (post hoc)</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig4_decomposition-p9d881d8a49">
+   <rect x="173.218672" y="34.8824" width="424.08" height="216.216"/>
+  </clipPath>
+ </defs>
+</svg>

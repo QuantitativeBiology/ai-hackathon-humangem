@@ -1,0 +1,680 @@
+{
+ "what": "P1 worked example: one training line traced through each step (label-free model outputs; per-line tAP and per-gene test fractions from committed aggregate tables)",
+ "script": "scripts/explainer_worked_example.py",
+ "line": {
+  "ModelID": "ACH-000463",
+  "name": "NCI-H460",
+  "lineage": "Lung",
+  "subtype": "Large Cell Lung Carcinoma",
+  "tier": "train",
+  "documented_medium_text": "RPMI + 10% FBS",
+  "medium_source": "documented",
+  "assignment_stratum": "attribution",
+  "serum_pct": 10.0,
+  "medium_key": "RPMI",
+  "w2_sweep_id": {
+   "M0": "human1:a35fcfdb65d63819",
+   "M2(f=1)": "human1:db9ebc6b123dcb99"
+  },
+  "n_screened_lines_sharing_this_P1_model": 1050
+ },
+ "biomass": {
+  "reaction": "MAR13082",
+  "pool_metabolite": "MAM10012c",
+  "pool_coefficient": 0.0012,
+  "n_biomass_reactants": 9,
+  "biomass_reactants": [
+   [
+    "MAM01371c",
+    "ATP",
+    45.0
+   ],
+   [
+    "MAM02040c",
+    "H2O",
+    45.0
+   ],
+   [
+    "MAM10013c",
+    "protein_pool_biomass",
+    5.3375
+   ],
+   [
+    "MAM10015c",
+    "metabolite_pool_biomass",
+    0.4835
+   ],
+   [
+    "MAM03161c",
+    "glycogen",
+    0.4062
+   ],
+   [
+    "MAM10014c",
+    "lipid_pool_biomass",
+    0.2212
+   ],
+   [
+    "MAM02847c",
+    "RNA",
+    0.1124
+   ],
+   [
+    "MAM01721n",
+    "DNA",
+    0.0267
+   ],
+   [
+    "MAM10012c",
+    "cofactor_pool_biomass",
+    0.0012
+   ]
+  ],
+  "pool_reaction": "MAR10065",
+  "n_pool_species": 38,
+  "pool_species": [
+   "11-cis-retinol",
+   "18-hydroxy-all-trans-retinoate",
+   "18-hydroxy-all-trans-retinoate",
+   "24-oxo-1alpha,23,25-trihydroxyvitamin D3",
+   "24-oxo-1alpha,23,25-trihydroxyvitamin D3",
+   "25-hydroxyvitamin D3-26,23-lactone",
+   "25-hydroxyvitamin D3-26,23-lactone",
+   "3-carboxy-alpha-chromanol",
+   "4-OH-13-cis-retinal",
+   "4-OH-13-cis-retinal",
+   "4-OH-retinal",
+   "4-OH-retinal",
+   "4-hydroxyvitamin A1",
+   "4-hydroxyvitamin A1",
+   "4-oxo-13-cis-retinoate",
+   "4-oxo-9-cis-retinal",
+   "4-oxo-9-cis-retinal",
+   "4-oxo-9-cis-retinoyl-beta-glucuronide",
+   "4-oxo-9-cis-retinoyl-beta-glucuronide",
+   "4-oxo-all-trans-retinoate",
+   "4-oxo-all-trans-retinoate",
+   "4-oxoretinol",
+   "5,8-epoxy-13-cis-retinoate",
+   "9-cis-retinol",
+   "FADH2",
+   "L-carnitine",
+   "N-retinylidene-N-retinylethanolamine",
+   "THF",
+   "biotin",
+   "cobamide-coenzyme",
+   "gamma-CEHC-glucuronide",
+   "heme",
+   "lipoic acid",
+   "pyridoxal-phosphate",
+   "riboflavin",
+   "tetrahydrobiopterin",
+   "thiamin-PP",
+   "ubiquinol"
+  ],
+  "edit": {
+   "name": "B-loo:cofactor_pool_biomass",
+   "kind": "remove",
+   "params": {
+    "mets": [
+     "MAM10012c"
+    ]
+   }
+  }
+ },
+ "medium": {
+  "hams_open_exchanges": 44,
+  "line_open_exchanges": 58,
+  "open_in_hams_not_in_line": [
+   "alanine",
+   "cysteine",
+   "hypoxanthine",
+   "thymidine"
+  ],
+  "open_in_line_not_in_hams": [
+   "Ca2+",
+   "Cu2+",
+   "Fe3+",
+   "GSH",
+   "HCO3-",
+   "K+",
+   "L-carnitine",
+   "Mg2+",
+   "Na+",
+   "chloride",
+   "cholesterol",
+   "cystine",
+   "ethanolamine",
+   "oleate",
+   "palmitate",
+   "stearate",
+   "trans-4-hydroxy-L-proline",
+   "zinc"
+  ],
+  "line_bounded_below_1000 (serum model and micronutrient floor)": [
+   [
+    "L-carnitine",
+    0.0019
+   ],
+   [
+    "alpha-tocopherol",
+    0.0192
+   ],
+   [
+    "cholesterol",
+    1.2973
+   ],
+   [
+    "ethanolamine",
+    1.7586
+   ],
+   [
+    "gamma-tocopherol",
+    0.0192
+   ],
+   [
+    "linoleate",
+    57.9779
+   ],
+   [
+    "linolenate",
+    119.6773
+   ],
+   [
+    "lipoic acid",
+    0.0192
+   ],
+   [
+    "oleate",
+    8.1428
+   ],
+   [
+    "palmitate",
+    5.2993
+   ],
+   [
+    "retinoate",
+    0.2684
+   ],
+   [
+    "stearate",
+    11.1738
+   ]
+  ],
+  "line_serum": true,
+  "line_medium_keys_sharing_signature": "DMEM0.25:RPMI0.75;DMEM0.5:RPMI0.5;RPMI"
+ },
+ "steps": {
+  "step0": {
+   "label": "Generic Human1 on Ham's medium (G*)",
+   "variant": "T0",
+   "medium_step": "M0",
+   "sweep_key": "T0|human1:a35fcfdb65d63819",
+   "wt_growth_au": 65.5734,
+   "wt_growth_committed_au": 65.5734,
+   "n_genes_scored_U": 2866,
+   "n_lethal": 147,
+   "n_partial": 66,
+   "n_no_effect": 2653,
+   "n_distinct_scores": 24,
+   "n_lp_solved": 197,
+   "n_genes_needing_lp": 308,
+   "cpu_s": 41.6,
+   "wall_s": 41.7,
+   "max_abs_dev_vs_committed_sweep_e": 0.0
+  },
+  "step1": {
+   "label": "+ cofactor pool removed from biomass (Ham's)",
+   "variant": "B-loo:cofactor_pool_biomass",
+   "medium_step": "M0",
+   "sweep_key": "B-loo:cofactor_pool_biomass|human1:a35fcfdb65d63819",
+   "wt_growth_au": 65.5774,
+   "wt_growth_committed_au": 65.5774,
+   "n_genes_scored_U": 2866,
+   "n_lethal": 112,
+   "n_partial": 59,
+   "n_no_effect": 2695,
+   "n_distinct_scores": 19,
+   "n_lp_solved": 171,
+   "n_genes_needing_lp": 278,
+   "cpu_s": 31.1,
+   "wall_s": 31.1,
+   "max_abs_dev_vs_committed_sweep_e": 0.0
+  },
+  "medium_only": {
+   "label": "Side cell: generic Human1 on the line's medium + serum",
+   "variant": "T0",
+   "medium_step": "M2(f=1)",
+   "sweep_key": "T0|human1:db9ebc6b123dcb99",
+   "wt_growth_au": 46.8601,
+   "wt_growth_committed_au": 46.8601,
+   "n_genes_scored_U": 2866,
+   "n_lethal": 142,
+   "n_partial": 66,
+   "n_no_effect": 2658,
+   "n_distinct_scores": 19,
+   "n_lp_solved": 213,
+   "n_genes_needing_lp": 322,
+   "cpu_s": 43.7,
+   "wall_s": 43.8,
+   "max_abs_dev_vs_committed_sweep_e": 0.0
+  },
+  "step2": {
+   "label": "+ documented medium and serum = P1 model",
+   "variant": "B-loo:cofactor_pool_biomass",
+   "medium_step": "M2(f=1)",
+   "sweep_key": "B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99",
+   "wt_growth_au": 46.8632,
+   "wt_growth_committed_au": 46.8632,
+   "n_genes_scored_U": 2866,
+   "n_lethal": 106,
+   "n_partial": 64,
+   "n_no_effect": 2696,
+   "n_distinct_scores": 17,
+   "n_lp_solved": 181,
+   "n_genes_needing_lp": 287,
+   "cpu_s": 35.7,
+   "wall_s": 35.7,
+   "max_abs_dev_vs_committed_sweep_e": 0.0
+  }
+ },
+ "transitions": {
+  "step0->step1 (pool removed)": {
+   "uncalled (lethal -> not)": [
+    "ABCB6",
+    "ALAD",
+    "ALDH9A1",
+    "BBOX1",
+    "COQ2",
+    "COQ3",
+    "COQ6",
+    "COQ7",
+    "CPOX",
+    "CYP1A2",
+    "CYP24A1",
+    "CYP26A1",
+    "CYP26B1",
+    "GCH1",
+    "HMBS",
+    "MMAA",
+    "NPC1L1",
+    "PDXK",
+    "PNPO",
+    "PTS",
+    "RFK",
+    "SCARB1",
+    "SEC11A",
+    "SEC11C",
+    "SHMT2",
+    "SLC25A26",
+    "SLC5A6",
+    "SPCS1",
+    "SPCS2",
+    "SPCS3",
+    "SPR",
+    "TMLHE",
+    "TPK1",
+    "UROD",
+    "UROS"
+   ],
+   "newly called (not -> lethal)": []
+  },
+  "step1->step2 (medium + serum added)": {
+   "uncalled (lethal -> not)": [
+    "DHCR24",
+    "DHCR7",
+    "EBP",
+    "FDFT1",
+    "GCLC",
+    "GCLM",
+    "GSS",
+    "HMGCR",
+    "LSS",
+    "MVD",
+    "MVK",
+    "NSDHL",
+    "PMVK",
+    "SQLE"
+   ],
+   "newly called (not -> lethal)": [
+    "ATIC",
+    "DHODH",
+    "GART",
+    "PAICS",
+    "PFAS",
+    "PPAT",
+    "TYMS",
+    "UMPS"
+   ]
+  },
+  "step0->medium_only (medium alone)": {
+   "uncalled (lethal -> not)": [
+    "ALDH9A1",
+    "BBOX1",
+    "DHCR7",
+    "GCLC",
+    "GCLM",
+    "GSS",
+    "SEC11A",
+    "SEC11C",
+    "SHMT2",
+    "SPCS1",
+    "SPCS2",
+    "SPCS3",
+    "TMLHE"
+   ],
+   "newly called (not -> lethal)": [
+    "ATIC",
+    "DHODH",
+    "GART",
+    "PAICS",
+    "PFAS",
+    "PPAT",
+    "TYMS",
+    "UMPS"
+   ]
+  },
+  "step0->step2 (all of P1)": {
+   "uncalled (lethal -> not)": [
+    "ABCB6",
+    "ALAD",
+    "ALDH9A1",
+    "BBOX1",
+    "COQ2",
+    "COQ3",
+    "COQ6",
+    "COQ7",
+    "CPOX",
+    "CYP1A2",
+    "CYP24A1",
+    "CYP26A1",
+    "CYP26B1",
+    "DHCR24",
+    "DHCR7",
+    "EBP",
+    "FDFT1",
+    "GCH1",
+    "GCLC",
+    "GCLM",
+    "GSS",
+    "HMBS",
+    "HMGCR",
+    "LSS",
+    "MMAA",
+    "MVD",
+    "MVK",
+    "NPC1L1",
+    "NSDHL",
+    "PDXK",
+    "PMVK",
+    "PNPO",
+    "PTS",
+    "RFK",
+    "SCARB1",
+    "SEC11A",
+    "SEC11C",
+    "SHMT2",
+    "SLC25A26",
+    "SLC5A6",
+    "SPCS1",
+    "SPCS2",
+    "SPCS3",
+    "SPR",
+    "SQLE",
+    "TMLHE",
+    "TPK1",
+    "UROD",
+    "UROS"
+   ],
+   "newly called (not -> lethal)": [
+    "ATIC",
+    "DHODH",
+    "GART",
+    "PAICS",
+    "PFAS",
+    "PPAT",
+    "TYMS",
+    "UMPS"
+   ]
+  }
+ },
+ "panel": [
+  {
+   "symbol": "CYP26A1",
+   "ensembl": "ENSG00000095596",
+   "entrez": 1592,
+   "in_human1": true,
+   "pathway": "retinoic-acid catabolism",
+   "role_in_example": "biomass artefact: the pool demands retinoid catabolites",
+   "e_step0": 1.0,
+   "e_step1": 0.0,
+   "e_medium_only": 1.0,
+   "e_step2": 0.0,
+   "P1_rank_block": "ranks 171-2866 of 2866 (tied with 2695 genes)",
+   "test_frac_lines_essential": 0.0079,
+   "test_n_lines": 380
+  },
+  {
+   "symbol": "CYP24A1",
+   "ensembl": "ENSG00000019186",
+   "entrez": 1591,
+   "in_human1": true,
+   "pathway": "vitamin-D catabolism",
+   "role_in_example": "biomass artefact: the pool demands vitamin-D catabolites",
+   "e_step0": 1.0,
+   "e_step1": 0.0,
+   "e_medium_only": 1.0,
+   "e_step2": 0.0,
+   "P1_rank_block": "ranks 171-2866 of 2866 (tied with 2695 genes)",
+   "test_frac_lines_essential": 0.0026,
+   "test_n_lines": 380
+  },
+  {
+   "symbol": "BBOX1",
+   "ensembl": "ENSG00000129151",
+   "entrez": 8424,
+   "in_human1": true,
+   "pathway": "carnitine synthesis",
+   "role_in_example": "artefact twice over: pool demands carnitine; serum supplies it",
+   "e_step0": 1.0,
+   "e_step1": 0.0,
+   "e_medium_only": 0.020412,
+   "e_step2": 0.0,
+   "P1_rank_block": "ranks 171-2866 of 2866 (tied with 2695 genes)",
+   "test_frac_lines_essential": 0.0,
+   "test_n_lines": 380
+  },
+  {
+   "symbol": "COQ2",
+   "ensembl": "ENSG00000173085",
+   "entrez": 27235,
+   "in_human1": true,
+   "pathway": "coenzyme Q synthesis",
+   "role_in_example": "real cofactor, removed together with the pool",
+   "e_step0": 1.0,
+   "e_step1": 0.0,
+   "e_medium_only": 1.0,
+   "e_step2": 0.0,
+   "P1_rank_block": "ranks 171-2866 of 2866 (tied with 2695 genes)",
+   "test_frac_lines_essential": 0.5,
+   "test_n_lines": 380
+  },
+  {
+   "symbol": "HMBS",
+   "ensembl": "ENSG00000256269",
+   "entrez": 3145,
+   "in_human1": true,
+   "pathway": "heme synthesis",
+   "role_in_example": "real cofactor, removed together with the pool",
+   "e_step0": 1.0,
+   "e_step1": 0.0,
+   "e_medium_only": 1.0,
+   "e_step2": 0.0,
+   "P1_rank_block": "ranks 171-2866 of 2866 (tied with 2695 genes)",
+   "test_frac_lines_essential": 0.1079,
+   "test_n_lines": 380
+  },
+  {
+   "symbol": "PPAT",
+   "ensembl": "ENSG00000128059",
+   "entrez": 5471,
+   "in_human1": true,
+   "pathway": "de novo purine synthesis",
+   "role_in_example": "masked on Ham's by hypoxanthine",
+   "e_step0": 0.0,
+   "e_step1": 0.0,
+   "e_medium_only": 1.0,
+   "e_step2": 1.0,
+   "P1_rank_block": "ranks 1-106 of 2866 (tied with 105 genes)",
+   "test_frac_lines_essential": 0.5868,
+   "test_n_lines": 380
+  },
+  {
+   "symbol": "DHODH",
+   "ensembl": "ENSG00000102967",
+   "entrez": 1723,
+   "in_human1": true,
+   "pathway": "de novo pyrimidine synthesis",
+   "role_in_example": "masked on Ham's by thymidine (Human1 TYMS is reversible)",
+   "e_step0": 0.0,
+   "e_step1": 0.0,
+   "e_medium_only": 1.0,
+   "e_step2": 1.0,
+   "P1_rank_block": "ranks 1-106 of 2866 (tied with 105 genes)",
+   "test_frac_lines_essential": 0.3605,
+   "test_n_lines": 380
+  },
+  {
+   "symbol": "UMPS",
+   "ensembl": "ENSG00000114491",
+   "entrez": 7372,
+   "in_human1": true,
+   "pathway": "de novo pyrimidine synthesis",
+   "role_in_example": "masked on Ham's by thymidine (Human1 TYMS is reversible)",
+   "e_step0": 0.0,
+   "e_step1": 0.0,
+   "e_medium_only": 1.0,
+   "e_step2": 1.0,
+   "P1_rank_block": "ranks 1-106 of 2866 (tied with 105 genes)",
+   "test_frac_lines_essential": 0.5921,
+   "test_n_lines": 380
+  },
+  {
+   "symbol": "TYMS",
+   "ensembl": "ENSG00000176890",
+   "entrez": 7298,
+   "in_human1": true,
+   "pathway": "thymidylate synthesis",
+   "role_in_example": "masked on Ham's by thymidine",
+   "e_step0": 0.002454,
+   "e_step1": 0.002454,
+   "e_medium_only": 1.0,
+   "e_step2": 1.0,
+   "P1_rank_block": "ranks 1-106 of 2866 (tied with 105 genes)",
+   "test_frac_lines_essential": 0.5158,
+   "test_n_lines": 380
+  },
+  {
+   "symbol": "DHCR7",
+   "ensembl": "ENSG00000172893",
+   "entrez": 1717,
+   "in_human1": true,
+   "pathway": "cholesterol synthesis (last step)",
+   "role_in_example": "rescued by serum cholesterol",
+   "e_step0": 1.0,
+   "e_step1": 1.0,
+   "e_medium_only": 0.014509,
+   "e_step2": 0.014575,
+   "P1_rank_block": "ranks 150-160 of 2866 (tied with 10 genes)",
+   "test_frac_lines_essential": 0.0079,
+   "test_n_lines": 380
+  },
+  {
+   "symbol": "GCLC",
+   "ensembl": "ENSG00000001084",
+   "entrez": 2729,
+   "in_human1": true,
+   "pathway": "glutathione synthesis",
+   "role_in_example": "rescued by glutathione in the documented medium/serum model",
+   "e_step0": 1.0,
+   "e_step1": 1.0,
+   "e_medium_only": 0.0,
+   "e_step2": 0.0,
+   "P1_rank_block": "ranks 171-2866 of 2866 (tied with 2695 genes)",
+   "test_frac_lines_essential": 0.0289,
+   "test_n_lines": 380
+  },
+  {
+   "symbol": "HMGCR",
+   "ensembl": "ENSG00000113161",
+   "entrez": 3156,
+   "in_human1": true,
+   "pathway": "mevalonate pathway",
+   "role_in_example": "known cost: non-lethal once the pool is gone and serum is present",
+   "e_step0": 1.0,
+   "e_step1": 1.0,
+   "e_medium_only": 1.0,
+   "e_step2": 0.014575,
+   "P1_rank_block": "ranks 150-160 of 2866 (tied with 10 genes)",
+   "test_frac_lines_essential": 0.9026,
+   "test_n_lines": 380
+  },
+  {
+   "symbol": "CAD",
+   "ensembl": "ENSG00000084774",
+   "entrez": 790,
+   "in_human1": true,
+   "pathway": "de novo pyrimidine synthesis (first step)",
+   "role_in_example": "lethal at every step (control)",
+   "e_step0": 1.0,
+   "e_step1": 1.0,
+   "e_medium_only": 1.0,
+   "e_step2": 1.0,
+   "P1_rank_block": "ranks 1-106 of 2866 (tied with 105 genes)",
+   "test_frac_lines_essential": 0.4684,
+   "test_n_lines": 380
+  }
+ ],
+ "tAP": {
+  "step0": {
+   "cell": "H1",
+   "tAP_all_genes": 0.284479,
+   "tAP_without_common_essentials": 0.107921,
+   "label_cell_noCE_name": "noCE"
+  },
+  "step1": {
+   "cell": "H1+Bloo/M0",
+   "tAP_all_genes": 0.328539,
+   "tAP_without_common_essentials": 0.136054,
+   "label_cell_noCE_name": "noCE"
+  },
+  "medium_only": {
+   "cell": "H1/M2",
+   "tAP_all_genes": 0.290724,
+   "tAP_without_common_essentials": 0.114041,
+   "label_cell_noCE_name": "noCE"
+  },
+  "step2": {
+   "cell": "H1+Bloo/M2",
+   "tAP_all_genes": 0.336405,
+   "tAP_without_common_essentials": 0.136108,
+   "label_cell_noCE_name": "noCE"
+  },
+  "random_ranking_expectation": 0.096743,
+  "G_star_from_w1": 0.284479,
+  "G_star_check_equal": true,
+  "P1_minus_Gstar": 0.051926,
+  "training_lines_P1_minus_Gstar_median": 0.052979,
+  "training_lines_P1_minus_Gstar_IQR": [
+   0.043819,
+   0.062752
+  ],
+  "training_lines_with_gain": "686/686"
+ },
+ "runtime_s": {
+  "load_and_bounds": 37.0,
+  "total": 193.2
+ },
+ "call_rule": "lethal = e >= 0.99 (KO/WT growth ratio < 0.01); partial = 0 < e < 0.99",
+ "label_note": "No label file read. tAP from results/m6/train/per_line.tsv; G* from results/w1/train_per_line.tsv; test fractions from results/m6/test/unsealed/T1/per_gene.tsv (method P1[H1], 380 test lines)."
+}

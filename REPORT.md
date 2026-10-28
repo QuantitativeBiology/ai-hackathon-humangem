@@ -8,7 +8,7 @@
 
 **Background.** Published tests of genome-scale metabolic models (GEMs) against CRISPR screens report binary metrics after choosing among many settings, and none holds out whole tissues (LITERATURE.md §2.1). We asked whether medium-aware, curated, context-specific versions of Human1 (Human-GEM v1.19.0) and Human2 (v2.1.1) predict metabolic gene essentiality in DepMap 26Q3 better than the generic models on lineages they have never seen.
 
-**Design.** The benchmark was pre-registered (DESIGN.md v3, frozen at 61b0beb; amendments A1–A14). <!--n:split.n.total-->1,361 screened lines were split by lineage into 7 test, 4 validation and 12 training lineages (results/splits/split_meta.json). The primary metric is tie-aware average precision (tAP) per line, averaged with equal weight per lineage. Four levers were screened on training: medium, biomass and tasks, context-specific extraction, and GPR curation. At most 40 scalar-only validation looks were allowed; <!--n:looks.used-->6 were used, including the T1 rehearsal (results/validation_ledger.tsv).
+**Design.** The benchmark was pre-registered (DESIGN.md v3, frozen at 61b0beb; amendments A1–A15). <!--n:split.n.total-->1,361 screened lines were split by lineage into 7 test, 4 validation and 12 training lineages (results/splits/split_meta.json). The primary metric is tie-aware average precision (tAP) per line, averaged with equal weight per lineage. Four levers were screened on training: medium, biomass and tasks, context-specific extraction, and GPR curation. At most 40 scalar-only validation looks were allowed; <!--n:looks.used-->7 were used, including the T1 rehearsal (results/validation_ledger.tsv).
 
 **Selection.** Generic Human1 beat Human2 on validation (tAP <!--n:w1.val.h1-->0.302 vs <!--n:w1.val.h2-->0.295), so G\* = Human1 (results/w1/val_look_W1_M2_baseline.tsv, results/w1/val_look_W1_M2_baseline_gstar.json). No context-specific family beat G\* on training. Evidence-based GPR curation lowered tAP. A documented culture medium helped only as much as a shuffled one. Removing the cofactor/vitamin pool from the biomass reaction was the one structural fix that helped. The selected pipeline P1 (Human1, biomass pool removed, documented medium) carries four flags: W3-D1, W3-MEV, W2-SHUF and W2-MOPEN.
 
@@ -527,11 +527,11 @@ M3 calibration was infeasible as specified, and the W2 single-removal flip analy
 | W6 flux information | <!--n:rt.w6.runs-->9 | <!--n:rt.w6.cpu-->2.6 | <!--n:rt.w6.wall-->1.3 |
 | W7 auto-research | <!--n:rt.w7.runs-->23 | <!--n:rt.w7.cpu-->8.4 | <!--n:rt.w7.wall-->2.2 |
 | W8 resource | <!--n:rt.w8.runs-->13 | <!--n:rt.w8.cpu-->5.2 | <!--n:rt.w8.wall-->1.6 |
-| **Total** | <!--n:rt.total.runs-->152 | <!--n:rt.total.cpu-->201.2 | <!--n:rt.total.wall-->28.4 |
+| **Total** | <!--n:rt.total.runs-->174 | <!--n:rt.total.cpu-->210.4 | <!--n:rt.total.wall-->30.0 |
 
 Source: results/*/**/MANIFEST.tsv and PROVENANCE.tsv at HEAD, summed by `runtime_table` in `scripts/report_build.py`.
 
-- **Elapsed time.** <!--n:rt.elapsed-->42.9 h from the first commit to the last commit that changed results/ (git log), against a target of 1–1.5 days (D2). The process review blamed review and fix rounds, not compute (notes/milestone_reviews/M3M4_process_review.md).
+- **Elapsed time.** <!--n:rt.elapsed-->46.1 h from the first commit to the last commit that changed results/ (git log), against a target of 1–1.5 days (D2). The process review blamed review and fix rounds, not compute (notes/milestone_reviews/M3M4_process_review.md).
 - **Stage A dominates.** Its builds took <!--n:w4.buildcpu-->108.7 CPU-h (results/w4/stage_a/MANIFEST.tsv). The context families it built were all rejected.
 - **W7's ledger** records <!--n:rt.budget.w7-->8.8 CPU-h, including aborted runs (results/budget.tsv).
 - **Not in the manifests.** The FROG report took <!--n:res.frog.cpu-->0.66 CPU-h (results/w8/frog/frog_summary.json). Unrecorded losses quoted from READMEs, not checked: about 8.5 CPU-h of killed W3 runs, 1.3 of a stalled W2 run, and 7 of a BLAS-thread incident in W6 (results/w3/README.md, results/w2/README.md, RESEARCH_TREE.md item 8.1).
@@ -585,18 +585,39 @@ Source: results/*/**/MANIFEST.tsv and PROVENANCE.tsv at HEAD, summed by `runtime
 ## 11. Follow-ups and remaining ideas
 
 **Pipeline improvements.**
-- **The artefact-only biomass variant** (W7-03, exploratory) removes only the retinoid, vitamin-D, tocopherol and carnitine groups. It keeps the mevalonate core lethal under serum, so it fixes W3-MEV, at the cost of part of P1's gain. It is the first candidate for a P1 successor and needs its own validation look.
-- **Line-specific constraints beyond medium.** C3 shows that P1 carries no detectable line-specific signal. Copy number and LOH (here only a CN proxy), proteomics-based capacity bounds, uptake rates and enzyme constraints are untested as P1-level levers.
+- **The artefact-only biomass variant** (W7-03; now evaluated as F2, see §12) removes only the retinoid, vitamin-D, tocopherol and carnitine groups. It keeps the mevalonate core lethal under serum, so it fixes W3-MEV, at the cost of part of P1's gain. It is the first candidate for a P1 successor and needs its own validation look.
+- **Line-specific constraints beyond medium** (genomic loss and E-Flux now tested as F4, see §12; the rest remain open). C3 shows that P1 carries no detectable line-specific signal. Copy number and LOH (here only a CN proxy), proteomics-based capacity bounds, uptake rates and enzyme constraints are untested as P1-level levers.
 - **Group models** (Stage C, skipped under A12): lineage, genomic-background (e.g. MTAP_del, ASS1_silenced) and lineage × background models, with their pre-registered within-lineage contrasts.
-- **Curated GPRs revisited** with the ≥ 30%-identity paralog rule, the UniProt removal path (file still requested from the user) and the edit-review rejections applied, re-scored as a fresh pre-registered arm.
+- **Curated GPRs revisited** (the ≥ 30%-identity rule on P1 is now tested as F1, see §12; the UniProt path remains open) with the ≥ 30%-identity paralog rule, the UniProt removal path (file still requested from the user) and the edit-review rejections applied, re-scored as a fresh pre-registered arm.
 
 **Analyses still owed.**
-- **The pFBA traces of the 20 worst test cells** (DESIGN §10.3), which are not in the unsealed bundle.
+- **The pFBA traces of the 20 worst test cells** (DESIGN §10.3): now done as F3, see §12.
 - **W3 context claims** checked for the same sign on validation, as DESIGN requires before any claim.
 
 **Stated deviations.** These pre-registered outputs were not produced:
 - the §6.4 "top-k" unit, i.e. the change in true positives among each line's top-k genes;
 - the optimistic 16-lineage LOLO estimate of the frozen P1 protocol (§6.4).
+
+
+## 12. Post-hoc follow-ups (DESIGN §17 A15)
+
+These were run after the test unseal at the user's request. They are labelled post hoc and exploratory, were evaluated on training and validation only (no new test evaluation), and do not change the T1/T2 results above. Agents for F1, F2 and F4 were kept blind to the test outputs. Each rule was fixed in RESEARCH_TREE.md (D17–D19) before its first label-reading run.
+
+- **F1: stricter paralog curation on top of P1** (results/f1/README.md). AND→OR merges were limited to Ensembl paralogs with ≥ 30% identity in the same compartment, excluding lumped, large-complex and transport reactions, plus the TYMS fix. That gives 20 edits; all 12 RNA-polymerase merges from W5 are excluded. Training Δ̄ vs P1 = −0.00063 [−0.00071, −0.00055], 0/12 folds, so it **fails** the training gate. The loss comes from the RRM2/RRM2B merge. Without common essentials: +0.0021, below SESOI. An independent recompute agreed (results/f2/train/contrasts.tsv).
+- **F2: artefact-only biomass on the documented medium** (results/f2/README.md). Validation look 7/40 (results/m10/val/val_look_M10_F2_decision.json): +0.0310 [0.0293, 0.0326] vs G*, against P1's +0.0517 in the same look, so the validated cost of this biologically safer variant is ≈ 0.021 (training −0.023). It keeps HMGCR/MVK/PMVK/MVD lethal on every medium. The training decomposition by gene group (results/f2/decomposition.tsv) gives:
+  - the mevalonate artefact costs P1 −0.0014, i.e. it does not help;
+  - un-calling the 35 cofactor-pool genes gives about 62% of P1's gain;
+  - F2 keeps 20 of them lethal (heme, CoQ, BH4, PLP, TPK1, RFK …), which explains nearly all of its gap.
+- **F3: pFBA traces of the 20 worst T1 cells** (results/f3/README.md; descriptive). All 20 are CNS/Brain false negatives with KO ratio 1.0 on every medium. They break down as:
+  - 13 functions Human1 does not represent;
+  - 4 DNA-polymerase subunits hidden by one lumped DNA-synthesis reaction with a 17-way OR rule;
+  - 2 alternative pathways (GAPDH, ALDOA);
+  - 1 gene absent from Human1.
+  None is fixable through the medium. The 20 are a tie-broken subset of many 126/126-wrong cells.
+- **F4: line-specific constraints on top of P1** (results/f4/README.md).
+  - **Genomic loss:** genes lost in 665/686 training lines; only 22 KO calls change. Δ̄ vs P1 = −0.00013, 3/12 folds, so it **fails**.
+  - **E-Flux expression bounds:** the 30-line panel gives −0.0007, so it **fails** the pre-check.
+  Beyond the medium, no tested line-specific constraint improves P1.
 
 ## References
 

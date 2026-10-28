@@ -1,0 +1,359 @@
+<svg class="fx" role="img" aria-labelledby="fig2_lineage_gain-t fig2_lineage_gain-d" xmlns:xlink="http://www.w3.org/1999/xlink" width="597.129727pt" height="292.46138pt" viewBox="0 0 597.129727 292.46138" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="fig2_lineage_gain-t">Per-lineage test gain</title><desc id="fig2_lineage_gain-d">Change in tAP versus generic Human1 for each of the 7 held-out test lineages. P1 gains between 0.046 and 0.054 in every lineage; generic Human2 is below Human1 in every lineage.</desc><!--FX-STYLE--><style>.fx{--fx-ink:#1d1d1b;--fx-muted:#6b6a64;--fx-grid:#e3e2dc;--fx-s1:#2a78d6;--fx-s2:#eb6834;--fx-s3:#1baf7a;--fx-neutral:#8d8c85;--fx-band:#d7e6f8;--fx-stall:#efe3d6}@media (prefers-color-scheme: dark){.fx{--fx-ink:#ecebe6;--fx-muted:#a3a29a;--fx-grid:#3a3a37;--fx-s1:#3987e5;--fx-s2:#d95926;--fx-s3:#199e70;--fx-neutral:#8a8983;--fx-band:#1f3550;--fx-stall:#3d3127}}.fx text{font-family:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif}</style><!--/FX-STYLE-->
+ 
+ <defs>
+  <style type="text/css">.fx *{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig2_lineage_gain-figure_1">
+  <g id="fig2_lineage_gain-patch_1">
+   <path d="M -0 292.46138 
+L 597.129727 292.46138 
+L 597.129727 0 
+L -0 0 
+L -0 292.46138 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig2_lineage_gain-axes_1">
+   <g id="fig2_lineage_gain-patch_2">
+    <path d="M 176.045469 253.26056 
+L 588.965469 253.26056 
+L 588.965469 37.04456 
+L 176.045469 37.04456 
+L 176.045469 253.26056 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig2_lineage_gain-patch_3">
+    <path d="M 510.535669 253.26056 
+L 535.845592 253.26056 
+L 535.845592 37.04456 
+L 510.535669 37.04456 
+z
+" clip-path="url(#fig2_lineage_gain-p33af960159)" style="fill: var(--fx-band, #d7e6f8)"/>
+   </g>
+   <g id="fig2_lineage_gain-matplotlib.axis_1">
+    <g id="fig2_lineage_gain-xtick_1">
+     <g id="fig2_lineage_gain-line2d_1">
+      <path d="M 202.858456 253.26056 
+L 202.858456 37.04456 
+" clip-path="url(#fig2_lineage_gain-p33af960159)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig2_lineage_gain-line2d_2">
+      <defs>
+       <path id="fig2_lineage_gain-m51909d080f" d="M 0 0 
+L 0 3.5 
+" style="stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig2_lineage_gain-m51909d080f" x="202.858456" y="253.26056" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig2_lineage_gain-text_1">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="202.858456" y="268.238099" transform="rotate(-0 202.858456 268.238099)">−0.01</text>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-xtick_2">
+     <g id="fig2_lineage_gain-line2d_3">
+      <path d="M 256.48443 253.26056 
+L 256.48443 37.04456 
+" clip-path="url(#fig2_lineage_gain-p33af960159)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig2_lineage_gain-line2d_4">
+      <g>
+       <use xlink:href="#fig2_lineage_gain-m51909d080f" x="256.48443" y="253.26056" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig2_lineage_gain-text_2">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="256.48443" y="268.238099" transform="rotate(-0 256.48443 268.238099)">0.00</text>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-xtick_3">
+     <g id="fig2_lineage_gain-line2d_5">
+      <path d="M 310.110404 253.26056 
+L 310.110404 37.04456 
+" clip-path="url(#fig2_lineage_gain-p33af960159)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig2_lineage_gain-line2d_6">
+      <g>
+       <use xlink:href="#fig2_lineage_gain-m51909d080f" x="310.110404" y="253.26056" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig2_lineage_gain-text_3">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="310.110404" y="268.238099" transform="rotate(-0 310.110404 268.238099)">0.01</text>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-xtick_4">
+     <g id="fig2_lineage_gain-line2d_7">
+      <path d="M 363.736378 253.26056 
+L 363.736378 37.04456 
+" clip-path="url(#fig2_lineage_gain-p33af960159)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig2_lineage_gain-line2d_8">
+      <g>
+       <use xlink:href="#fig2_lineage_gain-m51909d080f" x="363.736378" y="253.26056" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig2_lineage_gain-text_4">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="363.736378" y="268.238099" transform="rotate(-0 363.736378 268.238099)">0.02</text>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-xtick_5">
+     <g id="fig2_lineage_gain-line2d_9">
+      <path d="M 417.362352 253.26056 
+L 417.362352 37.04456 
+" clip-path="url(#fig2_lineage_gain-p33af960159)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig2_lineage_gain-line2d_10">
+      <g>
+       <use xlink:href="#fig2_lineage_gain-m51909d080f" x="417.362352" y="253.26056" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig2_lineage_gain-text_5">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="417.362352" y="268.238099" transform="rotate(-0 417.362352 268.238099)">0.03</text>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-xtick_6">
+     <g id="fig2_lineage_gain-line2d_11">
+      <path d="M 470.988326 253.26056 
+L 470.988326 37.04456 
+" clip-path="url(#fig2_lineage_gain-p33af960159)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig2_lineage_gain-line2d_12">
+      <g>
+       <use xlink:href="#fig2_lineage_gain-m51909d080f" x="470.988326" y="253.26056" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig2_lineage_gain-text_6">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="470.988326" y="268.238099" transform="rotate(-0 470.988326 268.238099)">0.04</text>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-xtick_7">
+     <g id="fig2_lineage_gain-line2d_13">
+      <path d="M 524.6143 253.26056 
+L 524.6143 37.04456 
+" clip-path="url(#fig2_lineage_gain-p33af960159)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig2_lineage_gain-line2d_14">
+      <g>
+       <use xlink:href="#fig2_lineage_gain-m51909d080f" x="524.6143" y="253.26056" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig2_lineage_gain-text_7">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="524.6143" y="268.238099" transform="rotate(-0 524.6143 268.238099)">0.05</text>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-xtick_8">
+     <g id="fig2_lineage_gain-line2d_15">
+      <path d="M 578.240274 253.26056 
+L 578.240274 37.04456 
+" clip-path="url(#fig2_lineage_gain-p33af960159)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig2_lineage_gain-line2d_16">
+      <g>
+       <use xlink:href="#fig2_lineage_gain-m51909d080f" x="578.240274" y="253.26056" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig2_lineage_gain-text_8">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="578.240274" y="268.238099" transform="rotate(-0 578.240274 268.238099)">0.06</text>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-text_9">
+     <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="382.505469" y="282.738919" transform="rotate(-0 382.505469 282.738919)">change in tAP vs generic Human1 on Ham's medium (same lines)</text>
+    </g>
+   </g>
+   <g id="fig2_lineage_gain-matplotlib.axis_2">
+    <g id="fig2_lineage_gain-ytick_1">
+     <g id="fig2_lineage_gain-line2d_17"/>
+     <g id="fig2_lineage_gain-text_10">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="172.545469" y="247.42174" transform="rotate(-0 172.545469 247.42174)">Pleura  (21 lines)</text>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-ytick_2">
+     <g id="fig2_lineage_gain-line2d_18"/>
+     <g id="fig2_lineage_gain-text_11">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="172.545469" y="214.66174" transform="rotate(-0 172.545469 214.66174)">Pancreas  (69 lines)</text>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-ytick_3">
+     <g id="fig2_lineage_gain-line2d_19"/>
+     <g id="fig2_lineage_gain-text_12">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="172.545469" y="181.90174" transform="rotate(-0 172.545469 181.90174)">Ovary/Fallopian Tube  (59 lines)</text>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-ytick_4">
+     <g id="fig2_lineage_gain-line2d_20"/>
+     <g id="fig2_lineage_gain-text_13">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="172.545469" y="149.14174" transform="rotate(-0 172.545469 149.14174)">Liver  (25 lines)</text>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-ytick_5">
+     <g id="fig2_lineage_gain-line2d_21"/>
+     <g id="fig2_lineage_gain-text_14">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="172.545469" y="116.38174" transform="rotate(-0 172.545469 116.38174)">Eye  (15 lines)</text>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-ytick_6">
+     <g id="fig2_lineage_gain-line2d_22"/>
+     <g id="fig2_lineage_gain-text_15">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="172.545469" y="83.62174" transform="rotate(-0 172.545469 83.62174)">CNS/Brain  (126 lines)</text>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-ytick_7">
+     <g id="fig2_lineage_gain-line2d_23"/>
+     <g id="fig2_lineage_gain-text_16">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="172.545469" y="50.86174" transform="rotate(-0 172.545469 50.86174)">Breast  (65 lines)</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig2_lineage_gain-line2d_24">
+    <path d="M 256.48443 253.26056 
+L 256.48443 37.04456 
+" clip-path="url(#fig2_lineage_gain-p33af960159)" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-linecap: square"/>
+   </g>
+   <g id="fig2_lineage_gain-line2d_25">
+    <path d="M 502.454975 243.43256 
+L 517.297036 210.67256 
+L 524.530643 177.91256 
+L 525.79997 145.15256 
+L 517.272904 112.39256 
+L 527.336354 79.63256 
+L 547.642366 46.87256 
+" clip-path="url(#fig2_lineage_gain-p33af960159)" style="fill: none"/>
+    <defs>
+     <path id="fig2_lineage_gain-m8056601525" d="M 0 3.5 
+C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
+C 3.131218 1.81853 3.5 0.928211 3.5 0 
+C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
+C 1.81853 -3.131218 0.928211 -3.5 0 -3.5 
+C -0.928211 -3.5 -1.81853 -3.131218 -2.474874 -2.474874 
+C -3.131218 -1.81853 -3.5 -0.928211 -3.5 0 
+C -3.5 0.928211 -3.131218 1.81853 -2.474874 2.474874 
+C -1.81853 3.131218 -0.928211 3.5 0 3.5 
+z
+" style="stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </defs>
+    <g clip-path="url(#fig2_lineage_gain-p33af960159)">
+     <use xlink:href="#fig2_lineage_gain-m8056601525" x="502.454975" y="243.43256" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+     <use xlink:href="#fig2_lineage_gain-m8056601525" x="517.297036" y="210.67256" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+     <use xlink:href="#fig2_lineage_gain-m8056601525" x="524.530643" y="177.91256" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+     <use xlink:href="#fig2_lineage_gain-m8056601525" x="525.79997" y="145.15256" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+     <use xlink:href="#fig2_lineage_gain-m8056601525" x="517.272904" y="112.39256" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+     <use xlink:href="#fig2_lineage_gain-m8056601525" x="527.336354" y="79.63256" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+     <use xlink:href="#fig2_lineage_gain-m8056601525" x="547.642366" y="46.87256" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+    </g>
+   </g>
+   <g id="fig2_lineage_gain-line2d_26">
+    <path d="M 466.358796 243.43256 
+L 490.920564 210.67256 
+L 495.665927 177.91256 
+L 491.977532 145.15256 
+L 496.910585 112.39256 
+L 491.846685 79.63256 
+L 512.436377 46.87256 
+" clip-path="url(#fig2_lineage_gain-p33af960159)" style="fill: none"/>
+    <defs>
+     <path id="fig2_lineage_gain-m0da83ec9e9" d="M -3.5 3.5 
+L 3.5 3.5 
+L 3.5 -3.5 
+L -3.5 -3.5 
+z
+" style="stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#fig2_lineage_gain-p33af960159)">
+     <use xlink:href="#fig2_lineage_gain-m0da83ec9e9" x="466.358796" y="243.43256" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+     <use xlink:href="#fig2_lineage_gain-m0da83ec9e9" x="490.920564" y="210.67256" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+     <use xlink:href="#fig2_lineage_gain-m0da83ec9e9" x="495.665927" y="177.91256" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+     <use xlink:href="#fig2_lineage_gain-m0da83ec9e9" x="491.977532" y="145.15256" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+     <use xlink:href="#fig2_lineage_gain-m0da83ec9e9" x="496.910585" y="112.39256" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+     <use xlink:href="#fig2_lineage_gain-m0da83ec9e9" x="491.846685" y="79.63256" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+     <use xlink:href="#fig2_lineage_gain-m0da83ec9e9" x="512.436377" y="46.87256" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig2_lineage_gain-line2d_27">
+    <path d="M 205.127371 243.43256 
+L 219.192284 210.67256 
+L 210.917474 177.91256 
+L 204.022729 145.15256 
+L 208.512671 112.39256 
+L 205.650814 79.63256 
+L 225.430486 46.87256 
+" clip-path="url(#fig2_lineage_gain-p33af960159)" style="fill: none"/>
+    <defs>
+     <path id="fig2_lineage_gain-m7af2914e6e" d="M -0 4.949747 
+L 4.949747 0 
+L 0 -4.949747 
+L -4.949747 -0 
+z
+" style="stroke: var(--fx-neutral, #8d8c85); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#fig2_lineage_gain-p33af960159)">
+     <use xlink:href="#fig2_lineage_gain-m7af2914e6e" x="205.127371" y="243.43256" style="fill-opacity: 0; stroke: var(--fx-neutral, #8d8c85); stroke-width: 1.4; stroke-linejoin: miter"/>
+     <use xlink:href="#fig2_lineage_gain-m7af2914e6e" x="219.192284" y="210.67256" style="fill-opacity: 0; stroke: var(--fx-neutral, #8d8c85); stroke-width: 1.4; stroke-linejoin: miter"/>
+     <use xlink:href="#fig2_lineage_gain-m7af2914e6e" x="210.917474" y="177.91256" style="fill-opacity: 0; stroke: var(--fx-neutral, #8d8c85); stroke-width: 1.4; stroke-linejoin: miter"/>
+     <use xlink:href="#fig2_lineage_gain-m7af2914e6e" x="204.022729" y="145.15256" style="fill-opacity: 0; stroke: var(--fx-neutral, #8d8c85); stroke-width: 1.4; stroke-linejoin: miter"/>
+     <use xlink:href="#fig2_lineage_gain-m7af2914e6e" x="208.512671" y="112.39256" style="fill-opacity: 0; stroke: var(--fx-neutral, #8d8c85); stroke-width: 1.4; stroke-linejoin: miter"/>
+     <use xlink:href="#fig2_lineage_gain-m7af2914e6e" x="205.650814" y="79.63256" style="fill-opacity: 0; stroke: var(--fx-neutral, #8d8c85); stroke-width: 1.4; stroke-linejoin: miter"/>
+     <use xlink:href="#fig2_lineage_gain-m7af2914e6e" x="225.430486" y="46.87256" style="fill-opacity: 0; stroke: var(--fx-neutral, #8d8c85); stroke-width: 1.4; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig2_lineage_gain-patch_4">
+    <path d="M 176.045469 253.26056 
+L 176.045469 37.04456 
+" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig2_lineage_gain-patch_5">
+    <path d="M 176.045469 253.26056 
+L 588.965469 253.26056 
+" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig2_lineage_gain-text_17">
+    <text style="font-size: 8.5px; fill: var(--fx-muted, #6b6a64)" transform="translate(288.660014 137.158576)">P1 &gt; 0 in 7/7 lineages</text>
+    <text style="font-size: 8.5px; fill: var(--fx-muted, #6b6a64)" transform="translate(288.660014 147.3609)">shaded band: lineage t-interval</text>
+    <text style="font-size: 8.5px; fill: var(--fx-muted, #6b6a64)" transform="translate(288.660014 157.563224)">[0.047, 0.052], exact sign-flip p = 1/128</text>
+   </g>
+   <g id="fig2_lineage_gain-legend_1">
+    <g id="fig2_lineage_gain-line2d_28">
+     <path d="M 184.595469 14.893516 
+L 194.095469 14.893516 
+L 203.595469 14.893516 
+" style="fill: none"/>
+     <g>
+      <use xlink:href="#fig2_lineage_gain-m8056601525" x="194.095469" y="14.893516" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4"/>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-text_18">
+     <text style="font-size: 9.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="211.195469" y="18.218516" transform="rotate(-0 211.195469 18.218516)">P1 (Human1)</text>
+    </g>
+    <g id="fig2_lineage_gain-line2d_29">
+     <path d="M 292.705469 14.893516 
+L 302.205469 14.893516 
+L 311.705469 14.893516 
+" style="fill: none"/>
+     <g>
+      <use xlink:href="#fig2_lineage_gain-m0da83ec9e9" x="302.205469" y="14.893516" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-width: 1.4; stroke-linejoin: miter"/>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-text_19">
+     <text style="font-size: 9.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="319.305469" y="18.218516" transform="rotate(-0 319.305469 18.218516)">P1 built on Human2</text>
+    </g>
+    <g id="fig2_lineage_gain-line2d_30">
+     <path d="M 432.32875 14.893516 
+L 441.82875 14.893516 
+L 451.32875 14.893516 
+" style="fill: none"/>
+     <g>
+      <use xlink:href="#fig2_lineage_gain-m7af2914e6e" x="441.82875" y="14.893516" style="fill-opacity: 0; stroke: var(--fx-neutral, #8d8c85); stroke-width: 1.4; stroke-linejoin: miter"/>
+     </g>
+    </g>
+    <g id="fig2_lineage_gain-text_20">
+     <text style="font-size: 9.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="458.92875" y="18.218516" transform="rotate(-0 458.92875 18.218516)">Generic Human2</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig2_lineage_gain-p33af960159">
+   <rect x="176.045469" y="37.04456" width="412.92" height="216.216"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -25,7 +25,7 @@ The work has four strands:
 
 Whole lineages are held out for testing. The full brief is in [PROMPT.md](PROMPT.md).
 
-*Status as of 2026-10-28, 08:00 UTC: all pre-registered looks done (T1, T2, unseal); REPORT.md complete, non-author review in progress.*
+*Status as of 2026-10-28, 12:30 UTC: complete. All pre-registered looks done (T1, T2, unseal); REPORT.md final (non-author reviewed); post-hoc follow-ups F1–F4 done. A plain-language explainer of the method and how it was found is in [docs/explainer/](docs/explainer/README.md).*
 
 ## Status at a glance
 
@@ -37,9 +37,10 @@ Whole lineages are held out for testing. The full brief is in [PROMPT.md](PROMPT
 | M6 Factorial → **P1** = Human1 + biomass cofactor-pool removal + documented medium | done (validation look 3) |
 | M7 W6 flux information; W7 auto-research → **P2**; test looks **T1, T2**, unseal | done |
 | M8 SBML resource ([resource/](resource/)) | done: 48 models, 2,114 lines, 47/48 pass all gates |
-| M9 [REPORT.md](REPORT.md) | written; non-author review in progress |
+| M9 [REPORT.md](REPORT.md) | done: non-author reviewed, fixes applied |
+| Post-hoc follow-ups F1–F4 (A15) | done: curation and line-specific constraints add nothing; a safer biomass variant costs ≈0.02 ([REPORT §12](REPORT.md)) |
 
-Validation looks used: 6 of 40 (W7: 2 of 20). Test looks: T1, T2 and the unseal; no third look.
+Validation looks used: 7 of 40 (W7: 2 of 20; look 7 is the post-hoc F2 look). Test looks: T1, T2 and the unseal; no third look.
 
 ## Key results
 
@@ -53,12 +54,12 @@ Validation looks used: 6 of 40 (W7: 2 of 20). Test looks: T1, T2 and the unseal;
 | Medium alone − G\* | +0.017 | +0.013 |
 | Gene prior B2 tAP | 0.892 | 0.895 |
 
-- **What P1 is.** Two structural fixes to Human1. (1) The biomass reaction's cofactor pool is removed, which deletes false "essential" calls created by the biomass reaction itself (retinoid/vitamin-D catabolism, carnitine, BH4, CoQ). (2) Each line gets its documented culture medium instead of Ham's.
+- **What P1 is.** Two structural fixes to Human1. (1) The biomass reaction's cofactor pool is removed, which deletes false "essential" calls created by the biomass reaction itself (vitamin-D/retinoid catabolism and carnitine artefacts, but also genuine cofactor genes such as heme, CoQ and BH4 synthesis, which DepMap rarely finds essential). (2) Each line gets its documented culture medium instead of Ham's.
 - **What P1 is not.**
   - It is not line-specific beyond the medium. Shuffled media give about 96–97% of the medium gain (flag W2-SHUF).
   - It does not rank genes across lines better than expression: C3 failed on test (−0.011).
   - It does not beat all three generic + expression baselines.
-  - Under serum, the mevalonate-core genes lose essentiality (flag W3-MEV); an exploratory artefact-only variant fixes this and keeps 57% of the gain.
+  - Under serum, the mevalonate-core genes lose essentiality (flag W3-MEV); a safer artefact-only biomass variant fixes this; on validation it gains +0.031 instead of +0.052 (post hoc, REPORT §12).
 - **Context-specific models** (GIMME, FASTCORE, E-Flux, thresholding, CORDA, label-calibrated presence) all lose to the generic model on training lineages. On top of P1's biomass edit they add < 0.005, so they were not selected.
 - **GPR curation** as pre-registered loses 0.029. Its paralog AND→OR merges joined non-interchangeable RNA polymerase subunits.
 - **Flux states (W6)** add no information beyond omics + medium for subtypes, drug response or metabolomics; the positive control is recovered.

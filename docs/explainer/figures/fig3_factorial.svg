@@ -1,0 +1,666 @@
+<svg class="fx" role="img" aria-labelledby="fig3_factorial-t fig3_factorial-d" xmlns:xlink="http://www.w3.org/1999/xlink" width="539.159727pt" height="283.774922pt" viewBox="0 0 539.159727 283.774922" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="fig3_factorial-t">Biomass by medium factorial</title><desc id="fig3_factorial-d">Each fix helps on its own and the two add up (slightly more than additive on training: +0.003). The pattern replicates on validation; on test the medium fix alone gives +0.013 and both give +0.050.</desc><!--FX-STYLE--><style>.fx{--fx-ink:#1d1d1b;--fx-muted:#6b6a64;--fx-grid:#e3e2dc;--fx-s1:#2a78d6;--fx-s2:#eb6834;--fx-s3:#1baf7a;--fx-neutral:#8d8c85;--fx-band:#d7e6f8;--fx-stall:#efe3d6}@media (prefers-color-scheme: dark){.fx{--fx-ink:#ecebe6;--fx-muted:#a3a29a;--fx-grid:#3a3a37;--fx-s1:#3987e5;--fx-s2:#d95926;--fx-s3:#199e70;--fx-neutral:#8a8983;--fx-band:#1f3550;--fx-stall:#3d3127}}.fx text{font-family:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif}</style><!--/FX-STYLE-->
+ 
+ <defs>
+  <style type="text/css">.fx *{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig3_factorial-figure_1">
+  <g id="fig3_factorial-patch_1">
+   <path d="M 0 283.774922 
+L 539.159727 283.774922 
+L 539.159727 0 
+L 0 0 
+L 0 283.774922 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig3_factorial-axes_1">
+   <g id="fig3_factorial-patch_2">
+    <path d="M 52.079727 244.37 
+L 193.220903 244.37 
+L 193.220903 50.33 
+L 52.079727 50.33 
+L 52.079727 244.37 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig3_factorial-matplotlib.axis_1">
+    <g id="fig3_factorial-xtick_1">
+     <g id="fig3_factorial-line2d_1">
+      <defs>
+       <path id="fig3_factorial-m51909d080f" d="M 0 0 
+L 0 3.5 
+" style="stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig3_factorial-m51909d080f" x="83.061936" y="244.37" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig3_factorial-text_1">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="83.061936" y="259.347539" transform="rotate(-0 83.061936 259.347539)">Ham's</text>
+     </g>
+    </g>
+    <g id="fig3_factorial-xtick_2">
+     <g id="fig3_factorial-line2d_2">
+      <g>
+       <use xlink:href="#fig3_factorial-m51909d080f" x="151.91129" y="244.37" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig3_factorial-text_2">
+      <text style="font-size: 10.5px; fill: var(--fx-ink, #1d1d1b)" transform="translate(118.859259 260.399385)">documented</text>
+      <text style="font-size: 10.5px; fill: var(--fx-ink, #1d1d1b)" transform="translate(129.278869 273.001436)">+ serum</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig3_factorial-matplotlib.axis_2">
+    <g id="fig3_factorial-ytick_1">
+     <g id="fig3_factorial-line2d_3">
+      <path d="M 52.079727 232.2425 
+L 193.220903 232.2425 
+" clip-path="url(#fig3_factorial-p141a7f2678)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_4">
+      <defs>
+       <path id="fig3_factorial-m2d4ddb927c" d="M 0 0 
+L -3.5 0 
+" style="stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="52.079727" y="232.2425" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig3_factorial-text_3">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="45.079727" y="236.23127" transform="rotate(-0 45.079727 236.23127)">0.00</text>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_2">
+     <g id="fig3_factorial-line2d_5">
+      <path d="M 52.079727 201.92375 
+L 193.220903 201.92375 
+" clip-path="url(#fig3_factorial-p141a7f2678)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_6">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="52.079727" y="201.92375" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig3_factorial-text_4">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="45.079727" y="205.91252" transform="rotate(-0 45.079727 205.91252)">0.01</text>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_3">
+     <g id="fig3_factorial-line2d_7">
+      <path d="M 52.079727 171.605 
+L 193.220903 171.605 
+" clip-path="url(#fig3_factorial-p141a7f2678)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_8">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="52.079727" y="171.605" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig3_factorial-text_5">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="45.079727" y="175.59377" transform="rotate(-0 45.079727 175.59377)">0.02</text>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_4">
+     <g id="fig3_factorial-line2d_9">
+      <path d="M 52.079727 141.28625 
+L 193.220903 141.28625 
+" clip-path="url(#fig3_factorial-p141a7f2678)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_10">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="52.079727" y="141.28625" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig3_factorial-text_6">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="45.079727" y="145.27502" transform="rotate(-0 45.079727 145.27502)">0.03</text>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_5">
+     <g id="fig3_factorial-line2d_11">
+      <path d="M 52.079727 110.9675 
+L 193.220903 110.9675 
+" clip-path="url(#fig3_factorial-p141a7f2678)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_12">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="52.079727" y="110.9675" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig3_factorial-text_7">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="45.079727" y="114.95627" transform="rotate(-0 45.079727 114.95627)">0.04</text>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_6">
+     <g id="fig3_factorial-line2d_13">
+      <path d="M 52.079727 80.64875 
+L 193.220903 80.64875 
+" clip-path="url(#fig3_factorial-p141a7f2678)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_14">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="52.079727" y="80.64875" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig3_factorial-text_8">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="45.079727" y="84.63752" transform="rotate(-0 45.079727 84.63752)">0.05</text>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_7">
+     <g id="fig3_factorial-line2d_15">
+      <path d="M 52.079727 50.33 
+L 193.220903 50.33 
+" clip-path="url(#fig3_factorial-p141a7f2678)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_16">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="52.079727" y="50.33" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig3_factorial-text_9">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="45.079727" y="54.31877" transform="rotate(-0 45.079727 54.31877)">0.06</text>
+     </g>
+    </g>
+    <g id="fig3_factorial-text_10">
+     <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="15.178359" y="147.35" transform="rotate(-90 15.178359 147.35)">change in tAP vs generic Human1</text>
+    </g>
+   </g>
+   <g id="fig3_factorial-line2d_17">
+    <path d="M 83.061936 232.2425 
+L 151.91129 183.619859 
+" clip-path="url(#fig3_factorial-p141a7f2678)" style="fill: none; stroke: var(--fx-neutral, #8d8c85); stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="fig3_factorial-m456cfb3d50" d="M 0 3.5 
+C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
+C 3.131218 1.81853 3.5 0.928211 3.5 0 
+C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
+C 1.81853 -3.131218 0.928211 -3.5 0 -3.5 
+C -0.928211 -3.5 -1.81853 -3.131218 -2.474874 -2.474874 
+C -3.131218 -1.81853 -3.5 -0.928211 -3.5 0 
+C -3.5 0.928211 -3.131218 1.81853 -2.474874 2.474874 
+C -1.81853 3.131218 -0.928211 3.5 0 3.5 
+z
+" style="stroke: var(--fx-neutral, #8d8c85)"/>
+    </defs>
+    <g clip-path="url(#fig3_factorial-p141a7f2678)">
+     <use xlink:href="#fig3_factorial-m456cfb3d50" x="83.061936" y="232.2425" style="fill: var(--fx-neutral, #8d8c85); stroke: var(--fx-neutral, #8d8c85)"/>
+     <use xlink:href="#fig3_factorial-m456cfb3d50" x="151.91129" y="183.619859" style="fill: var(--fx-neutral, #8d8c85); stroke: var(--fx-neutral, #8d8c85)"/>
+    </g>
+   </g>
+   <g id="fig3_factorial-line2d_18">
+    <path d="M 83.061936 128.341651 
+L 151.91129 70.452143 
+" clip-path="url(#fig3_factorial-p141a7f2678)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="fig3_factorial-m93d9f2b7f4" d="M 0 3.5 
+C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
+C 3.131218 1.81853 3.5 0.928211 3.5 0 
+C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
+C 1.81853 -3.131218 0.928211 -3.5 0 -3.5 
+C -0.928211 -3.5 -1.81853 -3.131218 -2.474874 -2.474874 
+C -3.131218 -1.81853 -3.5 -0.928211 -3.5 0 
+C -3.5 0.928211 -3.131218 1.81853 -2.474874 2.474874 
+C -1.81853 3.131218 -0.928211 3.5 0 3.5 
+z
+" style="stroke: var(--fx-s1, #2a78d6)"/>
+    </defs>
+    <g clip-path="url(#fig3_factorial-p141a7f2678)">
+     <use xlink:href="#fig3_factorial-m93d9f2b7f4" x="83.061936" y="128.341651" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6)"/>
+     <use xlink:href="#fig3_factorial-m93d9f2b7f4" x="151.91129" y="70.452143" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6)"/>
+    </g>
+   </g>
+   <g id="fig3_factorial-line2d_19">
+    <path d="M 151.91129 79.71901 
+" clip-path="url(#fig3_factorial-p141a7f2678)" style="fill: none"/>
+    <defs>
+     <path id="fig3_factorial-m100e1747c7" d="M 0 4 
+C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
+C 3.578535 2.078319 4 1.060812 4 0 
+C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
+C 2.078319 -3.578535 1.060812 -4 0 -4 
+C -1.060812 -4 -2.078319 -3.578535 -2.828427 -2.828427 
+C -3.578535 -2.078319 -4 -1.060812 -4 0 
+C -4 1.060812 -3.578535 2.078319 -2.828427 2.828427 
+C -2.078319 3.578535 -1.060812 4 0 4 
+z
+" style="stroke: var(--fx-muted, #6b6a64); stroke-width: 1.3"/>
+    </defs>
+    <g clip-path="url(#fig3_factorial-p141a7f2678)">
+     <use xlink:href="#fig3_factorial-m100e1747c7" x="151.91129" y="79.71901" style="fill-opacity: 0; stroke: var(--fx-muted, #6b6a64); stroke-width: 1.3"/>
+    </g>
+   </g>
+   <g id="fig3_factorial-line2d_20">
+    <path d="M 151.91129 186.028438 
+L 151.91129 181.179673 
+" clip-path="url(#fig3_factorial-p141a7f2678)" style="fill: none; stroke: var(--fx-neutral, #8d8c85); stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig3_factorial-line2d_21">
+    <path d="M 151.91129 73.71432 
+L 151.91129 66.884711 
+" clip-path="url(#fig3_factorial-p141a7f2678)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig3_factorial-patch_3">
+    <path d="M 52.079727 244.37 
+L 52.079727 50.33 
+" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig3_factorial-patch_4">
+    <path d="M 52.079727 244.37 
+L 193.220903 244.37 
+" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig3_factorial-text_11">
+    <text style="font-size: 9px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="75.061936" y="130.679542" transform="rotate(-0 75.061936 130.679542)">+0.034</text>
+   </g>
+   <g id="fig3_factorial-text_12">
+    <text style="font-size: 9px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="159.91129" y="185.957749" transform="rotate(-0 159.91129 185.957749)">+0.016</text>
+   </g>
+   <g id="fig3_factorial-text_13">
+    <text style="font-size: 9px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="159.91129" y="72.790034" transform="rotate(-0 159.91129 72.790034)">+0.053</text>
+   </g>
+   <g id="fig3_factorial-text_14">
+    <text style="font-size: 10.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="52.079727" y="44.33" transform="rotate(-0 52.079727 44.33)">Training</text>
+   </g>
+  </g>
+  <g id="fig3_factorial-axes_2">
+   <g id="fig3_factorial-patch_5">
+    <path d="M 221.449138 244.37 
+L 362.590315 244.37 
+L 362.590315 50.33 
+L 221.449138 50.33 
+L 221.449138 244.37 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig3_factorial-matplotlib.axis_3">
+    <g id="fig3_factorial-xtick_3">
+     <g id="fig3_factorial-line2d_22">
+      <g>
+       <use xlink:href="#fig3_factorial-m51909d080f" x="252.431348" y="244.37" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig3_factorial-text_15">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="252.431348" y="259.347539" transform="rotate(-0 252.431348 259.347539)">Ham's</text>
+     </g>
+    </g>
+    <g id="fig3_factorial-xtick_4">
+     <g id="fig3_factorial-line2d_23">
+      <g>
+       <use xlink:href="#fig3_factorial-m51909d080f" x="321.280702" y="244.37" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig3_factorial-text_16">
+      <text style="font-size: 10.5px; fill: var(--fx-ink, #1d1d1b)" transform="translate(288.228671 260.399385)">documented</text>
+      <text style="font-size: 10.5px; fill: var(--fx-ink, #1d1d1b)" transform="translate(298.64828 273.001436)">+ serum</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig3_factorial-matplotlib.axis_4">
+    <g id="fig3_factorial-ytick_8">
+     <g id="fig3_factorial-line2d_24">
+      <path d="M 221.449138 232.2425 
+L 362.590315 232.2425 
+" clip-path="url(#fig3_factorial-p1d75edb5f4)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_25">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="221.449138" y="232.2425" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_9">
+     <g id="fig3_factorial-line2d_26">
+      <path d="M 221.449138 201.92375 
+L 362.590315 201.92375 
+" clip-path="url(#fig3_factorial-p1d75edb5f4)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_27">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="221.449138" y="201.92375" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_10">
+     <g id="fig3_factorial-line2d_28">
+      <path d="M 221.449138 171.605 
+L 362.590315 171.605 
+" clip-path="url(#fig3_factorial-p1d75edb5f4)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_29">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="221.449138" y="171.605" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_11">
+     <g id="fig3_factorial-line2d_30">
+      <path d="M 221.449138 141.28625 
+L 362.590315 141.28625 
+" clip-path="url(#fig3_factorial-p1d75edb5f4)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_31">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="221.449138" y="141.28625" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_12">
+     <g id="fig3_factorial-line2d_32">
+      <path d="M 221.449138 110.9675 
+L 362.590315 110.9675 
+" clip-path="url(#fig3_factorial-p1d75edb5f4)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_33">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="221.449138" y="110.9675" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_13">
+     <g id="fig3_factorial-line2d_34">
+      <path d="M 221.449138 80.64875 
+L 362.590315 80.64875 
+" clip-path="url(#fig3_factorial-p1d75edb5f4)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_35">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="221.449138" y="80.64875" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_14">
+     <g id="fig3_factorial-line2d_36">
+      <path d="M 221.449138 50.33 
+L 362.590315 50.33 
+" clip-path="url(#fig3_factorial-p1d75edb5f4)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_37">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="221.449138" y="50.33" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="fig3_factorial-line2d_38">
+    <path d="M 252.431348 232.2425 
+L 321.280702 180.334045 
+" clip-path="url(#fig3_factorial-p1d75edb5f4)" style="fill: none; stroke: var(--fx-neutral, #8d8c85); stroke-width: 2; stroke-linecap: square"/>
+    <g clip-path="url(#fig3_factorial-p1d75edb5f4)">
+     <use xlink:href="#fig3_factorial-m456cfb3d50" x="252.431348" y="232.2425" style="fill: var(--fx-neutral, #8d8c85); stroke: var(--fx-neutral, #8d8c85)"/>
+     <use xlink:href="#fig3_factorial-m456cfb3d50" x="321.280702" y="180.334045" style="fill: var(--fx-neutral, #8d8c85); stroke: var(--fx-neutral, #8d8c85)"/>
+    </g>
+   </g>
+   <g id="fig3_factorial-line2d_39">
+    <path d="M 252.431348 134.723256 
+L 321.280702 75.359784 
+" clip-path="url(#fig3_factorial-p1d75edb5f4)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 2; stroke-linecap: square"/>
+    <g clip-path="url(#fig3_factorial-p1d75edb5f4)">
+     <use xlink:href="#fig3_factorial-m93d9f2b7f4" x="252.431348" y="134.723256" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6)"/>
+     <use xlink:href="#fig3_factorial-m93d9f2b7f4" x="321.280702" y="75.359784" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6)"/>
+    </g>
+   </g>
+   <g id="fig3_factorial-line2d_40">
+    <path d="M 321.280702 82.814801 
+" clip-path="url(#fig3_factorial-p1d75edb5f4)" style="fill: none"/>
+    <g clip-path="url(#fig3_factorial-p1d75edb5f4)">
+     <use xlink:href="#fig3_factorial-m100e1747c7" x="321.280702" y="82.814801" style="fill-opacity: 0; stroke: var(--fx-muted, #6b6a64); stroke-width: 1.3"/>
+    </g>
+   </g>
+   <g id="fig3_factorial-line2d_41">
+    <path d="M 321.280702 184.830723 
+L 321.280702 175.929246 
+" clip-path="url(#fig3_factorial-p1d75edb5f4)" style="fill: none; stroke: var(--fx-neutral, #8d8c85); stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig3_factorial-line2d_42">
+    <path d="M 321.280702 81.017441 
+L 321.280702 69.260295 
+" clip-path="url(#fig3_factorial-p1d75edb5f4)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig3_factorial-patch_6">
+    <path d="M 221.449138 244.37 
+L 221.449138 50.33 
+" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig3_factorial-patch_7">
+    <path d="M 221.449138 244.37 
+L 362.590315 244.37 
+" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig3_factorial-text_17">
+    <text style="font-size: 9px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="244.431348" y="137.061146" transform="rotate(-0 244.431348 137.061146)">+0.032</text>
+   </g>
+   <g id="fig3_factorial-text_18">
+    <text style="font-size: 9px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="329.280702" y="182.671936" transform="rotate(-0 329.280702 182.671936)">+0.017</text>
+   </g>
+   <g id="fig3_factorial-text_19">
+    <text style="font-size: 9px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="329.280702" y="77.697674" transform="rotate(-0 329.280702 77.697674)">+0.052</text>
+   </g>
+   <g id="fig3_factorial-text_20">
+    <text style="font-size: 10.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="221.449138" y="44.33" transform="rotate(-0 221.449138 44.33)">Validation</text>
+   </g>
+  </g>
+  <g id="fig3_factorial-axes_3">
+   <g id="fig3_factorial-patch_8">
+    <path d="M 390.81855 244.37 
+L 531.959727 244.37 
+L 531.959727 50.33 
+L 390.81855 50.33 
+L 390.81855 244.37 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig3_factorial-matplotlib.axis_5">
+    <g id="fig3_factorial-xtick_5">
+     <g id="fig3_factorial-line2d_43">
+      <g>
+       <use xlink:href="#fig3_factorial-m51909d080f" x="421.80076" y="244.37" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig3_factorial-text_21">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="421.80076" y="259.347539" transform="rotate(-0 421.80076 259.347539)">Ham's</text>
+     </g>
+    </g>
+    <g id="fig3_factorial-xtick_6">
+     <g id="fig3_factorial-line2d_44">
+      <g>
+       <use xlink:href="#fig3_factorial-m51909d080f" x="490.650114" y="244.37" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig3_factorial-text_22">
+      <text style="font-size: 10.5px; fill: var(--fx-ink, #1d1d1b)" transform="translate(457.598083 260.399385)">documented</text>
+      <text style="font-size: 10.5px; fill: var(--fx-ink, #1d1d1b)" transform="translate(468.017692 273.001436)">+ serum</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig3_factorial-matplotlib.axis_6">
+    <g id="fig3_factorial-ytick_15">
+     <g id="fig3_factorial-line2d_45">
+      <path d="M 390.81855 232.2425 
+L 531.959727 232.2425 
+" clip-path="url(#fig3_factorial-p7325850bdb)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_46">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="390.81855" y="232.2425" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_16">
+     <g id="fig3_factorial-line2d_47">
+      <path d="M 390.81855 201.92375 
+L 531.959727 201.92375 
+" clip-path="url(#fig3_factorial-p7325850bdb)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_48">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="390.81855" y="201.92375" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_17">
+     <g id="fig3_factorial-line2d_49">
+      <path d="M 390.81855 171.605 
+L 531.959727 171.605 
+" clip-path="url(#fig3_factorial-p7325850bdb)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_50">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="390.81855" y="171.605" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_18">
+     <g id="fig3_factorial-line2d_51">
+      <path d="M 390.81855 141.28625 
+L 531.959727 141.28625 
+" clip-path="url(#fig3_factorial-p7325850bdb)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_52">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="390.81855" y="141.28625" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_19">
+     <g id="fig3_factorial-line2d_53">
+      <path d="M 390.81855 110.9675 
+L 531.959727 110.9675 
+" clip-path="url(#fig3_factorial-p7325850bdb)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_54">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="390.81855" y="110.9675" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_20">
+     <g id="fig3_factorial-line2d_55">
+      <path d="M 390.81855 80.64875 
+L 531.959727 80.64875 
+" clip-path="url(#fig3_factorial-p7325850bdb)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_56">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="390.81855" y="80.64875" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig3_factorial-ytick_21">
+     <g id="fig3_factorial-line2d_57">
+      <path d="M 390.81855 50.33 
+L 531.959727 50.33 
+" clip-path="url(#fig3_factorial-p7325850bdb)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig3_factorial-line2d_58">
+      <g>
+       <use xlink:href="#fig3_factorial-m2d4ddb927c" x="390.81855" y="50.33" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="fig3_factorial-line2d_59">
+    <path d="M 421.80076 232.2425 
+L 490.650114 193.62945 
+" clip-path="url(#fig3_factorial-p7325850bdb)" style="fill: none; stroke: var(--fx-neutral, #8d8c85); stroke-width: 2; stroke-linecap: square"/>
+    <g clip-path="url(#fig3_factorial-p7325850bdb)">
+     <use xlink:href="#fig3_factorial-m456cfb3d50" x="421.80076" y="232.2425" style="fill: var(--fx-neutral, #8d8c85); stroke: var(--fx-neutral, #8d8c85)"/>
+     <use xlink:href="#fig3_factorial-m456cfb3d50" x="490.650114" y="193.62945" style="fill: var(--fx-neutral, #8d8c85); stroke: var(--fx-neutral, #8d8c85)"/>
+    </g>
+   </g>
+   <g id="fig3_factorial-line2d_60">
+    <path d="M 490.650114 81.453713 
+" clip-path="url(#fig3_factorial-p7325850bdb)" style="fill: none"/>
+    <g clip-path="url(#fig3_factorial-p7325850bdb)">
+     <use xlink:href="#fig3_factorial-m93d9f2b7f4" x="490.650114" y="81.453713" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6)"/>
+    </g>
+   </g>
+   <g id="fig3_factorial-line2d_61">
+    <path d="M 421.80076 232.2425 
+" clip-path="url(#fig3_factorial-p7325850bdb)" style="fill: none"/>
+   </g>
+   <g id="fig3_factorial-line2d_62">
+    <path d="M 490.650114 197.393522 
+L 490.650114 189.839303 
+" clip-path="url(#fig3_factorial-p7325850bdb)" style="fill: none; stroke: var(--fx-neutral, #8d8c85); stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig3_factorial-line2d_63">
+    <path d="M 490.650114 86.266814 
+L 490.650114 77.007771 
+" clip-path="url(#fig3_factorial-p7325850bdb)" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig3_factorial-patch_9">
+    <path d="M 390.81855 244.37 
+L 390.81855 50.33 
+" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig3_factorial-patch_10">
+    <path d="M 390.81855 244.37 
+L 531.959727 244.37 
+" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig3_factorial-text_23">
+    <text style="font-size: 8.5px; fill: var(--fx-muted, #6b6a64)" transform="translate(423.177747 100.765176)">biomass fix alone</text>
+    <text style="font-size: 8.5px; fill: var(--fx-muted, #6b6a64)" transform="translate(423.177747 110.9675)">not scored on test</text>
+   </g>
+   <g id="fig3_factorial-text_24">
+    <text style="font-size: 9px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="498.650114" y="195.96734" transform="rotate(-0 498.650114 195.96734)">+0.013</text>
+   </g>
+   <g id="fig3_factorial-text_25">
+    <text style="font-size: 9px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="498.650114" y="83.791603" transform="rotate(-0 498.650114 83.791603)">+0.050</text>
+   </g>
+   <g id="fig3_factorial-text_26">
+    <text style="font-size: 10.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="390.81855" y="44.33" transform="rotate(-0 390.81855 44.33)">Test</text>
+   </g>
+  </g>
+  <g id="fig3_factorial-legend_1">
+   <g id="fig3_factorial-line2d_64">
+    <path d="M 20.381727 14.893516 
+L 29.881727 14.893516 
+L 39.381727 14.893516 
+" style="fill: none; stroke: var(--fx-neutral, #8d8c85); stroke-width: 2; stroke-linecap: square"/>
+    <g>
+     <use xlink:href="#fig3_factorial-m456cfb3d50" x="29.881727" y="14.893516" style="fill: var(--fx-neutral, #8d8c85); stroke: var(--fx-neutral, #8d8c85)"/>
+    </g>
+   </g>
+   <g id="fig3_factorial-text_27">
+    <text style="font-size: 9.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="46.981727" y="18.218516" transform="rotate(-0 46.981727 18.218516)">biomass as released</text>
+   </g>
+   <g id="fig3_factorial-line2d_65">
+    <path d="M 162.92032 14.893516 
+L 172.42032 14.893516 
+L 181.92032 14.893516 
+" style="fill: none; stroke: var(--fx-s1, #2a78d6); stroke-width: 2; stroke-linecap: square"/>
+    <g>
+     <use xlink:href="#fig3_factorial-m93d9f2b7f4" x="172.42032" y="14.893516" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6)"/>
+    </g>
+   </g>
+   <g id="fig3_factorial-text_28">
+    <text style="font-size: 9.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="189.52032" y="18.218516" transform="rotate(-0 189.52032 18.218516)">cofactor pool removed</text>
+   </g>
+   <g id="fig3_factorial-line2d_66">
+    <path d="M 315.830242 14.893516 
+L 325.330242 14.893516 
+L 334.830242 14.893516 
+" style="fill: none"/>
+    <g>
+     <use xlink:href="#fig3_factorial-m100e1747c7" x="325.330242" y="14.893516" style="fill-opacity: 0; stroke: var(--fx-muted, #6b6a64); stroke-width: 1.3"/>
+    </g>
+   </g>
+   <g id="fig3_factorial-text_29">
+    <text style="font-size: 9.5px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="342.430242" y="18.218516" transform="rotate(-0 342.430242 18.218516)">additive prediction</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig3_factorial-p141a7f2678">
+   <rect x="52.079727" y="50.33" width="141.141176" height="194.04"/>
+  </clipPath>
+  <clipPath id="fig3_factorial-p1d75edb5f4">
+   <rect x="221.449138" y="50.33" width="141.141176" height="194.04"/>
+  </clipPath>
+  <clipPath id="fig3_factorial-p7325850bdb">
+   <rect x="390.81855" y="50.33" width="141.141176" height="194.04"/>
+  </clipPath>
+ </defs>
+</svg>

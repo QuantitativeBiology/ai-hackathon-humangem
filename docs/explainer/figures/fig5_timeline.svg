@@ -1,0 +1,771 @@
+<svg class="fx" role="img" aria-labelledby="fig5_timeline-t fig5_timeline-d" xmlns:xlink="http://www.w3.org/1999/xlink" width="702.665887pt" height="281.705722pt" viewBox="0 0 702.665887 281.705722" xmlns="http://www.w3.org/2000/svg" version="1.1"><title id="fig5_timeline-t">Project timeline</title><desc id="fig5_timeline-d">Two and a half days of work. Data-integration levers failed first (day 2 evening); the biomass fix and the medium fix were found on day 3 after midnight; usage-limit stalls and a wait for the user are shaded.</desc><!--FX-STYLE--><style>.fx{--fx-ink:#1d1d1b;--fx-muted:#6b6a64;--fx-grid:#e3e2dc;--fx-s1:#2a78d6;--fx-s2:#eb6834;--fx-s3:#1baf7a;--fx-neutral:#8d8c85;--fx-band:#d7e6f8;--fx-stall:#efe3d6}@media (prefers-color-scheme: dark){.fx{--fx-ink:#ecebe6;--fx-muted:#a3a29a;--fx-grid:#3a3a37;--fx-s1:#3987e5;--fx-s2:#d95926;--fx-s3:#199e70;--fx-neutral:#8a8983;--fx-band:#1f3550;--fx-stall:#3d3127}}.fx text{font-family:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif}</style><!--/FX-STYLE-->
+ 
+ <defs>
+  <style type="text/css">.fx *{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig5_timeline-figure_1">
+  <g id="fig5_timeline-patch_1">
+   <path d="M 0 281.705722 
+L 702.665887 281.705722 
+L 702.665887 0 
+L 0 0 
+L 0 281.705722 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig5_timeline-axes_1">
+   <g id="fig5_timeline-patch_2">
+    <path d="M 117.043672 242.3008 
+L 686.203672 242.3008 
+L 686.203672 42.7168 
+L 117.043672 42.7168 
+L 117.043672 242.3008 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig5_timeline-patch_3">
+    <path d="M 243.784455 242.3008 
+L 261.778517 242.3008 
+L 261.778517 42.7168 
+L 243.784455 42.7168 
+z
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: var(--fx-stall, #efe3d6)"/>
+   </g>
+   <g id="fig5_timeline-patch_4">
+    <path d="M 296.006352 242.3008 
+L 348.032662 242.3008 
+L 348.032662 42.7168 
+L 296.006352 42.7168 
+z
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: var(--fx-stall, #efe3d6)"/>
+   </g>
+   <g id="fig5_timeline-patch_5">
+    <path d="M 402.992785 242.3008 
+L 480.836662 242.3008 
+L 480.836662 42.7168 
+L 402.992785 42.7168 
+z
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: var(--fx-stall, #efe3d6)"/>
+   </g>
+   <g id="fig5_timeline-patch_6">
+    <path d="M 537.948249 242.3008 
+L 539.51295 242.3008 
+L 539.51295 42.7168 
+L 537.948249 42.7168 
+z
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: var(--fx-stall, #efe3d6)"/>
+   </g>
+   <g id="fig5_timeline-patch_7">
+    <path d="M 585.280455 242.3008 
+L 598.189239 242.3008 
+L 598.189239 42.7168 
+L 585.280455 42.7168 
+z
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: var(--fx-stall, #efe3d6)"/>
+   </g>
+   <g id="fig5_timeline-line2d_1">
+    <path d="M 163.006765 218.003617 
+L 163.006765 69.790803 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="fig5_timeline-line2d_2">
+    <path d="M 268.037321 218.003617 
+L 268.037321 69.790803 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="fig5_timeline-line2d_3">
+    <path d="M 489.833692 218.003617 
+L 489.833692 69.790803 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="fig5_timeline-line2d_4">
+    <path d="M 500.7866 218.003617 
+L 500.7866 69.790803 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="fig5_timeline-line2d_5">
+    <path d="M 545.380579 218.003617 
+L 545.380579 69.790803 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="fig5_timeline-line2d_6">
+    <path d="M 560.245239 218.003617 
+L 560.245239 69.790803 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="fig5_timeline-line2d_7">
+    <path d="M 595.255424 218.003617 
+L 595.255424 61.113238 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="fig5_timeline-line2d_8">
+    <path d="M 590.365734 218.003617 
+L 590.365734 78.468369 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="fig5_timeline-line2d_9">
+    <path d="M 662.733156 218.003617 
+L 662.733156 69.790803 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="fig5_timeline-matplotlib.axis_1">
+    <g id="fig5_timeline-xtick_1">
+     <g id="fig5_timeline-line2d_10">
+      <path d="M 117.043672 242.3008 
+L 117.043672 42.7168 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig5_timeline-line2d_11">
+      <defs>
+       <path id="fig5_timeline-m51909d080f" d="M 0 0 
+L 0 3.5 
+" style="stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig5_timeline-m51909d080f" x="117.043672" y="242.3008" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig5_timeline-text_1">
+      <text style="font-size: 10.5px; fill: var(--fx-ink, #1d1d1b)" transform="translate(102.377305 258.330185)">day 1</text>
+      <text style="font-size: 10.5px; fill: var(--fx-ink, #1d1d1b)" transform="translate(101.913828 270.932236)">12:00</text>
+     </g>
+    </g>
+    <g id="fig5_timeline-xtick_2">
+     <g id="fig5_timeline-line2d_12">
+      <path d="M 187.455218 242.3008 
+L 187.455218 42.7168 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig5_timeline-line2d_13">
+      <g>
+       <use xlink:href="#fig5_timeline-m51909d080f" x="187.455218" y="242.3008" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig5_timeline-text_2">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="187.455218" y="257.278339" transform="rotate(-0 187.455218 257.278339)">18:00</text>
+     </g>
+    </g>
+    <g id="fig5_timeline-xtick_3">
+     <g id="fig5_timeline-line2d_14">
+      <path d="M 257.866765 242.3008 
+L 257.866765 42.7168 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig5_timeline-line2d_15">
+      <g>
+       <use xlink:href="#fig5_timeline-m51909d080f" x="257.866765" y="242.3008" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig5_timeline-text_3">
+      <text style="font-size: 10.5px; fill: var(--fx-ink, #1d1d1b)" transform="translate(243.200397 258.330185)">day 2</text>
+      <text style="font-size: 10.5px; fill: var(--fx-ink, #1d1d1b)" transform="translate(242.736921 270.932236)">00:00</text>
+     </g>
+    </g>
+    <g id="fig5_timeline-xtick_4">
+     <g id="fig5_timeline-line2d_16">
+      <path d="M 328.278311 242.3008 
+L 328.278311 42.7168 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig5_timeline-line2d_17">
+      <g>
+       <use xlink:href="#fig5_timeline-m51909d080f" x="328.278311" y="242.3008" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig5_timeline-text_4">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="328.278311" y="257.278339" transform="rotate(-0 328.278311 257.278339)">06:00</text>
+     </g>
+    </g>
+    <g id="fig5_timeline-xtick_5">
+     <g id="fig5_timeline-line2d_18">
+      <path d="M 398.689857 242.3008 
+L 398.689857 42.7168 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig5_timeline-line2d_19">
+      <g>
+       <use xlink:href="#fig5_timeline-m51909d080f" x="398.689857" y="242.3008" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig5_timeline-text_5">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="398.689857" y="257.278339" transform="rotate(-0 398.689857 257.278339)">12:00</text>
+     </g>
+    </g>
+    <g id="fig5_timeline-xtick_6">
+     <g id="fig5_timeline-line2d_20">
+      <path d="M 469.101404 242.3008 
+L 469.101404 42.7168 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig5_timeline-line2d_21">
+      <g>
+       <use xlink:href="#fig5_timeline-m51909d080f" x="469.101404" y="242.3008" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig5_timeline-text_6">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="469.101404" y="257.278339" transform="rotate(-0 469.101404 257.278339)">18:00</text>
+     </g>
+    </g>
+    <g id="fig5_timeline-xtick_7">
+     <g id="fig5_timeline-line2d_22">
+      <path d="M 539.51295 242.3008 
+L 539.51295 42.7168 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig5_timeline-line2d_23">
+      <g>
+       <use xlink:href="#fig5_timeline-m51909d080f" x="539.51295" y="242.3008" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig5_timeline-text_7">
+      <text style="font-size: 10.5px; fill: var(--fx-ink, #1d1d1b)" transform="translate(524.846583 258.330185)">day 3</text>
+      <text style="font-size: 10.5px; fill: var(--fx-ink, #1d1d1b)" transform="translate(524.383106 270.932236)">00:00</text>
+     </g>
+    </g>
+    <g id="fig5_timeline-xtick_8">
+     <g id="fig5_timeline-line2d_24">
+      <path d="M 609.924497 242.3008 
+L 609.924497 42.7168 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig5_timeline-line2d_25">
+      <g>
+       <use xlink:href="#fig5_timeline-m51909d080f" x="609.924497" y="242.3008" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig5_timeline-text_8">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="609.924497" y="257.278339" transform="rotate(-0 609.924497 257.278339)">06:00</text>
+     </g>
+    </g>
+    <g id="fig5_timeline-xtick_9">
+     <g id="fig5_timeline-line2d_26">
+      <path d="M 680.336043 242.3008 
+L 680.336043 42.7168 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none; stroke: var(--fx-grid, #e3e2dc); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig5_timeline-line2d_27">
+      <g>
+       <use xlink:href="#fig5_timeline-m51909d080f" x="680.336043" y="242.3008" style="fill: var(--fx-muted, #6b6a64); stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig5_timeline-text_9">
+      <text style="font-size: 10.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="680.336043" y="257.278339" transform="rotate(-0 680.336043 257.278339)">12:00</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig5_timeline-matplotlib.axis_2">
+    <g id="fig5_timeline-ytick_1">
+     <g id="fig5_timeline-line2d_28"/>
+     <g id="fig5_timeline-text_10">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="113.543672" y="206.37318" transform="rotate(-0 113.543672 206.37318)">Held-out looks</text>
+     </g>
+    </g>
+    <g id="fig5_timeline-ytick_2">
+     <g id="fig5_timeline-line2d_29"/>
+     <g id="fig5_timeline-text_11">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="113.543672" y="171.662919" transform="rotate(-0 113.543672 171.662919)">Levers scored</text>
+     </g>
+    </g>
+    <g id="fig5_timeline-ytick_3">
+     <g id="fig5_timeline-line2d_30"/>
+     <g id="fig5_timeline-text_12">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="113.543672" y="136.952658" transform="rotate(-0 113.543672 136.952658)">Design &amp; evaluation</text>
+     </g>
+    </g>
+    <g id="fig5_timeline-ytick_4">
+     <g id="fig5_timeline-line2d_31"/>
+     <g id="fig5_timeline-text_13">
+      <text style="font-size: 10.5px; text-anchor: end; fill: var(--fx-ink, #1d1d1b)" x="113.543672" y="102.242397" transform="rotate(-0 113.543672 102.242397)">Human input</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_32">
+    <path d="M 136.798022 98.253217 
+L 158.508249 98.253217 
+L 169.852332 98.253217 
+L 348.032662 98.253217 
+L 349.0106 98.253217 
+L 352.335589 98.253217 
+L 651.193486 98.253217 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <defs>
+     <path id="fig5_timeline-mb63a2c6a21" d="M -0 4 
+L 4 -4 
+L -4 -4 
+z
+" style="stroke: var(--fx-s2, #eb6834); stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-mb63a2c6a21" x="136.798022" y="98.253217" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-linejoin: miter"/>
+     <use xlink:href="#fig5_timeline-mb63a2c6a21" x="158.508249" y="98.253217" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-linejoin: miter"/>
+     <use xlink:href="#fig5_timeline-mb63a2c6a21" x="169.852332" y="98.253217" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-linejoin: miter"/>
+     <use xlink:href="#fig5_timeline-mb63a2c6a21" x="348.032662" y="98.253217" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-linejoin: miter"/>
+     <use xlink:href="#fig5_timeline-mb63a2c6a21" x="349.0106" y="98.253217" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-linejoin: miter"/>
+     <use xlink:href="#fig5_timeline-mb63a2c6a21" x="352.335589" y="98.253217" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-linejoin: miter"/>
+     <use xlink:href="#fig5_timeline-mb63a2c6a21" x="651.193486" y="98.253217" style="fill: var(--fx-s2, #eb6834); stroke: var(--fx-s2, #eb6834); stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_33">
+    <path d="M 149.511218 132.963478 
+L 156.356785 132.963478 
+L 176.697899 132.963478 
+L 211.903672 132.963478 
+L 267.646146 132.963478 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <defs>
+     <path id="fig5_timeline-m456cfb3d50" d="M 0 3.5 
+C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
+C 3.131218 1.81853 3.5 0.928211 3.5 0 
+C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
+C 1.81853 -3.131218 0.928211 -3.5 0 -3.5 
+C -0.928211 -3.5 -1.81853 -3.131218 -2.474874 -2.474874 
+C -3.131218 -1.81853 -3.5 -0.928211 -3.5 0 
+C -3.5 0.928211 -3.131218 1.81853 -2.474874 2.474874 
+C -1.81853 3.131218 -0.928211 3.5 0 3.5 
+z
+" style="stroke: var(--fx-neutral, #8d8c85)"/>
+    </defs>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-m456cfb3d50" x="149.511218" y="132.963478" style="fill: var(--fx-neutral, #8d8c85); stroke: var(--fx-neutral, #8d8c85)"/>
+     <use xlink:href="#fig5_timeline-m456cfb3d50" x="156.356785" y="132.963478" style="fill: var(--fx-neutral, #8d8c85); stroke: var(--fx-neutral, #8d8c85)"/>
+     <use xlink:href="#fig5_timeline-m456cfb3d50" x="176.697899" y="132.963478" style="fill: var(--fx-neutral, #8d8c85); stroke: var(--fx-neutral, #8d8c85)"/>
+     <use xlink:href="#fig5_timeline-m456cfb3d50" x="211.903672" y="132.963478" style="fill: var(--fx-neutral, #8d8c85); stroke: var(--fx-neutral, #8d8c85)"/>
+     <use xlink:href="#fig5_timeline-m456cfb3d50" x="267.646146" y="132.963478" style="fill: var(--fx-neutral, #8d8c85); stroke: var(--fx-neutral, #8d8c85)"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_34">
+    <path d="M 489.833692 167.673739 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <defs>
+     <path id="fig5_timeline-mb910328ca2" d="M 0 4 
+C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
+C 3.578535 2.078319 4 1.060812 4 0 
+C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
+C 2.078319 -3.578535 1.060812 -4 0 -4 
+C -1.060812 -4 -2.078319 -3.578535 -2.828427 -2.828427 
+C -3.578535 -2.078319 -4 -1.060812 -4 0 
+C -4 1.060812 -3.578535 2.078319 -2.828427 2.828427 
+C -2.078319 3.578535 -1.060812 4 0 4 
+z
+" style="stroke: var(--fx-s1, #2a78d6); stroke-width: 1.5"/>
+    </defs>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-mb910328ca2" x="489.833692" y="167.673739" style="fill-opacity: 0; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_35">
+    <path d="M 500.7866 167.673739 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-mb910328ca2" x="500.7866" y="167.673739" style="fill-opacity: 0; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_36">
+    <path d="M 542.642352 167.673739 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <defs>
+     <path id="fig5_timeline-mb78afbae49" d="M 0 4 
+C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
+C 3.578535 2.078319 4 1.060812 4 0 
+C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
+C 2.078319 -3.578535 1.060812 -4 0 -4 
+C -1.060812 -4 -2.078319 -3.578535 -2.828427 -2.828427 
+C -3.578535 -2.078319 -4 -1.060812 -4 0 
+C -4 1.060812 -3.578535 2.078319 -2.828427 2.828427 
+C -2.078319 3.578535 -1.060812 4 0 4 
+z
+" style="stroke: var(--fx-s1, #2a78d6); stroke-width: 1.5"/>
+    </defs>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-mb78afbae49" x="542.642352" y="167.673739" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_37">
+    <path d="M 557.311424 167.673739 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-mb910328ca2" x="557.311424" y="167.673739" style="fill-opacity: 0; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_38">
+    <path d="M 560.245239 167.673739 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-mb78afbae49" x="560.245239" y="167.673739" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_39">
+    <path d="M 577.261363 167.673739 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-mb910328ca2" x="577.261363" y="167.673739" style="fill-opacity: 0; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_40">
+    <path d="M 600.145115 167.673739 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-mb910328ca2" x="600.145115" y="167.673739" style="fill-opacity: 0; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_41">
+    <path d="M 659.212579 167.673739 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-mb910328ca2" x="659.212579" y="167.673739" style="fill-opacity: 0; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_42">
+    <path d="M 661.950806 167.673739 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-mb78afbae49" x="661.950806" y="167.673739" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6); stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_43">
+    <path d="M 675.64194 167.673739 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-mb910328ca2" x="675.64194" y="167.673739" style="fill-opacity: 0; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_44">
+    <path d="M 268.428497 202.384 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <defs>
+     <path id="fig5_timeline-m506b148488" d="M -3.5 3.5 
+L 3.5 3.5 
+L 3.5 -3.5 
+L -3.5 -3.5 
+z
+" style="stroke: var(--fx-ink, #1d1d1b); stroke-width: 1.3; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-m506b148488" x="268.428497" y="202.384" style="fill-opacity: 0; stroke: var(--fx-ink, #1d1d1b); stroke-width: 1.3; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_45">
+    <path d="M 548.705569 202.384 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-m506b148488" x="548.705569" y="202.384" style="fill-opacity: 0; stroke: var(--fx-ink, #1d1d1b); stroke-width: 1.3; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_46">
+    <path d="M 568.068744 202.384 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-m506b148488" x="568.068744" y="202.384" style="fill-opacity: 0; stroke: var(--fx-ink, #1d1d1b); stroke-width: 1.3; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_47">
+    <path d="M 603.665692 202.384 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-m506b148488" x="603.665692" y="202.384" style="fill-opacity: 0; stroke: var(--fx-ink, #1d1d1b); stroke-width: 1.3; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_48">
+    <path d="M 604.252455 202.384 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-m506b148488" x="604.252455" y="202.384" style="fill-opacity: 0; stroke: var(--fx-ink, #1d1d1b); stroke-width: 1.3; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_49">
+    <path d="M 622.05093 202.384 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <defs>
+     <path id="fig5_timeline-m4ec8ca4a0d" d="M -0 4.949747 
+L 4.949747 0 
+L 0 -4.949747 
+L -4.949747 -0 
+z
+" style="stroke: var(--fx-s3, #1baf7a); stroke-width: 1.3; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-m4ec8ca4a0d" x="622.05093" y="202.384" style="fill: var(--fx-s3, #1baf7a); stroke: var(--fx-s3, #1baf7a); stroke-width: 1.3; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_50">
+    <path d="M 624.789156 202.384 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-m4ec8ca4a0d" x="624.789156" y="202.384" style="fill: var(--fx-s3, #1baf7a); stroke: var(--fx-s3, #1baf7a); stroke-width: 1.3; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-line2d_51">
+    <path d="M 662.733156 202.384 
+" clip-path="url(#fig5_timeline-p72fd8cec41)" style="fill: none"/>
+    <g clip-path="url(#fig5_timeline-p72fd8cec41)">
+     <use xlink:href="#fig5_timeline-m506b148488" x="662.733156" y="202.384" style="fill-opacity: 0; stroke: var(--fx-ink, #1d1d1b); stroke-width: 1.3; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="fig5_timeline-patch_8">
+    <path d="M 117.043672 242.3008 
+L 686.203672 242.3008 
+" style="fill: none; stroke: var(--fx-muted, #6b6a64); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig5_timeline-text_14">
+    <text style="font-size: 7.5px; text-anchor: middle; fill: var(--fx-muted, #6b6a64)" x="252.781486" y="233.836257" transform="rotate(-0 252.781486 233.836257)">limit</text>
+   </g>
+   <g id="fig5_timeline-text_15">
+    <text style="font-size: 7.5px; text-anchor: middle; fill: var(--fx-muted, #6b6a64)" x="322.019507" y="233.836257" transform="rotate(-0 322.019507 233.836257)">waiting for user</text>
+   </g>
+   <g id="fig5_timeline-text_16">
+    <text style="font-size: 7.5px; text-anchor: middle; fill: var(--fx-muted, #6b6a64)" x="441.914723" y="233.836257" transform="rotate(-0 441.914723 233.836257)">weekly limit</text>
+   </g>
+   <g id="fig5_timeline-text_17">
+    <text style="font-size: 7.5px; text-anchor: middle; fill: var(--fx-muted, #6b6a64)" x="591.734847" y="233.836257" transform="rotate(-0 591.734847 233.836257)">limit</text>
+   </g>
+   <g id="fig5_timeline-text_18">
+    <g id="fig5_timeline-patch_9">
+     <path d="M 163.006765 69.917957 
+C 164.697434 69.917957 166.319086 69.246246 167.51457 68.050762 
+C 168.710054 66.855278 169.381765 65.233626 169.381765 63.542957 
+C 169.381765 61.852287 168.710054 60.230635 167.51457 59.035151 
+C 166.319086 57.839667 164.697434 57.167957 163.006765 57.167957 
+C 161.316095 57.167957 159.694443 57.839667 158.498959 59.035151 
+C 157.303475 60.230635 156.631765 61.852287 156.631765 63.542957 
+C 156.631765 65.233626 157.303475 66.855278 158.498959 68.050762 
+C 159.694443 69.246246 161.316095 69.917957 163.006765 69.917957 
+L 163.006765 69.917957 
+z
+" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-width: 0.9; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="163.006765" y="65.750964" transform="rotate(-0 163.006765 65.750964)">1</text>
+   </g>
+   <g id="fig5_timeline-text_19">
+    <g id="fig5_timeline-patch_10">
+     <path d="M 268.037321 69.917957 
+C 269.727991 69.917957 271.349643 69.246246 272.545127 68.050762 
+C 273.740611 66.855278 274.412321 65.233626 274.412321 63.542957 
+C 274.412321 61.852287 273.740611 60.230635 272.545127 59.035151 
+C 271.349643 57.839667 269.727991 57.167957 268.037321 57.167957 
+C 266.346652 57.167957 264.725 57.839667 263.529516 59.035151 
+C 262.334032 60.230635 261.662321 61.852287 261.662321 63.542957 
+C 261.662321 65.233626 262.334032 66.855278 263.529516 68.050762 
+C 264.725 69.246246 266.346652 69.917957 268.037321 69.917957 
+L 268.037321 69.917957 
+z
+" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-width: 0.9; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="268.037321" y="65.750964" transform="rotate(-0 268.037321 65.750964)">2</text>
+   </g>
+   <g id="fig5_timeline-text_20">
+    <g id="fig5_timeline-patch_11">
+     <path d="M 489.833692 69.917957 
+C 491.524362 69.917957 493.146014 69.246246 494.341498 68.050762 
+C 495.536982 66.855278 496.208692 65.233626 496.208692 63.542957 
+C 496.208692 61.852287 495.536982 60.230635 494.341498 59.035151 
+C 493.146014 57.839667 491.524362 57.167957 489.833692 57.167957 
+C 488.143023 57.167957 486.521371 57.839667 485.325887 59.035151 
+C 484.130403 60.230635 483.458692 61.852287 483.458692 63.542957 
+C 483.458692 65.233626 484.130403 66.855278 485.325887 68.050762 
+C 486.521371 69.246246 488.143023 69.917957 489.833692 69.917957 
+L 489.833692 69.917957 
+z
+" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-width: 0.9; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="489.833692" y="65.750964" transform="rotate(-0 489.833692 65.750964)">3</text>
+   </g>
+   <g id="fig5_timeline-text_21">
+    <g id="fig5_timeline-patch_12">
+     <path d="M 500.7866 69.917957 
+C 502.477269 69.917957 504.098921 69.246246 505.294405 68.050762 
+C 506.489889 66.855278 507.1616 65.233626 507.1616 63.542957 
+C 507.1616 61.852287 506.489889 60.230635 505.294405 59.035151 
+C 504.098921 57.839667 502.477269 57.167957 500.7866 57.167957 
+C 499.09593 57.167957 497.474278 57.839667 496.278794 59.035151 
+C 495.08331 60.230635 494.4116 61.852287 494.4116 63.542957 
+C 494.4116 65.233626 495.08331 66.855278 496.278794 68.050762 
+C 497.474278 69.246246 499.09593 69.917957 500.7866 69.917957 
+L 500.7866 69.917957 
+z
+" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-width: 0.9; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="500.7866" y="65.750964" transform="rotate(-0 500.7866 65.750964)">4</text>
+   </g>
+   <g id="fig5_timeline-text_22">
+    <g id="fig5_timeline-patch_13">
+     <path d="M 545.380579 69.917957 
+C 547.071249 69.917957 548.692901 69.246246 549.888385 68.050762 
+C 551.083869 66.855278 551.755579 65.233626 551.755579 63.542957 
+C 551.755579 61.852287 551.083869 60.230635 549.888385 59.035151 
+C 548.692901 57.839667 547.071249 57.167957 545.380579 57.167957 
+C 543.689909 57.167957 542.068257 57.839667 540.872773 59.035151 
+C 539.677289 60.230635 539.005579 61.852287 539.005579 63.542957 
+C 539.005579 65.233626 539.677289 66.855278 540.872773 68.050762 
+C 542.068257 69.246246 543.689909 69.917957 545.380579 69.917957 
+L 545.380579 69.917957 
+z
+" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-width: 0.9; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="545.380579" y="65.750964" transform="rotate(-0 545.380579 65.750964)">5</text>
+   </g>
+   <g id="fig5_timeline-text_23">
+    <g id="fig5_timeline-patch_14">
+     <path d="M 560.245239 69.917957 
+C 561.935909 69.917957 563.557561 69.246246 564.753045 68.050762 
+C 565.948529 66.855278 566.620239 65.233626 566.620239 63.542957 
+C 566.620239 61.852287 565.948529 60.230635 564.753045 59.035151 
+C 563.557561 57.839667 561.935909 57.167957 560.245239 57.167957 
+C 558.554569 57.167957 556.932917 57.839667 555.737433 59.035151 
+C 554.541949 60.230635 553.870239 61.852287 553.870239 63.542957 
+C 553.870239 65.233626 554.541949 66.855278 555.737433 68.050762 
+C 556.932917 69.246246 558.554569 69.917957 560.245239 69.917957 
+L 560.245239 69.917957 
+z
+" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-width: 0.9; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="560.245239" y="65.750964" transform="rotate(-0 560.245239 65.750964)">6</text>
+   </g>
+   <g id="fig5_timeline-text_24">
+    <g id="fig5_timeline-patch_15">
+     <path d="M 595.255424 61.240391 
+C 596.946094 61.240391 598.567746 60.568681 599.76323 59.373197 
+C 600.958714 58.177713 601.630424 56.556061 601.630424 54.865391 
+C 601.630424 53.174722 600.958714 51.55307 599.76323 50.357586 
+C 598.567746 49.162102 596.946094 48.490391 595.255424 48.490391 
+C 593.564755 48.490391 591.943103 49.162102 590.747619 50.357586 
+C 589.552135 51.55307 588.880424 53.174722 588.880424 54.865391 
+C 588.880424 56.556061 589.552135 58.177713 590.747619 59.373197 
+C 591.943103 60.568681 593.564755 61.240391 595.255424 61.240391 
+L 595.255424 61.240391 
+z
+" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-width: 0.9; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="595.255424" y="57.073399" transform="rotate(-0 595.255424 57.073399)">7</text>
+   </g>
+   <g id="fig5_timeline-text_25">
+    <g id="fig5_timeline-patch_16">
+     <path d="M 590.365734 78.595522 
+C 592.056403 78.595522 593.678055 77.923812 594.873539 76.728327 
+C 596.069024 75.532843 596.740734 73.911192 596.740734 72.220522 
+C 596.740734 70.529852 596.069024 68.9082 594.873539 67.712716 
+C 593.678055 66.517232 592.056403 65.845522 590.365734 65.845522 
+C 588.675064 65.845522 587.053412 66.517232 585.857928 67.712716 
+C 584.662444 68.9082 583.990734 70.529852 583.990734 72.220522 
+C 583.990734 73.911192 584.662444 75.532843 585.857928 76.728327 
+C 587.053412 77.923812 588.675064 78.595522 590.365734 78.595522 
+L 590.365734 78.595522 
+z
+" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-width: 0.9; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="590.365734" y="74.42853" transform="rotate(-0 590.365734 74.42853)">8</text>
+   </g>
+   <g id="fig5_timeline-text_26">
+    <g id="fig5_timeline-patch_17">
+     <path d="M 662.733156 69.917957 
+C 664.423826 69.917957 666.045478 69.246246 667.240962 68.050762 
+C 668.436446 66.855278 669.108156 65.233626 669.108156 63.542957 
+C 669.108156 61.852287 668.436446 60.230635 667.240962 59.035151 
+C 666.045478 57.839667 664.423826 57.167957 662.733156 57.167957 
+C 661.042487 57.167957 659.420835 57.839667 658.225351 59.035151 
+C 657.029867 60.230635 656.358156 61.852287 656.358156 63.542957 
+C 656.358156 65.233626 657.029867 66.855278 658.225351 68.050762 
+C 659.420835 69.246246 661.042487 69.917957 662.733156 69.917957 
+L 662.733156 69.917957 
+z
+" style="fill: none; stroke: var(--fx-ink, #1d1d1b); stroke-width: 0.9; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 8.5px; text-anchor: middle; fill: var(--fx-ink, #1d1d1b)" x="662.733156" y="65.750964" transform="rotate(-0 662.733156 65.750964)">E</text>
+   </g>
+   <g id="fig5_timeline-legend_1">
+    <g id="fig5_timeline-line2d_52">
+     <path d="M 124.963672 14.326625 
+L 130.243672 14.326625 
+L 135.523672 14.326625 
+" style="fill: none"/>
+     <defs>
+      <path id="fig5_timeline-m98547076be" d="M 0 4 
+C 1.060812 4 2.078319 3.578535 2.828427 2.828427 
+C 3.578535 2.078319 4 1.060812 4 0 
+C 4 -1.060812 3.578535 -2.078319 2.828427 -2.828427 
+C 2.078319 -3.578535 1.060812 -4 0 -4 
+C -1.060812 -4 -2.078319 -3.578535 -2.828427 -2.828427 
+C -3.578535 -2.078319 -4 -1.060812 -4 0 
+C -4 1.060812 -3.578535 2.078319 -2.828427 2.828427 
+C -2.078319 3.578535 -1.060812 4 0 4 
+z
+" style="stroke: var(--fx-s1, #2a78d6)"/>
+     </defs>
+     <g>
+      <use xlink:href="#fig5_timeline-m98547076be" x="130.243672" y="14.326625" style="fill: var(--fx-s1, #2a78d6); stroke: var(--fx-s1, #2a78d6)"/>
+     </g>
+    </g>
+    <g id="fig5_timeline-text_27">
+     <text style="font-size: 8.8px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="142.563672" y="17.406625" transform="rotate(-0 142.563672 17.406625)">lever kept</text>
+    </g>
+    <g id="fig5_timeline-line2d_53">
+     <path d="M 204.294297 14.326625 
+L 209.574297 14.326625 
+L 214.854297 14.326625 
+" style="fill: none"/>
+     <g>
+      <use xlink:href="#fig5_timeline-mb910328ca2" x="209.574297" y="14.326625" style="fill-opacity: 0; stroke: var(--fx-s1, #2a78d6); stroke-width: 1.5"/>
+     </g>
+    </g>
+    <g id="fig5_timeline-text_28">
+     <text style="font-size: 8.8px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="221.894297" y="17.406625" transform="rotate(-0 221.894297 17.406625)">lever failed</text>
+    </g>
+    <g id="fig5_timeline-line2d_54">
+     <path d="M 288.772922 14.326625 
+L 294.052922 14.326625 
+L 299.332922 14.326625 
+" style="fill: none"/>
+     <defs>
+      <path id="fig5_timeline-mf5139e5afc" d="M -3.5 3.5 
+L 3.5 3.5 
+L 3.5 -3.5 
+L -3.5 -3.5 
+z
+" style="stroke: var(--fx-ink, #1d1d1b); stroke-linejoin: miter"/>
+     </defs>
+     <g>
+      <use xlink:href="#fig5_timeline-mf5139e5afc" x="294.052922" y="14.326625" style="fill-opacity: 0; stroke: var(--fx-ink, #1d1d1b); stroke-linejoin: miter"/>
+     </g>
+    </g>
+    <g id="fig5_timeline-text_29">
+     <text style="font-size: 8.8px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="306.372922" y="17.406625" transform="rotate(-0 306.372922 17.406625)">validation look</text>
+    </g>
+    <g id="fig5_timeline-line2d_55">
+     <path d="M 388.405422 14.326625 
+L 393.685422 14.326625 
+L 398.965422 14.326625 
+" style="fill: none"/>
+     <defs>
+      <path id="fig5_timeline-m4d79bf88fe" d="M -0 4.949747 
+L 4.949747 0 
+L 0 -4.949747 
+L -4.949747 -0 
+z
+" style="stroke: var(--fx-s3, #1baf7a); stroke-linejoin: miter"/>
+     </defs>
+     <g>
+      <use xlink:href="#fig5_timeline-m4d79bf88fe" x="393.685422" y="14.326625" style="fill: var(--fx-s3, #1baf7a); stroke: var(--fx-s3, #1baf7a); stroke-linejoin: miter"/>
+     </g>
+    </g>
+    <g id="fig5_timeline-text_30">
+     <text style="font-size: 8.8px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="406.005422" y="17.406625" transform="rotate(-0 406.005422 17.406625)">test look</text>
+    </g>
+    <g id="fig5_timeline-patch_18">
+     <path d="M 461.610422 17.406625 
+L 472.170422 17.406625 
+L 472.170422 11.246625 
+L 461.610422 11.246625 
+z
+" style="fill: var(--fx-stall, #efe3d6); stroke: var(--fx-stall, #efe3d6); stroke-linejoin: miter"/>
+    </g>
+    <g id="fig5_timeline-text_31">
+     <text style="font-size: 8.8px; text-anchor: start; fill: var(--fx-ink, #1d1d1b)" x="479.210422" y="17.406625" transform="rotate(-0 479.210422 17.406625)">stall (session transcript)</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig5_timeline-p72fd8cec41">
+   <rect x="117.043672" y="42.7168" width="569.16" height="199.584"/>
+  </clipPath>
+ </defs>
+</svg>
