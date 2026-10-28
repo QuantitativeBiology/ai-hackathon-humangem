@@ -1,0 +1,51 @@
+contrast	heldout_lineage	fold_mean_delta
+F2_R1+Bloo vs generic_H1+Bloo	Bone	0.00231408
+F2_R1+Bloo vs generic_H1+Bloo	Bowel	0.00864731
+F2_R1+Bloo vs generic_H1+Bloo	Cervix	-0.00236852
+F2_R1+Bloo vs generic_H1+Bloo	Esophagus/Stomach	0.00575882
+F2_R1+Bloo vs generic_H1+Bloo	Head and Neck	0.00100624
+F2_R1+Bloo vs generic_H1+Bloo	Kidney	0.00395289
+F2_R1+Bloo vs generic_H1+Bloo	Myeloid	0.00333583
+F2_R1+Bloo vs generic_H1+Bloo	Peripheral Nervous System	-0.00210236
+F2_R1+Bloo vs generic_H1+Bloo	Skin	0.00361093
+F2_R1+Bloo vs generic_H1+Bloo	Uterus	0.00648911
+F4_R1+Bloo vs generic_H1+Bloo	Bone	0.00228517
+F4_R1+Bloo vs generic_H1+Bloo	Bowel	0.00365018
+F4_R1+Bloo vs generic_H1+Bloo	Cervix	0.00453218
+F4_R1+Bloo vs generic_H1+Bloo	Esophagus/Stomach	0.00458369
+F4_R1+Bloo vs generic_H1+Bloo	Head and Neck	0.00743634
+F4_R1+Bloo vs generic_H1+Bloo	Kidney	0.00595448
+F4_R1+Bloo vs generic_H1+Bloo	Myeloid	0.000405926
+F4_R1+Bloo vs generic_H1+Bloo	Peripheral Nervous System	0.00416525
+F4_R1+Bloo vs generic_H1+Bloo	Skin	0.00625016
+F4_R1+Bloo vs generic_H1+Bloo	Uterus	0.00470361
+generic_H1+Bloo vs generic_H1	Bone	0.0338848
+generic_H1+Bloo vs generic_H1	Bowel	0.0332888
+generic_H1+Bloo vs generic_H1	Cervix	0.0276185
+generic_H1+Bloo vs generic_H1	Esophagus/Stomach	0.0330214
+generic_H1+Bloo vs generic_H1	Head and Neck	0.0366349
+generic_H1+Bloo vs generic_H1	Kidney	0.0326877
+generic_H1+Bloo vs generic_H1	Myeloid	0.0303766
+generic_H1+Bloo vs generic_H1	Peripheral Nervous System	0.0386832
+generic_H1+Bloo vs generic_H1	Skin	0.0359613
+generic_H1+Bloo vs generic_H1	Uterus	0.0297225
+F2_R1+Bloo vs generic_H1	Bone	0.0361989
+F2_R1+Bloo vs generic_H1	Bowel	0.0419361
+F2_R1+Bloo vs generic_H1	Cervix	0.0252499
+F2_R1+Bloo vs generic_H1	Esophagus/Stomach	0.0387802
+F2_R1+Bloo vs generic_H1	Head and Neck	0.0376411
+F2_R1+Bloo vs generic_H1	Kidney	0.0366406
+F2_R1+Bloo vs generic_H1	Myeloid	0.0337124
+F2_R1+Bloo vs generic_H1	Peripheral Nervous System	0.0365809
+F2_R1+Bloo vs generic_H1	Skin	0.0395723
+F2_R1+Bloo vs generic_H1	Uterus	0.0362116
+F4_R1+Bloo vs generic_H1	Bone	0.03617
+F4_R1+Bloo vs generic_H1	Bowel	0.0369389
+F4_R1+Bloo vs generic_H1	Cervix	0.0321506
+F4_R1+Bloo vs generic_H1	Esophagus/Stomach	0.0376051
+F4_R1+Bloo vs generic_H1	Head and Neck	0.0440712
+F4_R1+Bloo vs generic_H1	Kidney	0.0386422
+F4_R1+Bloo vs generic_H1	Myeloid	0.0307825
+F4_R1+Bloo vs generic_H1	Peripheral Nervous System	0.0428485
+F4_R1+Bloo vs generic_H1	Skin	0.0422115
+F4_R1+Bloo vs generic_H1	Uterus	0.0344261

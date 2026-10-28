@@ -1,0 +1,46 @@
+{
+ "rule": "A12(b): a family enters Stage B only if its combined \u0394\u0304_lin vs H1 + B-loo is >= +0.005 on the 30-line panel (nested panel LOLO, Stage-A configuration)",
+ "synthetic_labels": false,
+ "families": {
+  "F2": {
+   "config": "F2|R1|rna|real|none on human1+B-loo:cofactor_pool_biomass",
+   "delta_lin_vs_H1_Bloo": 0.003064433470076729,
+   "ci": [
+    0.0016593341724131035,
+    0.004510895334214612
+   ],
+   "folds_positive": 8,
+   "n_folds": 10,
+   "n_failed_builds": 0,
+   "build_gate_all_frac": 1.0,
+   "config_gate_pass": true,
+   "enters_stage_b": false
+  },
+  "F4": {
+   "config": "F4|R1|rna|real|none on human1+B-loo:cofactor_pool_biomass",
+   "delta_lin_vs_H1_Bloo": 0.004396699552351753,
+   "ci": [
+    0.003545569869683291,
+    0.005204504972963623
+   ],
+   "folds_positive": 10,
+   "n_folds": 10,
+   "n_failed_builds": 0,
+   "build_gate_all_frac": 0.26666666666666666,
+   "config_gate_pass": false,
+   "enters_stage_b": false
+  }
+ },
+ "sanity_Bloo_vs_H1": {
+  "delta_lin": 0.03318795959473469,
+  "ci": [
+   0.030958373683318285,
+   0.0354327977432464
+  ],
+  "folds_positive": 10
+ },
+ "any_family_enters": false,
+ "consequence": "context lever not selected: the M6 factorial drops its context axis; Stage B and Stage C are skipped",
+ "verification_all_pass": true,
+ "wall_s": 33
+}

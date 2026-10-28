@@ -1,0 +1,5 @@
+check	max_abs_diff	pass
+H1 Entrez map: score_frame(baseline H1) equals W1 generic e_H1 on U	0.0	True
+generic H1 tAP_line equals W1 train_per_line (6-decimal TSV)	4.900333597235296e-07	True
+generic H1+B-loo tAP_line equals W3 per_line (B-loo:cofactor_pool_biomass, human1, M0)	4.979363177892715e-07	True
+generic H1+B-loo KO sweep equals W3 sweep row M0|B-loo:cofactor_pool_biomass	0.0	True

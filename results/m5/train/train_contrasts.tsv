@@ -1,0 +1,6 @@
+contrast	arm	reference	role	n_failed_lines	delta_lin	lo	hi	delta_line	folds_positive	n_folds	n_lines	n_lines_estimable	tg_rule_pass	delta_noCE	lo_noCE	hi_noCE	delta_expr	lo_expr	hi_expr	delta_mcc_L_prob	lo_mcc	hi_mcc
+F2_R1+Bloo vs generic_H1+Bloo	F2_R1+Bloo	generic_H1+Bloo	decision	0	0.00306443	0.00165933	0.0045109	0.00306443	8	10	30	30	False	0.0010641	-0.000669637	0.00290804	0.00134906	-9.22513e-05	0.0028199	-0.00387645	-0.0057159	-0.00194981
+F4_R1+Bloo vs generic_H1+Bloo	F4_R1+Bloo	generic_H1+Bloo	decision	0	0.0043967	0.00354557	0.0052045	0.0043967	10	10	30	30	False	0.000801484	1.07445e-05	0.00165274	0.003677	0.00283423	0.00447376	0	0	0
+generic_H1+Bloo vs generic_H1	generic_H1+Bloo	generic_H1	sanity (W3 B-loo gain)	0	0.033188	0.0309584	0.0354328	0.033188	10	10	30	30	True	0.0202658	0.0174179	0.0232237	0.0285838	0.0263089	0.030897	0.0389738	0.0361172	0.041857
+F2_R1+Bloo vs generic_H1	F2_R1+Bloo	generic_H1	context	0	0.0362524	0.0333502	0.0391287	0.0362524	10	10	30	30	True	0.0213299	0.0178878	0.0248586	0.0299329	0.0268479	0.0330015	0.0350974	0.0312153	0.0390359
+F4_R1+Bloo vs generic_H1	F4_R1+Bloo	generic_H1	context	0	0.0375847	0.0352595	0.0400531	0.0375847	10	10	30	30	True	0.0210673	0.0181806	0.0241118	0.0322608	0.0297968	0.0347444	0.0389738	0.0361172	0.041857

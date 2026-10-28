@@ -1,0 +1,5 @@
+config	n_lines	n_failed	n_lines_estimable	tap_lin	m_delta_ap_gene	mcc_L_prob_lin	mcc_L_ge06_lin
+generic_H1	30	0	30	0.29824	3.52315e-17	0.315557	0.32571
+generic_H1+Bloo	30	0	30	0.331428	3.52315e-17	0.354531	0.369686
+F2_R1+Bloo	30	0	30	0.334492	0.00187924	0.350655	0.364694
+F4_R1+Bloo	30	0	30	0.335824	-0.00150041	0.354531	0.369686

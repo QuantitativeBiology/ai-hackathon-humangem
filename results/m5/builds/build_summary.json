@@ -1,0 +1,129 @@
+{
+ "parent": "human1+B-loo:cofactor_pool_biomass",
+ "medium": "M0",
+ "configs": [
+  [
+   "F2",
+   "R1",
+   "rna",
+   "real",
+   [
+    "none"
+   ]
+  ],
+  [
+   "F4",
+   "R1",
+   "rna",
+   "real",
+   [
+    "none"
+   ]
+  ]
+ ],
+ "generic_check": {
+  "w3_row": "M0|B-loo:cofactor_pool_biomass",
+  "n_genes_m5": 2887,
+  "n_genes_w3": 2887,
+  "n_common": 2887,
+  "n_mismatch_gt_1e-6": 0,
+  "max_abs_diff": 0.0,
+  "n_lethal_m5": 114,
+  "n_lethal_w3": 114
+ },
+ "timeouts": [],
+ "families": {
+  "F2": {
+   "n_builds": 30,
+   "n_failed": 0,
+   "n_failed_timeout": 0,
+   "repair_growth_lp": {
+    "optimal": 30
+   },
+   "repair_task_lps": {
+    "solved": 300
+   },
+   "n_reopened": {
+    "min": 0.0,
+    "median": 0.0,
+    "max": 0.0,
+    "n_builds_with_reopen": 0
+   },
+   "repair_frac_max": 0.0,
+   "wt_ratio_generic": {
+    "min": 0.9984990676751327,
+    "median": 0.9999999999999962,
+    "max": 1.0000000000000062
+   },
+   "wt_growth": {
+    "min": 65.47894516911589,
+    "max": 65.5773723670819
+   },
+   "sweep_n_lethal": {
+    "min": 118.0,
+    "median": 120.5,
+    "max": 128.0
+   },
+   "sweep_n_nonoptimal_total": 0,
+   "gate_frac": {
+    "gate_growth": 1.0,
+    "gate_viability": 1.0,
+    "gate_repair": 1.0,
+    "gate_all": 1.0
+   },
+   "config_gate_pass": true,
+   "job_cpu_s": {
+    "mean": 111.64529738216666,
+    "max": 129.24248132399998
+   },
+   "peak_rss_gb_max": 1.413312
+  },
+  "F4": {
+   "n_builds": 30,
+   "n_failed": 0,
+   "n_failed_timeout": 0,
+   "repair_growth_lp": {
+    "not_applicable": 30
+   },
+   "repair_task_lps": {},
+   "n_reopened": {
+    "min": 0.0,
+    "median": 0.0,
+    "max": 0.0,
+    "n_builds_with_reopen": 0
+   },
+   "repair_frac_max": 0.0,
+   "wt_ratio_generic": {
+    "min": 0.010107591105619197,
+    "median": 0.012457624280002067,
+    "max": 0.021170624652609164
+   },
+   "wt_growth": {
+    "min": 0.662829265667391,
+    "max": 1.3883139360878665
+   },
+   "sweep_n_lethal": {
+    "min": 114.0,
+    "median": 114.0,
+    "max": 114.0
+   },
+   "sweep_n_nonoptimal_total": 0,
+   "gate_frac": {
+    "gate_growth": 1.0,
+    "gate_viability": 0.26666666666666666,
+    "gate_repair": 1.0,
+    "gate_all": 0.26666666666666666
+   },
+   "config_gate_pass": false,
+   "job_cpu_s": {
+    "mean": 167.22855833476666,
+    "max": 208.34041007
+   },
+   "peak_rss_gb_max": 1.41546
+  }
+ },
+ "parent_wt_generic": 65.577372367,
+ "build_cpu_h": 2.352,
+ "wall_s": 1468,
+ "n_line_builds": 60
+}

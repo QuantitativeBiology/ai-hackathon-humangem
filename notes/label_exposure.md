@@ -50,3 +50,4 @@ Every viewing of DepMap label *values* (or label-derived summaries) by any agent
 - 2026-10-28, M5 engineer: one accidental view of a single training-tier per-line aggregate row in results/w3/train/per_line.tsv (one line, mode T1: n, n_pos, tAP, e_random). No gene × line values; no validation or test; raw probe blocked.
 - 2026-10-28, M5 engineer (panel pre-check run): training-tier panel aggregates only (Δ̄_lin, CIs, fold means for 5 contrasts; per-arm lineage-equal tAP, mΔAP_gene, MCC on L_prob/L_ge06; minus-CE and expressed-pairs deltas). Did not open train_per_line.tsv. No validation or test.
 - 2026-10-28, PI: read the M5 pre-check report (same aggregates, summary level).
+- 2026-10-28, M5 reviewer: training-tier panel aggregates only (train_decision.json, own recomputed Δ̄/CI/folds and per-arm lineage-equal tAP). No per-line tables; no validation or test; raw probe blocked.
