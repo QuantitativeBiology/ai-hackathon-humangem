@@ -1,0 +1,52 @@
+{
+ "look_id": "W2_M4_shortlist",
+ "config_sha": "ddd23c7a9c152804dd4378d69d02689191dbb716459f0c728466c13bbb899e00",
+ "synthetic_labels": "Bernoulli at each label's training positive rate (not shown), seed 11",
+ "n_val_expr_lines": 198,
+ "methods": [
+  "H1",
+  "H2",
+  "W2:M2(f=1)[H1]",
+  "W2:M2(f=1)[H2]"
+ ],
+ "n_rows": 16,
+ "scalar_guard": "pass",
+ "validation_labels_read": false,
+ "ledger_rows_written": 0,
+ "synthetic_decision": {
+  "look_id": "W2_M4_shortlist",
+  "reference": "H1",
+  "G_star": "Human1",
+  "primary_cell": {
+   "label": "L_prob",
+   "geneset": "all",
+   "universe": "U",
+   "stratum": "none"
+  },
+  "candidates": [
+   {
+    "method": "W2:M2(f=1)[H1]",
+    "delta_lin": -1.6946144367378908e-05,
+    "delta_ci": [
+     -0.000257594284809139,
+     0.00023026545614494162
+    ],
+    "eligible": false
+   }
+  ],
+  "gate_passed": false,
+  "best_eligible": null,
+  "selected": null,
+  "best_point_estimate": "W2:M2(f=1)[H1]",
+  "winners_curse": {
+   "method": "W2:M2(f=1)[H1]",
+   "m": 1,
+   "sigma": 0.00012654050848623648,
+   "term": 0.0,
+   "best_delta_lin": -1.6946144367378908e-05,
+   "best_delta_lin_minus_term": -1.6946144367378908e-05
+  },
+  "rule": "\u00a78 gate: the W2 candidate is eligible only if its paired validation \u0394\u0304_lin vs G* (H1, M0) has CI lower bound > 0 (L_prob, all genes, U, no stratum); one candidate, so the \u00a79 one-SE rule picks it if eligible and \u03c3\u00b7\u221a(2 ln m) = 0 (A11g)."
+ },
+ "wall_s": 9.2
+}

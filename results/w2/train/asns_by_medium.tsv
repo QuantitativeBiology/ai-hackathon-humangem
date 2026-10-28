@@ -1,0 +1,21 @@
+parent	step	group	n_lines	n_lineages	positive_rate	media	tap_gene	e_random
+human1	M0	asn_present_viable	466	12	0.156652	DMEM;DMEM+alanine+asparagine+aspartate+glutamate+proline;DMEM+cortisol;DMEM+pyruvate;DMEM:F12;DMEM:F12+cortisol;DMEM:F12+cortisol+estradiol;IMDM;RPMI;RPMI+alanine;RPMI+alanine+pyruvate;RPMI+cys(2-ME)		
+human1	M1	asn_absent_lethal	76	11	0.657895	DMEM;DMEM+cortisol;DMEM+pyruvate		
+human1	M1	asn_present_viable	390	12	0.0589744	DMEM+alanine+asparagine+aspartate+glutamate+proline;DMEM:F12;DMEM:F12+cortisol;DMEM:F12+cortisol+estradiol;IMDM;RPMI;RPMI+alanine;RPMI+alanine+pyruvate;RPMI+cys(2-ME)		
+human1	M1	tAP_gene_over_lines	466		0.156652		0.548791	0.167031
+human1	M2(f=0.1)	asn_absent_lethal	76	11	0.657895	DMEM;DMEM+cortisol;DMEM+pyruvate		
+human1	M2(f=0.1)	asn_present_viable	390	12	0.0589744	DMEM+alanine+asparagine+aspartate+glutamate+proline;DMEM:F12;DMEM:F12+cortisol;DMEM:F12+cortisol+estradiol;IMDM;RPMI;RPMI+alanine;RPMI+alanine+pyruvate;RPMI+cys(2-ME)		
+human1	M2(f=0.1)	tAP_gene_over_lines	466		0.156652		0.548791	0.167031
+human1	M2(f=1)	asn_absent_lethal	76	11	0.657895	DMEM;DMEM+cortisol;DMEM+pyruvate		
+human1	M2(f=1)	asn_present_viable	390	12	0.0589744	DMEM+alanine+asparagine+aspartate+glutamate+proline;DMEM:F12;DMEM:F12+cortisol;DMEM:F12+cortisol+estradiol;IMDM;RPMI;RPMI+alanine;RPMI+alanine+pyruvate;RPMI+cys(2-ME)		
+human1	M2(f=1)	tAP_gene_over_lines	466		0.156652		0.548791	0.167031
+human2	M0	asn_present_viable	466	12	0.156652	DMEM;DMEM+alanine+asparagine+aspartate+glutamate+proline;DMEM+cortisol;DMEM+pyruvate;DMEM:F12;DMEM:F12+cortisol;DMEM:F12+cortisol+estradiol;IMDM;RPMI;RPMI+alanine;RPMI+alanine+pyruvate;RPMI+cys(2-ME)		
+human2	M1	asn_absent_lethal	76	11	0.657895	DMEM;DMEM+cortisol;DMEM+pyruvate		
+human2	M1	asn_present_viable	390	12	0.0589744	DMEM+alanine+asparagine+aspartate+glutamate+proline;DMEM:F12;DMEM:F12+cortisol;DMEM:F12+cortisol+estradiol;IMDM;RPMI;RPMI+alanine;RPMI+alanine+pyruvate;RPMI+cys(2-ME)		
+human2	M1	tAP_gene_over_lines	466		0.156652		0.548791	0.167031
+human2	M2(f=0.1)	asn_absent_lethal	76	11	0.657895	DMEM;DMEM+cortisol;DMEM+pyruvate		
+human2	M2(f=0.1)	asn_present_viable	390	12	0.0589744	DMEM+alanine+asparagine+aspartate+glutamate+proline;DMEM:F12;DMEM:F12+cortisol;DMEM:F12+cortisol+estradiol;IMDM;RPMI;RPMI+alanine;RPMI+alanine+pyruvate;RPMI+cys(2-ME)		
+human2	M2(f=0.1)	tAP_gene_over_lines	466		0.156652		0.548791	0.167031
+human2	M2(f=1)	asn_absent_lethal	76	11	0.657895	DMEM;DMEM+cortisol;DMEM+pyruvate		
+human2	M2(f=1)	asn_present_viable	390	12	0.0589744	DMEM+alanine+asparagine+aspartate+glutamate+proline;DMEM:F12;DMEM:F12+cortisol;DMEM:F12+cortisol+estradiol;IMDM;RPMI;RPMI+alanine;RPMI+alanine+pyruvate;RPMI+cys(2-ME)		
+human2	M2(f=1)	tAP_gene_over_lines	466		0.156652		0.548791	0.167031

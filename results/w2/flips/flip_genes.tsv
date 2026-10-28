@@ -1,0 +1,15 @@
+parent	symbol	gene	entrez	direction	n_perturbations	perturbations
+human1	ALDH9A1	ENSG00000143149	223	to_nonlethal	2	addition:MAR09292;addition:MAR09920
+human1	BBOX1	ENSG00000129151	8424	to_nonlethal	2	addition:MAR09292;addition:MAR09920
+human1	DHCR7	ENSG00000172893	1717	to_nonlethal	1	addition:MAR09285
+human1	GCLC	ENSG00000001084	2729	to_nonlethal	1	addition:MAR09351
+human1	GCLM	ENSG00000023909	2730	to_nonlethal	1	addition:MAR09351
+human1	GSS	ENSG00000100983	2937	to_nonlethal	1	addition:MAR09351
+human1	PNPO	ENSG00000108439	55163	to_nonlethal	1	addition:MAR09400
+human1	SEC11A	ENSG00000140612	23478	to_nonlethal	2	addition:MAR09292;addition:MAR09920
+human1	SEC11C	ENSG00000166562	90701	to_nonlethal	2	addition:MAR09292;addition:MAR09920
+human1	SHMT2	ENSG00000182199	6472	to_nonlethal	2	addition:MAR09292;addition:MAR09920
+human1	SPCS1	ENSG00000114902	28972	to_nonlethal	2	addition:MAR09292;addition:MAR09920
+human1	SPCS2	ENSG00000118363	9789	to_nonlethal	2	addition:MAR09292;addition:MAR09920
+human1	SPCS3	ENSG00000129128	60559	to_nonlethal	2	addition:MAR09292;addition:MAR09920
+human1	TMLHE	ENSG00000185973	55217	to_nonlethal	2	addition:MAR09292;addition:MAR09920

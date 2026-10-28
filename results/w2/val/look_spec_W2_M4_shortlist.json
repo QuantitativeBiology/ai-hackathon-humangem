@@ -1,0 +1,50 @@
+{
+ "look_id": "W2_M4_shortlist",
+ "kind": "shortlist",
+ "workstream": "W2",
+ "milestone": "M4",
+ "scores": {
+  "path": "results/w2/val/w2_val_scores.parquet",
+  "sha256": "17b9693aa162727382807cd2417f483db6edeea5311e491651225a411853d68f",
+  "layout": "line_gene"
+ },
+ "methods": [
+  "H1",
+  "H2",
+  "W2:M2(f=1)[H1]",
+  "W2:M2(f=1)[H2]"
+ ],
+ "candidates": [
+  "W2:M2(f=1)[H1]"
+ ],
+ "reference": "H1",
+ "labels": [
+  "L_prob"
+ ],
+ "genesets": [
+  "all",
+  "noCE"
+ ],
+ "universes": [
+  "U"
+ ],
+ "strata": [
+  "none",
+  "expressed_pairs"
+ ],
+ "B": 2000,
+ "seed": 11,
+ "decision_rule": "\u00a78 gate: the W2 candidate is eligible only if its paired validation \u0394\u0304_lin vs G* (H1, M0) has CI lower bound > 0 (L_prob, all genes, U, no stratum); one candidate, so the \u00a79 one-SE rule picks it if eligible and \u03c3\u00b7\u221a(2 ln m) = 0 (A11g).",
+ "provenance": {
+  "results/w2/train/shortlist.json": "1d63c896b673cbb81ffaaaaf7ac4187b8b060888fe855905788c05ada7b57b51",
+  "results/w2/train/step_scores.tsv": "574fec0412c050c8f4843ff3945ea5bc357073151cf6192baa3d3eb7f74213ae",
+  "results/w2/train/shuffled_control.tsv": "97e738028e1b93d867776bc38316e9bc2e2a9206cbe387607a6a60302c1daf46",
+  "results/w2/controls/line_sweeps.tsv": "404018a7ec576e3dcb1d0467f758dcf9653715e286636c5ee5119f5cb21af42e",
+  "results/w2/ko/ratio_r_human1.parquet": "e8050295406794d739b071f669992063f03bebe6f98b47c296803bfe192722ad",
+  "results/w2/ko/ratio_r_human2.parquet": "53b606cb2bd24f6e239e886a8858934c69a5f99b004541404db401fe423ae4a9",
+  "src/nextgem/w2_score.py": "c8a3caf2bb51d1c7aad0d3a835e97ac76e1e16bd9a9f92d77cf264a0a767bab5",
+  "scripts/w2_score_train.py": "1b1db8ce29571cd4d7447fb6f5488334504306f99321a310cc2aad75d0266ff5",
+  "scripts/w2_val_scores.py": "55a968b4efa77c35239386c80fa2572ffc0baa5e383142b440440bdba9740eea"
+ },
+ "notes": "W2 M4 shortlist: M2(f=1) (documented base medium + supplements + serum model at f = 1, gate-free) on G* = Human1; [H2] is descriptive. Scores are line-specific (layout line_gene) over the 198 validation expression lines; 146 are in the medium-attribution set, the others get the integrated-pipeline medium (imputed/fallback/unmappable: classic RPMI + 10% FBS; onboarded: onboarded medium), as in line_sweeps.tsv; the harness cannot restrict the gate cell to the attribution set (strata are W1's). Training flags carried: W2-SHUF (beats_shuffled_medium = False), W2-MOPEN (M-open \u0394\u0304_lin vs M0 = 0.0195), W2-CONST (post hoc: one line-constant classic RPMI + 10% FBS medium for every line scores higher than the documented per-line media on training); see results/w2/README.md \u00a7M4. Not to be combined with W3 B-loo variants here (M6 factorial)."
+}

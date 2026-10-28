@@ -1,0 +1,61 @@
+parent	step	scope	n_lines	doc_minus_shuffled	lo	hi	per_seed_min	per_seed_max	shuffled_minus_m0_mean	doc_minus_m0	beats_shuffled
+human1	M1	pooled	466	0.000491036	-1.65402e-05	0.000950297	9.4234e-05	0.000615149	0.00845553	0.00894657	False
+human1	M1	lineage:Bone	36	0.000382062							
+human1	M1	lineage:Head and Neck	34	0.00108683							
+human1	M1	lineage:Lung	105	-3.71283e-05							
+human1	M1	lineage:Peripheral Nervous System	32	8.2062e-06							
+human1	M1	lineage:Skin	62	0.000550294							
+human1	M2(f=0.001)	pooled	466	0.000516983	-2.15385e-05	0.00100771	9.97509e-05	0.000650032	0.014822	0.015339	False
+human1	M2(f=0.001)	lineage:Bone	36	0.000398172							
+human1	M2(f=0.001)	lineage:Head and Neck	34	0.00113238							
+human1	M2(f=0.001)	lineage:Lung	105	-3.73788e-05							
+human1	M2(f=0.001)	lineage:Peripheral Nervous System	32	1.59785e-05							
+human1	M2(f=0.001)	lineage:Skin	62	0.000576936							
+human1	M2(f=0.01)	pooled	466	0.000517059	-2.21603e-05	0.00100813	9.99233e-05	0.000649961	0.0148205	0.0153376	False
+human1	M2(f=0.01)	lineage:Bone	36	0.000398377							
+human1	M2(f=0.01)	lineage:Head and Neck	34	0.00113261							
+human1	M2(f=0.01)	lineage:Lung	105	-3.72232e-05							
+human1	M2(f=0.01)	lineage:Peripheral Nervous System	32	1.62577e-05							
+human1	M2(f=0.01)	lineage:Skin	62	0.000576882							
+human1	M2(f=0.1)	pooled	466	0.000516673	-2.20063e-05	0.00100728	9.93325e-05	0.000649622	0.0149112	0.0154279	False
+human1	M2(f=0.1)	lineage:Bone	36	0.000398254							
+human1	M2(f=0.1)	lineage:Head and Neck	34	0.00113152							
+human1	M2(f=0.1)	lineage:Lung	105	-3.72471e-05							
+human1	M2(f=0.1)	lineage:Peripheral Nervous System	32	1.56256e-05							
+human1	M2(f=0.1)	lineage:Skin	62	0.000576893							
+human1	M2(f=1)	pooled	466	0.000521787	-2.85601e-05	0.00101749	0.000113601	0.000655347	0.015358	0.0158798	False
+human1	M2(f=1)	lineage:Bone	36	0.00037367							
+human1	M2(f=1)	lineage:Head and Neck	34	0.00114149							
+human1	M2(f=1)	lineage:Lung	105	-6.39959e-05							
+human1	M2(f=1)	lineage:Peripheral Nervous System	32	-1.18866e-05							
+human1	M2(f=1)	lineage:Skin	62	0.000578591							
+human2	M1	pooled	466	0.000554595	0.000173603	0.000901691	0.00029112	0.000697273	0.00721604	0.00777064	True
+human2	M1	lineage:Bone	36	0.000343782							
+human2	M1	lineage:Head and Neck	34	0.00116653							
+human2	M1	lineage:Lung	105	0.00016455							
+human2	M1	lineage:Peripheral Nervous System	32	0.000729289							
+human2	M1	lineage:Skin	62	0.000462799							
+human2	M2(f=0.001)	pooled	466	0.000580197	0.000171839	0.000950902	0.000303371	0.000729503	0.0130765	0.0136567	True
+human2	M2(f=0.001)	lineage:Bone	36	0.000357174							
+human2	M2(f=0.001)	lineage:Head and Neck	34	0.00122068							
+human2	M2(f=0.001)	lineage:Lung	105	0.000169964							
+human2	M2(f=0.001)	lineage:Peripheral Nervous System	32	0.000752637							
+human2	M2(f=0.001)	lineage:Skin	62	0.000486946							
+human2	M2(f=0.01)	pooled	466	0.00058019	0.000171838	0.000950902	0.000303371	0.000729468	0.0130765	0.0136567	True
+human2	M2(f=0.01)	lineage:Bone	36	0.000357174							
+human2	M2(f=0.01)	lineage:Head and Neck	34	0.00122068							
+human2	M2(f=0.01)	lineage:Lung	105	0.000169964							
+human2	M2(f=0.01)	lineage:Peripheral Nervous System	32	0.000752637							
+human2	M2(f=0.01)	lineage:Skin	62	0.000486946							
+human2	M2(f=0.1)	pooled	466	0.000580722	0.000175505	0.000951203	0.000302362	0.000728703	0.013089	0.0136697	True
+human2	M2(f=0.1)	lineage:Bone	36	0.000357762							
+human2	M2(f=0.1)	lineage:Head and Neck	34	0.00122119							
+human2	M2(f=0.1)	lineage:Lung	105	0.000159545							
+human2	M2(f=0.1)	lineage:Peripheral Nervous System	32	0.000753814							
+human2	M2(f=0.1)	lineage:Skin	62	0.000486934							
+human2	M2(f=1)	pooled	466	0.000560001	0.00011778	0.0009731	0.000271424	0.000695112	0.0128812	0.0134412	True
+human2	M2(f=1)	lineage:Bone	36	0.000362162							
+human2	M2(f=1)	lineage:Head and Neck	34	0.0011992							
+human2	M2(f=1)	lineage:Lung	105	0.000142556							
+human2	M2(f=1)	lineage:Peripheral Nervous System	32	0.000695842							
+human2	M2(f=1)	lineage:Skin	62	0.000483613							

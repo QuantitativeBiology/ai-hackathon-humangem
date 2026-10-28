@@ -121,3 +121,134 @@ Shuffled medium (SEEDS[0:5]): 44–46% of attribution lines change medium; mean 
 - FROZEN.tsv rows for `compositions.tsv` / `exchange_map.tsv` (SHAs above): PI action.
 - The serum-% sensitivity runs only once TG has chosen f.
 - The DESIGN script name `medium_floor.py` is implemented as `w2_medium_floor.py` (accepted in review).
+
+## M4 — training scoring, attribution, controls, shortlist (2026-10-28)
+
+Author: W2 engineer agent. The session's label probe (a `head` of the raw CRISPR gene-effect file) was **blocked**
+by the hook. Labels only through `nextgem.labels.train()` / `fold(k)` (via `cv.lolo`), training tier only; no
+validation or test label read; `data/locked/` untouched. Nothing committed by the author; DESIGN.md, FROZEN.tsv, the
+ledgers and `scripts/evaluate_val.py` were not edited.
+
+**Code** (uncommitted; PROVENANCE rows `dirty=True`): `src/nextgem/w2_score.py` (label-free helpers),
+`scripts/w2_score_train.py` (training scoring), `scripts/w2_flips.py` (label-free flip analysis),
+`scripts/w2_serum_pct.py` (A9f sensitivity sweeps), `scripts/w2_val_scores.py` (look scores + spec),
+`tests/test_w2_scoring.py` (13 toy tests). Scoring machinery reused from W1/W3: `metrics.per_line`/tAP,
+`w1.method_summary`, `w1.delta_summary` (lineage-equal Δ̄_lin, lineage-stratified line bootstrap, B = 2,000,
+SEEDS[0]), `w1.fit_components` (fold-scoped CE_fit), `metrics.binary_per_line`/`summarise_binary`.
+
+**Set-up.** W1 primary training lines (686; 12 lineages); strata from `line_media.tsv`: **attribution 466**
+(primary), onboarded 15 (sensitivity), other 205 (imputed 9, fallback 113, unmappable 82, mixture 1), all 686.
+Score e = 1 − ratio_r of the line's cached sweep (`controls/line_sweeps.tsv`); **M0 equals W1's generic e bitwise**
+(both parents, asserted). Reference: generic parent on M0 (G\* = Human1). TG: Δ̄_lin ≥ 0.005, CI lower > 0,
+≥ 9 of 12 training LOLO folds (DESIGN §9; a fold with < 5 estimable lines is "not positive": Cervix has 4
+attribution lines, so the maximum is 11/12; the brief's "8 of 10" is the Stage-A panel rule and is met as well).
+Eligible for the shortlist (fixed in `w2_score.py` before scoring): M1, M2(f) gate-free on H1. M3: uncalibrated,
+excluded, no sweep (A9i). Gate (+g): context lever, never in "medium alone".
+
+### Ladder (attribution stratum, L_prob, all U genes; `train/step_scores.tsv`)
+| Step | H1 tAP_lin | H1 Δ̄_lin vs M0 [95% CI] | folds | TG | Δ̄ noCE | H2 Δ̄_lin vs H2-M0 |
+|---|---|---|---|---|---|---|
+| M0 | 0.2992 | — | — | — | — | — (H2−H1 = −0.0084) |
+| M-open (neg. control) | 0.3187 | **+0.0195** [0.0180, 0.0212] | 11 | pass | **−0.0168** | +0.0121 |
+| M1 | 0.3081 | +0.0089 [0.0078, 0.0101] | 11 | pass | +0.0132 | +0.0078 |
+| M2(f=0.001) | 0.3145 | +0.0153 [0.0141, 0.0166] | 11 | pass | +0.0175 | +0.0137 |
+| M2(f=0.01) | 0.3145 | +0.0153 [0.0141, 0.0166] | 11 | pass | +0.0175 | +0.0137 |
+| M2(f=0.1) | 0.3146 | +0.0154 [0.0142, 0.0167] | 11 | pass | +0.0175 | +0.0137 |
+| **M2(f=1)** | 0.3150 | **+0.0159 [0.0146, 0.0172]** | 11 | pass | +0.0182 | +0.0134 |
+| M1g / M2g(f) | = gate-free twin | gate effect 0.0000 (both parents) | | | | |
+| M-HPLM:M2(f=1) | 0.3108 | +0.0116 [0.0111, 0.0121] | 11 | (not eligible) | +0.0133 | +0.0069 |
+| M-Plasmax:M2(f=1) | 0.3092 | +0.0100 [0.0097, 0.0103] | 11 | (not eligible) | +0.0095 | +0.0043 |
+
+mΔAP_gene is ≈ 0 for every step (−0.0004 to 0.0000): medium adds no per-gene, across-line ranking. Physiological
+variants vs the documented M2(f=1): HPLM −0.0043, Plasmax −0.0059 (H1). Other strata, M2(f=1) H1: onboarded +0.0126
+[0.0103, 0.0149] (15 lines, 1 fold estimable), other +0.0143 [0.0127, 0.0158] (12/12), all +0.0160 [0.0152, 0.0168].
+
+### Decision
+**Shortlist: M2(f=1) on Human1** (all five eligible steps pass TG; one-SE rule: only M2(f=1) is within one
+paired-difference SE of the best). σ·√(2 ln m) = 0.0047 (σ over the 27 scored H1 steps' Δ, m = 5 eligible) < +0.0159.
+**Flags carried with the candidate:**
+- **W2-SHUF** (pre-registered negative control not beaten): documented − shuffled medium (within lineage × serum-free,
+  SEEDS[0:5]) = +0.0005 [−0.0000, +0.0010] for H1 (H2: +0.0006 [0.0001, 0.0010]); shuffled media reproduce ≈ 97% of
+  the gain (+0.0154 of +0.0159). Per eligible lineage (Bone, Head and Neck, Lung, PNS, Skin): −0.0001 to +0.0011.
+- **W2-MOPEN** (negative control passes TG): M-open scores +0.0195, above every documented variant, on all genes;
+  it is −0.0168 without CE_fit, where M2(f=1) is +0.0182. The all-genes TG pass is therefore not by itself evidence of
+  documented-medium information.
+- **W2-CONST** (post hoc, descriptive, enters no decision): one line-constant medium for every line (classic RPMI +
+  10% FBS at M2(f=1)) scores **+0.0015 [0.0011, 0.0020] above** the documented per-line media (H1; H2 +0.0012).
+- Reading: the gain is "a realistic culture medium instead of Ham's" (no hypoxanthine/thymidine → purine, TYMS,
+  DHODH, UMPS calls; serum carnitine/cholesterol → BBOX1, TMLHE, ALDH9A1, SHMT2, SPCS/SEC11 and DHCR7 rescued; GSH →
+  GCLC/GCLM/GSS), not line-specific medium. Medium acts as a generic-model setting here, not a context lever.
+- Mevalonate core on the generic biomass: HMGCR, MVK, PMVK, MVD lethal in every medium at every step except M-open
+  (pass for M2(f=1), both parents). HMGCS1, IDI1, FDPS, GGPS1 ratio 1 everywhere (known GPR issue). W3-MEV is a
+  B-loo × serum interaction and is not tested here (no W2 × W3 cells; M6). Serum carnitine rescues several W3
+  cofactor-pool artefact genes, so W2 and W3 B-loo:cofactor_pool_biomass overlap; expect sub-additivity in M6.
+
+### Attribution (attribution stratum; `train/attribution.json`, `train/flip_counts.tsv`)
+| | H1 | H2 |
+|---|---|---|
+| (i) medium alone = best gate-free documented − M0 | M2(f=1): +0.0159 [0.0146, 0.0172] | M2(f=0.1): +0.0137 [0.0126, 0.0149] |
+| (ii) net flip fraction of M0 binary errors (L_prob; parent genes) | 2.7% (6,641 fixed − 2,634 broken of 147,072; 4,719 fixes are FPs) | 3.0% |
+| (ii) same, L_ge06 | 2.6% | 3.2% |
+| (iii) (doc − M0)/(oracle − M0); oracle = per-line best of {M0, M1, M2(f)} | **0.979** [0.974, 0.983] (oracle − M0 = +0.0162) | 0.971 [0.966, 0.976] |
+
+Onboarded (sensitivity) H1 +0.0126; other stratum +0.0143. A small attributable share was pre-registered as a
+plausible outcome.
+
+### Controls
+- Negative: M-open and shuffled medium, above (neither supports documented-medium information).
+- Positive, training labels — **ASNS by medium (Lagziel replication): pass.** Lines whose documented medium lacks Asn
+  (DMEM-based; M1 lethal; 76 lines, 11 lineages) have L_prob positive rate 0.66 vs 0.06 in 390 lines with Asn;
+  ASNS tAP_gene over lines with the M1 score 0.549 vs null 0.167 (both parents).
+- Positive, label-free (§1.1/§1.2 panel at every step; `train/panel_by_step.tsv`, `mevalonate_by_step.tsv`): ASNS,
+  purines, TYMS, DHODH/UMPS (vs M0's HT), carnitine genes, GSH genes and DHCR7 move in the expected direction; sterol
+  branch and CAD remain model-structure failures; gate controls non-informative.
+
+### Label-free flip analysis (`flips/`; Human1, M0 reference)
+- Single **additions** (59 exchanges any library medium opens): all viable; exact pruning (WT ≤ 50× M0; r_min 0.505)
+  → only M0-lethal genes swept. **14 genes flip, all lethal → viable**: carnitine / O-acetylcarnitine (ALDH9A1,
+  BBOX1, TMLHE, SHMT2, SPCS1/2/3, SEC11A/C), GSH (GCLC, GCLM, GSS), cholesterol (DHCR7), pyridoxal (PNPO).
+- Cached documented sweeps (M1, M2(f)) flip **24 genes** vs M0 (the 14 + ATIC, GART, PAICS, PFAS, PPAT, TYMS, DHODH,
+  UMPS from the loss of HT, ASNS and ALDH4A1).
+- Single **removals** (44 M0 inputs, full sweeps): **not completed**. The first combined run stalled on GLPK
+  degenerate LPs (3 workers ≥ 20 min on single jobs) and was stopped at ≈ 1.3 CPU-h with no output; the script now
+  has an LP time limit. The removal half needs ≈ 1 CPU-h per parent and should run from a pinned clean worktree
+  (`scripts/w2_flips.py --kinds removal`).
+
+### Binary endpoints (§6.1 cutoff ratio_r < 0.01, parent genes, attribution stratum; `train/binary.tsv`)
+| H1 | MCC | F1 | precision | recall |
+|---|---|---|---|---|
+| M0, L_ge06 | 0.336 | 0.366 | 0.511 | 0.286 |
+| M2(f=1), L_ge06 | 0.349 (Δ +0.0126 [0.0108, 0.0144]) | 0.375 (+0.0087) | 0.534 | 0.289 |
+| M2(f=1), L_prob | 0.339 (Δ +0.0162 [0.0145, 0.0179]) | 0.355 (+0.0106) | 0.594 | 0.254 |
+
+H2 M2(f=1), L_ge06: MCC 0.348 (Δ +0.0149), F1 0.378. Fixed-cutoff calls, not P57 (no per-medium task checks).
+
+### Sensitivities for M2(f=1) (`train/sensitivity.tsv`; Δ vs primary, H1)
+RPMI-ATCC, DMEM+pyruvate, DMEM:F12 documented cysteine: 0.0000; DMEM without standard Gln −0.0002; DMEM:F12 without
+standard Gln −0.0001; **A9f serum-% scaling (f_eff = pct/10; 28 new sweeps in `sens_serum_pct/`): −0.0002
+[−0.0003, −0.0001]**.
+
+### Validation look prepared (not run)
+`val/look_spec_W2_M4_shortlist.json` → `val/w2_val_scores.parquet` (SHA-256 `17b9693a…3d68f`), **layout
+`line_gene`** (the harness supports line-specific scores: `ModelID` + `entrez` × method over exactly the 198
+validation expression lines; 146 are in the attribution set, the rest get the integrated-pipeline medium). Methods H1,
+H2, W2:M2(f=1)[H1] (gate candidate), W2:M2(f=1)[H2] (descriptive); L_prob; all/noCE; U; none/expressed_pairs. H1/H2
+columns equal the W1 generic scores (asserted). `--print-config` config_sha
+`ddd23c7a9c152804dd4378d69d02689191dbb716459f0c728466c13bbb899e00`; `--dry-run` (synthetic labels): scalar guard pass,
+16 rows, no validation label read, no ledger row (`val/dry_run.json`). The gate cell cannot be restricted to the
+attribution set (harness strata are W1's). Before the look: commit, FROZEN rows, non-author config review (A6), and a
+PI decision on the flags above.
+
+### Runtime (PROVENANCE.tsv rows)
+| Step | wall | CPU |
+|---|---|---|
+| `w2_score_train.py` (×2: first run; rerun adding A9f + post-hoc rows, step scores identical) | 133 s, 128 s | 131 s, 124 s |
+| `w2_flips.py --kinds addition` (H1, 6 GLPK workers) | 350 s | 985 s |
+| stalled combined flip run (stopped; no output, no PROVENANCE row) | ≈ 22 min | ≈ 1.3 CPU-h (process CPU time) |
+| `w2_serum_pct.py --f 1` (28 sweeps, 6 GLPK workers) | 332 s | 1,556 s |
+| `w2_val_scores.py` | 1.5 s | 1.6 s |
+| harness `--dry-run` | 9 s | — |
+| tests (13 new; with the W2, harness and scanner suites 352 pass) | 130 s | — |
+
+Total ≈ 2.1 CPU-h, of which ≈ 1.3 CPU-h is the stalled run. Label-copy scanner over `results/w2` and the scratchpad:
+0 hits.

@@ -1,0 +1,70 @@
+{
+ "n_lines": 686,
+ "strata_n_lines": {
+  "attribution": 466,
+  "onboarded": 15,
+  "other": 205,
+  "all": 686
+ },
+ "n_steps": 28,
+ "steps": [
+  "M-open",
+  "M0",
+  "M1",
+  "M2(f=0.001)",
+  "M2(f=0.01)",
+  "M2(f=0.1)",
+  "M2(f=1)",
+  "M1g",
+  "M2g(f=0.001)",
+  "M2g(f=0.01)",
+  "M2g(f=0.1)",
+  "M2g(f=1)",
+  "M-HPLM:M2(f=0.001)",
+  "M-HPLM:M2(f=0.01)",
+  "M-HPLM:M2(f=0.1)",
+  "M-HPLM:M2(f=1)",
+  "M-HPLM:M2g(f=0.001)",
+  "M-HPLM:M2g(f=0.01)",
+  "M-HPLM:M2g(f=0.1)",
+  "M-HPLM:M2g(f=1)",
+  "M-Plasmax:M2(f=0.001)",
+  "M-Plasmax:M2(f=0.01)",
+  "M-Plasmax:M2(f=0.1)",
+  "M-Plasmax:M2(f=1)",
+  "M-Plasmax:M2g(f=0.001)",
+  "M-Plasmax:M2g(f=0.01)",
+  "M-Plasmax:M2g(f=0.1)",
+  "M-Plasmax:M2g(f=1)"
+ ],
+ "checks": {
+  "M0_equals_w1_e_H1": true,
+  "M0_equals_w1_e_H2": true
+ },
+ "folds": [
+  "Biliary Tract",
+  "Bone",
+  "Bowel",
+  "Cervix",
+  "Esophagus/Stomach",
+  "Head and Neck",
+  "Kidney",
+  "Lung",
+  "Myeloid",
+  "Peripheral Nervous System",
+  "Skin",
+  "Uterus"
+ ],
+ "shuffle_eligible_lineages": [
+  "Bone",
+  "Head and Neck",
+  "Lung",
+  "Peripheral Nervous System",
+  "Skin"
+ ],
+ "n_shuffle_eligible_lineages": 5,
+ "shortlist": [
+  "M2(f=1)"
+ ],
+ "wall_s": 124.4
+}

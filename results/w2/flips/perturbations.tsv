@@ -1,0 +1,60 @@
+parent	kind	exchange	metabolite	wt_growth	wt_rel_M0	viable	engine	status	n_flip_to_lethal	n_flip_to_nonlethal	genes_to_lethal	genes_to_nonlethal	runtime_s
+human1	addition	MAR00611	palmitate	65.718	1.0022	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR00639	stearate	65.8757	1.00461	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR00650	oleate	65.7383	1.00252	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR08386	trans-4-hydroxy-L-proline	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR08644	carnosine	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09025	5-oxoproline	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09073	NH3	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09075	urate	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09077	Na+	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09078	HCO3-	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09080	zinc	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09081	K+	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09082	Ca2+	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09084	ethanolamine	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09085	glycerol	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09086	acetate	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09087	ornithine	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09096	Fe3+	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09133	pyruvate	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09134	(R)-3-hydroxybutanoate	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09135	L-lactate	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09139	fructose	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09140	galactose	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09150	chloride	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09158	ascorbate	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09164	malonate	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09201	citrulline	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09216	2-hydroxybutyrate	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09243	acetone	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09253	adenine	65.6428	1.00106	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09254	adenosine	82.9051	1.26431	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09285	cholesterol	65.9902	1.00636	True	subset(M0-lethal genes; exact pruning)	ok	0	1		DHCR7	
+human1	addition	MAR09286	citrate	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09290	creatine	65.5736	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09292	L-carnitine	65.5735	1	True	subset(M0-lethal genes; exact pruning)	ok	0	9		ALDH9A1;BBOX1;SEC11A;SEC11C;SHMT2;SPCS1;SPCS2;SPCS3;TMLHE	
+human1	addition	MAR09293	cortisol	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09314	estradiol-17beta	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09318	formate	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09341	betaine	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09351	GSH	65.5949	1.00033	True	subset(M0-lethal genes; exact pruning)	ok	0	3		GCLC;GCLM;GSS	
+human1	addition	MAR09363	cystine	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09400	pyridoxal	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	1		PNPO	
+human1	addition	MAR09415	succinate	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09418	taurine	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09427	triiodothyronine	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09429	testosterone	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09437	uracil	65.6927	1.00182	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09438	urea	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09439	uridine	82.9607	1.26516	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09460	creatinine	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09849	ethanolamine-phosphate	65.6295	1.00086	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09853	homocysteine	65.5736	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR09920	O-acetylcarnitine	65.5735	1	True	subset(M0-lethal genes; exact pruning)	ok	0	9		ALDH9A1;BBOX1;SEC11A;SEC11C;SHMT2;SPCS1;SPCS2;SPCS3;TMLHE	
+human1	addition	MAR10185	3-hydroxyisobutyrate	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR10196	Acetyl-Glycine	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR10206	(S)-2-aminobutanoate	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR11426	putrescine	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR13072	Mg2+	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			
+human1	addition	MAR13073	Cu2+	65.5734	1	True	subset(M0-lethal genes; exact pruning)	ok	0	0			

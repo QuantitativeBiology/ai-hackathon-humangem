@@ -1,0 +1,67 @@
+{
+ "shortlist": [
+  "M2(f=1)"
+ ],
+ "best_by_delta": "M2(f=1)",
+ "within_1se": [
+  "M2(f=1)"
+ ],
+ "decision": "W2 shortlist: M2(f=1) (one-SE rule among ['M1', 'M2(f=0.001)', 'M2(f=0.01)', 'M2(f=0.1)', 'M2(f=1)'])",
+ "eligible_steps": [
+  "M1",
+  "M2(f=0.001)",
+  "M2(f=0.01)",
+  "M2(f=0.1)",
+  "M2(f=1)"
+ ],
+ "n_candidates_screened_h1": 27,
+ "m_eligible": 5,
+ "sigma_all_h1_steps": 0.002631803920083475,
+ "winners_curse_sigma_sqrt_2lnm": 0.004721778833875146,
+ "tg_rule": "delta_lin >= 0.005, CI lower > 0, >= 9 of 12 training LOLO folds (fold < 5 lines = not positive)",
+ "eligibility": "documented gate-free M1, M2(f) on Human1 (G*); M3 excluded (A9i); gate = context lever",
+ "candidate_flags": {
+  "mevalonate_core_lethal_all_media_generic_biomass": true,
+  "beats_shuffled_medium": false,
+  "m_open_delta_vs_M0": 0.019532745675005726
+ },
+ "primary_parent": "human1 (G*)",
+ "candidate_row": {
+  "stratum": "attribution",
+  "parent": "human1",
+  "step": "M2(f=1)",
+  "family": "documented",
+  "gated": false,
+  "f": 1.0,
+  "eligible": true,
+  "n_lines": 466,
+  "n_lineages": 12,
+  "tap_lin": 0.3150465840207199,
+  "delta_lin_vs_M0": 0.01587975752604043,
+  "delta_lo_vs_M0": 0.01459901317178567,
+  "delta_hi_vs_M0": 0.01715528175411456,
+  "delta_line_vs_M0": 0.017035955332978647,
+  "folds_positive": 11.0,
+  "n_folds": 12.0,
+  "fold_means": "{\"Biliary Tract\": 0.02065, \"Bone\": 0.011457, \"Bowel\": 0.021038, \"Cervix\": 0.013243, \"Esophagus/Stomach\": 0.020498, \"Head and Neck\": 0.008255, \"Kidney\": 0.015477, \"Lung\": 0.018699, \"Myeloid\": 0.025342, \"Peripheral Nervous System\": 0.011077, \"Skin\": 0.015133, \"Uterus\": 0.009689}",
+  "fold_sizes": "{\"Biliary Tract\": 31, \"Bone\": 36, \"Bowel\": 39, \"Cervix\": 4, \"Esophagus/Stomach\": 52, \"Head and Neck\": 34, \"Kidney\": 22, \"Lung\": 105, \"Myeloid\": 38, \"Peripheral Nervous System\": 32, \"Skin\": 62, \"Uterus\": 11}",
+  "tg_pass": true,
+  "delta_noCE_vs_M0": 0.018245435912309933,
+  "gate_effect": NaN,
+  "gate_effect_lo": NaN,
+  "gate_effect_hi": NaN,
+  "delta_lin_vs_H1M0": NaN,
+  "delta_lo_vs_H1M0": NaN,
+  "delta_hi_vs_H1M0": NaN,
+  "delta_line_vs_H1M0": NaN,
+  "tap_lin_attr": 0.3150465840207199,
+  "tap_lin_lo": 0.3118598523437109,
+  "tap_lin_hi": 0.318134071105184,
+  "e_random_lin": 0.12357921152222434,
+  "lift_lin": 2.5493493617578413,
+  "m_delta_ap_gene": -0.00037256208953376923,
+  "n_genes_estimable": 892.0,
+  "pooled_tap": 0.3132848285012021,
+  "pooled_lift": 2.581768160411348
+ }
+}

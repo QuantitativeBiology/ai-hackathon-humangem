@@ -1,0 +1,18 @@
+{
+ "human1": {
+  "kinds": [
+   "addition"
+  ],
+  "n_timeout": 0,
+  "wt_M0": 65.57338319775587,
+  "r_min_nonlethal_M0": 0.505485,
+  "n_removals_swept": 0,
+  "n_additions": 59,
+  "n_viable": 59,
+  "n_genes_flippable": 14,
+  "n_to_lethal": 0,
+  "n_to_nonlethal": 14,
+  "n_cached_doc_flipped": 24
+ },
+ "wall_s": 349.1
+}

@@ -1,0 +1,176 @@
+{
+ "human1": {
+  "medium_alone": {
+   "best_gate_free_documented": "M2(f=1)",
+   "delta_lin": 0.01587975752604043,
+   "ci": [
+    0.01459901317178567,
+    0.01715528175411456
+   ],
+   "delta_line": 0.017035955332978647,
+   "folds_positive": 11
+  },
+  "oracle": {
+   "doc_minus_m0": 0.01587975752604043,
+   "oracle_minus_m0": 0.016227924683038325,
+   "ratio": 0.9785451828377165,
+   "ratio_lo": 0.9735712583156132,
+   "ratio_hi": 0.9828032919409553,
+   "n_lines": 466,
+   "n_boot_finite": 2000,
+   "oracle_minus_m0_ci": [
+    0.014965513962198676,
+    0.01748535083162604
+   ],
+   "oracle_choice_counts": {
+    "M2(f=1)": 309,
+    "M2(f=0.1)": 148,
+    "M0": 8,
+    "M2(f=0.001)": 1
+   },
+   "oracle_all_steps_minus_m0": 0.018476099508351686,
+   "ladder": [
+    "M0",
+    "M1",
+    "M2(f=0.001)",
+    "M2(f=0.01)",
+    "M2(f=0.1)",
+    "M2(f=1)"
+   ]
+  },
+  "net_flip": {
+   "L_prob": {
+    "errors_ref": 147072,
+    "fixed": 6641,
+    "broken": 2634,
+    "fixed_fp": 4719,
+    "fixed_fn": 1922,
+    "net_flip_fraction": 0.027245158833768494,
+    "net_flip_fraction_lin": 0.024969886121461938
+   },
+   "L_ge06": {
+    "errors_ref": 122000,
+    "fixed": 6242,
+    "broken": 3033,
+    "fixed_fp": 4803,
+    "fixed_fn": 1439,
+    "net_flip_fraction": 0.02630327868852459,
+    "net_flip_fraction_lin": 0.02395733897169877
+   }
+  },
+  "medium_alone_onboarded": {
+   "step": "M2(f=1)",
+   "delta_lin": 0.012579716863188874,
+   "ci": [
+    0.010254833305485248,
+    0.014892253298178327
+   ],
+   "n_lines": 15
+  },
+  "medium_alone_other": {
+   "step": "M2(f=1)",
+   "delta_lin": 0.014266671832136644,
+   "ci": [
+    0.012732152752429017,
+    0.0158447632028204
+   ],
+   "n_lines": 205
+  },
+  "medium_alone_all": {
+   "step": "M2(f=1)",
+   "delta_lin": 0.016037152354828145,
+   "ci": [
+    0.015242733398757308,
+    0.016841996127217634
+   ],
+   "n_lines": 686
+  }
+ },
+ "human2": {
+  "medium_alone": {
+   "best_gate_free_documented": "M2(f=0.1)",
+   "delta_lin": 0.013669743154190334,
+   "ci": [
+    0.012605295798894404,
+    0.014858490459247845
+   ],
+   "delta_line": 0.01439683062798986,
+   "folds_positive": 11
+  },
+  "oracle": {
+   "doc_minus_m0": 0.013669743154190334,
+   "oracle_minus_m0": 0.014073789554062946,
+   "ratio": 0.9712908596280688,
+   "ratio_lo": 0.9656036439880751,
+   "ratio_hi": 0.97611815304912,
+   "n_lines": 466,
+   "n_boot_finite": 2000,
+   "oracle_minus_m0_ci": [
+    0.013000489218518482,
+    0.015269592319995829
+   ],
+   "oracle_choice_counts": {
+    "M2(f=1)": 220,
+    "M2(f=0.001)": 204,
+    "M2(f=0.1)": 34,
+    "M0": 8
+   },
+   "oracle_all_steps_minus_m0": 0.015223889622634807,
+   "ladder": [
+    "M0",
+    "M1",
+    "M2(f=0.001)",
+    "M2(f=0.01)",
+    "M2(f=0.1)",
+    "M2(f=1)"
+   ]
+  },
+  "net_flip": {
+   "L_prob": {
+    "errors_ref": 145367,
+    "fixed": 6593,
+    "broken": 2174,
+    "fixed_fp": 4709,
+    "fixed_fn": 1884,
+    "net_flip_fraction": 0.030398921350788005,
+    "net_flip_fraction_lin": 0.02859545643841851
+   },
+   "L_ge06": {
+    "errors_ref": 120472,
+    "fixed": 6290,
+    "broken": 2477,
+    "fixed_fp": 4801,
+    "fixed_fn": 1489,
+    "net_flip_fraction": 0.031650508001859354,
+    "net_flip_fraction_lin": 0.029771012411217462
+   }
+  },
+  "medium_alone_onboarded": {
+   "step": "M2(f=0.1)",
+   "delta_lin": 0.010148931742018759,
+   "ci": [
+    0.00788360990323569,
+    0.012580061476305937
+   ],
+   "n_lines": 15
+  },
+  "medium_alone_other": {
+   "step": "M2(f=0.1)",
+   "delta_lin": 0.011106900439893647,
+   "ci": [
+    0.009740362791253366,
+    0.012539475410601193
+   ],
+   "n_lines": 205
+  },
+  "medium_alone_all": {
+   "step": "M2(f=0.1)",
+   "delta_lin": 0.013259327014675087,
+   "ci": [
+    0.012625749238574993,
+    0.013905001738255287
+   ],
+   "n_lines": 686
+  }
+ }
+}
