@@ -2,7 +2,7 @@
 
 **Post hoc / exploratory (A15).** This follow-up comes after the T2 unseal (DESIGN §17 A15; RESEARCH_TREE D17). It never replaces T1/T2 or the headline, and it gets no test evaluation. The F1 agent did not open any T1/T2 output, `results/m6/test/` or `data/locked/`.
 
-Author: F1 engineer agent (Claude Opus), 2026-10-28. Status: **label-free steps 1–2 done; scoring code written and dry-run on synthetic labels only. Training scoring is waiting for the PI commit (commit-before-scoring, LESSONS).**
+Author: F1 engineer agent (Claude Opus), 2026-10-28. Status: **complete. F1 fails TG on training (curated P1 − P1 = −0.0006, 0/12 folds), so no validation look is prepared.** The code was committed at bc8089e before any label read. The clean re-runs and the scoring ran from the clean main tree (HEAD f57bffe for the re-runs, 6d8b109 for the scoring).
 
 ## Label hygiene
 
@@ -137,6 +137,35 @@ The real run also asserts that P1's per-line tAP equals `results/m6/train/per_li
 
 `scripts/f1_val_spec.py` writes `results/m10/val/look_spec_M10_F1_gpr_curation.json` and its scores. It refuses to run unless the real training summary shows that F1 passes TG. Its label-free score builder already reproduces the M6 validation P1/H1/H2 columns. `tests/test_f1.py` (16 tests, stable names) checks that the spec passes `evaluate_val.check_spec`.
 
+
+## 4b. Training result (real labels; `train/`, run from the clean tree 6d8b109, MANIFEST dirty=False, 42 CPU-s)
+
+Setup: 686 lines, 12 lineages, L_prob, all U genes; lineage-stratified bootstrap, B = 2,000. Verification passed:
+- P1's score matrix equals M6 bitwise;
+- P1's tAP_line equals M6 `train/per_line.tsv` (max diff 5e-7, rounding).
+
+| Contrast | Δ̄_lin [95% CI] | folds > 0 | TG | without CE_fit: Δ̄_lin [CI], folds |
+|---|---|---|---|---|
+| **curated P1 (F1) − P1** | **−0.00063 [−0.00071, −0.00055]** | **0/12** | **fail** | +0.00206 [+0.00195, +0.00217], 12/12 |
+| TYMS only − P1 | −0.00002 [−0.00009, +0.00005] | 3/12 | fail | +0.00009 [+0.000002, +0.00019], 5/12 |
+| GPR rule only − P1 | −0.00061 [−0.00064, −0.00058] | 0/12 | fail | +0.00197 [+0.00192, +0.00202], 12/12 |
+| F1 − TYMS (GPR increment) | −0.00061 [−0.00064, −0.00058] | 0/12 | fail | +0.00197 [+0.00192, +0.00202], 12/12 |
+
+Other aggregates:
+- **Expressed pairs:** F1 − P1 = −0.00046.
+- **tAP_lin:** G* 0.2996, P1 0.3529, TYMS 0.3529, GPR 0.3523, F1 0.3523.
+- **tAP_lin without CE_fit:** P1 0.1861, F1 0.1882.
+- **Descriptive vs G\*:** P1 +0.0534, F1 +0.0527.
+- **Fixed-cutoff binary vs P1, L_ge06:** MCC −0.0016 [−0.0017, −0.0016]; F1-score −0.0032.
+- **TYMS binary vs P1:** MCC +0.00002; F1-score +0.0001.
+
+Reading:
+- The GPR rule changes only RRM2/RRM2B. RRM2 goes from lethal to viable on every medium, which costs about 0.0006 on all genes. The gain without CE_fit is consistent (12/12 folds) but small (+0.002), below the 0.005 SESOI.
+- The TYMS fix acts on only 65 of 1,361 lines, the thymidine media, and is null on P1.
+- The stricter rule therefore removes the W5 POLR damage (W5a −0.029). With an all-genes Δ of −0.0006, it neither passes TG nor helps on all genes.
+
+**Decision:** no validation spec is prepared. `scripts/f1_val_spec.py` refuses to run on this summary, and nothing was written under `results/m10/`.
+
 ## 5. Compute
 
 Development runs are listed in `MANIFEST.tsv`; all are dirty because the code is uncommitted.
@@ -146,7 +175,10 @@ Development runs are listed in `MANIFEST.tsv`; all are dirty because the code is
 | f1_edits ×2 | 0.013 |
 | f1_sweeps (365 s wall, 8 workers) | 0.45 (1,609 CPU-s) |
 | synthetic score dry run | 0.005 |
-| **Total** | **≈ 0.47** |
+| **Total (development)** | **≈ 0.47** |
+| clean re-runs (edits + sweeps, from f57bffe) | 0.46 |
+| training scoring (6d8b109) | 0.012 |
+| **Total F1** | **≈ 0.95** |
 
 No single run exceeded 1 CPU-h. No Gurobi LP was solved.
 

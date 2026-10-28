@@ -10,8 +10,8 @@
   "GPR": 2,
   "TYMS": 88
  },
- "job_cpu_s": 1170.6,
- "wall_s": 364.6,
+ "job_cpu_s": 1187.2,
+ "wall_s": 365.7,
  "workers": 8,
  "solver": "glpk",
  "spot_all_bitwise_equal": true,

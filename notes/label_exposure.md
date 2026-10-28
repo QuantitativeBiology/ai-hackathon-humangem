@@ -66,3 +66,4 @@ Every viewing of DepMap label *values* (or label-derived summaries) by any agent
 - 2026-10-28, PI: ran T1 (test look 1): scalar outputs revealed (results/m6/test/); per-unit outputs sealed by the harness (hashes only).
 - 2026-10-28, PI: ran T2 (test look 2): scalar outputs revealed (results/m6/test/); per-unit outputs sealed by the harness.
 - 2026-10-28, REPORT drafter (final fill): committed and unsealed test-tier aggregates, per-lineage and per-gene summaries after the T2 unseal; no label files.
+- 2026-10-28, F1 engineer: training-tier aggregates only (curated/TYMS/rule-only vs P1 and G*: tAP_lin, Δ̄ with CIs, folds, minus-CE and expressed pairs, fixed-cutoff MCC/F1); incidentally saw the F3 commit subject after the F1 rule was committed. No validation or test values.

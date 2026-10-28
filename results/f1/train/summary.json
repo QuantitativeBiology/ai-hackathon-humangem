@@ -1,0 +1,80 @@
+{
+ "post_hoc": "A15 post hoc / exploratory",
+ "synthetic_labels": false,
+ "n_lines": 686,
+ "n_lineages": 12,
+ "tg_rule": "delta_lin >= 0.005, CI lower > 0, >= 9/12 folds positive (L_prob, all U genes)",
+ "F1_vs_P1": {
+  "delta_lin": -0.0006297387850243523,
+  "ci": [
+   -0.0007077429463091608,
+   -0.0005525479822045419
+  ],
+  "folds_positive": 0,
+  "tg_pass": false
+ },
+ "TYMS_vs_P1": {
+  "delta_lin": -2.1175723863813894e-05,
+  "ci": [
+   -9.07188110632841e-05,
+   4.6321776025944296e-05
+  ],
+  "folds_positive": 3,
+  "tg_pass": false
+ },
+ "GPR_vs_P1": {
+  "delta_lin": -0.000607419934389395,
+  "ci": [
+   -0.000637523670756398,
+   -0.0005778281491543731
+  ],
+  "folds_positive": 0,
+  "tg_pass": false
+ },
+ "F1_vs_TYMS": {
+  "delta_lin": -0.0006085630611605383,
+  "ci": [
+   -0.0006388847014232049,
+   -0.0005790112788450483
+  ],
+  "folds_positive": 0,
+  "tg_pass": false
+ },
+ "noCE": {
+  "F1_vs_P1": {
+   "delta_lin": 0.002059741475519378,
+   "ci": [
+    0.0019527526988508733,
+    0.0021696654845038536
+   ],
+   "folds_positive": 12
+  },
+  "TYMS_vs_P1": {
+   "delta_lin": 9.210345482609825e-05,
+   "ci": [
+    1.6036832364037077e-06,
+    0.0001894034920533729
+   ],
+   "folds_positive": 5
+  },
+  "GPR_vs_P1": {
+   "delta_lin": 0.0019685424837678042,
+   "ci": [
+    0.0019219953195320934,
+    0.0020168763613624325
+   ],
+   "folds_positive": 12
+  },
+  "F1_vs_TYMS": {
+   "delta_lin": 0.0019676380206932803,
+   "ci": [
+    0.0019208231575805147,
+    0.002016219277743829
+   ],
+   "folds_positive": 12
+  }
+ },
+ "F1_passes_TG": false,
+ "checks_pass": true,
+ "wall_s": 41.3
+}

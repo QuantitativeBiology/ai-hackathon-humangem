@@ -1,0 +1,5 @@
+check	pass	max_abs_diff
+P1 score matrix equals the M6 cell H1+Bloo/M2 on the 686 lines (bitwise)	True	
+no failed sweep line in any arm	True	
+P1 tAP_line equals M6 train per_line (H1+Bloo/M2, all)	True	4.99824e-07
+P1 tAP_line equals M6 train per_line (H1+Bloo/M2, noCE)	True	4.99729e-07
