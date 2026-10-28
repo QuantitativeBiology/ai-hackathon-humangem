@@ -1,0 +1,13 @@
+check	pass	max_abs_diff
+H1/M0 scores equal the W1 generic e_H1 on the 686 lines	True	
+H2/M0 scores equal the W1 generic e_H2 on the 686 lines	True	
+H1: GR from the T0|M0 sweep (KO growth < 1) equals the W3 GR task column	True	
+H1: P57(T0) equals W1 p57_H1 on U	True	
+H1: PGR(T0) equals W1 pgr_H1 on U	True	
+H2: GR from the T0|M0 sweep (KO growth < 1) equals the W3 GR task column	True	
+H2: P57(T0) equals W1 p57_H2 on U	True	
+H2: PGR(T0) equals W1 pgr_H2 on U	True	
+G* tAP_line equals W1 train_per_line (H1, all)	True	4.99163e-07
+G* tAP_line equals W1 train_per_line (H1, noCE)	True	4.99429e-07
+G* P57 x L-ge06 MCC equals W1 train_binary	True	4.02791e-07
+G* PGR x L-ge06 MCC equals W1 train_binary	True	3.42805e-07

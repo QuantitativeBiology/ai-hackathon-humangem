@@ -1,0 +1,7 @@
+file	sha256	tier	n_lines	n_genes	n_rows	methods	layout	tracked
+results/m6/scores/scores_train.large.parquet	808c464f9ac5e5a64ed8ac43a495a3b297c4970ec81f12874ed091e65a98ccba	train	767	2866	2198222	H1;M6:H1+Bloo/M0;M6:H1/M2(f=1);M6:H1+Bloo/M2(f=1);H2;M6:H2+Bloo/M0;M6:H2/M2(f=1);M6:H2+Bloo/M2(f=1)	line_gene	False
+results/m6/scores/scores_validation.large.parquet	e59d90eeb4a9f4bde4cfcc5ec7a96eddcb1997ade5c28b94aa29bdc4ead9980d	validation	200	2866	573200	H1;M6:H1+Bloo/M0;M6:H1/M2(f=1);M6:H1+Bloo/M2(f=1);H2;M6:H2+Bloo/M0;M6:H2/M2(f=1);M6:H2+Bloo/M2(f=1)	line_gene	False
+results/m6/val/m6_val_scores.parquet	888d6ca268717d65cd0b629f2ff20ce58568d0fb23e34ab3ce1083b3adacdc65	validation (expression lines)	198	2866	567468	H1;M6:H1+Bloo/M0;M6:H1/M2(f=1);M6:H1+Bloo/M2(f=1);H2;M6:H2+Bloo/M0;M6:H2/M2(f=1);M6:H2+Bloo/M2(f=1)	line_gene	True
+results/m6/scores/scores_test.large.parquet	7759f2afebb8baf8dca0db7bb5b9bafa7ff39e6a78058ab41b4ee534af9a5e5d	test	394	2866	1129204	H1;M6:H1+Bloo/M0;M6:H1/M2(f=1);M6:H1+Bloo/M2(f=1);H2;M6:H2+Bloo/M0;M6:H2/M2(f=1);M6:H2+Bloo/M2(f=1)	line_gene	False
+results/m6/scores/sweep_e.parquet	ea67f56637429bf53eca5afc2a4bdf2a390cc422facb969f2fcdd8e2b3b551cd	all (sweep-keyed)		2866	240744		sweep	True
+results/m6/scores/line_assignment.tsv	ab0faa7b5b4e8f2638fa814d20a967f53edde7b82baa792d1dd3f9807e734858	all (assignment)		2866	5444		assignment	True

@@ -1,0 +1,77 @@
+{
+ "n_lines": 686,
+ "n_lineages": 12,
+ "failed_lines": {
+  "H1": 0,
+  "H1+Bloo/M0": 0,
+  "H1/M2": 0,
+  "H1+Bloo/M2": 0,
+  "H2": 0,
+  "H2+Bloo/M0": 0,
+  "H2/M2": 0,
+  "H2+Bloo/M2": 0
+ },
+ "tg": {
+  "H1+Bloo/M0": {
+   "label": "(1)",
+   "delta_lin": 0.034269502865675046,
+   "ci": [
+    0.03364877286595089,
+    0.03487453576978123
+   ],
+   "folds_positive": 12,
+   "tg_pass": true
+  },
+  "H1/M2": {
+   "label": "(2)",
+   "delta_lin": 0.016037152354828145,
+   "ci": [
+    0.015242733398757308,
+    0.016841996127217634
+   ],
+   "folds_positive": 12,
+   "tg_pass": true
+  },
+  "H1+Bloo/M2": {
+   "label": "(3)",
+   "delta_lin": 0.05336313555761964,
+   "ci": [
+    0.05228717550860616,
+    0.05453977783976623
+   ],
+   "folds_positive": 12,
+   "tg_pass": true
+  }
+ },
+ "training_one_se_descriptive": {
+  "eligible_tg": [
+   "H1+Bloo/M0",
+   "H1/M2",
+   "H1+Bloo/M2"
+  ],
+  "best": "H1+Bloo/M2",
+  "rows": [
+   {
+    "cell": "H1+Bloo/M0",
+    "diff_best_minus_cell": 0.019093632691944584,
+    "se": 0.0005102439854205157,
+    "within_1se": false
+   },
+   {
+    "cell": "H1/M2",
+    "diff_best_minus_cell": 0.0373259832027915,
+    "se": 0.0003516032757815067,
+    "within_1se": false
+   },
+   {
+    "cell": "H1+Bloo/M2",
+    "diff_best_minus_cell": 0.0,
+    "se": 0.0,
+    "within_1se": true
+   }
+  ],
+  "pick": "H1+Bloo/M2"
+ },
+ "checks_pass": true,
+ "wall_s": 86.2
+}

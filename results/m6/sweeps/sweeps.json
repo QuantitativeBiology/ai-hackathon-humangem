@@ -1,0 +1,18 @@
+{
+ "n_new": 38,
+ "n_spot": 4,
+ "status": {
+  "ok": 42
+ },
+ "job_cpu_s": 1960.4,
+ "wall_s": 363.2,
+ "workers": 8,
+ "solver": "glpk",
+ "spot_all_bitwise_equal": true,
+ "max_shortcut_dev": 1.7985612998927536e-14,
+ "a10_limits": {
+  "lp_s": 300,
+  "lp_retries": 1,
+  "job_cpu_s": 1800
+ }
+}

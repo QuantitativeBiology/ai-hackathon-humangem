@@ -1,0 +1,79 @@
+{
+ "look_id": "M6_factorial",
+ "kind": "shortlist",
+ "workstream": "M6",
+ "milestone": "M6",
+ "scores": {
+  "path": "results/m6/val/m6_val_scores.parquet",
+  "sha256": "888d6ca268717d65cd0b629f2ff20ce58568d0fb23e34ab3ce1083b3adacdc65",
+  "layout": "line_gene"
+ },
+ "methods": [
+  "H1",
+  "H2",
+  "M6:H1+Bloo/M0",
+  "M6:H1/M2(f=1)",
+  "M6:H1+Bloo/M2(f=1)",
+  "M6:H2+Bloo/M0",
+  "M6:H2/M2(f=1)",
+  "M6:H2+Bloo/M2(f=1)"
+ ],
+ "candidates": [
+  "M6:H1+Bloo/M0",
+  "M6:H1/M2(f=1)",
+  "M6:H1+Bloo/M2(f=1)"
+ ],
+ "reference": "H1",
+ "labels": [
+  "L_prob"
+ ],
+ "genesets": [
+  "all",
+  "noCE"
+ ],
+ "universes": [
+  "U"
+ ],
+ "strata": [
+  "none",
+  "expressed_pairs"
+ ],
+ "B": 2000,
+ "seed": 11,
+ "decision_rule": "\u00a78 gate per candidate: eligible iff its paired validation \u0394\u0304_lin vs G* (H1/M0, the W1 look's G-star) has CI lower bound > 0 (L_prob, all genes, U, no stratum). Among eligible candidates the paired-difference one-SE rule (\u00a79) picks the first candidate in spec order (D10, simplest first: (1) H1+B-loo/M0, (2) H1/M2(f=1), (3) H1+B-loo/M2(f=1)) whose \u0394\u0304_lin(best \u2212 candidate) <= its bootstrap SE; that cell is P1 (\u00a710.1 steps 3-4, A12c). If none is eligible, P1 is the best point estimate labelled 'gate not passed'. \u03c3\u00b7\u221a(2 ln m) with m = 3 is reported. H2 cells are descriptive (never P1).",
+ "provenance": {
+  "results/m6/scores/SHA256SUMS.tsv": "f5613cf2140710bf7d35acb19db813f6f3f2e696c35f2515e819232c1ffc6817",
+  "results/m6/scores/sweep_e.parquet": "ea67f56637429bf53eca5afc2a4bdf2a390cc422facb969f2fcdd8e2b3b551cd",
+  "results/m6/scores/line_assignment.tsv": "ab0faa7b5b4e8f2638fa814d20a967f53edde7b82baa792d1dd3f9807e734858",
+  "results/m6/scores/w3_mev.tsv": "4fe6bb5a8dc5f4cb22319287ccb9749cf267674bc22f215240058f236331fefd",
+  "results/m6/sweeps/catalog.tsv": "c7b906bf2b31340fcab1f5ac0510a2916bcaadc822383a0125911048721d9cb2",
+  "results/m6/sweeps/sweeps.tsv": "3b5538674d761e97b1c77b7bec6d62196edba09312d3f398e9e95a4d76ca6ef9",
+  "results/m6/sweeps/spot_checks.tsv": "6040156da2107090b067af2052b3258f32a568fbcdb973b935b958da24b5f17e",
+  "results/m6/sweeps/ratio_r_human1.parquet": "71267b89b247793898f6e0441612e83dab223c53a9e14b6c5fe95c3cf17b7f18",
+  "results/m6/sweeps/ratio_r_human2.parquet": "6567160983d0f6d86eb3b365be7ac9278f868fe0e1959ccd040577d82a47753c",
+  "results/m6/train/summary.json": "e810cfe73a8f00260cb8134be0a214cb40c9a9e19277b915dc52a7c2e2dc35e6",
+  "results/m6/train/contrasts.tsv": "686b1399ada34581a0eb0909a60948938449db8bbd46fe40e323ee256254a94b",
+  "results/m6/train/cells.tsv": "dd3db376a5918b8595cee556a2e9792ae2ef7a4050621a4c7430167d6ed76e25",
+  "results/m6/train/interaction.tsv": "dbea9f41799bed292339c7b515a9f64557feb6242e4e11c6e197bee29c040e6b",
+  "results/w2/controls/line_sweeps.tsv": "404018a7ec576e3dcb1d0467f758dcf9653715e286636c5ee5119f5cb21af42e",
+  "results/w2/ko/ratio_r_human1.parquet": "e8050295406794d739b071f669992063f03bebe6f98b47c296803bfe192722ad",
+  "results/w2/ko/ratio_r_human2.parquet": "53b606cb2bd24f6e239e886a8858934c69a5f99b004541404db401fe423ae4a9",
+  "results/w2/train/shortlist.json": "1d63c896b673cbb81ffaaaaf7ac4187b8b060888fe855905788c05ada7b57b51",
+  "results/w3/sweeps/ratio_r_human1.parquet": "bf876febdc3afa1511547826816871fc2c060fe7b39802c2aa3f4078dbf23d9c",
+  "results/w3/sweeps/ratio_r_human2.parquet": "c6092010e71816928ae2a16e0fafb87c155dc4866d9ba00800406b5c9ec2bccf",
+  "results/w3/structure/variants_human1.json": "fc0feb26f05fad8b5e42dfe9ab73c407cc2551714d20664de1440465132be5ed",
+  "results/w3/structure/variants_human2.json": "23185d3b1ab9172e1e610a842be3f59b9e6a99a7a9185860440afc4632dbabb3",
+  "results/w3/train/shortlist.json": "c54c653cf84b2d3aea3a64b75cd54ae862624e3aaa9dd7e686e0388a390087f9",
+  "results/m5/train/train_decision.json": "78c82dd1a51746e7684dc25fd3acb223f28b688e2b655f2e9627c249ddaf5fd9",
+  "src/nextgem/w3.py": "77cb2b75723f3f7edd0fecb4feffabea3ba14d406ac4378c64fc415c860224ae",
+  "src/nextgem/w2_engine.py": "c0e55ed3f2d20a01bb16f3c9ec8f46535bfa2fee97448185631652b5aa47df7c",
+  "src/nextgem/w2_score.py": "c8a3caf2bb51d1c7aad0d3a835e97ac76e1e16bd9a9f92d77cf264a0a767bab5",
+  "src/nextgem/media.py": "a7e965f4129b5cadcb873ccefe906cc648a85fc6c3b105ed1a07b934f229f33c",
+  "scripts/m6_common.py": "0da962dd954f4073746250ea48a34d71e944fd79ced4cf5d6c9974df3a682f4c",
+  "scripts/m6_sweeps.py": "3efb195ed7fb7b31c3dd4c76e718a55be82b90f8ca47ebe85d21d2724eec51bd",
+  "scripts/m6_scores.py": "644020e8427f5cf6b0b63ff991e7478bdefb41eb5459e91d1f528e5792b8e275",
+  "scripts/m6_score_train.py": "b99b7610f806efcd52cbbc9571674fddadfe4cf92cbe9104df205f043ab301c3",
+  "scripts/m6_val_spec.py": "ea872390a536e461e49f2472ef5956b045eef4d764ea988811b5ecc695d54c3a"
+ },
+ "notes": "M6 integration factorial (A12c; cells fixed in RESEARCH_TREE D10 before any factorial scoring). Context lever not selected (M5 pre-check, A12b), so no context axis. Scores are line-specific (layout line_gene) over the 198 validation expression lines: e = 1 \u2212 ratio_r of the KO sweep of (parent, biomass variant, the line's medium); M2(f=1) = documented base medium + supplements + serum model f = 1, gate-free, as in results/w2/controls/line_sweeps.tsv (imputed / fallback / unmappable lines: W2's integrated-pipeline medium, classic RPMI + 10% FBS; onboarded lines: onboarded medium). B-loo = W3 B-loo:cofactor_pool_biomass (results/w3/structure/variants_<parent>.json). H1 and H2 columns equal the W1 generic scores. Flags carried: W3-D1 on cells (1) and (3) (no pre-registered negative control applies to biomass leave-outs; no claim may rest on 'beats controls'); W2-SHUF and W2-MOPEN on cells (2) and (3) (no line-specific-medium claim; the gain is 'realistic culture medium vs Ham's'); W3-MEV on cell (3) (under serum media the cofactor-pool B-loo makes HMGCR/MVK/PMVK/MVD non-lethal; results/m6/scores/w3_mev.tsv). Training (686 lines, 12 lineages; results/m6/train/): (1) H1+Bloo/M0: +0.0343 [+0.0336, +0.0349], 12/12, TG pass; (2) H1/M2: +0.0160 [+0.0152, +0.0168], 12/12, TG pass; (3) H1+Bloo/M2: +0.0534 [+0.0523, +0.0545], 12/12, TG pass. This single look is also W2's validation answer (D10). Harness fit: the spec's workstream 'M6' does not match the harness rule workstream == W<n> == results/<ws>/val (A11g), so the harness refuses it as is; PI decision needed (see results/m6/README.md)."
+}

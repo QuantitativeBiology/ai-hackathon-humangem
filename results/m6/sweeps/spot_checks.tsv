@@ -1,0 +1,5 @@
+parent	key	reference	status	n_genes	bitwise_equal	max_abs_diff	n_lethal
+human1	T0|human1:5fe39a3dcfa2880f	W2 ko (cached)	ok	2887	True	0	149
+human1	B-loo:cofactor_pool_biomass|human1:db9ebc6b123dcb99	W3 sweeps (cached)	ok	2887	True	0	108
+human2	T0|human2:3b44fbeb77b8d4d5	W2 ko (cached)	ok	2870	True	0	152
+human2	B-loo:cofactor_pool_biomass|human2:a35fcfdb65d63819	W3 sweeps (cached)	ok	2870	True	0	115

@@ -1,0 +1,481 @@
+metric	nan_policy	lineage_equal_mean	line_mean	median	n_lines_used	n_nan	ci_lo	ci_hi	cell	method	protocol	call_rule	label	n_genes
+mcc	exclude	0.328646	0.329957	0.33001	686	0	0.326441	0.330813	H1	H1	Human1/2-paper	P57	L_ge06	2825
+mcc	zero	0.328646	0.329957	0.33001	686	0			H1	H1	Human1/2-paper	P57	L_ge06	2825
+f1	exclude	0.383603	0.384783	0.385246	686	0	0.38158	0.385569	H1	H1	Human1/2-paper	P57	L_ge06	2825
+f1	zero	0.383603	0.384783	0.385246	686	0			H1	H1	Human1/2-paper	P57	L_ge06	2825
+precision	exclude	0.430866	0.434073	0.430556	686	0	0.427729	0.434061	H1	H1	Human1/2-paper	P57	L_ge06	2825
+precision	zero	0.430866	0.434073	0.430556	686	0			H1	H1	Human1/2-paper	P57	L_ge06	2825
+recall	exclude	0.347134	0.347126	0.347139	686	0	0.345436	0.348828	H1	H1	Human1/2-paper	P57	L_ge06	2825
+recall	zero	0.347134	0.347126	0.347139	686	0			H1	H1	Human1/2-paper	P57	L_ge06	2825
+accuracy	exclude	0.892981	0.892736	0.893525	686	0	0.892515	0.893422	H1	H1	Human1/2-paper	P57	L_ge06	2825
+accuracy	zero	0.892981	0.892736	0.893525	686	0			H1	H1	Human1/2-paper	P57	L_ge06	2825
+mcc	exclude	0.333934	0.33429	0.335927	686	0	0.332187	0.335653	H1	H1	Human1-paper	PGR	L_ge06	2825
+mcc	zero	0.333934	0.33429	0.335927	686	0			H1	H1	Human1-paper	PGR	L_ge06	2825
+f1	exclude	0.363553	0.363586	0.364914	686	0	0.361891	0.365152	H1	H1	Human1-paper	PGR	L_ge06	2825
+f1	zero	0.363553	0.363586	0.364914	686	0			H1	H1	Human1-paper	PGR	L_ge06	2825
+precision	exclude	0.512773	0.515331	0.513699	686	0	0.510555	0.514984	H1	H1	Human1-paper	PGR	L_ge06	2825
+precision	zero	0.512773	0.515331	0.513699	686	0			H1	H1	Human1-paper	PGR	L_ge06	2825
+recall	exclude	0.282519	0.281861	0.283582	686	0	0.28076	0.28421	H1	H1	Human1-paper	PGR	L_ge06	2825
+recall	zero	0.282519	0.281861	0.283582	686	0			H1	H1	Human1-paper	PGR	L_ge06	2825
+accuracy	exclude	0.905041	0.904564	0.905536	686	0	0.9044	0.905654	H1	H1	Human1-paper	PGR	L_ge06	2825
+accuracy	zero	0.905041	0.904564	0.905536	686	0			H1	H1	Human1-paper	PGR	L_ge06	2825
+mcc	exclude	0.328646	0.329957	0.33001	686	0	0.326441	0.330813	H1	H1	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+mcc	zero	0.328646	0.329957	0.33001	686	0			H1	H1	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+f1	exclude	0.383603	0.384783	0.385246	686	0	0.38158	0.385569	H1	H1	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+f1	zero	0.383603	0.384783	0.385246	686	0			H1	H1	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+precision	exclude	0.430866	0.434073	0.430556	686	0	0.427729	0.434061	H1	H1	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+precision	zero	0.430866	0.434073	0.430556	686	0			H1	H1	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+recall	exclude	0.347134	0.347126	0.347139	686	0	0.345436	0.348828	H1	H1	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+recall	zero	0.347134	0.347126	0.347139	686	0			H1	H1	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+accuracy	exclude	0.892981	0.892736	0.893525	686	0	0.892515	0.893422	H1	H1	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+accuracy	zero	0.892981	0.892736	0.893525	686	0			H1	H1	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+mcc	exclude	0.333934	0.33429	0.335927	686	0	0.332187	0.335653	H1	H1	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+mcc	zero	0.333934	0.33429	0.335927	686	0			H1	H1	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+f1	exclude	0.363553	0.363586	0.364914	686	0	0.361891	0.365152	H1	H1	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+f1	zero	0.363553	0.363586	0.364914	686	0			H1	H1	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+precision	exclude	0.512773	0.515331	0.513699	686	0	0.510555	0.514984	H1	H1	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+precision	zero	0.512773	0.515331	0.513699	686	0			H1	H1	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+recall	exclude	0.282519	0.281861	0.283582	686	0	0.28076	0.28421	H1	H1	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+recall	zero	0.282519	0.281861	0.283582	686	0			H1	H1	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+accuracy	exclude	0.905041	0.904564	0.905536	686	0	0.9044	0.905654	H1	H1	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+accuracy	zero	0.905041	0.904564	0.905536	686	0			H1	H1	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+mcc	exclude	0.333934	0.33429	0.335927	686	0	0.332187	0.335653	H1	H1	fixed-cutoff	FBA<0.01	L_ge06	2825
+mcc	zero	0.333934	0.33429	0.335927	686	0			H1	H1	fixed-cutoff	FBA<0.01	L_ge06	2825
+f1	exclude	0.363553	0.363586	0.364914	686	0	0.361891	0.365152	H1	H1	fixed-cutoff	FBA<0.01	L_ge06	2825
+f1	zero	0.363553	0.363586	0.364914	686	0			H1	H1	fixed-cutoff	FBA<0.01	L_ge06	2825
+precision	exclude	0.512773	0.515331	0.513699	686	0	0.510555	0.514984	H1	H1	fixed-cutoff	FBA<0.01	L_ge06	2825
+precision	zero	0.512773	0.515331	0.513699	686	0			H1	H1	fixed-cutoff	FBA<0.01	L_ge06	2825
+recall	exclude	0.282519	0.281861	0.283582	686	0	0.28076	0.28421	H1	H1	fixed-cutoff	FBA<0.01	L_ge06	2825
+recall	zero	0.282519	0.281861	0.283582	686	0			H1	H1	fixed-cutoff	FBA<0.01	L_ge06	2825
+accuracy	exclude	0.905041	0.904564	0.905536	686	0	0.9044	0.905654	H1	H1	fixed-cutoff	FBA<0.01	L_ge06	2825
+accuracy	zero	0.905041	0.904564	0.905536	686	0			H1	H1	fixed-cutoff	FBA<0.01	L_ge06	2825
+mcc	exclude	0.321762	0.322505	0.323132	686	0	0.320329	0.323233	H1	H1	fixed-cutoff	FBA<0.01	L_prob	2825
+mcc	zero	0.321762	0.322505	0.323132	686	0			H1	H1	fixed-cutoff	FBA<0.01	L_prob	2825
+f1	exclude	0.343694	0.344256	0.344043	686	0	0.342353	0.345041	H1	H1	fixed-cutoff	FBA<0.01	L_prob	2825
+f1	zero	0.343694	0.344256	0.344043	686	0			H1	H1	fixed-cutoff	FBA<0.01	L_prob	2825
+precision	exclude	0.562784	0.564008	0.564626	686	0	0.559674	0.565805	H1	H1	fixed-cutoff	FBA<0.01	L_prob	2825
+precision	zero	0.562784	0.564008	0.564626	686	0			H1	H1	fixed-cutoff	FBA<0.01	L_prob	2825
+recall	exclude	0.248209	0.248573	0.247604	686	0	0.246893	0.249545	H1	H1	fixed-cutoff	FBA<0.01	L_prob	2825
+recall	zero	0.248209	0.248573	0.247604	686	0			H1	H1	fixed-cutoff	FBA<0.01	L_prob	2825
+accuracy	exclude	0.886446	0.88653	0.886691	686	0	0.885697	0.887192	H1	H1	fixed-cutoff	FBA<0.01	L_prob	2825
+accuracy	zero	0.886446	0.88653	0.886691	686	0			H1	H1	fixed-cutoff	FBA<0.01	L_prob	2825
+mcc	exclude	0.351319	0.352731	0.352353	686	0	0.34904	0.353588	H1+Bloo/M0	M6:H1+Bloo/M0	Human1/2-paper	P57	L_ge06	2825
+mcc	zero	0.351319	0.352731	0.352353	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	Human1/2-paper	P57	L_ge06	2825
+f1	exclude	0.396242	0.397372	0.397177	686	0	0.394206	0.398302	H1+Bloo/M0	M6:H1+Bloo/M0	Human1/2-paper	P57	L_ge06	2825
+f1	zero	0.396242	0.397372	0.397177	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	Human1/2-paper	P57	L_ge06	2825
+precision	exclude	0.481754	0.48535	0.484043	686	0	0.478279	0.485303	H1+Bloo/M0	M6:H1+Bloo/M0	Human1/2-paper	P57	L_ge06	2825
+precision	zero	0.481754	0.48535	0.484043	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	Human1/2-paper	P57	L_ge06	2825
+recall	exclude	0.337809	0.337807	0.337526	686	0	0.336102	0.33949	H1+Bloo/M0	M6:H1+Bloo/M0	Human1/2-paper	P57	L_ge06	2825
+recall	zero	0.337809	0.337807	0.337526	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	Human1/2-paper	P57	L_ge06	2825
+accuracy	exclude	0.90123	0.900968	0.901799	686	0	0.900756	0.901694	H1+Bloo/M0	M6:H1+Bloo/M0	Human1/2-paper	P57	L_ge06	2825
+accuracy	zero	0.90123	0.900968	0.901799	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	Human1/2-paper	P57	L_ge06	2825
+mcc	exclude	0.378845	0.379175	0.381241	686	0	0.376783	0.380919	H1+Bloo/M0	M6:H1+Bloo/M0	Human1-paper	PGR	L_ge06	2825
+mcc	zero	0.378845	0.379175	0.381241	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	Human1-paper	PGR	L_ge06	2825
+f1	exclude	0.37858	0.378362	0.380206	686	0	0.37656	0.380602	H1+Bloo/M0	M6:H1+Bloo/M0	Human1-paper	PGR	L_ge06	2825
+f1	zero	0.37858	0.378362	0.380206	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	Human1-paper	PGR	L_ge06	2825
+precision	exclude	0.640967	0.643962	0.642857	686	0	0.638438	0.643491	H1+Bloo/M0	M6:H1+Bloo/M0	Human1-paper	PGR	L_ge06	2825
+precision	zero	0.640967	0.643962	0.642857	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	Human1-paper	PGR	L_ge06	2825
+recall	exclude	0.269331	0.26864	0.270223	686	0	0.267498	0.271198	H1+Bloo/M0	M6:H1+Bloo/M0	Human1-paper	PGR	L_ge06	2825
+recall	zero	0.269331	0.26864	0.270223	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	Human1-paper	PGR	L_ge06	2825
+accuracy	exclude	0.915018	0.914508	0.915827	686	0	0.914322	0.915692	H1+Bloo/M0	M6:H1+Bloo/M0	Human1-paper	PGR	L_ge06	2825
+accuracy	zero	0.915018	0.914508	0.915827	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	Human1-paper	PGR	L_ge06	2825
+mcc	exclude	0.351319	0.352731	0.352353	686	0	0.34904	0.353588	H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+mcc	zero	0.351319	0.352731	0.352353	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+f1	exclude	0.396242	0.397372	0.397177	686	0	0.394206	0.398302	H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+f1	zero	0.396242	0.397372	0.397177	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+precision	exclude	0.481754	0.48535	0.484043	686	0	0.478279	0.485303	H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+precision	zero	0.481754	0.48535	0.484043	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+recall	exclude	0.337809	0.337807	0.337526	686	0	0.336102	0.33949	H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+recall	zero	0.337809	0.337807	0.337526	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+accuracy	exclude	0.90123	0.900968	0.901799	686	0	0.900756	0.901694	H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+accuracy	zero	0.90123	0.900968	0.901799	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+mcc	exclude	0.378845	0.379175	0.381241	686	0	0.376783	0.380919	H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+mcc	zero	0.378845	0.379175	0.381241	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+f1	exclude	0.37858	0.378362	0.380206	686	0	0.37656	0.380602	H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+f1	zero	0.37858	0.378362	0.380206	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+precision	exclude	0.640967	0.643962	0.642857	686	0	0.638438	0.643491	H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+precision	zero	0.640967	0.643962	0.642857	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+recall	exclude	0.269331	0.26864	0.270223	686	0	0.267498	0.271198	H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+recall	zero	0.269331	0.26864	0.270223	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+accuracy	exclude	0.915018	0.914508	0.915827	686	0	0.914322	0.915692	H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+accuracy	zero	0.915018	0.914508	0.915827	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+mcc	exclude	0.378845	0.379175	0.381241	686	0	0.376783	0.380919	H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2825
+mcc	zero	0.378845	0.379175	0.381241	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2825
+f1	exclude	0.37858	0.378362	0.380206	686	0	0.37656	0.380602	H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2825
+f1	zero	0.37858	0.378362	0.380206	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2825
+precision	exclude	0.640967	0.643962	0.642857	686	0	0.638438	0.643491	H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2825
+precision	zero	0.640967	0.643962	0.642857	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2825
+recall	exclude	0.269331	0.26864	0.270223	686	0	0.267498	0.271198	H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2825
+recall	zero	0.269331	0.26864	0.270223	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2825
+accuracy	exclude	0.915018	0.914508	0.915827	686	0	0.914322	0.915692	H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2825
+accuracy	zero	0.915018	0.914508	0.915827	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2825
+mcc	exclude	0.361906	0.362603	0.362673	686	0	0.360226	0.363606	H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2825
+mcc	zero	0.361906	0.362603	0.362673	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2825
+f1	exclude	0.348661	0.349142	0.348641	686	0	0.347039	0.350328	H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2825
+f1	zero	0.348661	0.349142	0.348641	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2825
+precision	exclude	0.6941	0.695448	0.696429	686	0	0.6908	0.697375	H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2825
+precision	zero	0.6941	0.695448	0.696429	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2825
+recall	exclude	0.233435	0.233726	0.232487	686	0	0.232003	0.234885	H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2825
+recall	zero	0.233435	0.233726	0.232487	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2825
+accuracy	exclude	0.895418	0.895477	0.895683	686	0	0.894612	0.896211	H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2825
+accuracy	zero	0.895418	0.895477	0.895683	686	0			H1+Bloo/M0	M6:H1+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2825
+mcc	exclude	0.328646	0.329957	0.33001	686	0	0.326441	0.330813	H1/M2	M6:H1/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+mcc	zero	0.328646	0.329957	0.33001	686	0			H1/M2	M6:H1/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+f1	exclude	0.383603	0.384783	0.385246	686	0	0.38158	0.385569	H1/M2	M6:H1/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+f1	zero	0.383603	0.384783	0.385246	686	0			H1/M2	M6:H1/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+precision	exclude	0.430866	0.434073	0.430556	686	0	0.427729	0.434061	H1/M2	M6:H1/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+precision	zero	0.430866	0.434073	0.430556	686	0			H1/M2	M6:H1/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+recall	exclude	0.347134	0.347126	0.347139	686	0	0.345436	0.348828	H1/M2	M6:H1/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+recall	zero	0.347134	0.347126	0.347139	686	0			H1/M2	M6:H1/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+accuracy	exclude	0.892981	0.892736	0.893525	686	0	0.892515	0.893422	H1/M2	M6:H1/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+accuracy	zero	0.892981	0.892736	0.893525	686	0			H1/M2	M6:H1/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+mcc	exclude	0.333934	0.33429	0.335927	686	0	0.332187	0.335653	H1/M2	M6:H1/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+mcc	zero	0.333934	0.33429	0.335927	686	0			H1/M2	M6:H1/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+f1	exclude	0.363553	0.363586	0.364914	686	0	0.361891	0.365152	H1/M2	M6:H1/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+f1	zero	0.363553	0.363586	0.364914	686	0			H1/M2	M6:H1/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+precision	exclude	0.512773	0.515331	0.513699	686	0	0.510555	0.514984	H1/M2	M6:H1/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+precision	zero	0.512773	0.515331	0.513699	686	0			H1/M2	M6:H1/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+recall	exclude	0.282519	0.281861	0.283582	686	0	0.28076	0.28421	H1/M2	M6:H1/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+recall	zero	0.282519	0.281861	0.283582	686	0			H1/M2	M6:H1/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+accuracy	exclude	0.905041	0.904564	0.905536	686	0	0.9044	0.905654	H1/M2	M6:H1/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+accuracy	zero	0.905041	0.904564	0.905536	686	0			H1/M2	M6:H1/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+mcc	exclude	0.333297	0.334747	0.335624	686	0	0.331012	0.335519	H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+mcc	zero	0.333297	0.334747	0.335624	686	0			H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+f1	exclude	0.38497	0.38622	0.38671	686	0	0.382895	0.387002	H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+f1	zero	0.38497	0.38622	0.38671	686	0			H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+precision	exclude	0.445582	0.449041	0.447939	686	0	0.442192	0.448971	H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+precision	zero	0.445582	0.449041	0.447939	686	0			H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+recall	exclude	0.340311	0.34038	0.340278	686	0	0.338632	0.341993	H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+recall	zero	0.340311	0.34038	0.340278	686	0			H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+accuracy	exclude	0.895677	0.895443	0.896169	686	0	0.895205	0.896124	H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+accuracy	zero	0.895677	0.895443	0.896169	686	0			H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+mcc	exclude	0.34633	0.347331	0.346559	686	0	0.344482	0.348208	H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+mcc	zero	0.34633	0.347331	0.346559	686	0			H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+f1	exclude	0.371859	0.372381	0.372262	686	0	0.370136	0.373605	H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+f1	zero	0.371859	0.372381	0.372262	686	0			H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+precision	exclude	0.535858	0.539431	0.535211	686	0	0.533057	0.538771	H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+precision	zero	0.535858	0.539431	0.535211	686	0			H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+recall	exclude	0.285676	0.285354	0.286519	686	0	0.28397	0.287375	H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+recall	zero	0.285676	0.285354	0.286519	686	0			H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+accuracy	exclude	0.907345	0.906962	0.907984	686	0	0.906735	0.907915	H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+accuracy	zero	0.907345	0.906962	0.907984	686	0			H1/M2	M6:H1/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+mcc	exclude	0.34633	0.347331	0.346559	686	0	0.344482	0.348208	H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+mcc	zero	0.34633	0.347331	0.346559	686	0			H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+f1	exclude	0.371859	0.372381	0.372262	686	0	0.370136	0.373605	H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+f1	zero	0.371859	0.372381	0.372262	686	0			H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+precision	exclude	0.535858	0.539431	0.535211	686	0	0.533057	0.538771	H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+precision	zero	0.535858	0.539431	0.535211	686	0			H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+recall	exclude	0.285676	0.285354	0.286519	686	0	0.28397	0.287375	H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+recall	zero	0.285676	0.285354	0.286519	686	0			H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+accuracy	exclude	0.907345	0.906962	0.907984	686	0	0.906735	0.907915	H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+accuracy	zero	0.907345	0.906962	0.907984	686	0			H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+mcc	exclude	0.338123	0.339399	0.338686	686	0	0.336315	0.339994	H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+mcc	zero	0.338123	0.339399	0.338686	686	0			H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+f1	exclude	0.354233	0.355193	0.355141	686	0	0.35271	0.355832	H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+f1	zero	0.354233	0.355193	0.355141	686	0			H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+precision	exclude	0.59342	0.595514	0.591549	686	0	0.589548	0.597282	H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+precision	zero	0.59342	0.595514	0.591549	686	0			H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+recall	exclude	0.25331	0.253927	0.253728	686	0	0.251973	0.254687	H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+recall	zero	0.25331	0.253927	0.253728	686	0			H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+accuracy	exclude	0.889362	0.889526	0.889568	686	0	0.888643	0.890087	H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+accuracy	zero	0.889362	0.889526	0.889568	686	0			H1/M2	M6:H1/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+mcc	exclude	0.351319	0.352731	0.352353	686	0	0.34904	0.353588	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+mcc	zero	0.351319	0.352731	0.352353	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+f1	exclude	0.396242	0.397372	0.397177	686	0	0.394206	0.398302	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+f1	zero	0.396242	0.397372	0.397177	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+precision	exclude	0.481754	0.48535	0.484043	686	0	0.478279	0.485303	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+precision	zero	0.481754	0.48535	0.484043	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+recall	exclude	0.337809	0.337807	0.337526	686	0	0.336102	0.33949	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+recall	zero	0.337809	0.337807	0.337526	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+accuracy	exclude	0.90123	0.900968	0.901799	686	0	0.900756	0.901694	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+accuracy	zero	0.90123	0.900968	0.901799	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2825
+mcc	exclude	0.378845	0.379175	0.381241	686	0	0.376783	0.380919	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+mcc	zero	0.378845	0.379175	0.381241	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+f1	exclude	0.37858	0.378362	0.380206	686	0	0.37656	0.380602	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+f1	zero	0.37858	0.378362	0.380206	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+precision	exclude	0.640967	0.643962	0.642857	686	0	0.638438	0.643491	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+precision	zero	0.640967	0.643962	0.642857	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+recall	exclude	0.269331	0.26864	0.270223	686	0	0.267498	0.271198	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+recall	zero	0.269331	0.26864	0.270223	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+accuracy	exclude	0.915018	0.914508	0.915827	686	0	0.914322	0.915692	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+accuracy	zero	0.915018	0.914508	0.915827	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2825
+mcc	exclude	0.3543	0.355764	0.355598	686	0	0.351988	0.356619	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+mcc	zero	0.3543	0.355764	0.355598	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+f1	exclude	0.398179	0.399333	0.398764	686	0	0.396102	0.400257	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+f1	zero	0.398179	0.399333	0.398764	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+precision	exclude	0.48749	0.491202	0.491803	686	0	0.483859	0.491139	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+precision	zero	0.48749	0.491202	0.491803	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+recall	exclude	0.337875	0.337879	0.337932	686	0	0.336136	0.33954	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+recall	zero	0.337875	0.337879	0.337932	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+accuracy	exclude	0.902001	0.90175	0.902614	686	0	0.901522	0.902471	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+accuracy	zero	0.902001	0.90175	0.902614	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2825
+mcc	exclude	0.391588	0.39185	0.392797	686	0	0.389413	0.393748	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+mcc	zero	0.391588	0.39185	0.392797	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+f1	exclude	0.384157	0.383774	0.386151	686	0	0.382126	0.386207	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+f1	zero	0.384157	0.383774	0.386151	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+precision	exclude	0.67462	0.67781	0.675676	686	0	0.671321	0.67779	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+precision	zero	0.67462	0.67781	0.675676	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+recall	exclude	0.269281	0.26845	0.27032	686	0	0.267506	0.271079	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+recall	zero	0.269281	0.26845	0.27032	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+accuracy	exclude	0.917016	0.9165	0.917986	686	0	0.916334	0.917665	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+accuracy	zero	0.917016	0.9165	0.917986	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2825
+mcc	exclude	0.391588	0.39185	0.392797	686	0	0.389413	0.393748	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+mcc	zero	0.391588	0.39185	0.392797	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+f1	exclude	0.384157	0.383774	0.386151	686	0	0.382126	0.386207	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+f1	zero	0.384157	0.383774	0.386151	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+precision	exclude	0.67462	0.67781	0.675676	686	0	0.671321	0.67779	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+precision	zero	0.67462	0.67781	0.675676	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+recall	exclude	0.269281	0.26845	0.27032	686	0	0.267506	0.271079	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+recall	zero	0.269281	0.26845	0.27032	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+accuracy	exclude	0.917016	0.9165	0.917986	686	0	0.916334	0.917665	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+accuracy	zero	0.917016	0.9165	0.917986	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2825
+mcc	exclude	0.377702	0.378211	0.377915	686	0	0.375779	0.379684	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+mcc	zero	0.377702	0.378211	0.377915	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+f1	exclude	0.355395	0.355648	0.356458	686	0	0.353689	0.357218	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+f1	zero	0.355395	0.355648	0.356458	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+precision	exclude	0.735455	0.736733	0.735849	686	0	0.731147	0.739529	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+precision	zero	0.735455	0.736733	0.735849	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+recall	exclude	0.234952	0.235056	0.23462	686	0	0.233581	0.236417	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+recall	zero	0.234952	0.235056	0.23462	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+accuracy	exclude	0.897796	0.897833	0.898201	686	0	0.897013	0.898577	H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+accuracy	zero	0.897796	0.897833	0.898201	686	0			H1+Bloo/M2	M6:H1+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2825
+mcc	exclude	0.331475	0.332747	0.332071	686	0	0.329284	0.333668	H2	H2	Human1/2-paper	P57	L_ge06	2807
+mcc	zero	0.331475	0.332747	0.332071	686	0			H2	H2	Human1/2-paper	P57	L_ge06	2807
+f1	exclude	0.386838	0.38802	0.3875	686	0	0.384799	0.388843	H2	H2	Human1/2-paper	P57	L_ge06	2807
+f1	zero	0.386838	0.38802	0.3875	686	0			H2	H2	Human1/2-paper	P57	L_ge06	2807
+precision	exclude	0.42317	0.426325	0.424658	686	0	0.420092	0.42638	H2	H2	Human1/2-paper	P57	L_ge06	2807
+precision	zero	0.42317	0.426325	0.424658	686	0			H2	H2	Human1/2-paper	P57	L_ge06	2807
+recall	exclude	0.357937	0.357866	0.357955	686	0	0.356153	0.359698	H2	H2	Human1/2-paper	P57	L_ge06	2807
+recall	zero	0.357937	0.357866	0.357955	686	0			H2	H2	Human1/2-paper	P57	L_ge06	2807
+accuracy	exclude	0.89425	0.894003	0.894718	686	0	0.893769	0.894689	H2	H2	Human1/2-paper	P57	L_ge06	2807
+accuracy	zero	0.89425	0.894003	0.894718	686	0			H2	H2	Human1/2-paper	P57	L_ge06	2807
+mcc	exclude	0.331217	0.331559	0.333174	686	0	0.329476	0.332891	H2	H2	Human1-paper	PGR	L_ge06	2807
+mcc	zero	0.331217	0.331559	0.333174	686	0			H2	H2	Human1-paper	PGR	L_ge06	2807
+f1	exclude	0.364976	0.365035	0.36658	686	0	0.363321	0.366568	H2	H2	Human1-paper	PGR	L_ge06	2807
+f1	zero	0.364976	0.365035	0.36658	686	0			H2	H2	Human1-paper	PGR	L_ge06	2807
+precision	exclude	0.492972	0.495493	0.493421	686	0	0.490641	0.495259	H2	H2	Human1-paper	PGR	L_ge06	2807
+precision	zero	0.492972	0.495493	0.493421	686	0			H2	H2	Human1-paper	PGR	L_ge06	2807
+recall	exclude	0.290829	0.290123	0.291208	686	0	0.289019	0.292591	H2	H2	Human1-paper	PGR	L_ge06	2807
+recall	zero	0.290829	0.290123	0.291208	686	0			H2	H2	Human1-paper	PGR	L_ge06	2807
+accuracy	exclude	0.905623	0.90515	0.906261	686	0	0.904979	0.906253	H2	H2	Human1-paper	PGR	L_ge06	2807
+accuracy	zero	0.905623	0.90515	0.906261	686	0			H2	H2	Human1-paper	PGR	L_ge06	2807
+mcc	exclude	0.331475	0.332747	0.332071	686	0	0.329284	0.333668	H2	H2	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+mcc	zero	0.331475	0.332747	0.332071	686	0			H2	H2	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+f1	exclude	0.386838	0.38802	0.3875	686	0	0.384799	0.388843	H2	H2	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+f1	zero	0.386838	0.38802	0.3875	686	0			H2	H2	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+precision	exclude	0.42317	0.426325	0.424658	686	0	0.420092	0.42638	H2	H2	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+precision	zero	0.42317	0.426325	0.424658	686	0			H2	H2	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+recall	exclude	0.357937	0.357866	0.357955	686	0	0.356153	0.359698	H2	H2	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+recall	zero	0.357937	0.357866	0.357955	686	0			H2	H2	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+accuracy	exclude	0.89425	0.894003	0.894718	686	0	0.893769	0.894689	H2	H2	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+accuracy	zero	0.89425	0.894003	0.894718	686	0			H2	H2	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+mcc	exclude	0.331217	0.331559	0.333174	686	0	0.329476	0.332891	H2	H2	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+mcc	zero	0.331217	0.331559	0.333174	686	0			H2	H2	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+f1	exclude	0.364976	0.365035	0.36658	686	0	0.363321	0.366568	H2	H2	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+f1	zero	0.364976	0.365035	0.36658	686	0			H2	H2	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+precision	exclude	0.492972	0.495493	0.493421	686	0	0.490641	0.495259	H2	H2	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+precision	zero	0.492972	0.495493	0.493421	686	0			H2	H2	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+recall	exclude	0.290829	0.290123	0.291208	686	0	0.289019	0.292591	H2	H2	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+recall	zero	0.290829	0.290123	0.291208	686	0			H2	H2	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+accuracy	exclude	0.905623	0.90515	0.906261	686	0	0.904979	0.906253	H2	H2	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+accuracy	zero	0.905623	0.90515	0.906261	686	0			H2	H2	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+mcc	exclude	0.331217	0.331559	0.333174	686	0	0.329476	0.332891	H2	H2	fixed-cutoff	FBA<0.01	L_ge06	2807
+mcc	zero	0.331217	0.331559	0.333174	686	0			H2	H2	fixed-cutoff	FBA<0.01	L_ge06	2807
+f1	exclude	0.364976	0.365035	0.36658	686	0	0.363321	0.366568	H2	H2	fixed-cutoff	FBA<0.01	L_ge06	2807
+f1	zero	0.364976	0.365035	0.36658	686	0			H2	H2	fixed-cutoff	FBA<0.01	L_ge06	2807
+precision	exclude	0.492972	0.495493	0.493421	686	0	0.490641	0.495259	H2	H2	fixed-cutoff	FBA<0.01	L_ge06	2807
+precision	zero	0.492972	0.495493	0.493421	686	0			H2	H2	fixed-cutoff	FBA<0.01	L_ge06	2807
+recall	exclude	0.290829	0.290123	0.291208	686	0	0.289019	0.292591	H2	H2	fixed-cutoff	FBA<0.01	L_ge06	2807
+recall	zero	0.290829	0.290123	0.291208	686	0			H2	H2	fixed-cutoff	FBA<0.01	L_ge06	2807
+accuracy	exclude	0.905623	0.90515	0.906261	686	0	0.904979	0.906253	H2	H2	fixed-cutoff	FBA<0.01	L_ge06	2807
+accuracy	zero	0.905623	0.90515	0.906261	686	0			H2	H2	fixed-cutoff	FBA<0.01	L_ge06	2807
+mcc	exclude	0.318449	0.319204	0.319504	686	0	0.316994	0.319906	H2	H2	fixed-cutoff	FBA<0.01	L_prob	2807
+mcc	zero	0.318449	0.319204	0.319504	686	0			H2	H2	fixed-cutoff	FBA<0.01	L_prob	2807
+f1	exclude	0.345579	0.346161	0.346042	686	0	0.344209	0.346892	H2	H2	fixed-cutoff	FBA<0.01	L_prob	2807
+f1	zero	0.345579	0.346161	0.346042	686	0			H2	H2	fixed-cutoff	FBA<0.01	L_prob	2807
+precision	exclude	0.542503	0.543702	0.543046	686	0	0.539461	0.545538	H2	H2	fixed-cutoff	FBA<0.01	L_prob	2807
+precision	zero	0.542503	0.543702	0.543046	686	0			H2	H2	fixed-cutoff	FBA<0.01	L_prob	2807
+recall	exclude	0.254484	0.25487	0.253482	686	0	0.253067	0.255878	H2	H2	fixed-cutoff	FBA<0.01	L_prob	2807
+recall	zero	0.254484	0.25487	0.253482	686	0			H2	H2	fixed-cutoff	FBA<0.01	L_prob	2807
+accuracy	exclude	0.887073	0.887161	0.887441	686	0	0.886325	0.887826	H2	H2	fixed-cutoff	FBA<0.01	L_prob	2807
+accuracy	zero	0.887073	0.887161	0.887441	686	0			H2	H2	fixed-cutoff	FBA<0.01	L_prob	2807
+mcc	exclude	0.353565	0.354923	0.3547	686	0	0.351288	0.355836	H2+Bloo/M0	M6:H2+Bloo/M0	Human1/2-paper	P57	L_ge06	2807
+mcc	zero	0.353565	0.354923	0.3547	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	Human1/2-paper	P57	L_ge06	2807
+f1	exclude	0.399825	0.400944	0.400871	686	0	0.397741	0.401906	H2+Bloo/M0	M6:H2+Bloo/M0	Human1/2-paper	P57	L_ge06	2807
+f1	zero	0.399825	0.400944	0.400871	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	Human1/2-paper	P57	L_ge06	2807
+precision	exclude	0.472095	0.475611	0.47644	686	0	0.468586	0.475637	H2+Bloo/M0	M6:H2+Bloo/M0	Human1/2-paper	P57	L_ge06	2807
+precision	zero	0.472095	0.475611	0.47644	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	Human1/2-paper	P57	L_ge06	2807
+recall	exclude	0.348257	0.348187	0.348282	686	0	0.346479	0.349993	H2+Bloo/M0	M6:H2+Bloo/M0	Human1/2-paper	P57	L_ge06	2807
+recall	zero	0.348257	0.348187	0.348282	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	Human1/2-paper	P57	L_ge06	2807
+accuracy	exclude	0.902545	0.90228	0.903004	686	0	0.902059	0.903005	H2+Bloo/M0	M6:H2+Bloo/M0	Human1/2-paper	P57	L_ge06	2807
+accuracy	zero	0.902545	0.90228	0.903004	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	Human1/2-paper	P57	L_ge06	2807
+mcc	exclude	0.381577	0.381919	0.383588	686	0	0.379495	0.383684	H2+Bloo/M0	M6:H2+Bloo/M0	Human1-paper	PGR	L_ge06	2807
+mcc	zero	0.381577	0.381919	0.383588	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	Human1-paper	PGR	L_ge06	2807
+f1	exclude	0.384198	0.383993	0.38542	686	0	0.382127	0.386277	H2+Bloo/M0	M6:H2+Bloo/M0	Human1-paper	PGR	L_ge06	2807
+f1	zero	0.384198	0.383993	0.38542	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	Human1-paper	PGR	L_ge06	2807
+precision	exclude	0.630972	0.634022	0.628319	686	0	0.628282	0.633642	H2+Bloo/M0	M6:H2+Bloo/M0	Human1-paper	PGR	L_ge06	2807
+precision	zero	0.630972	0.634022	0.628319	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	Human1-paper	PGR	L_ge06	2807
+recall	exclude	0.277017	0.276285	0.277973	686	0	0.275097	0.27898	H2+Bloo/M0	M6:H2+Bloo/M0	Human1-paper	PGR	L_ge06	2807
+recall	zero	0.277017	0.276285	0.277973	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	Human1-paper	PGR	L_ge06	2807
+accuracy	exclude	0.917075	0.91657	0.917892	686	0	0.916375	0.917751	H2+Bloo/M0	M6:H2+Bloo/M0	Human1-paper	PGR	L_ge06	2807
+accuracy	zero	0.917075	0.91657	0.917892	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	Human1-paper	PGR	L_ge06	2807
+mcc	exclude	0.353565	0.354923	0.3547	686	0	0.351288	0.355836	H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+mcc	zero	0.353565	0.354923	0.3547	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+f1	exclude	0.399825	0.400944	0.400871	686	0	0.397741	0.401906	H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+f1	zero	0.399825	0.400944	0.400871	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+precision	exclude	0.472095	0.475611	0.47644	686	0	0.468586	0.475637	H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+precision	zero	0.472095	0.475611	0.47644	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+recall	exclude	0.348257	0.348187	0.348282	686	0	0.346479	0.349993	H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+recall	zero	0.348257	0.348187	0.348282	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+accuracy	exclude	0.902545	0.90228	0.903004	686	0	0.902059	0.903005	H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+accuracy	zero	0.902545	0.90228	0.903004	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+mcc	exclude	0.381577	0.381919	0.383588	686	0	0.379495	0.383684	H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+mcc	zero	0.381577	0.381919	0.383588	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+f1	exclude	0.384198	0.383993	0.38542	686	0	0.382127	0.386277	H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+f1	zero	0.384198	0.383993	0.38542	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+precision	exclude	0.630972	0.634022	0.628319	686	0	0.628282	0.633642	H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+precision	zero	0.630972	0.634022	0.628319	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+recall	exclude	0.277017	0.276285	0.277973	686	0	0.275097	0.27898	H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+recall	zero	0.277017	0.276285	0.277973	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+accuracy	exclude	0.917075	0.91657	0.917892	686	0	0.916375	0.917751	H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+accuracy	zero	0.917075	0.91657	0.917892	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+mcc	exclude	0.381577	0.381919	0.383588	686	0	0.379495	0.383684	H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2807
+mcc	zero	0.381577	0.381919	0.383588	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2807
+f1	exclude	0.384198	0.383993	0.38542	686	0	0.382127	0.386277	H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2807
+f1	zero	0.384198	0.383993	0.38542	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2807
+precision	exclude	0.630972	0.634022	0.628319	686	0	0.628282	0.633642	H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2807
+precision	zero	0.630972	0.634022	0.628319	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2807
+recall	exclude	0.277017	0.276285	0.277973	686	0	0.275097	0.27898	H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2807
+recall	zero	0.277017	0.276285	0.277973	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2807
+accuracy	exclude	0.917075	0.91657	0.917892	686	0	0.916375	0.917751	H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2807
+accuracy	zero	0.917075	0.91657	0.917892	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_ge06	2807
+mcc	exclude	0.363757	0.36451	0.365239	686	0	0.362027	0.365509	H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2807
+mcc	zero	0.363757	0.36451	0.365239	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2807
+f1	exclude	0.353429	0.35396	0.353201	686	0	0.351719	0.355169	H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2807
+f1	zero	0.353429	0.35396	0.353201	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2807
+precision	exclude	0.684529	0.685947	0.6875	686	0	0.681141	0.687921	H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2807
+precision	zero	0.684529	0.685947	0.6875	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2807
+recall	exclude	0.238923	0.23925	0.237733	686	0	0.237399	0.24049	H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2807
+recall	zero	0.238923	0.23925	0.237733	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2807
+accuracy	exclude	0.897458	0.897526	0.897813	686	0	0.896661	0.89826	H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2807
+accuracy	zero	0.897458	0.897526	0.897813	686	0			H2+Bloo/M0	M6:H2+Bloo/M0	fixed-cutoff	FBA<0.01	L_prob	2807
+mcc	exclude	0.331475	0.332747	0.332071	686	0	0.329284	0.333668	H2/M2	M6:H2/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+mcc	zero	0.331475	0.332747	0.332071	686	0			H2/M2	M6:H2/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+f1	exclude	0.386838	0.38802	0.3875	686	0	0.384799	0.388843	H2/M2	M6:H2/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+f1	zero	0.386838	0.38802	0.3875	686	0			H2/M2	M6:H2/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+precision	exclude	0.42317	0.426325	0.424658	686	0	0.420092	0.42638	H2/M2	M6:H2/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+precision	zero	0.42317	0.426325	0.424658	686	0			H2/M2	M6:H2/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+recall	exclude	0.357937	0.357866	0.357955	686	0	0.356153	0.359698	H2/M2	M6:H2/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+recall	zero	0.357937	0.357866	0.357955	686	0			H2/M2	M6:H2/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+accuracy	exclude	0.89425	0.894003	0.894718	686	0	0.893769	0.894689	H2/M2	M6:H2/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+accuracy	zero	0.89425	0.894003	0.894718	686	0			H2/M2	M6:H2/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+mcc	exclude	0.331217	0.331559	0.333174	686	0	0.329476	0.332891	H2/M2	M6:H2/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+mcc	zero	0.331217	0.331559	0.333174	686	0			H2/M2	M6:H2/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+f1	exclude	0.364976	0.365035	0.36658	686	0	0.363321	0.366568	H2/M2	M6:H2/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+f1	zero	0.364976	0.365035	0.36658	686	0			H2/M2	M6:H2/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+precision	exclude	0.492972	0.495493	0.493421	686	0	0.490641	0.495259	H2/M2	M6:H2/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+precision	zero	0.492972	0.495493	0.493421	686	0			H2/M2	M6:H2/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+recall	exclude	0.290829	0.290123	0.291208	686	0	0.289019	0.292591	H2/M2	M6:H2/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+recall	zero	0.290829	0.290123	0.291208	686	0			H2/M2	M6:H2/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+accuracy	exclude	0.905623	0.90515	0.906261	686	0	0.904979	0.906253	H2/M2	M6:H2/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+accuracy	zero	0.905623	0.90515	0.906261	686	0			H2/M2	M6:H2/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+mcc	exclude	0.336024	0.337419	0.337484	686	0	0.33377	0.33826	H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+mcc	zero	0.336024	0.337419	0.337484	686	0			H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+f1	exclude	0.388402	0.389639	0.389722	686	0	0.386348	0.390456	H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+f1	zero	0.388402	0.389639	0.389722	686	0			H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+precision	exclude	0.437495	0.440874	0.439614	686	0	0.434181	0.440912	H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+precision	zero	0.437495	0.440874	0.439614	686	0			H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+recall	exclude	0.350871	0.350874	0.350776	686	0	0.349074	0.352572	H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+recall	zero	0.350871	0.350874	0.350776	686	0			H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+accuracy	exclude	0.897006	0.896767	0.897575	686	0	0.896535	0.897454	H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+accuracy	zero	0.897006	0.896767	0.897575	686	0			H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+mcc	exclude	0.345577	0.346461	0.346552	686	0	0.343649	0.347514	H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+mcc	zero	0.345577	0.346461	0.346552	686	0			H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+f1	exclude	0.374864	0.375331	0.375887	686	0	0.373046	0.376676	H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+f1	zero	0.374864	0.375331	0.375887	686	0			H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+precision	exclude	0.518988	0.522357	0.517486	686	0	0.516112	0.522022	H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+precision	zero	0.518988	0.522357	0.517486	686	0			H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+recall	exclude	0.2945	0.294084	0.295537	686	0	0.292643	0.29631	H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+recall	zero	0.2945	0.294084	0.295537	686	0			H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+accuracy	exclude	0.908392	0.907997	0.909222	686	0	0.907769	0.908978	H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+accuracy	zero	0.908392	0.907997	0.909222	686	0			H2/M2	M6:H2/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+mcc	exclude	0.345577	0.346461	0.346552	686	0	0.343649	0.347514	H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+mcc	zero	0.345577	0.346461	0.346552	686	0			H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+f1	exclude	0.374864	0.375331	0.375887	686	0	0.373046	0.376676	H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+f1	zero	0.374864	0.375331	0.375887	686	0			H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+precision	exclude	0.518988	0.522357	0.517486	686	0	0.516112	0.522022	H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+precision	zero	0.518988	0.522357	0.517486	686	0			H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+recall	exclude	0.2945	0.294084	0.295537	686	0	0.292643	0.29631	H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+recall	zero	0.2945	0.294084	0.295537	686	0			H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+accuracy	exclude	0.908392	0.907997	0.909222	686	0	0.907769	0.908978	H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+accuracy	zero	0.908392	0.907997	0.909222	686	0			H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+mcc	exclude	0.335749	0.336914	0.336504	686	0	0.333932	0.337584	H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+mcc	zero	0.335749	0.336914	0.336504	686	0			H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+f1	exclude	0.356629	0.357521	0.357448	686	0	0.355022	0.358277	H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+f1	zero	0.356629	0.357521	0.357448	686	0			H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+precision	exclude	0.574878	0.57674	0.575342	686	0	0.571067	0.578631	H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+precision	zero	0.574878	0.57674	0.575342	686	0			H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+recall	exclude	0.259443	0.260026	0.259203	686	0	0.257972	0.260953	H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+recall	zero	0.259443	0.260026	0.259203	686	0			H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+accuracy	exclude	0.890315	0.890465	0.890386	686	0	0.889598	0.891056	H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+accuracy	zero	0.890315	0.890465	0.890386	686	0			H2/M2	M6:H2/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+mcc	exclude	0.353565	0.354923	0.3547	686	0	0.351288	0.355836	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+mcc	zero	0.353565	0.354923	0.3547	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+f1	exclude	0.399825	0.400944	0.400871	686	0	0.397741	0.401906	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+f1	zero	0.399825	0.400944	0.400871	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+precision	exclude	0.472095	0.475611	0.47644	686	0	0.468586	0.475637	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+precision	zero	0.472095	0.475611	0.47644	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+recall	exclude	0.348257	0.348187	0.348282	686	0	0.346479	0.349993	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+recall	zero	0.348257	0.348187	0.348282	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+accuracy	exclude	0.902545	0.90228	0.903004	686	0	0.902059	0.903005	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+accuracy	zero	0.902545	0.90228	0.903004	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1/2-paper	P57	L_ge06	2807
+mcc	exclude	0.381577	0.381919	0.383588	686	0	0.379495	0.383684	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+mcc	zero	0.381577	0.381919	0.383588	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+f1	exclude	0.384198	0.383993	0.38542	686	0	0.382127	0.386277	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+f1	zero	0.384198	0.383993	0.38542	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+precision	exclude	0.630972	0.634022	0.628319	686	0	0.628282	0.633642	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+precision	zero	0.630972	0.634022	0.628319	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+recall	exclude	0.277017	0.276285	0.277973	686	0	0.275097	0.27898	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+recall	zero	0.277017	0.276285	0.277973	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+accuracy	exclude	0.917075	0.91657	0.917892	686	0	0.916375	0.917751	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+accuracy	zero	0.917075	0.91657	0.917892	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	Human1-paper	PGR	L_ge06	2807
+mcc	exclude	0.356653	0.358056	0.358222	686	0	0.354329	0.358951	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+mcc	zero	0.356653	0.358056	0.358222	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+f1	exclude	0.401909	0.403048	0.402913	686	0	0.399821	0.403956	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+f1	zero	0.401909	0.403048	0.402913	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+precision	exclude	0.4779	0.481517	0.481675	686	0	0.474318	0.481529	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+precision	zero	0.4779	0.481517	0.481675	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+recall	exclude	0.348326	0.348262	0.348282	686	0	0.346526	0.350039	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+recall	zero	0.348326	0.348262	0.348282	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+accuracy	exclude	0.903363	0.903107	0.903884	686	0	0.902876	0.903832	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+accuracy	zero	0.903363	0.903107	0.903884	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	P57|cell-medium	L_ge06	2807
+mcc	exclude	0.399493	0.399581	0.399943	686	0	0.397235	0.401695	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+mcc	zero	0.399493	0.399581	0.399943	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+f1	exclude	0.392529	0.391998	0.394118	686	0	0.390368	0.394706	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+f1	zero	0.392529	0.391998	0.394118	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+precision	exclude	0.677119	0.680091	0.67619	686	0	0.673623	0.680461	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+precision	zero	0.677119	0.680091	0.67619	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+recall	exclude	0.277211	0.276245	0.279299	686	0	0.275314	0.279118	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+recall	zero	0.277211	0.276245	0.279299	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+accuracy	exclude	0.91986	0.919325	0.920744	686	0	0.919165	0.920515	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+accuracy	zero	0.91986	0.919325	0.920744	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	ours (sensitivity)	PGR|cell-medium	L_ge06	2807
+mcc	exclude	0.399493	0.399581	0.399943	686	0	0.397235	0.401695	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+mcc	zero	0.399493	0.399581	0.399943	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+f1	exclude	0.392529	0.391998	0.394118	686	0	0.390368	0.394706	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+f1	zero	0.392529	0.391998	0.394118	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+precision	exclude	0.677119	0.680091	0.67619	686	0	0.673623	0.680461	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+precision	zero	0.677119	0.680091	0.67619	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+recall	exclude	0.277211	0.276245	0.279299	686	0	0.275314	0.279118	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+recall	zero	0.277211	0.276245	0.279299	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+accuracy	exclude	0.91986	0.919325	0.920744	686	0	0.919165	0.920515	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+accuracy	zero	0.91986	0.919325	0.920744	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_ge06	2807
+mcc	exclude	0.383599	0.383964	0.384229	686	0	0.381624	0.385637	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+mcc	zero	0.383599	0.383964	0.384229	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+f1	exclude	0.361454	0.361607	0.362318	686	0	0.359619	0.363346	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+f1	zero	0.361454	0.361607	0.362318	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+precision	exclude	0.73771	0.73872	0.741657	686	0	0.73343	0.741967	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+precision	zero	0.73771	0.73872	0.741657	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+recall	exclude	0.240074	0.240115	0.239415	686	0	0.23858	0.24172	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+recall	zero	0.240074	0.240115	0.239415	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+accuracy	exclude	0.900488	0.900507	0.900832	686	0	0.899693	0.901294	H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
+accuracy	zero	0.900488	0.900507	0.900832	686	0			H2+Bloo/M2	M6:H2+Bloo/M2(f=1)	fixed-cutoff	FBA<0.01	L_prob	2807
