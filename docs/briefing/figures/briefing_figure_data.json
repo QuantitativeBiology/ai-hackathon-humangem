@@ -1,0 +1,1188 @@
+{
+ "fig1": {
+  "tiers": {
+   "train": {
+    "lineages": [
+     "Lung",
+     "Esophagus/Stomach",
+     "Bowel",
+     "Head and Neck",
+     "Skin",
+     "Bone",
+     "Peripheral Nervous System",
+     "Myeloid",
+     "Uterus",
+     "Biliary Tract",
+     "Kidney",
+     "Cervix"
+    ],
+    "n_lines": 767,
+    "n_expression": 714,
+    "rare_lines": 30
+   },
+   "validation": {
+    "lineages": [
+     "Lymphoid",
+     "Soft Tissue",
+     "Bladder/Urinary Tract",
+     "Prostate"
+    ],
+    "n_lines": 200,
+    "n_expression": 198,
+    "rare_lines": 0
+   },
+   "test": {
+    "lineages": [
+     "CNS/Brain",
+     "Pancreas",
+     "Breast",
+     "Ovary/Fallopian Tube",
+     "Liver",
+     "Pleura",
+     "Eye"
+    ],
+    "n_lines": 394,
+    "n_expression": 380,
+    "rare_lines": 0
+   }
+  },
+  "validation_looks": [
+   "W1_M2_baseline",
+   "W3_M4_shortlist",
+   "M6_factorial",
+   "W7_shortlist_1",
+   "W7_P2_select",
+   "REHEARSAL_P1_M6",
+   "M10_F2"
+  ],
+  "test_looks": [
+   "T1",
+   "T2"
+  ],
+  "seed": 38,
+  "sources": [
+   "results/splits/split_summary.tsv",
+   "results/splits/split_meta.json",
+   "results/validation_ledger.tsv",
+   "results/test_ledger.tsv"
+  ]
+ },
+ "fig2": {
+  "values": {
+   "train": {
+    "H2": [
+     0.291627,
+     0.289831,
+     0.293427
+    ],
+    "H1": [
+     0.299576,
+     0.297773,
+     0.301345
+    ],
+    "M2": [
+     0.315613,
+     0.313409,
+     0.317837
+    ],
+    "BLOO": [
+     0.333845,
+     0.332096,
+     0.335555
+    ],
+    "P1": [
+     0.352939,
+     0.35074,
+     0.355135
+    ],
+    "B3": [
+     0.32564,
+     0.322283,
+     0.329071
+    ],
+    "B8+": [
+     0.424247,
+     0.421634,
+     0.426848
+    ],
+    "B2": [
+     0.900133,
+     0.897493,
+     0.902609
+    ]
+   },
+   "val": {
+    "H2": [
+     0.294596,
+     0.289919,
+     0.299015
+    ],
+    "H1": [
+     0.301676,
+     0.297012,
+     0.306022
+    ],
+    "M2": [
+     0.318797,
+     0.313218,
+     0.323963
+    ],
+    "BLOO": [
+     0.333841,
+     0.32924,
+     0.337903
+    ],
+    "P1": [
+     0.353421,
+     0.348252,
+     0.358264
+    ],
+    "B3": [
+     0.331186,
+     0.323154,
+     0.338857
+    ],
+    "B8+": [
+     0.429911,
+     0.422667,
+     0.436591
+    ],
+    "B2": [
+     0.891696,
+     0.885392,
+     0.897483
+    ]
+   },
+   "test": {
+    "H2": [
+     0.288965,
+     0.285763,
+     0.292058
+    ],
+    "H1": [
+     0.297397,
+     0.294219,
+     0.300412
+    ],
+    "M2": [
+     0.310133,
+     0.306316,
+     0.313962
+    ],
+    "P1": [
+     0.347132,
+     0.343228,
+     0.351057
+    ],
+    "B3": [
+     0.317021,
+     0.311553,
+     0.322167
+    ],
+    "B8+": [
+     0.417963,
+     0.413382,
+     0.422293
+    ],
+    "B2": [
+     0.894792,
+     0.89022,
+     0.899333
+    ],
+    "B0": [
+     0.123537,
+     null,
+     null
+    ]
+   }
+  },
+  "sources": [
+   "results/m6/train/cells.tsv",
+   "results/w1/train_grid.tsv",
+   "results/m6/val/val_look_M6_factorial.tsv",
+   "results/w1/val_look_W1_M2_baseline.tsv",
+   "results/m6/test/unsealed/T1/w1_benchmark.tsv"
+  ]
+ },
+ "fig3": {
+  "rows": [
+   {
+    "group": "Base model (vs generic Human1)",
+    "label": "Human2 instead of Human1",
+    "est": -0.00794835,
+    "lo": -0.00832244,
+    "hi": -0.00754822,
+    "val": [
+     -0.007080617418658356,
+     -0.007874045791277961,
+     -0.006273799798532821
+    ],
+    "kind": "train",
+    "note": "",
+    "y": -1
+   },
+   {
+    "group": "Context-specific extraction from expression (30-line panel, vs Human1)",
+    "label": "Thresholding + repair",
+    "est": -0.00798867092953169,
+    "lo": -0.01027188046003718,
+    "hi": -0.005276839584235127,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -3.4
+   },
+   {
+    "group": "Context-specific extraction from expression (30-line panel, vs Human1)",
+    "label": "GIMME",
+    "est": -0.006709494777624373,
+    "lo": -0.008974370737173996,
+    "hi": -0.004243110314390353,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -4.4
+   },
+   {
+    "group": "Context-specific extraction from expression (30-line panel, vs Human1)",
+    "label": "FASTCORE",
+    "est": -0.01021469345939034,
+    "lo": -0.013278156751629314,
+    "hi": -0.007219777709013692,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -5.4
+   },
+   {
+    "group": "Context-specific extraction from expression (30-line panel, vs Human1)",
+    "label": "E-Flux",
+    "est": -0.002860404342991901,
+    "lo": -0.004098977315082304,
+    "hi": -0.0015342699661186798,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -6.4
+   },
+   {
+    "group": "Context-specific extraction from expression (30-line panel, vs Human1)",
+    "label": "Label-calibrated presence",
+    "est": -0.011401632118651415,
+    "lo": -0.013097623690221591,
+    "hi": -0.00954664924752627,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -7.4
+   },
+   {
+    "group": "Context-specific extraction from expression (30-line panel, vs Human1)",
+    "label": "CORDA (10 lines, no CI)",
+    "est": -0.0126822670367509,
+    "lo": null,
+    "hi": null,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -8.4
+   },
+   {
+    "group": "GPR curation (vs Human1)",
+    "label": "Evidence-based edits as pre-registered",
+    "est": -0.028549633906452588,
+    "lo": -0.028925200663789483,
+    "hi": -0.02818637233375593,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -10.8
+   },
+   {
+    "group": "GPR curation (vs Human1)",
+    "label": "Paralogs restricted to \u2265 30% identity",
+    "est": -0.00206532445609933,
+    "lo": -0.0023550870518260813,
+    "hi": -0.0017747139771569678,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -11.8
+   },
+   {
+    "group": "GPR curation (vs Human1)",
+    "label": "Thymidylate synthase irreversible",
+    "est": 0.0006871605063818834,
+    "lo": 0.0004195948527093197,
+    "hi": 0.0009555878910753996,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -12.8
+   },
+   {
+    "group": "Medium (466 lines with a documented medium, vs Ham's)",
+    "label": "Documented base medium",
+    "est": 0.00894657,
+    "lo": 0.00779636,
+    "hi": 0.0100979,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -15.200000000000001
+   },
+   {
+    "group": "Medium (466 lines with a documented medium, vs Ham's)",
+    "label": "Documented medium + serum",
+    "est": 0.0158798,
+    "lo": 0.014599,
+    "hi": 0.0171553,
+    "val": [
+     0.017120908519853192,
+     0.015637774458811572,
+     0.01857373854605989
+    ],
+    "kind": "train",
+    "note": "",
+    "y": -16.200000000000003
+   },
+   {
+    "group": "Medium (466 lines with a documented medium, vs Ham's)",
+    "label": "Physiological: HPLM + serum",
+    "est": 0.0116053,
+    "lo": 0.0110961,
+    "hi": 0.0121241,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -17.200000000000003
+   },
+   {
+    "group": "Medium (466 lines with a documented medium, vs Ham's)",
+    "label": "Physiological: Plasmax + serum",
+    "est": 0.0100311,
+    "lo": 0.00972498,
+    "hi": 0.0103395,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -18.200000000000003
+   },
+   {
+    "group": "Medium (466 lines with a documented medium, vs Ham's)",
+    "label": "Control: every uptake open",
+    "est": 0.0195327,
+    "lo": 0.0179827,
+    "hi": 0.0212191,
+    "val": null,
+    "kind": "control",
+    "note": "",
+    "y": -19.200000000000003
+   },
+   {
+    "group": "Medium (466 lines with a documented medium, vs Ham's)",
+    "label": "Control: medium shuffled between lines (no CI)",
+    "est": 0.015358,
+    "lo": null,
+    "hi": null,
+    "val": null,
+    "kind": "control",
+    "note": "",
+    "y": -20.200000000000003
+   },
+   {
+    "group": "Objective: biomass, tasks, alternative objectives (vs Human1)",
+    "label": "Remove cofactor pool from biomass",
+    "est": 0.0342695,
+    "lo": 0.0336488,
+    "hi": 0.0348745,
+    "val": [
+     0.03216466520179326,
+     0.03082854444221942,
+     0.033449913440217374
+    ],
+    "kind": "train",
+    "note": "",
+    "y": -22.6
+   },
+   {
+    "group": "Objective: biomass, tasks, alternative objectives (vs Human1)",
+    "label": "Remove metabolite pool from biomass",
+    "est": 0.00555895,
+    "lo": 0.00513934,
+    "hi": 0.00594159,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -23.6
+   },
+   {
+    "group": "Objective: biomass, tasks, alternative objectives (vs Human1)",
+    "label": "Essential-task calls (57-task family)",
+    "est": -0.0149387,
+    "lo": -0.0158509,
+    "hi": -0.0140396,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -24.6
+   },
+   {
+    "group": "Objective: biomass, tasks, alternative objectives (vs Human1)",
+    "label": "CellFie-inspired task calls",
+    "est": -0.0287897,
+    "lo": -0.0307176,
+    "hi": -0.0268041,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -25.6
+   },
+   {
+    "group": "Objective: biomass, tasks, alternative objectives (vs Human1)",
+    "label": "MOMA objective",
+    "est": -0.00220917,
+    "lo": -0.00242942,
+    "hi": -0.00198788,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -26.6
+   },
+   {
+    "group": "Combination (vs generic Human1)",
+    "label": "P1 = biomass fix + medium",
+    "est": 0.05336313555761964,
+    "lo": 0.05228717550860616,
+    "hi": 0.05453977783976623,
+    "val": [
+     0.05174445394871403,
+     0.04987839517715065,
+     0.053756241717360945
+    ],
+    "kind": "train",
+    "note": "",
+    "y": -30.0
+   },
+   {
+    "group": "Combination (vs generic Human1)",
+    "label": "Safer biomass fix + medium (post hoc)",
+    "est": 0.0303521,
+    "lo": 0.029388,
+    "hi": 0.0312474,
+    "val": [
+     0.030954260858348823,
+     0.029341021527832006,
+     0.03261416066632193
+    ],
+    "kind": "train",
+    "note": "",
+    "y": -31.0
+   },
+   {
+    "group": "Added on top of the biomass fix or of P1 (vs that pipeline)",
+    "label": "GIMME on biomass fix (panel)",
+    "est": 0.003064433470076729,
+    "lo": 0.0016593341724131035,
+    "hi": 0.004510895334214612,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -33.4
+   },
+   {
+    "group": "Added on top of the biomass fix or of P1 (vs that pipeline)",
+    "label": "E-Flux on biomass fix (panel)",
+    "est": 0.004396699552351753,
+    "lo": 0.003545569869683291,
+    "hi": 0.005204504972963623,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -34.4
+   },
+   {
+    "group": "Added on top of the biomass fix or of P1 (vs that pipeline)",
+    "label": "Stricter GPR curation on P1 (post hoc)",
+    "est": -0.0006297387850243523,
+    "lo": -0.0007077429463091608,
+    "hi": -0.0005525479822045419,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -35.4
+   },
+   {
+    "group": "Added on top of the biomass fix or of P1 (vs that pipeline)",
+    "label": "Genomic-loss constraint on P1 (post hoc)",
+    "est": -0.00012635276316073858,
+    "lo": -0.0002565304427657644,
+    "hi": -1.857741173950887e-05,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -36.4
+   },
+   {
+    "group": "Added on top of the biomass fix or of P1 (vs that pipeline)",
+    "label": "E-Flux on P1 (panel, post hoc)",
+    "est": -0.0007138287189928982,
+    "lo": -0.0016628811382646894,
+    "hi": 0.00021154115454305786,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -37.4
+   },
+   {
+    "group": "Machine learning on gene priors (vs best gene-prior model)",
+    "label": "Add GEM knockout features",
+    "est": -0.003,
+    "lo": -0.0042,
+    "hi": -0.0019,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -39.8
+   },
+   {
+    "group": "Machine learning on gene priors (vs best gene-prior model)",
+    "label": "Stack P1 with the gene-prior model",
+    "est": 0.0,
+    "lo": -0.0,
+    "hi": 0.0001,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -40.8
+   },
+   {
+    "group": "Machine learning on gene priors (vs best gene-prior model)",
+    "label": "Add sign-constrained GEM features",
+    "est": 0.0001,
+    "lo": -0.0,
+    "hi": 0.0001,
+    "val": null,
+    "kind": "train",
+    "note": "",
+    "y": -41.8
+   }
+  ],
+  "w3_human1_M0_mode_deltas": [
+   -0.00767315,
+   -0.0191954,
+   -0.0149387,
+   -0.0307277,
+   -0.0149387,
+   -0.0307277,
+   0.0,
+   -0.0113604,
+   0.00133616,
+   -0.0135356,
+   0.0,
+   -0.0113604,
+   0.000171132,
+   -0.0111887,
+   0.0,
+   -0.0113604,
+   -0.001253,
+   -0.0125984,
+   -0.00767315,
+   -0.0191954,
+   -0.01187,
+   -0.0237972,
+   -0.01187,
+   -0.0237972,
+   0.000578167,
+   -0.0129667,
+   0.00133616,
+   -0.0135356,
+   0.0,
+   -0.0113604,
+   0.0,
+   -0.0113604,
+   0.000171132,
+   -0.0111887,
+   0.0,
+   -0.0113604,
+   0.0,
+   -0.0113604,
+   0.0,
+   -0.0113604,
+   0.0,
+   -0.0113604,
+   0.0,
+   -0.0113604,
+   0.0,
+   -0.0113604,
+   0.0,
+   -0.0113604,
+   0.0,
+   -0.0113604,
+   0.0,
+   -0.0113604,
+   -0.01187,
+   -0.0237972,
+   0.000578167,
+   -0.0129667,
+   -0.0180444,
+   -0.031732,
+   -0.00459056,
+   -0.0183251,
+   -0.0108026,
+   -0.0223029,
+   0.0,
+   -0.00229722,
+   -0.0935844,
+   0.0,
+   0.0342695,
+   -0.046108,
+   -0.00381447,
+   0.00555895,
+   0.00381403,
+   0.00127186,
+   0.00259059,
+   0.00439073,
+   0.0039494,
+   0.00193404,
+   0.00125876,
+   0.00127186,
+   -0.000385308,
+   0.0021546,
+   0.00199646,
+   -0.0107246,
+   0.0,
+   -0.000743761,
+   0.0,
+   0.0,
+   -0.00870264,
+   0.0019963,
+   -0.0107246,
+   0.0,
+   -0.000744152,
+   0.0,
+   0.0,
+   -0.00870219,
+   -0.0011585,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.00128209,
+   0.0,
+   -0.00314477,
+   -0.0967917,
+   0.0,
+   0.037791,
+   -0.0475066,
+   -0.00477479,
+   0.00259321,
+   0.00433727,
+   0.00859564,
+   0.00275327,
+   -0.00183247,
+   0.00410607,
+   0.00271379,
+   0.00141034,
+   0.00142452,
+   0.0,
+   -0.0130835,
+   0.00187642,
+   -0.0120587,
+   0.0,
+   -0.00091631,
+   0.0,
+   0.0,
+   -0.0101651,
+   -0.00376822,
+   -2.34292e-07,
+   0.0,
+   -0.00159893,
+   -0.00231985,
+   -0.00886644,
+   -0.00220917,
+   0.000329519,
+   -0.0287897
+  ],
+  "sources": [
+   "results/w1/train_grid.tsv",
+   "results/w1/val_look_W1_M2_baseline_gstar.json",
+   "results/w4/stage_a_analysis/train_selection.json",
+   "results/w4/stage_a_analysis/train_corda_a6prime.tsv",
+   "results/w5/train_summary.json",
+   "results/w2/train/step_scores.tsv",
+   "results/w2/train/shuffled_control.tsv",
+   "results/w3/train/mode_scores.tsv",
+   "results/w3/val/val_look_W3_M4_shortlist_decision.json",
+   "results/m6/train/summary.json",
+   "results/m6/val/val_look_M6_factorial_decision.json",
+   "results/f2/train/contrasts.tsv",
+   "results/m10/val/val_look_M10_F2_decision.json",
+   "results/m5/train/train_decision.json",
+   "results/f1/train/summary.json",
+   "results/f4/train/summary.json",
+   "results/f4/eflux_panel/train/decision.json",
+   "autoresearch/results.tsv"
+  ]
+ },
+ "fig4": {
+  "cells": {
+   "Training (686 lines)": {
+    "bio": [
+     0.034269502865675046,
+     0.03364877286595089,
+     0.03487453576978123
+    ],
+    "med": [
+     0.016037152354828145,
+     0.015242733398757308,
+     0.016841996127217634
+    ],
+    "both": [
+     0.05336313555761964,
+     0.05228717550860616,
+     0.05453977783976623
+    ]
+   },
+   "Validation (198 lines)": {
+    "bio": [
+     0.03216466520179326,
+     0.03082854444221942,
+     0.033449913440217374
+    ],
+    "med": [
+     0.017120908519853192,
+     0.015637774458811572,
+     0.01857373854605989
+    ],
+    "both": [
+     0.05174445394871403,
+     0.04987839517715065,
+     0.053756241717360945
+    ]
+   },
+   "Test (380 lines)": {
+    "bio": null,
+    "med": [
+     0.0127357,
+     0.0114942,
+     0.0139858
+    ],
+    "both": [
+     0.0497345,
+     0.048147,
+     0.0512009
+    ]
+   }
+  },
+  "training_interaction": {
+   "interaction_lin": 0.00305648,
+   "lo": 0.00270575,
+   "hi": 0.00340058,
+   "additive_prediction": 0.0503067
+  },
+  "sources": [
+   "results/m6/train/summary.json",
+   "results/m6/train/interaction.tsv",
+   "results/m6/val/val_look_M6_factorial_decision.json",
+   "results/m6/test/unsealed/T1/attribution.tsv"
+  ]
+ },
+ "fig5": {
+  "delta_vs_generic_human1": {
+   "P1[H1]": {
+    "Breast": 0.0542942,
+    "CNS/Brain": 0.0505076,
+    "Eye": 0.048631,
+    "Liver": 0.0502211,
+    "Ovary/Fallopian Tube": 0.0499844,
+    "Pancreas": 0.0486355,
+    "Pleura": 0.0458678
+   },
+   "P1[H2]": {
+    "Breast": 0.0477291,
+    "CNS/Brain": 0.0438896,
+    "Eye": 0.0448339,
+    "Liver": 0.043914,
+    "Ovary/Fallopian Tube": 0.0446018,
+    "Pancreas": 0.0437169,
+    "Pleura": 0.0391367
+   },
+   "H2": {
+    "Breast": -0.00579084,
+    "CNS/Brain": -0.00947929,
+    "Eye": -0.00894562,
+    "Liver": -0.00978289,
+    "Ovary/Fallopian Tube": -0.00849718,
+    "Pancreas": -0.00695412,
+    "Pleura": -0.0095769
+   }
+  },
+  "transfer": {
+   "exact_sign_flip_p": 0.0078125,
+   "generalises": true,
+   "k_positive": 7,
+   "k_required": 5,
+   "n_lineages": 7,
+   "t_high": 0.05209437535682132,
+   "t_low": 0.047374662058581596,
+   "t_mean": 0.04973451870770146
+  },
+  "sources": [
+   "results/m6/test/unsealed/T1/per_lineage.tsv",
+   "results/m6/test/test_look_T1_gates.json"
+  ]
+ },
+ "fig6": {
+  "mcc": {
+   "Human1-paper|P57|L_ge06|H1": [
+    0.322389,
+    0.318748,
+    0.325791
+   ],
+   "Human1-paper|P57|L_ge06|H2": [
+    0.324639,
+    0.320918,
+    0.328047
+   ],
+   "Human1-paper|P57|L_ge06|P1[H1]": [
+    0.344557,
+    0.340686,
+    0.348094
+   ],
+   "Human1-paper|P57|L_ge06|P1[H2]": [
+    0.346011,
+    0.342093,
+    0.34957
+   ],
+   "Human1-paper|PGR|L_ge06|H1": [
+    0.333574,
+    0.330988,
+    0.336317
+   ],
+   "Human1-paper|PGR|L_ge06|H2": [
+    0.330146,
+    0.327546,
+    0.332974
+   ],
+   "Human1-paper|PGR|L_ge06|P1[H1]": [
+    0.379308,
+    0.376223,
+    0.382415
+   ],
+   "Human1-paper|PGR|L_ge06|P1[H2]": [
+    0.380931,
+    0.377927,
+    0.384061
+   ],
+   "fixed-cutoff|FBA<0.01|L_prob|H1": [
+    0.319752,
+    0.317383,
+    0.322479
+   ],
+   "fixed-cutoff|FBA<0.01|L_prob|H2": [
+    0.315677,
+    0.313325,
+    0.318325
+   ],
+   "fixed-cutoff|FBA<0.01|L_prob|P1[H1]": [
+    0.371969,
+    0.368903,
+    0.375164
+   ],
+   "fixed-cutoff|FBA<0.01|L_prob|P1[H2]": [
+    0.376535,
+    0.373436,
+    0.379742
+   ]
+  },
+  "p57_components": {
+   "H1|precision": 0.423274,
+   "H1|precision|ci": [
+    0.418369,
+    0.428129
+   ],
+   "H1|recall": 0.342847,
+   "H1|recall|ci": [
+    0.340034,
+    0.34575
+   ],
+   "H1|f1": 0.377754,
+   "H1|f1|ci": [
+    0.374435,
+    0.380894
+   ],
+   "H1|mcc": 0.322389,
+   "H1|mcc|ci": [
+    0.318748,
+    0.325791
+   ],
+   "P1[H1]|precision": 0.473,
+   "P1[H1]|precision|ci": [
+    0.467528,
+    0.478289
+   ],
+   "P1[H1]|recall": 0.333457,
+   "P1[H1]|recall|ci": [
+    0.330687,
+    0.336327
+   ],
+   "P1[H1]|f1": 0.390062,
+   "P1[H1]|f1|ci": [
+    0.386578,
+    0.393246
+   ],
+   "P1[H1]|mcc": 0.344557,
+   "P1[H1]|mcc|ci": [
+    0.340686,
+    0.348094
+   ]
+  },
+  "sources": [
+   "results/m6/test/test_look_T1.tsv (section binary_6.8, nan_policy exclude, gene_set parent)"
+  ]
+ },
+ "fig7": {
+  "contribution": {
+   "P1": {
+    "cofactor_pool": 0.0331088,
+    "sterol": 0.00718028,
+    "medium_flip": 0.00613478,
+    "other": 0.00288559,
+    "mev_core": -0.0014224,
+    "residual_total_minus_sum": 0.00547605
+   },
+   "F2": {
+    "cofactor_pool": 0.0126813,
+    "sterol": 0.00718028,
+    "medium_flip": 0.00613478,
+    "other": 0.00258496,
+    "mev_core": 0.0,
+    "residual_total_minus_sum": 0.0017708
+   }
+  },
+  "totals": {
+   "P1": 0.0533631,
+   "F2": 0.0303521,
+   "F2-P1": -0.023011
+  },
+  "sources": [
+   "results/f2/decomposition.tsv"
+  ]
+ },
+ "fig8": {
+  "events_hours_since_day1_00UTC": {
+   "human": [
+    13.683333333333334,
+    15.533333333333333,
+    16.5,
+    31.683333333333334,
+    31.766666666666666,
+    32.05,
+    57.516666666666666
+   ],
+   "design": [
+    14.766666666666667,
+    15.35,
+    17.083333333333332,
+    20.083333333333332,
+    24.833333333333332
+   ],
+   "levers": [
+    [
+     43.766666666666666,
+     false
+    ],
+    [
+     44.7,
+     false
+    ],
+    [
+     48.266666666666666,
+     true
+    ],
+    [
+     49.516666666666666,
+     false
+    ],
+    [
+     49.766666666666666,
+     true
+    ],
+    [
+     51.21666666666667,
+     false
+    ],
+    [
+     53.166666666666664,
+     false
+    ],
+    [
+     58.2,
+     false
+    ],
+    [
+     58.43333333333333,
+     true
+    ],
+    [
+     59.6,
+     false
+    ]
+   ],
+   "looks": [
+    [
+     24.9,
+     "v"
+    ],
+    [
+     48.78333333333333,
+     "v"
+    ],
+    [
+     50.43333333333333,
+     "v"
+    ],
+    [
+     53.46666666666667,
+     "v"
+    ],
+    [
+     53.516666666666666,
+     "v"
+    ],
+    [
+     55.03333333333333,
+     "t"
+    ],
+    [
+     55.266666666666666,
+     "t"
+    ],
+    [
+     58.5,
+     "v"
+    ]
+   ],
+   "stalls": [
+    [
+     22.8,
+     24.333333333333332,
+     "limit"
+    ],
+    [
+     27.25,
+     31.683333333333334,
+     "waiting for user"
+    ],
+    [
+     36.36666666666667,
+     43.0,
+     "weekly limit"
+    ],
+    [
+     47.86666666666667,
+     48.0,
+     ""
+    ],
+    [
+     51.9,
+     53.0,
+     "limit"
+    ]
+   ],
+   "turning_points": [
+    [
+     "1",
+     15.916666666666666
+    ],
+    [
+     "2",
+     24.866666666666667
+    ],
+    [
+     "3",
+     43.766666666666666
+    ],
+    [
+     "4",
+     44.7
+    ],
+    [
+     "5",
+     48.5
+    ],
+    [
+     "6",
+     49.766666666666666
+    ],
+    [
+     "7",
+     52.75
+    ],
+    [
+     "8",
+     52.333333333333336
+    ],
+    [
+     "E",
+     58.5
+    ]
+   ]
+  },
+  "looks_from_ledgers": [
+   [
+    24.89666666666667,
+    "v",
+    "W1_M2_baseline"
+   ],
+   [
+    48.784444444444446,
+    "v",
+    "W3_M4_shortlist"
+   ],
+   [
+    50.429722222222225,
+    "v",
+    "M6_factorial"
+   ],
+   [
+    53.4725,
+    "v",
+    "W7_shortlist_1"
+   ],
+   [
+    53.524166666666666,
+    "v",
+    "W7_P2_select"
+   ],
+   [
+    54.815,
+    "v",
+    "REHEARSAL_P1_M6"
+   ],
+   [
+    58.505833333333335,
+    "v",
+    "M10_F2"
+   ],
+   [
+    55.033055555555556,
+    "t",
+    "T1"
+   ],
+   [
+    55.26861111111111,
+    "t",
+    "T2"
+   ]
+  ],
+  "commits_in_window": 170,
+  "sources": [
+   "docs/explainer/figures/figure_data.json (fig5; stall times there come from the session transcript)",
+   "git log commit times",
+   "results/validation_ledger.tsv",
+   "results/test_ledger.tsv"
+  ]
+ }
+}

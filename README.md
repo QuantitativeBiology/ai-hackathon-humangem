@@ -25,7 +25,7 @@ The work has four strands:
 
 Whole lineages are held out for testing. The full brief is in [PROMPT.md](PROMPT.md).
 
-*Status as of 2026-10-28, 12:30 UTC: complete. All pre-registered looks done (T1, T2, unseal); REPORT.md final (non-author reviewed); post-hoc follow-ups F1–F4 done. A plain-language explainer of the method and how it was found is in [docs/explainer/](docs/explainer/README.md).*
+*Status as of 2026-10-28, 12:30 UTC: complete. All pre-registered looks done (T1, T2, unseal); REPORT.md final (non-author reviewed); post-hoc follow-ups F1–F4 done. A plain-language explainer of the method and how it was found is in [docs/explainer/](docs/explainer/README.md), and a paper-length research briefing for a broad audience in [docs/briefing/BRIEFING.md](docs/briefing/BRIEFING.md).*
 
 ## Status at a glance
 
