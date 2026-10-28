@@ -55,3 +55,4 @@ Every viewing of DepMap label *values* (or label-derived summaries) by any agent
 - 2026-10-28, W2 reviewer: training-tier aggregates only (attribution H1 rows for M2(f=1) and M-open; pooled shuffled-control row; own recomputed Δ̄/CI/folds). No per-line or per-gene tables; no validation or test; raw probe blocked.
 - 2026-10-28, M6 engineer: training-tier aggregates only (per-cell tAP/Δ̄/CI/folds incl. minus-CE and expressed pairs, pairwise contrasts, interaction, §6.8 binary tables); accidentally n/n_pos/prevalence for 3 training lines in a header check of results/w1/train_per_line.tsv. Synthetic dry run only; no validation or test.
 - 2026-10-28, PI: read the M6 training report (same aggregates, summary level).
+- 2026-10-28, PI: ran validation look M6_factorial (scalar-only outputs: lineage-weighted tAP/Δ̄ with CIs per cell, decision file).

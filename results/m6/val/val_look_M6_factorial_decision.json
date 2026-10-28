@@ -1,0 +1,61 @@
+{
+ "look_id": "M6_factorial",
+ "reference": "H1",
+ "G_star": "Human1",
+ "primary_cell": {
+  "label": "L_prob",
+  "geneset": "all",
+  "universe": "U",
+  "stratum": "none"
+ },
+ "candidates": [
+  {
+   "method": "M6:H1/M2(f=1)",
+   "delta_lin": 0.017120908519853192,
+   "delta_ci": [
+    0.015637774458811572,
+    0.01857373854605989
+   ],
+   "eligible": true,
+   "diff_vs_best": 0.03462354542886083,
+   "se_diff": 0.0007994232966153683,
+   "within_1se": false
+  },
+  {
+   "method": "M6:H1+Bloo/M0",
+   "delta_lin": 0.03216466520179326,
+   "delta_ci": [
+    0.03082854444221942,
+    0.033449913440217374
+   ],
+   "eligible": true,
+   "diff_vs_best": 0.01957978874692077,
+   "se_diff": 0.0008728265683791573,
+   "within_1se": false
+  },
+  {
+   "method": "M6:H1+Bloo/M2(f=1)",
+   "delta_lin": 0.05174445394871403,
+   "delta_ci": [
+    0.04987839517715065,
+    0.053756241717360945
+   ],
+   "eligible": true,
+   "diff_vs_best": 0.0,
+   "se_diff": 0.0,
+   "within_1se": true
+  }
+ ],
+ "gate_passed": true,
+ "best_eligible": "M6:H1+Bloo/M2(f=1)",
+ "selected": "M6:H1+Bloo/M2(f=1)",
+ "winners_curse": {
+  "method": "M6:H1+Bloo/M2(f=1)",
+  "m": 3,
+  "sigma": 0.0009922405180735542,
+  "term": 0.0014708018977647413,
+  "best_delta_lin": 0.05174445394871403,
+  "best_delta_lin_minus_term": 0.05027365205094929
+ },
+ "rule": "\u00a78 gate per candidate: eligible iff its paired validation \u0394\u0304_lin vs G* (H1/M0, the W1 look's G-star) has CI lower bound > 0 (L_prob, all genes, U, no stratum). Among eligible candidates the paired-difference one-SE rule (\u00a79) picks the first candidate in spec order (D10, simplest first: (1) H1+B-loo/M0, (2) H1/M2(f=1), (3) H1+B-loo/M2(f=1)) whose \u0394\u0304_lin(best \u2212 candidate) <= its bootstrap SE; that cell is P1 (\u00a710.1 steps 3-4, A12c). If none is eligible, P1 is the best point estimate labelled 'gate not passed'. \u03c3\u00b7\u221a(2 ln m) with m = 3 is reported. H2 cells are descriptive (never P1)."
+}
