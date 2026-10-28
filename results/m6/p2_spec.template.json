@@ -2,27 +2,71 @@
  "_doc": {
   "how_to_use": "Copy to results/m6/p2_spec.json after the W7 stop, delete this _doc object, fill, commit and freeze (evaluate_test.py --look T2 --print-frozen-candidates). T2 also requires a non_look ledger row with look_id W7_stop whose detail JSON has p2_spec_sha256 = the SHA-256 of the committed p2_spec.json. Static checks: check_p2_spec().",
   "primary": "The P2 method entering C4 (P2 - G*) and C5 (P2 - B6).",
-  "methods": "Score columns of the test score file: H1, H2 (checked equal to the generic scores) and the P2 method(s).",
+  "methods": "H1, H2 and the P2 method(s). Score-file columns are H1, H2 (checked equal to the generic scores) and every method except a refitted one.",
   "scores": "test tier only: {path, sha256, layout} as in the P1 spec (line_gene test files under results/m6/tmp/).",
   "failed_builds": "test: null or {path, sha256} (ModelID, method), as in the P1 spec.",
   "labels / genesets / universes / strata": "P2's scalar tAP grid at T2 (subsets of the W1 grid; must include L_prob-or-primary, all, U, none).",
-  "b6": "B6 for C5, refitted once on training ∪ validation inside the harness (§4.2) with the W1 feature set and stacking of scripts/w1_b6.py and the hyperparameters frozen by W7 (hgb: max_iter, learning_rate, max_leaf_nodes, early_stopping; random_state = SEEDS[0]).",
+  "b6": "B6 for C5, refitted once on training ∪ validation inside the harness (§4.2) with the W1 feature set and stacking of scripts/w1_b6.py; hgb must equal W7's B6 settings nextgem.w7.HGB_M2 (max_iter 200, learning_rate 0.1, max_leaf_nodes 31, no early stopping; random_state = SEEDS[0]). T2 needs the primary label L_prob.",
   "bootstrap_method": "percentile or bca for C4/C5 (§6.5 skew rule on training).",
-  "fitted_on_labels": "Must be false for now: a label-fitted P2 (e.g. B6 + GEM features) needs a refit plug-in on training ∪ validation that is not implemented yet."
+  "fitted_on_labels": "true when P2 is label-fitted (e.g. W7-05 = B6 with a monotone constraint on b2/b2m): P2 is then NOT read from the score file but refitted once on training ∪ validation through a reviewed refit recipe (see refit). false = P2 scores come from scores.test.",
+  "refit": "Required iff fitted_on_labels is true: {recipe: 'w7_idea', idea: 'W7-01' | 'W7-05', method: <primary>}. The harness looks the idea up in nextgem.w7.IDEAS and runs w7.fit / w7.predict on training ∪ validation labels (a test line in the fit, or a predicted line among the fitting lines, is refused). Only ideas on the W1 B6 features qualify; others need their own reviewed recipe. The recipe code (src/nextgem/w7.py, scripts/w1_b6.py) must be pinned in provenance."
  },
  "spec_id": "P2_M7",
  "kind": "p2",
  "milestone": "M7",
- "pipeline": "EXAMPLE ONLY",
+ "pipeline": "EXAMPLE ONLY: W7-05 (B6 with a monotone increasing constraint on b2 and b2m), refitted on training ∪ validation.",
  "primary": "P2",
- "methods": ["H1", "H2", "P2"],
- "scores": {"test": {"path": "results/m6/tmp/p2_scores_test.parquet", "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "layout": "line_gene"}},
- "failed_builds": {"test": null},
- "labels": ["L_prob", "L_ge05", "L_ge10"],
- "genesets": ["all", "noCE", "noDepMapCE"],
- "universes": ["U", "Ucap"],
- "strata": ["none", "expressed_pairs"],
- "b6": {"features": "w1", "hgb": {"max_iter": 200, "learning_rate": 0.1, "max_leaf_nodes": 31, "early_stopping": false}},
+ "methods": [
+  "H1",
+  "H2",
+  "P2"
+ ],
+ "scores": {
+  "test": {
+   "path": "results/m6/p2_scores_test.parquet",
+   "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+   "layout": "gene"
+  }
+ },
+ "failed_builds": {
+  "test": null
+ },
+ "labels": [
+  "L_prob",
+  "L_ge05",
+  "L_ge10"
+ ],
+ "genesets": [
+  "all",
+  "noCE",
+  "noDepMapCE"
+ ],
+ "universes": [
+  "U",
+  "Ucap"
+ ],
+ "strata": [
+  "none",
+  "expressed_pairs"
+ ],
+ "b6": {
+  "features": "w1",
+  "hgb": {
+   "max_iter": 200,
+   "learning_rate": 0.1,
+   "max_leaf_nodes": 31,
+   "early_stopping": false
+  }
+ },
  "bootstrap_method": "percentile",
- "fitted_on_labels": false
+ "fitted_on_labels": true,
+ "refit": {
+  "recipe": "w7_idea",
+  "idea": "W7-05",
+  "method": "P2"
+ },
+ "provenance": {
+  "src/nextgem/w7.py": "0000000000000000000000000000000000000000000000000000000000000000",
+  "scripts/w1_b6.py": "0000000000000000000000000000000000000000000000000000000000000000"
+ }
 }

@@ -119,17 +119,19 @@ def p1_spec(sha, **over):
                             "iv": ["P1g[H1]", "G*"], "v": ["P1[H1]", "P1g[H1]"]},
             "task_calls": {"path": "results/m6/task_calls.parquet", "sha256": sha["tc"]},
             "gene_annotations": {"path": "results/m6/gene_annotations.parquet", "sha256": sha["ga"]},
-            "bootstrap_method": "percentile", "fitted_on_labels": False, "notes": "toy"}
+            "bootstrap_method": "percentile", "fitted_on_labels": False, "notes": "toy",
+            "provenance": {et.SKEW_REL: sha["sk"]}}
     spec.update(over)
     return spec
 
 
 def p2_spec(sha, **over):
+    from nextgem import w7
+
     spec = {"spec_id": "TOYP2", "kind": "p2", "milestone": "M7", "primary": "P2", "methods": ["H1", "H2", "P2"],
             "scores": {"test": {"path": "results/m6/p2_test_scores.parquet", "sha256": sha, "layout": "gene"}},
             "failed_builds": {"test": None}, "labels": ["L_prob"], "genesets": ["all"], "universes": ["U"],
-            "strata": ["none"], "b6": {"features": "w1", "hgb": {"max_iter": 20, "learning_rate": 0.1,
-                                                                 "max_leaf_nodes": 7, "early_stopping": False}},
+            "strata": ["none"], "b6": {"features": "w1", "hgb": dict(w7.HGB_M2)},
             "bootstrap_method": "percentile", "fitted_on_labels": False}
     spec.update(over)
     return spec
@@ -197,7 +199,9 @@ def world(tmp_path, monkeypatch):
                 "strata": {"none": ("none", None), "expressed_pairs": ("pairs", "expressed"),
                            "organoid": ("rows", ("model_type", "Organoid")), "lib_KY": ("rows", ("library_class", "KY-only")),
                            "multicopy_in": ("genes_in", set(GENES[:5])), "cn_amp4_in": ("pairs", "cn_amp4_in")},
-                "b6_fit": _b6_stub}
+                "b6_fit": _b6_stub,
+                "tier_of": pd.Series({**{l: "train" for l in tr}, **{l: "validation" for l in va},
+                                      **{l: "test" for l in te + noexpr}})}
 
     def ctx_for(tier):
         tl = te + noexpr if tier == "test" else va
@@ -221,7 +225,8 @@ def world(tmp_path, monkeypatch):
                {"entrez": GENES * 2, "task": ["ESS001"] * len(GENES) + ["ESS002"] * len(GENES),
                 "fails": [bool(e) for e in essential] + [g % 5 == 0 for g in GENES]})),
            "ga": _parquet(repo, "results/m6/gene_annotations.parquet", pd.DataFrame(
-               {"entrez": GENES, "paralog_buffered": [g % 4 == 0 for g in GENES]}))}
+               {"entrez": GENES, "paralog_buffered": [g % 4 == 0 for g in GENES]})),
+           "sk": write_json(repo, et.SKEW_REL, {"bootstrap_method": "percentile", "rule": "toy"})}
     write_json(repo, et.P1_SPEC, p1_spec(sha))
     p2_sha = _parquet(repo, "results/m6/p2_test_scores.parquet",
                       pd.DataFrame({"entrez": GENES, "H1": gen.e_H1.to_numpy(), "H2": gen.e_H2.to_numpy(),
@@ -355,6 +360,11 @@ def test_bootstrap_ci_known_answer():
     assert (c["estimate"], c["ci_low"], c["ci_high"]) == (pytest.approx(0.25), 0.0, 0.5)
 
 
+def _ap_constant(n, p):
+    """tAP of a constant scorer = E[AP_random] (DESIGN §6.1 single-block form), written out independently."""
+    return sum((1 + (r - 1) * (p - 1) / (n - 1)) / r for r in range(1, n + 1)) / n
+
+
 def _c3_toy(perfect: bool):
     ids, lin = _lineage_series({"A": 12, "B": 12})
     rng = np.random.default_rng(3)
@@ -379,8 +389,9 @@ def test_c3_permutation_null_percentile():
     _, ss_perm = np.random.SeedSequence(11).spawn(2)
     null = metrics.c3_permutation_null(S, Y, lin, n_perm=200, seed=ss_perm)
     assert r["null_threshold"] == pytest.approx(float(np.percentile(null["null"], 97.5)), abs=1e-15)
-    g = metrics.per_gene(S, Y)
-    assert r["m_delta_ap_gene_p1"] == pytest.approx(float((1.0 - g.e_random).mean()), abs=1e-12)
+    # independent of metrics: tAP_gene = 1 for a perfect ranking; E[AP_random](n, p) by the §6.1 single-block form
+    e_rand = [_ap_constant(len(Y), int(Y[g].sum())) for g in Y.columns]
+    assert r["m_delta_ap_gene_p1"] == pytest.approx(float(np.mean([1.0 - e for e in e_rand])), abs=1e-12)
     assert r["permutation_passed"] and r["m_delta_ap_gene_p1"] > r["null_threshold"]
     assert r["permutation_p"] == pytest.approx(1 / 201) and r["bootstrap_passed"] and r["passed"]
 
@@ -737,15 +748,15 @@ def test_chain_t1_w7stop_t2_unseal(world, monkeypatch, capsys):
 
 # ============================================================================= dry modes read no evaluation label
 @pytest.mark.parametrize("argv", [
-    pytest.param(["--print-config"], id="print_config_T1"),
+    pytest.param(["--look", "T1", "--print-config"], id="print_config_T1"),
     pytest.param(["--look", "T2", "--print-config"], id="print_config_T2"),
     pytest.param(["--rehearsal", "--print-config"], id="print_config_rehearsal"),
     pytest.param(["--unseal", "--print-config"], id="print_config_unseal"),
-    pytest.param(["--print-frozen-candidates"], id="print_frozen_candidates"),
+    pytest.param(["--look", "T1", "--print-frozen-candidates"], id="print_frozen_candidates"),
     pytest.param(["--look", "T1", "--preflight-only"], id="preflight_only_T1"),
     pytest.param(["--rehearsal", "--preflight-only"], id="preflight_only_rehearsal"),
-    pytest.param(["--dry-run"], id="dry_run_T1_test_tier"),
-    pytest.param(["--dry-run", "--tier", "validation"], id="dry_run_T1_validation_tier"),
+    pytest.param(["--look", "T1", "--dry-run"], id="dry_run_T1_test_tier"),
+    pytest.param(["--look", "T1", "--dry-run", "--tier", "validation"], id="dry_run_T1_validation_tier"),
     pytest.param(["--look", "T2", "--dry-run"], id="dry_run_T2"),
 ])
 def test_dry_modes_read_no_validation_or_test_labels(world, monkeypatch, capsys, argv):
@@ -762,6 +773,7 @@ def test_dry_modes_read_no_validation_or_test_labels(world, monkeypatch, capsys,
         doc = json.loads(out)
         assert doc["scalar_guard"] == "pass" and not doc["test_labels_read"] and not doc["validation_labels_read"]
         assert doc["ledger_rows_written"] == 0 and doc["files_written"] == 0
+        assert doc["ce_fit_nonempty"] and doc["c1b_gene_set_smaller"]  # review F11
         et.assert_stdout_scalar_only(out, world["ctx_for"]("test"))
     assert world["calls"]["validation"] == 0 and world["calls"]["test"] == 0
     assert world["sealed"] == [] and ledger.read("test") == [] and ledger.read("validation") == []
@@ -775,8 +787,397 @@ def test_spec_override_refused_in_real_modes(world, monkeypatch, capsys):
     assert "--spec" in capsys.readouterr().err
 
 
-def test_real_constants_are_enforced(world):
+def test_real_constants_are_enforced(world, monkeypatch):
+    """The DESIGN literals (§6.3-6.5, §7): a config built with the toy's shrunken counts is refused once the frozen
+    values are back, and only a config carrying the literals passes."""
+    literal = {"B_conf": 10_000, "n_flip": 10_000, "n_perm": 2_000, "B": 2_000, "seed": 11, "sesoi": 0.01, "alpha": 0.025}
+    small = et.look_config("T1")  # built under the fixture's shrunken constants
+    for k, v in (("B_CONFIRMATORY", 10_000), ("N_SIGN_FLIPS", 10_000), ("N_C3_PERMUTATIONS", 2_000), ("B_OTHER", 2_000)):
+        monkeypatch.setattr(metrics, k, v)
+    assert (metrics.SESOI, metrics.ALPHA, metrics.C3_NULL_PERCENTILE) == (0.01, 0.025, 97.5)
+    probs = et.check_constants(small)
+    assert {p.split(" ")[0] for p in probs} == {"B_conf", "n_flip", "n_perm", "B"}
+    assert et.check_constants({**small, **literal}) == []
+    assert et.check_constants({**small, **literal, "seed": 12}) == ["seed = 12, frozen value 11"]
+    assert et.check_constants({**small, **literal, "B": 2000.0})  # type matters (a float B breaks the bootstrap)
+    real = et.look_config("T1")
+    assert {k: real[k] for k in literal} == literal
+
+
+# ============================================================================= review fixes (M6_evaluate_test_review)
+def test_look_is_required(world, capsys):
+    """F9: a bare evaluate_test.py does not default to a real look."""
+    with pytest.raises(SystemExit):
+        et.main([])
+    with pytest.raises(SystemExit):
+        et.main(["--dry-run"])
+    assert "one of the arguments" in capsys.readouterr().err
+
+
+def test_config_records_runtime_versions(world):
+    """F2: library versions and the BLAS thread count are part of the config (and of its SHA)."""
     cfg = et.look_config("T1")
-    assert et.check_constants(cfg) == []  # the patched constants are self-consistent
-    probs = et.check_constants(dict(cfg, B_conf=999, seed=12))
-    assert any(p.startswith("B_conf") for p in probs) and any(p.startswith("seed") for p in probs)
+    assert set(cfg["runtime"]) == {"python", "numpy", "scipy", "pandas", "sklearn", "blas_threads"}
+    assert cfg["runtime"]["numpy"] == np.__version__ and cfg["runtime"]["pandas"] == pd.__version__
+    other = {**cfg, "runtime": {**cfg["runtime"], "blas_threads": cfg["runtime"]["blas_threads"] + 1}}
+    assert et.config_sha(other) != et.config_sha(cfg)
+
+
+@pytest.mark.parametrize("change,match", [
+    pytest.param("bca", "differs from 'bca'", id="skew_record_says_bca"),
+    pytest.param("unpinned", "must pin", id="skew_not_pinned"),
+    pytest.param("edited", "SHA-256 differs", id="skew_file_changed"),
+])
+def test_bootstrap_method_must_match_skew_record(world, change, match):
+    """F9: bootstrap_method must be the one recorded in the pinned results/m6/t1/skew.json."""
+    repo, sha = world["repo"], dict(world["sha"])
+    if change == "bca":
+        sha["sk"] = write_json(repo, et.SKEW_REL, {"bootstrap_method": "bca"})
+        write_json(repo, et.P1_SPEC, p1_spec(sha))
+    elif change == "unpinned":
+        write_json(repo, et.P1_SPEC, p1_spec(sha, provenance={}))
+    else:
+        write_json(repo, et.SKEW_REL, {"bootstrap_method": "percentile", "rule": "edited"})
+    with pytest.raises(et.PreflightError, match=match):
+        et.look_config("T1")
+
+
+def test_repeat_look_refused_before_label_read(world, monkeypatch, capsys):
+    """F3: a completed rehearsal or T1 is refused by the look-state check, before any label read and before the
+    committed config JSON could be overwritten."""
+    from nextgem import ledger
+
+    _rehearse(world, monkeypatch)
+    _patch_labels(world, monkeypatch, allow=())
+    _patch_main(world, monkeypatch)
+    cpath = world["repo"] / et.REHEARSAL_DIR / f"val_look_{REH}_config.json"
+    before = et._sha(cpath)
+    assert et.main(["--rehearsal"]) == 2
+    assert "already completed" in capsys.readouterr().err
+    assert et._sha(cpath) == before and world["calls"]["validation"] == 1  # the rehearsal's own read only
+    ledger.append("test", "started", look_id="T1", workstream="M6", config_sha="c", commit=False)
+    ledger.append("test", "completed", look_id="T1", commit=False)
+    toy.commit_all(world["repo"], "T1 rows")
+    assert et.main(["--look", "T1"]) == 2
+    assert "already completed" in capsys.readouterr().err
+    assert world["calls"]["test"] == 0 and world["calls"]["validation"] == 1
+    ledger.append("test", "started", look_id="T3", workstream="M6", config_sha="other", commit=False)
+    toy.commit_all(world["repo"], "crashed T3")
+    assert any("another config" in p for p in et.state_problems("T3"))
+
+
+def test_t1_refused_when_rehearsal_spec_differs(world, monkeypatch):
+    """F5/T1 spec-SHA branch: T1 needs the rehearsal of this very P1 spec."""
+    _rehearse(world, monkeypatch)
+    assert et.state_problems("T1") == []
+    write_json(world["repo"], et.P1_SPEC, p1_spec(world["sha"], notes="toy, edited after the rehearsal"))
+    toy.commit_all(world["repo"], "spec edited")
+    assert any("different P1 spec" in p for p in et.state_problems("T1"))
+
+
+def test_t1_refused_when_rehearsal_code_differs(world, monkeypatch):
+    """F5: T1 needs the rehearsal to have run the same harness code (code_sha in the started row)."""
+    from nextgem import ledger
+
+    _rehearse(world, monkeypatch)
+    d = json.loads([r for r in ledger.read("validation") if r["event"] == "started"][0]["detail"])
+    assert d["code_sha"] == et.code_sha(et.look_config("T1"))
+    monkeypatch.setattr(et, "code_sha", lambda cfg: "0" * 64)
+    assert any("another harness version" in p for p in et.state_problems("T1"))
+
+
+def _authorise_t3(world, *, t1_sha=None, t3_sha=None):
+    from nextgem import ledger
+
+    repo = world["repo"]
+    rel = "tests/test_evaluate_test.py"
+    f = repo / "FROZEN.tsv"
+    if rel not in f.read_text():
+        f.write_text(f.read_text() + f"{rel}\tfile\t{rel}\t{et._sha(paths.PROJECT_ROOT / rel)}\t2026-10-28\t\t\n")
+    spec_sha = et._sha(repo / et.P1_SPEC)
+    head = toy.git(repo, "rev-parse", "HEAD").stdout.strip()
+    a = repo / et.THIRD_LOOK_AUTH
+    a.parent.mkdir(parents=True, exist_ok=True)
+    a.write_text(f"# toy authorisation\nregression_test: {rel}::test_sign_flip_p_known_answers\nfix_commit: {head}\n"
+                 f"t1_spec_sha256: {t1_sha or spec_sha}\nt3_spec_sha256: {t3_sha or spec_sha}\n")
+    toy.commit_all(repo, "authorise T3")
+    return ledger
+
+
+def test_third_look_accepted_and_tied_to_t1_spec(world):
+    """F4: T3 is accepted with a committed authorisation naming a frozen regression test, an ancestor fix commit and
+    T1's spec SHA; it is refused for another pipeline's spec, a wrong T1 SHA, and once used."""
+    from nextgem import ledger
+
+    spec_sha = et._sha(world["repo"] / et.P1_SPEC)
+    ledger.append("test", "started", look_id="T1", workstream="M6", config_sha="c",
+                  detail=json.dumps({"spec_sha": spec_sha}))
+    ledger.append("test", "completed", look_id="T1")
+    _authorise_t3(world)
+    assert et.state_problems("T3") == []
+    assert et.look_config("T3")["post_hoc"]
+    # a bug-fix spec change that keeps T1's identity (here: notes) is accepted with the new t3 SHA
+    write_json(world["repo"], et.P1_SPEC, p1_spec(world["sha"], notes="toy, regenerated after the fix"))
+    toy.commit_all(world["repo"], "spec regenerated")
+    _authorise_t3(world, t1_sha=spec_sha, t3_sha=et._sha(world["repo"] / et.P1_SPEC))
+    assert et.state_problems("T3") == []
+    # another pipeline (attribution changed) is refused
+    write_json(world["repo"], et.P1_SPEC, p1_spec(world["sha"], attribution={**p1_spec(world["sha"])["attribution"],
+                                                                            "v": et.LEVER_NOT_SELECTED}))
+    toy.commit_all(world["repo"], "another pipeline")
+    _authorise_t3(world, t1_sha=spec_sha, t3_sha=et._sha(world["repo"] / et.P1_SPEC))
+    assert any("re-evaluates T1's P1 only" in p for p in et.state_problems("T3"))
+    _authorise_t3(world, t1_sha="0" * 64, t3_sha=et._sha(world["repo"] / et.P1_SPEC))
+    assert any("t1_spec_sha256" in p for p in et.state_problems("T3"))
+    ledger.append("test", "started", look_id="T3", workstream="M6", config_sha=et.config_sha(et.look_config("T3")))
+    ledger.append("test", "completed", look_id="T3")
+    assert any("already used" in p or "already completed" in p for p in et.state_problems("T3"))
+
+
+def test_unseal_refused_on_config_mismatch(world, monkeypatch, capsys):
+    """F2: unseal re-derives the sealed bytes only if the current config reproduces T1's config_sha; otherwise it
+    refuses before the unseal row and before any label read."""
+    from nextgem import ledger
+
+    _patch_labels(world, monkeypatch, allow=())
+    _patch_main(world, monkeypatch)
+    for look in ("T1", "T2"):
+        ledger.append("test", "started", look_id=look, workstream="M6", config_sha="not-this-config", commit=False)
+        ledger.append("test", "completed", look_id=look, commit=False)
+    toy.commit_all(world["repo"], "T1/T2 rows")
+    assert et.main(["--unseal"]) == 2
+    err = capsys.readouterr().err
+    assert "UNSEAL REFUSED" in err and "config_sha" in err
+    assert not any(r["event"] == "unseal" for r in ledger.read("test"))
+    assert world["calls"] == {"train": 0, "validation": 0, "test": 0}
+    with pytest.raises(et.PreflightError, match="config_sha"):
+        et.run_unseal(cfg_for=et.look_config, ctx_for=lambda c: world["ctx_for"]("test"), fit_long_for=None,
+                      load_test=None, author="test")
+
+
+def test_unseal_sha_mismatch_not_published(world, monkeypatch, capsys):
+    """F2: a re-derived sealed file whose SHA-256 differs from the ledger's is not published (exit 2); the others are."""
+    from nextgem import ledger
+
+    _rehearse(world, monkeypatch)
+    _patch_labels(world, monkeypatch)
+    _patch_main(world, monkeypatch)
+    assert et.main(["--look", "T1"]) == 0
+    toy.commit_all(world["repo"], "T1 outputs")
+    t1_cfg_sha = [r for r in ledger.read("test") if r["look_id"] == "T1" and r["event"] == "started"][0]["config_sha"]
+    ledger.append("test", "started", look_id="T2", workstream="M7", config_sha="t2")
+    ledger.append("test", "completed", look_id="T2")
+    real_sealed = et.t1_sealed
+
+    def drifted(*a, **k):
+        out = real_sealed(*a, **k)
+        out["per_task"] = out["per_task"].assign(drift=1)
+        return out
+
+    monkeypatch.setattr(et, "t1_sealed", drifted)
+    capsys.readouterr()
+    assert et.main(["--unseal"]) == 2
+    rep = json.loads(capsys.readouterr().out)["unseal"]["T1"]
+    assert rep["sha_mismatch_not_published"] == ["per_task.tsv"] and len(rep["published"]) == 10
+    assert rep["config_sha_now"] == t1_cfg_sha
+    pub = world["repo"] / et.UNSEALED_DIR / "T1"
+    assert not (pub / "per_task.tsv").exists() and (pub / "per_gene.tsv").exists()
+    assert (pub / "MANIFEST.tsv").exists() or (world["repo"] / et.UNSEALED_DIR / "MANIFEST.tsv").exists()
+
+
+def test_c3_parallel_bitwise_equals_serial():
+    """Runtime: the C3 bootstrap batches and permutations spread over worker processes give exactly (bitwise) the
+    serial metrics.c3_decision result — several bootstrap batches and permutation chunks, NaN label pairs, unequal
+    lineages."""
+    from threadpoolctl import threadpool_limits
+
+    rng = np.random.default_rng(5)
+    ids, lin = _lineage_series({"A": 70, "B": 50, "C": 80})
+    genes = list(range(1, 1001))
+    Y = pd.DataFrame((rng.random((len(ids), len(genes))) < 0.15).astype(float), index=ids, columns=genes)
+    Y = Y.mask(rng.random(Y.shape) < 0.02)
+    S = pd.DataFrame(np.round(rng.random(Y.shape) + 0.5 * Y.fillna(0).to_numpy(), 3), index=ids, columns=genes)
+    B3 = pd.DataFrame(np.round(rng.gamma(2, 1, Y.shape), 2), index=ids, columns=genes)
+    assert metrics._batch_size(*Y.shape) < 350  # > 1 bootstrap batch
+    cfg = _cfg(B_conf=350, n_perm=60)
+    with threadpool_limits(1):
+        ref = metrics.c3_decision(S, B3, Y, lin, seed=11, B=350, n_perm=60)
+        for w in (1, 3):
+            got = et.c3(S, B3, Y, lin, cfg, workers=w)
+            assert set(got) == set(ref)
+            for k, v in ref.items():
+                assert (got[k] == v) or (isinstance(v, float) and np.isnan(v) and np.isnan(got[k])), (w, k, got[k], v)
+
+
+def test_synthetic_labels_follow_gene_priors():
+    """F11: synthetic labels are drawn per gene at the training prior (a flat rate would empty CE_fit)."""
+    pri = {"L_prob": pd.Series({1: 1.0, 2: 0.0, 3: 0.5}), "L_ge05": 0.0}
+    df = et.synthetic_labels([f"ACH-{i:06d}" for i in range(1, 41)], [1, 2, 3], pri, seed=11)
+    by = df.groupby("entrez").L_prob.mean()
+    assert by[1] == 1.0 and by[2] == 0.0 and 0.2 < by[3] < 0.8 and df.L_ge05.sum() == 0
+
+
+def test_dry_run_keeps_ce_fit_and_c1b_differs(world):
+    """F11: with synthetic validation labels at the per-gene training prior, CE_fit (training ∪ validation) is
+    non-empty, C1b's gene set is smaller and C1b ≠ C1."""
+    cfg = et.look_config("T1")
+    res = et.dry_run(cfg, world["ctx_for"]("test"), world["train"], "test")
+    assert res["ce_fit_nonempty"] and res["c1b_gene_set_smaller"] and res["c1b_differs_from_c1"]
+
+
+def test_prepare_refuses_empty_ce_fit(world):
+    """F11: an empty CE_fit would make C1b ≡ C1; prepare() refuses it in every mode."""
+    cfg = et.look_config("T1")
+    flat = world["train"].assign(L_prob=0.0, L_ge05=0.0, L_ge06=0.0, L_ge10=0.0)
+    with pytest.raises(RuntimeError, match="CE_fit is empty"):
+        et.prepare(cfg, world["ctx_for"]("test"), flat, "test")
+
+
+def test_per_task_table_matches_w3_definition(world):
+    """F6: the test per-task table uses W3's M4 definitions (scripts/w3_score_train.py per_task_table): per-line
+    precision averaged lineage-equally, precision of calls whose base e < 0.99, tAP of base-with-task-genes-at-1
+    and its paired Δ̄_lin vs the base."""
+    from nextgem import w1
+
+    cfg = et.look_config("T1")
+    ctx = world["ctx_for"]("test")
+    prep = et.prepare(cfg, ctx, pd.concat([world["train"], world["val"]], ignore_index=True), "test")
+    Y = w1.wide(world["test"], "L_prob", ctx["eval_lines"], ctx["genes"])
+    tab = et.per_task_table(cfg, ctx, prep, Y).set_index("task")
+    tc = pd.read_parquet(world["repo"] / "results/m6/task_calls.parquet")
+    called = sorted(tc[(tc.task == "ESS001") & tc.fails].entrez)
+    base = prep["S"]["P1[H1]"].loc[Y.index, Y.columns]
+    lin = ctx["lineage"].reindex(Y.index)
+    prec = Y[called].mean(axis=1)
+    want = prec.groupby(lin).mean().mean()
+    new = Y[called].where(base[called] < 0.99).mean(axis=1).dropna()
+    S = base.copy()
+    S[called] = 1.0
+    lt = metrics.per_line(S, Y)
+    r = tab.loc["ESS001"]
+    assert r.n_failing_in_U == len(called) and r.parent == "H1"
+    assert r.precision_lin == pytest.approx(want, abs=1e-12)
+    assert r.precision_new_calls_lin == pytest.approx(new.groupby(lin.reindex(new.index)).mean().mean(), abs=1e-12)
+    assert r.tap_lin_base_plus_task == pytest.approx(metrics.lineage_equal_mean(lt.tap[lt.estimable], ctx["lineage"]))
+    d = w1.delta_summary(lt, metrics.per_line(base, Y), ctx["lineage"], seed=11, B=cfg["B"])
+    assert (r.delta_lin_vs_base, r.delta_lo, r.delta_hi) == (d["delta_lin"], d["delta_lo"], d["delta_hi"])
+
+
+# ---- F10: the reviewed refit plug-in for a label-fitted P2 (W7-05 = B6 with monotone b2/b2m)
+def _w7_toy(seed=0, n_genes=25):
+    """A label-free toy for nextgem.w7 (as tests/test_w7.py) plus training and validation labels."""
+    from nextgem import w7
+
+    rng = np.random.default_rng(seed)
+    genes = list(range(1, n_genes + 1))
+    tiers = {"train": [f"ACH-{i:06d}" for i in range(1, 13)], "validation": [f"ACH-{i:06d}" for i in range(13, 17)],
+             "test": [f"ACH-{i:06d}" for i in range(17, 21)]}
+    lines = sum(tiers.values(), [])
+    tier_of = pd.Series({l: t for t, ls in tiers.items() for l in ls})
+    lineage = pd.Series({l: f"L{i % 3}" for i, l in enumerate(lines)})
+
+    def mat():
+        return pd.DataFrame(rng.normal(size=(len(lines), n_genes)).astype("float32"), index=lines, columns=genes)
+
+    omics = {k: mat() for k in ("expr", "cn", "mut_dam", "mut_hot")}
+    gfeat = pd.DataFrame({"n_isozyme_genes_h2": rng.integers(0, 3, n_genes)}, index=pd.Index(genes, name="entrez"))
+    lf = pd.DataFrame({"base_medium_class": rng.choice(["RPMI", "DMEM"], len(lines)), "serum": 1.0}, index=lines)
+    kw = dict(genes=genes, omics=omics, aggs=(mat(), mat()), gfeat=gfeat, lf=lf, class_codes={"DMEM": 0, "RPMI": 1},
+              lineage_of=lineage)
+    base = rng.random(n_genes)
+    rows = []
+    for l in tiers["train"] + tiers["validation"]:
+        y = (rng.random(n_genes) < base).astype(float)
+        rows += [{"ModelID": l, "entrez": g, "lineage": lineage[l], "L_prob": v, "gene_effect": -v} for g, v in zip(genes, y)]
+    labels_long = pd.DataFrame(rows)
+    return w7.Inputs(**kw, tier_of=tier_of), w7.Inputs(**kw, tier_of=None), labels_long, tiers, tier_of
+
+
+REFIT = {"recipe": "w7_idea", "idea": "W7-05", "method": "P2"}
+
+
+def test_refit_plugin_reproduces_w7_training_fit():
+    """On training labels only, the plug-in returns exactly W7's own fit/predict of W7-05 (monotone B6)."""
+    from nextgem import w7
+
+    inp_w7, inp, lab, tiers, tier_of = _w7_toy()
+    train = lab[lab.ModelID.isin(tiers["train"])]
+    ref = w7.predict(inp_w7, w7.fit(inp_w7, train, w7.IDEAS["W7-05"], seed=11), tiers["validation"])
+    got = et.refit_fit_predict(REFIT, inp, train, tiers["validation"], tier_of, seed=11)
+    pd.testing.assert_frame_equal(got, ref, check_exact=True)
+    assert w7.IDEAS["W7-05"].mono and not w7.IDEAS["W7-05"].extra
+
+
+def test_refit_plugin_fits_train_val_only(monkeypatch):
+    """The refit sees exactly the training ∪ validation rows it is given (§4.2) and predicts the test lines."""
+    from nextgem import w7
+
+    _, inp, lab, tiers, tier_of = _w7_toy()
+    seen = {}
+    real_fit = w7.fit
+
+    def spy(inp_, fit_long, idea, seed, stacked=None):
+        seen["lines"] = set(fit_long.ModelID)
+        seen["idea"] = idea.id
+        return real_fit(inp_, fit_long, idea, seed, stacked)
+
+    monkeypatch.setattr(w7, "fit", spy)
+    out = et.refit_fit_predict(REFIT, inp, lab, tiers["test"], tier_of, seed=11)
+    assert seen["lines"] == set(tiers["train"]) | set(tiers["validation"]) and seen["idea"] == "W7-05"
+    assert list(out.index) == tiers["test"] and out.shape == (4, 25) and np.isfinite(out.to_numpy()).all()
+
+
+def test_refit_plugin_refuses_test_lines():
+    """A test line among the fitting rows, a fitting line among the predicted lines, or an unreviewed idea is refused."""
+    _, inp, lab, tiers, tier_of = _w7_toy()
+    leak = lab[lab.ModelID == tiers["train"][0]].assign(ModelID=tiers["test"][0])
+    with pytest.raises(et.RefitLeakageError, match="outside training"):
+        et.refit_fit_predict(REFIT, inp, pd.concat([lab, leak]), tiers["test"][1:], tier_of, seed=11)
+    with pytest.raises(et.RefitLeakageError, match="fitting lines"):
+        et.refit_fit_predict(REFIT, inp, lab, [tiers["validation"][0]], tier_of, seed=11)
+    for idea in ("W7-02", "W7-17"):
+        with pytest.raises(et.PreflightError, match="reviewed"):
+            et.refit_fit_predict({**REFIT, "idea": idea}, inp, lab, tiers["test"], tier_of, seed=11)
+
+
+@pytest.mark.parametrize("over,match", [
+    pytest.param({"fitted_on_labels": True}, "refit = ", id="label_fitted_without_refit"),
+    pytest.param({"fitted_on_labels": True, "refit": {**REFIT, "idea": "W7-02"}}, "reviewed recipe", id="unreviewed_idea"),
+    pytest.param({"fitted_on_labels": True, "refit": {**REFIT, "recipe": "python"}}, "reviewed recipe", id="unknown_recipe"),
+    pytest.param({"fitted_on_labels": True, "refit": {**REFIT, "method": "H1"}}, "primary", id="refit_not_primary"),
+    pytest.param({"fitted_on_labels": True, "refit": REFIT, "provenance": {"src/nextgem/w7.py": "0" * 64}}, "pinned",
+                 id="recipe_code_unpinned"),
+    pytest.param({"refit": REFIT}, "only allowed", id="refit_without_fitted_on_labels"),
+])
+def test_p2_refit_spec_checks(world, over, match):
+    spec = p2_spec(world["p2_sha"], provenance={c: "0" * 64 for c in et.REFIT_CODE})
+    spec.update(over)
+    with pytest.raises(et.PreflightError, match=match):
+        et.check_p2_spec(spec)
+
+
+def test_t2_prepare_uses_refit_plugin_on_train_val(world, monkeypatch):
+    """A label-fitted P2 is not read from the score file: prepare() refits it through the plug-in on the fitting
+    rows (training ∪ validation, never test) and scores the test evaluation lines; the recipe code joins the
+    config's code map."""
+    repo = world["repo"]
+    sha = _parquet(repo, "results/m6/p2_test_scores.parquet",
+                   pd.DataFrame({"entrez": GENES, "H1": world["ctx_for"]("test")["gen"].e_H1.to_numpy(),
+                                 "H2": world["ctx_for"]("test")["gen"].e_H2.to_numpy()}))
+    prov = {c: et._sha(paths.PROJECT_ROOT / c) for c in et.REFIT_CODE}
+    write_json(repo, et.P2_SPEC, p2_spec(sha, fitted_on_labels=True, refit=REFIT, provenance=prov))
+    cfg = et.look_config("T2")
+    assert cfg["score_methods"] == ["H1", "H2"] and cfg["refit"] == REFIT and "src/nextgem/w7.py" in cfg["code"]
+    seen = {}
+
+    def plug(refit, inp, fit_long, lines, tier_of, seed):
+        seen.update(lines=set(fit_long.ModelID), pred=list(lines), refit=refit, seed=seed)
+        return pd.DataFrame(0.5, index=list(lines), columns=GENES)
+
+    monkeypatch.setattr(et, "refit_fit_predict", plug)
+    ctx = {**world["ctx_for"]("test"), "refit_inputs": lambda: None}
+    fit = pd.concat([world["train"], world["val"]], ignore_index=True)
+    prep = et.prepare(cfg, ctx, fit, "test")
+    assert "P2" in prep["S"] and seen["refit"] == REFIT and seen["seed"] == 11
+    assert seen["lines"] == set(world["train"].ModelID) | set(world["val"].ModelID)
+    assert not seen["lines"] & set(ctx["tier_lines"]) and seen["pred"] == ctx["eval_lines"]

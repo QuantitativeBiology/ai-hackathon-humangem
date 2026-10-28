@@ -34,29 +34,76 @@ Modes
   --unseal           after a completed T2: ledger ``unseal`` row, then sealed outputs re-derived, verified
                      against their ledger SHA-256 and published under results/m6/test/unsealed/<look>/
 
-Order inside every look (as in evaluate_val.py): pre-flight and look-state checks → provenance → label-free and
-fitting-tier work (contexts, score matrices, refits) → ledger ``started`` (committed) → the evaluation-tier label
+  A look must be named: a bare ``evaluate_test.py`` (no --look / --rehearsal / --unseal) is refused.
+  --workers N        processes for the C3 bootstrap and permutation replicates (1-8, default 8); the result is
+                     bitwise identical to the serial ``metrics.c3_decision`` (same batches, same spawned seeds).
+
+Order inside every look (as in evaluate_val.py): look-state checks (a completed look id, or a crashed one with another
+config, is refused here, before any label read or file write) → pre-flight → provenance → label-free and fitting-tier
+work (contexts, score matrices, refits) → config JSON → ledger ``started`` (committed) → the evaluation-tier label
 read → revealed outputs (scalar guard) → sealed outputs (``data/locked/sealed/<look>/`` only, written through
 ``labels._write_protected`` under the tripwire's ``sealed`` scope) → ledger ``output`` rows (SHA-256 only) →
-``completed``. stdout carries scalars, file names and SHA-256 values only.
+``completed``. stdout carries scalars, file names and SHA-256 values only. BLAS/OpenMP are pinned to one thread
+before numpy is imported; the library versions and the thread count are part of the config, and so of the
+config_sha that the unseal re-checks against the ledger before it reads any label.
+
+Revealed at T1 (and at the rehearsal's validation stage): ``test_look_T1.tsv``, by section —
+
+- ``confirmatory``: C1 (all genes) and C1b (U minus CE_fit): estimate (Δ̄_lin), ci_lo/ci_hi (lineage-stratified
+  bootstrap, B = 10,000), p (sign flip within lineage, 10,000), passed, sesoi, line_mean (Δ̄_line), n_lines,
+  n_lineages, status, claim. C3 and C3_expressed_pairs: estimate, ci_lo/ci_hi (line bootstrap of mΔAP_gene(P1) −
+  mΔAP_gene(B3)), p (permutation), passed, m_delta_ap_gene_p1, null_threshold (97.5th percentile of 2,000
+  within-lineage label permutations), bootstrap_passed, permutation_passed, n_genes_eligible, mean_genes_dropped,
+  status, claim (the expressed-pairs row feeds the §6.3 C3 claim condition).
+- ``transfer`` (C1): t_mean, t_low, t_high (t-interval, df = K − 1), exact_sign_flip_p (2^K), k_positive,
+  k_required (ceil 0.7 K), n_lineages, generalises.
+- ``estimates`` (B = 2,000, percentile): C2:B2, C2:B2m, C2:B2c; B8+, B8-, B8' (built on G*); within_parent:H1,
+  within_parent:H2; vs_G*:<non-primary arm> — each estimate, ci_lo, ci_hi, line_mean, n_lines, n_lineages;
+  headroom_closed (estimate/CI only if reportable; denominator, den_ci_lo, den_ci_hi, reportable);
+  tap:<P1 arms and G*> (tap_lin, tap_lin_lo, tap_lin_hi, e_random_lin, lift_lin, n_lines, n_lineages).
+- ``binary_6.8``: H1, H2, P1[H1], P1[H2] × {Human1-paper P57 and PGR, Human2-paper P57} × L_ge06 and fixed-cutoff
+  FBA<0.01 × {L_prob, L_ge06} × {mcc, f1, precision, recall, specificity, accuracy} × nan_policy {exclude, zero}:
+  lineage_equal_mean, line_mean, median, n_lines_used, n_nan, ci_lo, ci_hi; plus paired MCC rows "<arm> - <G*>" and
+  "<arm> - <its parent>". A failed build has no model, so all of its calls are non-essential: TP + FP = 0 makes its
+  MCC, precision and F1 undefined (NaN). Under nan_policy=exclude such a line is dropped and counted in n_nan; under
+  nan_policy=zero it counts as 0.
+- ``failed_builds``: per method × lineage (and 'all'): n_failed, n_lines, frac_failed, flag_failing (> 5%). This is
+  the only section allowed to name lineages (it is label-free).
+- ``counts``: n_lines (evaluation lines), n_lines_no_expression, n_lineages.
+
+``test_look_T1_gates.json``: the gate table (C1 → C1b → C3 → C4 → C5); the C1/C1b/C3 results; the C3 claim
+condition; transfer; the headline (the first T1 number, §10.2); and the pre-declared claim rule "adds information
+beyond generic + expression" = the paired Δ̄_lin CI lower bound > 0 for all three of B8+, B8−, B8′ (the
+all-point-estimates-positive version is reported as descriptive only).
+
+Runtime: one C3 call on the real test shape is ≈ 88 CPU-min serially and T1 runs two (all pairs, expressed pairs);
+with --workers 8 they run in parallel replicate batches. A look over 1 CPU-h runs from a pinned worktree (§11.4).
 """
 
 from __future__ import annotations
 
-import argparse
-import hashlib
-import importlib.util
-import io
-import json
-import math
-import re
-import subprocess
-import sys
-import time
-from pathlib import Path
+import os
 
-import numpy as np
-import pandas as pd
+if __name__ == "__main__":  # one BLAS/OpenMP thread, set before numpy is imported (review F2)
+    for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "BLIS_NUM_THREADS",
+               "NUMEXPR_NUM_THREADS", "VECLIB_MAXIMUM_THREADS"):
+        os.environ[_v] = "1"
+
+import argparse  # noqa: E402
+import hashlib  # noqa: E402
+import importlib.util  # noqa: E402
+import io  # noqa: E402
+import json  # noqa: E402
+import math  # noqa: E402
+import platform  # noqa: E402
+import re  # noqa: E402
+import subprocess  # noqa: E402
+import sys  # noqa: E402
+import time  # noqa: E402
+from pathlib import Path  # noqa: E402
+
+import numpy as np  # noqa: E402
+import pandas as pd  # noqa: E402
 
 PROJECT = Path(__file__).resolve().parents[1]
 
@@ -88,6 +135,14 @@ W7_STOP = "W7_stop"
 REHEARSAL_PREFIX = "REHEARSAL_"
 REHEARSAL_WS = "M6"
 THIRD_LOOK_AUTH = "results/authorisations/test_third_look.md"
+SKEW_REL = "results/m6/t1/skew.json"  # §6.5 training skew check of P1 − G*; pins bootstrap_method (review F9)
+MAX_WORKERS = 8
+C3_WORKERS = 1  # set by main(--workers); the C3 result does not depend on it (bitwise)
+CALL = 0.99  # e >= 0.99 <=> ratio_r < 0.01 or a task failure: the §6.1 call (as in W3's per-task table)
+# Reviewed refit recipes for a label-fitted P2 (review F10): a W7 idea re-fitted on training ∪ validation with
+# nextgem.w7.fit/predict. Only ideas whose features are the W1 B6 set (no extra, dropped or kNN features) qualify.
+REFIT_RECIPES = {"w7_idea": ("W7-01", "W7-05")}
+REFIT_CODE = ("src/nextgem/w7.py", "scripts/w1_b6.py")  # must be pinned in the P2 spec's provenance
 LEVER_NOT_SELECTED = "lever not selected"
 ATTRIBUTION = {"i": "P1 vs G*", "ii": "medium alone", "iii": "curation alone", "iv": "constraints alone",
                "v": "curation given constraints"}
@@ -107,7 +162,7 @@ P1_KEYS = {"spec_id", "kind", "milestone", "primary", "methods", "arms", "scores
 P1_OPTIONAL = {"pipeline", "task_calls", "gene_annotations", "provenance", "notes"}
 P2_KEYS = {"spec_id", "kind", "milestone", "primary", "methods", "scores", "failed_builds", "labels", "genesets",
            "universes", "strata", "b6", "bootstrap_method", "fitted_on_labels"}
-P2_OPTIONAL = {"pipeline", "provenance", "notes"}
+P2_OPTIONAL = {"pipeline", "provenance", "notes", "refit"}
 B6_HGB_KEYS = {"max_iter", "learning_rate", "max_leaf_nodes", "early_stopping"}
 
 # ---- revealed-output guard (T1 / rehearsal / T2 confirmatory part)
@@ -200,6 +255,8 @@ def check_p1_spec(spec: dict) -> None:
           f"{w}: fitted_on_labels must be false: a P1 with label-fitted components needs its refit on training ∪ "
           "validation inside this harness (§4.2), which is not implemented")
     _check_provenance(spec.get("provenance", {}), w)
+    _need(SKEW_REL in spec.get("provenance", {}),
+          f"{w}: provenance must pin {SKEW_REL} (the §6.5 skew check that decides bootstrap_method)")
 
 
 def check_p2_spec(spec: dict) -> None:
@@ -228,9 +285,19 @@ def check_p2_spec(spec: dict) -> None:
           and isinstance(b6["hgb"], dict) and set(b6["hgb"]) == B6_HGB_KEYS,
           f"{w}: b6 must be {{features: 'w1', hgb: {sorted(B6_HGB_KEYS)}}} (the W1 feature set refitted on training ∪ validation)")
     _need(spec["bootstrap_method"] in ("percentile", "bca"), f"{w}: bootstrap_method must be percentile or bca")
-    _need(spec["fitted_on_labels"] is False,
-          f"{w}: fitted_on_labels must be false (a label-fitted P2 needs a refit plug-in, not implemented yet)")
     _check_provenance(spec.get("provenance", {}), w)
+    refit = spec.get("refit")
+    if spec["fitted_on_labels"] is False:
+        _need(refit is None, f"{w}: refit is only allowed with fitted_on_labels: true")
+        return
+    _need(spec["fitted_on_labels"] is True, f"{w}: fitted_on_labels must be a boolean")
+    _need(isinstance(refit, dict) and set(refit) == {"recipe", "idea", "method"}
+          and refit["recipe"] in REFIT_RECIPES and refit["idea"] in REFIT_RECIPES[refit["recipe"]],
+          f"{w}: a label-fitted P2 needs refit = {{recipe, idea, method}} with a reviewed recipe "
+          f"({ {k: list(v) for k, v in REFIT_RECIPES.items()} })")
+    _need(refit["method"] == spec["primary"], f"{w}: refit.method must be the primary P2 method")
+    _need(set(REFIT_CODE) <= set(spec.get("provenance", {})),
+          f"{w}: the refit recipe's code {list(REFIT_CODE)} must be pinned in provenance")
 
 
 def load_spec(rel: str, kind: str) -> tuple[dict, Path]:
@@ -335,6 +402,22 @@ def _gstar() -> str:
     return g
 
 
+def runtime_info() -> dict:
+    """Library versions and the BLAS/OpenMP thread count: part of the config (and so of the config_sha), because
+    the unseal re-derives the sealed bytes and must run under the same numerics (review F2)."""
+    import scipy
+    import sklearn
+
+    try:
+        from threadpoolctl import threadpool_info
+
+        threads = max([int(p.get("num_threads", 1)) for p in threadpool_info()] or [1])
+    except Exception:  # noqa: BLE001 - threadpoolctl missing: fall back to the environment
+        threads = int(os.environ.get("OMP_NUM_THREADS", "0") or 0)
+    return {"python": platform.python_version(), "numpy": np.__version__, "scipy": scipy.__version__,
+            "pandas": pd.__version__, "sklearn": sklearn.__version__, "blas_threads": threads}
+
+
 def _common_config(spec: dict, spec_rel: str, look: str, tier: str) -> dict:
     from nextgem import metrics, paths, w1
     from nextgem.config import SEEDS
@@ -349,7 +432,8 @@ def _common_config(spec: dict, spec_rel: str, look: str, tier: str) -> dict:
     return {
         "look": look, "tier": tier, "fit_tiers": ["train"] if tier == "validation" else ["train", "validation"],
         "spec_path": spec_rel, "spec_id": spec["spec_id"], "kind": spec["kind"], "milestone": spec["milestone"],
-        "primary": spec["primary"], "methods": list(spec["methods"]), "bootstrap_method": spec["bootstrap_method"],
+        "primary": spec["primary"], "methods": list(spec["methods"]), "score_methods": list(spec["methods"]),
+        "bootstrap_method": spec["bootstrap_method"], "runtime": runtime_info(),
         "G_star": gstar, "G_star_short": ev.GSTAR_SHORT[gstar], "primary_label": primary_label,
         "sesoi": metrics.SESOI, "sesoi_c1b": float(_frozen_value("sesoi.C1b")),
         "B_conf": metrics.B_CONFIRMATORY, "n_flip": metrics.N_SIGN_FLIPS, "n_perm": metrics.N_C3_PERMUTATIONS,
@@ -410,11 +494,21 @@ def p1_config(look: str, spec_rel: str = P1_SPEC) -> dict:
             rel[k] = e["path"]
     load_task_calls(spec["task_calls"]["path"] if spec.get("task_calls") else None)
     load_annotations(spec["gene_annotations"]["path"] if spec.get("gene_annotations") else None)
+    # §6.5: bootstrap_method must be the one decided by the pinned training skew check (review F9)
+    sk = root / SKEW_REL
+    if not sk.is_file() or _sha(sk) != spec["provenance"][SKEW_REL]:
+        raise PreflightError(f"{SKEW_REL}: missing or SHA-256 differs from the provenance pin in {spath.name}")
+    try:
+        skew_method = json.loads(sk.read_text())["bootstrap_method"]
+    except (ValueError, KeyError, TypeError):
+        raise PreflightError(f"{SKEW_REL} has no bootstrap_method") from None
+    if skew_method != spec["bootstrap_method"]:
+        raise PreflightError(f"bootstrap_method {spec['bootstrap_method']!r} differs from {skew_method!r} in {SKEW_REL}")
     cfg.update(arms=dict(spec["arms"]), attribution=dict(spec["attribution"]), sources=src,
                task_calls=spec["task_calls"]["path"] if spec.get("task_calls") else None,
                gene_annotations=spec["gene_annotations"]["path"] if spec.get("gene_annotations") else None,
                post_hoc=look == "T3")
-    if look == "T3":
+    if look == "T3" and (root / THIRD_LOOK_AUTH).is_file():  # its absence is reported by state_problems
         rel["third_look_authorisation"] = THIRD_LOOK_AUTH
     return _finish_config(cfg, CODE_FILES)
 
@@ -422,9 +516,19 @@ def p1_config(look: str, spec_rel: str = P1_SPEC) -> dict:
 def p2_config(spec_rel: str = P2_SPEC, p1_rel: str = P1_SPEC) -> dict:
     from nextgem import paths
 
+    from nextgem import w7
+
     spec, spath = load_spec(spec_rel, "p2")
     cfg = _common_config(spec, spec_rel, "T2", "test")
     root = paths.state_root()
+    if cfg["primary_label"] != "L_prob":
+        raise PreflightError("T2 needs the primary label L_prob (B6 and the W7 recipes are fitted on L_prob only)")
+    if spec["b6"]["hgb"] != dict(w7.HGB_M2):
+        raise PreflightError(f"b6.hgb must equal W7's B6 settings {dict(w7.HGB_M2)} (review F10)")
+    refit = spec.get("refit")
+    if refit is not None:
+        cfg["refit"] = dict(refit)
+        cfg["score_methods"] = [m for m in spec["methods"] if m != refit["method"]]
     rel = cfg["_inputs_rel"]
     rel["spec"] = spec_rel
     if (root / p1_rel).is_file():  # always present for a real T2 (T1 completed); absent only in a dry run
@@ -437,7 +541,7 @@ def p2_config(spec_rel: str = P2_SPEC, p1_rel: str = P1_SPEC) -> dict:
         if not p.is_file() or _sha(p) != e["sha256"]:
             raise PreflightError(f"{e['path']}: missing or SHA-256 differs from the pin in {spath.name}")
         rel[name] = e["path"]
-    ev.load_scores(root / sc["path"], sc["layout"], spec["methods"])
+    ev.load_scores(root / sc["path"], sc["layout"], cfg["score_methods"])
     load_failed(fb["path"] if fb else None, spec["methods"])
     rel.update(mut_dam="results/w1/tmp/mut_dam.parquet", mut_hot="results/w1/tmp/mut_hot.parquet",
                gene_neighbours="results/w1/tmp/gene_neighbours.json")
@@ -445,7 +549,8 @@ def p2_config(spec_rel: str = P2_SPEC, p1_rel: str = P1_SPEC) -> dict:
                strata=list(spec["strata"]), b6=dict(spec["b6"]), arms={}, post_hoc=False,
                sources={"test": {"scores": sc["path"], "scores_layout": sc["layout"], "calls": None, "calls_layout": None,
                                  "failed_builds": fb["path"] if fb else None}})
-    return _finish_config(cfg, CODE_FILES + B6_CODE)
+    code = CODE_FILES + B6_CODE + (tuple(c for c in REFIT_CODE if c not in B6_CODE) if refit else ())
+    return _finish_config(cfg, code)
 
 
 def look_config(mode: str, spec_rel: str | None = None) -> dict:
@@ -518,17 +623,48 @@ def w7_stop_row(p2_sha: str | None) -> tuple[dict | None, str]:
     return r, "ok"
 
 
-def third_look_authorised() -> list[str]:
-    from nextgem import ledger, paths
+def code_sha(cfg: dict) -> str:
+    """SHA-256 of a config's harness-code map; pinned in every look's ``started`` row (review F5)."""
+    return hashlib.sha256(json.dumps(cfg["code"], sort_keys=True).encode()).hexdigest()
+
+
+def _started_detail(lk: dict | None) -> dict:
+    try:
+        return json.loads(lk["started"]["detail"] or "{}")
+    except (TypeError, KeyError, ValueError):
+        return {}
+
+
+def _spec_at(commit: str, rel: str) -> dict | None:
+    from nextgem import paths
+
+    r = subprocess.run(["git", "-C", str(paths.state_root()), "show", f"{commit}:{rel}"], capture_output=True, text=True)
+    try:
+        return json.loads(r.stdout) if r.returncode == 0 else None
+    except ValueError:
+        return None
+
+
+T3_AUTH_KEYS = ("regression_test", "fix_commit", "t1_spec_sha256", "t3_spec_sha256")
+P1_IDENTITY = ("spec_id", "primary", "methods", "arms", "attribution")
+
+
+def third_look_authorised(cfg: dict | None = None) -> list[str]:
+    """§10.2 third look (review F4). The committed authorisation names: the label-free regression test (its file
+    frozen with its current SHA-256 in FROZEN.tsv), the fix commit (an ancestor of HEAD), T1's P1 spec SHA-256
+    (``t1_spec_sha256`` = the spec_sha of T1's started row) and this look's (``t3_spec_sha256`` = the current spec).
+    If the spec changed since T1, its identity (spec_id, primary, methods, arms, attribution) must equal the spec
+    committed at T1: the third look re-evaluates T1's P1 after a bug fix, never another pipeline."""
+    from nextgem import frozen, ledger, paths
 
     root = paths.state_root()
     p = root / THIRD_LOOK_AUTH
     if not p.is_file() or not ledger.is_committed_clean(root, THIRD_LOOK_AUTH):
         return [f"the third look needs a committed {THIRD_LOOK_AUTH} (DESIGN §10.2)"]
-    kv = dict(re.findall(r"^(regression_test|fix_commit):\s*(\S+)\s*$", p.read_text(), re.M))
+    kv = dict(re.findall(rf"^({'|'.join(T3_AUTH_KEYS)}):\s*(\S+)\s*$", p.read_text(), re.M))
+    if set(kv) != set(T3_AUTH_KEYS):
+        return [f"{THIRD_LOOK_AUTH} must name {', '.join(T3_AUTH_KEYS)} (one 'key: value' line each)"]
     probs = []
-    if set(kv) != {"regression_test", "fix_commit"}:
-        return [f"{THIRD_LOOK_AUTH} must name regression_test: <tests/...py::name> and fix_commit: <sha>"]
     r = subprocess.run(["git", "-C", str(root), "merge-base", "--is-ancestor", kv["fix_commit"], "HEAD"], capture_output=True)
     if r.returncode != 0:
         probs.append("fix_commit is not an ancestor of HEAD")
@@ -536,47 +672,83 @@ def third_look_authorised() -> list[str]:
     tp = paths.PROJECT_ROOT / f
     if not (f.startswith("tests/") and tp.is_file() and re.search(rf"^def {re.escape(name)}\(", tp.read_text(), re.M)):
         probs.append(f"regression test {kv['regression_test']} not found")
+    elif {r["path"]: r["sha256_or_value"] for r in frozen.read_rows() if r["kind"] == "file"}.get(f) != _sha(tp):
+        probs.append(f"the regression test file {f} is not frozen with its current SHA-256 in FROZEN.tsv")
+    t1 = _looks("test").get("T1")
+    if t1 is None or t1["started"] is None:
+        return probs + ["T1 has no started row"]
+    t1_sha = _started_detail(t1).get("spec_sha")
+    spec_rel = cfg["spec_path"] if cfg else P1_SPEC
+    cur = _sha(root / spec_rel) if (root / spec_rel).is_file() else None
+    if kv["t1_spec_sha256"] != t1_sha:
+        probs.append("t1_spec_sha256 is not the P1 spec SHA-256 recorded by the T1 look")
+    if kv["t3_spec_sha256"] != cur:
+        probs.append("t3_spec_sha256 is not the SHA-256 of the current P1 spec")
+    if cur != t1_sha:
+        old = _spec_at(t1["started"]["head_commit"], spec_rel)
+        new = json.loads((root / spec_rel).read_text()) if cur else None
+        if old is None or new is None or any(old.get(k) != new.get(k) for k in P1_IDENTITY):
+            probs.append(f"the P1 spec differs from T1's in {'/'.join(P1_IDENTITY)}: the third look re-evaluates T1's P1 only")
     return probs
 
 
 def state_problems(mode: str, cfg: dict | None = None) -> list[str]:
-    """Look-order rules (§10.2, §11.3), from the ledgers alone; nothing is read beyond them and the specs."""
-    from nextgem import paths
-
+    """Look-order rules (§10.2, §11.3), from the ledgers and the config alone; no label is read and no file is
+    written. ``cfg`` defaults to the mode's config (built label-free)."""
     test, val = _looks("test"), _looks("validation")
     done = lambda lk, k: k in lk and lk[k]["completed"]  # noqa: E731
     probs = []
-    if mode == "REHEARSAL":
-        return probs  # the ledger refuses a repeated look id and enforces the validation cap
-    if mode in ("T1", "T3", "T2"):
-        p1 = paths.state_root() / P1_SPEC
-        rid = None
-        if p1.is_file():
-            try:
-                rid = REHEARSAL_PREFIX + json.loads(p1.read_text())["spec_id"]
-            except (ValueError, KeyError, TypeError):
-                rid = None
-        if mode == "T1":
-            if rid is None or not done(val, rid):
-                probs.append(f"the rehearsal ({rid or REHEARSAL_PREFIX + '<spec_id>'}) is not completed in the "
-                             "validation ledger (DESIGN §10.2: rehearsal before T1)")
-            elif json.loads(val[rid]["started"]["detail"] or "{}").get("spec_sha") != _sha(p1):
-                probs.append("the completed rehearsal used a different P1 spec (spec_sha)")
+    if cfg is None and mode != "UNSEAL":
+        cfg = look_config(mode)
+    if mode in ("REHEARSAL", "T1", "T2", "T3"):  # review F3: refuse before any label read or config write
+        name, lks = ("validation", val) if mode == "REHEARSAL" else ("test", test)
+        lk = lks.get(cfg["look"])
+        if lk is not None and lk["completed"]:
+            probs.append(f"look {cfg['look']} is already completed in the {name} ledger; looks are never repeated")
+        elif lk is not None and lk["started"] is not None and lk["config_sha"] != config_sha(cfg):
+            probs.append(f"look {cfg['look']} crashed earlier with another config; it resumes only with the same config_sha")
+    if mode == "T1":
+        rid = REHEARSAL_PREFIX + cfg["spec_id"]
+        if not done(val, rid):
+            probs.append(f"the rehearsal ({rid}) is not completed in the validation ledger (DESIGN §10.2: rehearsal "
+                         "before T1)")
         else:
-            if not done(test, "T1"):
-                probs.append("T1 is not completed")
+            d = _started_detail(val[rid])
+            if d.get("spec_sha") != cfg["inputs"]["spec"]:
+                probs.append("the completed rehearsal used a different P1 spec (spec_sha)")
+            if d.get("code_sha") != code_sha(cfg):
+                probs.append("the completed rehearsal ran another harness version (code_sha; review F5)")
+    if mode in ("T2", "T3") and not done(test, "T1"):
+        probs.append("T1 is not completed")
     if mode == "T2":
-        p2 = paths.state_root() / P2_SPEC
-        _, why = w7_stop_row(_sha(p2) if p2.is_file() else None)
+        _, why = w7_stop_row(cfg["inputs"]["spec"])
         if why != "ok":
             probs.append(f"T2 refused: {why} (DESIGN §10.2: T2 runs after the W7 stop)")
     if mode == "T3":
         if done(test, "T3"):
             probs.append("the third look was already used")
-        probs += third_look_authorised()
+        probs += third_look_authorised(cfg)
     if mode == "UNSEAL":
         if not done(test, "T2"):
             probs.append("unseal refused: T2 is not completed (DESIGN §10.2: unseal after T2)")
+    return probs
+
+
+def unseal_problems(cfg_for) -> list[str]:
+    """Before the unseal reads any label (review F2): for every completed sealed look, the current config must
+    reproduce the config_sha of its ``started`` row (same code, inputs, constants, library versions, threads)."""
+    lks = _looks("test")
+    probs = []
+    for look in SEALED_LOOKS:
+        if look in lks and lks[look]["completed"]:
+            try:
+                c = cfg_for(look)
+            except PreflightError as e:
+                probs.append(f"{look}: config cannot be rebuilt ({e})")
+                continue
+            if config_sha(c) != lks[look]["config_sha"]:
+                probs.append(f"{look}: the current config_sha differs from the look's started row (code, inputs, "
+                             "constants, library versions or threads changed); the sealed bytes would not reproduce")
     return probs
 
 
@@ -591,10 +763,59 @@ def real_context(cfg: dict, tier: str) -> dict:
     tl = sorted(split.index[split.tier == tier])
     ctx.update(tier=tier, tier_lines=tl, eval_lines=[l for l in tl if l in lf.index and bool(lf.loc[l, "has_expression_matrix"])],
                gene_features=w1.gene_features())
+    ctx["tier_of"] = split.tier
     if cfg.get("kind") == "p2":
         nb = json.loads((paths.state_root() / "results/w1/tmp/gene_neighbours.json").read_text())
         ctx["b6_fit"] = lambda fit_long, lines, genes, b6, seed: b6_fit_predict(fit_long, lines, genes, ctx, nb, b6, seed)
+        if cfg.get("refit"):
+            ctx["refit_inputs"] = lambda: w7_inputs(ctx, nb)
     return ctx
+
+
+def w7_inputs(ctx: dict, nb: dict):
+    """Label-free ``nextgem.w7.Inputs`` for the reviewed refit recipes: the W1 B6 feature inputs only (as
+    scripts/w7_common.build_inputs, without GEM, kNN or deviation features). ``tier_of`` is None: the train-only
+    assertion of w7.fit is replaced by :func:`refit_fit_predict`'s training ∪ validation guard."""
+    from nextgem import w1, w7
+
+    genes = list(ctx["genes"])
+    omics = ctx["omics"]
+    aggs = w1.expression_aggregates(omics["expr"], genes, nb["neighbours_h2"], nb["paralogs"])
+    lf = ctx["lf"]
+    class_codes = {c: i for i, c in enumerate(sorted(lf.base_medium_class.dropna().unique()))}
+    return w7.Inputs(genes=genes, omics=omics, aggs=aggs, gfeat=ctx["gene_features"], lf=lf, class_codes=class_codes,
+                     tier_of=None, lineage_of=ctx["lineage"])
+
+
+class RefitLeakageError(AssertionError):
+    pass
+
+
+def refit_fit_predict(refit: dict, inp, fit_long: pd.DataFrame, lines, tier_of: pd.Series, seed) -> pd.DataFrame:
+    """The reviewed refit plug-in for a label-fitted P2 (review F10; §4.2 refit once on training ∪ validation).
+
+    ``refit`` = {recipe: 'w7_idea', idea: one of REFIT_RECIPES['w7_idea'], method}. The idea is looked up in
+    ``nextgem.w7.IDEAS`` (code pinned by SHA in the P2 spec) and must use the W1 B6 features only; it is fitted with
+    ``w7.fit`` on ``fit_long`` and scored with ``w7.predict`` — the exact W7 code path. Guards: every fitting row is a
+    training or validation line of the split (a test line raises RefitLeakageError), and no predicted line is a
+    fitting line. There is no other code path."""
+    from nextgem import w7
+
+    if refit.get("recipe") not in REFIT_RECIPES or refit.get("idea") not in REFIT_RECIPES[refit["recipe"]]:
+        raise PreflightError(f"refit recipe {refit!r} is not a reviewed recipe {REFIT_RECIPES}")
+    idea = w7.IDEAS[refit["idea"]]
+    if idea.kind != "clf" or idea.extra or idea.drop or idea.mono_extra:
+        raise PreflightError(f"{idea.id} is not a B6-feature classifier; it needs its own reviewed recipe")
+    fit_ids = pd.Index(pd.unique(fit_long.ModelID))
+    t = tier_of.reindex(fit_ids)
+    bad = fit_ids[~t.isin(["train", "validation"]).to_numpy()]
+    if len(bad):
+        raise RefitLeakageError(f"{len(bad)} fitting line(s) outside training ∪ validation (e.g. {list(bad[:2])})")
+    overlap = set(lines) & set(fit_ids)
+    if overlap:
+        raise RefitLeakageError(f"{len(overlap)} predicted line(s) are fitting lines")
+    f = w7.fit(inp, fit_long, idea, seed)
+    return w7.predict(inp, f, list(lines))
 
 
 def b6_fit_predict(fit_long, lines, genes, ctx, nb, b6: dict, seed) -> pd.DataFrame:
@@ -641,12 +862,12 @@ def _spec_matrices(cfg, ctx, tier, S: dict, gen_S: dict) -> None:
     sp = paths.state_root() / src["scores"]
     if _sha(sp) != cfg["inputs"][f"scores_{tier}"]:
         raise RuntimeError("scores file changed since the config was built")
-    df = ev.load_scores(sp, src["scores_layout"], cfg["methods"])
+    df = ev.load_scores(sp, src["scores_layout"], cfg["score_methods"])
     if set(df.entrez) != set(genes):
         raise RuntimeError(f"scores cover {df.entrez.nunique()} genes; the look needs exactly the {len(genes)} genes of U")
     if src["scores_layout"] == "line_gene" and set(df.ModelID) != set(lines):
         raise RuntimeError(f"line_gene scores must cover exactly the {tier} expression lines")
-    for m in cfg["methods"]:
+    for m in cfg["score_methods"]:
         if src["scores_layout"] == "gene":
             M = _tile(df.set_index("entrez")[m].astype(float), lines, genes)
         else:
@@ -716,6 +937,8 @@ def prepare(cfg: dict, ctx: dict, fit_long: pd.DataFrame, tier: str) -> dict:
     if fit_long.lineage.isna().any():
         raise RuntimeError("fitting rows without a lineage in the split")
     fitted = w1.fit_components(fit_long, ctx["line_class"])
+    if not fitted.ce[cfg["primary_label"]]:  # review F11: C1b would silently equal C1
+        raise RuntimeError("CE_fit is empty on the fitting tiers: C1b would equal C1 (check the fitting labels)")
     gen_S = w1.score_matrices(lines, genes, fitted, ctx["gen"], ctx["line_class"], ctx["omics"]["expr"],
                               random_seeds=cfg["random_seeds"] if cfg["kind"] == "p1" else ())
     clash = (set(gen_S) - {"H1", "H2"}) & set(cfg["methods"])
@@ -725,6 +948,9 @@ def prepare(cfg: dict, ctx: dict, fit_long: pd.DataFrame, tier: str) -> dict:
     _spec_matrices(cfg, ctx, tier, S, gen_S)
     if cfg["kind"] == "p2":
         S["B6[L_prob]"] = ctx["b6_fit"](fit_long, lines, genes, cfg["b6"], cfg["seed"]).reindex(index=lines, columns=genes)
+        if cfg.get("refit"):
+            S[cfg["refit"]["method"]] = refit_fit_predict(cfg["refit"], ctx["refit_inputs"](), fit_long, lines,
+                                                          ctx["tier_of"], cfg["seed"]).reindex(index=lines, columns=genes)
     for n, M in S.items():
         if not np.isfinite(M.to_numpy(dtype=float)).all():
             raise RuntimeError(f"non-finite scores for {n}")
@@ -777,13 +1003,120 @@ def confirmatory(delta, lineage, contrast: str, sesoi: float, cfg: dict) -> dict
                                          alpha=cfg["alpha"])
 
 
-def c3(S_p1, S_b3, Y, lineage, cfg: dict) -> dict:
+def c3(S_p1, S_b3, Y, lineage, cfg: dict, workers: int | None = None) -> dict:
     """C3 (§6.3): bootstrap CI of mΔAP_gene(P1) − mΔAP_gene(B3) and the 97.5th percentile of the within-lineage
-    label-permutation null (n_perm permutations)."""
+    label-permutation null (n_perm permutations). With ``workers`` == 1 this is ``metrics.c3_decision`` itself;
+    with more, :func:`c3_parallel` (bitwise identical; tested)."""
     from nextgem import metrics
 
-    return metrics.c3_decision(S_p1.loc[Y.index, Y.columns], S_b3.loc[Y.index, Y.columns], Y, lineage,
-                               seed=cfg["seed"], B=cfg["B_conf"], n_perm=cfg["n_perm"])
+    a, b = S_p1.loc[Y.index, Y.columns], S_b3.loc[Y.index, Y.columns]
+    w = C3_WORKERS if workers is None else workers
+    if w <= 1:
+        return metrics.c3_decision(a, b, Y, lineage, seed=cfg["seed"], B=cfg["B_conf"], n_perm=cfg["n_perm"])
+    return c3_parallel(a, b, Y, lineage, seed=cfg["seed"], B=cfg["B_conf"], n_perm=cfg["n_perm"], workers=w)
+
+
+_C3G: dict = {}  # read-only state shared with forked workers (set before the pool is created)
+
+
+def _c3_boot_batch(s0: int):
+    """One bootstrap batch of metrics.gene_bootstrap, rows s0 .. s0 + bs of the shared count matrix (same arrays,
+    same shapes and the same operations as the serial loop, so the replicate values are bitwise equal)."""
+    from nextgem import metrics
+
+    g = _C3G
+    cb = g["C"][s0: s0 + g["bs"]]
+    vals, keep = [], None
+    for st, y in zip(g["structs"], g["ys"]):
+        t, n, p = st.tap(cb, y, g["h"])
+        keep = (p > 0) & (p < n)
+        e = np.where(keep, metrics.expected_ap_random(np.where(keep, n, 1), np.where(keep, p, 1)), np.nan)
+        d = np.where(keep, t - e, np.nan)
+        with np.errstate(invalid="ignore"):
+            vals.append(np.nanmean(d, axis=1))
+    return s0, vals[0] - (vals[1] if len(vals) > 1 else 0.0), (~keep).sum(1)
+
+
+def _c3_perm_chunk(idx):
+    """Permutations ``idx`` of metrics.c3_permutation_null, each from its own spawned child seed."""
+    from nextgem import metrics
+
+    g = _C3G
+    out = []
+    for i in idx:
+        Yp = metrics.permute_within_lineage(g["Yn"], g["lin"], np.random.default_rng(g["children"][i]))
+        t, _, _ = g["st_null"].tap(g["ones"], g["st_null"].sorted_labels(Yp), g["h_null"])
+        out.append((i, np.mean(t[0] - g["e"])))
+    return out
+
+
+def c3_parallel(scores_p1, scores_b3, labels, lineage, *, seed, B: int, n_perm: int, workers: int,
+                conf: float = 0.95) -> dict:
+    """``metrics.c3_decision`` with the bootstrap batches and the permutations spread over ``workers`` forked
+    processes (≤ 8). Nothing in metrics.py changes: this re-runs its steps with its own private helpers —
+    the bootstrap count matrix is drawn once from the spawned bootstrap stream and cut into the serial batches
+    (``_batch_size``), and permutation i uses the i-th child of the spawned permutation stream — so every replicate,
+    the null, the CI, the threshold and p are bitwise identical to the serial function
+    (tests/test_evaluate_test.py::test_c3_parallel_bitwise_equals_serial)."""
+    import multiprocessing
+
+    from nextgem import metrics as M
+
+    workers = max(1, min(int(workers), MAX_WORKERS))
+    M.assert_same_pairs(labels, scores_p1, scores_b3)
+    for s in (scores_p1, scores_b3):
+        M._align(s, labels)
+    ss_boot, ss_perm = M._seed_sequence(seed).spawn(2)
+    # --- gene_bootstrap (P1 − B3)
+    ga = M.per_gene(scores_p1, labels)
+    elig = ga.index[ga["estimable"]]
+    est = M.m_delta_ap_gene(ga) - M.m_delta_ap_gene(M.per_gene(scores_b3, labels))
+    lin = M._lineage_of(labels.index, lineage)
+    Yb = labels.loc[:, elig].to_numpy(dtype=float)
+    Mb = ~np.isnan(Yb)
+    structs = [M._SortedColumns(s.loc[labels.index, elig].to_numpy(float), Mb) for s in (scores_p1, scores_b3)]
+    bs = M._batch_size(*Yb.shape)
+    # --- c3_permutation_null (P1)
+    g = M.per_gene(scores_p1, labels)
+    elig_n = g.index[g["estimable"]]
+    obs = M.m_delta_ap_gene(g)
+    Yn = labels.loc[:, elig_n].to_numpy(dtype=float)
+    _C3G.clear()
+    _C3G.update(C=M.stratified_bootstrap_counts(lin, B, ss_boot), bs=bs, structs=structs,
+                ys=[st.sorted_labels(Yb) for st in structs], h=M._harmonic_table(len(lin) + 1),
+                Yn=Yn, lin=M._lineage_of(labels.index, lineage).to_numpy(), children=M._seed_sequence(ss_perm).spawn(n_perm),
+                st_null=M._SortedColumns(scores_p1.loc[labels.index, elig_n].to_numpy(float), ~np.isnan(Yn)),
+                h_null=M._harmonic_table(len(lin) + 1), ones=np.ones((1, len(lin))),
+                e=g.loc[elig_n, "e_random"].to_numpy())
+    if __name__ not in sys.modules:  # loaded by file path (tests): make the worker functions picklable by reference
+        import types
+
+        mod = types.ModuleType(__name__)
+        mod.__dict__.update({"_c3_boot_batch": _c3_boot_batch, "_c3_perm_chunk": _c3_perm_chunk})
+        sys.modules[__name__] = mod
+    starts = list(range(0, B, bs))
+    chunks = [list(range(i, min(i + 25, n_perm))) for i in range(0, n_perm, 25)]
+    reps, dropped, null = np.empty(B), np.empty(B), np.empty(n_perm)
+    try:
+        with multiprocessing.get_context("fork").Pool(workers) as pool:
+            for s0, r, dr in pool.imap_unordered(_c3_boot_batch, starts):
+                reps[s0: s0 + bs] = r
+                dropped[s0: s0 + bs] = dr
+            for part in pool.imap_unordered(_c3_perm_chunk, chunks):
+                for i, v in part:
+                    null[i] = v
+    finally:
+        _C3G.clear()
+    lo, hi = np.quantile(reps, [(1 - conf) / 2, 1 - (1 - conf) / 2])
+    thr = float(np.percentile(null, M.C3_NULL_PERCENTILE))
+    tol = 1e-12
+    perm_passed = bool(obs > thr + tol)
+    boot_ok = bool(float(lo) > 0)
+    return {"contrast": "C3", "estimate": float(est), "ci_low": float(lo), "ci_high": float(hi),
+            "bootstrap_passed": boot_ok, "m_delta_ap_gene_p1": obs, "null_threshold": thr,
+            "permutation_p": float((1 + np.sum(null >= obs - tol)) / (1 + n_perm)), "permutation_passed": perm_passed,
+            "passed": bool(boot_ok and perm_passed), "n_genes_eligible": int(len(elig)),
+            "mean_genes_dropped": float(dropped.mean())}
 
 
 def transfer(delta, lineage) -> dict:
@@ -971,8 +1304,12 @@ def t1_reveal(cfg: dict, ctx: dict, prep: dict, Ylong: pd.DataFrame) -> tuple[pd
                              "sesoi": None if k == "C3" else res[k]["sesoi"]} for k in ("C1", "C1b", "C3")},
            "c3_claim_condition": metrics.c3_claim_condition(res["C3"], c3e),
            "transfer_C1": tr, "generalises_to_new_tissues": tr["generalises"],
-           "adds_beyond_generic_expression": {"ci_lower_all_gt_0": bool(all(x["ci_lo"] > 0 for x in b8)),
-                                              "estimate_all_gt_0": bool(all(x["estimate"] > 0 for x in b8))},
+           "adds_beyond_generic_expression": {
+               "rule": "pre-declared claim rule: the paired Δ̄_lin(P1 − B8x) CI lower bound > 0 for all three of B8+, "
+                       "B8−, B8′ (§6.3, §8); the all-point-estimates-positive version is descriptive only",
+               "claim": bool(all(x["ci_lo"] > 0 for x in b8)),
+               "ci_lower_all_gt_0": bool(all(x["ci_lo"] > 0 for x in b8)),
+               "estimate_all_gt_0_descriptive": bool(all(x["estimate"] > 0 for x in b8))},
            "headline": {"contrast": "C1", "estimate": res["C1"]["estimate"], "ci": [res["C1"]["ci_low"], res["C1"]["ci_high"]],
                         "p_sign_flip": res["C1"]["p_sign_flip"], "claim": status["C1"]["claim"],
                         "conditional_on": f"the {tr['n_lineages']} {cfg['tier']} lineages"},
@@ -1145,29 +1482,49 @@ def t1_sealed(cfg: dict, ctx: dict, prep: dict, Ylong: pd.DataFrame) -> dict[str
 
 
 def per_task_table(cfg, ctx, prep, Y) -> pd.DataFrame:
-    """W3 per-task table on test (§9 W3; sealed at T1): per task, the KO-failing genes of P1's model (label-free),
-    the precision of those calls and of the calls not already FBA-lethal, and lineage-equal tAP of the call."""
-    from nextgem import metrics
+    """The W3 M4 per-task table (scripts/w3_score_train.py ``per_task_table``) on the evaluation tier, so training
+    and test are comparable (review F6). Per task of the primary arm's model, with base = the primary arm's score
+    (W3's base was T0) and Y = the primary label:
+    n_failing_in_U (KO-failing genes in U); n_failing_not_base_lethal (W3: failing genes with base e < 0.99; the base
+    can be line-specific here, so the per-line count's median); precision_lin = lineage-equal mean over lines of the
+    fraction of called genes that are positive; precision_new_calls_lin = the same over called pairs with base
+    e < 0.99 (for a line-constant base identical to W3's gene list); tap_lin_base_plus_task = lineage-equal tAP_line
+    of the base with the task-failing genes set to 1; delta_lin_vs_base / delta_lo / delta_hi = paired Δ̄_lin vs the
+    base (w1.delta_summary, B = 2,000, SEEDS[0])."""
+    from nextgem import metrics, w1
 
     tc = load_task_calls(cfg["task_calls"])
     if tc is None:
         return pd.DataFrame([{"task": "", "status": "not provided (spec task_calls is null)"}])
     lineage = ctx["lineage"]
-    fba = prep["calls"][(cfg["primary"], "FBA<0.01")].loc[Y.index, Y.columns]
+    P = cfg["primary"]
+    base = prep["S"][P].loc[Y.index, Y.columns]
+    lt0 = metrics.per_line(base, Y)
     rows = []
     for task, sub in tc.groupby("task"):
-        fails = set(sub.loc[sub.fails, "entrez"].astype(int)) & set(Y.columns)
-        call = pd.DataFrame(np.broadcast_to(Y.columns.isin(list(fails)), Y.shape), index=Y.index, columns=Y.columns)
-        m = Y.notna()
-        tp = int((call & (Y == 1) & m).sum().sum())
-        fp = int((call & (Y == 0) & m).sum().sum())
-        new = call & ~fba
-        ntp, nfp = int((new & (Y == 1) & m).sum().sum()), int((new & (Y == 0) & m).sum().sum())
-        lt = metrics.per_line(call.astype(float), Y)
-        e = lt[lt.estimable]
-        rows.append({"task": task, "n_genes_failing": len(fails), "precision": tp / (tp + fp) if tp + fp else np.nan,
-                     "precision_new_calls": ntp / (ntp + nfp) if ntp + nfp else np.nan,
-                     "tap_lin": metrics.lineage_equal_mean(e.tap, lineage) if len(e) else np.nan})
+        fails = set(sub.loc[sub.fails, "entrez"].astype(int))
+        called = [g for g in Y.columns if g in fails]
+        S = base.copy()
+        if called:
+            S.loc[:, called] = 1.0
+        lt = metrics.per_line(S, Y)
+        d = w1.delta_summary(lt, lt0, lineage, seed=cfg["seed"], B=cfg["B"])
+        if called:
+            Yc = Y.loc[:, called]
+            newm = base.loc[:, called] < CALL
+            prec = Yc.mean(axis=1)
+            prec_new = Yc.where(newm).mean(axis=1)
+            n_new = float(newm.sum(axis=1).median())
+        else:
+            prec = prec_new = pd.Series(np.nan, index=Y.index)
+            n_new = 0.0
+        rows.append({"parent": cfg["arms"][P], "task": task, "n_failing_in_U": len(called),
+                     "n_failing_not_base_lethal": n_new,
+                     "precision_lin": metrics.lineage_equal_mean(prec.dropna(), lineage) if prec.notna().any() else np.nan,
+                     "precision_new_calls_lin": (metrics.lineage_equal_mean(prec_new.dropna(), lineage)
+                                                 if prec_new.notna().any() else np.nan),
+                     "tap_lin_base_plus_task": metrics.lineage_equal_mean(lt.tap[lt.estimable], lineage),
+                     "delta_lin_vs_base": d["delta_lin"], "delta_lo": d["delta_lo"], "delta_hi": d["delta_hi"]})
     return pd.DataFrame(rows)
 
 
@@ -1381,7 +1738,7 @@ def run_p1_look(cfg: dict, *, ctx: dict, prep: dict, load_labels, out_dir: Path,
     detail = json.dumps({"milestone": cfg["milestone"], "kind": "test_harness", "tier": cfg["tier"],
                          "fit_tiers": cfg["fit_tiers"], "fit_sha": prep["fit_sha"], "spec_sha": cfg["inputs"]["spec"],
                          "scalars_only": True, "sealed_dir": f"data/locked/sealed/{cfg['look']}",
-                         "post_hoc": bool(cfg.get("post_hoc"))}, sort_keys=True)
+                         "post_hoc": bool(cfg.get("post_hoc")), "code_sha": code_sha(cfg)}, sort_keys=True)
     with ledger.look(ledger_name, cfg["look"], workstream=workstream or REHEARSAL_WS,
                      config_sha=csha, detail=detail, author=author) as lk:
         if resumed:
@@ -1417,7 +1774,8 @@ def run_t2(cfg: dict, *, ctx: dict, prep: dict, load_labels, out_dir: Path, auth
     prior = ledger.looks(ledger.read("test")).get("T2")
     resumed = prior is not None and prior["started"] is not None and not prior["completed"]
     detail = json.dumps({"milestone": cfg["milestone"], "kind": "test_harness", "tier": "test", "fit_tiers": cfg["fit_tiers"],
-                         "fit_sha": prep["fit_sha"], "spec_sha": cfg["inputs"]["spec"], "scalars_only": True}, sort_keys=True)
+                         "fit_sha": prep["fit_sha"], "spec_sha": cfg["inputs"]["spec"], "scalars_only": True,
+                         "code_sha": code_sha(cfg), "refit": cfg.get("refit")}, sort_keys=True)
     with ledger.look("test", "T2", workstream="M7", config_sha=csha, detail=detail, author=author) as lk:
         if resumed:
             _resume_marker("test", "T2", csha, lk, author)
@@ -1440,9 +1798,14 @@ def run_unseal(*, cfg_for, ctx_for, fit_long_for, load_test, author: str) -> dic
     """§10.2 unseal after T2: (1) the ledger ``unseal`` row (committed; the ledger itself refuses it without a
     completed T2); (2) every sealed bundle (T1, T3) is re-derived with the same harness and test labels and each
     file is published under results/m6/test/unsealed/<look>/ only if its SHA-256 equals the one in the ledger.
-    The sealed files themselves are never read (the tripwire has no sealed reader in labels.py)."""
+    The sealed files themselves are never read (the tripwire has no sealed reader in labels.py). Before the unseal
+    row and before any label read, each sealed look's config must reproduce its started config_sha
+    (:func:`unseal_problems`; review F2), otherwise PreflightError."""
     from nextgem import ledger, paths
 
+    probs = unseal_problems(cfg_for)
+    if probs:
+        raise PreflightError("; ".join(probs))
     rows = ledger.read("test")
     if not any(r["event"] == "unseal" for r in rows):
         ledger.append("test", "unseal", look_id="unseal", detail=json.dumps({"looks": list(SEALED_LOOKS)}), author=author)
@@ -1474,46 +1837,62 @@ def run_unseal(*, cfg_for, ctx_for, fit_long_for, load_test, author: str) -> dic
 
 
 # ============================================================================= dry run / synthetic labels
-def synthetic_labels(lines, genes, rates: dict, seed) -> pd.DataFrame:
-    """Synthetic labels of the evaluation shape (lines x U): Bernoulli at each label's training positive rate;
-    gene_effect ~ N(−0.2, 0.5) and dep_prob ~ U(0, 1) for B2c and the threshold grid. No label file is read."""
+def synthetic_labels(lines, genes, priors: dict, seed) -> pd.DataFrame:
+    """Synthetic labels of the evaluation shape (lines x U). ``priors``: label -> per-gene positive probability
+    (a Series over Entrez: the training prior B2, review F11) or a single rate; each pair is an independent
+    Bernoulli draw. gene_effect ~ N(−0.2, 0.5) and dep_prob ~ U(0, 1) for B2c and the threshold grid. No label file
+    is read."""
     rng = np.random.default_rng(seed)
-    df = pd.MultiIndex.from_product([list(lines), list(genes)], names=["ModelID", "entrez"]).to_frame(index=False)
+    lines, genes = list(lines), list(genes)
+    df = pd.MultiIndex.from_product([lines, genes], names=["ModelID", "entrez"]).to_frame(index=False)
     df["gene_effect"] = rng.normal(-0.2, 0.5, len(df))
     df["dep_prob"] = rng.random(len(df))
-    for lab, p in rates.items():
-        df[lab] = (rng.random(len(df)) < p).astype(float)
+    for lab, p in priors.items():
+        pv = np.tile(p.reindex(genes).to_numpy(dtype=float), len(lines)) if isinstance(p, pd.Series) else float(p)
+        df[lab] = (rng.random(len(df)) < pv).astype(float)
     return df
+
+
+def synthetic_priors(train_long: pd.DataFrame, line_class: pd.Series, genes) -> dict:
+    """Per-gene training priors (B2) of every label, a gene without training labels at the label's rate. Drawing
+    synthetic validation labels at these priors keeps CE_fit (genes positive in >= 90% of the fitting lines)
+    non-empty in the dry run, as with real validation labels (review F11)."""
+    from nextgem import w1
+
+    f = w1.fit_components(train_long, line_class)
+    return {lab: f.prior[lab].reindex(list(genes)).fillna(f.rate[lab]) for lab in list(w1.GRID_LABELS) + ["L_ge06"]}
 
 
 def dry_run(cfg: dict, ctx: dict, train_long: pd.DataFrame, tier: str) -> dict:
     """Synthetic run of a look on the evaluation-tier shape: training labels are real; the validation labels of
-    the refit (test tier) and the evaluation labels are synthetic. No ledger row, no file; returns scalars only."""
-    from nextgem import w1
+    the refit (test tier) and the evaluation labels are synthetic draws at the per-gene training priors. No ledger
+    row, no file; returns scalars only (the priors themselves are never printed)."""
     from nextgem.config import SEEDS
 
-    rates_fit = w1.fit_components(train_long, ctx["line_class"]).rate
-    labs = list(w1.GRID_LABELS) + ["L_ge06"]
-    rates = {lab: rates_fit[lab] for lab in labs}
+    priors = synthetic_priors(train_long, ctx["line_class"], ctx["genes"])
     fit_long = train_long
     if tier == "test":
         val_lines = [l for l in ctx["lineage"].index if l not in set(train_long.ModelID) and l not in set(ctx["tier_lines"])]
-        fit_long = pd.concat([train_long, synthetic_labels(val_lines, ctx["genes"], rates, SEEDS[1])], ignore_index=True)
+        fit_long = pd.concat([train_long, synthetic_labels(val_lines, ctx["genes"], priors, SEEDS[1])], ignore_index=True)
     t0 = time.time()
-    prep = prepare(cfg, ctx, fit_long, tier)
-    Ylong = synthetic_labels(ctx["eval_lines"], ctx["genes"], rates, cfg["seed"])
+    prep = prepare(cfg, ctx, fit_long, tier)  # raises if CE_fit is empty
+    lab = cfg["primary_label"]
+    ce = prep["fitted"].ce[lab]
+    Ylong = synthetic_labels(ctx["eval_lines"], ctx["genes"], priors, cfg["seed"])
+    extra = {"ce_fit_nonempty": bool(ce), "c1b_gene_set_smaller": bool(len(set(ctx["genes"]) - set(ce)) < len(ctx["genes"]))}
     if cfg["kind"] == "p1":
         out, doc = t1_reveal(cfg, ctx, prep, Ylong)
         hashes = {k: hashlib.sha256(v).hexdigest() for k, v in bundle_bytes(t1_sealed(cfg, ctx, prep, Ylong)).items()}
         n_rows = len(out)
+        extra["c1b_differs_from_c1"] = bool(doc["contrasts"]["C1"]["estimate"] != doc["contrasts"]["C1b"]["estimate"])
     else:
         t1_doc = {"contrasts": {k: {"contrast": k, "passed": True, "estimate": 0.02, "ci_low": 0.01, "sesoi": s}
                                 for k, s in (("C1", cfg["sesoi"]), ("C1b", cfg["sesoi_c1b"]), ("C3", None))},
                   "headline": {"contrast": "C1", "note": "synthetic T1 record (dry run)"}}
         conf, grid, doc = t2_reveal(cfg, ctx, prep, Ylong, t1_doc)
         hashes, n_rows = {}, len(conf) + len(grid)
-    return {"look": cfg["look"], "tier": tier, "config_sha": config_sha(cfg),
-            "synthetic_labels": f"Bernoulli at each label's training positive rate (not shown), seed {cfg['seed']}",
+    return {"look": cfg["look"], "tier": tier, "config_sha": config_sha(cfg), **extra,
+            "synthetic_labels": f"Bernoulli per gene at the training prior of each label (not shown), seed {cfg['seed']}",
             "n_eval_lines": len(ctx["eval_lines"]), "methods": sorted(prep["S"]), "n_revealed_rows": n_rows,
             "scalar_guard": "pass", "validation_labels_read": False, "test_labels_read": False, "ledger_rows_written": 0,
             "files_written": 0, "sealed_files_in_memory": sorted(hashes), "synthetic_gates": doc["gates"],
@@ -1543,8 +1922,9 @@ def preflight_problems(cfg: dict) -> list[str]:
 
 
 def main(argv=None) -> int:
+    global C3_WORKERS
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    act = ap.add_mutually_exclusive_group()
+    act = ap.add_mutually_exclusive_group(required=True)  # review F9: no default real mode
     act.add_argument("--look", choices=TEST_LOOKS)
     act.add_argument("--rehearsal", action="store_true")
     act.add_argument("--unseal", action="store_true")
@@ -1555,9 +1935,20 @@ def main(argv=None) -> int:
     mod.add_argument("--dry-run", action="store_true", help="synthetic validation/test labels; no ledger row, no file")
     ap.add_argument("--spec", help="spec path relative to the state root (dry modes only; default the canonical spec)")
     ap.add_argument("--tier", choices=("test", "validation"), default="test", help="--dry-run shape (default test)")
+    ap.add_argument("--workers", type=int, default=MAX_WORKERS,
+                    help=f"processes for the C3 replicates, 1-{MAX_WORKERS} (results are bitwise identical)")
     a = ap.parse_args(argv)
+    if not 1 <= a.workers <= MAX_WORKERS:
+        ap.error(f"--workers must be in 1..{MAX_WORKERS}")
+    C3_WORKERS = a.workers
+    try:  # one BLAS thread also when numpy was imported before this module (e.g. under a test runner)
+        from threadpoolctl import threadpool_limits
+
+        _limits = threadpool_limits(1)  # noqa: F841 - kept alive for the whole run
+    except Exception:  # noqa: BLE001 - threadpoolctl missing: the environment variables set at import apply
+        pass
     t0 = time.time()
-    mode = "REHEARSAL" if a.rehearsal else "UNSEAL" if a.unseal else (a.look or "T1")
+    mode = "REHEARSAL" if a.rehearsal else "UNSEAL" if a.unseal else a.look
     dry = a.print_config or a.print_frozen_candidates or a.dry_run
     if a.spec and not dry:
         print("REFUSED: --spec is allowed only with --print-config, --print-frozen-candidates or --dry-run", file=sys.stderr)
@@ -1630,8 +2021,18 @@ def main(argv=None) -> int:
         def fit_long_for():
             return pd.concat([labels.train(columns=ev.LABEL_COLS), labels.validation()], ignore_index=True)
 
-        rep = run_unseal(cfg_for=lambda look: look_config(look), ctx_for=lambda c: real_context(c, "test"),
-                         fit_long_for=fit_long_for, load_test=labels.test, author=author)
+        problems = unseal_problems(look_config)  # before the unseal row and before any label read (review F2)
+        if problems:
+            print("UNSEAL REFUSED (no ledger row, no label read):", file=sys.stderr)
+            print("\n".join(f"  - {p}" for p in problems), file=sys.stderr)
+            return 2
+        with provenance(root / UNSEALED_DIR / "MANIFEST.tsv", inputs=_prov_inputs(cfg), seeds=[cfg["seed"]],
+                        allow_dirty=False, author=author) as prov:
+            rep = run_unseal(cfg_for=lambda look: look_config(look), ctx_for=lambda c: real_context(c, "test"),
+                             fit_long_for=fit_long_for, load_test=labels.test, author=author)
+            prov.output(*[root / UNSEALED_DIR / lk / f for lk, v in rep.items() for f in v["published"]])
+            prov.note(unseal={lk: {"published": len(v["published"]), "mismatch": v["sha_mismatch_not_published"]}
+                              for lk, v in rep.items()})
         _print({"unseal": rep, "wall_s": round(time.time() - t0, 1)})
         return 0 if all(not v["sha_mismatch_not_published"] for v in rep.values()) else 2
     out_dir = root / REVEAL_DIR
